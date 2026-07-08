@@ -1,0 +1,66 @@
+[
+  {
+    "id": "kairos",
+    "numeral": "I",
+    "name": "Kairos Fateweaver",
+    "epithet": "Le Tisseur de Destins",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Kairos_Fateweaver",
+    "faction": "Oracles of Tzeentch",
+    "seal": "kairos",
+    "portraitImage": "assets/portraits/kairos.png",
+    "lore": "<p>Kairos peut voir des choses cachées même à Tzeentch. Sa tête droite perçoit les futurs possibles avec la clarté du jour : aucun stratagème ne lui échappe, et les possibilités infinies de demain se cristallisent en faits irréfutables. Sa tête gauche voit le passé sans les petites colorations de la perspective et des préjugés. Aussi précieuse que soit cette double vision, elle a un coût terrible : les deux têtes de Kairos sont aveugles au présent. Il ne peut percevoir le temps qui s'écoule — seulement les événements à venir, ou ceux dont l'heure est déjà passée.</p>\n      <p>Bras droit du Dieu Corbeau, Kairos est un Seigneur du Changement béni d'une vision totale du passé et de l'avenir, mais maudit d'une cécité totale face à l'instant présent. Oracle de Tzeentch, il fut jadis échoué sur le plan mortel par le hurlement de mort d'Ursun, en pleine incursion contre l'Empire Céleste de Cathay — un contretemps qui, comme toujours chez Tzeentch, n'était peut-être qu'un pion de plus dans le Grand Jeu.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (Oracles of Tzeentch)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Gain d'expérience des personnages : <strong>+20%</strong> (tous les Seigneurs)</div>\n        <div class=\"attr-item\">Temps de renfort en bataille : <strong>-50%</strong></div>\n        <div class=\"attr-item\">Chance de succès des actions de héros : <strong>+15%</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Temps de construction : <strong>-33%</strong> pour tous les bâtiments (faction)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour The Blazing Squealers (Exalted Pink Horrors)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Utilise les Fragments de Sorcellerie pour composer sa propre école de magie entre les batailles</div>\n        <div class=\"attr-item\">Temps de recharge : <strong>-10%</strong> pour tous les sorts</div>\n        <div class=\"attr-item\">Délai de régénération de la barrière : <strong>-20%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Chance de succès des actions de héros ennemis : <strong>-50%</strong></div>\n        <div class=\"attr-item\">Chance de défense en embuscade : <strong>+50%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Kairos Fateweaver).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour du profil de spécialiste magique pur de Kairos : un déluge de tir des Horreurs Roses et Bleues, renforcé par les 2 exemplaires du régiment favori The Blazing Squealers (faction), protégé par la mobilité aérienne des Chaos Furies et Screamers (défense en embuscade +50%, seigneur) et ancré par le Soul Grinder, pendant que Kairos pilonne l'ennemi grâce à ses huit écoles de magie et son temps de recharge réduit (-10%, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "kairos", "name": "Kairos Fateweaver", "qty": 1, "note": "Oracle de Tzeentch, sort suprême protégé par sa propre armée — son délai de régénération de barrière réduit (-20%, seigneur) et sa défense en embuscade accrue (+50%, seigneur) compensent sa grande fragilité au corps-à-corps pendant qu'il pilonne l'ennemi à distance"},
+      "heroes": [
+        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 2, "note": "Soutien de sorts supplémentaire (Lore of Fire) et Gate of Tzeentch pour la mobilité stratégique — profite du temps de recharge des sorts réduit (-10%, seigneur) et du gain d'XP accru (+20%, faction)"}
+      ],
+      "army": [
+        {"icon": "pinkHorrors", "name": "Pink Horrors of Tzeentch", "qty": 4, "note": "Tir de zone magique, cœur offensif à distance de l'armée"},
+        {"icon": "blueHorrors", "name": "Blue Horrors of Tzeentch", "qty": 3, "note": "Chair à canon bon marché qui se scinde en Horreurs Roses à sa mort — protège la ligne de tir"},
+        {"icon": "blazingSquealers", "name": "The Blazing Squealers (Exalted Pink Horrors)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Exalted Pink Horrors, tir et résistance renforcés"},
+        {"icon": "chaosFuriesTzeentch", "name": "Chaos Furies (Tzeentch)", "qty": 2, "note": "Harceleurs volants rapides — bénéficient de la défense en embuscade accrue (+50%, seigneur) pour sécuriser les flancs"},
+        {"icon": "screamers", "name": "Screamers of Tzeentch", "qty": 2, "note": "Chasseurs volants rapides, idéaux contre les héros et l'artillerie ennemie"},
+        {"icon": "chaosKnightsTzeentch", "name": "Chaos Knights of Tzeentch", "qty": 2, "note": "Cavalerie lourde, principale force de percée au corps-à-corps de l'armée"},
+        {"icon": "exaltedFlamer", "name": "Exalted Flamer of Tzeentch", "qty": 1, "note": "Monstre cracheur de feu, dégâts de zone dévastateurs"},
+        {"icon": "soulGrinder", "name": "Soul Grinder of Tzeentch", "qty": 1, "note": "Monstre perforant massif, ancre de mêlée protégeant Kairos pendant qu'il lance ses sorts"}
+      ],
+      "magic": "Kairos manie non pas une, mais huit écoles de magie grâce au mécanisme des Fragments of Sorcery (Lore of Tzeentch, Beasts, Death, Fire, Life, Light, Metal, Shadows), avec un temps de recharge réduit de -10% (seigneur) — le lanceur de sorts le plus versatile du jeu.",
+      "note": "Kairos étant un piètre combattant au corps-à-corps — le pire de tous les Seigneurs de Changement selon la stratégie communautaire, faute de compétences de campagne augmentant sa prouesse physique — toute l'armée est bâtie pour le protéger et l'accompagner à distance. Les Pink et Blue Horrors saturent le champ de tir, épaulées par les 2 exemplaires du régiment favori The Blazing Squealers (faction), une variante d'élite des Exalted Pink Horrors. Les Chaos Furies et Screamers, profitant de sa défense en embuscade accrue (+50%, seigneur), sécurisent les flancs et chassent les cibles prioritaires. Le Soul Grinder et les Chaos Knights forment le seul vrai rempart de mêlée, laissant Kairos libre de faire feu de ses huit écoles de magie avec un temps de recharge réduit (seigneur), tandis que le temps de construction réduit (-33%, faction) accélère le développement économique de l'Oracle."
+    }
+  },
+  {
+    "id": "changeling",
+    "numeral": "II",
+    "name": "The Changeling",
+    "epithet": "L'Horreur Sans Forme",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/The_Changeling",
+    "faction": "The Deceivers",
+    "seal": "changeling",
+    "portraitImage": "assets/portraits/changeling.png",
+    "lore": "<p>Le Changeling incarne la part de la psyché de Tzeentch qui est le manipulateur, le trompeur, le filou. Il peut prendre la forme de tout être vivant, du plus infime des insectes au plus massif des Grands Démons. Nul, hormis peut-être Tzeentch lui-même, ne connaît sa véritable apparence, car il se drape et se capuchonne lorsqu'il revêt sa propre forme — peut-être même l'a-t-il oubliée. Que tant de ses farces aient déclenché de terribles guerres ne le préoccupe guère : il se délecte du chaos des conflits, qui multiplie les occasions de tromper et de semer la consternation. Lorsque la bataille commence, le Changeling aime adopter la forme et les talents de ses ennemis, pour ensuite les réduire en miettes avec une force empruntée et un enthousiasme malveillant.</p>\n      <p>Une éternité passée à se mêler des affaires du Royaume du Chaos a fini par pousser les dieux frères de Tzeentch à souhaiter la destruction du Changeling — c'est lui qui coupa la chevelure de Slaanesh endormi pour en tisser une cape offerte à un champion de Tzeentch, lui encore qui scella les portes de la citadelle de Khorne pendant que ce dernier guerroyait, forçant le Dieu du Sang à briser ses propres portes en rentrant. Mais c'est son ennui face aux futilités du Grand Jeu, plus que la colère du Royaume du Chaos, qui le pousse vers le Vieux Monde en quête de plus vastes tapisseries de désordre à tisser.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (The Deceivers)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Établit des Cultes du Filou (Trickster Cults) au lieu d'occuper les territoires</div>\n        <div class=\"attr-item\">Immunisé aux pénalités diplomatiques liées à l'intrusion en territoire étranger</div>\n        <div class=\"attr-item\">Peut se ravitailler et recruter en territoire étranger</div>\n        <div class=\"attr-item\">Armées dissimulées dans les régions dotées d'un bâtiment de Culte du Filou</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour The Chromatic Abominations (Blue Horrors)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Peut se métamorphoser en bataille (Formless Horror) en n'importe quel autre Seigneur Légendaire ou Héros</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (The Changeling).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour de la mobilité et de la polyvalence du Changeling : un noyau flexible d'unités de départ (Tzaangors, Cockatrice, Changebringers) couvrant mêlée, tir et dégâts de zone, renforcé par les 2 exemplaires du régiment favori The Chromatic Abominations (faction) et cohérent avec la stratégie de Cultes du Filou (armées dissimulées en territoire hostile, faction) — le Changeling complète la formation en empruntant en bataille la forme du Seigneur Légendaire ou Héros le plus adapté à l'adversaire (Formless Horror, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "changeling", "name": "The Changeling", "qty": 1, "note": "L'Horreur Sans Forme — sa capacité de métamorphose (Formless Horror, seigneur) lui permet d'adopter en bataille la forme et les compétences de n'importe quel autre Seigneur Légendaire ou Héros du jeu, rendant son propre profil de combat délibérément imprévisible"},
+      "heroes": [
+        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 2, "note": "Soutien de sorts et Gate of Tzeentch — appuie la stratégie de Cultes du Filou (faction) en facilitant la mobilité et l'implantation de cultes en territoire hostile"}
+      ],
+      "army": [
+        {"icon": "tzaangors", "name": "Tzaangors (Tzeentch)", "qty": 3, "note": "Infanterie de mêlée de départ du Changeling, robuste et polyvalente"},
+        {"icon": "chromaticAbominations", "name": "The Chromatic Abominations (Blue Horrors)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante de mêlée d'élite des Blue Horrors, barrières chromatiques défensives"},
+        {"icon": "pinkHorrors", "name": "Pink Horrors of Tzeentch", "qty": 2, "note": "Tir de zone magique"},
+        {"icon": "chaosFuriesTzeentch", "name": "Chaos Furies (Tzeentch)", "qty": 2, "note": "Harceleurs volants rapides, flanquement"},
+        {"icon": "changebringers", "name": "Changebringers", "qty": 2, "note": "Variante de Flamers propre au roster de départ du Changeling, dégâts de zone accrus"},
+        {"icon": "cockatrice", "name": "Cockatrice (Tzeentch)", "qty": 2, "note": "Monstre de départ du Changeling, regard pétrifiant"},
+        {"icon": "flamers", "name": "Flamers of Tzeentch", "qty": 2, "note": "Monstre cracheur de feu, dégâts de zone"},
+        {"icon": "burningChariot", "name": "Burning Chariot of Tzeentch", "qty": 2, "note": "Char rapide à tir de zone, percée et harcèlement"}
+      ],
+      "magic": "Le Changeling manie une sélection resserrée de sorts de la Lore of Tzeentch (Pink Fire, Blue Fire, Treason of Tzeentch, Glean Magic, Tzeentch's Firestorm, Infernal Gateway), complétée par les sorts empruntés à la forme qu'il adopte en bataille (Formless Horror, seigneur).",
+      "note": "Cette armée mise sur la mobilité et l'imprévisibilité propres au Changeling : les unités de départ (Tzaangors, Cockatrice, Changebringers) forment un noyau flexible mêlant mêlée, monstres et tir de soutien, cohérent avec la stratégie de Cultes du Filou (armées dissimulées en territoire hostile, faction) qui caractérise Les Trompeurs. Les 2 exemplaires du régiment favori The Chromatic Abominations, permis par la capacité augmentée (faction), remplacent les Blue Horrors génériques par une variante de mêlée mieux protégée par ses barrières chromatiques. Le Changeling lui-même reste la pièce la plus imprévisible du plan de bataille : sa métamorphose (seigneur) permet de l'adapter à la menace du moment en empruntant la forme d'un adversaire ou allié légendaire déjà rencontré, comme Be'lakor ou Archaon selon la stratégie communautaire."
+    }
+  }
+]

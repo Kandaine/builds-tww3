@@ -1,0 +1,124 @@
+[
+  {
+    "id": "louen",
+    "numeral": "I",
+    "name": "Louen Leoncoeur",
+    "epithet": "Le Roy Preux",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/King_Louen_Leoncoeur",
+    "faction": "Couronne",
+    "seal": "louen",
+    "portraitImage": "assets/portraits/louen.png",
+    "lore": "<p>Louen Leoncoeur est le plus grand meneur que la Bretonnie ait connu depuis Gilles l'Unificateur. Roi-Guerrier redoutable, ses sujets voient en lui l'incarnation même de la perfection et de l'honneur chevaleresques. Hautement qualifié sur le champ de bataille et maître en tactique comme en stratégie, Louen n'a jamais connu la défaite — au point que certains murmurent que le sang de Gilles coule encore dans ses veines.</p>\n      <p>Aussi féroce à la guerre qu'honorable en diplomatie, le Roi Louen « Cœur de Lion » est révéré bien au-delà des frontières de la Bretonnie. Après plus de vingt années glorieuses sur le trône, il semble toujours dans la force de l'âge, bien que les érudits chuchotent qu'il approche de ses quatre-vingt-dix ans. On raconte qu'il projette de tourner son attention vers la maudite Mousillon, pour la purifier de sa souillure et lui rendre sa gloire d'antan.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Taille de l'aura de commandement : <strong>+50%</strong> pour les seigneurs en attaque</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Knights of the Lionhearted (Knights of the Realm)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Débloque tous les Vœux Chevaleresques dès le départ</div>\n        <div class=\"attr-item\">Capacité passive : <strong>\"The Blessing of the Lady\"</strong> — Ward Save (1 utilisation) accordant <strong>+15%</strong> de résistance aux dégâts tant que le commandement n'est pas brisé, durée illimitée</div>\n        <div class=\"attr-item\">Commandement : <strong>+12</strong> contre les Warriors of Chaos, Chaos Dwarfs, Daemons of Chaos, Undead et Greenskins (armée du seigneur)</div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+8</strong> contre les Warriors of Chaos, Chaos Dwarfs, Daemons of Chaos, Undead et Greenskins (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Louen Leoncoeur).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Louen : des Knights of the Realm en régiment favori (+1 capacité, faction) qui forment le cœur d'une charge de chevalerie frappant particulièrement fort contre le Chaos, les Chaos Dwarfs, les Morts-Vivants et les Peaux-Vertes (+12 commandement, +8 attaque en mêlée, seigneur), sous une aura de commandement agrandie de 50% en attaque (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "louen", "name": "Louen Leoncoeur", "qty": 1, "note": "Le meilleur duelliste chevaleresque du jeu — The Blessing of the Lady (seigneur) lui accorde +15% de résistance aux dégâts tant que son commandement n'est pas brisé, dévastateur contre Chaos/Chaos Dwarfs/Morts-Vivants/Peaux-Vertes, et son aura de commandement s'étend de +50% dès qu'il attaque (faction)"},
+      "heroes": [
+        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Soutien magique (Lore of Life/Heavens/Beasts selon le choix) pour appuyer la charge"},
+        {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Renfort de mêlée bon marché en complément de Louen"}
+      ],
+      "army": [
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "Le cœur de cette armée, qui profite aussi des bonus anti-Chaos/Undead/Greenskins de Louen (seigneur)"},
+        {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Knights of the Realm, également couverte par les bonus anti-Chaos/Undead/Greenskins de Louen (seigneur)"},
+        {"icon": "grailKnights", "name": "Grail Knights", "qty": 4, "note": "L'élite de la cavalerie bretonnienne — profite pleinement des bonus de commandement et d'attaque de Louen contre les factions maudites (seigneur)"},
+        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 3, "note": "Cavalerie de charge rapide pour ouvrir les brèches avant l'assaut principal"},
+        {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Cavalerie volante pour chasser les tireurs isolés et frapper les flancs"},
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Soutien d'artillerie à distance pour préparer la charge"}
+      ],
+      "magic": "La Damsel complète l'arsenal offensif de Louen, qui n'est pas lui-même un lanceur de sorts mais un pur duelliste monté.",
+      "note": "Privilégie les affrontements contre le Chaos, les Chaos Dwarfs, les Morts-Vivants ou les Peaux-Vertes pour profiter pleinement des bonus de Louen (seigneur). Le +10% de portée de déplacement (faction) accélère les manœuvres sur la carte de campagne, et l'aura de commandement +50% en attaque (faction) stabilise le moral de toute l'armée pendant l'offensive — garde ses Vœux Chevaleresques toujours actifs dès le début de campagne."
+    }
+  },
+  {
+    "id": "repanse",
+    "numeral": "II",
+    "name": "Repanse de Lyonesse",
+    "epithet": "La Bergère Élue",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Repanse_de_Lyonesse",
+    "faction": "Chevaliers de Lyonesse",
+    "seal": "repanse",
+    "portraitImage": "assets/portraits/repanse.png",
+    "lore": "<p>Née en 1990 CI, Repanse grandit en humble et pieuse bergère de Lyonesse. En 2007 CI, une horde du Chaos envahit la région et assiégea Couronne, tuant le Roi Louis le Brave en pleine défense de sa cité. Les pillards se répandirent alors sur les terres, brûlant et détruisant tout sur leur passage. Au cœur des ruines fumantes de son propre village, Repanse vit apparaître la Dame du Lac, qui lui ordonna de délivrer la terre de ces envahisseurs.</p>\n      <p>Elle revêtit l'armure d'un chevalier tombé, saisit les rênes d'un destrier terrifié, brisa le reliquaire de la Chapelle du Graal de son village pour s'emparer de son épée ancestrale, et arracha une tapisserie ornée de la Fleur de Lys pour en faire bannière. Ainsi partit-elle rallier les Chevaliers démoralisés de Lyonesse. Ce jour-là, Couronne fut sauvée et l'ennemi refoulé jusqu'à la mer. En reconnaissance, le Roi Louis le Jeune lui accorda non seulement tous les honneurs de la chevalerie, mais aussi le duché de Lyonesse.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Contrôle : <strong>+3</strong> (toutes les provinces)</div>\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Héros intégrés à l'armée</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+8</strong> pour les Questing Knights</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-80</strong> avec les Vampire Counts, Vampire Coast et Tomb Kings</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Defenders of the Fleur de Lis (Knights Errant)</div>\n        <div class=\"attr-item\">Régiment favori : immunisé à la Fatigue et à la Psychologie pour les Defenders of the Fleur de Lis (Knights Errant)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Résistance physique : <strong>5%</strong> pour toutes les unités Peasant</div>\n        <div class=\"attr-item\">Commandement : <strong>+5</strong> pour toutes les unités Peasant</div>\n        <div class=\"attr-item\">Capacité active <strong>\"Halo of Maidenly Wrath\"</strong> — explosion infligeant <strong>12</strong> dégâts sur <strong>15m</strong> de rayon (n'affecte pas les troupes alliées, faible contre les gros gabarits) et appliquant Aveuglement (<strong>-24</strong> défense en mêlée, <strong>-24</strong> attaque en mêlée, <strong>-30</strong> précision pendant 10s) au contact ; rechargement <strong>120s</strong></div>\n        <div class=\"attr-item\">Attribut : <strong>Perfect Vigour</strong> — ne perd jamais de vigueur, même lors des actions les plus épuisantes</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Repanse de Lyonesse).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Repanse : un cœur de troupes Peasant bien plus résistant (+5% résistance physique, +5 commandement, seigneur) et des Héros deux fois moins chers à entretenir (-50%, faction), avec Henri le Massif — héros légendaire unique offert dès le départ — en fer de lance anti-monstres, complété par des Questing Knights et Knights Errant taillés pour l'endurance (+8 défense en mêlée, immunité Fatigue/Psychologie, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "repanse", "name": "Repanse de Lyonesse", "qty": 1, "note": "Ancienne bergère devenue championne du peuple — son Halo of Maidenly Wrath (seigneur) aveugle les ennemis à son contact (-24/-24/-30 défense/attaque/précision pendant 10s) sans jamais toucher ses propres troupes, et sa Perfect Vigour (seigneur) lui permet d'enchaîner charges et manœuvres sans jamais se fatiguer ; ses -80 de relations diplomatiques avec Vampire Counts/Vampire Coast/Tomb Kings (faction) garantissent une guerre quasi permanente contre les Morts-Vivants"},
+      "heroes": [
+        {"icon": "henri", "name": "Henri le Massif (Legendary Hero)", "qty": 1, "note": "Paladin héros légendaire unique, offert gratuitement dès le départ de campagne avec Repanse. Son trait \"There Can Be Only One\" accorde +4 Chevalerie/tour, +10 attaque en mêlée et +10 bonus de charge, avec une spécialisation dévastatrice contre les gros gabarits (monstres, chars) ; monté sur Hippogryph plutôt que Pegasus comme les autres Paladins"},
+        {"icon": "damsel", "name": "Damsel", "qty": 2, "note": "Soutien magique pour appuyer le cœur de troupes Peasant — deux fois moins chères à entretenir grâce au -50% pour les Héros intégrés (faction)"}
+      ],
+      "army": [
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 5, "note": "+5% de résistance physique et +5 de commandement grâce à Repanse (seigneur) — ligne de tenue bien plus fiable que la normale"},
+        {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 5, "note": "Même bonus Peasant (seigneur) — anti-cavalerie fiable en première ligne"},
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance, également renforcé par les bonus Peasant de Repanse (seigneur)"},
+        {"icon": "questingKnights", "name": "Questing Knights", "qty": 1, "note": "+8 de défense en mêlée (faction) — cavalerie d'élite bien plus difficile à percer que la normale"},
+        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 1, "note": "Cavalerie légère de charge"},
+        {"icon": "defendersOfTheFleurDeLis", "name": "Defenders of the Fleur de Lis (Knights Errant)", "qty": 2, "note": "Régiment favori : +1 capacité et immunité à la Fatigue/Psychologie (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Knights Errant, increvable à l'endurance"}
+      ],
+      "magic": "Les Damsels couvrent les besoins de soin et de buffs pendant que Repanse et Henri le Massif combattent au contact, épée de Lyonesse et lance en main.",
+      "note": "Cette armée mise sur la quantité et la fiabilité des troupes Peasant (seigneur) plutôt que sur l'élite chevaleresque classique, tout en gardant une pointe de cavalerie increvable (Questing Knights/Knights Errant, faction). Henri le Massif n'est pas optionnel : c'est un héros légendaire unique gratuit dès le début de campagne, spécialisé contre les monstres et gros gabarits — ne pars jamais sans lui. Le contrôle +3 dans toutes les provinces (faction) stabilise l'arrière tandis que les -80 de relations diplomatiques avec les factions mortes-vivantes orientent naturellement cette campagne vers leur éradication."
+    }
+  },
+  {
+    "id": "fayEnchantress",
+    "numeral": "III",
+    "name": "La Fée Enchanteresse",
+    "epithet": "La Voix de la Dame",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Fay_Enchantress",
+    "faction": "Carcassonne",
+    "seal": "fayEnchantress",
+    "portraitImage": "assets/portraits/fayEnchantress.png",
+    "lore": "<p>La Dame du Lac est la principale divinité bretonnienne, incarnation de l'esprit pur, noble et courageux pour lequel le royaume est renommé. Sa représentante terrestre, la Fée Enchanteresse, veille sur la Bretonnie depuis sa tour de Carcassonne, et c'est sur ses sages conseils que le Roi Louen s'appuie. Lors des crises dynastiques, l'Enchanteresse a même le pouvoir de désigner le prochain souverain parmi les Ducs — et a déjà, par le passé, dépouillé un tyran de son trône.</p>\n      <p>Bien qu'incontestablement ancienne — certains disent millénaire —, elle apparaît à tous sous les traits d'une jeune femme d'une grande beauté, aussitôt réincarnée dès que son enveloppe charnelle s'épuise. Servie par ses fidèles Chevaliers du Graal jurés de protéger sa personne, ainsi que par les Damoiselles et Prophétesses de la Dame, elle n'hésite pas, aux heures de péril mortel, à chevaucher elle-même en tête de ses armées — usant de sa magie pour protéger les forces bretonniennes ou terrasser l'ennemi, parfois d'un seul regard empli de fureur.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Économie Peasant : <strong>+5</strong> paysans disponibles pour la faction</div>\n        <div class=\"attr-item\">Taux de réplétion des pertes : <strong>+15%</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Holy Wardens of La Maisontaal (Battle Pilgrims)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Capacité passive : <strong>\"The Blessing of the Lady\"</strong> — Ward Save (1 utilisation) accordant <strong>+15%</strong> de résistance aux dégâts tant que le commandement n'est pas brisé, durée illimitée</div>\n        <div class=\"attr-item\">Attribut : provoque la peur — effraie toutes les unités ennemies à proximité (réduisant leur commandement), tout en étant elle-même immunisée à la peur ; les pénalités de peur ne se cumulent pas</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (La Fée Enchanteresse).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de la Fée Enchanteresse : une garde de Grail Guardians et de Battle Pilgrims (régiment favori, +1 capacité, faction) autour d'une lanceuse de sorts increvable qui provoque la peur au contact, avec un flux de pertes reconstitué 15% plus vite (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "fayEnchantress", "name": "La Fée Enchanteresse", "qty": 1, "note": "Lanceuse de sorts redoutable (Lore of Life) et protégée par The Blessing of the Lady (seigneur, +15% de résistance aux dégâts tant que son commandement tient) ; son attribut de peur (seigneur) effraie et affaiblit le commandement de toutes les unités ennemies à proximité, sans jamais l'affecter elle-même"},
+      "heroes": [
+        {"icon": "damsel", "name": "Damsel (Vie)", "qty": 2, "note": "Renfort de soin et de buffs en écho aux sorts de la Fée Enchanteresse"}
+      ],
+      "army": [
+        {"icon": "grailGuardians", "name": "Grail Guardians", "qty": 6, "note": "Garde d'élite historiquement associée à la Fée Enchanteresse — mur de protection autour de la lanceuse de sorts"},
+        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 2, "note": "Infanterie fanatique bon marché en soutien de la ligne"},
+        {"icon": "holyWardensOfLaMaisontaal", "name": "Holy Wardens of La Maisontaal (Battle Pilgrims)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Battle Pilgrims"},
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 4, "note": "Soutien à distance classique, profite aussi de l'Économie Peasant renforcée (faction)"},
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 3, "note": "Artillerie de zone pour préparer le terrain avant l'engagement"}
+      ],
+      "magic": "La Fée Enchanteresse maîtrise la Lore of Life (Earth Blood, Shield of Thorns, Flesh to Stone, Regrowth) : soins massifs et buffs défensifs, complétés par les Damsels pour maintenir la ligne en vie indéfiniment.",
+      "note": "Garde la Fée Enchanteresse derrière les Grail Guardians : son attribut de peur et sa magie de soutien font le plus gros du travail sans qu'elle ait besoin de s'exposer au contact. Le +15% de réplétion des pertes et l'Économie Peasant renforcée (faction) permettent de reconstituer cette armée bien plus vite qu'à l'accoutumée entre deux batailles."
+    }
+  },
+  {
+    "id": "alberic",
+    "numeral": "IV",
+    "name": "Alberic de Bordeleaux",
+    "epithet": "Le Duc des Tempêtes",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Alberic_de_Bordeleaux",
+    "faction": "Bordeleaux Errant",
+    "seal": "alberic",
+    "portraitImage": "assets/portraits/alberic.png",
+    "lore": "<p>Sur la tunique d'Alberic s'affiche fièrement le blason de Bordeleaux : le Trident à trois pointes de Manann, Dieu des Vagues et des Tempêtes. Tel Manann, Alberic de Bordeleaux est aussi tumultueux que la mer, aussi implacable que la marée. Strict et courageux, il descend d'une longue lignée de puissants Ducs qui ont mené Bordeleaux, avec la patience inlassable de l'océan, vers la sécurité et la prospérité — et Alberic entend ne pas faire exception.</p>\n      <p>Comme les vagues qui se brisent sans fin sur le rivage bretonnien, Alberic ne cesse jamais d'avancer. Beaucoup ne perçoivent pas ses progrès, mais ceux-ci s'accomplissent lentement, avec l'inévitabilité même de la nature.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Rang de recrutement : <strong>+2</strong> pour les unités Bretonnian Knight (tous les personnages)</div>\n        <div class=\"attr-item\">Durée de recrutement local : <strong>-1 tour</strong> pour les unités Bretonnian Knight (minimum 1)</div>\n        <div class=\"attr-item\">Revenu des ports : <strong>+50%</strong></div>\n        <div class=\"attr-item\">Immunisé à l'attrition de Haute Mer, des Récifs et des Tempêtes (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Beastslayers of Bastonne (Foot Squires)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Permet les attaques navales contre les colonies portuaires (armée du seigneur)</div>\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong> en mer</div>\n        <div class=\"attr-item\">Attribut : <strong>Charge Glorieuse</strong> pour les Knights of the Realm (armée du seigneur) — en chargeant une unité ennemie, la durée du Bonus de Charge est doublée, et l'unité ennemie subit une pénalité de commandement identique à celle d'une attaque de flanc</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+5</strong> pour les Peasant Mob, Men-at-Arms et Spearmen-at-Arms (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+10</strong> pour les Knights of the Realm (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Alberic de Bordeleaux).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Alberic : un mur défensif quasiment infranchissable (+5/+10 de défense en mêlée selon les unités, seigneur) épaulé par des Knights of the Realm en Charge Glorieuse (seigneur) recrutés plus vite et déjà expérimentés (+2 rang, -1 tour, faction), capable en plus de mener des sièges navals contre les colonies portuaires",
+      "totalSlots": 20,
+      "lord": {"icon": "alberic", "name": "Alberic de Bordeleaux", "qty": 1, "note": "Duc défensif taillé pour l'attrition — débloque les attaques navales contre les colonies portuaires (seigneur), se déplace 10% plus vite en mer (seigneur) et rend toute son infanterie de base bien plus difficile à percer"},
+      "heroes": [
+        {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Renfort de mêlée en complément d'Alberic"},
+        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Soutien magique pour appuyer la ligne défensive"}
+      ],
+      "army": [
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 5, "note": "+10 de défense en mêlée et Charge Glorieuse (seigneur) — Bonus de Charge doublé et pénalité de commandement de flanc infligée à l'ennemi chargé, même de front —, plus +2 rang de recrutement et -1 tour de recrutement local (faction) : cavalerie lourde quasiment impossible à percer, déjà vétérane à la sortie de caserne"},
+        {"icon": "footSquires", "name": "Foot Squires", "qty": 1, "note": "Infanterie de squires bon marché en soutien de la ligne"},
+        {"icon": "beastslayersOfBastonne", "name": "Beastslayers of Bastonne (Foot Squires)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Foot Squires"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 4, "note": "+5 de défense en mêlée (seigneur) — ligne de tenue bon marché et fiable"},
+        {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 3, "note": "Même bonus de +5 défense en mêlée (seigneur), avec en prime la résistance anti-cavalerie de la lance"},
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance classique derrière le mur défensif"}
+      ],
+      "magic": "La Damsel complète l'arsenal défensif d'Alberic, qui n'est pas lui-même un lanceur de sorts mais un pur combattant d'attrition.",
+      "note": "Cette armée est pensée pour tenir une ligne quasiment inébranlable près des côtes, où la capacité d'Alberic à attaquer les colonies portuaires depuis la mer (seigneur) prend tout son sens. Le +50% de revenu des ports et l'immunité totale aux attritions maritimes (faction) financent et sécurisent des campagnes prolongées le long du littoral."
+    }
+  }
+]

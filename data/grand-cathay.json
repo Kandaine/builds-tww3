@@ -1,0 +1,128 @@
+[
+  {
+    "id": "miaoying",
+    "numeral": "I",
+    "name": "Miao Ying",
+    "epithet": "La Dragonne de la Tempête",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Miao_Ying,_the_Storm_Dragon",
+    "faction": "The Northern Provinces",
+    "seal": "miaoying",
+    "portraitImage": "assets/portraits/miaoying.png",
+    "lore": "<p>Enfant favorite de l'Empereur Céleste, la Dragonne de la Tempête règne sur le Nord de Cathay et commande les armées du Grand Bastion. Froide et distante, elle occupe ce poste depuis des siècles, depuis que sa défense lui fut confiée par le Dragon Céleste. Malgré sa puissance, la tâche est immense : ses armées sont presque constamment en guerre contre les hordes qui se pressent aux portes du Bastion.</p>\n      <p>Miao Ying peut se manifester sous une forme humaine ou reprendre son apparence de Dragon selon sa volonté, et peut même se transformer en plein combat. Considérée par beaucoup comme la préférée de son père parmi tous ses frères et sœurs, elle se tient souvent à l'écart d'eux, entourée d'une aura de majesté à laquelle même les plus grands héros peinent à résister.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Les technologies des Forges de Guerre s'obtiennent en améliorant le bâtiment de peuplement principal de Nan-Gao</div>\n        <div class=\"attr-item\">Par le biais d'événements, permet de vassaliser les Imperial Wardens et d'améliorer rapidement le Grand Bastion</div>\n        <div class=\"attr-item\">Réserves défensives : <strong>+300</strong> (toutes les régions)</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-20%</strong> pour les bâtiments du Grand Bastion (toute la faction)</div>\n        <div class=\"attr-item\">Corruption : <strong>-2</strong></div>\n        <div class=\"attr-item\">Commandement : <strong>+10</strong> contre les Warriors of Chaos, Daemons of Chaos, Chaos Dwarfs et Norsca</div>\n        <div class=\"attr-item\">Munitions : <strong>+20%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori Righteous Lances of Wei-Jin (Longma) : capacité \"Encourage\" (bonus de commandement aux alliés proches, le plus élevé des deux bonus s'applique si l'unité est aussi dans l'aura du seigneur) et Immunisé à la Fatigue</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les unités d'infanterie de tir (armée du seigneur)</div>\n        <div class=\"attr-item\">Rang de recrue : <strong>+2</strong> pour les Iron Hail Gunners, Crane Gunners et Nan-Gau Grenadiers (armée du seigneur)</div>\n        <div class=\"attr-item\">Puissance de tir : <strong>+10%</strong> pour les Iron Hail Gunners, Crane Gunners et Nan-Gau Grenadiers (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Miao Ying) + capture de la capacité \"Encourage\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Miao Ying : une ligne de tir démesurée grâce à l'entretien à moitié prix de toute l'infanterie de tir (seigneur), avec ses tireurs d'élite (Iron Hail Gunners, Crane Gunners, Nan-Gau Grenadiers) recrutés à rang +2 et +10% de puissance de tir (seigneur), protégée par des Longma exploitant le régiment favori (Encourage + Immunité à la Fatigue, faction) et un commandement renforcé contre les forces du Chaos (+10, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "miaoying", "name": "Miao Ying", "qty": 1, "note": "Dragonne de la Tempête, défenseuse du Grand Bastion — ses bonus de recrutement et de puissance de tir (seigneur) transforment ses unités de poudre à canon en tireurs d'élite dès leur recrutement, tandis que le +10 de commandement contre les forces du Chaos (faction) sécurise la ligne de front au Grand Bastion"},
+      "heroes": [
+        {"icon": "astromancer", "name": "Astromancer", "qty": 1, "note": "Renfort de sorts (Lore of Heavens/Yin) et bonus cumulatif de Maîtrise des Vents Élémentaires"},
+        {"icon": "alchemist", "name": "Alchemist", "qty": 1, "note": "Élixirs de soutien et bonus offensifs pour les unités de poudre à canon"}
+      ],
+      "army": [
+        {"icon": "ironHailGunners", "name": "Iron Hail Gunners", "qty": 4, "note": "-50% d'entretien (seigneur), +2 rang de recrue et +10% de puissance de tir (seigneur) — cœur de la ligne de tir d'élite"},
+        {"icon": "craneGunners", "name": "Crane Gunners", "qty": 4, "note": "Même triple bonus (seigneur) — tir de précision à longue portée"},
+        {"icon": "nanGauGrenadiers", "name": "Nan-Gau Grenadiers", "qty": 3, "note": "Même triple bonus (seigneur) — grenades à effet de zone dévastatrices"},
+        {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité Encourage et Immunité à la Fatigue (faction) — variante d'élite unique des Great Longma Riders"},
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "Cavalerie rapide qui protège les flancs de la ligne de tir sans jamais se fatiguer en chargeant"},
+        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 2, "note": "Ligne de mêlée d'élite pour protéger la ligne de tir"},
+        {"icon": "skyJunk", "name": "Sky-junk", "qty": 1, "note": "Bombardier volant pour appuyer la ligne de tir et chasser les tireurs isolés adverses"}
+      ],
+      "magic": "Miao Ying maîtrise Yin et une partie de Life (Earth Blood, Flesh to Stone, Regrowth) — rare capacité à soigner ses unités, précieuse pour préserver la ligne de tir sous le feu ennemi.",
+      "note": "Cette armée transforme l'entretien réduit des unités de tir (seigneur) en une ligne de feu massive et bon marché, tandis que les bonus de rang et de puissance sur les trois unités de poudre à canon d'élite (seigneur) en font une force de choix contre l'infanterie ennemie. Les +300 réserves défensives et -20% de coût de construction pour le Grand Bastion (faction) accélèrent la fortification de la frontière nord, et les +20% de munitions (faction) prolongent l'endurance de la ligne de tir en bataille prolongée."
+    }
+  },
+  {
+    "id": "zhaoming",
+    "numeral": "II",
+    "name": "Zhao Ming",
+    "epithet": "Le Dragon de Fer",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Zhao_Ming,_the_Iron_Dragon",
+    "faction": "The Western Provinces",
+    "seal": "zhaoming",
+    "portraitImage": "assets/portraits/zhaoming.png",
+    "lore": "<p>Guerrier endurci des frontières, le Dragon de Fer défend la lisière occidentale de l'empire et maintient l'ordre parmi les clans du désert. Alchimiste accompli, il façonne à partir des minerais étranges du Désert de la Pierre-de-Sorcellerie des armes uniques pour ses armées. Les cabales de Sorciers du Métal et du Feu sont accueillies dans son royaume, au grand dam du Dragon de Jade, qui juge dangereux pour l'empire d'encourager des organisations sorcières hors de la Cour Céleste.</p>\n      <p>Ses frères et sœurs ont par le passé questionné la santé mentale du Dragon de Fer, craignant que sa proximité avec la Grande Gueule n'ait empoisonné son esprit. Rien ne le prouve formellement, mais Zhao Ming est sujet à d'étranges humeurs et à une imprévisibilité qui, jusqu'ici, n'a jamais menacé l'empire. Le Dragon Céleste, lui, n'a jamais douté de la dévotion de son fils ni de son droit à régner sur la partie occidentale de l'empire.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité de cargaison maximale des Caravanes : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Attaque et Défense en mêlée : <strong>+10</strong> pour toutes les unités Ogre Kingdoms (mercenaires compris)</div>\n        <div class=\"attr-item\">Rang de recrue des héros : <strong>+5</strong> pour les Alchemists</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour toutes les unités Ogre Kingdoms (mercenaires compris)</div>\n        <div class=\"attr-item\">Armure : <strong>+15</strong> pour les unités de mêlée</div>\n        <div class=\"attr-item\">Régiment favori The Dune Dragons (Celestial Dragon Guard) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Nombre maximum de Caravanes actives : <strong>+1</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités de mêlée (armée du seigneur)</div>\n        <div class=\"attr-item\">Chance de butin d'objet magique en bataille : <strong>+100%</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Zhao Ming).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Zhao Ming : des mercenaires Ogre Kingdoms surpuissants (+10 attaque/défense en mêlée, +15 armure faction, -25% d'entretien faction cumulé avec -25% d'entretien mêlée du seigneur, soit -50% au total) épaulés par des Celestial Dragon Guard profitant du régiment favori (+1 capacité, faction) et d'Alchemists recrutés à rang +5 (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "zhaoming", "name": "Zhao Ming", "qty": 1, "note": "Le Dragon de Fer, maître de l'alchimie et duelliste redoutable — son +1 de Caravane active et +100% de chance de butin (seigneur) enrichissent considérablement la campagne en plus de son impact sur le champ de bataille"},
+      "heroes": [
+        {"icon": "alchemist", "name": "Alchemist", "qty": 2, "note": "Recrutés directement à rang +5 (faction) — écho au thème alchimique de Zhao Ming, élixirs de soutien et armes affûtées pour toute l'armée"}
+      ],
+      "army": [
+        {"icon": "ironguts", "name": "Ironguts", "qty": 3, "note": "+10 attaque/défense en mêlée et +15 armure (faction), -25% d'entretien Ogre Kingdoms cumulé avec -25% d'entretien mêlée du seigneur (-50% au total) — mercenaires lourds increvables"},
+        {"icon": "ogreBulls", "name": "Ogre Bulls", "qty": 2, "note": "Même cumul de bonus (faction + seigneur) — masse de mêlée mercenaire bon marché"},
+        {"icon": "maneaters", "name": "Maneaters", "qty": 2, "note": "Même cumul de bonus (faction + seigneur) — mercenaires d'élite polyvalents"},
+        {"icon": "theDuneDragons", "name": "The Dune Dragons (Celestial Dragon Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +15 armure (faction) et -25% d'entretien mêlée (seigneur) — variante d'élite des Celestial Dragon Guard, en première ligne"},
+        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 1, "note": "+15 armure (faction) et -25% d'entretien mêlée (seigneur) — élite d'infanterie lourde en première ligne"},
+        {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 3, "note": "+15 armure (faction) et -25% d'entretien mêlée (seigneur) — anti-cavalerie et anti-monstre fiable"},
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "Cavalerie rapide pour flanquer et pourchasser les tireurs adverses"},
+        {"icon": "fireRainRocketBattery", "name": "Fire Rain Rocket Battery", "qty": 2, "note": "Artillerie à zone d'effet pour briser les formations groupées avant l'impact"}
+      ],
+      "magic": "Zhao Ming maîtrise Metal et Yang (Plague of Rust, Dragon's Breath, Final Transmutation) — sa magie affaiblit les armures ennemies, en parfaite synergie avec un mur de mêlée lourd.",
+      "note": "Le cumul des -25% d'entretien Ogre Kingdoms (faction) et -25% d'entretien mêlée (seigneur) rend Ironguts, Ogre Bulls et Maneaters quasiment gratuits à entretenir malgré leur puissance brute, tandis que le +15 d'armure faction-wide et le +10 attaque/défense en mêlée sur les Ogres en font un mur de front dévastateur. Zhao Ming, duelliste alchimiste increvable, peut basculer en forme de Dragon pour porter le coup de grâce."
+    }
+  },
+  {
+    "id": "yuanbo",
+    "numeral": "III",
+    "name": "Yuan Bo",
+    "epithet": "Le Dragon de Jade",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Yuan_Bo,_the_Jade_Dragon",
+    "faction": "The Jade Court",
+    "seal": "yuanbo",
+    "portraitImage": "assets/portraits/yuanbo.png",
+    "lore": "<p>Parmi ses frères et sœurs, le Dragon de Jade est reconnu comme le plus habile manipulateur des Vents de Magie. C'est pourquoi il dirige les Astromanciens de la Cour Céleste, les seuls Sorciers autorisés du royaume. Certains de sa famille le considèrent comme un simple bureaucrate, tant il exécute ses tâches administratives avec diligence, mais son pouvoir s'étend bien plus loin qu'ils ne l'imaginent : derrière les gouverneurs et les fonctionnaires se cache un vaste réseau d'espions et d'agents à son service, lui permettant de traquer, d'identifier et d'éliminer rapidement toute menace envers la sécurité des provinces.</p>\n      <p>Si les autres connaissaient ses méthodes, ils les jugeraient sans doute dures, voire extrêmes. Mais l'harmonie du royaume prime sur les désirs individuels, et une volonté de fer est nécessaire pour éradiquer un mal avant qu'il ne s'enracine et ne se propage.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les régions possédées par des factions avec qui vous avez un accord commercial sont visibles</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec Grand Cathay</div>\n        <div class=\"attr-item\">Taux de recherche : <strong>+5</strong> par capitale de province</div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Astromancers</div>\n        <div class=\"attr-item\">Régiment favori The Empress Crowmen (Onyx Crowmen) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité de réserve des Vents de Magie : <strong>+25</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-30%</strong> pour les Onyx Crowmen, Celestial Lion, Great Moon Bird, Jade Lion et Jet Lion (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Yuan Bo).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Yuan Bo : une ménagerie de monstres et de créatures d'élite à -30% d'entretien (seigneur), avec des Onyx Crowmen profitant du régiment favori (+1 capacité, faction), et jusqu'à 3 Astromancers grâce au +2 de capacité de héros (faction) pour maximiser la Maîtrise des Vents Élémentaires en plus de la réserve de magie agrandie (+25, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "yuanbo", "name": "Yuan Bo", "qty": 1, "note": "Administrateur du royaume et exécuteur de la volonté impériale — son +25 de réserve de Vents de Magie (seigneur) lui permet d'enchaîner sorts et capacités sans jamais s'épuiser"},
+      "heroes": [
+        {"icon": "astromancer", "name": "Astromancer", "qty": 3, "note": "Capacité de héros +2 pour ce type (faction) permet d'en aligner trois — avec Yuan Bo, 4 lanceurs de sorts portent la Maîtrise des Vents Élémentaires à +45% de puissance de sorts"}
+      ],
+      "army": [
+        {"icon": "jadeLion", "name": "Jade Lion", "qty": 3, "note": "-30% d'entretien (seigneur) — monstre félin rapide et mordant"},
+        {"icon": "celestialLion", "name": "Celestial Lion", "qty": 2, "note": "Même bonus d'entretien (seigneur) — monstre volant pour frapper les flancs et l'arrière"},
+        {"icon": "theEmpressCrowmen", "name": "The Empress Crowmen (Onyx Crowmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), en plus du -30% d'entretien habituel (seigneur) — variante d'élite des Onyx Crowmen, infanterie d'élite du Jade Court"},
+        {"icon": "onyxCrowmen", "name": "Onyx Crowmen", "qty": 2, "note": "-30% d'entretien (seigneur) — infanterie d'élite du Jade Court"},
+        {"icon": "greatMoonBird", "name": "Great Moon Bird", "qty": 1, "note": "Même bonus d'entretien (seigneur) — monstre volant de soutien et de harcèlement"},
+        {"icon": "jadeWarriors", "name": "Jade Warriors", "qty": 2, "note": "Ligne de tenue standard pour ancrer le front pendant que la ménagerie flanque"},
+        {"icon": "peasantLongSpearmen", "name": "Peasant Long Spearmen", "qty": 2, "note": "Anti-charge bon marché en soutien"},
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "Cavalerie rapide pour exploiter les brèches ouvertes par la ménagerie"}
+      ],
+      "magic": "Yuan Bo maîtrise Yin et Light (Shem's Burning Gaze, Net of Amyntok, Comet of Casandora) — avec trois Astromancers, sa Maîtrise des Vents Élémentaires atteint +45% de puissance de sorts, rendant Comet of Casandora dévastateur.",
+      "note": "Le -30% d'entretien sur cinq unités de monstres et créatures d'élite (seigneur), renforcé par le régiment favori des Onyx Crowmen (+1 capacité, faction), permet de constituer une ménagerie coûteuse à moindre prix, tandis que la réserve de magie agrandie (seigneur) et le +2 de capacité de héros Astromancer (faction) soutiennent un style de jeu très offensif en sorts."
+    }
+  },
+  {
+    "id": "bhashiva",
+    "numeral": "IV",
+    "name": "Bhashiva",
+    "epithet": "Le Tigre Blanc",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Bhashiva,_the_White_Tiger",
+    "faction": "Claws of the White Tiger",
+    "seal": "bhashiva",
+    "portraitImage": "assets/portraits/bhashiva.png",
+    "lore": "<p>Bhashiva est la Tigresse du Désert, la dernière d'une longue lignée de Tigres Blancs ayant dirigé les Guerriers-Tigres de Grand Cathay. L'une des Seigneurs les plus redoutées de Shang-Yang, elle est révérée parmi les siens comme la plus grande combattante et meneuse à avoir émergé de son peuple depuis des générations. Accomplissant devoir et destinée, elle perpétue la tradition du premier Tigre Blanc, qui jadis guida les tribus déchues des Hauts d'Ind vers l'ouest, par-delà les Montagnes du Ciel, vers un dessein plus grand.</p>\n      <p>Au terme de ce voyage, dans le désert reculé de la frontière de Cathay, elle prêta allégeance à la grande puissance des Provinces Occidentales : le Dragon de Fer, Zhao Ming. Comme il en fut pour les générations précédentes, Bhashiva, dernière en date à renouveler ce serment, mène les féroces guerriers de la Cour du Tigre au service de leurs maîtres Dragons.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Lord of Shang-Yang : peut maintenir un nombre limité de Seigneurs et d'unités cathayanes</div>\n        <div class=\"attr-item\">Tiger Court : améliore l'infrastructure des colonies et les unités Tiger Warrior</div>\n        <div class=\"attr-item\">Armies of Shang-Yang : donne accès aux unités cathayanes et aux améliorations d'armée</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+60</strong> avec The Western Provinces</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour toutes les unités Tiger Warrior (toutes les armées)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Taux de remplacement des pertes : <strong>+10%</strong> pour les unités Tiger Warrior (armée du seigneur)</div>\n        <div class=\"attr-item\">Attaque et Défense en mêlée : <strong>+8</strong> pendant les embuscades (armée du seigneur)</div>\n        <div class=\"attr-item\">Vitesse : <strong>+10%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité passive \"White Tiger\" (Augment de zone, 55m, durée illimitée) — <strong>Commandement : +8</strong>, <strong>Attaque en mêlée : +5</strong> pour toutes les unités Tiger Warrior alliées à portée</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Bhashiva) + capture de la capacité \"White Tiger\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Bhashiva : une meute quasi mono-Tiger Warrior, moins chère à entretenir (-15%, faction), rapide (+10% de vitesse, seigneur) et increvable en embuscade (+8 attaque/défense en mêlée, +10% de remplacement des pertes, seigneur), le tout amplifié par l'aura White Tiger (+8 commandement, +5 attaque en mêlée à 55m, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "bhashiva", "name": "Bhashiva", "qty": 1, "note": "La Tigresse du Désert, sauveuse prophétisée de son peuple — son aura White Tiger (+8 commandement, +5 attaque en mêlée à 55m, seigneur) et ses bonus d'embuscade (+10% vitesse, +8 attaque/défense, seigneur) en font une experte des frappes surprises"},
+      "heroes": [
+        {"icon": "clawspeaker", "name": "Clawspeaker (Beasts)", "qty": 1, "note": "Écho au thème bestial des Guerriers-Tigres — soutien magique et buffs de mêlée"},
+        {"icon": "astromancer", "name": "Astromancer", "qty": 1, "note": "Renfort de sorts pour appuyer les charges d'embuscade"}
+      ],
+      "army": [
+        {"icon": "ironClawTigerWarriors", "name": "Iron Claw Tiger Warriors", "qty": 5, "note": "-15% d'entretien (faction), +10% de remplacement des pertes et +8 attaque/défense en embuscade (seigneur), +8 commandement et +5 attaque en mêlée sous l'aura White Tiger (seigneur) — élite de mêlée lourde des Guerriers-Tigres"},
+        {"icon": "tigerWarriors", "name": "Tiger Warriors", "qty": 5, "note": "Même cumul de bonus (faction + seigneur + aura White Tiger) — infanterie rapide à double hache"},
+        {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 2, "note": "Anti-cavalerie et anti-monstre pour épauler les Guerriers-Tigres"},
+        {"icon": "jadeWarriorCrossbows", "name": "Jade Warrior Crossbows", "qty": 3, "note": "Soutien à distance pour préparer les charges d'embuscade"},
+        {"icon": "peasantArchers", "name": "Peasant Archers", "qty": 2, "note": "Tir de masse bon marché en complément"}
+      ],
+      "magic": "Bhashiva n'est pas une lanceuse de sorts — sa puissance vient de son agilité féline et de ses capacités d'embuscade, épaulées par l'Astromancer pour le soutien magique.",
+      "note": "Cette armée pousse le thème Tiger Warrior à son maximum : dix unités Iron Claw Tiger Warriors et Tiger Warriors cumulent l'entretien réduit (faction), les bonus d'embuscade et de remplacement des pertes (seigneur), et l'aura permanente White Tiger (+8 commandement, +5 attaque en mêlée à 55m, seigneur) qui ne demande qu'à rester groupée pour frapper d'une seule masse increvable."
+    }
+  }
+]

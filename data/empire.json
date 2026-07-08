@@ -1,0 +1,159 @@
+[
+  {
+    "id": "karlFranz",
+    "numeral": "I",
+    "name": "Emperor Karl Franz",
+    "epithet": "L'Empereur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Emperor_Karl_Franz",
+    "faction": "Reikland",
+    "seal": "karlFranz",
+    "portraitImage": "assets/portraits/karlFranz.png",
+    "lore": "<p>L'Empereur est Karl Franz, Prince d'Altdorf et Comte-Électeur de Reikland. Karl Franz est réputé être le plus grand homme d'État que le Vieux Monde ait jamais connu. Il est aussi un génie militaire et un général valeureux. L'Empereur prend fréquemment le commandement personnel de ses soldats, maniant Ghal Maraz, le marteau légendaire de Sigmar, comme le Dieu Guerrier d'antan, terrassant les ennemis de l'Empire à chaque coup.</p>\n      <p>Karl Franz chevauche souvent au combat sur le dos de Deathclaw, réputé être le plus puissant griffon impérial ayant jamais vécu. Un lien puissant unit la bête et son maître, forgé au fil d'innombrables batailles et aventures. Lors de la Bataille de Blood Keep, Deathclaw resta trois heures durant au-dessus du corps blessé de l'Empereur, abattant quiconque s'approchait, jusqu'à ce que les Reiksguard puissent se frayer un chemin jusqu'à leur seigneur tombé.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (Reikland)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès aux Elector Counts, permettant le recrutement de puissantes unités State Troop et d'ancillaires</div>\n        <div class=\"attr-item\">Immunisé aux pénalités diplomatiques de transgression en territoire de l'Empire</div>\n        <div class=\"attr-item\">Points d'allégeance gagnés : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+10%</strong> (toutes armées)</div>\n        <div class=\"attr-item\">Croissance : <strong>+5</strong> par faction alliée</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour Zintler's Reiksguard (Reiksguard)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Peut se réapprovisionner en territoire neutre (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités Elector Count State Troop (armée du seigneur)</div>\n        <div class=\"attr-item\">Puissance des armes et dégâts de tir : <strong>+5%</strong> supplémentaires par rang d'expérience pour toutes les unités Elector Count State Troops (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Karl Franz).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Karl Franz : un cœur de State Troops classiques à -20% d'entretien et puissance croissante avec l'expérience (seigneur), avec les 2 exemplaires du régiment favori Zintler's Reiksguard permis par la capacité augmentée (faction), épaulé par l'artillerie",
+      "totalSlots": 20,
+      "lord": {"icon": "karlFranz", "name": "Emperor Karl Franz", "qty": 1, "note": "L'Empereur de l'Empire, maniant Ghal Maraz — son -20% d'entretien et son bonus de puissance des armes/tir croissant avec l'expérience pour les State Troops (seigneur) permet d'aligner une infanterie de ligne nombreuse et toujours plus efficace au fil de la campagne"},
+      "heroes": [
+        {"icon": "brightWizard", "name": "Bright Wizard", "qty": 2, "note": "Soutien magique via la Lore of Fire — dégâts de zone et anti-infanterie"}
+      ],
+      "army": [
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "-20% d'entretien (seigneur) — infanterie de ligne anti-grande unité"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 3, "note": "-20% d'entretien (seigneur) — infanterie de ligne polyvalente"},
+        {"icon": "spearmenEmpire", "name": "Spearmen (The Empire)", "qty": 2, "note": "-20% d'entretien (seigneur) — anti-grande unité bon marché"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 3, "note": "-20% d'entretien (seigneur) — tir perforant à distance"},
+        {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 2, "note": "-20% d'entretien (seigneur) — tir de soutien bon marché"},
+        {"icon": "zintlersReiksguard", "name": "Zintler's Reiksguard (Reiksguard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite de la cavalerie lourde de choc, garde personnelle de l'Empereur"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 2, "note": "Artillerie lourde anti-blindage et anti-monstre"}
+      ],
+      "magic": "Karl Franz n'est pas lui-même un lanceur de sorts — sa puissance vient de Ghal Maraz et de ses capacités de commandement, épaulé par des Bright Wizards pour le soutien magique via la Lore of Fire.",
+      "note": "Le -20% d'entretien pour les State Troops (seigneur), combiné au bonus de puissance des armes et de tir croissant avec l'expérience, permet d'aligner un cœur d'infanterie de ligne nombreux qui devient de plus en plus dévastateur au fil des batailles. Les 2 exemplaires du régiment favori Zintler's Reiksguard, permis par la capacité augmentée (faction), apportent une percée de cavalerie lourde d'élite, et les Great Cannons la puissance de feu anti-blindage."
+    }
+  },
+  {
+    "id": "balthasarGelt",
+    "numeral": "II",
+    "name": "Balthasar Gelt",
+    "epithet": "Le Patriarche Suprême",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Balthasar_Gelt",
+    "faction": "The Golden Order",
+    "seal": "balthasarGelt",
+    "portraitImage": "assets/portraits/balthasarGelt.png",
+    "lore": "<p>Les recherches de Balthasar Gelt sur de nouvelles formulations de poudre noire lui valurent même une certaine popularité auprès de l'École des Ingénieurs Impériaux, une organisation qui rejette souvent la magie comme une superstition absurde. Cependant, durant ces études, une explosion accidentelle faillit mettre un terme définitif à sa quête de savoir. Il survécut on ne sait comment, et depuis ce jour, on ne le voit plus jamais sans ses robes métalliques chatoyantes et son masque doré.</p>\n      <p>Certains disent que sous son masque, sa peau serait devenue de l'or pur, d'autres murmurent qu'il serait horriblement défiguré — la vérité n'est connue que de Balthasar lui-même. Une chose est certaine : cet accident n'a fait que renforcer sa volonté de réussir. Après avoir vaincu Thyrus Gormann de l'Ordre Ardent lors d'un duel de magie rituelle, Balthasar devint Patriarche Suprême des Collèges de Magie, remplaçant la longue prééminence du Feu par celle du Métal.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (The Golden Order)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès aux Colleges of Magic, permettant le recrutement de Wizards et des actions de campagne spéciales</div>\n        <div class=\"attr-item\">Réserve de puissance des Vents de Magie : <strong>+5</strong> pour chaque Seigneur ou Héros Wizard dans l'armée (toutes armées)</div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+2</strong> pour les Battle Wizards (faction)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour The Silver Bullets (Handgunners)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Gain d'XP : <strong>+25%</strong> pour tous les lanceurs de sorts (armée du seigneur)</div>\n        <div class=\"attr-item\">Coût en Vents de Magie : <strong>-20%</strong> pour les sorts de la Lore of Metal</div>\n        <div class=\"attr-item\">Armure : <strong>+20</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Balthasar Gelt).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Gelt : toute l'armée profite du +20 d'armure (seigneur), avec les 2 exemplaires du régiment favori The Silver Bullets permis par la capacité augmentée (faction) et des Gold Wizards à +25% de gain d'XP (seigneur) exploitant le -20% de coût pour la Lore of Metal (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "balthasarGelt", "name": "Balthasar Gelt", "qty": 1, "note": "Le Patriarche Suprême des Collèges de Magie — son +20 d'armure pour toute l'armée (seigneur) rend chaque unité bien plus résiliente, tandis que son -20% de coût en Vents de Magie pour la Lore of Metal (seigneur) en fait un lanceur de sorts hors pair"},
+      "heroes": [
+        {"icon": "goldWizard", "name": "Gold Wizard", "qty": 2, "note": "+2 de rang de recrutement (faction), +5 de réserve de Vents de Magie chacun (faction), +25% de gain d'XP en tant que lanceurs de sorts (seigneur) — soutien magique via la Lore of Metal, synergise directement avec la réduction de coût de Gelt"}
+      ],
+      "army": [
+        {"icon": "greatswords", "name": "Greatswords", "qty": 4, "note": "+20 armure (seigneur) — infanterie d'élite à deux mains, cœur de mêlée increvable"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 3, "note": "+20 armure (seigneur) — infanterie de ligne polyvalente"},
+        {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 1, "note": "+20 armure (seigneur) — tir de soutien bon marché"},
+        {"icon": "theSilverBullets", "name": "The Silver Bullets (Handgunners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — +20 armure (seigneur), tir perforant d'élite"},
+        {"icon": "outriders", "name": "Outriders", "qty": 2, "note": "+20 armure (seigneur) — cavalerie légère à tir rapide, harcèlement et anti-artillerie"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 2, "note": "+20 armure (seigneur) — artillerie lourde anti-blindage"},
+        {"icon": "mortars", "name": "Mortars (The Empire)", "qty": 2, "note": "+20 armure (seigneur) — artillerie de zone à tir indirect"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "+20 armure (seigneur) — saturation de zone à longue portée"}
+      ],
+      "magic": "Gelt manie la Lore of Metal (Searing Doom, Plague of Rust, Gehenna's Golden Hounds, Glittering Robe, Final Transmutation, Transmutation of Lead) à coût réduit de 20% (seigneur) — combiné aux Gold Wizards, il peut lancer des sorts avec une fréquence exceptionnelle.",
+      "note": "Le +20 d'armure (seigneur) profite à toute l'armée sans exception, rendant même les tireurs et l'artillerie étonnamment résilients au corps-à-corps. Les 2 exemplaires du régiment favori The Silver Bullets, permis par la capacité augmentée (faction), forment une ligne de tir perforant d'élite. Les Greatswords et Swordsmen tiennent la ligne de mêlée pendant que les Outriders harcèlent et protègent les flancs, et que Great Cannons, Mortars et Helstorm Rocket Battery forment une ligne de feu dévastatrice. Les Gold Wizards, recrutés à rang plus élevé (faction), bénéficiant d'une réserve de Vents de Magie accrue et d'un +25% de gain d'XP (seigneur), exploitent pleinement la réduction de coût de la Lore of Metal (seigneur) pour un déluge de sorts quasi continu."
+    }
+  },
+  {
+    "id": "markusWulfhart",
+    "numeral": "III",
+    "name": "Markus Wulfhart",
+    "epithet": "Le Huntsmarshal",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Markus_Wulfhart",
+    "faction": "The Huntsmarshal's Expedition",
+    "seal": "markusWulfhart",
+    "portraitImage": "assets/portraits/markusWulfhart.png",
+    "lore": "<p>Markus Wulfhart, connu sous le nom de Huntsmarshal, est le chasseur et tueur de monstres le plus accompli du Vieux Monde. Originaire du village de Drakenburg, niché dans les profondes forêts sombres de la province de Middenland, Markus s'est élevé au rang de Capitaine des Éclaireurs de l'Empereur, ainsi que chef de sa propre bande de chasseurs de monstres. Les Chasseurs de Wulfhart, comme ils se surnomment, forment un groupe d'élite hétéroclite de trappeurs, chasseurs, archers et éclaireurs venus des quatre coins de l'Empire.</p>\n      <p>Nulle part ailleurs dans les armées impériales on ne peut trouver un groupe de guerriers aussi divers, originaires d'endroits aussi éloignés que Wissenland, Middenland, Nuln, Altdorf, Averland et Stirland.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (The Huntsmarshal's Expedition)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Roster limité : seules les unités de base sont immédiatement recrutables</div>\n        <div class=\"attr-item\">Les renforts de l'Empire (Emperor's Mandate) apportent des unités puissantes pour épauler les armées</div>\n        <div class=\"attr-item\">Les actions hostiles provoquent des représailles des factions locales, mais renforcent aussi les armées</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+3</strong> pour les Huntsman Generals (faction)</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-40</strong> avec les Lizardmen</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour The White Wolves (Huntsmen)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Archers et Huntsmen (armée du seigneur)</div>\n        <div class=\"attr-item\">Chance de succès d'embuscade : <strong>+50%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Chance de défense d'embuscade : <strong>+50%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut : Woodsman (armée du seigneur) — cette unité peut traverser les forêts sans pénalité</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Markus Wulfhart) + capacité \"Woodsman\". Note : Huntsman General est un type de seigneur secondaire (recrutement additionnel), pas un héros d'armée.</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Wulfhart : un corps d'Archers et Huntsmen à -50% d'entretien (seigneur), avec les 2 exemplaires du régiment favori The White Wolves permis par la capacité augmentée (faction), exploitant le +50% de chance de succès/défense d'embuscade et l'attribut Woodsman (seigneur) pour une guérilla forestière",
+      "totalSlots": 20,
+      "lord": {"icon": "markusWulfhart", "name": "Markus Wulfhart", "qty": 1, "note": "Le Huntsmarshal de l'Empire, chasseur de monstres le plus accompli du Vieux Monde — son +50% de chance de succès et de défense d'embuscade (seigneur), combiné à l'attribut Woodsman (seigneur) qui permet de traverser les forêts sans pénalité, en fait un maître de la guérilla forestière"},
+      "heroes": [
+        {"icon": "amberWizard", "name": "Amber Wizard", "qty": 2, "note": "Soutien magique via la Lore of Beasts — thématiquement assorti à la chasse aux monstres de Wulfhart"}
+      ],
+      "army": [
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 2, "note": "Infanterie de ligne anti-grande unité, protège les tireurs"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "Infanterie de ligne polyvalente"},
+        {"icon": "spearmenEmpire", "name": "Spearmen (The Empire)", "qty": 2, "note": "Anti-grande unité bon marché"},
+        {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "-50% d'entretien (seigneur) — tireurs d'élite en embuscade, se déploient cachés"},
+        {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — -50% d'entretien (seigneur), variante d'élite des Huntsmen dévouée à Ulric"},
+        {"icon": "archersEmpire", "name": "Archers (The Empire)", "qty": 4, "note": "-50% d'entretien (seigneur) — tir de masse bon marché"},
+        {"icon": "warWagons", "name": "War Wagons", "qty": 3, "note": "Chariot de tir mobile, soutien blindé pour la ligne de tir"}
+      ],
+      "magic": "Wulfhart n'est pas lui-même un lanceur de sorts — sa puissance vient de son tir de précision (Focused Shot, Hunter's Snare) et de son statut de meilleur archer du jeu, épaulé par des Amber Wizards pour le soutien magique via la Lore of Beasts.",
+      "note": "Le -50% d'entretien pour les Archers et Huntsmen (seigneur) permet d'aligner une ligne de tir extrêmement dense et bon marché, renforcée par les 2 exemplaires du régiment favori The White Wolves que la capacité augmentée (faction) permet de recruter et d'aligner ensemble. Le +50% de chance de succès et de défense d'embuscade (seigneur) rend cette armée redoutable en attaque surprise comme en défense contre les embuscades ennemies. L'attribut Woodsman (seigneur) supprime les pénalités de mouvement en forêt, un avantage majeur à Lustria. Les Halberdiers et Spearmen protègent la ligne de tir en mêlée, tandis que les War Wagons apportent une puissance de feu mobile et blindée."
+    }
+  },
+  {
+    "id": "volkmar",
+    "numeral": "IV",
+    "name": "Volkmar the Grim",
+    "epithet": "Le Grand Théogoniste",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Volkmar_the_Grim",
+    "faction": "Cult of Sigmar",
+    "seal": "volkmar",
+    "portraitImage": "assets/portraits/volkmar.png",
+    "lore": "<p>Volkmar the Grim est le chef du Culte de Sigmar et le plus puissant chef religieux de l'Empire. C'est un homme pieux et austère, entièrement dévoué à la destruction du Chaos sous toutes ses formes. Lorsque le Grand Théogoniste accompagne une armée au combat, il chevauche typiquement le resplendissant Autel de Guerre de Sigmar, inspirant les soldats qui l'entourent à des actes d'héroïsme tandis qu'il abat les suivants du Chaos de coups puissants et de paroles empreintes de force divine.</p>\n      <p>Volkmar est une terreur sainte sur le champ de bataille, un homme qui combat avec la fureur de Sigmar lui-même. On dit que l'âme de Volkmar fut forgée d'acier, et qu'il combat l'influence maligne du Chaos de chaque fibre de son être.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (Cult of Sigmar)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Volkmar collecte et scelle les Books of Nagash, augmentant sa puissance militaire et empêchant leur exploitation par d'autres</div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+4</strong> pour les Witch Hunters et Warrior Priests</div>\n        <div class=\"attr-item\">Bonus contre l'infanterie : <strong>+8</strong> pour les Flagellants, Empire Knights et Free Company Militia</div>\n        <div class=\"attr-item\">Rechargement : <strong>-33%</strong> pour les prières de combat et \"Accusation\"</div>\n        <div class=\"attr-item\">Régiments favoris : <strong>+1</strong> capacité pour Sigmar's Sons (Swordsmen) et The Tattersouls (Flagellants)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Contrôle : <strong>+4</strong> (province locale)</div>\n        <div class=\"attr-item\">Résistance physique : <strong>+10%</strong> pour les Flagellants, Empire Knights et Free Company Militia (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+8</strong> pour les Flagellants, Empire Knights et Free Company Militia (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Volkmar).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Volkmar : un corps de Flagellants, Empire Knights et Free Company Militia profitant du +10% de résistance physique et du +8 de défense en mêlée (seigneur), ainsi que du bonus anti-infanterie (faction), avec les 2 régiments favoris Sigmar's Sons et The Tattersouls permis par la capacité augmentée (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "volkmar", "name": "Volkmar the Grim", "qty": 1, "note": "Le Grand Théogoniste, chevauchant l'Autel de Guerre de Sigmar — son +10% de résistance physique et +8 de défense en mêlée pour les Flagellants/Empire Knights/Free Company Militia (seigneur) en fait ces unités des piliers increvables du champ de bataille"},
+      "heroes": [
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 2, "note": "+4 de rang de recrutement (faction) — prières de combat rechargées 33% plus vite (faction), soutien de mêlée et de moral"}
+      ],
+      "army": [
+        {"icon": "flagellants", "name": "Flagellants", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — fanatiques Unbreakable, mur de mêlée increvable"},
+        {"icon": "theTattersouls", "name": "The Tattersouls (Flagellants)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Flagellants, profite aussi des bonus du seigneur/faction"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — cavalerie lourde de choc"},
+        {"icon": "freeCompanyMilitia", "name": "Free Company Militia", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — tir léger résilient"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains, percée de mêlée"},
+        {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Swordsmen dévouée à Sigmar"},
+        {"icon": "mortars", "name": "Mortars (The Empire)", "qty": 2, "note": "Artillerie de zone à tir indirect"}
+      ],
+      "magic": "Volkmar manie des prières de combat liées (Grand Hammer of Sigmar, Grand Shield of Faith, Grand Soulfire) rechargées 33% plus vite (faction) — sa Régénération, rare chez les seigneurs de l'Empire, en fait un combattant increvable, épaulé par les Warrior Priest pour le soutien de moral.",
+      "note": "Le +10% de résistance physique et le +8 de défense en mêlée (seigneur), cumulés au +8 de bonus anti-infanterie (faction), rendent les Flagellants, Empire Knights et Free Company Militia quasiment increvables face à l'infanterie ennemie. Les Flagellants forment un mur Unbreakable en première ligne, renforcé par les 2 exemplaires du régiment favori The Tattersouls, tandis que les Sigmar's Sons — l'autre régiment favori — apportent une infanterie de ligne d'élite. Les Empire Knights apportent la percée de cavalerie, les Free Company Militia un tir léger résilient, et les Greatswords et Mortars complètent l'armée en mêlée d'élite et puissance de feu."
+    }
+  },
+  {
+    "id": "elspeth",
+    "numeral": "V",
+    "name": "Elspeth von Draken",
+    "epithet": "La Rose du Cimetière",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Elspeth_von_Draken",
+    "faction": "Wissenland & Nuln",
+    "seal": "elspeth",
+    "portraitImage": "assets/portraits/elspeth.png",
+    "lore": "<p>Depuis trois générations, le nom d'Elspeth von Draken, Magisterix du Collège Améthyste et Archimage de la Lore of Death, est murmuré tant dans les tavernes malfamées que dans les salles nobles voûtées de Nuln. Expérimentatrice obsessionnelle et mystique, Elspeth va où bon lui semble, rassemblant et cataloguant un trésor d'artefacts et de savoirs mystiques qu'elle garde jalousement.</p>\n      <p>Entourée de toutes sortes d'objets occultes, Elspeth s'est tant imprégnée de la force de Shyish — le Vent Améthyste de la Mort — que certains chuchotent qu'elle n'est plus tout à fait humaine. Pour ses ennemis, Elspeth semble se tenir à mi-chemin entre la vie et la mort, un spectre violent sous forme humaine dont la magie détruit tout ce qu'elle touche.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (Wissenland & Nuln)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès à l'Imperial Gunnery School, débloquant des améliorations d'unités uniques et des unités spéciales Amethyst (Amethyst Armoury + panneau de recrutement Amethyst)</div>\n        <div class=\"attr-item\">Taux de recherche : <strong>+10</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les unités Gunnery (toutes armées)</div>\n        <div class=\"attr-item\">Gain d'XP doublé pour les unités d'Artillerie et Gunnery (toutes armées)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour Grundel's Defenders (Spearmen – Shields)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisée à l'attrition vampirique (armée du seigneur)</div>\n        <div class=\"attr-item\">Rechargement : <strong>-20%</strong> pour la Lore of Death</div>\n        <div class=\"attr-item\">Capacité \"Darkwalker\" (active, augmentation) — <strong>+40%</strong> de résistance physique, attribut Strider (ignore les pénalités de terrain), 30s de durée, rechargement 120s</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Elspeth) + capacité \"Darkwalker\". Unités Amethyst (Ironsides, Outriders, Helstorm Rocket Battery, Land Ship) vérifiées comme réelles et débloquées via l'Imperial Gunnery School (faction) — non retirées du jeu malgré une note obsolète du wiki.</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Elspeth : le cœur de poudre à canon exploite directement l'Imperial Gunnery School (faction) en remplaçant les unités standards par leurs variantes Amethyst (Ironsides, Outriders, Helstorm Rocket Battery, Land Ship), qui profitent du -15% d'entretien et de l'XP doublée réservés aux unités Gunnery/Artillerie (faction), avec le régiment favori Grundel's Defenders (faction) et des Amethyst Wizards exploitant le -20% de rechargement de la Lore of Death (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "elspeth", "name": "Elspeth von Draken", "qty": 1, "note": "La Dame Sombre de Nuln, Archimage de la Lore of Death — son immunité à l'attrition vampirique (seigneur) et son -20% de rechargement pour la Lore of Death (seigneur) en font une lanceuse de sorts redoutable ; sa capacité \"Darkwalker\" (+40% résistance physique, Strider, 30s, rechargement 120s) la rend très difficile à tuer en plein combat"},
+      "heroes": [
+        {"icon": "amethystWizard", "name": "Amethyst Wizard", "qty": 2, "note": "Soutien magique via la Lore of Death, synergise directement avec le -20% de rechargement d'Elspeth (seigneur)"}
+      ],
+      "army": [
+        {"icon": "amethystIronsides", "name": "Amethyst Ironsides", "qty": 4, "note": "Unité Amethyst (faction, Imperial Gunnery School) — -15% d'entretien et XP doublée en tant qu'unité Gunnery (faction) ; version très supérieure des Nuln Ironsides (jusqu'à 120 armure, 45% résistance aux tirs, attaques magiques), synergise parfaitement avec l'identité de Wissenland & Nuln"},
+        {"icon": "amethystOutriders", "name": "Amethyst Outriders", "qty": 2, "note": "Unité Amethyst (faction) — -15% d'entretien et XP doublée en tant qu'unité Gunnery (faction) ; cavalerie de tir blindée aux munitions ensorcelées, comble l'absence de cavalerie du roster de base"},
+        {"icon": "amethystHelstormRocketBattery", "name": "Amethyst Helstorm Rocket Battery", "qty": 2, "note": "Unité Amethyst (faction) — XP doublée en tant qu'unité d'Artillerie (faction) ; tourbillons de mort qui infligent des dégâts de zone et ralentissent les cibles"},
+        {"icon": "amethystLandShip", "name": "Amethyst Land Ship", "qty": 1, "note": "Unité Amethyst (faction, Imperial Gunnery School) — machine de guerre unique surpuissante, pièce maîtresse de l'armée avec la capacité \"Full Power!\""},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 2, "note": "XP doublée en tant qu'unité d'Artillerie (faction) — artillerie lourde anti-blindage classique"},
+        {"icon": "grundelsDefenders", "name": "Grundel's Defenders (Spearmen – Shields)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Spearmen (Shields), protège la ligne de tir"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "Infanterie de ligne polyvalente, protège la ligne de tir"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "-15% d'entretien et XP doublée en tant qu'unité Gunnery (faction) — tir perforant à distance bon marché"}
+      ],
+      "magic": "Elspeth manie la Lore of Death (Aspect of the Dread Knight, Spirit Leech, Doom & Darkness, Soulblight, The Purple Sun of Xereus, The Fate of Bjuna) à rechargement réduit de 20% (seigneur) — épaulée par des Amethyst Wizards pour démultiplier la pression magique.",
+      "note": "Ce build exploite au maximum l'identité de Wissenland & Nuln : l'accès à l'Imperial Gunnery School (faction) débloque les variantes Amethyst — Ironsides, Outriders, Helstorm Rocket Battery et le Land Ship unique — qui remplacent avantageusement leurs équivalents standards tout en conservant le -15% d'entretien et l'XP doublée réservés aux unités Gunnery et d'Artillerie (faction). Les 2 exemplaires du régiment favori Grundel's Defenders et les Swordsmen protègent cette ligne de tir dévastatrice, tandis que les Amethyst Wizards exploitent le -20% de rechargement de la Lore of Death (seigneur) pour un harcèlement magique constant. Le Amethyst Land Ship sert de pièce maîtresse capable à lui seul de faire basculer une bataille."
+    }
+  }
+]

@@ -1,0 +1,255 @@
+[
+  {
+    "id": "archaon",
+    "numeral": "I",
+    "name": "Archaon the Everchosen",
+    "epithet": "Le Seigneur des Temps Ultimes",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Archaon_the_Everchosen",
+    "faction": "Warhost of the Apocalypse",
+    "seal": "archaon",
+    "portraitImage": "assets/portraits/archaon.png",
+    "lore": "<p>Archaon est le Seigneur des Temps Ultimes, le vaisseau à travers lequel les Dieux Sombres uniront leurs fidèles et transformeront le monde entier en un Royaume du Chaos. C'est un individu sur qui tous les Dieux du Chaos ont déposé leurs dons. De tous les Élus du Chaos qui ont assailli le monde à travers les âges, Archaon est le plus impitoyable et le plus puissant. Au cœur de son armée se trouve sa vieille troupe, les Épées du Chaos, le plus terrible groupe de Chevaliers du Chaos à avoir jamais souillé le monde.</p>\n      <p>L'Élu Suprême chevauche souvent au combat à la tête de cette cohorte de vétérans, monté sur la bête démoniaque connue sous le nom de Dorghar, le Destrier de l'Apocalypse. Le temps n'a aucun sens dans le Royaume du Chaos — qu'Archaon ait accompli ses Quêtes Impies ou qu'il vienne tout juste de commencer son voyage infernal importe peu, car il est l'Élu Suprême, destiné à apporter les Temps Ultimes aux pauvres fous mortels qui vivent leurs misérables existences au sud.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Dons de Chaos actifs maximum : <strong>+1</strong> pour les Gifts of Chaos Undivided</div>\n        <div class=\"attr-item\">Taux de recherche : <strong>+10</strong> par faction vassalisée</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+10</strong> avec les Daemons of Chaos, Warriors of Chaos, Beastmen et Norsca, par faction vassalisée</div>\n        <div class=\"attr-item\">Âmes : <strong>+25</strong> par tour et par faction vassale</div>\n        <div class=\"attr-item\">Régiment favori Swords of Chaos (Chaos Knights) : capacité \"Apocalyptic Charge\" surclassée en \"Apocalyptic Charge (Empowered)\" — <strong>Masse : +35%</strong>, <strong>Vitesse de charge : +20%</strong>, <strong>Bonus de charge : +20%</strong> sur 35m, durée 30s, rechargement 120s</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Les unités gagnent <strong>+3%</strong> de puissance d'arme et de tir par rang atteint (armée du seigneur)</div>\n        <div class=\"attr-item\">Autorité totale : <strong>+1</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Ward Save : <strong>+5%</strong> pour toutes les unités (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Archaon) + capture de la capacité \"Apocalyptic Charge (Empowered)\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Archaon : 100% Indivise (aucune unité marquée) pour maximiser la mécanique Dark Authority — son +1 d'Autorité totale (seigneur) et le +1 Don de Chaos Undivided (faction) ne profitent pleinement qu'à une armée non marquée. Un mur de mêlée mortel d'élite (Chosen, Chaos Warriors) profite d'un Ward Save +5% et d'une progression de puissance d'arme accélérée (+3% par rang, seigneur), avec les Swords of Chaos (Chaos Knights) exploitant le régiment favori \"Apocalyptic Charge (Empowered)\" (+35% masse, +20% vitesse et bonus de charge, faction) pour des charges dévastatrices",
+      "totalSlots": 20,
+      "lord": {"icon": "archaon", "name": "Archaon the Everchosen", "qty": 1, "note": "L'Élu Suprême, favorisé par les quatre Dieux du Chaos — duelliste et sorcier hybride d'exception, son Ward Save +5% et son +1 d'Autorité totale (seigneur) renforcent toute son armée, tandis que sa politique de vassalisation (faction) génère recherche, âmes et relations diplomatiques en continu"},
+      "heroes": [
+        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Renfort de mêlée mortel robuste"},
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts en écho à la maîtrise du Lore of Fire d'Archaon"}
+      ],
+      "army": [
+        {"icon": "chosenGreatWeapons", "name": "Chosen (Armes Lourdes)", "qty": 4, "note": "Ward Save +5% et progression de puissance d'arme par rang (seigneur) — l'infanterie la plus dévastatrice du jeu une fois montée en rang"},
+        {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 4, "note": "Même double bonus (seigneur) — cœur de mêlée mortel robuste"},
+        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Hallebardes)", "qty": 3, "note": "Même double bonus (seigneur) — anti-cavalerie et anti-monstre fiable"},
+        {"icon": "swordsOfChaos", "name": "Swords of Chaos (Chaos Knights)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité \"Apocalyptic Charge (Empowered)\" (+35% masse, +20% vitesse et bonus de charge sur 35m, faction), plus le double bonus de rang/Ward Save (seigneur) — la propre garde personnelle d'Archaon, dévastatrice en charge"},
+        {"icon": "chaosKnightsLances", "name": "Chaos Knights (Lances)", "qty": 3, "note": "Même double bonus de rang/Ward Save (seigneur) — cavalerie lourde de choc"},
+        {"icon": "maraudersHorsemen", "name": "Marauder Horsemen", "qty": 1, "note": "Cavalerie légère bon marché pour flanquer et pourchasser les tireurs isolés"},
+        {"icon": "chaosWarhoundsWoC", "name": "Chaos Warhounds", "qty": 1, "note": "Chasseur rapide et bon marché en soutien"}
+      ],
+      "magic": "Archaon maîtrise trois Lores de magie (Metal, Death, Fire) — Searing Doom, Spirit Leech et The Burning Head en font l'un des rares hybrides guerrier-sorcier du jeu.",
+      "note": "Le +3% de puissance d'arme et de tir par rang (seigneur) récompense une armée montée en expérience sur la durée, tandis que le Ward Save +5% pour toutes les unités (seigneur) rend cette liste particulièrement résiliente. Les Swords of Chaos exploitent pleinement leur régiment favori (faction) pour des charges dévastatrices à +35% de masse, et la vassalisation d'autres factions Chaos (faction) transforme chaque conquête en revenu de recherche, d'âmes et de diplomatie. Aucune unité marquée n'est incluse : le +1 d'Autorité totale (seigneur) et le +1 Don de Chaos Undivided (faction) n'agissent que sur la piste d'Autorité Indivise, donc mélanger des unités marquées diluerait ces bonus sans aucun gain."
+    }
+  },
+  {
+    "id": "kholek",
+    "numeral": "II",
+    "name": "Kholek Suneater",
+    "epithet": "Le Héraut de la Tempête",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Kholek_Suneater",
+    "faction": "Heralds of the Tempest",
+    "seal": "kholek",
+    "portraitImage": "assets/portraits/kholek.png",
+    "lore": "<p>Kholek Suneater est un Shaggoth d'un âge prodigieux. Il est l'un des tout premiers enfants de Krakanrok le Noir, père des Ogres-Dragons. Kholek était présent lorsque le terrible pacte avec les Dieux Sombres fut scellé, engageant sa race dans une éternité de servitude en échange de l'immortalité. Les sagas racontent que le rôle de Kholek dans ce marché fut un tel affront à la nature que le soleil se cacha derrière un banc de nuages d'orage et ne l'a plus jamais regardé depuis ce jour funeste.</p>\n      <p>Bien vrai, l'arrivée de Kholek est annoncée par des cumulonimbus noirs et bouillonnants. Là où marche le Héraut de la Tempête, un orage déchaîné occulte le soleil. Sa taille gigantesque et sa force immense en font l'un des combattants au corps-à-corps les plus redoutables jamais vus sur un champ de bataille.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Dons de Chaos actifs maximum : <strong>+1</strong> pour les Gifts of Chaos Undivided</div>\n        <div class=\"attr-item\">Les bâtiments de colonie Dark Fortress accordent une capacité de recrutement Dragon Ogre Warband supplémentaire</div>\n        <div class=\"attr-item\">Empowered by Worship : Kholek gagne <strong>+5%</strong> de puissance d'arme, de masse et d'armure par faction actuellement vassalisée</div>\n        <div class=\"attr-item\">Régiment favori Summoners of Rage (Dragon Ogres) : <strong>+4% dégâts d'arme</strong>, <strong>+4% puissance d'attaque de zone</strong> et <strong>+8% armure</strong> par faction actuellement vassalisée</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût en âmes : <strong>-25%</strong> pour le Don du Chaos \"Carnage Incarnate\" (Indivis)</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités Dragon Ogres et Dragon Ogre Shaggoths (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance aux tirs : <strong>10%</strong> pour les unités Chaos Monstrous Infantry et Monster (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Kholek).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Kholek : une ménagerie de Dragon Ogres poussée au maximum, à -25% d'entretien (seigneur) et bénéficiant d'un double bonus scalant avec les factions vassalisées — le régiment favori Summoners of Rage (+4% dégâts, +4% zone, +8% armure par vassal, faction) et Kholek lui-même (+5% puissance/masse/armure par vassal, faction) — épaulée par des Trolls et une ligne de mêlée mortelle robuste",
+      "totalSlots": 20,
+      "lord": {"icon": "kholek", "name": "Kholek Suneater", "qty": 1, "note": "Shaggoth d'un âge prodigieux, annoncé par la tempête — l'un des meilleurs duellistes du jeu, et \"Empowered by Worship\" (+5% puissance d'arme/masse/armure par faction vassalisée, faction) le rend toujours plus écrasant à mesure que le territoire s'étend"},
+      "heroes": [
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts et de soutien magique"},
+        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Renfort de mêlée mortel robuste"}
+      ],
+      "army": [
+        {"icon": "summonersOfRage", "name": "Summoners of Rage (Dragon Ogres)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : +4% dégâts d'arme, +4% puissance d'attaque de zone et +8% armure par faction vassalisée (faction), -25% d'entretien et 10% de résistance aux tirs (seigneur) — variante d'élite unique des Dragon Ogres"},
+        {"icon": "dragonOgres", "name": "Dragon Ogres", "qty": 5, "note": "-25% d'entretien et 10% de résistance aux tirs en tant que Monster (seigneur) — monstres de mêlée increvables, cœur de la ménagerie"},
+        {"icon": "chaosTrolls", "name": "Chaos Trolls", "qty": 3, "note": "10% de résistance aux tirs en tant que Monster (seigneur) — régénération increvable"},
+        {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 3, "note": "Ligne de tenue mortelle robuste en complément des monstres"},
+        {"icon": "maraudersWoC", "name": "Marauders", "qty": 2, "note": "Infanterie mortelle bon marché pour épaissir le front"},
+        {"icon": "chaosWarhoundsWoC", "name": "Chaos Warhounds", "qty": 2, "note": "Chasseurs rapides et bon marché pour flanquer"},
+        {"icon": "maraudersHorsemen", "name": "Marauder Horsemen", "qty": 1, "note": "Cavalerie légère pour pourchasser les tireurs isolés"}
+      ],
+      "magic": "Le Chaos Sorcerer (Feu) apporte un soutien magique en complément de la puissance martiale brute de Kholek, qui n'est pas lui-même lanceur de sorts.",
+      "note": "Le -25% d'entretien sur les Dragon Ogres et Shaggoths (seigneur) permet de constituer une ménagerie de monstres coûteuse à moindre prix, tandis que la résistance aux tirs (seigneur) protège ces unités massives contre leur principale faiblesse : les tireurs et l'artillerie ennemis. Chaque faction vassalisée (mécanique centrale des Heralds of the Tempest) renforce simultanément Kholek et ses Dragon Ogres (faction) — plus l'empire de vassaux grandit, plus cette ménagerie devient écrasante."
+    }
+  },
+  {
+    "id": "sigvald",
+    "numeral": "III",
+    "name": "Prince Sigvald the Magnificent",
+    "epithet": "Le Magnifique",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Prince_Sigvald_the_Magnificent",
+    "faction": "The Decadent Host",
+    "seal": "sigvald",
+    "portraitImage": "assets/portraits/sigvald.png",
+    "lore": "<p>Bien qu'il ne paraisse pas avoir plus de seize étés, le Prince Sigvald le Magnifique flétrit le monde depuis plus de trois cents ans. Personnification de la beauté à l'extérieur, mais pourriture à l'intérieur, Sigvald chevauche à la tête d'une armée de disciples totalement dévoués qui donneraient leur vie pour lui sans la moindre hésitation. Sa garde d'élite porte des boucliers miroirs afin que Sigvald puisse se prélasser dans sa propre gloire divine, et des dizaines de femmes exotiques répondent à ses moindres désirs.</p>\n      <p>Telle est la profondeur de l'obsession de Sigvald pour lui-même qu'il convoque même ses serviteurs pour l'assister avec leurs miroirs en plein cœur de la bataille, se pomponnant et murmurant des compliments à lui-même tandis que les hommes plongent au combat et meurent tout autour de lui.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût en âmes : <strong>-25%</strong> pour tous les Gifts of Slaanesh</div>\n        <div class=\"attr-item\">Les vassaux gagnent \"Immune to Psychology\" et répandent la corruption Slaanesh</div>\n        <div class=\"attr-item\">Peut Séduire des unités</div>\n        <div class=\"attr-item\">S'applique et bénéficie de l'Influence Séductrice et des Gifts of Slaanesh</div>\n        <div class=\"attr-item\">Régiment favori The Mirror Guard (Chaos Warriors) : capacité \"Guardian\" et <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Corruption Slaanesh : <strong>+4</strong> (province locale)</div>\n        <div class=\"attr-item\">Capacité d'armée \"Sweet Sorrow\" (Augment, active) — <strong>Vitesse : +40%</strong>, <strong>Vitesse de charge : +40%</strong>, <strong>Vigueur par seconde : -4%</strong> pour 1 allié, durée 15s, rechargement 60s</div>\n        <div class=\"attr-item\">Vitesse : <strong>+15%</strong> pour les Marauders of Slaanesh, Chaos Warriors of Slaanesh et Chosen of Slaanesh (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Sigvald) + captures des capacités \"Guardian\" et \"Sweet Sorrow\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Sigvald : un mur de mêlée marqué Slaanesh, +15% plus rapide que la normale (seigneur), protégé par The Mirror Guard (Chaos Warriors indivis) qui exploite le régiment favori \"Guardian\" (+15% résistance physique en Ward Save autour de Sigvald, faction) pour compenser son absence de monture et de soins, épaulé par les Hellstriders pour la mobilité et \"Sweet Sorrow\" (seigneur) pour les charges éclair",
+      "totalSlots": 20,
+      "lord": {"icon": "sigvald", "name": "Prince Sigvald the Magnificent", "qty": 1, "note": "Duelliste increvable sans monture, obsédé par sa propre beauté — \"Sweet Sorrow\" (+40% vitesse/charge sur un allié, seigneur), le +15% de vitesse pour les unités Slaanesh (seigneur) et le Ward Save +15% de son Mirror Guard (faction) compensent son absence de monture et de soins"},
+      "heroes": [
+        {"icon": "chaosSorcererSlaanesh", "name": "Chaos Sorcerer of Slaanesh", "qty": 1, "note": "Renfort de sorts du Lore of Slaanesh"},
+        {"icon": "exaltedHeroSlaanesh", "name": "Exalted Hero of Slaanesh", "qty": 1, "note": "Renfort de mêlée mortel robuste"}
+      ],
+      "army": [
+        {"icon": "chosenSlaanesh", "name": "Chosen of Slaanesh", "qty": 3, "note": "+15% de vitesse (seigneur) — élite de mêlée rapide et dévastatrice"},
+        {"icon": "theMirrorGuard", "name": "The Mirror Guard (Chaos Warriors)", "qty": 2, "note": "Régiment favori : capacité \"Guardian\" (+15% résistance physique en Ward Save autour de Sigvald sur 35m) et +1 capacité (faction) — la garde miroir personnelle de Sigvald, protège son seigneur increvable"},
+        {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 2, "note": "Cœur de mêlée mortel robuste"},
+        {"icon": "maraudersSlaanesh", "name": "Marauders of Slaanesh", "qty": 4, "note": "+15% de vitesse (seigneur) — infanterie bon marché pour épaissir le front"},
+        {"icon": "hellstridersSlaanesh", "name": "Hellstriders of Slaanesh", "qty": 4, "note": "Cavalerie légère très rapide pour flanquer et harceler"},
+        {"icon": "feralManticoreChaos", "name": "Chaos Feral Manticore", "qty": 1, "note": "Monstre volant pour chasser les tireurs isolés et frapper les flancs"},
+        {"icon": "hellcannonWoC", "name": "Hellcannon", "qty": 1, "note": "Artillerie démoniaque à zone d'effet en soutien"}
+      ],
+      "magic": "Le Chaos Sorcerer of Slaanesh apporte le soutien du Lore of Slaanesh, spécialisé dans les débuffs de commandement et de vitesse ennemis, en parfaite synergie avec la mobilité de cette armée.",
+      "note": "Le +15% de vitesse pour les unités Slaanesh (seigneur) rend cette armée exceptionnellement mobile, capable de charger et de se replier plus vite que la moyenne, tandis que la corruption Slaanesh générée (+4, seigneur) prépare le terrain à une expansion rapide autour du territoire conquis. Le Mirror Guard (régiment favori, faction) reste délibérément indivis pour rester au contact de Sigvald et profiter de \"Guardian\", au prix de ne pas bénéficier du bonus de vitesse Slaanesh — un compromis nécessaire pour protéger un Seigneur increvable en mêlée mais dépourvu de monture ou de régénération."
+    }
+  },
+  {
+    "id": "belakor",
+    "numeral": "IV",
+    "name": "Be'lakor",
+    "epithet": "Le Premier Damné",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Be%27lakor",
+    "faction": "Shadow Legion",
+    "seal": "belakor",
+    "portraitImage": "assets/portraits/belakor.png",
+    "lore": "<p>Be'lakor le Maître des Ténèbres est le tout premier Prince Démon du Chaos. Le Premier Damné, le Messager, le Seigneur du Tourment, le Messager du Grand Indivis, celui qui Annonce les Conquérants, le Présage et le Porteur ne sont que quelques-uns des noms sous lesquels il est connu. À l'aube du Monde, Be'lakor devint le premier mortel à engager son âme envers les Dieux du Chaos. Guerrier féroce et Champion inébranlable des Ténèbres, les Puissances Ruineuses le favorisèrent et l'attirèrent vers le nord, dans les Terres du Chaos.</p>\n      <p>Les Dieux Sombres récompensèrent son courage en détruisant son enveloppe mortelle et en le recréant à leur image : celle d'un Prince Démon. Sous cette nouvelle forme, Be'lakor est véritablement une force terrifiante. Aujourd'hui, son ire inextinguible s'est retournée contre les Dieux mêmes qui lui ont donné le pouvoir — alors qu'Ursun agonise, Be'lakor entend prendre sa place et accéder lui-même à la divinité, en tant que cinquième Puissance Ruineuse.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Les Seigneurs Humains peuvent être corrompus en Princes Démons lorsqu'ils sont vaincus en bataille ou ciblés par un Héros</div>\n        <div class=\"attr-item\">Démarre avec tous les emplacements de Dons des Dieux du Chaos débloqués</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités Démoniaques</div>\n        <div class=\"attr-item\">Régiments favoris : <strong>+5% Ward Save</strong> pour les Régiments de Renom de Grands Démons</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Autorité totale : <strong>+2</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité \"Shadow Shroud\" (Ward Save, active) — <strong>Résistance aux dégâts : +60%</strong>, durée 22s, rechargement 120s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Be'lakor) + capture de la capacité \"Shadow Shroud\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Be'lakor : une ménagerie 100% Démoniaque (Bloodletters, Daemonettes, Plaguebearers, Pink Horrors, Spawns) à -25% d'entretien (faction, sans unité mortelle pour ne rien gaspiller), épaulée par le Régiment de Renom de Grand Démon Khorne's Bloody Fist (Bloodthirster) qui exploite directement le bonus de Ward Save (+5%, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "belakor", "name": "Be'lakor", "qty": 1, "note": "Premier Prince Démon du Chaos, maître du Lore of Shadows — son +2 d'Autorité totale (seigneur) et \"Shadow Shroud\" (+60% résistance aux dégâts, seigneur) en font un manipulateur redoutable et increvable capable de mener une armée aux quatre marques"},
+      "heroes": [
+        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Renfort de mêlée mortel robuste"},
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts supplémentaire"}
+      ],
+      "army": [
+        {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 4, "note": "-25% d'entretien en tant qu'unité Démoniaque (faction) — infanterie démoniaque frénétique de Khorne"},
+        {"icon": "daemonettes", "name": "Daemonettes of Slaanesh", "qty": 4, "note": "Même bonus d'entretien (faction) — infanterie démoniaque rapide et mortelle de Slaanesh"},
+        {"icon": "plaguebearers", "name": "Plaguebearers of Nurgle", "qty": 3, "note": "Même bonus d'entretien (faction) — infanterie démoniaque increvable de Nurgle"},
+        {"icon": "pinkHorrors", "name": "Pink Horrors of Tzeentch", "qty": 3, "note": "Même bonus d'entretien (faction) — soutien à distance magique de Tzeentch"},
+        {"icon": "khornesBloodyFist", "name": "Khorne's Bloody Fist (Bloodthirster)", "qty": 1, "note": "Régiment de Renom de Grand Démon : +5% Ward Save (faction), -25% d'entretien en tant qu'unité Démoniaque (faction) — variante d'élite unique du Bloodthirster, exploite pleinement le bonus de régiment favori"},
+        {"icon": "spawnOfTzeentch", "name": "Spawn of Tzeentch", "qty": 1, "note": "Même bonus d'entretien (faction) — monstre imprévisible pour semer le chaos en première ligne"},
+        {"icon": "spawnOfSlaanesh", "name": "Spawn of Slaanesh", "qty": 1, "note": "Même bonus d'entretien (faction) — monstre imprévisible supplémentaire"}
+      ],
+      "magic": "Be'lakor maîtrise le Lore of Shadows (Melkoth's Mystifying Miasma, Okkam's Mindrazor, Pit of Shades) — un arsenal de débuffs et de buffs offensifs rare chez les Warriors of Chaos.",
+      "note": "Cette armée mêle les quatre panthéons démoniaques (Khorne, Slaanesh, Nurgle, Tzeentch) sans aucune unité mortelle, afin que le -25% d'entretien Démoniaque (faction) s'applique à chaque unité recrutée. Le Khorne's Bloody Fist (Bloodthirster) profite en plus du bonus de Ward Save des Régiments de Renom de Grands Démons (+5%, faction) grâce à sa nature de Régiment de Renom, une diversité rendue possible par la nature de Be'lakor, premier serviteur du Chaos Indivis avant même l'existence des quatre Dieux Sombres."
+    }
+  },
+  {
+    "id": "azazel",
+    "numeral": "V",
+    "name": "Azazel",
+    "epithet": "Le Prince de la Damnation",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Azazel",
+    "faction": "The Ecstatic Legions",
+    "seal": "azazel",
+    "portraitImage": "assets/portraits/azazel.png",
+    "lore": "<p>Nul ne sait exactement quand Azazel abandonna l'humanité pour engager son âme mortelle envers Slaanesh, mais dans un lointain passé, il fut le chef de la tribu des Gerreon, l'un des douze grands peuples de Sigmar. Après avoir trahi son seigneur lige, il s'enfuit vers les Contrées Sauvages du Nord, où il gravit rapidement les faveurs du Dieu du Plaisir par sa traîtrise et ses actes de débauche.</p>\n      <p>Après avoir anéanti une horde de dix mille guerriers de Khorne et tué son puissant champion en combat singulier, Azazel attira de nouveau le regard de son maître et fut élevé au rang de Démon. Sous son commandement, les armées du Prince Sombre ont enchaîné triomphe bienheureux après triomphe bienheureux.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+80</strong> avec l'Empire, le Kislev, Cathay et la Bretonnie</div>\n        <div class=\"attr-item\">Les vassaux gagnent \"Immune to Psychology\" et répandent la corruption Slaanesh</div>\n        <div class=\"attr-item\">Peut Séduire des unités</div>\n        <div class=\"attr-item\">S'applique et bénéficie de l'Influence Séductrice et des Gifts of Slaanesh</div>\n        <div class=\"attr-item\">Régiment favori The Sibilant Slaughtercade (Chaos Chariots) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive \"Domineering Aura\" (Hex de zone) — <strong>Défense en mêlée : jusqu'à -10</strong>, <strong>Attaque en mêlée : jusqu'à -10</strong> pour tous les ennemis à 35m, l'intensité augmente avec chaque unité ennemie proche au commandement vacillant ou pire, durée illimitée</div>\n        <div class=\"attr-item\">Coût des Séductions d'unités : <strong>-20%</strong> pour les unités Empire, Bretonnia, Kislev et Cathay</div>\n        <div class=\"attr-item\">Budget des Séductions d'unités : <strong>+25%</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Azazel) + capture de la capacité \"Domineering Aura\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Azazel : un mur de mêlée marqué Slaanesh épaulé par des Hellstriders, Feral Manticores et des Chaos Chariots exploitant le régiment favori The Sibilant Slaughtercade (+1 capacité, faction), avec \"Domineering Aura\" (seigneur) qui affaiblit l'ennemi de plus en plus fort à mesure que son commandement vacille, et un mécanisme de Séduction d'unités renforcé (faction) pour intégrer des troupes ennemies capturées",
+      "totalSlots": 20,
+      "lord": {"icon": "azazel", "name": "Azazel", "qty": 1, "note": "Prince de la Damnation, sorcier-duelliste volant de Slaanesh — \"Domineering Aura\" (jusqu'à -10 attaque/défense en mêlée, intensité croissante avec le commandement ennemi vacillant, seigneur) affaiblit méthodiquement l'ennemi avant même le premier coup porté"},
+      "heroes": [
+        {"icon": "chaosSorcererSlaanesh", "name": "Chaos Sorcerer of Slaanesh", "qty": 1, "note": "Renfort de sorts du Lore of Slaanesh"},
+        {"icon": "exaltedHeroSlaanesh", "name": "Exalted Hero of Slaanesh", "qty": 1, "note": "Renfort de mêlée mortel robuste"}
+      ],
+      "army": [
+        {"icon": "chosenSlaanesh", "name": "Chosen of Slaanesh", "qty": 3, "note": "Élite de mêlée rapide et dévastatrice"},
+        {"icon": "chaosWarriorsSlaanesh", "name": "Chaos Warriors of Slaanesh", "qty": 4, "note": "Cœur de mêlée mortel marqué Slaanesh"},
+        {"icon": "maraudersSlaanesh", "name": "Marauders of Slaanesh", "qty": 3, "note": "Infanterie bon marché pour épaissir le front"},
+        {"icon": "theSibilantSlaughtercade", "name": "The Sibilant Slaughtercade (Chaos Chariots)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — chars de choc pour briser les formations affaiblies par Domineering Aura"},
+        {"icon": "hellstridersSlaanesh", "name": "Hellstriders of Slaanesh", "qty": 2, "note": "Cavalerie légère très rapide pour flanquer et harceler"},
+        {"icon": "feralManticoreChaos", "name": "Chaos Feral Manticore", "qty": 2, "note": "Monstres volants pour chasser les tireurs isolés et frapper les flancs"},
+        {"icon": "hellcannonWoC", "name": "Hellcannon", "qty": 1, "note": "Artillerie démoniaque à zone d'effet en soutien"}
+      ],
+      "magic": "Azazel maîtrise le Lore of Slaanesh (Lash of Slaanesh, Hysterical Frenzy, Phantasmagoria) — un arsenal de débuffs de commandement qui complète parfaitement Domineering Aura pour briser le moral ennemi avant le contact.",
+      "note": "Le mécanisme de Séduction d'unités renforcé (-20% de coût pour Empire/Bretonnia/Kislev/Cathay, +25% de budget, faction) permet d'intégrer des troupes ennemies capturées à moindre coût, Domineering Aura (seigneur) affaiblit systématiquement l'ennemi avant même le premier coup porté, et les Chaos Chariots exploitent leur régiment favori (faction) pour porter le coup de grâce sur des formations déjà déstabilisées."
+    }
+  },
+  {
+    "id": "festus",
+    "numeral": "VI",
+    "name": "Festus the Leechlord",
+    "epithet": "Le Seigneur des Sangsues",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Festus_the_Leechlord",
+    "faction": "The Fecundites",
+    "seal": "festus",
+    "portraitImage": "assets/portraits/festus.png",
+    "lore": "<p>Arpentant les forêts du nord dans des robes mitées cliquetant de fioles aux concoctions inimaginables se trouve la silhouette marmonnante et traînante du Docteur Festus. Jadis prolifique guérisseur d'épidémies en Nordland, il conclut un pacte désespéré avec Nurgle après avoir rencontré une souche de Fièvre Grinçante qu'il ne parvenait pas à endiguer. Ainsi le Dieu de la Peste remplit-il son esprit brillant du moindre détail de chaque maladie connue du monde mortel, effaçant sa compassion pour la remplacer par une connaissance intime de la maladie et un désir d'expérimentation.</p>\n      <p>Bien que ses pouvoirs curatifs soient plus grands que jamais, malheur à l'insensé qui croise le chemin du Docteur, qui se délecte de gaver ses dernières créations aux infortunées victimes qu'il croise. Le Seigneur des Sangsues n'est jamais aussi heureux que lorsqu'il plante les graines de maladie de Nurgle à travers le monde.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Les vassaux gagnent des attaques empoisonnées et répandent la corruption Nurgle</div>\n        <div class=\"attr-item\">Peut brasser des Pestes</div>\n        <div class=\"attr-item\">Âmes : <strong>+25</strong> lorsqu'une Peste est propagée</div>\n        <div class=\"attr-item\">Régiment favori The Daemonspew (Forsaken) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Durée de la Peste : <strong>+3 tours</strong> (armées locales)</div>\n        <div class=\"attr-item\">Plafond de soins en bataille : <strong>+25%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Festus).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Festus : un mur de mêlée marqué Nurgle increvable, profitant d'un plafond de soins en bataille rehaussé (+25%, seigneur) et d'une Peste qui dure trois tours de plus et rapporte des âmes (+25 par propagation, faction), épaulé par des Forsaken exploitant le régiment favori The Daemonspew (+1 capacité, faction) et des monstres emblématiques (Giant, Trolls, Spawn)",
+      "totalSlots": 20,
+      "lord": {"icon": "festus", "name": "Festus the Leechlord", "qty": 1, "note": "Alchimiste damné de Nurgle, expert en fléaux — son plafond de soins en bataille +25% (seigneur) le rend quasiment increvable en duel prolongé, tandis que sa Peste dure 3 tours de plus et rapporte des âmes (faction) en campagne"},
+      "heroes": [
+        {"icon": "chaosSorcererNurgle", "name": "Chaos Sorcerer of Nurgle", "qty": 1, "note": "Renfort de sorts du Lore of Nurgle"},
+        {"icon": "exaltedHeroNurgle", "name": "Exalted Hero of Nurgle", "qty": 1, "note": "Renfort de mêlée mortel robuste"}
+      ],
+      "army": [
+        {"icon": "chaosWarriorsNurgle", "name": "Chaos Warriors of Nurgle", "qty": 4, "note": "Cœur de mêlée mortel marqué Nurgle, increvable"},
+        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Hallebardes)", "qty": 2, "note": "Anti-cavalerie et anti-monstre fiable"},
+        {"icon": "maraudersWoC", "name": "Marauders", "qty": 3, "note": "Infanterie bon marché pour épaissir le front"},
+        {"icon": "theDaemonspew", "name": "The Daemonspew (Forsaken)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — monstruosités mutées imprévisibles, gagnant en puissance à chaque coup porté"},
+        {"icon": "chaosGiant", "name": "Chaos Giant", "qty": 2, "note": "Monstre emblématique pour écraser les lignes ennemies"},
+        {"icon": "chaosTrolls", "name": "Chaos Trolls", "qty": 2, "note": "Monstre régénérant increvable en complément"},
+        {"icon": "spawnOfNurgle", "name": "Spawn of Nurgle", "qty": 2, "note": "Monstre imprévisible pour semer le chaos en première ligne"}
+      ],
+      "magic": "Festus maîtrise le Lore of Nurgle (Stream of Corruption, Miasma of Pestilence, Curse of the Leper) — des sorts de zone qui infligent des dégâts continus tout en affaiblissant durablement l'ennemi.",
+      "note": "Le +25% de plafond de soins en bataille (seigneur) rend Festus et son armée extrêmement difficiles à achever en combat prolongé, tandis que la Peste allongée de 3 tours et génératrice d'âmes (+25 par propagation, faction) maximise les dégâts d'attrition et les récompenses infligés aux régions ennemies après une bataille remportée. Les Forsaken exploitent leur régiment favori (faction) pour renforcer une ménagerie déjà bien fournie."
+    }
+  },
+  {
+    "id": "valkia",
+    "numeral": "VII",
+    "name": "Valkia the Bloody",
+    "epithet": "La Reine du Sang",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Valkia_the_Bloody",
+    "faction": "Legion of the Gorequeen",
+    "seal": "valkia",
+    "portraitImage": "assets/portraits/valkia.png",
+    "lore": "<p>Valkia la Sanglante s'est élevée jusqu'à l'infamie en tant que reine-guerrière impitoyable d'une grande tribu du nord, abattant quiconque osait contester son règne. Au moment de sa mort, elle avait vaincu d'innombrables serviteurs des dieux frères de Khorne, atteignant la fin de son existence mortelle lors d'un voyage de massacre vers le Royaume du Chaos pour rendre hommage en personne à son patron assoiffé de bataille.</p>\n      <p>Le Dieu du Sang s'enragea de la disparition de Valkia, sa fureur si tonitruante qu'elle la ranima d'entre les morts et, la saisissant dans ses griffes, il reforgea la reine en une vision de puissance destructrice. Depuis, la Reine du Sang répand le sang sans nul besoin de sommeil, de répit ou de subsistance. Bien qu'elle porte la marque de Khorne, Valkia demeure une Guerrière du Chaos indivise dans l'âme, menant la Legion of the Gorequeen au nom des Puissances Ruineuses.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">A accès au Bloodletting</div>\n        <div class=\"attr-item\">Restaure 15% de la portée de mouvement de campagne après une victoire en bataille (tous les personnages)</div>\n        <div class=\"attr-item\">Âmes gagnées en sacrifiant des captifs : <strong>+50%</strong></div>\n        <div class=\"attr-item\">Les vassaux gagnent \"Frenzy\" et répandent la corruption Khorne</div>\n        <div class=\"attr-item\">Régiment favori Brutes of the Hound (Marauder Berserkers) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive \"The Gaze of Khorne\" (Augment de zone) — <strong>Dégâts d'arme de base : +5%</strong>, <strong>Dégâts perforants : +5%</strong>, <strong>Commandement : +4</strong> sur 35m, durée illimitée</div>\n        <div class=\"attr-item\">Restaure 35% de la portée de mouvement de campagne lorsque l'ennemi bat en retraite pendant la bataille</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Valkia) + capture de la capacité \"The Gaze of Khorne\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Valkia : un mur de mêlée mortel classique marqué Khorne (Chaos Warriors, Marauders, Skullcrushers) sous l'aura \"The Gaze of Khorne\" (+5% dégâts d'arme/perforants, +4 commandement en zone, seigneur), avec des Marauder Berserkers exploitant le régiment favori Brutes of the Hound (+1 capacité, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "valkia", "name": "Valkia the Bloody", "qty": 1, "note": "La Reine du Sang, ressuscitée par la fureur de Khorne — \"The Gaze of Khorne\" (+5% dégâts, +4 commandement en zone, seigneur) renforce toute son armée, et elle restaure 35% de sa portée de mouvement (seigneur) chaque fois qu'elle met l'ennemi en déroute"},
+      "heroes": [
+        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 2, "note": "Renfort de mêlée mortel robuste, en double pour épauler cette duelliste increvable"}
+      ],
+      "army": [
+        {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 4, "note": "Ligne de tenue mortelle marquée Khorne, cœur de cette armée"},
+        {"icon": "maraudersOfKhorne", "name": "Marauders of Khorne", "qty": 3, "note": "Infanterie mortelle bon marché pour épaissir le front"},
+        {"icon": "marauderBerserkers", "name": "Marauder Berserkers (Brutes of the Hound)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — infanterie mortelle frénétique d'élite"},
+        {"icon": "skullcrushersKhorne", "name": "Skullcrushers of Khorne", "qty": 4, "note": "Cavalerie lourde démoniaque pour les charges de flanc"},
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 3, "note": "Chasseurs rapides pour flanquer et pourchasser les tireurs isolés"},
+        {"icon": "hellcannonWoC", "name": "Hellcannon", "qty": 1, "note": "Artillerie démoniaque à zone d'effet en soutien"}
+      ],
+      "magic": "Valkia n'est pas une lanceuse de sorts — sa puissance vient de sa fureur martiale et de sa mobilité de campagne inégalée.",
+      "note": "Cette armée mortelle marquée Khorne profite du +35% de portée de mouvement quand l'ennemi bat en retraite (seigneur) pour enchaîner les campagnes de conquête sans jamais s'arrêter, du +50% d'âmes en sacrifiant des captifs (faction) pour financer les Dons de Chaos, et des Marauder Berserkers qui exploitent leur régiment favori (faction), tandis que Valkia elle-même domine n'importe quel duel en première ligne."
+    }
+  },
+  {
+    "id": "vilitch",
+    "numeral": "VIII",
+    "name": "Vilitch the Curseling",
+    "epithet": "Le Jumeau Tordu",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Vilitch_the_Curseling",
+    "faction": "Puppets of Misrule",
+    "seal": "vilitch",
+    "portraitImage": "assets/portraits/vilitch.png",
+    "lore": "<p>Depuis sa naissance, le chétif Vilitch fut universellement méprisé pour sa laideur et sa fragilité, tandis que son jumeau Thomin devenait un guerrier athlétique. Après avoir prié avec ferveur Tzeentch d'inverser leurs destins, le rejeton s'éveilla pour découvrir que son corps et celui de son frère avaient fusionné, Thomin étant réduit à un automate baveux asservi aux ordres de Vilitch.</p>\n      <p>Avec ses capacités magiques centuplées et un corps massif, le Jumeau Tordu déchaîna sa vengeance sur ceux qui l'avaient méprisé, tout en asservissant l'esprit des guerriers de sa tribu afin qu'ils vivent et meurent selon ses caprices. Légitimé depuis longtemps comme un agent du Changement horriblement remarquable par le Grand Conspirateur lui-même, cette créature troublante agit avec des intentions insondables.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Les vassaux gagnent des points de vie de barrière augmentés et répandent la corruption Tzeentch</div>\n        <div class=\"attr-item\">A accès au Changing of the Ways</div>\n        <div class=\"attr-item\">Les armées reçoivent des bonus liés à un niveau élevé de Vents de Magie</div>\n        <div class=\"attr-item\">Convertit une partie de ses propres pertes de bataille en âmes</div>\n        <div class=\"attr-item\">A accès à la posture Téléportation de Tzeentch</div>\n        <div class=\"attr-item\">Régiment favori Wyrd Spawn (Chaos Spawn) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Vole <strong>+15%</strong> de l'expérience gagnée par les autres Seigneurs (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité passive \"The Twisted Twin\" (Augment) — <strong>Maîtrise des sorts : jusqu'à +30%</strong>, <strong>Défense en mêlée : jusqu'à +10</strong>, <strong>Attaque en mêlée : jusqu'à +10</strong>, l'intensité augmente avec le temps passé en mêlée ou à lancer des sorts, durée illimitée</div>\n        <div class=\"attr-item\">Coût d'utilisation de la posture Téléportation : <strong>-25%</strong> de Vents de Magie (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Vilitch) + capture de la capacité \"The Twisted Twin\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Vilitch : un mur de mêlée marqué Tzeentch épaulé par les Doom Knights et Forsaken, avec des Chaos Spawn exploitant le régiment favori Wyrd Spawn (+1 capacité, faction) et une posture Téléportation à coût réduit (-25% Vents de Magie, seigneur) pour repositionner l'armée instantanément",
+      "totalSlots": 20,
+      "lord": {"icon": "vilitch", "name": "Vilitch the Curseling", "qty": 1, "note": "Le Jumeau Tordu, sorcier-runt fusionné à son frère Thomin — \"The Twisted Twin\" (jusqu'à +30% maîtrise des sorts, +10 attaque/défense en mêlée, seigneur) le rend toujours plus fort au fil du combat, et sa posture Téléportation à -25% de coût (seigneur) permet des manœuvres de campagne impossibles pour tout autre Seigneur"},
+      "heroes": [
+        {"icon": "chaosSorcererTzeentch", "name": "Chaos Sorcerer of Tzeentch", "qty": 1, "note": "Renfort de sorts du Lore of Tzeentch"},
+        {"icon": "exaltedHeroTzeentch", "name": "Exalted Hero of Tzeentch", "qty": 1, "note": "Renfort de mêlée mortel robuste"}
+      ],
+      "army": [
+        {"icon": "forsakenTzeentch", "name": "Forsaken of Tzeentch", "qty": 3, "note": "Monstruosités mutées imprévisibles, gagnant en puissance à chaque coup porté"},
+        {"icon": "chaosWarriorsTzeentch", "name": "Chaos Warriors of Tzeentch", "qty": 4, "note": "Cœur de mêlée mortel marqué Tzeentch"},
+        {"icon": "maraudersTzeentch", "name": "Marauders of Tzeentch", "qty": 4, "note": "Infanterie bon marché pour épaissir le front"},
+        {"icon": "doomKnightsTzeentch", "name": "Doom Knights of Tzeentch", "qty": 3, "note": "Cavalerie lourde démoniaque pour les charges de flanc"},
+        {"icon": "chaosKnightsTzeentch", "name": "Chaos Knights of Tzeentch", "qty": 1, "note": "Cavalerie mortelle marquée Tzeentch en complément"},
+        {"icon": "wyrdSpawn", "name": "Chaos Spawn (Wyrd Spawn)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — monstruosités imprévisibles pour semer le chaos en première ligne"}
+      ],
+      "magic": "Vilitch maîtrise le Lore of Tzeentch (Pink Fire, Blue Fire, Treason of Tzeentch, Infernal Gateway) — un arsenal de sorts offensifs et de manipulation démultiplié par sa fusion avec Thomin, encore amplifié par \"The Twisted Twin\" (seigneur) au fil des sorts lancés.",
+      "note": "La posture Téléportation à coût réduit (-25% Vents de Magie, seigneur) est unique aux Puppets of Misrule et permet de répondre à n'importe quelle menace de campagne en un instant, tandis que le vol d'expérience (+15%, seigneur) ralentit la progression des Seigneurs ennemis rencontrés. Les Chaos Spawn exploitent leur régiment favori (faction), et la conversion des pertes en âmes (faction) transforme même les revers en ressources utiles."
+    }
+  }
+]

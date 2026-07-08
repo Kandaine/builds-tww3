@@ -1,0 +1,214 @@
+[
+  {
+    "id": "tyrion",
+    "numeral": "I",
+    "name": "Tyrion",
+    "epithet": "Le Plus Grand Guerrier",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Tyrion",
+    "faction": "Eataine",
+    "seal": "tyrion",
+    "portraitImage": "assets/portraits/tyrion.png",
+    "lore": "<p>Parmi les Hauts Elfes, les noms de Tyrion et Teclis se prononcent avec un respect empreint de crainte. La renommée de ces frères jumeaux s'étend sur tout Ulthuan et bien au-delà. Nés dans l'une des plus anciennes familles du royaume, ils descendent en ligne directe du malheureux Aenarion, premier et plus puissant des Rois Phénix.</p>\n      <p>Tyrion est le plus grand guerrier vivant des Hauts Elfes — si valeureux que les bardes d'Ulthuan chantent qu'il n'est rien de moins qu'Aenarion réincarné. Pourtant, indifférent aux rumeurs qui le voient un jour ceindre la Couronne de Phénix, il reste loyal à Finubar et ne se consacre qu'à la protection d'Ulthuan et de son Impératrice-Éternelle — Alarielle, dont il est depuis longtemps le consort.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\"><strong>Champion of Ulthuan</strong> : utilise l'Influence pour des actions décisives sur la carte de campagne et pour appeler l'aide spéciale des alliances Hauts Elfes</div>\n        <div class=\"attr-item\">Gagne de l'Influence supplémentaire en remportant des batailles (doublée sur Ulthuan)</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+10</strong> avec les Hauts Elfes</div>\n        <div class=\"attr-item\">Temps de construction : <strong>-50%</strong> pour le bâtiment Shrine of Khaine</div>\n        <div class=\"attr-item\">Durée de recrutement local : <strong>-1 tour</strong> pour l'infanterie et la cavalerie (minimum 1)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Storm Riders (Sea Guard)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Spearmen, Ship's Company, Silverin Guard, Rangers, Archers et Silver Helms (armée du seigneur)</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+3</strong> pour les Ship's Company et Lothern Sea Guard (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Tyrion).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Tyrion : un cœur d'armée classique moitié moins cher à entretenir (-50%, seigneur), recruté un tour plus vite (faction) et complété par des Lothern Sea Guard déjà expérimentés (+3 rang de recrutement, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "tyrion", "name": "Tyrion", "qty": 1, "note": "Le meilleur duelliste du jeu — monté sur Malhandir, il rattrape n'importe quel seigneur ennemi et le démembre en quelques passes"},
+      "heroes": [
+        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée polyvalent en complément de Tyrion"},
+        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — buffs et projectiles pour appuyer la ligne"}
+      ],
+      "army": [
+        {"icon": "silverHelm", "name": "Silver Helms", "qty": 4, "note": "Cavalerie lourde à -50% d'entretien (seigneur) et recrutée un tour plus vite (faction) — un luxe habituellement coûteux devient abordable en masse"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 4, "note": "Cœur de ligne bon marché grâce au -50% d'entretien (seigneur)"},
+        {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Soutien à distance, également à -50% d'entretien (seigneur)"},
+        {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Recrutés directement avec +3 rangs d'expérience (seigneur) — une unité polyvalente lance/arc déjà vétérane dès sa sortie de caserne"},
+        {"icon": "stormRiders", "name": "The Storm Riders (Lothern Sea Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Lothern Sea Guard, également recrutée avec +3 rangs d'expérience (seigneur)"},
+        {"icon": "phoenix", "name": "Phoenix", "qty": 2, "note": "Monstre volant de soutien, pour percer les lignes ou chasser l'artillerie"}
+      ],
+      "magic": "Un Mage de la Haute Magie complète l'arsenal offensif de Tyrion, qui n'est pas lui-même un lanceur de sorts mais un pur combattant.",
+      "note": "Le -50% d'entretien de Tyrion (seigneur) s'applique à un large éventail d'unités de base (Spearmen, Archers, Silver Helms, Silverin Guard, Rangers) : n'hésite pas à composer une armée nombreuse plutôt qu'une petite élite. Le -1 tour de recrutement local (faction) accélère encore la mise sur pied de cette armée, et le statut de Champion of Ulthuan permet de peser sur la carte de campagne grâce à l'Influence gagnée en combattant."
+    }
+  },
+  {
+    "id": "teclis",
+    "numeral": "II",
+    "name": "Teclis",
+    "epithet": "Le Mage Suprême",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Teclis",
+    "faction": "Order of Loremasters",
+    "seal": "teclis",
+    "portraitImage": "assets/portraits/teclis.png",
+    "lore": "<p>Frère jumeau de Tyrion, Teclis en est pourtant l'exact opposé : là où la malédiction d'Aenarion n'a laissé sur son frère qu'une marque discrète, elle a rendu Teclis frêle et acerbe, un corps si chétif qu'il ne se maintient qu'à grand renfort de potions magiques.</p>\n      <p>Nul, pas même Tyrion, ne voit pourtant en lui le jumeau faible : son destin suit simplement un autre chemin. Béni d'un talent pour la magie qui le place au-dessus de tous les mages d'Ulthuan — et sans doute du monde entier — Teclis a consacré sa vie à contrecarrer les puissances du Chaos et de la mort, si bien que même le Roi Sorcier de Naggaroth prend soin d'éviter tout affrontement direct avec lui.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès aux <strong>Secrets of the White Tower</strong>, débloquant des sorts Cataclysm, des rituels puissants et des bonus pour les lanceurs de sorts de l'Ordre</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+15</strong> avec les Hommes, Hauts Elfes, Elfes Sylvains, Hommes-Lézards et Nains</div>\n        <div class=\"attr-item\">Coût de recrutement allié : <strong>-50%</strong></div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+5</strong> pour les Loremasters of Hoeth, Mages et Archmages</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>-25%</strong> pour les Swordmasters of Hoeth et les unités Phoenix</div>\n        <div class=\"attr-item\">Régiment favori : l'aura \"Omen of Miracles\" de l'Arcane Phoenix est améliorée, accordant <strong>Spell Mastery +5%</strong>, <strong>résistance aux sorts +10%</strong> et l'immunité à la Psychologie (Peur &amp; Terreur) à tous les alliés dans un rayon de <strong>55m</strong> (durée illimitée)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Blades of Hoeth (Swordmasters)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Sort lié <strong>\"Fireball\"</strong> : boule de feu magique — <strong>500</strong> dégâts à distance (dont 30% magiques) et <strong>144</strong> dégâts explosifs, portée <strong>300m</strong>, <strong>4</strong> utilisations, rechargement <strong>60s</strong> ; efficace à longue portée et contre plusieurs combattants, nécessite une ligne de vue directe</div>\n        <div class=\"attr-item\">Réserve de Vents de la Magie : <strong>+10</strong> (armée propre)</div>\n        <div class=\"attr-item\">Attribut : <strong>Mastery of the Elemental Winds</strong> — quand deux unités ou plus de la même armée partagent cet attribut, l'intensité qu'il procure augmente la puissance des sorts lancés</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Teclis).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Teclis : Swordmasters et Phoenix recrutés 25% moins cher (faction), une Arcane Phoenix transformée en tour de soutien magique (Spell Mastery/Resist, faction), et des héros lanceurs de sorts déjà vétérans (+5 rang de recrutement, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "teclis", "name": "Teclis", "qty": 1, "note": "Reste en retrait et sature le champ de bataille de sorts (Haute Magie, Feu, Cieux, Vie, Lumière, Ombres selon la version) — sa réserve de +10 Vents de la Magie (seigneur) lui permet d'enchaîner sans trop attendre, et son sort lié Fireball (500 dégâts à distance, 300m de portée, 4 utilisations) achève les cibles isolées à longue distance"},
+      "heroes": [
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 2, "note": "Recrutés directement avec +5 rangs d'expérience (faction) — un renfort de magie immédiatement compétent, sans phase de montée en niveau"}
+      ],
+      "army": [
+        {"icon": "swordmaster", "name": "Swordmasters of Hoeth", "qty": 4, "note": "-25% de coût de recrutement (faction) — l'élite de mêlée qui protège Teclis devient abordable en nombre"},
+        {"icon": "bladesOfHoeth", "name": "Blades of Hoeth (Swordmasters of Hoeth)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Swordmasters of Hoeth, également couverte par le -25% de coût de recrutement (faction)"},
+        {"icon": "phoenix", "name": "Phoenix (Arcane)", "qty": 3, "note": "-25% de coût de recrutement (faction) ; son aura Omen of Miracles offre Spell Mastery +5%, résistance aux sorts +10% et immunité à la Psychologie sur 55m à toute l'armée (faction) — une synergie magique unique à Teclis"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 4, "note": "Ligne de tenue bon marché pour occuper le front"},
+        {"icon": "hefArcher", "name": "Archers", "qty": 3, "note": "Soutien à distance polyvalent"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Anti-monstre et anti-char à distance"}
+      ],
+      "magic": "Teclis est le meilleur lanceur de sorts du jeu : sa réserve de Vents de la Magie et sa Mastery of the Elemental Winds, combinées à l'aura de Spell Mastery de l'Arcane Phoenix (faction), permettent de spammer sans relâche buffs, soins et dégâts directs.",
+      "note": "Garde Teclis loin du contact — il est extrêmement fragile en mêlée malgré sa puissance magique. Laisse Swordmasters et Phoenix former un mur de protection pendant qu'il opère depuis l'arrière. Le -50% de coût de recrutement allié (faction) est aussi un argument fort pour jouer les alliances High Elves en campagne."
+    }
+  },
+  {
+    "id": "eltharion",
+    "numeral": "III",
+    "name": "Eltharion le Sinistre",
+    "epithet": "Le Gardien de Tor Yvresse",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Eltharion_the_Grim",
+    "faction": "Yvresse",
+    "seal": "eltharion",
+    "portraitImage": "assets/portraits/eltharion.png",
+    "lore": "<p>Eltharion le Sinistre est l'un des plus grands généraux qu'Ulthuan ait jamais connus. Ses exploits passés à repousser les envahisseurs des côtes du royaume — y compris le tout premier Waaagh! légendaire de Grom en personne — lui ont valu d'être élu Gardien de Tor Yvresse.</p>\n      <p>Après avoir porté la guerre outre-mer contre ses ennemis jurés, les Peaux-Vertes, sans jamais parvenir à apaiser durablement leur belligérance, Eltharion est rentré à Tor Yvresse, déterminé à fortifier ses défenses comme jamais auparavant. Quand la cité est menacée, le Gardien emploie tous les moyens nécessaires pour la protéger — des méthodes parfois contestées par ses pairs, mais qui lui valent l'amour indéfectible de son peuple et la terreur de ses ennemis.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès au <strong>Dungeon of Athel Tamarha</strong></div>\n        <div class=\"attr-item\">Peut répandre les <strong>Mists of Yvresse</strong>, recouvrant les terres d'Eltharion et de ses alliés d'un voile défensif</div>\n        <div class=\"attr-item\"><strong>Invocation of Ladrielle</strong> : accorde des bonus aux armées et aux régions situées dans les Mists of Yvresse</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-80</strong> avec les Peaux-Vertes</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+3</strong> pour l'infanterie à lance et les Rangers</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Scions of Mathlann (Spearmen)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisé à l'attrition du Barren Wasteland (armée du seigneur)</div>\n        <div class=\"attr-item\">Commandement : <strong>+8</strong> pour l'infanterie à lance et les Rangers (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+8</strong> pour l'infanterie à lance et les Rangers (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut : provoque la peur contre les Peaux-Vertes (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Eltharion le Sinistre).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Eltharion : infanterie à lance et Rangers recrutés déjà expérimentés (+3 rang, faction) et bien plus résistants au combat (+8 commandement, +8 défense en mêlée, seigneur), avec un net avantage contre les Peaux-Vertes",
+      "totalSlots": 20,
+      "lord": {"icon": "eltharion", "name": "Eltharion le Sinistre", "qty": 1, "note": "Généraliste solide — combattant correct, lanceur de sorts correct ; monté sur son Griffon Stormwing, il peut aussi provoquer la terreur"},
+      "heroes": [
+        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée en complément d'Eltharion"},
+        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique complémentaire"}
+      ],
+      "army": [
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 5, "note": "+3 rang de recrutement (faction) puis +8 commandement et +8 défense en mêlée (seigneur) — le pilier de cette armée"},
+        {"icon": "scionsOfMathlann", "name": "The Scions of Mathlann (Spearmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Spearmen, également couverte par +8 commandement et +8 défense en mêlée (seigneur)"},
+        {"icon": "shadowWalker", "name": "Shadow Warriors", "qty": 4, "note": "Unité de type Ranger — profite du même double bonus faction (+3 rang) et seigneur (+8 commandement/défense)"},
+        {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Soutien à distance classique"},
+        {"icon": "phoenix", "name": "Phoenix (Arcane)", "qty": 2, "note": "Monstre volant polyvalent en soutien"}
+      ],
+      "magic": "Eltharion a accès à la Haute Magie (Apotheosis, Tempest, Soul Quench) pour soigner et soutenir sa ligne tout en punissant les concentrations ennemies.",
+      "note": "Particulièrement fort contre les factions Peaux-Vertes grâce à son attribut de terreur dédié et ses -80 relations diplomatiques qui garantissent une guerre quasi permanente (faction). Les Mists of Yvresse et l'Invocation of Ladrielle permettent de sécuriser durablement le territoire autour de Tor Yvresse pendant que cette armée part en offensive."
+    }
+  },
+  {
+    "id": "imrik",
+    "numeral": "IV",
+    "name": "Imrik",
+    "epithet": "Le Prince Dragon",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Imrik",
+    "faction": "Knights of Caledor",
+    "seal": "imrik",
+    "portraitImage": "assets/portraits/imrik.png",
+    "lore": "<p>Malgré une fierté que d'aucuns qualifieraient d'arrogance, Imrik est le plus noble des Princes Dragons, dont l'assurance et le jugement martial confinent au surnaturel. Descendant du Roi Phénix Caledor lui-même, il est le dernier Prince Dragon à combattre selon la tradition de sa maison, monté sur un puissant Dragon de Feu nommé Minaithnir.</p>\n      <p>On pourrait lui reprocher un certain mépris pour la faiblesse, mais Imrik s'est toujours battu noblement pour défendre sa patrie et l'ensemble d'Ulthuan, se révélant sans cesse un rempart inébranlable contre les ennemis des Hauts Elfes.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\"><strong>Dragon Taming</strong> : permet de rechercher les secrets des puissants Dragons ou de les vaincre pour obtenir leur allégeance</div>\n        <div class=\"attr-item\"><strong>Invocation of Eldrazor</strong> : améliore et accorde de l'expérience aux Dragon Princes, seigneurs et héros</div>\n        <div class=\"attr-item\"><strong>Greater Invocation of Vaul</strong> : bonus supplémentaires pour les unités de Dragons</div>\n        <div class=\"attr-item\">Durée de recrutement local : <strong>-1 tour</strong> pour les Dragons et Dragon Princes</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Talons of Tor Caleda (Archers)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Fireborn (Dragon Princes)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+15%</strong></div>\n        <div class=\"attr-item\">Résilience Draconique : immunisé à l'attrition en montagne et désert (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Dragons et les Dragon Princes (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Imrik).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Imrik : Dragons et Dragon Princes moins chers à entretenir (-25%, seigneur) et recrutés un tour plus vite (faction), avec des régiments favoris dédiés aux Dragon Princes (Fireborn) et aux Archers (Talons of Tor Caleda)",
+      "totalSlots": 20,
+      "lord": {"icon": "imrik", "name": "Imrik", "qty": 1, "note": "Monté sur Minaithnir, son Dragon de Feu — l'un des combattants les plus dévastateurs du jeu, sans magie mais avec une puissance brute écrasante. La Dragon Taming (faction) permet en plus de traquer ou d'apprivoiser d'autres Dragons sauvages pour renforcer l'armée"},
+      "heroes": [
+        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée en complément d'Imrik — profite de l'expérience accordée par l'Invocation of Eldrazor (faction)"},
+        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique pour compenser l'absence de sorts propres à Imrik ; gagne lui aussi de l'expérience via l'Invocation of Eldrazor (faction)"}
+      ],
+      "army": [
+        {"icon": "dragonPrince", "name": "Dragon Princes", "qty": 4, "note": "-25% d'entretien (seigneur) et recrutement local -1 tour (faction) — une cavalerie d'élite bien plus soutenable et accessible que la normale"},
+        {"icon": "fireborn", "name": "The Fireborn (Dragon Princes)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Dragon Princes, également couverte par le -25% d'entretien (seigneur)"},
+        {"icon": "dragon", "name": "Dragons", "qty": 3, "note": "-25% d'entretien (seigneur) et recrutement local -1 tour (faction) : une concentration de dragons quasiment impossible à se permettre avec un autre seigneur, encore renforcée par la Greater Invocation of Vaul (faction)"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 4, "note": "Ligne de tenue bon marché pour occuper le front pendant que les dragons frappent"},
+        {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Soutien à distance"},
+        {"icon": "talonsOfTorCaleda", "name": "Talons of Tor Caleda (Archers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Archers"}
+      ],
+      "magic": "Imrik ne lance pas de sorts — le Mage de soutien couvre les besoins de buffs/débuffs pendant que la puissance brute des dragons et Dragon Princes fait le travail.",
+      "note": "Le +15% de portée de déplacement sur la carte de campagne (seigneur) accélère nettement les déplacements entre les fronts, tandis que la Résilience Draconique protège des attritions de montagne et désert. Côté faction, l'Invocation of Eldrazor et la Greater Invocation of Vaul renforcent doublement le thème dragons de cette armée : XP gratuite pour Dragon Princes/seigneurs/héros et bonus supplémentaires pour les Dragons."
+    }
+  },
+  {
+    "id": "alithanar",
+    "numeral": "V",
+    "name": "Alith Anar",
+    "epithet": "Le Roi de l'Ombre",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Alith_Anar",
+    "faction": "Nagarythe",
+    "seal": "alithanar",
+    "portraitImage": "assets/portraits/alithanar.png",
+    "lore": "<p>La tradition veut que le peuple de Nagarythe ait choisi Alith Anar pour souverain après la fuite de Malekith vers l'ouest. Dernier héritier d'une grande lignée, ses ancêtres exterminés par les sbires du Roi Sorcier, il entreprit l'éradication des Druchii encore cachés à Ulthuan dans les années sombres qui suivirent.</p>\n      <p>Devenu un revenant assoiffé de vengeance, le Roi de l'Ombre traque depuis des millénaires chaque traître survivant à la Rupture. Aujourd'hui encore, son arc ne connaîtra le repos que lorsque Malekith aura payé de sa vie.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Éliminer les personnages marqués \"Marked for Death\" accorde diverses récompenses</div>\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\"><strong>Invocation of Morai-Heg</strong> : invoque le héros unique Hand of the Shadow Crown</div>\n        <div class=\"attr-item\">Durée de recrutement globale : <strong>-1 tour</strong> (minimum 1)</div>\n        <div class=\"attr-item\">Débloque la posture d'armée <strong>Shadow Realms</strong> (téléportation qui ne peut pas être interceptée)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les The Grey (Shadow Warriors)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Shadow-walkers et Shadow Warriors (armée du seigneur)</div>\n        <div class=\"attr-item\">Chance de succès d'embuscade : <strong>+25%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Alith Anar).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Alith Anar : une horde de Shadow-walkers et Shadow Warriors deux fois moins chère à entretenir (-50%, seigneur), recrutée plus vite (faction) et soutenue par une chance d'embuscade de +25% (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "alithanar", "name": "Alith Anar", "qty": 1, "note": "Le meilleur tireur d'élite du jeu — sa portée de 300 rivalise avec l'artillerie ; garde-le en mouvement plutôt qu'au contact. Sa posture Shadow Realms (faction) permet des déplacements surprise impossibles à intercepter"},
+      "heroes": [
+        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée pour protéger la ligne de tir"}
+      ],
+      "army": [
+        {"icon": "shadowWalker", "name": "Shadow-walkers", "qty": 8, "note": "Cœur de l'armée — -50% d'entretien (seigneur) permet d'en aligner une horde inhabituellement dense"},
+        {"icon": "theGrey", "name": "The Grey (Shadow Warriors)", "qty": 2, "note": "Même bonus d'entretien (seigneur), plus régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 4, "note": "Ligne de tenue pour protéger les tireurs"},
+        {"icon": "greatEagle", "name": "Great Eagle", "qty": 2, "note": "Chasse aux tireurs isolés et aux flancs, rapide et peu coûteux"},
+        {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Soutien à distance supplémentaire"}
+      ],
+      "magic": "Alith Anar ne lance pas de sorts — sa puissance vient de son arc légendaire (le Moonbow) et de la chance d'embuscade +25% (seigneur) qui permet d'engager le combat dans des conditions idéales.",
+      "note": "Désactive le tir automatique pour Alith Anar : ses munitions sont limitées et doivent être réservées aux cibles les plus dangereuses (seigneurs, monstres, unités d'élite). L'Invocation of Morai-Heg (faction) offre en plus un héros unique gratuit, Hand of the Shadow Crown, à invoquer dès que possible."
+    }
+  },
+  {
+    "id": "alarielle",
+    "numeral": "VI",
+    "name": "Alarielle la Radieuse",
+    "epithet": "L'Impératrice-Éternelle",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Alarielle_the_Radiant",
+    "faction": "Avelorn",
+    "seal": "alarielle",
+    "portraitImage": "assets/portraits/alarielle.png",
+    "lore": "<p>Depuis l'Âge d'Or, l'Impératrice-Éternelle sert Isha en tant que grande prêtresse dans le monde mortel. Alarielle est la onzième à porter ce titre depuis l'époque d'Aenarion. Sa chevelure dorée est comparée à un nuage d'or, et l'on dit sa beauté si grande qu'elle pourrait émouvoir les dieux immortels eux-mêmes jusqu'aux larmes.</p>\n      <p>Le pouvoir de l'Impératrice-Éternelle est celui de la nature elle-même : là où elle marche, les champs se couvrent de fleurs. Servante de la lumière et de la nature, elle s'oppose à toute forme de corruption — et sa seule présence est une malédiction pour les créatures corrompues, quelle que soit leur origine.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Gagne des bonus quand tout Ulthuan est tenu par les Hauts Elfes</div>\n        <div class=\"attr-item\">Reçoit des pénalités quand des régions d'Ulthuan ne sont pas tenues par les Hauts Elfes</div>\n        <div class=\"attr-item\">Coût en Influence : <strong>-25%</strong> pour les actions Intrigue at Court</div>\n        <div class=\"attr-item\"><strong>Invocation of Lileath</strong> : améliore les chances de lancer les sorts et le taux de drop d'objets magiques</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Laisse des bonus durables sur les provinces qu'elle visite</div>\n        <div class=\"attr-item\">S'affaiblit à mesure que le Chaos se renforce</div>\n        <div class=\"attr-item\">Force des tirs : <strong>+15%</strong> pour les Sisters of Avelorn et les Handmaidens (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité passive : \"Guardian\" — Ward Save de zone accordant <strong>Résistance Physique +15%</strong> à tous les Lords et Heroes alliés dans un rayon de <strong>35m</strong> (durée illimitée)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Alarielle la Radieuse).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Alarielle : des Sisters of Avelorn +15% plus mordantes à distance (seigneur), appuyées par les esprits de la forêt et une magie facilitée par l'Invocation of Lileath (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "alarielle", "name": "Alarielle la Radieuse", "qty": 1, "note": "Lanceuse de sorts polyvalente et étonnamment robuste en mêlée — soigne, buffe et endommage à la fois ; l'Invocation of Lileath (faction) améliore encore ses chances de lancer ses sorts ; sa capacité passive Guardian (seigneur) accorde +15% de Résistance Physique à tous les Lords/Heroes alliés dans 35m de rayon"},
+      "heroes": [
+        {"icon": "mage", "name": "Mage (Haute Magie / Vie)", "qty": 2, "note": "Renfort de soin et de buffs en écho aux sorts d'Alarielle — protégés par sa capacité Guardian (seigneur) tant qu'ils restent dans les 35m"}
+      ],
+      "army": [
+        {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 6, "note": "+15% de force de tir grâce à Alarielle (seigneur) — le cœur offensif de cette armée"},
+        {"icon": "dryad", "name": "Dryads", "qty": 4, "note": "Infanterie d'esprits de la forêt, résistante à la magie"},
+        {"icon": "treeKin", "name": "Tree Kin", "qty": 3, "note": "Monstre végétal tanky pour percer la ligne ennemie"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "Ligne de tenue complémentaire"},
+        {"icon": "greatEagle", "name": "Great Eagle", "qty": 2, "note": "Mobilité et chasse aux tireurs isolés"}
+      ],
+      "magic": "Alarielle combine Haute Magie, Lore of Life et Lore of Light : soins massifs (Earth Blood, Shield of Thorns) et dégâts de zone (Tempest, Banishment), avec des chances de lancer améliorées par l'Invocation of Lileath (faction).",
+      "note": "Sa présence laisse des bonus durables sur les provinces visitées en campagne, mais elle s'affaiblit à mesure que la corruption du Chaos progresse dans le monde — à surveiller sur les campagnes longues. En campagne, viser le contrôle total d'Ulthuan par les Hauts Elfes (faction) débloque des bonus supplémentaires, à l'inverse une perte de territoire sur l'île inflige des pénalités."
+    }
+  },
+  {
+    "id": "aislinn",
+    "numeral": "VII",
+    "name": "Sea Lord Aislinn",
+    "epithet": "Le Seigneur des Mers",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Sea_Lord_Aislinn",
+    "faction": "High Elf Sea Patrol",
+    "seal": "aislinn",
+    "portraitImage": "assets/portraits/aislinn.png",
+    "lore": "<p>L'amiral de la flotte asur n'accorde ni pitié ni quartier à quiconque menace Ulthuan. Sous son commandement, la flotte des Hauts Elfes a remporté d'innombrables victoires, et nul ne conteste ses succès — mais beaucoup, à la cour d'Ulthuan, jugent avec dégoût la façon dont Aislinn exerce ses fonctions : avec un enthousiasme impitoyable et une âpreté que peu trouvent à leur goût.</p>\n      <p>Hautain et sans pitié, le Seigneur des Mers incarne la face la plus sombre de la conviction des Hauts Elfes d'être supérieurs à toutes les autres races du monde. Il n'a que peu de scrupules à déclencher des guerres en terres étrangères dès lors qu'il y perçoit un bénéfice pour la sécurité, le statut ou la cause de son peuple. Malgré son impopularité parmi la noblesse asur, ceux qui servent sous ses ordres lui vouent une loyauté et un dévouement sans faille.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès aux puissants <strong>Dragonships</strong> : la plus redoutable arme de la marine d'Ulthuan, offrant selon la variante un soutien d'artillerie ou un sanctuaire invoquant des Oceanids — réservée aux plus grands amiraux asur</div>\n        <div class=\"attr-item\">Peut céder les colonies conquises à d'autres factions Hautes Elfes, ce qui établit des <strong>Sea Patrol Outposts</strong> : ces avant-postes donnent de la visibilité sur les terres asur et génèrent surtout de la <strong>Dedication</strong>, utilisée pour acheter les améliorations Asur Domination</div>\n        <div class=\"attr-item\">Accès aux avancées <strong>Asur Domination</strong>, débloquant des progrès spéciaux et l'aide des plus grands chefs d'Ulthuan à mesure que la Dedication augmente</div>\n        <div class=\"attr-item\">Peut émettre des Décrets Provinciaux sans posséder l'intégralité de la province</div>\n        <div class=\"attr-item\">Immunisé aux pénalités diplomatiques liées à la violation de territoire dans toutes les régions Hautes Elfes</div>\n        <div class=\"attr-item\">Immunisé à l'attrition de Haute Mer, des Récifs et des Tempêtes</div>\n        <div class=\"attr-item\">Les Sea Lanes n'ont aucune durée de trajet, pour toutes les forces</div>\n        <div class=\"attr-item\">Aucun coût de mouvement lors du passage entre mer et terre</div>\n        <div class=\"attr-item\">Posture <strong>Mist Landing</strong> : déplacement instantané de la mer vers la terre, en ignorant les côtes normalement infranchissables</div>\n        <div class=\"attr-item\">Durée de recrutement local : <strong>-1 tour</strong> pour les Oceanids, Sea Elementals et Merwyrms (minimum 1)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Company of the Kalendirian (Ship's Company)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Permet les attaques navales contre les colonies portuaires (armée du seigneur)</div>\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong> en mer</div>\n        <div class=\"attr-item\">Force des tirs : <strong>+20%</strong> pour les unités Hautes Elfes à distance en combattant en mer (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-10%</strong> pour les Ship's Company, Oceanids, Sea Elementals et Merwyrms (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité active : <strong>\"Iron-Handed Captain\"</strong> — Commandement <strong>+100</strong> et Ralliement immédiat pour un allié dans un rayon de <strong>200m</strong> dont le commandement est brisé ; durée <strong>42s</strong>, rechargement <strong>120s</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Sea Lord Aislinn).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Aislinn : un cœur maritime (Ship's Company, Oceanids, Sea Elementals, Merwyrms) moins cher à entretenir et recruté plus vite (faction+seigneur), appuyé par des tireurs dopés de +20% de force de tir en combattant en mer (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "aislinn", "name": "Sea Lord Aislinn", "qty": 1, "note": "Amiral implacable de la flotte asur — sa capacité Iron-Handed Captain (+100 de commandement et ralliement immédiat, 200m, seigneur) sauve in extremis une unité alliée en déroute, et son bonus de +20% de force de tir en mer (seigneur) en fait un seigneur redoutable près des côtes ; débloque aussi les attaques navales contre les colonies portuaires (seigneur)"},
+      "heroes": [
+        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée classique en complément d'Aislinn"},
+        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — buffs et projectiles pour appuyer la ligne"}
+      ],
+      "army": [
+        {"icon": "shipsCompany", "name": "Ship's Company", "qty": 4, "note": "-10% d'entretien (seigneur) — le cœur bon marché de cette armée maritime"},
+        {"icon": "companyOfTheKalendirian", "name": "Company of the Kalendirian (Ship's Company)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Ship's Company, également couverte par le -10% d'entretien (seigneur)"},
+        {"icon": "oceanids", "name": "Oceanids", "qty": 3, "note": "-10% d'entretien (seigneur) et recrutement local -1 tour (faction) — infanterie monstrueuse polyvalente issue des profondeurs"},
+        {"icon": "seaElemental", "name": "Sea Elemental", "qty": 2, "note": "Même double bonus faction/seigneur — un monstre d'eau capable de déclencher tempêtes et tourbillons"},
+        {"icon": "merwyrm", "name": "Merwyrm", "qty": 2, "note": "Même double bonus faction/seigneur — la plus puissante des créatures marines recrutables, lointaine cousine des Dragons"},
+        {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 2, "note": "+20% de force de tir en combattant en mer (seigneur) — polyvalents lance/arc"},
+        {"icon": "skycutter", "name": "Lothern Skycutters", "qty": 2, "note": "Chars volants tireurs, profitent eux aussi du +20% de force de tir en mer (seigneur) — idéaux pour harceler et intercepter"}
+      ],
+      "magic": "Le Mage de Haute Magie complète l'arsenal offensif d'Aislinn, qui n'est pas lui-même un lanceur de sorts mais un amiral-combattant.",
+      "note": "Cette armée est pensée pour combattre près des côtes et des colonies portuaires, là où le +20% de force de tir et les attaques navales (seigneur) prennent tout leur sens. Sur la carte de campagne, l'immunité à l'attrition de Haute Mer/Récifs/Tempêtes, les Sea Lanes sans durée de trajet et la posture Mist Landing (faction) permettent de déplacer cette armée n'importe où sur le globe sans coût ni risque, débarquant instantanément même sur des côtes normalement infranchissables. L'accès aux Dragonships et les avancées Asur Domination financées par la Dedication des Sea Patrol Outposts (faction) renforcent encore la puissance maritime de cette faction."
+    }
+  }
+]

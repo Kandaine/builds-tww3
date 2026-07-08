@@ -1,0 +1,1149 @@
+/* ============================================================================
+   style.css — Feuille de style unique partagée par TOUTES les pages du site
+   (index.html + les 24 pages de faction). Grandes parties du fichier :
+
+   1) Variables de thème (custom properties CSS) : un bloc `.theme-<faction>`
+      par faction, chacun redéfinissant la même liste de variables --bg,
+      --accent-primary, --text, etc. C'est ce qui permet à chaque page de
+      faction d'avoir sa propre palette de couleurs sans dupliquer les règles
+      de mise en page : app.js pose juste la classe `theme-<faction>` sur
+      <body> (voir renderPage() dans app.js), et toutes les couleurs suivent.
+   2) Mise en page générale (reset, .app, .sidebar, .page...).
+   3) Composants de la fiche seigneur (portrait, sceau, cartes d'unité...).
+   4) Thème spécifique à la page de recherche (body.search-theme, .result-*).
+   5) Media query responsive tout en bas du fichier.
+   ============================================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Upright:wght@500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Thème par défaut = Vampire Counts (gothique) — appliqué tant qu'aucune
+   classe .theme-* n'est posée sur <body>. Les fiches de seigneurs
+   (vampire_counts.html) basculent la classe selon la faction du seigneur
+   affiché ; voir plus bas. */
+:root, .theme-vampire-counts{
+  --bg: #150d12;
+  --bg-glow: #201319;
+  --panel: #1e1218;
+  --panel-light: #2a1720;
+  --panel-deep: #170e13;
+  --accent-primary: #8a2332;
+  --accent-primary-bright: #b9354a;
+  --accent-primary-rgb: 138,35,50;
+  --accent-secondary: #c9a876;
+  --accent-secondary-rgb: 201,168,118;
+  --text: #e9e0d3;
+  --text-dim: #a89283;
+  --border: #3d2530;
+}
+
+/* ---- Dwarfs : forge, pierre et bronze des Karaz Ankor ---- */
+.theme-dwarfs{
+  --bg: #120e0a;
+  --bg-glow: #241a0e;
+  --panel: #1d1710;
+  --panel-light: #2b2116;
+  --panel-deep: #170f0a;
+  --accent-primary: #b5541c;
+  --accent-primary-bright: #e0812e;
+  --accent-primary-rgb: 181,84,28;
+  --accent-secondary: #c9a876;
+  --accent-secondary-rgb: 201,168,118;
+  --text: #ecdfc4;
+  --text-dim: #a8927a;
+  --border: #3c2f1e;
+}
+
+/* ---- High Elves : Ulthuan, azur et or sous la lumière du crépuscule ---- */
+.theme-high-elves{
+  --bg: #0c1420;
+  --bg-glow: #16283a;
+  --panel: #142132;
+  --panel-light: #1d3049;
+  --panel-deep: #0e1826;
+  --accent-primary: #3d7ea6;
+  --accent-primary-bright: #5fa8d3;
+  --accent-primary-rgb: 61,126,166;
+  --accent-secondary: #d4b95e;
+  --accent-secondary-rgb: 212,185,94;
+  --text: #eef2f0;
+  --text-dim: #93a8b5;
+  --border: #253c52;
+}
+
+/* ---- Dark Elves : Naggaroth glaciale, violet froid et poison vénéneux ---- */
+.theme-dark-elves{
+  --bg: #0c0a12;
+  --bg-glow: #171224;
+  --panel: #130f1a;
+  --panel-light: #1d1628;
+  --panel-deep: #0e0b14;
+  --accent-primary: #5b2f7a;
+  --accent-primary-bright: #7d4aa3;
+  --accent-primary-rgb: 91,47,122;
+  --accent-secondary: #8fae4a;
+  --accent-secondary-rgb: 143,174,74;
+  --text: #e6e0ec;
+  --text-dim: #8f88a0;
+  --border: #2a2338;
+}
+
+/* ---- Daemons of Chaos : warp violet et gloire dorée des Dieux Sombres ---- */
+.theme-daemons-of-chaos{
+  --bg: #120a16;
+  --bg-glow: #1f1024;
+  --panel: #180e1c;
+  --panel-light: #241530;
+  --panel-deep: #130a17;
+  --accent-primary: #9333a8;
+  --accent-primary-bright: #c04fd6;
+  --accent-primary-rgb: 147,51,168;
+  --accent-secondary: #c9a876;
+  --accent-secondary-rgb: 201,168,118;
+  --text: #ede4f0;
+  --text-dim: #9c8aa8;
+  --border: #2f1c38;
+}
+
+/* ---- Khorne : sang vif, laiton et rage sans fin ---- */
+.theme-khorne{
+  --bg: #140505;
+  --bg-glow: #240a0a;
+  --panel: #1c0808;
+  --panel-light: #2a0d0d;
+  --panel-deep: #170606;
+  --accent-primary: #c81e2c;
+  --accent-primary-bright: #f0303f;
+  --accent-primary-rgb: 200,30,44;
+  --accent-secondary: #8a6a3a;
+  --accent-secondary-rgb: 138,106,58;
+  --text: #f0e0d8;
+  --text-dim: #a8827a;
+  --border: #3d1518;
+}
+
+/* ---- Warriors of Chaos : acier sombre, glace des Terres du Chaos et runes dorées ---- */
+.theme-warriors-of-chaos{
+  --bg: #0c0d10;
+  --bg-glow: #161a20;
+  --panel: #12151a;
+  --panel-light: #1c212a;
+  --panel-deep: #0e1013;
+  --accent-primary: #5a6c84;
+  --accent-primary-bright: #7d94b0;
+  --accent-primary-rgb: 90,108,132;
+  --accent-secondary: #a8935a;
+  --accent-secondary-rgb: 168,147,90;
+  --text: #e6e8ec;
+  --text-dim: #8a92a0;
+  --border: #262c36;
+}
+
+/* ---- Chaos Dwarfs : forge infernale, métal en fusion et fumée noire ---- */
+.theme-chaos-dwarfs{
+  --bg: #0f0a08;
+  --bg-glow: #1e120a;
+  --panel: #170f0a;
+  --panel-light: #241708;
+  --panel-deep: #110b07;
+  --accent-primary: #c2410c;
+  --accent-primary-bright: #e8622a;
+  --accent-primary-rgb: 194,65,12;
+  --accent-secondary: #8a7f6d;
+  --accent-secondary-rgb: 138,127,109;
+  --text: #ede4d8;
+  --text-dim: #9c8b78;
+  --border: #3a2418;
+}
+
+/* ---- Bretonnia : chevalerie, azur royal et or de la Dame du Lac ---- */
+.theme-bretonnia{
+  --bg: #0b0e18;
+  --bg-glow: #131c34;
+  --panel: #121a2c;
+  --panel-light: #1a2540;
+  --panel-deep: #0c1120;
+  --accent-primary: #3a5aa8;
+  --accent-primary-bright: #5c7dcf;
+  --accent-primary-rgb: 58,90,168;
+  --accent-secondary: #e0b83c;
+  --accent-secondary-rgb: 224,184,60;
+  --text: #eef1f7;
+  --text-dim: #8b93a8;
+  --border: #26304a;
+}
+
+/* ---- Beastmen : forêts corrompues, corne et rouille du Chaos ---- */
+.theme-beastmen{
+  --bg: #0e1309;
+  --bg-glow: #1a2410;
+  --panel: #161d0f;
+  --panel-light: #212b16;
+  --panel-deep: #10150a;
+  --accent-primary: #6b7a1f;
+  --accent-primary-bright: #94a82b;
+  --accent-primary-rgb: 107,122,31;
+  --accent-secondary: #b8a678;
+  --accent-secondary-rgb: 184,166,120;
+  --text: #e2e0c9;
+  --text-dim: #948d6f;
+  --border: #33361c;
+}
+
+/* ---- Grand Cathay : jade impérial, laque rouge et or céleste ---- */
+.theme-grand-cathay{
+  --bg: #0a1410;
+  --bg-glow: #122019;
+  --panel: #0f1d17;
+  --panel-light: #182b22;
+  --panel-deep: #0b1512;
+  --accent-primary: #1f8f5f;
+  --accent-primary-bright: #2fc07d;
+  --accent-primary-rgb: 31,143,95;
+  --accent-secondary: #d4a017;
+  --accent-secondary-rgb: 212,160,23;
+  --text: #e8f2ec;
+  --text-dim: #8aa89a;
+  --border: #1c3529;
+}
+
+/* ---- Greenskins : vert Waaagh! vif, ferraille et bannières rouge sang ---- */
+.theme-greenskins{
+  --bg: #0d1206;
+  --bg-glow: #16210a;
+  --panel: #131a0b;
+  --panel-light: #1e2a12;
+  --panel-deep: #0e1408;
+  --accent-primary: #5a9c1f;
+  --accent-primary-bright: #7ecc2e;
+  --accent-primary-rgb: 90,156,31;
+  --accent-secondary: #a8402c;
+  --accent-secondary-rgb: 168,64,44;
+  --text: #e6ecdc;
+  --text-dim: #93a180;
+  --border: #2c3818;
+}
+
+/* ---- Kislev : glace bleutée, fourrure et rouge de la Moïtherland ---- */
+.theme-kislev{
+  --bg: #0a0e14;
+  --bg-glow: #101c28;
+  --panel: #0d141c;
+  --panel-light: #16212e;
+  --panel-deep: #0a1017;
+  --accent-primary: #4a8bc2;
+  --accent-primary-bright: #6fb3e0;
+  --accent-primary-rgb: 74,139,194;
+  --accent-secondary: #b8323a;
+  --accent-secondary-rgb: 184,50,58;
+  --text: #e8eef2;
+  --text-dim: #85969f;
+  --border: #1c2a38;
+}
+
+/* ---- Lizardmen : jungle antique, jade et or des Anciens ---- */
+.theme-lizardmen{
+  --bg: #070f0a;
+  --bg-glow: #0f1f14;
+  --panel: #0a1610;
+  --panel-light: #14261b;
+  --panel-deep: #08110c;
+  --accent-primary: #2f9e5a;
+  --accent-primary-bright: #46c878;
+  --accent-primary-rgb: 47,158,90;
+  --accent-secondary: #c9a227;
+  --accent-secondary-rgb: 201,162,39;
+  --text: #e4f0e6;
+  --text-dim: #86a892;
+  --border: #1c3323;
+}
+
+/* ---- Norsca : glace nordique, acier gelé et rouille sanglante ---- */
+.theme-norsca{
+  --bg: #0a0f14;
+  --bg-glow: #101c28;
+  --panel: #0d151c;
+  --panel-light: #16232e;
+  --panel-deep: #0a1117;
+  --accent-primary: #5a8ab0;
+  --accent-primary-bright: #7db3d6;
+  --accent-primary-rgb: 90,138,176;
+  --accent-secondary: #9c3b2a;
+  --accent-secondary-rgb: 156,59,42;
+  --text: #e8eef2;
+  --text-dim: #8596a2;
+  --border: #1c2c38;
+}
+
+/* ---- Nurgle : putréfaction verdâtre, mouches et bile ---- */
+.theme-nurgle{
+  --bg: #0a0f08;
+  --bg-glow: #141f0e;
+  --panel: #0d130a;
+  --panel-light: #1a2412;
+  --panel-deep: #0a0f07;
+  --accent-primary: #6b8a2e;
+  --accent-primary-bright: #8fb43e;
+  --accent-primary-rgb: 107,138,46;
+  --accent-secondary: #9c8a2e;
+  --accent-secondary-rgb: 156,138,46;
+  --text: #e8ecdc;
+  --text-dim: #93a180;
+  --border: #263318;
+}
+
+/* ---- Ogre Kingdoms : terre battue, bronze et or thésaurisé ---- */
+.theme-ogre-kingdoms{
+  --bg: #120d08;
+  --bg-glow: #1e150c;
+  --panel: #16100a;
+  --panel-light: #241a10;
+  --panel-deep: #120d07;
+  --accent-primary: #a0703a;
+  --accent-primary-bright: #c8924a;
+  --accent-primary-rgb: 160,112,58;
+  --accent-secondary: #c9b878;
+  --accent-secondary-rgb: 201,184,120;
+  --text: #f0e6d8;
+  --text-dim: #a8927a;
+  --border: #3a2a18;
+}
+
+/* ---- Skaven : sous-terrains crasseux, warpstone toxique et pourpre ---- */
+.theme-skaven{
+  --bg: #0c0e10;
+  --bg-glow: #141a14;
+  --panel: #0f1210;
+  --panel-light: #1c241c;
+  --panel-deep: #0b0d0b;
+  --accent-primary: #5a9e3a;
+  --accent-primary-bright: #7ed94f;
+  --accent-primary-rgb: 90,158,58;
+  --accent-secondary: #8a6ba0;
+  --accent-secondary-rgb: 138,107,160;
+  --text: #e4e8e0;
+  --text-dim: #8a9488;
+  --border: #2a3228;
+}
+
+/* ---- Slaanesh : excès décadent, pourpre et magenta ---- */
+.theme-slaanesh{
+  --bg: #150a14;
+  --bg-glow: #24101f;
+  --panel: #180d17;
+  --panel-light: #2a1526;
+  --panel-deep: #130912;
+  --accent-primary: #c23e8a;
+  --accent-primary-bright: #e85ba8;
+  --accent-primary-rgb: 194,62,138;
+  --accent-secondary: #8a4bc9;
+  --accent-secondary-rgb: 138,75,201;
+  --text: #f0e0ec;
+  --text-dim: #a888a0;
+  --border: #3a1f36;
+}
+
+/* ---- The Empire : bleu impérial et or de Sigmar ---- */
+.theme-empire{
+  --bg: #0a0d14;
+  --bg-glow: #121a26;
+  --panel: #0d1119;
+  --panel-light: #1a2432;
+  --panel-deep: #090c12;
+  --accent-primary: #3d6fb0;
+  --accent-primary-bright: #5f92d6;
+  --accent-primary-rgb: 61,111,176;
+  --accent-secondary: #c9a13a;
+  --accent-secondary-rgb: 201,161,58;
+  --text: #e8ecf2;
+  --text-dim: #8a96a8;
+  --border: #22304a;
+}
+
+/* ---- Tomb Kings : sable doré et turquoise funéraire de Nehekhara ---- */
+.theme-tomb-kings{
+  --bg: #120e08;
+  --bg-glow: #1e170c;
+  --panel: #16110a;
+  --panel-light: #261e11;
+  --panel-deep: #110d07;
+  --accent-primary: #c9a13a;
+  --accent-primary-bright: #e8c25a;
+  --accent-primary-rgb: 201,161,58;
+  --accent-secondary: #2e9c94;
+  --accent-secondary-rgb: 46,156,148;
+  --text: #f0e6d0;
+  --text-dim: #a8967a;
+  --border: #3a2f18;
+}
+
+/* ---- Tzeentch : magie changeante, dualité rose/bleu des Horreurs ---- */
+.theme-tzeentch{
+  --bg: #0d0a17;
+  --bg-glow: #180f28;
+  --panel: #120c1f;
+  --panel-light: #1e1433;
+  --panel-deep: #0c0817;
+  --accent-primary: #b23fd1;
+  --accent-primary-bright: #d466ef;
+  --accent-primary-rgb: 178,63,209;
+  --accent-secondary: #3ec2e0;
+  --accent-secondary-rgb: 62,194,224;
+  --text: #ece4f7;
+  --text-dim: #9184ab;
+  --border: #33244a;
+}
+
+/* ---- Vampire Coast : brume marine verdâtre et laiton corrodé des pirates morts-vivants ---- */
+.theme-vampire-coast{
+  --bg: #08120f;
+  --bg-glow: #0e1f19;
+  --panel: #0b1714;
+  --panel-light: #142621;
+  --panel-deep: #07110e;
+  --accent-primary: #3f9683;
+  --accent-primary-bright: #5ecbb0;
+  --accent-primary-rgb: 63,150,131;
+  --accent-secondary: #8a6a3a;
+  --accent-secondary-rgb: 138,106,58;
+  --text: #e2ede9;
+  --text-dim: #8ba59c;
+  --border: #24382f;
+}
+
+/* ---- Wood Elves : vert profond de forêt et ambre automnal d'Athel Loren ---- */
+.theme-wood-elves{
+  --bg: #0a1108;
+  --bg-glow: #131f0f;
+  --panel: #0e160b;
+  --panel-light: #1a2814;
+  --panel-deep: #090f07;
+  --accent-primary: #2f8f4e;
+  --accent-primary-bright: #4bbd6f;
+  --accent-primary-rgb: 47,143,78;
+  --accent-secondary: #c9982e;
+  --accent-secondary-rgb: 201,152,46;
+  --text: #e8f0e2;
+  --text-dim: #92a688;
+  --border: #263a1f;
+}
+
+/* ---- Page de recherche : parchemin, encre et sceaux de cire, dans
+   l'esprit de Warhammer: The Old World — volontairement distincte des
+   thèmes de faction ci-dessus, puisqu'elle réunit toutes les factions. ---- */
+body.search-theme{
+  --bg: #0a0a0f;
+  --bg-glow: #15141f;
+  --panel: #14131c;
+  --panel-light: #1c1a26;
+  --panel-deep: #0d0c13;
+  --accent-primary: #ff4d5e;
+  --accent-primary-bright: #ff7385;
+  --accent-primary-rgb: 255,77,94;
+  --accent-secondary: #ffb454;
+  --accent-secondary-rgb: 255,180,84;
+  --text: #f3f4f8;
+  --text-dim: #8d8fa3;
+  --border: #2a2836;
+}
+
+/* ---- Mise en page générale ---- */
+
+/* Reset minimal : on repart d'une base propre (pas de marges/paddings par
+   défaut du navigateur, box-sizing cohérent pour tous les calculs de taille). */
+*{box-sizing:border-box; margin:0; padding:0;}
+
+body{
+  background: radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
+  color: var(--text);
+  font-family: 'EB Garamond', serif;
+  min-height: 100vh;
+  transition: background .3s ease, color .3s ease;
+}
+
+.app{
+  display:flex;
+  min-height:100vh;
+}
+
+/* ---- Sidebar / spine of the codex ---- */
+.sidebar{
+  width: 280px;
+  flex-shrink:0;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-deep) 100%);
+  border-right: 1px solid var(--border);
+  padding: 32px 0;
+  display:flex;
+  flex-direction:column;
+}
+
+.sidebar-title{
+  font-family:'Cinzel', serif;
+  font-weight:700;
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: var(--accent-secondary);
+  padding: 0 28px 6px;
+  text-transform: uppercase;
+}
+.sidebar-sub{
+  font-size:13px;
+  color: var(--text-dim);
+  padding: 0 28px 24px;
+  font-style: italic;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 18px;
+}
+
+.search-input{
+  width:100%;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 9px 12px;
+  font-family: 'EB Garamond', serif;
+  font-size: 14px;
+  color: var(--text);
+}
+.search-input::placeholder{ color: var(--text-dim); }
+.search-input:focus{
+  outline:none;
+  border-color: var(--accent-secondary);
+}
+.faction-tabs{
+  display:flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.faction-tab{
+  font-family:'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 6px 10px;
+  cursor:pointer;
+  transition: all .2s ease;
+}
+.faction-tab:hover{ color: var(--text); border-color: var(--accent-secondary); }
+.faction-tab.active{
+  color: var(--accent-secondary);
+  border-color: var(--accent-secondary);
+  background: rgba(var(--accent-primary-rgb),0.18);
+}
+.lord-list-empty{
+  padding: 20px 28px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.lord-item{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  padding: 14px 28px;
+  cursor:pointer;
+  border-left: 3px solid transparent;
+  transition: all .2s ease;
+  position:relative;
+}
+.lord-item:hover{ background: rgba(var(--accent-primary-rgb),0.12); }
+.lord-item.active{
+  background: rgba(var(--accent-primary-rgb),0.18);
+  border-left: 3px solid var(--accent-primary-bright);
+}
+.lord-numeral{
+  font-family:'Cinzel', serif;
+  font-size:15px;
+  color: var(--accent-secondary);
+  opacity:.75;
+  width: 22px;
+}
+.lord-item.active .lord-numeral{ opacity:1; }
+.lord-names{ display:flex; flex-direction:column; }
+.lord-name{
+  font-family:'Cinzel', serif;
+  font-size: 14px;
+  letter-spacing:.5px;
+  color: var(--text);
+}
+.lord-epithet{
+  font-size: 12px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+/* ---- Main page ---- */
+.page{
+  flex:1;
+  padding: 56px 72px;
+  max-width: 920px;
+}
+
+.portrait-frame{
+  width:100%;
+  aspect-ratio: 16/6.2;
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  overflow:hidden;
+  margin-bottom: 28px;
+  position:relative;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-deep) 100%);
+}
+.portrait-frame svg{ width:100%; height:100%; display:block; }
+.portrait-frame img{ width:100%; height:100%; display:block; object-fit:cover; object-position: center 30%; }
+.portrait-frame::after{
+  content:"";
+  position:absolute; inset:0;
+  border: 1px solid rgba(var(--accent-secondary-rgb),0.25);
+  margin: 6px;
+  pointer-events:none;
+}
+
+.banner{
+  display:flex;
+  align-items:center;
+  gap:26px;
+  margin-bottom: 10px;
+}
+
+.seal{
+  width:72px; height:156px;
+  border-radius:6px;
+  border: 2px solid var(--accent-secondary);
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+  background: radial-gradient(circle, var(--panel-light) 0%, var(--panel) 100%);
+  flex-shrink:0;
+}
+.seal svg{ width:34px; height:34px; }
+.seal img{ width:100%; height:100%; object-fit:cover; object-position: top center; }
+
+.stats-caveat{
+  margin-top: 16px;
+  font-size: 13.5px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+.attr-list{ margin-top: 8px; }
+.attr-item{
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+.attr-item:last-child{ border-bottom: none; }
+.attr-item strong{ color: var(--accent-secondary); font-family: 'Cinzel', serif; font-size: 14px; letter-spacing: .3px; }
+
+.army-subhead{
+  font-family:'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin: 22px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+.army-subhead:first-child{ margin-top: 4px; }
+
+.unit-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+.unit-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 12px 14px;
+  display:flex;
+  gap: 12px;
+  align-items:flex-start;
+}
+.unit-icon{
+  width:56px; height:120px;
+  flex-shrink:0;
+  border-radius:6px;
+  border: 1px solid var(--accent-secondary);
+  background: radial-gradient(circle, var(--panel-light) 0%, var(--panel) 100%);
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+}
+.unit-icon svg{ width:20px; height:20px; }
+.unit-icon img{ width:100%; height:100%; object-fit:cover; object-position: top center; }
+.unit-info{ flex:1; min-width:0; }
+.unit-name-row{
+  display:flex;
+  justify-content:space-between;
+  align-items:baseline;
+  gap: 8px;
+}
+.unit-name{
+  font-family:'Cinzel', serif;
+  font-size: 13.5px;
+  color: var(--text);
+  letter-spacing: .2px;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.unit-qty{
+  font-family:'Cinzel', serif;
+  font-size: 13px;
+  color: var(--accent-secondary);
+  flex-shrink:0;
+}
+.unit-note{
+  font-size: 13.5px;
+  color: var(--text-dim);
+  margin-top: 4px;
+  line-height: 1.45;
+}
+
+.army-total{
+  margin-top: 16px;
+  font-family:'Cinzel', serif;
+  font-size: 12.5px;
+  letter-spacing: .5px;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+}
+
+/* Remarque : les règles ci-dessous (.army-total, .unit-card, .unit-icon,
+   .unit-name, .unit-note, .unit-qty) redéfinissent des sélecteurs déjà
+   stylés plus haut. En CSS, quand deux règles ont la même spécificité, c'est
+   la dernière déclarée dans le fichier qui l'emporte : ce sont donc CES
+   valeurs-ci qui s'appliquent réellement à l'écran pour ces classes, et non
+   celles vues précédemment. */
+.army-total{
+  font-size: 14px;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+  font-style: italic;
+}
+.unit-card{
+  display:flex;
+  align-items:flex-start;
+  gap: 12px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 10px 12px;
+  position: relative;
+}
+.unit-icon{
+  width: 56px; height: 120px;
+  flex-shrink:0;
+  border-radius: 6px;
+  background: radial-gradient(circle, var(--panel-light) 0%, #150d12 100%);
+  border: 1px solid var(--accent-secondary);
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+}
+.unit-icon svg{ width: 24px; height: 24px; }
+.unit-icon img{ width:100%; height:100%; object-fit:cover; object-position: top center; }
+.unit-info{ flex:1; min-width:0; }
+.unit-name{
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.3;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.unit-note{
+  font-size: 12px;
+  color: var(--text-dim);
+  font-style: italic;
+  margin-top: 2px;
+}
+.unit-qty{
+  font-family:'Cinzel', serif;
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--accent-secondary);
+  background: rgba(var(--accent-primary-rgb),0.18);
+  border: 1px solid var(--accent-primary);
+  border-radius: 3px;
+  padding: 3px 9px;
+  flex-shrink: 0;
+}
+
+/* Titre principal (nom du seigneur) et son épithète, affichés à côté du
+   sceau/portrait dans le bandeau d'en-tête de la fiche (voir .banner). */
+.lord-title{
+  font-family:'Cinzel', serif;
+  font-weight:900;
+  font-size: 40px;
+  color: var(--text);
+  line-height:1.05;
+}
+.lord-epithet-big{
+  font-family:'Cormorant Upright', serif;
+  font-style: italic;
+  color: var(--accent-secondary);
+  font-size: 17px;
+  margin-top:4px;
+}
+
+/* Petit séparateur SVG décoratif (voir dripSVG dans js/data.js), inséré
+   entre le bandeau d'en-tête et le corps de la fiche. */
+.drip-divider{
+  width:100%; height:14px;
+  margin: 26px 0 34px;
+}
+
+/* Étiquette affichant le nom de faction précis du seigneur (ex: "Von
+   Carstein"), ou le nom de faction générique dans les résultats de
+   recherche (voir .result-tags plus bas). */
+.faction-tag{
+  display:inline-block;
+  font-family:'Cinzel', serif;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color: var(--accent-secondary);
+  border: 1px solid var(--accent-secondary);
+  border-radius: 2px;
+  padding: 4px 10px;
+  margin-top: 14px;
+}
+
+/* Chaque grande section de la fiche (Lore, Effets, Attributs, Build
+   recommandé) partage cette structure : un en-tête avec icône + titre
+   (.section-head/.section-title), suivi d'un corps de texte (.section-body). */
+.section{ margin-bottom: 42px; }
+.section-head{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom: 14px;
+}
+.section-head svg{ width:20px; height:20px; flex-shrink:0; }
+.section-title{
+  font-family:'Cinzel', serif;
+  font-size: 19px;
+  letter-spacing: 1px;
+  color: var(--accent-primary-bright);
+  text-transform: uppercase;
+}
+.section-body{
+  font-size: 18px;
+  line-height: 1.75;
+  color: var(--text);
+}
+.section-body p{ margin-bottom: 12px; }
+.section-body em{ color: var(--accent-secondary); font-style: italic; }
+
+/* Grille utilisée pour la carte "Magie" en bas de la section Build
+   recommandé (voir renderPage() dans app.js). */
+.build-grid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-top: 16px;
+}
+.build-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 16px 18px;
+}
+.build-card h4{
+  font-family:'Cinzel', serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.build-card p, .build-card li{
+  font-size: 15.5px;
+  color: var(--text-dim);
+  line-height: 1.55;
+}
+.build-card ul{ padding-left: 18px; }
+
+/* Bloc de note finale en bas de la section Build recommandé, mis en avant
+   par une bordure gauche colorée (façon "encadré important"). */
+.note{
+  margin-top: 22px;
+  padding: 14px 18px;
+  border-left: 3px solid var(--accent-primary);
+  background: rgba(var(--accent-primary-rgb),0.08);
+  font-size: 15px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+/* Lien "Retour à la recherche" en haut de la barre latérale des pages de
+   faction (absent de la page de recherche elle-même). */
+.back-link{
+  display:block;
+  padding: 0 28px 16px;
+  font-family:'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+.back-link:hover{ color: var(--accent-secondary); }
+
+/* ---- Search page — thème sombre et moderne, indépendant des thèmes de
+   faction et des fiches de seigneur ci-dessus (voir body.search-theme
+   pour les variables de couleur). Les classes ci-dessous (.search-input,
+   .faction-tab, etc.) ne sont utilisées que par index.html / js/search.js :
+   les surcharger ici n'affecte aucune fiche de faction/seigneur. ---- */
+body.search-theme{
+  background:
+    radial-gradient(circle at 18% -10%, rgba(var(--accent-primary-rgb),0.16) 0%, transparent 45%),
+    radial-gradient(circle at 85% 105%, rgba(var(--accent-secondary-rgb),0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 70%);
+}
+
+.search-page{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 72px 32px 90px;
+}
+.search-hero{
+  text-align:center;
+  margin-bottom: 52px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap: 20px;
+}
+.search-title{
+  font-family:'Space Grotesk', sans-serif;
+  font-weight:700;
+  font-size: 46px;
+  letter-spacing: -0.5px;
+  text-transform: none;
+  background: linear-gradient(100deg, var(--text) 0%, var(--accent-secondary) 45%, var(--accent-primary-bright) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 0 30px rgba(var(--accent-primary-rgb),0.25));
+}
+.search-subtitle{
+  font-family:'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: .2px;
+  color: var(--text-dim);
+  margin-top: -12px;
+}
+.search-divider{
+  display:flex;
+  align-items:center;
+  gap: 0;
+  width: 100%;
+  max-width: 200px;
+  color: var(--accent-secondary);
+}
+.search-divider span{ display:none; }
+.search-divider::before, .search-divider::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background: linear-gradient(90deg, transparent, var(--border), transparent);
+}
+
+body.search-theme .search-input{
+  font-family:'Inter', sans-serif;
+  background: var(--panel-light);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+body.search-theme .search-input::placeholder{ color: var(--text-dim); }
+body.search-theme .search-input:focus{
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 3px rgba(var(--accent-primary-rgb), 0.22);
+}
+.search-input-lg{
+  max-width: 560px;
+  padding: 15px 20px;
+  font-size: 16px;
+}
+.search-hero .faction-tabs{
+  justify-content:center;
+}
+body.search-theme .faction-tab{
+  font-family:'Inter', sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  text-transform: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  background: var(--panel-light);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+}
+body.search-theme .faction-tab:hover{
+  color: var(--text);
+  border-color: var(--accent-secondary);
+}
+body.search-theme .faction-tab.active{
+  color: var(--panel-deep);
+  background: var(--accent-primary);
+  border-color: var(--accent-primary);
+  font-weight: 700;
+  box-shadow: 0 4px 14px rgba(var(--accent-primary-rgb), 0.35);
+}
+
+.results-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 18px;
+}
+.results-empty{
+  grid-column: 1 / -1;
+  text-align:center;
+  padding: 48px 20px;
+  color: var(--text-dim);
+  font-family:'Inter', sans-serif;
+  font-style: normal;
+}
+.result-card{
+  display:flex;
+  align-items:flex-start;
+  gap: 16px;
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration:none;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.35);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+.result-card:hover{
+  border-color: var(--accent-secondary);
+  background: var(--panel-light);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(0,0,0,0.45);
+}
+/* Couleur de la bordure gauche de chaque carte de résultat, reprenant la
+   teinte --accent-primary du thème de la faction correspondante (voir les
+   blocs .theme-* tout en haut du fichier). Comme la page de recherche
+   (body.search-theme) ne charge jamais ces thèmes de faction, ces couleurs
+   sont recopiées ici en dur plutôt que via une variable CSS. Les règles
+   :hover juste après éclaircissent la bordure avec --accent-primary-bright
+   au survol de la carte. */
+.result-card[data-group="vampire-counts"]{ border-left-color: #8a2332; }
+.result-card[data-group="dwarfs"]{ border-left-color: #b5541c; }
+.result-card[data-group="high-elves"]{ border-left-color: #3d7ea6; }
+.result-card[data-group="beastmen"]{ border-left-color: #7c8f22; }
+.result-card[data-group="bretonnia"]{ border-left-color: #3a5aa8; }
+.result-card[data-group="chaos-dwarfs"]{ border-left-color: #c2410c; }
+.result-card[data-group="daemons-of-chaos"]{ border-left-color: #9333a8; }
+.result-card[data-group="dark-elves"]{ border-left-color: #5b2f7a; }
+.result-card[data-group="grand-cathay"]{ border-left-color: #1f8f5f; }
+.result-card[data-group="greenskins"]{ border-left-color: #5a9c1f; }
+.result-card[data-group="khorne"]{ border-left-color: #c81e2c; }
+.result-card[data-group="warriors-of-chaos"]{ border-left-color: #5a6c84; }
+.result-card[data-group="kislev"]{ border-left-color: #4a8bc2; }
+.result-card[data-group="lizardmen"]{ border-left-color: #2f9e5a; }
+.result-card[data-group="norsca"]{ border-left-color: #5a8ab0; }
+.result-card[data-group="nurgle"]{ border-left-color: #6b8a2e; }
+.result-card[data-group="ogre-kingdoms"]{ border-left-color: #a0703a; }
+.result-card[data-group="skaven"]{ border-left-color: #5a9e3a; }
+.result-card[data-group="slaanesh"]{ border-left-color: #c23e8a; }
+.result-card[data-group="empire"]{ border-left-color: #3d6fb0; }
+.result-card[data-group="tomb-kings"]{ border-left-color: #c9a13a; }
+.result-card[data-group="tzeentch"]{ border-left-color: #b23fd1; }
+.result-card[data-group="vampire-coast"]{ border-left-color: #3f9683; }
+.result-card:hover[data-group="vampire-coast"]{ border-color: #5ecbb0; }
+.result-card[data-group="wood-elves"]{ border-left-color: #2f8f4e; }
+.result-card:hover[data-group="wood-elves"]{ border-color: #4bbd6f; }
+.result-card:hover[data-group="tzeentch"]{ border-color: #d466ef; }
+.result-card:hover[data-group="vampire-counts"]{ border-color: #b9354a; }
+.result-card:hover[data-group="dwarfs"]{ border-color: #e0812e; }
+.result-card:hover[data-group="high-elves"]{ border-color: #5fa8d3; }
+.result-card:hover[data-group="beastmen"]{ border-color: #94a82b; }
+.result-card:hover[data-group="bretonnia"]{ border-color: #5c7dcf; }
+.result-card:hover[data-group="chaos-dwarfs"]{ border-color: #e8622a; }
+.result-card:hover[data-group="daemons-of-chaos"]{ border-color: #c04fd6; }
+.result-card:hover[data-group="dark-elves"]{ border-color: #8fae4a; }
+.result-card:hover[data-group="grand-cathay"]{ border-color: #2fc07d; }
+.result-card:hover[data-group="greenskins"]{ border-color: #7ecc2e; }
+.result-card:hover[data-group="khorne"]{ border-color: #f0303f; }
+.result-card:hover[data-group="warriors-of-chaos"]{ border-color: #7d94b0; }
+.result-card:hover[data-group="kislev"]{ border-color: #6fb3e0; }
+.result-card:hover[data-group="lizardmen"]{ border-color: #46c878; }
+.result-card:hover[data-group="norsca"]{ border-color: #7db3d6; }
+.result-card:hover[data-group="nurgle"]{ border-color: #8fb43e; }
+.result-card:hover[data-group="ogre-kingdoms"]{ border-color: #c8924a; }
+.result-card:hover[data-group="skaven"]{ border-color: #7ed94f; }
+.result-card:hover[data-group="slaanesh"]{ border-color: #e85ba8; }
+.result-card:hover[data-group="empire"]{ border-color: #5f92d6; }
+.result-card:hover[data-group="tomb-kings"]{ border-color: #e8c25a; }
+.result-seal{
+  width:64px; height:140px;
+  flex-shrink:0;
+  border-radius:10px;
+  border: 2px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+  overflow:hidden;
+  background: radial-gradient(circle, var(--panel-light) 0%, var(--panel-deep) 100%);
+}
+.result-seal svg{ width:30px; height:30px; }
+.result-seal img{ width:100%; height:100%; object-fit:cover; object-position: top center; }
+.result-info{ min-width:0; }
+.result-name{
+  font-family:'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text);
+  letter-spacing: 0;
+}
+.result-epithet{
+  font-family:'Inter', sans-serif;
+  font-size: 13px;
+  font-style: normal;
+  color: var(--text-dim);
+  margin-top: 3px;
+}
+.result-tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.result-tags .faction-tag{
+  margin-top:0;
+  font-family:'Inter', sans-serif;
+  font-size:10.5px;
+  font-weight: 600;
+  letter-spacing: .2px;
+  text-transform: none;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: rgba(var(--accent-secondary-rgb), 0.14);
+  color: var(--accent-secondary);
+}
+
+/* ---- Responsive : écrans étroits (mobile/tablette portrait) ---- */
+@media (max-width: 780px){
+  .app{ flex-direction: column; }
+  .sidebar{ width:100%; border-right:none; border-bottom:1px solid var(--border); padding:20px 0; }
+  .page{ padding: 32px 24px; }
+  .lord-title{ font-size: 30px; }
+  .build-grid{ grid-template-columns: 1fr; }
+  .search-page{ padding: 48px 20px 64px; }
+  .search-title{ font-size: 30px; }
+}

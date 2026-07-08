@@ -1,0 +1,170 @@
+[
+  {
+    "id": "vlad",
+    "numeral": "I",
+    "name": "Vlad von Carstein",
+    "epithet": "Le Grand Fondateur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Vlad_von_Carstein",
+    "faction": "Von Carstein",
+    "seal": "vlad",
+    "portraitImage": "assets/portraits/vlad.png",
+    "attributes": {
+      "source": "Fiche officielle de Vlad von Carstein (wiki Total War: WARHAMMER III).",
+      "items": [
+        {"label": "Spell Mastery", "value": "100% — maîtrise complète des sorts lancés"},
+        {"label": "Causes Fear", "value": "Effraie les unités ennemies à proximité, immunisé lui-même à la peur"},
+        {"label": "Causes Terror", "value": "Peut faire fuir temporairement sa cible au contact"},
+        {"label": "Encourage", "value": "Aura de commandement pour les unités alliées proches"},
+        {"label": "Hide (forest)", "value": "Peut se dissimuler en forêt tant que l'ennemi n'approche pas trop"},
+        {"label": "Undead", "value": "Ne fuit jamais, immunisé à la terreur, devient instable à faible moral"},
+        {"label": "Siege Attacker", "value": "Peut attaquer portes et murailles sans tour de siège ni bélier"},
+        {"label": "Resilience", "value": "Immunisé à l'attrition en territoire vampirique"}
+      ]
+    },
+    "lore": "<p>Nul ne connaît vraiment les origines de Vlad. Ce que l'Empire retient, c'est l'étranger raffiné qui s'installa en Sylvanie au IIe siècle, épousa <em>Isabella Sylvanas Odile Nachthafen</em>, dernière héritière d'une lignée locale, et devint par ce mariage Comte-Électeur de la province.</p>\n      <p>Pendant des décennies, Vlad gouverna dans l'ombre, patient et méthodique, tissant sa toile parmi la noblesse sylvanienne avant de révéler sa vraie nature. Lorsqu'il leva enfin ses armées de morts-vivants, ce ne fut pas dans la fureur, mais avec la froide certitude d'un maître d'échecs déplaçant ses dernières pièces : ainsi débutèrent les Guerres des Vampires.</p>\n      <p>Vlad incarne l'aristocrate vampirique dans ce qu'il a de plus abouti — charismatique, discipliné, capable d'inspirer une loyauté que même la mort ne rompt.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Commence avec <strong>1 Blood Kiss</strong></div>\n        <div class=\"attr-item\">Accès à un bâtiment unique dans <strong>Castle Drakenhof</strong></div>\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Commence avec <strong>Isabella von Carstein</strong> comme Legendary Hero</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Sternsmen (Grave Guard)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Plafond de soin en bataille : <strong>+50%</strong> quand Vlad combat dans la même armée qu'Isabella von Carstein</div>\n        <div class=\"attr-item\">Toutes les unités de l'armée de Vlad reçoivent le <strong>Vanguard Deployment</strong> (déploiement avancé)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Vlad von Carstein).</div>\n    ",
+    "build": {
+      "role": "Doomstack synergique — exploite le Vanguard Deployment total et le plafond de soin +50% en combattant aux côtés d'Isabella",
+      "totalSlots": 20,
+      "lord": {"icon": "vlad", "name": "Vlad von Carstein", "qty": 1, "note": "Duelliste principal — grâce au Vanguard Deployment, il engage le contact dès le premier round plutôt que d'attendre"},
+      "heroes": [
+        {"icon": "isabella", "name": "Isabella von Carstein (Legendary Hero)", "qty": 1, "note": "Indispensable pour activer le plafond de soin +50% — la combiner avec Vlad dans la même armée n'est pas optionnel, c'est le cœur du build"},
+        {"icon": "necromancer", "name": "Necromancer", "qty": 1, "note": "Invocation of Nehek en renfort de celle d'Isabella — maximise le volume de soin pour profiter à fond du plafond relevé"},
+        {"icon": "vampireHeroDeath", "name": "Vampire (Death, Hellsteed)", "qty": 1, "note": "Duelliste secondaire rapide — sécurise un flanc pendant que Vlad et Isabella tiennent le centre ; Shadows est une alternative tout aussi valable selon le soutien magique recherché"}
+      ],
+      "army": [
+        {"icon": "graveGuard", "name": "Grave Guard (Grande Arme)", "qty": 5, "note": "Ligne principale de mêlée increvable"},
+        {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Grave Guard"},
+        {"icon": "blackKnight", "name": "Black Knights", "qty": 4, "note": "Avec Vanguard Deployment, ils démarrent déjà en position de flanc — charge dès le tour 1 au lieu d'approcher sous les tirs"},
+        {"icon": "terrorgheist", "name": "Terrorgheist", "qty": 2, "note": "Monstre lent normalement pénalisé par l'approche — ici il apparaît directement au contact et hurle sa terreur avant que l'ennemi ne réagisse"},
+        {"icon": "vargheist", "name": "Vargheists", "qty": 2, "note": "Grâce au déploiement avancé, ils atteignent l'artillerie et les tireurs ennemis avant même qu'ils n'aient tiré un coup"},
+        {"icon": "mortisEngine", "name": "Mortis Engine", "qty": 1, "note": "Sa zone de soin devient nettement plus forte une fois le plafond de +50% actif — la pièce qui boucle la synergie de soin de tout le build"}
+      ],
+      "magic": "Isabella prend en charge l'essentiel de la Lore of Vampires (Invocation of Nehek en priorité, pour saturer le plafond de soin relevé). Vlad et le Necromancer complètent en soutien.",
+      "note": "Ce build n'a de sens qu'en gardant Vlad et Isabella dans la même armée en permanence : séparés, tu perds à la fois le +50% de plafond de soin et une bonne partie de la puissance de feu magique. Le Vanguard Deployment, lui, s'applique à toute l'armée dès que Vlad la commande — profites-en pour engager immédiatement plutôt que manœuvrer prudemment comme avec un seigneur classique."
+    }
+  },
+  {
+    "id": "isabella",
+    "numeral": "II",
+    "name": "Isabella von Carstein",
+    "epithet": "La Dame de Sylvanie",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Isabella_von_Carstein",
+    "faction": "Von Carstein",
+    "seal": "isabella",
+    "portraitImage": "assets/portraits/isabella.png",
+    "lore": "<p>Née mortelle, dernière fille d'une noble lignée sylvanienne, Isabella épousa Vlad sans savoir ce qu'il dissimulait. Quand la vérité éclata, elle choisit librement le sang noir plutôt que la trahison — et devint, à ses côtés, l'une des sorcières vampiriques les plus puissantes du Vieux Monde.</p>\n      <p>Après la mort de Vlad lors de la troisième Guerre des Vampires, Isabella sombra dans un deuil si total qu'elle se laissa quasiment disparaître, réduite à une ombre errant les ruines du Château de Drakenhof pendant des siècles.</p>\n      <p>Son retour dans les Immortal Empires est celui d'une femme qui a traversé le chagrin absolu et en est ressortie plus dure, plus froide — et déterminée à reconstruire ce que Vlad avait bâti.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Commence avec <strong>1 Blood Kiss</strong></div>\n        <div class=\"attr-item\">Accès à un bâtiment unique dans <strong>Castle Drakenhof</strong></div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+3</strong> pour les Vampires</div>\n        <div class=\"attr-item\">Commence avec <strong>Vlad von Carstein</strong> comme Legendary Hero</div>\n        <div class=\"attr-item\">Force de l'arme : <strong>+25%</strong> pour les héros Vampire intégrés à l'armée</div>\n        <div class=\"attr-item\">Régiment favori : capacité <strong>\"Regeneration\"</strong> (soin de <strong>+0,10%</strong> des PV par seconde en continu, mais <strong>+20%</strong> de faiblesse aux dégâts de feu) + <strong>+1 capacité</strong> pour The Direpack (Dire Wolves)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Plafond de soin en bataille : <strong>+50%</strong> quand Isabella combat dans la même armée que Vlad von Carstein</div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+10</strong> pour les héros Vampire intégrés (armée propre)</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+10</strong> pour les héros Vampire intégrés (armée propre)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Isabella von Carstein).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Isabella : bonus massifs aux héros Vampire + synergie de soin avec Vlad",
+      "totalSlots": 20,
+      "lord": {"icon": "isabella", "name": "Isabella von Carstein", "qty": 1, "note": "Reste en retrait, lance ses sorts en continu — ses buffs de +10/+10 mêlée et +25% force d'arme rendent chaque héros Vampire de son armée bien plus dangereux qu'ailleurs"},
+      "heroes": [
+        {"icon": "vlad", "name": "Vlad von Carstein (Legendary Hero)", "qty": 1, "note": "Indispensable, pas optionnel : déclenche le +50% de plafond de soin. Gratuit dès le départ de campagne."},
+        {"icon": "vampireHeroDeath", "name": "Vampire (Death, Hellsteed)", "qty": 2, "note": "Grâce au +3 de capacité de héros pour les Vampires, tu peux aligner 3 Vampires sans sacrifier d'autres slots de héros. Chacun profite de +10 Attaque/Défense en mêlée et +25% Force de l'arme rien qu'en étant dans l'armée d'Isabella"},
+        {"icon": "vampireHeroShadows", "name": "Vampire (Shadows, Hellsteed)", "qty": 1, "note": "Même triple bonus (+10 Attaque/Défense en mêlée, +25% Force de l'arme) — soutien de la Lore of Shadows en complément des deux Vampires (Death)"}
+      ],
+      "army": [
+        {"icon": "direWolf", "name": "Dire Wolves", "qty": 2, "note": "Écran de harcèlement bon marché rapide"},
+        {"icon": "theDirepack", "name": "The Direpack (Dire Wolves)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Dire Wolves dotée d'une régénération passive de +0,10% des PV/seconde en continu, à condition d'éviter les dégâts de feu (+20% de faiblesse)"},
+        {"icon": "cairnWraith", "name": "Cairn Wraiths", "qty": 5, "note": "Anti-infanterie légère éthérée — très résistantes aux dégâts non-magiques"},
+        {"icon": "hexwraith", "name": "Hexwraiths", "qty": 2, "note": "Cavalerie éthérée rapide — résistante aux dégâts non-magiques, idéale pour harceler les flancs et chasser les tireurs isolés"},
+        {"icon": "blackCoach", "name": "Black Coach", "qty": 2, "note": "Plateforme magique mobile — buffs de zone et résistance élevée"},
+        {"icon": "terrorgheist", "name": "Terrorgheist", "qty": 2, "note": "Soutien aérien — cri de terreur pour ouvrir les brèches avant la charge"}
+      ],
+      "magic": "Isabella tient la Lore of Vampires à distance (Invocation of Nehek, Vanhel's Danse Macabre) pendant que Vlad et les héros Vampire boostés tiennent le contact.",
+      "note": "Le cœur de ce build, ce sont les héros Vampire : avec +10 Attaque en mêlée, +10 Défense en mêlée et +25% Force de l'arme rien que pour être dans l'armée d'Isabella, ils deviennent des duellistes redoutables pour un coût de recrutement modeste. Garder Vlad avec elle en permanence n'est pas optionnel : c'est ce qui active le +50% de plafond de soin."
+    }
+  },
+  {
+    "id": "mannfred",
+    "numeral": "III",
+    "name": "Mannfred von Carstein",
+    "epithet": "Le Manipulateur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Mannfred_von_Carstein",
+    "faction": "Von Carstein",
+    "seal": "mannfred",
+    "portraitImage": "assets/portraits/mannfred.png",
+    "lore": "<p>Mannfred n'a jamais eu la patience de Vlad ni la loyauté d'Isabella. Vampire ambitieux et sans scrupules, il complote depuis des siècles pour s'emparer du pouvoir de Nagash lui-même, considérant les autres Von Carstein davantage comme des obstacles que comme une famille.</p>\n      <p>C'est lui qui, dans le lore, s'oppose directement à Nagash lors de la Guerre du Vermine et des campagnes autour de la Tombe de Sang, cherchant sans cesse à détourner à son profit les rituels nécromantiques les plus dangereux.</p>\n      <p>Mannfred est le stratège cynique de la lignée — brillant, patient dans le complot, mais toujours prêt à trahir si l'occasion s'en présente.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Mannfred peut collecter les <strong>Books of Nagash</strong> pendant sa quête de savoir nécromantique</div>\n        <div class=\"attr-item\">Accès à un bâtiment unique à Drakenhof qui <strong>double les effets</strong> de ses Books of Nagash collectés</div>\n        <div class=\"attr-item\">Commence avec <strong>1 Blood Kiss</strong></div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec les factions vampiriques et les Followers of Nagash</div>\n        <div class=\"attr-item\">Taux de recherche : <strong>+20</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Sternsmen (Grave Guard)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Grave Guard et Black Knights (armée de Mannfred)</div>\n        <div class=\"attr-item\">Capacité active <strong>\"Master of the Black Arts\"</strong> — Augment of the Winds : <strong>+60%</strong> de Maîtrise des sorts pendant <strong>15s</strong>, recharge en <strong>90s</strong></div>\n        <div class=\"attr-item\">Réserve de Vents de la Magie : <strong>+15</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Mannfred von Carstein).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Mannfred : entretien réduit sur Grave Guard et Black Knights, réserve de magie élargie",
+      "totalSlots": 20,
+      "lord": {"icon": "mannfred", "name": "Mannfred von Carstein", "qty": 1, "note": "Sa réserve de Vents de la Magie augmentée (+15) lui permet d'enchaîner les sorts bien plus longtemps qu'un seigneur classique"},
+      "heroes": [
+        {"icon": "necromancer", "name": "Necromancer", "qty": 2, "note": "Renfort de sorts — profite de la réserve de magie élargie de Mannfred pour maintenir Invocation of Nehek en continu sur un plus gros corps d'armée. Lore of Vampires (pas de variante trouvée sur le wiki pour ce héros, à confirmer en jeu)."}
+      ],
+      "army": [
+        {"icon": "graveGuard", "name": "Grave Guard (Grande Arme)", "qty": 5, "note": "Coeur de l'armée — -25% d'entretien avec Mannfred (seigneur)"},
+        {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Grave Guard, également couverte par le -25% d'entretien (seigneur)"},
+        {"icon": "blackKnight", "name": "Black Knights (Lances & Barding)", "qty": 6, "note": "-25% d'entretien avec Mannfred — cavalerie lourde en grand nombre, ce qui n'est normalement pas soutenable économiquement"},
+        {"icon": "hexwraith", "name": "Hexwraiths", "qty": 2, "note": "Harcèlement et flanc — repositionnement rapide en complément du gros de l'armée"},
+        {"icon": "vargheist", "name": "Vargheists", "qty": 2, "note": "Chasse l'artillerie et les tireurs avant qu'ils ne gênent la charge"}
+      ],
+      "magic": "La réserve de Vents de la Magie élargie (+15) permet de spammer Invocation of Nehek pour maintenir à flot le gros corps de Grave Guard et Black Knights, tout en gardant de la marge pour Curse of Undeath en débuff.",
+      "note": "Ce build part du principe que Grave Guard et Black Knights sont anormalement peu chers dans l'armée de Mannfred (-25% d'entretien) : plutôt qu'une armée légère et rapide, autant en profiter pour aligner un gros corps d'élite que peu de joueurs peuvent se permettre économiquement avec un autre seigneur."
+    }
+  },
+  {
+    "id": "kemmler",
+    "numeral": "IV",
+    "name": "Heinrich Kemmler & Krell",
+    "epithet": "Le Maître-Liche",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Heinrich_Kemmler",
+    "faction": "Legion of Undeath",
+    "seal": "kemmler",
+    "portraitImage": "assets/portraits/kemmler.png",
+    "lore": "<p>Kemmler n'est pas un vampire — c'est un mortel, et c'est bien pire. Nécromancien renié par l'Empire, banni pour ses rituels interdits, il est considéré comme le plus grand maître de la nécromancie encore en vie, capable de rivaliser avec les puissances de Nagash lui-même.</p>\n      <p>Il voyage accompagné de Krell, un puissant seigneur wight jadis loyal à un roi des tombes, aujourd'hui lié à Kemmler par un pacte de servitude éternelle. Ensemble, ils ne bâtissent pas de royaume : ils laissent derrière eux des légions de morts, ville après ville, jusqu'à ce qu'on les traque à nouveau.</p>\n      <p>Sa faction, la Legion of Undeath, est celle du fugitif éternel — sans loyauté, sans château, seulement la magie noire et la horde.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+30</strong> avec Warriors of Chaos, Daemons of Chaos, Beastmen et Norsca</div>\n        <div class=\"attr-item\">Gain d'expérience : <strong>+25%</strong> pour les héros Necromancer</div>\n        <div class=\"attr-item\">Immunisé à la corruption du Chaos et à l'attrition des Chaos Wastes</div>\n        <div class=\"attr-item\">Coût de résurrection des morts : <strong>-10%</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Feasters in the Dusk (Crypt Ghouls)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Permet la réplétion (replenishment) en territoire étranger</div>\n        <div class=\"attr-item\">Coût en Vents de la Magie : <strong>-10%</strong> pour la Lore of Vampires</div>\n        <div class=\"attr-item\">Capacité active <strong>\"Lord of Undeath\"</strong> — Invoque Krell (1 utilisation) : portée <strong>50m</strong>, recharge en <strong>120s</strong>. Krell ne dégrade pas dans le temps une fois invoqué.</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Heinrich Kemmler).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Kemmler : magie moins chère, héros qui montent vite en niveau, et une horde capable de rester offensive indéfiniment en territoire ennemi",
+      "totalSlots": 20,
+      "lord": {"icon": "kemmler", "name": "Heinrich Kemmler", "qty": 1, "note": "Reste en retrait, invoque Krell (compétence de lord) dès que la ligne s'engage — Krell combat sans occuper de slot d'armée"},
+      "heroes": [
+        {"icon": "necromancer", "name": "Necromancer", "qty": 2, "note": "Le +25% de gain d'XP pour les héros Necromancer les fait monter en niveau nettement plus vite que dans une autre armée — investis dedans sans hésiter. Le -10% de coût en Vents de la Magie sur la Lore of Vampires leur permet aussi de lancer Invocation of Nehek presque en continu."}
+      ],
+      "army": [
+        {"icon": "skeleton", "name": "Skeleton Warriors", "qty": 6, "note": "Première ligne — nombre et coût d'entretien très faible"},
+        {"icon": "cryptGhoul", "name": "Crypt Ghouls", "qty": 3, "note": "Infanterie de mêlée mordante et bon marché"},
+        {"icon": "feastersInTheDusk", "name": "The Feasters in the Dusk (Crypt Ghouls)", "qty": 2, "note": "Régiment favori de Kemmler : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Crypt Ghouls"},
+        {"icon": "graveGuard", "name": "Grave Guard", "qty": 3, "note": "Unité d'élite de rupture — perce les points faibles une fois la ligne stabilisée"},
+        {"icon": "cairnWraith", "name": "Cairn Wraiths", "qty": 2, "note": "Anti-infanterie légère — bénéficie directement du coût de magie réduit pour la Lore of Vampires"},
+        {"icon": "varghulf", "name": "Varghulf", "qty": 1, "note": "Flanc monstrueux — perce les unités isolées pendant que la horde tient le centre"}
+      ],
+      "krellNote": {"icon": "krell", "name": "Krell", "qty": "1 (invoqué)", "note": "Invoqué en bataille par la compétence de Kemmler — wight permanent, ne dégrade plus en Warhammer III, excellent tank de mêlée en pointe de ligne"},
+      "magic": "Le -10% de coût en Vents de la Magie sur la Lore of Vampires permet de maximiser Invocation of Nehek en continu, sans jamais être à court de réserve.",
+      "note": "La réplétion activée en territoire étranger change la façon de jouer cette armée : contrairement aux autres seigneurs qui doivent rentrer se soigner, celle de Kemmler peut rester en campagne offensive prolongée loin de son territoire, ce qui colle parfaitement à son thème de fugitif errant."
+    }
+  },
+  {
+    "id": "ghorst",
+    "numeral": "V",
+    "name": "Helman Ghorst",
+    "epithet": "Le Cocher de la Peste",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Helman_Ghorst",
+    "faction": "Caravan of Blue Roses",
+    "seal": "ghorst",
+    "portraitImage": "assets/portraits/ghorst.png",
+    "lore": "<p>Ghorst n'a jamais été vampire ni noble : le plus jeune de cinq frères d'une famille de maréchaux-ferrants du village de Templehof, en Sylvanie, il menait une vie simple avant qu'un jour, rentrant de l'un de ses voyages, il ne retrouve son père et ses frères emportés par la <em>Peste des Roses Bleues</em>, leurs corps couverts de meurtrissures fongiques.</p>\n      <p>Incapable d'accepter cette perte, Ghorst se plongea dans l'étude des arts noirs, espérant ramener sa famille à la vie. Cette quête obsessionnelle attira l'attention d'un Witch Hunter, le forçant à fuir vers les terres corrompues de Vargravia — où il croisa la route de Mannfred von Carstein, qui vit en lui un pantin idéal et lui enseigna les secrets de la nécromancie.</p>\n      <p>Aujourd'hui, Ghorst n'est plus le fils de maréchal-ferrant qu'il était : il parcourt les routes hantées à bord d'un chariot d'ossements tiré non par des chevaux, mais par ses propres frères, arrachés à la mort et réduits à une existence de bêtes de trait pour l'éternité.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Sort lié <strong>\"Lesser Raise Dead\"</strong> pour les unités Corpse Cart et Mortis Engine — invoque une unité de Zombies (1 utilisation, portée 50m, cible 1 allié max, activable une fois la bataille commencée). Bon pour protéger un lanceur de sorts, mais l'unité invoquée se dégrade avec le temps.</div>\n        <div class=\"attr-item\">Capacité du réservoir de résurrection : <strong>+4</strong> pour les Zombies (provinces propres)</div>\n        <div class=\"attr-item\">Taux de réplétion des pertes : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Active les attaques empoisonnées pour les Zombies, Skeleton Spearmen et Skeleton Warriors</div>\n        <div class=\"attr-item\">Régiments favoris : <strong>+1 capacité</strong> pour les Konigstein Stalkers (Skeleton Warriors) et The Tithe (Zombies)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisé à l'attrition de peste (armée de Ghorst)</div>\n        <div class=\"attr-item\">Attribut : immunisé aux effets de contact (armée de Ghorst) — les unités concernées ignorent les effets de contact ennemis tels que le Poison</div>\n        <div class=\"attr-item\">Armure : <strong>+30</strong> pour les Zombies et Crypt Ghouls (armée de Ghorst)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Helman Ghorst).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Ghorst : poison gratuit sur les unités de base, armure renforcée, un flux de résurrection continu, et les deux régiments favoris The Tithe (Zombies) et Konigstein Stalkers (Skeleton Warriors) à +1 capacité chacun (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "ghorst", "name": "Helman Ghorst", "qty": 1, "note": "Toujours monté dès le début de campagne — reste au contact du gros de la horde pour que ses auras couvrent un maximum d'unités ; toute son armée est immunisée aux effets de contact ennemis (dont le Poison), ce qui neutralise une bonne partie des ripostes des unités empoisonnées adverses"},
+      "heroes": [
+        {"icon": "necromancer", "name": "Necromancer", "qty": 2, "note": "Support de sorts — monté sur Corpse Cart si possible pour profiter aussi du sort lié Lesser Raise Dead. Lore of Vampires (pas de variante trouvée sur le wiki pour ce héros, à confirmer en jeu)."}
+      ],
+      "army": [
+        {"icon": "theTithe", "name": "The Tithe (Zombies)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des Zombies, empoisonnée gratuitement par Ghorst, +30 Armure"},
+        {"icon": "zombie", "name": "Zombies", "qty": 4, "note": "Le cœur de l'armée : empoisonnées gratuitement par Ghorst, +30 Armure, entretien dérisoire — c'est cette unité qui profite le plus de ses bonus"},
+        {"icon": "konigsteinStalkers", "name": "Konigstein Stalkers (Skeleton Warriors)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des Skeleton Warriors, empoisonnée gratuitement par Ghorst"},
+        {"icon": "skeleton", "name": "Skeleton Warriors", "qty": 3, "note": "Empoisonnés eux aussi par Ghorst (faction)"},
+        {"icon": "cryptGhoul", "name": "Crypt Ghouls", "qty": 3, "note": "+30 Armure comme les Zombies — beaucoup plus difficiles à percer que la normale"},
+        {"icon": "mortisEngine", "name": "Mortis Engine", "qty": 2, "note": "Profite du sort lié Lesser Raise Dead gratuit — renforce encore le flux de résurrection déjà soutenu par Ghorst"},
+        {"icon": "blackCoach", "name": "Corpse Cart (Unholy Lodestone)", "qty": 1, "note": "Totem de soutien — aura de régénération pour maintenir la horde de Zombies/Skeletons à flot en continu"}
+      ],
+      "magic": "Invocation of Nehek en priorité pour saturer une horde déjà difficile à tuer (poison gratuit + armure +30 + réplétion +10% + pool de résurrection +4) ; Awaken the Grave (sort unique de Ghorst) pour invoquer ponctuellement un Wight King ou des Grave Guard en renfort.",
+      "note": "Évite de recruter des unités qui ont déjà le poison de base (Cairn Wraiths, Hexwraiths...) : le bonus de Ghorst ne se cumule pas avec un poison déjà présent, donc tout l'intérêt de son kit est de miser sur les unités basiques (Zombies, Skeletons) qui n'en ont normalement pas. Les deux régiments favoris, The Tithe et Konigstein Stalkers (+1 capacité chacun, faction), permettent d'aligner deux exemplaires supplémentaires de ces unités de base sans coût de capacité additionnel. C'est une armée volontairement lente et bon marché plutôt que rapide — elle est pensée pour absorber et user l'ennemi, pas pour le percer d'entrée."
+    }
+  }
+]

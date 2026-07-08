@@ -1,0 +1,97 @@
+[
+  {
+    "id": "skarbrand",
+    "numeral": "I",
+    "name": "Skarbrand the Exiled",
+    "epithet": "L'Exilé",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Skarbrand_the_Exiled",
+    "faction": "Exiles of Khorne",
+    "seal": "skarbrand",
+    "portraitImage": "assets/portraits/skarbrand.png",
+    "lore": "<p>Le Buveur de Sang Skarbrand fut jadis le plus grand de tous les Démons de Khorne. Nul autre n'avait empilé autant de crânes devant le Trône des Crânes. Un jour funeste, l'orgueil féroce de Skarbrand s'échauffa et, aveuglé par la rage, il porta un coup puissant au Dieu du Sang lui-même. Incandescent de fureur, Khorne maudit le nom de Skarbrand et lui arracha toute personnalité, ne lui laissant que la rage sans fond qui l'avait poussé à cet acte.</p>\n      <p>Depuis ce jour fatidique, Skarbrand erre à travers les royaumes mortels et immortels, noyant ses péchés dans le sang des vaincus — bien qu'il n'ait plus l'esprit pour comprendre pleinement pourquoi. Chassé de la présence de Khorne, il ne trouve son salut que dans le carnage, cherchant sans relâche à regagner la faveur de son maître à coups de massacres toujours plus grands.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-20</strong> avec les factions Khornates</div>\n        <div class=\"attr-item\">Les armées se replenissent en territoire étranger</div>\n        <div class=\"attr-item\">Corruption Khorne : <strong>+1</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Blood Hosts : <strong>+1 tour</strong> d'immunité initiale à l'attrition Bloodthirst</div>\n        <div class=\"attr-item\">Blood Hosts : <strong>+2 unités</strong> à la création</div>\n        <div class=\"attr-item\">Régiment favori Khorne's Bloody Fist (Bloodthirster) : <strong>+10% Ward Save</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive \"Gorefeast\" (Régénération) pour les unités Bloodthirster et Soul Grinder (armée du seigneur) — <strong>Soin par seconde : +0,10%</strong>, actif en mêlée, durée illimitée</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités Bloodthirster et Soul Grinder (armée du seigneur)</div>\n        <div class=\"attr-item\">Crânes gagnés sur les tués : <strong>+30%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité \"Rage Embodied\" (Hex de zone, active) — provoque l'état <strong>Enragé (Rampage)</strong> chez tous les ennemis à 35m non abrités sur une plateforme, durée 15s, rechargement 90s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Skarbrand) + captures des capacités \"Gorefeast\" et \"Rage Embodied\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Skarbrand : plusieurs Bloodthirsters et Soul Grinders à -20% d'entretien profitant de \"Gorefeast\" (seigneur) et du régiment favori Khorne's Bloody Fist (+10% Ward Save, faction), épaulés par une horde de Bloodletters et de Bloodcrushers, le tout générant +30% de crânes supplémentaires sur les tués (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "skarbrand", "name": "Skarbrand the Exiled", "qty": 1, "note": "Le plus grand des Bloodthirsters, banni par Khorne lui-même — \"Rage Embodied\" (provoque l'Enragé en zone, seigneur) déstabilise le front ennemi pendant qu'il devient plus fort à mesure qu'il tue, cherchant sans fin la rédemption dans le carnage"},
+      "heroes": [
+        {"icon": "bloodreaper", "name": "Bloodreaper", "qty": 1, "note": "Renfort de mêlée d'élite au service du Dieu du Sang"},
+        {"icon": "exaltedHeroOfKhorne", "name": "Exalted Hero of Khorne", "qty": 1, "note": "Second renfort de mêlée redoutable"}
+      ],
+      "army": [
+        {"icon": "bloodthirsterKhorne", "name": "Bloodthirster", "qty": 1, "note": "-20% d'entretien et capacité Gorefeast (seigneur) — Grand Démon monstrueux, second point de rupture pour la ligne ennemie"},
+        {"icon": "khornesBloodyFist", "name": "Khorne's Bloody Fist (Bloodthirster)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : +10% Ward Save (faction), en plus du -20% d'entretien et de Gorefeast (seigneur) — variante d'élite unique du Bloodthirster"},
+        {"icon": "soulGrinderKhorne", "name": "Soul Grinder", "qty": 2, "note": "-20% d'entretien et capacité Gorefeast (seigneur) — machine de guerre démoniaque increvable"},
+        {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 4, "note": "Infanterie démoniaque frénétique, cœur de la horde"},
+        {"icon": "exaltedBloodlettersKhorne", "name": "Exalted Bloodletters of Khorne", "qty": 2, "note": "Version d'élite des Bloodletters pour percer les lignes les plus dures"},
+        {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie démoniaque lourde pour percer les flancs"},
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 3, "note": "Chasseurs rapides et bon marché pour flanquer et pourchasser les tireurs isolés"},
+        {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 1, "note": "Ligne de tenue mortelle robuste en soutien"}
+      ],
+      "magic": "Skarbrand n'est pas un lanceur de sorts — sa puissance vient de sa rage sans limite et de capacités qui se renforcent à chaque adversaire abattu.",
+      "note": "Cette armée maximise la présence de Bloodthirsters et Soul Grinders (-20% d'entretien, Gorefeast, régiment favori +10% Ward Save, seigneur + faction) tout en générant un surplus de crânes (+30%, seigneur) pour alimenter le Trône des Crânes en campagne, pendant que Skarbrand lui-même devient de plus en plus dévastateur au fil du combat. Les Blood Hosts invoqués via \"Blood for the Blood God\" en rasant une colonie démarrent avec +2 unités et +1 tour d'immunité à l'attrition (faction), un excellent complément pour prolonger les campagnes de razzia."
+    }
+  },
+  {
+    "id": "skulltaker",
+    "numeral": "II",
+    "name": "Skulltaker",
+    "epithet": "Le Preneur de Crânes",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Skulltaker",
+    "faction": "Blooded Wanderers",
+    "seal": "skulltaker",
+    "portraitImage": "assets/portraits/skulltaker.png",
+    "lore": "<p>Skulltaker est le champion immortel du Dieu du Sang, le plus grand de tous les Bloodletters élus de Khorne. Quand il ne guerroie pas avec les armées de son maître, Skulltaker parcourt à sa guise le Royaume du Chaos monté sur son puissant Juggernaut, Kuhl'tyran. Il se présente devant forteresses et bastions, attiré par les récits de prouesses martiales et les rumeurs de puissants combattants qui pourraient lui offrir un petit défi.</p>\n      <p>Lorsqu'un adversaire assez fou et téméraire se présente, Skulltaker descend de sa fidèle monture, salue l'ennemi de sa lame levée et charge pour réclamer un nouveau crâne au nom du Dieu du Sang. Une seule fois il connut la défaite, aux mains de Sigmar. Il porte encore la cicatrice gagnée ce jour-là, et prend grand plaisir à rembourser cette dette sur les héritiers de Sigmar à chaque occasion.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">A accès au Cloak of Skulls, permettant à Skulltaker de renforcer sa faction en vainquant de puissants Seigneurs ennemis</div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Bloodreapers</div>\n        <div class=\"attr-item\">Daemons Reforged : <strong>+10%</strong> de chance qu'une unité Bloodletters détruite soit restaurée après la bataille (toutes les armées)</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les Bloodletters of Khorne et Exalted Bloodletters of Khorne (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori The Hellforged Host (Bloodletters) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Ligne de vue de campagne : <strong>+100%</strong></div>\n        <div class=\"attr-item\">Capacité passive \"Frenzy\" (Augment) pour les unités Bloodletter et Exalted Bloodletter (armée du seigneur) — <strong>Dégâts d'arme de base : +10%</strong>, <strong>Dégâts perforants : +10%</strong>, <strong>Bonus de charge : +10%</strong>, <strong>Attaque en mêlée : +10</strong>, Immunisé à la Psychologie, active si commandement supérieur à 50% de la base</div>\n        <div class=\"attr-item\">Capacité \"Bloody Onslaught\" (Hex, active) — <strong>Défense en mêlée : -24</strong>, <strong>Armure : -30</strong> pour 1 ennemi à 75m, durée 38s, rechargement 90s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Skulltaker) + captures des capacités \"Frenzy\" et \"Bloody Onslaught\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Skulltaker : une horde de Bloodletters et Exalted Bloodletters à -15% d'entretien (faction) gagnant la Frénésie sous son commandement (seigneur), profitant du régiment favori The Hellforged Host (+1 capacité, faction) et de deux Bloodreapers grâce au +2 de capacité de héros (faction), le tout épaulé par des Bloodcrushers et Bloodbeasts",
+      "totalSlots": 20,
+      "lord": {"icon": "skulltaker", "name": "Skulltaker", "qty": 1, "note": "Champion immortel du Dieu du Sang monté sur Kuhl'tyran — sa ligne de vue de campagne à +100% (seigneur) et \"Bloody Onslaught\" (-24 défense en mêlée, -30 armure sur une cible, seigneur) lui permettent de repérer et démolir les cibles les plus prestigieuses"},
+      "heroes": [
+        {"icon": "bloodreaper", "name": "Bloodreaper", "qty": 2, "note": "Capacité de héros +2 pour ce type (faction) permet d'en aligner deux — renfort de mêlée d'élite au service du Dieu du Sang"},
+        {"icon": "exaltedHeroOfKhorne", "name": "Exalted Hero of Khorne", "qty": 1, "note": "Troisième renfort de mêlée redoutable"}
+      ],
+      "army": [
+        {"icon": "theHellforgedHost", "name": "The Hellforged Host (Exalted Bloodletters of Khorne)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -15% d'entretien (faction) et Frénésie (seigneur) — variante d'élite des Exalted Bloodletters, encore plus dévastatrice sous le commandement de Skulltaker"},
+        {"icon": "exaltedBloodlettersKhorne", "name": "Exalted Bloodletters of Khorne", "qty": 2, "note": "-15% d'entretien (faction) et même Frénésie (seigneur) — élite démoniaque au corps-à-corps"},
+        {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 5, "note": "-15% d'entretien (faction) et même Frénésie (seigneur) — cœur de la horde démoniaque, partiellement reconstituée après bataille (Daemons Reforged, faction)"},
+        {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie démoniaque lourde pour percer les flancs"},
+        {"icon": "bloodbeastsKhorne", "name": "Bloodbeasts of Khorne", "qty": 2, "note": "Monstre démoniaque emblématique pour écraser les lignes ennemies"},
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 2, "note": "Chasseurs rapides et bon marché pour flanquer"}
+      ],
+      "magic": "Skulltaker n'est pas un lanceur de sorts — sa puissance vient de sa maîtrise martiale absolue et de sa traque implacable des plus grands champions ennemis.",
+      "note": "Le cumul du -15% d'entretien (faction) et de la Frénésie (seigneur) sur toutes les Bloodletters et Exalted Bloodletters en fait une horde démoniaque à la fois bon marché et redoutable, partiellement auto-régénérée après chaque bataille (Daemons Reforged, faction), tandis que la ligne de vue de campagne doublée (seigneur) permet à Skulltaker de localiser et traquer les ennemis les plus prestigieux avant même l'engagement."
+    }
+  },
+  {
+    "id": "arbaal",
+    "numeral": "III",
+    "name": "Arbaal the Undefeated",
+    "epithet": "L'Invaincu",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Arbaal_the_Undefeated",
+    "faction": "Challengers of Khorne",
+    "seal": "arbaal",
+    "portraitImage": "assets/portraits/arbaal.png",
+    "lore": "<p>Arbaal est l'un des serviteurs les plus dévoués de Khorne, gratifié du pouvoir de la redoutable hache à une main connue sous le nom de Destroyer en reconnaissance de sa loyauté indéfectible. Une telle récompense n'est offerte à aucun Champion ordinaire, mais seulement à celui qui a atteint une grandeur et une faveur immenses sous le regard toujours vigilant du Dieu du Sang. À de tels Champions appartient cependant aussi le scrutin le plus intransigeant de Khorne.</p>\n      <p>Si Arbaal venait à faiblir, l'ampleur d'un tel échec lui ferait perdre toute faveur auprès du Dieu du Sang, le rendant aussi ordinaire parmi les autres aberrations démoniaques qu'il fut remarquable dans le triomphe, et peut-être pire encore. Plus de trois mille ans de domination écrasante sur le champ de bataille ont rendu cette perspective impensable, tant pour lui que pour ses ennemis, dont l'esprit échoue littéralement à trouver un moyen de l'abattre.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">A accès aux Challenges of Khorne, permettant à Arbaal de chercher des batailles difficiles pour accroître la faveur de Khorne et gagner diverses récompenses</div>\n        <div class=\"attr-item\">Entretien : <strong>-10%</strong> pour les unités non-Démoniaques</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-50%</strong> pour les bâtiments militaires et défensifs Mortels (toute la faction)</div>\n        <div class=\"attr-item\">Temps de construction : <strong>-50%</strong> pour les bâtiments militaires et défensifs Mortels (toute la faction)</div>\n        <div class=\"attr-item\">Régiment favori Hounds of the Blood Hunt (Flesh Hounds) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Durée de recrutement globale : <strong>-1 tour</strong> pour toutes les unités (armée du seigneur)</div>\n        <div class=\"attr-item\">Puissance d'arme : <strong>+10%</strong> pour les unités non-Démoniaques (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité passive \"Hellblade\" (Augment) pour les Chaos Warriors, Chosen, Chaos Knights et Skullcrushers of Khorne (armée du seigneur) — <strong>Dégâts d'arme de base : +20%</strong>, <strong>Dégâts perforants : +20%</strong>, active après plus de 80 victimes, durée illimitée</div>\n        <div class=\"attr-item\">Capacité \"Fury of the Blood God\" (Explosion, active, immobilise Arbaal) — <strong>Dégâts : 36</strong> (66% magiques) sur 15m de rayon, cause une perturbation sévère des formations ennemies et est particulièrement efficace contre plusieurs combattants à la fois, durée 3s, rechargement 120s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Arbaal) + captures des capacités \"Hellblade\" et \"Fury of the Blood God\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Arbaal : un mur de mêlée 100% mortel (Chaos Warriors, Skullcrushers) profitant de \"Hellblade\" (+20% dégâts d'arme et perforants après 80 victimes) et +10% de puissance d'arme pour les unités non-Démoniaques (seigneur), avec des Flesh Hounds exploitant le régiment favori Hounds of the Blood Hunt (+1 capacité, faction) et une armée recrutée deux fois plus vite (-1 tour, seigneur) que la normale",
+      "totalSlots": 20,
+      "lord": {"icon": "arbaal", "name": "Arbaal the Undefeated", "qty": 1, "note": "Porteur du Destroyer, hache légendaire offerte par Khorne — \"Fury of the Blood God\" (36 dégâts magiques en zone de 15m, seigneur) brise les formations groupées avant que trois mille ans de domination écrasante au corps-à-corps ne fassent le reste"},
+      "heroes": [
+        {"icon": "exaltedHeroOfKhorne", "name": "Exalted Hero of Khorne", "qty": 1, "note": "Renfort de mêlée mortel robuste"},
+        {"icon": "bloodreaper", "name": "Bloodreaper", "qty": 1, "note": "Second renfort de mêlée d'élite"}
+      ],
+      "army": [
+        {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 4, "note": "\"Hellblade\" (+20% dégâts après 80 victimes) et +10% de puissance d'arme (seigneur) — cœur de mêlée mortel robuste"},
+        {"icon": "chaosWarriorsKhorneHalberds", "name": "Chaos Warriors of Khorne (Hallebardes)", "qty": 3, "note": "Même double bonus (seigneur) — anti-cavalerie et anti-monstre fiable"},
+        {"icon": "skullcrushersKhorne", "name": "Skullcrushers of Khorne", "qty": 3, "note": "\"Hellblade\" (seigneur) — cavalerie lourde démoniaque pour les charges de flanc"},
+        {"icon": "houndsOfTheBloodHunt", "name": "Hounds of the Blood Hunt (Flesh Hounds of Khorne)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des Flesh Hounds, monture de prédilection d'Arbaal"},
+        {"icon": "fleshHoundsKhorne", "name": "Flesh Hounds of Khorne", "qty": 2, "note": "Chasseurs démoniaques increvables"},
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 3, "note": "Chasseurs rapides et bon marché pour flanquer et pourchasser les tireurs isolés"}
+      ],
+      "magic": "Arbaal n'est pas un lanceur de sorts — sa puissance vient de trois mille ans de domination martiale ininterrompue, de la hache légendaire Destroyer et de \"Fury of the Blood God\".",
+      "note": "Le -1 tour de recrutement global (seigneur) permet de reconstituer cette armée mortelle à une vitesse inégalée, tandis que \"Hellblade\" et le +10% de puissance d'arme pour les unités non-Démoniaques (seigneur) en font un mur de mêlée d'une efficacité redoutable, épaulé par les Flesh Hounds exploitant leur régiment favori (faction). Le -50% de coût et de temps de construction pour les bâtiments militaires Mortels (faction) accélère considérablement la fortification du territoire conquis."
+    }
+  }
+]

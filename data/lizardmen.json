@@ -1,0 +1,217 @@
+[
+  {
+    "id": "mazdamundi",
+    "numeral": "I",
+    "name": "Lord Mazdamundi",
+    "epithet": "Le Plus Vieux des Slanns",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Lord_Mazdamundi",
+    "faction": "Hexoatl",
+    "seal": "mazdamundi",
+    "portraitImage": "assets/portraits/mazdamundi.png",
+    "lore": "<p>Mazdamundi est le plus vieux et le plus puissant des Slanns encore vivants, gardien suprême du Grand Plan légué par les Anciens. Son esprit, engourdi par des millénaires de méditation, ne s'anime pleinement que lorsque le monde matériel a besoin de sa colère : alors les Vents de la Magie se soulèvent en tempête autour de lui, et des pouvoirs que nul mage mortel ne pourrait maîtriser s'abattent sur ceux qui menacent Hexoatl.</p>\n      <p>Rarement quitte-t-il son sanctuaire, préférant laisser ses Skinks et ses Saurus veiller sur la Cité de Pierre — mais lorsque la nécessité l'exige, il chevauche son antique Ancient Stegadon vers la bataille, une montagne de sortilèges vivante que peu de forces au monde peuvent espérer affronter.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec Last Defenders of Xhotl et Sky Cohort of Hexoatl</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-20</strong> avec toutes les factions non-Lizardmen</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-40%</strong> pour les bâtiments Star Chamber</div>\n        <div class=\"attr-item\">Temps de rechargement du Rite : <strong>-2 tours</strong> pour le Rite of Awakening</div>\n        <div class=\"attr-item\">Coût des Rites : <strong>-30%</strong></div>\n        <div class=\"attr-item\">Régiment favori Star Chamber Guardians (Temple Guards) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de ciblage : <strong>+50%</strong> pour les sorts</div>\n        <div class=\"attr-item\">Chance de rater un sort (Miscast) : <strong>+25%</strong> pour tous les lanceurs de sorts ennemis (armées ennemies, province locale)</div>\n        <div class=\"attr-item\">Chance d'augmentation des Vents de la Magie en changeant : <strong>+20%</strong> (province locale)</div>\n        <div class=\"attr-item\">Entretien : <strong>-30%</strong> pour les Temple Guard (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Lord Mazdamundi).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Mazdamundi : le plus puissant lanceur de sorts du jeu, avec +50% de portée de ciblage (seigneur) et une chance accrue de renforcement des Vents de la Magie (province locale), épaulé par le régiment favori Star Chamber Guardians (Temple Guards) à -30% d'entretien et +1 capacité (seigneur et faction) et une seconde lanceuse (Skink Priest)",
+      "totalSlots": 20,
+      "lord": {"icon": "mazdamundi", "name": "Lord Mazdamundi", "qty": 1, "note": "Le plus vieux des Slanns, gardien du Grand Plan — sa portée de ciblage +50% et sa chance de +25% de rater un sort pour tous les lanceurs ennemis (seigneur) en font un artilleur magique dévastateur et difficile à contrer"},
+      "heroes": [
+        {"icon": "skinkPriestHeavens", "name": "Skink Priest (Heavens)", "qty": 2, "note": "Seconde source de sorts et de soin en complément de Mazdamundi"}
+      ],
+      "army": [
+        {"icon": "starChamberGuardians", "name": "Star Chamber Guardians (Temple Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -30% d'entretien (seigneur) — variante d'élite du Temple Guard, protège le lanceur de sorts au contact"},
+        {"icon": "templeGuard", "name": "Temple Guard", "qty": 3, "note": "-30% d'entretien (seigneur) — garde du sanctuaire, protège le lanceur de sorts au contact"},
+        {"icon": "saurusWarriorsShields", "name": "Saurus Warriors (Shields)", "qty": 2, "note": "Ligne de tenue mortelle robuste en soutien"},
+        {"icon": "skinkCohortJavelins", "name": "Skink Cohort (Javelins)", "qty": 3, "note": "Tir léger bon marché pour user les lignes ennemies avant le contact"},
+        {"icon": "kroxigor", "name": "Kroxigor", "qty": 2, "note": "Brise-lignes increvable pour percer l'infanterie ennemie"},
+        {"icon": "bastiladonSolarEngine", "name": "Bastiladon (Solar Engine)", "qty": 2, "note": "Machine de guerre magique, synergise avec la présence d'un grand lanceur de sorts"},
+        {"icon": "stegadon", "name": "Stegadon", "qty": 2, "note": "Monstre robuste pour enfoncer le centre de la ligne ennemie"},
+        {"icon": "ripperdactylRiders", "name": "Ripperdactyl Riders", "qty": 1, "note": "Cavalerie volante rapide pour chasser les tireurs et héros isolés"}
+      ],
+      "magic": "Mazdamundi manie la Haute Magie et la Lore of Heavens avec une puissance inégalée dans tout le roster Lizardmen — sa portée de ciblage augmentée de 50% (seigneur) lui permet de frapper des cibles bien au-delà de la mêlée, tandis que la chance accrue de renforcement des Vents de la Magie (faction) alimente ses sorts les plus destructeurs.",
+      "note": "Cette armée protège avant tout Mazdamundi lui-même, la plus grande arme magique de la faction : le régiment favori Star Chamber Guardians, à +1 capacité (faction) et -30% d'entretien (seigneur), forme un rempart de mêlée d'élite autour de lui, pendant que Skink Cohort et Kroxigor tiennent le reste de la ligne. Les Bastiladons (Solar Engine) et Stegadons apportent une puissance de feu et de choc supplémentaire, et les Ripperdactyl Riders permettent de neutraliser rapidement les artilleries ou héros isolés qui menaceraient le lanceur de sorts. Le -40% de coût de construction pour les bâtiments Star Chamber et le -30% de coût des Rites (faction) accélèrent le développement d'Hexoatl, tandis que les relations diplomatiques favorables avec les autres factions Lizardmen (faction) facilitent une coexistence pacifique avec les alliés naturels de Mazdamundi."
+    }
+  },
+  {
+    "id": "kroqgar",
+    "numeral": "II",
+    "name": "Kroq-Gar",
+    "epithet": "Le Premier Né",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Kroq-Gar",
+    "faction": "Last Defenders",
+    "seal": "kroqgar",
+    "portraitImage": "assets/portraits/kroqgar.png",
+    "lore": "<p>Kroq-Gar est l'un des tout premiers Saurus jamais engendrés par les Anciens, un guerrier increvable dont la loyauté envers le Grand Plan n'a jamais faibli en plusieurs millénaires de guerre. Monté sur Grymloq, son fidèle Carnosaure, il chevauche à travers Lustria pour traquer et anéantir quiconque profane les cités sacrées des Lizardmen — Skavens en tête, dont il voue une haine particulière aux clans qui ont un jour souillé Xhotl.</p>\n      <p>Stratège redoutable autant que combattant hors pair, Kroq-Gar mène ses armées de Saurus et de Cold Ones avec une précision implacable, frappant vite et fort avant de se retirer dans la jungle qu'il connaît mieux que quiconque.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les armées menées par un Saurus Old-Blood</div>\n        <div class=\"attr-item\">Les bâtiments Saurus accordent des bonus supplémentaires aux Saurus Scar-Veterans et Saurus Old-Bloods</div>\n        <div class=\"attr-item\">Puissance d'arme : <strong>+1%</strong> par rang du personnage pour les Saurus Scar-Veterans et Saurus Old-Bloods</div>\n        <div class=\"attr-item\">Gain d'expérience de personnage : <strong>+30%</strong> pour les Saurus Scar-Veterans et Saurus Old-Bloods</div>\n        <div class=\"attr-item\">Régiment favori Pok-Hopak Cohort (Cold One Spear-Riders) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Chance de succès d'embuscade : <strong>+25%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Puissance d'arme : <strong>+1%</strong> par rang du personnage</div>\n        <div class=\"attr-item\">Gain d'expérience d'unité : <strong>+25%</strong> pour les Saurus Warriors et Cold One Rider (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Kroq-Gar).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Kroq-Gar : entretien réduit de -15% (seigneur et faction) et +25% de chance de succès d'embuscade (seigneur) pour une armée mobile de frappe rapide, profitant du +25% de gain d'expérience pour Saurus Warriors et Cold One Riders (seigneur) et du régiment favori Pok-Hopak Cohort (Cold One Spear-Riders) à +1 capacité (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "kroqgar", "name": "Kroq-Gar", "qty": 1, "note": "L'un des tout premiers Saurus engendrés, monté sur le Carnosaure Grymloq — son +25% de chance de succès d'embuscade (seigneur) permet de frapper vite et de se retirer avant la riposte ennemie"},
+      "heroes": [
+        {"icon": "saurusScarVeteran", "name": "Saurus Scar-Veteran", "qty": 2, "note": "+30% de gain d'expérience et +1% de puissance d'arme par rang (faction) — renforts de mêlée qui montent rapidement en puissance"}
+      ],
+      "army": [
+        {"icon": "blessedSaurusWarriorsShields", "name": "Blessed Saurus Warriors (Shields)", "qty": 5, "note": "+25% de gain d'expérience (seigneur) — cœur de mêlée d'élite qui monte vite en rang"},
+        {"icon": "pokHopakCohort", "name": "Pok-Hopak Cohort (Cold One Spear-Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +25% de gain d'expérience (seigneur) — variante d'élite des Cold One Spear-Riders, fer de lance des raids"},
+        {"icon": "coldOneSpearRiders", "name": "Cold One Spear-Riders", "qty": 3, "note": "+25% de gain d'expérience (seigneur) — cavalerie de choc rapide"},
+        {"icon": "skinkCohortJavelins", "name": "Skink Cohort (Javelins)", "qty": 3, "note": "Tir léger bon marché en soutien"},
+        {"icon": "kroxigor", "name": "Kroxigor", "qty": 2, "note": "Brise-lignes increvable pour percer l'infanterie ennemie"},
+        {"icon": "bastiladonSolarEngine", "name": "Bastiladon (Solar Engine)", "qty": 1, "note": "Appui de tir magique lourd"},
+        {"icon": "stegadon", "name": "Stegadon", "qty": 1, "note": "Monstre robuste pour enfoncer le centre de la ligne ennemie"}
+      ],
+      "magic": "Kroq-Gar n'est pas un lanceur de sorts — sa puissance vient de sa maîtrise martiale ancestrale, de son Carnosaure Grymloq et de sa capacité à frapper par embuscade avant que l'ennemi ne puisse réagir.",
+      "note": "Le cumul du -15% d'entretien (seigneur et faction) permet d'entretenir une armée nombreuse et mobile à moindre coût, tandis que le +25% de chance de succès d'embuscade (seigneur) en fait une force de frappe rapide qui choisit son terrain. Les Blessed Saurus Warriors et le régiment favori Pok-Hopak Cohort profitent tous deux du +25% de gain d'expérience (seigneur), ce dernier bénéficiant en plus du +1 capacité gratuit (faction), montant rapidement en rang pour devenir toujours plus redoutables. Les Saurus Scar-Veterans embarqués profitent quant à eux des bonus de bâtiments Saurus et du gain d'expérience de personnage +30% (faction)."
+    }
+  },
+  {
+    "id": "tiktaqto",
+    "numeral": "III",
+    "name": "Tiktaq'to",
+    "epithet": "Le Maître des Cieux",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Tiktaq%27to",
+    "faction": "Sky Cohort of Hexoatl",
+    "seal": "tiktaqto",
+    "portraitImage": "assets/portraits/tiktaqto.png",
+    "lore": "<p>Tiktaq'to est le plus grand cavalier de Terradon jamais formé par les Lizardmen, un maître des airs dont les acrobaties audacieuses lui ont valu le titre d'Œil dans les Cieux. Depuis les hauteurs, il veille sur Hexoatl et ses cités sœurs, prêt à fondre sur quiconque menacerait les rivages sacrés qu'il a juré de défendre.</p>\n      <p>Sa maîtrise du vol lui permet de frapper là où nul ennemi ne l'attend, laissant pleuvoir des rochers depuis les cieux avant de disparaître aussi vite qu'il est apparu — une terreur ailée que craignent tous ceux qui osent s'aventurer sur ses terres.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité du bassin de Blessed Spawning pour les Blessed Ripperdactyl et Terradon Riders : <strong>+2</strong></div>\n        <div class=\"attr-item\">Les héros Skink commencent montés sur Terradon</div>\n        <div class=\"attr-item\">Rite of Tzunki : augmente la portée de mouvement de campagne de toutes les armées et personnages lorsqu'il est accompli</div>\n        <div class=\"attr-item\">Ligne de vue de campagne : <strong>+25%</strong> (tous personnages)</div>\n        <div class=\"attr-item\">Les Terradons gagnent une capacité de bataille unique (Drop Rocks)</div>\n        <div class=\"attr-item\">Régiment favori Colossadon Hunters (Ripperdactyl Riders) : capacité <strong>\"Drop Rocks of Chotec\"</strong> (version améliorée) et <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Terradon Riders, Ripperdactyl Riders et Coatl (armée du seigneur)</div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+10</strong> en territoire étranger (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Tiktaq'to) + captures des capacités \"Drop Rocks of Chotec\" et \"Drop Rocks\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Tiktaq'to : une flotte aérienne complète profitant du -50% d'entretien pour Terradon Riders et Ripperdactyl Riders (seigneur), du +25% de ligne de vue de campagne (faction), du régiment favori Colossadon Hunters avec la capacité améliorée \"Drop Rocks of Chotec\" (+1 capacité, faction) et du +10 d'attaque en mêlée en territoire étranger (seigneur) pour des raids éclairs",
+      "totalSlots": 20,
+      "lord": {"icon": "tiktaqto", "name": "Tiktaq'to", "qty": 1, "note": "Le plus grand cavalier de Terradon des Lizardmen — son +10 d'attaque en mêlée en territoire étranger (seigneur) en fait un raider redoutable loin de ses terres"},
+      "heroes": [
+        {"icon": "skinkChief", "name": "Skink Chief", "qty": 2, "note": "Monté sur Terradon dès le départ (faction) — renfort de mêlée et de commandement aérien"}
+      ],
+      "army": [
+        {"icon": "terradonRiders", "name": "Terradon Riders", "qty": 5, "note": "-50% d'entretien (seigneur), capacité \"Drop Rocks\" (110 dégâts à distance, 54 explosifs, faction) — cœur de la flotte aérienne, bon marché et omniprésente"},
+        {"icon": "colossadonHunters", "name": "Colossadon Hunters (Ripperdactyl Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -50% d'entretien (seigneur) — capacité améliorée \"Drop Rocks of Chotec\" (150 dégâts à distance, 72 explosifs, inflige Inflammable), variante d'élite des Ripperdactyl Riders"},
+        {"icon": "ripperdactylRiders", "name": "Ripperdactyl Riders", "qty": 3, "note": "-50% d'entretien (seigneur), capacité \"Drop Rocks\" (faction) — cavalerie volante"},
+        {"icon": "skinkSkirmishers", "name": "Skink Skirmishers", "qty": 3, "note": "Tir léger bon marché en soutien au sol"},
+        {"icon": "skinkCohortJavelins", "name": "Skink Cohort (Javelins)", "qty": 2, "note": "Ligne de tenue légère pour ancrer le front"},
+        {"icon": "hornedOnes", "name": "Horned Ones", "qty": 2, "note": "Cavalerie de choc lourde pour appuyer les assauts aériens au sol"}
+      ],
+      "magic": "Tiktaq'to n'est pas un lanceur de sorts — sa puissance vient de sa maîtrise aérienne absolue et de sa capacité à frapper vite avant de disparaître dans les cieux.",
+      "note": "Le -50% d'entretien pour Terradon Riders et Ripperdactyl Riders (seigneur) permet d'aligner une flotte aérienne presque entière pour une fraction du coût normal, tandis que le régiment favori Colossadon Hunters, à +1 capacité (faction), dispose de la version renforcée \"Drop Rocks of Chotec\" (150 dégâts à distance contre 110 pour la version standard, et inflige Inflammable) — une nette amélioration par rapport aux Terradons classiques. Le +25% de ligne de vue de campagne et le Rite of Tzunki (faction) offrent une mobilité stratégique inégalée pour repérer et frapper l'ennemi avant qu'il ne réagisse, tandis que le +10 d'attaque en mêlée en territoire étranger (seigneur) récompense une stratégie de raids profonds loin des terres natales d'Hexoatl."
+    }
+  },
+  {
+    "id": "tehenhauin",
+    "numeral": "IV",
+    "name": "Tehenhauin",
+    "epithet": "Le Prophète de Sotek",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Tehenhauin",
+    "faction": "Red Host of Tehenhauin",
+    "seal": "tehenhauin",
+    "portraitImage": "assets/portraits/tehenhauin.png",
+    "lore": "<p>Tehenhauin est un Skink Prophète-Prêtre qui a consacré son existence à la résurrection de Sotek, le dieu-serpent oublié des Anciens. Convaincu que la prophétie ancienne annonçant la chute des Skavens ne peut s'accomplir que par ses mains, il rassemble ses fidèles pour offrir à Sotek les sacrifices nécessaires à son réveil.</p>\n      <p>Contrairement aux autres seigneurs Lizardmen, Tehenhauin se méfie des Saurus, qu'il juge trop lents pour le culte qu'il a fondé — préférant s'entourer de Skinks agiles et dévoués, prêts à tout pour hâter le retour du Serpent Ombre.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Entretien : <strong>+200%</strong> pour l'infanterie Saurus et les Temple Guard, jusqu'à compléter le Stade 1 de la Prophecy of Sotek</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Le Rite of Awakening ne peut pas être accompli tant que le Stade 1 de la Prophecy of Sotek n'est pas complété</div>\n        <div class=\"attr-item\">Les offrandes sacrificielles gagnées en remportant des batailles peuvent être offertes à Sotek pour divers avantages</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Diplomatie verrouillée avec les Skavens</div>\n        <div class=\"attr-item\">Coût du Rite of Sotek : <strong>-75%</strong></div>\n        <div class=\"attr-item\">+1 attaque en mêlée et commandement supplémentaires par rang d'expérience pour toute l'infanterie Skink</div>\n        <div class=\"attr-item\">Régiment favori Cohort of Sotek (Red-Crested Skinks) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Corruption : <strong>-3</strong> (province locale)</div>\n        <div class=\"attr-item\">Commandement : <strong>+10</strong> contre les Skavens (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance physique : <strong>10%</strong> pour les unités Skink (armée du seigneur)</div>\n        <div class=\"attr-item\">Immunisé à l'attrition de Peste (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Tehenhauin).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Tehenhauin : le malus de +200% d'entretien pour l'infanterie Saurus et les Temple Guard (faction, avant Stade 1 de la Prophecy of Sotek) impose une armée 100% Skink, qui profite du +10% de résistance physique (seigneur), des bonus par rang d'expérience (faction) et du régiment favori Cohort of Sotek (Red-Crested Skinks) à +1 capacité (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "tehenhauin", "name": "Tehenhauin", "qty": 1, "note": "Prophète-Prêtre de Sotek — son +10 de commandement contre les Skavens et son immunité à l'attrition de Peste (seigneur) en font un chef de guerre idéal pour purger les infestations de Clans"},
+      "heroes": [
+        {"icon": "skinkPriestHeavens", "name": "Skink Priest (Heavens)", "qty": 2, "note": "Soutien magique et de soin en complément de Tehenhauin"}
+      ],
+      "army": [
+        {"icon": "cohortOfSotek", "name": "Cohort of Sotek (Red-Crested Skinks)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +10% de résistance physique (seigneur), bonus par rang d'expérience (faction) — variante d'élite des Red-Crested Skinks"},
+        {"icon": "redCrestedSkinks", "name": "Red-Crested Skinks", "qty": 4, "note": "+10% de résistance physique (seigneur), bonus par rang d'expérience (faction) — élite Skink, cœur de mêlée de cette armée 100% Skink"},
+        {"icon": "skinkSkirmishers", "name": "Skink Skirmishers", "qty": 4, "note": "+10% de résistance physique (seigneur) — tir léger nombreux et résilient"},
+        {"icon": "chameleonSkinks", "name": "Chameleon Skinks", "qty": 2, "note": "Tirailleurs en embuscade pour affaiblir l'ennemi avant le contact"},
+        {"icon": "bastiladonArkOfSotek", "name": "Bastiladon (Ark of Sotek)", "qty": 2, "note": "Machine de guerre Skink, cœur thématique du culte de Sotek"},
+        {"icon": "salamanderHuntingPack", "name": "Salamander Hunting Pack", "qty": 2, "note": "Tir de zone incendiaire dévastateur contre les blobs d'infanterie"},
+        {"icon": "terradonRiders", "name": "Terradon Riders", "qty": 1, "note": "Reconnaissance et harcèlement aérien léger"}
+      ],
+      "magic": "Tehenhauin manie la Lore of Heavens via ses Skink Priests — sans lanceur de sorts personnel, il compense par son bonus de commandement contre les Skavens et la résistance physique accrue de ses troupes Skink (seigneur).",
+      "note": "Le malus de +200% d'entretien pour l'infanterie Saurus et les Temple Guard (faction) rend ces unités inutilisables tant que le Stade 1 de la Prophecy of Sotek n'est pas atteint (qui verrouille aussi le Rite of Awakening et la diplomatie avec les Skavens), ce qui impose une armée entièrement composée de Skinks — une contrainte qui devient une force grâce au +10% de résistance physique (seigneur) et aux bonus par rang d'expérience pour toute l'infanterie Skink (faction). Le régiment favori Cohort of Sotek, à +1 capacité (faction), forme le cœur de cette armée. Les Salamander Hunting Packs et Bastiladons (Ark of Sotek) apportent la puissance de feu nécessaire pour compenser l'absence de gros bras Saurus, tandis que le +10 de commandement contre les Skavens et l'immunité à l'attrition de Peste (seigneur) font de cette armée une purge idéale contre les Clans ennemis."
+    }
+  },
+  {
+    "id": "gorrok",
+    "numeral": "V",
+    "name": "Gor-Rok",
+    "epithet": "Le Protecteur d'Itza",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Gor-Rok",
+    "faction": "Itza",
+    "seal": "gorrok",
+    "portraitImage": "assets/portraits/gorrok.png",
+    "lore": "<p>Gor-Rok, le Grand Lézard Blanc, est renommé pour avoir juré de protéger Itza, la Première Cité sacrée des Lizardmen, contre tout assaillant. Là où d'autres Saurus cherchent la gloire au combat, Gor-Rok ne connaît qu'un seul devoir : tenir la ligne, quel qu'en soit le prix, et ne jamais laisser Itza tomber.</p>\n      <p>Sa loyauté inébranlable et sa résilience au combat en ont fait le gardien idéal de la cité qui abrite Lord Kroak lui-même — une responsabilité que Gor-Rok porte avec une fierté tranquille et une détermination absolue.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Rite of Quetzl : bonus de barrière et de défense pour les Saurus</div>\n        <div class=\"attr-item\">Commence la campagne avec le contrôle de Lord Kroak</div>\n        <div class=\"attr-item\">Points de vie de barrière : <strong>+500</strong> pour toutes les unités en défendant des colonies</div>\n        <div class=\"attr-item\">Réserves de défense : <strong>+500</strong> (toutes les régions)</div>\n        <div class=\"attr-item\">Régiment favori Legion of Chaqua (Saurus Spears) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Réserves de défense : <strong>+100</strong> par tour en cas de siège (toutes les régions)</div>\n        <div class=\"attr-item\">Masse d'unité : <strong>+15%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance aux tirs : <strong>10%</strong> (armée du seigneur) — réduit les dégâts des tirs reçus, jusqu'à un maximum de 90%</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Gor-Rok) + capture de la capacité \"Missile Resistance\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Gor-Rok : un mur de mêlée Saurus increvable profitant du +15% de masse d'unité et 10% de résistance aux tirs (seigneur), du régiment favori Legion of Chaqua (Saurus Spears) à +1 capacité (faction), épaulé par Lord Kroak recruté dès le début de campagne (faction) pour un impact magique dévastateur",
+      "totalSlots": 20,
+      "lord": {"icon": "gorrok", "name": "Gor-Rok", "qty": 1, "note": "Le Grand Lézard Blanc, protecteur juré d'Itza — son +15% de masse d'unité et 10% de résistance aux tirs (seigneur) en font un mur increvable pour tenir n'importe quelle ligne, encore renforcé par les +100 réserves de défense par tour en siège (seigneur)"},
+      "heroes": [
+        {"icon": "lordKroak", "name": "Lord Kroak", "qty": 1, "note": "Contrôle dès le début de campagne (faction) — le plus puissant lanceur de sorts du roster Lizardmen, complète parfaitement la solidité défensive de Gor-Rok"},
+        {"icon": "skinkPriestHeavens", "name": "Skink Priest (Heavens)", "qty": 1, "note": "Second soutien magique et de soin"}
+      ],
+      "army": [
+        {"icon": "saurusWarriorsShields", "name": "Saurus Warriors (Shields)", "qty": 5, "note": "+15% de masse / 10% résistance aux tirs (seigneur) — mur de mêlée increvable, cœur de l'armée"},
+        {"icon": "legionOfChaqua", "name": "Legion of Chaqua (Saurus Spears)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), même bonus de masse/résistance aux tirs (seigneur) — variante d'élite des Saurus Spears"},
+        {"icon": "saurusSpearsShields", "name": "Saurus Spears (Shields)", "qty": 2, "note": "Même bonus de masse/résistance aux tirs (seigneur) — anti-cavalerie et anti-monstre fiable"},
+        {"icon": "skinkCohortJavelins", "name": "Skink Cohort (Javelins)", "qty": 4, "note": "Tir léger bon marché en soutien"},
+        {"icon": "bastiladonRevivification", "name": "Bastiladon (Revivification Crystal)", "qty": 2, "note": "Soin de zone continu pour prolonger la tenue de ligne"},
+        {"icon": "stegadon", "name": "Stegadon", "qty": 2, "note": "Monstre robuste pour enfoncer le centre de la ligne ennemie"}
+      ],
+      "magic": "Gor-Rok lui-même n'est pas un lanceur de sorts, mais le contrôle de Lord Kroak dès le début de campagne (faction) offre à cette armée l'une des plus grandes puissances magiques du jeu, avec Skink Priest (Heavens) en complément pour le soin et le contrôle.",
+      "note": "Le +15% de masse et 10% de résistance aux tirs (seigneur), cumulés au Rite of Quetzl et au +500 points de vie de barrière en défense de colonie (faction), font de Gor-Rok l'un des seigneurs les plus increvables du jeu, particulièrement dominant en défense de siège grâce aussi aux +100 réserves de défense par tour en cas de siège (seigneur). Le régiment favori Legion of Chaqua, à +1 capacité (faction), renforce encore ce mur de mêlée. Le contrôle de Lord Kroak dès le début de campagne (faction) est un atout majeur unique à Itza, ajoutant une puissance de sort dévastatrice à une armée déjà quasiment infranchissable."
+    }
+  },
+  {
+    "id": "nakai",
+    "numeral": "VI",
+    "name": "Nakai the Wanderer",
+    "epithet": "Le Vagabond",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Nakai_the_Wanderer",
+    "faction": "Spirits of the Jungle",
+    "seal": "nakai",
+    "portraitImage": "assets/portraits/nakai.png",
+    "lore": "<p>Nakai est l'un des tout premiers Saurus jamais engendrés, si ancien que certains le considèrent comme la véritable incarnation vivante de la jungle elle-même. Émergeant des vastes jungles de Chi'an au Cathay, il erre sans fin à travers le monde, accompagné de ses fidèles Kroxigors, pour écraser les serviteurs des ténèbres qui ont pris racine jusqu'en Extrême-Orient.</p>\n      <p>Sa horde ne conquiert pas au sens propre — elle occupe, protège, et confie les colonies prises à ses vassaux, les Défenseurs du Grand Plan, pendant que Nakai poursuit son errance sans fin à travers les terres hostiles.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">La horde de Nakai débloque les unités directement, contrairement aux autres hordes qui utilisent le recrutement global</div>\n        <div class=\"attr-item\">Options de construction de colonie réduites, mais plus de colonies sous contrôle de Nakai apportent des récompenses croissantes</div>\n        <div class=\"attr-item\">Immunisé aux pénalités diplomatiques pour intrusion</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+3</strong> pour les Kroxigor Ancients et Kroxigor Elders</div>\n        <div class=\"attr-item\">Régiment favori Cohort of Huatl (Sacred Kroxigor) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût de recrutement : <strong>-15%</strong> pour les Kroxigor et Kroxigor Brawlers (armée du seigneur)</div>\n        <div class=\"attr-item\">Armure : <strong>+20</strong></div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+5</strong> pour les Kroxigor et Kroxigor Brawlers (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut : Woodsman (armée du seigneur) — permet à l'unité de traverser les forêts</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Nakai) + capture de l'attribut \"Woodsman\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Nakai : une horde de Kroxigor à -15% de coût de recrutement, +20 armure et +5 défense en mêlée (seigneur), avec le régiment favori Cohort of Huatl (Sacred Kroxigor) à +1 capacité (faction) comme cœur de mêlée",
+      "totalSlots": 20,
+      "lord": {"icon": "nakai", "name": "Nakai the Wanderer", "qty": 1, "note": "L'un des tout premiers Saurus engendrés, incarnation vivante de la jungle — son attribut Woodsman (seigneur) lui permet de traverser les forêts sans ralentir"},
+      "heroes": [
+        {"icon": "saurusScarVeteran", "name": "Saurus Scar-Veteran", "qty": 2, "note": "Renforts de mêlée robustes pour épauler la horde de Kroxigors"}
+      ],
+      "army": [
+        {"icon": "cohortOfHuatl", "name": "Cohort of Huatl (Sacred Kroxigor)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -15% de coût de recrutement / +20 armure / +5 défense en mêlée (seigneur) — variante d'élite des Sacred Kroxigor"},
+        {"icon": "sacredKroxigor", "name": "Sacred Kroxigor", "qty": 5, "note": "-15% de coût de recrutement / +20 armure / +5 défense en mêlée (seigneur) — variante sacrée increvable, cœur de l'armée"},
+        {"icon": "kroxigor", "name": "Kroxigor", "qty": 5, "note": "-15% de coût de recrutement / +20 armure / +5 défense en mêlée (seigneur) — brise-lignes en nombre"},
+        {"icon": "saurusWarriorsShields", "name": "Saurus Warriors (Shields)", "qty": 2, "note": "Ligne de tenue mortelle robuste en soutien"},
+        {"icon": "stegadon", "name": "Stegadon", "qty": 3, "note": "Monstre robuste pour enfoncer le centre de la ligne ennemie"}
+      ],
+      "magic": "Nakai n'est pas un lanceur de sorts — sa puissance vient de son ancienneté martiale extraordinaire et de la horde de Kroxigors qu'il mène à travers le monde.",
+      "note": "Le cumul du -15% de coût de recrutement, du +20 d'armure et du +5 de défense en mêlée pour les Kroxigor et Kroxigor Brawlers (seigneur) permet d'aligner une horde de monstres increvables à moindre coût, encore renforcée par le régiment favori Cohort of Huatl (+1 capacité, faction) — une synergie thématique parfaite pour ce seigneur défini par sa relation unique aux Kroxigors. L'attribut Woodsman (seigneur), qui permet de traverser les forêts, et l'immunité aux pénalités diplomatiques d'intrusion (faction) donnent à cette horde une liberté de mouvement inégalée à travers le monde. En parallèle de cette armée principale, le +3 de rang de recrutement pour les Kroxigor Ancients et Kroxigor Elders (faction) — des unités de type Seigneur — permet de lever à moindre coût des seigneurs secondaires déjà expérimentés pour mener d'autres armées de la horde."
+    }
+  },
+  {
+    "id": "oxyotl",
+    "numeral": "VII",
+    "name": "Oxyotl",
+    "epithet": "Le Plus Grand des Chasseurs",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Oxyotl",
+    "faction": "Ghosts of Pahuax",
+    "seal": "oxyotl",
+    "portraitImage": "assets/portraits/oxyotl.png",
+    "lore": "<p>Oxyotl est le plus grand chasseur jamais formé parmi les Skinks, un traqueur patient et méthodique dont la mission dépasse largement la simple chasse : il pourchasse les ennemis du Grand Plan à travers le monde entier, des agents du Chaos aux conspirateurs les plus discrets, ne laissant jamais échapper une proie une fois qu'il en a pris la piste.</p>\n      <p>Invisible et silencieux, Oxyotl et ses Chameleon Skinks apparaissent où nul ne les attend, frappent avec une précision chirurgicale, puis disparaissent dans les ombres avant que l'ennemi n'ait pu réagir — une menace fantomatique que craignent tous les serviteurs de la Ruine.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Silent Sanctums : débloque des sanctuaires perdus dans toute région visible, accordant des bonus locaux et une visibilité secrète</div>\n        <div class=\"attr-item\">Visions of the Old Ones : missions pour contrecarrer les activités du Chaos, en échange de Blessed Spawnings et autres récompenses</div>\n        <div class=\"attr-item\">Débloque le recrutement du héros Chameleon Skink Prowler (toutes provinces)</div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+3</strong> pour les Chameleon Skink Prowlers</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Skink et Chameleon Skinks (toutes armées)</div>\n        <div class=\"attr-item\">Portée : <strong>+15%</strong> pour l'infanterie Skink</div>\n        <div class=\"attr-item\">Régiment favori Pahuax Sentinels (Terradon Riders) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisé aux pénalités diplomatiques pour intrusion (armée du seigneur)</div>\n        <div class=\"attr-item\">Accès à la posture Masterful Ambush, portée de mouvement réduite pour s'y adapter et chance de détection réduite (armée du seigneur)</div>\n        <div class=\"attr-item\">Dégâts perforants des tirs : <strong>+50%</strong> pour toute l'infanterie Skink (armée du seigneur)</div>\n        <div class=\"attr-item\">Accès à la posture Stalking (armée du seigneur)</div>\n        <div class=\"attr-item\">Gain d'expérience des unités : <strong>+100%</strong> contre les Forces du Chaos (armée du seigneur)</div>\n        <div class=\"attr-item\">Immunisé à la corruption du Chaos et à l'attrition des Terres du Chaos (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Oxyotl) — le panneau étant scrollable, d'éventuels effets supplémentaires au-delà de ceux visibles restent à confirmer.</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Oxyotl : une armée 100% Skink profitant du -25% d'entretien et du +15% de portée pour l'infanterie Skink (faction), du régiment favori Pahuax Sentinels (Terradon Riders) à +1 capacité (faction), et du +50% de dégâts perforants pour les tirs Skink (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "oxyotl", "name": "Oxyotl", "qty": 1, "note": "Le plus grand chasseur des Skinks — son accès aux postures Masterful Ambush et Stalking, ainsi que son immunité aux pénalités d'intrusion et à la corruption du Chaos (seigneur), en font un traqueur capable de frapper n'importe où sans prévenir"},
+      "heroes": [
+        {"icon": "chameleonSkinkProwler", "name": "Chameleon Skink Prowler", "qty": 2, "note": "Recrutement débloqué et +3 de rang de recrutement (faction) — héros de traque et d'embuscade au service d'Oxyotl"}
+      ],
+      "army": [
+        {"icon": "chameleonSkinks", "name": "Chameleon Skinks", "qty": 5, "note": "+50% de dégâts perforants (seigneur) et +15% de portée (faction) — tireurs d'élite en embuscade, cœur de l'armée"},
+        {"icon": "pahuaxSentinels", "name": "Pahuax Sentinels (Terradon Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des Terradon Riders, reconnaissance et harcèlement aérien"},
+        {"icon": "terradonRiders", "name": "Terradon Riders", "qty": 1, "note": "Reconnaissance et harcèlement aérien"},
+        {"icon": "skinkCohortJavelins", "name": "Skink Cohort (Javelins)", "qty": 3, "note": "-25% d'entretien / +15% de portée (faction) — ligne de tenue légère bon marché"},
+        {"icon": "chameleonStalkers", "name": "Chameleon Stalkers", "qty": 3, "note": "Embuscade et infiltration pour frapper les flancs et l'arrière ennemi"},
+        {"icon": "skinkSkirmishers", "name": "Skink Skirmishers", "qty": 2, "note": "-25% d'entretien / +15% de portée (faction) — tir léger nombreux et bon marché"},
+        {"icon": "feralBastiladon", "name": "Feral Bastiladon", "qty": 1, "note": "Monstre robuste pour enfoncer le centre de la ligne ennemie"}
+      ],
+      "magic": "Oxyotl n'est pas un lanceur de sorts — sa puissance vient de sa maîtrise de la traque et de l'embuscade, ainsi que des bonus qu'il confère à toute l'infanterie Skink.",
+      "note": "Le -25% d'entretien et le +15% de portée pour l'infanterie Skink (faction) permettent d'aligner une armée 100% Skink nombreuse et à longue portée pour un coût réduit, tandis que le régiment favori Pahuax Sentinels (+1 capacité, faction) apporte une reconnaissance aérienne gratuite. Le +50% de dégâts perforants pour les tirs Skink (seigneur) transforme les Chameleon Skinks en tireurs d'élite capables de percer n'importe quelle armure, et le +100% de gain d'expérience contre les Forces du Chaos (seigneur) accélère encore cette montée en puissance face à l'ennemi le plus courant. L'immunité à la corruption du Chaos et à l'attrition des Terres du Chaos (seigneur), combinée à l'accès aux postures Masterful Ambush et Stalking, en fait une armée furtive capable d'opérer en autonomie complète au cœur des Wastes."
+    }
+  }
+]

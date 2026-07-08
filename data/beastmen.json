@@ -1,0 +1,155 @@
+[
+  {
+    "id": "khazrak",
+    "numeral": "I",
+    "name": "Khazrak le Borgne",
+    "epithet": "Le Fléau du Drakwald",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Khazrak_the_One-Eye",
+    "faction": "Warherd of the One-Eye",
+    "seal": "khazrak",
+    "portraitImage": "assets/portraits/khazrak.png",
+    "lore": "<p>Khazrak le Borgne possède une ruse impitoyable bien supérieure à celle de ses semblables bestiaux : il est le Beastlord le plus dangereux et le plus puissant du Drakwald. Depuis des années, il ravage la région, fondant sur ses proies sans prévenir avant de disparaître à nouveau dans l'ombre. Khazrak possède un don unique pour canaliser l'esprit indiscipliné de la horde et concevoir des plans de bataille simples mais redoutablement efficaces.</p>\n      <p>Contrairement à la plupart des Bêtes, son esprit patient et calculateur tranche avec le tempérament impulsif propre à son espèce. Le warband de Khazrak parcourt le Drakwald, terrorisant bourgades et routes commerçantes — jamais un chef Beastmen ne s'était montré aussi insaisissable face aux représailles. Nul n'est épargné lors de ses attaques, ses Warhounds surentraînés pourchassant sans relâche les rares qui parviennent à fuir.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût en Dread : <strong>-15%</strong> pour toutes les augmentations de capacité d'unité</div>\n        <div class=\"attr-item\">Chance d'évasion en utilisant les Sentiers Bestiaux : <strong>+15%</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Chance de succès d'embuscade : <strong>+15%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+2 capacité</strong> pour les Destroyers of the Drakwald (Ungor Herd)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Pénalités de Rage Bestiale et chance de détection réduites en posture Camp Caché</div>\n        <div class=\"attr-item\">Attribut : Déploiement d'Avant-Garde pour les unités Bestigors (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut : Déploiement d'Avant-Garde pour les Chars Razorgor (armée du seigneur)</div>\n        <div class=\"attr-item\">Active les attaques empoisonnées pour toutes les unités Ungor (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Khazrak le Borgne).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Khazrak : une horde d'Ungors empoisonnés (seigneur) et bon marché à faire grossir (-15% coût de capacité, faction), appuyée par des Bestigors et Chars Razorgor en Déploiement d'Avant-Garde (seigneur) pour frapper en embuscade (+15% de succès, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "khazrak", "name": "Khazrak le Borgne", "qty": 1, "note": "Combattant redoutable en mêlée, monté sur son Chariot Razorgor — sa posture Camp Caché (seigneur) le rend bien plus discret pour préparer des embuscades"},
+      "heroes": [
+        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 1, "note": "Soutien magique (Lore of Beasts/Wild) pour appuyer la horde"},
+        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Renfort de mêlée pour épauler Khazrak au contact"}
+      ],
+      "army": [
+        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 4, "note": "Attaques empoisonnées (seigneur) — tirailleurs bon marché idéaux pour harceler avant l'embuscade"},
+        {"icon": "ungorHerd", "name": "Ungor Herd", "qty": 1, "note": "Attaques empoisonnées (seigneur) — infanterie de ligne bon marché"},
+        {"icon": "destroyersOfTheDrakwald", "name": "Destroyers of the Drakwald (Ungor Herd)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires disponibles — variante d'élite des Ungor Herd, également couverte par les attaques empoisonnées du seigneur"},
+        {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 4, "note": "Déploiement d'Avant-Garde (seigneur) — apparaissent directement sur les flancs ennemis dès le début de la bataille"},
+        {"icon": "razorgorChariot", "name": "Chars Razorgor", "qty": 3, "note": "Même Déploiement d'Avant-Garde (seigneur) — percussion immédiate en début de bataille"},
+        {"icon": "centigors", "name": "Centigors", "qty": 2, "note": "Cavalerie légère rapide, complément mobile pour exploiter les brèches"}
+      ],
+      "magic": "Le Bray-Shaman couvre les besoins magiques de la horde tandis que Khazrak concentre sa force sur le combat rapproché et la manœuvre furtive.",
+      "note": "Cette armée est pensée pour l'embuscade : +15% de succès d'embuscade (faction) et posture Camp Caché améliorée (seigneur) permettent de surprendre l'ennemi, avant que Bestigors et Chars Razorgor ne frappent en Déploiement d'Avant-Garde (seigneur) sur ses arrières."
+    }
+  },
+  {
+    "id": "malagor",
+    "numeral": "II",
+    "name": "Malagor",
+    "epithet": "Le Présage Sombre",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Malagor_the_Dark_Omen",
+    "faction": "Harbinger of Disaster",
+    "seal": "malagor",
+    "portraitImage": "assets/portraits/malagor.png",
+    "lore": "<p>Les Beastmen voient en Malagor l'incarnation même de la perdition de l'humanité. Silhouette de cauchemar dans toute la Grande Forêt, il est révéré par les Bêtes mais craint par-dessus tout par les humains superstitieux, pour qui il symbolise la chute de tout ce qu'ils chérissent. Vilipendé par le Culte de Sigmar comme l'incarnation même du péché, apercevoir Malagor est considéré comme le présage le plus terrifiant qui soit.</p>\n      <p>Le Père-Corbeau est ce démon ailé surgissant des forêts maudites pour défier les dieux des hommes, ce diable gravé dans les gravures des grimoires anciens, gardé sous clé de peur que les terribles secrets qu'il recèle ne brisent la raison de quiconque les lirait.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût en Dread : <strong>-50%</strong> pour toutes les augmentations de capacité de Héros</div>\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+5</strong> pour les Bray-Shamans et Great Bray-Shamans</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Black-Horn's Ravagers (Gor Herd)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de déplacement : <strong>+50</strong> en utilisant les Sentiers Bestiaux (armée du seigneur)</div>\n        <div class=\"attr-item\">Taux de reconstitution des pertes ennemies : <strong>-100%</strong> (armées ennemies dans la province locale)</div>\n        <div class=\"attr-item\">Commandement ennemi : <strong>-8</strong> (armées ennemies dans la province locale)</div>\n        <div class=\"attr-item\">Attribut : provoque la peur pour les unités Harpies (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Malagor).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Malagor : des Bray-Shamans recrutés massivement grâce au -50% de coût de capacité de Héros et au +5 rang de recrutement (faction), épaulés par des Harpies semant la peur (seigneur) et des Gor Herd au régiment favori renforcé (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "malagor", "name": "Malagor", "qty": 1, "note": "Seigneur volant et lanceur de sorts (Beasts/Death/Shadow/Wild) — son +50 de portée de déplacement sur les Sentiers Bestiaux (seigneur) permet de frapper puis disparaître avant toute riposte"},
+      "heroes": [
+        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 2, "note": "Recrutés directement avec +5 rangs d'expérience et à moitié prix en capacité (faction) — un mur de magie offensive quasiment gratuit"},
+        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Renfort de mêlée pour protéger les lanceurs de sorts"}
+      ],
+      "army": [
+        {"icon": "gorHerd", "name": "Gor Herd", "qty": 2, "note": "Infanterie de mêlée bon marché, cœur de cette armée"},
+        {"icon": "blackHornsRavagers", "name": "Black-Horn's Ravagers (Gor Herd)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Gor Herd"},
+        {"icon": "harpies", "name": "Harpies", "qty": 4, "note": "Provoquent la peur grâce à Malagor (seigneur) — idéales pour harceler et briser le moral ennemi avant le contact"},
+        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 3, "note": "Tirailleurs bon marché pour occuper le terrain et protéger les flancs"},
+        {"icon": "centigors", "name": "Centigors", "qty": 3, "note": "Cavalerie légère rapide, complément mobile pour exploiter les brèches ouvertes par la magie"},
+        {"icon": "giant", "name": "Giant", "qty": 2, "note": "Monstre de rupture massif pour percer n'importe quelle ligne ennemie"}
+      ],
+      "magic": "Malagor combine Lore of Beasts, Death, Shadow et Wild — Flock of Doom et Doom & Darkness sèment la terreur, pendant que les Bray-Shamans multiplient les sorts de soutien à moindre coût (faction).",
+      "note": "En province occupée par cette armée, les ennemis subissent -100% de reconstitution des pertes et -8 de commandement (seigneur) : idéal pour asseoir une occupation punitive après une victoire, avant de repartir rapidement grâce au bonus de déplacement sur les Sentiers Bestiaux."
+    }
+  },
+  {
+    "id": "morghur",
+    "numeral": "III",
+    "name": "Morghur",
+    "epithet": "Le Spectre Corrupteur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Morghur_the_Shadowgave",
+    "faction": "Warherd of the Shadowgave",
+    "seal": "morghur",
+    "portraitImage": "assets/portraits/morghur.png",
+    "lore": "<p>Morghur est une créature vile et tordue, l'essence même de la mutation et de la corruption prenant forme physique. Sa chevelure grossière est tissée de crânes gémissants et hurlants, et son corps se reforme et se remodèle à chaque instant. Son antre se trouve au fond d'une caverne près de la Forêt d'Arden, dont les parois de pierre s'écoulent comme de l'eau, reflétant sans cesse les sombres visions qui le hantent.</p>\n      <p>L'esprit de Morghur est empli d'images de destruction et de désolation ; la haine bouillonne en son cœur, et il ne vit que pour faire de ses rêves éveillés une réalité — abattre la civilisation sous toutes ses formes, briser l'ordre partout où il se trouve, et changer le monde sans cesse, au hasard de ses caprices. Partout où il marche, tout est irrémédiablement corrompu : l'herbe pousse selon des motifs dérangeants, les ruisseaux remontent leur cours, et les animaux subissent d'horribles mutations.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité d'unité : <strong>+4</strong> pour les Chaos Spawn</div>\n        <div class=\"attr-item\">Taux de reconstitution des pertes : <strong>+8%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Corruption Chaos Indivis : <strong>+3</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Coût de construction des bâtiments de horde : <strong>-15%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : accorde Frénésie à The Vorbergland Broodmother (Jabberslythe)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">La posture de pillage est améliorée en \"posture du Corrupteur\", qui répand corruption et attrition</div>\n        <div class=\"attr-item\">Capacité passive : \"Aura de Vile Transmutation\" — dégâts de zone directs à tous les ennemis à portée : <strong>16-32</strong> dégâts/seconde, portée <strong>35m</strong>, durée illimitée</div>\n        <div class=\"attr-item\">Immunisé à l'attrition d'Athel Loren (armée du seigneur)</div>\n        <div class=\"attr-item\">Morghur ne reste jamais blessé plus d'un tour</div>\n        <div class=\"attr-item\">Corruption Chaos Indivis : <strong>+5</strong></div>\n        <div class=\"attr-item\">Résistance à la magie : <strong>20%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Morghur).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Morghur : un cœur de Chaos Spawn massif rendu possible par le +4 de capacité (faction), appuyé par des Jabberslythe en Frénésie (régiment favori, faction) et une résistance à la magie de 20% (seigneur) qui blinde toute l'armée",
+      "totalSlots": 20,
+      "lord": {"icon": "morghur", "name": "Morghur", "qty": 1, "note": "Increvable — ne reste jamais blessé plus d'un tour et régénère (seigneur) ; son Aura de Vile Transmutation inflige en permanence 16-32 dégâts/seconde à tous les ennemis dans un rayon de 35m (seigneur), et sa posture du Corrupteur (seigneur) répand corruption et attrition sur tout son passage"},
+      "heroes": [
+        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 2, "note": "Soutien magique, également protégés par les +3/+5 de corruption Chaos Indivis (faction+seigneur) qui affaiblissent les ennemis alentour"}
+      ],
+      "army": [
+        {"icon": "chaosSpawn", "name": "Chaos Spawn", "qty": 4, "note": "+4 de capacité d'unité (faction) — une concentration de monstres mutants normalement impossible à recruter en telle quantité"},
+        {"icon": "jabberslythe", "name": "Jabberslythe", "qty": 1, "note": "Monstre volant dévastateur en mêlée"},
+        {"icon": "theVorberglandBroodmother", "name": "The Vorbergland Broodmother (Jabberslythe)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : accorde Frénésie (faction) — variante d'élite unique du Jabberslythe"},
+        {"icon": "centigors", "name": "Centigors", "qty": 3, "note": "Cavalerie légère pour exploiter les flancs pendant que les monstres tiennent le centre"},
+        {"icon": "ungorHerd", "name": "Ungor Herd", "qty": 4, "note": "Ligne de tenue bon marché, moins chère à entretenir grâce au -15% de coût de construction de horde (faction)"},
+        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 2, "note": "Tirailleurs pour harceler et protéger les flancs"},
+        {"icon": "razorgorChariot", "name": "Chars Razorgor", "qty": 2, "note": "Percussion rapide en complément des monstres"}
+      ],
+      "magic": "Les Bray-Shamans complètent l'Aura de Vile Transmutation de Morghur (seigneur) — 16-32 dégâts de zone par seconde sur 35m de rayon, en continu et sans limite de durée — qui corrompt et mutile déjà tout ce qui l'entoure sans dépenser le moindre sort.",
+      "note": "Cette armée est quasiment increvable en province ennemie : 20% de résistance à la magie (seigneur), immunité à l'attrition d'Athel Loren (seigneur) et régénération naturelle de Morghur permettent de mener des sièges longs pendant que la posture du Corrupteur (seigneur) ruine méthodiquement le territoire environnant."
+    }
+  },
+  {
+    "id": "taurox",
+    "numeral": "IV",
+    "name": "Taurox le Taureau d'Airain",
+    "epithet": "La Bête de Sang",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Taurox_the_Brass_Bull",
+    "faction": "Slaughterhorn Tribe",
+    "seal": "taurox",
+    "portraitImage": "assets/portraits/taurox.png",
+    "lore": "<p>Jadis chef minotaure autoritaire, Taurox ravageait déjà les terres dans toutes les directions, semant le sang et le carnage — jusqu'au jour où il dévora la tête d'un émissaire des puissances maudites. La folie qui s'empara alors de lui décupla son appétit pour le massacre.</p>\n      <p>Renaissant avec un corps d'airain étincelant et un cœur saisi d'une rage sans fin, la Bête de Sang ne connaît jamais la fatigue : son rampage de boucherie aveugle est aussi sanglant qu'ininterrompu. « La fête du massacre ne fait que commencer ! »</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Rampage : maintenir l'élan grâce à des victoires successives rapporte récompenses et bonus à Taurox</div>\n        <div class=\"attr-item\">Coût en Dread : <strong>-25%</strong> pour l'augmentation de capacité des Minotaurs, Minotaurs (Boucliers) et Minotaurs (Armes Lourdes)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Butchers of Kalkengard (Minotaurs)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">La posture de pillage est améliorée en \"posture Juggernaut\", augmentant la portée de déplacement mais réduisant les revenus de pillage</div>\n        <div class=\"attr-item\">Taurox laisse des effets \"Rivière de Sang\" dans les régions après ses victoires (cumulable jusqu'à 3 fois)</div>\n        <div class=\"attr-item\">Force des armes : <strong>+10%</strong> pour les unités Minotaurs (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité active : \"Bête de Sang\" (Bloodbeast) — explosion de feu autour de Taurox infligeant <strong>2 dégâts/seconde (100% feu)</strong> pendant <strong>6s</strong> sur un rayon de <strong>15m</strong>, applique Brûlure (10s, cumulable jusqu'à 3 fois, -8 de commandement) au contact ; forte contre une cible unique et l'armure ; rechargement <strong>90s</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Taurox le Taureau d'Airain).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Taurox : un mur de Minotaures moins chers à faire grossir (-25%, faction) et frappant plus fort (+10% de force d'armes, seigneur), complété par des monstres Ghorgon et une posture Juggernaut (seigneur) pour foncer entre les fronts",
+      "totalSlots": 20,
+      "lord": {"icon": "taurox", "name": "Taurox le Taureau d'Airain", "qty": 1, "note": "Increvable et increvablement agressif — son ability Bloodbeast déclenche une explosion de feu (2 dégâts/seconde sur 6s, rayon 15m, rechargement 90s) qui brûle et affaiblit le commandement (-8) des ennemis à son contact ; combinée à sa posture Juggernaut (seigneur), il est taillé pour l'offensive permanente, laissant des effets Rivière de Sang cumulables après chaque victoire (seigneur)"},
+      "heroes": [
+        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 1, "note": "Soutien magique en complément de la force brute de l'armée"},
+        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Renfort de mêlée supplémentaire"}
+      ],
+      "army": [
+        {"icon": "minotaurs", "name": "Minotaurs", "qty": 4, "note": "+10% de force d'armes (seigneur) et -25% de coût de capacité (faction) — le cœur de cette armée"},
+        {"icon": "butchersOfKalkengard", "name": "Butchers of Kalkengard (Minotaurs)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Minotaurs, également couverte par +10% de force d'armes (seigneur)"},
+        {"icon": "minotaursGreatWeapons", "name": "Minotaurs (Armes Lourdes)", "qty": 3, "note": "Mêmes bonus de force d'armes (seigneur) et de coût réduit (faction) — variante à deux mains pour maximiser les dégâts bruts"},
+        {"icon": "ghorgon", "name": "Ghorgon", "qty": 2, "note": "Monstre dévorant complémentaire, dans la même veine bestiale que les Minotaures"},
+        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 3, "note": "Tirailleurs bon marché pour occuper le terrain pendant que les Minotaures chargent"},
+        {"icon": "chaosWarhounds", "name": "Chaos Warhounds", "qty": 3, "note": "Cavalerie légère rapide pour intercepter les tireurs et protéger les flancs"}
+      ],
+      "magic": "Taurox n'est pas un lanceur de sorts — le Bray-Shaman couvre les besoins de soutien pendant que la force brute des Minotaures fait le travail.",
+      "note": "Grâce à la posture Juggernaut (seigneur), cette armée se déplace vite entre les fronts malgré des revenus de pillage réduits. Chaque victoire laisse des effets Rivière de Sang cumulables (seigneur) qui renforcent encore la région, tandis que le mécanisme de Rampage (faction) récompense les victoires en chaîne : ne t'arrête jamais."
+    }
+  },
+  {
+    "id": "gronk",
+    "numeral": "V",
+    "name": "Gronk",
+    "epithet": "Le Héraut du Changeur",
+    "wikiUrl": "",
+    "faction": "Jagged-Horn Tribe",
+    "seal": "gronk",
+    "portraitImage": "assets/portraits/gronk.png",
+    "lore": "<p>Gronk obéit aux ordres du Changeur des Voies, Maître de la Duperie et de la Sorcellerie. Poussé par cette volonté divine, il s'est aventuré au plus profond du Zhenduan, porteur de la mission de répandre l'édit sacré du Seigneur Céleste du Changement.</p>\n      <p>À la tête de la Jagged-Horn Tribe, Gronk rassemble sous sa bannière les Bêtes touchées par la marque de Tzeentch — Gors, Tzaangors et créatures mutantes — qu'il mène par la ruse et l'arcane plutôt que la seule force brute.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût en Dread : <strong>-30%</strong> pour l'augmentation de capacité des unités Tzaangor</div>\n        <div class=\"attr-item\">Coût des actions de héros : <strong>-100%</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+3</strong> pour les unités Gor, Tzaangors, Pestigors et Khorngors</div>\n        <div class=\"attr-item\">Points de vie de barrière : <strong>+250</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Ce seigneur est blessé plutôt que tué au combat</div>\n        <div class=\"attr-item\">Capacité passive : <strong>\"Giver of Arcane Glory\"</strong> — l'intensité augmente à chaque mort d'unité à proximité (35m, durée illimitée) : jusqu'à <strong>+100%</strong> de rechargement de puissance, <strong>+0,15</strong> réserve de Vents de la Magie/seconde et <strong>+30%</strong> de Spell Mastery pour Gronk lui-même, et jusqu'à <strong>+30%</strong> de Spell Mastery pour tous les alliés dans le rayon</div>\n        <div class=\"attr-item\">Active les attaques Warpflame pour les unités Minotaurs (armée du seigneur)</div>\n        <div class=\"attr-item\">Corruption Tzeentch : <strong>+3</strong> (province locale)</div>\n      </div>\n      <div class=\"stats-caveat\">Seigneur issu d'un mod communautaire installé par l'utilisateur (contenu non officiel, absent du wiki Total War: WARHAMMER) — capture d'écran de l'onglet Lord Details en jeu (Gronk).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Gronk : une horde multi-marques du Chaos (Tzaangors, Khorngors, Pestigors, Gors) recrutée déjà expérimentée (+3 rang, faction) et des actions de héros totalement gratuites (-100%, faction), avec des Minotaures dotés d'attaques Warpflame (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "gronk", "name": "Gronk", "qty": 1, "note": "Increvable au sens propre — blessé plutôt que tué au combat (seigneur) ; sa Giver of Arcane Glory (seigneur) le rend de plus en plus puissant en magie à mesure que des unités meurent autour de lui (jusqu'à +100% de rechargement de puissance et +30% de Spell Mastery), tout en boostant aussi les alliés proches ; répand la corruption de Tzeentch autour de lui (+3, seigneur) et confère des attaques Warpflame à ses Minotaures (seigneur)"},
+      "heroes": [
+        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 2, "note": "Actions de héros totalement gratuites (-100% de coût, faction) — à utiliser sans retenue pour harceler et affaiblir l'ennemi avant la bataille"}
+      ],
+      "army": [
+        {"icon": "tzaangors", "name": "Tzaangors", "qty": 6, "note": "-30% de coût de capacité (faction) et +3 rang de recrutement (faction) — le cœur de cette armée marquée par Tzeentch, déjà expérimenté à la sortie de caserne"},
+        {"icon": "khorngors", "name": "Khorngors", "qty": 3, "note": "+3 rang de recrutement (faction) — apport de puissance brute marquée par Khorne"},
+        {"icon": "pestigors", "name": "Pestigors", "qty": 3, "note": "+3 rang de recrutement (faction) — résistance et attaques toxiques marquées par Nurgle"},
+        {"icon": "gorHerd", "name": "Gor Herd", "qty": 3, "note": "+3 rang de recrutement (faction) — infanterie de base bon marché et déjà vétérane"},
+        {"icon": "minotaurs", "name": "Minotaurs", "qty": 2, "note": "Attaques Warpflame activées par Gronk (seigneur) — un bonus de dégâts magiques rare sur cette unité normalement dépourvue de tels effets"}
+      ],
+      "magic": "Giver of Arcane Glory (seigneur) confirme que Gronk lance lui-même des sorts : sa réserve de Vents de la Magie et son rechargement de puissance s'envolent à mesure que des unités meurent près de lui (jusqu'à +0,15 réserve/seconde et +100% de rechargement), rendant ses sorts de plus en plus fréquents à mesure que la bataille fait rage. Ses Bray-Shamans, recrutés et activés gratuitement en action de héros (faction), profitent aussi du bonus de Spell Mastery de zone (jusqu'à +30%) et complètent le soutien magique de la horde.",
+      "note": "Cette fiche repose sur un seigneur ajouté par un mod communautaire et non sur du contenu officiel Games Workshop / Creative Assembly : les effets ci-dessus reflètent uniquement ce qui est visible sur la capture d'écran fournie. Le mélange de marques du Chaos (Tzeentch/Khorne/Nurgle) dans la horde profite du même bonus de rang de recrutement (faction), tandis que les Points de vie de barrière +250 (faction) blindent nettement la résistance de départ de chaque unité en bataille. Reste au cœur de la mêlée : plus des unités meurent à proximité de Gronk, plus sa Giver of Arcane Glory (seigneur) monte en puissance."
+    }
+  }
+]

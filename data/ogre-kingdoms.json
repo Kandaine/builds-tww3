@@ -1,0 +1,96 @@
+[
+  {
+    "id": "greasus",
+    "numeral": "I",
+    "name": "Greasus Goldtooth",
+    "epithet": "L'Effroyablement Obèse",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Greasus_Goldtooth",
+    "faction": "Goldtooth",
+    "seal": "greasus",
+    "portraitImage": "assets/portraits/greasus.png",
+    "lore": "<p>Tradelord Greasus Tribestealer Drakecrush Gatecrasher Hoardmaster Goldtooth l'Effroyablement Obèse fut l'un des nombreux rejetons engendrés par le tristement célèbre Gofg, Tyran de la tribu Goldtooth. Comme ses frères, Greasus grandit fort et gras. Contrairement à eux, il tua et mangea son propre père. La nouvelle de cet exploit se répandit, et de nombreux Tyrans décidèrent de rallier ce nouveau chef impitoyable de la tribu Goldtooth : bientôt, les Ogre Kingdoms eurent de nouveau un Overtyrant.</p>\n      <p>Aujourd'hui, plus vieux, plus gros, plus bruyant et plus riche que jamais, les coffres de Goldtooth se remplissent plus vite que ses Gnoblars ne peuvent les compter. Pourtant, le succès fulgurant de Greasus n'a en rien diminué sa cupidité, ni son désir dévorant de conquérir tout ce qu'il voit.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès aux Tyrant's Demands, permettant des actions de campagne spéciales</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec la race Ogre Kingdoms</div>\n        <div class=\"attr-item\">Revenus des taxes commerciales : <strong>+50%</strong></div>\n        <div class=\"attr-item\">Régiment favori The Snowhorn of Mourn (Stonehorn) : capacité \"Glacial Defence\" améliorée (valeurs augmentées, ajoute aussi une résistance aux flammes)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Revenus du pillage et sac de colonies : <strong>+50%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité \"Everyone Has Their Price\" (active, Hex de zone) — <strong>Commandement : -8</strong>, <strong>Attaque en mêlée : -24</strong>, provoque l'état Enragé (Rampage), 35m de portée d'effet, 15s de durée, rechargement 120s, affecte tous les ennemis dans la zone</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Greasus) + captures des capacités \"Glacial Defence (Empowered)\" et \"Everyone Has Their Price\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Greasus : un corps d'Ogres classique profitant du +50% de revenus du pillage et sac de colonies (seigneur) et du +50% de revenus des taxes commerciales (faction), avec le régiment favori The Snowhorn of Mourn (Stonehorn) et sa capacité \"Glacial Defence\" améliorée (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "greasus", "name": "Greasus Goldtooth", "qty": 1, "note": "L'Overtyrant le plus riche et le plus puissant des Ogre Kingdoms — son +50% de revenus de pillage (seigneur) finance une machine de guerre toujours plus vorace, tandis que sa capacité \"Everyone Has Their Price\" (-8 commandement, -24 attaque en mêlée, Enragé, seigneur) désorganise les lignes ennemies avant l'impact"},
+      "heroes": [
+        {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 2, "note": "Soutien magique et de soin via la Lore of the Great Maw"}
+      ],
+      "army": [
+        {"icon": "maneaters", "name": "Maneaters", "qty": 2, "note": "Mercenaires d'élite polyvalents"},
+        {"icon": "ironguts", "name": "Ironguts", "qty": 4, "note": "Infanterie lourde d'élite, cœur de mêlée increvable"},
+        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Dual Weapons)", "qty": 4, "note": "Ligne de mêlée agressive à haut volume de dégâts"},
+        {"icon": "ogreBulls", "name": "Ogre Bulls", "qty": 2, "note": "Ligne de mêlée robuste et polyvalente"},
+        {"icon": "snowhornOfMourn", "name": "The Snowhorn of Mourn (Stonehorn)", "qty": 1, "note": "Régiment favori : capacité \"Glacial Defence\" améliorée (faction) — +75 armure, +35% résistance aux tirs, +35% résistance aux flammes, -25% vitesse, immunisé au flanquement pendant 21s (rechargement 60s) ; monstre de choc quasi invulnérable une fois la capacité activée"},
+        {"icon": "gnoblars", "name": "Gnoblars", "qty": 3, "note": "Chair à canon bon marché pour absorber les charges"},
+        {"icon": "gnoblarTrappers", "name": "Gnoblar Trappers", "qty": 1, "note": "Tir léger bon marché en soutien"}
+      ],
+      "magic": "Greasus n'est pas lui-même un lanceur de sorts — sa puissance vient de sa masse colossale et de ses attaques de collision, épaulé par des Butchers (Great Maw) pour le soutien magique.",
+      "note": "Le +50% de revenus du pillage et du sac de colonies (seigneur), cumulé au +50% de revenus des taxes commerciales (faction), fait de Greasus l'un des seigneurs les plus riches du jeu, capable de financer une armée d'Ogres nombreuse et bien équipée. Le régiment favori The Snowhorn of Mourn, dont la capacité \"Glacial Defence\" est renforcée et gagne une résistance aux flammes (faction), devient un mur quasi invulnérable pendant sa durée d'activation. Les Ironguts et Ogre Bulls forment le reste d'un mur de mêlée increvable typique des Ogre Kingdoms, tandis que les Gnoblars et Gnoblar Trappers absorbent les premières charges à moindre coût, et \"Everyone Has Their Price\" (seigneur) désorganise le front adverse avant le choc."
+    }
+  },
+  {
+    "id": "skrag",
+    "numeral": "II",
+    "name": "Skrag the Slaughterer",
+    "epithet": "Le Prophète du Grand Gouffre",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Skrag_the_Slaughterer",
+    "faction": "Disciples of the Maw",
+    "seal": "skrag",
+    "portraitImage": "assets/portraits/skrag.png",
+    "lore": "<p>Skrag est le légendaire Prophète du Grand Gouffre, aussi connu sous les noms de Moissonneur de Tripes et de Gouffre-qui-Marche. Traînant derrière lui son immense chaudron à viande — fixé à son dos par une série de crochets et de chaînes douloureux — Skrag tranche et déchire ses ennemis dans une glorieuse dévotion sanglante au Grand Gouffre. Dans son sillage, il laisse une traînée de membres et de morceaux de corps démembrés, que ses Gore-Gnoblars ont pour tâche de récupérer et de déposer dans son chaudron.</p>\n      <p>Poussé par des visions du Grand Gouffre, Skrag erre à travers les Border Princes, cherchant à assouvir son appétit insatiable de guerre et de viande.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Gagne de puissantes récompenses selon le nombre d'Offrandes actives au Grand Gouffre</div>\n        <div class=\"attr-item\">Viande gagnée en bataille : <strong>+10%</strong> (toutes armées)</div>\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+10%</strong> (toutes armées)</div>\n        <div class=\"attr-item\">Rang de recrutement des seigneurs et héros : <strong>+2</strong> pour les Slaughtermasters et Butchers</div>\n        <div class=\"attr-item\">Régiment favori Amblepeak Greybacks (Yhetees) : <strong>+1</strong> capacité</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût des Offrandes au Grand Gouffre : <strong>-50%</strong></div>\n        <div class=\"attr-item\">Attribut : Devastating Flanker pour les Gorgers (armée du seigneur) — double le bonus de charge en cas d'attaque de flanc ou d'arrière</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les Sabretusk Pack, Blood Vultures, Yhetees, Thundertusk, Stonehorn et Gorgers (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité \"Gorger Onslaught\" (active, invocation) — invoque une unité de Gorgers, 1 utilisation, 50m de portée, 1s de durée, rechargement 60s ; l'unité invoquée se dégrade avec le temps</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Skrag) + capacités \"Devastating Flanker\" et \"Gorger Onslaught\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Skrag : des Gorgers avec l'attribut Devastating Flanker et -20% d'entretien (seigneur), épaulés par des Sabretusk Packs au même bonus d'entretien, le régiment favori Amblepeak Greybacks (Yhetees) à capacité augmentée (faction), et des Butchers recrutés à rang plus élevé (+2, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "skrag", "name": "Skrag the Slaughterer", "qty": 1, "note": "Le Prophète du Grand Gouffre, lanceur de sorts et combattant redoutable — son -50% de coût des Offrandes au Grand Gouffre (seigneur) accélère considérablement l'accès aux bénédictions du Gouffre, et sa capacité \"Gorger Onslaught\" invoque une unité de Gorgers supplémentaire en plein combat (50m de portée, rechargement 60s)"},
+      "heroes": [
+        {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 2, "note": "+2 de rang de recrutement (faction) — soutien magique recruté déjà expérimenté"}
+      ],
+      "army": [
+        {"icon": "gorgers", "name": "Gorgers", "qty": 5, "note": "Devastating Flanker (double le bonus de charge de flanc/arrière) et -20% d'entretien (seigneur) — monstres increvables spécialisés dans les attaques de flanc"},
+        {"icon": "sabretuskPack", "name": "Sabretusk Pack", "qty": 3, "note": "-20% d'entretien (seigneur) — chasseurs rapides et increvables pour flanquer"},
+        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Dual Weapons)", "qty": 3, "note": "Ligne de mêlée agressive à haut volume de dégâts"},
+        {"icon": "ogreBulls", "name": "Ogre Bulls", "qty": 2, "note": "Ligne de mêlée robuste et polyvalente"},
+        {"icon": "amblepeakGreybacks", "name": "Amblepeak Greybacks (Yhetees)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum, -20% d'entretien en tant qu'unité Yhetees (seigneur) — infanterie monstrueuse résistante au froid, excellente contre l'infanterie lourde et blindée"},
+        {"icon": "gnoblars", "name": "Gnoblars", "qty": 1, "note": "Chair à canon bon marché pour absorber les charges"},
+        {"icon": "gnoblarTrappers", "name": "Gnoblar Trappers", "qty": 1, "note": "Tir léger bon marché en soutien"}
+      ],
+      "magic": "Skrag manie la Lore of the Great Maw (Braingobbler, Bullgorger, Bonecrusher, Toothcracker, The Maw, Trollguts) — sa position de Prophète du Grand Gouffre en fait l'un des rares lanceurs de sorts Ogre capable aussi de soigner via Trollguts.",
+      "note": "Le cumul du Devastating Flanker et du -20% d'entretien pour les Gorgers (seigneur) en fait une force de flanquement dévastatrice et bon marché à entretenir, tout comme les Sabretusk Packs qui profitent du même bonus. Le régiment favori Amblepeak Greybacks (Yhetees), avec sa capacité augmentée (faction), apporte une infanterie monstrueuse robuste que peu d'ennemis peuvent encaisser. Le -50% de coût des Offrandes au Grand Gouffre (seigneur) accélère l'obtention des bénédictions du Gouffre, tandis que le +2 de rang de recrutement pour les Butchers (faction) permet de disposer rapidement d'un soutien magique expérimenté, et \"Gorger Onslaught\" (seigneur) ajoute une vague de Gorgers ponctuelle en plein combat."
+    }
+  },
+  {
+    "id": "golgfag",
+    "numeral": "III",
+    "name": "Golgfag Maneater",
+    "epithet": "Le Mercenaire",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Golgfag_Maneater",
+    "faction": "The Maneaters",
+    "seal": "golgfag",
+    "portraitImage": "assets/portraits/golgfag.png",
+    "lore": "<p>Plus de récits sont racontés sur Golgfag Maneater que sur tout autre Ogre vivant, et Golgfag lui-même en invente une bonne partie. Pourtant, la légende recèle une grande part de vérité, car il a parcouru le monde de long en large avec ses acolytes — intitulés avec originalité les Maneaters de Golgfag — avec qui il a gagné une notoriété considérable en tant que chef mercenaire chevronné. Son titre de \"Maneater\" — forgé le jour où il dévora tout cru son Payeur humain avant de partir avec ses coffres — est trompeur, car il n'est en réalité pas difficile sur ce qu'il mange.</p>\n      <p>Le dernier accès de bougeotte de Golgfag l'a mené dans le nord de l'Ostland, en quête de fortunes gelées et de repas exotiques.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès aux Mercenary Contracts, permettant à la faction d'être engagée comme mercenaire par d'autres factions</div>\n        <div class=\"attr-item\">Golgfag peut voyager instantanément vers les colonies du Client une fois par Contrat</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Ne peut pas conclure d'Alliances avec d'autres factions</div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+5</strong> contre un ennemi de Contrat (toutes armées)</div>\n        <div class=\"attr-item\">Attribut : Immunisé à la Psychologie contre un ennemi de Contrat (toutes armées)</div>\n        <div class=\"attr-item\">Régiment favori The Powder-Guts (Maneaters) : <strong>+1</strong> capacité</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Revenus du butin post-bataille : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités Maneater (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité \"Dead Eye\" (active, Missile Magique) — <strong>1050 dégâts à distance</strong> (60% de pénétration d'armure), 150m de portée, rechargement 120s, cible une entité unique, fort contre les personnages peu blindés et les petites entités, nécessite une ligne de vue</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Golgfag) + capacité \"Dead Eye\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Golgfag : un cœur de Maneaters à -20% d'entretien (seigneur), les 2 exemplaires du régiment favori The Powder-Guts (Maneaters) permis par la capacité augmentée (faction), profitant du +5 d'attaque en mêlée et de l'immunité à la Psychologie contre les ennemis de Contrat (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "golgfag", "name": "Golgfag Maneater", "qty": 1, "note": "Le plus célèbre et le plus voyagé des Ogres, chef mercenaire chevronné — sa capacité \"Dead Eye\" (missile magique, 1050 dégâts à 60% de pénétration d'armure, 150m de portée, rechargement 120s) peut infliger des dégâts considérables à un Seigneur ou Héros isolé avant même l'engagement au corps-à-corps"},
+      "heroes": [
+        {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 2, "note": "Soutien magique et de soin via la Lore of the Great Maw"}
+      ],
+      "army": [
+        {"icon": "golgfagsManeaters", "name": "Golgfag's Maneaters", "qty": 3, "note": "-20% d'entretien (seigneur) — garde personnelle mercenaire d'élite de Golgfag"},
+        {"icon": "maneatersIronfists", "name": "Maneaters (Ironfists)", "qty": 3, "note": "-20% d'entretien (seigneur) — variante défensive des Maneaters"},
+        {"icon": "ogreBulls", "name": "Ogre Bulls", "qty": 2, "note": "Ligne de mêlée robuste et polyvalente"},
+        {"icon": "powderGuts", "name": "The Powder-Guts (Maneaters – Ogre Pistols)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — infanterie monstrueuse à distance, tir de pistolets dévastateur à courte portée"},
+        {"icon": "pigbackRiders", "name": "Pigback Riders", "qty": 2, "note": "Cavalerie légère rapide pour le flanc et la reconnaissance"},
+        {"icon": "leadbelchers", "name": "Leadbelchers", "qty": 2, "note": "Tir lourd dévastateur contre l'infanterie groupée"},
+        {"icon": "gnoblars", "name": "Gnoblars", "qty": 2, "note": "Chair à canon bon marché pour absorber les charges"},
+        {"icon": "gnoblarScraplauncher", "name": "Gnoblar Scraplauncher", "qty": 1, "note": "Artillerie de zone bon marché en soutien"}
+      ],
+      "magic": "Golgfag n'est pas lui-même un lanceur de sorts — sa puissance vient de sa capacité \"Dead Eye\" (tir précis à distance) et de sa polyvalence martiale, épaulé par des Butchers (Great Maw) pour le soutien magique.",
+      "note": "Le -20% d'entretien pour les unités Maneater (seigneur) permet d'aligner un cœur d'élite mercenaire nombreux à moindre coût, renforcé par les 2 exemplaires du régiment favori The Powder-Guts (Maneaters) que la capacité augmentée (faction) permet de recruter et d'aligner ensemble. Le +5 d'attaque en mêlée et l'immunité à la Psychologie contre les ennemis de Contrat (faction) récompensent l'accomplissement méthodique des Mercenary Contracts. Les Pigback Riders apportent la mobilité nécessaire pour le flanc, pendant que les Leadbelchers et le Gnoblar Scraplauncher fournissent une puissance de feu à distance pour affaiblir l'ennemi avant le contact."
+    }
+  }
+]

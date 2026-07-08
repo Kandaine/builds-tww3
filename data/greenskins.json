@@ -1,0 +1,193 @@
+[
+  {
+    "id": "grimgor",
+    "numeral": "I",
+    "name": "Grimgor Ironhide",
+    "epithet": "Le Meilleur de Tous",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Grimgor_Ironhide",
+    "faction": "Grimgor's 'Ardboyz",
+    "seal": "grimgor",
+    "portraitImage": "assets/portraits/grimgor.png",
+    "lore": "<p>Même pour un Orc Noir, la soif de guerre de Grimgor était exceptionnelle. Si une journée entière passait sans bataille, Grimgor était connu pour déclencher des disputes qui décimaient le campement, son œil unique brûlant d'impatience de trouver querelle et bagarre. Deux jours sans bataille, et Grimgor frappait tout ce qu'il pouvait atteindre — sauf, peut-être, ses camarades Orcs Noirs. Personne ne sait ce qui se passerait après trois jours sans combat, mais même les vétérans les plus endurcis tremblent à cette seule pensée.</p>\n      <p>Cette soif inextinguible de bataille est le signe qui distingue un Warboss digne de commander, un signe que l'Orc est favorisé par Gork (ou Mork). Chez un Orc Noir colossal aux talents de combattant et à la férocité sans égale, ce signe a désigné Grimgor pour la grandeur : le prophète et messager de Gork (ou Mork), épaulé par son garde du corps d'Orcs Noirs, « Da Immortulz ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Débloque le recrutement du héros Black Orc Big Boss (toutes les provinces)</div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Orc Champions</div>\n        <div class=\"attr-item\">Revenu du pillage post-bataille : <strong>+30%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les unités Black Orcs et Big 'Uns (toutes les armées)</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Commandement : <strong>-9</strong> pour les unités Goblin (toutes les armées)</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Incapable de recruter des Seigneurs Goblin ou Savage Orc</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Krimson Killerz (Black Orcs)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Restaure 10% de la portée de mouvement de campagne après une victoire en bataille</div>\n        <div class=\"attr-item\">Attribut \"Causes Fear\" pour les unités Black Orc (armée du seigneur) — effraie et réduit le commandement de tous les ennemis proches ; ces unités sont elles-mêmes immunisées à la Peur, qui ne se cumule pas</div>\n        <div class=\"attr-item\">Capacité \"You're Next!\" (Hex, active) — <strong>Attaque en mêlée : -24</strong>, <strong>Vitesse : -45%</strong>, <strong>Défense en mêlée : -40</strong> pour 1 Seigneur/Héros ennemi à 75m, durée 24s, rechargement 90s</div>\n        <div class=\"attr-item\">Capacité d'armée \"Grimgor's Waaagh!\" (Augment de zone, remplace \"Waaagh!\") — <strong>Dégâts d'arme de base : +50%</strong>, <strong>Dégâts perforants : +50%</strong>, <strong>Attaque en mêlée : +24</strong>, Immunisé à la Psychologie, portée illimitée, durée 18s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Grimgor) + captures des capacités \"Causes Fear\", \"You're Next!\" et \"Grimgor's Waaagh!\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Grimgor : un mur d'Orcs et de Black Orcs 100% pur (la faction pénalise sévèrement les Goblins à -9 commandement et interdit même leurs Seigneurs), avec les Black Orcs à -15% d'entretien (faction) et profitant du régiment favori Krimson Killerz (+1 capacité, faction), provoquant la Peur chez l'ennemi (seigneur) et soutenus par \"You're Next!\" contre les fuyards puis \"Grimgor's Waaagh!\" pour l'assaut final",
+      "totalSlots": 20,
+      "lord": {"icon": "grimgor", "name": "Grimgor Ironhide", "qty": 1, "note": "Da Best — duelliste increvable sans monture, sa capacité \"You're Next!\" (-24 attaque, -45% vitesse, -40 défense en mêlée sur 1 cible) paralyse un Seigneur/Héros ennemi en fuite, et \"Grimgor's Waaagh!\" (+50% dégâts d'arme et perforants, +24 attaque, immunité à la Psychologie, seigneur) déchaîne toute l'armée"},
+      "heroes": [
+        {"icon": "blackOrcBigBoss", "name": "Black Orc Big Boss", "qty": 2, "note": "Recrutable depuis n'importe quelle province (faction) — renfort de mêlée massif en écho à la garde personnelle de Grimgor, Da Immortulz"}
+      ],
+      "army": [
+        {"icon": "krimsonKillerz", "name": "Krimson Killerz (Black Orcs)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -15% d'entretien (faction), provoquent la Peur chez l'ennemi (seigneur) — variante d'élite des Black Orcs"},
+        {"icon": "blackOrcs", "name": "Black Orcs (Armes Lourdes)", "qty": 4, "note": "-15% d'entretien (faction), provoquent la Peur chez l'ennemi (seigneur) — le cœur increvable et effrayant de cette armée"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 4, "note": "Infanterie de mêlée standard pour épaissir la ligne — délibérément préféré aux Goblins, pénalisés à -9 commandement (faction)"},
+        {"icon": "orcBoyzSpears", "name": "Orc Boyz (Lances)", "qty": 3, "note": "Anti-cavalerie fiable en complément, sans la pénalité de commandement des Goblins (faction)"},
+        {"icon": "orcBoarBoyBigUns", "name": "Orc Boar Boy Big 'Uns", "qty": 3, "note": "-15% d'entretien en tant qu'unité Big 'Uns (faction) — cavalerie lourde pour percer les flancs"},
+        {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie à trajectoire haute pour cibler les tireurs isolés adverses"}
+      ],
+      "magic": "Grimgor n'est pas un lanceur de sorts — sa puissance vient de sa férocité brute au corps-à-corps et de sa capacité à traquer les personnages ennemis.",
+      "note": "Cette armée bannit délibérément les Goblins (-9 commandement, faction) au profit d'un mur 100% Orc et Black Orc : les Black Orcs Krimson Killerz (+1 capacité, faction) et les Big 'Uns profitent tous deux du -15% d'entretien (faction), pendant que Grimgor lui-même chasse les seigneurs et sorciers ennemis grâce à \"You're Next!\" avant de déchaîner \"Grimgor's Waaagh!\" sur l'ensemble de la ligne."
+    }
+  },
+  {
+    "id": "skarsnik",
+    "numeral": "II",
+    "name": "Skarsnik",
+    "epithet": "Le Malin des Huit Pics",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Skarsnik",
+    "faction": "Crooked Moon",
+    "seal": "skarsnik",
+    "portraitImage": "assets/portraits/skarsnik.png",
+    "lore": "<p>Skarsnik est le chef de la tribu de la Lune Tordue et le plus puissant Gobelin de la Nuit des Monts du Bord du Monde. Toutes les tribus Peaux-Vertes environnantes reconnaissent sa suprématie sur les pics, vallées et niveaux supérieurs du Hold Nain en ruine de Karak Huit Pics. Par des machinations retorses et une hargne implacable, il a accédé au commandement au cœur de la bataille sans fin qui oppose Peaux-Vertes, Nains et Skavens.</p>\n      <p>Adversaire sans pitié, Skarsnik ne cesse d'inventer de nouveaux pièges pour attirer ses ennemis vers leur perte. Son seul nom attise une rage incandescente chez les Nains ; on dit que ses méfaits abominables ont mérité leur propre chapitre dans le Livre des Rancunes. Les Skavens ne sont pas en reste : ils ont conclu d'innombrables pactes avec les Peaux-Vertes, pour se retrouver trahis à chaque fois par ce qui est sans doute le plus retors des Gobelins de la Nuit.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Ne peut recruter des unités Orc qu'après avoir capturé Karak Huit Pics</div>\n        <div class=\"attr-item\">Gain d'expérience des personnages : <strong>+100%</strong> (tous les héros)</div>\n        <div class=\"attr-item\">Coût des actions de héros : <strong>-50%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Chance de succès d'embuscade : <strong>+15%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités Goblin et Squig</div>\n        <div class=\"attr-item\">Régiment favori Da Warlord's Boyz (Night Goblins) : capacité \"Cowardly Guardian\" et <strong>+1 capacité</strong></div>\n        <div class=\"attr-item\">Régiment favori Durkit's Squig Hoppas (Squig Hoppers) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Active la posture Traque (Stalking) (armée du seigneur)</div>\n        <div class=\"attr-item\">Commandement : <strong>+8</strong> pour les unités Night Goblin (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+4</strong> pour les unités Night Goblin (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité d'armée \"Skarsnik's Waaagh!\" (Augment de zone, remplace \"Waaagh!\") — <strong>Dégâts de tir perforants : +50%</strong>, <strong>Dégâts de tir de base : +50%</strong>, <strong>Dégâts d'arme de base : +25%</strong>, <strong>Dégâts perforants : +25%</strong>, <strong>Attaque en mêlée : +24</strong>, Immunisé à la Psychologie, durée 18s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Skarsnik) + captures des capacités \"Cowardly Guardian\" et \"Skarsnik's Waaagh!\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Skarsnik : une horde de Night Goblins et Squig Hoppers à -20% d'entretien (faction), étonnamment solide (+8 commandement, +4 défense en mêlée, seigneur) et protégée par le Ward Save de zone \"Cowardly Guardian\" (régiment favori, faction), profitant de la posture Traque pour manœuvrer sans être repérée avant de déchaîner \"Skarsnik's Waaagh!\"",
+      "totalSlots": 20,
+      "lord": {"icon": "skarsnik", "name": "Skarsnik", "qty": 1, "note": "Le Warlord de Karak Huit Pics, escorté par son fidèle Gobbla — sa posture Traque (seigneur) permet de manœuvrer et de tendre des embuscades sans être repéré, et \"Skarsnik's Waaagh!\" (+50% dégâts de tir, +25% dégâts d'arme, +24 attaque, immunité Psychologie, seigneur) amplifie la nature sournoise de toute la horde"},
+      "heroes": [
+        {"icon": "nightGoblinShaman", "name": "Night Goblin Shaman", "qty": 1, "note": "Coût d'action -50% et +100% d'expérience (faction) — soutien magique de la Lore of the Little Waaagh! qui monte vite en niveau"},
+        {"icon": "blackOrcBigBoss", "name": "Night Goblin Big Boss", "qty": 1, "note": "Même bonus de coût d'action et d'expérience (faction) — renfort de mêlée et gestion de la horde de Gobelins"}
+      ],
+      "army": [
+        {"icon": "daWarlordsBoyz", "name": "Da Warlord's Boyz (Night Goblins)", "qty": 2, "note": "Régiment favori : capacité \"Cowardly Guardian\" (+13% résistance physique pour Skarsnik à 35m) et +1 capacité (faction), -20% d'entretien (faction), +8 commandement et +4 défense en mêlée (seigneur) — variante d'élite des Night Goblins, cache des Fanatics explosifs pour surprendre l'ennemi"},
+        {"icon": "nightGoblins", "name": "Night Goblins", "qty": 5, "note": "-20% d'entretien (faction), +8 commandement et +4 défense en mêlée (seigneur) — infanterie de masse bon marché"},
+        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 3, "note": "Ligne de tenue anti-charge en soutien"},
+        {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "-20% d'entretien en tant qu'unité Goblin (faction) — tir de masse bon marché en complément"},
+        {"icon": "durkitsSquigs", "name": "Durkit's Squigs (Night Goblin Squig Hoppers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien en tant qu'unité Squig (faction) — variante d'élite des Squig Hoppers, cavalerie légère bondissante"},
+        {"icon": "nightGoblinSquigHoppers", "name": "Night Goblin Squig Hoppers", "qty": 1, "note": "-20% d'entretien en tant qu'unité Squig (faction) — cavalerie légère bondissante pour flanquer et harceler"},
+        {"icon": "arachnarokSpider", "name": "Arachnarok Spider", "qty": 2, "note": "Monstre emblématique de Karak Huit Pics, capable de porter des tireurs sur son dos"}
+      ],
+      "magic": "Skarsnik n'est pas lui-même lanceur de sorts, mais son Night Goblin Shaman apporte le soutien de la Lore of the Little Waaagh! à cette horde de Gobelins.",
+      "note": "Cette armée exploite les bonus de commandement et de défense en mêlée sur les Night Goblins (seigneur) pour compenser leur fragilité naturelle, tout en utilisant la posture Traque de Skarsnik (seigneur) pour choisir le moment et le lieu de l'affrontement."
+    }
+  },
+  {
+    "id": "wurrzag",
+    "numeral": "III",
+    "name": "Wurrzag da Great Green Prophet",
+    "epithet": "Le Grand Prophète Vert",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Wurrzag_da_Great_Green_Prophet",
+    "faction": "The Bloody Handz",
+    "seal": "wurrzag",
+    "portraitImage": "assets/portraits/wurrzag.png",
+    "lore": "<p>Wurrzag Ud Ura Zahubu est un Chaman Orc Sauvage aux pouvoirs mystiques redoutables. Connu sous le nom de « Grand Prophète Vert », il est guidé sur son chemin par les dieux Peaux-Vertes. Il mène les tribus vers la grandeur avant de repartir errer, poursuivant quelque nouveau plan insensé pour faire progresser la race Orc. Sa croisade verte commença dans les Contrées du Sud quand, avec l'énergie magique jaillissant incontrôlablement de ses yeux, il transforma l'ancien Chaman de la tribu du Nez d'Os en Bête Squiggly.</p>\n      <p>Alors que la tribu s'apprêtait à dévorer rituellement Wurrzag pour cet acte, l'Orc mariné entra en transe et raconta une histoire d'un temps oublié, où la tribu aujourd'hui misérable régnait sur ces terres. Wurrzag ranima leur esprit de conquête et, en remplaçant leur Chaman transformé, mena les guerriers du Nez d'Os à raser la cité Hommes-Lézards la plus proche. Depuis ce jour, deux idoles de pierre veillent sur la tribu, et sa fortune n'a cessé de croître.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Peut construire les bâtiments de recrutement Savage Orc dans n'importe quelle colonie</div>\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+10%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les unités Savage Orc (toutes les armées)</div>\n        <div class=\"attr-item\">Capacité de réserve des Vents de Magie : <strong>+15</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Deff Creeperz (Forest Goblin Spider Rider Archers) et Snagla's Deff Throwa (Goblin Bolt Throwas)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût de recrutement : <strong>-50%</strong> pour les unités Savage Orc (armée du seigneur)</div>\n        <div class=\"attr-item\">Bonus de charge : <strong>+20</strong> pour les unités Savage Orc (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance physique : <strong>15%</strong> pour les unités Savage Orc (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité d'armée \"Wurrzag's Waaagh!\" (Augment de zone, remplace \"Waaagh!\") — <strong>Dégâts d'arme de base : +25%</strong>, <strong>Dégâts perforants : +25%</strong>, <strong>Attaque en mêlée : +24</strong>, <strong>Résistance physique : +20%</strong>, Immunisé à la Psychologie, durée 18s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Wurrzag) + capture de la capacité \"Wurrzag's Waaagh!\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Wurrzag : une horde de Savage Orcs à moitié prix (-50% de recrutement, seigneur, cumulé avec -15% d'entretien, faction), chargeant avec +20 de bonus et 15% de résistance physique (seigneur), épaulée par les Deff Creeperz et Snagla's Deff Throwa qui exploitent le régiment favori (+1 capacité, faction), le tout porté par \"Wurrzag's Waaagh!\" et la magie du Lore of the Big Waaagh!",
+      "totalSlots": 20,
+      "lord": {"icon": "wurrzag", "name": "Wurrzag da Great Green Prophet", "qty": 1, "note": "Chaman Orc Sauvage guidé par Gork et Mork — ses sorts du Lore of the Big Waaagh! dévastent l'ennemi, et \"Wurrzag's Waaagh!\" (+25% dégâts d'arme et perforants, +24 attaque, +20% résistance physique, immunité Psychologie, seigneur) rend toute la horde de Savage Orcs quasi indestructible"},
+      "heroes": [
+        {"icon": "savageOrcGreatShaman", "name": "Savage Orc Great Shaman", "qty": 1, "note": "Renfort de sorts supplémentaire du Lore of the Big Waaagh!"},
+        {"icon": "orcShaman", "name": "Orc Shaman", "qty": 1, "note": "Soutien magique additionnel bon marché"}
+      ],
+      "army": [
+        {"icon": "savageOrcBigUns", "name": "Savage Orc Big 'Uns", "qty": 3, "note": "-50% de recrutement et -15% d'entretien (seigneur + faction), +20 bonus de charge et 15% de résistance physique (seigneur) — élite de mêlée increvable en charge"},
+        {"icon": "savageOrcs", "name": "Savage Orcs", "qty": 3, "note": "Même cumul de bonus (seigneur + faction) — cœur de mêlée bon marché et résilient"},
+        {"icon": "savageOrcArrerBoyz", "name": "Savage Orc Arrer Boyz", "qty": 2, "note": "Même cumul de bonus (seigneur + faction) — soutien à distance"},
+        {"icon": "savageOrcBoarBoyz", "name": "Savage Orc Boar Boyz", "qty": 3, "note": "Même cumul de bonus (seigneur + faction) — cavalerie de choc pour les flancs"},
+        {"icon": "giantGreenskins", "name": "Giant", "qty": 1, "note": "Monstre emblématique pour écraser les lignes ennemies"},
+        {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie à trajectoire haute en soutien"},
+        {"icon": "deffCreeperz", "name": "Deff Creeperz (Forest Goblin Spider Rider Archers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum — tirailleurs montés rapides pour harceler et flanquer"},
+        {"icon": "snaglasDeffThrowa", "name": "Snagla's Deff Throwa (Goblin Bolt Throwa)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum — artillerie légère et précise en soutien"}
+      ],
+      "magic": "Wurrzag maîtrise le Lore of the Big Waaagh! (Foot of Gork, Fists of Gork, Gaze of Mork) — le Bonewood Staff démultiplie ces sorts en synergie avec le Waaagh!, transformant sa ligne de Savage Orcs en force imparable.",
+      "note": "Le -50% de recrutement (seigneur) cumulé au -15% d'entretien (faction) sur tous les Savage Orcs permet de constituer rapidement une horde entière à très faible coût, tandis que le bonus de charge, la résistance physique et \"Wurrzag's Waaagh!\" (seigneur) en font une force de choc quasi indestructible, complétée par les deux régiments favoris (faction) que sont les Deff Creeperz et Snagla's Deff Throwa."
+    }
+  },
+  {
+    "id": "grom",
+    "numeral": "IV",
+    "name": "Grom the Paunch",
+    "epithet": "La Panse",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Grom_the_Paunch",
+    "faction": "Broken Axe",
+    "seal": "grom",
+    "portraitImage": "assets/portraits/grom.png",
+    "lore": "<p>Grom la Panse est un Warboss Gobelin énorme et puissant, un individu d'une taille superlative dont la présence imposante et la férocité en font un véritable dieu vivant parmi les autres Gobelins. Sa taille prodigieuse est due au fait qu'il a un jour consommé un morceau de viande crue de Troll, un acte de gloutonnerie qui l'oblige désormais à ingurgiter sans relâche de copieuses quantités de nourriture pour continuer à digérer la chair régénérante, de peur que son immense panse ne finisse par éclater.</p>\n      <p>On dit que Grom n'a plus vu ses jambes depuis qu'il a consommé cette viande immonde, mais sa taille effrayante fait qu'il n'en a plus vraiment besoin, préférant ordonner à d'autres de s'en occuper à sa place. Au fil d'innombrables raids réussis à travers le Vieux Monde, sa réputation grandiose a grandi autant que sa carrure. Au combat, le Roi Gobelin autoproclamé chevauche souvent avec ses serviteurs un char à la mesure de ses proportions expansives.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">A accès au Chaudron de Grom, permettant de récolter et combiner des ingrédients pour appliquer de puissants bonus</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-80</strong> avec les High Elves</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités Chariot et Pump Wagon (toutes les armées)</div>\n        <div class=\"attr-item\">Bonus de charge : <strong>+15</strong> pour les unités Chariot et Pump Wagon (toutes les armées)</div>\n        <div class=\"attr-item\">Régiments favoris : <strong>+1 capacité</strong> pour Teef Robberz (Goblin Wolf Chariots) et Moon Howlers (Goblin Wolf Riders)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Commandement : <strong>+8</strong> pour les unités Goblin (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance physique : <strong>10%</strong> pour les unités Goblin (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité d'armée \"Grom's Waaagh!\" (Augment de zone, remplace \"Waaagh!\") — <strong>Soin par seconde : +0,80%</strong>, <strong>Dégâts d'arme de base : +25%</strong>, <strong>Dégâts perforants : +25%</strong>, <strong>Attaque en mêlée : +24</strong>, Immunisé à la Psychologie, durée 18s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Grom) + capture de la capacité \"Grom's Waaagh!\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Grom : une horde de Gobelins bien plus solide que la moyenne (+8 commandement, 10% résistance physique, seigneur), avec des Wolf Chariots et Wolf Riders à -20% d'entretien et +15 bonus de charge (faction) qui exploitent les deux régiments favoris, épaulée par des Trolls régénérants",
+      "totalSlots": 20,
+      "lord": {"icon": "grom", "name": "Grom the Paunch", "qty": 1, "note": "Toujours monté sur son Wolf Chariot increvable — son +8 de commandement et 10% de résistance physique pour les Gobelins (seigneur), plus \"Grom's Waaagh!\" (soin +0,80%/s, +25% dégâts d'arme et perforants, +24 attaque, immunité Psychologie, seigneur), compensent leur fragilité naturelle"},
+      "heroes": [
+        {"icon": "goblinGreatShaman", "name": "Goblin Great Shaman", "qty": 1, "note": "Soutien magique pour couvrir les faiblesses défensives des Gobelins"},
+        {"icon": "nightGoblinShaman", "name": "Night Goblin Shaman", "qty": 1, "note": "Renfort de sorts supplémentaire bon marché"}
+      ],
+      "army": [
+        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 4, "note": "+8 commandement et 10% résistance physique (seigneur) — ligne de tenue anti-charge bien plus fiable qu'à l'accoutumée"},
+        {"icon": "teefRobberz", "name": "Teef Robberz (Goblin Wolf Chariots)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien et +15 bonus de charge en tant que Chariot (faction) — cavalerie de choc bon marché"},
+        {"icon": "moonHowlers", "name": "Moon Howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), même bonus d'entretien et de charge (faction) — cavalerie légère rapide pour flanquer"},
+        {"icon": "stoneTrolls", "name": "Stone Trolls", "qty": 3, "note": "Monstre régénérant increvable, parfait complément à la horde de Gobelins"},
+        {"icon": "riverTrolls", "name": "River Trolls", "qty": 2, "note": "Attaque de vomi corrosif dévastatrice contre l'infanterie groupée"},
+        {"icon": "snotlingPumpWagons", "name": "Snotling Pump Wagons (Rouleaux à Pointes)", "qty": 2, "note": "-20% d'entretien et +15 bonus de charge en tant que Pump Wagon (faction) — char suicide explosif pour semer le chaos dans les lignes ennemies"},
+        {"icon": "goblinRockLobbers", "name": "Goblin Rock Lobbers", "qty": 2, "note": "Artillerie à zone d'effet pour briser les formations groupées"}
+      ],
+      "magic": "Le Goblin Great Shaman et le Night Goblin Shaman apportent le soutien de la Lore of the Little Waaagh! pour compenser les faiblesses défensives naturelles des Gobelins.",
+      "note": "Cette armée transforme la fragilité légendaire des Gobelins en une horde étonnamment tenace (+8 commandement, +10% résistance physique, seigneur), tandis que les Wolf Chariots et Wolf Riders (régiments favoris, faction) apportent enfin la puissance de charge qui manquait à cette liste, et les Trolls régénérants la puissance de frappe brute."
+    }
+  },
+  {
+    "id": "azhag",
+    "numeral": "V",
+    "name": "Azhag the Slaughterer",
+    "epithet": "Le Tueur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Azhag_the_Slaughterer",
+    "faction": "Bonerattlaz",
+    "seal": "azhag",
+    "portraitImage": "assets/portraits/azhag.png",
+    "lore": "<p>Azhag est une menace comme nulle autre. Ce qui le rend si singulier, c'est sa sinistre couronne de fer, qui émane d'un mal pur et ancien. C'est cette couronne, relique des temps anciens, qui confère à Azhag des pouvoirs sorciers et un conseil funeste dépassant la compréhension de tout Peau-Verte ordinaire. Cette combinaison funeste de force brute orque et d'une capacité brillante — quoique totalement malveillante — à saisir une stratégie à longue vue en fait une menace mortelle.</p>\n      <p>Nul ne sait ce qu'est réellement cette couronne ni d'où elle provient, mais à travers elle, Azhag gagne clairvoyance et pouvoir. Monté sur Skullmuncha, une créature ailée aussi terrifiante que son maître, Azhag sillonne les cieux en lançant les sorts destructeurs du Lore of Death, une magie qu'aucun autre Peau-Verte ne maîtrise.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+40</strong> avec les Vampire Counts et Arkhan the Black</div>\n        <div class=\"attr-item\">Immunisé à l'attrition Vampirique (toutes les armées)</div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Giant River Troll Hags</div>\n        <div class=\"attr-item\">Coût en Vents de Magie : <strong>-10%</strong> pour les sorts du Lore of Death (tous les personnages)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Da Swamp Fings (River Trolls)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Azhag a accès à la magie du Lore of Death</div>\n        <div class=\"attr-item\">Attribut \"Immune to Psychology\" (armée du seigneur) — immunisé aux attaques psychologiques (Peur et Terreur)</div>\n        <div class=\"attr-item\">Revenu du pillage de colonies : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Capacité d'armée \"Azhag's Waaagh!\" (Augment de zone, remplace \"Waaagh!\") — <strong>Dégâts d'arme de base : +25%</strong>, <strong>Dégâts perforants : +25%</strong>, <strong>Attaque en mêlée : +24</strong>, Peut provoquer la Terreur, Peut provoquer la Peur, durée 18s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Azhag) + captures des capacités \"Immune to Psychology\" et \"Azhag's Waaagh!\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Azhag : un noyau d'Orcs immunisé à la Psychologie (seigneur) qui ne fuit ni ne panique jamais, épaulé par des River Trolls exploitant le régiment favori Da Swamp Fings (+1 capacité, faction) et deux Giant River Troll Hags (+2 capacité de héros, faction) qui doublent la puissance du Lore of Death à -10% de coût (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "azhag", "name": "Azhag the Slaughterer", "qty": 1, "note": "Seul Seigneur Légendaire Peau-Verte à maîtriser le Lore of Death — son immunité à la Psychologie et \"Azhag's Waaagh!\" (Peur et Terreur en zone, +25% dégâts, seigneur) en font un sniper de sorts et un briseur de moral redoutable sur Skullmuncha"},
+      "heroes": [
+        {"icon": "giantRiverTrollHag", "name": "Giant River Troll Hag", "qty": 2, "note": "Capacité de héros +2 pour ce type (faction) — seule autre unité Peau-Verte à maîtriser le Lore of Death, à -10% de coût en Vents de Magie (faction) : un second et un troisième sniper de sorts aux côtés d'Azhag"}
+      ],
+      "army": [
+        {"icon": "orcBigUns", "name": "Orc Big 'Uns", "qty": 4, "note": "Élite de mêlée increvable, immunisée à la Psychologie sous le commandement d'Azhag (seigneur)"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 3, "note": "Même immunité à la Psychologie (seigneur) — infanterie de mêlée standard"},
+        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 2, "note": "Ligne de tenue anti-charge bon marché"},
+        {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "Tir de masse en soutien"},
+        {"icon": "daSwampFings", "name": "Da Swamp Fings (River Trolls)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des River Trolls, jamais effrayée sous l'aura d'Azhag (seigneur)"},
+        {"icon": "riverTrolls", "name": "River Trolls", "qty": 1, "note": "Monstre régénérant increvable, jamais effrayé sous l'aura d'Azhag (seigneur)"},
+        {"icon": "forestGoblinSpiderRiderArchers", "name": "Forest Goblin Spider Rider Archers", "qty": 2, "note": "Cavalerie légère à distance pour harceler et flanquer"},
+        {"icon": "goblinRockLobbers", "name": "Goblin Rock Lobbers", "qty": 1, "note": "Artillerie à zone d'effet en soutien"}
+      ],
+      "magic": "Azhag et ses Giant River Troll Hags sont les seuls Peaux-Vertes à maîtriser le Lore of Death (Spirit Leech, The Purple Sun of Xereus, The Fate of Bjuna), à -10% de coût en Vents de Magie (faction) — une rare capacité à sniper les personnages ennemis à distance, désormais triplée.",
+      "note": "L'immunité à la Psychologie sur toute l'armée (seigneur) rend cette horde d'Orcs et de River Trolls insensible à la déroute, pendant qu'Azhag et ses deux Giant River Troll Hags exploitent leur mobilité et le Lore of Death à coût réduit (faction) pour sniper les cibles prioritaires. Le +25% de revenu du pillage (seigneur) et l'immunité à l'attrition Vampirique (faction) financent et sécurisent une campagne agressive, y compris à travers les terres de Sylvanie."
+    }
+  },
+  {
+    "id": "gorbad",
+    "numeral": "VI",
+    "name": "Gorbad Ironclaw",
+    "epithet": "Griffe de Fer",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Gorbad_Ironclaw",
+    "faction": "Ironclaw Orcs",
+    "seal": "gorbad",
+    "portraitImage": "assets/portraits/gorbad.png",
+    "lore": "<p>Gorbad Griffe de Fer est infâme même parmi les autres Warbosses Orcs, s'étant fait un nom en menant sa tribu à travers d'innombrables Waaaghs! victorieux. C'est également lui qui bâtit le premier Iron Rock, l'une des forteresses Orques les plus redoutables du Vieux Monde. Conquérir les tribus Peaux-Vertes n'a jamais été un vrai défi pour lui — ce sont ses innombrables méfaits horrifiques dans l'Empire qui l'ont élevé au rang de légende parmi les siens, le nom de Gorbad Griffe de Fer devenant synonyme d'« invasions bien menées ».</p>\n      <p>Gorbad est immensément fort, même pour un Orc. Malgré sa carrure évidente, il est connu pour remporter ses batailles en utilisant aussi sa tête : il déploie des Gobelins pour attaquer efficacement les flancs ou couvrir les mouvements d'autres troupes, et fait usage de tireurs massés, de batteries de machines de guerre et d'autres avancées tactiques. En bref, Gorbad Griffe de Fer pousse toujours la horde disparate qu'il commande, Orcs comme Gobelins, à donner le meilleur d'elle-même sur le champ de bataille.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">A accès à Da Plan, permettant d'appliquer des Tactiques uniques et puissantes en armée</div>\n        <div class=\"attr-item\">Récompenses améliorées en cas de Waaagh! réussi</div>\n        <div class=\"attr-item\">Revenu du razzia de colonies : <strong>+15%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Durée de recrutement globale : <strong>-1 tour</strong> (minimum 1, toute la faction)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Broken Tusks Mob (Orc Boar Boy Big 'Uns)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-10%</strong> pour toutes les unités de l'armée (armée du seigneur)</div>\n        <div class=\"attr-item\">Taille de l'aura de commandement : <strong>+100%</strong> — tout allié dans l'aura de Gorbad reçoit un bonus de commandement</div>\n        <div class=\"attr-item\">Capacité \"Orcs are da Best!\" (Augment, active) — <strong>Dégâts d'arme de base : +50%</strong>, <strong>Dégâts perforants : +50%</strong>, <strong>Attaque en mêlée : +24</strong> pour 1 allié à 150m, durée 27s, rechargement 90s</div>\n        <div class=\"attr-item\">Capacité d'armée \"Gorbad's Waaagh!\" (Augment de zone, remplace \"Waaagh!\") — <strong>Dégâts d'arme de base : +25%</strong>, <strong>Dégâts perforants : +25%</strong>, <strong>Attaque en mêlée : +24</strong>, Immunisé à la Psychologie, portée illimitée, durée 27s (plus longue que la moyenne des Waaagh! des autres Seigneurs)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Gorbad) + captures des capacités \"Orcs are da Best!\" et \"Gorbad's Waaagh!\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Gorbad : une horde Orc/Gobelin polyvalente et bon marché (-10% d'entretien sur toute l'armée, seigneur) dont l'aura de commandement doublée (+100%, seigneur) stabilise l'ensemble du champ de bataille, avec des Orc Boar Boy Big 'Uns exploitant le régiment favori Broken Tusks Mob (+1 capacité, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "gorbad", "name": "Gorbad Ironclaw", "qty": 1, "note": "Stratège redoutable autant que brute épaisse — son aura de commandement à +100% de portée (seigneur), \"Orcs are da Best!\" (+50% dégâts d'arme et perforants, +24 attaque sur un allié) et \"Gorbad's Waaagh!\" à durée rallongée (27s, seigneur) en font un général idéal pour une grande armée mixte"},
+      "heroes": [
+        {"icon": "blackOrcBigBoss", "name": "Black Orc Big Boss", "qty": 1, "note": "Renfort de mêlée d'élite pour ancrer le centre"},
+        {"icon": "orcShaman", "name": "Orc Shaman", "qty": 1, "note": "Soutien magique du Lore of the Waaagh!"}
+      ],
+      "army": [
+        {"icon": "orcBigUns", "name": "Orc Big 'Uns", "qty": 3, "note": "-10% d'entretien (seigneur) — élite de mêlée au centre de la ligne"},
+        {"icon": "orcBoyzSpears", "name": "Orc Boyz (Lances)", "qty": 3, "note": "Même bonus d'entretien (seigneur) — anti-cavalerie fiable"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "Même bonus d'entretien (seigneur) — infanterie de mêlée standard"},
+        {"icon": "orcArrerBoyz", "name": "Orc Arrer Boyz", "qty": 3, "note": "Même bonus d'entretien (seigneur) — tir de soutien"},
+        {"icon": "brokenTusksMob", "name": "Broken Tusks Mob (Orc Boar Boy Big 'Uns)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -10% d'entretien (seigneur) — cavalerie de choc d'élite pour les flancs"},
+        {"icon": "squigHerd", "name": "Squig Herd", "qty": 2, "note": "Bêtes bondissantes imprévisibles pour semer la confusion en première ligne"},
+        {"icon": "goblinBoltThrowa", "name": "Goblin Bolt Throwa", "qty": 2, "note": "Artillerie légère et précise en soutien"}
+      ],
+      "magic": "L'Orc Shaman apporte un soutien ponctuel du Lore of the Waaagh!, mais Gorbad lui-même privilégie la tactique et la mêlée plutôt que la magie.",
+      "note": "Le -10% d'entretien s'appliquant à toute l'armée (seigneur, contrairement aux bonus habituellement restreints à un type d'unité chez les autres Seigneurs Peaux-Vertes) permet de maximiser la taille de cette horde polyvalente, tandis que l'aura de commandement doublée (seigneur) maintient le moral sur un front large et les Broken Tusks Mob (régiment favori, faction) apportent une pointe de cavalerie d'élite."
+    }
+  }
+]

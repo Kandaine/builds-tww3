@@ -1,0 +1,129 @@
+[
+  {
+    "id": "harkon",
+    "numeral": "I",
+    "name": "Luthor Harkon",
+    "epithet": "Le Roi Pirate",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Luthor_Harkon",
+    "faction": "The Awakened",
+    "seal": "harkon",
+    "portraitImage": "assets/portraits/harkon.png",
+    "lore": "<p>La région du Nouveau Monde connue sous le nom de Côte des Vampires doit son nom à Luthor Harkon, un Vampire d'origine inconnue qui établit un royaume sur la portion nord-est du littoral de Lustrie après y avoir échoué de nombreuses années auparavant. Chef d'une flotte de pirates dont l'équipage est composé de morts et de damnés, il règne sur une région maritime réputée pour être incroyablement dangereuse pour les navires imprudents, grossissant sa horde de marins Morts-Vivants avec les malheureux naufragés.</p>\n      <p>Alors qu'il cherchait à accroître sa puissance, il tenta d'utiliser la Magie Noire pour pénétrer d'anciennes chambres scellées par de puissants glyphes, qui répliquèrent en drainant sa force vitale. Luthor parvint à s'en libérer, mais le mal était fait : son lien avec les Vents de Magie fut rompu et son esprit se brisa, sa personnalité se fragmentant en une douzaine de facettes différentes se disputant la domination. Depuis, le seul objectif commun que les diverses personnalités de Luthor sont parvenues à poursuivre est de trouver un remède à son état, en s'emparant des artefacts des Hommes-Lézards dans l'espoir que leur pouvoir puisse guérir sa psyché endommagée.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (The Awakened)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+60</strong> avec Followers of Nagash</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+6</strong> pour les Seigneurs et Héros embarqués (toutes armées)</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-60</strong> avec les Lizardmen</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour The Black Spot (Gunnery Mob)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Active les attaques navales sur les colonies portuaires (armée du seigneur)</div>\n        <div class=\"attr-item\">Corruption vampirique : <strong>+5</strong> (province locale)</div>\n        <div class=\"attr-item\">Commandement : <strong>+8</strong> en combattant contre les Lizardmen (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance aux sorts : <strong>25%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Luthor Harkon).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Harkon : une ligne de tir zombie renforcée par les 2 exemplaires du régiment favori The Black Spot (faction) et soutenue par de l'artillerie navale, protégée par la résistance aux sorts accrue (+25%, seigneur) et le commandement renforcé contre les Lizardmen (+8, seigneur) — le Roi Pirate assiégeant lui-même les colonies portuaires grâce à ses attaques navales (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "harkon", "name": "Luthor Harkon", "qty": 1, "note": "Le Roi Pirate à l'esprit fracturé — sa résistance aux sorts (+25%, seigneur) protège son armée face aux lanceurs de sorts ennemis, tandis que son commandement +8 contre les Lizardmen (seigneur) est taillé pour la campagne de Lustrie ; ses attaques navales sur les colonies portuaires (seigneur) en font un redoutable siège maritime"},
+      "heroes": [
+        {"icon": "gunneryWight", "name": "Gunnery Wight", "qty": 2, "note": "Héros de départ de Harkon, soutien de tir et d'artillerie"}
+      ],
+      "army": [
+        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 4, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
+        {"icon": "zombieGunneryMob", "name": "Zombie Pirate Gunnery Mob", "qty": 2, "note": "Tir de ligne à courte portée, cœur offensif à distance"},
+        {"icon": "blackSpot", "name": "The Black Spot (Gunnery Mob)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite de la Gunnery Mob, la propre garde de tir du Roi Pirate"},
+        {"icon": "deckDroppers", "name": "Deck Droppers", "qty": 2, "note": "Harceleurs volants lance-grenades"},
+        {"icon": "mortarsVampireCoast", "name": "Mortars (Vampire Coast)", "qty": 2, "note": "Artillerie de zone à tir indirect"},
+        {"icon": "carronades", "name": "Carronades", "qty": 2, "note": "Artillerie directe à courte portée, dégâts massifs"},
+        {"icon": "bloatedCorpse", "name": "Bloated Corpse", "qty": 1, "note": "War beast explosif au gaz toxique, désorganise les lignes ennemies"},
+        {"icon": "necrofexColossus", "name": "Necrofex Colossus", "qty": 2, "note": "Monstre de choc massif, pièce maîtresse de l'armée"}
+      ],
+      "magic": "Harkon n'est pas un lanceur de sorts inné, mais peut débloquer aléatoirement des sorts de la Lore of the Deep via ses traits uniques (\"The Bad\", \"The Narcissist\"), jusqu'à obtenir l'intégralité de cette école avec le trait \"United Mind\".",
+      "note": "Cette armée mise sur une ligne de tir zombie classique (Deckhands en écran, Gunnery Mob en soutien) renforcée par les 2 exemplaires du régiment favori The Black Spot (faction), et épaulée par une forte composante d'artillerie (Mortars, Carronades, Deck Droppers) pour marteler l'ennemi à distance. Le Necrofex Colossus sert de pièce de choc, tandis que le Bloated Corpse désorganise les formations ennemies avant l'impact. La résistance aux sorts accrue (+25%, seigneur) protège l'ensemble face aux factions à forte composante magique."
+    }
+  },
+  {
+    "id": "noctilus",
+    "numeral": "II",
+    "name": "Count Noctilus",
+    "epithet": "Le Seigneur de l'Effroi",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Count_Noctilus",
+    "faction": "The Dreadfleet",
+    "seal": "noctilus",
+    "portraitImage": "assets/portraits/noctilus.png",
+    "lore": "<p>Le Comte Noctilus, autrefois connu sous le nom de Nyklaus von Carstein de Sylvanie, fut attiré par le maelström au cœur de l'océan pour se repaître de sa magie noire. Il accomplit un puissant rituel pour se transporter, lui, son château et tous ses sbires morts-vivants, jusqu'au Cimetière des Galions, un lieu mystique où sont attirées les épaves et les carcasses des mers.</p>\n      <p>Renaissant sous le nom de Comte Noctilus, il souleva les débris fracassés de navires de guerre engloutis pour former la coque du Bloody Reaver et sillonner à nouveau les flots des mers mortelles.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (The Dreadfleet)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Débloque des missions de déclaration de guerre avec récompenses uniques</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+60</strong> avec Followers of Nagash</div>\n        <div class=\"attr-item\">Capacité de recrutement de horde : <strong>+2</strong></div>\n        <div class=\"attr-item\">Durée de recrutement local : <strong>-1</strong> tour pour les Necrofex Colossus (minimum 1)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour The Bloody Reaver Deck Guard (Depth Guard)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Active les attaques navales sur les colonies portuaires (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités de Necrofex Colossus (armée du seigneur)</div>\n        <div class=\"attr-item\">Puissance des armes : <strong>+15%</strong> pour les unités de grande taille (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Count Noctilus).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Noctilus : un maximum d'unités de grande taille (Necrofex Colossus, Mournguls, Rotting Prometheans, Death Shriek Terrorgheist) profitant du +15% de puissance des armes (seigneur), les Necrofex Colossus étant en plus recrutés moins cher et plus vite (faction), et les 2 exemplaires du régiment favori The Bloody Reaver Deck Guard (faction) renforçant le cœur de mêlée — une horde de monstres marins écrasants, cohérente avec le statut de faction horde des Dreadfleet",
+      "totalSlots": 20,
+      "lord": {"icon": "noctilus", "name": "Count Noctilus", "qty": 1, "note": "Le Seigneur de l'Effroi, ancien von Carstein renaissant au Cimetière des Galions — son +15% de puissance des armes pour les unités de grande taille (seigneur) transforme son armée de monstres en véritable machine de destruction, tandis que l'entretien réduit (-20%, seigneur) des Necrofex Colossus permet d'en aligner davantage ; ses attaques navales sur les colonies portuaires (seigneur) en font aussi un redoutable siège maritime"},
+      "heroes": [
+        {"icon": "mournghulHaunter", "name": "Mourngul Haunter", "qty": 2, "note": "Héros de départ de Noctilus, soutien de magie noire"}
+      ],
+      "army": [
+        {"icon": "depthGuard", "name": "Depth Guard", "qty": 1, "note": "Infanterie d'élite de départ, résistante et bien armée"},
+        {"icon": "bloodyReaverDeckGuard", "name": "The Bloody Reaver Deck Guard (Depth Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite du Depth Guard, forgée avec la magie de Noctilus lui-même"},
+        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 2, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
+        {"icon": "zombieGunneryModHandguns", "name": "Zombie Pirate Gunnery Mob (Handguns)", "qty": 2, "note": "Tir à courte portée, soutien de la ligne"},
+        {"icon": "necrofexColossus", "name": "Necrofex Colossus", "qty": 4, "note": "Grande taille — profite du +15% de puissance des armes (seigneur), de l'entretien réduit -20% et du recrutement accéléré (faction) ; pièce maîtresse de l'armée"},
+        {"icon": "mournguls", "name": "Mournguls", "qty": 2, "note": "Grande taille — monstre volant vampirique, profite du +15% de puissance des armes (seigneur)"},
+        {"icon": "rottingPrometheans", "name": "Rotting Prometheans", "qty": 2, "note": "Grande taille — infanterie monstrueuse, profite du +15% de puissance des armes (seigneur)"},
+        {"icon": "deathShriekTerrorgheist", "name": "Death Shriek Terrorgheist", "qty": 1, "note": "Grande taille — monstre volant terrifiant, profite du +15% de puissance des armes (seigneur)"},
+        {"icon": "carronades", "name": "Carronades", "qty": 1, "note": "Artillerie directe à courte portée, dégâts massifs"}
+      ],
+      "magic": "Noctilus manie un mélange de sorts de la Lore of Shadows et de la Lore of Vampires (Melkoth's Mystifying Miasma, Invocation of Nehek, Drowned Dead, The Withering, Pit of Shades, Wind of Death), en soutien de sa horde de monstres.",
+      "note": "Cette armée maximise le nombre d'unités de grande taille pour exploiter pleinement le +15% de puissance des armes de Noctilus (seigneur) : Necrofex Colossus en nombre (entretien -20% et recrutement accéléré, faction), épaulés par Mournguls, Rotting Prometheans et un Death Shriek Terrorgheist. Les 2 exemplaires du régiment favori The Bloody Reaver Deck Guard, permis par la capacité augmentée (faction), remplacent une partie du Depth Guard générique comme cœur de mêlée d'élite. Conforme au statut de horde des Dreadfleet, cette armée est pensée pour un pillage perpétuel plutôt qu'une occupation de territoire."
+    }
+  },
+  {
+    "id": "aranessa",
+    "numeral": "III",
+    "name": "Aranessa Saltspite",
+    "epithet": "La Reine des Marées",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Aranessa_Saltspite",
+    "faction": "Pirates of Sartosa",
+    "seal": "aranessa",
+    "portraitImage": "assets/portraits/aranessa.png",
+    "lore": "<p>Parmi les plus redoutés de tous les capitaines pirates de Sartosa se trouve la Reine des Marées, Aranessa Anja Saltspite. La rumeur veut qu'elle soit la fille du Dieu de la Mer Manann lui-même, qu'elle ait surgi des flots déjà adulte dans une écume de sang, avec de l'eau de mer coulant dans ses veines au lieu du sang. Pour d'autres, elle n'est qu'une mutante qui s'est tranchée sa propre queue de poisson après avoir été bannie de sa tribu norscane enfant.</p>\n      <p>Quelles que soient ses origines, son talent à la barre d'un navire ou une arme à la main est tel que nul ne conteste sa létalité lors d'une bataille navale. Ayant absorbé tout ce qu'il y a à savoir sur l'art de la navigation au cours de sa vie, elle dirige désormais l'équipage de son puissant galion à voiles carrées connu sous le nom de Swordfysh, traquant les nefs-loups des flottes norscanes avec une vengeance froide qui pousse même son propre équipage à invoquer le signe de Manann pour se protéger.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (Pirates of Sartosa)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-100</strong> avec Norsca</div>\n        <div class=\"attr-item\">Chance de trouver des cartes au trésor : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Revenu du pillage (raiding) : <strong>+50%</strong></div>\n        <div class=\"attr-item\">Revenu du sac de colonies : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Régiment favori : aptitude \"Expendable\" et <strong>+2</strong> capacité pour The Tide of Skjold (Deckhands)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Active les attaques navales sur les colonies portuaires (armée du seigneur)</div>\n        <div class=\"attr-item\">Taille de l'aura de commandement du personnage : <strong>+12</strong></div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+8</strong> pour les unités Sartosanes (armée du seigneur)</div>\n        <div class=\"attr-item\">Puissance des armes : <strong>+20%</strong> pour les unités Sartosanes (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Aranessa Saltspite).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Aranessa : un maximum de Sartosa Free Company et Sartosa Militia, les deux seules unités \"Sartosanes\" du jeu, profitant intégralement de son +8 d'attaque en mêlée et +20% de puissance des armes (seigneur), complétées par les 3 exemplaires du régiment favori The Tide of Skjold (faction) — le tout appuyé par du tir et de l'artillerie génériques pour couvrir les rôles que son roster exclusif ne remplit pas",
+      "totalSlots": 20,
+      "lord": {"icon": "aranessa", "name": "Aranessa Saltspite", "qty": 1, "note": "La Reine des Marées, fille présumée de Manann — son +8 d'attaque en mêlée et +20% de puissance des armes pour les unités Sartosanes (seigneur) transforment Sartosa Free Company et Sartosa Militia en troupes d'élite ; son aura de commandement +12 (seigneur) stabilise toute l'armée ; ses attaques navales sur les colonies portuaires (seigneur) en font aussi un redoutable siège maritime"},
+      "heroes": [
+        {"icon": "vampireFleetCaptain", "name": "Vampire Fleet Captain", "qty": 2, "note": "Héros polyvalent de soutien de mêlée et de commandement"}
+      ],
+      "army": [
+        {"icon": "sartosaFreeCompany", "name": "Sartosa Free Company", "qty": 5, "note": "Unité Sartosane exclusive — +8 attaque en mêlée et +20% puissance des armes (seigneur) ; cœur de mêlée humain rapide et mordant"},
+        {"icon": "sartosaMilitia", "name": "Sartosa Militia", "qty": 4, "note": "Unité Sartosane exclusive — +8 attaque en mêlée et +20% puissance des armes (seigneur) ; tir de pistolets rapproché, dévastateur en volée"},
+        {"icon": "tideOfSkjold", "name": "The Tide of Skjold (Deckhands)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires disponibles — variante d'élite des Zombie Pirate Deckhands dotée de l'aptitude \"Expendable\""},
+        {"icon": "deckGunners", "name": "Deck Gunners", "qty": 1, "note": "Tir de soutien à longue portée, non Sartosan mais complète la ligne de tir"},
+        {"icon": "scurvyDogs", "name": "Scurvy Dogs", "qty": 2, "note": "War beast rapide, flanquement et harcèlement"},
+        {"icon": "rottingPrometheans", "name": "Rotting Prometheans", "qty": 1, "note": "Infanterie monstrueuse, pièce de choc complémentaire"},
+        {"icon": "carronades", "name": "Carronades", "qty": 1, "note": "Artillerie directe à courte portée, dégâts massifs"}
+      ],
+      "magic": "Aranessa n'est pas une lanceuse de sorts ; elle compense par des capacités de combat actives (Spearfisher's Net, Manann's Luck) et l'aura de commandement la plus large de tous les Seigneurs de la Vampire Coast (+12, seigneur).",
+      "note": "Cette armée maximise le nombre de Sartosa Free Company et Sartosa Militia, les deux seules unités portant l'étiquette \"Sartosane\" que ciblent les bonus d'Aranessa (+8 attaque en mêlée, +20% puissance des armes, seigneur) — selon la stratégie communautaire, pleinement montées en puissance elles rivalisent avec des unités d'élite bien plus chères. Les 3 exemplaires du régiment favori The Tide of Skjold, permis par la capacité augmentée de +2 (faction), forment une ligne de chair à canon bon marché supplémentaire. Les Deck Gunners, Rotting Prometheans et Carronades comblent les rôles que ce roster exclusif ne couvre pas (tir longue portée, choc monstrueux, artillerie directe), tandis que les Scurvy Dogs assurent le flanquement."
+    }
+  },
+  {
+    "id": "cylostra",
+    "numeral": "IV",
+    "name": "Cylostra Direfin",
+    "epithet": "La Sirène de la Tempête",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Cylostra_Direfin",
+    "faction": "The Drowned",
+    "seal": "cylostra",
+    "portraitImage": "assets/portraits/cylostra.png",
+    "lore": "<p>Cylostra Direfin est l'esprit vengeur qui commande le Lamprey, un navire maudit qui apparaît souvent dans les tempêtes déchaînées de la haute mer. Il y a plusieurs décennies, Cylostra était la chanteuse préférée de la cour royale bretonnienne, une prima donna d'une taille et d'un tempérament considérables qui n'acceptait jamais rien de moins que d'obtenir ce qu'elle voulait. Cylostra était passagère du Lamprey lors d'un important voyage diplomatique pour se produire devant le Roi Phénix.</p>\n      <p>Le galion sombra dans une tempête violente, noyant tous ceux à son bord. Alors que le Lamprey s'enfonçait sous les vagues, ses notes futiles et parfaitement justes se transformèrent en hurlements stridents et gargouillants. Ceux qui connaissent la légende de la 'Sirène de la Tempête' fuient de terreur à la vue de son galion fantomatique couvert de bernacles, car on dit que lorsqu'il apparaît, ses chants de mort paralysent tous les infortunés qui les entendent, juste avant que son équipage Mort-Vivant — les Noyés — n'apparaisse pour les entraîner dans une tombe aquatique.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction (The Drowned)</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Loyauté : <strong>+2</strong> pour les nouvelles recrues</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités Syreen et Mourngul</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>-20%</strong> pour les unités Syreen et Mourngul</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1</strong> capacité pour The Lamprey's Revenge (Promethean Gunnery Mob)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Active les attaques navales sur les colonies portuaires (armée du seigneur)</div>\n        <div class=\"attr-item\">Active les attaques magiques (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance physique : <strong>5%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Confirmé par capture d'écran de l'onglet Lord Details en jeu (Cylostra Direfin).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Cylostra : toute l'armée bénéficie des attaques magiques (seigneur), un atout majeur contre les cibles à haute résistance magique, avec un nombre élevé de Syreens et de Mournguls rendus moins chers à recruter et à entretenir (faction), complétés par les 2 exemplaires du régiment favori The Lamprey's Revenge (faction) — la Sirène de la Tempête pilonne l'ennemi de sorts avant que ses Noyés ne l'achèvent",
+      "totalSlots": 20,
+      "lord": {"icon": "cylostra", "name": "Cylostra Direfin", "qty": 1, "note": "La Sirène de la Tempête, prima donna bretonnienne noyée devenue esprit vengeur — son activation des attaques magiques pour toute l'armée (seigneur) permet à ses Zombie Pirates de contourner la résistance magique ennemie ; sa résistance physique +5% (seigneur) renforce légèrement sa survie ; ses attaques navales sur les colonies portuaires (seigneur) en font aussi un redoutable siège maritime"},
+      "heroes": [
+        {"icon": "damnedPaladin", "name": "Damned Paladin", "qty": 2, "note": "Héros de départ de Cylostra, chevalier damné de mêlée"}
+      ],
+      "army": [
+        {"icon": "syreens", "name": "Syreens", "qty": 3, "note": "Entretien et coût de recrutement -20% (faction) — tir de soutien magique, chant paralysant"},
+        {"icon": "zombieDeckhandsPolearm", "name": "Zombie Pirate Deckhand Mob (Polearms)", "qty": 4, "note": "Attaques magiques (seigneur) — anti-grande unité bon marché"},
+        {"icon": "zombieGunneryMob", "name": "Zombie Pirate Gunnery Mob", "qty": 3, "note": "Attaques magiques (seigneur) — tir de ligne à courte portée"},
+        {"icon": "mournguls", "name": "Mournguls", "qty": 3, "note": "Entretien et coût de recrutement -20% (faction) — monstre volant vampirique, également couvert par les attaques magiques du seigneur"},
+        {"icon": "lampreysRevenge", "name": "The Lamprey's Revenge (Promethean Gunnery Mob)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — infanterie monstrueuse de tir, également couverte par les attaques magiques du seigneur"},
+        {"icon": "carronades", "name": "Carronades", "qty": 1, "note": "Artillerie directe à courte portée, dégâts massifs"},
+        {"icon": "rottingLeviathan", "name": "Rotting Leviathan", "qty": 1, "note": "Attaques magiques (seigneur) — monstre de choc massif, l'une des montures de Cylostra"}
+      ],
+      "magic": "Cylostra manie une large palette de la Lore of the Deep (Tidecall, Spiteful Shot, Denizens of the Deep, Fog of the Damned, Vangheist's Revenge, Kraken's Pull), l'une des lanceuses de sorts les plus versatiles de la Vampire Coast.",
+      "note": "L'activation des attaques magiques pour toute l'armée (seigneur) est la pierre angulaire de ce build : chaque unité, des Zombie Pirates au Rotting Leviathan, contourne la résistance magique ennemie. Les Mournguls et Syreens, rendus moins chers à recruter et à entretenir (-20%, faction), peuvent être alignés en nombre inhabituel pour un Seigneur de la Vampire Coast, formant une armée aussi économique que mortelle. Les 2 exemplaires du régiment favori The Lamprey's Revenge, permis par la capacité augmentée (faction), ajoutent une infanterie monstrueuse de tir supplémentaire. Les Carronades et le Rotting Leviathan apportent la puissance de feu et de choc nécessaires pour percer les lignes ennemies."
+    }
+  }
+]

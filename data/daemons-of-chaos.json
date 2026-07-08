@@ -1,0 +1,32 @@
+[
+  {
+    "id": "daemonprince",
+    "numeral": "I",
+    "name": "Daemon Prince",
+    "epithet": "Le Prince Démon",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/The_Daemon_Prince",
+    "faction": "Legion of Chaos",
+    "seal": "daemonprince",
+    "portraitImage": "assets/portraits/daemonprince.png",
+    "lore": "<p>Les Princes Démons comptent parmi les plus grands et les plus puissants serviteurs du Chaos. Ce sont des êtres qui suivent le Chaos avec une foi profonde et fervente, se donnant corps et âme au service des Puissances Sombres — car une immense récompense attend ceux qui font preuve d'une dévotion sans faille.</p>\n      <p>Si un champion survit aux batailles sans fin et aux mutations dévastatrices offertes par ses maîtres, tout en conservant la faveur de ses dieux capricieux, il peut prétendre à la récompense ultime : son dieu patron l'élève à ses côtés en tant que Prince Démon, un être à la puissance divine, à jamais lié aux ténèbres.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès à toutes les unités démoniaques via la <strong>Gloire Démoniaque</strong></div>\n        <div class=\"attr-item\"><strong>Reign of Chaos</strong> : infliger des dégâts avec des Seigneurs alliés en bataille débloque des capacités d'armée aléatoires</div>\n        <div class=\"attr-item\">Régiments favoris : <strong>+5%</strong> de Ward Save pour les Regiments of Renown Bloodletter, Daemonette, Plaguebearer et Pink Horror</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Personnalisable via les <strong>Dons Démoniaques</strong> : les dons équipables sont accordés par la servitude envers les Dieux du Chaos</div>\n        <div class=\"attr-item\">Accès aux dons du <strong>Chaos Indivis</strong> : non influencés par un Dieu du Chaos en particulier, pour représenter le Chaos dans toute sa gloire</div>\n        <div class=\"attr-item\">Accès aux dons de <strong>Khorne</strong> : renforcent la prouesse au combat pour affronter tout adversaire assez téméraire</div>\n        <div class=\"attr-item\">Accès aux dons de <strong>Nurgle</strong> : permettent de répandre pestilence, souffrance et décrépitude sur quiconque chercherait à nuire</div>\n        <div class=\"attr-item\">Accès aux dons de <strong>Slaanesh</strong> : font du seigneur un chasseur agile capable de rattraper toute proie qui lui tournerait le dos</div>\n        <div class=\"attr-item\">Accès aux dons de <strong>Tzeentch</strong> : accordent le niveau de maîtrise des Vents de la Magie nécessaire pour renverser le cours de la bataille</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Daemon Prince).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés du Daemon Prince : une horde \"Chaos Indivis\" mêlant l'élite des quatre dieux (Bloodletters, Daemonettes, Plaguebearers, Pink Horrors), profitant du Ward Save renforcé sur leurs versions Regiment of Renown (faction) et de l'accès à l'intégralité du roster démoniaque via la Gloire Démoniaque (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "daemonprince", "name": "Daemon Prince", "qty": 1, "note": "Seigneur entièrement personnalisable via les Dons Démoniaques (seigneur) — le choix des dons (Chaos Indivis, Khorne, Nurgle, Slaanesh ou Tzeentch) détermine son style de combat, ses sorts et ses capacités ; une approche Chaos Indivis équilibrée permet de rester polyvalent plutôt que de se spécialiser dans un seul dieu"},
+      "heroes": [
+        {"icon": "heraldOfKhorne", "name": "Herald (Khorne/Nurgle/Slaanesh/Tzeentch)", "qty": 2, "note": "Choisis le Herald du dieu correspondant à l'orientation de ton armée — chacun apporte des buffs et sorts spécifiques à sa faction démoniaque"}
+      ],
+      "army": [
+        {"icon": "bloodletters", "name": "Bloodletters", "qty": 4, "note": "Infanterie d'élite de Khorne — leur version Regiment of Renown profite du +5% de Ward Save (faction)"},
+        {"icon": "plaguebearers", "name": "Plaguebearers", "qty": 4, "note": "Infanterie résiliente de Nurgle — leur version Regiment of Renown profite du même +5% de Ward Save (faction)"},
+        {"icon": "pinkHorrors", "name": "Pink Horrors", "qty": 3, "note": "Infanterie de sorts à distance de Tzeentch — leur version Regiment of Renown profite aussi du +5% de Ward Save (faction)"},
+        {"icon": "daemonettes", "name": "Daemonettes", "qty": 3, "note": "Infanterie rapide de Slaanesh — leur version Regiment of Renown profite également du +5% de Ward Save (faction)"},
+        {"icon": "plagueDrones", "name": "Plague Drones", "qty": 2, "note": "Monstre volant de Nurgle pour percer les lignes et chasser l'artillerie"},
+        {"icon": "seekersOfSlaanesh", "name": "Seekers of Slaanesh", "qty": 1, "note": "Cavalerie légère très rapide pour intercepter les tireurs isolés"}
+      ],
+      "magic": "Selon les Dons Démoniaques équipés, le Daemon Prince accède aux Lore of Death, Metal, Nurgle, Shadows, Slaanesh ou Tzeentch — un choix de Nurgle ou Tzeentch en fait un solide lanceur de sorts, tandis que Khorne ou Slaanesh privilégient le combat direct.",
+      "note": "Cette armée profite de l'accès total au roster démoniaque via la Gloire Démoniaque (faction), permettant de composer une horde multi-panthéon impossible pour toute autre faction. Le mécanisme Reign of Chaos (faction) débloque des capacités d'armée aléatoires à mesure que les Seigneurs alliés infligent des dégâts en bataille — un bonus imprévisible qui récompense l'agressivité. Priorise le déblocage des versions Regiment of Renown de tes unités pour profiter pleinement du +5% de Ward Save (faction)."
+    }
+  }
+]

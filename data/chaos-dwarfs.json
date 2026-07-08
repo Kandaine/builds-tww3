@@ -1,0 +1,93 @@
+[
+  {
+    "id": "astragoth",
+    "numeral": "I",
+    "name": "Astragoth Ironhand",
+    "epithet": "Le Grand Prêtre",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Astragoth_Ironhand",
+    "faction": "Disciples of Hashut",
+    "seal": "astragoth",
+    "portraitImage": "assets/portraits/astragoth.png",
+    "lore": "<p>La forme partiellement pétrifiée du Grand Prêtre de Hashut trahit son statut de plus ancien Sorcier vivant de Zharr-Naggrund. Autrefois le Sorcier le plus puissant à avoir foulé la Plaine de Zharr depuis un millénaire, son corps succombe désormais à la pétrification — signe du lent déclin de ses pouvoirs.</p>\n      <p>Ses jambes ayant depuis longtemps cessé de fonctionner, Ironhand s'est fait construire un appareil mécanique pour se déplacer, et ses mains entièrement pétrifiées ont été remplacées par des machineries greffées à son corps. Ces engins, conçus selon ses propres plans par ses esclaves, combinent l'indéniable savoir-faire technique des Chaos Dwarfs à sa science noire et tordue.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Influence de Conclave gagnée de toutes sources : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Taux de recherche : <strong>+10</strong></div>\n        <div class=\"attr-item\">Contrôle : <strong>+2</strong> (toutes les provinces)</div>\n        <div class=\"attr-item\">Régiments favoris : <strong>+10%</strong> de Ward Save pour les Hashut's Dark Ravagers (Bull Centaur Renders)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive : <strong>\"Mechanical Overdrive\"</strong> — l'intensité augmente à chaque kill réalisé par l'unité (maximum à 100 kills, durée illimitée) : jusqu'à <strong>+15%</strong> de dégâts d'arme de base et <strong>+8</strong> d'attaque en mêlée</div>\n        <div class=\"attr-item\">Taux de reconstitution des pertes : <strong>+5%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Ward Save : <strong>15%</strong> pour les unités Bull Centaur Renders (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Astragoth Ironhand).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Astragoth : des Bull Centaur Renders quasiment increvables grâce au cumul de Ward Save (+10% faction + 15% seigneur = 25%), appuyés par une ligne de canons et d'Infernal Guard, avec Astragoth lui-même comme puissant sorcier de soutien",
+      "totalSlots": 20,
+      "lord": {"icon": "astragoth", "name": "Astragoth Ironhand", "qty": 1, "note": "Sorcier redoutable (Burning Wrath, Ash Storm, Hell Hammer...) — sa capacité Mechanical Overdrive (seigneur) le rend de plus en plus meurtrier à chaque kill qu'il inflige (jusqu'à +15% de dégâts d'arme et +8 d'attaque en mêlée à 100 kills), et son +5% de reconstitution des pertes (seigneur) le rend difficile à user sur la durée"},
+      "heroes": [
+        {"icon": "sorcererProphet", "name": "Sorcerer-Prophet", "qty": 2, "note": "Renfort de sorts (Hashut/Fire/Metal/Death selon le choix) pour appuyer la magie d'Astragoth"}
+      ],
+      "army": [
+        {"icon": "bullCentaurRenders", "name": "Bull Centaur Renders", "qty": 5, "note": "Ward Save cumulé de 25% (+10% faction, +15% seigneur) — cavalerie lourde quasiment impossible à abattre"},
+        {"icon": "hashutsDarkRavagers", "name": "Hashut's Dark Ravagers (Bull Centaur Renders)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : Ward Save cumulé de 25% (+10% faction, +15% seigneur) — variante d'élite unique des Bull Centaur Renders"},
+        {"icon": "chaosDwarfWarriorsGW", "name": "Chaos Dwarf Warriors (Armes Lourdes)", "qty": 4, "note": "Ligne de mêlée robuste pour tenir le centre pendant que la magie et l'artillerie font leur travail"},
+        {"icon": "blunderbusses", "name": "Chaos Dwarf Blunderbusses", "qty": 4, "note": "Ligne de tir à courte portée, dégâts de zone fiables contre l'infanterie groupée"},
+        {"icon": "hellcannon", "name": "Hellcannon", "qty": 2, "note": "Artillerie lourde pour percer les lignes ennemies à distance"},
+        {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 1, "note": "Monstre de feu en réserve pour percer un point faible ou achever une unité affaiblie"}
+      ],
+      "magic": "Astragoth maîtrise plusieurs Lores (Hashut, Fire, Death, Metal) : Burning Wrath et Ash Storm infligent des dégâts de zone tandis que les Sorcerer-Prophets multiplient les effets de soutien et de destruction.",
+      "note": "Le +10% d'Influence de Conclave et le Contrôle +2 dans toutes les provinces (faction) stabilisent l'empire pendant que cette armée mène ses campagnes ; le +10 de taux de recherche (faction) accélère l'accès aux technologies et unités avancées."
+    }
+  },
+  {
+    "id": "drazhoath",
+    "numeral": "II",
+    "name": "Drazhoath the Ashen",
+    "epithet": "Le Cendreux",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Drazhoath_the_Ashen",
+    "faction": "The Legion of Azgorh",
+    "seal": "drazhoath",
+    "portraitImage": "assets/portraits/drazhoath.png",
+    "lore": "<p>Depuis plus de mille ans, la sombre flèche embrasée de la Forteresse Noire monte la garde sur le passage de la Rivière de la Ruine, à l'extrémité méridionale des Montagnes du Deuil. Lieu de cauchemar fait de suie, de fer noirci et de roche déchiquetée, où le magma en fusion coule comme le sang dans ses veines.</p>\n      <p>Depuis des siècles, le maître de ce sombre domaine est Drazhoath le Cendreux, créature tordue et assoiffée de pouvoir, sorcier redoutable. Envoyé à la Forteresse Noire en exil de fait après être tombé en disgrâce dans la politique brutale de Zharr-Naggrund alors qu'il n'était qu'un modeste forgeron infernal, il s'est hissé au rang de seigneur des lieux à force de ruse et d'ambition impitoyable.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût en Armements : <strong>-10%</strong> pour toutes les augmentations de capacité d'unité dans la Hell-Forge</div>\n        <div class=\"attr-item\">Production d'Armements : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Immortals (Ironsworn)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités K'daai (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité passive : <strong>\"Dark Renown\"</strong> — <strong>+8</strong> d'attaque en mêlée pour toutes les unités alliées possédant l'attribut Contempt (Mépris) dans un rayon de <strong>55m</strong>, durée illimitée</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Drazhoath the Ashen).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Drazhoath : des K'daai Fireborn massifs rendus soutenables par le -25% d'entretien (seigneur), épaulés par des Infernal Guard en régiment favori (+1 capacité, faction) financés par une production d'Armements accrue (+10%, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "drazhoath", "name": "Drazhoath the Ashen", "qty": 1, "note": "Sorcier puissant monté sur Cinderbreath (Bale Taurus) — sa capacité Dark Renown (seigneur) accorde +8 d'attaque en mêlée à toutes les unités alliées possédant l'attribut Contempt dans un rayon de 55m, et son +10% de portée de déplacement (seigneur) en fait un seigneur mobile qui frappe où l'ennemi s'y attend le moins"},
+      "heroes": [
+        {"icon": "sorcererProphet", "name": "Sorcerer-Prophet", "qty": 1, "note": "Renfort de sorts en complément de Drazhoath"},
+        {"icon": "bullCentaurTaurruk", "name": "Bull Centaur Taur'ruk", "qty": 1, "note": "Renfort de mêlée robuste pour protéger la ligne de monstres et de tireurs"}
+      ],
+      "army": [
+        {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 4, "note": "-25% d'entretien grâce à Drazhoath (seigneur) — une concentration de monstres de feu normalement bien plus coûteuse à soutenir"},
+        {"icon": "infernalGuardFireglaives", "name": "Infernal Guard (Fireglaives)", "qty": 4, "note": "Ligne de tir d'élite financée par le +10% de production d'Armements (faction)"},
+        {"icon": "infernalIronsworn", "name": "Infernal Ironsworn", "qty": 1, "note": "Infanterie d'élite protégeant le commandant, financée par le +10% de production d'Armements (faction)"},
+        {"icon": "theImmortalsIronsworn", "name": "The Immortals (Infernal Ironsworn)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite légendaire des Infernal Ironsworn"},
+        {"icon": "chaosDwarfWarriors", "name": "Chaos Dwarf Warriors", "qty": 3, "note": "Ligne de mêlée standard pour tenir le front pendant que K'daai et Ironsworn frappent"},
+        {"icon": "blunderbusses", "name": "Chaos Dwarf Blunderbusses", "qty": 3, "note": "Soutien à courte portée supplémentaire"}
+      ],
+      "magic": "Drazhoath dispose d'un large éventail de sorts (Ash Storm, Curse of Hashut, Dark Subjugation, Flames of Azgorh, Hell Hammer) complétés par le Sorcerer-Prophet pour saturer le champ de bataille de dégâts magiques.",
+      "note": "Le -10% de coût en Armements pour les augmentations de capacité (faction) permet de grossir cette armée de monstres et de tireurs d'élite plus vite que la normale. Grâce au +10% de portée de déplacement (seigneur), Drazhoath peut mener des offensives éclair avant de se replier vers la Forteresse Noire."
+    }
+  },
+  {
+    "id": "zhatan",
+    "numeral": "III",
+    "name": "Zhatan the Black",
+    "epithet": "Le Noir",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Zhatan_the_Black",
+    "faction": "The Warhost of Zharr",
+    "seal": "zhatan",
+    "portraitImage": "assets/portraits/zhatan.png",
+    "lore": "<p>Les actes de cruauté les plus dénués de pitié sont monnaie courante dans la Plaine de Zharrduk. Des milliers d'esclaves endurent des souffrances inimaginables dans les puits de Zharr, extrayant une richesse empoisonnée au milieu de vapeurs suffocantes et d'une obscurité impénétrable. Dans les ateliers de Zharr-Naggrund, d'innombrables ouvriers sont travaillés à mort dans leurs chaînes pour que leurs maîtres jouissent d'une vie de confort.</p>\n      <p>Même au sein d'une telle cruauté généralisée, l'un se distingue par la remarquable brutalité de ses actes : Zhatan le Noir, Commandant de la Tour de Zharr. Sa cruauté ne connaît aucune limite, car il est le guerrier le plus impitoyable à avoir jamais foulé la terre noircie de Zharr.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Nombre maximum de Convois actifs : <strong>+1</strong></div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>-50%</strong> pour les unités d'Artillerie et de Machines de Guerre</div>\n        <div class=\"attr-item\">Régiment favori : capacité passive \"Hellbound\" et attribut \"Hell-Forged\" pour le Soul of Damnation (Hellcannon) — attaques magiques, <strong>+20%</strong> de résistance physique et Perfect Vigour tant que ses points de vie restent au-dessus de <strong>25%</strong>, durée illimitée</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Pertes capturées après bataille : <strong>+15%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité de recrutement local : <strong>+1</strong> (province locale)</div>\n        <div class=\"attr-item\">Capacité active : <strong>\"Sadistic Snare\"</strong> (Hex, 2 utilisations) — inflige <strong>-24</strong> de défense en mêlée et immobilise totalement une cible ennemie dans un rayon de <strong>20m</strong> ; durée <strong>33s</strong>, rechargement <strong>120s</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Zhatan the Black).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Zhatan : un parc d'Artillerie et de Machines de Guerre à moitié prix (-50%, faction), avec le Hellcannon en régiment favori (Hellbound/Hell-Forged, faction) et Zhatan lui-même immobilisant les cibles prioritaires grâce à Sadistic Snare (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "zhatan", "name": "Zhatan the Black", "qty": 1, "note": "Combattant de mêlée redoutable, bien armuré et pourvu d'un bouclier — sa capacité Sadistic Snare (seigneur, 2 utilisations) inflige -24 de défense en mêlée et immobilise totalement une cible dans un rayon de 20m pendant 33s, l'empêchant de fuir pendant que l'artillerie l'achève"},
+      "heroes": [
+        {"icon": "bullCentaurTaurruk", "name": "Bull Centaur Taur'ruk", "qty": 2, "note": "Renfort de mêlée pour protéger la ligne d'artillerie pendant que Zhatan piège les cibles prioritaires"}
+      ],
+      "army": [
+        {"icon": "hellcannon", "name": "Hellcannon", "qty": 3, "note": "-50% de coût de recrutement (faction) — artillerie lourde pour percer les lignes ennemies à distance"},
+        {"icon": "theSoulOfDamnation", "name": "The Soul of Damnation (Hellcannon)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité passive Hellbound (attaques magiques, +20% résistance physique, Perfect Vigour tant que ses PV restent au-dessus de 25%) et attribut Hell-Forged (faction) — variante d'élite légendaire unique du Hellcannon, également couverte par le -50% de coût de recrutement (faction)"},
+        {"icon": "deathshrieker", "name": "Deathshrieker Rocket Launcher", "qty": 3, "note": "-50% de coût de recrutement (faction) — bombardement de zone à longue portée"},
+        {"icon": "chaosDwarfWarriors", "name": "Chaos Dwarf Warriors", "qty": 4, "note": "Ligne de mêlée pour protéger l'artillerie des assauts frontaux"},
+        {"icon": "blunderbusses", "name": "Chaos Dwarf Blunderbusses", "qty": 3, "note": "Soutien à courte portée contre les unités qui percent la ligne"},
+        {"icon": "hobgoblinWolfRaiders", "name": "Hobgoblin Wolf Raiders (Arcs)", "qty": 3, "note": "Cavalerie légère rapide pour intercepter les tireurs isolés et protéger les flancs de l'artillerie"}
+      ],
+      "magic": "Zhatan n'est pas un lanceur de sorts — sa force vient du combat rapproché et de la puissance de feu massive de son artillerie, doublée par le -50% de coût de recrutement (faction).",
+      "note": "Le +1 de Convois actifs maximum (faction) renforce l'économie de cette faction axée sur l'artillerie, tandis que le +15% de pertes capturées après bataille (seigneur) alimente en esclaves de travail les Hell-Forges. Utilise Sadistic Snare (2 charges seulement, 120s de rechargement) sur le seigneur ou héros ennemi le plus dangereux avant que l'artillerie ne l'achève à distance — une cible immobilisée et à -24 de défense en mêlée ne survit pas longtemps face à un Hellcannon."
+    }
+  }
+]

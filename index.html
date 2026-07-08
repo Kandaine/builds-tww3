@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+  Page d'accueil / recherche globale : point d'entrée du site. Liste TOUS
+  les seigneurs légendaires, toutes factions confondues (contrairement aux
+  pages de faction qui n'affichent qu'une seule faction à la fois).
+  Le contenu (onglets de faction #faction-tabs, grille de résultats
+  #results-grid) est entièrement généré par js/search.js au chargement.
+-->
+<head>
+<meta charset="UTF-8">
+<title>Builds Total War Warhammer 3 — Recherche de seigneurs</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<!-- La classe "search-theme" active la palette de couleurs spécifique à
+     cette page (voir body.search-theme dans css/style.css), indépendante
+     des thèmes de faction (.theme-*) utilisés sur les autres pages. -->
+<body class="search-theme">
+
+<div class="search-page">
+  <div class="search-hero">
+    <div class="search-title">Builds Total War Warhammer 3</div>
+    <div class="search-subtitle">Recherche de seigneurs, toutes factions</div>
+    <div class="search-divider"><span>❖</span></div>
+    <!-- Champ de recherche texte libre : filtré en temps réel par
+         js/search.js (écouteur sur l'événement "input"). -->
+    <input type="search" id="search-input" class="search-input search-input-lg" placeholder="Rechercher un seigneur, une épithète, une faction…">
+    <!-- Rempli dynamiquement par renderFactionTabs() (js/data.js), appelée
+         depuis renderResults() (js/search.js). -->
+    <div class="faction-tabs" id="faction-tabs"></div>
+  </div>
+  <!-- Grille de cartes de résultats, générée par renderResults() /
+       resultCardHtml() dans js/search.js. -->
+  <div class="results-grid" id="results-grid"></div>
+</div>
+
+<!-- data.js doit être chargé avant search.js : ce dernier utilise les
+     fonctions/objets qu'il expose (loadLords, filterLords, seals...). -->
+<script src="js/data.js"></script>
+<script src="js/search.js"></script>
+
+</body>
+</html>

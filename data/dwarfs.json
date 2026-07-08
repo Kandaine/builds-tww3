@@ -1,0 +1,179 @@
+[
+  {
+    "id": "thorgrim",
+    "numeral": "I",
+    "name": "Thorgrim Grudgebearer",
+    "epithet": "Le Haut Roi",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Thorgrim_Grudgebearer",
+    "faction": "Karaz-a-Karak",
+    "seal": "thorgrim",
+    "portraitImage": "assets/portraits/thorgrim.png",
+    "lore": "<p>Thorgrim Grudgebearer est l'actuel Haut Roi des Nains, héritier d'une lignée de souverains avides de conquêtes et impitoyables envers leurs ennemis. Sous son front buriné se cache pourtant une grande sagesse : il sait perpétuer les traditions ancestrales tout en acceptant, non sans réticence, les alliances et les innovations que son peuple réclame.</p>\n      <p>Gardien du Dammaz Kron, le Grand Livre des Rancunes, Thorgrim a juré de venger chacune de ses innombrables pages — une tâche si vaste qu'elle occuperait mille vies. Porté sur le Trône du Pouvoir et brandissant la Hache de Grimnir, il incarne à lui seul l'espoir d'un retour à la gloire perdue du Karaz Ankor.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec les Dwarfs</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les Longbeards et les Hammerers</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+3</strong> pour les Hammerers</div>\n        <div class=\"attr-item\">Tous les commandements ont des effets plus puissants</div>\n        <div class=\"attr-item\">Peut obtenir des Décrets de Haut Roi supplémentaires grâce à certaines compétences uniques de Thorgrim</div>\n        <div class=\"attr-item\">Décrets de Haut Roi : <strong>+1</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Peak Gate Guard (Hammerers)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Taille de l'aura de commandement : <strong>+75%</strong></div>\n        <div class=\"attr-item\">Capacité passive <strong>\"Guardian\"</strong> — Ward Save de zone accordant <strong>Résistance Physique +15%</strong> à tous les Lords et Heroes alliés dans un rayon de <strong>35m</strong> (durée illimitée)</div>\n        <div class=\"attr-item\">Résistance physique : <strong>+15%</strong> pour les Hammerers (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Thorgrim Grudgebearer).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Thorgrim : des Hammerers moins chers (-15% d'entretien, +3 rang de recrutement, faction) et quasi indestructibles (+15% de résistance physique, seigneur), épaulés par des Longbeards tout aussi bon marché, sous une aura de commandement à +75% de portée et la protection Guardian de Thorgrim pour ses héros",
+      "totalSlots": 20,
+      "lord": {"icon": "thorgrim", "name": "Thorgrim Grudgebearer", "qty": 1, "note": "Reste au centre de la ligne — son aura de commandement (+75% de portée) profite à toute l'armée, y compris les unités qui ne combattent pas directement à ses côtés ; sa capacité passive Guardian (seigneur) accorde +15% de Résistance Physique à tous les Lords/Heroes alliés dans 35m de rayon"},
+      "heroes": [
+        {"icon": "runesmith", "name": "Runesmith", "qty": 1, "note": "Runes défensives et résistance magique en soutien de la ligne de Hammerers — protégé par la capacité Guardian de Thorgrim (seigneur) tant qu'il reste dans les 35m"},
+        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Renfort de mêlée bon marché — sécurise un flanc pendant que Thorgrim tient le centre, également couvert par Guardian (seigneur) à proximité"}
+      ],
+      "army": [
+        {"icon": "hammerer", "name": "Hammerers", "qty": 5, "note": "Cœur de l'armée — -15% d'entretien et +3 rang de recrutement de base (faction), puis +15% de résistance physique une fois sous les ordres de Thorgrim (seigneur) : une ligne quasi infranchissable et étonnamment abordable"},
+        {"icon": "peakGateGuard", "name": "Peak Gate Guard (Hammerers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Hammerers, également couverte par le +15% de résistance physique de Thorgrim (seigneur)"},
+        {"icon": "longbeard", "name": "Longbeards", "qty": 4, "note": "Même -15% d'entretien que les Hammerers (faction) — deuxième ligne d'élite tout aussi soutenable, pour percer une fois le front stabilisé"},
+        {"icon": "quarreller", "name": "Quarrellers", "qty": 4, "note": "Soutien à distance derrière la ligne de Hammerers et Longbeards"},
+        {"icon": "gyrocopter", "name": "Gyrobombers", "qty": 2, "note": "Bombardement aérien et chasse aux tireurs isolés"}
+      ],
+      "magic": "Thorgrim ne lance pas de sorts : sa puissance vient de la solidité de sa ligne de Hammerers/Longbeards et du rayonnement de son aura de commandement, qui stabilise le moral de toute l'armée.",
+      "note": "Ne sépare jamais Thorgrim de ses Hammerers : c'est le +15% de résistance physique (seigneur) qui rend cette ligne quasi infranchissable, tandis que le -15% d'entretien (faction, partagé avec les Longbeards) permet d'en aligner bien plus que la normale pour le même budget. Garde aussi Runesmith et Thane à moins de 35m de Thorgrim pour profiter de sa capacité Guardian (+15% de Résistance Physique, seigneur), qui protège spécifiquement les Lords et Heroes de l'armée. Le régiment favori des Peak Gate Guard t'autorise en plus à maintenir un Hammerer supplémentaire à travers la faction."
+    }
+  },
+  {
+    "id": "ungrim",
+    "numeral": "II",
+    "name": "Ungrim Ironfist",
+    "epithet": "Le Roi Tueur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Ungrim_Ironfist",
+    "faction": "Karak Kadrin",
+    "seal": "ungrim",
+    "portraitImage": "assets/portraits/ungrim.png",
+    "lore": "<p>Il existe peu de monstres en ce monde qu'Ungrim Ironfist n'a pas abattus au combat. Armé de l'énorme Hache de Dargo, il sème la mort en chantant de vieux chants d'une voix tonitruante. Sur son casque orné d'une couronne d'or se dresse une crête orange flamboyante : Ungrim est à la fois un Tueur et un roi, sans doute le dernier d'une lignée de Rois Tueurs de Karak Kadrin.</p>\n      <p>Incapable de rechercher la mort à la manière des autres Tueurs tant que son peuple a besoin de lui, il mène le peuple de Karak Kadrin dans d'innombrables batailles, cherchant sans cesse à venger son fils tombé au combat. On raconte qu'il a terrassé le Dragon du Pic Noir et brisé le siège de Queek Écorche-Tête devant Karak Huit Pics.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût de construction : <strong>-75%</strong> pour les bâtiments Slayer</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>-50%</strong> pour les Slayers, Giant Slayers, Slayer Pirates et Doomseekers</div>\n        <div class=\"attr-item\">Vitesse : <strong>+10%</strong> pour l'infanterie</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Dragonback Slayers (Slayers)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Slayers, Giant Slayers, Slayer Pirates, Goblin Hewer et Doomseekers (armée du seigneur)</div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+5</strong> pour les unités Slayer (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité d'armée <strong>\"Journey's End\"</strong> pour les unités Slayer (armée du seigneur) — tant que leurs points de vie restent au-dessus de <strong>75%</strong>, elles ne peuvent pas mourir (encaissent les dégâts sans tomber), durée illimitée</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Ungrim Ironfist).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Ungrim : des Slayers deux fois moins chers à recruter (-50%, faction) et 25% moins chers à entretenir (seigneur), plus mordants (+5 attaque en mêlée) et une infanterie 10% plus rapide sur toute la faction",
+      "totalSlots": 20,
+      "lord": {"icon": "ungrim", "name": "Ungrim Ironfist", "qty": 1, "note": "Duelliste offensif increvable — fonce au contact des monstres et des seigneurs ennemis, quitte à devoir être appuyé s'il se fait kiter"},
+      "heroes": [
+        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Renfort de mêlée bon marché en complément d'Ungrim"}
+      ],
+      "army": [
+        {"icon": "slayer", "name": "Slayers", "qty": 10, "note": "Cœur de l'armée — -50% de coût de recrutement (faction) et -25% d'entretien (seigneur) permettent d'en aligner une horde bien plus dense que la normale, chacun frappant +5 en mêlée et rendu increvable tant que ses PV restent au-dessus de 75% grâce à Journey's End (seigneur)"},
+        {"icon": "dragonbackSlayers", "name": "Dragonback Slayers (Slayers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Slayers, également couverte par le -25% d'entretien et le +5 de mêlée de Journey's End (seigneur)"},
+        {"icon": "irondrake", "name": "Irondrakes (Trollhammer Torpedoes)", "qty": 2, "note": "Anti-monstre et anti-blindé à distance, en soutien de la horde de Slayers"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Ligne de tir polyvalente derrière les Slayers"},
+        {"icon": "quarreller", "name": "Quarrellers (Grande Arme)", "qty": 2, "note": "Tir de précision complémentaire"}
+      ],
+      "magic": "Ungrim ne lance pas de sorts — Journey's End (immunité à la mort tant que les PV restent au-dessus de 75%) et le double effet d'entretien réduit (faction + seigneur) suffisent à transformer une simple horde de Slayers en armée soutenable sur la durée.",
+      "note": "Ungrim est increvable au contact mais lent et difficile à protéger des tirs : évite de le laisser seul face à des tireurs qui peuvent le kiter indéfiniment. Le -75% de coût de construction des bâtiments Slayer (faction) permet en plus de débloquer cette horde très tôt en campagne, et le +10% de vitesse pour l'infanterie aide à refermer la distance plus vite."
+    }
+  },
+  {
+    "id": "belegar",
+    "numeral": "III",
+    "name": "Belegar Ironhammer",
+    "epithet": "Le Roi en Exil",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Belegar_Ironhammer",
+    "faction": "Clan Angrund",
+    "seal": "belegar",
+    "portraitImage": "assets/portraits/belegar.png",
+    "lore": "<p>C'est un lourd héritage de haine et de ressentiment qu'a hérité Belegar Ironhammer, chef du Clan Angrund et descendant direct du Roi Lunn, dernier souverain nain de Karak Huit Pics avant sa chute. Tandis que ce hold, second seulement à Karaz-a-Karak en richesse et en prestige, était pillé par les Gobelins de la Nuit, les héritiers du Roi déchu ont grandi loin de leur foyer, privés d'honneur.</p>\n      <p>Devenu maître de la guerre souterraine, Belegar a fait de la reconquête de son trône le serment de toute une vie. Des ruines des tombeaux de ses ancêtres, il a arraché la pierre runique qui sert aujourd'hui de Pierre de Serment, capable d'invoquer la vengeance de ses aïeux au plus fort de la bataille.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>+50%</strong> tant que Karak Huit Pics n'est pas repris</div>\n        <div class=\"attr-item\">Chaîne de bâtiments unique disponible à Karak Huit Pics</div>\n        <div class=\"attr-item\">Commence avec <strong>quatre héros ancêtres</strong> du Clan Angrund</div>\n        <div class=\"attr-item\">Commandement : <strong>+10</strong> en siège ou en encerclement</div>\n        <div class=\"attr-item\">Attribut : <strong>Vanguard Deployment</strong> lors des batailles en Underway (toute la faction)</div>\n        <div class=\"attr-item\">Décrets de Haut Roi : <strong>+1</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Norgrimlings Ironbreakers (Ironbreakers)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Blocage des tirs : <strong>+20%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité active <strong>\"Mighty Oath Stone\"</strong></div>\n        <div class=\"attr-item\">Commandement : <strong>+10</strong> contre les Peaux-Vertes, les Ogres et les Skavens (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Belegar Ironhammer).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Belegar : un mur défensif quasi imperméable aux tirs (+20%, seigneur) centré sur les Ironbreakers (régiment favori, faction), avec un déploiement avancé en Underway et un net avantage de moral en siège ou contre Peaux-Vertes/Ogres/Skavens",
+      "totalSlots": 20,
+      "lord": {"icon": "belegar", "name": "Belegar Ironhammer", "qty": 1, "note": "Ancre défensive de la ligne — sa Pierre de Serment peut être invoquée en pleine bataille pour renverser un round difficile"},
+      "heroes": [
+        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Renfort de mêlée supplémentaire pour épauler Belegar — s'ajoute aux quatre héros ancêtres du Clan Angrund déjà offerts au départ de campagne"},
+        {"icon": "runesmith", "name": "Runesmith", "qty": 1, "note": "Runes défensives en soutien de la ligne"}
+      ],
+      "army": [
+        {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 5, "note": "Cœur de l'armée — déjà l'unité la plus blindée du roster ; profite directement du blocage de tirs +20% (seigneur)"},
+        {"icon": "norgrimlingsIronbreakers", "name": "Norgrimlings Ironbreakers (Ironbreakers)", "qty": 2, "note": "Régiment favori de Belegar : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Ironbreakers, également couverte par le blocage de tirs +20% (seigneur)"},
+        {"icon": "dwarfWarrior", "name": "Dwarf Warriors", "qty": 4, "note": "Masse d'infanterie bon marché pour tenir le centre"},
+        {"icon": "miner", "name": "Miners", "qty": 2, "note": "Frappe surprise en tunnel, typique du style de guerre souterraine de Belegar"},
+        {"icon": "ranger", "name": "Rangers (Dwarfs)", "qty": 4, "note": "Éclaireurs et gardes de flanc — le Vanguard Deployment en Underway (faction) les met en position idéale dès le déploiement"}
+      ],
+      "magic": "Belegar ne lance pas de sorts — sa défense vient de son blocage de tirs élevé (seigneur) et de la Pierre de Serment, qui invoque le soutien de ses ancêtres au moment critique.",
+      "note": "Son entretien augmente de 50% tant que Karak Huit Pics n'est pas repris (faction) : reste défensif et évite de lever une deuxième armée trop tôt en campagne, le temps de stabiliser l'économie — d'autant que les quatre héros ancêtres offerts au départ limitent déjà le besoin de recruter de nouveaux héros."
+    }
+  },
+  {
+    "id": "thorek",
+    "numeral": "IV",
+    "name": "Thorek Ironbrow",
+    "epithet": "Le Seigneur des Runes",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Thorek_Ironbrow",
+    "faction": "Ironbrow's Expedition",
+    "seal": "thorek",
+    "portraitImage": "assets/portraits/thorek.png",
+    "lore": "<p>Juché sur l'Enclume du Destin qu'il fait rouler jusqu'au cœur de la bataille, le légendaire Seigneur des Runes Thorek Ironbrow martèle une magie puissante dans les runes ancestrales des Nains, au milieu du fracas des combats. Dur et inflexible, il n'accepte rien de moins que la victoire.</p>\n      <p>Porteur d'armes runiques qu'il a lui-même forgées, il part sur les rivages périlleux de Lustrie à la recherche des reliques perdues des Ancêtres, guidé par le Dammaz Kron, bien décidé à raviver la grandeur oubliée des Nains.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Oathgold généré par les bâtiments : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Coût en Oathgold pour la forge de Runes : <strong>-25%</strong></div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+5</strong> pour les Runesmiths</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les héros Runesmith</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Grumbling Guard (Longbeards)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Armure : <strong>+10</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Dégâts perforants (AP) : <strong>+3</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Réduction du temps de rechargement : <strong>+15%</strong> pour les Bolt Thrower, Grudge Thrower et Quarrellers (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Thorek Ironbrow).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Thorek : une ligne de tir et d'artillerie qui recharge 15% plus vite (seigneur), appuyée par un bonus d'armure et de dégâts perforants pour toute l'armée, avec des Runesmiths moins chers et bien plus expérimentés dès leur recrutement (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "thorek", "name": "Thorek Ironbrow", "qty": 1, "note": "Reste à portée de sa ligne de tir sur l'Enclume du Destin — assez robuste pour encaisser un assaut sans être un duelliste de premier plan"},
+      "heroes": [
+        {"icon": "runesmith", "name": "Runesmith", "qty": 2, "note": "Recrutés directement avec +5 rangs d'expérience et -25% d'entretien (faction) — un renfort de magie runique à la fois efficace dès le départ et bon marché à conserver"}
+      ],
+      "army": [
+        {"icon": "quarreller", "name": "Quarrellers", "qty": 5, "note": "Profitent directement de la réduction de rechargement de 15% (seigneur)"},
+        {"icon": "grudgeThrower", "name": "Grudge Throwers", "qty": 3, "note": "Artillerie de siège — même bonus de rechargement, pour une cadence de tir nettement supérieure à la normale"},
+        {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 4, "note": "Ligne de front blindée, renforcée par le +10 d'armure de Thorek"},
+        {"icon": "longbeard", "name": "Longbeards (Grande Arme)", "qty": 3, "note": "Rupture de ligne une fois l'ennemi affaibli par les tirs, solide grâce au +10 d'armure de Thorek"},
+        {"icon": "grumblingGuard", "name": "The Grumbling Guard (Longbeards - Grande Arme)", "qty": 2, "note": "Régiment favori de Thorek : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Longbeards (Grande Arme), également couverte par le +10 d'armure"}
+      ],
+      "magic": "Runic Magic (Lore of the Runes) : Master Rune of Wrath & Ruin en priorité pour punir les blocs d'infanterie ennemis, complétée par les runes de protection sur sa propre ligne — d'autant plus abordable grâce au -25% de coût en Oathgold pour la forge de Runes (faction).",
+      "note": "Thorek n'est pas fait pour le duel malgré sa robustesse : garde-le derrière la ligne de tir et laisse Ironbreakers et Longbeards absorber le choc pendant que Quarrellers et Grudge Throwers exploitent la cadence de tir améliorée. Le +20% d'Oathgold généré par les bâtiments (faction) accélère aussi le rythme auquel tu peux financer de nouvelles Runes."
+    }
+  },
+  {
+    "id": "grombrindal",
+    "numeral": "V",
+    "name": "Grombrindal",
+    "epithet": "Le Nain Blanc",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Grombrindal",
+    "faction": "The Ancestral Throng",
+    "seal": "grombrindal",
+    "portraitImage": "assets/portraits/grombrindal.png",
+    "lore": "<p>Grombrindal est une figure énigmatique qui traverse toute l'histoire des Nains, apparaissant pour prêter main-forte à ses cousins barbus chaque fois qu'ils se retrouvent dans une situation désespérée. Que peut faire un seul Nain quand un Karak entier est assiégé par des milliers de Peaux-Vertes ? Dans le cas du Nain Blanc, la réponse est : beaucoup.</p>\n      <p>Certains disent qu'il n'est surpassé que par Grimnir lui-même. Chaque coup de sa hache légendaire voit rouler la tête d'un ork de ses épaules déshonorées, et sa seule présence suffit à redonner espoir à un throng exsangue.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chance d'évasion en tunnel (Tunnelling) : <strong>+60%</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Force de l'arme : <strong>+20%</strong> contre les Elfes (toutes les armées)</div>\n        <div class=\"attr-item\">Peut invoquer le pouvoir des Dieux Ancêtres</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Skolder Guard (Irondrakes)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de renfort : <strong>+50%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Commandement : <strong>+10</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+10</strong> pour les Quarrellers et les Irondrakes (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Grombrindal).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Grombrindal : Quarrellers et Irondrakes bien plus résistants en mêlée (+10 défense, seigneur), régiment favori sur les Irondrakes (faction), appuyés par une portée de renfort étendue de 50%",
+      "totalSlots": 20,
+      "lord": {"icon": "grombrindal", "name": "Grombrindal", "qty": 1, "note": "Duelliste polyvalent et increvable — son Flash Bomb ralentit et endommage lourdement les monstres et chars ennemis avant le contact ; frappe 20% plus fort contre toute faction elfique (faction)"},
+      "heroes": [
+        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Renfort de mêlée bon marché en complément de Grombrindal"},
+        {"icon": "runesmith", "name": "Runesmith", "qty": 1, "note": "Runes défensives pour la ligne"}
+      ],
+      "army": [
+        {"icon": "quarreller", "name": "Quarrellers", "qty": 6, "note": "+10 défense en mêlée grâce à Grombrindal (seigneur) — nettement plus difficiles à percer au contact que la normale"},
+        {"icon": "irondrake", "name": "Irondrakes", "qty": 2, "note": "Même bonus de défense en mêlée (seigneur) — le pilier de cette armée"},
+        {"icon": "skolderGuard", "name": "The Skolder Guard (Irondrakes)", "qty": 2, "note": "Régiment favori de Grombrindal : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Irondrakes, également couverte par le +10 de défense en mêlée (seigneur)"},
+        {"icon": "hammerer", "name": "Hammerers", "qty": 4, "note": "Ligne de front pour protéger les tireurs pendant qu'ils profitent de leur défense améliorée"},
+        {"icon": "miner", "name": "Miners", "qty": 3, "note": "Renfort surprise — la portée de renfort de +50% (seigneur) les fait arriver bien plus vite en cas de besoin, et leur chance d'évasion en tunnel grimpe à +60% (faction)"}
+      ],
+      "magic": "Grombrindal ne lance pas de sorts — ses capacités (Flash Bomb, Foe-Seeker) et ses objets runiques uniques (Hache Runique, Armure d'Écailles de Glimril) compensent largement l'absence de lore de la magie.",
+      "note": "La portée de renfort +50% (seigneur) change la façon de déployer : tu peux te permettre de garder des réserves plus loin en début de bataille, elles rejoindront le front bien plus vite qu'avec un autre seigneur. Le bonus de +20% de force de l'arme contre les Elfes (faction) fait de Grombrindal un choix particulièrement fort sur les campagnes centrées autour d'Ulthuan, Naggaroth ou Athel Loren."
+    }
+  },
+  {
+    "id": "malakai",
+    "numeral": "VI",
+    "name": "Malakai Makaisson",
+    "epithet": "Le Tueur-Ingénieur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Malakai_Makaisson",
+    "faction": "Masters of Innovation",
+    "seal": "malakai",
+    "portraitImage": "assets/portraits/malakai.png",
+    "lore": "<p>Ancien ingénieur surdoué de la Guilde des Ingénieurs, Malakai Makaisson porte aujourd'hui le fardeau d'un passé tumultueux et tragique. Créateur de l'Ironclad Unsinkable et du dirigeable Indestructible — tous deux victimes de défaillances catastrophiques — il a sur la conscience la mort de nombreux Nains, ce qui lui a valu d'être chassé de la Guilde.</p>\n      <p>Au lendemain de ces tragédies, Makaisson a prêté le Serment des Tueurs, sans pour autant renoncer à l'invention. À bord du Spirit of Grungni, le dirigeable qu'il a lui-même conçu, il continue de bâtir des merveilles guerrières, espérant laver un jour sa honte dans la gloire — ou dans une mort méritée.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès à <strong>Malakai's Adventures</strong>, débloquant des modifications puissantes pour l'Artillerie et les Machines de Guerre ainsi que des Legendary Battles uniques</div>\n        <div class=\"attr-item\">Commence la campagne avec le contrôle de <strong>Gotrek & Felix</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les unités d'Artillerie et de Machines de Guerre Volantes (toutes les armées)</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+3</strong> pour les unités d'Artillerie et de Machines de Guerre Volantes (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+5%</strong> de résistance aux tirs pour tous les Regiments of Renown Slayer</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">L'armée de Malakai a accès aux bâtiments du dirigeable <strong>Spirit of Grungni</strong></div>\n        <div class=\"attr-item\">Capacité active <strong>\"Deranged Munitions\"</strong> — confère des attaques magiques et <strong>+50%</strong> de dégâts de tir perforants et <strong>+50%</strong> de dégâts de tir de base à une unité alliée capable de tirer, dans un rayon de <strong>100m</strong> ; durée <strong>30s</strong>, rechargement <strong>90s</strong></div>\n        <div class=\"attr-item\">Force des tirs : <strong>+20%</strong> pour les unités d'Artillerie et les Machines de Guerre Volantes</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Malakai Makaisson).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Malakai : une ligne de canons et de machines volantes moins chère à entretenir et à recruter (-15% d'entretien, +3 rang de recrutement, faction) dont la force de tir grimpe de +20% (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "malakai", "name": "Malakai Makaisson", "qty": 1, "note": "Reste en retrait — avec une Armure de 0, il n'est pas fait pour le duel malgré sa vitesse ; ses tirs et sa capacité Deranged Munitions (+50% de dégâts de tir perforants et +50% de dégâts de base sur une unité alliée, 100m, 30s, seigneur) transforment un canon ou un gyrocoptère en pièce d'artillerie dévastatrice ponctuellement"},
+      "heroes": [
+        {"icon": "masterEngineer", "name": "Master Engineer", "qty": 2, "note": "Renforce encore la ligne de machines de guerre, en écho au bonus de +20% de force de tir de Malakai (seigneur)"}
+      ],
+      "army": [
+        {"icon": "cannon", "name": "Cannons", "qty": 6, "note": "Profitent directement du +20% de force de tir (seigneur) et sont moins chères à recruter et entretenir (-15% d'entretien, +3 rang de recrutement, faction)"},
+        {"icon": "gyrocopter", "name": "Gyrocopters (Brimstone Guns)", "qty": 5, "note": "Machine de Guerre Volante — même double bonus faction/seigneur, harcèlement aérien rapide et peu coûteux"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 3, "note": "Ligne de tir polyvalente en complément de l'artillerie"},
+        {"icon": "miner", "name": "Miners (Blasting Charges)", "qty": 2, "note": "Écran de mêlée bon marché pour protéger la ligne de tir"},
+        {"icon": "legendaryDuo", "name": "Gotrek & Felix", "qty": "1 (unique)", "note": "Duo de héros uniques offert dès le départ de campagne avec Malakai — d'excellents duellistes de mêlée pendant que le reste de l'armée tire à distance"}
+      ],
+      "magic": "Malakai ne lance pas de sorts — sa 'magie' à lui, ce sont ses machines : Deranged Munitions (+50%/+50% de dégâts de tir ponctuels sur une unité, seigneur) et l'accès aux bâtiments du Spirit of Grungni (seigneur) orientent toute l'armée vers la puissance de feu plutôt que le combat rapproché.",
+      "note": "Garde Malakai loin du contact direct : son armure nulle le rend fragile en mêlée malgré sa vitesse élevée. Laisse Gotrek & Felix et les Miners absorber les assauts pendant que canons, gyrocoptères et Thunderers font le gros des dégâts à distance. Le -15% d'entretien et le +3 rang de recrutement (faction) s'appliquent à toutes tes armées, pas seulement celle de Malakai — n'hésite pas à répliquer ce même style de gunline sur un second front."
+    }
+  }
+]

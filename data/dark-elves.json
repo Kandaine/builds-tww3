@@ -1,0 +1,184 @@
+[
+  {
+    "id": "malekith",
+    "numeral": "I",
+    "name": "Malekith",
+    "epithet": "Le Roi Sorcier",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Malekith",
+    "faction": "Naggarond",
+    "seal": "malekith",
+    "portraitImage": "assets/portraits/malekith.png",
+    "lore": "<p>Le Roi Sorcier est le souverain suprême de Naggaroth, et l'ennemi éternel des Hauts Elfes. Il y a bien longtemps, il chercha à s'emparer de la couronne d'Ulthuan, mais les Flammes d'Asuryan le laissèrent balafré par le feu et rongé par la haine. Au fil des années, Malekith a maintes fois tenté de raser Ulthuan de la surface du monde, chaque fois déjoué par le destin cruel ou l'incompétence de sous-fifres lâches.</p>\n      <p>Pourtant, le Roi Sorcier est immortel, et sait qu'il survivra à ceux qui se croient à tort ses supérieurs. Le jour approche où les vieilles dettes et les insultes seront enfin réglées, et Malekith fera tout ce qui est en son pouvoir pour hâter cette échéance.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Points d'Allégeance gagnés : <strong>+50%</strong> pour les alliances avec les Dark Elves</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec les Dark Elves</div>\n        <div class=\"attr-item\">Loyauté : <strong>+2</strong> pour les nouvelles recrues</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Black Guard of Naggarond, Dreadspears, Bleakswords et Darkshards</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Bolt-Fiends (Darkshards)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Contrôle : <strong>+8</strong> (province locale)</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-15%</strong> pour tous les bâtiments (province locale)</div>\n        <div class=\"attr-item\">Commandement ennemi : <strong>-8</strong> (région locale)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Malekith).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Malekith : un cœur d'infanterie Naggarond (Black Guard, Dreadspears, Bleakswords, Darkshards) à -25% d'entretien (faction), avec Malekith lui-même en duelliste-sorcier increvable qui stabilise et développe la province conquise",
+      "totalSlots": 20,
+      "lord": {"icon": "malekith", "name": "Malekith", "qty": 1, "note": "Duelliste redoutable en armure lourde avec accès à la Lore of Dark Magic — son +8 de Contrôle et -15% de coût de construction (seigneur) développent rapidement la province occupée, tandis que son -8 de commandement ennemi (seigneur) fragilise la résistance locale"},
+      "heroes": [
+        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 1, "note": "Renfort de sorts en écho à la magie de Malekith"},
+        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis avant la bataille"}
+      ],
+      "army": [
+        {"icon": "blackGuard", "name": "Black Guard of Naggarond", "qty": 5, "note": "-25% d'entretien (faction) — l'élite de l'infanterie Naggarond devient très abordable en nombre"},
+        {"icon": "darkshards", "name": "Darkshards", "qty": 3, "note": "Même -25% d'entretien (faction) — tir de soutien à distance"},
+        {"icon": "boltFiends", "name": "The Bolt-Fiends (Darkshards)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Darkshards, également couverte par le -25% d'entretien (faction)"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 4, "note": "Même bonus d'entretien (faction) — ligne de tenue anti-cavalerie fiable"},
+        {"icon": "bleakswords", "name": "Bleakswords", "qty": 3, "note": "Même bonus d'entretien (faction) — infanterie polyvalente supplémentaire"}
+      ],
+      "magic": "Malekith maîtrise la Lore of Dark Magic (Doombolt, Chillwind, Word of Pain, Soul Stealer) tandis que la Sorceress multiplie les effets de soutien et de destruction.",
+      "note": "Le +50% de Points d'Allégeance pour les alliances Dark Elves et les +20 de relations diplomatiques (faction) facilitent grandement la diplomatie inter-Druchii en campagne. Concentre les recrutements sur les quatre unités bénéficiant du -25% d'entretien (faction) pour maximiser la taille de cette armée à moindre coût."
+    }
+  },
+  {
+    "id": "morathi",
+    "numeral": "II",
+    "name": "Morathi",
+    "epithet": "La Sorcière-Hague",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Morathi",
+    "faction": "Cult of Pleasure",
+    "seal": "morathi",
+    "portraitImage": "assets/portraits/morathi.png",
+    "lore": "<p>Morathi, Sorcière-Hague de Ghrond et Première des Reines-Hagues, est la mère de Malekith et jadis la compagne d'Aenarion, qu'elle sauva d'un warband de Slaanesh aux premiers jours de l'invasion du Chaos, avant la Rupture. Elle est non seulement la seule Sorcière autorisée à pratiquer la Magie Noire, mais aussi l'une des utilisatrices de magie les plus puissantes au monde, rivalisant peut-être avec Nagash lui-même, les Seigneurs du Changement, et Teclis d'Ulthuan.</p>\n      <p>Elle a scellé des pactes démoniaques avec de nombreuses forces vils et perturbantes, et peut déchaîner la terrible puissance du Chaos sur quiconque lui déplaît. Toute l'existence de Morathi n'a été que machinations et manipulation — depuis que le Roi Phénix l'a repoussée malgré sa beauté, elle jura que si son époux ne pouvait régner sur les Elfes, son fils le ferait à sa place.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Répand la corruption de Slaanesh, qui asservit la population d'esclaves à travailler plus dur</div>\n        <div class=\"attr-item\">Débloque le recrutement de certaines unités Slaanesh</div>\n        <div class=\"attr-item\">Coût des actions de héros : <strong>-50%</strong></div>\n        <div class=\"attr-item\">Coût de construction : <strong>-25%</strong> pour les bâtiments de Sorcellerie</div>\n        <div class=\"attr-item\">Corruption Slaanesh : <strong>+1</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Régiment favori The Siren of Red Ruin (Bloodwrack Medusa) : capacité passive \"Aura of Agony\" (Hex de zone) — <strong>Commandement : -4</strong>, <strong>Défense au corps-à-corps : -7</strong> pour tous les ennemis à 35m, durée illimitée</div>\n        <div class=\"attr-item\">Régiment favori Sisters of Singing Doom (Witch Elves) : capacité passive \"Blood-Bathed\" (Régénération, Strong Vigour) — <strong>Soin par seconde : +0,05%</strong> des PV pour toute la formation, durée illimitée</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">En début de tour, les Seigneurs dans la région de Morathi ont une chance de gagner 2 de loyauté (région locale)</div>\n        <div class=\"attr-item\">Rechargement : <strong>-5 tours</strong> pour Sacrifice to Hekarti</div>\n        <div class=\"attr-item\">Coût en esclaves : <strong>-50%</strong> pour Sacrifice to Hekarti</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Morathi) + captures des capacités \"Aura of Agony\" et \"Blood-Bathed\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Morathi : des Witch Elves et Bloodwrack Medusa dopées par leurs régiments favoris (Blood-Bathed / Aura of Agony, faction), épaulées par des unités Slaanesh désormais recrutables (faction) et des Sorceresses aux actions de héros deux fois moins chères (-50%, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "morathi", "name": "Morathi", "qty": 1, "note": "L'une des plus puissantes lanceuses de sorts du jeu (Dark Magic, Death, Shadows) — son influence fait gagner de la loyauté aux seigneurs de sa région (seigneur) et allège nettement le coût de Sacrifice to Hekarti (seigneur)"},
+      "heroes": [
+        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 2, "note": "Recrutées à moitié prix en action de héros (-50%, faction) — renfort de sorts massif et bon marché"}
+      ],
+      "army": [
+        {"icon": "witchElves", "name": "Witch Elves", "qty": 6, "note": "Régiment favori Sisters of Singing Doom : capacité Blood-Bathed, +0,05% de soin par seconde en continu (faction) — le cœur de mêlée fanatique de cette armée, quasi increvable en mêlée prolongée"},
+        {"icon": "daemonettes", "name": "Daemonettes de Slaanesh", "qty": 2, "note": "Unité Slaanesh désormais recrutable grâce à Morathi (faction) — infanterie rapide et mortelle unique à ce culte"},
+        {"icon": "bloodwrackMedusa", "name": "Bloodwrack Medusa", "qty": 1, "note": "Monstre de soutien qui affaiblit durablement la ligne adverse à distance"},
+        {"icon": "theSirenOfRedRuin", "name": "The Siren of Red Ruin (Bloodwrack Medusa)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité Aura of Agony, -4 Commandement / -7 Défense au corps-à-corps sur 35m à tous les ennemis proches (faction) — variante d'élite unique du Bloodwrack Medusa"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 4, "note": "Ligne de tenue anti-cavalerie fiable en complément"},
+        {"icon": "shades", "name": "Shades", "qty": 3, "note": "Tirailleurs furtifs pour harceler et flanquer"}
+      ],
+      "magic": "Morathi combine Dark Magic, Death et Shadows (Doom & Darkness, Soulblight, Pit of Shades) : l'une des lanceuses de sorts les plus dévastatrices du jeu une fois ses passifs magiques débloqués.",
+      "note": "La corruption Slaanesh répandue par cette faction asservit la population d'esclaves pour un meilleur rendement économique, tandis que le -25% de coût de construction des bâtiments de Sorcellerie (faction) accélère l'accès aux infrastructures magiques. Garde Morathi en retrait : elle est fragile en mêlée malgré sa puissance magique."
+    }
+  },
+  {
+    "id": "cronehellebron",
+    "numeral": "III",
+    "name": "Crone Hellebron",
+    "epithet": "La Grande Épouse de Khaine",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Crone_Hellebron",
+    "faction": "Har Ganeth",
+    "seal": "cronehellebron",
+    "portraitImage": "assets/portraits/cronehellebron.png",
+    "lore": "<p>Hellebron est la plus ancienne des Reines-Hagues, seconde seulement après Morathi dans le regard de Khaine. Mais tandis que la jeunesse et la beauté de Morathi ne se fanent jamais, celles d'Hellebron sont désormais presque épuisées, car la Sorcière-Hague lui a délibérément caché les secrets les plus profonds nécessaires à l'usage des Chaudrons de Sang.</p>\n      <p>Aussi usée soit-elle, Hellebron demeure la plus grande des Épouses de Khaine. Sa maîtrise des mille façons de tuer éclipse même celle de Morathi — souvent trop distraite par ses activités sorcières — et surpasse de loin les compétences des autres Reines-Hagues. C'est elle qui dirige les rites impies du Seigneur du Meurtre et dicte le credo sacré que doivent suivre toutes les Sorcières.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Sacrifice to Drakira : améliore les Death Hags et Witch Elves, plus des bonus pour toutes les armées contre les High Elves</div>\n        <div class=\"attr-item\">Pertes capturées après bataille : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Death Hags</div>\n        <div class=\"attr-item\">Coût en esclaves : <strong>-33%</strong> pour Sacrifice to Khaine</div>\n        <div class=\"attr-item\">Revenu des esclaves : <strong>+5%</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Blades of the Blood Queen (Executioners)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour The Hellebronai (Dreadspears)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Witch Elves, Sisters of Slaughter et Har Ganeth Executioners (armée du seigneur)</div>\n        <div class=\"attr-item\">Force des armes : <strong>+10%</strong> pour les Witch Elves, Har Ganeth Executioners et Sisters of Slaughter (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Crone Hellebron).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Hellebron : Witch Elves, Sisters of Slaughter et Har Ganeth Executioners à la fois moins chères à entretenir et plus mordantes (-50% entretien, +10% force des armes, seigneur), avec des Death Hags recrutées en masse grâce au +2 de capacité de héros (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "cronehellebron", "name": "Crone Hellebron", "qty": 1, "note": "Combattante de mêlée redoutable, montée sur Cauldron of Blood ou Manticore — le +25% de pertes capturées après bataille (faction) alimente généreusement l'économie d'esclaves de Har Ganeth"},
+      "heroes": [
+        {"icon": "deathHag", "name": "Death Hag", "qty": 2, "note": "+2 de capacité de héros (faction) permet d'en aligner davantage sans sacrifier d'autres emplacements"}
+      ],
+      "army": [
+        {"icon": "witchElves", "name": "Witch Elves", "qty": 5, "note": "-50% d'entretien et +10% de force des armes grâce à Hellebron (seigneur) — le cœur fanatique de cette armée"},
+        {"icon": "harGanethExecutioners", "name": "Har Ganeth Executioners", "qty": 3, "note": "Même double bonus (seigneur) — infanterie d'élite à deux mains"},
+        {"icon": "bladesOfTheBloodQueen", "name": "Blades of the Blood Queen (Har Ganeth Executioners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Har Ganeth Executioners, également couverte par le double bonus d'entretien/force des armes (seigneur)"},
+        {"icon": "sistersOfSlaughter", "name": "Sisters of Slaughter", "qty": 4, "note": "Même double bonus d'entretien et de force des armes (seigneur)"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 1, "note": "Ligne de tenue anti-cavalerie en complément"},
+        {"icon": "theHellebronai", "name": "The Hellebronai (Dreadspears)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Dreadspears"}
+      ],
+      "magic": "Hellebron n'est pas une lanceuse de sorts dédiée — sa puissance vient de son statut de Bride of Khaine et de ses bonus d'entretien/force des armes qui transforment toute son armée en horde fanatique.",
+      "note": "Le Sacrifice to Drakira (faction) offre des bonus supplémentaires spécifiquement contre les High Elves, rendant cette armée particulièrement efficace en guerre contre Ulthuan. Le -33% de coût en esclaves pour Sacrifice to Khaine et le +5% de revenu des esclaves (faction) financent des sacrifices réguliers pour améliorer encore la horde."
+    }
+  },
+  {
+    "id": "lokhir",
+    "numeral": "IV",
+    "name": "Lokhir Fellheart",
+    "epithet": "Le Seigneur-Kraken",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Lokhir_Fellheart",
+    "faction": "The Blessed Dread",
+    "seal": "lokhir",
+    "portraitImage": "assets/portraits/lokhir.png",
+    "lore": "<p>Certains Elfes Noirs prennent la mer en quête de butin ou de vengeance, mais beaucoup plus le font pour fuir les dangers de Naggaroth. Pas Lokhir Fellheart, qui est né pour sillonner les flots, apportant le feu et la terreur sur les rivages étrangers. Il est le dernier d'une lignée d'amiraux apocalyptiques à commander la formidable Arche Noire connue sous le nom de « Tour de la Dread Bénie », laissant d'innombrables ports et cités côtières en ruine et en flammes dans son sillage.</p>\n      <p>Ses exploits lui ont valu non seulement plus de gloire que tous ses ancêtres réunis, mais aussi une richesse incommensurable — esclaves et trésors affluent à Karond Kar comme jamais auparavant, lui valant le respect réticent, sinon la loyauté, des maîtres de la cité.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Sacrifice to Anath Raema : améliore les Corsairs et Kharibdyss</div>\n        <div class=\"attr-item\">Revenu des esclaves : <strong>+5%</strong></div>\n        <div class=\"attr-item\">Chaque Port Majeur possédé permet le recrutement d'une Arche Noire (Black Ark)</div>\n        <div class=\"attr-item\">Lokhir peut dépenser un tour pour voyager instantanément vers une Arche Noire, où qu'il soit</div>\n        <div class=\"attr-item\">Les bâtiments d'Arche Noire de Lokhir la renforcent différemment selon le type de région maritime</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+2 capacité</strong> pour Crows of Khaine (Harpies)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Permet les attaques navales contre les colonies portuaires (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les unités Black Ark Corsairs (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut \"Causes Fear\" pour les unités Corsairs (armée du seigneur) — effraie toutes les unités ennemies à proximité, réduisant leur commandement ; immunise également ces unités à la Peur. Les pénalités de Peur ne se cumulent pas</div>\n        <div class=\"attr-item\">Immunisé à l'attrition de Haute Mer, des Récifs et des Tempêtes (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Lokhir Fellheart).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Lokhir : une horde de Corsairs à moitié prix (-50%, seigneur), immunisés à la Peur et effrayant l'ennemi (Causes Fear, seigneur), améliorés via Sacrifice to Anath Raema (faction), épaulée par des Kharibdyss tout aussi renforcés et des Harpies profitant du régiment favori (+2 capacité, faction), capable de mener des sièges navals contre les colonies portuaires et de voyager instantanément entre ses Arches Noires (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "lokhir", "name": "Lokhir Fellheart", "qty": 1, "note": "Duelliste redoutable et amiral né — débloque les attaques navales contre les colonies portuaires et l'immunité à l'attrition de Haute Mer/Récifs/Tempêtes (seigneur), idéal pour une campagne de pillage côtier"},
+      "heroes": [
+        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis"},
+        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 1, "note": "Soutien magique en complément de la horde de Corsairs"}
+      ],
+      "army": [
+        {"icon": "blackArkCorsairs", "name": "Black Ark Corsairs", "qty": 6, "note": "-50% d'entretien et attribut Causes Fear (seigneur), améliorés via Sacrifice to Anath Raema (faction) — le cœur bon marché de cette armée de pillage, qui terrifie l'ennemi sans jamais paniquer lui-même"},
+        {"icon": "blackArkCorsairsHandbows", "name": "Black Ark Corsairs (Handbows)", "qty": 4, "note": "Même -50% d'entretien (seigneur) — variante à distance des Corsairs"},
+        {"icon": "kharibdyss", "name": "Kharibdyss", "qty": 3, "note": "Améliorée via Sacrifice to Anath Raema (faction) — monstre marin dévastateur en mêlée"},
+        {"icon": "harpiesDarkElves", "name": "Crows of Khaine (Harpies)", "qty": 3, "note": "Régiment favori : +2 capacité (faction), soit 3 exemplaires recrutables au maximum — flanqueuses volantes rapides, harcèlent l'arrière et les tireurs isolés"},
+        {"icon": "feralManticoreDarkElves", "name": "Feral Manticore", "qty": 1, "note": "Monstre volant lourd pour chasser l'artillerie et les monstres adverses en complément des Harpies"}
+      ],
+      "magic": "La Sorceress couvre les besoins de soutien magique pendant que Lokhir lui-même privilégie le combat rapproché et le pillage.",
+      "note": "Le +5% de revenu des esclaves (faction) s'ajoute aux richesses considérables tirées du pillage naval. Cette armée est pensée pour combattre près des côtes et des colonies portuaires, où les attaques navales de Lokhir (seigneur) prennent tout leur sens."
+    }
+  },
+  {
+    "id": "malusdarkblade",
+    "numeral": "V",
+    "name": "Malus Darkblade",
+    "epithet": "Le Tyran de Hag Graef",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Malus_Darkblade",
+    "faction": "Hag Graef",
+    "seal": "malusdarkblade",
+    "portraitImage": "assets/portraits/malusdarkblade.png",
+    "lore": "<p>Malus Darkblade, le Tyran de Hag Graef, a toujours été ambitieux, même selon les standards élevés des familles belliqueuses de la cité. Pendant de longues années, il a joué le jeu mortel de la politique et de l'assassinat, et l'a bien joué — jusqu'à ce que sa soif de pouvoir le mène au cœur du Royaume du Chaos, jusqu'au temple de Kul Hadar.</p>\n      <p>Des siècles plus tôt, le Démon Tz'arkan y avait été enchaîné ; Darkblade, aveuglé par l'avidité, permit sans le vouloir à la créature de s'échapper et fut possédé sur-le-champ. Il n'existe qu'un seul moyen d'échapper à ce funeste destin : trouver cinq artefacts de pouvoir pour libérer entièrement Tz'arkan et restaurer l'âme de Darkblade.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Malus est possédé par le Démon Tz'arkan, contrôlé grâce à l'usage d'élixirs</div>\n        <div class=\"attr-item\">Tz'arkan's Whispers : le Démon pousse Malus à commettre des actes de massacre et de cruauté</div>\n        <div class=\"attr-item\">Revenu des Mines de Fer, Mines d'Or et Carrières de Marbre : <strong>+30%</strong> (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Knights of the Ebon Claw (Cold One Knights)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût de recrutement : <strong>-20%</strong> pour les Cold One Dread Knights, Cold One Knights et Cold One Chariots (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Cold One Knights, Cold One Dread Knights et Cold One Chariots (armée du seigneur)</div>\n        <div class=\"attr-item\">Immunisé à la corruption du Chaos et à l'attrition des Chaos Wastes (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Malus Darkblade).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Malus : une charge de cavalerie Cold One quasi gratuite (-20% de recrutement, -50% d'entretien, seigneur), immunisée à la corruption du Chaos (seigneur) et capable de traverser librement les Chaos Wastes",
+      "totalSlots": 20,
+      "lord": {"icon": "malusdarkblade", "name": "Malus Darkblade", "qty": 1, "note": "Possédé par le Démon Tz'arkan (faction), il peut se transformer en combattant surpuissant au prix de sa santé — son immunité à la corruption du Chaos et à l'attrition des Chaos Wastes (seigneur) lui permet de traverser librement ces régions autrement mortelles"},
+      "heroes": [
+        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 1, "note": "Soutien magique en complément de la cavalerie"},
+        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis"}
+      ],
+      "army": [
+        {"icon": "coldOneKnights", "name": "Cold One Knights", "qty": 4, "note": "-20% de coût de recrutement et -50% d'entretien (seigneur) — cavalerie lourde quasiment gratuite"},
+        {"icon": "knightsOfTheEbonClaw", "name": "Knights of the Ebon Claw (Cold One Knights)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Cold One Knights, également couverte par le double bonus de coût/entretien (seigneur)"},
+        {"icon": "coldOneDreadKnights", "name": "Cold One Dread Knights", "qty": 4, "note": "Même double bonus de coût et d'entretien (seigneur) — variante encore plus lourde"},
+        {"icon": "coldOneChariots", "name": "Cold One Chariots", "qty": 3, "note": "Même double bonus (seigneur) — percussion supplémentaire"},
+        {"icon": "darkshards", "name": "Darkshards", "qty": 2, "note": "Soutien à distance classique"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 2, "note": "Ligne de tenue anti-cavalerie en complément"}
+      ],
+      "magic": "La Sorceress couvre les besoins de soutien magique pendant que Malus (ou Tz'arkan, une fois transformé) mène la charge en première ligne.",
+      "note": "Le +30% de revenu des Mines de Fer, Mines d'Or et Carrières de Marbre (faction) finance largement cette cavalerie déjà quasi gratuite à l'entretien. L'immunité aux Chaos Wastes (seigneur) permet de traverser sans crainte ces régions pour surprendre l'ennemi par des itinéraires inattendus."
+    }
+  },
+  {
+    "id": "rakarth",
+    "numeral": "VI",
+    "name": "Rakarth",
+    "epithet": "Le Seigneur des Bêtes",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Rakarth",
+    "faction": "The Thousand Maws",
+    "seal": "rakarth",
+    "portraitImage": "assets/portraits/rakarth.png",
+    "lore": "<p>Parmi les Elfes Noirs, nombreux furent les célèbres Maîtres des Bêtes, mais Rakarth, le Seigneur des Bêtes de Karond Kar, n'a d'égal, vivant ou mort. À la tête d'une armée de monstres et de créatures telle que le monde n'en a jamais vue, Rakarth porte un haut heaume qui accentue sa silhouette fine tout en dissimulant la majeure partie de son visage. Nul ne peut cependant se méprendre sur la lueur qui brille dans ses yeux comme des braises dans la nuit, trahissant un pouvoir intrinsèque à projeter la peur et à instiller la soumission chez ses monstrueux serviteurs.</p>\n      <p>Monté sur une selle doublée de peau humaine, Rakarth s'élance au combat sur le dos de Bracchus, un Dragon aux écailles d'ébène réputé être l'un des Dragons Noirs les plus cruels à avoir jamais pris son envol.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Monster Pens : capture une variété de bêtes hideuses et les envoie au combat</div>\n        <div class=\"attr-item\">Les armées ne subissent aucune pénalité de Vigueur en posture de Raid</div>\n        <div class=\"attr-item\">Entretien : <strong>-10%</strong> pour toutes les unités monstrueuses (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori Ravagers of Rakarth (Scourgerunner Chariots) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Durée de recrutement : <strong>-1 tour</strong> pour toutes les unités monstrueuses (minimum 1) (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+8</strong> pour les unités Monster (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité \"Whiplash!\" (Augment, active) — <strong>Dégâts d'arme de base : +50%</strong>, <strong>Dégâts perforants : +50%</strong>, <strong>Vitesse de charge : +25%</strong>, <strong>Bonus de charge : +20%</strong> pour 1 allié (hors Seigneur/Héros) à 100m, durée 21s, rechargement 90s</div>\n        <div class=\"attr-item\">Capacité \"Beastlord's Gaze\" (Augment, active) — <strong>Commandement : +16</strong>, <strong>Résistance aux dégâts : +10%</strong>, stoppe l'état Enragé (Rampage), portée 200m, durée 40s, rechargement 60s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Rakarth), + captures des capacités \"Whiplash!\" et \"Beastlord's Gaze\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Rakarth : une ménagerie de monstres moins chère à entretenir (-10% d'entretien, faction) et plus increvable (+8 défense en mêlée, recrutement -1 tour, seigneur), avec des Scourgerunner Chariots profitant du régiment favori (+1 capacité, faction), exploitant la mécanique des Monster Pens propre à The Thousand Maws",
+      "totalSlots": 20,
+      "lord": {"icon": "rakarth", "name": "Rakarth", "qty": 1, "note": "Monté sur Bracchus, son Dragon Noir — Whiplash! (+50% dégâts d'arme et perforants, +25% vitesse/+20% bonus de charge sur un allié) et Beastlord's Gaze (+16 commandement, +10% résistance aux dégâts, stoppe l'Enragé) démultiplient la puissance de sa ménagerie (seigneur)"},
+      "heroes": [
+        {"icon": "highBeastmaster", "name": "High Beastmaster", "qty": 2, "note": "Renfort de mêlée spécialisé dans le contrôle des monstres, en écho au thème de Rakarth"}
+      ],
+      "army": [
+        {"icon": "warHydra", "name": "War Hydra", "qty": 3, "note": "-10% d'entretien (faction), +8 de défense en mêlée et recrutement -1 tour (seigneur) — monstre de mêlée robuste au cœur de la ménagerie"},
+        {"icon": "kharibdyss", "name": "Kharibdyss", "qty": 2, "note": "Même triple bonus monstre (faction + seigneur)"},
+        {"icon": "feralManticoreDarkElves", "name": "Feral Manticore", "qty": 2, "note": "Même triple bonus monstre (faction + seigneur) — mobilité aérienne supplémentaire"},
+        {"icon": "scourgerunnerChariots", "name": "Scourgerunner Chariots (Ravagers of Rakarth)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), en plus du triple bonus monstre habituel — chars rapides qui exploitent Whiplash! en première ligne de charge"},
+        {"icon": "bleakswords", "name": "Bleakswords", "qty": 2, "note": "Ligne de tenue standard pour protéger les monstres"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 3, "note": "Anti-cavalerie fiable en complément"},
+        {"icon": "shadesGreatWeapons", "name": "Shades (Armes Lourdes)", "qty": 3, "note": "Tirailleurs d'élite pour harceler et flanquer"}
+      ],
+      "magic": "Rakarth n'est pas un lanceur de sorts — sa puissance vient du contrôle qu'il exerce sur ses monstres, renforcé par Whiplash! et Beastlord's Gaze.",
+      "note": "Exploite la mécanique des Monster Pens propre à The Thousand Maws pour diversifier la ménagerie au-delà de ces quatre types de monstres, profite du recrutement accéléré (-1 tour, seigneur) pour reconstituer rapidement les pertes, et de l'absence de pénalité de Vigueur en posture de Raid (faction) pour piller sans relâche."
+    }
+  }
+]

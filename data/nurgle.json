@@ -1,0 +1,94 @@
+[
+  {
+    "id": "kugath",
+    "numeral": "I",
+    "name": "Ku'gath Plaguefather",
+    "epithet": "Le Père de la Peste",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Ku%27gath_Plaguefather",
+    "faction": "Poxmakers of Nurgle",
+    "seal": "kugath",
+    "portraitImage": "assets/portraits/kugath.png",
+    "lore": "<p>Alors que d'autres Grands Démons Innommables s'emploient à répandre les fléaux déjà existants, Ku'gath, le Père de la Peste, se passionne pour l'élevage de nouvelles souches virulentes. Il rêve de créer un jour une contagion capable d'infecter les Dieux eux-mêmes. Le Père de la Peste chevauche un palanquin massif chargé d'attirail alchimique : fioles de poudre bouillonnante, flacons de liquides indescriptibles et sacs de jute gonflés à craquer de Nurglings.</p>\n      <p>Cette masse imposante est portée par un tapis de Nurglings peinant sous l'effort, et Ku'gath est escorté par d'innombrables autres, tous issus des cuves à pox du Père de la Peste.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Ajoute un Blessed Symptom supplémentaire lors de la génération de pestes</div>\n        <div class=\"attr-item\">Ajoute un Blessed Symptom supplémentaire : <strong>+1</strong> tous les 10 rangs du chef de faction</div>\n        <div class=\"attr-item\">Croissance : <strong>+10</strong></div>\n        <div class=\"attr-item\">Points de vie de recrutement : <strong>+10%</strong> pour toutes les unités Démoniaques</div>\n        <div class=\"attr-item\">Régiment favori The Frolickers Bubonic (Nurglings) : <strong>+1 capacité</strong></div>\n        <div class=\"attr-item\">Régiment favori Uncle Furuncle (Great Unclean One) : <strong>+15% résistance aux tirs</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Coût des Infections pour créer une Peste : <strong>-25%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Corruption de Nurgle : <strong>+2</strong> (province locale)</div>\n        <div class=\"attr-item\">Chance de propagation d'une peste : <strong>+15%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Ku'gath Plaguefather).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Ku'gath : les deux régiments favoris The Frolickers Bubonic (Nurglings, +1 capacité) et Uncle Furuncle (Great Unclean One, +15% résistance aux tirs), avec +10% de points de vie de recrutement pour toutes les unités Démoniaques (faction) et -25% de coût des Infections (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "kugath", "name": "Ku'gath Plaguefather", "qty": 1, "note": "Le Père de la Peste, monté sur son palanquin alchimique — sa puissance de sort et ses milliers de Nurglings explosifs (Necrotic Missiles) en font un artilleur biologique dévastateur autant qu'un solide combattant de mêlée"},
+      "heroes": [
+        {"icon": "heraldOfNurgle", "name": "Herald of Nurgle", "qty": 2, "note": "Soutien magique et de mêlée démoniaque en complément de Ku'gath"}
+      ],
+      "army": [
+        {"icon": "frolickersBubonic", "name": "The Frolickers Bubonic (Nurglings)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +10% de points de vie de recrutement (faction) — chair à canon increvable et bon marché"},
+        {"icon": "nurglings", "name": "Nurglings", "qty": 2, "note": "+10% de points de vie de recrutement (faction) — chair à canon increvable et bon marché"},
+        {"icon": "uncleFuruncle", "name": "Uncle Furuncle (Great Unclean One)", "qty": 1, "note": "Régiment favori : +15% de résistance aux tirs (faction) — Grand Démon monstrueux, point de rupture de la ligne ennemie"},
+        {"icon": "plaguebearersOfNurgle", "name": "Plaguebearers of Nurgle", "qty": 5, "note": "+10% de points de vie de recrutement (faction) — infanterie démoniaque résiliente, cœur de la horde"},
+        {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 2, "note": "Version d'élite des Plaguebearers pour percer les lignes les plus dures"},
+        {"icon": "plagueToadsOfNurgle", "name": "Plague Toads of Nurgle", "qty": 2, "note": "Cavalerie démoniaque rapide pour percer les flancs"},
+        {"icon": "plagueDronesOfNurgleDeathsHeads", "name": "Plague Drones of Nurgle (Death's Heads)", "qty": 2, "note": "Monstre volant démoniaque pour chasser l'artillerie et les tireurs isolés"},
+        {"icon": "chaosFuriesNurgle", "name": "Chaos Furies (Nurgle)", "qty": 1, "note": "Harceleur volant rapide et bon marché"}
+      ],
+      "magic": "Ku'gath manie la Lore of Nurgle (Stream of Corruption, Miasma of Pestilence, Curse of the Leper, Rancid Visitations, Blight Boil, Fleshy Abundance) avec une puissance dévastatrice, tout en pouvant invoquer des nuées de Nurglings explosifs au corps-à-corps.",
+      "note": "Le +10% de points de vie de recrutement pour toutes les unités Démoniaques (faction) profite à l'intégralité de cette armée, tandis que les deux régiments favoris renforcent des piliers différents : The Frolickers Bubonic (+1 capacité, faction) fournit une chair à canon increvable en nombre, et Uncle Furuncle (+15% résistance aux tirs, faction) blinde le Grand Démon monstrueux contre les tirs ennemis. Le -25% de coût des Infections et le +15% de chance de propagation d'une peste (seigneur) accélèrent la diffusion des maladies de Nurgle sur le champ de bataille et en campagne."
+    }
+  },
+  {
+    "id": "epidemius",
+    "numeral": "II",
+    "name": "Epidemius",
+    "epithet": "Le Comptable des Pestes",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Epidemius",
+    "faction": "Tallymen of Pestilence",
+    "seal": "epidemius",
+    "portraitImage": "assets/portraits/epidemius.png",
+    "lore": "<p>Epidemius est le Comptable choisi de Nurgle, l'un des sept Proctors de la Pestilence, chargé de cataloguer toutes les myriades de maladies du Seigneur de la Peste. Son parcours à travers les royaumes est imprévisible, car il se rend partout où le mènent les effluves de la pestilence. Epidemius est le plus occupé lorsque la puissance de Nurgle est à son comble, car la force du Seigneur de la Peste est inextricablement liée au flux et reflux constant des maladies.</p>\n      <p>Les armées en campagne, avec toute l'hygiène déplorable que cela implique, offrent une abondance de travail pour le Comptable, mais présentent aussi de rares occasions pour ses études les plus singulières — observer le déclin d'un mortel dont le corps et l'âme sont ravagés par la maladie est un privilège rare, bien que l'expérience se termine souvent trop vite. Heureusement, il y a toujours davantage de victimes à étudier...</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Gagne de puissantes récompenses selon le nombre de Pestes présentes sur les factions non-Nurgle</div>\n        <div class=\"attr-item\">Temps de cycle : <strong>-1</strong> pour les bâtiments Plagueflesh Poppies</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+2</strong> pour les Plaguebearers of Nurgle et Exalted Plaguebearers of Nurgle</div>\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+25%</strong> pour les Plague Cultists</div>\n        <div class=\"attr-item\">Régiment favori Festering Stooges (Exalted Plaguebearers of Nurgle) : <strong>+1 capacité</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité \"Tallyman's Blades\" (active, Invocation, 1 utilisation) — invoque une unité d'Exalted Plaguebearers, 50m de portée, 10s de durée, rechargement 120s, l'unité invoquée se dégrade avec le temps</div>\n        <div class=\"attr-item\">Capacité passive \"Regeneration\" en combattant un ennemi porteur d'une Peste — <strong>Soin par seconde : +0,10%</strong>, <strong>faiblesse aux dégâts de feu : +20%</strong>, durée illimitée</div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+5</strong> en combattant un ennemi porteur d'une Peste (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Epidemius) + captures des capacités \"Tallyman's Blades\" et \"Regeneration\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés d'Epidemius : le régiment favori Festering Stooges (Exalted Plaguebearers of Nurgle) à +1 capacité (faction), des Plaguebearers recrutés à rang plus élevé (+2, faction), profitant du +5 d'attaque en mêlée et de la régénération contre les ennemis porteurs d'une Peste (seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "epidemius", "name": "Epidemius", "qty": 1, "note": "Le Comptable des Pestes, toujours monté sur son Palanquin de Nurglings — son +5 d'attaque en mêlée et sa régénération contre les ennemis porteurs d'une Peste (seigneur) en font un duelliste redoutable contre les factions déjà infectées, épaulé par sa capacité \"Tallyman's Blades\" qui invoque des renforts d'Exalted Plaguebearers en pleine bataille"},
+      "heroes": [
+        {"icon": "heraldOfNurgle", "name": "Herald of Nurgle", "qty": 2, "note": "Soutien magique et de mêlée démoniaque en complément d'Epidemius"}
+      ],
+      "army": [
+        {"icon": "festeringStooges", "name": "Festering Stooges (Exalted Plaguebearers of Nurgle)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +2 rang de recrutement (faction) — élite démoniaque recrutée déjà expérimentée"},
+        {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 3, "note": "+2 rang de recrutement (faction) — version d'élite des Plaguebearers, déjà aguerrie"},
+        {"icon": "plaguebearersOfNurgle", "name": "Plaguebearers of Nurgle", "qty": 5, "note": "+2 rang de recrutement (faction) — cœur de la horde démoniaque, déjà aguerri"},
+        {"icon": "nurglings", "name": "Nurglings", "qty": 2, "note": "Chair à canon increvable et bon marché"},
+        {"icon": "rotFlies", "name": "Rot Flies", "qty": 3, "note": "Monstre volant rapide pour chasser l'artillerie et les tireurs isolés"},
+        {"icon": "plagueToadsOfNurgle", "name": "Plague Toads of Nurgle", "qty": 2, "note": "Cavalerie démoniaque rapide pour percer les flancs"}
+      ],
+      "magic": "Epidemius n'est pas un lanceur de sorts dédié — sa puissance vient de sa capacité \"Tallyman's Blades\" (invocation d'Exalted Plaguebearers) et de son bonus offensif contre les ennemis porteurs d'une Peste (seigneur), épaulé par les Herald of Nurgle pour le soutien magique.",
+      "note": "Le régiment favori Festering Stooges, à +1 capacité et +2 rang de recrutement (faction), forme une élite démoniaque déjà expérimentée dès sa formation, tout comme les Plaguebearers classiques qui profitent du même bonus de rang. Le +5 d'attaque en mêlée et la régénération contre les ennemis porteurs d'une Peste (seigneur) récompensent une stratégie visant à infecter l'ennemi avant l'engagement décisif, tandis que la capacité \"Tallyman's Blades\" permet d'invoquer des renforts d'Exalted Plaguebearers en pleine bataille. Les Rot Flies et Plague Toads apportent la mobilité nécessaire pour flanquer et chasser les cibles isolées."
+    }
+  },
+  {
+    "id": "tamurkhan",
+    "numeral": "III",
+    "name": "Tamurkhan the Maggot Lord",
+    "epithet": "Le Seigneur des Vers",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Tamurkhan_the_Maggot_Lord",
+    "faction": "The Maggot Host",
+    "seal": "tamurkhan",
+    "portraitImage": "assets/portraits/tamurkhan.png",
+    "lore": "<p>Tamurkhan le Seigneur des Vers a été connu sous de nombreux noms, chacun plus vil et grotesque que le précédent. Puissant Seigneur du Chaos et l'un des plus grands Champions Kurgans de Nurgle de l'histoire récente, son divin patron l'a béni du pouvoir de se terrer dans presque n'importe quel hôte, prenant le contrôle de son corps comme un marionnettiste. Bien que son cadavre asticoté et putride ait usurpé de nombreux visages, le Tyran Ogre Karaka Brise-Montagne est devenu son hôte favori.</p>\n      <p>Dans ce corps puissant, Tamurkhan rassemble désormais sa grande horde, déterminé à accomplir une prophétie tordue annonçant un règne de terreur ravageant les Terres du Chaos et au-delà. La mort et la maladie se déchaîneront dans le sillage du Porteur de Désolation, car ses hordes semblent sans fin et déterminées à détruire le monde !</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès aux Chieftains de Tamurkhan, apportant héros, unités et capacités uniques</div>\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+10%</strong> (toutes armées)</div>\n        <div class=\"attr-item\">Points de vie de recrutement : <strong>+10%</strong> pour toutes les unités non-Démoniaques</div>\n        <div class=\"attr-item\">Régiment favori The Rotting Riders (Rot Knights) : <strong>+15% résistance aux tirs</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Temps de récupération des blessures : <strong>-3</strong> tours</div>\n        <div class=\"attr-item\">Capacité \"Nurgle's Favoured Son\" (active, Augment) — <strong>Défense en mêlée : +24</strong>, <strong>Résistance aux dégâts : +20%</strong>, durée 40s, rechargement 120s</div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+5</strong> pour les unités non-Démoniaques (armée du seigneur)</div>\n        <div class=\"attr-item\">Immunisé à la Psychologie pour les unités non-Démoniaques (armée du seigneur) — immunisé aux attaques psychologiques (Peur et Terreur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran complète de l'onglet Lord Details en jeu (Tamurkhan) + captures des capacités \"Nurgle's Favoured Son\" et \"Immune to Psychology\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Tamurkhan : un corps mortel 100% non-Démoniaque profitant du +5 d'attaque en mêlée et de l'immunité à la Psychologie (seigneur), du régiment favori The Rotting Riders (Rot Knights) à +15% de résistance aux tirs (faction), ainsi que du +10% de points de vie de recrutement (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "tamurkhan", "name": "Tamurkhan the Maggot Lord", "qty": 1, "note": "Le Porteur de Désolation, terré dans le corps de l'Ogre Tyran Karaka Brise-Montagne — sa masse colossale et ses attaques de collision lui permettent de fracasser les lignes d'infanterie sans bonus anti-charge, sa capacité \"Nurgle's Favoured Son\" (+24 défense en mêlée, +20% résistance aux dégâts, seigneur) le rendant temporairement quasi inarrêtable"},
+      "heroes": [
+        {"icon": "chaosSorcererNurgle", "name": "Chaos Sorcerer of Nurgle", "qty": 1, "note": "Soutien magique via la Lore of Nurgle"},
+        {"icon": "exaltedHeroNurgle", "name": "Exalted Hero of Nurgle", "qty": 1, "note": "Renfort de mêlée mortel robuste, profite du +5 d'attaque en mêlée et de l'immunité à la Psychologie (seigneur)"}
+      ],
+      "army": [
+        {"icon": "plagueOgres", "name": "Plague Ogres", "qty": 4, "note": "+5 attaque en mêlée, immunisé à la Psychologie (seigneur), +10% PV de recrutement (faction) — brise-lignes lourd et increvable"},
+        {"icon": "chaosWarriorsOfNurgleGreatWeapons", "name": "Chaos Warriors of Nurgle (Great Weapons)", "qty": 5, "note": "Mêmes bonus (seigneur+faction) — cœur de mêlée mortel anti-armure"},
+        {"icon": "pestigorsNurgle", "name": "Pestigors (Nurgle)", "qty": 4, "note": "Mêmes bonus (seigneur+faction) — infanterie mortelle véloce et résiliente"},
+        {"icon": "rottingRiders", "name": "The Rotting Riders (Rot Knights)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : +15% de résistance aux tirs (faction), mêmes bonus (seigneur+faction) — variante d'élite unique des Rot Knights"},
+        {"icon": "rotKnights", "name": "Rot Knights", "qty": 3, "note": "Mêmes bonus (seigneur+faction) — cavalerie lourde mortelle pour les charges de flanc"}
+      ],
+      "magic": "Tamurkhan n'est pas lui-même un lanceur de sorts — sa puissance vient de sa masse colossale et de ses capacités de zone, épaulé par un Chaos Sorcerer of Nurgle pour le soutien magique via la Lore of Nurgle.",
+      "note": "Le +5 d'attaque en mêlée et l'immunité à la Psychologie pour les unités non-Démoniaques (seigneur), combinés au +10% de points de vie de recrutement pour ces mêmes unités (faction), font de cette armée 100% mortelle un mur increvable et inébranlable qui ne fuira jamais. Le régiment favori The Rotting Riders, à +15% de résistance aux tirs (faction), en fait une cavalerie de flanc particulièrement dure à abattre à distance. Les Plague Ogres apportent la puissance de choc nécessaire pour percer les lignes ennemies, pendant que Tamurkhan lui-même, avec sa masse énorme, ses attaques de collision et sa capacité \"Nurgle's Favoured Son\" (+24 défense en mêlée, +20% résistance aux dégâts, seigneur), fracasse l'infanterie sans même avoir besoin de bonus anti-charge."
+    }
+  }
+]
