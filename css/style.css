@@ -452,6 +452,11 @@ body.search-theme{
    défaut du navigateur, box-sizing cohérent pour tous les calculs de taille). */
 *{box-sizing:border-box; margin:0; padding:0;}
 
+/* Filet de sécurité images : aucune image ne peut déborder de son conteneur,
+   quelle que soit la taille d'écran. (Les conteneurs d'images du site fixent
+   déjà width/height + object-fit ; cette règle protège les cas non prévus.) */
+img{ max-width: 100%; }
+
 body{
   background: radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
   color: var(--text);
@@ -463,6 +468,11 @@ body{
 .app{
   display:flex;
   min-height:100vh;
+  /* Sur très grand écran, on centre le "codex" (sidebar + page) au lieu de
+     le laisser ancré à gauche avec un grand vide à droite. 1200px = largeur
+     de la sidebar (280px) + largeur de lecture max de la page (920px). */
+  max-width: 1200px;
+  margin-inline: auto;
 }
 
 /* ---- Sidebar / spine of the codex ---- */
@@ -779,7 +789,9 @@ body{
 .lord-title{
   font-family:'Cinzel', serif;
   font-weight:900;
-  font-size: 40px;
+  /* Taille fluide : suit la largeur de l'écran (6vw) entre un minimum de
+     26px (petits mobiles) et un maximum de 40px (bureau), sans saut brusque. */
+  font-size: clamp(26px, 6vw, 40px);
   color: var(--text);
   line-height:1.05;
 }
@@ -827,13 +839,15 @@ body{
 .section-head svg{ width:20px; height:20px; flex-shrink:0; }
 .section-title{
   font-family:'Cinzel', serif;
-  font-size: 19px;
+  font-size: clamp(16px, 3.5vw, 19px);
   letter-spacing: 1px;
   color: var(--accent-primary-bright);
   text-transform: uppercase;
 }
 .section-body{
-  font-size: 18px;
+  /* Corps de texte légèrement réduit sur petits écrans pour éviter des
+     lignes trop courtes, plafonné à 18px pour rester confortable à lire. */
+  font-size: clamp(16px, 2.4vw, 18px);
   line-height: 1.75;
   color: var(--text);
 }
@@ -924,7 +938,8 @@ body.search-theme{
 .search-title{
   font-family:'Space Grotesk', sans-serif;
   font-weight:700;
-  font-size: 46px;
+  /* Titre d'accueil fluide : de 28px sur petit mobile à 46px sur bureau. */
+  font-size: clamp(28px, 7vw, 46px);
   letter-spacing: -0.5px;
   text-transform: none;
   background: linear-gradient(100deg, var(--text) 0%, var(--accent-secondary) 45%, var(--accent-primary-bright) 100%);
@@ -1137,13 +1152,47 @@ body.search-theme .faction-tab.active{
   color: var(--accent-secondary);
 }
 
-/* ---- Responsive : écrans étroits (mobile/tablette portrait) ---- */
+/* ============================================================================
+   RESPONSIVE — les règles sont ordonnées du plus large au plus étroit.
+   Chaque media query ne redéfinit QUE ce qui doit changer à ce palier ;
+   tout le reste hérite des règles de base ci-dessus (approche "desktop-first").
+   Paliers :
+     ≤ 1080px : petit bureau / tablette paysage — on resserre les marges et la
+                sidebar pour laisser respirer le contenu à côté de celle-ci.
+     ≤ 780px  : tablette portrait / grand mobile — la sidebar passe au-dessus
+                du contenu (empilement vertical).
+     ≤ 480px  : petit mobile — on compacte davantage paddings et éléments.
+   ============================================================================ */
+
+/* ---- Petit bureau / tablette paysage : la sidebar fixe (280px) + le grand
+   padding (72px) laissaient trop peu de place au contenu (une seule colonne
+   d'unités). On réduit les deux pour récupérer de la largeur utile. ---- */
+@media (max-width: 1080px){
+  .sidebar{ width: 240px; }
+  .page{ padding: 48px 40px; }
+}
+
+/* ---- Tablette portrait / grand mobile : passage à une mise en page
+   verticale (la sidebar devient un bandeau de navigation en haut). ---- */
 @media (max-width: 780px){
-  .app{ flex-direction: column; }
+  .app{ flex-direction: column; max-width: none; }   /* annule le centrage grand écran */
   .sidebar{ width:100%; border-right:none; border-bottom:1px solid var(--border); padding:20px 0; }
   .page{ padding: 32px 24px; }
-  .lord-title{ font-size: 30px; }
   .build-grid{ grid-template-columns: 1fr; }
   .search-page{ padding: 48px 20px 64px; }
-  .search-title{ font-size: 30px; }
+}
+
+/* ---- Petit mobile : on resserre l'ensemble pour maximiser la surface utile
+   et garder les cartes/portraits à une taille raisonnable. ---- */
+@media (max-width: 480px){
+  .page{ padding: 24px 16px; }
+  .section{ margin-bottom: 30px; }
+  .banner{ gap: 16px; }
+  .seal{ width: 60px; height: 130px; }
+  /* Aligne les paddings latéraux des éléments de la sidebar sur 20px. */
+  .sidebar-title, .sidebar-sub, .back-link, .lord-item{ padding-left: 20px; padding-right: 20px; }
+  .lord-item{ padding-top: 11px; padding-bottom: 11px; }
+  .unit-icon{ width: 48px; height: 104px; }
+  .search-page{ padding: 36px 16px 56px; }
+  .search-hero{ margin-bottom: 36px; }
 }

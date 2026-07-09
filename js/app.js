@@ -183,8 +183,10 @@ function unitCardHtml(u){
   //    (fusion des objets `seals` et `unitIcons`, voir data.js) ;
   // 3) sinon, une chaîne vide (icône manquante, ne devrait normalement pas
   //    arriver si les données sont correctement renseignées).
+  // loading="lazy" + decoding="async" : les images d'unités situées plus bas
+  // dans la fiche ne sont chargées qu'à l'approche du viewport.
   const icon = unitImages[u.icon]
-    ? `<img src="${unitImages[u.icon]}" alt="${u.name}">`
+    ? `<img src="${unitImages[u.icon]}" alt="${u.name}" loading="lazy" decoding="async">`
     : (iconLookup[u.icon] || '');
   return `
     <div class="unit-card">

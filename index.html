@@ -9,6 +9,7 @@
 -->
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Builds Total War Warhammer 3 — Recherche de seigneurs</title>
 <link rel="icon" href="assets/favicon.ico">
 <link rel="stylesheet" href="css/style.css">
@@ -19,20 +20,21 @@
 <body class="search-theme">
 
 <div class="search-page">
-  <div class="search-hero">
-    <div class="search-title">Builds Total War Warhammer 3</div>
+  <!-- En-tête de page : titre, sous-titre, champ de recherche et onglets. -->
+  <header class="search-hero">
+    <h1 class="search-title">Builds Total War Warhammer 3</h1>
     <div class="search-subtitle">Recherche de seigneurs, toutes factions</div>
     <div class="search-divider"><span>❖</span></div>
     <!-- Champ de recherche texte libre : filtré en temps réel par
          js/search.js (écouteur sur l'événement "input"). -->
-    <input type="search" id="search-input" class="search-input search-input-lg" placeholder="Rechercher un seigneur, une épithète, une faction…">
+    <input type="search" id="search-input" class="search-input search-input-lg" placeholder="Rechercher un seigneur, une épithète, une faction…" aria-label="Rechercher un seigneur, une épithète, une faction">
     <!-- Rempli dynamiquement par renderFactionTabs() (js/data.js), appelée
          depuis renderResults() (js/search.js). -->
-    <div class="faction-tabs" id="faction-tabs"></div>
-  </div>
-  <!-- Grille de cartes de résultats, générée par renderResults() /
-       resultCardHtml() dans js/search.js. -->
-  <div class="results-grid" id="results-grid"></div>
+    <nav class="faction-tabs" id="faction-tabs" aria-label="Filtrer par faction"></nav>
+  </header>
+  <!-- Contenu principal : grille de cartes de résultats, générée par
+       renderResults() / resultCardHtml() dans js/search.js. -->
+  <main class="results-grid" id="results-grid"></main>
 </div>
 
 <!-- data.js doit être chargé avant search.js : ce dernier utilise les

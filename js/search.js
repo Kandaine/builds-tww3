@@ -23,8 +23,11 @@ let searchQuery = '';
 function resultCardHtml(l){
   // Portrait affiché sur la carte : vraie image si disponible, sinon SVG
   // de secours (objet `seals`, voir data.js).
+  // loading="lazy" + decoding="async" : la page de recherche affiche jusqu'à
+  // 106 portraits ; on ne charge donc que ceux qui approchent du viewport, ce
+  // qui accélère nettement l'affichage initial, surtout sur mobile/3G.
   const portrait = l.portraitImage
-    ? `<img src="${l.portraitImage}" alt="${l.name}">`
+    ? `<img src="${l.portraitImage}" alt="${l.name}" loading="lazy" decoding="async">`
     : (seals[l.seal] || '');
   // Le lien pointe vers la page HTML de la faction du seigneur (l.groupPage,
   // ex: "dwarfs.html"), avec l'id du seigneur en paramètre d'URL, afin que
