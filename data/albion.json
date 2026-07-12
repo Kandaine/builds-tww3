@@ -1,0 +1,74 @@
+[
+  {
+    "id": "dural-durak",
+    "numeral": "I",
+    "name": "Dural Durak",
+    "epithet": "Premier des Truthsayers",
+    "wikiUrl": "",
+    "faction": "Order of the Truthsayers",
+    "seal": "duralDurak",
+    "portraitImage": "assets/portraits/duralDurak.png",
+    "lore": "<p>Albion est une petite île battue par les vents au large de Norsca, noyée dans une brume perpétuelle et faite de tourbières, de marais et de fens. Ses tribus d'humains peints au woad sont menées par les <strong>Truthsayers</strong>, gardiens des mystérieuses Pierres Ogham. Cette faction est ajoutée par un mod (OvN Lost Factions).</p>\n      <p>Dural Durak est le plus puissant et le plus sage des Truthsayers, guide d'Albion en temps de paix comme de guerre. Ayant chassé le Maître Sombre de la Citadelle de Plomb, il entreprend de purger l'île des derniers envahisseurs du Chaos et de <strong>reconstruire les Pierres Ogham</strong> pour ramener Albion dans l'alignement du Plan des Anciens.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisé à l'attrition de corruption du Chaos</div>\n        <div class=\"attr-item\">Revenu du pillage (raiding) : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Chance de réussite des embuscades : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Reconstruire toutes les Pierres de Voie (Waystones) des régions d'Albion pour gagner des bonus — attention : des invasions peuvent survenir tant que la reconstruction n'est pas achevée</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité de réserve des Vents de Magie <em>ennemis</em> : <strong>-5</strong> (région locale)</div>\n        <div class=\"attr-item\">Contrôle : <strong>+2</strong> (toutes les provinces)</div>\n        <div class=\"attr-item\">Corruption : <strong>-5</strong> (province locale)</div>\n        <div class=\"attr-item\">Capacité de réserve des Vents de Magie : <strong>+10</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (OvN Lost Factions — Albion). Effets de faction et de seigneur confirmés par capture d'écran de l'onglet Lord Details en jeu.</div>\n    ",
+    "build": {
+      "role": "Ost défensif de Truthsayer : une ligne d'infanterie d'élite (Oathsworn) ancrée par la magie druidique de Dural Durak et de ses casters, épaulée par les constructs Ogham (Fenbeasts, Fen Hulk) et les Géants d'Albion. Peu de tir, mais une forte résilience qui monte avec les Vents de Magie (peinture de woad) et une puissance magique déterminante",
+      "totalSlots": 20,
+      "lord": {"icon": "duralDurak", "name": "Dural Durak", "qty": 1, "note": "Premier des Truthsayers — caster maître des Vents de la nature : il ancre l'armée par ses sorts, invoque et soutient les constructs Ogham (Fenbeasts, Fen Hulk) et exalte la ligne d'Albion grâce au woad rituel qui se renforce avec les Vents de Magie"},
+      "heroes": [
+        {"icon": "albDruidicPriestess", "name": "Druidic Priestess", "qty": 1, "note": "Conseillère magique de soutien — sorts plus simples mais précieux pour renforcer la ligne et compléter Dural Durak"},
+        {"icon": "albCentaurOghamWarden", "name": "Centaur Ogham-Warden (Life)", "qty": 1, "note": "Variante Vie (Ghyran) : héros-caster centaure qui soigne et soutient la ligne défensive tout en restant mobile pour protéger les flancs — complète la magie de Dural Durak"}
+      ],
+      "army": [
+        {"icon": "albOathsworn", "name": "Oathsworn", "qty": 3, "note": "Aristocratie militaire d'Albion — cœur professionnel de la ligne, robuste, qui tient le centre sous les buffs de woad"},
+        {"icon": "albOathswornHalberds", "name": "Oathsworn (Halberds)", "qty": 2, "note": "Hallebardes capables de fendre un homme en deux — anti-grande cible et garde du corps des chefs"},
+        {"icon": "albMaidenguard", "name": "Maidenguard", "qty": 2, "note": "Guerrières au falx — infanterie perforante féroce et respectée pour ouvrir l'armure adverse"},
+        {"icon": "albChosenOfIshernos", "name": "Chosen of Ishernos", "qty": 1, "note": "Champion réincarné en enveloppe de plante et de terre par un rituel secret — élite de mêlée de la Mère la Terre"},
+        {"icon": "albHuntresses", "name": "Huntresses", "qty": 2, "note": "Le seul vrai appui à distance de l'armée — arcs pour amollir l'ennemi avant le choc"},
+        {"icon": "albFenbeasts", "name": "Fenbeasts", "qty": 2, "note": "Constructs de boue et de bois animés par un éclat de Pierre Ogham — pavés increvables invoqués par les Truthsayers"},
+        {"icon": "albFenHulk", "name": "Fen Hulk", "qty": 1, "note": "Variante massive du Fenbeast, animée par une Pierre Ogham entière — monstre de première ligne"},
+        {"icon": "albGiant", "name": "Albion Giant", "qty": 1, "note": "Dernier don des Anciens — géant de choc et de terreur, moins décliné que ses cousins hors d'Albion"},
+        {"icon": "albDruidicInitiates", "name": "Druidic Initiates", "qty": 1, "note": "Apprentis magiquement doués sur la voie des Truthsayers — soutiennent les clansmen en apprenant à manier leur magie, appoint arcanique qui pallie le manque de tir"},
+        {"icon": "albLlenogCatapult", "name": "Llenog Catapult", "qty": 1, "note": "Catapulte fruste mais fonctionnelle — la seule artillerie de l'armée pour briser les formations"},
+        {"icon": "albBarrowWights", "name": "Ogham Barrow Wights", "qty": 1, "note": "Rois et guerriers d'Albion revenus défendre leur repos sacré — élite morte-vivante tenace"}
+      ],
+      "magic": "Dural Durak est un caster dédié (magie druidique des Truthsayers, Vents de la nature) : il soutient la ligne, invoque les constructs Ogham et exalte ses guerriers via le woad rituel. Une Druidic Priestess, un Centaur Ogham-Warden (Life) et les Druidic Initiates complètent le volet magique, essentiel car l'armée manque d'appui à distance.",
+      "note": "Build synergique avec les effets de Dural : la domination des Vents de Magie. Ses effets de seigneur lui donnent <strong>+10 de réserve de Vents de Magie</strong> tout en retirant <strong>-5 à l'ennemi</strong> dans la région — d'où quatre sources de magie (Dural, Druidic Priestess, Centaur Ogham-Warden Life, Druidic Initiates) qui tournent à plein pendant que les casters adverses s'étranglent. Le woad rituel, qui se renforce avec les Vents de Magie, rend en prime toute la ligne plus résiliente. La ligne d'Oathsworn tient le centre pendant que les Fenbeasts et le Fen Hulk fixent l'ennemi et que le Géant et les Barrow Wights frappent en pointe ; les Maidenguard apportent le perforant, les Huntresses et la Llenog Catapult le peu de frappe à distance disponible. À jouer patiemment, en laissant la magie et les constructs user l'adversaire — le +25% d'embuscade et de pillage récompensant par ailleurs une approche opportuniste."
+    }
+  },
+  {
+    "id": "mhorrinion",
+    "numeral": "II",
+    "name": "Mhorriníon",
+    "epithet": "la Reine-Meurtrière",
+    "wikiUrl": "",
+    "faction": "Host of the Ravenqueen",
+    "seal": "morrigan",
+    "portraitImage": "assets/portraits/morrigan.png",
+    "lore": "<p>Nul ne connaît la véritable origine de la mystérieuse femme appelée Mhorriníon. Beaucoup la tiennent pour une déesse de la mort et de la guerre, fille du Dieu de la Mort et Reine-Corbeau, qui vient en aide à Albion dans ses heures les plus sombres. Cette faction est ajoutée par un mod (OvN Lost Factions).</p>\n      <p>Assoiffée de vengeance après les ravages infligés à Albion par le Chaos, Mhorriníon a rassemblé un ost de tribus zélées et porte la guerre jusqu'au cœur des Puissances de la Ruine, en Norsca et dans les Désolations du Chaos. « Que Dural Durak et ses Truthsayers se terrent en Albion — moi, j'apporterai guerre et fureur aux Dieux Sombres eux-mêmes ! »</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisée à l'attrition de corruption du Chaos</div>\n        <div class=\"attr-item\">Détruire les Forces du Chaos ou reconstruire les Pierres de Voie (Waystones) pour gagner des <strong>Renforts de Clan</strong> — mais gare : cela attirera des prétendants</div>\n        <div class=\"attr-item\">Corruption : <strong>-10</strong></div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+6</strong> face aux Warriors of Chaos, Daemons of Chaos, Chaos Dwarfs et Norsca</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+15%</strong></div>\n        <div class=\"attr-item\">Champ de vision de campagne : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Revenu du butin d'après-bataille : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités Corbeaux (Crows &amp; Ravens) (armée du seigneur)</div>\n        <div class=\"attr-item\">Commandement ennemi : <strong>-6</strong> (armées ennemies dans la province locale)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (OvN Lost Factions — Albion). Effets de faction et de seigneur confirmés par capture d'écran de l'onglet Lord Details en jeu.</div>\n    ",
+    "build": {
+      "role": "Ost d'assaut de la Reine-Corbeau, taillé pour ses effets : une croisade de mêlée rapide et furieuse contre le Chaos qui exploite à fond le +6 en attaque de mêlée face aux factions du Chaos et le -6 de commandement infligé aux armées ennemies. Cœur de choc frénétique (Woad Raiders, Bloodsworn), aile de cavalerie mobile et ses oiseaux sacrés (Crows, Ravens) à l'entretien réduit de 25% — une masse de fureur guerrière qui fait rompre l'ennemi avant que sa propre discipline ne cède",
+      "totalSlots": 20,
+      "lord": {"icon": "morrigan", "name": "Mhorriníon", "qty": 1, "note": "La Reine-Meurtrière, déesse de la mort et de la guerre, volant au-dessus du champ de bataille — foudroie les serviteurs du Chaos et galvanise son ost par sa fureur vengeresse ; ses exploits attirent les renforts d'Albion (et l'ire des Dieux Sombres)"},
+      "heroes": [
+        {"icon": "albPettyChieftain", "name": "Petty Chieftain", "qty": 1, "note": "Puissant guerrier menant un clan — officier de mêlée qui ancre la ligne et relaie la fureur de la Reine-Corbeau"},
+        {"icon": "albCentaurOghamWarden", "name": "Centaur Ogham-Warden (Great Axe)", "qty": 1, "note": "Variante Grande Hache : héros de mêlée centaure très mobile, taillé pour charger aux côtés de l'aile de cavalerie et des Centaures"}
+      ],
+      "army": [
+        {"icon": "albWoadRaiders", "name": "Woad Raiders", "qty": 3, "note": "Combattent avec un abandon sauvage, confiants dans la protection de leurs motifs magiques — cœur de choc frénétique de l'ost"},
+        {"icon": "albBloodsworn", "name": "The Bloodsworn", "qty": 1, "note": "Régiment de Renom (Woad Raiders) : guerriers déshonorés devenus troupes de choc frénétiques qui ne battent jamais en retraite"},
+        {"icon": "albWarbandGreatWeapons", "name": "Warband (Great Weapons)", "qty": 2, "note": "Guerriers d'Albion aux armes lourdes — apport perforant pour ouvrir l'infanterie et les monstres du Chaos"},
+        {"icon": "albHighlanders", "name": "Highlanders", "qty": 2, "note": "Montagnards reclus et farouchement indépendants, endurcis par un pays rude — élite d'armes lourdes"},
+        {"icon": "albHobelars", "name": "Hobelars", "qty": 2, "note": "Cavalerie légère des guerriers fortunés — harcèlement, flanquement et poursuite rapides"},
+        {"icon": "albOathswornCavalry", "name": "Oathsworn Cavalry", "qty": 2, "note": "Nobles mieux équipés et entraînés — cavalerie de choc pour percer les flancs"},
+        {"icon": "albCentaurs", "name": "Centaurs", "qty": 1, "note": "Créatures fières des plaines d'Albion ralliées en temps de péril — cavalerie monstrueuse de choc mobile, +6 attaque en mêlée vs Chaos comme tout le reste de l'ost"},
+        {"icon": "albWarChariot", "name": "War Chariot", "qty": 1, "note": "Char prisé de la noblesse guerrière d'Albion — impact de charge dévastateur qui, couplé au -6 de commandement ennemi, fait rompre les lignes"},
+        {"icon": "albGiantBlooded", "name": "Aitheach Giant-Blooded", "qty": 1, "note": "Leur grande force les rend précieux dans tout ost — infanterie monstrueuse qui brise les formations"},
+        {"icon": "albCrows", "name": "Crows", "qty": 1, "note": "Nuée de corbeaux sacrés du Dieu de la Mort et de la Reine-Corbeau — unité volante bon marché (entretien -25% du seigneur) pour harceler, flanquer et fixer les tirailleurs ennemis"},
+        {"icon": "albRavens", "name": "Ravens", "qty": 1, "note": "Serviteurs de Mhorr qui dévorent la chair des morts — unité volante bon marché (entretien -25% du seigneur) idéale pour chasser artillerie et casters ennemis ; prolonge le thème aérien de la Reine-Corbeau"}
+      ],
+      "magic": "L'armée n'est pas centrée sur la magie : Mhorriníon, déesse de la mort, foudroie et galvanise depuis les airs, mais la force de l'ost réside dans la fureur guerrière, la vitesse et le choc — amplifiés par le woad rituel qui se renforce avec les Vents de Magie. Le Centaur Ogham-Warden (Great Axe) apporte un frappeur mobile plutôt qu'un caster.",
+      "note": "Build pensé autour de ses effets. Le <strong>+6 en mêlée contre le Chaos</strong> (Warriors of Chaos, Daemons of Chaos, Chaos Dwarfs, Norsca) récompense une composition presque intégralement de corps-à-corps : Woad Raiders et Bloodsworn (frénésie, jamais de retraite) en fer de lance, Great Weapons et Highlanders pour le perforant, aile de cavalerie (Hobelars, Oathsworn Cavalry, Centaures) et War Chariot pour envelopper et charger. Le <strong>-6 de commandement ennemi</strong> transforme chaque choc en déroute. Les <strong>Crows et Ravens</strong>, quasi gratuits grâce au -25% d'entretien, dominent le ciel : harcèlement, chasse à l'artillerie et aux casters. À jouer vite et fort (mobilité de campagne +15%) : les unités les moins aguerries peuvent rompre si le combat s'éternise, et l'agression alimente les Renforts de Clan venus d'Albion."
+    }
+  }
+]

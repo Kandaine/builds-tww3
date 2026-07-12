@@ -427,6 +427,23 @@
   --border: #263a1f;
 }
 
+/* ---- Albion (mod) : brumes émeraude de l'île, pierre Ogham et bleu woad ---- */
+.theme-albion{
+  --bg: #0b1512;
+  --bg-glow: #12211d;
+  --panel: #101a17;
+  --panel-light: #1a2b26;
+  --panel-deep: #0a120f;
+  --accent-primary: #2e8f8a;
+  --accent-primary-bright: #46b8b1;
+  --accent-primary-rgb: 46,143,138;
+  --accent-secondary: #b7a15a;
+  --accent-secondary-rgb: 183,161,90;
+  --text: #e4ede8;
+  --text-dim: #8fa79c;
+  --border: #233a34;
+}
+
 /* ---- Page de recherche : parchemin, encre et sceaux de cire, dans
    l'esprit de Warhammer: The Old World — volontairement distincte des
    thèmes de faction ci-dessus, puisqu'elle réunit toutes les factions. ---- */

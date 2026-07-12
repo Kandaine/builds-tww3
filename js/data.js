@@ -101,6 +101,10 @@ const seals = {
   drukim: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2l2 6h6l-5 4 2 6-5-4-5 4 2-6-5-4h6Z"/><path d="M12 13v9"/></svg>`,
   // Ghurzhaal (Chaos Ogre Tyrant) — mâchoire dévorante hérissée de crocs (« the Dreaded Maw »).
   ghurzhaal: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 8c2-3 5-4 8-4s6 1 8 4"/><path d="M4 8l2 3 2-3 2 3 2-3 2 3 2-3 2 3 2-3"/><path d="M6 15c2 4 10 4 12 0"/></svg>`,
+  // Dural Durak (Truthsayer d'Albion) — pierre Ogham gravée d'un triskèle (nœud celtique).
+  duralDurak: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 12c0-3 2-5 4-4M12 12c2 2 2 5-1 6M12 12c-3-1-4-4-2-6"/></svg>`,
+  // Mhorriníon la Reine-Corbeau (Murder-Queen) — corbeau, oiseau du dieu de la mort.
+  morrigan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 7c3 0 5 1 8 4 2-2 4-3 6-2-1 2-2 3-4 3 1 2 1 4-1 6-2-2-3-4-3-6-3 0-5-2-6-5Z"/><path d="M12 11l-2 9"/></svg>`,
   azazel: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v6"/><path d="M6 8l6-2 6 2-2 6h-8Z"/><path d="M9 14c-2 2-2 5 0 7M15 14c2 2 2 5 0 7"/></svg>`,
   festus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M10 2h4v5l3 3c1 1 1 3 0 4l-1 1H8l-1-1c-1-1-1-3 0-4l3-3Z"/><path d="M9 18h6v3H9Z"/></svg>`,
   vilitch: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="15" cy="14" r="4"/><path d="M9 11c0 4 3 7 6 7M12 5c3 0 5 2 5 5"/></svg>`,
@@ -954,6 +958,34 @@ const unitImages = {
   chaosOgresNurgle: 'assets/units/chaosOgresNurgle.png',
   chaosWastesBehemoth: 'assets/units/chaosWastesBehemoth.png',
   chaosOgreBrawlersDual: 'assets/units/chaosOgreBrawlersDual.png',
+  // --- Albion (mod OvN Lost Factions) : unités partagées par les 2 seigneurs
+  // légendaires (Dural Durak, Mhorriníon). Images extraites du .pack zstd
+  // (infopics/portholes) au format portrait ~60×130. ---
+  albOathsworn: 'assets/units/albOathsworn.png',
+  albOathswornHalberds: 'assets/units/albOathswornHalberds.png',
+  albHighlanders: 'assets/units/albHighlanders.png',
+  albMaidenguard: 'assets/units/albMaidenguard.png',
+  albChosenOfIshernos: 'assets/units/albChosenOfIshernos.png',
+  albHuntresses: 'assets/units/albHuntresses.png',
+  albFenbeasts: 'assets/units/albFenbeasts.png',
+  albFenHulk: 'assets/units/albFenHulk.png',
+  albGiant: 'assets/units/albGiant.png',
+  albDruidicInitiates: 'assets/units/albDruidicInitiates.png',
+  albLlenogCatapult: 'assets/units/albLlenogCatapult.png',
+  albBarrowWights: 'assets/units/albBarrowWights.png',
+  albDruidicPriestess: 'assets/units/albDruidicPriestess.png',
+  albCentaurOghamWarden: 'assets/units/albCentaurOghamWarden.png',
+  albWoadRaiders: 'assets/units/albWoadRaiders.png',
+  albBloodsworn: 'assets/units/albBloodsworn.png',
+  albWarbandGreatWeapons: 'assets/units/albWarbandGreatWeapons.png',
+  albHobelars: 'assets/units/albHobelars.png',
+  albOathswornCavalry: 'assets/units/albOathswornCavalry.png',
+  albCentaurs: 'assets/units/albCentaurs.png',
+  albWarChariot: 'assets/units/albWarChariot.png',
+  albGiantBlooded: 'assets/units/albGiantBlooded.png',
+  albCrows: 'assets/units/albCrows.png',
+  albRavens: 'assets/units/albRavens.png',
+  albPettyChieftain: 'assets/units/albPettyChieftain.png',
   deathHag: 'assets/units/deathHag.png',
   khainiteAssassin: 'assets/units/khainiteAssassin.png',
   sorceressDark: 'assets/units/sorceressDark.png',
@@ -1057,6 +1089,8 @@ const unitImages = {
   belakor: 'assets/portraits/belakor.png',
   drukim: 'assets/portraits/drukim.png',
   ghurzhaal: 'assets/portraits/ghurzhaal.png',
+  duralDurak: 'assets/portraits/duralDurak.png',
+  morrigan: 'assets/portraits/morrigan.png',
   azazel: 'assets/portraits/azazel.png',
   festus: 'assets/portraits/festus.png',
   vilitch: 'assets/portraits/vilitch.png',
@@ -1498,7 +1532,10 @@ const FACTION_GROUPS = [
   { id: 'tomb-kings', label: 'Tomb Kings', file: 'data/tomb-kings.json', page: 'tomb_kings.html' },
   { id: 'tzeentch', label: 'Tzeentch', file: 'data/tzeentch.json', page: 'tzeentch.html' },
   { id: 'vampire-coast', label: 'Vampire Coast', file: 'data/vampire-coast.json', page: 'vampire_coast.html' },
-  { id: 'wood-elves', label: 'Wood Elves', file: 'data/wood-elves.json', page: 'wood_elves.html' }
+  { id: 'wood-elves', label: 'Wood Elves', file: 'data/wood-elves.json', page: 'wood_elves.html' },
+  // Albion — faction ajoutée par un mod (OvN Lost Factions). 2 seigneurs
+  // légendaires (Dural Durak, Mhorriníon).
+  { id: 'albion', label: 'Albion', file: 'data/albion.json', page: 'albion.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1533,7 +1570,8 @@ const factionBanners = {
   'tomb-kings': 'assets/banners/tombKings.jpg',
   'tzeentch': 'assets/banners/tzeentch.jpg',
   'vampire-coast': 'assets/banners/vampireCoast.jpg',
-  'wood-elves': 'assets/banners/woodElves.jpg'
+  'wood-elves': 'assets/banners/woodElves.jpg',
+  'albion': 'assets/banners/albion.jpg'
 };
 
 // ============================================================================
