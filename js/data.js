@@ -117,6 +117,12 @@ const seals = {
   skattach: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 12c3-5 6-7 9-7s6 2 9 7c-3 5-6 7-9 7s-6-2-9-7Z"/><circle cx="12" cy="12" r="2.5"/></svg>`,
   // Kroll (Tendrils of Doom) — la Princesse Démon poulpe et ses tentacules.
   kroll: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M8 4c2-1 6-1 8 0 2 2 2 5 0 7-1 1-1 2 0 3-2-1-3 0-3 2-1-1-2-1-2 0-1-1-2-1-2 0 0-2-1-3-3-2 2-2 2-5 0-7C6 6 6 5 8 4Z"/><circle cx="10" cy="9" r=".7" fill="var(--accent-secondary)"/><circle cx="14" cy="9" r=".7" fill="var(--accent-secondary)"/></svg>`,
+  // Great-King-Lord Bezer (Gnoblar Country) — la couronne du roi-lige des Gnoblars.
+  bezer: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 8l3 4 5-6 5 6 3-4v10H4Z"/><path d="M4 18h16"/></svg>`,
+  // Gnobbo the Masked (The Lost Gnoblars) — le masque du justicier masqué embusqué.
+  gnobbo: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 6c4-1 12-1 16 0 0 6-2 10-8 12C6 16 4 12 4 6Z"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg>`,
+  // Bunsen the Burna (Firestarters of the Fire Mouth) — la flamme du volcan.
+  bunsen: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6-1-9Z"/></svg>`,
   azazel: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v6"/><path d="M6 8l6-2 6 2-2 6h-8Z"/><path d="M9 14c-2 2-2 5 0 7M15 14c2 2 2 5 0 7"/></svg>`,
   festus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M10 2h4v5l3 3c1 1 1 3 0 4l-1 1H8l-1-1c-1-1-1-3 0-4l3-3Z"/><path d="M9 18h6v3H9Z"/></svg>`,
   vilitch: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="15" cy="14" r="4"/><path d="M9 11c0 4 3 7 6 7M12 5c3 0 5 2 5 5"/></svg>`,
@@ -1050,6 +1056,35 @@ const unitImages = {
   fimFenbeast: 'assets/units/fimFenbeast.png',
   fimSwampDaemons: 'assets/units/fimSwampDaemons.png',
   fimBogOctopus: 'assets/units/fimBogOctopus.png',
+  // --- Gnoblar Hordes (mod « The Unwashed Masses ») : roster de Bezer, Gnobbo et Bunsen ---
+  // Héros
+  gnobWoodbelly: 'assets/units/gnobWoodbelly.png',
+  gnobBloodnose: 'assets/units/gnobBloodnose.png',
+  gnobBonechewer: 'assets/units/gnobBonechewer.png',
+  gnobScrapper: 'assets/units/gnobScrapper.png',
+  gnobTorchGnoblar: 'assets/units/gnobTorchGnoblar.png',
+  gnobTorchnose: 'assets/units/gnobTorchnose.png',
+  // Infanterie
+  gnobFlingers: 'assets/units/gnobFlingers.png',
+  gnobManbiters: 'assets/units/gnobManbiters.png',
+  gnobOgrebiters: 'assets/units/gnobOgrebiters.png',
+  gnobPowderSniffers: 'assets/units/gnobPowderSniffers.png',
+  gnobRustbuckets: 'assets/units/gnobRustbuckets.png',
+  gnobRustbucketsGW: 'assets/units/gnobRustbucketsGW.png',
+  // Cavalerie / monstres
+  gnobPigbackTossers: 'assets/units/gnobPigbackTossers.png',
+  gnobSabretuskRiders: 'assets/units/gnobSabretuskRiders.png',
+  gnobRhinoxRiders: 'assets/units/gnobRhinoxRiders.png',
+  gnobYhetees: 'assets/units/gnobYhetees.png',
+  gnobLavaSpiders: 'assets/units/gnobLavaSpiders.png',
+  gnobLavaArachnarok: 'assets/units/gnobLavaArachnarok.png',
+  gnobGreatScarletIiwi: 'assets/units/gnobGreatScarletIiwi.png',
+  // Régiments de Renom
+  gnobBoomSquad: 'assets/units/gnobBoomSquad.png',
+  gnobPhutGunShootaz: 'assets/units/gnobPhutGunShootaz.png',
+  gnobGorespittles: 'assets/units/gnobGorespittles.png',
+  gnobTreasureGuards: 'assets/units/gnobTreasureGuards.png',
+  gnobKnightsPigbarter: 'assets/units/gnobKnightsPigbarter.png',
   deathHag: 'assets/units/deathHag.png',
   khainiteAssassin: 'assets/units/khainiteAssassin.png',
   sorceressDark: 'assets/units/sorceressDark.png',
@@ -1161,6 +1196,9 @@ const unitImages = {
   wizardCaliph: 'assets/portraits/wizardCaliph.png',
   skattach: 'assets/portraits/skattach.png',
   kroll: 'assets/portraits/kroll.png',
+  bezer: 'assets/portraits/bezer.png',
+  gnobbo: 'assets/portraits/gnobbo.png',
+  bunsen: 'assets/portraits/bunsen.png',
   azazel: 'assets/portraits/azazel.png',
   festus: 'assets/portraits/festus.png',
   vilitch: 'assets/portraits/vilitch.png',
@@ -1611,7 +1649,10 @@ const FACTION_GROUPS = [
   { id: 'araby', label: 'Araby', file: 'data/araby.json', page: 'araby.html' },
   // Fimir — faction ajoutée par un mod (OvN Lost Factions). 2 seigneurs
   // légendaires (Meargh Skattach, Kroll).
-  { id: 'fimir', label: 'Fimir', file: 'data/fimir.json', page: 'fimir.html' }
+  { id: 'fimir', label: 'Fimir', file: 'data/fimir.json', page: 'fimir.html' },
+  // Gnoblar Hordes — faction ajoutée par un mod (« The Unwashed Masses »).
+  // 3 seigneurs légendaires (Great-King-Lord Bezer, Gnobbo the Masked, Bunsen the Burna).
+  { id: 'gnoblar-hordes', label: 'Gnoblar Hordes', file: 'data/gnoblar-hordes.json', page: 'gnoblar_hordes.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1649,7 +1690,8 @@ const factionBanners = {
   'wood-elves': 'assets/banners/woodElves.jpg',
   'albion': 'assets/banners/albion.jpg',
   'araby': 'assets/banners/araby.jpg',
-  'fimir': 'assets/banners/fimir.jpg'
+  'fimir': 'assets/banners/fimir.jpg',
+  'gnoblar-hordes': 'assets/banners/gnoblar_hordes.jpg'
 };
 
 // ============================================================================

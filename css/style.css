@@ -478,6 +478,24 @@
   --border: #233a34;
 }
 
+/* ---- Gnoblar Hordes (mod) : ferraille rouillée et feu du Fire Mouth,
+   rehaussés du vert crasseux de la peau des Gnoblars et de l'or du trésor ---- */
+.theme-gnoblar-hordes{
+  --bg: #140f0a;
+  --bg-glow: #241a10;
+  --panel: #1a1410;
+  --panel-light: #281e15;
+  --panel-deep: #100c08;
+  --accent-primary: #cf7326;
+  --accent-primary-bright: #f0933f;
+  --accent-primary-rgb: 207,115,38;
+  --accent-secondary: #9aad55;
+  --accent-secondary-rgb: 154,173,85;
+  --text: #ece2d0;
+  --text-dim: #a89a80;
+  --border: #3a2c1a;
+}
+
 /* ---- Page de recherche : parchemin, encre et sceaux de cire, dans
    l'esprit de Warhammer: The Old World — volontairement distincte des
    thèmes de faction ci-dessus, puisqu'elle réunit toutes les factions. ---- */
@@ -1164,6 +1182,8 @@ body.search-theme .faction-tab.active{
 .result-card:hover[data-group="araby"]{ border-color: #e8ac48; }
 .result-card[data-group="fimir"]{ border-left-color: #6f9a3e; }
 .result-card:hover[data-group="fimir"]{ border-color: #8fbf5a; }
+.result-card[data-group="gnoblar-hordes"]{ border-left-color: #cf7326; }
+.result-card:hover[data-group="gnoblar-hordes"]{ border-color: #f0933f; }
 .result-seal{
   width:64px; height:140px;
   flex-shrink:0;
