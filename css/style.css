@@ -427,6 +427,23 @@
   --border: #263a1f;
 }
 
+/* ---- Fimir (mod) : marais brumeux, vert bilieux et os des cyclopes ---- */
+.theme-fimir{
+  --bg: #0f130c;
+  --bg-glow: #1a2312;
+  --panel: #131810;
+  --panel-light: #1e2718;
+  --panel-deep: #0c0f09;
+  --accent-primary: #6f9a3e;
+  --accent-primary-bright: #8fbf5a;
+  --accent-primary-rgb: 111,154,62;
+  --accent-secondary: #b8a86a;
+  --accent-secondary-rgb: 184,168,106;
+  --text: #e6ecdc;
+  --text-dim: #97a487;
+  --border: #2a331e;
+}
+
 /* ---- Araby (mod) : sable doré du désert, pourpre des sultans et laiton ---- */
 .theme-araby{
   --bg: #17110a;
@@ -1145,6 +1162,8 @@ body.search-theme .faction-tab.active{
 .result-card:hover[data-group="albion"]{ border-color: #46b8b1; }
 .result-card[data-group="araby"]{ border-left-color: #c98a2e; }
 .result-card:hover[data-group="araby"]{ border-color: #e8ac48; }
+.result-card[data-group="fimir"]{ border-left-color: #6f9a3e; }
+.result-card:hover[data-group="fimir"]{ border-color: #8fbf5a; }
 .result-seal{
   width:64px; height:140px;
   flex-shrink:0;

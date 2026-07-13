@@ -113,6 +113,10 @@ const seals = {
   fatandira: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 19C5 12 9 6 17 5"/><path d="M5 19l14-7"/><path d="M14 5h3v3"/></svg>`,
   // The Wizard Caliph (Cult of the Djinn) — lampe à djinn et volute de fumée.
   wizardCaliph: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 16c0-2 3-3 6-3h4c2 0 4 1 4 3s-2 2-4 2H8c-2 0-4 0-4-2Z"/><path d="M14 13c0-2 1-3 3-3M17 10c0-1-1-2 0-3"/></svg>`,
+  // Meargh Skattach (Rancor Hold) — l'œil unique cyclopéen des Fimir.
+  skattach: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 12c3-5 6-7 9-7s6 2 9 7c-3 5-6 7-9 7s-6-2-9-7Z"/><circle cx="12" cy="12" r="2.5"/></svg>`,
+  // Kroll (Tendrils of Doom) — la Princesse Démon poulpe et ses tentacules.
+  kroll: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M8 4c2-1 6-1 8 0 2 2 2 5 0 7-1 1-1 2 0 3-2-1-3 0-3 2-1-1-2-1-2 0-1-1-2-1-2 0 0-2-1-3-3-2 2-2 2-5 0-7C6 6 6 5 8 4Z"/><circle cx="10" cy="9" r=".7" fill="var(--accent-secondary)"/><circle cx="14" cy="9" r=".7" fill="var(--accent-secondary)"/></svg>`,
   azazel: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v6"/><path d="M6 8l6-2 6 2-2 6h-8Z"/><path d="M9 14c-2 2-2 5 0 7M15 14c2 2 2 5 0 7"/></svg>`,
   festus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M10 2h4v5l3 3c1 1 1 3 0 4l-1 1H8l-1-1c-1-1-1-3 0-4l3-3Z"/><path d="M9 18h6v3H9Z"/></svg>`,
   vilitch: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="15" cy="14" r="4"/><path d="M9 11c0 4 3 7 6 7M12 5c3 0 5 2 5 5"/></svg>`,
@@ -1029,6 +1033,23 @@ const unitImages = {
   arbGenie: 'assets/units/arbGenie.png',
   arbTempestDjinn: 'assets/units/arbTempestDjinn.png',
   arbDesertSpirit: 'assets/units/arbDesertSpirit.png',
+  // --- Fimir (mod OvN Lost Factions) : roster de Skattach et Kroll ---
+  fimMistmor: 'assets/units/fimMistmor.png',
+  fimBoglarShaman: 'assets/units/fimBoglarShaman.png',
+  fimBalefiend: 'assets/units/fimBalefiend.png',
+  fimShearl: 'assets/units/fimShearl.png',
+  fimShearlMirestalkers: 'assets/units/fimShearlMirestalkers.png',
+  fimFimmWarriors: 'assets/units/fimFimmWarriors.png',
+  fimFimmWarriorsGW: 'assets/units/fimFimmWarriorsGW.png',
+  fimFiannaFimm: 'assets/units/fimFiannaFimm.png',
+  fimFiannaFimmGW: 'assets/units/fimFiannaFimmGW.png',
+  fimFiannaFimmShields: 'assets/units/fimFiannaFimmShields.png',
+  fimBogBeastRaiders: 'assets/units/fimBogBeastRaiders.png',
+  fimDaemonomaniac: 'assets/units/fimDaemonomaniac.png',
+  fimFogShrine: 'assets/units/fimFogShrine.png',
+  fimFenbeast: 'assets/units/fimFenbeast.png',
+  fimSwampDaemons: 'assets/units/fimSwampDaemons.png',
+  fimBogOctopus: 'assets/units/fimBogOctopus.png',
   deathHag: 'assets/units/deathHag.png',
   khainiteAssassin: 'assets/units/khainiteAssassin.png',
   sorceressDark: 'assets/units/sorceressDark.png',
@@ -1138,6 +1159,8 @@ const unitImages = {
   goldenMagus: 'assets/portraits/goldenMagus.png',
   fatandira: 'assets/portraits/fatandira.png',
   wizardCaliph: 'assets/portraits/wizardCaliph.png',
+  skattach: 'assets/portraits/skattach.png',
+  kroll: 'assets/portraits/kroll.png',
   azazel: 'assets/portraits/azazel.png',
   festus: 'assets/portraits/festus.png',
   vilitch: 'assets/portraits/vilitch.png',
@@ -1301,6 +1324,7 @@ const unitImages = {
   exaltedPlaguebearersOfNurgle: 'assets/units/exaltedPlaguebearersOfNurgle.png',
   plagueToadsOfNurgle: 'assets/units/plagueToadsOfNurgle.png',
   chaosFuriesNurgle: 'assets/units/chaosFuriesNurgle.png',
+  chaosFuries: 'assets/units/chaosFuries.png',
   plagueDronesOfNurgleDeathsHeads: 'assets/units/plagueDronesOfNurgleDeathsHeads.png',
   rotFlies: 'assets/units/rotFlies.png',
   plagueOgres: 'assets/units/plagueOgres.png',
@@ -1584,7 +1608,10 @@ const FACTION_GROUPS = [
   // légendaires (Dural Durak, Mhorriníon).
   { id: 'albion', label: 'Albion', file: 'data/albion.json', page: 'albion.html' },
   // Araby — faction ajoutée par un mod (OvN Lost Factions).
-  { id: 'araby', label: 'Araby', file: 'data/araby.json', page: 'araby.html' }
+  { id: 'araby', label: 'Araby', file: 'data/araby.json', page: 'araby.html' },
+  // Fimir — faction ajoutée par un mod (OvN Lost Factions). 2 seigneurs
+  // légendaires (Meargh Skattach, Kroll).
+  { id: 'fimir', label: 'Fimir', file: 'data/fimir.json', page: 'fimir.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1621,7 +1648,8 @@ const factionBanners = {
   'vampire-coast': 'assets/banners/vampireCoast.jpg',
   'wood-elves': 'assets/banners/woodElves.jpg',
   'albion': 'assets/banners/albion.jpg',
-  'araby': 'assets/banners/araby.jpg'
+  'araby': 'assets/banners/araby.jpg',
+  'fimir': 'assets/banners/fimir.jpg'
 };
 
 // ============================================================================
