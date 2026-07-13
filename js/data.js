@@ -105,6 +105,14 @@ const seals = {
   duralDurak: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 12c0-3 2-5 4-4M12 12c2 2 2 5-1 6M12 12c-3-1-4-4-2-6"/></svg>`,
   // Mhorriníon la Reine-Corbeau (Murder-Queen) — corbeau, oiseau du dieu de la mort.
   morrigan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 7c3 0 5 1 8 4 2-2 4-3 6-2-1 2-2 3-4 3 1 2 1 4-1 6-2-2-3-4-3-6-3 0-5-2-6-5Z"/><path d="M12 11l-2 9"/></svg>`,
+  // Sultan Jaffar (Sultanate of Araby) — croissant de lune et étoile d'Araby.
+  jaffar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M16 4a8 8 0 1 0 0 16 6 6 0 0 1 0-16Z"/><path d="M19 8l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2L16.5 10.3 18.5 10Z"/></svg>`,
+  // The Golden Magus (Golden Fleet) — voile de navire corsaire et vagues.
+  goldenMagus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3v13"/><path d="M12 5l6 3-6 2Z"/><path d="M4 17c2 2 4 2 6 0s4-2 6 0 4 2 4 0"/><path d="M4 20c2 2 4 2 6 0s4-2 6 0 4 2 4 0"/></svg>`,
+  // Fatandira (Aswad Scythans) — arc bédouin et flèche du désert.
+  fatandira: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 19C5 12 9 6 17 5"/><path d="M5 19l14-7"/><path d="M14 5h3v3"/></svg>`,
+  // The Wizard Caliph (Cult of the Djinn) — lampe à djinn et volute de fumée.
+  wizardCaliph: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 16c0-2 3-3 6-3h4c2 0 4 1 4 3s-2 2-4 2H8c-2 0-4 0-4-2Z"/><path d="M14 13c0-2 1-3 3-3M17 10c0-1-1-2 0-3"/></svg>`,
   azazel: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v6"/><path d="M6 8l6-2 6 2-2 6h-8Z"/><path d="M9 14c-2 2-2 5 0 7M15 14c2 2 2 5 0 7"/></svg>`,
   festus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M10 2h4v5l3 3c1 1 1 3 0 4l-1 1H8l-1-1c-1-1-1-3 0-4l3-3Z"/><path d="M9 18h6v3H9Z"/></svg>`,
   vilitch: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="15" cy="14" r="4"/><path d="M9 11c0 4 3 7 6 7M12 5c3 0 5 2 5 5"/></svg>`,
@@ -986,6 +994,41 @@ const unitImages = {
   albCrows: 'assets/units/albCrows.png',
   albRavens: 'assets/units/albRavens.png',
   albPettyChieftain: 'assets/units/albPettyChieftain.png',
+  // --- Araby (mod OvN Lost Factions) : roster de Sultan Jaffar. Images
+  // extraites du .pack zstd (icônes/portraits, ratio portrait 6:13). ---
+  arbWazar: 'assets/units/arbWazar.png',
+  arbMagicianFire: 'assets/units/arbMagicianFire.png',
+  arbBlackScimitarGuard: 'assets/units/arbBlackScimitarGuard.png',
+  arbPalaceGuards: 'assets/units/arbPalaceGuards.png',
+  arbSpearmen: 'assets/units/arbSpearmen.png',
+  arbBowmen: 'assets/units/arbBowmen.png',
+  arbJezzails: 'assets/units/arbJezzails.png',
+  arbCamelArchers: 'assets/units/arbCamelArchers.png',
+  arbArabyanKnights: 'assets/units/arbArabyanKnights.png',
+  arbWarElephant: 'assets/units/arbWarElephant.png',
+  arbFireEfreet: 'assets/units/arbFireEfreet.png',
+  arbGrandBombard: 'assets/units/arbGrandBombard.png',
+  arbFlyingCarpets: 'assets/units/arbFlyingCarpets.png',
+  // Héros et unités des 3 autres seigneurs d'Araby (Golden Magus, Fatandira, Wizard Caliph)
+  arbEmir: 'assets/units/arbEmir.png',
+  arbHashishin: 'assets/units/arbHashishin.png',
+  arbMagicianLife: 'assets/units/arbMagicianLife.png',
+  arbMagicianDesert: 'assets/units/arbMagicianDesert.png',
+  arbMagicianHeavens: 'assets/units/arbMagicianHeavens.png',
+  arbCorsairs: 'assets/units/arbCorsairs.png',
+  arbSeaMonarch: 'assets/units/arbSeaMonarch.png',
+  arbSeaNymph: 'assets/units/arbSeaNymph.png',
+  arbPitFighters: 'assets/units/arbPitFighters.png',
+  arbDesertDogs: 'assets/units/arbDesertDogs.png',
+  arbDesertRiders: 'assets/units/arbDesertRiders.png',
+  arbCamelLancers: 'assets/units/arbCamelLancers.png',
+  arbCamelJezzails: 'assets/units/arbCamelJezzails.png',
+  arbNomadTrackers: 'assets/units/arbNomadTrackers.png',
+  arbSouthlandsWarriors: 'assets/units/arbSouthlandsWarriors.png',
+  arbDervishers: 'assets/units/arbDervishers.png',
+  arbGenie: 'assets/units/arbGenie.png',
+  arbTempestDjinn: 'assets/units/arbTempestDjinn.png',
+  arbDesertSpirit: 'assets/units/arbDesertSpirit.png',
   deathHag: 'assets/units/deathHag.png',
   khainiteAssassin: 'assets/units/khainiteAssassin.png',
   sorceressDark: 'assets/units/sorceressDark.png',
@@ -1091,6 +1134,10 @@ const unitImages = {
   ghurzhaal: 'assets/portraits/ghurzhaal.png',
   duralDurak: 'assets/portraits/duralDurak.png',
   morrigan: 'assets/portraits/morrigan.png',
+  jaffar: 'assets/portraits/jaffar.png',
+  goldenMagus: 'assets/portraits/goldenMagus.png',
+  fatandira: 'assets/portraits/fatandira.png',
+  wizardCaliph: 'assets/portraits/wizardCaliph.png',
   azazel: 'assets/portraits/azazel.png',
   festus: 'assets/portraits/festus.png',
   vilitch: 'assets/portraits/vilitch.png',
@@ -1535,7 +1582,9 @@ const FACTION_GROUPS = [
   { id: 'wood-elves', label: 'Wood Elves', file: 'data/wood-elves.json', page: 'wood_elves.html' },
   // Albion — faction ajoutée par un mod (OvN Lost Factions). 2 seigneurs
   // légendaires (Dural Durak, Mhorriníon).
-  { id: 'albion', label: 'Albion', file: 'data/albion.json', page: 'albion.html' }
+  { id: 'albion', label: 'Albion', file: 'data/albion.json', page: 'albion.html' },
+  // Araby — faction ajoutée par un mod (OvN Lost Factions).
+  { id: 'araby', label: 'Araby', file: 'data/araby.json', page: 'araby.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1571,7 +1620,8 @@ const factionBanners = {
   'tzeentch': 'assets/banners/tzeentch.jpg',
   'vampire-coast': 'assets/banners/vampireCoast.jpg',
   'wood-elves': 'assets/banners/woodElves.jpg',
-  'albion': 'assets/banners/albion.jpg'
+  'albion': 'assets/banners/albion.jpg',
+  'araby': 'assets/banners/araby.jpg'
 };
 
 // ============================================================================

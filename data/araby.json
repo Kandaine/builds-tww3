@@ -1,0 +1,140 @@
+[
+  {
+    "id": "sultan-jaffar",
+    "numeral": "I",
+    "name": "Sultan Jaffar",
+    "epithet": "Sultan de toute l'Araby",
+    "wikiUrl": "",
+    "faction": "Sultanate of All Araby",
+    "seal": "jaffar",
+    "portraitImage": "assets/portraits/jaffar.png",
+    "lore": "<p>Sultan Jaffar est sans conteste le plus cruel souverain qu'ait connu l'Araby. Durant les Croisades, il domina la contrée pendant de longues années ; grâce à un pacte démoniaque, il est revenu d'entre les morts pour régner de nouveau. Cette faction est ajoutée par un mod (OvN Lost Factions).</p>\n      <p>Ayant repris le trône d'Al Haikk, Jaffar rassemble ses armées pour assouvir sa vengeance sur ses ennemis et établir la domination arabyenne sur le Vieux Monde — soumettre l'Estalie, la Tilée et la Bretonnie. Il inaugure une nouvelle ère de magie et de commerce : que ses ennemis tremblent.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\"><strong>Jaffar's Revenge</strong> : accomplir la vengeance de Jaffar en unifiant toute l'Araby puis en conquérant l'Estalie, la Tilée et la Bretonnie — chaque jalon octroie diverses récompenses</div>\n        <div class=\"attr-item\">Accès à la mécanique des <strong>Esclaves</strong></div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-40</strong> avec les Tomb Kings</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Relations diplomatiques : <strong>-40</strong> avec les ordres de chevalerie bretonniens (Chevaliers de Lyonesse, Thegan's Errantry, Knights of the Flame, Knights of Origo, Jerrod's Errantry)</div>\n        <div class=\"attr-item\">Rang de recrutement des seigneurs : <strong>+2</strong></div>\n        <div class=\"attr-item\">Taux de recherche : <strong>+10</strong></div>\n        <div class=\"attr-item\">Revenu des tarifs commerciaux : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour la Black Scimitar Guard (Palace Guards)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive « <strong>Guardian</strong> » pour les unités Palace Guards (armée du seigneur) — Ward Save de zone : <strong>Résistance physique +15%</strong> aux alliés Seigneur ou Héros dans un rayon de 35m, durée illimitée</div>\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les unités Palace Guards (armée du seigneur)</div>\n        <div class=\"attr-item\">Bonus de charge : <strong>+15%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (OvN Lost Factions — Araby). Effets de faction et de seigneur confirmés par capture d'écran de l'onglet Lord Details en jeu (+ capacité « Guardian »).</div>\n    ",
+    "build": {
+      "role": "Armée d'armes combinées taillée pour les effets de Jaffar : un cœur d'élite de Palace Guards (et de leur Régiment de Renom, la Black Scimitar Guard) rendu bon marché par le -50% d'entretien et protégeant les personnages via l'aura « Guardian », épaulé par le tir (arcs, jezzails), une cavalerie et des Éléphants de Guerre qui profitent du +15% de bonus de charge, plus le djinn Fire Efreet et l'artillerie. La marque de fabrique d'Araby : la coordination de toutes les armes",
+      "totalSlots": 20,
+      "lord": {"icon": "jaffar", "name": "Sultan Jaffar", "qty": 1, "note": "Le plus cruel des sultans, revenu par un pacte démoniaque — puissant lanceur de sorts protégé en pleine mêlée par l'aura « Guardian » de ses Palace Guards (Résistance physique +15%). Ses effets rendent les Palace Guards deux fois moins chers (entretien -50%) et donnent +15% de bonus de charge à toute l'armée : une croisade (« Jaffar's Revenge ») menée par une garde d'élite bon marché et une cavalerie de choc"},
+      "heroes": [
+        {"icon": "arbWazar", "name": "Wazar the Cruel", "qty": 1, "note": "Héros Légendaire — le redoutable capitaine de la Black Scimitar Guard, revenu lié par serment et par la mort ; combattant d'élite qui mène précisément la garde autour de laquelle ce build est bâti et profite à plein de l'aura « Guardian » de ses Palace Guards"},
+        {"icon": "arbMagicianFire", "name": "Magician (Fire)", "qty": 1, "note": "Héros caster du Vent d'Aqshy (Feu) qui a appris à lier les Fire Efreets à sa volonté — comble le seul manque du build (la magie) et se marie au Fire Efreet du corps d'armée pour un appui arcanique offensif"}
+      ],
+      "army": [
+        {"icon": "arbBlackScimitarGuard", "name": "Black Scimitar Guard", "qty": 2, "note": "Régiment de Renom (Palace Guards) — régiment favori de Jaffar (+1 capacité) ; comme toutes les Palace Guards, entretien -50% et aura « Guardian » qui protège les personnages. Fer de lance d'infanterie le plus solide de l'ost"},
+        {"icon": "arbPalaceGuards", "name": "Palace Guards", "qty": 2, "note": "Cœur de la synergie de Jaffar : entretien -50% (aussi bon marché qu'une troupe de base) et aura passive « Guardian » qui octroie +15% de résistance physique à Jaffar et ses héros dans un rayon de 35m — infanterie d'élite qui tient le centre"},
+        {"icon": "arbSpearmen", "name": "Spearmen", "qty": 1, "note": "Humble fondation de toute armée arabyenne — écran jetable bon marché pour retenir l'ennemi le temps que les Palace Guards et les charges opèrent"},
+        {"icon": "arbBowmen", "name": "Bowmen", "qty": 2, "note": "Les Arabyens placent une grande foi dans l'arc — volume de tir pour amollir l'ennemi avant le choc"},
+        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Longs arquebuses de facture arabyenne — tireurs d'élite perforants contre l'infanterie lourde et les monstres"},
+        {"icon": "arbCamelArchers", "name": "Camel Archers", "qty": 1, "note": "Le chameau offre un meilleur angle de tir que le cheval — tirailleurs montés rapides pour harceler et contourner"},
+        {"icon": "arbArabyanKnights", "name": "Arabyan Knights", "qty": 2, "note": "Les meilleurs chevaliers d'Araby sur des montures de lignée elfique — cavalerie de choc qui profite à plein du +15% de bonus de charge du seigneur pour percer les flancs"},
+        {"icon": "arbWarElephant", "name": "War Elephant", "qty": 2, "note": "Bêtes redoutables qui piétinent hommes et chevaux — pointe de choc dopée par le +15% de bonus de charge, l'une des vraies forces d'Araby"},
+        {"icon": "arbFireEfreet", "name": "Fire Efreet", "qty": 1, "note": "Djinn de feu qui prospère sous le soleil d'Araby — monstre volant dévastateur, allié élémentaire de premier ordre"},
+        {"icon": "arbGrandBombard", "name": "Grand Bombard", "qty": 1, "note": "Canon conçu pour un seul but : la destruction des défenses ennemies — artillerie lourde de l'ost"},
+        {"icon": "arbFlyingCarpets", "name": "Flying Carpets", "qty": 1, "note": "Esprits aériens liés dans des tapis par les sorciers d'Araby — tirailleurs volants pour chasser l'artillerie et les casters"}
+      ],
+      "magic": "Jaffar est lui-même un puissant lanceur de sorts, épaulé par un Magician (Fire) qui maîtrise le Vent d'Aqshy et se marie au Fire Efreet du corps d'armée. La magie d'Araby est variée (Feu, Vie, Cieux, Djinn du désert) et forme, avec les Djinns, un pilier essentiel pour compléter la mêlée d'élite et compenser la qualité moyenne de l'infanterie de base.",
+      "note": "Build pensé autour des effets du seigneur. Le -50% d'entretien sur les Palace Guards permet d'aligner un cœur d'élite (2 Palace Guards + 2 Black Scimitar Guard, régiment favori à +1 capacité) là où Araby ne fournit d'ordinaire qu'une infanterie médiocre ; leur aura « Guardian » couvre Jaffar et ses héros d'un Ward Save (+15% de résistance physique à 35m). Le +15% de bonus de charge récompense les Arabyan Knights, les Éléphants de Guerre et le Fire Efreet : on étage les charges pendant que arcs, jezzails et Camel Archers amollissent l'ennemi et que le Grand Bombard punit les formations groupées et les murailles. Un Spearmen sert d'écran jetable, les tapis volants chassent l'artillerie adverse. Bien coordonnée, cette armée combinée submerge l'adversaire."
+    }
+  },
+  {
+    "id": "golden-magus",
+    "numeral": "II",
+    "name": "The Golden Magus",
+    "epithet": "Sultan des Mers",
+    "wikiUrl": "",
+    "faction": "The Golden Fleet",
+    "seal": "goldenMagus",
+    "portraitImage": "assets/portraits/goldenMagus.png",
+    "lore": "<p>Le « Sultan des Mers » autoproclamé, l'excentrique Golden Magus, dissimule d'incroyables pouvoirs de sorcellerie sous une apparence tapageuse. Cette faction est ajoutée par un mod (OvN Lost Factions).</p>\n      <p>Il a mis les voiles vers le Débarquement de Cuivre, sur la côte de Lustrie, pour piller les richesses de cette terre primordiale et conquérir le Cimetière des Galions.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\"><strong>Sultan des Mers</strong> : détruire, piller, chasser le trésor et razzier pour bâtir sa réputation en mer face aux factions Vampire Coast et récolter des Sea Shanties</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+50</strong> avec les Pirates of Sartosa</div>\n        <div class=\"attr-item\">Accès à la mécanique des <strong>Esclaves</strong></div>\n        <div class=\"attr-item\">Revenu du sac des colonies : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Revenu des esclaves : <strong>+5%</strong></div>\n        <div class=\"attr-item\">Immunisé à l'attrition de Haute Mer, Récif et Tempête (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+10%</strong> de résistance physique pour The Sea-Monarch (Sea Nymph)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès à la <strong>construction navale</strong> (shipbuilding)</div>\n        <div class=\"attr-item\">Active les <strong>attaques enflammées et magiques</strong> pour les unités Corsairs (armée du seigneur)</div>\n        <div class=\"attr-item\">Commandement : <strong>+10</strong> pour les unités Corsairs (armée du seigneur)</div>\n        <div class=\"attr-item\">Puissance d'arme : <strong>+20%</strong> pour les unités Corsairs (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (OvN Lost Factions — Araby). Effets de faction et de seigneur confirmés par capture d'écran de l'onglet Lord Details en jeu.</div>\n    ",
+    "build": {
+      "role": "Ost corsaire taillé pour les effets du Golden Magus : un cœur de Corsairs surpuissants (attaques enflammées et magiques, +10 commandement, +20% de puissance d'arme) épaulé par les Djinns des eaux (Sea Nymph et son Régiment de Renom The Sea-Monarch), le tir arabyen et une pointe de cavalerie. Une flotte de pillards menée par un sorcier",
+      "totalSlots": 20,
+      "lord": {"icon": "goldenMagus", "name": "The Golden Magus", "qty": 1, "note": "Le Sultan des Mers autoproclamé — sorcier redoutable sous des atours tapageurs, qui transforme ses Corsairs en élite : attaques enflammées et magiques, +10 commandement et +20% de puissance d'arme sur toute son armée de flibustiers"},
+      "heroes": [
+        {"icon": "arbMagicianLife", "name": "Magician (Life)", "qty": 1, "note": "Sorcier du Vent de Ghyran (Vie), adepte de la domestication des Sea Nymphs — appui magique de soin/soutien qui se marie aux Djinns des eaux de l'ost"},
+        {"icon": "arbEmir", "name": "Emir", "qty": 1, "note": "Guerrier sans égal, garde du corps d'élite — héros de mêlée qui ancre l'abordage aux côtés des Corsairs"}
+      ],
+      "army": [
+        {"icon": "arbCorsairs", "name": "Corsairs", "qty": 5, "note": "Le fléau du Grand Océan qui pille Tilée et Estalie — cœur de la synergie du Golden Magus : attaques enflammées et magiques, +10 commandement, +20% de puissance d'arme"},
+        {"icon": "arbSeaMonarch", "name": "The Sea-Monarch", "qty": 1, "note": "Régiment de Renom (Sea Nymph) — la plus puissante des Sea Nymphs, véritable raz-de-marée vivant ; régiment favori (+10% de résistance physique)"},
+        {"icon": "arbSeaNymph", "name": "Sea Nymph", "qty": 1, "note": "Djinn des eaux des côtes d'Araby — monstre de choc qui déferle sur les lignes ennemies"},
+        {"icon": "arbPitFighters", "name": "Pit-Fighters", "qty": 2, "note": "Anciens esclaves et criminels superbement entraînés, sans peur de la mort — infanterie lourde qui tient la ligne d'abordage"},
+        {"icon": "arbBowmen", "name": "Bowmen", "qty": 2, "note": "Le socle de tir de tout ost arabyen — volume de flèches pour amollir l'ennemi avant l'abordage"},
+        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Longs arquebuses de facture arabyenne — tireurs d'élite perforants contre l'infanterie lourde et les monstres"},
+        {"icon": "arbArabyanKnights", "name": "Arabyan Knights", "qty": 2, "note": "Les meilleurs chevaliers d'Araby — cavalerie de choc pour envelopper et briser les flancs"},
+        {"icon": "arbFireEfreet", "name": "Fire Efreet", "qty": 1, "note": "Djinn de feu — monstre volant dévastateur qui complète les Djinns des eaux"},
+        {"icon": "arbGrandBombard", "name": "Grand Bombard", "qty": 1, "note": "Canon dévastateur — artillerie lourde pour briser les formations et les défenses"}
+      ],
+      "magic": "Le Golden Magus est un puissant sorcier (ses attaques enflammées et magiques déteignent sur ses Corsairs), épaulé par un Magician (Life) maître du Vent de Ghyran qui domestique les Sea Nymphs. Les Djinns des eaux forment un pilier de choc et de soutien.",
+      "note": "Build pensé autour des Corsairs : sous les effets du Golden Magus, ces flibustiers deviennent une infanterie d'élite (attaques enflammées et magiques, +10 commandement, +20% de puissance d'arme). Cinq unités en forment le cœur, épaulées par les Pit-Fighters. Les Sea Nymphs (dont le Régiment de Renom The Sea-Monarch, favori à +10% de résistance physique) et le Fire Efreet apportent la puissance monstrueuse, les Bowmen et Jezzails le tir, et les Arabyan Knights le choc de flanc. Le Grand Bombard punit les formations. Une flotte de pillards qui submerge par le nombre et la ferveur."
+    }
+  },
+  {
+    "id": "fatandira",
+    "numeral": "III",
+    "name": "Fatandira",
+    "epithet": "Princesse des Aswad Scythans",
+    "wikiUrl": "",
+    "faction": "Aswad Scythans",
+    "seal": "fatandira",
+    "portraitImage": "assets/portraits/fatandira.png",
+    "lore": "<p>Chassée des Principautés Frontalières, la Princesse Fatandira est revenue parmi les siens : elle est à la fois une chef militaire et une souveraine éclairée. Cette faction est ajoutée par un mod (OvN Lost Factions).</p>\n      <p>Sa tribu Scythan s'est établie à Quatar pour servir son maître, le Roi des Tombes <strong>Tutankhanut</strong>. Mais elle est déchirée entre les traditions de son peuple et le culte de leur nouveau dieu…</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\"><strong>Fatandira's Allegiance</strong> : choisir de servir son dieu Roi des Tombes Tutankhanut ou le peuple d'Araby pour gagner des récompenses</div>\n        <div class=\"attr-item\">Si Numas est capturée, honorer l'alliance et rendre sa capitale octroie des bonus de faction ; la trahir inflige des malus temporaires</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+25</strong> avec Numas</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+10</strong> avec les Tomb Kings</div>\n        <div class=\"attr-item\">Permet le recrutement de certaines unités <strong>Rois des Tombes</strong></div>\n        <div class=\"attr-item\">Contrôle : <strong>+3</strong> (toutes les provinces)</div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+3</strong> pour les Hashishins</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour Nomad Trackers, Jezzails, Southlands Warriors, Camel Lancers, Desert Riders, Camel Archers et Camel Jezzails</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Al Muktar's Desert Dogs</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chance de réussite des embuscades : <strong>+25%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Munitions : <strong>+20%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut : <strong>Stalk</strong> (déplacement caché en tout terrain) pour Nomad Trackers, Jezzails, Southlands Warriors, Camel Lancers, Desert Riders, Camel Archers et Camel Jezzails (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (OvN Lost Factions — Araby). Effets de faction et de seigneur confirmés par capture d'écran de l'onglet Lord Details en jeu (+ attribut « Stalk »).</div>\n    ",
+    "build": {
+      "role": "Ost de razzia nomade taillé pour les effets de Fatandira : une armée presque entièrement composée d'unités qui gagnent l'attribut Stalk (déplacement caché en tout terrain) et -15% d'entretien — camélerie, jezzails et pisteurs qui tendent des embuscades (+25% de réussite) et déversent un tir nourri (+20% de munitions) avant de disparaître dans les sables",
+      "totalSlots": 20,
+      "lord": {"icon": "fatandira", "name": "Fatandira", "qty": 1, "note": "Chef militaire et souveraine éclairée, archère mobile — son armée profite de +25% de réussite d'embuscade et de +20% de munitions, et ses unités nomades se déplacent cachées (Stalk) pour frapper de nulle part"},
+      "heroes": [
+        {"icon": "arbHashishin", "name": "Hashishin", "qty": 1, "note": "Assassin frappant vite et sans être vu — Fatandira booste leur rang de recrutement (+3) ; parfait pour éliminer seigneurs et casters ennemis dans une armée d'embuscade"},
+        {"icon": "arbMagicianDesert", "name": "Magician (Djinn)", "qty": 1, "note": "Sorcier de la tradition du désert qui appelle les Esprits du Désert — seul appui magique de l'ost, mobile comme le reste de l'armée"}
+      ],
+      "army": [
+        {"icon": "arbDesertDogs", "name": "Al Muktar's Desert Dogs", "qty": 2, "note": "Régiment de Renom (Arabyan Knights) — bande mercenaire fameuse des déserts ; régiment favori de Fatandira (+1 capacité)"},
+        {"icon": "arbDesertRiders", "name": "Desert Riders", "qty": 2, "note": "Cavaliers nés en selle — Stalk et -15% d'entretien : harcèlement rapide qui surgit des dunes"},
+        {"icon": "arbCamelArchers", "name": "Camel Archers", "qty": 2, "note": "Archers montés à chameau (meilleur angle de tir) — Stalk et -15% d'entretien : tirailleurs cachés mobiles"},
+        {"icon": "arbCamelLancers", "name": "Camel Lancers", "qty": 2, "note": "Cavalerie de chameaux liée à sa monture dès la naissance — Stalk et -15% d'entretien : choc surgi de l'embuscade"},
+        {"icon": "arbCamelJezzails", "name": "Camel Jezzails", "qty": 2, "note": "Jezzails tirées à dos de chameau — Stalk et -15% d'entretien : tir perforant mobile à l'affût"},
+        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Tireurs d'élite au long arquebuse — Stalk et -15% d'entretien, dopés par +20% de munitions : marksmen cachés dévastateurs"},
+        {"icon": "arbNomadTrackers", "name": "Nomad Trackers", "qty": 2, "note": "Seigneurs des dunes dont les flèches furtives fauchent avant de se fondre dans le sable — Stalk et -15% d'entretien"},
+        {"icon": "arbSouthlandsWarriors", "name": "Southlands Warriors", "qty": 2, "note": "Guerriers des jungles du sud rompus aux bêtes et monstres — Stalk et -15% d'entretien : la seule vraie infanterie de mêlée de l'ost"},
+        {"icon": "arbWarElephant", "name": "War Elephant", "qty": 1, "note": "Bête redoutable qui piétine tout — l'unique gros frappeur, à garder pour enfoncer un point fixé par les embuscades"}
+      ],
+      "magic": "Fatandira n'est pas une lanceuse de sorts dédiée : sa force est la guerre d'embuscade (Stalk, +25% de réussite d'embuscade, +20% de munitions). Un Magician (Djinn) apporte le seul appui arcanique, en appelant les Esprits du Désert.",
+      "note": "Build entièrement pensé autour de l'attribut Stalk : hormis l'Éléphant de Guerre, chaque unité peut se déplacer cachée en tout terrain et bénéficie de -15% d'entretien. On tend une embuscade (+25% de réussite), on ouvre le feu à volonté (+20% de munitions) avec les jezzails, camel jezzails, camel archers et nomad trackers, puis on charge avec les Desert Dogs, Camel Lancers et Desert Riders avant de se replier dans les dunes. Les Southlands Warriors tiennent le corps-à-corps et l'Éléphant enfonce le point décisif. Un Hashishin décapite le commandement adverse. Guérilla mobile par excellence."
+    }
+  },
+  {
+    "id": "wizard-caliph",
+    "numeral": "IV",
+    "name": "The Wizard Caliph",
+    "epithet": "Maître du Culte des Djinns",
+    "wikiUrl": "",
+    "faction": "Cult of the Djinn",
+    "seal": "wizardCaliph",
+    "portraitImage": "assets/portraits/wizardCaliph.png",
+    "lore": "<p>Écrasé par le Roi Liche et ses légions immortelles, le Wizard Caliph a fui les ruines de son palais déchu pour reconstruire sa puissance dans le lointain Khuresh. Cette faction est ajoutée par un mod (OvN Lost Factions).</p>\n      <p>Maître du Culte des Djinns, il amasse l'<strong>Essence de Djinn</strong> au fil des batailles et de la purge de la corruption, puis lance Incantations et Hexes depuis son Sanctum — la sorcellerie du désert incarnée.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Lance des <strong>Hexes et Bénédictions</strong> dans le Sanctum du Wizard Caliph ; construire le monument Palais du Wizard Caliph débloque des Hexes renforcés</div>\n        <div class=\"attr-item\">Accès à la mécanique des <strong>Esclaves</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités Dervishers</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>-25%</strong> pour les unités Dervishers</div>\n        <div class=\"attr-item\">Sort lié « <strong>Palace of Dreams</strong> » pour les unités Genie (bouclier de régénération : +0,60% soins/s et +25% de résistance physique sur une cible à entité unique)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chance de voler un objet magique après la bataille : <strong>+25%</strong></div>\n        <div class=\"attr-item\">Chance de drop d'objet magique en bataille : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Capacité « <strong>Eyes of the Serpent</strong> » (Souffle, 3 utilisations) — <strong>32</strong> dégâts, souffle court et large en éventail (rayon 14m, portée 100m), fort contre les groupes ; applique « <strong>Discouraged!</strong> » : Commandement <strong>-16</strong> pendant 10s, durée 8s, rechargement 90s</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (OvN Lost Factions — Araby). Effets de faction et de seigneur confirmés par capture d'écran de l'onglet Lord Details en jeu (+ sort lié « Palace of Dreams » et capacité « Eyes of the Serpent »).</div>\n    ",
+    "build": {
+      "role": "Ost de sorcellerie et de Djinns taillé pour les effets du Wizard Caliph : une masse de Dervishers fanatiques rendus très bon marché (-25% d'entretien et de recrutement) autour d'une véritable ménagerie de Djinns (Genie, Fire Efreet, Tempest Djinn, Esprit du Désert), le tout soutenu par une magie écrasante (Hexes du Sanctum) et le sort lié « Palace of Dreams » qui protège les Genies",
+      "totalSlots": 20,
+      "lord": {"icon": "wizardCaliph", "name": "The Wizard Caliph", "qty": 1, "note": "Maître du Culte des Djinns et puissant sorcier — il amasse l'Essence de Djinn pour lancer Hexes et Incantations depuis son Sanctum, et protège ses Genies du sort lié « Palace of Dreams » (régénération + 25% de résistance physique)"},
+      "heroes": [
+        {"icon": "arbMagicianDesert", "name": "Magician (Djinn)", "qty": 1, "note": "Sorcier du désert qui commande les Esprits du Désert et leur puissance élémentaire — renforce le volet magique dominant de l'ost"},
+        {"icon": "arbMagicianHeavens", "name": "Magician (Heavens)", "qty": 1, "note": "Sorcier du Vent d'Azyr, allié des Tempest Djinns — second caster qui pilonne l'ennemi à distance et complète la ménagerie aérienne"}
+      ],
+      "army": [
+        {"icon": "arbDervishers", "name": "Dervishers", "qty": 5, "note": "Guerriers religieux fanatiques prêts à mourir pour leurs dieux Djinns — cœur bon marché de l'ost (-25% d'entretien ET de coût de recrutement)"},
+        {"icon": "arbGenie", "name": "Genie", "qty": 2, "note": "Djinn maîtrisant les quatre éléments — monstre polyvalent protégé par le sort lié « Palace of Dreams » (régénération + 25% de résistance physique)"},
+        {"icon": "arbFireEfreet", "name": "Fire Efreet", "qty": 1, "note": "Djinn de feu — monstre volant dévastateur, allié élémentaire de premier ordre"},
+        {"icon": "arbTempestDjinn", "name": "Tempest Djinn", "qty": 1, "note": "Djinn de l'air vénéré comme un dieu des vents — monstre volant qui déchaîne des tempêtes sur l'ennemi"},
+        {"icon": "arbDesertSpirit", "name": "Desert Spirit", "qty": 1, "note": "Djinn des sables des déserts d'Araby — monstre insaisissable qui frappe et se dissipe"},
+        {"icon": "arbBowmen", "name": "Bowmen", "qty": 2, "note": "Socle de tir arabyen — volume de flèches pour amollir l'ennemi pendant que les Djinns et la magie opèrent"},
+        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Tireurs d'élite perforants au long arquebuse — contre l'infanterie lourde et les monstres"},
+        {"icon": "arbArabyanKnights", "name": "Arabyan Knights", "qty": 2, "note": "Cavalerie de choc d'élite — pour percer les flancs et protéger les casters"},
+        {"icon": "arbGrandBombard", "name": "Grand Bombard", "qty": 1, "note": "Canon dévastateur — artillerie qui brise les formations et les défenses"}
+      ],
+      "magic": "Le cœur du Wizard Caliph : lui-même et deux Magiciens (Djinn et Heavens) forment un trio de casters qui domine la bataille par les Hexes du Sanctum, les Esprits du Désert et le Vent d'Azyr. Le sort lié « Palace of Dreams » blinde les Genies (régénération + 25% de résistance physique).",
+      "note": "Build magique et monstrueux pensé autour des effets du Caliph. Les Dervishers fanatiques, deux fois moins chers à l'entretien comme au recrutement, forment une masse d'infanterie sacrifiable qui fixe l'ennemi pendant que la ménagerie de Djinns (Genie, Fire Efreet, Tempest Djinn, Esprit du Désert) et le trio de casters déchaînent leur puissance. Les Genies, protégés par « Palace of Dreams » (soins + 25% de résistance physique), tiennent au cœur de la mêlée. Bowmen et Jezzails complètent le tir, les Arabyan Knights protègent les casters, et le Grand Bombard punit les formations. À jouer patiemment, en laissant la magie et les Djinns user l'adversaire."
+    }
+  }
+]

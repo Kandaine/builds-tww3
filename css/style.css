@@ -427,6 +427,23 @@
   --border: #263a1f;
 }
 
+/* ---- Araby (mod) : sable doré du désert, pourpre des sultans et laiton ---- */
+.theme-araby{
+  --bg: #17110a;
+  --bg-glow: #2a1d0d;
+  --panel: #1f1710;
+  --panel-light: #2e2214;
+  --panel-deep: #150f08;
+  --accent-primary: #c98a2e;
+  --accent-primary-bright: #e8ac48;
+  --accent-primary-rgb: 201,138,46;
+  --accent-secondary: #7c5bd0;
+  --accent-secondary-rgb: 124,91,208;
+  --text: #f0e6d2;
+  --text-dim: #b09a7e;
+  --border: #3d2f1c;
+}
+
 /* ---- Albion (mod) : brumes émeraude de l'île, pierre Ogham et bleu woad ---- */
 .theme-albion{
   --bg: #0b1512;
@@ -1123,6 +1140,11 @@ body.search-theme .faction-tab.active{
 .result-card:hover[data-group="slaanesh"]{ border-color: #e85ba8; }
 .result-card:hover[data-group="empire"]{ border-color: #5f92d6; }
 .result-card:hover[data-group="tomb-kings"]{ border-color: #e8c25a; }
+/* Factions de mod : couleurs assorties à leur thème (theme-albion, theme-araby). */
+.result-card[data-group="albion"]{ border-left-color: #2e8f8a; }
+.result-card:hover[data-group="albion"]{ border-color: #46b8b1; }
+.result-card[data-group="araby"]{ border-left-color: #c98a2e; }
+.result-card:hover[data-group="araby"]{ border-color: #e8ac48; }
 .result-seal{
   width:64px; height:140px;
   flex-shrink:0;
