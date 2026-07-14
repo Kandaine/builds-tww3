@@ -496,6 +496,24 @@
   --border: #3a2c1a;
 }
 
+/* ---- Jade-Blooded Vampires (mod) : jade impérial de Cathay et sang
+   vampirique cramoisi, sur une nuit d'encre des enfers de Nongchang ---- */
+.theme-jade-blooded-vampires{
+  --bg: #0c1210;
+  --bg-glow: #14201b;
+  --panel: #101815;
+  --panel-light: #1a2620;
+  --panel-deep: #0a0f0d;
+  --accent-primary: #40c299;
+  --accent-primary-bright: #63dab3;
+  --accent-primary-rgb: 64,194,153;
+  --accent-secondary: #c65b5b;
+  --accent-secondary-rgb: 198,91,91;
+  --text: #e6efe9;
+  --text-dim: #8fa89f;
+  --border: #24352e;
+}
+
 /* ---- Page de recherche : parchemin, encre et sceaux de cire, dans
    l'esprit de Warhammer: The Old World — volontairement distincte des
    thèmes de faction ci-dessus, puisqu'elle réunit toutes les factions. ---- */
@@ -1184,6 +1202,8 @@ body.search-theme .faction-tab.active{
 .result-card:hover[data-group="fimir"]{ border-color: #8fbf5a; }
 .result-card[data-group="gnoblar-hordes"]{ border-left-color: #cf7326; }
 .result-card:hover[data-group="gnoblar-hordes"]{ border-color: #f0933f; }
+.result-card[data-group="jade-blooded-vampires"]{ border-left-color: #40c299; }
+.result-card:hover[data-group="jade-blooded-vampires"]{ border-color: #63dab3; }
 .result-seal{
   width:64px; height:140px;
   flex-shrink:0;

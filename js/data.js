@@ -58,6 +58,8 @@ const seals = {
   teclis: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2c-3 3-4 6-2 9-3 1-5 3-5 6 3-2 5-2 7-1 2-1 4-1 7 1 0-3-2-5-5-6 2-3 1-6-2-9Z"/></svg>`,
   eltharion: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 3.5 8.5 8 10 4.5-1.5 8-5 8-10V6l-8-4Z"/><path d="M9 12l2 2 4-5"/></svg>`,
   imrik: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M3 14c3-6 7-9 9-9s6 3 9 9c-3-2-5-1-6 1-1-2-1-4 0-6-2 1-3 3-3 5-1-2-2-4-3-5 1 2 1 4 0 6-1-2-3-3-6-1Z"/></svg>`,
+  // Amon (Tor Elasor — mod Islanders of the Moon) — le soleil des Guardians of the Sun.
+  amon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>`,
   alithanar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M15 3a9 9 0 1 0 6 15.5A9 9 0 0 1 15 3Z"/></svg>`,
   alarielle: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 3c2 2 2 5 0 7-2-2-2-5 0-7Z"/><path d="M12 10c2 2 2 5 0 7-2-2-2-5 0-7Z"/><path d="M5 9c2-1 4 0 5 2-2 1-4 0-5-2Z"/><path d="M19 9c-2-1-4 0-5 2 2 1 4 0 5-2Z"/><path d="M12 17v4"/></svg>`,
   aislinn: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M3 18c2 1 4 1 6 0s4-1 6 0 4 1 6 0"/><path d="M12 15V4"/><path d="M12 4l5 3-5 3Z"/></svg>`,
@@ -123,6 +125,10 @@ const seals = {
   gnobbo: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 6c4-1 12-1 16 0 0 6-2 10-8 12C6 16 4 12 4 6Z"/><circle cx="9" cy="10" r="1"/><circle cx="15" cy="10" r="1"/></svg>`,
   // Bunsen the Burna (Firestarters of the Fire Mouth) — la flamme du volcan.
   bunsen: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4 0 2 1 3 2 3 0-4-1-6-1-9Z"/></svg>`,
+  // Maiden of the Black Lotus (Jade-Blooded Vampires) — le lotus noir maudit de Nongchang.
+  maidenBlackLotus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 20c0-4 0-8 0-11"/><path d="M12 20c-2-3-5-4-7-4 1-2 4-3 7 0M12 20c2-3 5-4 7-4-1-2-4-3-7 0M12 20c-4-1-7-4-8-7 3 0 6 2 8 5M12 20c4-1 7-4 8-7-3 0-6 2-8 5Z"/></svg>`,
+  // Xu Yaoji (Jade-Blooded Vampires — Islanders of the Moon) — le croissant de lune du spectre vengeur.
+  xuYaoji: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M15 3a9 9 0 1 0 0 18 7 7 0 0 1 0-18Z"/></svg>`,
   azazel: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v6"/><path d="M6 8l6-2 6 2-2 6h-8Z"/><path d="M9 14c-2 2-2 5 0 7M15 14c2 2 2 5 0 7"/></svg>`,
   festus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M10 2h4v5l3 3c1 1 1 3 0 4l-1 1H8l-1-1c-1-1-1-3 0-4l3-3Z"/><path d="M9 18h6v3H9Z"/></svg>`,
   vilitch: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="9" cy="8" r="3"/><circle cx="15" cy="14" r="4"/><path d="M9 11c0 4 3 7 6 7M12 5c3 0 5 2 5 5"/></svg>`,
@@ -841,6 +847,7 @@ const unitImages = {
   teclis: 'assets/portraits/teclis.png',
   eltharion: 'assets/portraits/eltharion.png',
   imrik: 'assets/portraits/imrik.png',
+  amon: 'assets/portraits/amon.png',
   alithanar: 'assets/portraits/alithanar.png',
   alarielle: 'assets/portraits/alarielle.png',
   aislinn: 'assets/portraits/aislinn.png',
@@ -856,6 +863,9 @@ const unitImages = {
   swordmaster: 'assets/units/swordmaster.png',
   dragonPrince: 'assets/units/dragonPrince.png',
   sistersOfAvelorn: 'assets/units/sistersOfAvelorn.png',
+  // Amon (Tor Elasor — mod Islanders of the Moon) : unités coloniales uniques
+  hefColonialMilitiamen: 'assets/units/hefColonialMilitiamen.png',
+  hefTowerGuardTorElasor: 'assets/units/hefTowerGuardTorElasor.png',
   shadowWalker: 'assets/units/shadowWalker.png',
   theGrey: 'assets/units/theGrey.png',
   dryad: 'assets/units/dryad.png',
@@ -1085,6 +1095,36 @@ const unitImages = {
   gnobGorespittles: 'assets/units/gnobGorespittles.png',
   gnobTreasureGuards: 'assets/units/gnobTreasureGuards.png',
   gnobKnightsPigbarter: 'assets/units/gnobKnightsPigbarter.png',
+  // --- Jade-Blooded Vampires (mod) : roster de la Maiden of the Black Lotus ---
+  // Héros
+  jbvChanneler: 'assets/units/jbvChanneler.png',
+  jbvJiangjun: 'assets/units/jbvJiangjun.png',
+  jbvNugui: 'assets/units/jbvNugui.png',
+  // Chanters (cœur buffé par la Maiden) + fantômes (Yin) + Yang physique
+  jbvChanters: 'assets/units/jbvChanters.png',
+  jbvChantersLanterns: 'assets/units/jbvChantersLanterns.png',
+  jbvAncientFaithfuls: 'assets/units/jbvAncientFaithfuls.png',
+  jbvShadowsNongchang: 'assets/units/jbvShadowsNongchang.png',
+  jbvWildGhosts: 'assets/units/jbvWildGhosts.png',
+  jbvRavenousGhosts: 'assets/units/jbvRavenousGhosts.png',
+  jbvYouxiaGlaives: 'assets/units/jbvYouxiaGlaives.png',
+  jbvRevenantsHalberds: 'assets/units/jbvRevenantsHalberds.png',
+  jbvSinfulMonks: 'assets/units/jbvSinfulMonks.png',
+  // Monstres des enfers de Cathay
+  jbvYaoguai: 'assets/units/jbvYaoguai.png',
+  jbvBloodLions: 'assets/units/jbvBloodLions.png',
+  jbvDevilDarkOmen: 'assets/units/jbvDevilDarkOmen.png',
+  jbvGateGuardian: 'assets/units/jbvGateGuardian.png',
+  // Xu Yaoji (Islanders of the Moon) : roster du Sanatorium Danoi Sariour hanté
+  jbvPlagueWraiths: 'assets/units/jbvPlagueWraiths.png',
+  jbvCharredNurses: 'assets/units/jbvCharredNurses.png',
+  jbvHollowNurses: 'assets/units/jbvHollowNurses.png',
+  jbvHangedDoctor: 'assets/units/jbvHangedDoctor.png',
+  jbvCursedIslanders: 'assets/units/jbvCursedIslanders.png',
+  jbvShadowPeopleWard6: 'assets/units/jbvShadowPeopleWard6.png',
+  jbvWomanWhoJumped: 'assets/units/jbvWomanWhoJumped.png',
+  jbvContortedMan: 'assets/units/jbvContortedMan.png',
+  jbvLadyYayi: 'assets/units/jbvLadyYayi.png',
   deathHag: 'assets/units/deathHag.png',
   khainiteAssassin: 'assets/units/khainiteAssassin.png',
   sorceressDark: 'assets/units/sorceressDark.png',
@@ -1199,6 +1239,8 @@ const unitImages = {
   bezer: 'assets/portraits/bezer.png',
   gnobbo: 'assets/portraits/gnobbo.png',
   bunsen: 'assets/portraits/bunsen.png',
+  maidenBlackLotus: 'assets/portraits/maidenBlackLotus.png',
+  xuYaoji: 'assets/portraits/xuYaoji.png',
   azazel: 'assets/portraits/azazel.png',
   festus: 'assets/portraits/festus.png',
   vilitch: 'assets/portraits/vilitch.png',
@@ -1652,7 +1694,10 @@ const FACTION_GROUPS = [
   { id: 'fimir', label: 'Fimir', file: 'data/fimir.json', page: 'fimir.html' },
   // Gnoblar Hordes — faction ajoutée par un mod (« The Unwashed Masses »).
   // 3 seigneurs légendaires (Great-King-Lord Bezer, Gnobbo the Masked, Bunsen the Burna).
-  { id: 'gnoblar-hordes', label: 'Gnoblar Hordes', file: 'data/gnoblar-hordes.json', page: 'gnoblar_hordes.html' }
+  { id: 'gnoblar-hordes', label: 'Gnoblar Hordes', file: 'data/gnoblar-hordes.json', page: 'gnoblar_hordes.html' },
+  // Jade-Blooded Vampires — faction ajoutée par un mod (vampires de Cathay).
+  // 1 seigneur légendaire (Maiden of the Black Lotus).
+  { id: 'jade-blooded-vampires', label: 'Jade-Blooded Vampires', file: 'data/jade-blooded-vampires.json', page: 'jade_blooded_vampires.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1691,7 +1736,8 @@ const factionBanners = {
   'albion': 'assets/banners/albion.jpg',
   'araby': 'assets/banners/araby.jpg',
   'fimir': 'assets/banners/fimir.jpg',
-  'gnoblar-hordes': 'assets/banners/gnoblar_hordes.jpg'
+  'gnoblar-hordes': 'assets/banners/gnoblar_hordes.jpg',
+  'jade-blooded-vampires': 'assets/banners/jade_blooded_vampires.jpg'
 };
 
 // ============================================================================

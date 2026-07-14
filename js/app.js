@@ -88,7 +88,10 @@ function renderPage(){
 
   // Bannière illustrée en haut de page : chaque faction a sa propre image
   // d'artwork officiel, enregistrée dans `factionBanners` (js/data.js).
-  const banner = factionBanners[l.group];
+  // Un seigneur peut définir sa propre bannière (champ `banner`) qui prime
+  // sur celle de sa faction — utile quand une faction regroupe des sous-
+  // factions à l'ambiance distincte (ex. Jade-Blooded Vampires).
+  const banner = l.banner || factionBanners[l.group];
 
   // Construction de tout le HTML de la fiche seigneur en une seule fois.
   // Utilise des templates literals (chaînes multi-lignes) avec interpolation.
