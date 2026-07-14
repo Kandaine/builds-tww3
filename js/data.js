@@ -893,6 +893,9 @@ const unitImages = {
   // Amon (Tor Elasor — mod Islanders of the Moon) : unités coloniales uniques
   hefColonialMilitiamen: 'assets/units/hefColonialMilitiamen.png',
   hefTowerGuardTorElasor: 'assets/units/hefTowerGuardTorElasor.png',
+  // Hauts Elfes — Héros Légendaires (jeu de base)
+  hefCaradryan: 'assets/units/hefCaradryan.png',
+  hefHandShadowCrown: 'assets/units/hefHandShadowCrown.png',
   // --- Southern Realms (mod « The Southern Realms — TEB Subculture Overhaul ») ---
   tebMasterDuellist: 'assets/units/tebMasterDuellist.png',
   tebPriestessMyrmidia: 'assets/units/tebPriestessMyrmidia.png',

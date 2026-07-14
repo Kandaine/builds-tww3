@@ -15,7 +15,7 @@
       "totalSlots": 20,
       "lord": {"icon": "tyrion", "name": "Tyrion", "qty": 1, "note": "Le meilleur duelliste du jeu — monté sur Malhandir, il rattrape n'importe quel seigneur ennemi et le démembre en quelques passes"},
       "heroes": [
-        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée polyvalent en complément de Tyrion"},
+        {"icon": "hefCaradryan", "name": "Caradryan (Héros Légendaire)", "qty": 1, "note": "Capitaine de la Garde du Phénix monté sur le Frostheart Phoenix Ashtari — Héros Légendaire qui renforce le cœur de Phénix ×2 de l'ost : aura défensive, immunité à la Psychologie et frappe embrasée. Un compagnon de choc idéal pour le duelliste Tyrion"},
         {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — buffs et projectiles pour appuyer la ligne"}
       ],
       "army": [
@@ -137,7 +137,7 @@
       "totalSlots": 20,
       "lord": {"icon": "alithanar", "name": "Alith Anar", "qty": 1, "note": "Le meilleur tireur d'élite du jeu — sa portée de 300 rivalise avec l'artillerie ; garde-le en mouvement plutôt qu'au contact. Sa posture Shadow Realms (faction) permet des déplacements surprise impossibles à intercepter"},
       "heroes": [
-        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée pour protéger la ligne de tir"}
+        {"icon": "hefHandShadowCrown", "name": "Hand of the Shadow Crown (Héros Légendaire)", "qty": 1, "note": "Le héros légendaire propre à Alith Anar, invoqué via l'Invocation of Morai-Heg (faction) : maître Shadow Warrior insaisissable, parfaitement raccord avec l'ost d'ombre — tir d'élite, embuscade et furtivité"}
       ],
       "army": [
         {"icon": "shadowWalker", "name": "Shadow-walkers", "qty": 8, "note": "Cœur de l'armée — -50% d'entretien (seigneur) permet d'en aligner une horde inhabituellement dense"},
@@ -228,7 +228,7 @@
       "lord": {"icon": "amon", "name": "Amon", "qty": 1, "note": "Magister Astrologer casqué d'or — Arch-Mage de Haute Magie dont la réserve minimale de +8 Vents de la Magie garantit un flux de sorts ininterrompu. Sa lame stellaire (Sword of the Stars) et son bouclier de barrière en font un mage-guerrier redoutable, gardien de la Tour du Soleil"},
       "heroes": [
         {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 2, "note": "Mages de Haute Magie — la réserve minimale de +8 Vents de la Magie (faction) les garde toujours prêts à lancer buffs et projectiles ; épine dorsale magique de l'ost aux côtés d'Amon"},
-        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée qui ancre la ligne et protège les casters pendant qu'Amon et les mages saturent le champ de sorts"}
+        {"icon": "hefCaradryan", "name": "Caradryan (Héros Légendaire)", "qty": 1, "note": "Capitaine de la Garde du Phénix sur le Frostheart Phoenix Ashtari — Héros Légendaire qui se marie au Frostheart Phoenix d'Amon : aura défensive, immunité à la Psychologie et flamme sacrée, dans le thème glacé et magique de la Tour du Soleil"}
       ],
       "army": [
         {"icon": "hefColonialMilitiamen", "name": "Colonial Militiamen", "qty": 4, "note": "Cœur de la synergie d'Amon : jeunes colons haut-elfes ayant pris lame et arc pour défendre l'hégémonie asur, rendus bon marché par le -20% d'entretien (faction) — une infanterie polyvalente que l'on peut aligner en nombre"},
