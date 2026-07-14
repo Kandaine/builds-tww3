@@ -514,6 +514,24 @@
   --border: #24352e;
 }
 
+/* ---- Southern Realms (mod) : cramoisi des condottieri de Tilée et or
+   des cités-États du sud, sur une chaleur méditerranéenne ---- */
+.theme-southern-realms{
+  --bg: #1a1210;
+  --bg-glow: #2a1a15;
+  --panel: #201612;
+  --panel-light: #2e211a;
+  --panel-deep: #150e0b;
+  --accent-primary: #c33f3f;
+  --accent-primary-bright: #e05f5f;
+  --accent-primary-rgb: 195,63,63;
+  --accent-secondary: #cba43e;
+  --accent-secondary-rgb: 203,164,62;
+  --text: #f0e4d8;
+  --text-dim: #b09a86;
+  --border: #3a2820;
+}
+
 /* ---- Page de recherche : parchemin, encre et sceaux de cire, dans
    l'esprit de Warhammer: The Old World — volontairement distincte des
    thèmes de faction ci-dessus, puisqu'elle réunit toutes les factions. ---- */
@@ -1204,6 +1222,8 @@ body.search-theme .faction-tab.active{
 .result-card:hover[data-group="gnoblar-hordes"]{ border-color: #f0933f; }
 .result-card[data-group="jade-blooded-vampires"]{ border-left-color: #40c299; }
 .result-card:hover[data-group="jade-blooded-vampires"]{ border-color: #63dab3; }
+.result-card[data-group="southern-realms"]{ border-left-color: #c33f3f; }
+.result-card:hover[data-group="southern-realms"]{ border-color: #e05f5f; }
 .result-seal{
   width:64px; height:140px;
   flex-shrink:0;

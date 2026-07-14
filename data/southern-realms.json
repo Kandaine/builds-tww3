@@ -1,0 +1,316 @@
+[
+  {
+    "id": "valmir-gausser",
+    "numeral": "I",
+    "name": "Valmir Gausser",
+    "epithet": "le Prince Frontalier, Dwarf-Friend",
+    "wikiUrl": "",
+    "faction": "Border Princes",
+    "seal": "valmirGausser",
+    "portraitImage": "assets/portraits/valmirGausser.png",
+    "banner": "assets/banners/valmir_gausser.jpg",
+    "lore": "<p>Faction ajoutée par un mod (« The Southern Realms — TEB Subculture Overhaul »), qui donne vie aux cités-États humaines du sud : la <strong>Tilée</strong>, l'<strong>Estalie</strong> et les <strong>Principautés Frontalières</strong> (Border Princes), terres de condottieri, de marchands-princes et de mercenaires.</p>\n      <p>Les Principautés Frontalières sont une mosaïque de petits domaines — d'une bande de brigands armés à de véritables nobles, voire des vampires — cernés de Hommes-Bêtes et de Peaux-Vertes. <strong>Valmir Gausser</strong> est l'un de ces « princes » : parvenu à son domaine après un passé de chef de compagnie mercenaire, il s'est distingué aux côtés des Bretonniens et des Nains en combattant en Araby, d'où il est revenu avec des cicatrices, des compétences, de précieuses amitiés… et un poulain pégase. Chef empathique et combattant tenace, appelé <strong>Dwarf-Friend</strong> par les Dawi, il pourrait bien être celui qui unira enfin les Border Princes sous la <strong>Renegade Crown</strong>.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : attribut <strong>Vigueur Forte</strong>, <strong>Armure +5</strong> et <strong>+8% à tous les dégâts</strong></div>\n        <div class=\"attr-item\">Coût de recrutement et d'entretien : <strong>+50%</strong> pour les Knights of the Righteous Spear et les Sisters of Fury</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-10%</strong> pour tous les bâtiments</div>\n        <div class=\"attr-item\">Commandement : <strong>+5</strong></div>\n        <div class=\"attr-item\">Peut recruter des <strong>Dwarf Rangers</strong></div>\n        <div class=\"attr-item\">Régiment de Renom : <strong>+1</strong> capacité pour l'Alcatani Fellowship (Pikemen)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Points d'allégeance gagnés : <strong>+15%</strong> pour les alliances avec les Nains</div>\n        <div class=\"attr-item\">Taux de reconstitution des pertes : <strong>+10%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. L'axe de Valmir : une armée de <strong>vétérans</strong> — les unités qui atteignent le rang 7 gagnent Vigueur Forte, +5 armure et +8% de dégâts, et le +10% de reconstitution les garde en vie assez longtemps pour y parvenir. Roster « touche-à-tout » des Borderlands : tirailleurs, spécialistes et compromis économiques, épaulés d'alliés nains.</div>\n    ",
+    "build": {
+      "role": "Ost combiné « touche-à-tout » des Border Princes, pensé pour vieillir : le +10% de reconstitution (seigneur) garde les unités en vie jusqu'au rang 7, où elles gagnent Vigueur Forte, +5 armure et +8% de dégâts (faction). Un mur de piques (Alcatani favorisé + Pikemen) fixe l'ennemi, une ligne de tir variée (Dwarf Rangers alliés, Border Rangers, Handgunners, Pavisiers) le fusille, la cavalerie Freelance charge le flanc et les Galloper Guns pilonnent — le tout à bas coût, comme il sied aux mercenaires du sud",
+      "totalSlots": 20,
+      "lord": {"icon": "valmirGausser", "name": "Valmir Gausser", "qty": 1, "note": "Jeune Prince Frontalier, ex-chef de compagnie mercenaire et Dwarf-Friend — chef empathique (commandement +5, faction) et combattant tenace. Il fait vieillir son armée (+10% reconstitution) jusqu'à ce qu'elle devienne une force de vétérans redoutables, et scelle des alliances avec les Nains (+15% allégeance)"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 1, "note": "Diestro d'élite, bretteur et fanfaron dont l'escrime est aussi légendaire que ses vantardises — héros de mêlée qui provoque et abat les champions ennemis en duel"},
+        {"icon": "tebPriestessMyrmidia", "name": "Priestess of Myrmidia", "qty": 1, "note": "Prêtresse et chevalière à la fois, officière de haut rang de l'Ordre de l'Aigle — combattante experte et tacticienne hors pair qui soutient l'ost au nom de la déesse de la guerre"}
+      ],
+      "army": [
+        {"icon": "tebAlcatani", "name": "Alcatani Fellowship (Pikemen)", "qty": 2, "note": "Régiment de Renom que Valmir favorise (+1 de capacité → 2 unités) : la compagnie de piquiers de Rodrigo, « crainte des cupides, aimée des nécessiteux » — un hérisson de piques d'élite, cœur de l'anvil"},
+        {"icon": "tebPikemen", "name": "Pikemen", "qty": 2, "note": "Piquiers cuirassés : « un hérisson mortel pointé sur l'ennemi » — l'anvil de base bon marché qui fixe cavalerie et infanterie pendant que le tir opère"},
+        {"icon": "ranger", "name": "Dwarf Rangers", "qty": 2, "note": "Recrutement unique de Valmir grâce à son statut de Dwarf-Friend (faction) : rôdeurs nains à arbalète, tir d'élite fiable et endurant qui incarne son alliance avec les Dawi"},
+        {"icon": "tebBorderRangers", "name": "Border Rangers", "qty": 2, "note": "« Pour qui est assez rusé et coriace, un Orc n'est qu'une proie de plus » — tirailleurs des Borderlands, mobiles et anti-grosse-cible, idéaux pour harceler et vieillir vers le rang 7"},
+        {"icon": "tebHandgunners", "name": "Handgunners", "qty": 2, "note": "Arquebusiers du sud — moins à l'aise que les Impériaux avec la poudre noire, mais leurs armes « frappent fort » : tir perforant contre l'infanterie blindée"},
+        {"icon": "tebPavisiers", "name": "Pavise Crossbowmen", "qty": 1, "note": "Arbalétriers protégés d'énormes pavois de bois, qui ripostent en relative impunité — ligne de tir durable qui tient sous le feu adverse"},
+        {"icon": "tebFreelanceKnights", "name": "Freelance Knights", "qty": 2, "note": "Chevaliers bretonniens échoués dans les Borderlands, bien équipés quoique « distinctement délirants » — cavalerie de choc qui charge les flancs, le marteau de l'ost"},
+        {"icon": "tebMontanteSwordsmen", "name": "Montante Swordsmen", "qty": 1, "note": "Duellistes accomplis à l'espadon, capables de défier des régiments entiers sur un pont pour le sport — élite de mêlée qui ouvre l'infanterie lourde"},
+        {"icon": "tebDuellists", "name": "Duellists", "qty": 1, "note": "Bretteurs excentriques du sud qui dédaignent armure et bouclier — spécialistes rapides qui débordent et abattent les cibles isolées"},
+        {"icon": "tebIrrananHillmen", "name": "Irranan Hillmen", "qty": 1, "note": "Montagnards coriaces mais indisciplinés des monts Irrana — tirailleurs bon marché « touche-à-tout » qui écran­tent et harcèlent"},
+        {"icon": "tebGalloperGuns", "name": "Galloper Guns", "qty": 1, "note": "Petits falconets aussi manœuvrables que des pistolets comparés aux grosses pièces — artillerie mobile qui suit l'ost et pilonne les formations serrées"}
+      ],
+      "magic": "Valmir n'est pas un lanceur de sorts mais un capitaine mercenaire ; l'appui « mystique » vient d'une Priestess of Myrmidia (Ordre de l'Aigle), qui bénit et coordonne l'ost au nom de la déesse de la guerre. La vraie force de Valmir est tactique et économique : une armée combinée bon marché qu'il fait mûrir en corps de vétérans.",
+      "note": "Build « touche-à-tout » calé sur les effets de Valmir. La clé est la durée : le +10% de reconstitution (seigneur) et le commandement +5 (faction) gardent les unités en vie jusqu'au rang 7, seuil où toute l'armée gagne Vigueur Forte, +5 armure et +8% de dégâts — un ost qui ne fait que se renforcer au fil de la campagne. On construit autour d'un anvil de piques (Alcatani ×2, Régiment de Renom favorisé, + Pikemen), d'une ligne de tir combinée et variée (Dwarf Rangers alliés — son recrutement unique de Dwarf-Friend —, Border Rangers, Handgunners, Pavisiers), d'une cavalerie de choc (Freelance Knights) et d'artillerie mobile (Galloper Guns), avec des spécialistes de mêlée (Montante, Duellists, Master Duellist) pour les duels. On évite les Knights of the Righteous Spear et Sisters of Fury (+50% de coût pour Valmir). Le -10% de coût de construction et les alliances naines (+15% allégeance) soutiennent une expansion prudente dans les Borderlands hostiles."
+    }
+  },
+  {
+    "id": "borgio-the-besieger",
+    "numeral": "II",
+    "name": "Borgio the Besieger",
+    "epithet": "Prince de Miragliano",
+    "wikiUrl": "",
+    "faction": "Miragliano (Tilée)",
+    "seal": "borgio",
+    "portraitImage": "assets/portraits/borgio.png",
+    "banner": "assets/banners/borgio.jpg",
+    "lore": "<p>Faction de mod (« The Southern Realms »). <strong>Borgio</strong>, Prince de Miragliano surnommé <strong>« le Besieger »</strong> pour son expertise inégalée dans la guerre de siège, est l'un des plus grands Généraux mercenaires de toute l'histoire tiléenne. On dit qu'aucune cité, pas même les remparts ingénieux de Miragliano, ne peut lui résister.</p>\n      <p>Tacticien accompli formé aux enseignements de Myrmidia, il a survécu à d'innombrables tentatives d'assassinat (« un homme qu'il faut tuer plus d'une fois pour en être sûr »). Ses troupes lui vouent une foi inébranlable — en particulier les <strong>Duellists de Vespero</strong> et les <strong>Besiegers de Braganza</strong>, présences constantes de son armée. Son alliée la plus solide est l'intrigante Lucrezzia Belladonna, dont la sœur est son épouse.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : attribut <strong>Vigueur Forte</strong>, <strong>Armure +5</strong> et <strong>+8% à tous les dégâts</strong> (mécanique commune aux Southern Realms)</div>\n        <div class=\"attr-item\">Attrition : <strong>-15%</strong> en état de siège</div>\n        <div class=\"attr-item\">Durée de recrutement global et local : <strong>-1 tour</strong> pour les unités d'artillerie</div>\n        <div class=\"attr-item\">Commandement : <strong>+10</strong> lors d'un siège ou d'un encerclement</div>\n        <div class=\"attr-item\">Régiment de Renom : <strong>+1</strong> capacité pour Vespero's Vendetta (Duellists)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Tours de siège : <strong>+1</strong> par pièce de siège construite (armée du seigneur)</div>\n        <div class=\"attr-item\">Peut recruter une <strong>seconde compagnie de Braganza's Besiegers</strong></div>\n        <div class=\"attr-item\">Capacité passive <strong>« Difficult To Slay »</strong> : régénération +5% PV/s pendant 3s quand ses PV passent sous 50% (récup. 150s) — Borgio défie sans cesse la mort</div>\n        <div class=\"attr-item\">Capacité passive d'aura <strong>« Wall Fighters »</strong> : Portée +15%, Attaque en mêlée +5, Vigueur Forte et Immunité au débordement pour les alliés proches placés sur ou sous une plateforme (combats de remparts)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. Armée de Tilée : roster fiable et lourdement blindé, avec une meilleure artillerie et cavalerie que ses voisins.</div>\n    ",
+    "build": {
+      "role": "Ost de siège et de tir à la tiléenne, calé sur les effets de Borgio : une masse d'arbalétriers d'élite (Marksmen de Miragliano, Braganza's Besiegers — dont il aligne DEUX compagnies) et d'artillerie (recrutée -1 tour) déciment l'ennemi fixé par un mur de piques, tandis que Borgio favorise ses Duellists de Vespero (+1) et rayonne en mêlée (aura Wall Fighters : Attaque +5, Immunité au débordement). Combattant increvable (Difficult To Slay), il excelle au siège (commandement +10, +1 tour de siège par pièce construite, -15% attrition en état de siège)",
+      "totalSlots": 20,
+      "lord": {"icon": "borgio", "name": "Borgio the Besieger", "qty": 1, "note": "Le plus grand condottiere de Tilée — expert de siège, tacticien myrmidien et combattant increvable (survivant de mille assassinats). Chef aimé qui inspire tout l'ost"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 1, "note": "Bretteur d'élite qui provoque et abat les champions ennemis"},
+        {"icon": "tebPriestessMyrmidia", "name": "Priestess of Myrmidia", "qty": 1, "note": "Prêtresse-chevalière de l'Ordre de l'Aigle — tacticienne et soutien, dans la tradition myrmidienne de Borgio"}
+      ],
+      "army": [
+        {"icon": "tebBraganzaBesiegers", "name": "Braganza's Besiegers (Pavise Crossbowmen)", "qty": 2, "note": "Régiment de Renom fétiche de Borgio, qui peut en aligner une SECONDE compagnie (effet de seigneur → 2 unités) : arbalétriers à pavois qui fusillent en impunité derrière leurs boucliers"},
+        {"icon": "tebMarksmenMiragliano", "name": "Marksmen of Miragliano (Crossbowmen)", "qty": 2, "note": "Arbalétriers d'élite de Miragliano — le meilleur tir de Tilée, perforant et précis"},
+        {"icon": "tebVespero", "name": "Vespero's Vendetta (Duellists)", "qty": 2, "note": "Régiment de Renom que Borgio favorise (+1 de capacité → 2 unités) : duellistes redoutables qui débordent et abattent les cibles isolées"},
+        {"icon": "tebPikemen", "name": "Pikemen", "qty": 3, "note": "Hérisson de piques : l'anvil qui fixe cavalerie et infanterie pendant le pilonnage — et profite de l'aura Wall Fighters de Borgio (Attaque +5, Immunité au débordement) au corps-à-corps"},
+        {"icon": "tebAlcatani", "name": "Alcatani Fellowship (Pikemen)", "qty": 1, "note": "Piquiers d'élite (Régiment de Renom) qui renforcent le mur de piques"},
+        {"icon": "tebLightCannons", "name": "Light Cannons", "qty": 2, "note": "Canons légers et mobiles, instruments des tactiques avancées de Borgio"},
+        {"icon": "tebGalloperGuns", "name": "Galloper Guns", "qty": 1, "note": "Falconets mobiles qui suivent l'ost et brisent les formations serrées"},
+        {"icon": "tebPavisiers", "name": "Pavise Crossbowmen", "qty": 1, "note": "Arbalétriers à pavois de base — ligne de tir durable en complément des Besiegers"},
+        {"icon": "tebDuellists", "name": "Duellists", "qty": 1, "note": "Bretteurs excentriques sans armure — spécialistes rapides de flanc"},
+        {"icon": "tebBrokenLances", "name": "Broken Lances", "qty": 1, "note": "Chevaliers tiléens en groupes libres, assemblés pour des charges audacieuses"},
+        {"icon": "tebRepublicanGuard", "name": "Republican Guard", "qty": 1, "note": "Garde d'élite — meilleure protection pour le prince et son état-major"}
+      ],
+      "magic": "Borgio n'est pas un lanceur de sorts mais un maître tacticien myrmidien ; l'appui vient d'une Priestess of Myrmidia. Sa vraie force est la guerre de siège et la coordination du tir.",
+      "note": "Build de tir et de siège tiléen, aligné sur ses effets confirmés : masse d'arbalètes d'élite (Marksmen ×2 + Braganza's Besiegers ×2 — sa seconde compagnie autorisée) et artillerie (Light Cannons ×2, Galloper ; recrutement -1 tour) qui déciment l'ennemi fixé par l'anvil de piques (Pikemen ×3 + Alcatani), lesquelles profitent de l'aura Wall Fighters de Borgio. Vespero's Vendetta ×2 (Régiment de Renom favorisé, +1) et les Duellists nettoient les flancs, Broken Lances et Republican Guard complètent. Borgio, quasi impossible à tuer (Difficult To Slay), domine les sièges (+10 commandement, +1 tour de siège/pièce, -15% attrition assiégé). Comme toute l'armée des Southern Realms, on fait vieillir les unités jusqu'au rang 7 (Vigueur Forte, +5 armure, +8% dégâts)."
+    }
+  },
+  {
+    "id": "lucrezzia-belladonna",
+    "numeral": "III",
+    "name": "Lucrezzia Belladonna",
+    "epithet": "la Dame de Pavona, Maîtresse du Poison",
+    "wikiUrl": "",
+    "faction": "Bilbali (Estalie)",
+    "seal": "lucrezzia",
+    "portraitImage": "assets/portraits/lucrezzia.png",
+    "banner": "assets/banners/lucrezzia.jpg",
+    "lore": "<p>Faction de mod (« The Southern Realms »). <strong>Lucrezzia Belladonna</strong>, réputée la plus belle femme du Vieux Monde et ancienne dirigeante de Pavona, est une femme dangereuse — versée dans la <strong>magie</strong>, l'<strong>intrigue</strong> et le <strong>poison</strong>. Ses ennemis, comme ses époux devenus encombrants, succombent volontiers à une mort rapide et douloureuse, souvent après de petites coupures ou un repas.</p>\n      <p>Après la mort de son septième mari, elle a consolidé son alliance avec le grand Borgio de Miragliano via sa sœur. La ruine de Pavona par les Peaux-Vertes l'a poussée à Bilbali, en Estalie, où son talent pour la diplomatie lui bâtit une nouvelle base de pouvoir. « Il suffit de la touche délicate d'une femme. »</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : <strong>Vigueur Forte</strong>, <strong>Armure +5</strong>, <strong>+8% dégâts</strong> (mécanique commune aux Southern Realms)</div>\n        <div class=\"attr-item\">Commandement Favoriser l'Indépendance : <strong>+4</strong> relations diplomatiques supplémentaires avec les Hommes et les Hauts Elfes</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+10</strong> avec toutes les factions</div>\n        <div class=\"attr-item\">Coût des actions de héros : <strong>-15%</strong></div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+3</strong> pour les Mercenary Captains</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>-30%</strong> pour les Irranan Hillmen</div>\n        <div class=\"attr-item\">Régiment de Renom : <strong>+1</strong> capacité pour Vespero's Vendetta (Duellists)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Points d'allégeance gagnés : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Chance de réussite des actions des héros ennemis : <strong>-5%</strong></div>\n        <div class=\"attr-item\">Débloque le recrutement du héros <strong>Master Duellist</strong></div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+5</strong> pour les héros intégrés à l'armée du seigneur</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. Lucrezzia est une intrigante et diplomate hors pair : elle multiplie les héros (débloque et renforce les Master Duellists) et abaisse le coût de recrutement de ses Irranan Hillmen.</div>\n    ",
+    "build": {
+      "role": "Ost d'intrigue calé sur les effets de Lucrezzia, qui multiplie et renforce les héros : une escouade de Master Duellists (qu'elle seule débloque, +5 attaque en mêlée intégrés, actions -15%) épaule une nuée de duellistes, bretteurs et shieldmaidens, autour de son Régiment favori Vespero's Vendetta et de ses Irranan Hillmen bon marché. Elle frappe depuis l'ombre pendant que ses lames font le sale travail",
+      "totalSlots": 20,
+      "lord": {"icon": "lucrezzia", "name": "Lucrezzia Belladonna", "qty": 1, "note": "La plus belle et la plus dangereuse dame du Vieux Monde — intrigante et diplomate qui débloque le recrutement des Master Duellists et rend ses héros intégrés plus mordants (+5 attaque en mêlée) ; ses lames et poisons éliminent quiconque devient encombrant"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 3, "note": "Cœur de la synergie de Lucrezzia : elle seule débloque leur recrutement et leur accorde +5 d'attaque en mêlée une fois intégrés (actions -15%). Bretteurs-assassins d'élite qui traquent et abattent champions et casters ennemis"}
+      ],
+      "army": [
+        {"icon": "tebVespero", "name": "Vespero's Vendetta (Duellists)", "qty": 2, "note": "Régiment de Renom que Lucrezzia favorise (+1 de capacité → 2 unités) : duellistes redoutables, fer de lance d'un ost d'intrigue et de vendetta"},
+        {"icon": "tebIrrananHillmen", "name": "Irranan Hillmen", "qty": 2, "note": "Montagnards des monts Irrana recrutés à -30% de coût par Lucrezzia (faction) — tirailleurs coriaces et bon marché qui écran­tent et harcèlent"},
+        {"icon": "tebDuellists", "name": "Duellists", "qty": 2, "note": "Bretteurs excentriques sans armure — spécialistes rapides qui débordent et saignent l'ennemi"},
+        {"icon": "tebSwashbucklers", "name": "Swashbucklers", "qty": 2, "note": "Rascals armés pour qui le « fair-play » n'existe pas — flanqueurs sournois"},
+        {"icon": "tebSistersOfFury", "name": "Sisters of Fury", "qty": 2, "note": "Shieldmaidens de l'Ordre de la Furie — tourbillon maîtrisé de colère sacrée"},
+        {"icon": "tebKnightsEncarmine", "name": "Knights Encarmine", "qty": 2, "note": "Chevaliers à l'armure écarlate et aux techniques de double lame — fureur de choc"},
+        {"icon": "tebCrossbowmen", "name": "Crossbowmen", "qty": 2, "note": "« Les meilleurs arbalétriers viennent de Tilée ! » — ligne de tir fiable"},
+        {"icon": "tebAnakondaAmazons", "name": "Anakonda's Amazons", "qty": 1, "note": "Régiment de Renom d'Amazones — guerrières exotiques et féroces"},
+        {"icon": "tebPikemen", "name": "Pikemen", "qty": 1, "note": "Anvil de piques qui fixe l'ennemi pendant que les lames débordent"}
+      ],
+      "magic": "Lucrezzia, intrigante et empoisonneuse, mène par les héros : ses Master Duellists (débloqués et renforcés) sont sa véritable arme, épaulés d'une nuée de bretteurs. La diplomatie (+10 avec tous, +20% allégeance) est sa seconde lame sur la carte de campagne.",
+      "note": "Build d'intrigue centré sur les héros : Lucrezzia aligne 3 Master Duellists (qu'elle seule débloque), tous à +5 d'attaque en mêlée une fois intégrés, qui traquent les personnages ennemis pendant qu'une nuée de lames — Vespero's Vendetta ×2 (favoris), Duellists, Swashbucklers, Sisters of Fury, Amazons — déborde et saigne l'ennemi. Ses Irranan Hillmen ×2 (recrutés -30%) écran­tent, Knights Encarmine chargent, Crossbowmen et Pikemen tiennent et fusillent. Comme toute la faction, on fait vieillir les unités jusqu'au rang 7."
+    }
+  },
+  {
+    "id": "leonardo-catrazza",
+    "numeral": "IV",
+    "name": "Leonardo Catrazza",
+    "epithet": "Prince-Ingénieur, Ambassadeur en Cathay",
+    "wikiUrl": "",
+    "faction": "Tilée",
+    "seal": "catrazza",
+    "portraitImage": "assets/portraits/catrazza.png",
+    "banner": "assets/banners/catrazza.jpg",
+    "lore": "<p>Faction de mod (« The Southern Realms »). <strong>Leonardo Catrazza</strong>, l'un des princes et duellistes les plus habiles de Tilée, est un meneur aux multiples facettes qui sait équilibrer politique et guerre directe. Homme d'affaires avisé, il a préféré une trêve cordiale avec le retour de Borgio pour étendre ses entreprises ailleurs.</p>\n      <p>Avec ses considérables moyens et son talent diplomatique, il a obtenu la grande ambassade de Shang-Yang juste à temps pour voir Grand Cathay compromis — un homme qui voit des opportunités jusque dans un champ de bataille de mourants. Le Dragon de Fer lui fait, pour l'heure, confiance. Sous ses discours doux, Leonardo « garde toujours un gros bâton dans sa poche » : ses <strong>Birdmen</strong> volants, ses <strong>Tortoise Tanks</strong> et l'artillerie de Bronzino.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : <strong>Vigueur Forte</strong>, <strong>Armure +5</strong>, <strong>+8% dégâts</strong> (mécanique commune aux Southern Realms)</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>+20%</strong> pour toutes les unités hors contrôle direct de Miragliano</div>\n        <div class=\"attr-item\">Revenus des tarifs commerciaux : <strong>+30%</strong></div>\n        <div class=\"attr-item\">Ressources échangeables produites : <strong>+10%</strong> ; effets améliorés des bâtiments de ressource Épices</div>\n        <div class=\"attr-item\">Régiment de Renom : <strong>+1</strong> capacité pour les Birdmen of Catrazza</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+10</strong> avec Goldtooth et les Western Provinces</div>\n        <div class=\"attr-item\">Puissance d'arme : <strong>+10%</strong> pour les Duellists, Pikemen, Republican Guard et les unités de cavalerie (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. Catrazza, prince-ingénieur et marchand, allie ses machines de guerre (Birdmen favorisés, Tortoise Tanks) à un cœur d'infanterie et de cavalerie qu'il rend plus mordant (+10% puissance d'arme).</div>\n    ",
+    "build": {
+      "role": "Ost d'ingénierie et de combined-arms calé sur les effets de Catrazza : ses inventions-signatures (Birdmen favorisés, Tortoise Tanks, artillerie de Bronzino) écrasent à distance, tandis qu'un cœur d'infanterie et de cavalerie qu'il rend plus mordant (+10% puissance d'arme pour Duellists, Pikemen, Republican Guard et cavalerie) tient et charge. Le « gros bâton dans la poche » du prince-marchand",
+      "totalSlots": 20,
+      "lord": {"icon": "catrazza", "name": "Leonardo Catrazza", "qty": 1, "note": "Prince-ingénieur, ambassadeur et duelliste accompli — il déploie machines de guerre et Birdmen favorisés, et rend son infanterie et sa cavalerie plus mordantes (+10% puissance d'arme pour Duellists, Pikemen, Republican Guard et cavalerie)"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 2, "note": "Bretteurs d'élite qui protègent les machines et abattent les champions ennemis"}
+      ],
+      "army": [
+        {"icon": "tebBirdmenCatrazza", "name": "Birdmen of Catrazza", "qty": 2, "note": "Régiment de Renom que Catrazza favorise (+1 de capacité → 2 unités) : hommes-oiseaux mécaniques volants, invention-signature — domination aérienne et harcèlement"},
+        {"icon": "tebTortoiseTank", "name": "Tortoise Tank", "qty": 2, "note": "Char-tortue blindé, chef-d'œuvre d'ingénierie tiléenne — pièce maîtresse increvable de l'ost"},
+        {"icon": "tebBronzinoGalloperGuns", "name": "Bronzino's Galloper Guns", "qty": 2, "note": "Régiment de Renom d'artillerie mobile — falconets qui pilonnent en mouvement"},
+        {"icon": "tebPikemen", "name": "Pikemen", "qty": 3, "note": "Mur de piques buffé par Catrazza (+10% puissance d'arme) — protège machines et artillerie tout en frappant plus fort"},
+        {"icon": "tebDuellists", "name": "Duellists", "qty": 2, "note": "Bretteurs rapides buffés par Catrazza (+10% puissance d'arme) — flanqueurs qui abattent les cibles isolées"},
+        {"icon": "tebBrokenLances", "name": "Broken Lances", "qty": 2, "note": "Cavalerie buffée par Catrazza (+10% puissance d'arme) — charges audacieuses sur les flancs"},
+        {"icon": "tebCarabiniers", "name": "Carabiniers", "qty": 2, "note": "Cavalerie à poudre noire, buffée par Catrazza (+10% puissance d'arme) — mousquetaires montés qui harcèlent"},
+        {"icon": "tebRepublicanGuard", "name": "Republican Guard", "qty": 1, "note": "Garde d'élite buffée par Catrazza (+10% puissance d'arme) — protège le prince et ancre le centre"},
+        {"icon": "tebLightCannons", "name": "Light Cannons", "qty": 1, "note": "Canon léger pour les tactiques avancées de l'ingénieur-prince"}
+      ],
+      "magic": "Catrazza n'est pas un mage mais un ingénieur de génie : sa « magie » est mécanique — Birdmen, Tortoise Tanks et artillerie de Bronzino. Duelliste accompli, il tient aussi sa place en mêlée.",
+      "note": "Build ingénierie + combined-arms : les inventions (Birdmen ×2 favorisés, Tortoise Tanks ×2, Bronzino's Galloper Guns ×2, Light Cannon) écrasent à distance, tandis que le cœur qu'il buffe à +10% de puissance d'arme — Pikemen ×3, Duellists ×2, Republican Guard, cavalerie (Broken Lances, Carabiniers) — tient la ligne et charge. Comme toute la faction, on fait vieillir les unités jusqu'au rang 7. Économiquement, ses tarifs commerciaux (+30%) et ses épices financent l'ost."
+    }
+  },
+  {
+    "id": "marco-colombo",
+    "numeral": "V",
+    "name": "Marco Colombo",
+    "epithet": "Prince de Trantio, l'Explorateur",
+    "wikiUrl": "",
+    "faction": "Trantio (Tilée) / Nouveau Monde",
+    "seal": "marcoColombo",
+    "portraitImage": "assets/portraits/marcoColombo.png",
+    "banner": "assets/banners/marco_colombo.jpg",
+    "lore": "<p>Faction de mod (« The Southern Realms »). <strong>Marco Colombo</strong>, Prince de Trantio, est le condottiere qui a « découvert » la Lustrie — marksman, navigateur, explorateur, marchand et diplomate (le plus élégant de Lustrie, selon ses biographes). Il est l'un des rares êtres à entretenir une ligne de contacts utilisable avec les Slanns, jusqu'à Lord Mazdamundi.</p>\n      <p>Comme avec les Nains, un seul faux pas peut ruiner une route commerciale — voire tout détruire. Colombo gère ses contacts personnellement : en échange d'objets d'une valeur exorbitante, il mène ses forces contre les pillards que les Hommes-Lézards léthargiques ne daignent traiter (Elfes Noirs, pirates), et il a peu de patience pour les humains cupides qui menacent ses précieux partenariats.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : <strong>Vigueur Forte</strong>, <strong>Armure +5</strong>, <strong>+8% dégâts</strong> (mécanique commune aux Southern Realms)</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>+25%</strong> pour toutes les unités hors régions côtières</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-20</strong> avec la Huntsmarshal's Expedition</div>\n        <div class=\"attr-item\"><strong>Double gain d'expérience</strong> contre les Armées Renégates (Rogue Armies) ; commandement <strong>+10</strong> contre elles</div>\n        <div class=\"attr-item\">Portée de déplacement en campagne : <strong>+10%</strong> ; attrition de Haute Mer : <strong>-80%</strong></div>\n        <div class=\"attr-item\">Régiment de Renom (compétence) : <strong>+1</strong> capacité pour Tichi-Huichi's Raiders</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de déplacement en campagne : <strong>+8%</strong></div>\n        <div class=\"attr-item\">Chance de défense en embuscade : <strong>+25%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+30</strong> avec les Hommes-Lézards</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. Colombo est un explorateur mobile et côtier : mouvement accru, immunité de Haute Mer et amitié des Hommes-Lézards (+30) qui débloque les Tichi-Huichi's Raiders alliés.</div>\n    ",
+    "build": {
+      "role": "Ost colonial d'explorateur : conquistadors en armure, cavalerie du Nouveau Monde et marksmen d'élite, épaulés d'alliés Hommes-Lézards (Tichi-Huichi's Raiders) grâce au First Contact de Colombo. Une force mobile et polyvalente taillée pour les jungles de Lustrie",
+      "totalSlots": 20,
+      "lord": {"icon": "marcoColombo", "name": "Marco Colombo", "qty": 1, "note": "Prince de Trantio, explorateur et marksman d'exception — diplomate qui compte parmi les seuls amis humains des Slanns, il mène ses conquistadors dans le Nouveau Monde"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 1, "note": "Bretteur d'élite — protège la ligne de tir et défie les champions"},
+        {"icon": "tebPriestessMyrmidia", "name": "Priestess of Myrmidia", "qty": 1, "note": "Prêtresse-chevalière de l'Ordre de l'Aigle — soutien tactique de l'expédition"}
+      ],
+      "army": [
+        {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 2, "note": "Vétérans en armure lourde et meilleurs mousquets — noyau conquistador fiable"},
+        {"icon": "tebAdventurers", "name": "Adventurers", "qty": 2, "note": "« Le voisin humain inquiète peu quand on a affronté les Lézards de Lustrie » — vétérans endurcis du Nouveau Monde"},
+        {"icon": "tebRiders", "name": "Riders", "qty": 2, "note": "Mercenaires montés rusés qui frappent sans être punis"},
+        {"icon": "tebLancers", "name": "Lancers", "qty": 2, "note": "Bons chevaux et bel acier, rapides sur le champ — cavalerie de choc"},
+        {"icon": "tebCarabiniers", "name": "Carabiniers", "qty": 2, "note": "Mousquetaires montés qui visent les angles morts de l'ennemi"},
+        {"icon": "tebMarksmenMiragliano", "name": "Marksmen of Miragliano (Crossbowmen)", "qty": 2, "note": "Tir d'élite — Colombo est lui-même un marksman réputé"},
+        {"icon": "tebTichiHuichiRaiders", "name": "Tichi-Huichi's Raiders", "qty": 2, "note": "Régiment de Renom Homme-Lézard (Skinks montés) que Colombo favorise (+1 de capacité → 2 unités) grâce à son amitié avec les Lézards (+30 diplo) — harceleurs rapides à distance"},
+        {"icon": "tebCrossbowmen", "name": "Crossbowmen", "qty": 1, "note": "Arbalétriers tiléens fiables en soutien de tir"},
+        {"icon": "tebLightCannons", "name": "Light Cannons", "qty": 2, "note": "Canons légers et mobiles pour l'appui de l'expédition"}
+      ],
+      "magic": "Colombo n'est pas un mage mais un marksman et diplomate ; l'appui vient d'une Priestess of Myrmidia. Sa vraie force est la mobilité, le tir et ses alliances exotiques (Lézards).",
+      "note": "Build colonial conquistador : noyau de vétérans à mousquet (Royal Guard, Adventurers) et de cavalerie mobile (Riders, Lancers, Carabiniers), ligne de tir d'élite (Marksmen ×2, Crossbowmen) et artillerie légère, le tout épaulé des Tichi-Huichi's Raiders ×2 (Régiment favori, Lézards alliés). Une force rapide et polyvalente qui exploite le mouvement accru (+18% au total), la défense en embuscade (+25%) et l'immunité de Haute Mer pour frapper partout. Comme toute la faction, on fait vieillir les unités jusqu'au rang 7 ; on est redoutable contre les Armées Renégates (double XP, commandement +10)."
+    }
+  },
+  {
+    "id": "el-cadavo",
+    "numeral": "VI",
+    "name": "El Cadavo",
+    "epithet": "l'Aventurier Légendaire",
+    "wikiUrl": "",
+    "faction": "Estalie / Nouveau Monde",
+    "seal": "elCadavo",
+    "portraitImage": "assets/portraits/elCadavo.png",
+    "banner": "assets/banners/el_cadavo.jpg",
+    "lore": "<p>Faction de mod (« The Southern Realms »). <strong>El Cadavo</strong> — quel que soit son vrai nom — est un meneur d'hommes, seigneur mercenaire et explorateur légendaire : entêtement, talent et cupidité réunis en une figure rugueuse. Forgé dans la guerre mercenaire permanente de Tilée, il s'est fait autant d'ennemis qu'il en a éliminés, dont l'inimitié durable de la <strong>compagnie Alcatani</strong>.</p>\n      <p>L'un des plus fameux condottieri à s'être aventuré dans le Nouveau Monde, il y mène une guerre sans fin contre les Hommes-Lézards, au point d'avoir agacé les nerfs pourtant torpides de Lord Mazdamundi. On se demande s'il a trouvé un secret d'immortalité, ou si le « manteau d'El Cadavo » passe d'aventurier en aventurier de même charisme, entêtement et avidité.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : <strong>Vigueur Forte</strong>, <strong>Armure +5</strong>, <strong>+8% dégâts</strong> (mécanique commune aux Southern Realms)</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>+25%</strong> pour toutes les unités hors régions côtières</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec la Huntsmarshal's Expedition</div>\n        <div class=\"attr-item\">Chance de voler un objet magique après bataille : <strong>+15%</strong></div>\n        <div class=\"attr-item\">Coût de construction : <strong>-10%</strong> (capitales de province / colonies) ; relations : <strong>-25</strong> avec les Hommes-Lézards</div>\n        <div class=\"attr-item\">Régiment de Renom (compétence) : <strong>+1</strong> capacité pour Pirazzo's Lost Legion (Pikemen)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Temps de construction : <strong>-33%</strong> pour tous les bâtiments (province locale)</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-50</strong> avec Lord Mazdamundi</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. El Cadavo est un aventurier côtier en feud ouvert avec les Hommes-Lézards (et Mazdamundi lui-même) : il pille les objets magiques et bâtit vite ses colonies, autour de son Régiment favori Pirazzo's Lost Legion.</div>\n    ",
+    "build": {
+      "role": "Bande d'aventuriers et de rascals du Nouveau Monde, ancrée sur son Régiment favori Pirazzo's Lost Legion : un anvil de piques tient le front pendant que conquistadors endurcis, pirates de Sartosa, bretteurs et arquebusiers font le sale boulot. Une force cupide, mobile et rusée à l'image d'El Cadavo, qui pille les objets magiques et bâtit vite ses colonies",
+      "totalSlots": 20,
+      "lord": {"icon": "elCadavo", "name": "El Cadavo", "qty": 1, "note": "Aventurier légendaire, seigneur mercenaire entêté et cupide en feud ouvert avec les Hommes-Lézards — survivant de mille cataclysmes lustriens, il attire et embauche sans cesse de nouvelles troupes pour ses colonies (construction -33%)"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 2, "note": "Bretteurs et rascals d'élite — la fine lame de la bande d'El Cadavo"}
+      ],
+      "army": [
+        {"icon": "tebPirazzoLostLegion", "name": "Pirazzo's Lost Legion (Pikemen)", "qty": 2, "note": "Régiment de Renom qu'El Cadavo favorise (+1 de capacité → 2 unités) : piquiers vétérans doublés d'arbalétriers — l'anvil de la bande"},
+        {"icon": "tebAdventurers", "name": "Adventurers", "qty": 3, "note": "Cœur de la bande : vétérans endurcis « qui ont affronté les Lézards de Lustrie » — polyvalents et coriaces"},
+        {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 2, "note": "Vétérans en armure lourde et meilleurs mousquets — l'élite fiable du conquistador"},
+        {"icon": "tebSartosanPirates", "name": "Sartosan Pirates", "qty": 2, "note": "« Pourquoi le rhum a-t-il toujours disparu ? » — flibustiers féroces et débrouillards"},
+        {"icon": "tebSwashbucklers", "name": "Swashbucklers", "qty": 2, "note": "Rascals armés pour qui le fair-play n'existe pas — flanqueurs sournois"},
+        {"icon": "tebRiders", "name": "Riders", "qty": 2, "note": "Mercenaires montés rusés qui frappent sans être punis"},
+        {"icon": "tebHandgunners", "name": "Handgunners", "qty": 2, "note": "Arquebusiers — tir perforant de la bande"},
+        {"icon": "tebCarabiniers", "name": "Carabiniers", "qty": 1, "note": "Mousquetaires montés qui harcèlent les flancs"},
+        {"icon": "tebBrokenLances", "name": "Broken Lances", "qty": 1, "note": "Chevaliers libres pour des charges audacieuses"}
+      ],
+      "magic": "El Cadavo n'est pas un mage mais un aventurier retors ; sa force est la mobilité, la ruse et la puissance de feu d'une bande cupide et endurcie par le Nouveau Monde — et il vole volontiers les objets magiques de ses ennemis (+15% après bataille).",
+      "note": "Build d'aventuriers du Nouveau Monde : un anvil de Pirazzo's Lost Legion ×2 (Régiment favori) tient le front, tandis qu'un gros noyau d'Adventurers ×3 + Royal Guard, épaulé de pirates de Sartosa, de Swashbucklers et d'une cavalerie mobile (Riders, Carabiniers, Broken Lances) et d'arquebusiers, submerge par le nombre et la ruse. Comme toute la faction, on fait vieillir les unités jusqu'au rang 7. On reste côtier (recrutement -25% ailleurs) et on pille les objets magiques."
+    }
+  },
+  {
+    "id": "lupio-sunscryer",
+    "numeral": "VII",
+    "name": "Lupio Sunscryer",
+    "epithet": "Don Lupio de Magritta",
+    "wikiUrl": "",
+    "faction": "Magritta (Estalie)",
+    "seal": "lupioSunscryer",
+    "portraitImage": "assets/portraits/lupioSunscryer.png",
+    "banner": "assets/banners/lupio_sunscryer.jpg",
+    "lore": "<p>Faction de mod (« The Southern Realms »). <strong>Don Lupio Sunscryer</strong> de Magritta est un personnage controversé : ostentatoire et cruel, mais nullement dénué de subtilité ni d'efficacité. Il s'est emparé de sa cité en se débarrassant de son frère, trop bon pour survivre à la compétition, puis s'est rendu notoire par sa cupidité légendaire, son égocentrisme et son talent pour les tactiques modernes.</p>\n      <p>Son esprit stratégique attend volontiers que les forces de ses alliés s'épuisent contre un ennemi commun avant de mener ses troupes fraîches à la victoire — et à la prise de tout le butin. Connu pour ses lourds impôts et sa haine sélective de la paysannerie et de ses moulins, il voue à l'étranger une fureur particulière aux Géants ennemis, qu'il prend pour des « moulins ambulants ». Derrière la mascarade se cache l'esprit d'un général et politicien avisé, et ses <strong>Royal Muskets</strong>.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : attribut <strong>Vigueur Forte</strong>, <strong>Armure +5</strong> et <strong>+8% à tous les dégâts</strong> (mécanique commune aux Southern Realms)</div>\n        <div class=\"attr-item\">Commandement Collecte de Tribut : <strong>+5% de revenus</strong> supplémentaires, mais <strong>-3 Contrôle</strong></div>\n        <div class=\"attr-item\">Attribut <strong>Immunité au débordement</strong> pour les Billmen</div>\n        <div class=\"attr-item\">Régiment de Renom : « A mysterious corruption » pour <strong>The Prince's Own (Black Watch)</strong></div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée : <strong>+20%</strong> pour les unités de <strong>cavalerie et d'infanterie à poudre noire</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-10%</strong> pour les Adventurers, Royal Guard, Riders et Lancers (armée du seigneur)</div>\n        <div class=\"attr-item\">Revenus de tous les bâtiments : <strong>+15%</strong> (province locale)</div>\n        <div class=\"attr-item\">Contrôle : <strong>-5</strong> (province locale)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. Armée d'Estalie : roster fiable et lourdement blindé, avec de polyvalentes unités Conquistador. Lupio croit en l'or et en lui-même — sa cupidité (revenus +15%, tribut) se paie en Contrôle.</div>\n    ",
+    "build": {
+      "role": "Ost de poudre noire et de Conquistadors estaliens, calé sur les effets de Lupio : une ligne de feu à longue portée (Handgunners, Carabiniers montés, Royal Guard — toutes ses unités à poudre noire tirent +20% plus loin) appuyée par des Conquistadors bon marché (Adventurers, Riders, Lancers, Royal Guard à -10% d'entretien), une ancre de Billmen immunisés au débordement et son Régiment favori The Prince's Own (Black Watch)",
+      "totalSlots": 20,
+      "lord": {"icon": "lupioSunscryer", "name": "Lupio Sunscryer", "qty": 1, "note": "Don cupide et ostentatoire de Magritta, mais général et politicien avisé — apôtre des mousquets modernes, il accorde +20% de portée à toutes ses unités à poudre noire et rend ses Conquistadors bon marché (-10% entretien), finançant ses guerres par l'or (revenus +15%, tribut)"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 1, "note": "Bretteur d'élite qui protège la ligne de feu"},
+        {"icon": "tebPriestessMyrmidia", "name": "Priestess of Myrmidia", "qty": 1, "note": "Prêtresse-chevalière de l'Ordre de l'Aigle, forte à Magritta — soutien tactique"}
+      ],
+      "army": [
+        {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 3, "note": "Cœur de la synergie de Lupio : vétérans conquistadors aux meilleures arquebuses — buffés DEUX fois (portée +20% poudre noire ET entretien -10%). Rideau de feu increvable"},
+        {"icon": "tebHandgunners", "name": "Handgunners", "qty": 3, "note": "Arquebusiers — infanterie à poudre noire qui tire +20% plus loin (Lupio) : tir perforant à longue portée, l'avenir de la guerre selon lui"},
+        {"icon": "tebCarabiniers", "name": "Carabiniers", "qty": 2, "note": "Cavalerie à poudre noire — +20% de portée (Lupio) : mousquetaires montés qui fusillent les angles morts de loin"},
+        {"icon": "tebBillmen", "name": "Billmen", "qty": 2, "note": "Hallebardiers que Lupio rend IMMUNISÉS au débordement (faction) — l'ancre anti-flanc qui protège la ligne de feu des charges et des monstres"},
+        {"icon": "tebAdventurers", "name": "Adventurers", "qty": 2, "note": "Conquistadors polyvalents et endurcis, à -10% d'entretien (Lupio) — infanterie de mêlée fiable et bon marché"},
+        {"icon": "tebRiders", "name": "Riders", "qty": 2, "note": "Cavalerie conquistador à -10% d'entretien (Lupio) — mercenaires montés rusés qui frappent sans être punis"},
+        {"icon": "tebLancers", "name": "Lancers", "qty": 1, "note": "Cavalerie conquistador de choc à -10% d'entretien (Lupio) — bons chevaux et bel acier pour la contre-charge"},
+        {"icon": "tebPrincesOwnBlackWatch", "name": "The Prince's Own (Black Watch)", "qty": 1, "note": "Régiment de Renom favori de Lupio (« a mysterious corruption ») : la plus fanatique et têtue de l'aristocratie chevaleresque — élite de choc du Prince"},
+        {"icon": "tebLightCannons", "name": "Light Cannons", "qty": 1, "note": "Canon léger et mobile — anti-grande cible, parfait contre les Géants que Lupio prend pour des « moulins ambulants »"}
+      ],
+      "magic": "Lupio n'est pas un mage mais un général moderne ; sa « magie » est la poudre noire à longue portée — Handgunners, Carabiniers et Royal Guard tirent +20% plus loin que la normale. La Priestess of Myrmidia apporte l'appui tactique.",
+      "note": "Build calé sur les effets de Lupio : un rideau de feu à poudre noire (Royal Guard ×3, Handgunners ×3, Carabiniers ×2 — tous à +20% de portée) qui fusille l'ennemi de loin, ancré par des Billmen ×2 immunisés au débordement qui tiennent le front contre cavalerie et monstres. Les Conquistadors bon marché (Adventurers, Riders, Lancers, plus les Royal Guard) — tous à -10% d'entretien — remplissent l'armée à moindre coût, tandis que The Prince's Own (Black Watch), son Régiment favori, apporte le choc d'élite et le Light Cannon l'anti-grande (contre les Giants qu'il exècre). Comme toute la faction, on fait vieillir les unités jusqu'au rang 7. Sa cupidité (revenus +15%, tribut) finance tout, au prix du Contrôle local (-5)."
+    }
+  },
+  {
+    "id": "lorenzo-lupo",
+    "numeral": "VIII",
+    "name": "Lorenzo Lupo",
+    "epithet": "le Prince Rieur de Luccini",
+    "wikiUrl": "",
+    "faction": "Luccini (Tilée)",
+    "seal": "lorenzoLupo",
+    "portraitImage": "assets/portraits/lorenzoLupo.png",
+    "lore": "<p>Faction de mod (« The Southern Realms »). <strong>Lorenzo Lupo</strong>, Prince de Luccini, est un commandant excentrique mais inspirant, à l'apparence de ses ancêtres et à la prouesse martiale d'un « démon rieur ». Les dirigeants de Luccini sont peut-être fantasques et un brin consanguins, mais Lorenzo est un grand combattant à la tête de <strong>ce qui est sans doute la meilleure armée de piques de toute la Tilée</strong>.</p>\n      <p>Luccini se targue de cette armée fameuse, d'une flotte réputée et d'un train de vie luxueux — l'« Héritage des Jumeaux ». Ses compagnies de piquiers légendaires — la Garde Républicaine de Ricco, la Légion Perdue de Pirazzo, la Compagnie du Léopard — forment le cœur de son ost.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Mécaniques principales</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : <strong>Vigueur Forte</strong>, <strong>Armure +5</strong>, <strong>+8% dégâts</strong> (mécanique commune aux Southern Realms, confirmée)</div>\n        <div class=\"attr-item\">« Legacy of the Twins » : Luccini possède la meilleure armée de Tilée, une flotte fameuse et un train de vie luxueux (bonus économiques et militaires)</div>\n        <div class=\"attr-item\">« Laughing Prince of Luccini » : grand combattant à la tête des meilleures piques de Tilée</div>\n        <div class=\"attr-item\">Axe : masse de piquiers d'élite (Ricco's Republican Guard, Pirazzo's Lost Legion, Leopard Company) et gladiateurs</div>\n      </div>\n      <div class=\"stats-caveat\">⚠️ Fiche de mod (« The Southern Realms — TEB Subculture Overhaul »). Hormis la mécanique de rang 7 (commune à la faction, confirmée), les effets propres à Lorenzo sont rédigés d'après les données/lore du mod — les valeurs exactes de son onglet Lord Details restent à confirmer par capture d'écran en jeu.</div>\n    ",
+    "build": {
+      "role": "La meilleure armée de piques de Tilée : un mur massif de piquiers d'élite (les Régiments de Renom de Ricco, Pirazzo et Léopard, plus Alcatani et Pikemen) qui broie tout de front, appuyé par une ligne d'arbalètes, la garde républicaine et la cavalerie de Voland. L'ost fastueux et inspiré du Prince Rieur",
+      "totalSlots": 20,
+      "lord": {"icon": "lorenzoLupo", "name": "Lorenzo Lupo", "qty": 1, "note": "Le Prince Rieur de Luccini — excentrique mais inspirant, grand combattant (« prouesse d'un démon rieur ») à la tête de la meilleure armée de piques de Tilée"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 2, "note": "Bretteurs d'élite — duellistes fastueux de la cour de Luccini"}
+      ],
+      "army": [
+        {"icon": "tebRiccoRepublicanGuard", "name": "Ricco's Republican Guard (Pikemen)", "qty": 2, "note": "Régiment de Renom : la garde républicaine de Rodrigo, piquiers d'élite légendaires — cœur du mur de piques"},
+        {"icon": "tebPirazzoLostLegion", "name": "Pirazzo's Lost Legion (Pikemen)", "qty": 2, "note": "Régiment de Renom : la légion perdue de Pirazzo, piquiers vétérans doublés d'arbalétriers"},
+        {"icon": "tebLeopardCompany", "name": "Leopard Company (Pikemen)", "qty": 2, "note": "Régiment de Renom : la Compagnie du Léopard, piquiers d'élite au fauve emblème"},
+        {"icon": "tebAlcatani", "name": "Alcatani Fellowship (Pikemen)", "qty": 1, "note": "Piquiers d'élite (Régiment de Renom) qui renforcent encore le hérisson"},
+        {"icon": "tebPikemen", "name": "Pikemen", "qty": 3, "note": "Piquiers de base : « hérisson mortel pointé sur l'ennemi » — la masse de l'anvil"},
+        {"icon": "tebRepublicanGuard", "name": "Republican Guard", "qty": 2, "note": "Garde d'élite de Luccini — protège le prince et ancre le centre"},
+        {"icon": "tebCrossbowmen", "name": "Crossbowmen", "qty": 2, "note": "« Les meilleurs arbalétriers viennent de Tilée ! » — ligne de tir derrière les piques"},
+        {"icon": "tebMarksmenMiragliano", "name": "Marksmen of Miragliano (Crossbowmen)", "qty": 1, "note": "Arbalétriers d'élite pour le tir de précision"},
+        {"icon": "tebNobleRetinue", "name": "Noble Retinue", "qty": 1, "note": "Héritiers des chevaliers tiléens qui battirent les Bretonniens à Ravola — cavalerie d'élite"},
+        {"icon": "tebVolandsVenators", "name": "Voland's Venators", "qty": 1, "note": "Régiment de Renom de cavalerie — chasseurs montés qui débordent et flanquent"}
+      ],
+      "magic": "Lorenzo n'est pas un mage mais un grand combattant ; la force de Luccini est la meilleure infanterie de piques de Tilée, appuyée par une ligne d'arbalètes et une cavalerie d'élite.",
+      "note": "Build pike-and-shot fastueux : un mur massif de piquiers d'élite — Ricco's Republican Guard, Pirazzo's Lost Legion, Leopard Company (trois Régiments de Renom) + Alcatani + Pikemen ×3 — soutenu par la Republican Guard, une ligne d'arbalètes (Crossbowmen, Marksmen) et la cavalerie d'élite (Noble Retinue, Voland's Venators). La meilleure armée de Tilée. ⚠️ À ajuster selon les buffs exacts de son panneau Lord Details."
+    }
+  },
+  {
+    "id": "gashnag-black-prince",
+    "numeral": "IX",
+    "name": "Gashnag, the Black Prince",
+    "epithet": "l'Héritier de Strygos",
+    "wikiUrl": "",
+    "faction": "Border Princes (Strigoi)",
+    "seal": "gashnagBlackPrince",
+    "portraitImage": "assets/portraits/gashnagBlackPrince.png",
+    "banner": "assets/banners/gashnag.jpg",
+    "lore": "<p>Faction de mod (« The Southern Realms »). Sous la façade illusoire d'un prince mystérieux, défiguré mais bienveillant, <strong>Gashnag</strong> est le dernier héritier spirituel d'Ushoran, le patriarche Strigoi — un enfant-des-ténèbres de Vorag, déterminé à ne pas répéter les erreurs de son géniteur.</p>\n      <p>Là où les autres Strigoi végètent dans de vieilles cryptes, Gashnag s'est littéralement hissé hors des égouts. Empruntant aux Lahmiennes l'art de la manipulation subtile, il s'est recomposé en <strong>héros romantique</strong> : ses agents paient bardes et troubadours pour répandre sa légende du Vieux Monde à l'Araby. Il n'apparaît sur ses remparts que la nuit ou sous des enchantements d'Ulgu et des déguisements chevaleresques, protégeant farouchement son petit royaume — dont la population enfle, année après année. Le Black Prince pourrait bien réussir là où son géniteur a échoué : ramener les Strigoi au rang de grande puissance.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Toutes les unités de <strong>rang 7 et plus</strong> : <strong>Vigueur Forte</strong>, <strong>Armure +5</strong>, <strong>+8% dégâts</strong> (mécanique commune aux Southern Realms)</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-30</strong> avec les Comtes Vampires</div>\n        <div class=\"attr-item\">Contrôle : <strong>+4</strong></div>\n        <div class=\"attr-item\">Coût de recrutement et d'entretien : <strong>+50%</strong> pour les Knights of the Righteous Spear et Sisters of Fury</div>\n        <div class=\"attr-item\">Attrition : <strong>-33%</strong> en marais et <strong>-33%</strong> en territoire vampirique</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+4</strong> sur son propre territoire</div>\n        <div class=\"attr-item\">Régiment de Renom (compétence) : <strong>+1</strong> capacité pour Sons of Strygos (Handgunners)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chance de réussite des actions des héros ennemis : <strong>-5%</strong></div>\n        <div class=\"attr-item\">Auto-défense du héros : <strong>+20%</strong> de chance de blesser les agresseurs</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (« The Southern Realms — TEB Subculture Overhaul »). Effets confirmés par capture d'écran de l'onglet Lord Details en jeu. Gashnag est un Strigoi incognito régnant sur un royaume humain frontalier, qu'il défend farouchement (défense en mêlée +4 sur son territoire, contrôle +4) — son armée est humaine, menée par le prince-vampire et ses Sons of Strygos (Handgunners) favorisés.</div>\n    ",
+    "build": {
+      "role": "Un prince-vampire Strigoi monstrueux à la tête de l'armée humaine loyale de son royaume frontalier, ancrée sur ses Sons of Strygos (Handgunners) favorisés : une ligne de feu et un mur de piques tiennent farouchement le territoire (défense en mêlée +4 chez lui) pendant que Gashnag, terreur de mêlée voilée d'illusions, brise les lignes",
+      "totalSlots": 20,
+      "lord": {"icon": "gashnagBlackPrince", "name": "Gashnag, the Black Prince", "qty": 1, "note": "Dernier héritier d'Ushoran — puissant Strigoi voilé d'enchantements d'Ulgu, monstre de mêlée dévastateur qui protège farouchement son royaume humain (défense en mêlée +4 sur son territoire, contrôle +4) et sème la terreur"},
+      "heroes": [
+        {"icon": "tebMasterDuellist", "name": "Master Duellist", "qty": 2, "note": "Bretteurs d'élite au service loyal du Black Prince — champions de sa garde (auto-défense +20%)"}
+      ],
+      "army": [
+        {"icon": "tebSonsOfStrygos", "name": "Sons of Strygos (Handgunners)", "qty": 2, "note": "Régiment de Renom que Gashnag favorise (+1 de capacité → 2 unités) : arquebusiers d'élite du royaume de Strygos — la ligne de feu-signature du Black Prince"},
+        {"icon": "tebHandgunners", "name": "Handgunners", "qty": 2, "note": "Arquebusiers — tir perforant de la garde du Black Prince"},
+        {"icon": "tebPikemen", "name": "Pikemen", "qty": 3, "note": "Sujets loyaux : mur de piques qui tient le territoire (défense +4 chez lui) pendant que le prince frappe"},
+        {"icon": "tebCrossbowmen", "name": "Crossbowmen", "qty": 2, "note": "Arbalétriers du royaume — ligne de tir derrière les piques"},
+        {"icon": "tebKnightsEncarmine", "name": "Knights Encarmine", "qty": 2, "note": "Chevaliers à l'armure écarlate et double lame — fureur de choc au service du prince"},
+        {"icon": "tebBrokenLances", "name": "Broken Lances", "qty": 2, "note": "Chevaliers libres pour des charges audacieuses sur les flancs"},
+        {"icon": "tebSartosanPirates", "name": "Sartosan Pirates", "qty": 2, "note": "Flibustiers coriaces attirés par l'or du prince — infanterie de mêlée débrouillarde"},
+        {"icon": "tebRepublicanGuard", "name": "Republican Guard", "qty": 1, "note": "Garde d'élite — cœur inébranlable de la ligne humaine"},
+        {"icon": "tebCursedCompany", "name": "Cursed Company", "qty": 1, "note": "Régiment de Renom mort-vivant : compagnie mercenaire maudite, spectres au service du prince-vampire — le seul clin d'œil undead de l'ost"}
+      ],
+      "magic": "Gashnag est un Strigoi puissant, souvent voilé d'illusions d'Ulgu : il manipule (actions des héros ennemis -5%), terrorise et frappe en mêlée comme un monstre. Son armée humaine loyale, menée par ses Sons of Strygos, fait le reste.",
+      "note": "Build défensif humain mené par un vampire : Gashnag, monstre Strigoi de mêlée, ancre l'armée sur ses Sons of Strygos (Handgunners) ×2 favorisés + Handgunners, soutenus d'un mur de Pikemen, de Crossbowmen et d'une réserve de choc (Knights Encarmine, Broken Lances, Republican Guard, Sartosan Pirates), avec une Cursed Company morte-vivante en clin d'œil. On combat de préférence sur son territoire (défense en mêlée +4, attrition réduite) où il tient farouchement. Comme toute la faction, on fait vieillir les unités jusqu'au rang 7."
+    }
+  }
+]

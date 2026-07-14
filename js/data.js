@@ -60,6 +60,24 @@ const seals = {
   imrik: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M3 14c3-6 7-9 9-9s6 3 9 9c-3-2-5-1-6 1-1-2-1-4 0-6-2 1-3 3-3 5-1-2-2-4-3-5 1 2 1 4 0 6-1-2-3-3-6-1Z"/></svg>`,
   // Amon (Tor Elasor — mod Islanders of the Moon) — le soleil des Guardians of the Sun.
   amon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>`,
+  // Valmir Gausser (Southern Realms — mod) — l'écu du Prince Frontalier et la Renegade Crown.
+  valmirGausser: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 21c-4-2-6-5-6-9V5l6-2 6 2v7c0 4-2 7-6 9Z"/><path d="M9 4l3-2 3 2M10 9h4M12 9v5"/></svg>`,
+  // Borgio the Besieger (Miragliano) — la tour de siège prise d'assaut.
+  borgio: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M4 21V8l4-2 4 2 4-2 4 2v13Z"/><path d="M4 8V5h4v3M16 8V5h4v3M10 21v-5h4v5"/></svg>`,
+  // Lucrezzia Belladonna (Pavona/Bilbali) — la rose empoisonnée et sa dague.
+  lucrezzia: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 8c-2-2-2-4 0-6 2 2 2 4 0 6Z"/><path d="M12 8c-3 0-5 2-5 5 3 0 5-2 5-5Zm0 0c3 0 5 2 5 5-3 0-5-2-5-5Z"/><path d="M12 13v9"/></svg>`,
+  // Leonardo Catrazza (Tilée) — l'engrenage de l'ingénieur-prince.
+  catrazza: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><circle cx="12" cy="12" r="3.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17l-2.1 2.1"/></svg>`,
+  // Marco Colombo (Trantio) — le navire de l'explorateur.
+  marcoColombo: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 3v11"/><path d="M12 6l6 3-6 2Z"/><path d="M4 15c2 2 4 2 6 0s4-2 6 0 4 2 4 0"/><path d="M5 15l1 5h12l1-5Z"/></svg>`,
+  // El Cadavo (Estalie/Nouveau Monde) — le crâne borgne de l'aventurier.
+  elCadavo: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 3c-4 0-7 3-7 7 0 3 2 5 3 6v3h8v-3c1-1 3-3 3-6 0-4-3-7-7-7Z"/><path d="M8 11l3-1M14 10h2"/><circle cx="15" cy="11" r="1"/></svg>`,
+  // Lupio Sunscryer (Magritta) — le mousquet royal et l'or.
+  lupioSunscryer: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M3 15h13l4-3-1-2-4 1H3Z"/><path d="M6 15v3M16 12l2-4"/><circle cx="12" cy="6" r="2"/></svg>`,
+  // Lorenzo Lupo (Luccini) — les piques croisées de la meilleure armée de Tilée.
+  lorenzoLupo: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M5 22L18 4M5 4l13 18"/><path d="M18 4l1-2 1 2-1 1ZM6 4L5 2 4 4l1 1Z"/></svg>`,
+  // Gashnag, the Black Prince (Strigoi) — la chauve-souris du prince vampire.
+  gashnagBlackPrince: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 8c1-2 3-3 5-3-1 1-1 2 0 3 2-1 4 0 5 2-3 1-5 1-6 3-1-2-2-3-4-3s-3 1-4 3c-1-2-3-2-6-3 1-2 3-3 5-2 1-1 1-2 0-3 2 0 4 1 5 3Z"/><path d="M12 8v6"/></svg>`,
   alithanar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M15 3a9 9 0 1 0 6 15.5A9 9 0 0 1 15 3Z"/></svg>`,
   alarielle: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 3c2 2 2 5 0 7-2-2-2-5 0-7Z"/><path d="M12 10c2 2 2 5 0 7-2-2-2-5 0-7Z"/><path d="M5 9c2-1 4 0 5 2-2 1-4 0-5-2Z"/><path d="M19 9c-2-1-4 0-5 2 2 1 4 0 5-2Z"/><path d="M12 17v4"/></svg>`,
   aislinn: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M3 18c2 1 4 1 6 0s4-1 6 0 4 1 6 0"/><path d="M12 15V4"/><path d="M12 4l5 3-5 3Z"/></svg>`,
@@ -848,6 +866,15 @@ const unitImages = {
   eltharion: 'assets/portraits/eltharion.png',
   imrik: 'assets/portraits/imrik.png',
   amon: 'assets/portraits/amon.png',
+  valmirGausser: 'assets/portraits/valmirGausser.png',
+  borgio: 'assets/portraits/borgio.png',
+  lucrezzia: 'assets/portraits/lucrezzia.png',
+  catrazza: 'assets/portraits/catrazza.png',
+  marcoColombo: 'assets/portraits/marcoColombo.png',
+  elCadavo: 'assets/portraits/elCadavo.png',
+  lupioSunscryer: 'assets/portraits/lupioSunscryer.png',
+  lorenzoLupo: 'assets/portraits/lorenzoLupo.png',
+  gashnagBlackPrince: 'assets/portraits/gashnagBlackPrince.png',
   alithanar: 'assets/portraits/alithanar.png',
   alarielle: 'assets/portraits/alarielle.png',
   aislinn: 'assets/portraits/aislinn.png',
@@ -866,6 +893,50 @@ const unitImages = {
   // Amon (Tor Elasor — mod Islanders of the Moon) : unités coloniales uniques
   hefColonialMilitiamen: 'assets/units/hefColonialMilitiamen.png',
   hefTowerGuardTorElasor: 'assets/units/hefTowerGuardTorElasor.png',
+  // --- Southern Realms (mod « The Southern Realms — TEB Subculture Overhaul ») ---
+  tebMasterDuellist: 'assets/units/tebMasterDuellist.png',
+  tebPriestessMyrmidia: 'assets/units/tebPriestessMyrmidia.png',
+  tebAlcatani: 'assets/units/tebAlcatani.png',
+  tebPikemen: 'assets/units/tebPikemen.png',
+  tebBorderRangers: 'assets/units/tebBorderRangers.png',
+  tebHandgunners: 'assets/units/tebHandgunners.png',
+  tebPavisiers: 'assets/units/tebPavisiers.png',
+  tebFreelanceKnights: 'assets/units/tebFreelanceKnights.png',
+  tebMontanteSwordsmen: 'assets/units/tebMontanteSwordsmen.png',
+  tebDuellists: 'assets/units/tebDuellists.png',
+  tebIrrananHillmen: 'assets/units/tebIrrananHillmen.png',
+  tebGalloperGuns: 'assets/units/tebGalloperGuns.png',
+  // Southern Realms : RoR et unités des 8 autres seigneurs
+  tebVespero: 'assets/units/tebVespero.png',
+  tebBraganzaBesiegers: 'assets/units/tebBraganzaBesiegers.png',
+  tebMarksmenMiragliano: 'assets/units/tebMarksmenMiragliano.png',
+  tebRiccoRepublicanGuard: 'assets/units/tebRiccoRepublicanGuard.png',
+  tebPirazzoLostLegion: 'assets/units/tebPirazzoLostLegion.png',
+  tebLeopardCompany: 'assets/units/tebLeopardCompany.png',
+  tebRepublicanGuard: 'assets/units/tebRepublicanGuard.png',
+  tebBirdmenCatrazza: 'assets/units/tebBirdmenCatrazza.png',
+  tebTortoiseTank: 'assets/units/tebTortoiseTank.png',
+  tebBronzinoGalloperGuns: 'assets/units/tebBronzinoGalloperGuns.png',
+  tebLightCannons: 'assets/units/tebLightCannons.png',
+  tebCarabiniers: 'assets/units/tebCarabiniers.png',
+  tebRoyalGuard: 'assets/units/tebRoyalGuard.png',
+  tebAdventurers: 'assets/units/tebAdventurers.png',
+  tebRiders: 'assets/units/tebRiders.png',
+  tebLancers: 'assets/units/tebLancers.png',
+  tebTichiHuichiRaiders: 'assets/units/tebTichiHuichiRaiders.png',
+  tebSartosanPirates: 'assets/units/tebSartosanPirates.png',
+  tebCursedCompany: 'assets/units/tebCursedCompany.png',
+  tebAnakondaAmazons: 'assets/units/tebAnakondaAmazons.png',
+  tebSistersOfFury: 'assets/units/tebSistersOfFury.png',
+  tebCrossbowmen: 'assets/units/tebCrossbowmen.png',
+  tebKnightsEncarmine: 'assets/units/tebKnightsEncarmine.png',
+  tebBrokenLances: 'assets/units/tebBrokenLances.png',
+  tebNobleRetinue: 'assets/units/tebNobleRetinue.png',
+  tebSwashbucklers: 'assets/units/tebSwashbucklers.png',
+  tebVolandsVenators: 'assets/units/tebVolandsVenators.png',
+  tebBillmen: 'assets/units/tebBillmen.png',
+  tebPrincesOwnBlackWatch: 'assets/units/tebPrincesOwnBlackWatch.png',
+  tebSonsOfStrygos: 'assets/units/tebSonsOfStrygos.png',
   shadowWalker: 'assets/units/shadowWalker.png',
   theGrey: 'assets/units/theGrey.png',
   dryad: 'assets/units/dryad.png',
@@ -1697,7 +1768,9 @@ const FACTION_GROUPS = [
   { id: 'gnoblar-hordes', label: 'Gnoblar Hordes', file: 'data/gnoblar-hordes.json', page: 'gnoblar_hordes.html' },
   // Jade-Blooded Vampires — faction ajoutée par un mod (vampires de Cathay).
   // 1 seigneur légendaire (Maiden of the Black Lotus).
-  { id: 'jade-blooded-vampires', label: 'Jade-Blooded Vampires', file: 'data/jade-blooded-vampires.json', page: 'jade_blooded_vampires.html' }
+  { id: 'jade-blooded-vampires', label: 'Jade-Blooded Vampires', file: 'data/jade-blooded-vampires.json', page: 'jade_blooded_vampires.html' },
+  // Southern Realms — faction ajoutée par un mod (Tilée, Estalie, Border Princes).
+  { id: 'southern-realms', label: 'Southern Realms', file: 'data/southern-realms.json', page: 'southern_realms.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1737,7 +1810,8 @@ const factionBanners = {
   'araby': 'assets/banners/araby.jpg',
   'fimir': 'assets/banners/fimir.jpg',
   'gnoblar-hordes': 'assets/banners/gnoblar_hordes.jpg',
-  'jade-blooded-vampires': 'assets/banners/jade_blooded_vampires.jpg'
+  'jade-blooded-vampires': 'assets/banners/jade_blooded_vampires.jpg',
+  'southern-realms': 'assets/banners/southern_realms.jpg'
 };
 
 // ============================================================================
