@@ -940,6 +940,9 @@ const unitImages = {
   tebBillmen: 'assets/units/tebBillmen.png',
   tebPrincesOwnBlackWatch: 'assets/units/tebPrincesOwnBlackWatch.png',
   tebSonsOfStrygos: 'assets/units/tebSonsOfStrygos.png',
+  // Luccini — contenu du mod « Heroes of Legend » (Lorenzo Lupo retravaillé)
+  lucRemanLegionary: 'assets/units/lucRemanLegionary.png',
+  lucAssassin: 'assets/units/lucAssassin.png',
   shadowWalker: 'assets/units/shadowWalker.png',
   theGrey: 'assets/units/theGrey.png',
   dryad: 'assets/units/dryad.png',
