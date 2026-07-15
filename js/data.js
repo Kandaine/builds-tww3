@@ -828,6 +828,11 @@ const unitImages = {
   necromancer: 'assets/units/necromancer.png',
   vampireHeroDeath: 'assets/units/vampireHeroDeath.png',
   vampireHeroShadows: 'assets/units/vampireHeroShadows.png',
+  // Vampire Counts — Héros Légendaires du mod « Heroes of Legend » :
+  // les trois lieutenants que Mannfred a choisis pour son armée sylvanienne.
+  vmpHelmutVonCarstein: 'assets/units/vmpHelmutVonCarstein.png',
+  vmpGorgivichKrakvald: 'assets/units/vmpGorgivichKrakvald.png',
+  vmpGuntherVonGrecht: 'assets/units/vmpGuntherVonGrecht.png',
   graveGuard: 'assets/units/graveGuard.png',
   blackKnight: 'assets/units/blackKnight.png',
   terrorgheist: 'assets/units/terrorgheist.png',
