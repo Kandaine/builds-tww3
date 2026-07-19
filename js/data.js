@@ -1001,6 +1001,11 @@ const unitImages = {
   paladin: 'assets/units/paladin.png',
   footSquires: 'assets/units/footSquires.png',
   henri: 'assets/portraits/henri.png',
+  // Bretonnia — Héros Légendaires du mod « Heroes of Legend »
+  brtHermitKnight: 'assets/units/brtHermitKnight.png',
+  brtViscount: 'assets/units/brtViscount.png',
+  brtAgravain: 'assets/units/brtAgravain.png',
+  brtBrunner: 'assets/units/brtBrunner.png',
   astragoth: 'assets/portraits/astragoth.png',
   drazhoath: 'assets/portraits/drazhoath.png',
   zhatan: 'assets/portraits/zhatan.png',

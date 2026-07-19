@@ -16,7 +16,7 @@
       "lord": {"icon": "louen", "name": "Louen Leoncoeur", "qty": 1, "note": "Le meilleur duelliste chevaleresque du jeu — The Blessing of the Lady (seigneur) lui accorde +15% de résistance aux dégâts tant que son commandement n'est pas brisé, dévastateur contre Chaos/Chaos Dwarfs/Morts-Vivants/Peaux-Vertes, et son aura de commandement s'étend de +50% dès qu'il attaque (faction)"},
       "heroes": [
         {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Soutien magique (Lore of Life/Heavens/Beasts selon le choix) pour appuyer la charge"},
-        {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Renfort de mêlée bon marché en complément de Louen"}
+        {"icon": "brtViscount", "name": "Viscount d'Alembençon (Héros Légendaire)", "qty": 1, "note": "Le <strong>Champion de Couronne</strong> — le duché même de Louen (mod Heroes of Legend) : Chevalier du Graal redoutable et énigmatique, protecteur de la frontière nord-est face aux ambitions de l'Empire. Un compagnon de charge à la hauteur du Roy Preux et de ses 4 Grail Knights"}
       ],
       "army": [
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "Le cœur de cette armée, qui profite aussi des bonus anti-Chaos/Undead/Greenskins de Louen (seigneur)"},
@@ -47,10 +47,11 @@
       "lord": {"icon": "repanse", "name": "Repanse de Lyonesse", "qty": 1, "note": "Ancienne bergère devenue championne du peuple — son Halo of Maidenly Wrath (seigneur) aveugle les ennemis à son contact (-24/-24/-30 défense/attaque/précision pendant 10s) sans jamais toucher ses propres troupes, et sa Perfect Vigour (seigneur) lui permet d'enchaîner charges et manœuvres sans jamais se fatiguer ; ses -80 de relations diplomatiques avec Vampire Counts/Vampire Coast/Tomb Kings (faction) garantissent une guerre quasi permanente contre les Morts-Vivants"},
       "heroes": [
         {"icon": "henri", "name": "Henri le Massif (Legendary Hero)", "qty": 1, "note": "Paladin héros légendaire unique, offert gratuitement dès le départ de campagne avec Repanse. Son trait \"There Can Be Only One\" accorde +4 Chevalerie/tour, +10 attaque en mêlée et +10 bonus de charge, avec une spécialisation dévastatrice contre les gros gabarits (monstres, chars) ; monté sur Hippogryph plutôt que Pegasus comme les autres Paladins"},
-        {"icon": "damsel", "name": "Damsel", "qty": 2, "note": "Soutien magique pour appuyer le cœur de troupes Peasant — deux fois moins chères à entretenir grâce au -50% pour les Héros intégrés (faction)"}
+        {"icon": "damsel", "name": "Damsel", "qty": 2, "note": "Soutien magique pour appuyer le cœur de troupes Peasant — deux fois moins chères à entretenir grâce au -50% pour les Héros intégrés (faction)"},
+        {"icon": "brtBrunner", "name": "Brunner (Héros Légendaire)", "qty": 1, "note": "Le plus fameux chasseur de primes du Vieux Monde (mod Heroes of Legend), réputé pour son efficacité impitoyable à éliminer ses cibles — un roturier de plus dans l'ost de la Bergère, aux côtés du paysan Henri le Massif, et lui aussi deux fois moins cher grâce au -50% sur les héros intégrés (faction)"}
       ],
       "army": [
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 5, "note": "+5% de résistance physique et +5 de commandement grâce à Repanse (seigneur) — ligne de tenue bien plus fiable que la normale"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 4, "note": "+5% de résistance physique et +5 de commandement grâce à Repanse (seigneur) — ligne de tenue bien plus fiable que la normale"},
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 5, "note": "Même bonus Peasant (seigneur) — anti-cavalerie fiable en première ligne"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance, également renforcé par les bonus Peasant de Repanse (seigneur)"},
         {"icon": "questingKnights", "name": "Questing Knights", "qty": 1, "note": "+8 de défense en mêlée (faction) — cavalerie d'élite bien plus difficile à percer que la normale"},
@@ -77,7 +78,8 @@
       "totalSlots": 20,
       "lord": {"icon": "fayEnchantress", "name": "La Fée Enchanteresse", "qty": 1, "note": "Lanceuse de sorts redoutable (Lore of Life) et protégée par The Blessing of the Lady (seigneur, +15% de résistance aux dégâts tant que son commandement tient) ; son attribut de peur (seigneur) effraie et affaiblit le commandement de toutes les unités ennemies à proximité, sans jamais l'affecter elle-même"},
       "heroes": [
-        {"icon": "damsel", "name": "Damsel (Vie)", "qty": 2, "note": "Renfort de soin et de buffs en écho aux sorts de la Fée Enchanteresse"}
+        {"icon": "brtHermitKnight", "name": "Hermit Knight of Malmont (Héros Légendaire)", "qty": 1, "note": "Vieux Chevalier du Graal reclus qui <strong>garde la Chapelle du Graal du Mont Malmont</strong> (mod Heroes of Legend) — nul ne connaît son vrai nom. Il incarne exactement le thème sacré de cet ost (Grail Guardians, Battle Pilgrims) et lui apporte l'ancrage de mêlée qui lui manquait"},
+        {"icon": "damsel", "name": "Damsel (Vie)", "qty": 1, "note": "Renfort de soin et de buffs en écho aux sorts de la Fée Enchanteresse"}
       ],
       "army": [
         {"icon": "grailGuardians", "name": "Grail Guardians", "qty": 6, "note": "Garde d'élite historiquement associée à la Fée Enchanteresse — mur de protection autour de la lanceuse de sorts"},
@@ -106,7 +108,7 @@
       "totalSlots": 20,
       "lord": {"icon": "alberic", "name": "Alberic de Bordeleaux", "qty": 1, "note": "Duc défensif taillé pour l'attrition — débloque les attaques navales contre les colonies portuaires (seigneur), se déplace 10% plus vite en mer (seigneur) et rend toute son infanterie de base bien plus difficile à percer"},
       "heroes": [
-        {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Renfort de mêlée en complément d'Alberic"},
+        {"icon": "brtAgravain", "name": "Agravain de Beau Quest (Héros Légendaire)", "qty": 1, "note": "Puissant Chevalier du Graal (mod Heroes of Legend), Gardien de la Chapelle de Challotte, fameux pour sa quête audacieuse au cœur d'Athel Loren et sa victoire sur les Elfes Sylvains — un ancrage de mêlée d'élite pour la ligne d'Alberic"},
         {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Soutien magique pour appuyer la ligne défensive"}
       ],
       "army": [
