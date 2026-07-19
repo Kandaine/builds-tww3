@@ -865,6 +865,8 @@ const unitImages = {
   thane: 'assets/units/thane.png',
   runesmith: 'assets/units/runesmith.png',
   masterEngineer: 'assets/units/masterEngineer.png',
+  // Nains — Héros Légendaires du mod « Heroes of Legend »
+  dwfBalkrag: 'assets/units/dwfBalkrag.png',
   legendaryDuo: 'assets/units/gotrek.png',
   tyrion: 'assets/portraits/tyrion.png',
   teclis: 'assets/portraits/teclis.png',

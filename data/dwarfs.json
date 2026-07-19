@@ -43,9 +43,9 @@
     "build": {
       "role": "Armée bâtie autour des effets confirmés d'Ungrim : des Slayers deux fois moins chers à recruter (-50%, faction) et 25% moins chers à entretenir (seigneur), plus mordants (+5 attaque en mêlée) et une infanterie 10% plus rapide sur toute la faction",
       "totalSlots": 20,
-      "lord": {"icon": "ungrim", "name": "Ungrim Ironfist", "qty": 1, "note": "Duelliste offensif increvable — fonce au contact des monstres et des seigneurs ennemis, quitte à devoir être appuyé s'il se fait kiter"},
+      "lord": {"icon": "ungrim", "name": "Ungrim Ironfist", "qty": 1, "note": "Duelliste offensif increvable — fonce au contact des monstres et des seigneurs ennemis, quitte à devoir être appuyé s'il se fait kiter. Roi Tueur à la tête d'un ost de Slayers, rejoint ici par le Slayer légendaire Balkrag Grimgorson"},
       "heroes": [
-        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Renfort de mêlée bon marché en complément d'Ungrim"}
+        {"icon": "dwfBalkrag", "name": "Balkrag Grimgorson (Héros Légendaire)", "qty": 1, "note": "Le Undead Daemonslayer (mod Heroes of Legend) : un Slayer déchu, perdu lors du Temps des Malheurs et ressuscité par la Liche elfique Koros, désormais libre et en quête de sa fin — le héros rêvé pour l'ost du Roi Tueur, aux côtés de ses 12 Slayers, redoutable contre les monstres et les Démons"}
       ],
       "army": [
         {"icon": "slayer", "name": "Slayers", "qty": 10, "note": "Cœur de l'armée — -50% de coût de recrutement (faction) et -25% d'entretien (seigneur) permettent d'en aligner une horde bien plus dense que la normale, chacun frappant +5 en mêlée et rendu increvable tant que ses PV restent au-dessus de 75% grâce à Journey's End (seigneur)"},
