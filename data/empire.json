@@ -15,7 +15,8 @@
       "totalSlots": 20,
       "lord": {"icon": "karlFranz", "name": "Emperor Karl Franz", "qty": 1, "note": "L'Empereur de l'Empire, maniant Ghal Maraz — son -20% d'entretien et son bonus de puissance des armes/tir croissant avec l'expérience pour les State Troops (seigneur) permet d'aligner une infanterie de ligne nombreuse et toujours plus efficace au fil de la campagne"},
       "heroes": [
-        {"icon": "brightWizard", "name": "Bright Wizard", "qty": 2, "note": "Soutien magique via la Lore of Fire — dégâts de zone et anti-infanterie"}
+        {"icon": "brightWizard", "name": "Bright Wizard", "qty": 1, "note": "Soutien magique via la Lore of Fire — dégâts de zone et anti-infanterie"},
+        {"icon": "empOrsini", "name": "Orsini Sardus (Héros Légendaire)", "qty": 1, "note": "Le Héros de Verdenza (mod Heroes of Legend) : mage tiléen versé dans l'antique Arcana of Kadon, dont la spécialité est de <strong>lier de grands monstres à sa cause</strong> — il apporte à l'armée impériale, d'ordinaire dépourvue de monstres, une dimension inédite (Griffon sauvage, Mourngul, Brood Horror, Stonehorn) aux côtés de l'Empereur monté sur Deathclaw"}
       ],
       "army": [
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "-20% d'entretien (seigneur) — infanterie de ligne anti-grande unité"},
@@ -78,7 +79,8 @@
       "totalSlots": 20,
       "lord": {"icon": "markusWulfhart", "name": "Markus Wulfhart", "qty": 1, "note": "Le Huntsmarshal de l'Empire, chasseur de monstres le plus accompli du Vieux Monde — son +50% de chance de succès et de défense d'embuscade (seigneur), combiné à l'attribut Woodsman (seigneur) qui permet de traverser les forêts sans pénalité, en fait un maître de la guérilla forestière"},
       "heroes": [
-        {"icon": "amberWizard", "name": "Amber Wizard", "qty": 2, "note": "Soutien magique via la Lore of Beasts — thématiquement assorti à la chasse aux monstres de Wulfhart"}
+        {"icon": "amberWizard", "name": "Amber Wizard", "qty": 1, "note": "Soutien magique via la Lore of Beasts — thématiquement assorti à la chasse aux monstres de Wulfhart"},
+        {"icon": "brtBrunner", "name": "Brunner (Héros Légendaire)", "qty": 1, "note": "Le plus fameux chasseur de primes du Vieux Monde (mod Heroes of Legend), recrutable par l'Empire — le mariage parfait avec le Huntsmarshal : au chasseur de monstres de Wulfhart répond le chasseur d'hommes de Brunner, redoutable d'efficacité à distance pour éliminer personnages et cibles isolées"}
       ],
       "army": [
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 2, "note": "Infanterie de ligne anti-grande unité, protège les tireurs"},
@@ -140,7 +142,8 @@
       "totalSlots": 20,
       "lord": {"icon": "elspeth", "name": "Elspeth von Draken", "qty": 1, "note": "La Dame Sombre de Nuln, Archimage de la Lore of Death — son immunité à l'attrition vampirique (seigneur) et son -20% de rechargement pour la Lore of Death (seigneur) en font une lanceuse de sorts redoutable ; sa capacité \"Darkwalker\" (+40% résistance physique, Strider, 30s, rechargement 120s) la rend très difficile à tuer en plein combat"},
       "heroes": [
-        {"icon": "amethystWizard", "name": "Amethyst Wizard", "qty": 2, "note": "Soutien magique via la Lore of Death, synergise directement avec le -20% de rechargement d'Elspeth (seigneur)"}
+        {"icon": "amethystWizard", "name": "Amethyst Wizard", "qty": 1, "note": "Soutien magique via la Lore of Death, synergise directement avec le -20% de rechargement d'Elspeth (seigneur)"},
+        {"icon": "empSabineFlamius", "name": "Sabine Flamius (Héros Légendaire)", "qty": 1, "note": "La Magistra du Grand Orrery (mod Heroes of Legend) — érudite de la magie et de la matière, dont le Grand Orrery se trouve précisément à <strong>Nuln</strong>, le fief d'Elspeth : un renfort de sorts idéalement à sa place dans l'ost artillerie-et-magie de la Rose du Cimetière"}
       ],
       "army": [
         {"icon": "amethystIronsides", "name": "Amethyst Ironsides", "qty": 4, "note": "Unité Amethyst (faction, Imperial Gunnery School) — -15% d'entretien et XP doublée en tant qu'unité Gunnery (faction) ; version très supérieure des Nuln Ironsides (jusqu'à 120 armure, 45% résistance aux tirs, attaques magiques), synergise parfaitement avec l'identité de Wissenland & Nuln"},

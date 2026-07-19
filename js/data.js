@@ -1006,6 +1006,9 @@ const unitImages = {
   brtViscount: 'assets/units/brtViscount.png',
   brtAgravain: 'assets/units/brtAgravain.png',
   brtBrunner: 'assets/units/brtBrunner.png',
+  // Empire — Héros Légendaires du mod « Heroes of Legend »
+  empOrsini: 'assets/units/empOrsini.png',
+  empSabineFlamius: 'assets/units/empSabineFlamius.png',
   astragoth: 'assets/portraits/astragoth.png',
   drazhoath: 'assets/portraits/drazhoath.png',
   zhatan: 'assets/portraits/zhatan.png',
