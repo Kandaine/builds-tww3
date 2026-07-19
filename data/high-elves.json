@@ -76,7 +76,7 @@
       "totalSlots": 20,
       "lord": {"icon": "eltharion", "name": "Eltharion le Sinistre", "qty": 1, "note": "Généraliste solide — combattant correct, lanceur de sorts correct ; monté sur son Griffon Stormwing, il peut aussi provoquer la terreur"},
       "heroes": [
-        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée en complément d'Eltharion"},
+        {"icon": "hefElasir", "name": "Elasir (Héros Légendaire)", "qty": 1, "note": "Le Lord of the Eagles (mod Heroes of Legend) — seigneur des grands aigles, chevauchant son aigle géant : un compagnon de mêlée aérienne parfaitement assorti à Eltharion et à son griffon Stormwing, pour foncer sur l'artillerie et les casters ennemis"},
         {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique complémentaire"}
       ],
       "army": [
@@ -166,7 +166,8 @@
       "totalSlots": 20,
       "lord": {"icon": "alarielle", "name": "Alarielle la Radieuse", "qty": 1, "note": "Lanceuse de sorts polyvalente et étonnamment robuste en mêlée — soigne, buffe et endommage à la fois ; l'Invocation of Lileath (faction) améliore encore ses chances de lancer ses sorts ; sa capacité passive Guardian (seigneur) accorde +15% de Résistance Physique à tous les Lords/Heroes alliés dans 35m de rayon"},
       "heroes": [
-        {"icon": "mage", "name": "Mage (Haute Magie / Vie)", "qty": 2, "note": "Renfort de soin et de buffs en écho aux sorts d'Alarielle — protégés par sa capacité Guardian (seigneur) tant qu'ils restent dans les 35m"}
+        {"icon": "mage", "name": "Mage (Haute Magie / Vie)", "qty": 1, "note": "Renfort de soin et de buffs en écho aux sorts d'Alarielle — protégé par sa capacité Guardian (seigneur) tant qu'il reste dans les 35m"},
+        {"icon": "hefAnurion", "name": "Anurion (Héros Légendaire)", "qty": 1, "note": "Anurion le Vert, le Master Botanist (mod Heroes of Legend) — maître incontesté de la magie de la Vie et de la nature : le pendant idéal de l'Everqueen Alarielle, il renforce le thème vital de l'ost (soins, buffs, invocations sylvestres) et profite lui aussi de sa capacité Guardian"}
       ],
       "army": [
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 6, "note": "+15% de force de tir grâce à Alarielle (seigneur) — le cœur offensif de cette armée"},

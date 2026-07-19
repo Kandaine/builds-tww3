@@ -903,6 +903,9 @@ const unitImages = {
   // Hauts Elfes — Héros Légendaires (jeu de base)
   hefCaradryan: 'assets/units/hefCaradryan.png',
   hefHandShadowCrown: 'assets/units/hefHandShadowCrown.png',
+  // Hauts Elfes — Héros Légendaires du mod « Heroes of Legend »
+  hefElasir: 'assets/units/hefElasir.png',
+  hefAnurion: 'assets/units/hefAnurion.png',
   // --- Southern Realms (mod « The Southern Realms — TEB Subculture Overhaul ») ---
   tebMasterDuellist: 'assets/units/tebMasterDuellist.png',
   tebPriestessMyrmidia: 'assets/units/tebPriestessMyrmidia.png',
