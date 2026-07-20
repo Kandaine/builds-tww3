@@ -1798,7 +1798,9 @@ const unitImages = {
   nagFellSpectres: 'assets/units/nagFellSpectres.png',
   nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
   // Crypt Horrors : unité officielle vanilla (Vampire Counts), carte du jeu de base
-  cryptHorrors: 'assets/units/cryptHorrors.png'
+  cryptHorrors: 'assets/units/cryptHorrors.png',
+  // Banshee : héros officiel vanilla (Vampire Counts), portrait de campagne du jeu de base
+  banshee: 'assets/units/banshee.png'
 };
 
 // ----------------------------------------------------------------------------
