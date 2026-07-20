@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+  Page de faction : liste + fiche détaillée des seigneurs légendaires de
+  cette faction. Tout le contenu dynamique (liste dans #lord-list, détail
+  dans #page-content) est injecté par js/app.js au chargement, à partir des
+  données JSON de data/ (voir js/data.js -> loadLords()). Ce fichier HTML ne
+  contient donc que la coquille statique de la page.
+  The Hung est une faction ajoutée par un mod (Steppe Lords — The Hung).
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Hung — Total War: WARHAMMER III</title>
+<link rel="icon" href="assets/favicon.ico">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+  <nav class="sidebar" aria-label="Navigation des seigneurs">
+    <a class="back-link" href="index.html">&larr; Retour à la recherche</a>
+    <div class="sidebar-title">The Hung</div>
+    <div class="sidebar-sub">Legendary Lords</div>
+    <div id="lord-list"></div>
+  </nav>
+  <main class="page" id="page-content"></main>
+</div>
+
+<!-- PAGE_FACTION indique à js/app.js (fonction init()) quel fichier
+     data/<faction>.json charger pour cette page — voir loadLords() dans
+     js/data.js. Doit correspondre à l'id de faction utilisé dans
+     FACTION_GROUPS (js/data.js) et au nom du fichier data/*.json. -->
+<script>const PAGE_FACTION = 'hung';</script>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

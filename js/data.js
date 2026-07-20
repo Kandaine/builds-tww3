@@ -125,6 +125,10 @@ const seals = {
   duralDurak: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 12c0-3 2-5 4-4M12 12c2 2 2 5-1 6M12 12c-3-1-4-4-2-6"/></svg>`,
   // Mhorriníon la Reine-Corbeau (Murder-Queen) — corbeau, oiseau du dieu de la mort.
   morrigan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 7c3 0 5 1 8 4 2-2 4-3 6-2-1 2-2 3-4 3 1 2 1 4-1 6-2-2-3-4-3-6-3 0-5-2-6-5Z"/><path d="M12 11l-2 9"/></svg>`,
+  // Ur-Khan le Mung (The Hung) — arc composite bandé de l'archer monté des steppes.
+  hungUrKhan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 3c7 3 10 7 10 18"/><path d="M6 3l10 18"/><path d="M6 3l3 1M6 3l-1 3"/></svg>`,
+  // Zao Korr le Man-Chu (The Hung) — crâne-trophée du seigneur de guerre briseur de Bastion.
+  hungZaoKorr: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c4 0 6 3 6 7 0 2-1 3-1 5H7c0-2-1-3-1-5 0-4 2-7 6-7Z"/><circle cx="9.5" cy="10" r="1.2" fill="var(--accent-secondary)"/><circle cx="14.5" cy="10" r="1.2" fill="var(--accent-secondary)"/><path d="M10 17v3M14 17v3M12 17v3"/></svg>`,
   // Sultan Jaffar (Sultanate of Araby) — croissant de lune et étoile d'Araby.
   jaffar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M16 4a8 8 0 1 0 0 16 6 6 0 0 1 0-16Z"/><path d="M19 8l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2L16.5 10.3 18.5 10Z"/></svg>`,
   // The Golden Magus (Golden Fleet) — voile de navire corsaire et vagues.
@@ -1741,7 +1745,33 @@ const unitImages = {
   hashutsDarkRavagers: 'assets/units/hashutsDarkRavagers.png',
   khornesBloodyFist: 'assets/units/khornesBloodyFist.png',
   elementalBear: 'assets/units/elementalBear.png',
-  theFrozenHeartOfWinter: 'assets/units/theFrozenHeartOfWinter.png'
+  theFrozenHeartOfWinter: 'assets/units/theFrozenHeartOfWinter.png',
+  // --- The Hung (mod Steppe Lords — The Hung) : portraits des seigneurs
+  // légendaires (Ur-Khan, Zao Korr) + héros et unités partagés. Images
+  // extraites du .pack zstd (portraits/infopics, ratio portrait 60×130). ---
+  hungUrKhan: 'assets/portraits/hungUrKhan.png',
+  hungZaoKorr: 'assets/portraits/hungZaoKorr.png',
+  hngShamanRagingSky: 'assets/units/hngShamanRagingSky.png',
+  hngDarga: 'assets/units/hngDarga.png',
+  hngHeavyArchersMounted: 'assets/units/hngHeavyArchersMounted.png',
+  hngHorseArchers: 'assets/units/hngHorseArchers.png',
+  hngHorsemasters: 'assets/units/hngHorsemasters.png',
+  hngHeavyLancers: 'assets/units/hngHeavyLancers.png',
+  hngLightLancers: 'assets/units/hngLightLancers.png',
+  hngKhansGuard: 'assets/units/hngKhansGuard.png',
+  hngTorguud: 'assets/units/hngTorguud.png',
+  hngChaosVultures: 'assets/units/hngChaosVultures.png',
+  hngRidersRagingSky: 'assets/units/hngRidersRagingSky.png',
+  hngDarkWind: 'assets/units/hngDarkWind.png',
+  hngPillagersGW: 'assets/units/hngPillagersGW.png',
+  hngPillagersDual: 'assets/units/hngPillagersDual.png',
+  hngRaiders: 'assets/units/hngRaiders.png',
+  hngHeavyArchers: 'assets/units/hngHeavyArchers.png',
+  hngLootedCannon: 'assets/units/hngLootedCannon.png',
+  hngThunderspitter: 'assets/units/hngThunderspitter.png',
+  hngSteelSpitters: 'assets/units/hngSteelSpitters.png',
+  hngWallripper: 'assets/units/hngWallripper.png',
+  hngReaperBoltThrower: 'assets/units/hngReaperBoltThrower.png'
 };
 
 // ----------------------------------------------------------------------------
@@ -1799,7 +1829,11 @@ const FACTION_GROUPS = [
   // 1 seigneur légendaire (Maiden of the Black Lotus).
   { id: 'jade-blooded-vampires', label: 'Jade-Blooded Vampires', file: 'data/jade-blooded-vampires.json', page: 'jade_blooded_vampires.html' },
   // Southern Realms — faction ajoutée par un mod (Tilée, Estalie, Border Princes).
-  { id: 'southern-realms', label: 'Southern Realms', file: 'data/southern-realms.json', page: 'southern_realms.html' }
+  { id: 'southern-realms', label: 'Southern Realms', file: 'data/southern-realms.json', page: 'southern_realms.html' },
+  // The Hung — faction ajoutée par un mod (Steppe Lords — The Hung). Nomades
+  // cavaliers des Steppes de l'Est, adorateurs du Ciel Déchaîné (Chaos).
+  // 2 seigneurs légendaires couverts (Ur-Khan, Zao Korr) ; un 3e existe (Mandakh).
+  { id: 'hung', label: 'The Hung', file: 'data/hung.json', page: 'hung.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1840,7 +1874,8 @@ const factionBanners = {
   'fimir': 'assets/banners/fimir.jpg',
   'gnoblar-hordes': 'assets/banners/gnoblar_hordes.jpg',
   'jade-blooded-vampires': 'assets/banners/jade_blooded_vampires.jpg',
-  'southern-realms': 'assets/banners/southern_realms.jpg'
+  'southern-realms': 'assets/banners/southern_realms.jpg',
+  'hung': 'assets/banners/hung.jpg'
 };
 
 // ============================================================================
