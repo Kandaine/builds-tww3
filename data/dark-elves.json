@@ -75,7 +75,8 @@
       "totalSlots": 20,
       "lord": {"icon": "cronehellebron", "name": "Crone Hellebron", "qty": 1, "note": "Combattante de mêlée redoutable, montée sur Cauldron of Blood ou Manticore — le +25% de pertes capturées après bataille (faction) alimente généreusement l'économie d'esclaves de Har Ganeth"},
       "heroes": [
-        {"icon": "deathHag", "name": "Death Hag", "qty": 2, "note": "+2 de capacité de héros (faction) permet d'en aligner davantage sans sacrifier d'autres emplacements"}
+        {"icon": "defUrial", "name": "Urial the Forsaken (Héros Légendaire)", "qty": 1, "note": "The Outcast, survivant du Blood Cauldron et prêtre de Khaine (mod Heroes of Legend) — buffe spécifiquement les Har Ganeth Executioners d'Hellebron (attaques magiques, résistance aux sorts, réduction de fatigue et d'entretien) et applique le commandement « Sacrifices for Khaine » (force des armes, butin, rang de recrutement). Seul lanceur de Dark Magic de l'armée, il comble le manque de soutien magique d'Hellebron"},
+        {"icon": "deathHag", "name": "Death Hag", "qty": 1, "note": "+2 de capacité de héros (faction) — soutien de mêlée et porteuse de bannière du culte de Khaine"}
       ],
       "army": [
         {"icon": "witchElves", "name": "Witch Elves", "qty": 5, "note": "-50% d'entretien et +10% de force des armes grâce à Hellebron (seigneur) — le cœur fanatique de cette armée"},

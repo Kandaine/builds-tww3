@@ -16,7 +16,7 @@
       "lord": {"icon": "miaoying", "name": "Miao Ying", "qty": 1, "note": "Dragonne de la Tempête, défenseuse du Grand Bastion — ses bonus de recrutement et de puissance de tir (seigneur) transforment ses unités de poudre à canon en tireurs d'élite dès leur recrutement, tandis que le +10 de commandement contre les forces du Chaos (faction) sécurise la ligne de front au Grand Bastion"},
       "heroes": [
         {"icon": "astromancer", "name": "Astromancer", "qty": 1, "note": "Renfort de sorts (Lore of Heavens/Yin) et bonus cumulatif de Maîtrise des Vents Élémentaires"},
-        {"icon": "alchemist", "name": "Alchemist", "qty": 1, "note": "Élixirs de soutien et bonus offensifs pour les unités de poudre à canon"}
+        {"icon": "cthShiHong", "name": "Shi-Hong (Héros Légendaire)", "qty": 1, "note": "Le Blind Master, Grand Artificier de Nan-Gau (mod Heroes of Legend) — lié aux Northern Provinces : sa Précision +n% affûte toute la ligne de tir de Miao Ying, et ses effets de contact « Dazed / Blinded / Burnt » pour l'artillerie et les Sky-junks font du bombardier volant un briseur de moral et de ligne. Remplace l'Alchemist générique par un artificier thématique de Nan-Gau"}
       ],
       "army": [
         {"icon": "ironHailGunners", "name": "Iron Hail Gunners", "qty": 4, "note": "-50% d'entretien (seigneur), +2 rang de recrue et +10% de puissance de tir (seigneur) — cœur de la ligne de tir d'élite"},
@@ -47,7 +47,8 @@
       "totalSlots": 20,
       "lord": {"icon": "zhaoming", "name": "Zhao Ming", "qty": 1, "note": "Le Dragon de Fer, maître de l'alchimie et duelliste redoutable — son +1 de Caravane active et +100% de chance de butin (seigneur) enrichissent considérablement la campagne en plus de son impact sur le champ de bataille"},
       "heroes": [
-        {"icon": "alchemist", "name": "Alchemist", "qty": 2, "note": "Recrutés directement à rang +5 (faction) — écho au thème alchimique de Zhao Ming, élixirs de soutien et armes affûtées pour toute l'armée"}
+        {"icon": "cthBannaga", "name": "Bannaga (Héros Légendaire)", "qty": 1, "note": "Le Mercenary Butcher, Ogre-boucher légendaire au service de Zhao Ming (mod Heroes of Legend) — son Entretien −n% pour tous les Ogres mercenaires se cumule avec le −50% d'entretien Ogre du build (faction + seigneur), et ses Points d'allégeance +n% avec les Ogres facilitent les alliances : le chef thématique naturel de cette armée de mercenaires Ogres, qu'il soigne et renforce via la magie du Grand Boyaux"},
+        {"icon": "alchemist", "name": "Alchemist", "qty": 1, "note": "Recruté directement à rang +5 (faction) — écho au thème alchimique de Zhao Ming, élixirs de soutien et armes affûtées pour toute l'armée"}
       ],
       "army": [
         {"icon": "ironguts", "name": "Ironguts", "qty": 3, "note": "+10 attaque/défense en mêlée et +15 armure (faction), -25% d'entretien Ogre Kingdoms cumulé avec -25% d'entretien mêlée du seigneur (-50% au total) — mercenaires lourds increvables"},

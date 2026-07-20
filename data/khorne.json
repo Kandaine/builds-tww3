@@ -80,7 +80,7 @@
       "lord": {"icon": "arbaal", "name": "Arbaal the Undefeated", "qty": 1, "note": "Porteur du Destroyer, hache légendaire offerte par Khorne — \"Fury of the Blood God\" (36 dégâts magiques en zone de 15m, seigneur) brise les formations groupées avant que trois mille ans de domination écrasante au corps-à-corps ne fassent le reste"},
       "heroes": [
         {"icon": "exaltedHeroOfKhorne", "name": "Exalted Hero of Khorne", "qty": 1, "note": "Renfort de mêlée mortel robuste"},
-        {"icon": "bloodreaper", "name": "Bloodreaper", "qty": 1, "note": "Second renfort de mêlée d'élite"}
+        {"icon": "khoSimaergul", "name": "Simaergul (Héros Légendaire)", "qty": 1, "note": "Le Dread Flesh Hound de Khorne, Guardian of the Brazen Altar (mod Heroes of Legend) — Pack Alpha très rapide qui invoque des Chaos Warhounds et des Flesh Hounds of Khorne en plein combat, dont le hurlement (Packmaster's Howl) inspire la terreur : le chef de meute idéal pour l'armée de chiens d'Arbaal, dont la monture est elle-même un Flesh Hound. Ses points d'allégeance +n% avec tous les alliés du Chaos renforcent la diplomatie"}
       ],
       "army": [
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 4, "note": "\"Hellblade\" (+20% dégâts après 80 victimes) et +10% de puissance d'arme (seigneur) — cœur de mêlée mortel robuste"},

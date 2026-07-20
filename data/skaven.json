@@ -138,7 +138,8 @@
       "totalSlots": 20,
       "lord": {"icon": "snikch", "name": "Deathmaster Snikch", "qty": 1, "note": "Le Chef Assassin du Clan Eshin — son +25% de chance de succès d'embuscade (seigneur) rend cette armée redoutable en attaque surprise, et sa capacité \"Concealment Bombs\" (3 utilisations, cible cachée et furtive 73s, rechargement 90s) couvre sa retraite ou celle de ses alliés"},
       "heroes": [
-        {"icon": "assassinHero", "name": "Assassin", "qty": 2, "note": "+8 d'attaque en mêlée pour les héros embarqués (seigneur) — duelliste redoutable contre les seigneurs et héros ennemis"}
+        {"icon": "skvBlackMask", "name": "The Black Mask (Héros Légendaire)", "qty": 1, "note": "Le Hired Master Assassin de Clan Eshin, expert en poisons (mod Heroes of Legend) — buffe toute la ligne de coureurs Eshin de Snikch (Night Runners, Gutter Runners, Death Runners, Eshin Triads) : vitesse, résistance physique, force de tir, munitions et défense en mêlée, plus un rang de recrutement supérieur. Sa capacité \"Headhunter's Mark\" et son passif \"Friend in the Shadows\" en font un assassin de premier plan, sans entretien"},
+        {"icon": "assassinHero", "name": "Assassin", "qty": 1, "note": "+8 d'attaque en mêlée pour les héros embarqués (seigneur) — duelliste redoutable contre les seigneurs et héros ennemis"}
       ],
       "army": [
         {"icon": "eshinTriads", "name": "Eshin Triads", "qty": 1, "note": "Mêlée d'élite du Clan Eshin"},
