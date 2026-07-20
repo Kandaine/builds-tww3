@@ -1224,6 +1224,10 @@ body.search-theme .faction-tab.active{
 .result-card:hover[data-group="jade-blooded-vampires"]{ border-color: #63dab3; }
 .result-card[data-group="southern-realms"]{ border-left-color: #c33f3f; }
 .result-card:hover[data-group="southern-realms"]{ border-color: #e05f5f; }
+.result-card[data-group="hung"]{ border-left-color: #a85a3a; }
+.result-card:hover[data-group="hung"]{ border-color: #c9754f; }
+.result-card[data-group="undead-legions"]{ border-left-color: #57c24a; }
+.result-card:hover[data-group="undead-legions"]{ border-color: #74e065; }
 .result-seal{
   width:64px; height:140px;
   flex-shrink:0;

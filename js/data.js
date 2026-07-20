@@ -129,6 +129,12 @@ const seals = {
   hungUrKhan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 3c7 3 10 7 10 18"/><path d="M6 3l10 18"/><path d="M6 3l3 1M6 3l-1 3"/></svg>`,
   // Zao Korr le Man-Chu (The Hung) — crâne-trophée du seigneur de guerre briseur de Bastion.
   hungZaoKorr: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c4 0 6 3 6 7 0 2-1 3-1 5H7c0-2-1-3-1-5 0-4 2-7 6-7Z"/><circle cx="9.5" cy="10" r="1.2" fill="var(--accent-secondary)"/><circle cx="14.5" cy="10" r="1.2" fill="var(--accent-secondary)"/><path d="M10 17v3M14 17v3M12 17v3"/></svg>`,
+  // Nagash (Undead Legions) — couronne à neuf pointes du Grand Nécromancien surmontant un crâne.
+  nagash: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 9l1.5-3 2 2.5L12 4l1.5 4.5 2-2.5L17 9"/><path d="M6 9c0 4 2.5 7 6 7s6-3 6-7"/><circle cx="10" cy="11.5" r="1" fill="var(--accent-secondary)"/><circle cx="14" cy="11.5" r="1" fill="var(--accent-secondary)"/><path d="M10 17l2 3 2-3"/></svg>`,
+  // Neferata (Lahmian Sisterhood, VC) — couronne solaire lahmian de la Première des Vampires.
+  neferata: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="13" r="4.5"/><path d="M12 2v3M12 21v1M4.5 13H2M22 13h-1.5M6 7L4.5 5.5M18 7l1.5-1.5M6.5 19l-1.5 1.5M17.5 19l1.5 1.5"/></svg>`,
+  // Kalledria (Wailing Conclave, VC) — larme spectrale de la Reine des Chagrins.
+  kalledria: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10Z"/><path d="M10 12c0 1.5 1 2.5 2 2.5"/></svg>`,
   // Sultan Jaffar (Sultanate of Araby) — croissant de lune et étoile d'Araby.
   jaffar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M16 4a8 8 0 1 0 0 16 6 6 0 0 1 0-16Z"/><path d="M19 8l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2L16.5 10.3 18.5 10Z"/></svg>`,
   // The Golden Magus (Golden Fleet) — voile de navire corsaire et vagues.
@@ -1771,7 +1777,28 @@ const unitImages = {
   hngThunderspitter: 'assets/units/hngThunderspitter.png',
   hngSteelSpitters: 'assets/units/hngSteelSpitters.png',
   hngWallripper: 'assets/units/hngWallripper.png',
-  hngReaperBoltThrower: 'assets/units/hngReaperBoltThrower.png'
+  hngReaperBoltThrower: 'assets/units/hngReaperBoltThrower.png',
+  // --- Undead Legions (mod Nagash) : portrait de Nagash + unités propres à
+  // la faction (Legions of Nagashizzar). Portholes extraits du .pack zstd,
+  // recadrés en 60×130. Les héros réutilisent les portraits vanilla déjà
+  // présents (lichePriest, necromancer, vampireHeroDeath). ---
+  nagash: 'assets/portraits/nagash.png',
+  nagThroneGuard: 'assets/units/nagThroneGuard.png',
+  nagBoneGolems: 'assets/units/nagBoneGolems.png',
+  nagMorghasts: 'assets/units/nagMorghasts.png',
+  nagNagashizzarGuardHalb: 'assets/units/nagNagashizzarGuardHalb.png',
+  nagNagashizzarGuard: 'assets/units/nagNagashizzarGuard.png',
+  nagBoneColossus: 'assets/units/nagBoneColossus.png',
+  nagSpiritHosts: 'assets/units/nagSpiritHosts.png',
+  nagBoneThrower: 'assets/units/nagBoneThrower.png',
+  // Nouveaux LL Vampire Counts ajoutés par le mod Nagash (Neferata, Kalledria)
+  // + unités éthérées/goules propres à Kalledria (portholes 60×130).
+  neferata: 'assets/portraits/neferata.png',
+  kalledria: 'assets/portraits/kalledria.png',
+  nagFellSpectres: 'assets/units/nagFellSpectres.png',
+  nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
+  // Crypt Horrors : unité officielle vanilla (Vampire Counts), carte du jeu de base
+  cryptHorrors: 'assets/units/cryptHorrors.png'
 };
 
 // ----------------------------------------------------------------------------
@@ -1833,7 +1860,11 @@ const FACTION_GROUPS = [
   // The Hung — faction ajoutée par un mod (Steppe Lords — The Hung). Nomades
   // cavaliers des Steppes de l'Est, adorateurs du Ciel Déchaîné (Chaos).
   // 2 seigneurs légendaires couverts (Ur-Khan, Zao Korr) ; un 3e existe (Mandakh).
-  { id: 'hung', label: 'The Hung', file: 'data/hung.json', page: 'hung.html' }
+  { id: 'hung', label: 'The Hung', file: 'data/hung.json', page: 'hung.html' },
+  // Undead Legions — faction ajoutée par un mod (Nagash). Legions of
+  // Nagashizzar, menées par Nagash le Grand Nécromancien. Le mod ajoute
+  // aussi des LL/héros aux Vampire Counts (Neferata, Kalledria, Isabella…).
+  { id: 'undead-legions', label: 'Undead Legions', file: 'data/undead-legions.json', page: 'undead_legions.html' }
 ];
 
 // ----------------------------------------------------------------------------
@@ -1875,7 +1906,8 @@ const factionBanners = {
   'gnoblar-hordes': 'assets/banners/gnoblar_hordes.jpg',
   'jade-blooded-vampires': 'assets/banners/jade_blooded_vampires.jpg',
   'southern-realms': 'assets/banners/southern_realms.jpg',
-  'hung': 'assets/banners/hung.jpg'
+  'hung': 'assets/banners/hung.jpg',
+  'undead-legions': 'assets/banners/undead-legions.jpg'
 };
 
 // ============================================================================
