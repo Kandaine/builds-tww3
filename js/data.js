@@ -135,6 +135,18 @@ const seals = {
   neferata: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="13" r="4.5"/><path d="M12 2v3M12 21v1M4.5 13H2M22 13h-1.5M6 7L4.5 5.5M18 7l1.5-1.5M6.5 19l-1.5 1.5M17.5 19l1.5 1.5"/></svg>`,
   // Kalledria (Wailing Conclave, VC) — larme spectrale de la Reine des Chagrins.
   kalledria: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10Z"/><path d="M10 12c0 1.5 1 2.5 2 2.5"/></svg>`,
+  // Marius Leitdorf (Averland, mod Mixu) — soleil d'Averland, emblème du Comte Fou.
+  mariusLeitdorf: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>`,
+  // Comtes Électeurs de l'Empire (mod Mixu's Legendary Lords) — emblèmes de provinces.
+  aldebrandLudenhof: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 18l7-12 7 12"/><path d="M8 18l3-5 3 5"/><circle cx="11" cy="4.5" r="1.2"/></svg>`,
+  theodericGausser: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 15c2 2 14 2 16 0"/><path d="M6 15l-1-4 4 2 3-5 3 5 4-2-1 4"/></svg>`,
+  wolframHertwig: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 4h10l-2 7a3 3 0 0 1-6 0Z"/><path d="M9 15h6M12 15v5M9 21h6"/></svg>`,
+  valmirVonRaukov: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 7c-1 3 1 6 3 6M19 7c1 3-1 6-3 6"/><path d="M8 11c0 3 2 5 4 5s4-2 4-5"/><circle cx="10" cy="11" r="0.8" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="0.8" fill="var(--accent-secondary)"/></svg>`,
+  alberichHauptAnderssen: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 4v9a6 6 0 0 0 12 0V4"/><path d="M9 4l6 16M15 4L9 20"/></svg>`,
+  // Helmut Feuerbach (Talabecland, Culte de Taal & Rhya) — arbre/bois sacré du culte de la nature.
+  helmutFeuerbach: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21v-8"/><path d="M12 13c-3 0-5-2-5-5 3 0 5 2 5 5Z"/><path d="M12 11c0-3 2-5 5-5 0 3-2 5-5 5Z"/><path d="M8 21h8"/></svg>`,
+  // Edvard van der Kraal (Pirates of Sartosa) — crâne de pirate à bandeau.
+  edvardVanDerKraal: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c4 0 6 3 6 7 0 2-1 3-1 5H7c0-2-1-3-1-5 0-4 2-7 6-7Z"/><path d="M6 10l5 2M18 10l-5 2"/><circle cx="14.5" cy="10.5" r="1.2" fill="var(--accent-secondary)"/><path d="M10 17v3M14 17v3"/></svg>`,
   // Sultan Jaffar (Sultanate of Araby) — croissant de lune et étoile d'Araby.
   jaffar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M16 4a8 8 0 1 0 0 16 6 6 0 0 1 0-16Z"/><path d="M19 8l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2L16.5 10.3 18.5 10Z"/></svg>`,
   // The Golden Magus (Golden Fleet) — voile de navire corsaire et vagues.
@@ -1607,6 +1619,34 @@ const unitImages = {
   warWagons: 'assets/units/warWagons.png',
   flagellants: 'assets/units/flagellants.png',
   empireKnights: 'assets/units/empireKnights.png',
+  // Cavalerie Empire vanilla (cartes officielles) — utilisée par les Comtes
+  // Électeurs du mod Mixu's Legendary Lords (Knightly Charge de Marius, etc.)
+  knightsBlazingSun: 'assets/units/knightsBlazingSun.png',
+  reiksguard: 'assets/units/reiksguard.png',
+  demigryphKnights: 'assets/units/demigryphKnights.png',
+  witchHunter: 'assets/units/witchHunter.png',
+  hammerOfTheWitches: 'assets/units/hammerOfTheWitches.png',
+  deathjacks: 'assets/units/deathjacks.png',
+  stirlandsRevenge: 'assets/units/stirlandsRevenge.png',
+  theSunmaker: 'assets/units/theSunmaker.png',
+  // Culte de Taal & Rhya (Helmut Feuerbach) + roster pirate (Edvard van der
+  // Kraal) — unités custom du mod Mixu (cartes ui/units/icons, 60×130).
+  celebrants: 'assets/units/celebrants.png',
+  hornedHunters: 'assets/units/hornedHunters.png',
+  daughtersOfRhya: 'assets/units/daughtersOfRhya.png',
+  warriorPriestOfTaal: 'assets/units/warriorPriestOfTaal.png',
+  pirateDeckhandsSwords: 'assets/units/pirateDeckhandsSwords.png',
+  pirateDeckhandsPolearms: 'assets/units/pirateDeckhandsPolearms.png',
+  buccaneersGreatWeapons: 'assets/units/buccaneersGreatWeapons.png',
+  buccaneersSwordBombs: 'assets/units/buccaneersSwordBombs.png',
+  gunneryMobHandguns: 'assets/units/gunneryMobHandguns.png',
+  gunneryMobBlunderbuss: 'assets/units/gunneryMobBlunderbuss.png',
+  norscanReavers: 'assets/units/norscanReavers.png',
+  longDrongsSlayerPirates: 'assets/units/longDrongsSlayerPirates.png',
+  carronade: 'assets/units/carronade.png',
+  prometheanRiders: 'assets/units/prometheanRiders.png',
+  fleetCaptain: 'assets/units/fleetCaptain.png',
+  witchDoctor: 'assets/units/witchDoctor.png',
   freeCompanyMilitia: 'assets/units/freeCompanyMilitia.png',
   warriorPriest: 'assets/units/warriorPriest.png',
   amethystWizard: 'assets/units/amethystWizard.png',
@@ -1800,7 +1840,21 @@ const unitImages = {
   // Crypt Horrors : unité officielle vanilla (Vampire Counts), carte du jeu de base
   cryptHorrors: 'assets/units/cryptHorrors.png',
   // Banshee : héros officiel vanilla (Vampire Counts), portrait de campagne du jeu de base
-  banshee: 'assets/units/banshee.png'
+  banshee: 'assets/units/banshee.png',
+  // Comtes Électeurs de l'Empire (mod Mixu's Legendary Lords) — portraits
+  // extraits du .pack. Réutilisent le roster Empire vanilla déjà présent.
+  mariusLeitdorf: 'assets/portraits/mariusLeitdorf.png',
+  aldebrandLudenhof: 'assets/portraits/aldebrandLudenhof.png',
+  theodericGausser: 'assets/portraits/theodericGausser.png',
+  wolframHertwig: 'assets/portraits/wolframHertwig.png',
+  valmirVonRaukov: 'assets/portraits/valmirVonRaukov.png',
+  alberichHauptAnderssen: 'assets/portraits/alberichHauptAnderssen.png',
+  helmutFeuerbach: 'assets/portraits/helmutFeuerbach.png',
+  edvardVanDerKraal: 'assets/portraits/edvardVanDerKraal.png',
+  // Héros légendaires Empire (mod Mixu) : Luthor Huss (armée de Volkmar),
+  // Oleg von Raukov (armée de son père Valmir).
+  luthorHuss: 'assets/portraits/luthorHuss.png',
+  olegVonRaukov: 'assets/portraits/olegVonRaukov.png'
 };
 
 // ----------------------------------------------------------------------------

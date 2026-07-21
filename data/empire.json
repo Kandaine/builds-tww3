@@ -111,7 +111,8 @@
       "totalSlots": 20,
       "lord": {"icon": "volkmar", "name": "Volkmar the Grim", "qty": 1, "note": "Le Grand Théogoniste, chevauchant l'Autel de Guerre de Sigmar — son +10% de résistance physique et +8 de défense en mêlée pour les Flagellants/Empire Knights/Free Company Militia (seigneur) en fait ces unités des piliers increvables du champ de bataille"},
       "heroes": [
-        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 2, "note": "+4 de rang de recrutement (faction) — prières de combat rechargées 33% plus vite (faction), soutien de mêlée et de moral"}
+        {"icon": "luthorHuss", "name": "Luthor Huss (Héros Légendaire)", "qty": 1, "note": "Le Prophète de Sigmar (mod Mixu) — Warrior Priest légendaire, il devient Incassable et voit son entretien réduit tant qu'il combat dans l'armée de Volkmar ; son aura « Unbending Righteousness » inspire tout allié effrayé ou terrifié qui le voit, pilier anti-terreur idéal pour la horde fanatique de Volkmar"},
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "+4 de rang de recrutement (faction) — prières de combat rechargées 33% plus vite (faction), soutien de mêlée et de moral"}
       ],
       "army": [
         {"icon": "flagellants", "name": "Flagellants", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — fanatiques Unbreakable, mur de mêlée increvable"},
@@ -157,6 +158,277 @@
       ],
       "magic": "Elspeth manie la Lore of Death (Aspect of the Dread Knight, Spirit Leech, Doom & Darkness, Soulblight, The Purple Sun of Xereus, The Fate of Bjuna) à rechargement réduit de 20% (seigneur) — épaulée par des Amethyst Wizards pour démultiplier la pression magique.",
       "note": "Ce build exploite au maximum l'identité de Wissenland & Nuln : l'accès à l'Imperial Gunnery School (faction) débloque les variantes Amethyst — Ironsides, Outriders, Helstorm Rocket Battery et le Land Ship unique — qui remplacent avantageusement leurs équivalents standards tout en conservant le -15% d'entretien et l'XP doublée réservés aux unités Gunnery et d'Artillerie (faction). Les 2 exemplaires du régiment favori Grundel's Defenders et les Swordsmen protègent cette ligne de tir dévastatrice, tandis que les Amethyst Wizards exploitent le -20% de rechargement de la Lore of Death (seigneur) pour un harcèlement magique constant. Le Amethyst Land Ship sert de pièce maîtresse capable à lui seul de faire basculer une bataille."
+    }
+  },
+  {
+    "id": "mariusLeitdorf",
+    "numeral": "VI",
+    "name": "Marius Leitdorf",
+    "epithet": "Le Comte Fou",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Marius_Leitdorf",
+    "faction": "Averland",
+    "seal": "mariusLeitdorf",
+    "portraitImage": "assets/portraits/mariusLeitdorf.png",
+    "lore": "<p><strong>Marius Leitdorf</strong>, le Comte Électeur d'Averland, est passé à la postérité sous le nom de <strong>Comte Fou</strong>. Génie martial autant qu'esprit tourmenté, il alterne entre lucidité brillante et accès de folie — dialoguant avec son épée, confiant le commandement à son destrier Daisy, ou sombrant dans de furieuses ruminations. Cette faction (Averland) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Malgré — ou grâce à — sa démence, Marius est l'un des plus redoutables combattants de l'Empire, un maître de la charge de cavalerie qui mène personnellement ses chevaliers dans la mêlée. « Certains hommes sont destinés à la grandeur. Ils en sont touchés. Contrairement à moi, qui ai été touché par… autre chose. »</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisé à l'attrition de montagne</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-20%</strong> pour les bâtiments produisant des ressources</div>\n        <div class=\"attr-item\">Défense en mêlée : <strong>+5</strong> en situation de siège</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Sigmar's Sons (Swordsmen)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive « Knightly Charge » pour les Empire Knights, Knights of the Blazing Sun et Reiksguard (armée du seigneur) — Masse : <strong>+50%</strong>, Bonus de charge : <strong>+40%</strong>, Vitesse de charge : <strong>+30%</strong>, Accélération : <strong>+20%</strong> ; durée illimitée, actif quand l'unité charge</div>\n        <div class=\"attr-item\">Capacité active « The Mad Count » (Augment, 30 s, rechargement 5 s) — accorde <strong>au hasard</strong> l'un des 4 effets suivants : <em>Berserk Rage!</em> (+50% dégâts d'arme et perforants, +30% charge, Rampage), <em>Tactical Brilliance!</em> (+45% vitesse/accélération, +24 attaque en mêlée, Devastating Flanker), <em>Insane Bravado!</em> (+28 réflexion des dégâts, +24 défense en mêlée, Incassable), <em>Lunatic Ravings!</em> (+40% résistance physique, -10% vigueur/s, ne peut plus bouger)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets de faction et de seigneur confirmés par capture de l'onglet Lord Details en jeu (Marius Leitdorf) + capacités « Knightly Charge » et « The Mad Count ».</div>\n    ",
+    "build": {
+      "role": "Armée de choc de cavalerie bâtie autour des effets confirmés de Marius : un poing de chevaliers (Reiksguard, Knights of the Blazing Sun, Empire Knights) transfigurés par la passive « Knightly Charge » (masse +50%, bonus de charge +40%, vitesse de charge +30%, accélération +20%, seigneur) qui écrase tout sur son passage, épaulé par les 2 Sigmar's Sons du régiment favori (faction) et une ligne de tir/artillerie de soutien. Marius lui-même, avec « The Mad Count », devient une brute imprévisible au cœur de la mêlée",
+      "totalSlots": 20,
+      "lord": {"icon": "mariusLeitdorf", "name": "Marius Leitdorf", "qty": 1, "note": "Le Comte Fou d'Averland, maître de la charge — sa passive « Knightly Charge » (seigneur) démultiplie l'impact de ses trois types de chevaliers, tandis que « The Mad Count » lui accorde au hasard un buff surpuissant (rage berserk, brillance tactique, bravoure incassable ou résistance de dément), le rendant redoutable mais imprévisible"},
+      "heroes": [
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "Prières de Sigmar (Shield of Faith, Soulfire, Healing Hand) — soutien de commandement et de survie qui garde la cavalerie en selle plus longtemps"},
+        {"icon": "brightWizard", "name": "Bright Wizard", "qty": 1, "note": "Lore of Fire (Fireball, Flame Storm) — ramollit et désorganise l'infanterie ennemie juste avant l'impact de la charge des chevaliers"}
+      ],
+      "army": [
+        {"icon": "reiksguard", "name": "Reiksguard", "qty": 3, "note": "Cavalerie lourde d'élite — cible de « Knightly Charge » (masse +50%, charge +40%, seigneur) : un mur d'acier lancé qui piétine l'ennemi en une brume rouge"},
+        {"icon": "knightsBlazingSun", "name": "Knights of the Blazing Sun", "qty": 3, "note": "Chevaliers de Myrmidia — cible de « Knightly Charge » (seigneur), redoutables contre l'infanterie et les grandes cibles après la charge"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 2, "note": "Cavalerie de choc classique — cible de « Knightly Charge » (seigneur), complète le poing de cavalerie à moindre coût"},
+        {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Cavalerie monstrueuse — bien que hors de « Knightly Charge », leur masse et leur impact naturels en font l'enclume qui fixe l'ennemi pendant que les chevaliers enveloppent"},
+        {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — infanterie d'élite qui ancre le centre et tient pendant que la cavalerie charge les flancs"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir de précision perforant — abat l'infanterie lourde et les monstres avant le contact"},
+        {"icon": "outriders", "name": "Outriders", "qty": 1, "note": "Tirailleurs montés mobiles — harcèlent et exploitent les brèches ouvertes par la cavalerie"},
+        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible — élimine monstres et blindés qui menaceraient la charge"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet — brise les formations groupées et prépare le terrain à la charge"}
+      ],
+      "magic": "Marius n'est pas un lanceur de sorts — sa puissance vient de « Knightly Charge » (seigneur) et de « The Mad Count ». Le soutien magique vient du Bright Wizard (Lore of Fire, pour désorganiser avant l'impact) et des prières du Warrior Priest (survie et commandement). Note sur « The Mad Count » : l'effet étant tiré au hasard, un « Lunatic Ravings! » (ne peut plus bouger) peut survenir au mauvais moment — à utiliser en pleine mêlée où l'immobilité importe moins.",
+      "note": "Build entièrement pensé pour la charge. Les <strong>trois types de chevaliers ciblés par « Knightly Charge »</strong> (Reiksguard, Knights of the Blazing Sun, Empire Knights — 8 unités au total) forment un poing de cavalerie dont l'impact est décuplé : +50% de masse et +40% de bonus de charge transforment chaque contact en catastrophe pour l'ennemi, la vitesse de charge et l'accélération accrues (seigneur) garantissant qu'ils frappent avant que l'adversaire ne réagisse. Les Demigryph Knights ajoutent la masse monstrueuse, et les 2 <strong>Sigmar's Sons</strong> du régiment favori (faction) ancrent le centre. On ramollit d'abord la cible avec Handgunners, artillerie et le Bright Wizard, puis on lance la charge sur un flanc ou l'arrière (les chevaliers en profitent doublement). Marius plonge au cœur du combat avec « The Mad Count » — un pari, mais dévastateur quand la Berserk Rage ou la Tactical Brilliance sort. En défense, le +5 de défense en mêlée en siège (faction) et l'immunité à l'attrition de montagne facilitent la tenue de l'Averland montagneux."
+    }
+  },
+  {
+    "id": "aldebrandLudenhof",
+    "numeral": "VII",
+    "name": "Aldebrand Ludenhof",
+    "epithet": "Comte de Hochland",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Aldebrand_Ludenhof",
+    "faction": "Hochland",
+    "seal": "aldebrandLudenhof",
+    "portraitImage": "assets/portraits/aldebrandLudenhof.png",
+    "lore": "<p><strong>Aldebrand Ludenhof</strong>, Comte Électeur de Hochland, règne sur une province de forêts profondes et de chasseurs réputés. Le Hochland est célèbre pour ses tireurs d'élite et sa longue rifle unique, et ses Comtes ont toujours entretenu une tradition martiale de précision et d'embuscade forestière. Cette faction (Hochland) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Fin tacticien, Aldebrand privilégie la poudre à canon et la maîtrise du terrain : ses Handgunners et ses chasseurs déciment l'ennemi à distance avant qu'il n'atteigne les lignes, et ses forêts natales sont autant de pièges pour les envahisseurs.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Force des armes : <strong>+10%</strong> lors des batailles en forêt (tous les personnages)</div>\n        <div class=\"attr-item\">Portée : <strong>+20%</strong> pour les Handgunners (toutes les armées)</div>\n        <div class=\"attr-item\">Gain d'expérience : <strong>+25%</strong> lors des batailles en forêt</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour The Silver Bullets (Handgunners)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Bonus contre les grandes unités : <strong>+8</strong></div>\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+8</strong> lors des batailles en forêt (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets confirmés par capture de l'onglet Lord Details en jeu (Aldebrand Ludenhof).</div>\n    ",
+    "build": {
+      "role": "Ligne de tir massive bâtie autour des effets confirmés d'Aldebrand : une forêt de canons à main dont la portée est allongée de 20% (faction), menée par les 2 Silver Bullets du régiment favori (faction), qui déciment l'ennemi bien avant le contact. Les chasseurs et l'artillerie complètent le déluge de plomb, pendant qu'une ligne d'élite tient le front et que les Demigryph Knights protègent les flancs",
+      "totalSlots": 20,
+      "lord": {"icon": "aldebrandLudenhof", "name": "Aldebrand Ludenhof", "qty": 1, "note": "Le Comte de Hochland, maître tireur — sa Portée +20% pour les Handgunners (faction) et le régiment favori Silver Bullets font de sa ligne de tir la plus mordante de l'Empire ; en forêt, +10% de force des armes et +8 d'attaque en mêlée (faction/seigneur) transforment son terrain natal en piège mortel"},
+      "heroes": [
+        {"icon": "brightWizard", "name": "Bright Wizard", "qty": 1, "note": "Lore of Fire — Flame Storm et Fireball pour désorganiser et brûler l'infanterie groupée en complément du tir"},
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "Prières de Sigmar — commandement et soins qui gardent la ligne de tir et le front stables"}
+      ],
+      "army": [
+        {"icon": "theSilverBullets", "name": "The Silver Bullets (Handgunners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — Handgunners d'élite, Portée +20% (faction), fer de lance de la ligne de tir"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 4, "note": "Portée +20% (faction) — cœur de la ligne de tir, tir perforant à longue portée contre l'infanterie lourde et les monstres"},
+        {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "Tirailleurs forestiers furtifs — infiltration et tir d'embuscade, redoutables en forêt (+10% force des armes, faction)"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains — tient le centre pendant que les canons à main pilonnent"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 2, "note": "Anti-grande cible — protège la ligne de tir des monstres et de la cavalerie"},
+        {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Cavalerie monstrueuse — protège les flancs et charge les tireurs ou casters qui menaceraient la ligne"},
+        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible — abat monstres et blindés à longue portée"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 2, "note": "Artillerie à zone d'effet — saturation des formations groupées avant qu'elles n'atteignent la ligne"}
+      ],
+      "magic": "Aldebrand n'est pas un lanceur de sorts — sa puissance vient de la poudre à canon. Le Bright Wizard (Lore of Fire) ajoute la magie offensive qui désorganise l'infanterie groupée, tandis que le Warrior Priest maintient le commandement.",
+      "note": "Build de gunline pur exploitant la signature d'Aldebrand : la <strong>Portée +20% pour tous les Handgunners</strong> (faction) allonge la zone de tir de six unités de poudre (Silver Bullets ×2 + Handgunners ×4), soit un mur de plomb qui tire plus tôt et plus longtemps que n'importe quelle autre armée impériale. Les <strong>2 Silver Bullets</strong> du régiment favori (faction) ajoutent le tir d'élite, les Huntsmen infiltrent et harcèlent, et l'artillerie (Great Cannon, Helstorm) pilonne à distance. La ligne d'élite (Greatswords, Halberdiers) et les Demigryph Knights protègent la ligne de tir des assauts. À jouer en forêt dès que possible : le <strong>+10% de force des armes et +8 d'attaque en mêlée</strong> (faction/seigneur) et le +25% d'XP y récompensent chaque engagement, transformant les bois de Hochland en terrain de chasse."
+    }
+  },
+  {
+    "id": "theodericGausser",
+    "numeral": "VIII",
+    "name": "Theoderic Gausser",
+    "epithet": "Comte de Nordland",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Theoderic_Gausser",
+    "faction": "Nordland",
+    "seal": "theodericGausser",
+    "portraitImage": "assets/portraits/theodericGausser.png",
+    "lore": "<p><strong>Theoderic Gausser</strong>, Comte Électeur de Nordland, règne sur la province côtière du nord de l'Empire, aux confins de la forêt de Laurelorn où subsistent les Elfes des Bois de Laurelorn. Guerrier robuste et meneur d'hommes, il tire sa force de la guerre elle-même : plus les ennemis sont nombreux, plus ses troupes se battent avec ardeur. Cette faction (Nordland) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Nordland vit de ses ports et de ses forêts. Theoderic entretient une alliance de longue date avec les Elfes de Laurelorn et mène une armée impériale équilibrée, endurcie par des campagnes incessantes sur plusieurs fronts.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Commence avec une alliance défensive avec Laurelorn</div>\n        <div class=\"attr-item\">Contrôle : <strong>+2</strong> pour chaque guerre simultanée avec une faction voisine (toutes les provinces)</div>\n        <div class=\"attr-item\">Revenu des ports : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour The White Wolves (Huntsmen)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Commandement : <strong>+1</strong> pour chaque guerre simultanée (toutes les unités de l'armée)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets confirmés par capture de l'onglet Lord Details en jeu (Theoderic Gausser).</div>\n    ",
+    "build": {
+      "role": "Armée impériale combinée et endurante bâtie autour des effets confirmés de Theoderic : un ost équilibré qui gagne en commandement à chaque nouvelle guerre déclarée (+1 par guerre, seigneur), donc quasi inébranlable pour un joueur agressif, mené par les 2 White Wolves du régiment favori (faction) et une combinaison classique de tir, de ligne et de cavalerie",
+      "totalSlots": 20,
+      "lord": {"icon": "theodericGausser", "name": "Theoderic Gausser", "qty": 1, "note": "Le Comte de Nordland, qui puise sa force dans la guerre — son +1 de commandement par guerre simultanée (seigneur) rend toute l'armée d'autant plus solide qu'il combat sur de nombreux fronts, et le +2 de contrôle par guerre (faction) stabilise ses provinces malgré l'agression"},
+      "heroes": [
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "Prières de Sigmar — renforce encore le commandement déjà élevé et soigne la ligne"},
+        {"icon": "amberWizard", "name": "Amber Wizard", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform pour buffer l'infanterie et la cavalerie au corps-à-corps"}
+      ],
+      "army": [
+        {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — chasseurs d'élite pour l'infiltration et le tir d'embuscade"},
+        {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "Tirailleurs forestiers — harcèlement et tir furtif en soutien"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir perforant à distance contre l'infanterie lourde et les monstres"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains — cœur du front, d'autant plus solide que le commandement monte (seigneur)"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "Anti-grande cible et anti-cavalerie — mur défensif fiable"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "Ligne de tenue bon marché avec bouclier — absorbe les charges"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 2, "note": "Cavalerie de choc — charge les flancs et pourchasse les tireurs adverses"},
+        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible à longue portée"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet contre les formations groupées"}
+      ],
+      "magic": "Theoderic n'est pas un lanceur de sorts — sa force vient du commandement (qui monte avec chaque guerre, seigneur). Le soutien magique vient de l'Amber Wizard (buffs de mêlée) et des prières du Warrior Priest.",
+      "note": "Build d'ost combiné pensé pour un joueur agressif : les effets de Theoderic récompensent la <strong>guerre sur plusieurs fronts</strong> — chaque conflit simultané ajoute <strong>+1 de commandement à toute l'armée</strong> (seigneur) et +2 de contrôle aux provinces (faction), si bien que plus l'Empire est en guerre, plus ses troupes tiennent et plus ses terres restent calmes. L'armée est un classique équilibré (tir, ligne d'élite, cavalerie, artillerie) que ce bonus de commandement rend quasi inébranlable, avec les 2 <strong>White Wolves</strong> du régiment favori (faction) pour l'infiltration. L'alliance de départ avec Laurelorn et le +10% de revenu des ports (faction) soutiennent l'expansion de Nordland."
+    }
+  },
+  {
+    "id": "wolframHertwig",
+    "numeral": "IX",
+    "name": "Wolfram Hertwig",
+    "epithet": "Comte d'Ostermark",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Wolfram_Hertwig",
+    "faction": "Ostermark",
+    "seal": "wolframHertwig",
+    "portraitImage": "assets/portraits/wolframHertwig.png",
+    "lore": "<p><strong>Wolfram Hertwig</strong>, Comte Électeur d'Ostermark, gouverne une province frontalière durement éprouvée, aux marges des terres maudites de Sylvanie et des steppes de Kislev. L'Ostermark est un bastion de la foi et de la traque : ses Chasseurs de Sorcières y sont légion, débusquant sans relâche mutants, hérétiques et morts-vivants. Cette faction (Ostermark) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Wolfram entretient une véritable inquisition : sous son commandement, les Chasseurs de Sorcières sont plus nombreux, moins coûteux et mieux protégés, et sa cavalerie chevaleresque ne connaît pas la peur.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Ward save : <strong>+10%</strong> pour les héros Witch Hunter embarqués</div>\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les héros Witch Hunter</div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Witch Hunters</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+40</strong> avec Kislev</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+20% de munitions et de dégâts de tir</strong> pour Hammer of the Witches (Great Cannon)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Attribut « Immunisé à la Psychologie » pour les Empire Knights, Knights of the Blazing Sun et Reiksguard (armée du seigneur) — insensibles aux attaques psychologiques (Peur &amp; Terreur)</div>\n        <div class=\"attr-item\">Chance d'intercepter une armée utilisant Tunnels, sentes bestiales ou Racines-Monde : <strong>+20%</strong></div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets confirmés par capture de l'onglet Lord Details en jeu (Wolfram Hertwig).</div>\n    ",
+    "build": {
+      "role": "Inquisition montée bâtie autour des effets confirmés de Wolfram : une escouade de Witch Hunters (héros) démultipliée par le +2 de capacité, le -50% d'entretien et le +10% de ward save (faction), menant une cavalerie chevaleresque immunisée à la Psychologie (seigneur) qui ne rompt jamais, appuyée par le Hammer of the Witches suralimenté (favori, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "wolframHertwig", "name": "Wolfram Hertwig", "qty": 1, "note": "Le Comte d'Ostermark, grand inquisiteur — ses effets font des Witch Hunters une force de frappe (héros) et rendent ses chevaliers (Empire Knights, Blazing Sun, Reiksguard) immunisés à la Psychologie (seigneur) : une cavalerie qui charge sans jamais faiblir"},
+      "heroes": [
+        {"icon": "witchHunter", "name": "Witch Hunter", "qty": 3, "note": "Cœur du kit de Wolfram : +2 capacité de héros, -50% d'entretien et +10% de ward save (faction) permettent d'en aligner une escouade — duellistes anti-personnage, Accusation qui déchire les seigneurs et héros ennemis, et pistolets contre l'infanterie"}
+      ],
+      "army": [
+        {"icon": "hammerOfTheWitches", "name": "Hammer of the Witches (Great Cannon)", "qty": 1, "note": "Régiment favori : +20% de munitions et de dégâts de tir (faction) — Great Cannon d'élite qui tire plus longtemps et plus fort, pièce d'artillerie maîtresse"},
+        {"icon": "reiksguard", "name": "Reiksguard", "qty": 2, "note": "Cavalerie lourde d'élite — Immunisée à la Psychologie (seigneur) : charge et tient sans jamais rompre"},
+        {"icon": "knightsBlazingSun", "name": "Knights of the Blazing Sun", "qty": 2, "note": "Chevaliers de Myrmidia — Immunisés à la Psychologie (seigneur), redoutables contre l'infanterie et les grandes cibles"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 2, "note": "Cavalerie de choc — Immunisée à la Psychologie (seigneur), charge de flanc fiable"},
+        {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Cavalerie monstrueuse — masse et impact qui brisent les formations"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains — ancre le centre pendant que la cavalerie enveloppe"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir perforant — abat monstres et infanterie lourde à distance"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 1, "note": "Anti-grande cible en soutien du front"},
+        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible en complément du Hammer of the Witches"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet contre les formations groupées"}
+      ],
+      "magic": "Wolfram n'est pas un lanceur de sorts — sa puissance vient de son escouade de Witch Hunters (héros) et de sa cavalerie incassable. Les Witch Hunters apportent dispels et actions anti-personnage plutôt que de la magie offensive brute.",
+      "note": "Build à double signature. D'un côté, une <strong>escouade de 3 Witch Hunters</strong> (héros) rendue possible par le +2 de capacité de héros, quasi gratuite (-50% d'entretien) et durcie (+10% ward save) (faction) : des duellistes anti-personnage qui traquent seigneurs, héros et monstres ennemis. De l'autre, un <strong>poing de cavalerie immunisé à la Psychologie</strong> (Empire Knights, Knights of the Blazing Sun, Reiksguard, seigneur) qui charge et combat sans jamais rompre, épaulé par les Demigryph Knights. Le <strong>Hammer of the Witches</strong> (favori, +20% munitions et dégâts de tir, faction) est la pièce d'artillerie maîtresse. Le +40 de diplomatie avec Kislev (faction) sécurise le flanc est, et le +20% d'interception (seigneur) piège les armées souterraines ou empruntant les Racines-Monde."
+    }
+  },
+  {
+    "id": "valmirVonRaukov",
+    "numeral": "X",
+    "name": "Valmir von Raukov",
+    "epithet": "Comte d'Ostland",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Valmir_von_Raukov",
+    "faction": "Ostland",
+    "seal": "valmirVonRaukov",
+    "portraitImage": "assets/portraits/valmirVonRaukov.png",
+    "lore": "<p><strong>Valmir von Raukov</strong>, Comte Électeur d'Ostland, défend l'une des provinces les plus septentrionales et les plus exposées de l'Empire, en première ligne face aux incursions du Chaos et des Hommes-Bêtes. L'Ostland est réputé pour sa robuste infanterie de piquiers et de hallebardiers, formée à tenir coûte que coûte. Cette faction (Ostland) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Valmir entretient des liens avec les Ogres, qu'il enrôle comme mercenaires, et fait de son infanterie un mur d'acier discipliné, capable d'encaisser les charges les plus brutales sans céder un pouce de terrain.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Accès à un bâtiment unique donnant accès aux Ogre Maneaters (nécessite le DLC Ogre Kingdoms)</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec les Ogre Kingdoms</div>\n        <div class=\"attr-item\">Armure : <strong>+20</strong> pour les Spearmen et Halberdiers (toutes les armées)</div>\n        <div class=\"attr-item\">Attribut « Formation Attack » pour les Spearmen et Halberdiers (toutes les armées) — l'unité reste en formation en mêlée et gagne un léger bonus de défense en mêlée</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Sigmar's Sons (Swordsmen), et attribut « Formation Attack » pour Sigmar's Sons</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Attribut « Expert Charge Defence » pour les Spearmen (armée du seigneur) — en position (bracing), <strong>annule totalement le bonus de charge</strong> de tout attaquant</div>\n        <div class=\"attr-item\">Masse des unités : <strong>+15%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets confirmés par capture de l'onglet Lord Details en jeu (Valmir von Raukov).</div>\n    ",
+    "build": {
+      "role": "Mur d'infanterie inébranlable bâti autour des effets confirmés de Valmir : une masse de Spearmen et Halberdiers rendus increvables (+20 armure, Formation Attack, +15% masse, faction/seigneur) et increvables face aux charges (Expert Charge Defence pour les Spearmen, seigneur), épaulée par des Ogre Maneaters mercenaires et les Sigmar's Sons du régiment favori",
+      "totalSlots": 20,
+      "lord": {"icon": "valmirVonRaukov", "name": "Valmir von Raukov", "qty": 1, "note": "Le Comte d'Ostland, maître du mur de piques — ses effets transforment Spearmen et Halberdiers en une muraille d'acier (+20 armure, Formation Attack, faction ; +15% masse et Expert Charge Defence pour les Spearmen, seigneur) qui brise les charges et ne recule jamais"},
+      "heroes": [
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "Prières de Sigmar — Shield of Faith et soins qui rendent le mur d'infanterie encore plus dur à briser"},
+        {"icon": "olegVonRaukov", "name": "Oleg von Raukov (Héros Légendaire)", "qty": 1, "note": "Prince d'Ostland et fils de Valmir (mod Mixu) — Grand Maréchal qui combat à pied à la tête des Greatswords ; ses capacités « Hold Fast », « Inspiring Ray of Hope » et « Power of the Blood and the Beer » (obstination d'Ostlander) renforcent le commandement et la ténacité du mur d'infanterie, en parfaite harmonie avec la doctrine défensive de son père"}
+      ],
+      "army": [
+        {"icon": "spearmenEmpire", "name": "Spearmen", "qty": 4, "note": "+20 armure, Formation Attack, +15% masse (faction/seigneur) — le mur anti-cavalerie increvable, cœur de l'armée ; « Expert Charge Defence » (seigneur) leur fait annuler totalement le bonus de charge de tout attaquant quand ils sont en position"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 4, "note": "+20 armure, Formation Attack, +15% masse (faction/seigneur) — anti-grande cible et anti-cavalerie, complète le mur contre les monstres"},
+        {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité et attribut Formation Attack (faction) — infanterie d'élite qui frappe en formation serrée"},
+        {"icon": "maneaters", "name": "Ogre Maneaters", "qty": 2, "note": "Mercenaires ogres (bâtiment unique d'Ostland, faction) — masse brute (+15% masse, seigneur) et puissance de choc qui manquent à l'infanterie humaine"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir perforant derrière le mur — abat l'infanterie lourde qui vient s'empaler sur les piques"},
+        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible à longue portée"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet contre les formations qui s'agglutinent sur le mur"},
+        {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 1, "note": "Cavalerie monstrueuse — la seule pièce de contre-charge, protège un flanc et chasse les tireurs"}
+      ],
+      "magic": "Valmir n'est pas un lanceur de sorts — sa force vient de son mur d'infanterie. Le Bright Wizard (Lore of Fire) brûle les ennemis fixés contre les piques, et le Warrior Priest durcit encore la ligne (Shield of Faith, soins).",
+      "note": "Build de mur d'infanterie taillé pour l'enclume. Le cumul <strong>+20 armure, Formation Attack (faction) et +15% de masse (seigneur)</strong> sur les Spearmen et Halberdiers en fait une muraille quasi impossible à repousser, et l'<strong>Expert Charge Defence</strong> pour les Spearmen (seigneur) leur permet de recevoir et de briser les charges de cavalerie et de monstres sans broncher. Les 2 <strong>Sigmar's Sons</strong> (favori, Formation Attack, faction) ajoutent une infanterie d'élite offensive, et les <strong>Ogre Maneaters</strong> (accessibles via le bâtiment unique d'Ostland, faction) fournissent la puissance de choc que l'infanterie humaine ne peut donner. On fixe l'ennemi sur le mur, on le brûle et le canonne (Bright Wizard, artillerie, Handgunners), puis les Maneaters et les Demigryphs enfoncent. Une armée lente mais absolument increvable."
+    }
+  },
+  {
+    "id": "alberichHauptAnderssen",
+    "numeral": "XI",
+    "name": "Alberich Haupt-Anderssen",
+    "epithet": "Comte de Stirland",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Alberich_Haupt-Anderssen",
+    "faction": "Stirland",
+    "seal": "alberichHauptAnderssen",
+    "portraitImage": "assets/portraits/alberichHauptAnderssen.png",
+    "lore": "<p><strong>Alberich Haupt-Anderssen</strong>, Comte Électeur de Stirland, défend la province qui borde directement la Sylvanie maudite — première ligne de l'Empire contre les morts-vivants des von Carstein. Le Stirland est une terre pauvre mais farouche, réputée pour ses archers et ses chasseurs, les fameux « Deathjacks ». Cette faction (Stirland) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Alberich mise tout sur le tir et la mobilité : ses archers et chasseurs, d'une précision redoutable, criblent l'ennemi de flèches avant qu'il n'approche, une doctrine idéale contre les hordes lentes de morts-vivants qui menacent sa frontière.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Rang de recrue : <strong>+3</strong> pour les Huntsman Generals</div>\n        <div class=\"attr-item\">Entretien : <strong>-30%</strong> pour les Huntsmen et Archers</div>\n        <div class=\"attr-item\">Commandement : <strong>+8</strong> contre les Vampire Counts, Vampire Coast et Tomb Kings (toutes les armées)</div>\n        <div class=\"attr-item\">Précision : <strong>+30%</strong> pour les Archers et Huntsmen (toutes les armées)</div>\n        <div class=\"attr-item\" style=\"color:#d17a6a;\">Armure : <strong>-10</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Stirland's Revenge (Free Company) et Deathjacks (Archers)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive « Benediction » (Augment de zone) — Commandement : <strong>+8</strong> pour les alliés à portée (35 m), durée illimitée</div>\n        <div class=\"attr-item\">Vitesse : <strong>+10%</strong> (armée du seigneur)</div>\n        <div class=\"attr-item\">Bonus de charge : <strong>+12%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets confirmés par capture de l'onglet Lord Details en jeu (Alberich Haupt-Anderssen).</div>\n    ",
+    "build": {
+      "role": "Ligne de tir à l'arc, mobile et anti-mort-vivant, bâtie autour des effets confirmés d'Alberich : une masse d'Archers et de Huntsmen d'une précision redoutable (+30%, faction) et bon marché (-30% entretien, faction), menée par les 2 Deathjacks du régiment favori, qui crible l'ennemi avant le contact. L'armure réduite (-10, faction) impose de tuer l'ennemi à distance et de rester mobile (+10% vitesse, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "alberichHauptAnderssen", "name": "Alberich Haupt-Anderssen", "qty": 1, "note": "Le Comte de Stirland, sentinelle de la Sylvanie — sa Précision +30% pour Archers et Huntsmen (faction) en fait le meilleur tir à l'arc de l'Empire, et son +8 de commandement contre les morts-vivants (faction) sécurise la frontière ; sa passive « Benediction » (+8 commandement en aura de 35 m, seigneur) tient toute la ligne face à la terreur des morts-vivants, tandis que +10% vitesse et +12% bonus de charge (seigneur) donnent du mordant à ses milices"},
+      "heroes": [
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "Prières de Sigmar — commandement et soins précieux contre les morts-vivants, compensent l'armure réduite (faction)"},
+        {"icon": "witchHunter", "name": "Witch Hunter", "qty": 1, "note": "Duelliste anti-personnage et anti-mort-vivant — traque les nécromanciens et vampires ennemis, thématique de la frontière de Sylvanie"}
+      ],
+      "army": [
+        {"icon": "deathjacks", "name": "Deathjacks (Archers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — archers d'élite, Précision +30% (faction), fer de lance du tir"},
+        {"icon": "archersEmpire", "name": "Archers", "qty": 4, "note": "Précision +30% et -30% d'entretien (faction) — masse de tir à l'arc bon marché, tir en cloche par-dessus la ligne"},
+        {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "Précision +30% et -30% d'entretien (faction) — tirailleurs furtifs qui infiltrent et harcèlent les flancs"},
+        {"icon": "stirlandsRevenge", "name": "Stirland's Revenge (Free Company)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — miliciens à deux armes rapides, profitent du +10% vitesse et +12% bonus de charge (seigneur)"},
+        {"icon": "freeCompanyMilitia", "name": "Free Company Militia", "qty": 2, "note": "Milice mobile à deux armes — écran devant les archers et contre-charge rapide (seigneur)"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 2, "note": "Anti-grande cible — protège la ligne de tir des monstres et de la cavalerie lourde des morts-vivants"},
+        {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 1, "note": "Cavalerie monstrueuse — contre-charge et anti-grande cible, profite du +12% bonus de charge (seigneur) pour chasser les gros monstres morts-vivants"},
+        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible — abat les monstres morts-vivants (Terrorgheists, Varghulfs)"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet contre les hordes d'infanterie morte-vivante"}
+      ],
+      "magic": "Alberich n'est pas un lanceur de sorts — sa puissance vient du tir à l'arc de masse. Le soutien vient du Warrior Priest (commandement, soins, anti-mort-vivant) et du Witch Hunter (traque des personnages ennemis). Attention : l'armure -10 (faction) rend toute l'armée fragile au corps-à-corps — c'est le prix de la précision.",
+      "note": "Build de gunline à l'arc anti-mort-vivant. La <strong>Précision +30% pour Archers et Huntsmen</strong> (faction) transforme une masse d'archers bon marché (-30% entretien, faction) en une pluie de flèches d'une létalité inhabituelle : six unités de tir à l'arc (Deathjacks ×2 + Archers ×4) plus deux Huntsmen infiltrés criblent l'ennemi avant le contact. Les 2 <strong>Deathjacks</strong> et les 2 <strong>Stirland's Revenge</strong> du double régiment favori (faction) forment le cœur d'élite, et les milices Free Company (rapides grâce au +10% vitesse et +12% bonus de charge, seigneur) servent d'écran et de contre-charge. Le <strong>-10 d'armure</strong> (faction) est le talon d'Achille : l'armée est une glass cannon qui doit tuer à distance et éviter le corps-à-corps prolongé. Contre les morts-vivants — la menace de Sylvanie — le <strong>+8 de commandement</strong> (faction), cumulé à l'aura « Benediction » (+8 commandement à 35 m, seigneur), garantit que cette ligne fragile ne rompt pas face à la terreur, et l'artillerie abat les grands monstres. Halberdiers et Warrior Priest protègent la ligne de tir."
+    }
+  },
+  {
+    "id": "helmutFeuerbach",
+    "numeral": "XII",
+    "name": "Helmut Feuerbach",
+    "epithet": "Comte de Talabecland",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Helmut_Feuerbach",
+    "faction": "Talabecland",
+    "seal": "helmutFeuerbach",
+    "portraitImage": "assets/portraits/helmutFeuerbach.png",
+    "lore": "<p><strong>Helmut Feuerbach</strong>, Comte Électeur de Talabecland, gouverne une province de forêts vastes et anciennes, cœur du culte de <strong>Taal &amp; Rhya</strong> — les dieux de la nature sauvage et de la terre. Sous son égide, prêtres, célébrants et chasseurs cornus vénèrent les vieux dieux et défendent les bois de la Drakwald. Cette faction (Talabecland) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Combattant fougueux et agressif, Helmut mène une armée hybride mêlant la discipline impériale aux fervents du culte de la nature, et frappe le premier : ses troupes sont d'autant plus mordantes quand c'est lui qui mène l'assaut.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Culte de Taal &amp; Rhya : accès à un bâtiment de temple unique donnant accès à un Warrior Priest of Taal et à 3 unités de culte différentes</div>\n        <div class=\"attr-item\">Résistance physique : <strong>10%</strong> lors des batailles en forêt (toutes les armées)</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les unités du Culte de Taal &amp; Rhya</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+20% de munitions et de dégâts de tir</strong> pour The Sunmaker (Helstorm Rocket)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Attaque en mêlée : <strong>+5</strong> (en attaque) (armée du seigneur)</div>\n        <div class=\"attr-item\">Commandement : <strong>+5</strong> en attaque (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets confirmés par capture de l'onglet Lord Details en jeu (Helmut Feuerbach).</div>\n    ",
+    "build": {
+      "role": "Armée hybride agressive bâtie autour des effets confirmés de Helmut : un cœur d'unités du Culte de Taal & Rhya (Celebrants, Horned Hunters, Daughters of Rhya) à -15% d'entretien (faction), mené par un Warrior Priest of Taal, épaulé par la discipline impériale (Greatswords, artillerie) et le régiment favori The Sunmaker suralimenté. On frappe le premier : +5 d'attaque en mêlée et +5 de commandement en attaque (seigneur) récompensent l'offensive",
+      "totalSlots": 20,
+      "lord": {"icon": "helmutFeuerbach", "name": "Helmut Feuerbach", "qty": 1, "note": "Le Comte de Talabecland, champion du culte de Taal & Rhya — ses bonus d'attaque (+5 mêlée et +5 commandement en attaque, seigneur) en font un meneur d'assaut, et son culte de la nature (bâtiment unique, -15% entretien des unités de culte, faction) lui donne une armée hybride unique dans l'Empire ; en forêt, +10% de résistance physique (faction) rend ses troupes coriaces"},
+      "heroes": [
+        {"icon": "warriorPriestOfTaal", "name": "Warrior Priest of Taal", "qty": 1, "note": "Prêtre-guerrier du culte de Taal (bâtiment unique, faction) — bénédictions de la nature et soutien de mêlée qui galvanisent les fervents du culte, monté sur cerf ou ours"},
+        {"icon": "amberWizard", "name": "Amber Wizard", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform et The Amber Spear, magie de la nature en parfaite harmonie avec le thème sauvage du culte, buffe l'infanterie de culte au corps-à-corps"}
+      ],
+      "army": [
+        {"icon": "celebrants", "name": "Celebrants", "qty": 3, "note": "Fervents du culte de Taal & Rhya (-15% entretien, faction) — infanterie fanatique, cœur de l'armée de culte, mordante quand Helmut mène l'assaut (seigneur)"},
+        {"icon": "hornedHunters", "name": "Horned Hunters", "qty": 3, "note": "Chasseurs cornus du culte (-15% entretien, faction) — infanterie de choc sauvage, frappe fort en attaque (+5 mêlée, seigneur)"},
+        {"icon": "daughtersOfRhya", "name": "Daughters of Rhya", "qty": 2, "note": "Cavalerie du culte de Rhya (-15% entretien, faction) — cavalerie rapide qui flanque et exploite l'agression de l'armée"},
+        {"icon": "theSunmaker", "name": "The Sunmaker (Helstorm Rocket)", "qty": 1, "note": "Régiment favori : +20% de munitions et de dégâts de tir (faction) — batterie de fusées d'élite, pièce d'artillerie maîtresse à zone d'effet"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Gardes de l'État impérial à deux mains — ancre disciplinée du front pendant que les fervents du culte chargent"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir perforant — abat l'infanterie lourde et les monstres avant le contact"},
+        {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Cavalerie monstrueuse — masse et impact qui enfoncent le front, frappe la première (+5 mêlée en attaque, seigneur)"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 1, "note": "Cavalerie de choc — charge de flanc en soutien de la cavalerie de culte"},
+        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible à longue portée"}
+      ],
+      "magic": "Helmut n'est pas un lanceur de sorts — sa force vient de l'agression (+5 mêlée et commandement en attaque, seigneur). Le Warrior Priest of Taal apporte les bénédictions de la nature et l'Amber Wizard (Lore of Beasts) buffe l'infanterie de culte, en parfaite cohérence avec le thème sauvage.",
+      "note": "Build hybride unique dans l'Empire, exploitant le <strong>Culte de Taal & Rhya</strong>. Le bâtiment de temple (faction) débloque un Warrior Priest of Taal et trois unités de culte — <strong>Celebrants, Horned Hunters et Daughters of Rhya</strong> — à -15% d'entretien (faction), un cœur d'armée fanatique et sauvage qui n'existe nulle part ailleurs. Les effets de Helmut récompensent l'<strong>offensive</strong> : +5 d'attaque en mêlée et +5 de commandement <em>en attaque</em> (seigneur), donc on charge le premier plutôt que d'attendre. La discipline impériale (Greatswords, Handgunners, Demigryph Knights, Great Cannon) encadre les fervents du culte, et le <strong>Sunmaker</strong> (favori, +20% munitions et dégâts de tir, faction) pilonne à zone. En forêt, le +10% de résistance physique (faction) rend toute l'armée coriace — le terrain idéal pour ce culte de la nature."
+    }
+  },
+  {
+    "id": "edvardVanDerKraal",
+    "numeral": "XIII",
+    "name": "Edvard van der Kraal",
+    "epithet": "Pirate de Sartosa",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Edvard_van_der_Kraal",
+    "faction": "Pirates of Sartosa",
+    "seal": "edvardVanDerKraal",
+    "portraitImage": "assets/portraits/edvardVanDerKraal.png",
+    "lore": "<p><strong>Edvard van der Kraal</strong> est un pirate impérial, capitaine des <strong>Pirates de Sartosa</strong> et des Lames de Manann. Ancien officier de la marine du Vieux Monde devenu écumeur des mers, il commande une racaille bigarrée d'écumeurs, de flibustiers et de mercenaires venus de tous les horizons, unis par l'appât du butin. Cette faction (Pirates of Sartosa) est ajoutée par le mod « Mixu's Legendary Lords ».</p>\n      <p>Maître des mers, van der Kraal frappe où on ne l'attend pas : ses navires ignorent l'attrition océanique, débarquent sans effort et pillent en territoire ennemi. Ses hommes de pont, terrifiants et surarmés, sèment la peur partout où ils accostent.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Immunisé aux pénalités diplomatiques d'intrusion (trespassing)</div>\n        <div class=\"attr-item\">Peut se renforcer et recruter en territoire étranger</div>\n        <div class=\"attr-item\">Ignore le coût de mouvement pour embarquer et débarquer (toute la faction)</div>\n        <div class=\"attr-item\">Immunisé à l'attrition de haute mer, des récifs et des tempêtes (toutes les armées)</div>\n        <div class=\"attr-item\">Coût de recrutement des unités alliées : <strong>-50%</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Long Drong's Slayer Pirates (Slayer Pirates)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Force des armes : <strong>+20%</strong> pour toutes les unités Pirate Deckhands (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut « Causes Fear » pour toutes les unités Pirate Deckhands (armée du seigneur) — effraie les ennemis proches (commandement réduit) et rend l'unité immunisée à la Peur ; les pénalités de Peur ne se cumulent pas</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour toutes les unités Pirate Deckhands (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Fiche basée sur un mod Steam Workshop (Mixu's Legendary Lords). Effets confirmés par capture de l'onglet Lord Details en jeu (Edvard van der Kraal) + capacité « Causes Fear ».</div>\n    ",
+    "build": {
+      "role": "Équipage de pirates bâti autour des effets confirmés d'Edvard : un cœur de Pirate Deckhands surarmés (+20% force des armes, -20% entretien, seigneur) qui sèment la Peur (Causes Fear, seigneur), épaulé par des Buccaneers d'élite, des Gunnery Mobs à la poudre et des Norscan Reavers. Une racaille bon marché, terrifiante et increvable en campagne (immunité à l'attrition marine, recrutement en territoire ennemi)",
+      "totalSlots": 20,
+      "lord": {"icon": "edvardVanDerKraal", "name": "Edvard van der Kraal", "qty": 1, "note": "Le capitaine des Pirates de Sartosa — ses effets transforment ses Pirate Deckhands en une racaille terrifiante (Causes Fear, +20% force des armes, -20% entretien, seigneur) ; sa faction ignore l'attrition marine et se renforce en territoire ennemi (faction), en faisant un écumeur imprévisible qui frappe partout"},
+      "heroes": [
+        {"icon": "fleetCaptain", "name": "Fleet Captain", "qty": 1, "note": "Maître d'équipage — officier de mêlée qui mate la racaille et mène l'abordage, renforce le commandement des hommes de pont"},
+        {"icon": "witchDoctor", "name": "Witch Doctor", "qty": 1, "note": "Sorcier de bord aux savoirs interdits — soutien magique varié (lores maison) qui pallie l'absence de wizard impérial classique"}
+      ],
+      "army": [
+        {"icon": "pirateDeckhandsSwords", "name": "Pirate Deckhands", "qty": 3, "note": "+20% force des armes, -20% entretien et Causes Fear (seigneur) — cœur de l'équipage, infanterie bon marché terrifiante qui effraie tout ce qui l'approche"},
+        {"icon": "pirateDeckhandsPolearms", "name": "Pirate Deckhands (Polearms)", "qty": 2, "note": "Mêmes bonus (seigneur) — variante anti-grande cible et anti-cavalerie, tient la ligne face aux monstres"},
+        {"icon": "longDrongsSlayerPirates", "name": "Long Drong's Slayer Pirates", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — Slayers dwarfs mercenaires increvables (Incassables), à deux haches et pistolets, ancre de mêlée anti-grande cible qui ne rompt jamais"},
+        {"icon": "buccaneersGreatWeapons", "name": "Buccaneers (Great Weapons)", "qty": 2, "note": "Flibustiers d'élite aux armes lourdes — apport perforant qui ouvre l'infanterie blindée"},
+        {"icon": "buccaneersSwordBombs", "name": "Buccaneers (Sword and Bombs)", "qty": 1, "note": "Flibustiers aux bombes — dégâts de zone à courte portée contre l'infanterie groupée"},
+        {"icon": "gunneryMobHandguns", "name": "Pirate Gunnery Mob (Handguns)", "qty": 2, "note": "Racaille aux arquebuses — tir perforant bon marché contre l'infanterie lourde"},
+        {"icon": "gunneryMobBlunderbuss", "name": "Pirate Gunnery Mob (Blunderbuss)", "qty": 1, "note": "Tromblons à courte portée — salve dévastatrice à bout portant"},
+        {"icon": "norscanReavers", "name": "Norscan Reavers", "qty": 1, "note": "Écumeurs norses mercenaires (recrutement allié -50%, faction) — raiders robustes qui complètent l'équipage"},
+        {"icon": "prometheanRiders", "name": "Promethean Riders", "qty": 2, "note": "Cavalerie monstrueuse de la faction — masse et impact qui manquent à l'infanterie de pont, charge de flanc"},
+        {"icon": "carronade", "name": "Carronade", "qty": 1, "note": "Artillerie navale — canons courts à zone d'effet qui pilonnent les formations groupées"}
+      ],
+      "magic": "Edvard n'est pas un lanceur de sorts — sa force vient de sa racaille terrifiante. Le Witch Doctor apporte le soutien magique (lores maison variés), et le Fleet Captain mène l'abordage. La signature d'Edvard est la Peur (Causes Fear sur les Pirate Deckhands, seigneur) qui effondre le moral ennemi.",
+      "note": "Build de racaille pirate exploitant la signature d'Edvard : les <strong>Pirate Deckhands</strong> (5 unités) reçoivent +20% de force des armes, -20% d'entretien et surtout l'attribut <strong>Causes Fear</strong> (seigneur) — une infanterie bon marché mais terrifiante qui effraie tout ce qui l'approche et effondre le commandement adverse. Les Buccaneers d'élite (armes lourdes, bombes) et les Gunnery Mobs (arquebuses, tromblons) apportent le perforant et la poudre, les Norscan Reavers (recrutement allié -50%, faction) et les Promethean Riders complètent l'équipage, et les Carronades pilonnent à zone. En campagne, Edvard est <strong>insaisissable</strong> : immunité à l'attrition marine, débarquement gratuit, renfort et recrutement en territoire ennemi (faction) permettent des razzias éclair loin de ses bases. Les 2 <strong>Long Drong's Slayer Pirates</strong> du régiment favori (+1 capacité, faction) — Slayers dwarfs mercenaires Incassables — forment l'ancre de mêlée increvable qui manque à une racaille par ailleurs fragile, et ne rompent jamais quelle que soit la situation."
     }
   }
 ]
