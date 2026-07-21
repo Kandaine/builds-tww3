@@ -11,11 +11,12 @@
     "lore": "<p>Le Roi Sorcier est le souverain suprême de Naggaroth, et l'ennemi éternel des Hauts Elfes. Il y a bien longtemps, il chercha à s'emparer de la couronne d'Ulthuan, mais les Flammes d'Asuryan le laissèrent balafré par le feu et rongé par la haine. Au fil des années, Malekith a maintes fois tenté de raser Ulthuan de la surface du monde, chaque fois déjoué par le destin cruel ou l'incompétence de sous-fifres lâches.</p>\n      <p>Pourtant, le Roi Sorcier est immortel, et sait qu'il survivra à ceux qui se croient à tort ses supérieurs. Le jour approche où les vieilles dettes et les insultes seront enfin réglées, et Malekith fera tout ce qui est en son pouvoir pour hâter cette échéance.</p>",
     "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Points d'Allégeance gagnés : <strong>+50%</strong> pour les alliances avec les Dark Elves</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec les Dark Elves</div>\n        <div class=\"attr-item\">Loyauté : <strong>+2</strong> pour les nouvelles recrues</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Black Guard of Naggarond, Dreadspears, Bleakswords et Darkshards</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Bolt-Fiends (Darkshards)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Contrôle : <strong>+8</strong> (province locale)</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-15%</strong> pour tous les bâtiments (province locale)</div>\n        <div class=\"attr-item\">Commandement ennemi : <strong>-8</strong> (région locale)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Malekith).</div>\n    ",
     "build": {
-      "role": "Armée bâtie autour des effets confirmés de Malekith : un cœur d'infanterie Naggarond (Black Guard, Dreadspears, Bleakswords, Darkshards) à -25% d'entretien (faction), avec Malekith lui-même en duelliste-sorcier increvable qui stabilise et développe la province conquise",
+      "role": "Armée bâtie autour des effets confirmés de Malekith : un cœur d'infanterie Naggarond (Black Guard, Dreadspears, Bleakswords, Darkshards) à -25% d'entretien (faction), avec Malekith lui-même en duelliste-sorcier increvable qui stabilise et développe la province conquise — renforcé par Kouran Darkhand, Capitaine de la Black Guard, embarqué à ses côtés",
       "totalSlots": 20,
       "lord": {"icon": "malekith", "name": "Malekith", "qty": 1, "note": "Duelliste redoutable en armure lourde avec accès à la Lore of Dark Magic — son +8 de Contrôle et -15% de coût de construction (seigneur) développent rapidement la province occupée, tandis que son -8 de commandement ennemi (seigneur) fragilise la résistance locale"},
       "heroes": [
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 1, "note": "Renfort de sorts en écho à la magie de Malekith"},
+        {"icon": "kouranDarkhand", "name": "Kouran Darkhand (Héros Légendaire)", "qty": 1, "note": "Capitaine de la Black Guard et plus ancien serviteur de Malekith (mod Mixu's Legendary Lords) — embarqué dans l'armée de Malekith, il gagne +25 de Commandement et +5 d'Attaque en mêlée, et sa capacité passive « Captain of the Black Guard » renforce directement le cœur de Black Guard of Naggarond de cette armée. Duelliste tenace (armure « The Armour of Grief », hallebarde « Crimson Death ») animé d'une haine tenace des Hauts Elfes (Eternal Enemy)"},
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Renfort de sorts en écho à la magie de Malekith"},
         {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis avant la bataille"}
       ],
       "army": [
@@ -23,10 +24,10 @@
         {"icon": "darkshards", "name": "Darkshards", "qty": 3, "note": "Même -25% d'entretien (faction) — tir de soutien à distance"},
         {"icon": "boltFiends", "name": "The Bolt-Fiends (Darkshards)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Darkshards, également couverte par le -25% d'entretien (faction)"},
         {"icon": "dreadspears", "name": "Dreadspears", "qty": 4, "note": "Même bonus d'entretien (faction) — ligne de tenue anti-cavalerie fiable"},
-        {"icon": "bleakswords", "name": "Bleakswords", "qty": 3, "note": "Même bonus d'entretien (faction) — infanterie polyvalente supplémentaire"}
+        {"icon": "bleakswords", "name": "Bleakswords", "qty": 2, "note": "Même bonus d'entretien (faction) — infanterie polyvalente supplémentaire"}
       ],
       "magic": "Malekith maîtrise la Lore of Dark Magic (Doombolt, Chillwind, Word of Pain, Soul Stealer) tandis que la Sorceress multiplie les effets de soutien et de destruction.",
-      "note": "Le +50% de Points d'Allégeance pour les alliances Dark Elves et les +20 de relations diplomatiques (faction) facilitent grandement la diplomatie inter-Druchii en campagne. Concentre les recrutements sur les quatre unités bénéficiant du -25% d'entretien (faction) pour maximiser la taille de cette armée à moindre coût."
+      "note": "Le +50% de Points d'Allégeance pour les alliances Dark Elves et les +20 de relations diplomatiques (faction) facilitent grandement la diplomatie inter-Druchii en campagne. Concentre les recrutements sur les quatre unités bénéficiant du -25% d'entretien (faction) pour maximiser la taille de cette armée à moindre coût. Garde Kouran Darkhand embarqué dans l'armée de Malekith pour profiter de son bonus de +25 Commandement / +5 Attaque en mêlée et de son renfort passif de la Black Guard."
     }
   },
   {
@@ -45,7 +46,7 @@
       "totalSlots": 20,
       "lord": {"icon": "morathi", "name": "Morathi", "qty": 1, "note": "L'une des plus puissantes lanceuses de sorts du jeu (Dark Magic, Death, Shadows) — son influence fait gagner de la loyauté aux seigneurs de sa région (seigneur) et allège nettement le coût de Sacrifice to Hekarti (seigneur)"},
       "heroes": [
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 2, "note": "Recrutées à moitié prix en action de héros (-50%, faction) — renfort de sorts massif et bon marché"}
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 2, "note": "Recrutées à moitié prix en action de héros (-50%, faction) — renfort de sorts massif et bon marché"}
       ],
       "army": [
         {"icon": "witchElves", "name": "Witch Elves", "qty": 6, "note": "Régiment favori Sisters of Singing Doom : capacité Blood-Bathed, +0,05% de soin par seconde en continu (faction) — le cœur de mêlée fanatique de cette armée, quasi increvable en mêlée prolongée"},
@@ -107,7 +108,7 @@
       "lord": {"icon": "lokhir", "name": "Lokhir Fellheart", "qty": 1, "note": "Duelliste redoutable et amiral né — débloque les attaques navales contre les colonies portuaires et l'immunité à l'attrition de Haute Mer/Récifs/Tempêtes (seigneur), idéal pour une campagne de pillage côtier"},
       "heroes": [
         {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis"},
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 1, "note": "Soutien magique en complément de la horde de Corsairs"}
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Soutien magique en complément de la horde de Corsairs"}
       ],
       "army": [
         {"icon": "blackArkCorsairs", "name": "Black Ark Corsairs", "qty": 6, "note": "-50% d'entretien et attribut Causes Fear (seigneur), améliorés via Sacrifice to Anath Raema (faction) — le cœur bon marché de cette armée de pillage, qui terrifie l'ennemi sans jamais paniquer lui-même"},
@@ -136,7 +137,7 @@
       "totalSlots": 20,
       "lord": {"icon": "malusdarkblade", "name": "Malus Darkblade", "qty": 1, "note": "Possédé par le Démon Tz'arkan (faction), il peut se transformer en combattant surpuissant au prix de sa santé — son immunité à la corruption du Chaos et à l'attrition des Chaos Wastes (seigneur) lui permet de traverser librement ces régions autrement mortelles"},
       "heroes": [
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 1, "note": "Soutien magique en complément de la cavalerie"},
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Soutien magique en complément de la cavalerie"},
         {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis"}
       ],
       "army": [
@@ -180,6 +181,39 @@
       ],
       "magic": "Rakarth n'est pas un lanceur de sorts — sa puissance vient du contrôle qu'il exerce sur ses monstres, renforcé par Whiplash! et Beastlord's Gaze.",
       "note": "Exploite la mécanique des Monster Pens propre à The Thousand Maws pour diversifier la ménagerie au-delà de ces quatre types de monstres, profite du recrutement accéléré (-1 tour, seigneur) pour reconstituer rapidement les pertes, et de l'absence de pénalité de Vigueur en posture de Raid (faction) pour piller sans relâche."
+    }
+  },
+  {
+    "id": "tullaris",
+    "numeral": "VII",
+    "name": "Tullaris Dreadbringer",
+    "epithet": "Fléau de Khaine",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Tullaris_Dreadbringer",
+    "faction": "Scourge of Khaine",
+    "seal": "tullaris",
+    "portraitImage": "assets/portraits/tullaris.png",
+    "lore": "<p>Tullaris Dreadbringer est l'Élu de Khaine, Capitaine des Har Ganeth Executioners et l'un des chefs de guerre les plus meurtriers du monde. Là où d'autres Elfes Noirs invoquent le nom du Seigneur du Meurtre par intérêt politique, la dévotion de Tullaris est absolue : il n'a d'allégeance qu'à Khaine, et à Khaine seul. Il a jadis massacré ses propres Executioners qui avaient osé remettre en cause sa foi, offrant leur sang au Dieu aux Mains Rouges.</p>\n      <p>Si redoutée est devenue sa réputation dans la cité de Har Ganeth et au-delà que la seule rumeur de son approche suffit à faire fléchir le commandement de ses ennemis. Loyal sujet de la Grande Épouse Crone Hellebron, Tullaris mène pour elle de sanglantes Blood Voyages depuis Har Ganeth, portant le tranchant des grands draichs sur les rivages d'Ulthuan pour y récolter les âmes des Asur.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+100</strong> avec la faction de Har Ganeth</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+2</strong> pour les Har Ganeth Executioners</div>\n        <div class=\"attr-item\">Durée de recrutement : <strong>-1 tour</strong> pour les Har Ganeth Executioners (minimum 1) (toutes les provinces)</div>\n        <div class=\"attr-item\">Revenu du butin d'après-bataille : <strong>+10%</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Blades of the Blood Queen (Executioners)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité passive \"Guardian\" (Ward Save de zone) — <strong>Résistance physique : +15%</strong> pour tous les Seigneurs et Héros alliés à 35m, durée illimitée</div>\n        <div class=\"attr-item\">Capacité passive \"The Dreaded\" (Hex de zone) — <strong>Commandement : -4</strong>, <strong>Défense au corps-à-corps : -5</strong> pour tous les ennemis à 35m, durée illimitée</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+2</strong> pour les Har Ganeth Executioners (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Tullaris Dreadbringer) + captures des capacités \"Guardian\" et \"The Dreaded\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Tullaris : un noyau de Har Ganeth Executioners rapidement vétérans (rang de recrutement +2 en faction ET dans l'armée du seigneur, durée -1 tour), épaulé par leur variante d'élite Blades of the Blood Queen (régiment favori +1 capacité, faction) et par une garde de héros du culte de Khaine agglutinée autour de Tullaris pour profiter de son aura \"Guardian\" (+15% de résistance physique), tandis que \"The Dreaded\" (-4 Commandement / -5 Défense en mêlée) effondre la ligne adverse au contact",
+      "totalSlots": 20,
+      "lord": {"icon": "tullaris", "name": "Tullaris Dreadbringer", "qty": 1, "note": "Duelliste de mêlée surpuissant (Élu de Khaine), à pied ou monté sur Cauldron of Blood — garde-le en première ligne au milieu des Executioners : son aura \"The Dreaded\" (-4 Commandement / -5 Défense en mêlée à 35m, seigneur) fait s'effondrer l'infanterie ennemie au contact, pendant que \"Guardian\" (+15% de résistance physique, seigneur) protège les héros massés autour de lui"},
+      "heroes": [
+        {"icon": "deathHag", "name": "Death Hag", "qty": 1, "note": "Prêtresse-guerrière du culte de Khaine — bénéficie de l'aura \"Guardian\" (+15% de résistance physique, seigneur) en restant près de Tullaris, et renforce les Witch Elves et Sisters of Slaughter"},
+        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis avant la bataille — également couvert par l'aura \"Guardian\" (seigneur) une fois au contact"},
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Seul soutien magique de l'armée (Tullaris n'est pas lanceur de sorts) — la garder dans le rayon de \"Guardian\" (seigneur) la rend nettement plus résistante qu'une Sorceress classique"}
+      ],
+      "army": [
+        {"icon": "harGanethExecutioners", "name": "Har Ganeth Executioners", "qty": 5, "note": "Rang de recrutement +2 en faction ET dans l'armée du seigneur (soit des Executioners d'emblée vétérans), durée de recrutement -1 tour (faction) — le cœur d'élite à deux mains de cette armée, dévastateur contre l'infanterie lourde et les monstres"},
+        {"icon": "bladesOfTheBloodQueen", "name": "Blades of the Blood Queen (Har Ganeth Executioners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Har Ganeth Executioners, également couverte par les bonus de rang de recrutement (faction + seigneur)"},
+        {"icon": "witchElves", "name": "Witch Elves", "qty": 3, "note": "Sœurs fanatiques du culte de Khaine — infanterie rapide à attaques perforantes qui déborde les flancs pendant que les Executioners fixent le centre"},
+        {"icon": "sistersOfSlaughter", "name": "Sisters of Slaughter", "qty": 2, "note": "Duellistes du culte de Khaine, en écho au thème de Tullaris — excellentes contre l'infanterie et les grandes cibles isolées"},
+        {"icon": "darkshards", "name": "Darkshards", "qty": 2, "note": "Tir d'arbalète de soutien pour éroder l'ennemi avant le choc et couvrir l'avance des Executioners"},
+        {"icon": "kharibdyss", "name": "Kharibdyss", "qty": 1, "note": "Ancre monstrueuse anti-grande cible qui comble la faiblesse des Executioners face à la cavalerie lourde et aux monstres ennemis"},
+        {"icon": "bleakswords", "name": "Bleakswords", "qty": 1, "note": "Ligne de tenue bon marché déployée près de Tullaris — elle fixe l'ennemi dans le rayon de \"The Dreaded\" (seigneur) le temps que les Executioners et Witch Elves enveloppent"}
+      ],
+      "magic": "Tullaris n'est pas un lanceur de sorts — sa puissance vient de ses auras (\"Guardian\" et \"The Dreaded\") et de son statut d'Élu de Khaine. La Sorceress (Dark Magic) couvre seule les besoins de soutien magique (Doombolt, Word of Pain, Soul Stealer).",
+      "note": "Le +100 de relations diplomatiques avec Har Ganeth (faction) fait de Crone Hellebron une alliée naturelle — Tullaris est d'ailleurs son loyal sujet. Le +10% de revenu du butin d'après-bataille (tous les personnages, faction) récompense un jeu agressif et enchaîné de batailles, dans l'esprit des Blood Voyages qu'il mène depuis Har Ganeth. Regroupe systématiquement tes héros autour de Tullaris pour que l'aura \"Guardian\" (seigneur) les maintienne en vie au cœur de la mêlée."
     }
   }
 ]

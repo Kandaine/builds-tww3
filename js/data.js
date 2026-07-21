@@ -101,6 +101,7 @@ const seals = {
   lokhir: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M4 16c2-6 5-9 8-9s6 3 8 9"/><path d="M4 16c4 3 12 3 16 0"/><path d="M12 7V3"/></svg>`,
   malusdarkblade: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2 5 6v6c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-4Z"/><circle cx="12" cy="11" r="2.5"/></svg>`,
   rakarth: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M3 16c3-8 6-12 9-12s6 4 9 12c-3-3-5-2-6 0-1-3-1-6 0-9-2 2-3 5-3 8-1-3-1-6 0-8 1 2 1 5 0 8-1-2-3-3-6 0Z"/></svg>`,
+  tullaris: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2v15"/><path d="M8 5h8"/><path d="M6 9c2 1 3 3 3 5M18 9c-2 1-3 3-3 5"/><path d="M9 20l3 2 3-2"/></svg>`,
   miaoying: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M3 6c4 0 6 2 7 5-2 0-4 1-5 3 3-1 5 0 6 2-3 1-5 3-5 6 2-2 5-3 8-2 3-1 6 0 8-2 0-3-2-5-5-6 1-2 3-3 6-2-1-2-3-3-5-3 1-3 3-5 7-5-3 5-6 7-11 7S6 11 3 6Z"/></svg>`,
   zhaoming: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M2 12c3-6 6-8 10-8s7 2 10 8c-3 3-6 4-10 4S5 15 2 12Z"/><circle cx="8" cy="11" r="1.2" fill="var(--accent-secondary)"/><path d="M12 4v-2M9 20l3-4 3 4"/></svg>`,
   yuanbo: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M4 18c2-9 6-14 8-14s6 5 8 14c-3-2-5-3-8-3s-5 1-8 3Z"/><path d="M8 14c1-2 2-3 4-3s3 1 4 3"/><circle cx="12" cy="8" r="1.3" fill="var(--accent-secondary)"/></svg>`,
@@ -157,6 +158,16 @@ const seals = {
   adalhard: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 6V3M6 12H3M18 12h3M8 8L6 6M16 8l2-2M8 16l-2 2M16 16l2 2"/></svg>`,
   // Cassyon (Duc de Parravon, Bretonnia) — pégase héraldique du duché montagnard.
   cassyon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 14c3-1 5-3 6-6 2 2 5 2 8 0-1 3-3 5-6 6"/><path d="M11 8l-2-3M13 8l3-2"/><path d="M8 18l3-4 3 4"/></svg>`,
+  // Belannaer le Sage (Saphery, HE) — étoile arcanique de l'Archimage.
+  belannaer: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2l2.4 6.6L21 9l-5 4.2L17.8 21 12 16.9 6.2 21 8 13.2 3 9l6.6-.4Z"/></svg>`,
+  // Wychwethyl the Wild (Masque of Loec, WE) — masque de danseur de Loec.
+  wychwethyl: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 7c0-2 2-4 6-4s6 2 6 4c0 5-3 12-6 12S6 12 6 7Z"/><path d="M9 9c1 1 2 1 3 0M12 9c1 1 2 1 3 0"/><path d="M10 14c1 1 3 1 4 0"/></svg>`,
+  // Naieth la Prophétesse (Wydrioth, WE) — œil divinatoire de l'Art de Divination.
+  naieth: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M2 12s4-6 10-6 10 6 10 6-4 6-10 6S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2"/></svg>`,
+  // Daith (Torgovann, WE) — marteau de Vaul du forgeron aveugle.
+  daith: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 6h8v4H6zM10 10v10M7 20h6"/><path d="M14 7l5-1v4l-5-1"/></svg>`,
+  // Korhil (Chrace, HE) — tête de lion blanc de Chrace.
+  korhil: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="5"/><path d="M12 7V3M12 21v-4M7 12H3M21 12h-4M8 8L5 5M16 8l3-3M8 16l-3 3M16 16l3 3"/><circle cx="10" cy="11" r="0.7" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="0.7" fill="var(--accent-secondary)"/></svg>`,
   // Sultan Jaffar (Sultanate of Araby) — croissant de lune et étoile d'Araby.
   jaffar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M16 4a8 8 0 1 0 0 16 6 6 0 0 1 0-16Z"/><path d="M19 8l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2L16.5 10.3 18.5 10Z"/></svg>`,
   // The Golden Magus (Golden Fleet) — voile de navire corsaire et vagues.
@@ -990,6 +1001,15 @@ const unitImages = {
   dryad: 'assets/units/dryad.png',
   treeKin: 'assets/units/treeKin.png',
   phoenix: 'assets/units/phoenix.png',
+  // Unités High Elves vanilla (cartes officielles) pour les seigneurs Mixu
+  // Belannaer (Swordmasters/magie) et Korhil (White Lions de Chrace).
+  whiteLions: 'assets/units/whiteLions.png',
+  puremaneCompany: 'assets/units/puremaneCompany.png',
+  warLions: 'assets/units/warLions.png',
+  lionChariot: 'assets/units/lionChariot.png',
+  phoenixGuard: 'assets/units/phoenixGuard.png',
+  loremaster: 'assets/units/loremaster.png',
+  omenOfAsuryan: 'assets/units/omenOfAsuryan.png',
   dragon: 'assets/units/dragon.png',
   greatEagle: 'assets/units/greatEagle.png',
   boltThrower: 'assets/units/boltThrower.png',
@@ -1081,6 +1101,7 @@ const unitImages = {
   lokhir: 'assets/portraits/lokhir.png',
   malusdarkblade: 'assets/portraits/malusdarkblade.png',
   rakarth: 'assets/portraits/rakarth.png',
+  tullaris: 'assets/portraits/tullaris.png',
   dreadspears: 'assets/units/dreadspears.png',
   darkshards: 'assets/units/darkshards.png',
   bleakswords: 'assets/units/bleakswords.png',
@@ -1259,6 +1280,7 @@ const unitImages = {
   deathHag: 'assets/units/deathHag.png',
   defUrial: 'assets/units/defUrial.png',
   khainiteAssassin: 'assets/units/khainiteAssassin.png',
+  kouranDarkhand: 'assets/units/kouranDarkhand.png',
   sorceressDark: 'assets/units/sorceressDark.png',
   highBeastmaster: 'assets/units/highBeastmaster.png',
   miaoying: 'assets/portraits/miaoying.png',
@@ -1772,6 +1794,11 @@ const unitImages = {
   firebarkElders: 'assets/units/firebarkElders.png',
   spellsingerLife: 'assets/units/spellsingerLife.png',
   loecsTricksters: 'assets/units/loecsTricksters.png',
+  // Wardancers/Bladesingers (cartes vanilla) pour Wychwethyl (mod Mixu).
+  wardancers: 'assets/units/wardancers.png',
+  bladesingers: 'assets/units/bladesingers.png',
+  eyesOfDrakira: 'assets/units/eyesOfDrakira.png',
+  winterheartGuard: 'assets/units/winterheartGuard.png',
   wraithsOfTheFrozenHeart: 'assets/units/wraithsOfTheFrozenHeart.png',
   destroyersOfTheDrakwald: 'assets/units/destroyersOfTheDrakwald.png',
   blackHornsRavagers: 'assets/units/blackHornsRavagers.png',
@@ -1878,7 +1905,14 @@ const unitImages = {
   // Héros légendaires Bretonnia (mod Mixu) : Donna Don Domingio (champion des
   // Knights of Origo de Sir John), Amalric de Gaudaron (Fléau des Morts-Vivants).
   donnaDonDomingio: 'assets/portraits/donnaDonDomingio.png',
-  amalricDeGaudaron: 'assets/portraits/amalricDeGaudaron.png'
+  amalricDeGaudaron: 'assets/portraits/amalricDeGaudaron.png',
+  // Seigneurs High Elves (mod Mixu) : Belannaer (Saphery), Korhil (Chrace).
+  belannaer: 'assets/portraits/belannaer.png',
+  korhil: 'assets/portraits/korhil.png',
+  // Seigneurs Wood Elves (mod Mixu).
+  wychwethyl: 'assets/portraits/wychwethyl.png',
+  naieth: 'assets/portraits/naieth.png',
+  daith: 'assets/portraits/daith.png'
 };
 
 // ----------------------------------------------------------------------------
