@@ -147,6 +147,16 @@ const seals = {
   helmutFeuerbach: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21v-8"/><path d="M12 13c-3 0-5-2-5-5 3 0 5 2 5 5Z"/><path d="M12 11c0-3 2-5 5-5 0 3-2 5-5 5Z"/><path d="M8 21h8"/></svg>`,
   // Edvard van der Kraal (Pirates of Sartosa) — crâne de pirate à bandeau.
   edvardVanDerKraal: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c4 0 6 3 6 7 0 2-1 3-1 5H7c0-2-1-3-1-5 0-4 2-7 6-7Z"/><path d="M6 10l5 2M18 10l-5 2"/><circle cx="14.5" cy="10.5" r="1.2" fill="var(--accent-secondary)"/><path d="M10 17v3M14 17v3"/></svg>`,
+  // Sir John Tyreweld (Knights of Origo, Bretonnia) — épée du chevalier croisé.
+  johnTyreweld: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v14"/><path d="M8 6h8M9 16h6l-3 6-3-6Z"/></svg>`,
+  // Bohemond (Duc de Bastonne, Bretonnia) — écu au dragon héraldique.
+  bohemond: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 4h12v8a6 8 0 0 1-6 8 6 8 0 0 1-6-8Z"/><path d="M9 9c2 0 3 1 3 3 1-2 2-3 3-2"/></svg>`,
+  // Chilfroy (Duc d'Artois, Bretonnia) — bois de cerf du duché forestier.
+  chilfroy: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21V9"/><path d="M12 9C9 9 7 7 7 4c2 0 4 1 5 3M12 9c3 0 5-2 5-5-2 0-4 1-5 3"/><path d="M9 5C8 5 7 4 7 3M15 5c1 0 2-1 2-2"/></svg>`,
+  // Adalhard (Duc de Lyonesse, Bretonnia) — heaume léonin.
+  adalhard: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 6V3M6 12H3M18 12h3M8 8L6 6M16 8l2-2M8 16l-2 2M16 16l2 2"/></svg>`,
+  // Cassyon (Duc de Parravon, Bretonnia) — pégase héraldique du duché montagnard.
+  cassyon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 14c3-1 5-3 6-6 2 2 5 2 8 0-1 3-3 5-6 6"/><path d="M11 8l-2-3M13 8l3-2"/><path d="M8 18l3-4 3 4"/></svg>`,
   // Sultan Jaffar (Sultanate of Araby) — croissant de lune et étoile d'Araby.
   jaffar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M16 4a8 8 0 1 0 0 16 6 6 0 0 1 0-16Z"/><path d="M19 8l1 2 2 .3-1.5 1.5.4 2-1.9-1-1.9 1 .4-2L16.5 10.3 18.5 10Z"/></svg>`,
   // The Golden Magus (Golden Fleet) — voile de navire corsaire et vagues.
@@ -1019,6 +1029,10 @@ const unitImages = {
   knightsErrant: 'assets/units/knightsErrant.png',
   knightsRealm: 'assets/units/knightsRealm.png',
   grailKnights: 'assets/units/grailKnights.png',
+  knightsOfOrigo: 'assets/units/knightsOfOrigo.png',
+  wardensOfMontfort: 'assets/units/wardensOfMontfort.png',
+  royalPegasusKnights: 'assets/units/royalPegasusKnights.png',
+  royalHippogryphKnights: 'assets/units/royalHippogryphKnights.png',
   pegasusKnights: 'assets/units/pegasusKnights.png',
   trebuchet: 'assets/units/trebuchet.png',
   questingKnights: 'assets/units/questingKnights.png',
@@ -1854,7 +1868,17 @@ const unitImages = {
   // Héros légendaires Empire (mod Mixu) : Luthor Huss (armée de Volkmar),
   // Oleg von Raukov (armée de son père Valmir).
   luthorHuss: 'assets/portraits/luthorHuss.png',
-  olegVonRaukov: 'assets/portraits/olegVonRaukov.png'
+  olegVonRaukov: 'assets/portraits/olegVonRaukov.png',
+  // Seigneurs Bretonnia (mod Mixu's Legendary Lords).
+  johnTyreweld: 'assets/portraits/johnTyreweld.png',
+  bohemond: 'assets/portraits/bohemond.png',
+  chilfroy: 'assets/portraits/chilfroy.png',
+  adalhard: 'assets/portraits/adalhard.png',
+  cassyon: 'assets/portraits/cassyon.png',
+  // Héros légendaires Bretonnia (mod Mixu) : Donna Don Domingio (champion des
+  // Knights of Origo de Sir John), Amalric de Gaudaron (Fléau des Morts-Vivants).
+  donnaDonDomingio: 'assets/portraits/donnaDonDomingio.png',
+  amalricDeGaudaron: 'assets/portraits/amalricDeGaudaron.png'
 };
 
 // ----------------------------------------------------------------------------
