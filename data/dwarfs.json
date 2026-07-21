@@ -23,7 +23,7 @@
         {"icon": "peakGateGuard", "name": "Peak Gate Guard (Hammerers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Hammerers, également couverte par le +15% de résistance physique de Thorgrim (seigneur)"},
         {"icon": "longbeard", "name": "Longbeards", "qty": 4, "note": "Même -15% d'entretien que les Hammerers (faction) — deuxième ligne d'élite tout aussi soutenable, pour percer une fois le front stabilisé"},
         {"icon": "quarreller", "name": "Quarrellers", "qty": 4, "note": "Soutien à distance derrière la ligne de Hammerers et Longbeards"},
-        {"icon": "gyrocopter", "name": "Gyrobombers", "qty": 2, "note": "Bombardement aérien et chasse aux tireurs isolés"}
+        {"icon": "gyrobomber", "name": "Gyrobombers", "qty": 2, "note": "Bombardement aérien et chasse aux tireurs isolés"}
       ],
       "magic": "Thorgrim ne lance pas de sorts : sa puissance vient de la solidité de sa ligne de Hammerers/Longbeards et du rayonnement de son aura de commandement, qui stabilise le moral de toute l'armée.",
       "note": "Ne sépare jamais Thorgrim de ses Hammerers : c'est le +15% de résistance physique (seigneur) qui rend cette ligne quasi infranchissable, tandis que le -15% d'entretien (faction, partagé avec les Longbeards) permet d'en aligner bien plus que la normale pour le même budget. Garde aussi Runesmith et Thane à moins de 35m de Thorgrim pour profiter de sa capacité Guardian (+15% de Résistance Physique, seigneur), qui protège spécifiquement les Lords et Heroes de l'armée. Le régiment favori des Peak Gate Guard t'autorise en plus à maintenir un Hammerer supplémentaire à travers la faction."
@@ -167,13 +167,77 @@
       ],
       "army": [
         {"icon": "cannon", "name": "Cannons", "qty": 6, "note": "Profitent directement du +20% de force de tir (seigneur) et sont moins chères à recruter et entretenir (-15% d'entretien, +3 rang de recrutement, faction)"},
-        {"icon": "gyrocopter", "name": "Gyrocopters (Brimstone Guns)", "qty": 5, "note": "Machine de Guerre Volante — même double bonus faction/seigneur, harcèlement aérien rapide et peu coûteux"},
+        {"icon": "gyrocopterBrimstone", "name": "Gyrocopters (Brimstone Guns)", "qty": 5, "note": "Machine de Guerre Volante — même double bonus faction/seigneur, harcèlement aérien rapide et peu coûteux"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 3, "note": "Ligne de tir polyvalente en complément de l'artillerie"},
-        {"icon": "miner", "name": "Miners (Blasting Charges)", "qty": 2, "note": "Écran de mêlée bon marché pour protéger la ligne de tir"},
+        {"icon": "minersBlastingCharges", "name": "Miners (Blasting Charges)", "qty": 2, "note": "Écran de mêlée bon marché aux charges explosives pour protéger la ligne de tir"},
         {"icon": "legendaryDuo", "name": "Gotrek & Felix", "qty": "1 (unique)", "note": "Duo de héros uniques offert dès le départ de campagne avec Malakai — d'excellents duellistes de mêlée pendant que le reste de l'armée tire à distance"}
       ],
       "magic": "Malakai ne lance pas de sorts — sa 'magie' à lui, ce sont ses machines : Deranged Munitions (+50%/+50% de dégâts de tir ponctuels sur une unité, seigneur) et l'accès aux bâtiments du Spirit of Grungni (seigneur) orientent toute l'armée vers la puissance de feu plutôt que le combat rapproché.",
       "note": "Garde Malakai loin du contact direct : son armure nulle le rend fragile en mêlée malgré sa vitesse élevée. Laisse Gotrek & Felix et les Miners absorber les assauts pendant que canons, gyrocoptères et Thunderers font le gros des dégâts à distance. Le -15% d'entretien et le +3 rang de recrutement (faction) s'appliquent à toutes tes armées, pas seulement celle de Malakai — n'hésite pas à répliquer ce même style de gunline sur un second front."
+    }
+  },
+  {
+    "id": "kazador",
+    "numeral": "VII",
+    "name": "Kazador Dragonslayer",
+    "epithet": "Roi de Karak Azul",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Kazador",
+    "faction": "Karak Azul",
+    "seal": "kazador",
+    "portraitImage": "assets/portraits/kazador.png",
+    "lore": "<p>Le Roi Kazador de la royale Clan Donarkhun est le légendaire souverain de Karak Azul, un forge-hold antique et magnifique, l'un des plus grands centres de métallurgie de tout le monde naine. Ses forges ne s'éteignent jamais, et l'acier de Karak Azul est réputé sans égal.</p>\n      <p>Lorsque Gorfang Rotgut attaqua Karak Azul, l'Orque força l'entrée de la salle du trône et captura nombre des proches de Kazador, réduits en esclavage dans les fosses de Black Crag. Son fils Kazrik ne fut pas emmené, mais rasé, marqué au fer d'un glyphe orque à l'effigie de Gorfang, puis cloué au trône même du Roi. Kazrik survécut, l'esprit à jamais brisé. Depuis, Kazador est devenu un vengeur sombre et taciturne, poursuivant sans relâche les ennemis de son peuple, et il a juré de régler cette rancune parmi les plus odieuses en écrasant le chef orque.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Attribut : <strong>Wallbreaker</strong> pour les unités Miners (toutes les armées) — permet d'attaquer et de détruire les murs en mêlée, et ajoute un multiplicateur de <strong>+50% de dégâts</strong> contre les bâtiments</div>\n        <div class=\"attr-item\">Revenu de la chaîne de bâtiments d'Industrie : <strong>-50%</strong> (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Revenu des Mines de Fer, Mines d'Or et Carrières de Marbre : <strong>+100%</strong> (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Ekrund Miners (Miners)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Régénère <strong>50%</strong> de la portée de mouvement de campagne après une victoire contre les Peaux-Vertes</div>\n        <div class=\"attr-item\">Commandement : <strong>+8</strong> pour les unités Ironbreakers et Miners (armée du seigneur)</div>\n        <div class=\"attr-item\">Munitions : <strong>+100%</strong> pour les unités Ironbreakers et Miners (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Kazador Dragonslayer) + capture de l'attribut \"Wallbreaker\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Kazador : un cœur de Miners à charges explosives transformés en briseurs de murailles (attribut Wallbreaker, +50% de dégâts contre les bâtiments, faction) dont le +100% de Munitions (seigneur) double la réserve de bombes, épaulé d'Ironbreakers d'élite, tous dopés en Commandement (+8, seigneur), avec les Ekrund Miners profitant du régiment favori (+1 capacité, faction) — une force de siège et de vengeance anti-Peaux-Vertes financée par l'énorme rendement minier de Karak Azul (+100% Fer/Or/Marbre, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "kazador", "name": "Kazador Dragonslayer", "qty": 1, "note": "Roi-guerrier increvable de Karak Azul, vengeur sombre et taciturne — sa poursuite des Peaux-Vertes est facilitée par la régénération de 50% de sa portée de mouvement après chaque victoire contre les Greenskins (seigneur), idéale pour traquer sans relâche Gorfang et ses hordes"},
+      "heroes": [
+        {"icon": "runesmith", "name": "Runesmith", "qty": 1, "note": "Dissipe la magie ennemie et grave des runes sur les unités et machines de guerre — indispensable à toute armée naine"},
+        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement déjà renforcé (+8, seigneur) du cœur Ironbreakers/Miners"}
+      ],
+      "army": [
+        {"icon": "minersBlastingCharges", "name": "Miners (Blasting Charges)", "qty": 3, "note": "Attribut Wallbreaker (+50% de dégâts contre les bâtiments, faction), +8 de Commandement et surtout +100% de Munitions (seigneur) qui double leur réserve de charges explosives — infanterie souterraine qui surgit derrière les lignes, abat les murs en siège et sature l'ennemi de bombes"},
+        {"icon": "ekrundMiners", "name": "Ekrund Miners (Miners - Blasting Charges)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Miners à charges explosives, dont les bombes profitent à plein du +100% de Munitions (seigneur), en plus du Wallbreaker (faction) et du +8 de Commandement (seigneur)"},
+        {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 4, "note": "+8 de Commandement (seigneur) — mur d'acier de Karak Azul, l'infanterie lourde la plus tenace des Nains, cœur défensif indéboulonnable"},
+        {"icon": "irondrake", "name": "Irondrakes", "qty": 3, "note": "Fierté métallurgique de Karak Azul — tir perforant à courte portée qui fait fondre l'infanterie lourde et les monstres"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Gunline à distance pour éroder l'ennemi avant le contact"},
+        {"icon": "cannon", "name": "Cannons", "qty": 2, "note": "Artillerie à tir direct — abat les grandes cibles et les seigneurs monstrueux des Peaux-Vertes"},
+        {"icon": "grudgeThrower", "name": "Grudge Thrower", "qty": 1, "note": "Artillerie à tir indirect qui règle les vieilles rancunes à distance"}
+      ],
+      "magic": "Les Nains ne lancent pas de sorts : le Runesmith dissipe la magie adverse et grave des runes, tandis que Kazador et ses Ironbreakers imposent leur supériorité par l'acier.",
+      "note": "Le +100% de revenu des Mines de Fer, d'Or et Carrières de Marbre (faction) finance largement cette armée d'élite, au prix d'un -50% de revenu d'Industrie (faction) — privilégie donc les régions minières. L'attribut Wallbreaker des Miners (faction) rend cette armée redoutable en siège offensif : fais surgir les Miners au pied des murs pour les abattre pendant que les Ironbreakers enfoncent la brèche. Garde Kazador aux avant-postes des campagnes anti-Greenskins pour enchaîner les poursuites grâce à sa régénération de mouvement (seigneur)."
+    }
+  },
+  {
+    "id": "grimm",
+    "numeral": "VIII",
+    "name": "Grimm Burloksson",
+    "epithet": "Le Jeune Ingénieur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Grimm_Burloksson",
+    "faction": "Zhufbar",
+    "seal": "grimm",
+    "portraitImage": "assets/portraits/grimm.png",
+    "lore": "<p>Fils du Maître de Guilde Burlok Damminsson, il était acquis que Grimm Burloksson suivrait les traces de son père. Pourtant, Grimm accorde souvent bien peu de valeur aux lois ancestrales que les Ingénieurs sont censés respecter, préférant l'innovation aux traditions figées. Cette audace lui a valu la réputation du Nain le plus jeune à avoir jamais passé les nombreux rituels requis pour être nommé Maître Ingénieur.</p>\n      <p>Là où les anciens dédaignent les machines volantes, Grimm a construit son propre Gyrobomber et ne cesse de perfectionner armes et engins dans son atelier. Depuis Zhufbar, cité perchée au bord du gouffre de Black Water et vouée à l'ingénierie, il met son génie mécanique au service des grandes rancunes naines.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Taux de recherche : <strong>+20</strong></div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Master Engineers</div>\n        <div class=\"attr-item\">Coût de recrutement de héros : <strong>-50%</strong> pour les Master Engineers</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-50%</strong> pour tous les bâtiments de la chaîne d'Ingénierie (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+12% Ward Save</strong> pour The Skyhammer (Gyrobomber)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Capacité \"Restock!\" (Augment actif, 4 utilisations) — régénère les Munitions d'1 allié à portée (max 1), portée 100m, durée 10s, recharge 60s</div>\n        <div class=\"attr-item\">Portée : <strong>+15%</strong> pour les Gyrocopters et Gyrobombers (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut : <strong>Vanguard Deployment</strong> pour les Gyrocopters et Gyrobombers (armée du seigneur) — ces unités peuvent se déployer hors de la zone de déploiement</div>\n        <div class=\"attr-item\">Entretien : <strong>-30%</strong> pour les Gyrocopters et Gyrobombers (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Grimm Burloksson) + captures des capacités \"Restock!\" et \"Vanguard Deployment\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Grimm : une flotte de machines volantes (Gyrocopters et Gyrobombers) à plus longue portée (+15%), moins chère (-30% d'entretien) et capable de se déployer en avant-garde hors zone (Vanguard, seigneur), avec le RoR The Skyhammer plus résistant (+12% Ward Save, faction) et une nuée de Master Engineers bon marché (capacité +2, coût -50%, faction) qui démultiplient une gunline naine ravitaillée en munitions par la capacité Restock! du seigneur",
+      "totalSlots": 20,
+      "lord": {"icon": "grimm", "name": "Grimm Burloksson", "qty": 1, "note": "Maître Ingénieur prodige, à pied ou monté sur son Gyrocopter/Gyrobomber — sa capacité \"Restock!\" (4 utilisations, seigneur) recharge les munitions d'une unité de tir en pleine bataille, prolongeant le feu d'une gunline qui, sinon, s'épuise"},
+      "heroes": [
+        {"icon": "masterEngineer", "name": "Master Engineer", "qty": 2, "note": "Capacité de héros +2 et coût de recrutement -50% pour les Master Engineers (faction) — recrutés en nombre et à bas prix, ils boostent la cadence de tir et la précision des machines de guerre et Gyros, cœur de la doctrine mécanique de Grimm"}
+      ],
+      "army": [
+        {"icon": "gyrocopter", "name": "Gyrocopters", "qty": 3, "note": "+15% de portée, Vanguard Deployment et -30% d'entretien (seigneur) — harcèlement aérien rapide qui se déploie d'emblée sur les flancs grâce à l'avant-garde"},
+        {"icon": "gyrobomber", "name": "Gyrobombers", "qty": 3, "note": "Même triple bonus (seigneur) — bombardement aérien dévastateur contre les blocs d'infanterie serrés"},
+        {"icon": "theSkyhammer", "name": "Skyhammer Squadron (Gyrobombers)", "qty": 1, "note": "Régiment favori : +12% de Ward Save (faction) le rend nettement plus survivant, en plus du triple bonus portée/Vanguard/entretien (seigneur) — escadrille d'élite unique de Gyrobombers"},
+        {"icon": "irondrake", "name": "Irondrakes", "qty": 3, "note": "Tir perforant à courte portée — première bénéficiaire de la capacité Restock! (seigneur) pour ne jamais tomber à court de munitions"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Gunline à la poudre noire, également ravitaillée par Restock! (seigneur)"},
+        {"icon": "cannon", "name": "Cannons", "qty": 2, "note": "Artillerie à tir direct contre les grandes cibles et les monstres"},
+        {"icon": "grudgeThrower", "name": "Grudge Thrower", "qty": 1, "note": "Artillerie à tir indirect pour arroser les concentrations ennemies"},
+        {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 2, "note": "Mince ligne de tenue en acier qui protège les Master Engineers, l'artillerie et les tireurs pendant que les Gyros débordent"}
+      ],
+      "magic": "Les Nains ne lancent pas de sorts : la puissance de Grimm est mécanique — Gyros, artillerie et poudre noire, entretenus par les Master Engineers et ravitaillés par sa capacité Restock!.",
+      "note": "Le -50% de coût de construction de toute la chaîne d'Ingénierie et le +20 de recherche (faction) accélèrent fortement l'accès aux machines de guerre et aux technologies avancées. Exploite le Vanguard Deployment des Gyros (seigneur) pour prendre l'artillerie et les tireurs ennemis à revers dès le début de la bataille, et garde Grimm à portée de ta gunline pour enchaîner les Restock! sur l'unité de tir la plus précieuse du moment."
     }
   }
 ]
