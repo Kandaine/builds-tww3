@@ -15,10 +15,11 @@
       "totalSlots": 20,
       "lord": {"icon": "harkon", "name": "Luthor Harkon", "qty": 1, "note": "Le Roi Pirate à l'esprit fracturé — sa résistance aux sorts (+25%, seigneur) protège son armée face aux lanceurs de sorts ennemis, tandis que son commandement +8 contre les Lizardmen (seigneur) est taillé pour la campagne de Lustrie ; ses attaques navales sur les colonies portuaires (seigneur) en font un redoutable siège maritime"},
       "heroes": [
+        {"icon": "drekla", "name": "Captain Drekla (Héros Légendaire)", "qty": 1, "note": "Le Bras Droit de Luthor Harkon (mod Mixu's Legendary Lords) — capitaine du Desolation et second indéfectiblement loyal du Roi Pirate, il renforce la Défense en mêlée de Harkon tant qu'il est embarqué dans son armée. Duelliste silencieux au coutelas et au Crochet d'Argent de Sartosa (Heart Piercing), monté sur Rotting Promethean — il tient la mêlée pendant que la gunline tire"},
         {"icon": "gunneryWight", "name": "Gunnery Wight", "qty": 2, "note": "Héros de départ de Harkon, soutien de tir et d'artillerie"}
       ],
       "army": [
-        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 4, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
+        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 3, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
         {"icon": "zombieGunneryMob", "name": "Zombie Pirate Gunnery Mob", "qty": 2, "note": "Tir de ligne à courte portée, cœur offensif à distance"},
         {"icon": "blackSpot", "name": "The Black Spot (Gunnery Mob)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite de la Gunnery Mob, la propre garde de tir du Roi Pirate"},
         {"icon": "deckDroppers", "name": "Deck Droppers", "qty": 2, "note": "Harceleurs volants lance-grenades"},

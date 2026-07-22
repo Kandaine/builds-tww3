@@ -1785,6 +1785,7 @@ const unitImages = {
   syreens: 'assets/units/syreens.png',
   rottingLeviathan: 'assets/units/rottingLeviathan.png',
   gunneryWight: 'assets/units/gunneryWight.png',
+  drekla: 'assets/units/drekla.png',
   mournghulHaunter: 'assets/units/mournghulHaunter.png',
   vampireFleetCaptain: 'assets/units/vampireFleetCaptain.png',
   damnedPaladin: 'assets/units/damnedPaladin.png',
