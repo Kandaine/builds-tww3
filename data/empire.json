@@ -430,5 +430,40 @@
       "magic": "Edvard n'est pas un lanceur de sorts — sa force vient de sa racaille terrifiante. Le Witch Doctor apporte le soutien magique (lores maison variés), et le Fleet Captain mène l'abordage. La signature d'Edvard est la Peur (Causes Fear sur les Pirate Deckhands, seigneur) qui effondre le moral ennemi.",
       "note": "Build de racaille pirate exploitant la signature d'Edvard : les <strong>Pirate Deckhands</strong> (5 unités) reçoivent +20% de force des armes, -20% d'entretien et surtout l'attribut <strong>Causes Fear</strong> (seigneur) — une infanterie bon marché mais terrifiante qui effraie tout ce qui l'approche et effondre le commandement adverse. Les Buccaneers d'élite (armes lourdes, bombes) et les Gunnery Mobs (arquebuses, tromblons) apportent le perforant et la poudre, les Norscan Reavers (recrutement allié -50%, faction) et les Promethean Riders complètent l'équipage, et les Carronades pilonnent à zone. En campagne, Edvard est <strong>insaisissable</strong> : immunité à l'attrition marine, débarquement gratuit, renfort et recrutement en territoire ennemi (faction) permettent des razzias éclair loin de ses bases. Les 2 <strong>Long Drong's Slayer Pirates</strong> du régiment favori (+1 capacité, faction) — Slayers dwarfs mercenaires Incassables — forment l'ancre de mêlée increvable qui manque à une racaille par ailleurs fragile, et ne rompent jamais quelle que soit la situation."
     }
+  },
+  {
+    "id": "boristodbringer",
+    "numeral": "XIV",
+    "name": "Boris Todbringer",
+    "epithet": "Comte Électeur de Middenland",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Boris_Todbringer",
+    "faction": "Middenland",
+    "seal": "boristodbringer",
+    "portraitImage": "assets/portraits/boristodbringer.png",
+    "lore": "<p>Boris Todbringer est un grand guerrier et un politicien hors pair. Il dirige la famille Todbringer depuis des décennies et jouit d'une haute réputation dans tout le territoire du Midden — et même au-delà, dans l'Empire entier. Graf de Middenheim, la Cité du Loup Blanc perchée sur le Fauschlag, il est le plus fervent des serviteurs d'Ulric, le dieu de l'hiver, des loups et de la guerre.</p>\n      <p>Mais une obsession dévore le vieux Comte Électeur : sa vendetta éternelle contre Khazrak le Borgne. Le seigneur de guerre homme-bête lui a pris un œil ; Boris lui a rendu la pareille. Depuis, les deux ennemis se traquent sans relâche à travers les forêts du Drakwald, et tant que le Borgne respirera, les chevaliers de Middenheim ne connaîtront pas de repos.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-100</strong> avec les Hommes-Bêtes</div>\n        <div class=\"attr-item\">Corruption : <strong>-2</strong> (toutes les provinces)</div>\n        <div class=\"attr-item\">Niveau des troupes recrutées : <strong>+2</strong> pour toutes les troupes chevaleresques</div>\n        <div class=\"attr-item\">Réduction du taux de fatigue : <strong>-15%</strong> pour toutes les unités de chevaliers (toutes les armées)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Vitesse : <strong>+20%</strong></div>\n        <div class=\"attr-item\">Capacité passive \"Wayfarer\" — <strong>Décélération +200%</strong>, <strong>Accélération +200%</strong> et <strong>Strider</strong> (les pénalités de vitesse et de combat dues au terrain sont ignorées), durée illimitée</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Boris Todbringer, mod Boris Todbringer) + capture de la capacité \"Wayfarer\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Boris : un marteau de chevaliers d'emblée aguerris (+2 niveaux de recrutement, faction) qui chargent sans s'épuiser (-15% de fatigue, faction), menés par un Comte Électeur véloce (+20% de vitesse, Wayfarer/Strider, seigneur) qui ignore le terrain du Drakwald — soutenus par la ligne d'infanterie impériale et bénis par les serviteurs d'Ulric (Emil Valgeir sur son Autel de Guerre et un Prêtre d'Ulric)",
+      "totalSlots": 20,
+      "lord": {"icon": "boristodbringer", "name": "Boris Todbringer", "qty": 1, "note": "Duelliste rapide (+20% de vitesse, seigneur) qui traverse forêts et rivières sans pénalité grâce à \"Wayfarer\" (Strider, accél./décél. +200%, seigneur) — à pied, sur destrier caparaçonné, Pégase ou Griffon Impérial, il traque Khazrak jusque dans les recoins du Drakwald, White Wolf Frenzy et Talisman d'Ulric en main"},
+      "heroes": [
+        {"icon": "emilValgeir", "name": "Emil Valgeir (Héros Légendaire)", "qty": 1, "note": "L'Ar-Ulric en personne — grand prêtre d'Ulric monté sur l'Autel de Guerre d'Ulric (mod Boris Todbringer) : il renforce les unités vouées à Ulric (résistance physique, épées brise-armure au contact, bonus de charge) et ancre le centre de la bataille comme une forteresse de foi"},
+        {"icon": "priestOfUlric", "name": "Priest of Ulric", "qty": 1, "note": "Nouveau type de héros du mod — prêtre-guerrier d'Ulric (Ulric's Favor, Ulric Roar, Battle Hymn, Frénésie) qui galvanise la ligne pendant que les chevaliers enveloppent"}
+      ],
+      "army": [
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 3, "note": "+2 niveaux de recrutement et -15% de fatigue (faction) — la cavalerie de ligne de Middenland, d'emblée aguerrie et infatigable dans les charges répétées"},
+        {"icon": "reiksguard", "name": "Reiksguard", "qty": 2, "note": "Même double bonus chevaleresque (faction) — cavalerie lourde d'élite qui brise les lignes fixées"},
+        {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Même double bonus (faction) — cavalerie monstrueuse de choc, pointe de lance des assauts"},
+        {"icon": "knightsBlazingSun", "name": "Knights of the Blazing Sun", "qty": 1, "note": "Même double bonus (faction) — chevaliers tacticiens en soutien des flancs"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Élite d'infanterie qui fixe le centre pendant que la chevalerie tourne"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 2, "note": "Ligne anti-grande cible — reçoit les monstres et la cavalerie ennemie"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir perforant qui érode l'ennemi avant les charges"},
+        {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 1, "note": "Régiment de Renom voué à Ulric — chasseurs d'élite de Middenheim en tir d'embuscade, l'écho des loups blancs du Graf"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Artillerie à tir direct contre monstres et grandes cibles des hordes bestiales"},
+        {"icon": "warWagons", "name": "War Wagons", "qty": 1, "note": "Plateforme de tir mobile qui suit le rythme de l'armée véloce de Boris"}
+      ],
+      "magic": "Boris n'est pas un lanceur de sorts — sa force est la charge et la traque. La bénédiction vient d'Ulric : Emil Valgeir et le Prêtre d'Ulric soutiennent les chevaliers par leurs hymnes et leurs faveurs martiales plutôt que par les Vents de Magie.",
+      "note": "Une armée de chasse : le -100 de relations avec les Hommes-Bêtes (faction) rend la guerre contre les warherds inévitable — et c'est voulu, car en face rôde Khazrak le Borgne (fiche Hommes-Bêtes I), l'ennemi juré de Boris dans un duel d'estropiés que le mod fait vivre des deux côtés. Le -2 de corruption (toutes provinces, faction) assainit le Drakwald au fil de la reconquête, et la mobilité de Boris (Wayfarer/Strider, seigneur) permet de forcer les batailles contre des Bêtes qui préfèrent fuir et embusquer. Garde les chevaliers groupés pour des cycles charge-repli-recharge que leur -15% de fatigue (faction) rend quasi perpétuels."
+    }
   }
 ]

@@ -154,6 +154,7 @@ const seals = {
   helmutFeuerbach: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21v-8"/><path d="M12 13c-3 0-5-2-5-5 3 0 5 2 5 5Z"/><path d="M12 11c0-3 2-5 5-5 0 3-2 5-5 5Z"/><path d="M8 21h8"/></svg>`,
   // Edvard van der Kraal (Pirates of Sartosa) — crâne de pirate à bandeau.
   edvardVanDerKraal: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c4 0 6 3 6 7 0 2-1 3-1 5H7c0-2-1-3-1-5 0-4 2-7 6-7Z"/><path d="M6 10l5 2M18 10l-5 2"/><circle cx="14.5" cy="10.5" r="1.2" fill="var(--accent-secondary)"/><path d="M10 17v3M14 17v3"/></svg>`,
+  boristodbringer: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 5l3 3M19 5l-3 3"/><path d="M5 5c0 3 1 5 3 6M19 5c0 3-1 5-3 6"/><path d="M8 11c0 4 1 7 4 9 3-2 4-5 4-9 0-2-2-4-4-4s-4 2-4 4Z"/><circle cx="10.5" cy="12" r=".7" fill="var(--accent-secondary)"/><circle cx="13.5" cy="12" r=".7" fill="var(--accent-secondary)"/><path d="M12 15v2"/></svg>`,
   // Sir John Tyreweld (Knights of Origo, Bretonnia) — épée du chevalier croisé.
   johnTyreweld: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v14"/><path d="M8 6h8M9 16h6l-3 6-3-6Z"/></svg>`,
   // Bohemond (Duc de Bastonne, Bretonnia) — écu au dragon héraldique.
@@ -1730,6 +1731,8 @@ const unitImages = {
   witchDoctor: 'assets/units/witchDoctor.png',
   freeCompanyMilitia: 'assets/units/freeCompanyMilitia.png',
   warriorPriest: 'assets/units/warriorPriest.png',
+  emilValgeir: 'assets/units/emilValgeir.png',
+  priestOfUlric: 'assets/units/priestOfUlric.png',
   amethystWizard: 'assets/units/amethystWizard.png',
   amberWizard: 'assets/units/amberWizard.png',
   brightWizard: 'assets/units/brightWizard.png',
@@ -1944,6 +1947,7 @@ const unitImages = {
   alberichHauptAnderssen: 'assets/portraits/alberichHauptAnderssen.png',
   helmutFeuerbach: 'assets/portraits/helmutFeuerbach.png',
   edvardVanDerKraal: 'assets/portraits/edvardVanDerKraal.png',
+  boristodbringer: 'assets/portraits/boristodbringer.png',
   // Héros légendaires Empire (mod Mixu) : Luthor Huss (armée de Volkmar),
   // Oleg von Raukov (armée de son père Valmir).
   luthorHuss: 'assets/portraits/luthorHuss.png',
