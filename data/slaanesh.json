@@ -93,5 +93,37 @@
       "magic": "The Masque n'est pas une lanceuse de sorts dédiée — sa puissance vient de ses capacités actives (Chanson of Caging, The Dance of Dreaming, The Waltz of Lethargy) liées à l'Eternal Dance, épaulée par les Alluress pour le soutien magique via la Lore of Slaanesh.",
       "note": "Le -25% d'entretien et le +15% de résistance physique pour les Daemonettes (seigneur), combinés au recrutement accéléré de -1 tour (faction), permettent d'aligner un cœur de mêlée daemonique dense, résilient et rapide à reconstituer, renforcé par les 2 exemplaires du régiment favori Bringers of Beguilement que la capacité augmentée (faction) permet de recruter et d'aligner ensemble. Les Seekers, Heartseekers, Seeker Chariots, Fiends et Hellflayers — toutes des unités Daemoniques d'Infanterie, Cavalerie ou Chariot — profitent du +10% de remplacement des pertes (faction), rendant cette armée exceptionnellement durable sur une campagne prolongée."
     }
+  },
+  {
+    "id": "slaaulaan",
+    "numeral": "IV",
+    "name": "Slaa'Ulaan",
+    "epithet": "The Nether-Thing of the Second Moon",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Slaanesh",
+    "faction": "The Nether-Things",
+    "seal": "slaaulaan",
+    "portraitImage": "assets/portraits/slaaulaan.png",
+    "lore": "<p>Slaa'Ulaan, la Chose-d'Outre-Monde de la Seconde Lune, est un démon ailé de Slaanesh descendu de Morrslieb, l'astre corrompu du Chaos. Son aura désorientante trouble les sens des guerriers les plus aguerris, et peu résistent longtemps à ses faux démoniaques et à ses éclairs de pur Chaos.</p>\n      <p>Fléau juré des Hommes-Lézards, Slaa'Ulaan mène les Nether-Things à l'assaut de la Lustrie pour faire souffrir Slann, Saurus, Skinks et Kroxigors sans distinction — et voler, cité-temple après cité-temple, les secrets millénaires du Grand Plan : le rituel sacrificiel d'Hexoatl, la préscience de Tlaxtlan, les brumes de Xlanhuapec, les bassins de frai profanés par Slaanesh… autant de pouvoirs arrachés à leurs gardiens et retournés contre eux.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Débloque de puissants <strong>Rituels de Cité-Temple</strong> après la conquête de certaines colonies des Hommes-Lézards (Hexoatl : contrôle temporaire d'une armée ennemie ; Tlaxtlan ; Xlanhuapec ; Sacred Pools…)</div>\n        <div class=\"attr-item\">Taille des armées de Disciples invoquées : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Temps de renfort en bataille : <strong>-50%</strong></div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+4</strong> pour les Alluresses</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-40</strong> avec les Hommes-Lézards</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Bonus contre les grandes cibles : <strong>+5</strong> en combattant les Hommes-Lézards (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-15%</strong> pour les Daemonettes de Slaanesh et Exalted Daemonettes de Slaanesh (armée du seigneur)</div>\n        <div class=\"attr-item\">Résistance à la magie : <strong>15%</strong> (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Slaa'Ulaan).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Slaa'Ulaan : une marée de Daemonettes et d'Exalted Daemonettes à -15% d'entretien (seigneur) escortée d'Alluresses recrutées d'emblée vétéranes (+4 rangs, faction), protégée par 15% de résistance à la magie (seigneur) — le tout taillé pour la croisade anti-Lustrie (+5 contre les grandes cibles face aux Hommes-Lézards, seigneur), avec Fiends et Seekers pour abattre les monstres sauriens",
+      "totalSlots": 20,
+      "lord": {"icon": "slaaulaan", "name": "Slaa'Ulaan", "qty": 1, "note": "Démon ailé de la Seconde Lune — duelliste volant aux faux démoniaques (Daemonic Scythes, Arcane Blast) dont l'aura désorientante (Disorienting Aura) affaiblit tout ennemi au contact ; ses 15% de résistance à la magie (seigneur) protègent l'armée des Slanns, et son -50% de temps de renfort (faction) fait arriver les vagues de démons deux fois plus vite"},
+      "heroes": [
+        {"icon": "alluress", "name": "Alluress", "qty": 2, "note": "Rang de recrutement +4 (faction) — séductrices démoniaques d'emblée vétéranes, débuff et duel en soutien de la marée de Daemonettes"}
+      ],
+      "army": [
+        {"icon": "daemonettesOfSlaanesh", "name": "Daemonettes of Slaanesh", "qty": 5, "note": "-15% d'entretien (seigneur) — la marée démoniaque au cœur de l'armée, rapide et perforante, qui déborde les blocs sauriens par les flancs"},
+        {"icon": "exaltedDaemonettesOfSlaanesh", "name": "Exalted Daemonettes of Slaanesh", "qty": 3, "note": "Même -15% d'entretien (seigneur) — l'élite des Daemonettes, dévastatrice une fois la ligne ennemie fixée"},
+        {"icon": "seekersOfSlaanesh", "name": "Seekers of Slaanesh", "qty": 2, "note": "Cavalerie rapide de flanc — chasse les tirailleurs Skinks et enveloppe l'arrière-garde"},
+        {"icon": "heartseekersOfSlaanesh", "name": "Heartseekers of Slaanesh", "qty": 2, "note": "Cavalerie d'élite perforante — fer de lance des charges de flanc contre l'infanterie saurienne"},
+        {"icon": "fiendsOfSlaanesh", "name": "Fiends of Slaanesh", "qty": 2, "note": "Bêtes démoniaques anti-grande cible — avec le +5 contre les grandes cibles face aux Hommes-Lézards (seigneur), elles déchirent Kroxigors, Stégadons et Carnosaures"},
+        {"icon": "seekerChariots", "name": "Seeker Chariots", "qty": 1, "note": "Char de percussion qui fauche les rangs de Skinks et disloque les formations"},
+        {"icon": "hellflayers", "name": "Hellflayers", "qty": 1, "note": "Char-faucheur d'élite en soutien des charges répétées"},
+        {"icon": "pleasureGuard", "name": "Pleasure Guard", "qty": 1, "note": "Garde d'élite du démon — ancre de mêlée qui protège Slaa'Ulaan entre deux plongées"}
+      ],
+      "magic": "Slaa'Ulaan combat par l'aura et la faux plus que par les sorts (Disorienting Aura, Arcane Blast) — la magie de Slaanesh reste aux mains des Alluresses en soutien, tandis que les 15% de résistance à la magie (seigneur) émoussent les tempêtes des Slanns.",
+      "note": "Cette armée est une machine à conquérir la Lustrie : chaque cité-temple majeure prise débloque un Rituel de Cité-Temple (faction) — dont le contrôle temporaire d'une armée ennemie via le rituel d'Hexoatl — et le +10% de taille des armées de Disciples (faction) amplifie la mécanique d'invocation de Slaanesh. En bataille, exploite le -50% de temps de renfort (faction) pour submerger l'ennemi par vagues, et garde les Fiends face aux monstres sauriens pour rentabiliser le +5 contre les grandes cibles (seigneur)."
+    }
   }
 ]
