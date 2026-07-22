@@ -140,6 +140,7 @@ const seals = {
   neferata: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="13" r="4.5"/><path d="M12 2v3M12 21v1M4.5 13H2M22 13h-1.5M6 7L4.5 5.5M18 7l1.5-1.5M6.5 19l-1.5 1.5M17.5 19l1.5 1.5"/></svg>`,
   // Kalledria (Wailing Conclave, VC) — larme spectrale de la Reine des Chagrins.
   kalledria: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c3 4 5 7 5 10a5 5 0 0 1-10 0c0-3 2-6 5-10Z"/><path d="M10 12c0 1.5 1 2.5 2 2.5"/></svg>`,
+  dieter: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v20"/><circle cx="12" cy="6" r="2.5"/><circle cx="11" cy="5.5" r=".4" fill="var(--accent-secondary)"/><circle cx="13" cy="5.5" r=".4" fill="var(--accent-secondary)"/><path d="M7 22c1-3 3-4 5-4s4 1 5 4"/><path d="M5 10l4 2M19 10l-4 2"/></svg>`,
   // Marius Leitdorf (Averland, mod Mixu) — soleil d'Averland, emblème du Comte Fou.
   mariusLeitdorf: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/></svg>`,
   // Comtes Électeurs de l'Empire (mod Mixu's Legendary Lords) — emblèmes de provinces.
@@ -1900,6 +1901,7 @@ const unitImages = {
   // + unités éthérées/goules propres à Kalledria (portholes 60×130).
   neferata: 'assets/portraits/neferata.png',
   kalledria: 'assets/portraits/kalledria.png',
+  dieter: 'assets/portraits/dieter.png',
   nagFellSpectres: 'assets/units/nagFellSpectres.png',
   nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
   // Crypt Horrors : unité officielle vanilla (Vampire Counts), carte du jeu de base
