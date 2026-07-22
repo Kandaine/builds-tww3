@@ -189,5 +189,38 @@
       "magic": "L'Orc Shaman apporte un soutien ponctuel du Lore of the Waaagh!, mais Gorbad lui-même privilégie la tactique et la mêlée plutôt que la magie.",
       "note": "Le -10% d'entretien s'appliquant à toute l'armée (seigneur, contrairement aux bonus habituellement restreints à un type d'unité chez les autres Seigneurs Peaux-Vertes) permet de maximiser la taille de cette horde polyvalente, tandis que l'aura de commandement doublée (seigneur) maintient le moral sur un front large et les Broken Tusks Mob (régiment favori, faction) apportent une pointe de cavalerie d'élite."
     }
+  },
+  {
+    "id": "gorfang",
+    "numeral": "VII",
+    "name": "Gorfang Rotgut",
+    "epithet": "Le Mangeur de Trolls",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Gorfang_Rotgut",
+    "faction": "Rotgut's Red Fangs",
+    "seal": "gorfang",
+    "portraitImage": "assets/portraits/gorfang.png",
+    "lore": "<p>Gorfang Rotgut, surnommé le « Mangeur de Trolls » et honni des Nains comme le « Roi Massacreur », est le chef de la tribu orque des Red Fangs et le maître de Black Crag. C'est l'un des plus puissants Warboss orques en vie — aussi massif qu'un Orque Noir — maniant avec aisance The Red Fang, une énorme épée dentelée aussi lourde qu'un Squig des cavernes géant.</p>\n      <p>Gorfang a mené d'innombrables batailles contre les Nains, du siège de Barak Varr à l'attaque de Karak Azul, où il força la salle du trône du Roi Kazador et captura nombre de ses proches. Le fils du Roi, Kazrik, fut rasé, tatoué au front d'un glyphe orque à l'effigie de Gorfang, puis cloué au trône de son propre père. De ces longues guerres, Gorfang a tiré une haine viscérale et sans bornes de la race naine tout entière.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-120</strong> avec les Nains</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+40</strong> avec les Peaux-Vertes</div>\n        <div class=\"attr-item\">Peut conclure des accords commerciaux avec les autres tribus Peaux-Vertes</div>\n        <div class=\"attr-item\">Points d'Allégeance gagnés : <strong>+50%</strong> pour les alliances avec les Peaux-Vertes</div>\n        <div class=\"attr-item\">Armure : <strong>+10</strong> pour toutes les unités Orc Big 'Uns</div>\n        <div class=\"attr-item\">Coût de recrutement : <strong>-20%</strong> pour les unités Big 'Uns</div>\n        <div class=\"attr-item\">Gorfang Rotgut vole un pourcentage de l'XP gagnée par les autres Seigneurs</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour Broken Tusks Mob (Boar Boy Big 'Uns)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Bonus contre les grandes cibles : <strong>+12</strong> pour toutes les unités Orc Big 'Uns (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense au corps-à-corps : <strong>+8</strong> pour toutes les unités Orc Big 'Uns (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité d'armée : \"Gorfang's Waaagh!\" (remplace \"Waaagh!\") — Augment de zone : <strong>+25% dégâts d'arme de base</strong>, <strong>+25% dégâts perforants</strong>, <strong>+30 Armure</strong>, <strong>+24 Attaque en mêlée</strong> et <strong>Immunité à la psychologie</strong> pour tous les alliés pendant 18s</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Gorfang Rotgut) + capture de la capacité \"Gorfang's Waaagh!\".</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Gorfang : un cœur d'Orc Big 'Uns blindés (+10 d'armure, faction) et bon marché (-20% de recrutement, faction), transformés en tueurs de monstres et de seigneurs (+12 de bonus contre les grandes cibles et +8 de défense en mêlée, seigneur), avec la cavalerie Boar Boy Big 'Uns et les Broken Tusks Mob (régiment favori +1, faction) en marteau de flanc — le tout démultiplié par Gorfang's Waaagh! (+25% dégâts, +30 armure, +24 attaque, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "gorfang", "name": "Gorfang Rotgut", "qty": 1, "note": "Warboss colossal (grand comme un Orque Noir) armé de The Red Fang, à pied, sur Warboar, Boar Chariot ou Wyvern — déclenche Gorfang's Waaagh! (seigneur) au moment du choc pour transformer toute l'armée en rouleau compresseur pendant 18 secondes, et vole l'XP des autres Seigneurs (faction) pour rester le plus gros bras de la Waaagh!"},
+      "heroes": [
+        {"icon": "blackOrcBigBoss", "name": "Black Orc Big Boss", "qty": 1, "note": "Bras droit de mêlée qui tient la ligne aux côtés des Big 'Uns et porte les bannières de la tribu"},
+        {"icon": "orcShaman", "name": "Orc Shaman", "qty": 1, "note": "Seul soutien magique de l'armée (Lore of da Big Waaagh!) — 'Ere We Go et Gaze of Mork en appui du grand choc frontal"}
+      ],
+      "army": [
+        {"icon": "orcBigUns", "name": "Orc Big 'Uns", "qty": 5, "note": "+10 d'armure et -20% de coût (faction), +12 de bonus contre les grandes cibles et +8 de défense en mêlée (seigneur) — le cœur d'élite de la tribu, capable d'abattre monstres, cavalerie lourde et seigneurs nains"},
+        {"icon": "orcBoarBoyBigUns", "name": "Boar Boy Big 'Uns", "qty": 2, "note": "Big 'Uns montés couverts par le -20% de coût (faction) et les bonus du seigneur — cavalerie de choc qui enveloppe les flancs pendant que l'infanterie fixe"},
+        {"icon": "brokenTusksMob", "name": "Broken Tusks Mob (Boar Boy Big 'Uns)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — variante d'élite des Boar Boy Big 'Uns, fer de lance monté de la tribu"},
+        {"icon": "blackOrcs", "name": "Black Orcs", "qty": 2, "note": "Infanterie lourde d'élite en écho à la stature de Gorfang — seconde ligne d'acier qui enfonce ce que les Big 'Uns ont fixé"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "Masse verte bon marché pour élargir la ligne et absorber les charges"},
+        {"icon": "orcArrerBoyz", "name": "Orc Arrer Boyz", "qty": 2, "note": "Tir de soutien orque — érode l'ennemi avant le choc et couvre les flancs"},
+        {"icon": "stoneTrolls", "name": "Stone Trolls", "qty": 1, "note": "Monstres régénérants de Black Crag — garde-manger ambulant du Mangeur de Trolls, et briseur de lignes résistant à la magie"},
+        {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie gobeline précise pour casser les machines de guerre naines avant l'assaut"}
+      ],
+      "magic": "Gorfang n'est pas un lanceur de sorts — sa puissance est brute (The Red Fang, Evil Sun Armour, Gorfang's Waaagh!). L'Orc Shaman couvre seul le soutien magique avec la Lore of da Big Waaagh!.",
+      "note": "Cette armée est taillée pour la guerre contre les Nains : les -120 de relations diplomatiques (faction) la rendent inévitable, et le +12 de bonus contre les grandes cibles des Big 'Uns (seigneur) punit aussi bien les monstres que les seigneurs ennemis. En face, le Roi Kazador de Karak Azul (fiche Nains VII) n'attend que de régler sa rancune — un duel de fiches semées par le mod. En diplomatie, exploite les accords commerciaux et le +50% de points d'Allégeance avec les Peaux-Vertes (faction) pour fédérer les tribus, et déclenche Gorfang's Waaagh! au moment du contact général pour écraser la ligne adverse d'un seul élan."
+    }
   }
 ]
