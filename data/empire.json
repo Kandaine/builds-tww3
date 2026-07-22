@@ -465,5 +465,40 @@
       "magic": "Boris n'est pas un lanceur de sorts — sa force est la charge et la traque. La bénédiction vient d'Ulric : Emil Valgeir et le Prêtre d'Ulric soutiennent les chevaliers par leurs hymnes et leurs faveurs martiales plutôt que par les Vents de Magie.",
       "note": "Une armée de chasse : le -100 de relations avec les Hommes-Bêtes (faction) rend la guerre contre les warherds inévitable — et c'est voulu, car en face rôde Khazrak le Borgne (fiche Hommes-Bêtes I), l'ennemi juré de Boris dans un duel d'estropiés que le mod fait vivre des deux côtés. Le -2 de corruption (toutes provinces, faction) assainit le Drakwald au fil de la reconquête, et la mobilité de Boris (Wayfarer/Strider, seigneur) permet de forcer les batailles contre des Bêtes qui préfèrent fuir et embusquer. Garde les chevaliers groupés pour des cycles charge-repli-recharge que leur -15% de fatigue (faction) rend quasi perpétuels."
     }
+  },
+  {
+    "id": "mackensen",
+    "numeral": "XV",
+    "name": "Reinhardt von Mackensen",
+    "epithet": "Lord-Warden de Fort Helmgart",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Helmgart",
+    "faction": "Empire Secessionists",
+    "seal": "mackensen",
+    "portraitImage": "assets/portraits/mackensen.png",
+    "lore": "<p>Le Margrave von Mackensen est le Lord-Warden de Fort Helmgart, la forteresse de montagne qui verrouille la Passe de la Hache entre l'Empire et la Bretonnie. Lorsque Karl Franz fut couronné, Mackensen dénonça publiquement l'élection — et depuis les remparts de sa citadelle imprenable, il se tient prêt à lancer sa rébellion contre Altdorf.</p>\n      <p>Autour de lui se rassemblent les mécontents de l'Empire : Hans, Lord-Commander de Helmgart, mène la Frankenwurter's Company, tandis que les Mackensen's Marauders arpentent les chemins de ronde, fusils chargés. Middenland regarde la sécession d'un œil favorable — car tout ce qui affaiblit le Reikland renforce le Nord — et le vieux renard des montagnes compte bien transformer sa forteresse en pierre angulaire d'un nouvel ordre impérial.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Temps de récupération des blessures : <strong>-2 tours</strong> (tous les personnages)</div>\n        <div class=\"attr-item\">Attrition : <strong>-20%</strong> en état de siège</div>\n        <div class=\"attr-item\">Relations : <strong>-30</strong> avec l'Empire</div>\n        <div class=\"attr-item\">Capacité : <strong>+1</strong> pour Frankenwurter's Company (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Relations : <strong>+50</strong> avec Middenland</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Réduction de perte de Vigueur : <strong>-25%</strong> pendant les batailles de siège (armée du seigneur)</div>\n        <div class=\"attr-item\">Commandement : <strong>+8</strong> en état de siège (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Reinhardt von Mackensen, mod SCM Empire Secessionists).</div>\n    ",
+    "build": {
+      "role": "Armée bâtie autour des effets confirmés de Mackensen : une garnison de forteresse taillée pour tenir les remparts — attrition -20% et Commandement +8 en état de siège (faction/seigneur), Vigueur préservée en batailles de siège (-25%, seigneur) — avec la Frankenwurter's Company en double exemplaire (capacité +1, faction), les Mackensen's Marauders au créneau, et une ligne hallebardes-poudre noire soutenue par l'artillerie de Fort Helmgart",
+      "totalSlots": 20,
+      "lord": {"icon": "mackensen", "name": "Reinhardt von Mackensen", "qty": 1, "note": "Le Margrave rebelle — à pied, sur destrier caparaçonné, Pégase ou Griffon Impérial (The Uncanning Gift) : sous ses murs, son armée ne fatigue pas (-25% de perte de Vigueur en siège, seigneur) et ne plie pas (+8 de Commandement assiégé, seigneur) ; ses blessés reviennent deux fois plus vite (-2 tours, faction)"},
+      "heroes": [
+        {"icon": "hansHelmgart", "name": "Hans (Héros Légendaire)", "qty": 1, "note": "Lord-Commander de Helmgart (mod SCM Empire Secessionists) — le bras droit du Margrave, qui renforce directement la Frankenwurter's Company (défense et attaque en mêlée) et allonge la portée des Mackensen's Marauders : le cœur custom de la garnison tourne autour de lui"},
+        {"icon": "empireCaptain", "name": "Empire Captain", "qty": 1, "note": "Capacité de héros augmentée par la faction — officier de terrain qui galvanise la ligne et mène les sorties depuis la poterne"}
+      ],
+      "army": [
+        {"icon": "frankenwurtersCompany", "name": "Frankenwurter's Company", "qty": 2, "note": "Capacité +1 (faction) permet d'aligner les 2 exemplaires — hallebardiers d'élite de la garnison, renforcés en mêlée par Hans (héros) : le mur de la Passe de la Hache"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "Ligne anti-grande cible qui tient les brèches et les remparts"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "Infanterie de tenue polyvalente pour boucher les assauts secondaires"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Élite de contre-attaque — reprend les sections de muraille perdues, en écho à l'affinité de Mackensen pour les Greatswords"},
+        {"icon": "mackensensMarauders", "name": "Mackensen's Marauders (Handgunners)", "qty": 2, "note": "Les fusiliers personnels du Margrave, portée allongée par Hans (héros) — depuis les créneaux, leur feu perforant balaie les colonnes d'assaut"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Poudre noire supplémentaire pour saturer les approches"},
+        {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 1, "note": "Tir soutenu sans dépendance à la poudre — fiable dans la durée d'un long siège"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Contre-batterie — détruit les machines de siège avant qu'elles n'atteignent les murs"},
+        {"icon": "mortars", "name": "Mortars", "qty": 1, "note": "Tir indirect par-dessus les remparts sur les concentrations ennemies"},
+        {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Saturation de zone — l'artillerie de Fort Helmgart au grand complet"}
+      ],
+      "magic": "Mackensen ne lance pas de sorts — sa force est la pierre de Helmgart, la poudre noire et la discipline de sa garnison (Bulwark of the Fortress).",
+      "note": "Une faction de siège assumée : défends Fort Helmgart où l'entretien de la garnison chute (faction) et où chaque assaut ennemi se brise sur une armée infatigable (+8 Cmd, -25% Vigueur, -20% d'attrition en siège). La rébellion contre l'Empire (-30, faction) est inévitable, mais Middenland (+50, faction) offre un allié naturel au nord — l'axe des mécontents de Karl Franz. Sur le site, Boris Todbringer (Empire XIV) partage d'ailleurs cette sympathie middenlandaise : deux fiches, deux visions de l'opposition à Altdorf."
+    }
   }
 ]
