@@ -168,6 +168,7 @@ const seals = {
   cassyon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 14c3-1 5-3 6-6 2 2 5 2 8 0-1 3-3 5-6 6"/><path d="M11 8l-2-3M13 8l3-2"/><path d="M8 18l3-4 3 4"/></svg>`,
   mogen: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2c2 3 1 5-1 7 3-1 5 0 5 3 0 2-1 3-2 4 2 0 4 1 4 3H6c0-2 2-3 4-3-1-1-2-2-2-4 0-3 2-4 5-3-2-2-3-4-1-7Z"/><path d="M9 22h6"/></svg>`,
   balduin: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3v10M8 6h8"/><path d="M5 4v3M4 5h2M19 4v3M18 5h2M5 15v3M4 16h2M19 15v3M18 16h2"/><path d="M7 20c0-3 2-5 5-5s5 2 5 5"/></svg>`,
+  leofric: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21V9"/><path d="M12 9c-4 0-6-3-6-6 4 0 6 2 6 6Z"/><path d="M12 9c4 0 6-3 6-6-4 0-6 2-6 6Z"/><path d="M8 21h8M9 14h6"/></svg>`,
   // Belannaer le Sage (Saphery, HE) — étoile arcanique de l'Archimage.
   belannaer: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2l2.4 6.6L21 9l-5 4.2L17.8 21 12 16.9 6.2 21 8 13.2 3 9l6.6-.4Z"/></svg>`,
   // Wychwethyl the Wild (Masque of Loec, WE) — masque de danseur de Loec.
@@ -1104,6 +1105,22 @@ const unitImages = {
   mangonel: 'assets/units/mangonel.png',
   ballistaBrt: 'assets/units/ballistaBrt.png',
   scorpionBrt: 'assets/units/scorpionBrt.png',
+  grailReliquae: 'assets/units/grailReliquae.png',
+  pathmaker: 'assets/units/pathmaker.png',
+  brtScholar: 'assets/units/brtScholar.png',
+  wardenLeofric: 'assets/units/wardenLeofric.png',
+  ronin: 'assets/units/ronin.png',
+  warPilgrimsMace: 'assets/units/warPilgrimsMace.png',
+  warPilgrimsMaceShield: 'assets/units/warPilgrimsMaceShield.png',
+  battlePilgrimsSps: 'assets/units/battlePilgrimsSps.png',
+  mangonelLeofric: 'assets/units/mangonelLeofric.png',
+  scorpionLeofric: 'assets/units/scorpionLeofric.png',
+  ashigaruYari: 'assets/units/ashigaruYari.png',
+  ashigaruBow: 'assets/units/ashigaruBow.png',
+  mushaInfantry: 'assets/units/mushaInfantry.png',
+  mushaCavNaginata: 'assets/units/mushaCavNaginata.png',
+  wildwoodRangerLeo: 'assets/units/wildwoodRangerLeo.png',
+  greatStagKnights: 'assets/units/greatStagKnights.png',
   wardensOfMontfort: 'assets/units/wardensOfMontfort.png',
   royalPegasusKnights: 'assets/units/royalPegasusKnights.png',
   royalHippogryphKnights: 'assets/units/royalHippogryphKnights.png',
@@ -1988,6 +2005,7 @@ const unitImages = {
   cassyon: 'assets/portraits/cassyon.png',
   mogen: 'assets/portraits/mogen.png',
   balduin: 'assets/portraits/balduin.png',
+  leofric: 'assets/portraits/leofric.png',
   // Héros légendaires Bretonnia (mod Mixu) : Donna Don Domingio (champion des
   // Knights of Origo de Sir John), Amalric de Gaudaron (Fléau des Morts-Vivants).
   donnaDonDomingio: 'assets/portraits/donnaDonDomingio.png',
