@@ -166,6 +166,7 @@ const seals = {
   adalhard: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="6"/><path d="M12 6V3M6 12H3M18 12h3M8 8L6 6M16 8l2-2M8 16l-2 2M16 16l2 2"/></svg>`,
   // Cassyon (Duc de Parravon, Bretonnia) — pégase héraldique du duché montagnard.
   cassyon: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 14c3-1 5-3 6-6 2 2 5 2 8 0-1 3-3 5-6 6"/><path d="M11 8l-2-3M13 8l3-2"/><path d="M8 18l3-4 3 4"/></svg>`,
+  mogen: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2c2 3 1 5-1 7 3-1 5 0 5 3 0 2-1 3-2 4 2 0 4 1 4 3H6c0-2 2-3 4-3-1-1-2-2-2-4 0-3 2-4 5-3-2-2-3-4-1-7Z"/><path d="M9 22h6"/></svg>`,
   // Belannaer le Sage (Saphery, HE) — étoile arcanique de l'Archimage.
   belannaer: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2l2.4 6.6L21 9l-5 4.2L17.8 21 12 16.9 6.2 21 8 13.2 3 9l6.6-.4Z"/></svg>`,
   // Wychwethyl the Wild (Masque of Loec, WE) — masque de danseur de Loec.
@@ -1085,6 +1086,11 @@ const unitImages = {
   knightsOrigoCav: 'assets/units/knightsOrigoCav.png',
   squiresOfOrigo: 'assets/units/squiresOfOrigo.png',
   origoSeneschal: 'assets/units/origoSeneschal.png',
+  knightsFlameCav: 'assets/units/knightsFlameCav.png',
+  knightsFlameFoot: 'assets/units/knightsFlameFoot.png',
+  squiresOfTheFlame: 'assets/units/squiresOfTheFlame.png',
+  riviereDuAbis: 'assets/units/riviereDuAbis.png',
+  flameCaptain: 'assets/units/flameCaptain.png',
   wardensOfMontfort: 'assets/units/wardensOfMontfort.png',
   royalPegasusKnights: 'assets/units/royalPegasusKnights.png',
   royalHippogryphKnights: 'assets/units/royalHippogryphKnights.png',
@@ -1967,6 +1973,7 @@ const unitImages = {
   chilfroy: 'assets/portraits/chilfroy.png',
   adalhard: 'assets/portraits/adalhard.png',
   cassyon: 'assets/portraits/cassyon.png',
+  mogen: 'assets/portraits/mogen.png',
   // Héros légendaires Bretonnia (mod Mixu) : Donna Don Domingio (champion des
   // Knights of Origo de Sir John), Amalric de Gaudaron (Fléau des Morts-Vivants).
   donnaDonDomingio: 'assets/portraits/donnaDonDomingio.png',
