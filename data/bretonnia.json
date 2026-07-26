@@ -389,5 +389,203 @@
       "magic": "Pas de lanceur de sorts dédié : la compagnie mise sur la foi des Pèlerins (War Psalms), le savoir du Scholar et l'artillerie. Le Warden apporte le lien avec la magie des forêts sylvaines.",
       "note": "C'est la fiche la plus atypique de Bretonnia : une <strong>horde</strong> nomade qui ne dépend pas des provinces, où Pèlerins et Artillerie échappent à l'Économie Paysanne (faction) — donc pas de plafond paysan pour reconstituer les pertes. La mobilité maritime (aucune attrition, trajets instantanés par Voies Maritimes, débarquement Mist Landing, faction) permet de frapper n'importe quelle côte du monde, et la <strong>Treasure Tent</strong> convertit la Chevalerie en reliques puissantes via l'arbre technologique. Monte tes Pèlerins et ton artillerie au <strong>rang 7</strong> pour déclencher les deux gros bonus du seigneur (+30 d'armure, +15 de rechargement) : c'est le seuil qui transforme cette horde en machine de siège itinérante."
     }
+  },
+  {
+    "id": "hagen",
+    "numeral": "XIII",
+    "name": "Hagen de Gisoreux",
+    "epithet": "Duc de Gisoreux",
+    "wikiUrl": "",
+    "faction": "Gisoreux",
+    "seal": "hagen",
+    "portraitImage": "assets/portraits/hagen.png",
+    "lore": "<p>Le <strong>Duc Hagen</strong> vit selon les idéaux d'honneur et de chevalerie, et façonne par son exemple la conduite du peuple de Gisoreux. Même face aux ténèbres et aux horreurs surnaturelles qui rôdent aux marches du duché, les Gisoreusiens demeurent inébranlables.</p>\n      <p>Sa foi est telle qu'il peut dépenser sa Chevalerie pour <strong>invoquer des chevaliers bretonniens</strong> en pleine bataille : là où d'autres ducs comptent leurs lances, Hagen fait surgir des renforts de la seule force de son idéal. Faction ajoutée par le mod « Bretonnian Dukes ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Hagen peut dépenser de la <strong>Chevalerie pour invoquer des unités de Chevaliers bretonniens</strong></div>\n        <div class=\"attr-item\">Points d'Allégeance gagnés : <strong>+50%</strong> pour les alliances avec la Bretonnie</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+10</strong> avec la Bretonnie</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-25</strong> avec les Comtes Vampires</div>\n        <div class=\"attr-item\">Capacité de recrutement local : <strong>+1</strong> (toutes les provinces)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Holy Wardens of La Maisontaal (Battle Pilgrims)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Hagen démarre avec <strong>tous les Vœux Chevaleresques débloqués</strong></div>\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Entretien : <strong>-10%</strong> pour les unités de Chevaliers (armée du seigneur)</div>\n        <div class=\"attr-item\">Bonus de charge : <strong>+10%</strong> pour les unités de Chevaliers (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Hagen de Gisoreux, mod Bretonnian Dukes).</div>\n    ",
+    "build": {
+      "role": "Chevalerie classique renforcée bâtie autour des effets confirmés de Hagen : une charge de Chevaliers moins chère (-10% d'entretien) et plus violente (+10% de charge, seigneur), doublée par la mécanique d'invocation de chevaliers via la Chevalerie (faction) — avec les Holy Wardens of La Maisontaal en régiment favori (+1 capacité, faction) et le renfort du héros légendaire Fastric Ghoulslayer contre les morts-vivants (-25 diplo Comtes Vampires, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "hagen", "name": "Hagen de Gisoreux", "qty": 1, "note": "Le duc inébranlable — démarre avec tous les Vœux Chevaleresques débloqués et gagne +4 de Chevalerie par tour (seigneur), qu'il peut dépenser pour invoquer des chevaliers en pleine bataille (faction) : sa réserve de Chevalerie est littéralement une réserve de troupes"},
+      "heroes": [
+        {"icon": "fastric", "name": "Fastric Ghoulslayer (Héros Légendaire)", "qty": 1, "note": "Le Tueur de Goules (mod Bretonnian Dukes) — chevalier légendaire spécialiste des morts-vivants, tout indiqué face aux Comtes Vampires que Gisoreux a en horreur (-25 de relations, faction)"},
+        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Life ou Beasts — soins et Wyssan's Wildform qui accompagnent la charge et maintiennent la ligne de pèlerins"}
+      ],
+      "army": [
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "-10% d'entretien et +10% de bonus de charge (seigneur) — le cœur de la chevalerie de Gisoreux"},
+        {"icon": "questingKnights", "name": "Questing Knights", "qty": 2, "note": "Mêmes bonus de Chevaliers (seigneur) — anti-infanterie lourde à deux mains"},
+        {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "Mêmes bonus (seigneur) — l'élite bénie par la Dame, marteau final des charges"},
+        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 1, "note": "Mêmes bonus (seigneur) — charge bon marché, renforcée par le +1 de recrutement local (faction)"},
+        {"icon": "holyWardensMaisontaal", "name": "Holy Wardens of La Maisontaal (Battle Pilgrims)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — pèlerins d'élite de l'abbaye, ancre de mêlée fanatique"},
+        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 2, "note": "Piétaille de foi qui tient le centre pendant que les chevaliers manœuvrent"},
+        {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants (mêmes bonus, seigneur) — frappent l'artillerie et les nécromanciens"},
+        {"icon": "trebuchet", "name": "Trébuchet", "qty": 2, "note": "Artillerie à zone d'effet — brise les blocs avant la charge"}
+      ],
+      "magic": "Hagen n'est pas un lanceur de sorts : sa Chevalerie tient lieu de ressource magique, convertie en chevaliers invoqués (faction). La Damsel couvre le soutien (Life ou Beasts).",
+      "note": "La mécanique clé est l'<strong>invocation de chevaliers par la Chevalerie</strong> (faction) : avec +4 de Chevalerie par tour (seigneur) et tous les Vœux débloqués d'emblée, Hagen accumule vite de quoi faire surgir des renforts au moment décisif — une armée de 20 unités qui en vaut davantage. Le +1 de capacité de recrutement local (faction) accélère la levée des lances, et le -10% d'entretien (seigneur) permet de tenir plusieurs armées de chevaliers. Cap sur la Sylvanie : les -25 de relations avec les Comtes Vampires (faction) et Fastric Ghoulslayer en héros orientent naturellement la campagne contre les morts-vivants."
+    }
+  },
+  {
+    "id": "folcard",
+    "numeral": "XIV",
+    "name": "Folcard de Montfort",
+    "epithet": "Duc de Montfort",
+    "wikiUrl": "",
+    "faction": "Montfort",
+    "seal": "folcard",
+    "portraitImage": "assets/portraits/folcard.png",
+    "lore": "<p>Mené par le <strong>Duc Folcard</strong>, le rude duché de Montfort défend farouchement ses terres contre les raids peaux-vertes, s'appuyant sur des montagnards aguerris et un réseau de tours à signaux pour protéger son peuple.</p>\n      <p>Accroché aux cols des Montagnes Grises, Montfort vit du fer, des gemmes et de l'or arrachés à la roche — et de l'acier que ses forges tirent des mines pour améliorer armes, boucliers et armures. Fait rare pour un duc bretonnien, Folcard délaisse les montures traditionnelles au profit d'<strong>armes variées</strong> maniées à pied. Faction ajoutée par le mod « Bretonnian Dukes ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Climat adapté : <strong>Montagne</strong></div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-50</strong> avec les Peaux-Vertes</div>\n        <div class=\"attr-item\">Les mines de fer génèrent passivement de l'<strong>Acier</strong>, utilisable pour améliorer vos unités (armes, boucliers, armures) plus puissantes</div>\n        <div class=\"attr-item\">Les garnisons des colonies mineures sont remplacées par des <strong>Tours à Signaux</strong>, réduisant le temps de renfort et augmentant la portée de renfort dans la région</div>\n        <div class=\"attr-item\">Immunisé à l'attrition de Montagne (toutes les armées)</div>\n        <div class=\"attr-item\">Revenu des Mines de Fer, de Gemmes et d'Or : <strong>+10%</strong> (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Régiment favori : attribut <strong>« Woodsman »</strong> (traverse les arbres) et <strong>+2 capacité</strong> pour les Wardens of Montfort (Mounted Yeomen)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Folcard a accès à différents <strong>choix d'armes</strong> au lieu des montures bretonniennes traditionnelles</div>\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Contrôle : <strong>+3</strong> (province locale)</div>\n        <div class=\"attr-item\">Entretien : <strong>-20%</strong> pour les unités d'Infanterie (armée du seigneur)</div>\n        <div class=\"attr-item\">Défense au corps-à-corps : <strong>+6</strong> pour les unités de Paysans (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Folcard de Montfort, mod Bretonnian Dukes) + tooltip de l'attribut « Woodsman ».</div>\n    ",
+    "build": {
+      "role": "Armée de montagne bâtie autour des effets confirmés de Folcard : une infanterie bon marché (-20% d'entretien) et des paysans solides (+6 de défense en mêlée, seigneur) qui tiennent les cols, avec les Wardens of Montfort en régiment favori (+2 capacité et attribut Woodsman, faction) pour patrouiller bois et hauteurs — le tout financé et équipé par les mines (Acier, +10% de revenu minier, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "folcard", "name": "Folcard de Montfort", "qty": 1, "note": "Le duc montagnard qui combat à pied avec des armes variées plutôt qu'en selle (seigneur) — son immunité à l'attrition de Montagne (faction) et son +3 de Contrôle local en font le gardien inamovible des cols des Montagnes Grises"},
+      "heroes": [
+        {"icon": "jerrod", "name": "Jerrod d'Asareux (Héros Légendaire)", "qty": 1, "note": "Chevalier légendaire (mod Bretonnian Dukes) — duelliste de renom qui apporte à cette armée d'infanterie la pointe chevaleresque qui lui manque"},
+        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform sur les Wardens et l'infanterie, idéal pour une armée qui mise sur la piétaille"}
+      ],
+      "army": [
+        {"icon": "wardensOfMontfort", "name": "Wardens of Montfort (Mounted Yeomen)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires, avec l'attribut Woodsman (traverse les arbres, faction) — les patrouilleurs montés du duché, rois du terrain accidenté"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 3, "note": "-20% d'entretien (seigneur) et +6 de défense en mêlée pour les paysans (seigneur) — un mur bien plus tenace que la piétaille bretonnienne standard, encore renforcé par l'Acier des mines (faction)"},
+        {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 3, "note": "Mêmes bonus infanterie/paysans (seigneur) — anti-cavalerie qui bloque les charges peaux-vertes dans les défilés"},
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 3, "note": "Mêmes bonus (seigneur) — tir de position depuis les hauteurs, l'ossature de la défense des cols"},
+        {"icon": "footSquires", "name": "Foot Squires", "qty": 2, "note": "Infanterie d'élite à -20% d'entretien (seigneur) — la réserve de choc qui contre-attaque quand la ligne paysanne tient"},
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 1, "note": "La cavalerie du duché, en nombre limité — Montfort mise sur ses montagnards, pas sur ses lances"},
+        {"icon": "trebuchet", "name": "Trébuchet", "qty": 2, "note": "Artillerie qui domine les vallées depuis les positions élevées"}
+      ],
+      "magic": "Folcard n'est pas un lanceur de sorts : sa force est l'acier de ses mines et la discipline de ses montagnards. La Damsel (Lore of Beasts) est le seul appui magique.",
+      "note": "C'est la fiche bretonnienne la plus « infanterie » du site : le -20% d'entretien sur l'infanterie et le +6 de défense en mêlée des paysans (seigneur) permettent d'aligner une armée de piétaille qui tient réellement, chose rare en Bretonnie. Exploite l'<strong>Acier</strong> des mines de fer (faction) pour améliorer armes, boucliers et armures — c'est le multiplicateur central de la faction — et les <strong>Tours à Signaux</strong> (faction) qui remplacent les garnisons mineures pour faire converger tes armées plus vite. Guerre inévitable avec les Peaux-Vertes (-50 de relations, faction) : les Wardens Woodsman (faction) traqueront les raids jusque dans les bois."
+    }
+  },
+  {
+    "id": "tancred",
+    "numeral": "XV",
+    "name": "Tancred II de Quenelles",
+    "epithet": "Duc de Quenelles",
+    "wikiUrl": "",
+    "faction": "Quenelles",
+    "seal": "tancred",
+    "portraitImage": "assets/portraits/tancred.png",
+    "lore": "<p>Avec l'aide des <strong>Compagnons de Quenelles</strong>, une force d'élite composée des plus grands chevaliers de Bretonnie, le <strong>Duc Tancred II</strong> mène son peuple contre les envahisseurs peaux-vertes, les cultes vampiriques et les serviteurs du Chaos.</p>\n      <p>Quenelles est un duché assiégé de toutes parts, et Tancred II a fait de sa cour un vivier de Paladins : nulle part ailleurs en Bretonnie on ne trouve autant de champions rassemblés sous une même bannière. Faction ajoutée par le mod « Bretonnian Dukes ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-50</strong> avec les Peaux-Vertes</div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-50</strong> avec les Comtes Vampires</div>\n        <div class=\"attr-item\">Capacité de héros : <strong>+2</strong> pour les Paladins</div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+2</strong> pour les Paladins</div>\n        <div class=\"attr-item\">Entretien : <strong>-50%</strong> pour les Héros Paladins</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour The Companions of Quenelles (Questing Knights)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Tancred II démarre avec <strong>tous les Vœux Chevaleresques débloqués</strong></div>\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+2</strong> pour les Grail Knights, Grail Guardians et Grail Reliquae (armée du seigneur)</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Grail Knights, Grail Guardians et Grail Reliquae (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Tancred II de Quenelles, mod Bretonnian Dukes).</div>\n    ",
+    "build": {
+      "role": "Armée du Graal bâtie autour des effets confirmés de Tancred II : un cœur d'unités du Graal d'emblée vétéranes et bon marché (+2 rangs de recrutement, -25% d'entretien, seigneur), escorté d'une cour de Paladins recrutés en nombre à moitié prix (+2 capacité, +2 rangs, -50% d'entretien, faction) et mené par les Companions of Quenelles en régiment favori (+1 capacité, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "tancred", "name": "Tancred II de Quenelles", "qty": 1, "note": "Le duc assiégé de toutes parts — démarre avec tous les Vœux Chevaleresques débloqués (seigneur) et transforme sa cour en vivier de champions : ses Paladins coûtent moitié moins cher et arrivent d'emblée aguerris (faction)"},
+      "heroes": [
+        {"icon": "calard", "name": "Calard de Garamont (Héros Légendaire)", "qty": 1, "note": "Chevalier du Graal légendaire (mod Bretonnian Dukes) — le plus fameux des compagnons, couvert par le -50% d'entretien des Paladins (faction) : un duelliste d'élite à prix réduit"},
+        {"icon": "paladin", "name": "Paladin", "qty": 2, "note": "Capacité de héros +2, rang de recrutement +2 et entretien -50% (faction) — la signature de Quenelles : une cour de champions vétérans que nul autre duché ne peut se payer"}
+      ],
+      "army": [
+        {"icon": "grailKnights", "name": "Grail Knights", "qty": 3, "note": "+2 rangs de recrutement et -25% d'entretien (seigneur) — l'élite bénie de la Dame, d'emblée vétérane et abordable"},
+        {"icon": "grailGuardians", "name": "Grail Guardians", "qty": 2, "note": "Mêmes bonus du Graal (seigneur) — infanterie sacrée qui ancre le centre là où la cavalerie ne peut tenir"},
+        {"icon": "grailReliquae", "name": "Grail Reliquae", "qty": 1, "note": "Mêmes bonus (seigneur) — la relique portée qui galvanise l'armée et les pèlerins"},
+        {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — la force d'élite des plus grands chevaliers de Bretonnie, fer de lance du duché"},
+        {"icon": "questingKnights", "name": "Questing Knights", "qty": 2, "note": "Chevaliers en quête à deux mains — anti-infanterie lourde en complément des Compagnons"},
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 3, "note": "La cavalerie de ligne qui fournit le volume de charge autour des unités du Graal"},
+        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 1, "note": "Escorte fanatique des Reliquae — piétaille qui protège les reliques"},
+        {"icon": "trebuchet", "name": "Trébuchet", "qty": 2, "note": "Artillerie de siège contre les hordes vertes et les armées mortes-vivantes"}
+      ],
+      "magic": "Pas de lanceur dédié : Quenelles mise sur les Paladins et la bénédiction du Graal plutôt que sur les Damsels. Le +4 de Chevalerie par tour (seigneur) entretient la Bénédiction de la Dame sur toute l'armée.",
+      "note": "La signature de Tancred II est sa <strong>cour de Paladins</strong> : +2 de capacité de héros, +2 de rang de recrutement et surtout <strong>-50% d'entretien</strong> (faction) permettent d'entretenir une escouade de champions que personne d'autre ne peut se payer — associe-les à Calard de Garamont pour saturer le champ de bataille de duellistes. Côté troupes, tout le trio du Graal (Knights, Guardians, Reliquae) arrive à +2 rangs et -25% d'entretien (seigneur) : c'est l'armée bretonnienne la plus « élite » du site. Deux fronts imposés : Peaux-Vertes et Comtes Vampires (-50 chacun, faction)."
+    }
+  },
+  {
+    "id": "taubert",
+    "numeral": "XVI",
+    "name": "Taubert de L'Anguille",
+    "epithet": "Duc de L'Anguille",
+    "wikiUrl": "",
+    "faction": "L'Anguille",
+    "seal": "taubert",
+    "portraitImage": "assets/portraits/taubert.png",
+    "lore": "<p><strong>Taubert de L'Anguille</strong> fut jadis un marin, mais il n'a plus posé le pied sur un navire ni même revu la mer depuis son retour de Quête du Graal, il y a plus de quinze ans. Il utilise désormais le Château de Grasgar comme base d'expéditions menées au plus profond de la <strong>Forêt d'Arden</strong>, avec un objectif : débarrasser ces terres des Hommes-Bêtes.</p>\n      <p>Duc d'un port prospère devenu chasseur de bois, Taubert incarne un paradoxe bretonnien — sa richesse vient des quais, sa gloire vient des sous-bois. Faction ajoutée par le mod « Bretonnian Dukes ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Relations diplomatiques : <strong>-80</strong> avec les Hommes-Bêtes</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-25%</strong> pour les Ports (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Temps de construction : <strong>-1</strong> pour les Ports (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Immunisé à l'attrition des Tempêtes et des Récifs (toutes les armées)</div>\n        <div class=\"attr-item\">Revenu des Ports : <strong>+15%</strong> (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Beastslayers of Bastonne (Foot Squires)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Force des armes : <strong>+15%</strong> en attaque (armée du seigneur)</div>\n        <div class=\"attr-item\">Taille de l'aura de Commandement : <strong>+50%</strong> en attaque (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut <strong>« Woodsman »</strong> (traverse les arbres) en combattant les Hommes-Bêtes (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Taubert de L'Anguille, mod Bretonnian Dukes) + tooltips « Woodsman » et « Aura ».</div>\n    ",
+    "build": {
+      "role": "Expédition forestière bâtie autour des effets confirmés de Taubert : une armée d'attaque (+15% de force des armes et aura de Commandement élargie de moitié en attaque, seigneur) capable de traverser les arbres face aux Hommes-Bêtes (Woodsman, seigneur), menée par les Beastslayers of Bastonne en régiment favori (+1 capacité, faction) et financée par les ports de L'Anguille (+15% de revenu, faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "taubert", "name": "Taubert de L'Anguille", "qty": 1, "note": "Le marin devenu chasseur de bois — en attaque, son armée frappe 15% plus fort et son aura de Commandement couvre 50% plus large (seigneur) ; contre les Hommes-Bêtes, tous ses hommes traversent les arbres (Woodsman, seigneur), annulant l'avantage de terrain des warherds"},
+      "heroes": [
+        {"icon": "jerrod", "name": "Jerrod d'Asareux (Héros Légendaire)", "qty": 1, "note": "Chevalier légendaire (mod Bretonnian Dukes) — duelliste aguerri des expéditions forestières, il porte la charge dans les clairières où la cavalerie peut encore manœuvrer"},
+        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform sur les Beastslayers et Amber Spear contre les monstres des warherds"}
+      ],
+      "army": [
+        {"icon": "beastslayersOfBastonne", "name": "Beastslayers of Bastonne (Foot Squires)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — infanterie d'élite spécialisée dans la chasse aux Hommes-Bêtes, cœur thématique de l'expédition"},
+        {"icon": "footSquires", "name": "Foot Squires", "qty": 3, "note": "Infanterie lourde à pied — la véritable ligne de bataille sous les frondaisons, là où les lances ne passent pas"},
+        {"icon": "questingKnights", "name": "Questing Knights", "qty": 3, "note": "Chevaliers en quête à deux mains — parfaits contre les Minotaures et l'infanterie lourde bestiale, portés par le +15% de force des armes en attaque (seigneur)"},
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 3, "note": "Cavalerie de charge pour les clairières et les lisières, avec l'attribut Woodsman contre les Hommes-Bêtes (seigneur)"},
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 3, "note": "Tir de harcèlement — érode les hordes bestiales avant qu'elles n'atteignent la ligne"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Écran de piétaille qui protège les archers dans les sous-bois"},
+        {"icon": "trebuchet", "name": "Trébuchet", "qty": 2, "note": "Artillerie qui pilonne les campements et les troupeaux massés"}
+      ],
+      "magic": "Taubert n'est pas un lanceur de sorts — sa force est la traque et l'assaut. La Damsel (Lore of Beasts) est l'unique appui magique, idéalement tournée contre les monstres des warherds.",
+      "note": "Une armée conçue pour <strong>attaquer</strong> : les deux gros bonus du seigneur (+15% de force des armes, aura de Commandement +50%) ne s'appliquent qu'en attaque — ne subis pas les Hommes-Bêtes, traque-les. L'attribut <strong>Woodsman</strong> contre les Bêtes (seigneur) annule leur avantage de terrain dans la Forêt d'Arden, et le -80 de relations (faction) garantit la guerre totale. Côté économie, tout repose sur les <strong>ports</strong> (-25% de coût, -1 tour de construction, +15% de revenu, faction) : L'Anguille finance ses expéditions terrestres avec l'argent de la mer, sans jamais reprendre la mer. Note : sur le site, Khazrak le Borgne (Hommes-Bêtes I) et Boris Todbringer (Empire XIV) partagent cette même guerre des bois."
+    }
+  },
+  {
+    "id": "theodoric",
+    "numeral": "XVII",
+    "name": "Theodoric de Brionne",
+    "epithet": "Duc de Brionne",
+    "wikiUrl": "",
+    "faction": "Brionne",
+    "seal": "theodoric",
+    "portraitImage": "assets/portraits/theodoric.png",
+    "lore": "<p>Le <strong>Duc Theodoric de Brionne</strong> n'est pas seulement un guerrier féroce : c'est aussi un connaisseur de littérature, de poésie et de musique. Sous ses airs de duc lettré, il cherche avant tout la rédemption pour ses transgressions et les erreurs de son passé.</p>\n      <p>Brionne, duché des vignes et des tavernes, guérit ses hommes autant par le vin que par la prière — et Theodoric lui-même trouve dans ses domaines viticoles de quoi laver les traits les plus sombres de son caractère. Faction ajoutée par le mod « Bretonnian Dukes ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Theodoric a une chance de <strong>supprimer ses traits négatifs</strong> en terminant son tour dans une région dotée d'une Taverne ou d'un bâtiment de Vin</div>\n        <div class=\"attr-item\">Coût de construction : <strong>-10%</strong> pour les bâtiments de Taverne et de Vin (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Rang de recrutement : <strong>+2</strong> pour les Knights of the Realm et Questing Knights (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : attribut <strong>« Immunisé à la Psychologie »</strong> (immunité à la Peur et à la Terreur) pour tous les Régiments de Renom chevaleresques</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Knights of the Realm et Questing Knights (armée du seigneur)</div>\n        <div class=\"attr-item\">Attribut <strong>« Devastating Flanker »</strong> pour les Knights of the Realm et Questing Knights (armée du seigneur) — double le bonus de charge en attaquant le flanc ou l'arrière d'une unité</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Theodoric de Brionne, mod Bretonnian Dukes) + tooltips « Immune to Psychology » et « Devastating Flanker ».</div>\n    ",
+    "build": {
+      "role": "Manœuvre de flanc bâtie autour des effets confirmés de Theodoric : une masse de Knights of the Realm et Questing Knights d'emblée vétérans (+2 rangs, faction), bon marché (-25% d'entretien) et surtout dotés de <strong>Devastating Flanker</strong> (double bonus de charge sur les flancs et l'arrière, seigneur) — épaulée par tous les Régiments de Renom chevaleresques rendus immunisés à la Psychologie (faction)",
+      "totalSlots": 20,
+      "lord": {"icon": "theodoric", "name": "Theodoric de Brionne", "qty": 1, "note": "Le duc lettré en quête de rédemption — sa signature est le Devastating Flanker accordé à ses Knights of the Realm et Questing Knights (seigneur) : chaque charge doit viser un flanc ou un dos, jamais un front"},
+      "heroes": [
+        {"icon": "iselda", "name": "Iselda (Héroïne Légendaire)", "qty": 1, "note": "Damsel du Graal légendaire (mod Bretonnian Dukes) — la magie de la Dame au service de Brionne, elle prépare les cibles que la cavalerie viendra prendre de flanc"},
+        {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Champion de mêlée qui accompagne les charges de flanc et tient la ligne quand la cavalerie ressort"}
+      ],
+      "army": [
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "+2 rangs de recrutement (faction), -25% d'entretien et surtout <strong>Devastating Flanker</strong> (seigneur) — leur charge de flanc compte double : le cœur tactique de Brionne"},
+        {"icon": "questingKnights", "name": "Questing Knights", "qty": 3, "note": "Mêmes bonus complets (faction/seigneur) — Devastating Flanker sur des attaques à deux mains, dévastateur contre l'infanterie lourde prise à revers"},
+        {"icon": "knightsRealmRoR", "name": "Knights of the Realm (Régiment de Renom)", "qty": 1, "note": "Régiment favori : immunisé à la Psychologie (faction) — ne rompt jamais, même face aux morts-vivants et aux monstres terrifiants"},
+        {"icon": "knightsErrantRoR", "name": "Knights Errant (Régiment de Renom)", "qty": 1, "note": "Même immunité psychologique (faction) — charge impétueuse que rien n'effraie"},
+        {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "L'élite bénie de la Dame — marteau final une fois l'ennemi désorganisé par les charges de flanc"},
+        {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants — prennent l'artillerie et les casters à revers, dans l'esprit de flanquement de la faction"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Enclume qui fixe l'ennemi de face — indispensable pour que les chevaliers puissent le prendre de flanc"},
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 1, "note": "Tir qui force l’ennemi à s’engager sur l’enclume, exposant ses flancs"},
+        {"icon": "trebuchet", "name": "Trébuchet", "qty": 1, "note": "Artillerie qui désorganise les formations avant l'encerclement"}
+      ],
+      "magic": "Iselda (Damsel du Graal légendaire) porte seule la magie de la Dame — soins et débuffs pour préparer les charges. Theodoric, lui, combat et lit de la poésie.",
+      "note": "Tout tourne autour du <strong>Devastating Flanker</strong> (seigneur) : ne charge jamais de face avec les Knights of the Realm et Questing Knights — fixe l'ennemi avec les Men-at-Arms, contourne, et frappe le flanc ou l'arrière pour doubler le bonus de charge. Les <strong>Régiments de Renom chevaleresques</strong> deviennent tous immunisés à la Psychologie (faction), ce qui en fait des unités de choix face aux morts-vivants terrifiants. En campagne, pense à finir les tours de Theodoric dans une région à Taverne ou Vin (faction) : c'est la mécanique qui efface ses traits négatifs — et le -10% de coût de ces bâtiments (faction) rend le réseau facile à bâtir."
+    }
+  },
+  {
+    "id": "armand",
+    "numeral": "XVIII",
+    "name": "Armand d'Aquitaine",
+    "epithet": "Duc d'Aquitaine, Champion de la Dame",
+    "wikiUrl": "",
+    "faction": "Aquitaine",
+    "seal": "armand",
+    "portraitImage": "assets/portraits/armand.png",
+    "lore": "<p>Après la mort de son frère aîné, <strong>Armand</strong> fut déclaré héritier d'Aquitaine par le Roi Louen lui-même. Sous la <strong>Bannière sacrée de la Dame du Lac</strong>, le jeune Duc combat désormais pour mériter cet honneur qu'il n'a pas choisi.</p>\n      <p>Porte-bannière autant que guerrier, Armand incarne l'idéal du chevalier errant devenu duc : sa présence galvanise les jeunes lances d'Aquitaine, qui chargent sans jamais connaître la peur. Faction ajoutée par le mod « Bretonnian Dukes ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Rang de recrutement des Seigneurs : <strong>+2</strong></div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les Knights Errant et Knights of the Realm (toutes les armées)</div>\n        <div class=\"attr-item\">Régiment favori : capacité <strong>« Impetuous »</strong> pour tous les Régiments de Renom chevaleresques — Augment de zone (35m, 30s) accordant l'<strong>Immunité à la Psychologie</strong> aux alliés, actif tant que l'unité charge</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Armand démarre avec <strong>tous les Vœux Chevaleresques débloqués</strong></div>\n        <div class=\"attr-item\">Chevalerie : <strong>+4</strong> par tour</div>\n        <div class=\"attr-item\">Effet d'aura de Commandement du personnage : <strong>+5</strong></div>\n        <div class=\"attr-item\">Capacité passive \"The Lady's Champion\" (Régénération, 1 utilisation) — <strong>Soin par seconde : +0,10%</strong> des PV, durée illimitée, actif tant que le Commandement n'est pas rompu</div>\n        <div class=\"attr-item\">Attribut <strong>« Immunisé à la Psychologie »</strong> pour les Knights Errant et Knights of the Realm (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Armand d'Aquitaine, mod Bretonnian Dukes) + tooltips « Impetuous », « The Lady's Champion » et « Aura ».</div>\n    ",
+    "build": {
+      "role": "Charge sans peur bâtie autour des effets confirmés d'Armand : une masse de Knights Errant et Knights of the Realm à -25% d'entretien (faction) rendus <strong>immunisés à la Psychologie</strong> (seigneur) — donc incapables de rompre — soutenus par les Régiments de Renom chevaleresques qui diffusent « Impetuous » en chargeant (faction) et par l'aura de Commandement renforcée du Champion de la Dame (+5, seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "armand", "name": "Armand d'Aquitaine", "qty": 1, "note": "Le jeune duc porte-bannière — démarre avec tous les Vœux débloqués, régénère ses PV en continu tant que son moral tient (The Lady's Champion, seigneur) et diffuse une aura de Commandement renforcée de +5 (seigneur) : garde-le au centre de la ligne de charge"},
+      "heroes": [
+        {"icon": "calard", "name": "Calard de Garamont (Héros Légendaire)", "qty": 1, "note": "Chevalier du Graal légendaire (mod Bretonnian Dukes) — champion errant devenu compagnon d'Aquitaine, il ajoute un duelliste d'élite à la charge"},
+        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Life — soins qui prolongent la régénération d'Armand et maintiennent la Bénédiction sur la cavalerie"}
+      ],
+      "army": [
+        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 4, "note": "-25% d'entretien (faction) et <strong>Immunisés à la Psychologie</strong> (seigneur) — les jeunes lances impétueuses d'Aquitaine, incapables de fuir : le cœur bon marché de la charge"},
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 3, "note": "Mêmes bonus (faction/seigneur) — cavalerie de ligne aguerrie qui ne rompt jamais"},
+        {"icon": "knightsErrantRoR", "name": "Knights Errant (Régiment de Renom)", "qty": 1, "note": "Régiment favori : diffuse « Impetuous » en chargeant (faction) — accorde l'Immunité à la Psychologie à tous les alliés dans 35m, y compris ceux qui ne l'ont pas nativement"},
+        {"icon": "knightsRealmRoR", "name": "Knights of the Realm (Régiment de Renom)", "qty": 1, "note": "Même capacité « Impetuous » (faction) — un second relais d'immunité au moral au cœur de la mêlée"},
+        {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "L'élite bénie de la Dame — marteau final de la charge, sous la Bannière sacrée"},
+        {"icon": "questingKnights", "name": "Questing Knights", "qty": 2, "note": "Chevaliers à deux mains — anti-infanterie lourde en complément des lances"},
+        {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants — frappent l'artillerie et les casters pendant que la cavalerie enfonce"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Enclume minimale qui fixe l'ennemi le temps de la manœuvre"},
+        {"icon": "trebuchet", "name": "Trébuchet", "qty": 1, "note": "Artillerie qui désorganise les formations avant l'impact"}
+      ],
+      "magic": "Armand n'est pas un lanceur de sorts — sa force est la bannière et l'exemple. La Damsel (Lore of Life) est le seul appui magique, en synergie directe avec la régénération du Champion de la Dame.",
+      "note": "L'armée entière est <strong>immunisée à la peur</strong> : Knights Errant et Knights of the Realm le sont nativement (seigneur), et les deux Régiments de Renom diffusent « Impetuous » à 35m en chargeant (faction) pour couvrir le reste. Contre les morts-vivants terrifiants et les monstres, c'est une armée qui ne rompt tout simplement pas. Le -25% d'entretien sur les deux unités de base (faction, <strong>toutes les armées</strong>) et le +2 de rang de recrutement des Seigneurs permettent de multiplier les armées de cavalerie à moindre coût — Aquitaine est la faction bretonnienne la plus adaptée à une expansion rapide sur plusieurs fronts."
+    }
   }
 ]
