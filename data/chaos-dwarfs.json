@@ -15,7 +15,7 @@
       "totalSlots": 20,
       "lord": {"icon": "astragoth", "name": "Astragoth Ironhand", "qty": 1, "note": "Sorcier redoutable (Burning Wrath, Ash Storm, Hell Hammer...) — sa capacité Mechanical Overdrive (seigneur) le rend de plus en plus meurtrier à chaque kill qu'il inflige (jusqu'à +15% de dégâts d'arme et +8 d'attaque en mêlée à 100 kills), et son +5% de reconstitution des pertes (seigneur) le rend difficile à user sur la durée"},
       "heroes": [
-        {"icon": "sorcererProphet", "name": "Sorcerer-Prophet", "qty": 2, "note": "Renfort de sorts (Hashut/Fire/Metal/Death selon le choix) pour appuyer la magie d'Astragoth"}
+        {"icon": "daemonsmith", "name": "Daemonsmith Sorcerer (Hashut)", "qty": 2, "note": "Héros lanceurs de sorts — en <strong>Lore of Hashut</strong> pour appuyer la magie d’Astragoth (4 lores possibles : Hashut, Fire, Metal, Death). Le Sorcerer-Prophet, lui, est un type de seigneur, pas un héros"}
       ],
       "army": [
         {"icon": "bullCentaurRenders", "name": "Bull Centaur Renders", "qty": 5, "note": "Ward Save cumulé de 25% (+10% faction, +15% seigneur) — cavalerie lourde quasiment impossible à abattre"},
@@ -25,7 +25,7 @@
         {"icon": "hellcannon", "name": "Hellcannon", "qty": 2, "note": "Artillerie lourde pour percer les lignes ennemies à distance"},
         {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 1, "note": "Monstre de feu en réserve pour percer un point faible ou achever une unité affaiblie"}
       ],
-      "magic": "Astragoth maîtrise plusieurs Lores (Hashut, Fire, Death, Metal) : Burning Wrath et Ash Storm infligent des dégâts de zone tandis que les Sorcerer-Prophets multiplient les effets de soutien et de destruction.",
+      "magic": "Astragoth maîtrise plusieurs Lores (Hashut, Fire, Death, Metal) : Burning Wrath et Ash Storm infligent des dégâts de zone tandis que les Daemonsmith Sorcerers multiplient les effets de soutien et de destruction.",
       "note": "Le +10% d'Influence de Conclave et le Contrôle +2 dans toutes les provinces (faction) stabilisent l'empire pendant que cette armée mène ses campagnes ; le +10 de taux de recherche (faction) accélère l'accès aux technologies et unités avancées."
     }
   },
@@ -45,7 +45,7 @@
       "totalSlots": 20,
       "lord": {"icon": "drazhoath", "name": "Drazhoath the Ashen", "qty": 1, "note": "Sorcier puissant monté sur Cinderbreath (Bale Taurus) — sa capacité Dark Renown (seigneur) accorde +8 d'attaque en mêlée à toutes les unités alliées possédant l'attribut Contempt dans un rayon de 55m, et son +10% de portée de déplacement (seigneur) en fait un seigneur mobile qui frappe où l'ennemi s'y attend le moins"},
       "heroes": [
-        {"icon": "sorcererProphet", "name": "Sorcerer-Prophet", "qty": 1, "note": "Renfort de sorts en complément de Drazhoath"},
+        {"icon": "daemonsmith", "name": "Daemonsmith Sorcerer (Fire)", "qty": 1, "note": "Héros lanceur de sorts — en <strong>Lore of Fire</strong> pour accompagner le thème incandescent de Drazhoath (4 lores possibles : Hashut, Fire, Metal, Death)"},
         {"icon": "bullCentaurTaurruk", "name": "Bull Centaur Taur'ruk", "qty": 1, "note": "Renfort de mêlée robuste pour protéger la ligne de monstres et de tireurs"}
       ],
       "army": [
@@ -88,6 +88,72 @@
       ],
       "magic": "Zhatan n'est pas un lanceur de sorts — sa force vient du combat rapproché et de la puissance de feu massive de son artillerie, doublée par le -50% de coût de recrutement (faction).",
       "note": "Le +1 de Convois actifs maximum (faction) renforce l'économie de cette faction axée sur l'artillerie, tandis que le +15% de pertes capturées après bataille (seigneur) alimente en esclaves de travail les Hell-Forges. Utilise Sadistic Snare (2 charges seulement, 120s de rechargement) sur le seigneur ou héros ennemi le plus dangereux avant que l'artillerie ne l'achève à distance — une cible immobilisée et à -24 de défense en mêlée ne survit pas longtemps face à un Hellcannon."
+    }
+  },
+  {
+    "id": "abnagg",
+    "numeral": "IV",
+    "name": "Abnagg Hellbeard",
+    "epithet": "Labourfleet of Uzkulak",
+    "wikiUrl": "",
+    "faction": "Labourfleet of Uzkulak",
+    "seal": "abnagg",
+    "portraitImage": "assets/portraits/abnagg.png",
+    "lore": "<p><strong>Abnagg Hellbeard</strong> commande la Flotte-Labeur d'Uzkulak, le grand port des Nains du Chaos sur la Mer des Griffes. Là où les autres Seigneurs de Zharr-Naggrund bâtissent des forteresses de fer au cœur des Terres Sombres, Abnagg fait de la mer sa route et de ses navires ses convois d'esclaves.</p>\n      <p>Chapeau à large bord et griffe d'acier au poing, il traîne dans son sillage une armada de raids et un train de Démons de Fer roulants — la fusion du négrier et de l'ingénieur. Faction ajoutée par le mod « Derpy's Hashut Legendary Lords ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Portée de mouvement de campagne : <strong>+20%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Temps de construction : <strong>-3</strong> pour les Ports</div>\n        <div class=\"attr-item\">Revenu des Ports : <strong>+25%</strong> (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Capacité de recrutement local : <strong>+2</strong> (à l'échelle de la faction)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Revenu du pillage : <strong>+30%</strong></div>\n        <div class=\"attr-item\">Commandement : <strong>+5</strong> en combattant en mer (armée du seigneur)</div>\n        <div class=\"attr-item\">Capacité passive \"Hellbeard's Resolve\"</div>\n        <div class=\"attr-item\">Portée : <strong>+10%</strong> pour les unités Iron Daemon et Artillerie (armée du seigneur)</div>\n        <div class=\"attr-item\">Réduction du temps de rechargement : <strong>+10%</strong> pour les unités Iron Daemon et Artillerie (armée du seigneur)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Abnagg Hellbeard, mod Derpy's Hashut Legendary Lords).</div>\n    ",
+    "build": {
+      "role": "Train blindé de raid bâti autour des effets confirmés d'Abnagg : une batterie d'Iron Daemons et d'artillerie qui tire plus loin (+10% de portée) et plus vite (+10% de réduction de rechargement, seigneur), portée par une mobilité de campagne exceptionnelle (+20%, faction) et financée par les ports et le pillage (+25% et +30%, faction/seigneur)",
+      "totalSlots": 20,
+      "lord": {"icon": "abnagg", "name": "Abnagg Hellbeard", "qty": 1, "note": "Le maître de la Flotte-Labeur — ses Iron Daemons et son artillerie gagnent +10% de portée et +10% de cadence (seigneur), et son armée traverse la carte 20% plus vite (faction) : une batterie mobile qui frappe où l'ennemi ne l'attend pas"},
+      "heroes": [
+        {"icon": "daemonsmith", "name": "Daemonsmith Sorcerer (Metal)", "qty": 2, "note": "Ingénieurs-sorciers — la <strong>Lore of Metal</strong> est le meilleur choix ici : Enchanted Blades et Final Transmutation démultiplient une armée bâtie sur le tir et les machines (4 lores possibles : Hashut, Fire, Metal, Death)"},
+        {"icon": "gorduz", "name": "Gorduz Backstabber (Héros Légendaire)", "qty": 1, "note": "Le Khan hobgoblin du jeu de base, monté sur Loup Géant — il renforce les Hobgoblins de l'armée et colle parfaitement au style de raid rapide d'Abnagg (+30% de revenu du pillage, seigneur)"}
+      ],
+      "army": [
+        {"icon": "ironDaemon", "name": "Iron Daemon War Engine", "qty": 3, "note": "+10% de portée et +10% de cadence (seigneur) — le cœur roulant de la Flotte-Labeur, char blindé à canon qui avance en tirant"},
+        {"icon": "skullcracker", "name": "Skullcracker War Engine", "qty": 1, "note": "Variante broyeuse de l'Iron Daemon — enfonce les lignes que l'artillerie a désorganisées"},
+        {"icon": "dreadquakeMortar", "name": "Dreadquake Mortar", "qty": 2, "note": "Mortier servi par des esclaves : +10% de portée et de cadence (seigneur) — pilonne les formations et les murailles à distance de sécurité"},
+        {"icon": "magmaCannon", "name": "Magma Cannon", "qty": 2, "note": "Mêmes bonus d'artillerie (seigneur) — jet de magma qui fait fondre l'infanterie lourde"},
+        {"icon": "deathshrieker", "name": "Deathshrieker Rocket Launcher", "qty": 1, "note": "Roquettes hurlantes, également couvertes par les bonus d'artillerie (seigneur)"},
+        {"icon": "infernalGuardFireglaives", "name": "Infernal Guard Fireglaives", "qty": 2, "note": "Ligne de tir à poudre noire qui protège le train de machines"},
+        {"icon": "chaosDwarfWarriors", "name": "Chaos Dwarf Warriors", "qty": 2, "note": "Écran d’infanterie devant les canons — capacité de recrutement local +2 (faction) pour les remplacer vite"},
+        {"icon": "hobgoblinWolfRaiders", "name": "Hobgoblin Wolf Raiders", "qty": 2, "note": "Cavalerie légère de raid — harcèle et poursuit, en écho au +30% de revenu du pillage (seigneur)"},
+        {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 1, "note": "Créature de feu qui brise les lignes quand l'artillerie ne suffit pas"}
+      ],
+      "magic": "Abnagg n'est pas un lanceur de sorts — c'est un armateur et un artilleur. Les deux Daemonsmith Sorcerers apportent seuls la Lore of Hashut, en soutien du train de machines.",
+      "note": "Une faction <strong>maritime et mobile</strong>, unique chez les Nains du Chaos : +20% de portée de mouvement (faction), ports construits en 3 tours de moins et rapportant +25% (faction), pillage à +30% (seigneur). En bataille, tout repose sur les <strong>Iron Daemons et l'artillerie</strong> qui tirent 10% plus loin et 10% plus vite (seigneur) — avance le train de machines en tirant, protégé par les Fireglaives, et laisse les Wolf Raiders nettoyer les flancs. Le +2 de recrutement local (faction) permet de reconstituer les pertes n'importe où sur la côte."
+    }
+  },
+  {
+    "id": "ghorth",
+    "numeral": "V",
+    "name": "Ghorth the Cruel",
+    "epithet": "Servants of the Conclave",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Ghorth_the_Cruel",
+    "faction": "Servants of the Conclave",
+    "seal": "ghorth",
+    "portraitImage": "assets/portraits/ghorth.png",
+    "lore": "<p><strong>Ghorth le Cruel</strong> est l'un des Sorciers-Prophètes les plus influents du Conclave de Zharr-Naggrund. Là où d'autres cherchent la gloire au combat, Ghorth joue la politique de la Tour de Zharr : chaque Siège du Conclave acheté, chaque rival écrasé sous le poids de l'Influence, le rapproche du contrôle total de l'empire nain-du-chaos.</p>\n      <p>Couronné de cornes d'or et portant la hache incandescente de Hashut, il incarne l'autorité brute du Conclave — et son Aura de Domination fait plier les esprits comme les corps. Faction ajoutée par le mod « Derpy's Hashut Legendary Lords ».</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Réserve de Vents de Magie : <strong>+10</strong> par tour</div>\n        <div class=\"attr-item\">Coût en Influence du Conclave pour les Sièges de la Tour de Zharr : <strong>-10%</strong></div>\n        <div class=\"attr-item\">Contrôle : <strong>+3</strong> (toutes les provinces)</div>\n        <div class=\"attr-item\">Rang de recrutement des héros : <strong>+5</strong> pour les Daemonsmith Sorcerers (à l'échelle de la faction)</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités Bull Centaur Renders</div>\n        <div class=\"attr-item\">Entretien : <strong>-25%</strong> pour les unités Infernal Ironsworn</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Influence du Conclave gagnée de toutes sources : <strong>+10%</strong></div>\n        <div class=\"attr-item\">Relations diplomatiques : <strong>+20</strong> avec les Nains du Chaos</div>\n        <div class=\"attr-item\">Capacité passive \"Aura of Dominion\"</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Ghorth the Cruel, mod Derpy's Hashut Legendary Lords).</div>\n    ",
+    "build": {
+      "role": "Armée de prestige du Conclave bâtie autour des effets confirmés de Ghorth : un cœur de Bull Centaur Renders et d'Infernal Ironsworn à -25% d'entretien (faction), escorté de Daemonsmith Sorcerers recrutés d'emblée au rang 5 (faction) et porté par une réserve de Vents de Magie accrue (+10/tour, faction) — pendant que l'Influence du Conclave (+10%, seigneur) achète les Sièges de la Tour de Zharr",
+      "totalSlots": 20,
+      "lord": {"icon": "ghorth", "name": "Ghorth the Cruel", "qty": 1, "note": "Sorcier-Prophète du Conclave — son \"Aura of Dominion\" (seigneur) écrase le moral adverse, et hors bataille son +10% d'Influence de toutes sources cumulé au -10% de coût des Sièges (faction) fait de lui le vrai maître politique de Zharr-Naggrund"},
+      "heroes": [
+        {"icon": "daemonsmith", "name": "Daemonsmith Sorcerer (Hashut)", "qty": 2, "note": "Rang de recrutement +5 (faction) — d’emblée vétérans. Prends-les en <strong>Lore of Hashut</strong> pour accompagner Ghorth (Flames of Azgorh, Ash Storm) ; les 4 lores possibles sont Hashut, Fire, Metal et Death"},
+        {"icon": "barukh", "name": "Barukh the Contemptuous (Héros Légendaire)", "qty": 1, "note": "Héros légendaire nain du chaos (mod) — champion de mêlée qui ancre la ligne d'Infernal Ironsworn pendant que le conclave de Daemonsmiths brûle la réserve de Vents accrue (faction)"}
+      ],
+      "army": [
+        {"icon": "bullCentaurRenders", "name": "Bull Centaur Renders", "qty": 4, "note": "-25% d'entretien (faction) — cavalerie monstrueuse d'élite, le marteau de charge du Conclave à prix réduit"},
+        {"icon": "infernalIronsworn", "name": "Infernal Ironsworn", "qty": 4, "note": "-25% d'entretien (faction) — l'infanterie lourde d'élite qui ancre le centre, elle aussi bradée"},
+        {"icon": "theImmortalsIronsworn", "name": "The Immortals (Infernal Ironsworn)", "qty": 1, "note": "Régiment de Renom des Ironsworn — couvert par le même -25% d'entretien (faction), fer de lance de la ligne"},
+        {"icon": "infernalGuardFireglaives", "name": "Infernal Guard Fireglaives", "qty": 3, "note": "Tir à poudre noire qui couvre l'avance des Ironsworn"},
+        {"icon": "deathshrieker", "name": "Deathshrieker Rocket Launcher", "qty": 2, "note": "Artillerie à roquettes — désorganise l'ennemi avant la charge des Bull Centaurs"},
+        {"icon": "magmaCannon", "name": "Magma Cannon", "qty": 1, "note": "Jet de magma contre l'infanterie lourde adverse"},
+        {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 1, "note": "Créature de feu de Hashut — briseur de ligne enflammé au service du Conclave"}
+      ],
+      "magic": "Ghorth est un Sorcier-Prophète : avec ses trois Daemonsmiths d'emblée au rang 5 (faction) et une réserve de Vents à +10 par tour (faction), c'est l'armée nain-du-chaos la plus magique du site — Lore of Hashut en continu.",
+      "note": "Ghorth se joue autant sur la carte politique que sur le champ de bataille : le <strong>-10% de coût des Sièges de la Tour de Zharr</strong> (faction) combiné au <strong>+10% d'Influence de toutes sources</strong> (seigneur) permet de rafler les Sièges du Conclave bien plus vite que les autres Seigneurs, et le +20 de relations avec les Nains du Chaos (seigneur) sécurise le front intérieur. Militairement, exploite le double -25% d'entretien (Bull Centaur Renders et Infernal Ironsworn, faction) pour aligner une armée d'élite au prix d'une armée de ligne, et laisse les trois Daemonsmiths brûler la réserve de Vents accrue (+10/tour, faction)."
     }
   }
 ]
