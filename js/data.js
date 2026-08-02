@@ -2308,6 +2308,8 @@ const unitImages = {
   warCompass: 'assets/units/warCompass.png',
   shadowLantern: 'assets/units/shadowLantern.png',
   cathayMonk: 'assets/units/cathayMonk.png',
+  xianFeng: 'assets/units/xianFeng.png',
+  nanyeBunyo: 'assets/units/nanyeBunyo.png',
   syreen: 'assets/units/syreen.png',
   copsewight: 'assets/units/copsewight.png',
   bretonnianWight: 'assets/units/bretonnianWight.png',
