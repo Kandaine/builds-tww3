@@ -16,14 +16,15 @@
       "lord": {"icon": "settra", "name": "Settra the Imperishable", "qty": 1, "note": "Le Roi des Rois, souverain absolu de Nehekhara — son aura de commandement doublée (+100%, seigneur) stabilise toute son armée, tandis que son +10% de remplacement des pertes (seigneur) permet à ses unités de se régénérer plus vite via le Realm of Souls"},
       "heroes": [
         {"icon": "heraldNekaph", "name": "Herald Nekaph (Héros Légendaire)", "qty": 1, "note": "Le héraut de Settra en personne, ajouté par le mod Tomb Kings Extended. Sa table d'agents ne l'autorise que pour <strong>Khemri</strong> et la faction Tomb Kings — c'est donc le seul seigneur du site chez qui il ait sa place. Combattant de mêlée, il tient la ligne aux côtés de la Tomb Guard, et son plafond de héros légendaire est distinct de celui des Tomb Princes : il ne consomme aucun des <strong>+2 de capacité</strong> accordés par la faction"},
-        {"icon": "tombPrince", "name": "Tomb Prince", "qty": 2, "note": "+2 de capacité de héros pour ce type (faction) — héros de mêlée combattant, recruté en nombre grâce au bonus de faction"}
+        {"icon": "tombPrince", "name": "Tomb Prince", "qty": 3, "note": "<strong>+2 de capacité de héros</strong> (faction) porte le plafond à <strong>3</strong> — autant les aligner tous. Héros de mêlée combattant, dont l'aura profite du <strong>+100% de taille de l'aura de commandement</strong> du seigneur"},
+        {"icon": "nyletoth", "name": "Nyletoth the Charioteer", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters — le Cocher, porteur de la <strong>Crosse et du Fléau de Radiance</strong>, dont les compétences portent sur les chars et les destriers d'ossements. Khemri est la faction indiquée : elle est la seule de cette page à recevoir <strong>+10% de bonus de charge pour les Skeleton Chariots, Skeleton Archer Chariots et Royal Chariots</strong>. <strong>Il ne se recrute pas : il se débloque en possédant 8 unités de chars</strong>, et rapporte 50 Jarres Canopes à son arrivée"}
       ],
       "army": [
         {"icon": "tombGuard", "name": "Tomb Guard", "qty": 2, "note": "Élite increvable, cœur de mêlée du Roi des Rois"},
         {"icon": "khepraGuard", "name": "The Khepra Guard (Tomb Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Tomb Guard"},
-        {"icon": "skeletonWarriors", "name": "Skeleton Warriors (Tomb Kings)", "qty": 2, "note": "Infanterie de ligne bon marché et increvable"},
-        {"icon": "skeletonArchers", "name": "Skeleton Archers", "qty": 3, "note": "Tir de soutien bon marché"},
-        {"icon": "skeletonChariots", "name": "Skeleton Chariots", "qty": 2, "note": "+10% de bonus de charge (faction) — percée rapide, choc contre l'infanterie légère"},
+        {"icon": "skeletonWarriors", "name": "Skeleton Warriors (Tomb Kings)", "qty": 1, "note": "Infanterie de ligne bon marché et increvable — réduite à un exemplaire, les quatre Tomb Guard formant déjà le mur"},
+        {"icon": "skeletonArchers", "name": "Skeleton Archers", "qty": 2, "note": "Tir de soutien bon marché — réduit d'une unité pour financer le troisième Tomb Prince et Nyletoth"},
+        {"icon": "skeletonChariots", "name": "Skeleton Chariots", "qty": 2, "note": "<strong>+10% de bonus de charge</strong> (faction) — percée rapide, choc contre l'infanterie légère. C'est la famille d'unités que Nyletoth accompagne, et celle dont sa condition de déblocage exige 8 exemplaires en campagne"},
         {"icon": "khemrianWarsphinx", "name": "Khemrian Warsphinx", "qty": 2, "note": "Monstre de choc massif, l'une des montures de Settra"},
         {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 2, "note": "Artillerie de zone qui terrifie les lignes ennemies"},
         {"icon": "necropolisKnights", "name": "Necropolis Knights", "qty": 1, "note": "Cavalerie lourde d'élite, percée dévastatrice"}
@@ -79,12 +80,13 @@
       "totalSlots": 20,
       "lord": {"icon": "khatep", "name": "Grand Hierophant Khatep", "qty": 1, "note": "Le Grand Hiérophante, le plus ancien des Liche Priests — son activation des Attaques Magiques pour toute l'armée (seigneur) permet à ses Nehekharan Warriors de contourner la résistance magique et la régénération ennemies ; sa réserve de Vents de Magie +25 et sa portée de ciblage +25% pour les sorts (seigneur) en font un lanceur de sorts exceptionnel"},
       "heroes": [
-        {"icon": "lichePriest", "name": "Liche Priest (Nehekhara)", "qty": 2, "note": "+25% de gain d'XP et +2 de rang de recrutement en tant que Liche High Priest (faction) — soutien magique démultiplié par la réserve de Vents de Magie accrue (faction)"}
+        {"icon": "lichePriest", "name": "Liche Priest (Nehekhara)", "qty": 2, "note": "+25% de gain d'XP et +2 de rang de recrutement en tant que Liche High Priest (faction) — soutien magique démultiplié par la réserve de Vents de Magie accrue (faction)"},
+        {"icon": "serkhet", "name": "Serkhet", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters — un Prêtre-Liche nehekharan <strong>enseveli dans un Scorpion des Tombes</strong> après avoir été tué en défendant un temple de Ptra, « son service sans fin aux armées des Morts se poursuivant à jamais ». Ses capacités \"Pincer Strike\" et \"Absolution of Sokth\", et le jet d'acide de sa queue, en font une pièce de mêlée dans une fiche qui n'en a aucune. <strong>Il ne se recrute pas : il se débloque en accumulant 1 000 Jarres Canopes</strong> — et Khatep est précisément le seigneur dont la faction gagne <strong>+10% de jarres en bataille</strong>"}
       ],
       "army": [
         {"icon": "nehekharanWarriors", "name": "Nehekharan Warriors", "qty": 2, "note": "Attaques Magiques (seigneur) — infanterie de ligne dont les coups ignorent la résistance magique ennemie"},
         {"icon": "usiriansLegion", "name": "Usirian's Legion of the Netherworld (Nehekharan Warriors)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Nehekharan Warriors, également couverte par les Attaques Magiques du seigneur"},
-        {"icon": "skeletonSpearmen", "name": "Skeleton Spearmen (Tomb Kings)", "qty": 3, "note": "Attaques Magiques (seigneur) — anti-grande unité bon marché"},
+        {"icon": "skeletonSpearmen", "name": "Skeleton Spearmen (Tomb Kings)", "qty": 2, "note": "Attaques Magiques (seigneur) — anti-grande unité bon marché ; réduits d'une unité pour libérer l'emplacement de Serkhet"},
         {"icon": "nehekharanHorsemen", "name": "Nehekharan Horsemen", "qty": 2, "note": "Attaques Magiques (seigneur) — cavalerie légère de flanquement"},
         {"icon": "hierotitan", "name": "Hierotitan", "qty": 1, "note": "Attaques Magiques (seigneur) — augmente lui-même la réserve de Vents de Magie de l'armée, synergie directe avec l'identité magique de Khatep"},
         {"icon": "ushabti", "name": "Ushabti", "qty": 2, "note": "Attaques Magiques (seigneur) — infanterie monstrueuse increvable"},

@@ -2149,6 +2149,8 @@ const unitImages = {
   giantKhepraSwarm: 'assets/units/giantKhepraSwarm.png',
   usiriansKhepraRiders: 'assets/units/usiriansKhepraRiders.png',
   carrion: 'assets/units/carrion.png',
+  serkhet: 'assets/units/serkhet.png',
+  nyletoth: 'assets/units/nyletoth.png',
   kairos: 'assets/portraits/kairos.png',
   changeling: 'assets/portraits/changeling.png',
   egrimm: 'assets/portraits/egrimm.png',
