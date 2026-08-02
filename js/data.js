@@ -2420,7 +2420,13 @@ const unitImages = {
   // Seigneurs Wood Elves (mod Mixu).
   wychwethyl: 'assets/portraits/wychwethyl.png',
   naieth: 'assets/portraits/naieth.png',
-  daith: 'assets/portraits/daith.png'
+  daith: 'assets/portraits/daith.png',
+  // Héros légendaires Skaven (mod SCM Legendary Characters).
+  fylchSharptail: 'assets/units/fylchSharptail.png',
+  lurklox: 'assets/units/lurklox.png',
+  veskit: 'assets/units/veskit.png',
+  ikkHackflay: 'assets/units/ikkHackflay.png',
+  skaBloodtail: 'assets/units/skaBloodtail.png'
 };
 
 // ----------------------------------------------------------------------------

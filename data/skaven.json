@@ -15,15 +15,16 @@
       "totalSlots": 20,
       "lord": {"icon": "queek", "name": "Queek Headtaker", "qty": 1, "note": "Le Preneur de Têtes, Griffe Droite du Clan Mors — son +10% d'attaque en mêlée et de puissance des armes contre Dwarfs et Greenskins (seigneur) en fait un fléau pour ces deux races, et sa capacité d'armée \"The Menace Below\" (+2 utilisations, seigneur) invoque des Clanrats en renfort (portée infinie, rechargement 45s)"},
       "heroes": [
-        {"icon": "chieftain", "name": "Chieftain", "qty": 2, "note": "+2 de capacité de héros pour ce type (faction) — soutien de mêlée générique recruté en nombre"}
+        {"icon": "skaBloodtail", "name": "Ska Bloodtail", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, <strong>exclusif au Clan Mors</strong> — le Lieutenant de la Garde Rouge, garde du corps de Queek. Ses compétences donnent <strong>+Attaque de mêlée et +Défense de mêlée aux Skavenslaves, Clanrats et Stormvermin</strong>, soit l'intégralité du corps d'armée ci-dessous. <strong>Il n'est pas recrutable</strong> : le script du mod le fait apparaître automatiquement et <strong>supprime un Chieftain générique</strong> au passage — il occupe donc l'un des trois emplacements de Chieftain"},
+        {"icon": "chieftain", "name": "Chieftain", "qty": 2, "note": "<strong>+2 de capacité de héros</strong> (faction) porte le plafond à <strong>3</strong> ; Ska Bloodtail en consommant un, il en reste deux. Soutien de mêlée bon marché dont les auras de Commandement stabilisent une armée skavene, qui rompt sinon au premier revers"}
       ],
       "army": [
         {"icon": "stormverminHalberds", "name": "Stormvermin (Halberds)", "qty": 2, "note": "-25% d'entretien (faction) — élite anti-grande unité, cœur de mêlée du Clan Mors"},
         {"icon": "councilGuard", "name": "Council Guard (Stormvermin)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — Stormvermin d'élite Unbreakable, réfléchit les charges et protège les unités proches (Guardian) ; en tant que Stormvermin, profite aussi du -25% d'entretien (faction)"},
         {"icon": "stormverminShields", "name": "Stormvermin (Sword & Shield)", "qty": 2, "note": "-25% d'entretien (faction) — élite défensive, tient la ligne face aux charges"},
         {"icon": "clanratsShields", "name": "Clanrats (Shields)", "qty": 4, "note": "-25% d'entretien (faction) — chair à canon bon marché et increvable en nombre"},
-        {"icon": "skavenslaveSlingers", "name": "Skavenslave Slingers", "qty": 3, "note": "Tir léger et jetable en soutien"},
-        {"icon": "ratOgres", "name": "Rat Ogres", "qty": 2, "note": "Monstres de choc pour percer les lignes ennemies"},
+        {"icon": "skavenslaveSlingers", "name": "Skavenslave Slingers", "qty": 3, "note": "Tir léger et jetable en soutien — en tant que Skavenslaves, ils reçoivent le <strong>+Attaque et +Défense de mêlée</strong> de Ska Bloodtail"},
+        {"icon": "ratOgres", "name": "Rat Ogres", "qty": 1, "note": "Monstre de choc pour percer les lignes ennemies — c'est la seule unité de la liste que ni le <strong>-25% d'entretien</strong> (faction) ni les compétences de Ska Bloodtail ne concernent, d'où un seul exemplaire"},
         {"icon": "warpfireThrowers", "name": "Warpfire Throwers", "qty": 2, "note": "Arme d'équipe incendiaire dévastatrice contre l'infanterie groupée"}
       ],
       "magic": "Queek n'est pas un lanceur de sorts — sa puissance vient de son bonus offensif contre Dwarfs et Greenskins (seigneur) et de sa maîtrise du combat rapproché, sans soutien magique dédié dans ce build.",
@@ -46,14 +47,15 @@
       "totalSlots": 20,
       "lord": {"icon": "skrolk", "name": "Lord Skrolk", "qty": 1, "note": "Le Plaguelord ancien et aveugle du Clan Pestilens — son +3 de corruption skaven (province locale) accélère la décomposition des terres ennemies, tandis que son -50% d'entretien pour les unités de Pestilens (seigneur) finance une armée de zélotes nombreuse"},
       "heroes": [
-        {"icon": "plaguePriest", "name": "Plague Priest", "qty": 2, "note": "Soutien magique via la Lore of Plague, invocations de Clanrats et Plague Monks en combat"}
+        {"icon": "plaguePriest", "name": "Plague Priest", "qty": 2, "note": "Soutien magique via la Lore of Plague, invocations de Clanrats et Plague Monks en combat"},
+        {"icon": "fylchSharptail", "name": "Fylch Sharptail", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, autorisé à tous les clans skavens. « Le meilleur assassin est celui que personne ne connaît. » <strong>Il ne se recrute pas : il se débloque en capturant Mordheim</strong>, la cité en ruine où il opère. C'est ensuite la seule menace de cette liste sur l'arrière ennemi, que six unités de Plague Monks ne peuvent pas atteindre"}
       ],
       "army": [
         {"icon": "plagueMonks", "name": "Plague Monks", "qty": 6, "note": "-50% d'entretien (seigneur) — cœur de mêlée fanatique et increvable"},
         {"icon": "plagueMonkCenserBearers", "name": "Plague Monk Censer Bearers", "qty": 1, "note": "-50% d'entretien (seigneur) — dégâts de zone empoisonnés dévastateurs contre l'infanterie groupée"},
         {"icon": "blightscabsPlaguepack", "name": "Blightscab's Plaguepack (Plague Monk Censer Bearers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Censer Bearers, Frenzy et 15% de résistance physique ; en tant que Censer Bearers, profite aussi du -50% d'entretien (seigneur)"},
         {"icon": "plagueclawCatapult", "name": "Plagueclaw Catapults", "qty": 2, "note": "-50% d'entretien (seigneur) — artillerie de zone empoisonnée à longue portée"},
-        {"icon": "ratOgres", "name": "Rat Ogres", "qty": 2, "note": "Monstres de choc pour percer les lignes ennemies"},
+        {"icon": "ratOgres", "name": "Rat Ogres", "qty": 1, "note": "Monstre de choc pour percer les lignes ennemies — réduit à un exemplaire pour libérer l'emplacement de Fylch Sharptail"},
         {"icon": "skavenslaveSlingers", "name": "Skavenslave Slingers", "qty": 2, "note": "Tir léger et jetable en soutien"},
         {"icon": "poisonWindGlobadiers", "name": "Poison Wind Globadiers", "qty": 2, "note": "Tir empoisonné à courte portée, complète les Censer Bearers"}
       ],
@@ -77,7 +79,8 @@
       "totalSlots": 20,
       "lord": {"icon": "tretch", "name": "Tretch Craventail", "qty": 1, "note": "Le maître de l'embuscade du Clan Rictus — son Devastating Flanker généralisé (toute l'armée) et son +13 d'attaque en mêlée pendant les embuscades ou après une retraite (seigneur) en font un spécialiste redoutable des attaques surprises"},
       "heroes": [
-        {"icon": "chieftain", "name": "Chieftain", "qty": 2, "note": "Soutien de mêlée générique, profite de l'aura Encourage des Stormvermin proches"}
+        {"icon": "ikkHackflay", "name": "Ikk Hackflay", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, autorisé pour le Clan Rictus — sa compétence \"Master of Guile\" indique que <strong>voler et tuer des Nains est sa plus grande passion</strong>. <strong>Il ne se recrute pas : il se débloque en capturant Zarak Zil</strong>, ce qui va justement dans le sens de la campagne de Tretch au milieu des holds nains"},
+        {"icon": "chieftain", "name": "Chieftain", "qty": 1, "note": "Soutien de mêlée générique, profite de l'aura Encourage des Stormvermin proches — un seul, l'autre emplacement revenant à Ikk Hackflay"}
       ],
       "army": [
         {"icon": "stormverminShields", "name": "Stormvermin (Sword & Shield)", "qty": 5, "note": "Encourage, +1 armure/dégâts d'arme par rang d'expérience (faction), Devastating Flanker (seigneur, toute l'armée) — cœur de mêlée qui s'améliore avec le temps et frappe fort en flanquement"},
@@ -108,7 +111,8 @@
       "totalSlots": 20,
       "lord": {"icon": "ikitclaw", "name": "Ikit Claw", "qty": 1, "note": "Le Chief Warlock du Clan Skryre — son -50% d'entretien pour les armes d'équipe (seigneur) permet d'aligner une ligne de tir dense, tandis que sa maîtrise de la Lore of Ruin et l'accès au Forbidden Workshop (faction) démultiplient la puissance de feu de son armée"},
       "heroes": [
-        {"icon": "warlockEngineer", "name": "Warlock Engineer", "qty": 2, "note": "+2 de rang de recrutement (seigneur) — soutien magique via la Lore of Ruin, recruté déjà expérimenté"}
+        {"icon": "veskit", "name": "Veskit", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters — les scientifiques-sorciers du Clan Skryre ont remplacé plusieurs parties de son corps par des implants mi-technologiques mi-magiques et en ont fait <strong>un arsenal ambulant</strong>. Ses capacités \"Cyberrat Suit\" et \"Sparking Destruction\" sont du Skryre pur : c'est le héros le plus cohérent avec Ikit Claw de tout le mod. <strong>Il ne se recrute pas : il se débloque en construisant son repaire</strong> (bâtiment <code>str_veskit_hideout</code>)"},
+        {"icon": "warlockEngineer", "name": "Warlock Engineer", "qty": 1, "note": "+2 de rang de recrutement (seigneur) — soutien magique via la Lore of Ruin, recruté déjà expérimenté. Un seul, l'autre emplacement revenant à Veskit"}
       ],
       "army": [
         {"icon": "warplockJezzails", "name": "Warplock Jezzails", "qty": 4, "note": "-50% d'entretien (seigneur) — tir de précision anti-blindage à longue portée"},
@@ -139,7 +143,7 @@
       "lord": {"icon": "snikch", "name": "Deathmaster Snikch", "qty": 1, "note": "Le Chef Assassin du Clan Eshin — son +25% de chance de succès d'embuscade (seigneur) rend cette armée redoutable en attaque surprise, et sa capacité \"Concealment Bombs\" (3 utilisations, cible cachée et furtive 73s, rechargement 90s) couvre sa retraite ou celle de ses alliés"},
       "heroes": [
         {"icon": "skvBlackMask", "name": "The Black Mask (Héros Légendaire)", "qty": 1, "note": "Le Hired Master Assassin de Clan Eshin, expert en poisons (mod Heroes of Legend) — buffe toute la ligne de coureurs Eshin de Snikch (Night Runners, Gutter Runners, Death Runners, Eshin Triads) : vitesse, résistance physique, force de tir, munitions et défense en mêlée, plus un rang de recrutement supérieur. Sa capacité \"Headhunter's Mark\" et son passif \"Friend in the Shadows\" en font un assassin de premier plan, sans entretien"},
-        {"icon": "assassinHero", "name": "Assassin", "qty": 1, "note": "+8 d'attaque en mêlée pour les héros embarqués (seigneur) — duelliste redoutable contre les seigneurs et héros ennemis"}
+        {"icon": "lurklox", "name": "Lurklox", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters — <strong>Deathmaster du Clan Eshin</strong> comme Snikch, « drapé d'ombre, le Maître de Toutes les Duperies ». Ses capacités \"Corrupting Gaze of Ruin\", \"Looming of Lurklox\" et \"Toxic Star\" en font un assassin supérieur à l'Assassin générique qu'il remplace ici, et il profite du <strong>+8 d'Attaque de mêlée aux héros embarqués</strong> (seigneur). <strong>Il ne se recrute pas : il se débloque en accumulant 150 de nourriture</strong>, dont 100 sont dépensés à son arrivée"}
       ],
       "army": [
         {"icon": "eshinTriads", "name": "Eshin Triads", "qty": 1, "note": "Mêlée d'élite du Clan Eshin"},
@@ -170,7 +174,8 @@
       "totalSlots": 20,
       "lord": {"icon": "throt", "name": "Throt the Unclean", "qty": 1, "note": "Le Maître Mutateur de Hell Pit — son -20% d'entretien et +10 d'armure pour les monstres Moulder (seigneur) permet d'aligner une horde de bêtes de guerre blindées et bon marché ; sa Régénération (+0,10% PV/s, +20% faiblesse au feu), sa capacité \"Beast Pack\" (invoque des Rat Ogres, 50m, rechargement 120s) et son passif \"Master Controller\" (+5 défense en mêlée, +4 commandement, 35m, seigneur) en font un pilier de commandement pour toute l'armée"},
       "heroes": [
-        {"icon": "packmaster", "name": "Packmaster", "qty": 2, "note": "Soutien de mêlée et de contrôle des bêtes, profite du +10% de points de vie (faction)"}
+        {"icon": "packmaster", "name": "Packmaster", "qty": 2, "note": "Soutien de mêlée et de contrôle des bêtes, profite du +10% de points de vie (faction)"},
+        {"icon": "lurklox", "name": "Lurklox", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, autorisé à tous les clans skavens — Deathmaster du Clan Eshin. Il apporte à cette liste ce qui lui manque totalement : aucun tir, aucune infiltration, et donc aucune réponse à l'artillerie adverse, seule chose capable d'arrêter une horde de monstres avant le contact. <strong>Il ne se recrute pas : il se débloque en accumulant 150 de nourriture</strong> — ce qui tombe bien pour le Clan Moulder, dont c'est la ressource centrale"}
       ],
       "army": [
         {"icon": "ratOgres", "name": "Rat Ogres", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — monstres de choc increvables"},
@@ -178,7 +183,7 @@
         {"icon": "mutantRatOgre", "name": "Mutant Rat Ogre", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — variante mutée encore plus destructrice"},
         {"icon": "broodHorror", "name": "Brood Horror", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — monstre polyvalent, mêlée et zone"},
         {"icon": "hellPitAbomination", "name": "Hell Pit Abomination", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — le plus grand monstre du Clan Moulder, ravage les lignes ennemies"},
-        {"icon": "wolfRats", "name": "Wolf Rats", "qty": 4, "note": "-20% d'entretien, +10 armure (seigneur) — bêtes de guerre rapides pour le flanc"},
+        {"icon": "wolfRats", "name": "Wolf Rats", "qty": 3, "note": "-20% d'entretien, +10 armure (seigneur) — bêtes de guerre rapides pour le flanc ; on en retire une pour libérer l'emplacement de Lurklox"},
         {"icon": "clanratsShields", "name": "Clanrats (Shields)", "qty": 3, "note": "Chair à canon bon marché pour absorber les charges pendant que les monstres percent"}
       ],
       "magic": "Throt n'est pas un lanceur de sorts — sa puissance vient de sa capacité \"Beast Pack\" (invocation de Rat Ogres) et de son passif \"Master Controller\" (aura de commandement de zone), épaulé par les Packmaster pour le contrôle et le soutien de mêlée.",
@@ -202,7 +207,8 @@
       "lord": {"icon": "feskit", "name": "Feskit", "qty": 1, "note": "Warlord rusé du Clan Mordkin, à pied ou monté sur son Bonebreaker (Rat Ogre) ou Brood Horror — garde-le au centre de l'armée : son aura \"Grand Tactician\" (55m, seigneur) accélère le rechargement de toute la gunline (+10 Reload Skill) et endurcit la mêlée (+9 Défense), transformant une masse skaven ordinaire en machine coordonnée"},
       "heroes": [
         {"icon": "warlockEngineer", "name": "Warlock Engineer", "qty": 1, "note": "Soutien warp et entretien des armes d'équipe — sa foudre warp complète la gunline, et il reste dans le rayon de \"Grand Tactician\" (seigneur) pour bénéficier lui aussi des bonus"},
-        {"icon": "chieftain", "name": "Chieftain (Porte-Bannière)", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement de la masse Stormvermin/Clanrats, essentiel pour éviter l'effondrement moral typique des Skavens"}
+        {"icon": "chieftain", "name": "Chieftain (Porte-Bannière)", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement de la masse Stormvermin/Clanrats, essentiel pour éviter l'effondrement moral typique des Skavens"},
+        {"icon": "veskit", "name": "Veskit", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, autorisé à tous les clans skavens — un arsenal ambulant du Clan Skryre. C'est le Mordkin qui s'en approche le plus après Ikit Claw : Jezzails, Ratling Guns et Warp Lightning Cannon composent déjà la moitié de cette liste. <strong>Il ne se recrute pas : il se débloque en construisant son repaire</strong> (bâtiment <code>str_veskit_hideout</code>)"}
       ],
       "army": [
         {"icon": "stormverminHalberds", "name": "Stormvermin (Hallebardes)", "qty": 4, "note": "Rang de recrutement +3 (seigneur) — élite d'emblée vétérane, attaques perforantes qui profitent à plein du +9 de Défense en mêlée (aura) et du +8 d'Attaque contre les morts-vivants (faction)"},
@@ -211,7 +217,7 @@
         {"icon": "warplockJezzails", "name": "Warplock Jezzails", "qty": 3, "note": "Snipers warp à longue portée et haute perforation — grands gagnants du +10 de Reload Skill (aura), qui augmente nettement leur cadence de tir soutenu"},
         {"icon": "ratlingGuns", "name": "Ratling Guns", "qty": 2, "note": "Arme d'équipe à tir rapide — le +10 de Reload Skill (aura) réduit ses longs temps de rechargement, maximisant son flot de balles warp"},
         {"icon": "warpLightningCannon", "name": "Warp Lightning Cannon", "qty": 2, "note": "Artillerie perforante dévastatrice contre les grandes cibles et les morts-vivants — profite également du +10 de Reload Skill (aura)"},
-        {"icon": "clanratsShields", "name": "Clanrats (Boucliers)", "qty": 2, "note": "Écran de mêlée bon marché qui protège la gunline et Feskit — maintenu en place plus longtemps grâce au +9 de Défense (aura)"}
+        {"icon": "clanratsShields", "name": "Clanrats (Boucliers)", "qty": 1, "note": "Écran de mêlée bon marché qui protège la gunline et Feskit — maintenu en place plus longtemps grâce au +9 de Défense (aura) ; réduit à un exemplaire pour libérer l'emplacement de Veskit"}
       ],
       "magic": "Feskit n'est pas un lanceur de sorts dédié — sa force vient de son aura \"Grand Tactician\". Le Warlock Engineer apporte le seul soutien magique (Lore of Ruin : Warp Lightning, Death Frenzy) en complément de la gunline.",
       "note": "L'immunité à l'attrition des territoires vampiriques et le +8 d'Attaque en mêlée contre Comtes Vampires / Vampire Coast / Rois des Tombes (faction) font de Feskit un fléau des morts-vivants — idéal pour campagner en Terres Mortes ou dans les Contrées du Sud. Le \"Cause la Peur contre les Skavens\" (faction) donne un avantage moral décisif dans les guerres fratricides entre clans. Surtout, garde tes tireurs et tes Stormvermin serrés autour de Feskit : hors des 55m de \"Grand Tactician\", ils perdent le +10 Reload et le +9 Défense qui font toute la force de cette armée."
