@@ -1128,6 +1128,8 @@ const unitImages = {
   lionChariot: 'assets/units/lionChariot.png',
   phoenixGuard: 'assets/units/phoenixGuard.png',
   loremaster: 'assets/units/loremaster.png',
+  aurelion: 'assets/units/aurelion.png',
+  loremasterTalarian: 'assets/units/loremasterTalarian.png',
   omenOfAsuryan: 'assets/units/omenOfAsuryan.png',
   dragon: 'assets/units/dragon.png',
   greatEagle: 'assets/units/greatEagle.png',

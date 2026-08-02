@@ -46,13 +46,14 @@
       "totalSlots": 20,
       "lord": {"icon": "teclis", "name": "Teclis", "qty": 1, "note": "Reste en retrait et sature le champ de bataille de sorts (Haute Magie, Feu, Cieux, Vie, Lumière, Ombres selon la version) — sa réserve de +10 Vents de la Magie (seigneur) lui permet d'enchaîner sans trop attendre, et son sort lié Fireball (500 dégâts à distance, 300m de portée, 4 utilisations) achève les cibles isolées à longue distance"},
       "heroes": [
-        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 2, "note": "Recrutés directement avec +5 rangs d'expérience (faction) — un renfort de magie immédiatement compétent, sans phase de montée en niveau"}
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 2, "note": "Recrutés directement avec +5 rangs d'expérience (faction) — un renfort de magie immédiatement compétent, sans phase de montée en niveau"},
+        {"icon": "aurelion", "name": "Aurelion", "qty": 1, "note": "Héroïne légendaire du mod SCM Legendary Characters — sa compétence <strong>« Acolyte de Teclis »</strong> la rattache directement à ce seigneur. Elle a passé des années dans l'Empire aux côtés du capitaine Von Kessel à traquer les cultes du Chaos, ce qui lui a appris à <strong>déceler la souillure la plus subtile</strong>. C'est la seule présence de champion d'une fiche qui n'aligne autrement que des lanceurs de sorts. <strong>Elle ne se recrute pas : une chaîne de deux quêtes se déclenche dès le tour 1</strong> pour toute faction Haut Elfe ou impériale"}
       ],
       "army": [
         {"icon": "swordmaster", "name": "Swordmasters of Hoeth", "qty": 4, "note": "-25% de coût de recrutement (faction) — l'élite de mêlée qui protège Teclis devient abordable en nombre"},
         {"icon": "bladesOfHoeth", "name": "Blades of Hoeth (Swordmasters of Hoeth)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Swordmasters of Hoeth, également couverte par le -25% de coût de recrutement (faction)"},
         {"icon": "phoenix", "name": "Phoenix (Arcane)", "qty": 3, "note": "-25% de coût de recrutement (faction) ; son aura Omen of Miracles offre Spell Mastery +5%, résistance aux sorts +10% et immunité à la Psychologie sur 55m à toute l'armée (faction) — une synergie magique unique à Teclis"},
-        {"icon": "hefSpearman", "name": "Spearmen", "qty": 4, "note": "Ligne de tenue bon marché pour occuper le front"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 3, "note": "Ligne de tenue bon marché pour occuper le front — réduite d'une unité pour libérer l'emplacement d'Aurelion, les six Swordmasters tenant déjà le centre"},
         {"icon": "hefArcher", "name": "Archers", "qty": 3, "note": "Soutien à distance polyvalent"},
         {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Anti-monstre et anti-char à distance"}
       ],
@@ -262,7 +263,8 @@
       "lord": {"icon": "belannaer", "name": "Belannaer the Wise", "qty": 1, "note": "Le deuxième Archimage de Saphery — sa passive « Arcane Conduit » (+40% de recharge de puissance magique, seigneur) et le +5 de réserve de Vents de la Magie (faction) en font un lanceur de sorts intarissable, tandis que ses Swordmasters of Hoeth à -30% d'entretien et +10 de commandement (seigneur) forment un mur d'élite magiquement résistant"},
       "heroes": [
         {"icon": "loremaster", "name": "Loremaster of Hoeth", "qty": 1, "note": "Maître-mage guerrier de la Tour de Hoeth — maîtrise toutes les Lores, duelliste et caster polyvalent, en parfaite harmonie avec la diplomatie +60 avec l'Order of Loremasters (faction)"},
-        {"icon": "mage", "name": "Mage (High Magic)", "qty": 2, "note": "Lanceurs de High Magic — profitent du +40% de recharge et du +5 de réserve (seigneur/faction) pour un déluge de sorts continu (Soul Quench, Apotheosis, Fiery Convocation)"}
+        {"icon": "mage", "name": "Mage (High Magic)", "qty": 2, "note": "Lanceurs de High Magic — profitent du +40% de recharge et du +5 de réserve (seigneur/faction) pour un déluge de sorts continu (Soul Quench, Apotheosis, Fiery Convocation)"},
+        {"icon": "loremasterTalarian", "name": "Loremaster Talarian", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters — « revenu de l'intérieur du Vortex, Talarian en est ressorti changé : une personne extrêmement sage et mystérieuse, une légende vivante parmi les Asur ». <strong>Il ne se recrute pas : il se débloque en contrôlant la Tour Blanche de Hoeth, Port Elistor et Tor Finu</strong> — et la Tour Blanche est justement la capitale de Belannaer, ce qui fait de Saphery la faction la mieux placée pour l'obtenir"}
       ],
       "army": [
         {"icon": "swordmaster", "name": "Swordmasters of Hoeth", "qty": 4, "note": "-30% d'entretien et +10 de commandement (seigneur) — infanterie d'élite à deux mains, magiquement résistante, cœur de la ligne ; recrutés plus vite (faction)"},
@@ -270,7 +272,7 @@
         {"icon": "omenOfAsuryan", "name": "Omen of Asuryan (Arcane Phoenix)", "qty": 1, "note": "Régiment favori : son aura est améliorée pour accorder Maîtrise des sorts, Résistance aux sorts et Immunité à la Psychologie aux alliés à 55 m (faction) — phénix de soutien magique, pièce maîtresse arcanique"},
         {"icon": "phoenixGuard", "name": "Phoenix Guard", "qty": 2, "note": "Gardiens du Sanctuaire d'Asuryan — infanterie d'élite Immunisée à la Psychologie et résistante à la magie, tient le centre sous l'aura de l'Omen of Asuryan"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 2, "note": "Archères magiques d'élite — tir enchanté à longue portée qui déchire l'infanterie lourde et les monstres"},
-        {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 2, "note": "Lance et arc — ligne polyvalente qui protège les mages et ajoute du tir"},
+        {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Lance et arc — ligne polyvalente qui protège les mages et ajoute du tir ; réduite à un exemplaire pour libérer l'emplacement de Loremaster Talarian"},
         {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 2, "note": "Baliste à répétition — anti-grande cible et anti-infanterie à longue portée"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Aigle géant — harcèle et chasse l'artillerie et les casters ennemis, protège les mages"}
       ],
