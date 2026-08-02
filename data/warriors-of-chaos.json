@@ -237,7 +237,7 @@
       "totalSlots": 20,
       "lord": {"icon": "vilitch", "name": "Vilitch the Curseling", "qty": 1, "note": "Le Jumeau Tordu, sorcier-runt fusionné à son frère Thomin — \"The Twisted Twin\" (jusqu'à +30% maîtrise des sorts, +10 attaque/défense en mêlée, seigneur) le rend toujours plus fort au fil du combat, et sa posture Téléportation à -25% de coût (seigneur) permet des manœuvres de campagne impossibles pour tout autre Seigneur"},
       "heroes": [
-        {"icon": "chaosSorcererTzeentch", "name": "Chaos Sorcerer of Tzeentch", "qty": 1, "note": "Renfort de sorts du Lore of Tzeentch"},
+        {"icon": "chaosSorcererTzeentch", "name": "Chaos Sorcerer of Tzeentch (Tzeentch)", "qty": 1, "note": "Renfort de sorts du <strong>Lore of Tzeentch</strong> — deux variantes existent, <strong>Tzeentch</strong> et <strong>Metal</strong>"},
         {"icon": "exaltedHeroTzeentch", "name": "Exalted Hero of Tzeentch", "qty": 1, "note": "Renfort de mêlée mortel robuste"}
       ],
       "army": [

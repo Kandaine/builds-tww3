@@ -15,7 +15,7 @@
       "totalSlots": 20,
       "lord": {"icon": "kugath", "name": "Ku'gath Plaguefather", "qty": 1, "note": "Le Père de la Peste, monté sur son palanquin alchimique — sa puissance de sort et ses milliers de Nurglings explosifs (Necrotic Missiles) en font un artilleur biologique dévastateur autant qu'un solide combattant de mêlée"},
       "heroes": [
-        {"icon": "heraldOfNurgle", "name": "Herald of Nurgle", "qty": 2, "note": "Soutien magique et de mêlée démoniaque en complément de Ku'gath"}
+        {"icon": "plagueridden", "name": "Plagueridden (Nurgle)", "qty": 2, "note": "Le héros démoniaque de Nurgle — deux savoirs possibles, <strong>Nurgle</strong> et <strong>Death</strong>. Pris ici en <strong>Lore of Nurgle</strong>, en soutien magique et de mêlée de Ku'gath"}
       ],
       "army": [
         {"icon": "frolickersBubonic", "name": "The Frolickers Bubonic (Nurglings)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +10% de points de vie de recrutement (faction) — chair à canon increvable et bon marché"},
@@ -47,7 +47,7 @@
       "totalSlots": 20,
       "lord": {"icon": "epidemius", "name": "Epidemius", "qty": 1, "note": "Le Comptable des Pestes, toujours monté sur son Palanquin de Nurglings — son +5 d'attaque en mêlée et sa régénération contre les ennemis porteurs d'une Peste (seigneur) en font un duelliste redoutable contre les factions déjà infectées, épaulé par sa capacité \"Tallyman's Blades\" qui invoque des renforts d'Exalted Plaguebearers en pleine bataille"},
       "heroes": [
-        {"icon": "heraldOfNurgle", "name": "Herald of Nurgle", "qty": 2, "note": "Soutien magique et de mêlée démoniaque en complément d'Epidemius"}
+        {"icon": "plagueridden", "name": "Plagueridden (Nurgle)", "qty": 2, "note": "Le héros démoniaque de Nurgle — deux savoirs possibles, <strong>Nurgle</strong> et <strong>Death</strong>. Pris ici en <strong>Lore of Nurgle</strong>, en soutien magique et de mêlée d'Epidemius"}
       ],
       "army": [
         {"icon": "festeringStooges", "name": "Festering Stooges (Exalted Plaguebearers of Nurgle)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +2 rang de recrutement (faction) — élite démoniaque recrutée déjà expérimentée"},
@@ -89,6 +89,37 @@
       ],
       "magic": "Tamurkhan n'est pas lui-même un lanceur de sorts — sa puissance vient de sa masse colossale et de ses capacités de zone, épaulé par un Chaos Sorcerer of Nurgle pour le soutien magique via la Lore of Nurgle.",
       "note": "Le +5 d'attaque en mêlée et l'immunité à la Psychologie pour les unités non-Démoniaques (seigneur), combinés au +10% de points de vie de recrutement pour ces mêmes unités (faction), font de cette armée 100% mortelle un mur increvable et inébranlable qui ne fuira jamais. Le régiment favori The Rotting Riders, à +15% de résistance aux tirs (faction), en fait une cavalerie de flanc particulièrement dure à abattre à distance. Les Plague Ogres apportent la puissance de choc nécessaire pour percer les lignes ennemies, pendant que Tamurkhan lui-même, avec sa masse énorme, ses attaques de collision et sa capacité \"Nurgle's Favoured Son\" (+24 défense en mêlée, +20% résistance aux dégâts, seigneur), fracasse l'infanterie sans même avoir besoin de bonus anti-charge."
+    }
+  },
+  {
+    "id": "valnir",
+    "numeral": "IV",
+    "name": "Valnir the Reaper",
+    "epithet": "Le Faucheur",
+    "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Nurgle",
+    "faction": "Maggoth Kin",
+    "seal": "valnirTheReaper",
+    "portraitImage": "assets/portraits/valnirTheReaper.png",
+    "lore": "<p>On dit souvent chez les Norses que si la misère de Valnir devait couler comme une rivière, elle engloutirait tout le nord dans ses eaux amères. L'heure est venue de vérifier si la prophétie dit vrai : Valnir est revenu dans le nord, et il apportera sa misère à tous ceux qui osent croiser son chemin. Pour l'instant, ceux qui vivent loin de la Montagne Flottante feraient bien d'y rester, à l'abri de la maladie de Valnir.</p>",
+    "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Temps de cycle : <strong>-1</strong> pour les bâtiments militaires avancés <em>(à l'échelle de la faction)</em></div>\n        <div class=\"attr-item\">Santé au recrutement : <strong>+25%</strong> pour les Forsaken, Plaguebearers et Exalted Plaguebearers <em>(toutes les armées)</em></div>\n        <div class=\"attr-item\">Capacité <strong>\"Shared Misery\"</strong> <em>(toutes les armées)</em> — Hex de <strong>25m</strong>, durée illimitée : jusqu'à <strong>-8 de Commandement</strong> aux ennemis à portée, l'intensité montant avec <strong>le temps passé au corps à corps</strong></div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour The Daemonspew (Forsaken)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Infections : <strong>5 par tour</strong> <em>(à l'échelle de la faction)</em></div>\n        <div class=\"attr-item\">Corruption de Nurgle : <strong>+3</strong> <em>(province locale)</em></div>\n        <div class=\"attr-item\">Chance de propagation d'une peste : <strong>+15%</strong> <em>(armée du seigneur)</em></div>\n        <div class=\"attr-item\">Commandement ennemi : <strong>-8</strong> <em>(armées ennemies de la province locale)</em></div>\n      </div>\n      <div class=\"stats-caveat\">Captures d'écran de l'onglet Lord Details en jeu (Valnir the Reaper) + infobulle de \"Shared Misery\". Héros et unités lus dans les tables du mod (workshop 3305404052, !scm_legendary.pack).</div>\n    ",
+    "build": {
+      "role": "L'usure comme unique plan de bataille. <strong>\"Shared Misery\"</strong> est un Hex de <strong>25m</strong> dont l'intensité <strong>monte avec le temps passé au corps à corps</strong> : plus la mêlée s'éternise, plus l'ennemi perd du Commandement, jusqu'à <strong>-8</strong>. Une armée qui cherche la décision rapide n'en tire rien ; une armée nurglesque qui s'accroche en tire tout. La <strong>+25% de santé au recrutement</strong> pour les Forsaken, Plaguebearers et Exalted Plaguebearers va dans le même sens — ces unités entrent en campagne plus solides et tiennent d'autant plus longtemps",
+      "totalSlots": 20,
+      "lord": {"icon": "valnirTheReaper", "name": "Valnir the Reaper", "qty": 1, "note": "Le Faucheur — son <strong>-8 de Commandement aux armées ennemies de la province</strong> agit <strong>avant même la bataille</strong>, sur la carte de campagne. Cumulé aux <strong>-8</strong> de \"Shared Misery\" une fois la mêlée engagée, l'adversaire se bat avec 16 points de moral en moins"},
+      "heroes": [
+        {"icon": "plagueridden", "name": "Plagueridden (Nurgle)", "qty": 2, "note": "Le héros démoniaque de Nurgle — deux savoirs possibles, <strong>Nurgle</strong> et <strong>Death</strong>. Prenez-les en <strong>Lore of Nurgle</strong> : ses sorts d'usure et de dégradation accompagnent exactement la logique de \"Shared Misery\", qui récompense les mêlées qui s'éternisent"},
+        {"icon": "chaosSorcererNurgle", "name": "Chaos Sorcerer of Nurgle (Death)", "qty": 1, "note": "Deux variantes existent, <strong>Nurgle</strong> et <strong>Death</strong> — la seconde est retenue ici pour ne pas doubler le savoir des Plagueriddens : le <strong>Lore of Death</strong> attaque directement le Commandement, ce qui s'ajoute aux deux malus de moral de Valnir. Le mod proposait <strong>Epidemius</strong> comme héros pour cette faction, mais il figure déjà sur cette page comme seigneur légendaire"}
+      ],
+      "army": [
+        {"icon": "theDaemonspew", "name": "The Daemonspew (Forsaken)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des Forsaken, qui bénéficie aussi du <strong>+25% de santé au recrutement</strong>"},
+        {"icon": "forsakenNurgle", "name": "Forsaken", "qty": 3, "note": "Cités nommément par l'effet de santé au recrutement. Ce sont eux qui s'accrochent au corps à corps le plus longtemps, donc eux qui font monter <strong>\"Shared Misery\"</strong> à son maximum"},
+        {"icon": "plaguebearersOfNurgle", "name": "Plaguebearers of Nurgle", "qty": 4, "note": "Le socle démoniaque : lents, increvables et parfaitement adaptés à une bataille d'usure. Le <strong>+25% de santé au recrutement</strong> les rend encore plus durs à effacer"},
+        {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 3, "note": "La version supérieure, troisième unité citée par l'effet de faction — c'est le point dur de la ligne"},
+        {"icon": "nurglings", "name": "Nurglings", "qty": 2, "note": "Nuée bon marché qui fixe l'ennemi : chaque unité immobilisée au contact alimente <strong>\"Shared Misery\"</strong>"},
+        {"icon": "plagueDronesOfNurgleDeathsHeads", "name": "Plague Drones of Nurgle (Death's Heads)", "qty": 2, "note": "La seule mobilité de la liste — elles vont chercher l'artillerie adverse, qui est la seule vraie réponse à une armée aussi lente"}
+      ],
+      "magic": "Deux Plagueriddens en <strong>Lore of Nurgle</strong> et un Chaos Sorcerer en <strong>Lore of Death</strong>. Le premier savoir est fait pour l'attrition — exactement le registre de cette fiche ; le second attaque le Commandement, ce qui prolonge les deux malus de moral déjà infligés par Valnir. Notez que Valnir lui-même n'accorde <strong>aucun</strong> bonus magique : ses effets sont des effets de campagne et de moral, ce qui laisse la magie jouer son rôle habituel sans amplification.",
+      "note": "Deux mécaniques de campagne sortent du lot. Les <strong>5 infections par tour</strong> à l'échelle de la faction, cumulées à <strong>+15% de chance de propagation</strong> dans l'armée du seigneur, font de Valnir la faction nurglesque la plus rapide à couvrir la carte de pestes du site. Le <strong>-1 de temps de cycle sur les bâtiments militaires avancés</strong> accélère de son côté la mise en place du roster d'élite. Mais l'effet à retenir est le <strong>-8 de Commandement infligé aux armées ennemies de la province locale</strong> : il agit <strong>sur la carte de campagne</strong>, avant le déclenchement de la bataille, et se cumule avec les <strong>-8</strong> de \"Shared Misery\" en combat. Une armée adverse peut donc entrer en bataille avec seize points de moral en moins. Attention en revanche à la condition de \"Shared Misery\" : son intensité part de <strong>zéro</strong> et ne monte qu'<strong>avec le temps passé au corps à corps</strong>. Ce n'est pas une aura d'ouverture, c'est une récompense pour les mêlées qui s'éternisent — ne cherchez jamais la bataille courte avec Valnir."
     }
   }
 ]
