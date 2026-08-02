@@ -16,14 +16,15 @@
       "lord": {"icon": "karlFranz", "name": "Emperor Karl Franz", "qty": 1, "note": "L'Empereur de l'Empire, maniant Ghal Maraz — son -20% d'entretien et son bonus de puissance des armes/tir croissant avec l'expérience pour les State Troops (seigneur) permet d'aligner une infanterie de ligne nombreuse et toujours plus efficace au fil de la campagne"},
       "heroes": [
         {"icon": "brightWizard", "name": "Bright Wizard", "qty": 1, "note": "Soutien magique via la Lore of Fire — dégâts de zone et anti-infanterie"},
-        {"icon": "empOrsini", "name": "Orsini Sardus (Héros Légendaire)", "qty": 1, "note": "Le Héros de Verdenza (mod Heroes of Legend) : mage tiléen versé dans l'antique Arcana of Kadon, dont la spécialité est de <strong>lier de grands monstres à sa cause</strong> — il apporte à l'armée impériale, d'ordinaire dépourvue de monstres, une dimension inédite (Griffon sauvage, Mourngul, Brood Horror, Stonehorn) aux côtés de l'Empereur monté sur Deathclaw"}
+        {"icon": "empOrsini", "name": "Orsini Sardus (Héros Légendaire)", "qty": 1, "note": "Le Héros de Verdenza (mod Heroes of Legend) : mage tiléen versé dans l'antique Arcana of Kadon, dont la spécialité est de <strong>lier de grands monstres à sa cause</strong> — il apporte à l'armée impériale, d'ordinaire dépourvue de monstres, une dimension inédite (Griffon sauvage, Mourngul, Brood Horror, Stonehorn) aux côtés de l'Empereur monté sur Deathclaw"},
+        {"icon": "aldredVonCarroburg", "name": "Aldred von Carroburg", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, <strong>exclusif au Reikland</strong> — Défenseur du Reik occidental : « des Wastelands au Reik, les citoyens dorment tranquilles parce que les forces d'Aldred patrouillent les rives et les forêts ». <strong>Il ne se recrute pas : il se débloque en construisant une Chapterhouse des Chevaliers Panthère</strong>, dont le chapitre est justement à Carroburg"}
       ],
       "army": [
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "-20% d'entretien (seigneur) — infanterie de ligne anti-grande unité"},
         {"icon": "swordsmen", "name": "Swordsmen", "qty": 3, "note": "-20% d'entretien (seigneur) — infanterie de ligne polyvalente"},
         {"icon": "spearmenEmpire", "name": "Spearmen (The Empire)", "qty": 2, "note": "-20% d'entretien (seigneur) — anti-grande unité bon marché"},
         {"icon": "handgunners", "name": "Handgunners", "qty": 3, "note": "-20% d'entretien (seigneur) — tir perforant à distance"},
-        {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 2, "note": "-20% d'entretien (seigneur) — tir de soutien bon marché"},
+        {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 1, "note": "-20% d'entretien (seigneur) — tir de soutien bon marché ; réduit à un exemplaire pour libérer l'emplacement d'Aldred von Carroburg, les trois unités de Handgunners assurant l'essentiel du tir"},
         {"icon": "zintlersReiksguard", "name": "Zintler's Reiksguard (Reiksguard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite de la cavalerie lourde de choc, garde personnelle de l'Empereur"},
         {"icon": "greatCannons", "name": "Great Cannons", "qty": 2, "note": "Artillerie lourde anti-blindage et anti-monstre"}
       ],
@@ -47,11 +48,12 @@
       "totalSlots": 20,
       "lord": {"icon": "balthasarGelt", "name": "Balthasar Gelt", "qty": 1, "note": "Le Patriarche Suprême des Collèges de Magie — son +20 d'armure pour toute l'armée (seigneur) rend chaque unité bien plus résiliente, tandis que son -20% de coût en Vents de Magie pour la Lore of Metal (seigneur) en fait un lanceur de sorts hors pair"},
       "heroes": [
-        {"icon": "goldWizard", "name": "Gold Wizard", "qty": 2, "note": "+2 de rang de recrutement (faction), +5 de réserve de Vents de Magie chacun (faction), +25% de gain d'XP en tant que lanceurs de sorts (seigneur) — soutien magique via la Lore of Metal, synergise directement avec la réduction de coût de Gelt"}
+        {"icon": "goldWizard", "name": "Gold Wizard", "qty": 2, "note": "+2 de rang de recrutement (faction), +5 de réserve de Vents de Magie chacun (faction), +25% de gain d'XP en tant que lanceurs de sorts (seigneur) — soutien magique via la Lore of Metal, synergise directement avec la réduction de coût de Gelt"},
+        {"icon": "bassianoDutra", "name": "Bassiano Dutra", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, et le <strong>seul de classe sorcier</strong> qu'il ajoute à l'Empire — Grand Commandeur de la Confrérie du Suaire, « qui traque les morts-vivants sans merci ». Il apporte un savoir différent de celui des deux Gold Wizards, ce qui compte face à la Sylvanie voisine. <strong>Il ne se recrute pas : il se débloque en capturant Rifraffa</strong>"}
       ],
       "army": [
         {"icon": "greatswords", "name": "Greatswords", "qty": 4, "note": "+20 armure (seigneur) — infanterie d'élite à deux mains, cœur de mêlée increvable"},
-        {"icon": "swordsmen", "name": "Swordsmen", "qty": 3, "note": "+20 armure (seigneur) — infanterie de ligne polyvalente"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "+20 armure (seigneur) — infanterie de ligne polyvalente ; on en retire une pour libérer l'emplacement de Bassiano Dutra, les quatre unités de Greatswords tenant déjà le centre"},
         {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 1, "note": "+20 armure (seigneur) — tir de soutien bon marché"},
         {"icon": "theSilverBullets", "name": "The Silver Bullets (Handgunners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — +20 armure (seigneur), tir perforant d'élite"},
         {"icon": "outriders", "name": "Outriders", "qty": 2, "note": "+20 armure (seigneur) — cavalerie légère à tir rapide, harcèlement et anti-artillerie"},
@@ -112,13 +114,14 @@
       "lord": {"icon": "volkmar", "name": "Volkmar the Grim", "qty": 1, "note": "Le Grand Théogoniste, chevauchant l'Autel de Guerre de Sigmar — son +10% de résistance physique et +8 de défense en mêlée pour les Flagellants/Empire Knights/Free Company Militia (seigneur) en fait ces unités des piliers increvables du champ de bataille"},
       "heroes": [
         {"icon": "luthorHuss", "name": "Luthor Huss (Héros Légendaire)", "qty": 1, "note": "Le Prophète de Sigmar (mod Mixu) — Warrior Priest légendaire, il devient Incassable et voit son entretien réduit tant qu'il combat dans l'armée de Volkmar ; son aura « Unbending Righteousness » inspire tout allié effrayé ou terrifié qui le voit, pilier anti-terreur idéal pour la horde fanatique de Volkmar"},
-        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "+4 de rang de recrutement (faction) — prières de combat rechargées 33% plus vite (faction), soutien de mêlée et de moral"}
+        {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "+4 de rang de recrutement (faction) — prières de combat rechargées 33% plus vite (faction), soutien de mêlée et de moral"},
+        {"icon": "chronosGoodheart", "name": "Chronos Goodheart", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, disponible pour presque toutes les provinces impériales — « des cendres d'une confrérie naquit une étincelle devenue flamme, puis brasier, portant le nom de Chronos Goodheart ». Ses compétences \"Become the Flame\" et \"Flame of the Righteous\" en font le zélote que cette fiche, entièrement bâtie sur les Flagellants, appelait. <strong>Il ne se recrute pas : il se débloque en capturant le Pillar of Bones</strong>"}
       ],
       "army": [
         {"icon": "flagellants", "name": "Flagellants", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — fanatiques Unbreakable, mur de mêlée increvable"},
         {"icon": "theTattersouls", "name": "The Tattersouls (Flagellants)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Flagellants, profite aussi des bonus du seigneur/faction"},
         {"icon": "empireKnights", "name": "Empire Knights", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — cavalerie lourde de choc"},
-        {"icon": "freeCompanyMilitia", "name": "Free Company Militia", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — tir léger résilient"},
+        {"icon": "freeCompanyMilitia", "name": "Free Company Militia", "qty": 2, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — tir léger résilient ; on en retire une pour libérer l'emplacement de Chronos Goodheart"},
         {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains, percée de mêlée"},
         {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Swordsmen dévouée à Sigmar"},
         {"icon": "mortars", "name": "Mortars (The Empire)", "qty": 2, "note": "Artillerie de zone à tir indirect"}
@@ -177,12 +180,13 @@
       "lord": {"icon": "mariusLeitdorf", "name": "Marius Leitdorf", "qty": 1, "note": "Le Comte Fou d'Averland, maître de la charge — sa passive « Knightly Charge » (seigneur) démultiplie l'impact de ses trois types de chevaliers, tandis que « The Mad Count » lui accorde au hasard un buff surpuissant (rage berserk, brillance tactique, bravoure incassable ou résistance de dément), le rendant redoutable mais imprévisible"},
       "heroes": [
         {"icon": "warriorPriest", "name": "Warrior Priest", "qty": 1, "note": "Prières de Sigmar (Shield of Faith, Soulfire, Healing Hand) — soutien de commandement et de survie qui garde la cavalerie en selle plus longtemps"},
-        {"icon": "brightWizard", "name": "Bright Wizard", "qty": 1, "note": "Lore of Fire (Fireball, Flame Storm) — ramollit et désorganise l'infanterie ennemie juste avant l'impact de la charge des chevaliers"}
+        {"icon": "brightWizard", "name": "Bright Wizard", "qty": 1, "note": "Lore of Fire (Fireball, Flame Storm) — ramollit et désorganise l'infanterie ennemie juste avant l'impact de la charge des chevaliers"},
+        {"icon": "halagrundsor", "name": "Halagrundsor the Horrible", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters — <strong>un géant</strong>, et le seul du roster impérial. « Halagrundsor a beau être amical, quand il percute ses ennemis ils volent quand même : c'est un géant, après tout. » Sa compétence \"Bullcharge\" prolonge la logique de charge de Marius avec une masse qu'aucun chevalier n'atteint, et il <strong>déteste particulièrement les Peaux-Vertes</strong> — l'Averland borde les Badlands. <strong>Il ne se recrute pas : il se débloque en capturant Karak Ungor</strong>, hold nain tenu par les gobelins"}
       ],
       "army": [
         {"icon": "reiksguard", "name": "Reiksguard", "qty": 3, "note": "Cavalerie lourde d'élite — cible de « Knightly Charge » (masse +50%, charge +40%, seigneur) : un mur d'acier lancé qui piétine l'ennemi en une brume rouge"},
         {"icon": "knightsBlazingSun", "name": "Knights of the Blazing Sun", "qty": 3, "note": "Chevaliers de Myrmidia — cible de « Knightly Charge » (seigneur), redoutables contre l'infanterie et les grandes cibles après la charge"},
-        {"icon": "empireKnights", "name": "Empire Knights", "qty": 2, "note": "Cavalerie de choc classique — cible de « Knightly Charge » (seigneur), complète le poing de cavalerie à moindre coût"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 1, "note": "Cavalerie de choc classique — cible de « Knightly Charge » (seigneur), complète le poing de cavalerie à moindre coût ; réduite à un exemplaire pour libérer l'emplacement de Halagrundsor, les Reiksguard et les Knights of the Blazing Sun formant déjà l'essentiel de la charge"},
         {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Cavalerie monstrueuse — bien que hors de « Knightly Charge », leur masse et leur impact naturels en font l'enclume qui fixe l'ennemi pendant que les chevaliers enveloppent"},
         {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — infanterie d'élite qui ancre le centre et tient pendant que la cavalerie charge les flancs"},
         {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir de précision perforant — abat l'infanterie lourde et les monstres avant le contact"},

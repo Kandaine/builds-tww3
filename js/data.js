@@ -1246,6 +1246,11 @@ const unitImages = {
   // Empire — Héros Légendaires du mod « Heroes of Legend »
   empOrsini: 'assets/units/empOrsini.png',
   empSabineFlamius: 'assets/units/empSabineFlamius.png',
+  // Empire — Héros Légendaires du mod « SCM Legendary Characters »
+  chronosGoodheart: 'assets/units/chronosGoodheart.png',
+  bassianoDutra: 'assets/units/bassianoDutra.png',
+  halagrundsor: 'assets/units/halagrundsor.png',
+  aldredVonCarroburg: 'assets/units/aldredVonCarroburg.png',
   astragoth: 'assets/portraits/astragoth.png',
   drazhoath: 'assets/portraits/drazhoath.png',
   zhatan: 'assets/portraits/zhatan.png',
