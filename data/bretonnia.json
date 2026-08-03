@@ -78,7 +78,7 @@
       "totalSlots": 20,
       "lord": {"icon": "fayEnchantress", "name": "La Fée Enchanteresse", "qty": 1, "note": "Lanceuse de sorts redoutable (Lore of Life) et protégée par The Blessing of the Lady (seigneur, +15% de résistance aux dégâts tant que son commandement tient) ; son attribut de peur (seigneur) effraie et affaiblit le commandement de toutes les unités ennemies à proximité, sans jamais l'affecter elle-même"},
       "heroes": [
-        {"icon": "brtHermitKnight", "name": "Hermit Knight of Malmont (Héros Légendaire)", "qty": 1, "note": "Vieux Chevalier du Graal reclus qui <strong>garde la Chapelle du Graal du Mont Malmont</strong> (mod Heroes of Legend) — nul ne connaît son vrai nom. Il incarne exactement le thème sacré de cet ost (Grail Guardians, Battle Pilgrims) et lui apporte l'ancrage de mêlée qui lui manquait"},
+        {"icon": "brtHermitKnight", "name": "Hermit Knight of Malmont (Héros Légendaire)", "qty": 1, "note": "Vieux Chevalier du Graal reclus qui <strong>garde la Chapelle du Graal du Mont Malmont</strong> (mod Heroes of Legend) — nul ne connaît son vrai nom. Il incarne exactement le thème sacré de cet ost (Grail Guardians, Battle Pilgrims) et lui apporte l'ancrage de mêlée qui lui manquait. <strong>Deux mods proposent ce personnage</strong> : celui retenu ici vient de Heroes of Legend ; SCM Legendary Characters en fournit une seconde version, ouverte à onze des factions bretonniennes du site et débloquée en <strong>capturant le Massif Orcal</strong>. Selon vos mods actifs, vous pourriez donc en voir apparaître deux — c'est le même Chevalier Ermite"},
         {"icon": "damsel", "name": "Damsel (Vie)", "qty": 1, "note": "Renfort de soin et de buffs en écho aux sorts de la Fée Enchanteresse"}
       ],
       "army": [
