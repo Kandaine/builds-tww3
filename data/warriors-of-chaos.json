@@ -16,11 +16,12 @@
       "lord": {"icon": "archaon", "name": "Archaon the Everchosen", "qty": 1, "note": "L'Élu Suprême, favorisé par les quatre Dieux du Chaos — duelliste et sorcier hybride d'exception, son Ward Save +5% et son +1 d'Autorité totale (seigneur) renforcent toute son armée, tandis que sa politique de vassalisation (faction) génère recherche, âmes et relations diplomatiques en continu"},
       "heroes": [
         {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Renfort de mêlée mortel robuste"},
-        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts en écho à la maîtrise du Lore of Fire d'Archaon"}
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts en écho à la maîtrise du Lore of Fire d'Archaon"},
+        {"icon": "slambo", "name": "Slambo", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, réservé à la <strong>Warhost of the Apocalypse</strong> — « béni par les quatre dieux du Chaos, si tant est qu'il n'en soit pas un lui-même, Slambo n'est pas contraint par des choses telles que la réalité quand il manie ses Haches en Quête de Gloire ». Ses capacités \"Axeman of the Gods\" et \"Crushing Charge\" en font un pur duelliste. <strong>Il ne se recrute pas : il se débloque en tuant 100 000 ennemis</strong> — la condition la plus longue de tout le mod, mais la horde d'Archaon est celle qui l'atteindra"}
       ],
       "army": [
         {"icon": "chosenGreatWeapons", "name": "Chosen (Armes Lourdes)", "qty": 4, "note": "Ward Save +5% et progression de puissance d'arme par rang (seigneur) — l'infanterie la plus dévastatrice du jeu une fois montée en rang"},
-        {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 4, "note": "Même double bonus (seigneur) — cœur de mêlée mortel robuste"},
+        {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 3, "note": "Même double bonus (seigneur) — cœur de mêlée mortel robuste ; réduit d'une unité pour libérer l'emplacement de Slambo, les quatre Chosen tenant déjà le centre"},
         {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Hallebardes)", "qty": 3, "note": "Même double bonus (seigneur) — anti-cavalerie et anti-monstre fiable"},
         {"icon": "swordsOfChaos", "name": "Swords of Chaos (Chaos Knights)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité \"Apocalyptic Charge (Empowered)\" (+35% masse, +20% vitesse et bonus de charge sur 35m, faction), plus le double bonus de rang/Ward Save (seigneur) — la propre garde personnelle d'Archaon, dévastatrice en charge"},
         {"icon": "chaosKnightsLances", "name": "Chaos Knights (Lances)", "qty": 3, "note": "Même double bonus de rang/Ward Save (seigneur) — cavalerie lourde de choc"},

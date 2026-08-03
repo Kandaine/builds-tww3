@@ -1807,6 +1807,7 @@ const unitImages = {
   exaltedHeroSlaanesh: 'assets/units/exaltedHeroSlaanesh.png',
   exaltedHeroNurgle: 'assets/units/exaltedHeroNurgle.png',
   exaltedHeroTzeentch: 'assets/units/exaltedHeroTzeentch.png',
+  slambo: 'assets/units/slambo.png',
   maraudersOfKhorne: 'assets/units/maraudersOfKhorne.png',
   swordsOfChaos: 'assets/units/swordsOfChaos.png',
   theDaemonspew: 'assets/units/theDaemonspew.png',
