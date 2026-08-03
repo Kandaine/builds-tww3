@@ -15,11 +15,12 @@
       "totalSlots": 20,
       "lord": {"icon": "kairos", "name": "Kairos Fateweaver", "qty": 1, "note": "Oracle de Tzeentch, sort suprême protégé par sa propre armée — son délai de régénération de barrière réduit (-20%, seigneur) et sa défense en embuscade accrue (+50%, seigneur) compensent sa grande fragilité au corps-à-corps pendant qu'il pilonne l'ennemi à distance"},
       "heroes": [
-        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 2, "note": "Soutien de sorts supplémentaire (Lore of Fire) et Gate of Tzeentch pour la mobilité stratégique — profite du temps de recharge des sorts réduit (-10%, seigneur) et du gain d'XP accru (+20%, faction)"}
+        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 2, "note": "Soutien de sorts supplémentaire (Lore of Fire) et Gate of Tzeentch pour la mobilité stratégique — profite du temps de recharge des sorts réduit (-10%, seigneur) et du gain d'XP accru (+20%, faction)"},
+        {"icon": "blueScribes", "name": "The Blue Scribes", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, dont le menu de recrutement pointe précisément les <strong>Oracles of Tzeentch</strong> — P'tarix et Xirat'p, les deux démons qui parcourent les royaumes pour transcrire tous les sorts existants. Le mod le traduit littéralement : ils portent <strong>19 sorts liés empruntés à tous les savoirs</strong>, de Comet of Casandora à Okkam's Mindrazor en passant par The Dwellers Below et Spirit Leech. Aucun autre héros du site n'offre une telle amplitude. <strong>Ils ne se recrutent pas : ils se débloquent en accumulant 1 000 Grimoires</strong>, dont 200 sont dépensés à leur arrivée"}
       ],
       "army": [
         {"icon": "pinkHorrors", "name": "Pink Horrors of Tzeentch", "qty": 4, "note": "Tir de zone magique, cœur offensif à distance de l'armée"},
-        {"icon": "blueHorrors", "name": "Blue Horrors of Tzeentch", "qty": 3, "note": "Chair à canon bon marché qui se scinde en Horreurs Roses à sa mort — protège la ligne de tir"},
+        {"icon": "blueHorrors", "name": "Blue Horrors of Tzeentch", "qty": 2, "note": "Chair à canon bon marché qui se scinde en Horreurs Roses à sa mort — protège la ligne de tir ; réduite d'une unité pour libérer l'emplacement des Blue Scribes"},
         {"icon": "blazingSquealers", "name": "The Blazing Squealers (Exalted Pink Horrors)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Exalted Pink Horrors, tir et résistance renforcés"},
         {"icon": "chaosFuriesTzeentch", "name": "Chaos Furies (Tzeentch)", "qty": 2, "note": "Harceleurs volants rapides — bénéficient de la défense en embuscade accrue (+50%, seigneur) pour sécuriser les flancs"},
         {"icon": "screamers", "name": "Screamers of Tzeentch", "qty": 2, "note": "Chasseurs volants rapides, idéaux contre les héros et l'artillerie ennemie"},

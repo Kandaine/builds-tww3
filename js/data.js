@@ -1296,6 +1296,7 @@ const unitImages = {
   goldenGriffinOfTheurgy: 'assets/units/goldenGriffinOfTheurgy.png',
   zoreadWarpscorched: 'assets/units/zoreadWarpscorched.png',
   xuqls: 'assets/units/xuqls.png',
+  blueScribes: 'assets/units/blueScribes.png',
   seekersOfSlaanesh: 'assets/units/seekersOfSlaanesh.png',
   chaosWarhoundsKhorne: 'assets/units/chaosWarhoundsKhorne.png',
   plaguebearers: 'assets/units/plaguebearers.png',
