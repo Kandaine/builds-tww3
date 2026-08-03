@@ -292,6 +292,10 @@ const seals = {
   blautFeastmaster: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 11h16a8 8 0 0 1-8 8 8 8 0 0 1-8-8Z"/><path d="M9 8V3M12 8V3M15 8V3"/><path d="M6 21h12"/></svg>`,
   shrewdFulg: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M10 3h4v5l4 8a3.5 3.5 0 0 1-3 5.5H9A3.5 3.5 0 0 1 6 16l4-8V3Z"/><path d="M9 3h6"/><circle cx="11" cy="16" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="18" r="1" fill="var(--accent-secondary)"/></svg>`,
   snarkyGutbuster: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 15l13-6 4 2-13 6-4-2Z"/><circle cx="6" cy="19" r="2"/><path d="M20 11l2-3"/><path d="M17 6l1-3M21 7l2-2"/></svg>`,
+  bloggCrusherguts: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 20l4-9 4 4 4-7 4 12Z"/><circle cx="9" cy="6" r="3"/><path d="M7.8 5.2l2.4 1.6M10.2 5.2L7.8 6.8"/></svg>`,
+  jharedTheRed: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 12c0-4 3.6-7 8-7s8 3 8 7-3.6 7-8 7-8-3-8-7Z"/><path d="M7 8L5 3l4 2M17 8l2-5-4 2"/><circle cx="9.5" cy="12" r="1.2" fill="var(--accent-secondary)"/><circle cx="14.5" cy="12" r="1.2" fill="var(--accent-secondary)"/><path d="M9 16h6"/></svg>`,
+  hrothgulIcefang: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/><path d="M12 6l-2 2 2 2 2-2-2-2Z"/></svg>`,
+  marnTheMangler: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 20L18 4"/><path d="M15 3l6 2-2 6-4-8Z"/><path d="M3 15l4 1 1 4-5-5Z"/><path d="M10 11l3 3"/></svg>`,
   redAldrek: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v13"/><path d="M6 6h12l-6 9-6-9Z"/><path d="M3 19c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/></svg>`,
   skarfangBlackskull: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 10a5 5 0 0 1 10 0v3a5 5 0 0 1-10 0v-3Z"/><path d="M5 6L3 3M19 6l2-3"/><path d="M10 20h4"/><circle cx="10" cy="11" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="1.1" fill="var(--accent-secondary)"/></svg>`,
   araveena: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21c-4-3-6-6-6-10a6 6 0 0 1 12 0c0 4-2 7-6 10Z"/><path d="M9 9l2 2 4-4"/><path d="M6 4L3 2M18 4l3-2"/></svg>`,
@@ -2491,6 +2495,34 @@ const unitImages = {
   specialManeatersOgrePistol: 'assets/units/specialManeatersOgrePistol.png',
   specialIronblaster: 'assets/units/specialIronblaster.png',
   specialGnoblarScraplauncher: 'assets/units/specialGnoblarScraplauncher.png',
+  // Seigneurs Ogre Kingdoms (mod SCM Masters of the Mountain), second lot :
+  // Blogg Crusherguts (Rock Skulls), Jhared The Red (Sabreskin Tribe),
+  // Hrothgul Icefang (Sons of the Mountain), Marn the Mangler (Thunderguts Tribe).
+  bloggCrusherguts: 'assets/portraits/bloggCrusherguts.png',
+  jharedTheRed: 'assets/portraits/jharedTheRed.png',
+  hrothgulIcefang: 'assets/portraits/hrothgulIcefang.png',
+  marnTheMangler: 'assets/portraits/marnTheMangler.png',
+  // Blogg Crusherguts (Rock Skulls).
+  ogreBruiser: 'assets/units/ogreBruiser.png',
+  // Jhared The Red (Sabreskin Tribe).
+  beastcladReavers: 'assets/units/beastcladReavers.png',
+  feralMournfang: 'assets/units/feralMournfang.png',
+  feralStonehorn: 'assets/units/feralStonehorn.png',
+  feralThundertusk: 'assets/units/feralThundertusk.png',
+  feralBoars: 'assets/units/feralBoars.png',
+  feralGorebeasts: 'assets/units/feralGorebeasts.png',
+  // Hrothgul Icefang (Sons of the Mountain).
+  greyback: 'assets/units/greyback.png',
+  yheteesIronfists: 'assets/units/yheteesIronfists.png',
+  yheteesGreatWeapons: 'assets/units/yheteesGreatWeapons.png',
+  hrothgulsGorgers: 'assets/units/hrothgulsGorgers.png',
+  hrothgulThundertuskShrine: 'assets/units/hrothgulThundertuskShrine.png',
+  feralIceMammoth: 'assets/units/feralIceMammoth.png',
+  // Marn the Mangler (Thunderguts Tribe).
+  ogrePitFighters: 'assets/units/ogrePitFighters.png',
+  mournfangCavalryPitFighters: 'assets/units/mournfangCavalryPitFighters.png',
+  ogrePitFighterChampions: 'assets/units/ogrePitFighterChampions.png',
+  ogrePitChampionsMounted: 'assets/units/ogrePitChampionsMounted.png',
   // Héros Empire "Engineer" (Thrones of Decay) — pas de carte dédiée sous
   // ui\units\icons\, portrait réutilisé depuis ui\portraits\units\.
   empireEngineer: 'assets/units/empireEngineer.png',
