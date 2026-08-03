@@ -2512,7 +2512,6 @@ const unitImages = {
   feralBoars: 'assets/units/feralBoars.png',
   feralGorebeasts: 'assets/units/feralGorebeasts.png',
   // Hrothgul Icefang (Sons of the Mountain).
-  greyback: 'assets/units/greyback.png',
   yheteesIronfists: 'assets/units/yheteesIronfists.png',
   yheteesGreatWeapons: 'assets/units/yheteesGreatWeapons.png',
   hrothgulsGorgers: 'assets/units/hrothgulsGorgers.png',
