@@ -296,6 +296,11 @@ const seals = {
   jharedTheRed: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 12c0-4 3.6-7 8-7s8 3 8 7-3.6 7-8 7-8-3-8-7Z"/><path d="M7 8L5 3l4 2M17 8l2-5-4 2"/><circle cx="9.5" cy="12" r="1.2" fill="var(--accent-secondary)"/><circle cx="14.5" cy="12" r="1.2" fill="var(--accent-secondary)"/><path d="M9 16h6"/></svg>`,
   hrothgulIcefang: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19"/><path d="M12 6l-2 2 2 2 2-2-2-2Z"/></svg>`,
   marnTheMangler: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M6 20L18 4"/><path d="M15 3l6 2-2 6-4-8Z"/><path d="M3 15l4 1 1 4-5-5Z"/><path d="M10 11l3 3"/></svg>`,
+  gulguletSandgrinder: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="7" r="3.5"/><path d="M3 20c2.5-2 5-3 9-3s6.5 1 9 3"/><path d="M5 16c2-1.2 4-1.8 7-1.8s5 .6 7 1.8"/><path d="M12 2v1.5M6 4l1 1.3M18 4l-1 1.3"/></svg>`,
+  morgMagmaborn: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2c1 4 4 5 4 9a4 4 0 0 1-8 0c0-1.5.6-2.6 1.4-3.6"/><path d="M3 20h18"/><path d="M6 20l2-3M18 20l-2-3"/></svg>`,
+  fernadrang: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 9a5 5 0 0 1 10 0v4a5 5 0 0 1-10 0V9Z"/><path d="M5 7L2 3M19 7l3-4"/><path d="M9.5 20h5"/><path d="M10 12h4"/></svg>`,
+  karakaBreakmountain: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M8 8V6a4 4 0 0 1 8 0v2"/><path d="M6 8h12l-1 10a3 3 0 0 1-3 2.6h-4A3 3 0 0 1 7 18L6 8Z"/><circle cx="10.5" cy="13" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="16" r="1" fill="var(--accent-secondary)"/></svg>`,
+  ghuthSpawnchomper: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l2.8 2.8M16.2 16.2 19 19M19 5l-2.8 2.8M7.8 16.2 5 19"/></svg>`,
   redAldrek: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v13"/><path d="M6 6h12l-6 9-6-9Z"/><path d="M3 19c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/></svg>`,
   skarfangBlackskull: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 10a5 5 0 0 1 10 0v3a5 5 0 0 1-10 0v-3Z"/><path d="M5 6L3 3M19 6l2-3"/><path d="M10 20h4"/><circle cx="10" cy="11" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="1.1" fill="var(--accent-secondary)"/></svg>`,
   araveena: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21c-4-3-6-6-6-10a6 6 0 0 1 12 0c0 4-2 7-6 10Z"/><path d="M9 9l2 2 4-4"/><path d="M6 4L3 2M18 4l3-2"/></svg>`,
@@ -2528,7 +2533,74 @@ const unitImages = {
   // Régiments de renom du mod dont la loc ne fournit pas de nom d'affichage.
   lavaArachnarokRoR: 'assets/units/lavaArachnarokRoR.png',
   gnoblarGrillersRoR: 'assets/units/gnoblarGrillersRoR.png',
-  leadbelchersRoRLooseTooth: 'assets/units/leadbelchersRoRLooseTooth.png'
+  leadbelchersRoRLooseTooth: 'assets/units/leadbelchersRoRLooseTooth.png',
+  // Mod SCM "Masters of the Maw" — lot 3/3.
+  // Gulgulet Sandgrinder (The Famished), Morg Magmaborn (Flamegullets),
+  // Fernadrang (Red Maw), Karaka Breakmountain (Red Fist Tribe),
+  // Ghuth Spawnchomper (roster "Tainted").
+  gulguletSandgrinder: 'assets/portraits/gulguletSandgrinder.png',
+  morgMagmaborn: 'assets/portraits/morgMagmaborn.png',
+  fernadrang: 'assets/portraits/fernadrang.png',
+  karakaBreakmountain: 'assets/portraits/karakaBreakmountain.png',
+  ghuthSpawnchomper: 'assets/portraits/ghuthSpawnchomper.png',
+  // Gulgulet Sandgrinder (The Famished).
+  arabyOgreBulls: 'assets/units/arabyOgreBulls.png',
+  arabyOgreBullsDual: 'assets/units/arabyOgreBullsDual.png',
+  arabyOgreBullsIronfists: 'assets/units/arabyOgreBullsIronfists.png',
+  arabyBoarCavalryIronfists: 'assets/units/arabyBoarCavalryIronfists.png',
+  sandguts: 'assets/units/sandguts.png',
+  arabyCrushersIronfists: 'assets/units/arabyCrushersIronfists.png',
+  ogreshabti: 'assets/units/ogreshabti.png',
+  solidoo: 'assets/units/solidoo.png',
+  sandScorpion: 'assets/units/sandScorpion.png',
+  duneVultures: 'assets/units/duneVultures.png',
+  // Pas de carte d'unite dediee sous ui\units\icons\ pour ce heros, portrait
+  // reutilise depuis ui\portraits\units\ (meme solution que empireEngineer).
+  gnoblarDunePriest: 'assets/units/gnoblarDunePriest.png',
+  // Morg Magmaborn (Flamegullets).
+  flameguts: 'assets/units/flameguts.png',
+  morgsIronguts: 'assets/units/morgsIronguts.png',
+  flameEatersGreatWeapons: 'assets/units/flameEatersGreatWeapons.png',
+  flameEatersOgrePistol: 'assets/units/flameEatersOgrePistol.png',
+  flamefangCavalry: 'assets/units/flamefangCavalry.png',
+  flameSpirits: 'assets/units/flameSpirits.png',
+  flameThrower: 'assets/units/flameThrower.png',
+  firebelly: 'assets/units/firebelly.png',
+  // Fernadrang (Red Maw).
+  khornateOgreBulls: 'assets/units/khornateOgreBulls.png',
+  khornateOgreBullsIronfists: 'assets/units/khornateOgreBullsIronfists.png',
+  bruiserOfKhorne: 'assets/units/bruiserOfKhorne.png',
+  // Karaka Breakmountain (Red Fist Tribe).
+  plagueguts: 'assets/units/plagueguts.png',
+  corruptThrowers: 'assets/units/corruptThrowers.png',
+  vortexBeastOfNurgle: 'assets/units/vortexBeastOfNurgle.png',
+  ghurekGlott: 'assets/units/ghurekGlott.png',
+  chaosGiantOfNurgle: 'assets/units/chaosGiantOfNurgle.png',
+  // Pas de carte d'unite dediee sous ui\units\icons\ pour ces heros, portrait
+  // reutilise depuis ui\portraits\units\ (meme solution que empireEngineer).
+  plaguebelly: 'assets/units/plaguebelly.png',
+  plagueBruiser: 'assets/units/plagueBruiser.png',
+  // Roster "Tainted", partagé par Fernadrang / Karaka / Ghuth.
+  taintedOgreBullsDual: 'assets/units/taintedOgreBullsDual.png',
+  taintedManeatersIronfists: 'assets/units/taintedManeatersIronfists.png',
+  taintedLeadbelchers: 'assets/units/taintedLeadbelchers.png',
+  taintedGnoblars: 'assets/units/taintedGnoblars.png',
+  ghuthsIronguts: 'assets/units/ghuthsIronguts.png',
+  taintedCrushersGreatWeapons: 'assets/units/taintedCrushersGreatWeapons.png',
+  taintedMournfangIronfists: 'assets/units/taintedMournfangIronfists.png',
+  taintedGiant: 'assets/units/taintedGiant.png',
+  taintedSabretuskPack: 'assets/units/taintedSabretuskPack.png',
+  taintedStonehorn: 'assets/units/taintedStonehorn.png',
+  taintedThundertusk: 'assets/units/taintedThundertusk.png',
+  ogreSpawnOfKhorne: 'assets/units/ogreSpawnOfKhorne.png',
+  ogreSpawnOfSlaanesh: 'assets/units/ogreSpawnOfSlaanesh.png',
+  braughSlavelord: 'assets/units/braughSlavelord.png',
+  sandbadTheSailor: 'assets/units/sandbadTheSailor.png',
+  rothnogTheShrinekeeper: 'assets/units/rothnogTheShrinekeeper.png',
+  oldFunder: 'assets/units/oldFunder.png',
+  gragtarFlameheart: 'assets/units/gragtarFlameheart.png',
+  golthog: 'assets/units/golthog.png',
+  nossoDaSchnozzla: 'assets/units/nossoDaSchnozzla.png'
 };
 
 // ----------------------------------------------------------------------------
