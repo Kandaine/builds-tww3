@@ -193,14 +193,15 @@
       "lord": {"icon": "kazador", "name": "Kazador Dragonslayer", "qty": 1, "note": "Roi-guerrier increvable de Karak Azul, vengeur sombre et taciturne — sa poursuite des Peaux-Vertes est facilitée par la régénération de 50% de sa portée de mouvement après chaque victoire contre les Greenskins (seigneur), idéale pour traquer sans relâche Gorfang et ses hordes"},
       "heroes": [
         {"icon": "runesmith", "name": "Runesmith", "qty": 1, "note": "Dissipe la magie ennemie et grave des runes sur les unités et machines de guerre — indispensable à toute armée naine"},
-        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement déjà renforcé (+8, seigneur) du cœur Ironbreakers/Miners"}
+        {"icon": "thane", "name": "Thane", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement déjà renforcé (+8, seigneur) du cœur Ironbreakers/Miners"},
+        {"icon": "kazrikTheMad", "name": "Kazrik the Mad", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, <strong>assigné à Karak Azul</strong> — c'est le <strong>fils de Kazador</strong> et l'héritier du trône. Capturé par Gorfang Rotgut, il eut la barbe et les cheveux rasés, un glyphe grossier tatoué sur le crâne, et fut <strong>cloué au trône de son propre père</strong> pour que celui-ci le découvre. Aucun héros du site n'incarne mieux la rancune qui définit cette fiche. <strong>Il ne se recrute pas : il apparaît automatiquement</strong>, sans mission"}
       ],
       "army": [
         {"icon": "minersBlastingCharges", "name": "Miners (Blasting Charges)", "qty": 3, "note": "Attribut Wallbreaker (+50% de dégâts contre les bâtiments, faction), +8 de Commandement et surtout +100% de Munitions (seigneur) qui double leur réserve de charges explosives — infanterie souterraine qui surgit derrière les lignes, abat les murs en siège et sature l'ennemi de bombes"},
         {"icon": "ekrundMiners", "name": "Ekrund Miners (Miners - Blasting Charges)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Miners à charges explosives, dont les bombes profitent à plein du +100% de Munitions (seigneur), en plus du Wallbreaker (faction) et du +8 de Commandement (seigneur)"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 4, "note": "+8 de Commandement (seigneur) — mur d'acier de Karak Azul, l'infanterie lourde la plus tenace des Nains, cœur défensif indéboulonnable"},
         {"icon": "irondrake", "name": "Irondrakes", "qty": 3, "note": "Fierté métallurgique de Karak Azul — tir perforant à courte portée qui fait fondre l'infanterie lourde et les monstres"},
-        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Gunline à distance pour éroder l'ennemi avant le contact"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "Gunline à distance pour éroder l'ennemi avant le contact — réduite à un exemplaire pour libérer l'emplacement de Kazrik, les trois Irondrakes assurant l'essentiel du tir"},
         {"icon": "cannon", "name": "Cannons", "qty": 2, "note": "Artillerie à tir direct — abat les grandes cibles et les seigneurs monstrueux des Peaux-Vertes"},
         {"icon": "grudgeThrower", "name": "Grudge Thrower", "qty": 1, "note": "Artillerie à tir indirect qui règle les vieilles rancunes à distance"}
       ],
@@ -224,15 +225,17 @@
       "totalSlots": 20,
       "lord": {"icon": "grimm", "name": "Grimm Burloksson", "qty": 1, "note": "Maître Ingénieur prodige, à pied ou monté sur son Gyrocopter/Gyrobomber — sa capacité \"Restock!\" (4 utilisations, seigneur) recharge les munitions d'une unité de tir en pleine bataille, prolongeant le feu d'une gunline qui, sinon, s'épuise"},
       "heroes": [
-        {"icon": "masterEngineer", "name": "Master Engineer", "qty": 2, "note": "Capacité de héros +2 et coût de recrutement -50% pour les Master Engineers (faction) — recrutés en nombre et à bas prix, ils boostent la cadence de tir et la précision des machines de guerre et Gyros, cœur de la doctrine mécanique de Grimm"}
+        {"icon": "masterEngineer", "name": "Master Engineer", "qty": 2, "note": "Capacité de héros +2 et coût de recrutement -50% pour les Master Engineers (faction) — recrutés en nombre et à bas prix, ils boostent la cadence de tir et la précision des machines de guerre et Gyros, cœur de la doctrine mécanique de Grimm"},
+        {"icon": "gromboldKruddsson", "name": "Grombold Kruddsson", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, <strong>assigné à Zhufbar</strong> — Thane ayant « commencé sa carrière comme Mineur, et conservé des liens de fraternité avec son ancienne guilde ». Il accorde la capacité <strong>« Famed Zhufbar's Miners » aux unités de Miners</strong> : c'est pour lui que la liste en aligne désormais deux, une armée de Grimm n'en comportant sinon aucune. <strong>Il ne se recrute pas : il apparaît automatiquement</strong>, sans mission"}
       ],
       "army": [
-        {"icon": "gyrocopter", "name": "Gyrocopters", "qty": 3, "note": "+15% de portée, Vanguard Deployment et -30% d'entretien (seigneur) — harcèlement aérien rapide qui se déploie d'emblée sur les flancs grâce à l'avant-garde"},
+        {"icon": "miner", "name": "Miners", "qty": 2, "note": "Ajoutées pour Grombold Kruddsson, dont la capacité <strong>« Famed Zhufbar's Miners »</strong> ne s'applique qu'à elles. Elles apportent en outre à une armée entièrement aérienne et à distance la seule menace terrestre sur l'arrière ennemi"},
+        {"icon": "gyrocopter", "name": "Gyrocopters", "qty": 2, "note": "+15% de portée, Vanguard Deployment et -30% d'entretien (seigneur) — harcèlement aérien rapide qui se déploie d'emblée sur les flancs grâce à l'avant-garde ; réduits d'un exemplaire, les Gyrobombers assurant la frappe lourde"},
         {"icon": "gyrobomber", "name": "Gyrobombers", "qty": 3, "note": "Même triple bonus (seigneur) — bombardement aérien dévastateur contre les blocs d'infanterie serrés"},
         {"icon": "theSkyhammer", "name": "Skyhammer Squadron (Gyrobombers)", "qty": 1, "note": "Régiment favori : +12% de Ward Save (faction) le rend nettement plus survivant, en plus du triple bonus portée/Vanguard/entretien (seigneur) — escadrille d'élite unique de Gyrobombers"},
         {"icon": "irondrake", "name": "Irondrakes", "qty": 3, "note": "Tir perforant à courte portée — première bénéficiaire de la capacité Restock! (seigneur) pour ne jamais tomber à court de munitions"},
-        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Gunline à la poudre noire, également ravitaillée par Restock! (seigneur)"},
-        {"icon": "cannon", "name": "Cannons", "qty": 2, "note": "Artillerie à tir direct contre les grandes cibles et les monstres"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "Gunline à la poudre noire, également ravitaillée par Restock! (seigneur) — réduite à un exemplaire pour financer les Miners"},
+        {"icon": "cannon", "name": "Cannons", "qty": 1, "note": "Artillerie à tir direct contre les grandes cibles et les monstres — réduite à un exemplaire pour financer les Miners, les Gyrobombers assurant déjà la frappe lourde"},
         {"icon": "grudgeThrower", "name": "Grudge Thrower", "qty": 1, "note": "Artillerie à tir indirect pour arroser les concentrations ennemies"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 2, "note": "Mince ligne de tenue en acier qui protège les Master Engineers, l'artillerie et les tireurs pendant que les Gyros débordent"}
       ],

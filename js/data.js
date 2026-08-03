@@ -1008,6 +1008,8 @@ const unitImages = {
   juggoJoriksonn: 'assets/units/juggoJoriksonn.png',
   torstonTreehaka: 'assets/units/torstonTreehaka.png',
   princeHamnir: 'assets/units/princeHamnir.png',
+  gromboldKruddsson: 'assets/units/gromboldKruddsson.png',
+  kazrikTheMad: 'assets/units/kazrikTheMad.png',
   flameCannon: 'assets/units/flameCannon.png',
   organGun: 'assets/units/organGun.png',
   runesmith: 'assets/units/runesmith.png',
