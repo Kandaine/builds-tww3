@@ -17,13 +17,14 @@
       "heroes": [
         {"icon": "kouranDarkhand", "name": "Kouran Darkhand (Héros Légendaire)", "qty": 1, "note": "Capitaine de la Black Guard et plus ancien serviteur de Malekith (mod Mixu's Legendary Lords) — embarqué dans l'armée de Malekith, il gagne +25 de Commandement et +5 d'Attaque en mêlée, et sa capacité passive « Captain of the Black Guard » renforce directement le cœur de Black Guard of Naggarond de cette armée. Duelliste tenace (armure « The Armour of Grief », hallebarde « Crimson Death ») animé d'une haine tenace des Hauts Elfes (Eternal Enemy)"},
         {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Renfort de sorts en écho à la magie de Malekith"},
-        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis avant la bataille"}
+        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis avant la bataille"},
+        {"icon": "furionOfClarKarond", "name": "Furion of Clar Karond", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, <strong>autorisé pour Naggarond et la faction Dark Elves uniquement</strong> — « l'un des tout premiers partisans de Malekith, et l'un des derniers Sorciers encore vivants ». Ses effets visent nommément les <strong>Hauts Elfes</strong> : baisse de leur Commandement et de leur endurance. Il double la magie de cette fiche avec \"Darkflame Lance\" et \"Black Amulet\". <strong>Il ne se recrute pas : il se débloque en portant Naggarond au niveau 3</strong>"}
       ],
       "army": [
         {"icon": "blackGuard", "name": "Black Guard of Naggarond", "qty": 5, "note": "-25% d'entretien (faction) — l'élite de l'infanterie Naggarond devient très abordable en nombre"},
         {"icon": "darkshards", "name": "Darkshards", "qty": 3, "note": "Même -25% d'entretien (faction) — tir de soutien à distance"},
         {"icon": "boltFiends", "name": "The Bolt-Fiends (Darkshards)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Darkshards, également couverte par le -25% d'entretien (faction)"},
-        {"icon": "dreadspears", "name": "Dreadspears", "qty": 4, "note": "Même bonus d'entretien (faction) — ligne de tenue anti-cavalerie fiable"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 3, "note": "Même bonus d'entretien (faction) — ligne de tenue anti-cavalerie fiable ; réduite d'une unité pour libérer l'emplacement de Furion, les cinq Black Guard formant déjà le mur"},
         {"icon": "bleakswords", "name": "Bleakswords", "qty": 2, "note": "Même bonus d'entretien (faction) — infanterie polyvalente supplémentaire"}
       ],
       "magic": "Malekith maîtrise la Lore of Dark Magic (Doombolt, Chillwind, Word of Pain, Soul Stealer) tandis que la Sorceress multiplie les effets de soutien et de destruction.",

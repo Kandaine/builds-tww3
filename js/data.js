@@ -1329,6 +1329,7 @@ const unitImages = {
   reaperBoltThrower: 'assets/units/reaperBoltThrower.png',
   shadowblade: 'assets/units/shadowblade.png',
   korelei: 'assets/units/korelei.png',
+  furionOfClarKarond: 'assets/units/furionOfClarKarond.png',
   bloodwrackMedusa: 'assets/units/bloodwrackMedusa.png',
   anarsis: 'assets/units/anarsis.png',
   theSirenOfRedRuin: 'assets/units/theSirenOfRedRuin.png',
