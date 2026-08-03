@@ -1907,6 +1907,7 @@ const unitImages = {
   norscanIceTrolls: 'assets/units/norscanIceTrolls.png',
   norscanTrolls: 'assets/units/norscanTrolls.png',
   norscanIceWolves: 'assets/units/norscanIceWolves.png',
+  dazharrDoomaxe: 'assets/units/dazharrDoomaxe.png',
   marauderBearmenGreatWeapons: 'assets/units/marauderBearmenGreatWeapons.png',
   marauderBearmen: 'assets/units/marauderBearmen.png',
   kurganHorsemenDualWeapons: 'assets/units/kurganHorsemenDualWeapons.png',

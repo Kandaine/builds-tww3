@@ -15,14 +15,15 @@
       "totalSlots": 20,
       "lord": {"icon": "wulfrik", "name": "Wulfrik the Wanderer", "qty": 1, "note": "Le Défieur Éternel, monté sur Mammouth pour encaisser les duels les plus rudes — son immunité à l'attrition maritime, son accès aux attaques navales sur les ports et sa capacité \"Seafang\" (56 dégâts/s, inflige Gelure, seigneur) en font un raider océanique redoutable"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer", "qty": 2, "note": "Soutien magique et de soin pour la horde de raids"}
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer", "qty": 2, "note": "Soutien magique et de soin pour la horde de raids"},
+        {"icon": "dazharrDoomaxe", "name": "Dazharr Doomaxe", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, dont le menu de recrutement pointe la faction de Wulfrik — un <strong>Nain du Chaos</strong> au service d'une horde norse, ce qui est déjà en soi une curiosité. Sa capacité <strong>\"Curse of the Bloody Wind\"</strong> siphonne les Vents de Magie d'un lanceur de sorts adverse pour les rassembler dans sa paume enflammée : c'est la seule réponse anti-magie d'une race qui n'en a aucune. <strong>Il ne se recrute pas : il se débloque en signant un accord commercial avec Astragoth</strong>, le Sorcier-Prophète qui figure sur la page Nains du Chaos"}
       ],
       "army": [
         {"icon": "feralMammothNorsca", "name": "Feral Mammoth", "qty": 2, "note": "Monstre increvable pour enfoncer le centre de la ligne ennemie"},
         {"icon": "marauderChampions", "name": "Marauder Champions", "qty": 1, "note": "Élite de mêlée pour renforcer la ligne"},
         {"icon": "icehornMarauders", "name": "Icehorn Marauders (Marauders)", "qty": 2, "note": "Régiment favori : +1 capacité et \"Rage\" améliorée avec défense accrue (faction), -15% d'entretien (faction) — variante d'élite frénétique des Marauders"},
         {"icon": "maraudersNorsca", "name": "Marauders", "qty": 2, "note": "-15% d'entretien (faction) — cœur de mêlée résilient"},
-        {"icon": "marauderBerserkersNorsca", "name": "Marauder Berserkers", "qty": 3, "note": "-15% d'entretien (faction) — infanterie frénétique bon marché"},
+        {"icon": "marauderBerserkersNorsca", "name": "Marauder Berserkers", "qty": 2, "note": "-15% d'entretien (faction) — infanterie frénétique bon marché ; réduite d'une unité pour libérer l'emplacement de Dazharr Doomaxe"},
         {"icon": "marauderGreatWeaponsNorsca", "name": "Marauders (Great Weapons)", "qty": 3, "note": "-15% d'entretien (faction) — anti-armure fiable"},
         {"icon": "marauderHorsemenThrowingAxesNorsca", "name": "Marauder Horsemen (Throwing Axes)", "qty": 3, "note": "-15% d'entretien (faction), +15 bonus de charge (faction) — cavalerie légère de flanc et de harcèlement"},
         {"icon": "norscanWarhounds", "name": "Norscan Warhounds", "qty": 1, "note": "Chasseurs rapides et bon marché pour flanquer et pourchasser les tireurs isolés"}
