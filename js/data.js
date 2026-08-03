@@ -288,6 +288,10 @@ const seals = {
   kaarnTheVanquisher: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3l3 4h4l-2 4 2 4h-4l-3 4-3-4H5l2-4-2-4h4l3-4Z"/><path d="M12 8v8"/></svg>`,
   vazgratTheLucky: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="8"/><path d="M14.5 9.5c-.6-1-1.6-1.5-2.7-1.5-1.5 0-2.6.8-2.6 2 0 2.6 5.4 1.4 5.4 4 0 1.3-1.2 2.1-2.8 2.1-1.2 0-2.2-.5-2.8-1.5"/><path d="M12 6v12"/></svg>`,
   targogWhalebeater: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 16c2 1.8 4 1.8 6 0s4-1.8 6 0 4 1.8 6 0"/><path d="M12 3l2.5 5H21l-4.5 3.5"/><path d="M12 3L9.5 8H3l4.5 3.5"/></svg>`,
+  bulMalletHands: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><ellipse cx="12" cy="13" rx="3.2" ry="4"/><circle cx="12" cy="7.5" r="2"/><path d="M9 10 4 6M9 13H2.5M9 16l-5 4M15 10l5-4M15 13h6.5M15 16l5 4"/></svg>`,
+  blautFeastmaster: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 11h16a8 8 0 0 1-8 8 8 8 0 0 1-8-8Z"/><path d="M9 8V3M12 8V3M15 8V3"/><path d="M6 21h12"/></svg>`,
+  shrewdFulg: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M10 3h4v5l4 8a3.5 3.5 0 0 1-3 5.5H9A3.5 3.5 0 0 1 6 16l4-8V3Z"/><path d="M9 3h6"/><circle cx="11" cy="16" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="18" r="1" fill="var(--accent-secondary)"/></svg>`,
+  snarkyGutbuster: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 15l13-6 4 2-13 6-4-2Z"/><circle cx="6" cy="19" r="2"/><path d="M20 11l2-3"/><path d="M17 6l1-3M21 7l2-2"/></svg>`,
   redAldrek: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v13"/><path d="M6 6h12l-6 9-6-9Z"/><path d="M3 19c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/></svg>`,
   skarfangBlackskull: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 10a5 5 0 0 1 10 0v3a5 5 0 0 1-10 0v-3Z"/><path d="M5 6L3 3M19 6l2-3"/><path d="M10 20h4"/><circle cx="10" cy="11" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="1.1" fill="var(--accent-secondary)"/></svg>`,
   araveena: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21c-4-3-6-6-6-10a6 6 0 0 1 12 0c0 4-2 7-6 10Z"/><path d="M9 9l2 2 4-4"/><path d="M6 4L3 2M18 4l3-2"/></svg>`,
@@ -2449,7 +2453,51 @@ const unitImages = {
   lurklox: 'assets/units/lurklox.png',
   veskit: 'assets/units/veskit.png',
   ikkHackflay: 'assets/units/ikkHackflay.png',
-  skaBloodtail: 'assets/units/skaBloodtail.png'
+  skaBloodtail: 'assets/units/skaBloodtail.png',
+  // Seigneurs Ogre Kingdoms (mod SCM Masters of the Mountain) : Bul Mallet-hands
+  // (Blood Guzzlers), Blaut Feastmaster (Feastmaster Tribe), Shrewd Fulg
+  // (Tribe of Shrewd Fulg), Snarky Gutbuster (Loose Tooth).
+  bulMalletHands: 'assets/portraits/bulMalletHands.png',
+  blautFeastmaster: 'assets/portraits/blautFeastmaster.png',
+  shrewdFulg: 'assets/portraits/shrewdFulg.png',
+  snarkyGutbuster: 'assets/portraits/snarkyGutbuster.png',
+  // Bul Mallet-hands (Blood Guzzlers).
+  ogreArachnarokSpider: 'assets/units/ogreArachnarokSpider.png',
+  ogreArachnarokSpiderFlinger: 'assets/units/ogreArachnarokSpiderFlinger.png',
+  gnoblarSpiderRiders: 'assets/units/gnoblarSpiderRiders.png',
+  gnoblarSpiderRidersArchers: 'assets/units/gnoblarSpiderRidersArchers.png',
+  flameNoses: 'assets/units/flameNoses.png',
+  gnoblarSpiderChariot: 'assets/units/gnoblarSpiderChariot.png',
+  hunterSpiderChariot: 'assets/units/hunterSpiderChariot.png',
+  malletsHunters: 'assets/units/malletsHunters.png',
+  ogreGiantSpider: 'assets/units/ogreGiantSpider.png',
+  // Blaut Feastmaster (Feastmaster Tribe).
+  blautsManeaters: 'assets/units/blautsManeaters.png',
+  feastguard: 'assets/units/feastguard.png',
+  blautfangWarbeasts: 'assets/units/blautfangWarbeasts.png',
+  gnoblarGrillers: 'assets/units/gnoblarGrillers.png',
+  halflingCook: 'assets/units/halflingCook.png',
+  // Shrewd Fulg (Tribe of Shrewd Fulg).
+  fulgsIronguts: 'assets/units/fulgsIronguts.png',
+  hellionsFulgsIronguts: 'assets/units/hellionsFulgsIronguts.png',
+  modifiedIronguts: 'assets/units/modifiedIronguts.png',
+  modifiedSabretuskPack: 'assets/units/modifiedSabretuskPack.png',
+  modifiedRhinox: 'assets/units/modifiedRhinox.png',
+  modifiedStonehorn: 'assets/units/modifiedStonehorn.png',
+  // Snarky Gutbuster (Loose Tooth).
+  leadbelchersGatling: 'assets/units/leadbelchersGatling.png',
+  leadbelchersSnipe: 'assets/units/leadbelchersSnipe.png',
+  leadbelchersFlame: 'assets/units/leadbelchersFlame.png',
+  specialManeatersOgrePistol: 'assets/units/specialManeatersOgrePistol.png',
+  specialIronblaster: 'assets/units/specialIronblaster.png',
+  specialGnoblarScraplauncher: 'assets/units/specialGnoblarScraplauncher.png',
+  // Héros Empire "Engineer" (Thrones of Decay) — pas de carte dédiée sous
+  // ui\units\icons\, portrait réutilisé depuis ui\portraits\units\.
+  empireEngineer: 'assets/units/empireEngineer.png',
+  // Régiments de renom du mod dont la loc ne fournit pas de nom d'affichage.
+  lavaArachnarokRoR: 'assets/units/lavaArachnarokRoR.png',
+  gnoblarGrillersRoR: 'assets/units/gnoblarGrillersRoR.png',
+  leadbelchersRoRLooseTooth: 'assets/units/leadbelchersRoRLooseTooth.png'
 };
 
 // ----------------------------------------------------------------------------
