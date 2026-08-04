@@ -320,6 +320,9 @@ const seals = {
   hrothyogg: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 11h16a8 8 0 0 1-8 8 8 8 0 0 1-8-8Z"/><path d="M7 8V5M12 8V4M17 8V5"/><path d="M9 21h6"/></svg>`,
   sceolan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2v20M4 8l8 4 8-4M4 15l8 4 8-4"/><path d="M9 5l3-3 3 3"/></svg>`,
   alphonseDolmance: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M8 3h8l-1 6a3 3 0 0 1-6 0L8 3Z"/><path d="M12 12v6"/><path d="M8 21h8"/><path d="M9.5 6.5c1-1 2-1 2.5 0 .5-1 1.5-1 2.5 0"/></svg>`,
+  princessEldyra: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 16h16"/><circle cx="8" cy="19" r="2"/><circle cx="17" cy="19" r="2"/><path d="M6 16V9l6-4 6 4v7"/><path d="M12 5V2"/></svg>`,
+  liandraAthinol: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 8c3-3 7-3 9 1 2-4 6-4 9-1"/><path d="M12 9v11"/><path d="M8 13c2 2 6 2 8 0"/><path d="M9 20h6"/></svg>`,
+  arandirSwiftwing: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 14c3-2 5-6 9-6s6 4 9 6"/><path d="M12 8V3"/><path d="M6 18c2-1 4-1 6 0s4 1 6 0"/><circle cx="12" cy="13" r="1.6"/></svg>`,
   redAldrek: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v13"/><path d="M6 6h12l-6 9-6-9Z"/><path d="M3 19c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/></svg>`,
   skarfangBlackskull: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 10a5 5 0 0 1 10 0v3a5 5 0 0 1-10 0v-3Z"/><path d="M5 6L3 3M19 6l2-3"/><path d="M10 20h4"/><circle cx="10" cy="11" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="1.1" fill="var(--accent-secondary)"/></svg>`,
   araveena: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21c-4-3-6-6-6-10a6 6 0 0 1 12 0c0 4-2 7-6 10Z"/><path d="M9 9l2 2 4-4"/><path d="M6 4L3 2M18 4l3-2"/></svg>`,
@@ -2678,6 +2681,17 @@ const unitImages = {
   rhobbGrimly: 'assets/units/rhobbGrimly.png',
   shazEnsun: 'assets/units/shazEnsun.png',
   chaosMaraudersSlaanesh: 'assets/units/chaosMaraudersSlaanesh.png',
+  princessEldyra: 'assets/portraits/princessEldyra.png',
+  liandraAthinol: 'assets/portraits/liandraAthinol.png',
+  arandirSwiftwing: 'assets/portraits/arandirSwiftwing.png',
+  tiranocChariot: 'assets/units/tiranocChariot.png',
+  ellyrianReavers: 'assets/units/ellyrianReavers.png',
+  ellyrianReaverArchers: 'assets/units/ellyrianReaverArchers.png',
+  sunDragon: 'assets/units/sunDragon.png',
+  moonDragon: 'assets/units/moonDragon.png',
+  chiefHandmaidenLirazel: 'assets/units/chiefHandmaidenLirazel.png',
+  khaltarTheWind: 'assets/units/khaltarTheWind.png',
+  selafynOfTheAnnulii: 'assets/units/selafynOfTheAnnulii.png',
 };
 
 // ----------------------------------------------------------------------------
