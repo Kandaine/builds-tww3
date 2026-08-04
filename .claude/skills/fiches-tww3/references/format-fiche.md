@@ -86,6 +86,18 @@ d'unités, de factions. C'est ce que le user voit en jeu.
 
 ## 4. Rédiger le build
 
+**Poser l'arithmétique AVANT d'écrire le JSON.** `1 seigneur + Σ qty des héros + Σ qty des unités
+= 20`, exactement. Écrire la liste avec ses quantités, additionner, ajuster — *puis* rédiger.
+
+Ce n'est pas une précaution théorique : sur un chantier de huit fiches, sept sont sorties à 21, 22,
+23 ou 24 slots parce que j'avais composé d'abord et compté ensuite. `validate_fiche.ps1` les
+rattrape toutes, donc rien ne part faux, mais les coupes de rattrapage sont mécaniques — on retire
+une unité parce qu'il faut retirer quelque chose, pas parce que le build est meilleur sans elle.
+Une liste posée juste du premier coup est mieux pensée qu'une liste corrigée après coup.
+
+Ordre de grandeur habituel : **2 à 3 héros** et **16 à 17 unités**. Un `qty` de héros compte dans le
+total au même titre qu'une unité — deux Bouchers, c'est deux slots.
+
 **`role`** — trois à cinq phrases qui expliquent la logique de la liste. Partir de la mécanique
 centrale du seigneur, pas d'une description du roster. La bonne question : qu'est-ce qui rend cette
 faction différente des autres de sa race, et qu'est-ce que cela impose au build ?
