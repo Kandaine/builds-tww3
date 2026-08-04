@@ -305,6 +305,10 @@ const seals = {
   sporctacus: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 10V7a3 3 0 0 1 6 0"/><rect x="3" y="10" width="10" height="8" rx="1.5"/><path d="M16 14l5-5M17 9h4v4"/></svg>`,
   tinittFourEyes: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><ellipse cx="12" cy="13" rx="3" ry="3.5"/><circle cx="10.5" cy="7" r="1.3"/><circle cx="13.5" cy="7" r="1.3"/><path d="M9 11 4 7M9 14H3M9 17l-5 3M15 11l5-4M15 14h6M15 17l5 3"/></svg>`,
   gitillaDaHunter: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 14l3-6 2 3h6l2-3 3 6-4 6H8l-4-6Z"/><path d="M10 13h.01M14 13h.01"/><path d="M11 17h2"/></svg>`,
+  valbrandFireblade: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3c2 3.5 4.5 5 4.5 8.5a4.5 4.5 0 0 1-9 0C7.5 8 10 6.5 12 3Z"/><path d="M6 20h12"/><path d="M9 20l1-3M15 20l-1-3"/></svg>`,
+  surthaLenk: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 17l6-9 4 5 3-4 5 8"/><path d="M5 20h14"/><circle cx="9" cy="5" r="1.6"/><path d="M9 6.6V8"/></svg>`,
+  thorgarTheBloodedOne: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3v6"/><circle cx="12" cy="13" r="4"/><path d="M8 3h8"/><path d="M6 20c2-2 4-3 6-3s4 1 6 3"/></svg>`,
+  volrikClawhand: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 4c3 2 5 4 5 7a5 5 0 0 1-10 0c0-3 2-5 5-7Z"/><path d="M7 14l-3 3M17 14l3 3M12 18v3"/><circle cx="12" cy="10" r="1.4" fill="var(--accent-secondary)"/></svg>`,
   redAldrek: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v13"/><path d="M6 6h12l-6 9-6-9Z"/><path d="M3 19c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/></svg>`,
   skarfangBlackskull: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 10a5 5 0 0 1 10 0v3a5 5 0 0 1-10 0v-3Z"/><path d="M5 6L3 3M19 6l2-3"/><path d="M10 20h4"/><circle cx="10" cy="11" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="1.1" fill="var(--accent-secondary)"/></svg>`,
   araveena: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21c-4-3-6-6-6-10a6 6 0 0 1 12 0c0 4-2 7-6 10Z"/><path d="M9 9l2 2 4-4"/><path d="M6 4L3 2M18 4l3-2"/></svg>`,
@@ -2633,7 +2637,15 @@ const unitImages = {
   oldFunder: 'assets/units/oldFunder.png',
   gragtarFlameheart: 'assets/units/gragtarFlameheart.png',
   golthog: 'assets/units/golthog.png',
-  nossoDaSchnozzla: 'assets/units/nossoDaSchnozzla.png'
+  nossoDaSchnozzla: 'assets/units/nossoDaSchnozzla.png',
+  valbrandFireblade: 'assets/portraits/valbrandFireblade.png',
+  surthaLenk: 'assets/portraits/surthaLenk.png',
+  thorgarTheBloodedOne: 'assets/portraits/thorgarTheBloodedOne.png',
+  volrikClawhand: 'assets/portraits/volrikClawhand.png',
+  marauderHuntersJavelins: 'assets/units/marauderHuntersJavelins.png',
+  warMammoth: 'assets/units/warMammoth.png',
+  beastsOfTashnar: 'assets/units/beastsOfTashnar.png',
+  soulcrusher: 'assets/units/soulcrusher.png'
 };
 
 // ----------------------------------------------------------------------------
