@@ -312,6 +312,14 @@ const seals = {
   engraDeathsword: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M5 3l14 18M19 3L5 21"/><path d="M3 3h4v4M21 3h-4v4"/><circle cx="12" cy="12" r="2.2"/></svg>`,
   aelfricCyenwulf: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 13l3-7 2 3h6l2-3 3 7-5 7H9l-5-7Z"/><circle cx="10" cy="12" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="12" r="1.1" fill="var(--accent-secondary)"/><path d="M10.5 16h3"/></svg>`,
   lordSlaurith: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 7h16v3a8 8 0 0 1-16 0V7Z"/><path d="M4 7l3-4h10l3 4"/><path d="M9 18h6"/><path d="M12 13v5"/></svg>`,
+  burlokDamminsson: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="3.2"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.5 5.5l2.1 2.1M16.4 16.4l2.1 2.1M18.5 5.5l-2.1 2.1M7.6 16.4l-2.1 2.1"/></svg>`,
+  duriathHelbane: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M3 17c2.5 1.8 5 1.8 7.5 0s5-1.8 7.5 0"/><path d="M12 3l3 6h-6l3-6Z"/><path d="M12 9v5"/><path d="M8 13h8"/></svg>`,
+  highMageTorinubar: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v20"/><circle cx="12" cy="7" r="2.5"/><path d="M4 12h16"/><path d="M6 12a6 6 0 0 0 12 0"/></svg>`,
+  zachariasTheEverliving: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21c-5-4-7-7-7-11a7 7 0 0 1 14 0c0 4-2 7-7 11Z"/><circle cx="12" cy="9" r="2"/><path d="M9 14h6"/></svg>`,
+  lordKaritamen: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="8" r="3"/><path d="M3 20c2-4 5-6 9-6s7 2 9 6"/><path d="M12 2v2M6 5l1 1.5M18 5l-1 1.5"/></svg>`,
+  hrothyogg: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 11h16a8 8 0 0 1-8 8 8 8 0 0 1-8-8Z"/><path d="M7 8V5M12 8V4M17 8V5"/><path d="M9 21h6"/></svg>`,
+  sceolan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.5"><path d="M12 2v20M4 8l8 4 8-4M4 15l8 4 8-4"/><path d="M9 5l3-3 3 3"/></svg>`,
+  alphonseDolmance: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M8 3h8l-1 6a3 3 0 0 1-6 0L8 3Z"/><path d="M12 12v6"/><path d="M8 21h8"/><path d="M9.5 6.5c1-1 2-1 2.5 0 .5-1 1.5-1 2.5 0"/></svg>`,
   redAldrek: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v13"/><path d="M6 6h12l-6 9-6-9Z"/><path d="M3 19c2 1.5 4 1.5 6 0s4-1.5 6 0 4 1.5 6 0"/></svg>`,
   skarfangBlackskull: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M7 10a5 5 0 0 1 10 0v3a5 5 0 0 1-10 0v-3Z"/><path d="M5 6L3 3M19 6l2-3"/><path d="M10 20h4"/><circle cx="10" cy="11" r="1.1" fill="var(--accent-secondary)"/><circle cx="14" cy="11" r="1.1" fill="var(--accent-secondary)"/></svg>`,
   araveena: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 21c-4-3-6-6-6-10a6 6 0 0 1 12 0c0 4-2 7-6 10Z"/><path d="M9 9l2 2 4-4"/><path d="M6 4L3 2M18 4l3-2"/></svg>`,
@@ -2564,6 +2572,7 @@ const unitImages = {
   feralIceMammoth: 'assets/units/feralIceMammoth.png',
   // Marn the Mangler (Thunderguts Tribe).
   ogrePitFighters: 'assets/units/ogrePitFighters.png',
+  mournfangCavalry: 'assets/units/mournfangCavalry.png',
   mournfangCavalryPitFighters: 'assets/units/mournfangCavalryPitFighters.png',
   ogrePitFighterChampions: 'assets/units/ogrePitFighterChampions.png',
   ogrePitChampionsMounted: 'assets/units/ogrePitChampionsMounted.png',
@@ -2654,7 +2663,21 @@ const unitImages = {
   knightsOfTheBrazenThrone: 'assets/units/knightsOfTheBrazenThrone.png',
   warMammoth: 'assets/units/warMammoth.png',
   beastsOfTashnar: 'assets/units/beastsOfTashnar.png',
-  soulcrusher: 'assets/units/soulcrusher.png'
+  soulcrusher: 'assets/units/soulcrusher.png',
+  // SCM Legendary Characters Campaign Pack — dernier lot, huit races.
+  burlokDamminsson: 'assets/portraits/burlokDamminsson.png',
+  duriathHelbane: 'assets/portraits/duriathHelbane.png',
+  highMageTorinubar: 'assets/portraits/highMageTorinubar.png',
+  zachariasTheEverliving: 'assets/portraits/zachariasTheEverliving.png',
+  lordKaritamen: 'assets/portraits/lordKaritamen.png',
+  hrothyogg: 'assets/portraits/hrothyogg.png',
+  sceolan: 'assets/portraits/sceolan.png',
+  alphonseDolmance: 'assets/portraits/alphonseDolmance.png',
+  theClawOfNagash: 'assets/units/theClawOfNagash.png',
+  gargulTheGunner: 'assets/units/gargulTheGunner.png',
+  rhobbGrimly: 'assets/units/rhobbGrimly.png',
+  shazEnsun: 'assets/units/shazEnsun.png',
+  chaosMaraudersSlaanesh: 'assets/units/chaosMaraudersSlaanesh.png',
 };
 
 // ----------------------------------------------------------------------------

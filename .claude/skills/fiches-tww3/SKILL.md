@@ -119,6 +119,15 @@ powershell -File "C:\Users\Utilisateur\.claude\tools\tww\validate_fiche.ps1" -Fa
 Recalcule les 20 slots et vérifie que chaque clé d'icône est enregistrée et que son PNG existe.
 Il lit `js/data.js` comme du texte : **il ne détecte pas une erreur de syntaxe JavaScript.**
 
+**Toujours sans `-Id`.** L'option existe pour un contrôle ponctuel, pas pour valider un lot : une
+correction de quantité peut avoir dérapé sur d'autres seigneurs du même fichier (voir
+`references/format-fiche.md`, « Corriger une quantité : jamais par `Replace()` global »). En fin de
+lot, boucler sur tous les fichiers du site, pas seulement ceux qu'on croit avoir touchés :
+
+```bash
+powershell -Command "Get-ChildItem 'C:\Users\Utilisateur\Projets\builds-tww3\data\*.json' | ForEach-Object { & 'C:\Users\Utilisateur\.claude\tools\tww\validate_fiche.ps1' -Faction $_.BaseName }"
+```
+
 Ensuite le navigateur, via `preview_start` (nom `codex-static-server`, port 5173) puis
 `ogre_kingdoms.html?id=<lordId>` — noter que les pages HTML utilisent des **underscores**
 (`ogre_kingdoms.html`) alors que les JSON utilisent des **tirets** (`ogre-kingdoms.json`).

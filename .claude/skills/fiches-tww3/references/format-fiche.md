@@ -106,6 +106,33 @@ ailleurs. Choisir le nombre en fonction du seigneur, pas d'une habitude.
 Un `qty` de héros compte dans le total au même titre qu'une unité — deux Bouchers, c'est deux
 slots. C'est l'erreur de calcul la plus fréquente.
 
+### Corriger une quantité : jamais par `Replace()` global
+
+**Ne jamais corriger un `qty` par un `String.Replace()` sur le contenu entier du fichier.** Un
+fichier de faction contient une vingtaine de seigneurs qui partagent le même roster : `{"icon":
+"deepwoodScouts", "name": "Deepwood Scouts", "qty": 2,` apparaît à l'identique dans plusieurs
+fiches. Un `Replace()` les modifie **toutes**, silencieusement.
+
+C'est arrivé sur le lot LCCP : trois `Replace()` destinés à trois fiches en ont dégradé **neuf
+autres**, passées à 19/20 sans que rien ne le signale sur le moment. Les fiches touchées étaient
+Belannaer, Korhil, Rakaph, Orion, Wychwethyl, Daith, la Fée Enchanteresse, Mogen et Hagen — aucune
+n'avait de rapport avec le mod en cours.
+
+Deux conséquences pratiques :
+
+1. **Cibler l'entrée.** Utiliser l'outil `Edit` avec une chaîne qui inclut le début de la `note`,
+   qui est propre à chaque fiche. `"qty": 2, "note": "Archers furtifs (Stalk)` est unique là où
+   `"qty": 2,` ne l'est pas. Si la note elle-même est dupliquée entre deux fiches, c'est un signal :
+   soit les deux doivent changer, soit il faut d'abord différencier les notes.
+2. **Valider toute la faction, pas la fiche.** `validate_fiche.ps1 -Faction <x>` sans `-Id` passe en
+   revue tous les seigneurs du fichier. C'est ce qui a révélé les neuf régressions ; un contrôle
+   limité à `-Id` les aurait laissées partir au commit. Après un lot, boucler sur **tous** les
+   `data\*.json` du site, pas seulement ceux qu'on croit avoir touchés.
+
+Et si le mal est fait : `git diff --unified=0` sur les fichiers concernés, filtré sur les lignes
+`qty`, isole exactement les lignes modifiées. Chaque hunk `-`/`+` donne l'ancienne valeur à
+restaurer.
+
 **`role`** — trois à cinq phrases qui expliquent la logique de la liste. Partir de la mécanique
 centrale du seigneur, pas d'une description du roster. La bonne question : qu'est-ce qui rend cette
 faction différente des autres de sa race, et qu'est-ce que cela impose au build ?
