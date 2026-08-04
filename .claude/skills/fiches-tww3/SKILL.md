@@ -19,8 +19,9 @@ Ces règles viennent toutes d'erreurs réelles corrigées par le user. Elles co�
 et cher à violer.
 
 **Ne jamais inventer un nom d'unité ou de héros.** Si la loc du mod est muette, épuiser l'échelle
-de repli (voir `references/analyse-pack.md`), puis **demander au user** le nom affiché en jeu. Un
-nom plausible par analogie n'est pas un nom confirmé.
+de repli (voir `references/analyse-pack.md`), consulter le **wiki officiel** — le user l'a
+autorisé — puis **demander au user** le nom affiché en jeu. Un nom plausible par analogie n'est pas
+un nom confirmé.
 
 **Ne jamais substituer une image approchante.** Si la carte manque, l'extraire, ou utiliser le
 portrait officiel du même personnage. Jamais la carte d'un homonyme : le « Master Engineer » n'est

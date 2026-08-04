@@ -2643,6 +2643,7 @@ const unitImages = {
   thorgarTheBloodedOne: 'assets/portraits/thorgarTheBloodedOne.png',
   volrikClawhand: 'assets/portraits/volrikClawhand.png',
   marauderHuntersJavelins: 'assets/units/marauderHuntersJavelins.png',
+  marauderChampionsGreatWeapons: 'assets/units/marauderChampionsGreatWeapons.png',
   warMammoth: 'assets/units/warMammoth.png',
   beastsOfTashnar: 'assets/units/beastsOfTashnar.png',
   soulcrusher: 'assets/units/soulcrusher.png'

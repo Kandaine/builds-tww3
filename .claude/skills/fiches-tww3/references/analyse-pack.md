@@ -94,7 +94,19 @@ vérification datait de plusieurs étapes plus tôt.
 5. `ui_text_replacements_localised_text_*` — noms de héros variables selon la faction
 6. `unit_description_short_texts_text_*` — ne donne pas le nom mais permet de distinguer deux
    variantes voisines (`_01` base, `_03` Ironfists, etc.)
-7. **Demander au user.** C'est une issue normale, pas un échec.
+7. **Le wiki officiel** — `https://totalwarwarhammer.fandom.com/wiki/<Nom_De_L_Unite>`. Le user a
+   explicitement autorisé cette source (03/08/2026). Y aller via `mcp__Claude_Browser__navigate`
+   puis `get_page_text` : `WebFetch` renvoie un 402 sur ce domaine. Le wiki donne la clé interne
+   exacte, la race, la catégorie, les statistiques complètes et les attributs — donc bien plus
+   qu'un nom : de quoi **justifier** un choix de variante au lieu de le poser arbitrairement.
+8. **Demander au user.** C'est une issue normale, pas un échec.
+
+**Le dump de loc n'est pas exhaustif.** L'extraction ASCII rate des entrées : une absence dans le
+dump ne prouve pas l'absence dans le jeu. Cas vécu — j'ai conclu que les Marauder Champions (Great
+Weapons) n'avaient aucun nom et relevaient de contenu coupé, alors que l'unité existe bel et bien
+(`wh_dlc08_nor_inf_marauder_champions_1`, DLC Norsca). **Indice qui aurait dû alerter** : une carte
+existait dans `ui\units\icons\` alors que le nom semblait absent. Une carte sans nom est suspecte —
+vérifier au wiki avant de conclure à du contenu coupé.
 
 Attention au format du dump : la valeur est tantôt sur la ligne suivante, tantôt collée à la clé
 sur la même ligne. Chercher les deux.
