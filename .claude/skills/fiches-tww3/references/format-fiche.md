@@ -95,8 +95,16 @@ rattrape toutes, donc rien ne part faux, mais les coupes de rattrapage sont méc
 une unité parce qu'il faut retirer quelque chose, pas parce que le build est meilleur sans elle.
 Une liste posée juste du premier coup est mieux pensée qu'une liste corrigée après coup.
 
-Ordre de grandeur habituel : **2 à 3 héros** et **16 à 17 unités**. Un `qty` de héros compte dans le
-total au même titre qu'une unité — deux Bouchers, c'est deux slots.
+**La seule règle est le total de 20.** La répartition entre héros et unités est libre et doit
+suivre ce que les effets du seigneur récompensent — il n'y a pas de quota. Un seigneur dont les
+capacités s'accrochent aux héros en mérite beaucoup : Vazgrat en aligne **4**, Volrik **3** parce
+que sa faction gagne des bonus sur les Vents de Magie élevés, et Sss'el'ari saturerait de héros
+puisque son aura ne touche que les Seigneurs et Héros. À l'inverse, Throgg et Sayl n'en ont
+qu'**un** : rien dans leurs effets ne récompense d'en aligner davantage, et le slot vaut mieux
+ailleurs. Choisir le nombre en fonction du seigneur, pas d'une habitude.
+
+Un `qty` de héros compte dans le total au même titre qu'une unité — deux Bouchers, c'est deux
+slots. C'est l'erreur de calcul la plus fréquente.
 
 **`role`** — trois à cinq phrases qui expliquent la logique de la liste. Partir de la mécanique
 centrale du seigneur, pas d'une description du roster. La bonne question : qu'est-ce qui rend cette
