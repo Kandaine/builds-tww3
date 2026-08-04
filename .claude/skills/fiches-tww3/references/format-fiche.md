@@ -101,13 +101,29 @@ soin, le dire et expliquer ce qui compense.
 mécaniques plafonnées, les conditions de déclenchement, les unités écartées faute de nom, les
 arbitrages assumés. Le user lit cette section : elle doit lui éviter une mauvaise surprise en jeu.
 
-**Préciser le savoir quand un héros existe en plusieurs variantes.** Le user le demande
-systématiquement. Cas connus : Daemonsmith Sorcerer (Hashut / Fire / Metal / Death), Chaos Sorcerer
-of Nurgle (Nurgle / Death), Chaos Sorcerer of Tzeentch (Tzeentch / Metal), Plagueridden (Nurgle /
-Death), Butcher et Slaughtermaster (Great Maw / Beasts / et les variantes ajoutées par les mods).
-Format : `Nom (Savoir)` dans le champ `name`, les variantes possibles listées dans la note, et le
-choix justifié par les effets du seigneur — un seigneur qui réduit le coût des sorts de Tzeentch
-n'a que faire d'une variante Métal.
+**Préciser la variante dès qu'une unité ou un héros en a plusieurs.** Le user le demande
+systématiquement, et cela vaut pour les deux familles de variantes.
+
+*Savoirs de magie* : Daemonsmith Sorcerer (Hashut / Fire / Metal / Death), Chaos Sorcerer of Nurgle
+(Nurgle / Death), Chaos Sorcerer of Tzeentch (Tzeentch / Metal), Plagueridden (Nurgle / Death),
+Butcher et Slaughtermaster (Great Maw / Beasts / et les variantes ajoutées par les mods).
+
+*Armements* : Black Orcs (Great Weapons / Dual Weapons), Ogre Bulls (Ironfists / Dual Weapons),
+Maneaters (Ironfists / Great Weapons / Ogre Pistols), Crushers et Mournfang Cavalry (Ironfists /
+Great Weapons), Yhetees (Ironfists / Great Weapons), Savage Orcs (Spears / Bows) — la liste n'est
+pas close, le réflexe l'est.
+
+Format : `Nom (Variante)` dans le champ `name`, et le choix justifié par les effets du seigneur.
+Un seigneur qui réduit le coût des sorts de Tzeentch n'a que faire d'une variante Métal ; un
+seigneur dont le Waaagh! donne **+50% de dégâts perforants** veut des armes lourdes et pas des
+armes doubles. La variante n'est jamais un détail cosmétique : elle est le plus souvent la raison
+pour laquelle l'unité est dans la liste.
+
+**Comment savoir quelle variante porte une clé du site.** Ne pas le déduire du nom de la clé :
+`blackOrcs` désigne en réalité `wh_main_grn_inf_black_orcs`, dont le nom vanilla est *Black Orcs
+(Great Weapons)*. Vérifier dans la loc du jeu de base, puis **vérifier aussi comment les fiches
+existantes nomment cette même clé** — si elles divergent, aligner tout le site plutôt que d'ajouter
+une divergence de plus.
 
 Ton général : direct, concret, sans emphase creuse. Signaler les faiblesses d'un build aussi
 clairement que ses forces. Quand deux fiches s'éclairent mutuellement — deux seigneurs miroirs de la
