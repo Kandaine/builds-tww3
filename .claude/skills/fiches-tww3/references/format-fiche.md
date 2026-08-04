@@ -153,7 +153,19 @@ systématiquement, et cela vaut pour les deux familles de variantes.
 
 *Savoirs de magie* : Daemonsmith Sorcerer (Hashut / Fire / Metal / Death), Chaos Sorcerer of Nurgle
 (Nurgle / Death), Chaos Sorcerer of Tzeentch (Tzeentch / Metal), Plagueridden (Nurgle / Death),
-Butcher et Slaughtermaster (Great Maw / Beasts / et les variantes ajoutées par les mods).
+Butcher et Slaughtermaster (Great Maw / Beasts / et les variantes ajoutées par les mods). Le réflexe
+vaut aussi pour les lanceurs génériques qu'on écrit machinalement sans variante — **Mage** (Haute
+Magie / Feu / Cieux / Vie / Lumière / Ombres / Mort / Bêtes), **Sorceress** (Magie Noire / Feu /
+Ombres / Mort / Bêtes), **Liche Priest** (Nehekhara / Lumière / Mort), Damsel, Necromancer,
+Shaman. Le user a dû redemander la précision sur ces trois-là en particulier.
+
+**Un savoir n'a pas de carte dédiée.** Vérifié dans les packs du jeu : `ui\units\icons\` ne contient
+**aucune** entrée pour `mage`, `sorceress`, `liche`, ni pour les héros elfes sylvains. Les héros
+n'ont pas de carte d'unité du tout — leur vignette vient de `ui\portraits\units\`, et cette image
+est **unique quel que soit le savoir**. Donc : ne pas partir en extraction pour trouver une carte
+« Mage (Feu) », elle n'existe pas. L'image générique du site est la bonne, seul le `name` porte la
+variante. Corollaire : deux entrées de savoirs différents partagent légitimement la même clé
+d'icône, et ce n'est pas une image approximative au sens de la règle d'invariants.
 
 *Armements* : Black Orcs (Great Weapons / Dual Weapons), Ogre Bulls (Ironfists / Dual Weapons),
 Maneaters (Ironfists / Great Weapons / Ogre Pistols), Crushers et Mournfang Cavalry (Ironfists /
