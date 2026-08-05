@@ -15,7 +15,8 @@
       "totalSlots": 20,
       "lord": {"icon": "kairos", "name": "Kairos Fateweaver", "qty": 1, "note": "Oracle de Tzeentch, sort suprême protégé par sa propre armée — son délai de régénération de barrière réduit (-20%, seigneur) et sa défense en embuscade accrue (+50%, seigneur) compensent sa grande fragilité au corps-à-corps pendant qu'il pilonne l'ennemi à distance"},
       "heroes": [
-        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 2, "note": "Soutien de sorts supplémentaire (Lore of Fire) et Gate of Tzeentch pour la mobilité stratégique — profite du temps de recharge des sorts réduit (-10%, seigneur) et du gain d'XP accru (+20%, faction)"},
+        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 1, "note": "Soutien de sorts supplémentaire (Lore of Fire) et Gate of Tzeentch pour la mobilité stratégique — profite du temps de recharge des sorts réduit (-10%, seigneur) et du gain d'XP accru (+20%, faction)"},
+        {"icon": "bahr", "name": "Bahr (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, de classe <em>dignitary</em>, disponible à pied comme monté sur limier — il profite lui aussi du <strong>+20% de gain d'expérience</strong> (faction) et du <strong>-10% de rechargement des sorts</strong> (seigneur)"},
         {"icon": "blueScribes", "name": "The Blue Scribes", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, dont le menu de recrutement pointe précisément les <strong>Oracles of Tzeentch</strong> — P'tarix et Xirat'p, les deux démons qui parcourent les royaumes pour transcrire tous les sorts existants. Le mod le traduit littéralement : ils portent <strong>19 sorts liés empruntés à tous les savoirs</strong>, de Comet of Casandora à Okkam's Mindrazor en passant par The Dwellers Below et Spirit Leech. Aucun autre héros du site n'offre une telle amplitude. <strong>Ils ne se recrutent pas : ils se débloquent en accumulant 1 000 Grimoires</strong>, dont 200 sont dépensés à leur arrivée"}
       ],
       "army": [
@@ -48,7 +49,8 @@
       "totalSlots": 20,
       "lord": {"icon": "changeling", "name": "The Changeling", "qty": 1, "note": "L'Horreur Sans Forme — sa capacité de métamorphose (Formless Horror, seigneur) lui permet d'adopter en bataille la forme et les compétences de n'importe quel autre Seigneur Légendaire ou Héros du jeu, rendant son propre profil de combat délibérément imprévisible"},
       "heroes": [
-        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 2, "note": "Soutien de sorts et Gate of Tzeentch — appuie la stratégie de Cultes du Filou (faction) en facilitant la mobilité et l'implantation de cultes en territoire hostile"}
+        {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 1, "note": "Soutien de sorts et Gate of Tzeentch — appuie la stratégie de Cultes du Filou (faction) en facilitant la mobilité et l'implantation de cultes en territoire hostile"},
+        {"icon": "tchzen", "name": "Tchzen (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em> — « Tchzen de la Griffe d'Argent était un <strong>Seigneur du Changement inhabituellement martial</strong> ». Un Lord of Change en héros, exactement le genre de déguisement que les Trompeurs apprécient"}
       ],
       "army": [
         {"icon": "tzaangors", "name": "Tzaangors (Tzeentch)", "qty": 3, "note": "Infanterie de mêlée de départ du Changeling, robuste et polyvalente"},

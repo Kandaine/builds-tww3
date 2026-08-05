@@ -16,7 +16,8 @@
       "lord": {"icon": "harkon", "name": "Luthor Harkon", "qty": 1, "note": "Le Roi Pirate à l'esprit fracturé — sa résistance aux sorts (+25%, seigneur) protège son armée face aux lanceurs de sorts ennemis, tandis que son commandement +8 contre les Lizardmen (seigneur) est taillé pour la campagne de Lustrie ; ses attaques navales sur les colonies portuaires (seigneur) en font un redoutable siège maritime"},
       "heroes": [
         {"icon": "drekla", "name": "Captain Drekla (Héros Légendaire)", "qty": 1, "note": "Le Bras Droit de Luthor Harkon (mod Mixu's Legendary Lords) — capitaine du Desolation et second indéfectiblement loyal du Roi Pirate, il renforce la Défense en mêlée de Harkon tant qu'il est embarqué dans son armée. Duelliste silencieux au coutelas et au Crochet d'Argent de Sartosa (Heart Piercing), monté sur Rotting Promethean — il tient la mêlée pendant que la gunline tire"},
-        {"icon": "gunneryWight", "name": "Gunnery Wight", "qty": 2, "note": "Héros de départ de Harkon, soutien de tir et d'artillerie"}
+        {"icon": "gunneryWight", "name": "Gunnery Wight", "qty": 1, "note": "Héros de départ de Harkon, soutien de tir et d'artillerie"},
+        {"icon": "blackJens", "name": "Black Jens (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, de classe <strong>ingénieur</strong> — la classe qui compte sur une faction dont toute la puissance passe par l'artillerie et les armes à poudre, et le complément naturel du Gunnery Wight"}
       ],
       "army": [
         {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 3, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
@@ -48,7 +49,8 @@
       "totalSlots": 20,
       "lord": {"icon": "noctilus", "name": "Count Noctilus", "qty": 1, "note": "Le Seigneur de l'Effroi, ancien von Carstein renaissant au Cimetière des Galions — son +15% de puissance des armes pour les unités de grande taille (seigneur) transforme son armée de monstres en véritable machine de destruction, tandis que l'entretien réduit (-20%, seigneur) des Necrofex Colossus permet d'en aligner davantage ; ses attaques navales sur les colonies portuaires (seigneur) en font aussi un redoutable siège maritime"},
       "heroes": [
-        {"icon": "mournghulHaunter", "name": "Mourngul Haunter", "qty": 2, "note": "Héros de départ de Noctilus, soutien de magie noire"}
+        {"icon": "mournghulHaunter", "name": "Mourngul Haunter", "qty": 1, "note": "Héros de départ de Noctilus, soutien de magie noire"},
+        {"icon": "blackleggesTheGiant", "name": "Blacklegges the Giant (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em> — un <strong>Géant</strong> comme héros, cas unique du roster. Il apporte à la Dreadfleet la masse brute qui lui manque, là où elle n'aligne autrement que des morts-vivants et de la poudre"}
       ],
       "army": [
         {"icon": "depthGuard", "name": "Depth Guard", "qty": 1, "note": "Infanterie d'élite de départ, résistante et bien armée"},
@@ -81,7 +83,8 @@
       "totalSlots": 20,
       "lord": {"icon": "aranessa", "name": "Aranessa Saltspite", "qty": 1, "note": "La Reine des Marées, fille présumée de Manann — son +8 d'attaque en mêlée et +20% de puissance des armes pour les unités Sartosanes (seigneur) transforment Sartosa Free Company et Sartosa Militia en troupes d'élite ; son aura de commandement +12 (seigneur) stabilise toute l'armée ; ses attaques navales sur les colonies portuaires (seigneur) en font aussi un redoutable siège maritime"},
       "heroes": [
-        {"icon": "vampireFleetCaptain", "name": "Vampire Fleet Captain", "qty": 2, "note": "Héros polyvalent de soutien de mêlée et de commandement"}
+        {"icon": "oggHalfheart", "name": "Ogg Halfheart (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, et il n'a sa place que sur cette fiche : sa compétence innée s'appelle <strong>« First Mate of the Pirate Queen »</strong>, et le pack le décrit comme « l'ogre second du <strong>Swordfysh</strong> » — le navire d'Aranessa. Un Tyran ogre monté sur Stonehorn, avec « Ogre Pirates » et « Unflinching Loyalty » dans son arbre"},
+        {"icon": "ilPotenteGranchio", "name": "Il Potente Granchio (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et son nom dit où il appartient : « le Puissant Crabe » en tilléen, la langue de <strong>Sartosa</strong>, le port dont Aranessa a fait sa base. Un champion de mêlée pour épauler l'équipage"}
       ],
       "army": [
         {"icon": "sartosaFreeCompany", "name": "Sartosa Free Company", "qty": 5, "note": "Unité Sartosane exclusive — +8 attaque en mêlée et +20% puissance des armes (seigneur) ; cœur de mêlée humain rapide et mordant"},
@@ -112,7 +115,8 @@
       "totalSlots": 20,
       "lord": {"icon": "cylostra", "name": "Cylostra Direfin", "qty": 1, "note": "La Sirène de la Tempête, prima donna bretonnienne noyée devenue esprit vengeur — son activation des attaques magiques pour toute l'armée (seigneur) permet à ses Zombie Pirates de contourner la résistance magique ennemie ; sa résistance physique +5% (seigneur) renforce légèrement sa survie ; ses attaques navales sur les colonies portuaires (seigneur) en font aussi un redoutable siège maritime"},
       "heroes": [
-        {"icon": "damnedPaladin", "name": "Damned Paladin", "qty": 2, "note": "Héros de départ de Cylostra, chevalier damné de mêlée"}
+        {"icon": "damnedPaladin", "name": "Damned Paladin", "qty": 1, "note": "Héros de départ de Cylostra, chevalier damné de mêlée"},
+        {"icon": "infantaLeanoraNavrre", "name": "Infanta Leanora Navrre (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod <em>3 Legendary Guys</em>, de classe <em>dignitary</em> — une noble estalienne échouée chez les Noyés, thématiquement à sa place aux côtés d'une diva bretonnienne condamnée à hanter les flots"}
       ],
       "army": [
         {"icon": "syreens", "name": "Syreens", "qty": 3, "note": "Entretien et coût de recrutement -20% (faction) — tir de soutien magique, chant paralysant"},

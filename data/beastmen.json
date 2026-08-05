@@ -16,7 +16,7 @@
       "lord": {"icon": "khazrak", "name": "Khazrak le Borgne", "qty": 1, "note": "Combattant redoutable en mêlée, monté sur son Chariot Razorgor — sa posture Camp Caché (seigneur) le rend bien plus discret pour préparer des embuscades"},
       "heroes": [
         {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 1, "note": "Soutien magique (Lore of Beasts/Wild) pour appuyer la horde"},
-        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Renfort de mêlée pour épauler Khazrak au contact"}
+        {"icon": "piercingEye", "name": "Piercing Eye (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em> — « un cygor légendaire qui vivait dans la <strong>forêt de Drakwald</strong> », c'est-à-dire le terrain de chasse de Khazrak. Un monstre comme héros, pour épauler le Borgne au contact"}
       ],
       "army": [
         {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 4, "note": "Attaques empoisonnées (seigneur) — tirailleurs bon marché idéaux pour harceler avant l'embuscade"},
@@ -47,7 +47,7 @@
       "lord": {"icon": "malagor", "name": "Malagor", "qty": 1, "note": "Seigneur volant et lanceur de sorts (Beasts/Death/Shadow/Wild) — son +50 de portée de déplacement sur les Sentiers Bestiaux (seigneur) permet de frapper puis disparaître avant toute riposte"},
       "heroes": [
         {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 2, "note": "Recrutés directement avec +5 rangs d'expérience et à moitié prix en capacité (faction) — un mur de magie offensive quasiment gratuit"},
-        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Renfort de mêlée pour protéger les lanceurs de sorts"}
+        {"icon": "kharakStoneheart", "name": "Kha'Rak Stoneheart (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, <strong>lanceur de sorts</strong> doté d'une seconde forme « possédé par le chaman ». Sur une fiche qui recrute ses mages à moitié prix et déjà expérimentés, un troisième porteur de magie nommé va de soi"}
       ],
       "army": [
         {"icon": "gorHerd", "name": "Gor Herd", "qty": 2, "note": "Infanterie de mêlée bon marché, cœur de cette armée"},
@@ -77,7 +77,8 @@
       "totalSlots": 20,
       "lord": {"icon": "morghur", "name": "Morghur", "qty": 1, "note": "Increvable — ne reste jamais blessé plus d'un tour et régénère (seigneur) ; son Aura de Vile Transmutation inflige en permanence 16-32 dégâts/seconde à tous les ennemis dans un rayon de 35m (seigneur), et sa posture du Corrupteur (seigneur) répand corruption et attrition sur tout son passage"},
       "heroes": [
-        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 2, "note": "Soutien magique, également protégés par les +3/+5 de corruption Chaos Indivis (faction+seigneur) qui affaiblissent les ennemis alentour"}
+        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 1, "note": "Soutien magique, également protégé par les +3/+5 de corruption Chaos Indivis (faction+seigneur) qui affaiblissent les ennemis alentour"},
+        {"icon": "doomgore", "name": "Doomgore (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, champion homme-bête — la puissance de mêlée nommée qui manque à une fiche entièrement bâtie sur la corruption et la magie"}
       ],
       "army": [
         {"icon": "chaosSpawn", "name": "Chaos Spawn", "qty": 4, "note": "+4 de capacité d'unité (faction) — une concentration de monstres mutants normalement impossible à recruter en telle quantité"},
@@ -109,7 +110,7 @@
       "lord": {"icon": "taurox", "name": "Taurox le Taureau d'Airain", "qty": 1, "note": "Increvable et increvablement agressif — son ability Bloodbeast déclenche une explosion de feu (2 dégâts/seconde sur 6s, rayon 15m, rechargement 90s) qui brûle et affaiblit le commandement (-8) des ennemis à son contact ; combinée à sa posture Juggernaut (seigneur), il est taillé pour l'offensive permanente, laissant des effets Rivière de Sang cumulables après chaque victoire (seigneur)"},
       "heroes": [
         {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 1, "note": "Soutien magique en complément de la force brute de l'armée"},
-        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Renfort de mêlée supplémentaire"}
+        {"icon": "khorokManripper", "name": "Khorok Manripper (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, monté sur <strong>manticore</strong> et de classe <em>spy</em> — la mobilité et l'infiltration qu'une horde de Taurox, rapide mais purement frontale, ne possède pas"}
       ],
       "army": [
         {"icon": "minotaurs", "name": "Minotaurs", "qty": 4, "note": "+10% de force d'armes (seigneur) et -25% de coût de capacité (faction) — le cœur de cette armée"},

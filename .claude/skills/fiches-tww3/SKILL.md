@@ -50,9 +50,11 @@ d'unité partagés entre variantes (voir `references/analyse-pack.md`).
 
 **Ne jamais placer une unité ou un héros sans avoir vérifié qu'un joueur peut l'obtenir.** Une
 icône, une entrée de table et un nom dans un `.loc` ne prouvent rien : les mods embarquent du
-contenu déclaré mais coupé. Croiser `building_units_allowed_tables` **et** `mercenary_*` — procédure
-en §2 bis de `references/analyse-pack.md`. Sur un seul mod, cette vérification a écarté quatre
-unités que j'avais déjà écrites dans les fiches.
+contenu déclaré mais coupé. Le test diffère selon la nature — **unité** : croiser
+`building_units_allowed_tables` et `mercenary_*` ; **héros** : croiser
+`faction_agent_permitted_subtypes`, `unique_agents` et `campaign_group_unique_agents`. Procédure
+complète en §2 bis de `references/analyse-pack.md`. Sur un seul mod, cette vérification a écarté
+quatre unités que j'avais déjà écrites dans les fiches.
 
 **Les effets doivent correspondre exactement aux captures du user.** Traduire, ne pas réinterpréter,
 ne pas arrondir, ne pas omettre les malus.
@@ -108,6 +110,16 @@ Ajouter un héros ou une unité venue d'un mod, corriger une erreur signalée, r
 seule fois**, là où le lore et le build le justifient le mieux. Si le mod désigne lui-même une
 faction — personnage de départ, faction prioritaire, bâtiment de déblocage thématique — suivre cette
 indication plutôt qu'un choix arbitraire, et l'écrire dans la note.
+
+**Ne jamais trancher sur la seule table des factions autorisées.** Elle dit qui *a le droit* de le
+recruter, pas à qui il appartient. Avant de choisir, **lire son arbre de compétences et ses objets**
+dans la loc : ils nomment très souvent le seigneur, le navire ou la tribu, et fournissent la
+justification à écrire. Procédure et cas d'école — Ogg Halfheart placé chez le mauvais capitaine —
+en §6 de `references/analyse-pack.md`.
+
+**Et vérifier qu'il n'est pas déjà seigneur sur le site** : `grep` son nom dans `data\*.json`. Un mod
+peut proposer en héros un personnage qu'un autre a déjà donné comme seigneur légendaire, et un
+seigneur légendaire n'est jamais placé en héros de build.
 
 **3. Libérer le slot sur une unité doublée**, jamais sur une pièce unique : passer un `qty: 2` à 1
 plutôt que supprimer un régiment de renom. Le total doit rester à 20.

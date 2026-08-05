@@ -29,8 +29,8 @@
       "lord": {"icon": "vlad", "name": "Vlad von Carstein", "qty": 1, "note": "Duelliste principal — grâce au Vanguard Deployment, il engage le contact dès le premier round plutôt que d'attendre"},
       "heroes": [
         {"icon": "isabella", "name": "Isabella von Carstein (Legendary Hero)", "qty": 1, "note": "Indispensable pour activer le plafond de soin +50% — la combiner avec Vlad dans la même armée n'est pas optionnel, c'est le cœur du build"},
-        {"icon": "necromancer", "name": "Necromancer", "qty": 1, "note": "Invocation of Nehek en renfort de celle d'Isabella — maximise le volume de soin pour profiter à fond du plafond relevé"},
-        {"icon": "vampireHeroDeath", "name": "Vampire (Death, Hellsteed)", "qty": 1, "note": "Duelliste secondaire rapide — sécurise un flanc pendant que Vlad et Isabella tiennent le centre ; Shadows est une alternative tout aussi valable selon le soutien magique recherché"}
+        {"icon": "frederickVanHal", "name": "Frederick van Hal (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, et le nécromancien le mieux placé sur cette page : van Hal est le <strong>premier nécromancien de l'Empire</strong>, celui qui leva les morts de Sylvanie bien avant les von Carstein. Son Invocation of Nehek renforce celle d'Isabella"},
+        {"icon": "theOldOneHero", "name": "The Old One (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, de classe <em>dignitary</em> — un profil de soutien de campagne qui sécurise un flanc pendant que Vlad et Isabella tiennent le centre"}
       ],
       "army": [
         {"icon": "graveGuard", "name": "Grave Guard (Grande Arme)", "qty": 5, "note": "Ligne principale de mêlée increvable"},
@@ -62,7 +62,7 @@
       "heroes": [
         {"icon": "vlad", "name": "Vlad von Carstein (Legendary Hero)", "qty": 1, "note": "Indispensable, pas optionnel : déclenche le +50% de plafond de soin. Gratuit dès le départ de campagne."},
         {"icon": "vampireHeroDeath", "name": "Vampire (Death, Hellsteed)", "qty": 2, "note": "Grâce au +3 de capacité de héros pour les Vampires, tu peux aligner 3 Vampires sans sacrifier d'autres slots de héros. Chacun profite de +10 Attaque/Défense en mêlée et +25% Force de l'arme rien qu'en étant dans l'armée d'Isabella"},
-        {"icon": "vampireHeroShadows", "name": "Vampire (Shadows, Hellsteed)", "qty": 1, "note": "Même triple bonus (+10 Attaque/Défense en mêlée, +25% Force de l'arme) — soutien de la Lore of Shadows en complément des deux Vampires (Death)"}
+        {"icon": "whisperingNell", "name": "Whispering Nell (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod <em>3 Legendary Guys</em>, montée sur cauchemar et de classe <em>spy</em> — elle profite comme les autres du <strong>+10 d'attaque et de défense en mêlée et du +25% de force d'arme</strong> que donne la seule présence d'Isabella"}
       ],
       "army": [
         {"icon": "direWolf", "name": "Dire Wolves", "qty": 2, "note": "Écran de harcèlement bon marché rapide"},
@@ -95,7 +95,7 @@
         {"icon": "vmpHelmutVonCarstein", "name": "Helmut von Carstein (Héros Légendaire)", "qty": 1, "note": "L'un des trois vampires que Mannfred a personnellement choisis comme lieutenants de son armée sylvanienne (mod Heroes of Legend) : le Porte-Bannière sylvanien, qui <strong>combat à pied au sein des Grave Guard</strong> et porte l'honneur de la bannière von Carstein — parfaitement à sa place dans ce cœur de 7 Grave Guard"},
         {"icon": "vmpGorgivichKrakvald", "name": "Gorgivich Krakvald (Héros Légendaire)", "qty": 1, "note": "Deuxième lieutenant choisi par Mannfred : Grandmaster of the Red Death, lointain parent des Harkon — un pur guerrier sans grand talent arcanique, qui charge aux côtés des Black Knights"},
         {"icon": "vmpGuntherVonGrecht", "name": "Gunther von Grecht (Héros Légendaire)", "qty": 1, "note": "Troisième lieutenant de Mannfred : Commandant Aérien, vampire fourbe et traître « à la manière des von Carstein d'antan » — il mène les Vargheists et les Hexwraiths sur les flancs et dans les airs"},
-        {"icon": "necromancer", "name": "Necromancer", "qty": 1, "note": "Renfort de sorts — profite de la réserve de magie élargie de Mannfred (+15) pour maintenir Invocation of Nehek en continu sur ce gros corps d'armée"}
+        {"icon": "cannibalKnight", "name": "Cannibal Knight (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, disponible en version à pied comme montée sur hippogriffe — un quatrième champion nommé pour une fiche qui en aligne déjà trois, et qui profite de la réserve de magie élargie de Mannfred"}
       ],
       "army": [
         {"icon": "graveGuard", "name": "Grave Guard (Grande Arme)", "qty": 5, "note": "Coeur de l'armée — -25% d'entretien avec Mannfred (seigneur), et les rangs où combat personnellement Helmut von Carstein, bannière au poing"},
@@ -289,18 +289,20 @@
       "heroes": [
         {"icon": "bougars", "name": "Bougars the Butcher (Héros Légendaire)", "qty": 1, "note": "Le Boucher de Mousillon (mod Mixu's Mousillon) — champion de mêlée brutal dont le nom est porté par un Régiment de Renom de la faction (Knights of Bougar)"},
         {"icon": "eustache", "name": "Eustache of the Rusting Blade (Héros Légendaire)", "qty": 1, "note": "La Lame Rouillée (mod Mixu's Mousillon) — duelliste maudit, second champion de l'Usurpateur"},
-        {"icon": "aucassin", "name": "Aucassin de Hane (Héros Légendaire)", "qty": 1, "note": "L'un des hommes les plus discrètement influents de Mousillon et l'un des lieutenants clés de Mallobaude (mod Mixu's Mousillon) — il a une chance d'améliorer les relations diplomatiques avec les factions qu'il visite : le complément parfait de la mécanique de vassalisation bretonnienne (+50% d'Allégeance, faction)"}
+        {"icon": "aucassin", "name": "Aucassin de Hane (Héros Légendaire)", "qty": 1, "note": "L'un des hommes les plus discrètement influents de Mousillon et l'un des lieutenants clés de Mallobaude (mod Mixu's Mousillon) — il a une chance d'améliorer les relations diplomatiques avec les factions qu'il visite : le complément parfait de la mécanique de vassalisation bretonnienne (+50% d'Allégeance, faction)"},
+        {"icon": "estrothTheSilent", "name": "Estroth the Silent (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, monté sur destrier infernal — et sa clé interne est <code>merovech</code>, le duc maudit de <strong>Mousillon</strong> lui-même. Aucun héros du lot n'est mieux placé sur cette fiche"},
+        {"icon": "monsterOfWittgenstein", "name": "Monster of Wittgenstein (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, champion difforme — la brutalité brute qui manque à un état-major par ailleurs composé de chevaliers et de conspirateurs"}
       ],
       "army": [
         {"icon": "theRoseLances", "name": "The Rose Lances (Black Knights)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — l'élite montée de Mousillon, fer de lance de la charge à +15% (faction)"},
-        {"icon": "mslBlackKnightsLances", "name": "Black Knights (Lances)", "qty": 2, "note": "Chevaliers morts de Mousillon, lance au poing — le cœur de la charge, dopé par le +15% de bonus de charge en attaque (faction)"},
+        {"icon": "mslBlackKnightsLances", "name": "Black Knights (Lances)", "qty": 1, "note": "Chevaliers morts de Mousillon, lance au poing — le cœur de la charge, dopé par le +15% de bonus de charge en attaque (faction)"},
         {"icon": "knightsOfBougar", "name": "Knights of Bougar", "qty": 1, "note": "Régiment de Renom de la faction — la bande du Boucher, en écho au héros légendaire Bougars"},
         {"icon": "hellsteedKnights", "name": "Hellsteed Knights", "qty": 2, "note": "Cavalerie volante infernale — frappe l'artillerie et les casters pendant que la chevalerie enfonce"},
         {"icon": "mslMenAtArmsPolearm", "name": "Men-at-Arms of Mousillon (Hallebardes)", "qty": 2, "note": "+8 de Commandement et +8% de renouvellement (seigneur) — la piétaille famélique de la cité maudite, bien plus tenace qu'elle n'en a l'air, qui fixe l'ennemi pour la charge"},
         {"icon": "mslBowmenPox", "name": "Peasant Bowmen (Flèches Pestilentielles)", "qty": 2, "note": "Mêmes bonus paysans (seigneur) — flèches empoisonnées par la peste de Mousillon, elles affaiblissent avant le contact"},
         {"icon": "mslGraveGuardGreat", "name": "Grave Guard (Grandes Armes)", "qty": 1, "note": "Morts-vivants d'élite en armes lourdes — ancre de mêlée qui tient là où les paysans cèdent"},
         {"icon": "ghostsOfGrismerie", "name": "The Ghosts of Grismerie", "qty": 1, "note": "Régiment de Renom éthéré — immunisé aux dégâts non magiques, il fixe les unités que la cavalerie viendra briser"},
-        {"icon": "cursedTrebuchet", "name": "Cursed Field Trebuchet", "qty": 2, "note": "Trébuchet maudit — l'artillerie bretonnienne pervertie, projectiles chargés de magie noire"},
+        {"icon": "cursedTrebuchet", "name": "Cursed Field Trebuchet", "qty": 1, "note": "Trébuchet maudit — l'artillerie bretonnienne pervertie, projectiles chargés de magie noire"},
         {"icon": "dracoleech", "name": "Dracoleech", "qty": 1, "note": "Monstre volant de Mousillon — chasse les grandes cibles et sème la terreur dans les lignes arrière"}
       ],
       "magic": "Mallobaude n'est pas un lanceur de sorts — il combat comme le chevalier qu'il était. La magie de Mousillon revient aux Dark Prophetesses, absentes ici au profit de la pure puissance martiale de l'Usurpateur.",

@@ -15,7 +15,8 @@
       "totalSlots": 20,
       "lord": {"icon": "daemonprince", "name": "Daemon Prince", "qty": 1, "note": "Seigneur entièrement personnalisable via les Dons Démoniaques (seigneur) — le choix des dons (Chaos Indivis, Khorne, Nurgle, Slaanesh ou Tzeentch) détermine son style de combat, ses sorts et ses capacités ; une approche Chaos Indivis équilibrée permet de rester polyvalent plutôt que de se spécialiser dans un seul dieu"},
       "heroes": [
-        {"icon": "heraldOfKhorne", "name": "Herald (Khorne/Nurgle/Slaanesh/Tzeentch)", "qty": 2, "note": "Choisis le Herald du dieu correspondant à l'orientation de ton armée — chacun apporte des buffs et sorts spécifiques à sa faction démoniaque"}
+        {"icon": "heraldOfKhorne", "name": "Herald (Khorne/Nurgle/Slaanesh/Tzeentch)", "qty": 1, "note": "Choisis le Herald du dieu correspondant à l'orientation de ton armée — chacun apporte des buffs et sorts spécifiques à sa faction démoniaque"},
+        {"icon": "gerikBarkov", "name": "Gerik Barkov (Héros Légendaire)", "qty": 1, "note": "Un <strong>Kislévite damné</strong> : capitaine de cavalerie passé au Chaos, dont l'arbre de compétences garde « Son of Kislev », « Last Expedition » et « Remember Our Blood ». Champion de mêlée monté sur destrier ou sur ours de guerre — le duelliste nommé que cette horde n'a pas autrement"}
       ],
       "army": [
         {"icon": "bloodletters", "name": "Bloodletters", "qty": 4, "note": "Infanterie d'élite de Khorne — leur version Regiment of Renown profite du +5% de Ward Save (faction)"},

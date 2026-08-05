@@ -57,11 +57,30 @@ clé d'unité et l'autre la clé de `land_units` — c'est cette dernière qui p
 
 ---
 
-## 2 bis. Vérifier qu'une unité est RECRUTABLE — étape obligatoire
+## 2 bis. Vérifier qu'une unité ou un héros est RECRUTABLE — étape obligatoire
 
 **Avant d'écrire une unité ou un héros dans un build, vérifier qu'un joueur peut réellement
 l'obtenir.** Une icône dans `ui\units\icons\`, une entrée dans `land_units_tables` et un nom dans un
 `.loc` ne prouvent **rien** : les mods embarquent régulièrement du contenu déclaré mais coupé.
+
+### Pour un HÉROS — trois tables
+
+Le test des unités ne s'applique pas aux agents ; ils ont leurs propres tables :
+
+| Table | Ce qu'elle prouve |
+|---|---|
+| `db\faction_agent_permitted_subtypes_tables\*` | **quelles factions** ont droit à ce subtype — donne aussi la classe (voir §3) |
+| `db\unique_agents_tables\*` | le personnage est déclaré comme **agent unique** (héros légendaire, un seul exemplaire) |
+| `db\campaign_group_unique_agents_tables\*` | il est rattaché à un **groupe de campagne**, donc il apparaît réellement en jeu |
+
+Les trois doivent répondre. Un personnage présent dans `agent_subtypes_tables` mais absent de
+`faction_agent_permitted_subtypes` n'est recrutable par personne. Un personnage absent de
+`campaign_group_unique_agents` est déclaré sans être distribué.
+
+Chercher aussi un `script\campaign\mod\*legendary_characters*.lua` : c'est lui qui porte les
+conditions de déblocage (bâtiment requis, faction de départ, rang minimum) — voir §6.
+
+### Pour une UNITÉ — deux tables
 
 **D'abord regarder le préfixe de la clé — le test ne s'applique qu'aux unités du mod.** Une clé
 commençant par `wh_main_`, `wh_dlc*`, `wh2_`, `wh3_` désigne une unité du **jeu de base** : elle
@@ -208,6 +227,32 @@ Dans d'autres mods, les héros légendaires passent par des missions scriptées 
 avec `add_new_objective` et `add_condition`. **Toujours écrire la condition de déblocage dans la
 note du héros.** Cas particulier : une entrée avec `kill_generic_type` n'a pas de mission mais
 **remplace** un héros générique — elle occupe donc l'un de ses emplacements.
+
+### Choisir la BONNE fiche — vérification obligatoire
+
+`faction_agent_permitted_subtypes` dit seulement *qui a le droit* de le recruter. Quand un héros est
+ouvert à plusieurs factions d'une même race — le cas courant — cette table ne suffit pas à décider
+sur quelle fiche le mettre. **Avant de trancher, lire son arbre de compétences et ses objets** :
+
+```bash
+powershell -File "...\dump_loc.ps1" -PackPath <pack> | findstr /I "<cle_du_heros>"
+```
+
+`character_skills_localised_name_<héros>_*` et `ancillaries_onscreen_name_<héros>_*` nomment très
+souvent le seigneur, le navire, la tribu ou la région d'origine. C'est la source la plus fiable pour
+l'affectation, et elle fournit en prime la justification à écrire dans la note.
+
+**Cas qui a motivé cette règle.** J'ai placé **Ogg Halfheart** chez Luthor Harkon parce que sa
+description mentionnait le *Swordfysh* et que les quatre factions Vampire Coast le permettaient
+toutes. Le user a corrigé : le *Swordfysh* est le navire d'**Aranessa Saltspite**. L'arbre du
+personnage le disait explicitement — compétence innée **« First Mate of the Pirate Queen »**, objet
+**« Symbol of the First Mate »**, compétences « Ogre Pirates » et « Unflinching Loyalty ». Trente
+secondes de `dump_loc` auraient évité l'erreur.
+
+**Vérifier aussi qu'il n'est pas déjà seigneur sur le site.** Un mod peut proposer en héros un
+personnage qu'un autre mod a déjà donné comme seigneur légendaire — c'est le cas de **Gitilla Da
+Hunter**, héros *spy* dans un pack et Peaux-Verts XVII sur le site. Un seigneur légendaire n'est
+jamais placé en héros de build : chercher le nom dans `data\*.json` avant de l'ajouter.
 
 ---
 
