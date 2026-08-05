@@ -39,6 +39,7 @@ en chinois, coréen ou japonais : relancer avec `-Cjk`.
 | Quels seigneurs le mod ajoute-t-il ? | `db\frontend_faction_leaders_tables\*` — couples (clé frontend, subtype, faction) |
 | Quelles unités pour ce seigneur ? | `db\main_units_tables\<lord>` |
 | Qu'est-ce qui est recrutable en bâtiment ? | `db\building_units_allowed_tables\*` |
+| **Cette unité est-elle accessible au joueur ?** | croiser `building_units_allowed_tables` **et** `mercenary_*` — voir §2 bis, **étape obligatoire** |
 | Quels plafonds, quels groupes ? | `db\unit_set_to_unit_junctions_tables\<lord>` |
 | Quels héros pour cette faction ? | `db\faction_agent_permitted_subtypes_tables\*` |
 | Quels héros légendaires ? | `db\agent_subtypes_tables\*legendary_heroes*` |
@@ -53,6 +54,57 @@ tables : demander, ou attendre les captures.
 Dans `main_units_tables`, la séquence lisible d'une ligne est en pratique :
 `[caste] [clé A] wh_main_shp_transport [clé B] [poids] ...`. Quand A et B diffèrent, l'une est la
 clé d'unité et l'autre la clé de `land_units` — c'est cette dernière qui porte le nom affiché.
+
+---
+
+## 2 bis. Vérifier qu'une unité est RECRUTABLE — étape obligatoire
+
+**Avant d'écrire une unité ou un héros dans un build, vérifier qu'un joueur peut réellement
+l'obtenir.** Une icône dans `ui\units\icons\`, une entrée dans `land_units_tables` et un nom dans un
+`.loc` ne prouvent **rien** : les mods embarquent régulièrement du contenu déclaré mais coupé.
+
+**D'abord regarder le préfixe de la clé — le test ne s'applique qu'aux unités du mod.** Une clé
+commençant par `wh_main_`, `wh_dlc*`, `wh2_`, `wh3_` désigne une unité du **jeu de base** : elle
+n'apparaîtra jamais dans les tables du mod, et son absence ne prouve rien. Une clé au préfixe du mod
+(`hkrul_`, `rhox_`, `scm_`, `wh_mod_`, `r1kko_`…) est une unité ajoutée : c'est elle qu'il faut
+tester. J'ai failli retirer **The Cold-Voider** de la fiche de Drenok pour cette raison —
+`wh_dlc08_nor_mon_frost_wyrm_ror_0` est un Régiment de Renom **vanilla** que le mod se contente de
+désigner comme Régiment favori ; le user l'a bien dans sa liste en jeu.
+
+Le test croise ensuite **deux** tables, parce qu'aucune des deux ne suffit :
+
+```bash
+powershell -File "C:\Users\Utilisateur\.claude\tools\tww\dump_db.ps1" -PackPath <pack> -Like "db\building_units_allowed_tables\*" -Out recrut.txt
+powershell -File "C:\Users\Utilisateur\.claude\tools\tww\dump_db.ps1" -PackPath <pack> -Like "db\mercenary_*" -Out merc.txt
+```
+
+| Présente dans | Signification |
+|---|---|
+| `building_units_allowed_tables` | recrutable via un bâtiment — le cas normal |
+| `mercenary_*` | **Régiment de Renom** : les RoR ne sont JAMAIS dans le recrutement par bâtiment, leur absence là-bas n'est pas un signal |
+| aucune des deux | **non accessible au joueur — ne pas mettre dans le build** |
+
+`units_to_exclusive_faction_permissions_tables` sert de confirmation : une unité qui y figure est
+bien attribuée à une faction précise.
+
+**Trois cas rencontrés sur SCM Tribes of the North**, tous après avoir déjà écrit la fiche :
+
+- les **quatre unités Wolfguard** ont icônes, tables et noms ; le user a lancé une partie : une seule
+  est recrutable. Trois retirées ;
+- **Birna's Retinue (River Trolls)** est absente des deux tables — c'était la **garde de seigneur**
+  de Birna, au même titre qu'une monture, pas une unité. Retirée ;
+- **Surtha's Revenge** était absente du recrutement par bâtiment, ce qui m'a fait douter à tort :
+  elle est bien dans le pool RoR. C'est exactement pourquoi il faut croiser les deux.
+
+**Deux faux négatifs possibles**, à écarter avant de conclure qu'une unité est inaccessible :
+préfixe de jeu de base (voir ci-dessus), et unité **accordée par script** plutôt que recrutée — les
+créatures qui « se rallient » (Lézards Corrompus d'Adella, Esprits de Glace de Drenok, ours de Bran)
+sortent d'un `.lua` ou d'un effet de faction, pas d'une table de recrutement. Dans ces cas, l'effet
+de faction visible sur la capture du user est la meilleure preuve d'existence.
+
+Corollaire sur les noms suffixés : `..._ror` = Régiment de Renom (chercher dans `mercenary_*`),
+et un nom du type « <em>Garde de X</em> » / « <em>Retinue of X</em> » doit faire soupçonner une garde
+de seigneur plutôt qu'une unité recrutable.
 
 ---
 

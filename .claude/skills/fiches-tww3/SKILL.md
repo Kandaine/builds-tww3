@@ -48,6 +48,12 @@ par une capacité ne consomme aucun slot — la mentionner dans la note, pas dan
 **Respecter les plafonds** : capacités de héros annoncées dans les effets de faction, et plafonds
 d'unité partagés entre variantes (voir `references/analyse-pack.md`).
 
+**Ne jamais placer une unité ou un héros sans avoir vérifié qu'un joueur peut l'obtenir.** Une
+icône, une entrée de table et un nom dans un `.loc` ne prouvent rien : les mods embarquent du
+contenu déclaré mais coupé. Croiser `building_units_allowed_tables` **et** `mercenary_*` — procédure
+en §2 bis de `references/analyse-pack.md`. Sur un seul mod, cette vérification a écarté quatre
+unités que j'avais déjà écrites dans les fiches.
+
 **Les effets doivent correspondre exactement aux captures du user.** Traduire, ne pas réinterpréter,
 ne pas arrondir, ne pas omettre les malus.
 
@@ -70,6 +76,11 @@ Vieux Monde — j'ai classé trois factions à tort. L'écran de sélection du u
 **3. Analyser le roster.** Voir `references/analyse-pack.md` : quelles tables lire, dans quel ordre,
 et comment résoudre les noms. C'est l'étape la plus longue et la plus rentable — un build bâti sur
 un roster mal lu est faux de bout en bout.
+
+Deux réflexes à ne pas sauter ici. **Lister `text\db\*.loc` puis dumper fichier par fichier** : un
+dump global unique perd des valeurs à cause de l'encodage, et c'est comme ça que j'ai écrit seize
+fiches avec des noms génériques alors que le mod renommait les unités par tribu. Et **passer chaque
+unité retenue au test de recrutabilité** (§2 bis) avant de l'écrire.
 
 **4. Concevoir le build.** Partir des effets du seigneur, pas du roster : quelle unité bénéficie
 réellement du bonus ? Un effet qui ne vise que l'infanterie de mêlée rend chaque cavalier aligné
