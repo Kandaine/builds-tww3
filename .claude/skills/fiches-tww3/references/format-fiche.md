@@ -82,6 +82,15 @@ infobulles, et tables du mod avec son numéro workshop et le nom du pack.
 Traduire les effets en français mais **garder les noms propres en anglais** : noms de capacités,
 d'unités, de factions. C'est ce que le user voit en jeu.
 
+**Ne jamais commenter le comportement du mod.** Une fiche décrit ce que fait une capacité, pas les
+curiosités de son affichage. Quand le nom d'une capacité diffère entre la ligne d'effet et son
+infobulle, ou comporte une coquille, ne pas le signaler : retenir le nom de l'**infobulle** — celui
+qu'on lit en survolant pour voir les valeurs — et n'écrire que les valeurs. Le user a coupé deux fois
+sur ce point : « Fenzy » / « Frenzy » chez Thyk Skolsson, et une note qui expliquait un verrouillage
+de recrutement chez Gerik Barkov (« pas besoin de précision, c'est hors contexte »). Même règle pour
+les noms d'unités : on écrit le nom affiché, sans mentionner celui de la clé interne ni les variantes
+trouvées dans le pack.
+
 ---
 
 ## 4. Rédiger le build
