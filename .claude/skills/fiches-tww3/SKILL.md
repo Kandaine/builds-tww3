@@ -35,6 +35,14 @@ partagées entre races et entre mods. Avant toute extraction, chercher le nom **
 jamais ` M` sur un fichier d'`assets/`. Si un ` M` apparaît : `git checkout -- <fichier>` et
 signaler.
 
+**Sauf quand le user demande explicitement le remplacement.** C'est le seul cas où un ` M` sous
+`assets/` est légitime — par exemple « son image est de mauvaise qualité, remplace-la par celle du
+mod ». Le faire alors **soi-même**, jamais via le sous-agent : sa règle anti-écrasement est
+inconditionnelle, il ne peut pas distinguer un écrasement accidentel d'un remplacement voulu, et il
+annulera le travail par un `git checkout`. Le cas s'est produit sur `gronk.png`, réextrait deux fois.
+Si le remplacement doit malgré tout passer par le sous-agent, le lui autoriser **nommément dans le
+prompt**, fichier par fichier.
+
 **La priorité absolue va à ce que le user voit en jeu.** Les tables du pack sont un indice, pas une
 preuve. Quand le user dit qu'une unité ou un héros n'existe pas, ou porte un autre nom, il a raison
 et la fiche change. On peut lui exposer ce que disent les tables — jamais pour lui opposer, toujours
@@ -197,6 +205,13 @@ Sinon le dépôt accumule des assets morts.
 Le sous-agent **`tww-assets`** (Sonnet) fait l'extraction en lot et l'enregistrement dans
 `js/data.js`. Lui donner les chemins internes exacts et les clés voulues. Il lui est interdit de
 rédiger, de commiter, ou de substituer une image.
+
+Deux précautions à prendre en le lançant. **Ne jamais lui confier un remplacement d'image voulu par
+le user** : il restaurera le fichier par `git checkout` en croyant corriger un écrasement accidentel,
+y compris un fichier qu'il n'a pas touché lui-même. Et **vérifier la casse des clés** dans son
+rapport : `-match` en PowerShell est insensible à la casse, donc un contrôle d'existence peut valider
+`skinwolves` alors que la clé réelle est `skinWolves` — utiliser `-cmatch`. Le validateur du site,
+lui, est sensible à la casse et rattrapera l'erreur, mais seulement après coup.
 
 PowerShell 5.1 lit l'UTF-8 sans BOM comme de l'ANSI : pour écrire du JSON ou du JS, utiliser
 `[System.IO.File]::ReadAllText` / `WriteAllText`.
