@@ -273,6 +273,10 @@ const seals = {
   boyarMazur: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="13" r="6"/><circle cx="7" cy="6" r="2.5"/><circle cx="17" cy="6" r="2.5"/><path d="M10 13h4"/></svg>`,
   jacobKislev: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3v18"/><path d="M12 7c-3-3-7-3-9-1 3 1 5 3 6 5M12 7c3-3 7-3 9-1-3 1-5 3-6 5"/></svg>`,
   thykSkolsson: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M4 20L16 8"/><path d="M13 5c3-2 6-1 6-1s1 3-1 6"/><path d="M12 6l6 6"/><path d="M3 21l3-3"/></svg>`,
+  zhaoQi: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M17 4a8 8 0 1 0 3 9 6.5 6.5 0 0 1-3-9Z"/><path d="M4 20l4-4"/></svg>`,
+  hanCheng: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2v20M2 12h20"/><path d="M5 5l14 14M19 5L5 19"/><circle cx="12" cy="12" r="3"/></svg>`,
+  yeSheng: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 3a4.5 4.5 0 0 0 0 9 4.5 4.5 0 0 1 0 9"/><circle cx="12" cy="7.5" r="1"/></svg>`,
+  yiQing: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M2 17h20"/><path d="M4 17V9l4-3 4 3 4-3 4 3v8"/><path d="M8 17v-4h8v4"/></svg>`,
   blightTenscratch: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 3v18"/><path d="M12 7l-5-3M12 7l5-3M12 13l-6-3M12 13l6-3M12 19l-4-3M12 19l4-3"/></svg>`,
   misericordeOfMordheim: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><path d="M12 2l2 7 7 2-7 2-2 7-2-7-7-2 7-2 2-7Z"/><path d="M5 20h14"/></svg>`,
   rathan: `<svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-secondary)" stroke-width="1.6"><circle cx="12" cy="9" r="4"/><path d="M12 13v8"/><path d="M8 18h8"/><path d="M8 5c1-2 3-3 4-3s3 1 4 3"/></svg>`,
@@ -2997,6 +3001,18 @@ const unitImages = {
   malok: 'assets/portraits/malok.png',
   imildrak: 'assets/portraits/imildrak.png',
   shearKhawnVanguard: 'assets/portraits/shearKhawnVanguard.png',
+  // Portraits et cartes d'unité extraits du mod DEER24Cathay.pack.
+  zhaoQi: 'assets/portraits/zhaoQi.png',
+  hanCheng: 'assets/portraits/hanCheng.png',
+  yeSheng: 'assets/portraits/yeSheng.png',
+  clanGuards: 'assets/units/clanGuards.png',
+  nanYangEliteWarriors: 'assets/units/nanYangEliteWarriors.png',
+  yinYangProtectors: 'assets/units/yinYangProtectors.png',
+  imperialAgents: 'assets/units/imperialAgents.png',
+  guardiansOfJade: 'assets/units/guardiansOfJade.png',
+  yiQing: 'assets/portraits/yiQing.png',
+  greatBastionWardens: 'assets/units/greatBastionWardens.png',
+  divineShockWardens: 'assets/units/divineShockWardens.png',
 };
 
 // ----------------------------------------------------------------------------
