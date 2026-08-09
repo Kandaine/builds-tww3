@@ -140,10 +140,11 @@
       "totalSlots": 20,
       "lord": {"icon": "gronk", "name": "Gronk", "qty": 1, "note": "Increvable au sens propre — blessé plutôt que tué au combat (seigneur) ; sa Giver of Arcane Glory (seigneur) le rend de plus en plus puissant en magie à mesure que des unités meurent autour de lui (jusqu'à +100% de rechargement de puissance et +30% de Spell Mastery), tout en boostant aussi les alliés proches ; répand la corruption de Tzeentch autour de lui (+3, seigneur) et confère des attaques Warpflame à ses Minotaures (seigneur)"},
       "heroes": [
-        {"icon": "brayShaman", "name": "Bray-Shaman", "qty": 2, "note": "Actions de héros totalement gratuites (-100% de coût, faction) — à utiliser sans retenue pour harceler et affaiblir l'ennemi avant la bataille"}
+        {"icon": "shearKhawnVanguard", "name": "She'ar Khawn's Vanguard (Héros Légendaire)", "qty": 1, "note": "Le <strong>Tigerman légendaire</strong>, rassemblé dans les montagnes du sud de Zhenda — le terrain même où Gronk s'est enfoncé sur ordre du Changeur. On l'obtient en y amenant une horde bête. Ses compétences <strong>« Tiger King »</strong> et <strong>« Vanguard General »</strong> en font un chef d'avant-garde, pas un lanceur de plus"},
+        {"icon": "brayShaman", "name": "Bray-Shaman (Bêtes)", "qty": 2, "note": "Actions de héros totalement gratuites (<strong>-100% de coût</strong>, faction) — à utiliser sans retenue pour harceler et affaiblir l'ennemi avant la bataille. En bataille, ils sont les premiers bénéficiaires de <strong>« Giver of Arcane Glory »</strong> : jusqu'à <strong>+30% de Maîtrise des sorts</strong> tant qu'ils restent dans les 35 mètres de Gronk"}
       ],
       "army": [
-        {"icon": "tzaangors", "name": "Tzaangors", "qty": 6, "note": "-30% de coût de capacité (faction) et +3 rang de recrutement (faction) — le cœur de cette armée marquée par Tzeentch, déjà expérimenté à la sortie de caserne"},
+        {"icon": "tzaangors", "name": "Tzaangors", "qty": 5, "note": "-30% de coût de capacité (faction) et +3 rang de recrutement (faction) — le cœur de cette armée marquée par Tzeentch, déjà expérimenté à la sortie de caserne"},
         {"icon": "khorngors", "name": "Khorngors", "qty": 3, "note": "+3 rang de recrutement (faction) — apport de puissance brute marquée par Khorne"},
         {"icon": "pestigors", "name": "Pestigors", "qty": 3, "note": "+3 rang de recrutement (faction) — résistance et attaques toxiques marquées par Nurgle"},
         {"icon": "gorHerd", "name": "Gor Herd", "qty": 3, "note": "+3 rang de recrutement (faction) — infanterie de base bon marché et déjà vétérane"},

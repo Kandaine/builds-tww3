@@ -108,11 +108,12 @@
       "totalSlots": 20,
       "lord": {"icon": "alberic", "name": "Alberic de Bordeleaux", "qty": 1, "note": "Duc défensif taillé pour l'attrition — débloque les attaques navales contre les colonies portuaires (seigneur), se déplace 10% plus vite en mer (seigneur) et rend toute son infanterie de base bien plus difficile à percer"},
       "heroes": [
+        {"icon": "malok", "name": "Malok the Destroyer (Héros Légendaire)", "qty": 1, "note": "Un <strong>dragon rouge</strong>, jadis monture d'un prince dragon de Caledor pendant la Guerre de la Barbe, retiré depuis sur l'<strong>Isla de Sangre</strong> au large d'Estalie — ce qui en fait la proie du seul duc breton tourné vers la mer. On le maîtrise par l'amulette <strong>« Dent Tombée »</strong>. Sa compétence <strong>« Dragon and Knights »</strong> le lie directement aux Chevaliers du Royaume de cette fiche"},
         {"icon": "brtAgravain", "name": "Agravain de Beau Quest (Héros Légendaire)", "qty": 1, "note": "Puissant Chevalier du Graal (mod Heroes of Legend), Gardien de la Chapelle de Challotte, fameux pour sa quête audacieuse au cœur d'Athel Loren et sa victoire sur les Elfes Sylvains — un ancrage de mêlée d'élite pour la ligne d'Alberic"},
         {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Soutien magique pour appuyer la ligne défensive"}
       ],
       "army": [
-        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 5, "note": "+10 de défense en mêlée et Charge Glorieuse (seigneur) — Bonus de Charge doublé et pénalité de commandement de flanc infligée à l'ennemi chargé, même de front —, plus +2 rang de recrutement et -1 tour de recrutement local (faction) : cavalerie lourde quasiment impossible à percer, déjà vétérane à la sortie de caserne"},
+        {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "+10 de défense en mêlée et Charge Glorieuse (seigneur) — Bonus de Charge doublé et pénalité de commandement de flanc infligée à l'ennemi chargé, même de front —, plus +2 rang de recrutement et -1 tour de recrutement local (faction) : cavalerie lourde quasiment impossible à percer, déjà vétérane à la sortie de caserne"},
         {"icon": "footSquires", "name": "Foot Squires", "qty": 1, "note": "Infanterie de squires bon marché en soutien de la ligne"},
         {"icon": "beastslayersOfBastonne", "name": "Beastslayers of Bastonne (Foot Squires)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Foot Squires"},
         {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 4, "note": "+5 de défense en mêlée (seigneur) — ligne de tenue bon marché et fiable"},
