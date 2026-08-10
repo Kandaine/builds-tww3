@@ -20,7 +20,8 @@
       ],
       "army": [
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 4, "note": "Cavalerie lourde à -50% d'entretien (seigneur) et recrutée un tour plus vite (faction) — un luxe habituellement coûteux devient abordable en masse"},
-        {"icon": "hefSpearman", "name": "Spearmen", "qty": 4, "note": "Cœur de ligne bon marché grâce au -50% d'entretien (seigneur)"},
+        {"icon": "eataineGuard", "name": "Eataine Guard (Spearmen)", "qty": 1, "note": "Le Régiment de Renom des Spearmen, et il porte le nom du royaume de ce seigneur. Même rôle d'ancrage, sur un profil qui tient nettement mieux"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 3, "note": "Cœur de ligne bon marché grâce au -50% d'entretien (seigneur)"},
         {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Soutien à distance, également à -50% d'entretien (seigneur)"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Recrutés directement avec +3 rangs d'expérience (seigneur) — une unité polyvalente lance/arc déjà vétérane dès sa sortie de caserne"},
         {"icon": "stormRiders", "name": "The Storm Riders (Lothern Sea Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Lothern Sea Guard, également recrutée avec +3 rangs d'expérience (seigneur)"},
@@ -173,7 +174,8 @@
         {"icon": "chiefHandmaidenLirazel", "name": "Chief-Handmaiden Lirazel (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod <em>High Elves Lords</em>, <strong>exclusive à Avelorn</strong> — donc à cette seule fiche. Son arbre entier est bâti sur les <strong>Sisters of Avelorn</strong> : coût réduit, rang de recrutement, gain d'expérience, et surtout les attributs <strong>Discipline</strong> et <strong>Snipe</strong>. Elle ajoute aussi portée, puissance de tir, vitesse de rechargement et Sauvegarde de Zèle à toutes les unités d'Avelorn. Avec six Sœurs dans la liste, aucun autre héros du jeu n'apporte autant ici. <strong>Immortelle</strong>"}
       ],
       "army": [
-        {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 6, "note": "+15% de force de tir grâce à Alarielle (seigneur) — le cœur offensif de cette armée"},
+        {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Le Régiment de Renom des Sisters of Avelorn — la garde de cour de la Reine Éternelle, donc de ce seigneur précisément. C'est la meilleure pièce de tir que cette fiche puisse aligner"},
+        {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 5, "note": "+15% de force de tir grâce à Alarielle (seigneur) — le cœur offensif de cette armée"},
         {"icon": "dryad", "name": "Dryads", "qty": 3, "note": "Infanterie d'esprits de la forêt, résistante à la magie"},
         {"icon": "treeKin", "name": "Tree Kin", "qty": 3, "note": "Monstre végétal tanky pour percer la ligne ennemie"},
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "Ligne de tenue complémentaire"},
@@ -203,7 +205,8 @@
         {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — buffs et projectiles pour appuyer la ligne"}
       ],
       "army": [
-        {"icon": "shipsCompany", "name": "Ship's Company", "qty": 4, "note": "-10% d'entretien (seigneur) — le cœur bon marché de cette armée maritime"},
+        {"icon": "brinedragonSwords", "name": "Brinedragon Swords (Ship's Company)", "qty": 1, "note": "Le Régiment de Renom des Ship's Company, chez le Seigneur de la Mer dont c'est l'infanterie signature. Il profite du <strong>-10% d'entretien</strong> comme le reste de la flotte"},
+        {"icon": "shipsCompany", "name": "Ship's Company", "qty": 3, "note": "-10% d'entretien (seigneur) — le cœur bon marché de cette armée maritime"},
         {"icon": "companyOfTheKalendirian", "name": "Company of the Kalendirian (Ship's Company)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Ship's Company, également couverte par le -10% d'entretien (seigneur)"},
         {"icon": "oceanids", "name": "Oceanids", "qty": 3, "note": "-10% d'entretien (seigneur) et recrutement local -1 tour (faction) — infanterie monstrueuse polyvalente issue des profondeurs"},
         {"icon": "seaElemental", "name": "Sea Elemental", "qty": 2, "note": "Même double bonus faction/seigneur — un monstre d'eau capable de déclencher tempêtes et tourbillons"},
@@ -303,9 +306,11 @@
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Héros de combat — porte-bannière qui ancre le commandement de la meute et mène la charge à la hache"}
       ],
       "army": [
-        {"icon": "whiteLions", "name": "White Lions of Chrace", "qty": 3, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — infanterie d'élite à la hache, cœur de la meute, dévastatrice en charge d'embuscade"},
+        {"icon": "silverpelts", "name": "Silverpelts (White Lions of Chrace)", "qty": 1, "note": "Le Régiment de Renom des White Lions, l'unité que Korhil commande en propre. Même <strong>-30% d'entretien</strong>, sur le meilleur profil de la famille"},
+        {"icon": "whiteLions", "name": "White Lions of Chrace", "qty": 2, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — infanterie d'élite à la hache, cœur de la meute, dévastatrice en charge d'embuscade"},
         {"icon": "puremaneCompany", "name": "The Puremane Company (White Lions)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — variante d'élite des White Lions, profite aussi des bonus du seigneur"},
-        {"icon": "warLions", "name": "War Lions of Chrace", "qty": 2, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — grands lions blancs de guerre, bêtes de choc rapides qui flanquent et déchirent"},
+        {"icon": "rahagrasPride", "name": "Rahagra's Pride (War Lions of Chrace)", "qty": 1, "note": "Le Régiment de Renom des War Lions, chez le capitaine chracien lui-même. Il reçoit le <strong>-30% d'entretien</strong> au même titre que le régiment standard"},
+        {"icon": "warLions", "name": "War Lions of Chrace", "qty": 1, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — grands lions blancs de guerre, bêtes de choc rapides qui flanquent et déchirent"},
         {"icon": "lionChariot", "name": "Lion Chariot of Chrace", "qty": 2, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — chars tirés par des lions, impact de charge dévastateur"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 2, "note": "Archères magiques d'élite — tir enchanté qui amollit l'ennemi avant la charge de la meute"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 2, "note": "Lance et arc — ligne de soutien polyvalente qui tient pendant que les lions flanquent"},
@@ -441,7 +446,8 @@
         {"icon": "dragonPrince", "name": "Dragon Princes", "qty": 4, "note": "L'unité que toute la fiche sert. Ailleurs c'est une bonne cavalerie lourde ; ici elle <strong>cause la Peur</strong> (faction) et frappe avec des <strong>Attaques Enflammées</strong> (seigneur). Contre les morts-vivants et les régénérateurs, cette combinaison est décisive"},
         {"icon": "sunDragon", "name": "Sun Dragon", "qty": 2, "note": "La seule unité de dragon visée par le <strong>+10% de Sauvegarde de Zèle</strong> (faction), et la moins chère des trois — le <strong>-75% sur la chaîne des dragons</strong> la rend accessible tôt"},
         {"icon": "moonDragon", "name": "Moon Dragon", "qty": 1, "note": "Le palier supérieur, sans le bonus de Sauvegarde de Zèle mais nettement plus dur au combat. Un seul suffit : c'est le briseur de ligne, pas la colonne vertébrale"},
-        {"icon": "phoenixGuard", "name": "Phoenix Guard", "qty": 2, "note": "Immunisée à la Psychologie et très résistante — l'ancre qui tient pendant que la cavalerie et les dragons manœuvrent"},
+        {"icon": "keepersOfTheFlame", "name": "Keepers of the Flame (Phoenix Guard)", "qty": 1, "note": "Le Régiment de Renom des Phoenix Guard, et le mieux placé sur une fiche bâtie autour du feu : il tient la ligne pendant que les Dragon Princes portent les <strong>Attaques Enflammées</strong>"},
+        {"icon": "phoenixGuard", "name": "Phoenix Guard", "qty": 1, "note": "Immunisée à la Psychologie et très résistante — l'ancre qui tient pendant que la cavalerie et les dragons manœuvrent"},
         {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Le tir de volume, indispensable à une liste dont presque tout le reste doit charger"},
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "La réponse à la cavalerie adverse, que ni les dragons ni les Dragon Princes ne traitent efficacement"},
         {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 1, "note": "L'artillerie légère — contre les Nains, c'est ce qui atteint une ligne de tir retranchée que la cavalerie mettrait trop longtemps à contourner"}
