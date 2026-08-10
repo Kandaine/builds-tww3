@@ -115,6 +115,22 @@ ailleurs. Choisir le nombre en fonction du seigneur, pas d'une habitude.
 Un `qty` de héros compte dans le total au même titre qu'une unité — deux Bouchers, c'est deux
 slots. C'est l'erreur de calcul la plus fréquente.
 
+**Une capacité de héros accordée par un effet n'est pas une consigne de remplissage.** Un
+« +2 de capacité pour les Chaos Sorcerers of Slaanesh » est un plafond de **recrutement à l'échelle
+de la faction** : il autorise à en avoir davantage en jeu, répartis entre plusieurs armées, pas à
+les entasser dans celle du seigneur. Ne monter la quantité sur la fiche que si le build y gagne —
+un héros dont les effets se cumulent, une aura à saturer, une école de magie qui porte la fiche.
+Sinon, en aligner un ou deux et **expliquer la capacité dans la note** : le lecteur saura qu'il
+peut en recruter d'autres pour ses armées secondaires. Le raccourci « +2, donc j'en mets 3 » donne
+des fiches encombrées de héros interchangeables.
+
+**Priorité aux Régiments de Renom dans le corps d'armée.** À bénéfice comparable, préférer le RoR à
+l'unité standard équivalente : c'est la version d'élite, elle porte souvent une capacité propre, et
+comme elle est unique elle ne dispute pas les plafonds partagés entre variantes. Les chercher dans
+`db\mercenary_*` en composant, sans oublier les RoR **vanilla** qu'un mod se contente de désigner
+comme Régiment favori. Deux limites : `qty` vaut toujours **1**, et il faut avoir vérifié que le
+seigneur y a accès.
+
 ### Corriger une quantité : jamais par `Replace()` global
 
 **Ne jamais corriger un `qty` par un `String.Replace()` sur le contenu entier du fichier.** Un

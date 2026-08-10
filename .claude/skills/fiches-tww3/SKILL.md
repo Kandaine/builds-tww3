@@ -56,6 +56,14 @@ par une capacité ne consomme aucun slot — la mentionner dans la note, pas dan
 **Respecter les plafonds** : capacités de héros annoncées dans les effets de faction, et plafonds
 d'unité partagés entre variantes (voir `references/analyse-pack.md`).
 
+**Mais un bonus de capacité n'est pas une obligation de remplissage.** Quand un effet donne
+« +2 de capacité pour les Chaos Sorcerers of Slaanesh », il autorise à en **recruter** davantage —
+à l'échelle de la **faction**, donc répartis sur plusieurs armées. Il ne dit pas qu'il faut les
+empiler dans l'armée du seigneur. Ne monter la quantité sur la fiche que si le build y gagne
+vraiment ; sinon, mentionner la capacité dans la note et laisser le nombre au niveau que le build
+justifie. Le réflexe inverse — « +2, donc j'en mets 3 » — produit des fiches saturées de héros
+identiques qui ne servent pas le seigneur.
+
 **Ne jamais placer une unité ou un héros sans avoir vérifié qu'un joueur peut l'obtenir.** Une
 icône, une entrée de table et un nom dans un `.loc` ne prouvent rien : les mods embarquent du
 contenu déclaré mais coupé. Le test diffère selon la nature — **unité** : croiser
@@ -95,6 +103,20 @@ unité retenue au test de recrutabilité** (§2 bis) avant de l'écrire.
 **4. Concevoir le build.** Partir des effets du seigneur, pas du roster : quelle unité bénéficie
 réellement du bonus ? Un effet qui ne vise que l'infanterie de mêlée rend chaque cavalier aligné
 plus coûteux qu'il n'en a l'air. Chercher la mécanique centrale et la faire porter la fiche.
+
+**La synergie avec les effets n'est pas un objectif, c'est une contrainte.** Chaque ligne du build
+doit se rattacher à un effet de faction ou de seigneur, ou à un manque que ces effets créent. Une
+unité qu'aucun effet ne touche et qui ne comble aucune faiblesse identifiée n'a rien à faire dans
+la liste — la relire une fois la fiche écrite et se demander, ligne par ligne : *quel effet la
+justifie ?* Si la réponse est « aucun », soit elle bouche un trou qu'il faut nommer dans sa note,
+soit elle sort.
+
+**Priorité aux Régiments de Renom dans le corps d'armée.** À bénéfice comparable, un RoR passe
+avant l'unité standard équivalente : c'est la version d'élite, elle porte souvent une capacité
+propre, et elle est unique donc elle ne concurrence pas les plafonds partagés. Les chercher
+systématiquement dans `db\mercenary_*` au moment de composer, y compris les RoR **vanilla** que le
+mod se contente de désigner comme Régiment favori. Deux limites : un RoR ne se prend qu'en **un
+seul exemplaire**, et il faut vérifier que le seigneur y a bien accès.
 
 **5. Extraire les images** via le sous-agent `tww-assets` (extraction et enregistrement seulement,
 jamais de rédaction ni de commit). Toujours recouper son rapport : nombre de clés, existence des
@@ -136,6 +158,37 @@ plutôt que supprimer un régiment de renom. Le total doit rester à 20.
 paragraphe `magic` ou la note de fin. Les relire, pas seulement le tableau d'unités.
 
 **5. Valider, vérifier, demander le feu vert.**
+
+---
+
+## Croiser les mods entre eux
+
+Les mods installés ne sont pas des silos. Une unité ou un héros ajouté par un mod est souvent
+recrutable par des seigneurs qui n'en font pas partie — c'est le cas de tout ce qui est ouvert à
+une **culture** entière plutôt qu'à une faction. Quand un mod vient d'être intégré, se demander
+systématiquement **ce qu'il apporte aux fiches déjà en ligne de la même race**, et pas seulement à
+ses propres seigneurs.
+
+Les meilleurs candidats sont les héros ouverts à toute une culture, les unités recrutables par une
+chaîne de bâtiments générique plutôt que par un site unique, et les Régiments de Renom versés au
+pool commun.
+
+**La vérification préalable est obligatoire et elle est plus stricte que le test habituel** :
+il ne suffit pas que l'unité soit recrutable *en général*, il faut qu'elle le soit **par la faction
+de ce seigneur-là**.
+
+| Nature | Ce qu'il faut vérifier |
+|---|---|
+| Héros | la **clé de faction du seigneur** figure explicitement dans `faction_agent_permitted_subtypes` pour ce subtype |
+| Unité | la culture du seigneur est autorisée dans `units_to_groupings_military_permissions_tables`, **et** aucune restriction dans `units_to_exclusive_faction_permissions_tables` ne l'en exclut, **et** la faction peut construire le bâtiment qui la débloque |
+| Régiment de Renom | présent dans `db\mercenary_*` et accessible au pool de la faction |
+
+Un bâtiment de **site unique** est le piège principal : l'unité existe pour la culture, mais seule
+la faction qui tient la province concernée peut la recruter. Ne pas la placer chez un seigneur dont
+rien n'indique qu'il prendra ce site.
+
+En cas de doute, la source à demander est le **Unit & Spell Browser** de l'écran de campagne : c'est
+la seule vue qui montre ce qu'un seigneur donné peut réellement aligner.
 
 ---
 
