@@ -264,7 +264,7 @@
       "totalSlots": 20,
       "lord": {"icon": "tettoeko", "name": "Tetto'eko", "qty": 1, "note": "Astromancien sur Stégadon Ancien (Lore of Heavens) — sa posture de Grande Astromancie (seigneur) donne le Vanguard Deployment à TOUTE l'armée et autorise les frappes éclair, pendant que \"The Judgement of Uxmac\" (seigneur) foudroie quiconque l'engage au corps-à-corps (2 × 740 dégâts, rechargé en mêlée)"},
       "heroes": [
-        {"icon": "skinkPriestHeavens", "name": "Skink Priest (Cieux)", "qty": 3, "note": "Capacité de héros +2 (faction) permet d'en aligner trois — un triumvirat de casters des Cieux dont les sorts coûtent -15% de Vents et rechargent -5% plus vite (faction) : tempêtes, comètes et malédictions en continu"}
+        {"icon": "skinkPriestHeavens", "name": "Skink Priest (Cieux)", "qty": 3, "note": "Trois exemplaires, et ce sont les <strong>-15% de coût en Vents</strong> et <strong>-5% de temps de recharge sur tous les sorts</strong> (faction) qui le justifient : ces deux réductions s'appliquent à <em>chaque</em> lanceur, donc leur valeur croît avec leur nombre — c'est la seule fiche du site où empiler des casters est mécaniquement rentable. Le <strong>+2 de capacité</strong> ne fait qu'autoriser le recrutement ; il ne serait pas une raison suffisante à lui seul"}
       ],
       "army": [
         {"icon": "redCrestedSkinks", "name": "Red-Crested Skinks", "qty": 3, "note": "Infanterie skink d'élite frénétique — la ligne de front de Tlaxtlan, déployée en avant-garde via la Grande Astromancie (seigneur)"},

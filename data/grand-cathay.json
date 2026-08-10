@@ -83,7 +83,7 @@
       "lord": {"icon": "yuanbo", "name": "Yuan Bo", "qty": 1, "note": "Administrateur du royaume et exécuteur de la volonté impériale — son +25 de réserve de Vents de Magie (seigneur) lui permet d'enchaîner sorts et capacités sans jamais s'épuiser"},
       "heroes": [
         {"icon": "kuRong", "name": "By Rong (Héros Légendaire)", "qty": 1, "note": "Sa toute première compétence s'appelle <strong>« Onyx Crowmen »</strong> — il en est le <strong>sous-commandant</strong>, et cette fiche est la seule du site à en aligner. Il en a mené une partie hors de la Grande Muraille, et se recrute en occupant <strong>Bloodwind Keep</strong>. Ses autres compétences — <strong>« Gendarmes of Shadow »</strong>, <strong>« The Way of a Thousand Blades »</strong>, <strong>« Throat Cutter »</strong> — en font un tueur de personnages"},
-        {"icon": "astromancer", "name": "Astromancer", "qty": 3, "note": "Capacité de héros +2 pour ce type (faction) permet d'en aligner trois — avec Yuan Bo, 4 lanceurs de sorts portent la Maîtrise des Vents Élémentaires à +45% de puissance de sorts"}
+        {"icon": "astromancer", "name": "Astromancer", "qty": 3, "note": "Trois exemplaires, et ce n'est pas le <strong>+2 de capacité</strong> (faction) qui le justifie — un plafond de recrutement n'oblige à rien. C'est le <strong>+25 de réserve de Vents de Magie</strong> du seigneur : il porte l'armée entière, ce qui rend quatre lanceurs réellement soutenables là où ils s'épuiseraient ailleurs. Ensemble, ils poussent la <strong>Maîtrise des Vents Élémentaires</strong> à <strong>+45% de puissance de sorts</strong>"}
       ],
       "army": [
         {"icon": "jadeLion", "name": "Jade Lion", "qty": 3, "note": "-30% d'entretien (seigneur) — monstre félin rapide et mordant"},
