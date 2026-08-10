@@ -55,7 +55,8 @@
         {"icon": "kossars", "name": "Kossars", "qty": 3, "note": "+5/+5 (faction) et Rage (seigneur) — tir hybride bon marché, frénétique au contact"},
         {"icon": "kossoviteDervishes", "name": "Kossovite Dervishes", "qty": 2, "note": "+5/+5 (faction) et Rage (seigneur) — cavalerie légère de flanc désormais frénétique"},
         {"icon": "horseArchers", "name": "Horse Archers", "qty": 2, "note": "+5/+5 (faction) et Rage (seigneur) — tir monté harcelant, frénétique au contact"},
-        {"icon": "streltsi", "name": "Streltsi", "qty": 2, "note": "Tir lourd anti-armure en soutien, non concerné par les bonus de faction mais toujours utile"},
+        {"icon": "boydinovsBrawlers", "name": "Boydinov's Brawlers (Streltsi)", "qty": 1, "note": "Le Régiment de Renom des Streltsi, accessible à la Grande Orthodoxie via le pool kislevite. À profil équivalent il passe avant le régiment standard, et il apporte à une ligne autrement très courte le seul tir lourd anti-armure de la fiche"},
+        {"icon": "streltsi", "name": "Streltsi", "qty": 1, "note": "Tir lourd anti-armure en soutien, non concerné par les bonus de faction mais toujours utile"},
         {"icon": "lightWarSleds", "name": "Light War Sleds", "qty": 1, "note": "Artillerie mobile de soutien pour appuyer la horde frénétique"}
       ],
       "magic": "Kostaltyn n'est pas un lanceur de la Lore of Ice classique — il dispose de sorts liés (Fireball x4) et de capacités actives thématiques invoquant les quatre dieux de Kislev (Ursun's Roar, Dazh's Song of Winter Sunlight, Salyak's Lullaby, Tor's Battle Hymn).",
@@ -83,7 +84,8 @@
         {"icon": "patriarch", "name": "Patriarch", "qty": 1, "note": "Renfort de commandement et de replenishment pour la horde de War Bear Riders — un seul, l'autre emplacement étant consommé par l'arrivée d'Ilja"}
       ],
       "army": [
-        {"icon": "warBearRiders", "name": "War Bear Riders", "qty": 6, "note": "-25% d'entretien (seigneur), +2 rang de recrutement (faction), +7 commandement / +9 attaque en mêlée contre Chaos, Chaos Dwarfs et Norsca (seigneur) — cœur de l'armée, doomstack classique"},
+        {"icon": "oathBrothersOfTor", "name": "Oath-Brothers of Tor (War Bear Riders)", "qty": 1, "note": "Le Régiment de Renom des War Bear Riders, et le meilleur bénéficiaire possible du <strong>+2 de rang de recrutement</strong> que la faction accorde à cette unité : il sort de production déjà vétéran, sur un profil d'élite. Les Ursun Revivalists ont bien accès au pool kislevite, contrairement aux factions moddées de cette page"},
+        {"icon": "warBearRiders", "name": "War Bear Riders", "qty": 5, "note": "-25% d'entretien (seigneur), +2 rang de recrutement (faction), +7 commandement / +9 attaque en mêlée contre Chaos, Chaos Dwarfs et Norsca (seigneur) — cœur de l'armée, doomstack classique"},
         {"icon": "elementalBear", "name": "Elemental Bear", "qty": 1, "note": "Monstre increvable, cœur de choc"},
         {"icon": "theFrozenHeartOfWinter", "name": "The Frozen Heart of Winter (Elemental Bear)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : immunisé à la Fatigue et +20% résistance aux flammes (faction) — variante d'élite unique de l'Elemental Bear, particulièrement résistante face aux armes incendiaires des Chaos Dwarfs"},
         {"icon": "tzarGuard", "name": "Tzar Guard", "qty": 3, "note": "Ligne de tenue mortelle robuste en soutien — réduite d'un exemplaire pour libérer l'emplacement de Vladimir Stormbringer"},

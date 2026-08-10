@@ -128,8 +128,17 @@ des fiches encombrées de héros interchangeables.
 l'unité standard équivalente : c'est la version d'élite, elle porte souvent une capacité propre, et
 comme elle est unique elle ne dispute pas les plafonds partagés entre variantes. Les chercher dans
 `db\mercenary_*` en composant, sans oublier les RoR **vanilla** qu'un mod se contente de désigner
-comme Régiment favori. Deux limites : `qty` vaut toujours **1**, et il faut avoir vérifié que le
-seigneur y a accès.
+comme Régiment favori.
+
+Deux limites, et la première n'est pas celle qu'on croit. `qty` vaut **1 par défaut**, mais un effet
+de faction du type « Régiment favori <em>X</em> : +1 capacité » relève ce plafond — dans ce cas
+`qty: 2` est correct, et c'est même le jeu voulu. Vérifier le bloc d'effets avant de trancher.
+
+La seconde est plus contraignante : **il faut que la faction du seigneur ait accès au pool**. Cela
+se lit dans `db\faction_to_mercenary_set_junctions_tables`, qui associe une clé de faction à un pool
+de Régiments de Renom. Les factions **ajoutées par un mod n'y figurent souvent pas** : sur Kislev,
+seules les quatre factions du jeu de base sont rattachées au pool, les trois factions moddées du
+site en sont absentes. Ne jamais présumer qu'une race entière partage le même pool.
 
 ### Corriger une quantité : jamais par `Replace()` global
 

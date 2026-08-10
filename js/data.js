@@ -3021,6 +3021,8 @@ const unitImages = {
   yeSheng: 'assets/portraits/yeSheng.png',
   clanGuards: 'assets/units/clanGuards.png',
   nanYangEliteWarriors: 'assets/units/nanYangEliteWarriors.png',
+  boydinovsBrawlers: 'assets/units/boydinovsBrawlers.png',
+  oathBrothersOfTor: 'assets/units/oathBrothersOfTor.png',
   cathayanWarriors: 'assets/units/cathayanWarriors.png',
   banditsOfTheSilverRoad: 'assets/units/banditsOfTheSilverRoad.png',
   ladiesOfTheApricotGrove: 'assets/units/ladiesOfTheApricotGrove.png',
