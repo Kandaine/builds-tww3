@@ -20,7 +20,7 @@
       ],
       "army": [
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 4, "note": "Cavalerie lourde à -50% d'entretien (seigneur) et recrutée un tour plus vite (faction) — un luxe habituellement coûteux devient abordable en masse"},
-        {"icon": "eataineGuard", "name": "Eataine Guard (Spearmen)", "qty": 1, "note": "Le Régiment de Renom des Spearmen, et il porte le nom du royaume de ce seigneur. Même rôle d'ancrage, sur un profil qui tient nettement mieux"},
+        {"icon": "eataineGuard", "name": "Eataine Guard (Spearmen)", "qty": 1, "note": "Le Régiment de Renom des Spearmen, et il porte le nom du royaume de ce seigneur. Même rôle d'ancrage de ligne, sur un profil qui tient nettement mieux"},
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 3, "note": "Cœur de ligne bon marché grâce au -50% d'entretien (seigneur)"},
         {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Soutien à distance, également à -50% d'entretien (seigneur)"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Recrutés directement avec +3 rangs d'expérience (seigneur) — une unité polyvalente lance/arc déjà vétérane dès sa sortie de caserne"},
@@ -205,9 +205,8 @@
         {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — buffs et projectiles pour appuyer la ligne"}
       ],
       "army": [
-        {"icon": "brinedragonSwords", "name": "Brinedragon Swords (Ship's Company)", "qty": 1, "note": "Le Régiment de Renom des Ship's Company, chez le Seigneur de la Mer dont c'est l'infanterie signature. Il profite du <strong>-10% d'entretien</strong> comme le reste de la flotte"},
         {"icon": "shipsCompany", "name": "Ship's Company", "qty": 3, "note": "-10% d'entretien (seigneur) — le cœur bon marché de cette armée maritime"},
-        {"icon": "companyOfTheKalendirian", "name": "Company of the Kalendirian (Ship's Company)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Ship's Company, également couverte par le -10% d'entretien (seigneur)"},
+        {"icon": "companyOfTheKalendirian", "name": "Company of the Kalendirian (Ship's Company)", "qty": 3, "note": "Le Régiment de Renom des Ship's Company, et le <strong>Régiment favori</strong> de cette faction : le <strong>+1 de capacité</strong> permet d'en aligner plusieurs là où un RoR est d'ordinaire unique. Il reçoit aussi le <strong>-10% d'entretien</strong> (seigneur) accordé à toute la flotte"},
         {"icon": "oceanids", "name": "Oceanids", "qty": 3, "note": "-10% d'entretien (seigneur) et recrutement local -1 tour (faction) — infanterie monstrueuse polyvalente issue des profondeurs"},
         {"icon": "seaElemental", "name": "Sea Elemental", "qty": 2, "note": "Même double bonus faction/seigneur — un monstre d'eau capable de déclencher tempêtes et tourbillons"},
         {"icon": "merwyrm", "name": "Merwyrm", "qty": 2, "note": "Même double bonus faction/seigneur — la plus puissante des créatures marines recrutables, lointaine cousine des Dragons"},
@@ -306,7 +305,7 @@
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Héros de combat — porte-bannière qui ancre le commandement de la meute et mène la charge à la hache"}
       ],
       "army": [
-        {"icon": "silverpelts", "name": "Silverpelts (White Lions of Chrace)", "qty": 1, "note": "Le Régiment de Renom des White Lions, l'unité que Korhil commande en propre. Même <strong>-30% d'entretien</strong>, sur le meilleur profil de la famille"},
+        {"icon": "silverpelts", "name": "Silverpelts (White Lions of Chrace)", "qty": 1, "note": "Le Régiment de Renom des White Lions, distinct de The Puremane Company avec qui il coexiste — cette fiche est la seule du site à aligner les deux. Il reçoit le <strong>-30% d'entretien</strong> comme le reste de la meute chracienne"},
         {"icon": "whiteLions", "name": "White Lions of Chrace", "qty": 2, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — infanterie d'élite à la hache, cœur de la meute, dévastatrice en charge d'embuscade"},
         {"icon": "puremaneCompany", "name": "The Puremane Company (White Lions)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — variante d'élite des White Lions, profite aussi des bonus du seigneur"},
         {"icon": "rahagrasPride", "name": "Rahagra's Pride (War Lions of Chrace)", "qty": 1, "note": "Le Régiment de Renom des War Lions, chez le capitaine chracien lui-même. Il reçoit le <strong>-30% d'entretien</strong> au même titre que le régiment standard"},

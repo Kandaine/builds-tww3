@@ -121,6 +121,43 @@ créatures qui « se rallient » (Lézards Corrompus d'Adella, Esprits de Glace 
 sortent d'un `.lua` ou d'un effet de faction, pas d'une table de recrutement. Dans ces cas, l'effet
 de faction visible sur la capture du user est la meilleure preuve d'existence.
 
+### Un Régiment de Renom déclaré n'est pas forcément vivant
+
+Une entrée dans `mercenary_unit_groups_tables` ne prouve pas qu'un RoR existe en jeu. Les clés
+**héritées** survivent dans les tables à côté de celles qui les remplacent, avec leur ancien nom
+affiché — et rien ne les distingue au premier regard.
+
+**Le signal est le jumeau** : deux clés de RoR pour la **même unité de base**, dans le **même pool**,
+dont l'une porte un préfixe ancien — chez les Hauts Elfes, `wh2_main_hbe_*` face à
+`wh2_dlc10_hef_*` / `wh3_dlc27_hef_*`.
+
+```
+wh2_main_hbe_inf_ship_company_ror_0     = "Brinedragon Swords"         <- n'existe pas en jeu
+wh3_dlc27_hef_inf_ships_company_ror     = "Company of the Kalendirian" <- reel
+wh2_main_hbe_inf_the_silverpelts_ror_0  = "Silverpelts"                <- reel malgre l'ancien prefixe
+wh2_dlc10_hef_inf_the_silverpelts_ror_0 = "The Puremane Company"       <- reel aussi
+```
+
+**Un jumeau est un signal de vérification, pas une preuve.** Les deux cas ci-dessus ont exactement
+la même forme et se sont résolus différemment : Brinedragon Swords est du contenu coupé, alors que
+Silverpelts et The Puremane Company sont deux régiments distincts qui coexistent. J'ai supprimé
+Silverpelts en généralisant trop vite, et le user a dû me corriger.
+
+Deux réflexes, donc, avant de placer un RoR : **chercher un jumeau** sur la même unité de base, et
+**vérifier que le régiment n'est pas déjà sur la fiche visée** sous un autre libellé — c'est ce
+doublon-là qui aurait dû m'alerter sur Aislinn, où Company of the Kalendirian était déjà en place.
+Quand un jumeau apparaît, **demander au user** : lui seul voit sa liste de recrutement, et la forme
+des clés ne permet pas de trancher.
+
+**Et si la carte manque, chercher ailleurs avant de conclure.** Deux réflexes sauvent ici. D'abord,
+le jeu a **plusieurs packs d'interface** — `ui.pack`, `ui2.pack`, `ui3.pack`, `commontextures.pack` —
+et ne chercher que dans le premier donne un faux négatif. Ensuite, un **mod peut fournir la carte
+d'une unité au nom vanilla** : c'est `@red_hef_lords_public.pack` qui livre
+`hbe_inf_the_silverpelts_ror_0.png` et `hbe_inf_the_eataine_guard_ror_0.png`, absentes de tous les
+packs du jeu de base. Balayer les packs activés avant de déclarer une carte introuvable — et se
+méfier des cartes « voisines » : demander au user à quoi ressemble la sienne coûte moins cher qu'une
+substitution.
+
 Corollaire sur les noms suffixés : `..._ror` = Régiment de Renom (chercher dans `mercenary_*`),
 et un nom du type « <em>Garde de X</em> » / « <em>Retinue of X</em> » doit faire soupçonner une garde
 de seigneur plutôt qu'une unité recrutable.
