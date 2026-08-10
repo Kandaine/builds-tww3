@@ -124,6 +124,13 @@ Sinon, en aligner un ou deux et **expliquer la capacité dans la note** : le lec
 peut en recruter d'autres pour ses armées secondaires. Le raccourci « +2, donc j'en mets 3 » donne
 des fiches encombrées de héros interchangeables.
 
+**Un RoR se place sur TOUTES les fiches qui peuvent le recruter**, pas une seule fois. C'est la
+différence avec un héros légendaire : chaque fiche décrit une campagne distincte, donc le fait qu'un
+régiment soit unique *en partie* n'empêche pas de le proposer à chaque seigneur qui y a accès. Le
+critère est double et mécanique — la faction a accès au pool, et la fiche aligne déjà l'unité de
+base. Ne pas arbitrer « chez qui il va le mieux » comme pour un héros : cette question ne se pose
+que si l'accès est restreint.
+
 **Priorité aux Régiments de Renom dans le corps d'armée.** À bénéfice comparable, préférer le RoR à
 l'unité standard équivalente : c'est la version d'élite, elle porte souvent une capacité propre, et
 comme elle est unique elle ne dispute pas les plafonds partagés entre variantes. Les chercher dans
