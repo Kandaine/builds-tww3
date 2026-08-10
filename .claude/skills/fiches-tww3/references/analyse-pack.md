@@ -182,6 +182,39 @@ vérifier au wiki avant de conclure à du contenu coupé.
 Attention au format du dump : la valeur est tantôt sur la ligne suivante, tantôt collée à la clé
 sur la même ligne. Chercher les deux.
 
+### Pourquoi le dump est lacunaire, et comment obtenir la liste complète
+
+Ce n'est pas une imprécision de l'extraction, c'est une propriété du format. Un `.loc` est de
+l'**UTF-16LE**, et chaque entrée se termine par **un octet booléen** (le drapeau « infobulle »).
+Cet octet impair décale l'alignement de l'entrée suivante : une recherche qui décode le fichier
+depuis l'octet 0 ne voit donc qu'**une chaîne sur deux**. Les autres tombent sur les octets
+impairs et deviennent invisibles.
+
+Conséquence directe : **une absence dans un dump ASCII ne prouve rien**, et le taux de perte
+avoisine la moitié. Sur les trois packs DEER24, la recherche naïve rendait quelques centaines
+d'entrées trouées là où le parsing correct en a donné **4818**.
+
+Deux remèdes, du plus rapide au plus fiable :
+
+1. **Chercher sur les deux alignements** — décoder le blob en UTF-16 depuis l'octet 0 *puis*
+   depuis l'octet 1. Suffisant pour retrouver une chaîne qu'on sait présente.
+2. **Parser le format**, qui est simple et vaut le quart d'heure dès qu'on a besoin de la carte
+   complète des noms :
+
+```
+en-tete, 14 octets : FF FE | "LOC" | version | compte
+puis, pour chaque entree :
+  uint16  longueur de la cle   (en caracteres, pas en octets)
+  cle     UTF-16LE
+  uint16  longueur de la valeur
+  valeur  UTF-16LE
+  1 octet drapeau
+```
+
+Le symptôme qui doit y faire penser : des unités dont la carte existe dans `ui\units\icons\` mais
+dont le nom semble absent, **en nombre**. Une seule manquante est une vraie absence ; la moitié du
+roster manquante est un problème d'alignement.
+
 Un mod peut ne pas localiser une unité qu'il ajoute pourtant : c'est fréquent pour les régiments de
 renom. Extraire quand même la carte, et demander le nom.
 
