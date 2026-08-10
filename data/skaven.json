@@ -22,7 +22,8 @@
         {"icon": "stormverminHalberds", "name": "Stormvermin (Halberds)", "qty": 2, "note": "-25% d'entretien (faction) — élite anti-grande unité, cœur de mêlée du Clan Mors"},
         {"icon": "councilGuard", "name": "Council Guard (Stormvermin)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — Stormvermin d'élite Unbreakable, réfléchit les charges et protège les unités proches (Guardian) ; en tant que Stormvermin, profite aussi du -25% d'entretien (faction)"},
         {"icon": "stormverminShields", "name": "Stormvermin (Sword & Shield)", "qty": 2, "note": "-25% d'entretien (faction) — élite défensive, tient la ligne face aux charges"},
-        {"icon": "clanratsShields", "name": "Clanrats (Shields)", "qty": 4, "note": "-25% d'entretien (faction) — chair à canon bon marché et increvable en nombre"},
+        {"icon": "clanVulknTailslashers", "name": "Clan Vulkn Tailslashers (Clanrats – Shields)", "qty": 1, "note": "Le Régiment de Renom des Clanrats à boucliers, sur la fiche qui en aligne le plus. Il reçoit le <strong>-25% d'entretien</strong> comme le reste de la ligne, sur un profil qui tient nettement mieux"},
+        {"icon": "clanratsShields", "name": "Clanrats (Shields)", "qty": 3, "note": "-25% d'entretien (faction) — chair à canon bon marché et increvable en nombre"},
         {"icon": "skavenslaveSlingers", "name": "Skavenslave Slingers", "qty": 3, "note": "Tir léger et jetable en soutien — en tant que Skavenslaves, ils reçoivent le <strong>+Attaque et +Défense de mêlée</strong> de Ska Bloodtail"},
         {"icon": "ratOgres", "name": "Rat Ogres", "qty": 1, "note": "Monstre de choc pour percer les lignes ennemies — c'est la seule unité de la liste que ni le <strong>-25% d'entretien</strong> (faction) ni les compétences de Ska Bloodtail ne concernent, d'où un seul exemplaire"},
         {"icon": "warpfireThrowers", "name": "Warpfire Throwers", "qty": 2, "note": "Arme d'équipe incendiaire dévastatrice contre l'infanterie groupée"}
@@ -88,7 +89,8 @@
         {"icon": "deathRunners", "name": "Death Runners", "qty": 3, "note": "Devastating Flanker (seigneur, toute l'armée) — infiltration et attaques de flanc dévastatrices"},
         {"icon": "gutterRunners", "name": "Gutter Runners", "qty": 2, "note": "Devastating Flanker (seigneur, toute l'armée) — harcèlement et flanquement rapide"},
         {"icon": "skavenslaveSpears", "name": "Skavenslave Spears", "qty": 2, "note": "Chair à canon anti-grande unité bon marché ; bénéficie aussi du Devastating Flanker (seigneur, toute l'armée)"},
-        {"icon": "doomwheel", "name": "Doomwheel", "qty": 2, "note": "Machine de guerre rapide, percée et choc dévastateurs"},
+        {"icon": "wheelzOfDooom", "name": "Wheelz of Dooom (Doomwheel)", "qty": 1, "note": "Le Régiment de Renom du Doomwheel. Une seule machine d'élite plutôt que deux standard : à profil comparable, le RoR passe devant"},
+        {"icon": "doomwheel", "name": "Doomwheel", "qty": 1, "note": "Machine de guerre rapide, percée et choc dévastateurs"},
         {"icon": "warpLightningCannon", "name": "Warp Lightning Cannon", "qty": 2, "note": "Artillerie anti-blindage à distance"}
       ],
       "magic": "Tretch n'est pas un lanceur de sorts — sa force vient de son Devastating Flanker généralisé (seigneur), qui transforme chaque unité en menace de flanquement, combiné au Vanguard Deployment temporaire (faction, 3 tours après une déclaration de guerre) pour se positionner idéalement avant l'engagement.",
@@ -115,7 +117,8 @@
         {"icon": "warlockEngineer", "name": "Warlock Engineer", "qty": 1, "note": "+2 de rang de recrutement (seigneur) — soutien magique via la Lore of Ruin, recruté déjà expérimenté. Un seul, l'autre emplacement revenant à Veskit"}
       ],
       "army": [
-        {"icon": "warplockJezzails", "name": "Warplock Jezzails", "qty": 4, "note": "-50% d'entretien (seigneur) — tir de précision anti-blindage à longue portée"},
+        {"icon": "nattyBuboesSharpshooters", "name": "Natty Buboe's Sharpshooters (Warplock Jezzails)", "qty": 1, "note": "Le Régiment de Renom des Warplock Jezzails, et il bénéficie du <strong>-50% d'entretien</strong> (seigneur) au même titre que les autres pièces warp de la liste"},
+        {"icon": "warplockJezzails", "name": "Warplock Jezzails", "qty": 3, "note": "-50% d'entretien (seigneur) — tir de précision anti-blindage à longue portée"},
         {"icon": "ratlingGuns", "name": "Ratling Guns", "qty": 4, "note": "-50% d'entretien, +2 de rang de recrutement (seigneur) — mitrailleuse warp à haute cadence de tir"},
         {"icon": "warpfireThrowers", "name": "Warpfire Throwers", "qty": 3, "note": "-50% d'entretien, +2 de rang de recrutement (seigneur) — arme incendiaire dévastatrice contre l'infanterie groupée"},
         {"icon": "poisonWindGlobadiers", "name": "Poison Wind Globadiers", "qty": 2, "note": "+2 de rang de recrutement (seigneur) — tir empoisonné à courte portée"},
@@ -152,7 +155,8 @@
         {"icon": "nightRunnersSlings", "name": "Night Runners (Slings)", "qty": 3, "note": "Projectiles perforants de warpstone (faction) — tir de soutien perforant"},
         {"icon": "gutterRunners", "name": "Gutter Runners", "qty": 3, "note": "Projectiles perforants de warpstone (faction) — infiltration rapide et flanquement"},
         {"icon": "gutterRunnerSlingers", "name": "Gutter Runner Slingers", "qty": 2, "note": "Projectiles perforants de warpstone (faction) — tir perforant mobile"},
-        {"icon": "deathRunners", "name": "Death Runners", "qty": 2, "note": "Élite d'infiltration et d'assassinat"}
+        {"icon": "visktrinsDeathSquad", "name": "Visktrin's Death Squad (Death Runners)", "qty": 1, "note": "Le Régiment de Renom des Death Runners, chez le Maître de la Mort d'Eshin. L'élite de l'élite sur la fiche qui fait de l'assassinat sa mécanique centrale"},
+        {"icon": "deathRunners", "name": "Death Runners", "qty": 1, "note": "Élite d'infiltration et d'assassinat"}
       ],
       "magic": "Snikch n'est pas un lanceur de sorts — sa puissance vient de son infiltration, de ses capacités d'assassinat et du +25% de chance de succès d'embuscade (seigneur), qui permet de surprendre l'ennemi avant même le début de la bataille.",
       "note": "Le +200% de coût de recrutement pour toutes les unités non-Eshin (faction) impose de construire l'armée quasi exclusivement autour des unités Eshin — Eshin Triads, Night Runners et Gutter Runners bénéficiant des projectiles perforants de warpstone (faction), et Death Runners pour l'assassinat. Les 2 exemplaires du régiment favori Iksha's Triads, permis par la capacité augmentée (faction), renforcent le cœur de mêlée. Le +25% de chance de succès d'embuscade (seigneur) permet de multiplier les attaques surprises, tandis que le +8 d'attaque en mêlée pour les héros embarqués (seigneur) rend les Assassins redoutables en duel contre les personnages ennemis."
@@ -180,7 +184,8 @@
       "army": [
         {"icon": "ratOgres", "name": "Rat Ogres", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — monstres de choc increvables"},
         {"icon": "pitFightersHellsDeep", "name": "Pit Fighters of Hell's Deep (Rat Ogres)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Rat Ogres, également couverte par les bonus d'entretien et d'armure du seigneur"},
-        {"icon": "mutantRatOgre", "name": "Mutant Rat Ogre", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — variante mutée encore plus destructrice"},
+        {"icon": "morskittarsHellion", "name": "Morskittar's Hellion (Mutant Rat Ogre)", "qty": 1, "note": "Le Régiment de Renom des Mutant Rat Ogres, sur la fiche du maître du Laboratoire de Chair — c'est là qu'il revient de droit. Il profite du <strong>-20% d'entretien</strong> et du <strong>+10 d'armure</strong> (seigneur) comme le régiment standard"},
+        {"icon": "mutantRatOgre", "name": "Mutant Rat Ogre", "qty": 1, "note": "-20% d'entretien, +10 armure (seigneur) — variante mutée encore plus destructrice"},
         {"icon": "broodHorror", "name": "Brood Horror", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — monstre polyvalent, mêlée et zone"},
         {"icon": "hellPitAbomination", "name": "Hell Pit Abomination", "qty": 2, "note": "-20% d'entretien, +10 armure (seigneur) — le plus grand monstre du Clan Moulder, ravage les lignes ennemies"},
         {"icon": "wolfRats", "name": "Wolf Rats", "qty": 3, "note": "-20% d'entretien, +10 armure (seigneur) — bêtes de guerre rapides pour le flanc ; on en retire une pour libérer l'emplacement de Lurklox"},
@@ -215,7 +220,8 @@
         {"icon": "stormverminShields", "name": "Stormvermin (Boucliers)", "qty": 2, "note": "Même rang +3 (seigneur) — variante à bouclier plus tenace, mur de mêlée renforcé par le +9 de Défense (aura)"},
         {"icon": "councilGuard", "name": "Council Guard (Stormvermin)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — Stormvermin d'élite, également couverts par le rang +3 (seigneur) et le +9 de Défense (aura)"},
         {"icon": "warplockJezzails", "name": "Warplock Jezzails", "qty": 3, "note": "Snipers warp à longue portée et haute perforation — grands gagnants du +10 de Reload Skill (aura), qui augmente nettement leur cadence de tir soutenu"},
-        {"icon": "ratlingGuns", "name": "Ratling Guns", "qty": 2, "note": "Arme d'équipe à tir rapide — le +10 de Reload Skill (aura) réduit ses longs temps de rechargement, maximisant son flot de balles warp"},
+        {"icon": "teethBreakers", "name": "Teeth-Breakers (Ratling Guns)", "qty": 1, "note": "Le Régiment de Renom des Ratling Guns. Il reçoit comme les autres le <strong>+10 de portée</strong> du clan, sur une cadence de tir déjà supérieure"},
+        {"icon": "ratlingGuns", "name": "Ratling Guns", "qty": 1, "note": "Arme d'équipe à tir rapide — le +10 de Reload Skill (aura) réduit ses longs temps de rechargement, maximisant son flot de balles warp"},
         {"icon": "warpLightningCannon", "name": "Warp Lightning Cannon", "qty": 2, "note": "Artillerie perforante dévastatrice contre les grandes cibles et les morts-vivants — profite également du +10 de Reload Skill (aura)"},
         {"icon": "clanratsShields", "name": "Clanrats (Boucliers)", "qty": 1, "note": "Écran de mêlée bon marché qui protège la gunline et Feskit — maintenu en place plus longtemps grâce au +9 de Défense (aura) ; réduit à un exemplaire pour libérer l'emplacement de Veskit"}
       ],
@@ -316,7 +322,7 @@
         {"icon": "savageSkavenslaves", "name": "Savage Skavenslaves", "qty": 1, "note": "La chair à canon du clan — et chez Gnaw elle est <strong>indispensable</strong>, puisque toute unité extérieure au roster coûte le double"},
         {"icon": "savageOrcSlaves", "name": "Savage Orc Slaves", "qty": 2, "note": "Des <strong>Orques Sauvages asservis</strong>, produits directs des Fosses de Piégeage. Aucun autre clan skaven n'aligne d'Orques dans ses rangs"},
         {"icon": "goblinSlaves", "name": "Goblin Slaves", "qty": 2, "note": "Même mécanique, version gobeline : bon marché, nombreux, et thématiquement le cœur de ce que fait ce clan"},
-        {"icon": "warPigs", "name": "War Pigs", "qty": 1, "note": "Des bêtes capturées lâchées sur l'ennemi — la masse de choc que ce roster n'a pas autrement"},
+        {"icon": "prikprangsPorkPack", "name": "Prikprang's Pork Pack (War Pigs)", "qty": 1, "note": "Le Régiment de Renom des War Pigs, qui remplace purement le régiment standard : à un seul exemplaire, autant que ce soit l'élite. Même rôle de bêtes lâchées sur l'ennemi, sur un profil supérieur"},
         {"icon": "dunedaggers", "name": "Dunedaggers", "qty": 1, "note": "Les lanceurs de dagues du clan, un tir de harcèlement propre au roster Gnaw"}
       ],
       "magic": "Un Wildspeaker, et lui seul. Le <strong>+100% de coût sur tout ce qui n'est pas Gnaw</strong> interdit d'aller chercher un Grey Seer ailleurs, mais le clan a bricolé sa propre magie : la loc est explicite, les Wildspeakers sont <strong>les seuls du Clan Gnaw à y être parvenus</strong>, avec le peu de ressources dont ils disposent. Leur savoir est celui du désert — tempêtes de sable et bourrasques qui punissent les volants — ce qui est exactement l'angle mort d'une armée de piégeurs au sol.",
@@ -606,7 +612,8 @@
       ],
       "army": [
         {"icon": "verminkeepers", "name": "Verminkeepers", "qty": 3, "note": "Les gardiens du bestiaire, unité signature du Clan Verms — ils bénéficient du <strong>+2 de Commandement et d'attaque en mêlée par guerre skavene active</strong> (seigneur), qui se cumule"},
-        {"icon": "underEmpireSpiderRiders", "name": "Under-Empire Spider Riders", "qty": 3, "note": "De la <strong>cavalerie d'araignées</strong> souterraine, chose qu'aucun autre clan skaven ne possède. Sur une faction qui gagne <strong>+8 de bonus de charge</strong> après chaque déclaration de guerre, elle devient redoutable"},
+        {"icon": "broodmothers", "name": "Broodmothers (Under-Empire Spider Riders)", "qty": 1, "note": "Le Régiment de Renom des Spider Riders du Sous-Empire, et la seule fiche du site à aligner cette famille. Même rôle, profil d'élite — il passe devant un exemplaire standard"},
+        {"icon": "underEmpireSpiderRiders", "name": "Under-Empire Spider Riders", "qty": 2, "note": "De la <strong>cavalerie d'araignées</strong> souterraine, chose qu'aucun autre clan skaven ne possède. Sur une faction qui gagne <strong>+8 de bonus de charge</strong> après chaque déclaration de guerre, elle devient redoutable"},
         {"icon": "scuttlers", "name": "Scuttlers (Spidersilk Globes)", "qty": 3, "note": "Le tir du clan : des globes de soie d'araignée. C'est la seule portée du roster Verms, et elle est immobilisante plutôt que létale"},
         {"icon": "lamplighters", "name": "Lamplighters", "qty": 2, "note": "Les porteurs de lanternes du Sous-Empire — l'infanterie de ligne propre au clan, produite par les Ruches"},
         {"icon": "giantUnderEmpireBat", "name": "Giant Under-Empire Bat", "qty": 2, "note": "La couverture aérienne, sortie des Ruches d'Élevage. Une chauve-souris géante souterraine : le mod pousse le thème jusqu'au bout"},
