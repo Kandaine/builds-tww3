@@ -3040,6 +3040,8 @@ const unitImages = {
   yingJin: 'assets/portraits/yingJin.png',
   kuXi: 'assets/portraits/kuXi.png',
   fangWenzi: 'assets/portraits/fangWenzi.png',
+  yeJia: 'assets/portraits/yeJia.png',
+  xenWu: 'assets/portraits/xenWu.png',
 };
 
 // ----------------------------------------------------------------------------
