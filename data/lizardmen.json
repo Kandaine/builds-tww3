@@ -52,7 +52,8 @@
       "army": [
         {"icon": "blessedSaurusWarriorsShields", "name": "Blessed Saurus Warriors (Shields)", "qty": 5, "note": "+25% de gain d'expérience (seigneur) — cœur de mêlée d'élite qui monte vite en rang"},
         {"icon": "pokHopakCohort", "name": "Pok-Hopak Cohort (Cold One Spear-Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +25% de gain d'expérience (seigneur) — variante d'élite des Cold One Spear-Riders, fer de lance des raids"},
-        {"icon": "coldOneSpearRiders", "name": "Cold One Spear-Riders", "qty": 3, "note": "+25% de gain d'expérience (seigneur) — cavalerie de choc rapide"},
+        {"icon": "pokHopaksCohort", "name": "Pok-Hopak's Cohort (Cold One Spear-Riders)", "qty": 1, "note": "Le Régiment de Renom des Cold One Spear-Riders, chez le seigneur qui a fait de la cavalerie saurienne son axe. Même rôle de charge, sur le meilleur profil de la famille"},
+        {"icon": "coldOneSpearRiders", "name": "Cold One Spear-Riders", "qty": 2, "note": "+25% de gain d'expérience (seigneur) — cavalerie de choc rapide"},
         {"icon": "skinkCohortJavelins", "name": "Skink Cohort (Javelins)", "qty": 3, "note": "Tir léger bon marché en soutien"},
         {"icon": "kroxigor", "name": "Kroxigor", "qty": 2, "note": "Brise-lignes increvable pour percer l'infanterie ennemie"},
         {"icon": "bastiladonSolarEngine", "name": "Bastiladon (Solar Engine)", "qty": 1, "note": "Appui de tir magique lourd"},
@@ -81,7 +82,8 @@
         {"icon": "skinkChief", "name": "Skink Chief", "qty": 2, "note": "Monté sur Terradon dès le départ (faction) — renfort de mêlée et de commandement aérien"}
       ],
       "army": [
-        {"icon": "terradonRiders", "name": "Terradon Riders", "qty": 5, "note": "-50% d'entretien (seigneur), capacité \"Drop Rocks\" (110 dégâts à distance, 54 explosifs, faction) — cœur de la flotte aérienne, bon marché et omniprésente"},
+        {"icon": "pahauxSentinels", "name": "Pahaux Sentinels (Terradon Riders)", "qty": 1, "note": "Le Régiment de Renom des Terradons, chez le <strong>Maître des Cieux</strong> dont c'est l'unité signature. Il reçoit le <strong>-50% d'entretien</strong> comme le reste de l'escadre"},
+        {"icon": "terradonRiders", "name": "Terradon Riders", "qty": 4, "note": "-50% d'entretien (seigneur), capacité \"Drop Rocks\" (110 dégâts à distance, 54 explosifs, faction) — cœur de la flotte aérienne, bon marché et omniprésente"},
         {"icon": "colossadonHunters", "name": "Colossadon Hunters (Ripperdactyl Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -50% d'entretien (seigneur) — capacité améliorée \"Drop Rocks of Chotec\" (150 dégâts à distance, 72 explosifs, inflige Inflammable), variante d'élite des Ripperdactyl Riders"},
         {"icon": "ripperdactylRiders", "name": "Ripperdactyl Riders", "qty": 3, "note": "-50% d'entretien (seigneur), capacité \"Drop Rocks\" (faction) — cavalerie volante"},
         {"icon": "skinkSkirmishers", "name": "Skink Skirmishers", "qty": 3, "note": "Tir léger bon marché en soutien au sol"},
@@ -116,7 +118,8 @@
         {"icon": "skinkSkirmishers", "name": "Skink Skirmishers", "qty": 4, "note": "+10% de résistance physique (seigneur) — tir léger nombreux et résilient"},
         {"icon": "chameleonSkinks", "name": "Chameleon Skinks", "qty": 2, "note": "Tirailleurs en embuscade pour affaiblir l'ennemi avant le contact"},
         {"icon": "bastiladonArkOfSotek", "name": "Bastiladon (Ark of Sotek)", "qty": 2, "note": "Machine de guerre Skink, cœur thématique du culte de Sotek"},
-        {"icon": "salamanderHuntingPack", "name": "Salamander Hunting Pack", "qty": 2, "note": "Tir de zone incendiaire dévastateur contre les blobs d'infanterie"},
+        {"icon": "torchesOfTheUmbralTide", "name": "Torches of the Umbral Tide (Salamander Hunting Pack)", "qty": 1, "note": "Le Régiment de Renom des Salamandres, et cette fiche est la seule du site à aligner cette famille. Même rôle de tir enflammé à effet de zone, sur un profil d'élite"},
+        {"icon": "salamanderHuntingPack", "name": "Salamander Hunting Pack", "qty": 1, "note": "Tir de zone incendiaire dévastateur contre les blobs d'infanterie"},
         {"icon": "terradonRiders", "name": "Terradon Riders", "qty": 1, "note": "Reconnaissance et harcèlement aérien léger"}
       ],
       "magic": "Tehenhauin manie la Lore of Heavens via ses Skink Priests — sans lanceur de sorts personnel, il compense par son bonus de commandement contre les Skavens et la résistance physique accrue de ses troupes Skink (seigneur).",
