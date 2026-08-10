@@ -21,7 +21,8 @@
       ],
       "army": [
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "-20% d'entretien (seigneur) — infanterie de ligne anti-grande unité"},
-        {"icon": "swordsmen", "name": "Swordsmen", "qty": 3, "note": "-20% d'entretien (seigneur) — infanterie de ligne polyvalente"},
+        {"icon": "swordsOfUlric", "name": "Swords of Ulric (Swordsmen)", "qty": 1, "note": "Le Régiment de Renom des Swordsmen. Il compte parmi les <strong>State Troops</strong> des comtes-électeurs, donc il bénéficie du <strong>-20% d'entretien</strong> que le seigneur leur accorde"},
+        {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "-20% d'entretien (seigneur) — infanterie de ligne polyvalente"},
         {"icon": "spearmenEmpire", "name": "Spearmen (The Empire)", "qty": 2, "note": "-20% d'entretien (seigneur) — anti-grande unité bon marché"},
         {"icon": "handgunners", "name": "Handgunners", "qty": 3, "note": "-20% d'entretien (seigneur) — tir perforant à distance"},
         {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 1, "note": "-20% d'entretien (seigneur) — tir de soutien bon marché ; réduit à un exemplaire pour libérer l'emplacement d'Aldred von Carroburg, les trois unités de Handgunners assurant l'essentiel du tir"},
@@ -52,13 +53,15 @@
         {"icon": "bassianoDutra", "name": "Bassiano Dutra", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, et le <strong>seul de classe sorcier</strong> qu'il ajoute à l'Empire — Grand Commandeur de la Confrérie du Suaire, « qui traque les morts-vivants sans merci ». Il apporte un savoir différent de celui des deux Gold Wizards, ce qui compte face à la Sylvanie voisine. <strong>Il ne se recrute pas : il se débloque en capturant Rifraffa</strong>"}
       ],
       "army": [
-        {"icon": "greatswords", "name": "Greatswords", "qty": 4, "note": "+20 armure (seigneur) — infanterie d'élite à deux mains, cœur de mêlée increvable"},
+        {"icon": "carroburgGreatswords", "name": "Carroburg Greatswords (Greatswords)", "qty": 1, "note": "Le Régiment de Renom des Greatswords, sur la fiche qui en fait son bloc principal. Le <strong>+20 d'armure</strong> (seigneur) s'applique à lui comme aux autres, sur un profil d'élite"},
+        {"icon": "greatswords", "name": "Greatswords", "qty": 3, "note": "+20 armure (seigneur) — infanterie d'élite à deux mains, cœur de mêlée increvable"},
         {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "+20 armure (seigneur) — infanterie de ligne polyvalente ; on en retire une pour libérer l'emplacement de Bassiano Dutra, les quatre unités de Greatswords tenant déjà le centre"},
         {"icon": "crossbowmen", "name": "Crossbowmen", "qty": 1, "note": "+20 armure (seigneur) — tir de soutien bon marché"},
         {"icon": "theSilverBullets", "name": "The Silver Bullets (Handgunners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — +20 armure (seigneur), tir perforant d'élite"},
         {"icon": "outriders", "name": "Outriders", "qty": 2, "note": "+20 armure (seigneur) — cavalerie légère à tir rapide, harcèlement et anti-artillerie"},
         {"icon": "greatCannons", "name": "Great Cannons", "qty": 2, "note": "+20 armure (seigneur) — artillerie lourde anti-blindage"},
-        {"icon": "mortars", "name": "Mortars (The Empire)", "qty": 2, "note": "+20 armure (seigneur) — artillerie de zone à tir indirect"},
+        {"icon": "sootsonsGuns", "name": "Sootson's Guns (Mortars)", "qty": 1, "note": "Le Régiment de Renom des Mortars. Comme le reste de l'armée il reçoit le <strong>+20 d'armure</strong> (seigneur), ce qui compte pour une pièce d'artillerie que la cavalerie adverse ira chercher"},
+        {"icon": "mortars", "name": "Mortars (The Empire)", "qty": 1, "note": "+20 armure (seigneur) — artillerie de zone à tir indirect"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "+20 armure (seigneur) — saturation de zone à longue portée"}
       ],
       "magic": "Gelt manie la Lore of Metal (Searing Doom, Plague of Rust, Gehenna's Golden Hounds, Glittering Robe, Final Transmutation, Transmutation of Lead) à coût réduit de 20% (seigneur) — combiné aux Gold Wizards, il peut lancer des sorts avec une fréquence exceptionnelle.",
@@ -91,7 +94,8 @@
         {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "-50% d'entretien (seigneur) — tireurs d'élite en embuscade, se déploient cachés"},
         {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — -50% d'entretien (seigneur), variante d'élite des Huntsmen dévouée à Ulric"},
         {"icon": "archersEmpire", "name": "Archers (The Empire)", "qty": 4, "note": "-50% d'entretien (seigneur) — tir de masse bon marché"},
-        {"icon": "warWagons", "name": "War Wagons", "qty": 3, "note": "Chariot de tir mobile, soutien blindé pour la ligne de tir"}
+        {"icon": "theBlackLions", "name": "The Black Lions (War Wagons – Helblasters)", "qty": 1, "note": "Le Régiment de Renom des War Wagons, avec des Helblasters montés. Attention au calendrier : cette faction a un <strong>roster limité</strong> au départ, et les Régiments de Renom arrivent par les renforts de l'Emperor's Mandate, pas par le recrutement immédiat"},
+        {"icon": "warWagons", "name": "War Wagons", "qty": 2, "note": "Chariot de tir mobile, soutien blindé pour la ligne de tir"}
       ],
       "magic": "Wulfhart n'est pas lui-même un lanceur de sorts — sa puissance vient de son tir de précision (Focused Shot, Hunter's Snare) et de son statut de meilleur archer du jeu, épaulé par des Amber Wizards pour le soutien magique via la Lore of Beasts.",
       "note": "Le -50% d'entretien pour les Archers et Huntsmen (seigneur) permet d'aligner une ligne de tir extrêmement dense et bon marché, renforcée par les 2 exemplaires du régiment favori The White Wolves que la capacité augmentée (faction) permet de recruter et d'aligner ensemble. Le +50% de chance de succès et de défense d'embuscade (seigneur) rend cette armée redoutable en attaque surprise comme en défense contre les embuscades ennemies. L'attribut Woodsman (seigneur) supprime les pénalités de mouvement en forêt, un avantage majeur à Lustria. Les Halberdiers et Spearmen protègent la ligne de tir en mêlée, tandis que les War Wagons apportent une puissance de feu mobile et blindée."
@@ -120,7 +124,8 @@
       "army": [
         {"icon": "flagellants", "name": "Flagellants", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — fanatiques Unbreakable, mur de mêlée increvable"},
         {"icon": "theTattersouls", "name": "The Tattersouls (Flagellants)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Flagellants, profite aussi des bonus du seigneur/faction"},
-        {"icon": "empireKnights", "name": "Empire Knights", "qty": 3, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — cavalerie lourde de choc"},
+        {"icon": "knightsEverlastingLight", "name": "Knights of the Everlasting Light (Empire Knights)", "qty": 1, "note": "Ordre templier sigmarite, ce qui en fait le Régiment de Renom le mieux placé sur cette fiche. Il reçoit le <strong>+8 de bonus contre l'infanterie</strong> (faction) et le <strong>+10% de résistance physique</strong> (seigneur) accordés aux Empire Knights"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 2, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — cavalerie lourde de choc"},
         {"icon": "freeCompanyMilitia", "name": "Free Company Militia", "qty": 2, "note": "+10% résistance physique, +8 défense en mêlée (seigneur), +8 bonus anti-infanterie (faction) — tir léger résilient ; on en retire une pour libérer l'emplacement de Chronos Goodheart"},
         {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains, percée de mêlée"},
         {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Swordsmen dévouée à Sigmar"},
@@ -219,7 +224,8 @@
       ],
       "army": [
         {"icon": "theSilverBullets", "name": "The Silver Bullets (Handgunners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — Handgunners d'élite, Portée +20% (faction), fer de lance de la ligne de tir"},
-        {"icon": "handgunners", "name": "Handgunners", "qty": 4, "note": "Portée +20% (faction) — cœur de la ligne de tir, tir perforant à longue portée contre l'infanterie lourde et les monstres"},
+        {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "Le Régiment de Renom des Handgunners, sur la fiche de tir la plus dense de la page. Il profite du <strong>+20% de portée</strong> (faction) au même titre que les autres, mais tire mieux"},
+        {"icon": "handgunners", "name": "Handgunners", "qty": 3, "note": "Portée +20% (faction) — cœur de la ligne de tir, tir perforant à longue portée contre l'infanterie lourde et les monstres"},
         {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "Tirailleurs forestiers furtifs — infiltration et tir d'embuscade, redoutables en forêt (+10% force des armes, faction)"},
         {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains — tient le centre pendant que les canons à main pilonnent"},
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 2, "note": "Anti-grande cible — protège la ligne de tir des monstres et de la cavalerie"},
@@ -255,7 +261,8 @@
         {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "Tirailleurs forestiers — harcèlement et tir furtif en soutien"},
         {"icon": "handgunners", "name": "Handgunners", "qty": 2, "note": "Tir perforant à distance contre l'infanterie lourde et les monstres"},
         {"icon": "greatswords", "name": "Greatswords", "qty": 2, "note": "Infanterie d'élite à deux mains — cœur du front, d'autant plus solide que le commandement monte (seigneur)"},
-        {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "Anti-grande cible et anti-cavalerie — mur défensif fiable"},
+        {"icon": "nordlandMariners", "name": "Nordland Mariners (Halberdiers)", "qty": 1, "note": "Le Régiment de Renom des Halberdiers, et il porte le nom de cette province : c'est la fiche à laquelle il revient de droit. Même rôle anti-grande cible, sur un profil nettement supérieur"},
+        {"icon": "halberdiers", "name": "Halberdiers", "qty": 2, "note": "Anti-grande cible et anti-cavalerie — mur défensif fiable"},
         {"icon": "swordsmen", "name": "Swordsmen", "qty": 2, "note": "Ligne de tenue bon marché avec bouclier — absorbe les charges"},
         {"icon": "empireKnights", "name": "Empire Knights", "qty": 2, "note": "Cavalerie de choc — charge les flancs et pourchasse les tireurs adverses"},
         {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible à longue portée"},
@@ -319,7 +326,8 @@
         {"icon": "olegVonRaukov", "name": "Oleg von Raukov (Héros Légendaire)", "qty": 1, "note": "Prince d'Ostland et fils de Valmir (mod Mixu) — Grand Maréchal qui combat à pied à la tête des Greatswords ; ses capacités « Hold Fast », « Inspiring Ray of Hope » et « Power of the Blood and the Beer » (obstination d'Ostlander) renforcent le commandement et la ténacité du mur d'infanterie, en parfaite harmonie avec la doctrine défensive de son père"}
       ],
       "army": [
-        {"icon": "spearmenEmpire", "name": "Spearmen", "qty": 4, "note": "+20 armure, Formation Attack, +15% masse (faction/seigneur) — le mur anti-cavalerie increvable, cœur de l'armée ; « Expert Charge Defence » (seigneur) leur fait annuler totalement le bonus de charge de tout attaquant quand ils sont en position"},
+        {"icon": "eldredsGuard", "name": "Eldred's Guard (Spearmen – Shields)", "qty": 1, "note": "Le Régiment de Renom des Spearmen, sur la fiche qui en aligne le plus. Il reçoit comme les autres le <strong>+20 d'armure</strong>, la <strong>Formation Attack</strong> et le <strong>+15% de masse</strong>, mais sur un profil d'élite — c'est le point le plus dur du mur"},
+        {"icon": "spearmenEmpire", "name": "Spearmen", "qty": 3, "note": "+20 armure, Formation Attack, +15% masse (faction/seigneur) — le mur anti-cavalerie increvable, cœur de l'armée ; « Expert Charge Defence » (seigneur) leur fait annuler totalement le bonus de charge de tout attaquant quand ils sont en position"},
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 4, "note": "+20 armure, Formation Attack, +15% masse (faction/seigneur) — anti-grande cible et anti-cavalerie, complète le mur contre les monstres"},
         {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité et attribut Formation Attack (faction) — infanterie d'élite qui frappe en formation serrée"},
         {"icon": "maneaters", "name": "Ogre Maneaters", "qty": 2, "note": "Mercenaires ogres (bâtiment unique d'Ostland, faction) — masse brute (+15% masse, seigneur) et puissance de choc qui manquent à l'infanterie humaine"},
@@ -455,7 +463,8 @@
         {"icon": "priestOfUlric", "name": "Priest of Ulric", "qty": 1, "note": "Nouveau type de héros du mod — prêtre-guerrier d'Ulric (Ulric's Favor, Ulric Roar, Battle Hymn, Frénésie) qui galvanise la ligne pendant que les chevaliers enveloppent"}
       ],
       "army": [
-        {"icon": "empireKnights", "name": "Empire Knights", "qty": 3, "note": "+2 niveaux de recrutement et -15% de fatigue (faction) — la cavalerie de ligne de Middenland, d'emblée aguerrie et infatigable dans les charges répétées"},
+        {"icon": "knightsOfMorr", "name": "Knights of Morr (Empire Knights)", "qty": 1, "note": "Le Régiment de Renom des Empire Knights, et le meilleur bénéficiaire des <strong>+2 niveaux de recrutement</strong> et <strong>-15% de fatigue</strong> que la faction accorde à cette cavalerie : il entre en lice déjà aguerri sur un profil déjà supérieur"},
+        {"icon": "empireKnights", "name": "Empire Knights", "qty": 2, "note": "+2 niveaux de recrutement et -15% de fatigue (faction) — la cavalerie de ligne de Middenland, d'emblée aguerrie et infatigable dans les charges répétées"},
         {"icon": "reiksguard", "name": "Reiksguard", "qty": 2, "note": "Même double bonus chevaleresque (faction) — cavalerie lourde d'élite qui brise les lignes fixées"},
         {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Même double bonus (faction) — cavalerie monstrueuse de choc, pointe de lance des assauts"},
         {"icon": "knightsBlazingSun", "name": "Knights of the Blazing Sun", "qty": 1, "note": "Même double bonus (faction) — chevaliers tacticiens en soutien des flancs"},
