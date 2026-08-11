@@ -84,7 +84,7 @@
         {"icon": "deathshrieker", "name": "Deathshrieker Rocket Launcher", "qty": 3, "note": "-50% de coût de recrutement (faction) — bombardement de zone à longue portée"},
         {"icon": "chaosDwarfWarriors", "name": "Chaos Dwarf Warriors", "qty": 4, "note": "Ligne de mêlée pour protéger l'artillerie des assauts frontaux"},
         {"icon": "blunderbusses", "name": "Chaos Dwarf Blunderbusses", "qty": 3, "note": "Soutien à courte portée contre les unités qui percent la ligne"},
-        {"icon": "hobgoblinWolfRaiders", "name": "Hobgoblin Wolf Raiders (Arcs)", "qty": 3, "note": "Cavalerie légère rapide pour intercepter les tireurs isolés et protéger les flancs de l'artillerie"}
+        {"icon": "hobgoblinWolfRaiders", "name": "Hobgoblin Wolf Raiders (Bows)", "qty": 3, "note": "Cavalerie légère rapide pour intercepter les tireurs isolés et protéger les flancs de l'artillerie"}
       ],
       "magic": "Zhatan n'est pas un lanceur de sorts — sa force vient du combat rapproché et de la puissance de feu massive de son artillerie, doublée par le -50% de coût de recrutement (faction).",
       "note": "Le +1 de Convois actifs maximum (faction) renforce l'économie de cette faction axée sur l'artillerie, tandis que le +15% de pertes capturées après bataille (seigneur) alimente en esclaves de travail les Hell-Forges. Utilise Sadistic Snare (2 charges seulement, 120s de rechargement) sur le seigneur ou héros ennemi le plus dangereux avant que l'artillerie ne l'achève à distance — une cible immobilisée et à -24 de défense en mêlée ne survit pas longtemps face à un Hellcannon."
@@ -117,7 +117,7 @@
         {"icon": "deathshrieker", "name": "Deathshrieker Rocket Launcher", "qty": 1, "note": "Roquettes hurlantes, également couvertes par les bonus d'artillerie (seigneur)"},
         {"icon": "infernalGuardFireglaives", "name": "Infernal Guard (Fireglaives)", "qty": 2, "note": "Ligne de tir à poudre noire qui protège le train de machines"},
         {"icon": "chaosDwarfWarriors", "name": "Chaos Dwarf Warriors", "qty": 2, "note": "Écran d’infanterie devant les canons — capacité de recrutement local +2 (faction) pour les remplacer vite"},
-        {"icon": "hobgoblinWolfRaiders", "name": "Hobgoblin Wolf Raiders", "qty": 2, "note": "Cavalerie légère de raid — harcèle et poursuit, en écho au +30% de revenu du pillage (seigneur)"},
+        {"icon": "hobgoblinWolfRaiders", "name": "Hobgoblin Wolf Raiders (Bows)", "qty": 2, "note": "Cavalerie légère de raid — harcèle et poursuit, en écho au +30% de revenu du pillage (seigneur)"},
         {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 1, "note": "Créature de feu qui brise les lignes quand l'artillerie ne suffit pas"}
       ],
       "magic": "Abnagg n'est pas un lanceur de sorts — c'est un armateur et un artilleur. Les deux Daemonsmith Sorcerers apportent seuls la Lore of Hashut, en soutien du train de machines.",

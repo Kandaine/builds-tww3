@@ -15,7 +15,7 @@
       "totalSlots": 20,
       "lord": {"icon": "louen", "name": "Louen Leoncoeur", "qty": 1, "note": "Le meilleur duelliste chevaleresque du jeu — The Blessing of the Lady (seigneur) lui accorde +15% de résistance aux dégâts tant que son commandement n'est pas brisé, dévastateur contre Chaos/Chaos Dwarfs/Morts-Vivants/Peaux-Vertes, et son aura de commandement s'étend de +50% dès qu'il attaque (faction)"},
       "heroes": [
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Soutien magique (Lore of Life/Heavens/Beasts selon le choix) pour appuyer la charge"},
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Soutien magique (Lore of Life/Heavens/Beasts selon le choix) pour appuyer la charge"},
         {"icon": "brtViscount", "name": "Viscount d'Alembençon (Héros Légendaire)", "qty": 1, "note": "Le <strong>Champion de Couronne</strong> — le duché même de Louen (mod Heroes of Legend) : Chevalier du Graal redoutable et énigmatique, protecteur de la frontière nord-est face aux ambitions de l'Empire. Un compagnon de charge à la hauteur du Roy Preux et de ses 4 Grail Knights"}
       ],
       "army": [
@@ -47,7 +47,7 @@
       "lord": {"icon": "repanse", "name": "Repanse de Lyonesse", "qty": 1, "note": "Ancienne bergère devenue championne du peuple — son Halo of Maidenly Wrath (seigneur) aveugle les ennemis à son contact (-24/-24/-30 défense/attaque/précision pendant 10s) sans jamais toucher ses propres troupes, et sa Perfect Vigour (seigneur) lui permet d'enchaîner charges et manœuvres sans jamais se fatiguer ; ses -80 de relations diplomatiques avec Vampire Counts/Vampire Coast/Tomb Kings (faction) garantissent une guerre quasi permanente contre les Morts-Vivants"},
       "heroes": [
         {"icon": "henri", "name": "Henri le Massif (Legendary Hero)", "qty": 1, "note": "Paladin héros légendaire unique, offert gratuitement dès le départ de campagne avec Repanse. Son trait \"There Can Be Only One\" accorde +4 Chevalerie/tour, +10 attaque en mêlée et +10 bonus de charge, avec une spécialisation dévastatrice contre les gros gabarits (monstres, chars) ; monté sur Hippogryph plutôt que Pegasus comme les autres Paladins"},
-        {"icon": "damsel", "name": "Damsel", "qty": 2, "note": "Soutien magique pour appuyer le cœur de troupes Peasant — deux fois moins chères à entretenir grâce au -50% pour les Héros intégrés (faction)"},
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 2, "note": "Soutien magique pour appuyer le cœur de troupes Peasant — deux fois moins chères à entretenir grâce au -50% pour les Héros intégrés (faction)"},
         {"icon": "brtBrunner", "name": "Brunner (Héros Légendaire)", "qty": 1, "note": "Le plus fameux chasseur de primes du Vieux Monde (mod Heroes of Legend), réputé pour son efficacité impitoyable à éliminer ses cibles — un roturier de plus dans l'ost de la Bergère, aux côtés du paysan Henri le Massif, et lui aussi deux fois moins cher grâce au -50% sur les héros intégrés (faction)"}
       ],
       "army": [
@@ -79,7 +79,7 @@
       "lord": {"icon": "fayEnchantress", "name": "La Fée Enchanteresse", "qty": 1, "note": "Lanceuse de sorts redoutable (Lore of Life) et protégée par The Blessing of the Lady (seigneur, +15% de résistance aux dégâts tant que son commandement tient) ; son attribut de peur (seigneur) effraie et affaiblit le commandement de toutes les unités ennemies à proximité, sans jamais l'affecter elle-même"},
       "heroes": [
         {"icon": "brtHermitKnight", "name": "Hermit Knight of Malmont (Héros Légendaire)", "qty": 1, "note": "Vieux Chevalier du Graal reclus qui <strong>garde la Chapelle du Graal du Mont Malmont</strong> (mod Heroes of Legend) — nul ne connaît son vrai nom. Il incarne exactement le thème sacré de cet ost (Grail Guardians, Battle Pilgrims) et lui apporte l'ancrage de mêlée qui lui manquait. <strong>Deux mods proposent ce personnage</strong> : celui retenu ici vient de Heroes of Legend ; SCM Legendary Characters en fournit une seconde version, ouverte à onze des factions bretonniennes du site et débloquée en <strong>capturant le Massif Orcal</strong>. Selon vos mods actifs, vous pourriez donc en voir apparaître deux — c'est le même Chevalier Ermite"},
-        {"icon": "damsel", "name": "Damsel (Vie)", "qty": 1, "note": "Renfort de soin et de buffs en écho aux sorts de la Fée Enchanteresse"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Renfort de soin et de buffs en écho aux sorts de la Fée Enchanteresse"}
       ],
       "army": [
         {"icon": "grailGuardians", "name": "Grail Guardians", "qty": 6, "note": "Garde d'élite historiquement associée à la Fée Enchanteresse — mur de protection autour de la lanceuse de sorts"},
@@ -110,7 +110,7 @@
       "heroes": [
         {"icon": "malok", "name": "Malok the Destroyer (Héros Légendaire)", "qty": 1, "note": "Un <strong>dragon rouge</strong>, jadis monture d'un prince dragon de Caledor pendant la Guerre de la Barbe, retiré depuis sur l'<strong>Isla de Sangre</strong> au large d'Estalie — ce qui en fait la proie du seul duc breton tourné vers la mer. On le maîtrise par l'amulette <strong>« Dent Tombée »</strong>. Sa compétence <strong>« Dragon and Knights »</strong> le lie directement aux Chevaliers du Royaume de cette fiche"},
         {"icon": "brtAgravain", "name": "Agravain de Beau Quest (Héros Légendaire)", "qty": 1, "note": "Puissant Chevalier du Graal (mod Heroes of Legend), Gardien de la Chapelle de Challotte, fameux pour sa quête audacieuse au cœur d'Athel Loren et sa victoire sur les Elfes Sylvains — un ancrage de mêlée d'élite pour la ligne d'Alberic"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Soutien magique pour appuyer la ligne défensive"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Soutien magique pour appuyer la ligne défensive"}
       ],
       "army": [
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "+10 de défense en mêlée et Charge Glorieuse (seigneur) — Bonus de Charge doublé et pénalité de commandement de flanc infligée à l'ennemi chargé, même de front —, plus +2 rang de recrutement et -1 tour de recrutement local (faction) : cavalerie lourde quasiment impossible à percer, déjà vétérane à la sortie de caserne"},
@@ -174,7 +174,7 @@
       "lord": {"icon": "bohemond", "name": "Bohemond", "qty": 1, "note": "Le Tueur de Bêtes, Duc de Bastonne — béni par la Dame (« The Blessing of the Lady », +15% résistance aux dégâts, seigneur) et redoutable duelliste (+6 attaque/défense en mêlée pour lui et ses héros, faction), il mène une croisade éternelle contre les monstres et les Peaux-Vertes ; son -30% d'entretien sur l'élite du Graal (seigneur) finance une armée sacrée"},
       "heroes": [
         {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Héros de combat — +6 d'attaque et de défense en mêlée (faction) en font un duelliste redoutable, tueur de héros et de monstres ennemis aux côtés de Bohemond"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform et The Amber Spear pour buffer l'élite et abattre les grandes créatures, +6 attaque/défense en mêlée (faction) la rendent coriace"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform et The Amber Spear pour buffer l'élite et abattre les grandes créatures, +6 attaque/défense en mêlée (faction) la rendent coriace"}
       ],
       "army": [
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 3, "note": "-30% d'entretien (seigneur) — cavalerie sacrée d'élite, cœur de la charge, brise les monstres et l'infanterie lourde"},
@@ -207,7 +207,7 @@
       "lord": {"icon": "chilfroy", "name": "Chilfroy", "qty": 1, "note": "Le Duc d'Artois, maître de la guerre en sous-bois — ses bonus de forêt (+5 commandement, 5% ward save, aura de commandement élargie de 50%, faction) et le déploiement en avant-garde de ses Bowmen (faction) transforment les bois en piège mortel, pendant que ses Questing Knights à -50% d'entretien (seigneur) forment un poing de choc bon marché"},
       "heroes": [
         {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Héros de combat — porte-bannière qui étend l'aura de commandement (élargie de 50% en forêt, faction) et mène la charge des Questing Knights"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform et The Amber Spear, magie de la nature en harmonie avec le thème forestier, buffe la cavalerie et les tireurs"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform et The Amber Spear, magie de la nature en harmonie avec le thème forestier, buffe la cavalerie et les tireurs"}
       ],
       "army": [
         {"icon": "questingKnights", "name": "Questing Knights", "qty": 4, "note": "-50% d'entretien (seigneur) — chevaliers à deux mains, poing de choc anti-grande cible et anti-infanterie lourde, cœur offensif de l'armée"},
@@ -240,7 +240,7 @@
       "lord": {"icon": "adalhard", "name": "Adalhard", "qty": 1, "note": "Le Duc de Lyonesse — ses effets font de la chevalerie de base (Knights of the Realm et Errant) une force nombreuse, bon marché (-30% entretien) et vite reconstituée (+20% remplacement, rang +2, faction/seigneur) ; son +8 de commandement contre les morts-vivants (faction) sécurise la côte face à la Vampire Coast"},
       "heroes": [
         {"icon": "amalricDeGaudaron", "name": "Amalric de Gaudaron (Héros Légendaire)", "qty": 1, "note": "Le Fléau des Morts-Vivants, Champion Béni de la Dame (mod Mixu) — anathème pour les impies, sa passive « The Bane of the Undead » détruit des hordes de morts-vivants et son « Ward of Light » protège la ligne ; son aura « Icon of Devotion » galvanise les Chevaliers, en parfaite harmonie avec la croisade anti-mort-vivant d'Adalhard"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Life ou Light — soins et sorts anti-mort-vivant (Light) qui appuient la croisade contre la Vampire Coast"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Life ou Light — soins et sorts anti-mort-vivant (Light) qui appuient la croisade contre la Vampire Coast"}
       ],
       "army": [
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "-30% d'entretien, rang +2, +20% de remplacement (faction/seigneur) — cœur de la marée de cavalerie, charge de choc nombreuse et increvable"},
@@ -273,7 +273,7 @@
       "lord": {"icon": "cassyon", "name": "Cassyon", "qty": 1, "note": "Le jeune Duc de Parravon, téméraire cavalier du ciel — son -30% d'entretien sur toute la cavalerie volante (seigneur) et la formation « Lance » (faction) font de sa nuée de pégases et d'hippogriffes une force de frappe aérienne dévastatrice, protégée par la bénédiction de la Dame (+15% résistance aux dégâts, seigneur)"},
       "heroes": [
         {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Héros de combat monté sur pégase (faction) — duelliste aérien qui accompagne la charge des Chevaliers Pégase"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Life ou Heavens — sur pégase (faction), soigne et buffe la cavalerie volante tout en restant mobile"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Life ou Heavens — sur pégase (faction), soigne et buffe la cavalerie volante tout en restant mobile"}
       ],
       "army": [
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 3, "note": "-30% d'entretien (seigneur), formation « Lance » (faction) — cavalerie volante de choc, charge du ciel avec +30% de masse et de bonus de charge"},
@@ -408,7 +408,7 @@
       "lord": {"icon": "hagen", "name": "Hagen de Gisoreux", "qty": 1, "note": "Le duc inébranlable — démarre avec tous les Vœux Chevaleresques débloqués et gagne +4 de Chevalerie par tour (seigneur), qu'il peut dépenser pour invoquer des chevaliers en pleine bataille (faction) : sa réserve de Chevalerie est littéralement une réserve de troupes"},
       "heroes": [
         {"icon": "fastric", "name": "Fastric Ghoulslayer (Héros Légendaire)", "qty": 1, "note": "Le Tueur de Goules (mod Bretonnian Dukes) — chevalier légendaire spécialiste des morts-vivants, tout indiqué face aux Comtes Vampires que Gisoreux a en horreur (-25 de relations, faction)"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Life ou Beasts — soins et Wyssan's Wildform qui accompagnent la charge et maintiennent la ligne de pèlerins"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Life ou Beasts — soins et Wyssan's Wildform qui accompagnent la charge et maintiennent la ligne de pèlerins"}
       ],
       "army": [
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "-10% d'entretien et +10% de bonus de charge (seigneur) — le cœur de la chevalerie de Gisoreux"},
@@ -441,7 +441,7 @@
       "lord": {"icon": "folcard", "name": "Folcard de Montfort", "qty": 1, "note": "Le duc montagnard qui combat à pied avec des armes variées plutôt qu'en selle (seigneur) — son immunité à l'attrition de Montagne (faction) et son +3 de Contrôle local en font le gardien inamovible des cols des Montagnes Grises"},
       "heroes": [
         {"icon": "jerrod", "name": "Jerrod d'Asareux (Héros Légendaire)", "qty": 1, "note": "Chevalier légendaire (mod Bretonnian Dukes) — duelliste de renom qui apporte à cette armée d'infanterie la pointe chevaleresque qui lui manque"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform sur les Wardens et l'infanterie, idéal pour une armée qui mise sur la piétaille"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform sur les Wardens et l'infanterie, idéal pour une armée qui mise sur la piétaille"}
       ],
       "army": [
         {"icon": "wardensOfMontfort", "name": "Wardens of Montfort (Mounted Yeomen Archers)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires, avec l'attribut Woodsman (traverse les arbres, faction) — les patrouilleurs montés du duché, rois du terrain accidenté"},
@@ -506,7 +506,7 @@
       "lord": {"icon": "taubert", "name": "Taubert de L'Anguille", "qty": 1, "note": "Le marin devenu chasseur de bois — en attaque, son armée frappe 15% plus fort et son aura de Commandement couvre 50% plus large (seigneur) ; contre les Hommes-Bêtes, tous ses hommes traversent les arbres (Woodsman, seigneur), annulant l'avantage de terrain des warherds"},
       "heroes": [
         {"icon": "jerrod", "name": "Jerrod d'Asareux (Héros Légendaire)", "qty": 1, "note": "Chevalier légendaire (mod Bretonnian Dukes) — duelliste aguerri des expéditions forestières, il porte la charge dans les clairières où la cavalerie peut encore manœuvrer"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform sur les Beastslayers et Amber Spear contre les monstres des warherds"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Beasts — Wyssan's Wildform sur les Beastslayers et Amber Spear contre les monstres des warherds"}
       ],
       "army": [
         {"icon": "beastslayersOfBastonne", "name": "Beastslayers of Bastonne (Foot Squires)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — infanterie d'élite spécialisée dans la chasse aux Hommes-Bêtes, cœur thématique de l'expédition"},
@@ -573,7 +573,7 @@
       "lord": {"icon": "armand", "name": "Armand d'Aquitaine", "qty": 1, "note": "Le jeune duc porte-bannière — démarre avec tous les Vœux débloqués, régénère ses PV en continu tant que son moral tient (The Lady's Champion, seigneur) et diffuse une aura de Commandement renforcée de +5 (seigneur) : garde-le au centre de la ligne de charge"},
       "heroes": [
         {"icon": "calard", "name": "Calard de Garamont (Héros Légendaire)", "qty": 1, "note": "Chevalier du Graal légendaire (mod Bretonnian Dukes) — champion errant devenu compagnon d'Aquitaine, il ajoute un duelliste d'élite à la charge"},
-        {"icon": "damsel", "name": "Damsel", "qty": 1, "note": "Lore of Life — soins qui prolongent la régénération d'Armand et maintiennent la Bénédiction sur la cavalerie"}
+        {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Lore of Life — soins qui prolongent la régénération d'Armand et maintiennent la Bénédiction sur la cavalerie"}
       ],
       "army": [
         {"icon": "knightsErrant", "name": "Knights Errant", "qty": 4, "note": "-25% d'entretien (faction) et <strong>Immunisés à la Psychologie</strong> (seigneur) — les jeunes lances impétueuses d'Aquitaine, incapables de fuir : le cœur bon marché de la charge"},
@@ -607,7 +607,7 @@
       "totalSlots": 20,
       "lord": {"icon": "alphonseDolmance", "name": "Alphonse Dolmancé", "qty": 1, "note": "Le libertin devenu chef de culte — <strong>\"Heartbreaker\"</strong> ne cible que les <strong>Seigneurs et Héros</strong>, à <strong>120m</strong>. C'est un outil d'assassinat à distance, pas une capacité de bataille rangée, et son <strong>+10 d'attaque en mêlée</strong> confirme qu'il sait aussi finir le travail au contact"},
       "heroes": [
-        {"icon": "chaosSorcererSlaanesh", "name": "Chaos Sorcerer (Slaanesh)", "qty": 2, "note": "Le mod remplace explicitement les Damsels par eux : le <strong>Savoir de Slaanesh</strong> apporte à la Bretonnie une magie de contrôle qu'elle n'a jamais eue, et c'est la seule magie de la fiche. Deux suffisent ici — le <strong>+2 de capacité</strong> (faction) est un plafond de recrutement <strong>à l'échelle de la faction</strong>, pas une consigne d'empilement : rien dans le kit de ce seigneur ne récompense d'accumuler des lanceurs, et les exemplaires supplémentaires valent mieux dans les armées secondaires"},
+        {"icon": "chaosSorcererSlaanesh", "name": "Chaos Sorcerer of Slaanesh", "qty": 2, "note": "Le mod remplace explicitement les Damsels par eux : le <strong>Savoir de Slaanesh</strong> apporte à la Bretonnie une magie de contrôle qu'elle n'a jamais eue, et c'est la seule magie de la fiche. Deux suffisent ici — le <strong>+2 de capacité</strong> (faction) est un plafond de recrutement <strong>à l'échelle de la faction</strong>, pas une consigne d'empilement : rien dans le kit de ce seigneur ne récompense d'accumuler des lanceurs, et les exemplaires supplémentaires valent mieux dans les armées secondaires"},
         {"icon": "paladin", "name": "Paladin", "qty": 1, "note": "Le duelliste bretonnien, seul héros martial de la liste — la chevalerie survit même quand la foi disparaît"}
       ],
       "army": [

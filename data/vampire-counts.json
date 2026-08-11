@@ -100,7 +100,7 @@
       "army": [
         {"icon": "graveGuard", "name": "Grave Guard", "qty": 5, "note": "Coeur de l'armée — -25% d'entretien avec Mannfred (seigneur), et les rangs où combat personnellement Helmut von Carstein, bannière au poing"},
         {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Grave Guard, également couverte par le -25% d'entretien (seigneur)"},
-        {"icon": "blackKnight", "name": "Black Knights (Lances & Barding)", "qty": 5, "note": "-25% d'entretien avec Mannfred — cavalerie lourde en grand nombre, ce qui n'est normalement pas soutenable économiquement ; Gorgivich Krakvald charge à leur tête"},
+        {"icon": "blackKnightsLancesBarding", "name": "Black Knights (Lances & Barding)", "qty": 5, "note": "-25% d'entretien avec Mannfred — cavalerie lourde en grand nombre, ce qui n'est normalement pas soutenable économiquement ; Gorgivich Krakvald charge à leur tête"},
         {"icon": "hexwraith", "name": "Hexwraiths", "qty": 1, "note": "Harcèlement et flanc — repositionnement rapide, sous la conduite de Gunther von Grecht"},
         {"icon": "vargheist", "name": "Vargheists", "qty": 2, "note": "Chasse l'artillerie et les tireurs avant qu'ils ne gênent la charge — le fer de lance aérien de Gunther von Grecht"}
       ],
@@ -164,7 +164,7 @@
         {"icon": "skeleton", "name": "Skeleton Warriors", "qty": 3, "note": "Empoisonnés eux aussi par Ghorst (faction)"},
         {"icon": "cryptGhoul", "name": "Crypt Ghouls", "qty": 3, "note": "+30 Armure comme les Zombies — beaucoup plus difficiles à percer que la normale"},
         {"icon": "mortisEngine", "name": "Mortis Engine", "qty": 2, "note": "Profite du sort lié Lesser Raise Dead gratuit — renforce encore le flux de résurrection déjà soutenu par Ghorst"},
-        {"icon": "blackCoach", "name": "Corpse Cart (Unholy Lodestone)", "qty": 1, "note": "Totem de soutien — aura de régénération pour maintenir la horde de Zombies/Skeletons à flot en continu"}
+        {"icon": "corpseCartLodestone", "name": "Corpse Cart (Unholy Lodestone)", "qty": 1, "note": "Totem de soutien — aura de régénération pour maintenir la horde de Zombies/Skeletons à flot en continu"}
       ],
       "magic": "Invocation of Nehek en priorité pour saturer une horde déjà difficile à tuer (poison gratuit + armure +30 + réplétion +10% + pool de résurrection +4) ; Awaken the Grave (sort unique de Ghorst) pour invoquer ponctuellement un Wight King ou des Grave Guard en renfort.",
       "note": "Évite de recruter des unités qui ont déjà le poison de base (Cairn Wraiths, Hexwraiths...) : le bonus de Ghorst ne se cumule pas avec un poison déjà présent, donc tout l'intérêt de son kit est de miser sur les unités basiques (Zombies, Skeletons) qui n'en ont normalement pas. Les deux régiments favoris, The Tithe et Konigstein Stalkers (+1 capacité chacun, faction), permettent d'aligner deux exemplaires supplémentaires de ces unités de base sans coût de capacité additionnel. C'est une armée volontairement lente et bon marché plutôt que rapide — elle est pensée pour absorber et user l'ennemi, pas pour le percer d'entrée."
@@ -190,7 +190,7 @@
         {"icon": "vampireHeroShadows", "name": "Vampire (Shadows)", "qty": 2, "note": "Même synergie de héros Vampire (seigneur/faction) — Lore of Shadow pour l'attrition à distance et le repositionnement ; agentes idéales pour les actions de héros démultipliées par Neferata"}
       ],
       "army": [
-        {"icon": "blackKnight", "name": "Black Knights (Lances & Barding)", "qty": 3, "note": "Cavalerie de choc morte-vivante — fer de lance mené par les Vampires, frappe les flancs et les tireurs"},
+        {"icon": "blackKnightsLancesBarding", "name": "Black Knights (Lances & Barding)", "qty": 3, "note": "Cavalerie de choc morte-vivante — fer de lance mené par les Vampires, frappe les flancs et les tireurs"},
         {"icon": "graveGuard", "name": "Grave Guard", "qty": 2, "note": "Infanterie d'élite anti-armure — tient le centre pendant que la cavalerie et les monstres enveloppent"},
         {"icon": "vargheist", "name": "Vargheists", "qty": 3, "note": "Monstres volants rapides — chassent artillerie et casters ennemis, exploitent la mobilité de l'armée de Neferata"},
         {"icon": "varghulf", "name": "Varghulf", "qty": 1, "note": "Monstre de choc régénérant — brise les formations et se soigne au fil du carnage"},

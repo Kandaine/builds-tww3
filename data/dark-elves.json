@@ -23,7 +23,7 @@
       "army": [
         {"icon": "blackGuard", "name": "Black Guard of Naggarond", "qty": 5, "note": "-25% d'entretien (faction) — l'élite de l'infanterie Naggarond devient très abordable en nombre"},
         {"icon": "darkshards", "name": "Darkshards", "qty": 3, "note": "Même -25% d'entretien (faction) — tir de soutien à distance"},
-        {"icon": "boltFiends", "name": "The Bolt-Fiends (Darkshards)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Darkshards, également couverte par le -25% d'entretien (faction)"},
+        {"icon": "boltFiends", "name": "The Bolt-fiends (Darkshards – Shields)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Darkshards, également couverte par le -25% d'entretien (faction)"},
         {"icon": "dreadspears", "name": "Dreadspears", "qty": 3, "note": "Même bonus d'entretien (faction) — ligne de tenue anti-cavalerie fiable ; réduite d'une unité pour libérer l'emplacement de Furion, les cinq Black Guard formant déjà le mur"},
         {"icon": "bleakswords", "name": "Bleakswords", "qty": 2, "note": "Même bonus d'entretien (faction) — infanterie polyvalente supplémentaire"}
       ],
@@ -178,7 +178,7 @@
         {"icon": "scourgerunnerChariots", "name": "Scourgerunner Chariots", "qty": 2, "note": "Régiment favori : +1 capacité (faction), en plus du triple bonus monstre habituel — chars rapides qui exploitent Whiplash! en première ligne de charge"},
         {"icon": "bleakswords", "name": "Bleakswords", "qty": 2, "note": "Ligne de tenue standard pour protéger les monstres"},
         {"icon": "dreadspears", "name": "Dreadspears", "qty": 3, "note": "Anti-cavalerie fiable en complément"},
-        {"icon": "shadesGreatWeapons", "name": "Shades (Armes Lourdes)", "qty": 3, "note": "Tirailleurs d'élite pour harceler et flanquer"}
+        {"icon": "shadesGreatWeapons", "name": "Shades (Great Weapons)", "qty": 3, "note": "Tirailleurs d'élite pour harceler et flanquer"}
       ],
       "magic": "Rakarth n'est pas un lanceur de sorts — sa puissance vient du contrôle qu'il exerce sur ses monstres, renforcé par Whiplash! et Beastlord's Gaze.",
       "note": "Exploite la mécanique des Monster Pens propre à The Thousand Maws pour diversifier la ménagerie au-delà de ces quatre types de monstres, profite du recrutement accéléré (-1 tour, seigneur) pour reconstituer rapidement les pertes, et de l'absence de pénalité de Vigueur en posture de Raid (faction) pour piller sans relâche."
@@ -235,7 +235,7 @@
       "heroes": [
         {"icon": "anarsis", "name": "Anarsis (Héros Légendaire)", "qty": 1, "note": "Le héros légendaire du mod, une Bloodwrack Medusa — son regard pétrifiant et sa capacité \"Soulstealer\" complètent une armée qui n'a aucun moyen de contrer une unité d'élite adverse autrement qu'en la noyant sous les lames"},
         {"icon": "deathHag", "name": "Death Hag", "qty": 1, "note": "La prêtresse de Khaine — elle est le liant naturel des trois unités que le seigneur favorise, et renforce en bataille les Sorcières et les Sœurs autour d'elle"},
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 1, "note": "Le seul accès à la magie. Priorité aux sorts qui protègent les Khainites pendant l'approche — sans armure et sans bouclier, elles ne survivent pas à une longue marche sous les tirs"}
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Le seul accès à la magie. Priorité aux sorts qui protègent les Khainites pendant l'approche — sans armure et sans bouclier, elles ne survivent pas à une longue marche sous les tirs"}
       ],
       "army": [
         {"icon": "harGanethExecutioners", "name": "Har Ganeth Executioners", "qty": 3, "note": "Les seuls à cumuler les trois effets : <strong>+3 de rang</strong> (faction), <strong>+10 de Défense de mêlée</strong> et <strong>+15% de Force des armes</strong> (seigneur). Vétérans dès le recrutement et perforants d'office, ce sont eux qui tuent tout ce qui porte une armure"},
@@ -301,12 +301,12 @@
       "totalSlots": 20,
       "lord": {"icon": "lilaeth", "name": "Lilaeth", "qty": 1, "note": "La Spoliatrice — <strong>tous</strong> ses effets exigent d'être en territoire étranger. Ramenez-la chez vous et elle devient un seigneur ordinaire : cette fiche ne se joue qu'en expédition, jamais en défense"},
       "heroes": [
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 2, "note": "Le <strong>-25% de coût de construction sur les bâtiments de Sorcellerie</strong> (faction) rend l'accès à la magie plus rapide qu'ailleurs. Deux Sorceresses, parce que le Chariot Noir et la Malédiction d'Arnizipal font vaciller le Commandement adverse — ce qui alimente directement \"Dispatch the Pitiful\""},
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 2, "note": "Le <strong>-25% de coût de construction sur les bâtiments de Sorcellerie</strong> (faction) rend l'accès à la magie plus rapide qu'ailleurs. Deux Sorceresses, parce que le Chariot Noir et la Malédiction d'Arnizipal font vaciller le Commandement adverse — ce qui alimente directement \"Dispatch the Pitiful\""},
         {"icon": "korelei", "name": "Korelei, Mistress of Pain", "qty": 1, "note": "Héroïne légendaire du mod, ouverte aux quatre factions elfes noires — chez Lilaeth, elle double la présence de personnages féminins de Khaine qui structure la fiche"}
       ],
       "army": [
         {"icon": "darkshards", "name": "Darkshards", "qty": 4, "note": "Le cœur de la fiche : <strong>+15% de dégâts de tir</strong> en territoire étranger, c'est-à-dire partout où Lilaeth se bat. Quatre unités d'arbalètes forment le volume de feu qui fait vaciller les lignes adverses"},
-        {"icon": "boltFiends", "name": "Bolt Fiends", "qty": 2, "note": "Arbalètes lourdes perforantes — elles traitent le blindé que les Darkshards ne percent pas, et bénéficient du même bonus de tir"},
+        {"icon": "boltFiends", "name": "The Bolt-fiends (Darkshards – Shields)", "qty": 2, "note": "Arbalètes lourdes perforantes — elles traitent le blindé que les Darkshards ne percent pas, et bénéficient du même bonus de tir"},
         {"icon": "shades", "name": "Shades", "qty": 2, "note": "Infiltrées : elles se déploient derrière les lignes et cassent l'artillerie adverse, seule vraie menace contre une armée aussi statique"},
         {"icon": "shadesGreatWeapons", "name": "Shades (Great Weapons)", "qty": 1, "note": "La version de mêlée — elle protège les tireurs sur le flanc et sert de réserve de choc à bas coût"},
         {"icon": "reaperBoltThrower", "name": "Reaper Bolt Throwers", "qty": 2, "note": "L'artillerie druchii, elle aussi concernée par le <strong>+15% de dégâts de tir</strong>. C'est elle qui brise le Commandement des grandes unités et déclenche l'escalade de \"Dispatch the Pitiful\""},
@@ -397,7 +397,7 @@
       "totalSlots": 20,
       "lord": {"icon": "duriathHelbane", "name": "Duriath Helbane", "qty": 1, "note": "Le Corsaire de l'Arche Noire — <strong>\"Focused Shot\"</strong> tire à <strong>250m</strong> pour <strong>330 dégâts</strong> sur une <strong>entité unique</strong>, et les dégâts <strong>montent si la cible est déjà blessée</strong>. C'est une capacité d'achèvement, pas d'ouverture : gardez-la pour un seigneur ou un monstre adverse qui a déjà encaissé"},
       "heroes": [
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 2, "note": "Le savoir signature des Elfes Noirs — Doombolt et Soul Stealer — et le seul recours d'une liste par ailleurs entièrement matérielle"},
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 2, "note": "Le savoir signature des Elfes Noirs — Doombolt et Soul Stealer — et le seul recours d'une liste par ailleurs entièrement matérielle"},
         {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Duelliste furtif — il complète le <strong>\"Focused Shot\"</strong> du seigneur sur le même rôle : éliminer un personnage adverse plutôt que gagner une mêlée"}
       ],
       "army": [
@@ -431,7 +431,7 @@
       "totalSlots": 20,
       "lord": {"icon": "hotek", "name": "Hotek", "qty": 1, "note": "L'<strong>immunité à l'attrition</strong> de son armée personnelle et le <strong>+50% d'objets magiques</strong> dessinent un profil d'explorateur plutôt que de conquérant : il traverse les déserts et les terres corrompues sans perte, et rentre chargé. Il est en outre <strong>blessé au lieu d'être tué</strong>"},
       "heroes": [
-        {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 2, "note": "Toute la puissance offensive de la fiche passe par elles, puisque le seigneur n'améliore aucune statistique de combat. Deux lanceuses sont le minimum quand le corps d'armée n'est composé que de troupes de base"},
+        {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 2, "note": "Toute la puissance offensive de la fiche passe par elles, puisque le seigneur n'améliore aucune statistique de combat. Deux lanceuses sont le minimum quand le corps d'armée n'est composé que de troupes de base"},
         {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "La réponse aux personnages ennemis, que rien d'autre dans cette armée ne peut traiter. Une ligne de Dreadspears ne tue pas un seigneur monté"}
       ],
       "army": [

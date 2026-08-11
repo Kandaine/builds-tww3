@@ -151,7 +151,7 @@
       "army": [
         {"icon": "skeletonHorsemen", "name": "Skeleton Horsemen", "qty": 3, "note": "Capacité +2 (faction), +20% de force des armes et +10 de charge (seigneur) — la cavalerie de masse de Numas, bon marché et ranimée en continu"},
         {"icon": "skeletonHorseArchers", "name": "Skeleton Horse Archers", "qty": 2, "note": "Capacité +2 et rang +3 (faction), +20% de force des tirs (seigneur) — archers montés d'emblée vétérans qui harcèlent sans fin, à l'image du Prince chasseur"},
-        {"icon": "nehekharanHorsemen", "name": "Nehekhara Horsemen", "qty": 3, "note": "Capacité +2, rang +3 (faction), +20% de force des armes et +10 de charge (seigneur) — la cavalerie d'élite de l'ancienne Nehekhara, fer de lance des charges"},
+        {"icon": "nehekharanHorsemen", "name": "Nehekharan Horsemen", "qty": 3, "note": "Capacité +2, rang +3 (faction), +20% de force des armes et +10 de charge (seigneur) — la cavalerie d'élite de l'ancienne Nehekhara, fer de lance des charges"},
         {"icon": "stormRidersOfKhsar", "name": "Storm Riders of Khsar (Nehekara Horsemen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — les cavaliers du dieu du désert, également couverts par tous les bonus cavalerie (faction + seigneur)"},
         {"icon": "skeletonChariots", "name": "Skeleton Chariots", "qty": 2, "note": "Rang de recrutement +3 (faction) et bâtiments -30% (faction) — la fierté des armées nehekharanes, percussion de flanc en écho au char du Prince"},
         {"icon": "skeletonArchers", "name": "Skeleton Archers", "qty": 2, "note": "+20% de force des tirs (seigneur) — base de feu qui couvre les charges répétées de la cavalerie"},
@@ -227,7 +227,7 @@
         {"icon": "carrion", "name": "Carrion", "qty": 2, "note": "Charognards volants, également visés par les <strong>+6 de perforants</strong> et <strong>+15 de charge</strong> (seigneur) — ils vont chercher l'artillerie et les tirailleurs adverses que les essaims au sol ne peuvent pas atteindre"},
         {"icon": "tombScorpion", "name": "Tomb Scorpion", "qty": 2, "note": "Bénéficie de la <strong>Vigueur Parfaite</strong> (faction) — construct fouisseur qui surgit derrière les lignes ennemies et ne fatigue jamais, exactement le profil que cette fiche recherche"},
         {"icon": "skeletonArchers", "name": "Skeleton Archers", "qty": 2, "note": "La base de tir nehekharane — elle fixe l'attention adverse pendant que tout ce qui vole contourne"},
-        {"icon": "nehekharanWarriors", "name": "Nehekhara Warriors", "qty": 2, "note": "L'infanterie de ligne du royaume — son rôle est de tenir, pas de tuer : les essaims s'occupent du reste"},
+        {"icon": "nehekharanWarriors", "name": "Nehekharan Warriors", "qty": 2, "note": "L'infanterie de ligne du royaume — son rôle est de tenir, pas de tuer : les essaims s'occupent du reste"},
         {"icon": "ushabti", "name": "Ushabti", "qty": 1, "note": "Constructs de choc — la seule unité de la liste capable de traiter une cible unique et coriace, précisément le point faible des deux capacités du seigneur"},
         {"icon": "khemrianWarsphinx", "name": "Khemrian Warsphinx", "qty": 1, "note": "Statue-monstre quasi invulnérable — elle ancre le centre pendant que la nuée tourbillonne autour"},
         {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 1, "note": "Artillerie de terreur — elle casse le Commandement des blocs adverses, ceux-là mêmes que les sorts du seigneur ravagent le plus efficacement"}
@@ -261,7 +261,7 @@
         {"icon": "sepulchralStalkers", "name": "Sepulchral Stalkers", "qty": 2, "note": "Constructs fouisseurs qui surgissent du sable — l'incarnation même du plan d'embuscade, et un regard pétrifiant qui neutralise les unités isolées"},
         {"icon": "tombScorpion", "name": "Tomb Scorpion", "qty": 2, "note": "Second outil de surgissement — il apparaît derrière les lignes adverses au moment où \"Sand Veil\" masque l'approche du reste de l'armée"},
         {"icon": "skeletonArchers", "name": "Skeleton Archers", "qty": 3, "note": "La base de tir — en embuscade, c'est elle qui ouvre le feu la première, avant que l'ennemi n'ait le temps de se reformer"},
-        {"icon": "nehekharanWarriors", "name": "Nehekhara Warriors", "qty": 2, "note": "Infanterie de ligne — elle tient le centre en terrain désertique, où elle bénéficie des <strong>+12 d'Attaque de mêlée</strong> (faction)"},
+        {"icon": "nehekharanWarriors", "name": "Nehekharan Warriors", "qty": 2, "note": "Infanterie de ligne — elle tient le centre en terrain désertique, où elle bénéficie des <strong>+12 d'Attaque de mêlée</strong> (faction)"},
         {"icon": "necropolisKnights", "name": "Necropolis Knights", "qty": 2, "note": "Cavalerie monstrueuse — la vitesse nécessaire pour exploiter une embuscade réussie et empêcher l'ennemi de se replier"},
         {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 1, "note": "Artillerie de terreur — elle finit de briser le Commandement d'une armée déjà surprise et prise à revers"}
       ],

@@ -53,7 +53,7 @@
         {"icon": "exaltedHeroOfKhorne", "name": "Exalted Hero of Khorne", "qty": 1, "note": "Troisième renfort de mêlée redoutable"}
       ],
       "army": [
-        {"icon": "theHellforgedHost", "name": "The Hellforged Host (Exalted Bloodletters of Khorne)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -15% d'entretien (faction) et Frénésie (seigneur) — variante d'élite des Exalted Bloodletters, encore plus dévastatrice sous le commandement de Skulltaker"},
+        {"icon": "theHellforgedHost", "name": "Hellforged Host (Exalted Bloodletters of Khorne)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -15% d'entretien (faction) et Frénésie (seigneur) — variante d'élite des Exalted Bloodletters, encore plus dévastatrice sous le commandement de Skulltaker"},
         {"icon": "exaltedBloodlettersKhorne", "name": "Exalted Bloodletters of Khorne", "qty": 2, "note": "-15% d'entretien (faction) et même Frénésie (seigneur) — élite démoniaque au corps-à-corps"},
         {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 5, "note": "-15% d'entretien (faction) et même Frénésie (seigneur) — cœur de la horde démoniaque, partiellement reconstituée après bataille (Daemons Reforged, faction)"},
         {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie monstrueuse démoniaque qui ouvre le chemin jusqu'aux champions adverses, seule proie qui intéresse le Preneur de Crânes"},
@@ -215,7 +215,7 @@
         {"icon": "bloodreaper", "name": "Bloodreaper", "qty": 2, "note": "Ce sont des démons, donc concernés par le <strong>+10% de renouvellement</strong>, et ils encadrent naturellement les Bloodletters qu'ils commandent. Deux suffisent : le <strong>+3 de capacité</strong> que la faction leur accorde est un plafond de recrutement, et aucun effet de ce seigneur ne bonifie un Bloodreaper intégré à la colonne — les deux autres valent mieux à la tête de leurs propres armées"}
       ],
       "army": [
-        {"icon": "theHellforgedHost", "name": "The Hellforged Host (Bloodletters)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des Bloodletters, qui reçoit comme les autres le <strong>+10 de bonus de charge</strong> du seigneur"},
+        {"icon": "theHellforgedHost", "name": "Hellforged Host (Exalted Bloodletters of Khorne)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des Bloodletters, qui reçoit comme les autres le <strong>+10 de bonus de charge</strong> du seigneur"},
         {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 5, "note": "Le socle démoniaque. Leurs lames infligent des dégâts magiques, ce qui règle le problème des unités éthérées, et le <strong>+10 de charge</strong> transforme leur engagement en frappe plutôt qu'en corps à corps d'usure"},
         {"icon": "exaltedBloodlettersKhorne", "name": "Exalted Bloodletters of Khorne", "qty": 3, "note": "La version supérieure, elle aussi citée nommément par le seigneur. C'est le point dur de la ligne, à réserver aux unités que les Bloodletters standard ne percent pas"},
         {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 4, "note": "La cavalerie monstrueuse démoniaque, troisième unité visée par le <strong>+10 de charge</strong>. Trois exemplaires forment le marteau qui accompagne l'enclume des Bloodletters"},

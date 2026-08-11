@@ -118,7 +118,7 @@
       "army": [
         {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 4, "note": "+8 commandement et 10% résistance physique (seigneur) — ligne de tenue anti-charge bien plus fiable qu'à l'accoutumée"},
         {"icon": "teefRobberz", "name": "Teef Robberz (Goblin Wolf Chariots)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien et +15 bonus de charge en tant que Chariot (faction) — cavalerie de choc bon marché"},
-        {"icon": "moonHowlers", "name": "Moon Howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), même bonus d'entretien et de charge (faction) — cavalerie légère rapide pour flanquer"},
+        {"icon": "moonHowlers", "name": "Moon-howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), même bonus d'entretien et de charge (faction) — cavalerie légère rapide pour flanquer"},
         {"icon": "stoneTrolls", "name": "Stone Trolls", "qty": 2, "note": "Monstre régénérant increvable, parfait complément à la horde de Gobelins"},
         {"icon": "riverTrolls", "name": "River Trolls", "qty": 2, "note": "Attaque de vomi corrosif dévastatrice contre l'infanterie groupée"},
         {"icon": "snotlingPumpWagons", "name": "Snotling Pump Wagons (Rouleaux à Pointes)", "qty": 2, "note": "-20% d'entretien et +15 bonus de charge en tant que Pump Wagon (faction) — char suicide explosif pour semer le chaos dans les lignes ennemies"},
@@ -465,7 +465,7 @@
         {"icon": "savageManeatersDualMaces", "name": "Savage Maneaters (Dual Maces)", "qty": 1, "note": "Version deux masses, purement offensive : le meilleur receveur du <strong>+25% de dégâts d'arme</strong> de \"Grak's Waaagh!\""},
         {"icon": "savageGiant", "name": "Savage Giant", "qty": 1, "note": "Le géant de la tribu, peint aux couleurs de guerre — de la masse brute pour ouvrir ce que l'infanterie ne déloge pas"},
         {"icon": "sasquatches", "name": "Sasquatches", "qty": 1, "note": "Créatures de la jungle recrutées par la tribu, propres à ce mod — infanterie monstrueuse rapide, à envoyer sur les lanceurs de sorts adverses"},
-        {"icon": "deffCreeperz", "name": "Deff Creeperz (Spider Rider Archers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner deux — cavalerie de tir montée sur araignée, la seule mobilité de la liste"},
+        {"icon": "deffCreeperz", "name": "Deff Creeperz (Forest Goblin Spider Rider Archers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner deux — cavalerie de tir montée sur araignée, la seule mobilité de la liste"},
         {"icon": "arachnarokSpider", "name": "Arachnarok Spider", "qty": 1, "note": "Le monstre à entité unique de la tribu, exclusif aux Blue Vipers dans ce mod"},
         {"icon": "colossalSquig", "name": "Colossal Squig", "qty": 1, "note": "Une boule de dents incontrôlable — thématiquement l'unité la plus proche de l'esprit de la fiche, puisqu'elle non plus n'obéit pas vraiment"}
       ],
@@ -529,7 +529,7 @@
         {"icon": "nightGoblinsSpears", "name": "Night Goblins (Spears)", "qty": 3, "note": "Version du mod des Night Goblins en lances — la ligne défensive de la fiche, et à <strong>-40% d'entretien</strong> (faction) elle ne coûte presque rien"},
         {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 3, "note": "Le volume de tir. Massés derrière les lances et payés une misère, ils sont l'argument principal d'une embuscade réussie"},
         {"icon": "forestGoblinSpiderRiders", "name": "Forest Goblin Spider Riders", "qty": 2, "note": "Cavalerie d'araignées qui grimpe partout — <strong>-40% d'entretien</strong> également, et la mobilité qui permet de refermer une embuscade"},
-        {"icon": "deffCreeperz", "name": "Deff Creeperz (Spider Rider Archers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner deux — du tir monté, ce qui est rare et précieux chez les Peaux-Vertes"},
+        {"icon": "deffCreeperz", "name": "Deff Creeperz (Forest Goblin Spider Rider Archers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner deux — du tir monté, ce qui est rare et précieux chez les Peaux-Vertes"},
         {"icon": "snaglasDeffThrowa", "name": "Snagla's Deff Throwa (Goblin Bolt Throwas)", "qty": 2, "note": "Second régiment favori à <strong>+1 capacité</strong> (faction) — l'artillerie légère de la tribu, qui abat les monstres que les gobelins ne peuvent pas toucher"},
         {"icon": "arachnarokSpider", "name": "Arachnarok Spider", "qty": 2, "note": "Le monstre de la tribu, et le seul point dur d'une liste par ailleurs entièrement fragile. La faction en fait apparaître dans son <strong>Waaagh!</strong>, donc chaque bataille peut en compter davantage"},
         {"icon": "squigGobba", "name": "Night Goblin Squig Gobba", "qty": 1, "note": "Artillerie à squigs propre au mod — un tir d'arc de cloche qui frappe derrière les lignes"},
@@ -561,7 +561,7 @@
       "army": [
         {"icon": "goblinWolfRiders", "name": "Goblin Wolf Riders (Lances)", "qty": 3, "note": "Le socle de la tribu. <strong>Charge Glorieuse</strong> (faction) leur donne un bonus de charge qui ne s'épuise pas comme un bonus ordinaire — retirez-les et relancez-les plutôt que de les laisser en mêlée"},
         {"icon": "goblinWolfRidersBows", "name": "Goblin Wolf Riders (Arcs)", "qty": 3, "note": "Le cœur réel de la fiche : du tir monté à <strong>+15% de portée</strong> (faction), qui tourne autour de l'ennemi sans jamais l'engager"},
-        {"icon": "moonHowlers", "name": "Moon-howlers (Wolf Riders)", "qty": 2, "note": "Régiment favori à <strong>+1 capacité</strong> (faction) — la version d'élite des chevaucheurs de loups"},
+        {"icon": "moonHowlers", "name": "Moon-howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori à <strong>+1 capacité</strong> (faction) — la version d'élite des chevaucheurs de loups"},
         {"icon": "morgrubbsMangyMarauders", "name": "Morgrubb's Mangy Marauders (Wolf Archers)", "qty": 2, "note": "Second régiment favori à <strong>+1 capacité</strong> (faction) — l'élite du tir monté, et l'unité qui profite le plus du réapprovisionnement des munitions du Waaagh!"},
         {"icon": "goblinWolfChariot", "name": "Goblin Wolf Chariot", "qty": 3, "note": "Les chars partagent les mêmes bonus de faction que les chevaucheurs : <strong>+15% de portée</strong> et <strong>Charge Glorieuse</strong>. Ce sont eux qui brisent une formation que les archers ont déjà usée"},
         {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "Le seul élément à pied de la liste, et il est nécessaire : une armée entièrement montée n'a rien pour tenir un point pendant que le reste manœuvre"},

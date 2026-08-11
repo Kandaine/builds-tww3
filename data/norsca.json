@@ -275,7 +275,7 @@
       "totalSlots": 20,
       "lord": {"icon": "adellaOfTheThousandMouths", "name": "Adella of the Thousand Mouths", "qty": 1, "note": "Le « Roi » de Skeggi, tzeentchienne jusqu'au bout. <strong>Mille Murmures</strong> lui permet d'affronter seule les monstres de <strong>niveau 1</strong> de l'arcanum — une mécanique de campagne, pas de bataille, mais qui accélère beaucoup la montée en puissance"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 2, "note": "Deux lanceurs, et c'est délibéré : le <strong>+10 de réserve de Vents de Magie</strong> (seigneur) n'a de valeur que si l'armée a de quoi la dépenser. Le Métal est le savoir tzeentchien accessible aux Norses, cohérent avec le culte d'Adella"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 2, "note": "Deux lanceurs, et c'est délibéré : le <strong>+10 de réserve de Vents de Magie</strong> (seigneur) n'a de valeur que si l'armée a de quoi la dépenser. Le Métal est le savoir tzeentchien accessible aux Norses, cohérent avec le culte d'Adella"},
         {"icon": "ustaTheWitch", "name": "Usta the Witch (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod, <strong>lanceuse de sorts</strong> ouverte à toutes les tribus norses. Un troisième lanceur qui ne coûte pas un slot de héros ordinaire, sur une fiche dont toute la magie repose sur la réserve de Vents accordée par le seigneur"}
       ],
       "army": [
@@ -310,7 +310,7 @@
       "totalSlots": 20,
       "lord": {"icon": "hakkaTheAesling", "name": "Hakka the Aesling", "qty": 1, "note": "Le chef aesling en quête de crânes. <strong>\"Khorne's Gaze\"</strong> ne s'allume que lorsque son Commandement est déjà <strong>vacillant</strong> — c'est-à-dire au moment où il devrait fuir. À la place il devient <strong>Incassable</strong> avec <strong>+25 d'attaque en mêlée</strong>. On ne le retire pas d'une mêlée qui tourne mal : c'est là qu'il est le plus dangereux"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Un personnage de plus, donc un porteur de plus de <strong>\"Khorne's Gaze\"</strong> — la capacité vise <strong>tous les personnages</strong>, pas seulement le seigneur, ce qui rend un complément de héros nettement plus rentable ici qu'ailleurs"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Un personnage de plus, donc un porteur de plus de <strong>\"Khorne's Gaze\"</strong> — la capacité vise <strong>tous les personnages</strong>, pas seulement le seigneur, ce qui rend un complément de héros nettement plus rentable ici qu'ailleurs"},
         {"icon": "berusOfVeigs", "name": "Berus of Veigs (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, ouvert à toutes les tribus norses — « une brute de vitesse et de malice, qui massacre avec une traîtrise délibérée ». Le profil exact que récompense une fiche bâtie sur la charge, et un porteur de plus de <strong>\"Khorne's Gaze\"</strong>"}
       ],
       "army": [
@@ -344,7 +344,7 @@
       "totalSlots": 20,
       "lord": {"icon": "einarrSigdansson", "name": "Einarr Sigdansson", "qty": 1, "note": "Le survivant de Vinnskor. <strong>\"Fury of Vinnskor\"</strong> part de <strong>0%</strong> : au premier engagement il n'a rien de plus qu'un chef norse ordinaire. C'est en encaissant qu'il monte jusqu'à <strong>+30% de résistance</strong> et <strong>+20 de réflexion des dégâts de mêlée</strong>. Il faut donc l'engager <strong>tôt et durablement</strong>, jamais en finisseur"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 2, "note": "Le cœur mécanique de la fiche : la faction précise que les <strong>armées reçoivent des bonus lorsque les Vents de Magie sont élevés</strong>. Le Métal est le savoir tzeentchien accessible aux Norses, et ses sorts d'armure épaississent une liste déjà bâtie sur l'absorption"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 2, "note": "Le cœur mécanique de la fiche : la faction précise que les <strong>armées reçoivent des bonus lorsque les Vents de Magie sont élevés</strong>. Le Métal est le savoir tzeentchien accessible aux Norses, et ses sorts d'armure épaississent une liste déjà bâtie sur l'absorption"},
         {"icon": "rafnOflatisson", "name": "Rafn Oflatisson (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et le choix évident ici : le fils d'Oflati manie une hache de la taille d'un tronc, et le mod en fait explicitement « le témoignage de la force <strong>Baersonling</strong> » — la tribu d'Einarr"}
       ],
       "army": [
@@ -379,7 +379,7 @@
       "totalSlots": 20,
       "lord": {"icon": "ulfricGrondal", "name": "Ulfric Grondal", "qty": 1, "note": "Le Haut Roi de Skjold, fidèle aux dieux des hommes. Sa valeur est autant diplomatique que martiale : c'est le seul chef norse capable de bâtir une <strong>alliance durable avec l'Empire</strong>, et le <strong>+5% de revenus portuaires par tribu confédérée</strong> finance cette double posture"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, pour l'armure et les dégâts perforants — cohérent avec une liste qui cherche à tenir plutôt qu'à percer. Les Bjornlings ne se vouant à aucun dieu, aucun savoir ne leur est imposé"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, pour l'armure et les dégâts perforants — cohérent avec une liste qui cherche à tenir plutôt qu'à percer. Les Bjornlings ne se vouant à aucun dieu, aucun savoir ne leur est imposé"},
         {"icon": "orgrimTheWanderer", "name": "Orgrim the Wanderer (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et il a sa place ici plus qu'ailleurs : c'est <strong>son nom que porte le Régiment favori</strong> d'Ulfric dans le texte de l'effet. Berserker et chasseur banni des Aeslings, il réduit la durée de recrutement des <strong>Marauder Champions et des Huscarls</strong> — les deux unités que \"Bragnir's Raiders\" favorise"}
       ],
       "army": [
@@ -414,7 +414,7 @@
       "totalSlots": 20,
       "lord": {"icon": "highJarlGeimdall", "name": "High Jarl Geimdall", "qty": 1, "note": "Le bras droit d'Ulfric. Son <strong>+3 de défense en mêlée</strong> ne vaut que pour l'<strong>armée du chef de faction</strong> — donc uniquement s'il la mène lui-même, ce qui invite à en faire le général principal plutôt qu'un seigneur secondaire"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, pour l'armure : c'est le seul savoir qui prolonge la logique de la fiche au lieu de la contredire. Les Bjornlings ne se vouant à aucun dieu, rien ne leur impose une école"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, pour l'armure : c'est le seul savoir qui prolonge la logique de la fiche au lieu de la contredire. Les Bjornlings ne se vouant à aucun dieu, rien ne leur impose une école"},
         {"icon": "jarlHafskael", "name": "Jarl Hafskael (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod — « Bâtisseur de tempêtes. Répareur de coques. Briseur d'hommes et de bois ». C'est son chantier naval de la Baie de la Banquise qui donne accès aux <strong>Huscarls</strong>, l'unité autour de laquelle cette fiche est bâtie"}
       ],
       "army": [
@@ -448,7 +448,7 @@
       "totalSlots": 20,
       "lord": {"icon": "haraldWhyrlas", "name": "Harald Whyrlas", "qty": 1, "note": "L'immense champion graeling. Sa <strong>Terreur</strong> ne fonctionne que <strong>contre les Norses</strong> — inutile contre l'Empire ou Kislev, décisive dans la guerre d'unification que la faction lui assigne. Il profite aussi du <strong>+10% de points de vie de tous les personnages</strong> (faction)"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Il bénéficie du <strong>+10% de points de vie</strong> accordé à <strong>tous les personnages</strong> (faction) — un bonus rare, qui rend les héros nettement plus difficiles à abattre en duel"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Il bénéficie du <strong>+10% de points de vie</strong> accordé à <strong>tous les personnages</strong> (faction) — un bonus rare, qui rend les héros nettement plus difficiles à abattre en duel"},
         {"icon": "verdandi", "name": "Verdandi (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod, et la <strong>Championne des Graelings</strong> — la tribu de Harald. Réputée pour naviguer jusqu'aux confins en quête de bêtes et d'adversaires dignes d'elle, et capable de traverser les terrains de jungle difficiles. Elle profite elle aussi du <strong>+10% de points de vie</strong> (faction)"}
       ],
       "army": [
@@ -481,7 +481,7 @@
       "totalSlots": 20,
       "lord": {"icon": "akkorakTheCrow", "name": "Akkorak the Crow", "qty": 1, "note": "Le Pillard des Neuf Désolations. <strong>\"Riders of the Kul\"</strong> ne rayonne qu'à <strong>35m</strong> : il faut le tenir <strong>au milieu</strong> de sa cavalerie, pas devant. C'est un chef de meute, et une charge lancée hors de son rayon perd tout le bénéfice de l'aura"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, pour l'armure — qui se cumule au <strong>+2 par tribu confédérée</strong> (seigneur). Sur une armée de cavalerie qui traverse le champ de bataille sous le feu, chaque point compte"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, pour l'armure — qui se cumule au <strong>+2 par tribu confédérée</strong> (seigneur). Sur une armée de cavalerie qui traverse le champ de bataille sous le feu, chaque point compte"},
         {"icon": "hildrTheReaver", "name": "Hildr the Reaver (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod — <strong>maîtresse du harcèlement</strong> : elle frappe vite puis disparaît dans l'ombre, laissant confusion et chaos derrière elle. C'est exactement la façon dont une armée entièrement montée doit combattre, et elle aime provoquer les adversaires les plus solides en combat singulier"}
       ],
       "army": [
@@ -513,7 +513,7 @@
       "totalSlots": 20,
       "lord": {"icon": "huernTheWolf", "name": "Huern the Wolf", "qty": 1, "note": "Le Loup Noir, Skin Wolf de naissance. Ses trois effets de seigneur ne concernent que la meute et ne valent que dans <strong>son armée</strong> — c'est donc lui qui doit mener la horde de loups, pas un Packlord secondaire"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le seul soutien magique : rien dans le kit du seigneur ne touche les héros. Le Métal apporte l'armure qui manque cruellement à des monstres rapides mais peu protégés"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le seul soutien magique : rien dans le kit du seigneur ne touche les héros. Le Métal apporte l'armure qui manque cruellement à des monstres rapides mais peu protégés"},
         {"icon": "ulsdau", "name": "Ulsdau (Bloodseer Légendaire)", "qty": 1, "note": "Héros légendaire <strong>exclusif à la Tribu du Loup</strong> — c'est la seule fiche du site qui puisse l'aligner. Le mod le désigne comme <em>Bloodseer Légendaire</em>, un titre qu'aucun autre personnage ne porte"},
         {"icon": "graill", "name": "Graill (Werekin Légendaire)", "qty": 1, "note": "Le <strong>frère jumeau d'Ulsdau</strong> et guerrier légendaire de la Tribu du Loup, réputé se fondre parfaitement dans la neige de Naglfari. Le mod le désigne comme <em>Werekin Légendaire</em> — c'est un Skin Wolf, donc il touche tous les bonus que le seigneur accorde à cette famille"}
       ],
@@ -546,7 +546,7 @@
       "totalSlots": 20,
       "lord": {"icon": "birnaTheHuntress", "name": "Birna the Huntress", "qty": 1, "note": "<strong>À pied, impérativement</strong> : \"Mutant's Gaze\" ne fonctionne que dans cette configuration. C'est une capacité d'assassinat de monstre — 100m de portée, la cible <strong>ne peut plus bouger</strong> pendant 20 secondes, et perd <strong>20% de résistance aux projectiles</strong> juste au moment où toute l'armée peut tirer dessus"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, pour l'armure d'une ligne de tir qui n'en a aucune. Une armée de chasseurs perd si l'ennemi atteint ses tireurs"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, pour l'armure d'une ligne de tir qui n'en a aucune. Une armée de chasseurs perd si l'ennemi atteint ses tireurs"},
         {"icon": "olgBlodsalt", "name": "Olg Blódsalt (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et le plus lié au territoire de Birna : son <strong>Masque de Saumure</strong> a été forgé dans le bronze et le fer repêchés d'un autel englouti sous le <strong>Delta de Kalti</strong>, et il lui a fusionné au visage. « Béni pour survivre, maudit pour se corroder »"}
       ],
       "army": [
@@ -578,7 +578,7 @@
       "totalSlots": 20,
       "lord": {"icon": "drenokJohansen", "name": "Drenok Johansen", "qty": 1, "note": "Le Porteur de la Grande Hache. <strong>\"Summon Frostfang\"</strong> n'a qu'un <strong>seul usage</strong> et ne s'active que si l'issue de la bataille est encore <strong>indécise</strong> : c'est un renfort de secours, à garder pour le moment où la ligne cède, pas une ouverture"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, cohérent avec le <strong>+2% de blocage de projectiles par tribu confédérée</strong> (seigneur) : cette armée cherche à traverser le terrain vite et intacte"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, cohérent avec le <strong>+2% de blocage de projectiles par tribu confédérée</strong> (seigneur) : cette armée cherche à traverser le terrain vite et intacte"},
         {"icon": "lokjarBjoergir", "name": "Lokjar Bjoergir (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod — « un puissant champion des <strong>montagnes gelées</strong>, qui trahit jadis son chef pour atteindre la gloire éternelle ». Le champion du froid pour la tribu du froid"}
       ],
       "army": [
@@ -613,7 +613,7 @@
       "totalSlots": 20,
       "lord": {"icon": "surthaEk", "name": "Surtha Ek", "qty": 1, "note": "L'Éternel Char, à monter sur son char évidemment. Il ne donne rien à l'infanterie ni à la cavalerie : toute sa valeur passe par les unités de Char de son armée, ce qui rend sa composition presque obligatoire"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, pour l'armure. Les chars sont chers et fragiles une fois immobilisés — tout ce qui les garde en mouvement et en vie vaut mieux qu'un sort offensif de plus"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, pour l'armure. Les chars sont chers et fragiles une fois immobilisés — tout ce qui les garde en mouvement et en vie vaut mieux qu'un sort offensif de plus"},
         {"icon": "larsMortensen", "name": "Lars Mortensen (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et le seul dont le mod prévoit une <strong>monture de char</strong> — sur la seule fiche du site bâtie sur les chars, c'est le complément évident. Guerrier immense endurci par des années de sang mercenaire, il réduit la durée de recrutement des Marauder Champions et des Huscarls"}
       ],
       "army": [
@@ -647,7 +647,7 @@
       "totalSlots": 20,
       "lord": {"icon": "sargathTheVain", "name": "Sargath the Vain", "qty": 1, "note": "Le champion élu de Slaanesh. Sa <strong>Peur</strong> ne s'applique qu'aux factions <strong>cathayennes</strong> — cohérent avec une tribu des Steppes de l'Est, inutile ailleurs. C'est un seigneur calibré pour une direction de campagne précise"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, pour l'armure et les dégâts perforants — la même statistique que <strong>\"Riders of Profusion\"</strong> amplifie chez la cavalerie de tir"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, pour l'armure et les dégâts perforants — la même statistique que <strong>\"Riders of Profusion\"</strong> amplifie chez la cavalerie de tir"},
         {"icon": "zarUzelek", "name": "Zar Uzelek (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et le seul dont le kit est écrit <strong>pour ce seigneur</strong> : ses compétences s'appellent <strong>« Yusak's Marauders »</strong> et <strong>« Sargath's Drummer »</strong>. C'est un <strong>tambour de guerre</strong> — classé support-infanterie par le mod — dont « Rhythmic Charge » et le grondement annoncent l'arrivée. « Les ennemis se recroquevillent de crainte au son du tambour d'Uzelek »"}
       ],
       "army": [
@@ -680,7 +680,7 @@
       "totalSlots": 20,
       "lord": {"icon": "jarlGrydal", "name": "Jarl Grydal", "qty": 1, "note": "Il faut le jouer <strong>au milieu de la mêlée la plus dense possible</strong> : \"Pyreheart Presence\" ne vise que les entités de <strong>petite taille</strong> — donc l'infanterie, pas les monstres — et son intensité monte <strong>à chaque mort proche</strong>. Plus la boucherie est compacte, plus il retire de défense en mêlée à ceux qui l'entourent"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Feu)", "qty": 1, "note": "Le Feu, et pour une fois ce n'est pas un choix par défaut : <strong>\"Pyreheart Presence\"</strong> rend les ennemis proches <strong>jusqu'à 15% plus vulnérables aux dégâts de feu</strong>. Les sorts de feu lancés dans ce rayon frappent donc plus fort — et les <strong>25% de résistance au feu de tous les personnages</strong> (faction) protègent le lanceur de ses propres dégâts de zone"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Fire)", "qty": 1, "note": "Le Feu, et pour une fois ce n'est pas un choix par défaut : <strong>\"Pyreheart Presence\"</strong> rend les ennemis proches <strong>jusqu'à 15% plus vulnérables aux dégâts de feu</strong>. Les sorts de feu lancés dans ce rayon frappent donc plus fort — et les <strong>25% de résistance au feu de tous les personnages</strong> (faction) protègent le lanceur de ses propres dégâts de zone"},
         {"icon": "haftagg", "name": "Haftagg (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod — « le limier des Bjornlings, qui traque à quatre pattes et ne perd jamais la piste ». Sur un seigneur dont l'aura se nourrit des morts autour de lui, un traqueur qui va chercher l'ennemi et le fixe au corps à corps est un allumeur idéal"}
       ],
       "army": [
@@ -713,7 +713,7 @@
       "totalSlots": 20,
       "lord": {"icon": "olafWolfhound", "name": "Olaf Wolfhound", "qty": 1, "note": "<strong>\"Gorefeast\"</strong> ne fonctionne <strong>qu'en mêlée</strong>. Ce n'est pas un soin passif d'armée : dès qu'il décroche, la régénération s'arrête. Il faut donc l'engager et l'y laisser — ce qui tombe bien, sa faction ne lui donne aucune raison de rester en retrait"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, pour l'armure. Une armée qui doit rester en mêlée pour bénéficier de « Gorefeast » a besoin de survivre à cette mêlée, et la régénération de 0,10% par seconde ne remplace pas la protection"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, pour l'armure. Une armée qui doit rester en mêlée pour bénéficier de « Gorefeast » a besoin de survivre à cette mêlée, et la régénération de 0,10% par seconde ne remplace pas la protection"},
         {"icon": "ernstVonKammler", "name": "Ernst von Kammler (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et un <strong>lanceur de sorts</strong> — « jadis enchaîné par le cristal et la folie, désormais libéré et pire encore ». Un nom impérial dans une armée qui part précisément razzier l'Empire : le mod assume le clin d'œil"}
       ],
       "army": [
@@ -746,7 +746,7 @@
       "totalSlots": 20,
       "lord": {"icon": "grofturFiskauga", "name": "Gröftur Fiskauga", "qty": 1, "note": "<strong>\"Summon Dregmaw\"</strong> est son seul apport de bataille, et il est limité : <strong>un usage</strong>, une seule unité invoquée, 60m de portée. Le reste de son kit ne sert qu'<strong>en mer</strong> — sur terre, c'est un chef norse ordinaire, et la fiche est composée en conséquence"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Le Métal, choix d'autonomie : armure et dégâts perforants, les deux statistiques les plus universelles quand aucun effet de seigneur ne dicte une direction"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Le Métal, choix d'autonomie : armure et dégâts perforants, les deux statistiques les plus universelles quand aucun effet de seigneur ne dicte une direction"},
         {"icon": "sorenHoarder", "name": "Soren Hoarder (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, <strong>lanceur de sorts</strong>, et le seul dont le nom colle à la mécanique du seigneur : sur une faction bâtie sur le <strong>butin</strong> et le <strong>vol d'objets magiques</strong>, un « Thésauriseur » n'est pas un hasard de nommage"}
       ],
       "army": [
@@ -780,7 +780,7 @@
       "totalSlots": 20,
       "lord": {"icon": "branBearheart", "name": "Bran Bearheart", "qty": 1, "note": "<strong>\"Spirit of the Great Bear\"</strong> ne dure que <strong>5 secondes</strong> pour <strong>120 de rechargement</strong>, et la forme d'ours <strong>perd les capacités de commandement</strong>. Ce n'est pas une transformation qu'on garde : c'est une fenêtre de 5 secondes à dépenser sur une cible précise, en acceptant de couper son aura de Commandement pendant ce temps"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 1, "note": "Il profite de <strong>\"Mark of the Bear\"</strong>, qui vise <strong>tous les personnages</strong> (faction) : <strong>+10% de vitesse de charge et +10 de bonus de charge</strong> même sur un lanceur de sorts"},
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 1, "note": "Il profite de <strong>\"Mark of the Bear\"</strong>, qui vise <strong>tous les personnages</strong> (faction) : <strong>+10% de vitesse de charge et +10 de bonus de charge</strong> même sur un lanceur de sorts"},
         {"icon": "jarlOdaWinterclaw", "name": "Jarl Oda Winterclaw (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et l'un des deux plus redoutés du nord — le mod le donne pour l'égal de High Jarl Geimdall et du Haut Roi lui-même. « Un champion rival marmonna un jour : <em>aucun homme vivant ne peut m'arrêter</em>. Sa tête repose désormais sur le manteau d'Oda »"}
       ],
       "army": [
@@ -813,7 +813,7 @@
       "totalSlots": 20,
       "lord": {"icon": "ziadZhang", "name": "Ziad Zhang", "qty": 1, "note": "Ses deux effets ne touchent que la trésorerie : <strong>-30%</strong> au recrutement et <strong>-30%</strong> à l'entretien des Frost-Wyrms. C'est exactement ce qu'il faut pour rendre jouable une composition que le coût interdit normalement — et il est <strong>blessé au lieu d'être tué</strong>"},
       "heroes": [
-        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Métal)", "qty": 2, "note": "Le <strong>Savoir du Métal</strong> répond au défaut structurel de la fiche : cinq grandes cibles attirent tous les tirs perforants du champ de bataille, et c'est la seule école qui abaisse durablement la puissance de tir adverse"}
+        {"icon": "shamanSorcerer", "name": "Shaman-Sorcerer (Metal)", "qty": 2, "note": "Le <strong>Savoir du Métal</strong> répond au défaut structurel de la fiche : cinq grandes cibles attirent tous les tirs perforants du champ de bataille, et c'est la seule école qui abaisse durablement la puissance de tir adverse"}
       ],
       "army": [
         {"icon": "frostWyrm", "name": "Chaos Frost Dragon (Frost-Wyrm)", "qty": 4, "note": "Le cœur de la fiche. <strong>+15 d'attaque en mêlée</strong> de la faction, <strong>-30%</strong> au recrutement et à l'entretien, <strong>-1 tour</strong> de délai : quatre exemplaires deviennent soutenables. Chacun est aussi une <strong>plateforme d'aura mobile</strong> de 35 mètres — c'est là leur vraie valeur, bien plus que leurs dégâts"},

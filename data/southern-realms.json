@@ -22,7 +22,7 @@
       "army": [
         {"icon": "tebAlcatani", "name": "Alcatani Fellowship (Pikemen)", "qty": 2, "note": "Régiment de Renom que Valmir favorise (+1 de capacité → 2 unités) : la compagnie de piquiers de Rodrigo, « crainte des cupides, aimée des nécessiteux » — un hérisson de piques d'élite, cœur de l'anvil"},
         {"icon": "tebPikemen", "name": "Pikemen", "qty": 2, "note": "Piquiers cuirassés : « un hérisson mortel pointé sur l'ennemi » — l'anvil de base bon marché qui fixe cavalerie et infanterie pendant que le tir opère"},
-        {"icon": "ranger", "name": "Dwarf Rangers", "qty": 2, "note": "Recrutement unique de Valmir grâce à son statut de Dwarf-Friend (faction) : rôdeurs nains à arbalète, tir d'élite fiable et endurant qui incarne son alliance avec les Dawi"},
+        {"icon": "ranger", "name": "Rangers (Dwarfs)", "qty": 2, "note": "Recrutement unique de Valmir grâce à son statut de Dwarf-Friend (faction) : rôdeurs nains à arbalète, tir d'élite fiable et endurant qui incarne son alliance avec les Dawi"},
         {"icon": "tebBorderRangers", "name": "Border Rangers", "qty": 2, "note": "« Pour qui est assez rusé et coriace, un Orc n'est qu'une proie de plus » — tirailleurs des Borderlands, mobiles et anti-grosse-cible, idéaux pour harceler et vieillir vers le rang 7"},
         {"icon": "tebHandgunners", "name": "Handgunners", "qty": 2, "note": "Arquebusiers du sud — moins à l'aise que les Impériaux avec la poudre noire, mais leurs armes « frappent fort » : tir perforant contre l'infanterie blindée"},
         {"icon": "tebPavisiers", "name": "Pavise Crossbowmen", "qty": 1, "note": "Arbalétriers protégés d'énormes pavois de bois, qui ripostent en relative impunité — ligne de tir durable qui tient sous le feu adverse"},

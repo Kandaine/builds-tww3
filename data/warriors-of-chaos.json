@@ -22,7 +22,7 @@
       "army": [
         {"icon": "chosenGreatWeapons", "name": "Chosen (Great Weapons)", "qty": 4, "note": "Ward Save +5% et progression de puissance d'arme par rang (seigneur) — l'infanterie la plus dévastatrice du jeu une fois montée en rang"},
         {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 3, "note": "Même double bonus (seigneur) — cœur de mêlée mortel robuste ; réduit d'une unité pour libérer l'emplacement de Slambo, les quatre Chosen tenant déjà le centre"},
-        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Hallebardes)", "qty": 3, "note": "Hallebardiers du Chaos Indivis, l'ancre de l'Everchosen : ils tiennent le centre pendant que sa garde d'élite manœuvre"},
+        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Halberds)", "qty": 3, "note": "Hallebardiers du Chaos Indivis, l'ancre de l'Everchosen : ils tiennent le centre pendant que sa garde d'élite manœuvre"},
         {"icon": "swordsOfChaos", "name": "Swords of Chaos (Chaos Knights)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité \"Apocalyptic Charge (Empowered)\" (+35% masse, +20% vitesse et bonus de charge sur 35m, faction), plus le double bonus de rang/Ward Save (seigneur) — la propre garde personnelle d'Archaon, dévastatrice en charge"},
         {"icon": "chaosKnightsLances", "name": "Chaos Knights (Lances)", "qty": 3, "note": "Même double bonus de rang/Ward Save (seigneur) — cavalerie lourde de choc"},
         {"icon": "maraudersHorsemen", "name": "Marauder Horsemen", "qty": 1, "note": "Cavalerie légère bon marché pour flanquer et pourchasser les tireurs isolés"},
@@ -181,7 +181,7 @@
       ],
       "army": [
         {"icon": "chaosWarriorsNurgle", "name": "Chaos Warriors of Nurgle", "qty": 4, "note": "Cœur de mêlée mortel marqué Nurgle, increvable"},
-        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Hallebardes)", "qty": 2, "note": "Anti-cavalerie et anti-monstre fiable"},
+        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Halberds)", "qty": 2, "note": "Anti-cavalerie et anti-monstre fiable"},
         {"icon": "maraudersWoC", "name": "Marauders", "qty": 3, "note": "Infanterie de base qui absorbe les pertes sans que cela coûte : sur la fiche de Festus, la régénération transforme des troupes jetables en ligne durable"},
         {"icon": "theDaemonspew", "name": "The Daemonspew (Forsaken)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — monstruosités mutées imprévisibles, gagnant en puissance à chaque coup porté"},
         {"icon": "chaosGiant", "name": "Chaos Giant", "qty": 2, "note": "Géant du Chaos — la masse brute qui manque à une armée de pestiférés lents et peu mobiles"},
@@ -340,7 +340,7 @@
       ],
       "army": [
         {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 2, "note": "Le socle blindé, et de l'infanterie de mêlée : premier bénéficiaire du <strong>+8 d'attaque en mêlée</strong> (faction)"},
-        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Undivided, Hallebardes)", "qty": 2, "note": "La réponse à la cavalerie et aux monstres — une armée d'infanterie doit se protéger elle-même de ce qui la contourne"},
+        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Halberds)", "qty": 2, "note": "La réponse à la cavalerie et aux monstres — une armée d'infanterie doit se protéger elle-même de ce qui la contourne"},
         {"icon": "chosenGreatWeapons", "name": "Chosen (Great Weapons)", "qty": 2, "note": "L'élite de l'infanterie de mêlée : le <strong>+8 d'attaque en mêlée</strong> s'y ajoute à une base déjà très haute, et les armes lourdes ouvrent le blindage"},
         {"icon": "swordsOfChaos", "name": "Swords of Chaos (Chaos Knights)", "qty": 1, "note": "Régiment favori (cap 1) — sa capacité <strong>\"Apocalyptic Charge\"</strong> est <strong>améliorée</strong> par la faction et devient une Augmentation de <strong>zone</strong> : <strong>+35% de masse</strong>, <strong>+20% de vitesse de charge</strong> et <strong>+20% de bonus de charge</strong> à tous les alliés dans 35m. C'est le seul effet de la fiche qui profite à l'armée entière"},
         {"icon": "chaosKnightsLances", "name": "Chaos Knights (Lances)", "qty": 2, "note": "La cavalerie de choc qui accompagne les Swords of Chaos dans leur charge — elle ne reçoit pas le bonus d'infanterie, mais elle reçoit l'aura de charge du régiment favori"},
@@ -375,7 +375,7 @@
       ],
       "army": [
         {"icon": "chaosWarriorsTzeentch", "name": "Chaos Warriors of Tzeentch", "qty": 3, "note": "Le cœur de la fiche : <strong>+5 de défense en mêlée</strong> (faction), et la Barrière de Tzeentch par-dessus. C'est sur eux qu'on reçoit la charge"},
-        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Undivided, Hallebardes)", "qty": 2, "note": "Mêmes <strong>+5 de défense en mêlée</strong>, mais en hallebardes : c'est la ligne qui reçoit spécifiquement la cavalerie et les monstres"},
+        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Halberds)", "qty": 2, "note": "Mêmes <strong>+5 de défense en mêlée</strong>, mais en hallebardes : c'est la ligne qui reçoit spécifiquement la cavalerie et les monstres"},
         {"icon": "chaosKnightsTzeentch", "name": "Chaos Knights of Tzeentch", "qty": 2, "note": "Troisième bénéficiaire du <strong>+5 de défense en mêlée</strong> (faction) — une cavalerie lourde qui encaisse, à utiliser en contre-charge plutôt qu'en ouverture"},
         {"icon": "forsakenTzeentch", "name": "Forsaken of Tzeentch", "qty": 2, "note": "Infanterie mutante rapide — la seule pièce de la liste qui va chercher l'ennemi au lieu de l'attendre"},
         {"icon": "chaosWarhoundsWoC", "name": "Chaos Warhounds", "qty": 2, "note": "<strong>+10% de renouvellement des pertes</strong> (faction) : le mod pousse explicitement à en aligner beaucoup et à les sacrifier, puisqu'ils reviennent plus vite que le reste"},

@@ -50,7 +50,7 @@
       "army": [
         {"icon": "slayer", "name": "Slayers", "qty": 10, "note": "Cœur de l'armée — -50% de coût de recrutement (faction) et -25% d'entretien (seigneur) permettent d'en aligner une horde bien plus dense que la normale, chacun frappant +5 en mêlée et rendu increvable tant que ses PV restent au-dessus de 75% grâce à Journey's End (seigneur)"},
         {"icon": "dragonbackSlayers", "name": "Dragonback Slayers (Slayers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Slayers, également couverte par le -25% d'entretien et le +5 de mêlée de Journey's End (seigneur)"},
-        {"icon": "irondrake", "name": "Irondrakes (Trollhammer Torpedoes)", "qty": 2, "note": "Anti-monstre et anti-blindé à distance, en soutien de la horde de Slayers"},
+        {"icon": "irondrakesTrollhammer", "name": "Irondrakes (Trollhammer Torpedoes)", "qty": 2, "note": "Anti-monstre et anti-blindé à distance, en soutien de la horde de Slayers"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "Ligne de tir polyvalente derrière les Slayers"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — le tir qui couvre la charge suicidaire des Slayers, seule chose qui empêche le Roi Tueur de perdre son armée avant le contact"},
         {"icon": "quarreller", "name": "Quarrellers", "qty": 2, "note": "Tir de précision complémentaire"}
@@ -112,7 +112,7 @@
         {"icon": "grudgeThrower", "name": "Grudge Throwers", "qty": 3, "note": "Artillerie de siège — même bonus de rechargement, pour une cadence de tir nettement supérieure à la normale"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 4, "note": "Ligne de front blindée, renforcée par le +10 d'armure de Thorek"},
         {"icon": "longbeard", "name": "Longbeards", "qty": 3, "note": "Rupture de ligne une fois l'ennemi affaibli par les tirs, solide grâce au +10 d'armure de Thorek"},
-        {"icon": "grumblingGuard", "name": "The Grumbling Guard (Longbeards - Grande Arme)", "qty": 2, "note": "Régiment favori de Thorek : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Longbeards (Grande Arme), également couverte par le +10 d'armure"}
+        {"icon": "grumblingGuard", "name": "The Grumbling Guard (Longbeards – Great Weapons)", "qty": 2, "note": "Régiment favori de Thorek : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Longbeards (Grande Arme), également couverte par le +10 d'armure"}
       ],
       "magic": "Runic Magic (Lore of the Runes) : Master Rune of Wrath & Ruin en priorité pour punir les blocs d'infanterie ennemis, complétée par les runes de protection sur sa propre ligne — d'autant plus abordable grâce au -25% de coût en Oathgold pour la forge de Runes (faction).",
       "note": "Thorek n'est pas fait pour le duel malgré sa robustesse : garde-le derrière la ligne de tir et laisse Ironbreakers et Longbeards absorber le choc pendant que Quarrellers et Grudge Throwers exploitent la cadence de tir améliorée. Le +20% d'Oathgold généré par les bâtiments (faction) accélère aussi le rythme auquel tu peux financer de nouvelles Runes."
@@ -200,7 +200,7 @@
       ],
       "army": [
         {"icon": "minersBlastingCharges", "name": "Miners (Blasting Charges)", "qty": 3, "note": "Attribut Wallbreaker (+50% de dégâts contre les bâtiments, faction), +8 de Commandement et surtout +100% de Munitions (seigneur) qui double leur réserve de charges explosives — infanterie souterraine qui surgit derrière les lignes, abat les murs en siège et sature l'ennemi de bombes"},
-        {"icon": "ekrundMiners", "name": "Ekrund Miners (Miners - Blasting Charges)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Miners à charges explosives, dont les bombes profitent à plein du +100% de Munitions (seigneur), en plus du Wallbreaker (faction) et du +8 de Commandement (seigneur)"},
+        {"icon": "ekrundMiners", "name": "Ekrund Miners (Miners – Blasting Charges)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Miners à charges explosives, dont les bombes profitent à plein du +100% de Munitions (seigneur), en plus du Wallbreaker (faction) et du +8 de Commandement (seigneur)"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 4, "note": "+8 de Commandement (seigneur) — mur d'acier de Karak Azul, l'infanterie lourde la plus tenace des Nains, cœur défensif indéboulonnable"},
         {"icon": "irondrake", "name": "Irondrakes", "qty": 3, "note": "Fierté métallurgique de Karak Azul — tir perforant à courte portée qui fait fondre l'infanterie lourde et les monstres"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable. Gunline à distance pour éroder l'ennemi avant le contact — réduite à un exemplaire pour libérer l'emplacement de Kazrik, les trois Irondrakes assurant l'essentiel du tir"},
@@ -301,7 +301,7 @@
         {"icon": "torstonTreehaka", "name": "Torston Treehaka", "qty": 1, "note": "Second héros légendaire du mod pour cette faction. Deux héros légendaires gratuits en plus des Master Engineers : c'est une densité de personnages que peu de holds atteignent"}
       ],
       "army": [
-        {"icon": "ekrundMiners", "name": "Ekrund Miners", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — les mineurs d'Ekrund, la cité que Byrrnoth veut reprendre de l'autre côté du Golfe. Ils creusent sous les lignes adverses et sortent derrière l'artillerie"},
+        {"icon": "ekrundMiners", "name": "Ekrund Miners (Miners – Blasting Charges)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — les mineurs d'Ekrund, la cité que Byrrnoth veut reprendre de l'autre côté du Golfe. Ils creusent sous les lignes adverses et sortent derrière l'artillerie"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "L'épine dorsale de tir de Barak Varr — les Master Engineers augmentent leur précision, et le hold est le centre de la poudre naine avec Zhufbar"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers. Barak Varr arme ses navires comme ses murs : le tir de poudre est la tradition militaire de ce port"},
         {"icon": "irondrake", "name": "Irondrakes", "qty": 2, "note": "Courte portée mais dégâts massifs et blindage lourd — ils tiennent le centre de la ligne là où les Thunderers ne peuvent pas encaisser"},
@@ -334,7 +334,7 @@
         {"icon": "princeHamnir", "name": "Prince Hamnir Ranulfsson", "qty": 1, "note": "Héros légendaire du mod, propre à Karak Hirn — le fils d'Alrik. Un Thane légendaire de plus, gratuit, dans une faction qui joue justement les Thanes"}
       ],
       "army": [
-        {"icon": "grumblingGuard", "name": "Grumbling Guard (Longbeards)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — l'élite des Longues Barbes, qui cumule le <strong>-50% d'entretien</strong>, le <strong>+3 de rang</strong> et le <strong>+10% de puissance d'arme</strong>. Aucune autre unité de la fiche ne reçoit les trois"},
+        {"icon": "grumblingGuard", "name": "The Grumbling Guard (Longbeards – Great Weapons)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — l'élite des Longues Barbes, qui cumule le <strong>-50% d'entretien</strong>, le <strong>+3 de rang</strong> et le <strong>+10% de puissance d'arme</strong>. Aucune autre unité de la fiche ne reçoit les trois"},
         {"icon": "longbeard", "name": "Longbeards", "qty": 5, "note": "Le cœur, à moitié prix. Leur aura de Commandement stabilise toute la ligne, et le <strong>+3 de rang</strong> du seigneur les fait entrer en campagne déjà vétérans — un avantage qui ne se voit pas dans les statistiques affichées mais qui change les premiers tours"},
         {"icon": "hammerer", "name": "Hammerers", "qty": 2, "note": "Les gardes du roi — anti-armure et Inébranlables. C'est la réponse aux unités blindées que les Longbeards traitent mal, et le <strong>+10% de puissance d'arme</strong> les concerne aussi"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 2, "note": "Le point d'ancrage défensif — là où la ligne doit tenir sans céder un pouce pendant que les Grudge Throwers travaillent"},
@@ -397,7 +397,7 @@
         {"icon": "runesmith", "name": "Runesmith", "qty": 1, "note": "Protection anti-magie. Une armée qui repose sur la Résistance physique reste entièrement vulnérable aux dégâts magiques — c'est la faille exacte que le Runesmith comble"}
       ],
       "army": [
-        {"icon": "ekrundMiners", "name": "Ekrund Miners", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — et ils cumulent les trois bonus du seigneur, comme tous les Miners"},
+        {"icon": "ekrundMiners", "name": "Ekrund Miners (Miners – Blasting Charges)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — et ils cumulent les trois bonus du seigneur, comme tous les Miners"},
         {"icon": "minersBlastingCharges", "name": "Miners (Blasting Charges)", "qty": 3, "note": "Les charges explosives ajoutent la frappe anti-blindage qui manque à la liste. Avec le <strong>+2 de rang</strong> et le <strong>+10% de puissance d'arme</strong>, ce ne sont plus des ouvriers armés mais une vraie unité de rupture"},
         {"icon": "miner", "name": "Miners", "qty": 2, "note": "Version standard, moins chère — elles servent à saturer les flancs et à occuper l'artillerie adverse pendant que la ligne principale avance"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 5, "note": "Le cœur de la fiche : <strong>-50% d'entretien</strong> (faction) plus les trois bonus du seigneur. Cinq exemplaires forment un mur que rien de non magique ne perce, et c'est exactement le plan"},
@@ -469,7 +469,7 @@
         {"icon": "flameCannon", "name": "Flame Cannon", "qty": 1, "note": "Courte portée mais dévastatrice contre l'infanterie groupée qui parvient malgré tout à s'approcher"},
         {"icon": "theSkyhammer", "name": "Skyhammer Squadron (Gyrobombers)", "qty": 1, "note": "Régiment favori (cap 1) — <strong>+12% de Sauvegarde de Zèle</strong> (faction). Un gyrobombardier survit rarement à une campagne ; celui-ci est le seul que le mod ait pris la peine de protéger"},
         {"icon": "gyrobomber", "name": "Gyrobombers", "qty": 1, "note": "La version ordinaire, en complément — le bombardement en piqué que l'artillerie au sol ne peut pas reproduire"},
-        {"icon": "irondrake", "name": "Irondrake", "qty": 2, "note": "Infanterie à feu lourde : elle protège les machines de ce qui les atteint, tout en continuant à tirer"},
+        {"icon": "irondrake", "name": "Irondrakes", "qty": 2, "note": "Infanterie à feu lourde : elle protège les machines de ce qui les atteint, tout en continuant à tirer"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Le volume de tir de la ligne, à <strong>+10% de portée</strong> (faction) — cela suffit souvent à décharger une salve de plus avant le contact"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 3, "note": "Le mur. Une armée d'artillerie sans point dur devant est une armée qui perd d'un seul assaut"}
       ],

@@ -16,7 +16,7 @@
       "lord": {"icon": "nagash", "name": "Nagash", "qty": 1, "note": "Le Grand Nécromancien, caster suprême — son -25% de ratage de sort (seigneur) et sa maîtrise de la Lore of Undeath en font le plus dangereux lanceur de sorts du monde, tandis que « The Curse » (62-125 dégâts/s en zone sur les ennemis sous 50% PV, seigneur) achève les formations nombreuses ; il monte en puissance jusqu'à sa forme de Suprême Seigneur de la Mort-Vivance"},
       "heroes": [
         {"icon": "lichePriest", "name": "Liche Priest (Undeath)", "qty": 1, "note": "Prêtre-liche initié à la Lore of Undeath propre à Nagash — soutien magique et invocations, profite lui aussi du -25% de ratage de sort (seigneur)"},
-        {"icon": "necromancer", "name": "Master Necromancer", "qty": 1, "note": "Maître nécromancien — Invocation des morts et Vanhel's Danse Macabre pour renforcer la ligne et relever des unités en plein combat"},
+        {"icon": "masterNecromancer", "name": "Master Necromancer", "qty": 1, "note": "Maître nécromancien — Invocation des morts et Vanhel's Danse Macabre pour renforcer la ligne et relever des unités en plein combat"},
         {"icon": "vampireHeroDeath", "name": "Vampire (Death)", "qty": 1, "note": "Vampire lanceur de la Lore of Death — duelliste-caster qui protège les nécromanciens et draine la vie des cibles isolées"}
       ],
       "army": [

@@ -213,7 +213,7 @@
         {"icon": "waystalker", "name": "Waystalker", "qty": 1, "note": "Assassine tireuse d'élite — abat les seigneurs, héros et casters ennemis à distance"}
       ],
       "army": [
-        {"icon": "eternalGuardShield", "name": "Eternal Guard", "qty": 4, "note": "+10 d'armure (faction) — mur de piquiers Sylvains, anti-charge tenace, cœur défensif de l'armée"},
+        {"icon": "eternalGuard", "name": "Eternal Guard", "qty": 4, "note": "+10 d'armure (faction) — mur de piquiers Sylvains, anti-charge tenace, cœur défensif de l'armée"},
         {"icon": "winterheartGuard", "name": "Winterheart Guard (Eternal Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — variante d'élite des Eternal Guard, encore plus tenace, profite aussi du +10 d'armure"},
         {"icon": "wildwoodRangers", "name": "Wildwood Rangers", "qty": 3, "note": "+10 d'armure (faction) — anti-grande cible qui protège le mur des monstres, d'autant plus coriace grâce à l'artisanat de Daith"},
         {"icon": "gladeGuard", "name": "Glade Guard", "qty": 3, "note": "+10 d'armure (faction) — archers Sylvains qui survivent bien mieux au tir de contre-batterie derrière le mur"},
@@ -250,7 +250,7 @@
         {"icon": "waywatchers", "name": "Waywatchers", "qty": 3, "note": "Cités nommément par l'effet de faction. Infiltrés et perforants, ils tiennent les flancs et démontent l'artillerie adverse"},
         {"icon": "gladeGuard", "name": "Glade Guard", "qty": 4, "note": "Le volume de tir de base, également cité par l'effet de faction. À <strong>-25% d'entretien</strong>, quatre unités ne pèsent presque rien sur le trésor"},
         {"icon": "deepwoodScouts", "name": "Deepwood Scouts", "qty": 3, "note": "Troisième unité citée nommément — leur infiltration permet d'ouvrir le feu avant même que la bataille ne commence vraiment"},
-        {"icon": "eternalGuardShield", "name": "Eternal Guard (Boucliers)", "qty": 2, "note": "L'écran d'infanterie. Une armée aussi tournée vers le tir a besoin d'un mur, et le <strong>+6 de Commandement</strong> de l'aura les aide à tenir"},
+        {"icon": "eternalGuardShield", "name": "Eternal Guard (Shields)", "qty": 2, "note": "L'écran d'infanterie. Une armée aussi tournée vers le tir a besoin d'un mur, et le <strong>+6 de Commandement</strong> de l'aura les aide à tenir"},
         {"icon": "wildwoodRangers", "name": "Wildwood Rangers", "qty": 2, "note": "L'anti-monstre de la liste — les archers sylvains ne traitent pas les grosses cibles blindées, eux si"}
       ],
       "magic": "Aucun lanceur de sorts : les trois emplacements de héros vont à Skaw the Falconer et à deux Waystalkers, tous orientés vers le tir. C'est un choix assumé — la magie sylvaine est bonne, mais aucun effet d'Oreon ne la concerne, alors que trois effets se cumulent sur l'archerie. Si vous préférez une Spellsinger, retirez un Waystalker.",
@@ -275,14 +275,14 @@
       "heroes": [
         {"icon": "skawTheFalconer", "name": "Skaw the Falconer", "qty": 1, "note": "Héros légendaire du mod, commun aux deux factions sylvaines de ce mod"},
         {"icon": "branchwraith", "name": "Branchwraith", "qty": 1, "note": "L'esprit de la forêt — thématiquement au cœur d'une faction dont tous les bonus dépendent du terrain boisé, et elle renforce les Dryads du corps d'armée"},
-        {"icon": "spellsingerLife", "name": "Spellsinger (Vie)", "qty": 1, "note": "Le Savoir de la Vie soigne, ce qui compte dans une armée de mêlée sans armure. C'est la seule magie de la liste"}
+        {"icon": "spellsingerLife", "name": "Spellsinger (Life)", "qty": 1, "note": "Le Savoir de la Vie soigne, ce qui compte dans une armée de mêlée sans armure. C'est la seule magie de la liste"}
       ],
       "army": [
         {"icon": "wraithsOfTheFrozenHeart", "name": "Wraiths of the Frozen Heart (Dryads)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des Dryads, et l'unité la plus à l'aise dans les combats en forêt que cette faction recherche"},
         {"icon": "dryads", "name": "Dryads", "qty": 3, "note": "Rapides, sans armure mais très mobiles — elles exploitent pleinement le <strong>+8 d'Attaque de mêlée en forêt</strong> et le <strong>+15% de Vitesse</strong> du seigneur"},
         {"icon": "treeKin", "name": "Tree Kin", "qty": 2, "note": "Le point dur de la ligne — infanterie monstrueuse résistante, là où les Dryads ne font qu'harceler"},
         {"icon": "treeman", "name": "Treeman", "qty": 1, "note": "La grande pièce de rupture. Un seul exemplaire : cette armée gagne par le nombre de menaces simultanées, pas par une pièce maîtresse"},
-        {"icon": "eternalGuardShield", "name": "Eternal Guard (Boucliers)", "qty": 3, "note": "L'infanterie de ligne elfe, qui profite directement du <strong>+10 de Commandement en forêt</strong> — son point faible habituel"},
+        {"icon": "eternalGuardShield", "name": "Eternal Guard (Shields)", "qty": 3, "note": "L'infanterie de ligne elfe, qui profite directement du <strong>+10 de Commandement en forêt</strong> — son point faible habituel"},
         {"icon": "gladeGuard", "name": "Glade Guard", "qty": 3, "note": "Le tir minimal. Marrisith n'accorde <strong>aucun</strong> bonus de tir, contrairement à Prince Oreon juste au-dessus : trois unités suffisent à ne pas subir l'approche"},
         {"icon": "wildRidersShield", "name": "Wild Riders (Shields)", "qty": 2, "note": "La cavalerie de choc sylvaine — avec <strong>+15% de Vitesse</strong>, elle arrive sur les flancs avant que l'adversaire n'ait fini de se déployer"}
       ],
