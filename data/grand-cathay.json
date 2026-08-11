@@ -25,7 +25,8 @@
         {"icon": "nanGauGrenadiers", "name": "Nan-Gau Grenadiers", "qty": 3, "note": "Même triple bonus (seigneur) — grenades à effet de zone dévastatrices"},
         {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité Encourage et Immunité à la Fatigue (faction) — variante d'élite unique des Great Longma Riders"},
         {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "Cavalerie rapide qui protège les flancs de la ligne de tir sans jamais se fatiguer en chargeant"},
-        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 2, "note": "Ligne de mêlée d'élite pour protéger la ligne de tir"},
+        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 1, "note": "Ligne de mêlée d'élite pour protéger la ligne de tir"},
+        {"icon": "theDuneDragons", "name": "The Dune Dragons (Celestial Dragon Guard)", "qty": 1, "note": "Régiment de Renom de la Garde du Dragon Céleste, sur la fiche de la Dragonne du Nord dont c'est l'unité emblématique — même famille, même rôle de garde d'élite, sur le meilleur profil"},
         {"icon": "skyJunk", "name": "Sky-junk", "qty": 1, "note": "Bombardier volant pour appuyer la ligne de tir et chasser les tireurs isolés adverses"}
       ],
       "magic": "Miao Ying maîtrise Yin et une partie de Life (Earth Blood, Flesh to Stone, Regrowth) — rare capacité à soigner ses unités, précieuse pour préserver la ligne de tir sous le feu ennemi.",
@@ -59,7 +60,8 @@
         {"icon": "theDuneDragons", "name": "The Dune Dragons (Celestial Dragon Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +15 armure (faction) et -25% d'entretien mêlée (seigneur) — variante d'élite des Celestial Dragon Guard, en première ligne"},
         {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 1, "note": "+15 armure (faction) et -25% d'entretien mêlée (seigneur) — élite d'infanterie lourde en première ligne"},
         {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 2, "note": "+15 armure (faction) et -25% d'entretien mêlée (seigneur) — anti-cavalerie et anti-monstre fiable ; réduits d'une unité pour libérer l'emplacement de Xian Feng"},
-        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "Cavalerie rapide pour flanquer et pourchasser les tireurs adverses"},
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 1, "note": "Cavalerie rapide pour flanquer et pourchasser les tireurs adverses"},
+        {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment de Renom des Great Longma Riders — la cavalerie lourde des Provinces de l'Ouest, sur son meilleur profil"},
         {"icon": "fireRainRocketBattery", "name": "Fire Rain Rocket Battery", "qty": 2, "note": "Artillerie à zone d'effet pour briser les formations groupées avant l'impact"}
       ],
       "magic": "Zhao Ming maîtrise Metal et Yang (Plague of Rust, Dragon's Breath, Final Transmutation) — sa magie affaiblit les armures ennemies, en parfaite synergie avec un mur de mêlée lourd.",
@@ -93,7 +95,8 @@
         {"icon": "greatMoonBird", "name": "Great Moon Bird", "qty": 1, "note": "Même bonus d'entretien (seigneur) — monstre volant de soutien et de harcèlement"},
         {"icon": "jadeWarriors", "name": "Jade Warriors", "qty": 1, "note": "Ligne de tenue standard pour ancrer le front pendant que la ménagerie flanque"},
         {"icon": "peasantLongSpearmen", "name": "Peasant Long Spearmen", "qty": 2, "note": "Anti-charge bon marché en soutien"},
-        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "Cavalerie rapide pour exploiter les brèches ouvertes par la ménagerie"}
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 1, "note": "Cavalerie rapide pour exploiter les brèches ouvertes par la ménagerie"},
+        {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment de Renom des Great Longma Riders, porté par les lances de Wei-Jin — la capitale même dont Yuan Bo administre la cour"}
       ],
       "magic": "Yuan Bo maîtrise Yin et Light (Shem's Burning Gaze, Net of Amyntok, Comet of Casandora) — avec trois Astromancers, sa Maîtrise des Vents Élémentaires atteint +45% de puissance de sorts, rendant Comet of Casandora dévastateur.",
       "note": "Le -30% d'entretien sur cinq unités de monstres et créatures d'élite (seigneur), renforcé par le régiment favori des Onyx Crowmen (+1 capacité, faction), permet de constituer une ménagerie coûteuse à moindre prix, tandis que la réserve de magie agrandie (seigneur) et le +2 de capacité de héros Astromancer (faction) soutiennent un style de jeu très offensif en sorts."
@@ -123,7 +126,8 @@
         {"icon": "tigerWarriors", "name": "Tiger Warriors", "qty": 5, "note": "Même cumul de bonus (faction + seigneur + aura White Tiger) — infanterie rapide à double hache"},
         {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 2, "note": "Anti-cavalerie et anti-monstre pour épauler les Guerriers-Tigres"},
         {"icon": "jadeWarriorCrossbows", "name": "Jade Warrior Crossbows", "qty": 3, "note": "Soutien à distance pour préparer les charges d'embuscade"},
-        {"icon": "peasantArchers", "name": "Peasant Archers", "qty": 2, "note": "Tir de masse bon marché en complément"}
+        {"icon": "peasantArchers", "name": "Peasant Archers", "qty": 1, "note": "Tir de masse bon marché en complément"},
+        {"icon": "banditsOfTheSilverRoad", "name": "Bandits of the Silver Road (Peasant Archers)", "qty": 1, "note": "Régiment de Renom des Peasant Archers, brigands de la Route de la Soie ralliés à la cause — le meilleur profil d'une ligne de tir que Bhashiva construit sur le nombre"}
       ],
       "magic": "Bhashiva n'est pas une lanceuse de sorts — sa puissance vient de son agilité féline et de ses capacités d'embuscade, épaulées par l'Astromancer pour le soutien magique.",
       "note": "Cette armée pousse le thème Tiger Warrior à son maximum : dix unités Iron Claw Tiger Warriors et Tiger Warriors cumulent l'entretien réduit (faction), les bonus d'embuscade et de remplacement des pertes (seigneur), et l'aura permanente White Tiger (+8 commandement, +5 attaque en mêlée à 55m, seigneur) qui ne demande qu'à rester groupée pour frapper d'une seule masse increvable."
@@ -191,7 +195,8 @@
         {"icon": "ninthWallGunners", "name": "Ninth Wall Gunners", "qty": 2, "note": "Le tir de la Forbidden Army, débloqué par le <strong>Neuvième Mur</strong>. Seule unité de la liste à profiter pleinement du <strong>+3% de puissance de tir par rang</strong>, qui vaut aussi bien pour les projectiles que pour la mêlée"},
         {"icon": "guardOfTheJadeCourt", "name": "Guard of the Jade Court", "qty": 1, "note": "Débloquée par le <strong>Palais des Rouleaux</strong>. Un seul régiment : le site est unique, et la faction est déjà à <strong>-40 de posture</strong> avec la Cour de Jade dont ces gardes portent le nom"},
         {"icon": "moonlightTemplars", "name": "Moonlight Templars", "qty": 1, "note": "La plus singulière des Forbidden Army, débloquée par les <strong>Jardins du Paradis</strong>. Archères attachées à l'Impératrice de la Lune, dont les flèches sont réputées capables d'éteindre le soleil"},
-        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 2, "note": "Première des sept unités vanilla nommées par la faction : <strong>+6 de défense en mêlée à partir du rang 7</strong>. C'est la légion que ce seigneur commande en propre, et le socle bon marché de la ligne"},
+        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 1, "note": "Première des sept unités vanilla nommées par la faction : <strong>+6 de défense en mêlée à partir du rang 7</strong>. C'est la légion que ce seigneur commande en propre, et le socle bon marché de la ligne"},
+        {"icon": "theDuneDragons", "name": "The Dune Dragons (Celestial Dragon Guard)", "qty": 1, "note": "Régiment de Renom de la Garde du Dragon Céleste, l'élite que l'Élu de l'Empereur peut légitimement mener au combat"},
         {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 1, "note": "Également citées par le bonus de rang 7. Réponse anti-cavalerie et anti-monstre, que le <strong>+3% de puissance d'arme par rang</strong> transforme en outil sérieux une fois vétérane"},
         {"icon": "dragonGuardCrossbowmen", "name": "Dragon Guard Crossbowmen", "qty": 1, "note": "Le tir d'appoint, présent dès l'armée de départ. Rien dans le kit ne le cible nommément, mais le <strong>+3% de puissance de tir par rang</strong> s'applique bien aux projectiles"}
       ],
@@ -357,7 +362,8 @@
         {"icon": "greatBastionWardens", "name": "Great Bastion Wardens", "qty": 3, "note": "La première des deux unités Wardens, débloquée en portant le <strong>Bastion Gatehouse au niveau 3</strong> — la Bastion Citadel. Elles reçoivent le <strong>+10/+10</strong> de la faction et forment le mur derrière lequel la cavalerie manœuvre"},
         {"icon": "divineShockWardens", "name": "Divine Shock Wardens", "qty": 3, "note": "La seconde, débloquée au <strong>niveau 4</strong>. Même <strong>+10/+10</strong>, mais un profil de choc : elles ouvrent la brèche que les Great Bastion Wardens se contenteraient de tenir"},
         {"icon": "jadeLancers", "name": "Jade Lancers", "qty": 3, "note": "La cavalerie lourde. <strong>+15% de charge</strong> de la faction et <strong>+8 d'attaque</strong> du seigneur se cumulent sur le profil qui en tire le plus — c'est le marteau de cette fiche"},
-        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 3, "note": "L'élite montée de Cathay, également couverte par les deux bonus de cavalerie. Elle traite les grandes cibles que les lanciers ne percent pas"},
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "L'élite montée de Cathay, également couverte par les deux bonus de cavalerie. Elle traite les grandes cibles que les lanciers ne percent pas"},
+        {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment de Renom des Great Longma Riders. Chez le Pourfendeur de Hordes, dont la doctrine est la charge décisive, c'est la meilleure lance disponible"},
         {"icon": "peasantHorsemen", "name": "Peasant Horsemen", "qty": 1, "note": "La cavalerie légère, bon marché et incluse elle aussi dans le <strong>+15% de charge</strong>. Elle poursuit et harcèle pendant que la cavalerie lourde se replace"},
         {"icon": "craneGunners", "name": "Crane Gunners", "qty": 2, "note": "Le seul tir de la fiche. Contre les hordes du Chaos que ce seigneur est conçu pour affronter, un tir perforant à longue portée entame l'infanterie lourde avant le contact"}
       ],

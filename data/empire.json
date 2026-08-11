@@ -61,7 +61,7 @@
       "army": [
         {"icon": "carroburgGreatswords", "name": "Carroburg Greatswords (Greatswords)", "qty": 1, "note": "<strong>State Troop</strong> qui forme le bloc principal de la fiche. Le <strong>+20 d'armure</strong> du seigneur s'applique à elle comme aux autres, sur un profil déjà d'élite"},
         {"icon": "greatswords", "name": "Greatswords", "qty": 3, "note": "+20 armure (seigneur) — infanterie d'élite à deux mains, cœur de mêlée increvable"},
-        {"icon": "swordsmen", "name": "Swordsmen", "qty": 1, "note": "+20 armure (seigneur) — infanterie de ligne polyvalente ; on en retire une pour libérer l'emplacement de Bassiano Dutra, les quatre unités de Greatswords tenant déjà le centre"},
+        {"icon": "manannsBlades", "name": "Manann's Blades (Swordsmen)", "qty": 1, "note": "Régiment de Renom des Swordsmen, couvert par le <strong>+20 d'armure</strong> que le seigneur accorde à toute son armée. Sur une fiche où la magie du Métal fait l'essentiel du travail offensif, cette infanterie d'élite tient la ligne assez longtemps pour que Gelt ait le temps de lancer"},
         {"icon": "swordsOfUlric", "name": "Swords of Ulric (Swordsmen)", "qty": 1, "note": "<strong>State Troop</strong> d'infanterie qui tient la ligne pendant que la magie du Métal opère. Gelt n'a aucun effet de mêlée : cette unité comble ce vide plutôt qu'elle n'exploite un bonus"},
         {"icon": "stirRiverPatrol", "name": "Stir River Patrol (Crossbowmen)", "qty": 1, "note": "<strong>State Troop</strong> d'arbalétriers. Sur la fiche du Patriarche Doré, dont toute la puissance est magique et pyrotechnique, elle fournit le tir soutenu qui ne consomme ni vents ni munitions rares"},
         {"icon": "theSilverBullets", "name": "The Silver Bullets (Handgunners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — +20 armure (seigneur), tir perforant d'élite"},
@@ -104,7 +104,8 @@
         {"icon": "eldredsGuard", "name": "Eldred's Guard (Spearmen – Shields)", "qty": 1, "note": "<strong>State Troop</strong> de lanciers au bouclier, la meilleure ancre disponible face aux charges de cavalerie froide et de monstres lustriens"},
         {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "-50% d'entretien (seigneur) — tireurs d'élite en embuscade, se déploient cachés"},
         {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — -50% d'entretien (seigneur), variante d'élite des Huntsmen dévouée à Ulric"},
-        {"icon": "archersEmpire", "name": "Archers", "qty": 4, "note": "-50% d'entretien (seigneur) — tir de masse bon marché"},
+        {"icon": "archersEmpire", "name": "Archers", "qty": 3, "note": "-50% d'entretien (seigneur) — tir de masse bon marché"},
+        {"icon": "deathjacks", "name": "Deathjacks (Archers)", "qty": 1, "note": "Régiment de Renom des Archers — l'unité signature du Grand Veneur, dont l'expédition en Lustrie repose sur le tir avant tout. Le meilleur exemplaire d'une famille qu'il aligne en nombre"},
         {"icon": "theBlackLions", "name": "The Black Lions (War Wagons – Helblasters)", "qty": 1, "note": "Le Régiment de Renom des War Wagons, avec des Helblasters montés. Attention au calendrier : cette faction a un <strong>roster limité</strong> au départ, et les Régiments de Renom arrivent par les renforts de l'Emperor's Mandate, pas par le recrutement immédiat"},
         {"icon": "warWagons", "name": "War Wagons", "qty": 2, "note": "Chariot de tir mobile, soutien blindé pour la ligne de tir"}
       ],
@@ -243,7 +244,8 @@
         {"icon": "theSilverBullets", "name": "The Silver Bullets (Handgunners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — Handgunners d'élite, Portée +20% (faction), fer de lance de la ligne de tir"},
         {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "<strong>State Troop</strong> de tir d'élite, sur la fiche du Hochland dont toute la réputation militaire tient à la précision de ses tireurs"},
         {"icon": "handgunners", "name": "Handgunners", "qty": 3, "note": "Portée +20% (faction) — cœur de la ligne de tir, tir perforant à longue portée contre l'infanterie lourde et les monstres"},
-        {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "Tirailleurs forestiers furtifs — infiltration et tir d'embuscade, redoutables en forêt (+10% force des armes, faction)"},
+        {"icon": "huntsmen", "name": "Huntsmen", "qty": 1, "note": "Tirailleurs forestiers furtifs — infiltration et tir d'embuscade, redoutables en forêt (+10% force des armes, faction)"},
+        {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 1, "note": "Régiment de Renom des Huntsmen, sur la fiche du Hochland dont toute la réputation militaire tient au tir de précision — c'est la meilleure version de son unité emblématique"},
         {"icon": "greatswords", "name": "Greatswords", "qty": 1, "note": "Infanterie d'élite à deux mains — tient le centre pendant que les canons à main pilonnent"},
         {"icon": "carroburgGreatswords", "name": "Carroburg Greatswords (Greatswords)", "qty": 1, "note": "<strong>State Troop</strong> d'infanterie lourde — le bloc qui tient le centre pendant que les Long Rifles et les Huntsmen travaillent depuis les hauteurs"},
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 1, "note": "Anti-grande cible — protège la ligne de tir des monstres et de la cavalerie"},
@@ -390,7 +392,8 @@
       "army": [
         {"icon": "deathjacks", "name": "Deathjacks (Archers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — archers d'élite, Précision +30% (faction), fer de lance du tir"},
         {"icon": "archersEmpire", "name": "Archers", "qty": 4, "note": "Précision +30% et -30% d'entretien (faction) — masse de tir à l'arc bon marché, tir en cloche par-dessus la ligne"},
-        {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "Précision +30% et -30% d'entretien (faction) — tirailleurs furtifs qui infiltrent et harcèlent les flancs"},
+        {"icon": "huntsmen", "name": "Huntsmen", "qty": 1, "note": "Précision +30% et -30% d'entretien (faction) — tirailleurs furtifs qui infiltrent et harcèlent les flancs"},
+        {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 1, "note": "Régiment de Renom des Huntsmen. La Stirland borde la Sylvanie : ces éclaireurs y valent autant pour repérer les levées de morts-vivants que pour les cribler"},
         {"icon": "stirlandsRevenge", "name": "Stirland's Revenge (Free Company)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — miliciens à deux armes rapides, profitent du +10% vitesse et +12% bonus de charge (seigneur)"},
         {"icon": "freeCompanyMilitia", "name": "Free Company Militia", "qty": 2, "note": "Milice mobile à deux armes — écran devant les archers et contre-charge rapide (seigneur)"},
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 1, "note": "Anti-grande cible — protège la ligne de tir des monstres et de la cavalerie lourde des morts-vivants"},
@@ -508,7 +511,7 @@
         {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "<strong>State Troop</strong> de tir — l'appui à distance d'une fiche massivement tournée vers la charge et le corps à corps"},
         {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 1, "note": "Régiment de Renom voué à Ulric — chasseurs d'élite de Middenheim en tir d'embuscade, l'écho des loups blancs du Graf"},
         {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Artillerie à tir direct contre monstres et grandes cibles des hordes bestiales"},
-        {"icon": "warWagons", "name": "War Wagons", "qty": 1, "note": "Plateforme de tir mobile qui suit le rythme de l'armée véloce de Boris"}
+        {"icon": "theBlackLions", "name": "The Black Lions (War Wagons - Helblasters)", "qty": 1, "note": "Régiment de Renom des War Wagons, en version Helblaster. Sur une fiche massivement tournée vers la charge, c'est la seule pièce mobile capable de délivrer un volume de feu au moment du contact"}
       ],
       "magic": "Boris n'est pas un lanceur de sorts — sa force est la charge et la traque. La bénédiction vient d'Ulric : Emil Valgeir et le Prêtre d'Ulric soutiennent les chevaliers par leurs hymnes et leurs faveurs martiales plutôt que par les Vents de Magie.",
       "note": "Une armée de chasse : le -100 de relations avec les Hommes-Bêtes (faction) rend la guerre contre les warherds inévitable — et c'est voulu, car en face rôde Khazrak le Borgne (fiche Hommes-Bêtes I), l'ennemi juré de Boris dans un duel d'estropiés que le mod fait vivre des deux côtés. Le -2 de corruption (toutes provinces, faction) assainit le Drakwald au fil de la reconquête, et la mobilité de Boris (Wayfarer/Strider, seigneur) permet de forcer les batailles contre des Bêtes qui préfèrent fuir et embusquer. Garde les chevaliers groupés pour des cycles charge-repli-recharge que leur -15% de fatigue (faction) rend quasi perpétuels."

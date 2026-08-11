@@ -470,7 +470,8 @@
         {"icon": "theSkyhammer", "name": "Skyhammer Squadron (Gyrobombers)", "qty": 1, "note": "Régiment favori (cap 1) — <strong>+12% de Sauvegarde de Zèle</strong> (faction). Un gyrobombardier survit rarement à une campagne ; celui-ci est le seul que le mod ait pris la peine de protéger"},
         {"icon": "gyrobomber", "name": "Gyrobombers", "qty": 1, "note": "La version ordinaire, en complément — le bombardement en piqué que l'artillerie au sol ne peut pas reproduire"},
         {"icon": "irondrake", "name": "Irondrakes", "qty": 2, "note": "Infanterie à feu lourde : elle protège les machines de ce qui les atteint, tout en continuant à tirer"},
-        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Le volume de tir de la ligne, à <strong>+10% de portée</strong> (faction) — cela suffit souvent à décharger une salve de plus avant le contact"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "Le volume de tir de la ligne, à <strong>+10% de portée</strong> (faction) — cela suffit souvent à décharger une salve de plus avant le contact"},
+        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers. Chez l'ingénieur de Zhufbar, la poudre n'est pas un appoint mais l'axe de la fiche : ce régiment en est le meilleur exemplaire"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 3, "note": "Le mur. Une armée d'artillerie sans point dur devant est une armée qui perd d'un seul assaut"}
       ],
       "magic": "Aucun lanceur de sorts : les Nains n'en ont pas, et cette fiche n'en a pas besoin. Le soutien passe entièrement par les héros — Gargul et le Master Engineer renforcent le tir, Rhobb tient la ligne. Wundal the Wizard, malgré son nom, n'est pas un magicien : ses camarades savent parfaitement qu'il n'en est pas un, et sa capacité s'appelle « Magical Frog ».",
