@@ -158,6 +158,16 @@ packs du jeu de base. Balayer les packs activés avant de déclarer une carte in
 méfier des cartes « voisines » : demander au user à quoi ressemble la sienne coûte moins cher qu'une
 substitution.
 
+**Troisième réflexe : varier le MOTIF de recherche, pas seulement les packs.** Un nom de fichier
+livré par CA peut contenir une faute de frappe. La carte des Blessed Saurus Spears s'appelle
+`wh2_main_lzd_inf_saurus_spearmen_shields_blesssed.png` — trois `s` à « blessed » — et une recherche
+sur `blessed` la manque, dans `ui.pack` comme ailleurs. J'avais conclu à son absence après avoir
+balayé les trois packs d'interface ; c'est en cherchant sur `saurus_spear` qu'elle est sortie.
+
+Chercher donc sur **la racine de la clé d'unité** autant que sur le qualificatif, et croiser avec
+`ui\units\minspec_portholes\` : le porthole d'une unité existe presque toujours, même quand la carte
+se dérobe, et sa présence prouve que l'unité est réelle avant qu'on aille chercher plus loin.
+
 Corollaire sur les noms suffixés : `..._ror` = Régiment de Renom (chercher dans `mercenary_*`),
 et un nom du type « <em>Garde de X</em> » / « <em>Retinue of X</em> » doit faire soupçonner une garde
 de seigneur plutôt qu'une unité recrutable.
