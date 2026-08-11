@@ -168,6 +168,17 @@ Chercher donc sur **la racine de la clé d'unité** autant que sur le qualificat
 `ui\units\minspec_portholes\` : le porthole d'une unité existe presque toujours, même quand la carte
 se dérobe, et sa présence prouve que l'unité est réelle avant qu'on aille chercher plus loin.
 
+**Et quand rien ne sort, cesser de chercher par motif : LISTER tout l'inventaire d'icônes du pack.**
+Un mod ne nomme pas forcément ses cartes d'après ses clés d'unité. `Champions_of_undeath` appelle
+`abby_ror_1`, `abby_ror_2` et `abby_ror_3` les trois « Disciples Of The Path » — *abby* pour
+Abhorash — et de même `bg_ror` pour Black Grail, `dg_ror` pour Depth Guard. Aucune recherche fondée
+sur `chosen_disciples_of_the_path` ne pouvait aboutir, et j'ai conclu à tort à l'absence des cartes
+après six tentatives ciblées. Les 107 entrées du pack, listées d'un bloc, ont donné la réponse en un
+coup d'œil.
+
+Un pack de mod contient rarement plus de deux cents icônes : les afficher toutes coûte une commande
+et supprime la question. Le faire **avant** de déclarer une carte introuvable, pas après.
+
 Corollaire sur les noms suffixés : `..._ror` = Régiment de Renom (chercher dans `mercenary_*`),
 et un nom du type « <em>Garde de X</em> » / « <em>Retinue of X</em> » doit faire soupçonner une garde
 de seigneur plutôt qu'une unité recrutable.
