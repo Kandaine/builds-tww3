@@ -72,6 +72,14 @@ contenu déclaré mais coupé. Le test diffère selon la nature — **unité** :
 complète en §2 bis de `references/analyse-pack.md`. Sur un seul mod, cette vérification a écarté
 quatre unités que j'avais déjà écrites dans les fiches.
 
+**Un nom générique peut masquer plusieurs unités distinctes.** Les suffixes `_0` / `_1` d'une même
+famille sont des unités séparées, avec leur propre carte, leur propre palier de bâtiment et souvent
+un armement différent — et un mod de renommage peut effacer la distinction visible. Avant de placer
+une unité, lister **toute la famille** par la racine de sa clé, puis croiser
+`unit_set_to_unit_junctions_tables` pour savoir lesquelles les effets du seigneur visent réellement.
+C'est ce qui a révélé que les Depth Guard Deck Watchers manquaient à la fiche de Red Aldrek alors
+que tous ses bonus les couvrent. Détail en §2 bis de `references/analyse-pack.md`.
+
 **Les effets doivent correspondre exactement aux captures du user.** Traduire, ne pas réinterpréter,
 ne pas arrondir, ne pas omettre les malus.
 

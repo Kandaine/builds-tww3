@@ -162,6 +162,41 @@ Corollaire sur les noms suffixés : `..._ror` = Régiment de Renom (chercher dan
 et un nom du type « <em>Garde de X</em> » / « <em>Retinue of X</em> » doit faire soupçonner une garde
 de seigneur plutôt qu'une unité recrutable.
 
+### Un nom générique peut masquer plusieurs unités distinctes
+
+Les suffixes `_0`, `_1`, `_2` d'une même famille ne sont pas des variantes cosmétiques : ce sont des
+**unités séparées**, avec leur propre carte, leur propre bâtiment de recrutement et souvent un
+armement différent. Le nom affiché ne le dit pas toujours, et un mod de renommage peut brouiller la
+piste dans les deux sens.
+
+```
+wh2_dlc11_cst_inf_depth_guard_0     = "Depth Guard"            -> renomme "Depth Guard Deck Ravagers"
+wh2_dlc11_cst_inf_depth_guard_1     = "Depth Guard (Polearms)" -> renomme "Depth Guard Deck Watchers"
+wh2_dlc11_cst_inf_depth_guard_ror_0 = "The Bloody Reaver Deck Guard"
+```
+
+Ici le jeu de base nommait le `_1` « Depth Guard (Polearms) », mais `Champions_of_undeath` renomme
+les deux, et le user ne voit en jeu **que** les noms du mod. Le site n'avait retenu qu'une entrée
+générique « Depth Guard » — donc une unité entière manquait, et la fiche de Red Aldrek, entièrement
+bâtie sur cette famille, était incomplète.
+
+**Deux vérifications, à faire ensemble :**
+
+1. **Lister toute la famille** avant de placer une unité — chercher la racine de la clé, pas le nom
+   affiché, et sortir les suffixes. Puis vérifier chacun dans `building_units_allowed_tables` :
+   les variantes n'ont pas le même palier (`_0` dès la Caserne 3, `_1` seulement à la Caserne 4).
+2. **Croiser avec `unit_set_to_unit_junctions_tables`.** C'est la table qui dit quelles clés un
+   effet de seigneur ou de faction vise réellement. Chez Red Aldrek, `wh2_dlc11_cst_depth_guard`
+   contient les **trois** clés : ses bonus d'entretien, son +25% de Force des armes au rang 7 et
+   l'aura « Guardian » couvrent donc aussi la variante hallebardes. Sans cette table, on suppose —
+   avec elle, on sait.
+
+Corollaire sur les variantes de mod : une variante peut exister sans être accessible. Champions of
+Undeath ajoute `depth_guard_crab_cav`, `depth_guard_serpeant_cav` et `depth_guard_elder_reaver`,
+mais leurs bâtiments sont `DG_*_horde_*` et `wh_mod_DG_adv_*` — les factions du mod lui-même. Aucun
+seigneur Vampire Coast n'y a accès. **Toujours repasser par le §2 bis** avant de placer une variante
+trouvée dans un mod.
+
 ---
 
 ## 3. Seigneur ou héros ?
