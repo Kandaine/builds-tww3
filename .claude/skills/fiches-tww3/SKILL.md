@@ -277,6 +277,20 @@ lui, est sensible à la casse et rattrapera l'erreur, mais seulement après coup
 PowerShell 5.1 lit l'UTF-8 sans BOM comme de l'ANSI : pour écrire du JSON ou du JS, utiliser
 `[System.IO.File]::ReadAllText` / `WriteAllText`.
 
+**Et un `byte[]` renvoyé par une fonction n'en est plus un.** `return $tableau` déroule le tableau
+dans le pipeline : l'appelant reçoit un `Object[]` d'octets boxés. Chaque appel ultérieur du type
+`[BitConverter]::ToUInt16($data,$i)` reconvertit alors le tableau **entier** pour satisfaire la
+signature — sur 700 Ko, environ 12 ms par appel. Un parseur de `.loc` est ainsi passé de 0,8 s à
+plus de 20 minutes, sans erreur ni message, uniquement un CPU à 100 %. Le symptôme est
+caractéristique : un script qui n'avance pas alors que les mêmes opérations, faites une seule fois
+dans un diagnostic, sont instantanées. Le remède tient en un typage explicite à la réception :
+
+```powershell
+[byte[]]$data = Expand-PackEntry $raw $comp
+```
+
+Vaut pour toute lecture binaire — packs, `.loc`, images.
+
 Le chemin d'image **déclaré dans `js/data.js` fait foi** : ne jamais déduire
 `assets/units/<clé>.png`. Des héros vivent dans `assets/portraits/`, et une clé peut pointer vers un
 nom de fichier différent.

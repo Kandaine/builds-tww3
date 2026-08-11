@@ -162,6 +162,35 @@ Corollaire sur les noms suffixés : `..._ror` = Régiment de Renom (chercher dan
 et un nom du type « <em>Garde de X</em> » / « <em>Retinue of X</em> » doit faire soupçonner une garde
 de seigneur plutôt qu'une unité recrutable.
 
+### Rattacher un RoR à son unité de base : la parenthèse ment parfois
+
+Le jeu écrit lui-même l'unité de base entre parenthèses dans le nom du régiment —
+`land_units_onscreen_name_wh2_dlc11_cst_inf_depth_guard_ror_0` vaut
+« The Bloody Reaver Deck Guard **(Depth Guard)** ». C'est la source la plus fiable pour savoir de
+quelle unité un RoR dérive, et elle vient des données, pas d'une convention du site.
+
+**Mais un nom affiché n'identifie pas une unité.** Deux mods peuvent baptiser identiquement deux
+unités sans rapport, et la parenthèse rattache alors le RoR à la mauvaise :
+
+```
+Aspiring Champions                            wh_dlc06_chs_inf_aspiring_champions_0    <- Chaos
+The Wolves of Naglfari (Aspiring Champions)   wolftribe_nor_inf_wolf_champions_ror_0   <- tribu norscane
+```
+
+Le régiment est norscan ; la parenthèse le faisait atterrir sur une fiche Tzeentch, chez un
+seigneur qui ne peut pas le recruter. Le user l'a vu sur la page avant moi.
+
+**Le garde-fou est la culture, lue dans la clé.** Extraire le segment de culture (`chs`, `nor`,
+`ksl`, `ogr`, `cst`, `hef`…) de la clé du RoR et de celle de l'unité de base retenue, et refuser le
+rattachement quand ils diffèrent. Sur une passe de 529 placements, ce seul test a isolé les 5 faux
+— invisibles autrement, puisque le nom, lui, correspondait parfaitement.
+
+Deux corollaires. La **dérivation par la clé** (retirer le segment `_ror`) est plus sûre que la
+parenthèse quand les deux répondent : elle ne peut pas confondre deux unités homonymes. Et une
+ambiguïté de préfixe n'est pas une erreur : `bur_wh3_main_ksl_inf_streltsi_0` et
+`wh3_main_ksl_inf_streltsi_0` sont la même unité redéclarée par un mod — même culture, donc
+inoffensif. C'est le croisement de **cultures** qui signale la faute, pas la simple pluralité de clés.
+
 ### Un nom générique peut masquer plusieurs unités distinctes
 
 Les suffixes `_0`, `_1`, `_2` d'une même famille ne sont pas des variantes cosmétiques : ce sont des

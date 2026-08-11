@@ -22,7 +22,8 @@
         {"icon": "nurglings", "name": "Nurglings", "qty": 2, "note": "+10% de points de vie de recrutement (faction) — chair à canon increvable et bon marché"},
         {"icon": "uncleFuruncle", "name": "Uncle Furuncle (Great Unclean One)", "qty": 1, "note": "Régiment favori : +15% de résistance aux tirs (faction) — Grand Démon monstrueux, point de rupture de la ligne ennemie"},
         {"icon": "plaguebearersOfNurgle", "name": "Plaguebearers of Nurgle", "qty": 5, "note": "+10% de points de vie de recrutement (faction) — infanterie démoniaque résiliente, cœur de la horde"},
-        {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 2, "note": "Version d'élite des Plaguebearers pour percer les lignes les plus dures"},
+        {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 1, "note": "Version d'élite des Plaguebearers pour percer les lignes les plus dures"},
+        {"icon": "festeringStooges", "name": "Festering Stooges (Exalted Plaguebearers of Nurgle)", "qty": 1, "note": "Régiment de Renom des Exalted Plaguebearers of Nurgle — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
         {"icon": "plagueToadsOfNurgle", "name": "Plague Toads of Nurgle", "qty": 2, "note": "Cavalerie démoniaque rapide pour percer les flancs"},
         {"icon": "plagueDronesOfNurgleDeathsHeads", "name": "Plague Drones of Nurgle (Death's Heads)", "qty": 2, "note": "Monstre volant démoniaque pour chasser l'artillerie et les tireurs isolés"},
         {"icon": "chaosFuriesNurgle", "name": "Chaos Furies (Nurgle)", "qty": 1, "note": "Harceleur volant rapide et bon marché"}
@@ -53,7 +54,8 @@
         {"icon": "festeringStooges", "name": "Festering Stooges (Exalted Plaguebearers of Nurgle)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +2 rang de recrutement (faction) — élite démoniaque recrutée déjà expérimentée"},
         {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 3, "note": "+2 rang de recrutement (faction) — version d'élite des Plaguebearers, déjà aguerrie"},
         {"icon": "plaguebearersOfNurgle", "name": "Plaguebearers of Nurgle", "qty": 5, "note": "+2 rang de recrutement (faction) — cœur de la horde démoniaque, déjà aguerri"},
-        {"icon": "nurglings", "name": "Nurglings", "qty": 2, "note": "Chair à canon increvable et bon marché"},
+        {"icon": "nurglings", "name": "Nurglings", "qty": 1, "note": "Chair à canon increvable et bon marché"},
+        {"icon": "frolickersBubonic", "name": "The Frolickers Bubonic (Nurglings)", "qty": 1, "note": "Régiment de Renom des Nurglings — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
         {"icon": "rotFlies", "name": "Rot Flies", "qty": 3, "note": "Monstre volant rapide pour chasser l'artillerie et les tireurs isolés"},
         {"icon": "plagueToadsOfNurgle", "name": "Plague Toads of Nurgle", "qty": 2, "note": "Cavalerie démoniaque rapide pour percer les flancs"}
       ],
@@ -114,8 +116,10 @@
         {"icon": "theDaemonspew", "name": "The Daemonspew (Forsaken)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des Forsaken, qui bénéficie aussi du <strong>+25% de santé au recrutement</strong>"},
         {"icon": "forsakenNurgle", "name": "Forsaken", "qty": 3, "note": "Cités nommément par l'effet de santé au recrutement. Ce sont eux qui s'accrochent au corps à corps le plus longtemps, donc eux qui font monter <strong>\"Shared Misery\"</strong> à son maximum"},
         {"icon": "plaguebearersOfNurgle", "name": "Plaguebearers of Nurgle", "qty": 4, "note": "Le socle démoniaque : lents, increvables et parfaitement adaptés à une bataille d'usure. Le <strong>+25% de santé au recrutement</strong> les rend encore plus durs à effacer"},
-        {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 3, "note": "La version supérieure, troisième unité citée par l'effet de faction — c'est le point dur de la ligne"},
-        {"icon": "nurglings", "name": "Nurglings", "qty": 2, "note": "Nuée bon marché qui fixe l'ennemi : chaque unité immobilisée au contact alimente <strong>\"Shared Misery\"</strong>"},
+        {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 2, "note": "La version supérieure, troisième unité citée par l'effet de faction — c'est le point dur de la ligne"},
+        {"icon": "festeringStooges", "name": "Festering Stooges (Exalted Plaguebearers of Nurgle)", "qty": 1, "note": "Régiment de Renom des Exalted Plaguebearers of Nurgle — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
+        {"icon": "nurglings", "name": "Nurglings", "qty": 1, "note": "Nuée bon marché qui fixe l'ennemi : chaque unité immobilisée au contact alimente <strong>\"Shared Misery\"</strong>"},
+        {"icon": "frolickersBubonic", "name": "The Frolickers Bubonic (Nurglings)", "qty": 1, "note": "Régiment de Renom des Nurglings — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
         {"icon": "plagueDronesOfNurgleDeathsHeads", "name": "Plague Drones of Nurgle (Death's Heads)", "qty": 2, "note": "La seule mobilité de la liste — elles vont chercher l'artillerie adverse, qui est la seule vraie réponse à une armée aussi lente"}
       ],
       "magic": "Deux Plagueriddens en <strong>Lore of Nurgle</strong> et un Chaos Sorcerer en <strong>Lore of Death</strong>. Le premier savoir est fait pour l'attrition — exactement le registre de cette fiche ; le second attaque le Commandement, ce qui prolonge les deux malus de moral déjà infligés par Valnir. Notez que Valnir lui-même n'accorde <strong>aucun</strong> bonus magique : ses effets sont des effets de campagne et de moral, ce qui laisse la magie jouer son rôle habituel sans amplification.",

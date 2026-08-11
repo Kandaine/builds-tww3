@@ -20,7 +20,8 @@
         {"icon": "blackJens", "name": "Black Jens (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, de classe <strong>ingénieur</strong> — la classe qui compte sur une faction dont toute la puissance passe par l'artillerie et les armes à poudre, et le complément naturel du Gunnery Wight"}
       ],
       "army": [
-        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 3, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
+        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 2, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
+        {"icon": "tideOfSkjold", "name": "The Tide of Skjold (Zombie Pirate Deckhand Mob)", "qty": 1, "note": "Régiment de Renom des Zombie Pirate Deckhand Mob — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
         {"icon": "zombieGunneryMob", "name": "Zombie Pirate Gunnery Mob", "qty": 2, "note": "Tir de ligne à courte portée, cœur offensif à distance"},
         {"icon": "blackSpot", "name": "The Black Spot (Gunnery Mob)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite de la Gunnery Mob, la propre garde de tir du Roi Pirate"},
         {"icon": "deckDroppers", "name": "Deck Droppers", "qty": 2, "note": "Harceleurs volants lance-grenades"},
@@ -56,7 +57,8 @@
       "army": [
         {"icon": "depthGuardDeckRavagers", "name": "Depth Guard Deck Ravagers", "qty": 1, "note": "Infanterie d'élite de départ, résistante et bien armée — la version épée-et-bouclier, accessible dès la Caserne 3"},
         {"icon": "bloodyReaverDeckGuard", "name": "The Bloody Reaver Deck Guard (Depth Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite du Depth Guard, forgée avec la magie de Noctilus lui-même"},
-        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 2, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
+        {"icon": "zombieDeckhands", "name": "Zombie Pirate Deckhand Mob", "qty": 1, "note": "Infanterie de ligne bon marché, chair à canon increvable"},
+        {"icon": "tideOfSkjold", "name": "The Tide of Skjold (Zombie Pirate Deckhand Mob)", "qty": 1, "note": "Régiment de Renom des Zombie Pirate Deckhand Mob — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
         {"icon": "zombieGunneryModHandguns", "name": "Zombie Pirate Gunnery Mob (Handguns)", "qty": 2, "note": "Tir à courte portée, soutien de la ligne"},
         {"icon": "gallowsGiant", "name": "Gallows Giant (Necrofex Colossus)", "qty": 1, "note": "Le Régiment de Renom des Necrofex Colossus. À profil comparable il passe devant un exemplaire standard, et il reçoit les mêmes bonus que le reste de la famille sur cette fiche"},
         {"icon": "necrofexColossus", "name": "Necrofex Colossus", "qty": 3, "note": "Grande taille — profite du +15% de puissance des armes (seigneur), de l'entretien réduit -20% et du recrutement accéléré (faction) ; pièce maîtresse de l'armée"},
