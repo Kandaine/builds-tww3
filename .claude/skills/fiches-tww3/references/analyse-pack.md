@@ -185,11 +185,42 @@ seigneur qui ne peut pas le recruter. Le user l'a vu sur la page avant moi.
 rattachement quand ils diffèrent. Sur une passe de 529 placements, ce seul test a isolé les 5 faux
 — invisibles autrement, puisque le nom, lui, correspondait parfaitement.
 
+**Et la parenthèse ne nomme pas toujours une unité.** Elle peut désigner l'**arme** du régiment :
+« Fooger's Houseguard (Greatswords) », clé `hkrul_fooger_ror`, n'a aucun lien avec l'unité
+Greatswords — c'est un régiment qui porte des épées à deux mains. La dérivation par la clé le disait
+(elle renvoyait « Arkat Fooger »), j'ai tranché pour la parenthèse, et le régiment est parti sur huit
+fiches de l'Empire. Même piège pour « The Great Mawherd of Bloodfjord (Feral Mammoths) », dont la clé
+`wh_dlc08_nor_mon_war_mammoth_ror_1` désigne le **War** Mammoth alors que les fiches visées alignent
+des Feral Mammoths.
+
+**Quand les deux méthodes se contredisent, la clé gagne, sans exception.** Un désaccord n'est jamais
+un détail de formulation : c'est le signe que la parenthèse parle d'autre chose que de l'unité de
+base. Les traiter un par un — ils sont peu nombreux, huit sur 453 lors de cette passe.
+
 Deux corollaires. La **dérivation par la clé** (retirer le segment `_ror`) est plus sûre que la
 parenthèse quand les deux répondent : elle ne peut pas confondre deux unités homonymes. Et une
 ambiguïté de préfixe n'est pas une erreur : `bur_wh3_main_ksl_inf_streltsi_0` et
 `wh3_main_ksl_inf_streltsi_0` sont la même unité redéclarée par un mod — même culture, donc
 inoffensif. C'est le croisement de **cultures** qui signale la faute, pas la simple pluralité de clés.
+
+**Trois contrôles, pas un.** Comparer la culture du RoR à celle de l'unité de base ne suffit pas :
+il faut aussi la comparer à la **race de la fiche**. Un seigneur moddé peut parfaitement recruter
+une unité d'une autre culture sans avoir accès au pool de mercenaires correspondant — **recruter
+l'unité de base et recruter son Régiment de Renom sont deux droits distincts**. Dieter (Comtes
+Vampires) aligne une War Hydra elfe noire par son Monster Pens, et le user a confirmé en jeu qu'il
+n'a pas pour autant les versions RoR des monstres qu'il recrute.
+
+Sur la même passe, ce troisième test a écarté 31 placements de plus, dont sept d'un coup : le RoR
+impérial « Deathjacks (**Archers**) » partait sur sept fiches Haut Elfes, parce que les deux races
+ont une unité nommée « Archers ». Son symétrique, « The Scions of Mathlann (**Spearmen**) », partait
+chez l'Empire. Par défaut, on écarte quand la culture ne correspond pas à la race de la fiche — sauf
+tronc commun assumé, les factions du Chaos partageant `chs` avec `kho` / `tze` / `nur` / `sla`.
+
+**Et dédoublonner sur une clé normalisée, pas sur le libellé.** Le site et le jeu n'écrivent pas
+toujours pareil : article de tête (`The Baron's Men` contre `Baron's Men`), parenthèse différente,
+ponctuation (`Fleur-de-lis` contre `Fleur de Lis`). Comparer les libellés bruts laisse passer des
+doublons — 12 sur une seule passe. La clé doit retirer la parenthèse finale, l'article de tête, la
+ponctuation et la casse.
 
 ### Un nom générique peut masquer plusieurs unités distinctes
 

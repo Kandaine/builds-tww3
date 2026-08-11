@@ -124,7 +124,22 @@ Sinon, en aligner un ou deux et **expliquer la capacité dans la note** : le lec
 peut en recruter d'autres pour ses armées secondaires. Le raccourci « +2, donc j'en mets 3 » donne
 des fiches encombrées de héros interchangeables.
 
-**Un RoR se place sur TOUTES les fiches qui peuvent le recruter**, pas une seule fois. C'est la
+**Départager deux RoR qui visent la même unité de base
+
+Quand plusieurs Régiments de Renom dérivent de la même unité et que la quantité de celle-ci ne
+suffit pas à tous les accueillir, deux vérifications tranchent, dans cet ordre :
+
+1. **La recrutabilité.** Si un seul est accessible au seigneur, la question ne se pose plus.
+2. **Le lore.** Si les deux sont recrutables, chercher un lien entre le seigneur et l'un des
+   régiments — province, ordre, emblème, héraldique. Le nom du régiment suffit souvent : « The
+   Stubborn Bulls » désigne le **taureau d'Averland**, donc il revient à Marius Leitdorf, Comte
+   Électeur d'Averland, plutôt que « Knights of Morr » ou « Knights of the Everlasting Light ».
+
+Ne jamais départager au hasard ni « au meilleur profil » : la règle est la même que pour le choix
+d'une fiche d'accueil pour un héros légendaire (§6 de `analyse-pack.md`), et elle produit une note
+justifiable au lieu d'un arbitrage arbitraire.
+
+Un RoR se place sur TOUTES les fiches qui peuvent le recruter**, pas une seule fois. C'est la
 différence avec un héros légendaire : chaque fiche décrit une campagne distincte, donc le fait qu'un
 régiment soit unique *en partie* n'empêche pas de le proposer à chaque seigneur qui y a accès. Le
 critère est double et mécanique — la faction a accès au pool, et la fiche aligne déjà l'unité de
