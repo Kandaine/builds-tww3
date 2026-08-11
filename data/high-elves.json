@@ -16,7 +16,7 @@
       "lord": {"icon": "tyrion", "name": "Tyrion", "qty": 1, "note": "Le meilleur duelliste du jeu — monté sur Malhandir, il rattrape n'importe quel seigneur ennemi et le démembre en quelques passes"},
       "heroes": [
         {"icon": "hefCaradryan", "name": "Caradryan (Héros Légendaire)", "qty": 1, "note": "Capitaine de la Garde du Phénix monté sur le Frostheart Phoenix Ashtari — Héros Légendaire qui renforce le cœur de Phénix ×2 de l'ost : aura défensive, immunité à la Psychologie et frappe embrasée. Un compagnon de choc idéal pour le duelliste Tyrion"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — Tyrion étant totalement immunisé aux sorts, ce mage couvre l'armée que cette immunité ne protège pas"}
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Soutien magique — Tyrion étant totalement immunisé aux sorts, ce mage couvre l'armée que cette immunité ne protège pas"}
       ],
       "army": [
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 4, "note": "Cavalerie lourde à -50% d'entretien (seigneur) et recrutée un tour plus vite (faction) — un luxe habituellement coûteux devient abordable en masse"},
@@ -25,7 +25,7 @@
         {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Soutien à distance, également à -50% d'entretien (seigneur)"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Recrutés directement avec +3 rangs d'expérience (seigneur) — une unité polyvalente lance/arc déjà vétérane dès sa sortie de caserne"},
         {"icon": "stormRiders", "name": "The Storm Riders (Lothern Sea Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Lothern Sea Guard, également recrutée avec +3 rangs d'expérience (seigneur)"},
-        {"icon": "phoenix", "name": "Phoenix", "qty": 2, "note": "Monstre volant de soutien, pour percer les lignes ou chasser l'artillerie"}
+        {"icon": "phoenix", "name": "Frostheart Phoenix", "qty": 2, "note": "Monstre volant de soutien, pour percer les lignes ou chasser l'artillerie"}
       ],
       "magic": "Un Mage de la Haute Magie complète l'arsenal offensif de Tyrion, qui n'est pas lui-même un lanceur de sorts mais un pur combattant.",
       "note": "Le -50% d'entretien de Tyrion (seigneur) s'applique à un large éventail d'unités de base (Spearmen, Archers, Silver Helms, Silverin Guard, Rangers) : n'hésite pas à composer une armée nombreuse plutôt qu'une petite élite. Le -1 tour de recrutement local (faction) accélère encore la mise sur pied de cette armée, et le statut de Champion of Ulthuan permet de peser sur la carte de campagne grâce à l'Influence gagnée en combattant."
@@ -53,7 +53,7 @@
       "army": [
         {"icon": "swordmaster", "name": "Swordmasters of Hoeth", "qty": 4, "note": "-25% de coût de recrutement (faction) — l'élite de mêlée qui protège Teclis devient abordable en nombre"},
         {"icon": "bladesOfHoeth", "name": "Blades of Hoeth (Swordmasters of Hoeth)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Swordmasters of Hoeth, également couverte par le -25% de coût de recrutement (faction)"},
-        {"icon": "phoenix", "name": "Phoenix (Arcane)", "qty": 3, "note": "-25% de coût de recrutement (faction) ; son aura Omen of Miracles offre Spell Mastery +5%, résistance aux sorts +10% et immunité à la Psychologie sur 55m à toute l'armée (faction) — une synergie magique unique à Teclis"},
+        {"icon": "phoenix", "name": "Frostheart Phoenix", "qty": 3, "note": "-25% de coût de recrutement (faction) ; son aura Omen of Miracles offre Spell Mastery +5%, résistance aux sorts +10% et immunité à la Psychologie sur 55m à toute l'armée (faction) — une synergie magique unique à Teclis"},
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 3, "note": "Ligne de tenue bon marché pour occuper le front — réduite d'une unité pour libérer l'emplacement d'Aurelion, les six Swordmasters tenant déjà le centre"},
         {"icon": "hefArcher", "name": "Archers", "qty": 3, "note": "Soutien à distance polyvalent"},
         {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Anti-monstre et anti-char à distance"}
@@ -79,14 +79,14 @@
       "lord": {"icon": "eltharion", "name": "Eltharion le Sinistre", "qty": 1, "note": "Généraliste solide — combattant correct, lanceur de sorts correct ; monté sur son Griffon Stormwing, il peut aussi provoquer la terreur"},
       "heroes": [
         {"icon": "hefElasir", "name": "Elasir (Héros Légendaire)", "qty": 1, "note": "Le Lord of the Eagles (mod Heroes of Legend) — seigneur des grands aigles, chevauchant son aigle géant : un compagnon de mêlée aérienne parfaitement assorti à Eltharion et à son griffon Stormwing, pour foncer sur l'artillerie et les casters ennemis"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique complémentaire"}
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Soutien magique complémentaire"}
       ],
       "army": [
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 5, "note": "+3 rang de recrutement (faction) puis +8 commandement et +8 défense en mêlée (seigneur) — le pilier de cette armée"},
         {"icon": "scionsOfMathlann", "name": "The Scions of Mathlann (Spearmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Spearmen, également couverte par +8 commandement et +8 défense en mêlée (seigneur)"},
         {"icon": "shadowWalker", "name": "Shadow Warriors", "qty": 4, "note": "Unité de type Ranger — profite du même double bonus faction (+3 rang) et seigneur (+8 commandement/défense)"},
         {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Archers d'Ulthuan, sur la fiche du Gardien de Tor Yvresse dont toute la doctrine repose sur la précision et la patience"},
-        {"icon": "phoenix", "name": "Phoenix (Arcane)", "qty": 2, "note": "Monstre volant polyvalent en soutien"}
+        {"icon": "phoenix", "name": "Frostheart Phoenix", "qty": 2, "note": "Monstre volant polyvalent en soutien"}
       ],
       "magic": "Eltharion a accès à la Haute Magie (Apotheosis, Tempest, Soul Quench) pour soigner et soutenir sa ligne tout en punissant les concentrations ennemies.",
       "note": "Particulièrement fort contre les factions Peaux-Vertes grâce à son attribut de terreur dédié et ses -80 relations diplomatiques qui garantissent une guerre quasi permanente (faction). Les Mists of Yvresse et l'Invocation of Ladrielle permettent de sécuriser durablement le territoire autour de Tor Yvresse pendant que cette armée part en offensive."
@@ -109,7 +109,7 @@
       "lord": {"icon": "imrik", "name": "Imrik", "qty": 1, "note": "Monté sur Minaithnir, son Dragon de Feu — l'un des combattants les plus dévastateurs du jeu, sans magie mais avec une puissance brute écrasante. La Dragon Taming (faction) permet en plus de traquer ou d'apprivoiser d'autres Dragons sauvages pour renforcer l'armée"},
       "heroes": [
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée en complément d'Imrik — profite de l'expérience accordée par l'Invocation of Eldrazor (faction)"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique pour compenser l'absence de sorts propres à Imrik ; gagne lui aussi de l'expérience via l'Invocation of Eldrazor (faction)"}
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Soutien magique pour compenser l'absence de sorts propres à Imrik ; gagne lui aussi de l'expérience via l'Invocation of Eldrazor (faction)"}
       ],
       "army": [
         {"icon": "dragonPrince", "name": "Dragon Princes", "qty": 4, "note": "-25% d'entretien (seigneur) et recrutement local -1 tour (faction) — une cavalerie d'élite bien plus soutenable et accessible que la normale"},
@@ -169,7 +169,7 @@
       "totalSlots": 20,
       "lord": {"icon": "alarielle", "name": "Alarielle la Radieuse", "qty": 1, "note": "Lanceuse de sorts polyvalente et étonnamment robuste en mêlée — soigne, buffe et endommage à la fois ; l'Invocation of Lileath (faction) améliore encore ses chances de lancer ses sorts ; sa capacité passive Guardian (seigneur) accorde +15% de Résistance Physique à tous les Lords/Heroes alliés dans 35m de rayon"},
       "heroes": [
-        {"icon": "mage", "name": "Mage (Haute Magie / Vie)", "qty": 1, "note": "Renfort de soin et de buffs en écho aux sorts d'Alarielle — protégé par sa capacité Guardian (seigneur) tant qu'il reste dans les 35m"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Renfort de soin et de buffs en écho aux sorts d'Alarielle — protégé par sa capacité Guardian (seigneur) tant qu'il reste dans les 35m"},
         {"icon": "hefAnurion", "name": "Anurion (Héros Légendaire)", "qty": 1, "note": "Anurion le Vert, le Master Botanist (mod Heroes of Legend) — maître incontesté de la magie de la Vie et de la nature : le pendant idéal de l'Everqueen Alarielle, il renforce le thème vital de l'ost (soins, buffs, invocations sylvestres) et profite lui aussi de sa capacité Guardian"},
         {"icon": "chiefHandmaidenLirazel", "name": "Chief-Handmaiden Lirazel (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod <em>High Elves Lords</em>, <strong>exclusive à Avelorn</strong> — donc à cette seule fiche. Son arbre entier est bâti sur les <strong>Sisters of Avelorn</strong> : coût réduit, rang de recrutement, gain d'expérience, et surtout les attributs <strong>Discipline</strong> et <strong>Snipe</strong>. Elle ajoute aussi portée, puissance de tir, vitesse de rechargement et Sauvegarde de Zèle à toutes les unités d'Avelorn. Avec six Sœurs dans la liste, aucun autre héros du jeu n'apporte autant ici. <strong>Immortelle</strong>"}
       ],
@@ -202,7 +202,7 @@
       "lord": {"icon": "aislinn", "name": "Sea Lord Aislinn", "qty": 1, "note": "Amiral implacable de la flotte asur — sa capacité Iron-Handed Captain (+100 de commandement et ralliement immédiat, 200m, seigneur) sauve in extremis une unité alliée en déroute, et son bonus de +20% de force de tir en mer (seigneur) en fait un seigneur redoutable près des côtes ; débloque aussi les attaques navales contre les colonies portuaires (seigneur)"},
       "heroes": [
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée classique en complément d'Aislinn"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique de la flotte de Lothern : buffs et projectiles pour appuyer une ligne de tir déjà dense"}
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Soutien magique de la flotte de Lothern : buffs et projectiles pour appuyer une ligne de tir déjà dense"}
       ],
       "army": [
         {"icon": "shipsCompany", "name": "Ship's Company", "qty": 3, "note": "-10% d'entretien (seigneur) — le cœur bon marché de cette armée maritime"},
@@ -233,7 +233,7 @@
       "totalSlots": 20,
       "lord": {"icon": "amon", "name": "Amon", "qty": 1, "note": "Magister Astrologer casqué d'or — Arch-Mage de Haute Magie dont la réserve minimale de +8 Vents de la Magie garantit un flux de sorts ininterrompu. Sa lame stellaire (Sword of the Stars) et son bouclier de barrière en font un mage-guerrier redoutable, gardien de la Tour du Soleil"},
       "heroes": [
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 2, "note": "Mages de Haute Magie — la réserve minimale de +8 Vents de la Magie (faction) les garde toujours prêts à lancer buffs et projectiles ; épine dorsale magique de l'ost aux côtés d'Amon"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 2, "note": "Mages de Haute Magie — la réserve minimale de +8 Vents de la Magie (faction) les garde toujours prêts à lancer buffs et projectiles ; épine dorsale magique de l'ost aux côtés d'Amon"},
         {"icon": "hefCaradryan", "name": "Caradryan (Héros Légendaire)", "qty": 1, "note": "Capitaine de la Garde du Phénix sur le Frostheart Phoenix Ashtari — Héros Légendaire qui se marie au Frostheart Phoenix d'Amon : aura défensive, immunité à la Psychologie et flamme sacrée, dans le thème glacé et magique de la Tour du Soleil"}
       ],
       "army": [
@@ -267,17 +267,17 @@
       "lord": {"icon": "belannaer", "name": "Belannaer the Wise", "qty": 1, "note": "Le deuxième Archimage de Saphery — sa passive « Arcane Conduit » (+40% de recharge de puissance magique, seigneur) et le +5 de réserve de Vents de la Magie (faction) en font un lanceur de sorts intarissable, tandis que ses Swordmasters of Hoeth à -30% d'entretien et +10 de commandement (seigneur) forment un mur d'élite magiquement résistant"},
       "heroes": [
         {"icon": "loremaster", "name": "Loremaster of Hoeth", "qty": 1, "note": "Maître-mage guerrier de la Tour de Hoeth — maîtrise toutes les Lores, duelliste et caster polyvalent, en parfaite harmonie avec la diplomatie +60 avec l'Order of Loremasters (faction)"},
-        {"icon": "mage", "name": "Mage (High Magic)", "qty": 2, "note": "Lanceurs de High Magic — profitent du +40% de recharge et du +5 de réserve (seigneur/faction) pour un déluge de sorts continu (Soul Quench, Apotheosis, Fiery Convocation)"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 2, "note": "Lanceurs de High Magic — profitent du +40% de recharge et du +5 de réserve (seigneur/faction) pour un déluge de sorts continu (Soul Quench, Apotheosis, Fiery Convocation)"},
         {"icon": "loremasterTalarian", "name": "Loremaster Talarian", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters — « revenu de l'intérieur du Vortex, Talarian en est ressorti changé : une personne extrêmement sage et mystérieuse, une légende vivante parmi les Asur ». <strong>Il ne se recrute pas : il se débloque en contrôlant la Tour Blanche de Hoeth, Port Elistor et Tor Finu</strong> — et la Tour Blanche est justement la capitale de Belannaer, ce qui fait de Saphery la faction la mieux placée pour l'obtenir"}
       ],
       "army": [
         {"icon": "swordmaster", "name": "Swordmasters of Hoeth", "qty": 4, "note": "-30% d'entretien et +10 de commandement (seigneur) — infanterie d'élite à deux mains, magiquement résistante, cœur de la ligne ; recrutés plus vite (faction)"},
-        {"icon": "bladesOfHoeth", "name": "The Blades of Hoeth (Swordmasters)", "qty": 2, "note": "Régiment de Renom des Swordmasters — profite lui aussi du -30% d'entretien et +10 de commandement (seigneur), variante d'élite du fer de lance"},
+        {"icon": "bladesOfHoeth", "name": "Blades of Hoeth (Swordmasters of Hoeth)", "qty": 2, "note": "Régiment de Renom des Swordmasters — profite lui aussi du -30% d'entretien et +10 de commandement (seigneur), variante d'élite du fer de lance"},
         {"icon": "omenOfAsuryan", "name": "Omen of Asuryan (Arcane Phoenix)", "qty": 1, "note": "Régiment favori : son aura est améliorée pour accorder Maîtrise des sorts, Résistance aux sorts et Immunité à la Psychologie aux alliés à 55 m (faction) — phénix de soutien magique, pièce maîtresse arcanique"},
         {"icon": "phoenixGuard", "name": "Phoenix Guard", "qty": 2, "note": "Gardiens du Sanctuaire d'Asuryan — infanterie d'élite Immunisée à la Psychologie et résistante à la magie, tient le centre sous l'aura de l'Omen of Asuryan"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 2, "note": "Archères magiques d'élite — tir enchanté à longue portée qui déchire l'infanterie lourde et les monstres"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Lance et arc — ligne polyvalente qui protège les mages et ajoute du tir ; réduite à un exemplaire pour libérer l'emplacement de Loremaster Talarian"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 2, "note": "Baliste à répétition — anti-grande cible et anti-infanterie à longue portée"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 2, "note": "Baliste à répétition — anti-grande cible et anti-infanterie à longue portée"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Aigle géant — harcèle et chasse l'artillerie et les casters ennemis, protège les mages"}
       ],
       "magic": "Belannaer est le pilier magique absolu : sa passive « Arcane Conduit » (+40% de recharge, seigneur) cumulée au +5 de réserve de Vents de la Magie (faction) permet à lui, au Loremaster et aux deux Mages d'enchaîner les sorts les plus coûteux (High Magic : Fiery Convocation, Apotheosis, Hand of Kharibdyss) sans jamais s'épuiser. L'aura améliorée de l'Omen of Asuryan (Spell Resistance +10%, favori) protège en prime toute l'armée de la magie ennemie.",
@@ -301,7 +301,7 @@
       "lord": {"icon": "korhil", "name": "Korhil", "qty": 1, "note": "Le Capitaine des White Lions, tueur du lion Charandis — ses effets font des White Lions, War Lions et Lion Chariot une meute increvable (-30% entretien, +10 commandement, +10% remplacement, seigneur), et son maîtrise de la forêt (Vanguard, +10 commandement, +10% embuscade, faction) lui permet de frapper le premier depuis les bois"},
       "heroes": [
         {"icon": "qisaer", "name": "Kitharl Woodwalker (Héros Légendaire)", "qty": 1, "note": "<strong>Capitaine des chasseurs de Chrace</strong>, où il entraîne les lions de guerre. Ses compétences ne laissent aucun doute sur sa place : <strong>« White Lions Hunter »</strong> et <strong>« Call of the War Lions »</strong> visent précisément les huit régiments de lions de cette fiche, et ses <strong>« Axes of the Woodwalker »</strong> reprennent l'arme de Korhil lui-même"},
-        {"icon": "mage", "name": "Mage (High Magic)", "qty": 1, "note": "Soutien magique (High Magic) — Hand of Kharibdyss et buffs qui appuient la charge des White Lions"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Soutien magique (High Magic) — Hand of Kharibdyss et buffs qui appuient la charge des White Lions"},
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Héros de combat — porte-bannière qui ancre le commandement de la meute et mène la charge à la hache"}
       ],
       "army": [
@@ -313,7 +313,7 @@
         {"icon": "lionChariot", "name": "Lion Chariot of Chrace", "qty": 2, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — chars tirés par des lions, impact de charge dévastateur"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 2, "note": "Archères magiques d'élite — tir enchanté qui amollit l'ennemi avant la charge de la meute"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 2, "note": "Lance et arc — ligne de soutien polyvalente qui tient pendant que les lions flanquent"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 2, "note": "Baliste à répétition — anti-grande cible à longue portée"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 2, "note": "Baliste à répétition — anti-grande cible à longue portée"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Aigle géant — harcèle l'artillerie et les casters, éclaire les embuscades"}
       ],
       "magic": "Korhil n'est pas un lanceur de sorts — sa puissance vient de la hache et de la meute de lions. Le Mage (High Magic) apporte le soutien magique (buffs, Hand of Kharibdyss) qui amplifie les charges d'embuscade, tandis que le Noble ancre le commandement.",
@@ -347,7 +347,7 @@
         {"icon": "shoreRiders", "name": "Shore Riders", "qty": 2, "note": "Cavalerie légère du mod (variante d'Ellyrian Reavers) — le bras armé du +10% de portée de déplacement : harcèlement, contre-batterie et poursuite des unités isolées par la frappe éclair"},
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 1, "note": "La seule cavalerie de choc de la liste — une charge unique et décisive sur un flanc, plutôt qu'un engagement prolongé que la Vigueur réduite ferait perdre"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 1, "note": "Tir magique enflammé — la réponse aux monstres et aux régénérants, que le reste de la liste ne sait pas traiter rapidement"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 1, "note": "Artillerie légère qui se déplace vite — elle suit le tempo de l'armée sans casser le bonus de mobilité de la faction"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Artillerie légère qui se déplace vite — elle suit le tempo de l'armée sans casser le bonus de mobilité de la faction"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Chasseur d'artillerie et de tirailleurs adverses — indispensable quand on engage volontairement sans attendre ses propres renforts"}
       ],
       "magic": "Caladris seul. La fiche n'est pas construite sur la magie mais sur le tempo : la réserve de Vents de Magie sert à régler la bataille vite, avant que la Vigueur réduite des frappes éclair ne se fasse sentir. Priorité donc à ses dégâts directs — Fiery Gaze, Flames of the Phoenix, Fury of Khaine — plutôt qu'aux sorts d'entretien. Son Bâton de Canalisation en fait aussi la seule réponse de l'armée à un sorcier adverse, ce qui compte quand on engage volontairement sans attendre ses renforts.",
@@ -370,8 +370,8 @@
       "totalSlots": 20,
       "lord": {"icon": "highMageTorinubar", "name": "High Mage Torinubar", "qty": 1, "note": "Un Grand Mage, donc un lanceur de sorts de premier plan — c'est heureux, car <strong>aucun de ses effets de seigneur n'aide en bataille</strong>. Sa valeur au combat vient entièrement de ses sorts, pas de sa fiche"},
       "heroes": [
-        {"icon": "mage", "name": "Mage (Feu)", "qty": 1, "note": "La vraie force de frappe d'une armée dont le seigneur ne donne aucun bonus offensif — le Savoir du Feu est celui qui fait des dégâts chez les Hauts Elfes"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Le complément, pas le doublon : Torinubar lance déjà la <strong>Haute Magie</strong>, mais un second lanceur permet de couvrir à la fois Apothéose (soin) et Main de Gloire (buff) sans sacrifier l'offensive"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "La vraie force de frappe d'une armée dont le seigneur ne donne aucun bonus offensif — le Savoir du Feu est celui qui fait des dégâts chez les Hauts Elfes"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Le complément, pas le doublon : Torinubar lance déjà la <strong>Haute Magie</strong>, mais un second lanceur permet de couvrir à la fois Apothéose (soin) et Main de Gloire (buff) sans sacrifier l'offensive"},
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Le duelliste et le porteur de commandement — indispensable à une armée qui opère loin de ses terres, où le moral se dégrade vite"}
       ],
       "army": [
@@ -382,7 +382,7 @@
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 2, "note": "La cavalerie de choc, et le meilleur bénéficiaire du <strong>+5% de vitesse</strong> (seigneur) — c'est elle qui rattrape ce qui menace un convoi"},
         {"icon": "swordmaster", "name": "Swordmasters of Hoeth", "qty": 2, "note": "L'élite de mêlée : le point dur qui tient pendant que les tireurs travaillent"},
         {"icon": "phoenixGuard", "name": "Phoenix Guard", "qty": 2, "note": "Immunisée à la Psychologie et très résistante — l'ancre d'une armée isolée, qui ne peut pas se permettre une déroute"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 1, "note": "L'artillerie légère haut-elfe, pour les monstres et les machines que la Garde de la Mer ne perce pas"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "L'artillerie légère haut-elfe, pour les monstres et les machines que la Garde de la Mer ne perce pas"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "La couverture aérienne, et l'éclaireur d'une faction dont la campagne consiste à faire circuler des convois en terrain hostile"}
       ],
       "magic": "Torinubar lui-même plus deux Mages. C'est délibérément lourd : cette faction ne reçoit <strong>aucun bonus de combat</strong>, donc tout ce qui fait la différence en bataille doit venir des sorts. C'est aussi le seul domaine où un Grand Mage surclasse naturellement un seigneur guerrier.",
@@ -406,7 +406,7 @@
       "lord": {"icon": "princessEldyra", "name": "Princess Eldyra", "qty": 1, "note": "À monter <strong>sur char</strong>, sans hésiter : c'est la condition du <strong>+35% d'aura de commandement</strong> (faction). Son <strong>\"Iron Will\"</strong> couvre alors une portion de champ de bataille bien plus large, et comme l'aura n'a de toute façon <strong>aucune limite de portée</strong>, c'est le reste de son commandement qui en profite"},
       "heroes": [
         {"icon": "noble", "name": "Noble", "qty": 2, "note": "Eux aussi <strong>sur char</strong> : l'effet vise « les Seigneurs <strong>et Héros</strong> » (faction), donc chaque Noble monté élargit sa propre aura de 35%. Deux Nobles sur char couvrent une ligne entière"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Le seul lanceur de la liste. Apothéose soigne les chars, fragiles dès qu'ils sont immobilisés, et Main de Gloire renforce une charge déjà rapide"}
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Le seul lanceur de la liste. Apothéose soigne les chars, fragiles dès qu'ils sont immobilisés, et Main de Gloire renforce une charge déjà rapide"}
       ],
       "army": [
         {"icon": "tiranocChariot", "name": "Tiranoc Chariots", "qty": 4, "note": "Le char de Tiranoc, et la raison d'être de la fiche : <strong>-2 tours de recrutement</strong> (seigneur) permet d'en reconstituer un flux constant, ce qui compte pour une unité qui s'use vite. Léger, rapide, il flanque et harcèle"},
@@ -415,7 +415,7 @@
         {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Le volume de tir bon marché qui accompagne les Sœurs — une armée de chars a besoin d'une base statique pour fixer l'ennemi pendant qu'elle contourne"},
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "La ligne qui protège les tireurs. Avec <strong>\"Iron Will\"</strong> (seigneur) elle gagne <strong>+5 de défense en mêlée</strong> et surtout la <strong>Défense de charge contre les Grandes cibles</strong> : en position de bracing, elle annule le bonus de charge de tout attaquant de grande taille"},
         {"icon": "swordmaster", "name": "Swordmasters of Hoeth", "qty": 2, "note": "L'élite de mêlée, pour tenir le point dur pendant que les chars manœuvrent"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 2, "note": "Deux exemplaires parce que la fiche assume le <strong>siège</strong> : c'est la seule pièce capable de traiter portes et machines, et le seul effet offensif du seigneur ne se déclenche qu'en siège ou en encerclement"}
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 2, "note": "Deux exemplaires parce que la fiche assume le <strong>siège</strong> : c'est la seule pièce capable de traiter portes et machines, et le seul effet offensif du seigneur ne se déclenche qu'en siège ou en encerclement"}
       ],
       "magic": "Un seul Mage, en Haute Magie. Cette faction n'a aucun bonus de magie et n'en cherche pas : sa puissance vient des chars et de l'aura permanente du seigneur. Le Mage est là pour le soin et le buff, pas pour porter la bataille.",
       "note": "Deux précisions sur <strong>\"Iron Will\"</strong>, qui est le vrai atout de cette fiche et qu'il serait facile de sous-estimer. D'abord, sa <strong>portée et sa durée sont infinies</strong> : ce n'est pas une capacité à déclencher au bon moment, elle est active en permanence sur toute l'armée. Ensuite, elle est <strong>conditionnelle</strong> — elle s'éteint dès que le Commandement d'une unité descend sous le seuil de vacillement. Autrement dit elle renforce les troupes qui tiennent et abandonne celles qui craquent, ce qui rend le <strong>+5 de Commandement</strong> qu'elle apporte doublement utile : il l'aide à rester allumée.<br><br>La <strong>Défense de charge contre les Grandes cibles</strong> mérite d'être comprise littéralement : en position de <em>bracing</em>, l'unité <strong>annule</strong> le bonus de charge de tout attaquant de grande taille. Contre les cavaleries monstrueuses et les monstres isolés, une ligne de Lanciers sous Iron Will encaisse ce qui briserait n'importe quelle autre infanterie haut-elfe.<br><br>Côté campagne, ne pas se tromper sur la nature du seigneur : le <strong>+100% de production de Marbre</strong> et le <strong>-25% de coût et de temps sur tous les bâtiments</strong> font d'Eldyra une faction de <strong>développement</strong>, la plus rapide à bâtir de la page. Le seul effet réellement offensif, le <strong>+15% de force des armes</strong>, exige un <strong>siège ou un encerclement</strong> — c'est-à-dire d'être à l'attaque. Une campagne défensive n'en verra jamais la couleur."
@@ -438,7 +438,7 @@
       "lord": {"icon": "liandraAthinol", "name": "Liandra Athinol", "qty": 1, "note": "<strong>Sur monture dragon</strong>, obligatoirement : c'est ce qui lui donne le <strong>+25 contre les grandes cibles</strong> (faction). Le combat de monstre à monstre est exactement le terrain sur lequel cette faction est bâtie"},
       "heroes": [
         {"icon": "noble", "name": "Noble", "qty": 2, "note": "Des <strong>Princes</strong> au sens de l'effet de faction : montés sur dragon, ils touchent le même <strong>+25 contre les grandes cibles</strong>. C'est un bonus de personnage, donc en aligner plusieurs le multiplie — rare, et à exploiter"},
-        {"icon": "mage", "name": "Mage (Feu)", "qty": 1, "note": "Le Savoir du Feu, cohérent avec Caledor et avec les <strong>Attaques Enflammées</strong> (seigneur) de la ligne de Dragon Princes"}
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Le Savoir du Feu, cohérent avec Caledor et avec les <strong>Attaques Enflammées</strong> (seigneur) de la ligne de Dragon Princes"}
       ],
       "army": [
         {"icon": "fireborn", "name": "The Fireborn (Dragon Princes)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner <strong>deux</strong>. Ils cumulent tout — la <strong>Peur</strong> et les <strong>Attaques Enflammées</strong> comme les Dragon Princes ordinaires, plus leurs propres statistiques de Régiment de Renom"},
@@ -449,7 +449,7 @@
         {"icon": "phoenixGuard", "name": "Phoenix Guard", "qty": 1, "note": "Immunisée à la Psychologie et très résistante — l'ancre qui tient pendant que la cavalerie et les dragons manœuvrent"},
         {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Le tir de volume, indispensable à une liste dont presque tout le reste doit charger"},
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "La réponse à la cavalerie adverse, que ni les dragons ni les Dragon Princes ne traitent efficacement"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Thrower", "qty": 1, "note": "L'artillerie légère — contre les Nains, c'est ce qui atteint une ligne de tir retranchée que la cavalerie mettrait trop longtemps à contourner"}
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "L'artillerie légère — contre les Nains, c'est ce qui atteint une ligne de tir retranchée que la cavalerie mettrait trop longtemps à contourner"}
       ],
       "magic": "Un Mage du Feu, en écho au thème de Caledor et aux Attaques Enflammées que le seigneur accorde aux Dragon Princes. La faction ne donne aucun bonus de magie : le Mage est un complément, pas un pilier.",
       "note": "Cette fiche est la plus monolithique de la page, et c'est assumé — presque tous les effets visent les <strong>Dragon Princes</strong> ou les <strong>dragons</strong>, donc s'en écarter revient à jouer une faction sans bonus.<br><br>Le cumul <strong>Peur + Attaques Enflammées</strong> sur les Dragon Princes vaut d'être souligné. La <strong>Peur</strong> réduit le Commandement des unités ennemies proches et rend l'unité <strong>immunisée à la peur</strong> (les pénalités de peur ne se cumulent pas entre elles). Les <strong>Attaques Enflammées</strong>, elles, annulent la Régénération et font mal aux créatures vulnérables au feu. Une cavalerie lourde qui fait peur <em>et</em> qui brûle n'existe nulle part ailleurs chez les Hauts Elfes.<br><br>Attention en revanche au piège de campagne : le <strong>-100 de relations diplomatiques avec les Nains</strong> n'est pas un simple malus de saveur, c'est une <strong>guerre garantie</strong> avec toute la race. Le <strong>+15% de résistance physique contre les armées naines</strong> est donné pour ça — mais il ne s'applique qu'à l'<strong>armée du seigneur</strong>, pas aux autres. Vos armées secondaires affronteront la poudre noire naine sans aucune protection. Enfin, le <strong>-75% de coût de construction sur la chaîne des dragons</strong> est l'effet le plus structurant de la fiche : il déplace l'armée de dragons du très long terme vers le milieu de campagne."
@@ -472,7 +472,7 @@
       "lord": {"icon": "arandirSwiftwing", "name": "Arandir Swiftwing", "qty": 1, "note": "Le prince d'Ellyrion sorti de sa torpeur. À monter, évidemment — mais noter que ses deux capacités s'appliquent aux <strong>unités</strong> de cavalerie de son armée, pas à lui : sa valeur est celle d'un chef d'armée, pas d'un duelliste"},
       "heroes": [
         {"icon": "noble", "name": "Noble", "qty": 2, "note": "Montés, pour suivre le rythme d'une armée qui se déplace <strong>+20% plus loin</strong> (faction) et ne ralentit jamais. Le duelliste haut-elfe, seul recours contre les personnages ennemis"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Monté lui aussi. Apothéose est précieuse dans une liste sans aucune ligne défensive : rien ici ne tient une position, donc les soins remplacent l'endurance"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 1, "note": "Monté lui aussi. Apothéose est précieuse dans une liste sans aucune ligne défensive : rien ici ne tient une position, donc les soins remplacent l'endurance"},
         {"icon": "selafynOfTheAnnulii", "name": "Selafyn of the Annulii (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>High Elves Lords</em>, ouvert à presque toutes les factions Hauts Elfes — il est ici parce que <strong>deux</strong> de ses branches servent précisément cette fiche. <strong>« Druuchii's Hunter »</strong> lui donne attaque en mêlée, Rage et Frénésie <strong>contre les Elfes Noirs</strong>, l'adversaire désigné d'Arandir par ses <strong>-50 de relations</strong>. Et <strong>« Eagles of the Annulii »</strong> apporte bonus de charge, vitesse et puissance d'arme aux <strong>Grands Aigles</strong> — les deux seules unités de la liste qui ne touchaient aucun bonus du seigneur en touchent enfin un. Chasseur de monstres par ailleurs, et porteur du <strong>Déploiement en Avant-garde</strong>"}
       ],
       "army": [
@@ -502,14 +502,14 @@
       "totalSlots": 20,
       "lord": {"icon": "eoloranGrayhawk", "name": "Eoloran Grayhawk", "qty": 1, "note": "Son aura fait <strong>55 mètres</strong> et ne vise que trois profils : Sea Guards, Eagle Claws et Skycutters. Elle impose de garder l'artillerie et le tir groupés autour de lui — ce qui est inhabituel pour des pièces lourdes, qu'on écarte d'ordinaire"},
       "heroes": [
-        {"icon": "mage", "name": "Mage (Lumière)", "qty": 2, "note": "Rien dans le kit du seigneur ne touche la magie : deux mages compensent une armée dont tous les bonus sont déjà concentrés sur le tir. Le <strong>Savoir de la Lumière</strong> est le seul qui protège durablement une ligne statique de la cavalerie qui la menace"},
+        {"icon": "mage", "name": "Loremaster of Hoeth", "qty": 2, "note": "Rien dans le kit du seigneur ne touche la magie : deux mages compensent une armée dont tous les bonus sont déjà concentrés sur le tir. Le <strong>Savoir de la Lumière</strong> est le seul qui protège durablement une ligne statique de la cavalerie qui la menace"},
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Le garde du corps de la ligne de tir. Une armée qui reste groupée autour de son seigneur pour l'aura offre une cible évidente aux frappes de flanc, et c'est lui qui les absorbe"}
       ],
       "army": [
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 5, "note": "Le cœur de la fiche, et la seule unité du jeu que ce seigneur transforme réellement : <strong>« Double Shot »</strong> ajoute un projectile par tir, <strong>+20 de Recharge</strong> accélère la cadence, <strong>-20%</strong> au recrutement et <strong>-30%</strong> à l'entretien la rendent presque gratuite. Cinq régiments forment à la fois la ligne de tir et la ligne de lances"},
         {"icon": "shipsCompany", "name": "Ship's Company", "qty": 3, "note": "L'autre unité subventionnée deux fois (<strong>-20%</strong> au recrutement, <strong>-30%</strong> à l'entretien). Elle absorbe les charges pour que les Sea Guards continuent de tirer, ce qu'elles ne peuvent pas faire une fois engagées"},
         {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 3, "note": "Visés par l'aura : <strong>+20 de Recharge</strong> sur une pièce lourde est un gain considérable. La contrepartie est qu'il faut les avancer à <strong>55 mètres</strong> du seigneur, donc les positionner dans la ligne plutôt que derrière"},
-        {"icon": "skycutter", "name": "Skycutters", "qty": 3, "note": "Le troisième profil de l'aura, et le seul mobile. Ils portent les <strong>+20 de Recharge</strong> avec eux sur les flancs, et traitent l'artillerie adverse que la ligne statique ne peut pas atteindre"},
+        {"icon": "skycutter", "name": "Lothern Skycutters", "qty": 3, "note": "Le troisième profil de l'aura, et le seul mobile. Ils portent les <strong>+20 de Recharge</strong> avec eux sur les flancs, et traitent l'artillerie adverse que la ligne statique ne peut pas atteindre"},
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 2, "note": "La seule pièce hors kit, et elle est nécessaire : rien dans les effets du seigneur ne répond à une charge de cavalerie lourde. Deux régiments en contre-charge suffisent à protéger les flancs de la ligne"}
       ],
       "magic": "Deux Mages, sur des savoirs défensifs. Le raisonnement est le même que chez Hotek : quand tous les effets du seigneur pointent vers un seul rôle — ici le tir — la magie doit couvrir ce que ce rôle ne couvre pas, c'est-à-dire la survie de la ligne pendant que les projectiles font leur travail.",

@@ -79,7 +79,7 @@
       "totalSlots": 20,
       "lord": {"icon": "tamurkhan", "name": "Tamurkhan the Maggot Lord", "qty": 1, "note": "Le Porteur de Désolation, terré dans le corps de l'Ogre Tyran Karaka Brise-Montagne — sa masse colossale et ses attaques de collision lui permettent de fracasser les lignes d'infanterie sans bonus anti-charge, sa capacité \"Nurgle's Favoured Son\" (+24 défense en mêlée, +20% résistance aux dégâts, seigneur) le rendant temporairement quasi inarrêtable"},
       "heroes": [
-        {"icon": "chaosSorcererNurgle", "name": "Chaos Sorcerer of Nurgle", "qty": 1, "note": "Soutien magique via la Lore of Nurgle"},
+        {"icon": "chaosSorcererNurgle", "name": "Chaos Sorcerer of Nurgle (Death)", "qty": 1, "note": "Soutien magique via la Lore of Nurgle"},
         {"icon": "exaltedHeroNurgle", "name": "Exalted Hero of Nurgle", "qty": 1, "note": "Renfort de mêlée mortel robuste, profite du +5 d'attaque en mêlée et de l'immunité à la Psychologie (seigneur)"}
       ],
       "army": [

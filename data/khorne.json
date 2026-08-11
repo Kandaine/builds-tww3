@@ -22,7 +22,7 @@
       "army": [
         {"icon": "bloodthirsterKhorne", "name": "Bloodthirster", "qty": 1, "note": "-20% d'entretien et capacité Gorefeast (seigneur) — Grand Démon monstrueux, second point de rupture pour la ligne ennemie"},
         {"icon": "khornesBloodyFist", "name": "Khorne's Bloody Fist (Bloodthirster)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : +10% Ward Save (faction), en plus du -20% d'entretien et de Gorefeast (seigneur) — variante d'élite unique du Bloodthirster"},
-        {"icon": "soulGrinderKhorne", "name": "Soul Grinder", "qty": 2, "note": "-20% d'entretien et capacité Gorefeast (seigneur) — machine de guerre démoniaque increvable"},
+        {"icon": "soulGrinderKhorne", "name": "Soul Grinder of Khorne", "qty": 2, "note": "-20% d'entretien et capacité Gorefeast (seigneur) — machine de guerre démoniaque increvable"},
         {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 4, "note": "Infanterie démoniaque frénétique, cœur de la horde"},
         {"icon": "exaltedBloodlettersKhorne", "name": "Exalted Bloodletters of Khorne", "qty": 2, "note": "Version d'élite des Bloodletters pour percer les lignes les plus dures"},
         {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie monstrueuse démoniaque — la seule chose de la fiche qui frappe aussi fort que Skarbrand lui-même, et qui arrive au contact aussi vite"},
@@ -85,7 +85,7 @@
       ],
       "army": [
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 4, "note": "\"Hellblade\" (+20% dégâts après 80 victimes) et +10% de puissance d'arme (seigneur) — cœur de mêlée mortel robuste"},
-        {"icon": "chaosWarriorsKhorneHalberds", "name": "Chaos Warriors of Khorne (Hallebardes)", "qty": 3, "note": "Hallebardiers khornéens — la réponse aux grandes cibles qu'Arbaal, tout duelliste qu'il soit, ne peut affronter seul"},
+        {"icon": "chaosWarriorsKhorneHalberds", "name": "Chaos Warriors of Khorne (Halberds)", "qty": 3, "note": "Hallebardiers khornéens — la réponse aux grandes cibles qu'Arbaal, tout duelliste qu'il soit, ne peut affronter seul"},
         {"icon": "skullcrushersKhorne", "name": "Skullcrushers of Khorne", "qty": 3, "note": "\"Hellblade\" (seigneur) — cavalerie lourde démoniaque pour les charges de flanc"},
         {"icon": "houndsOfTheBloodHunt", "name": "Hounds of the Blood Hunt (Flesh Hounds of Khorne)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des Flesh Hounds, monture de prédilection d'Arbaal"},
         {"icon": "fleshHoundsKhorne", "name": "Flesh Hounds of Khorne", "qty": 2, "note": "Chasseurs démoniaques increvables"},
@@ -186,7 +186,7 @@
         {"icon": "houndsOfHerumar", "name": "Hounds of Herumar (Chaos Warhounds of Khorne)", "qty": 2, "note": "Unité exclusive à cette faction dans le mod, liée à Herumar. Rapides et sacrifiables — leur rôle est de faire monter les compteurs de victimes en dévorant l'infanterie légère adverse"},
         {"icon": "houndsOfKhoros", "name": "Hounds of Khoros (Marauder Horsemen of Khorne, haches de jet)", "qty": 2, "note": "Seconde unité exclusive du mod, liée à Khoros — cavalerie légère à haches de jet, la seule portée de la liste et le harcèlement qui empêche l'adversaire de tenir sa formation"},
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 2, "note": "Le socle blindé. Contrairement aux Berserkers, ils ont une vraie Défense de mêlée à sacrifier : ils tiennent le centre pendant que les compteurs montent"},
-        {"icon": "chaosWarriorsKhorneHalberds", "name": "Chaos Warriors of Khorne (Hallebardes)", "qty": 2, "note": "L'anti-cavalerie et l'anti-monstre — indispensable dans une armée qui n'a ni artillerie ni tir pour traiter les grosses cibles"},
+        {"icon": "chaosWarriorsKhorneHalberds", "name": "Chaos Warriors of Khorne (Halberds)", "qty": 2, "note": "L'anti-cavalerie et l'anti-monstre — indispensable dans une armée qui n'a ni artillerie ni tir pour traiter les grosses cibles"},
         {"icon": "skullreapers", "name": "Skullreapers", "qty": 2, "note": "Élite anti-armure. Ce sont eux qui atteignent le plus vite les 80 victimes de <strong>\"Glory in Death\"</strong>, et donc qui déclenchent le Carnage chez l'ennemi"},
         {"icon": "wrathmongers", "name": "Wrathmongers", "qty": 2, "note": "Leur aura rend les unités alliées proches plus agressives — elle se cumule naturellement avec la logique d'escalade de la faction"},
         {"icon": "fleshHoundsKhorne", "name": "Flesh Hounds of Khorne", "qty": 1, "note": "Résistance magique et vitesse — la réponse aux lanceurs de sorts, seule menace sérieuse contre une armée qui doit atteindre le contact pour exister"},
@@ -253,7 +253,7 @@
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 2, "note": "Infanterie, donc <strong>+10 d'Armure</strong> (faction) : c'est le mur qui tient pendant que les Bloodletters accumulent leur bonus"},
         {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 2, "note": "Cavalerie monstrueuse démoniaque — la masse qui ouvre une brèche que la cavalerie légère ne ferait qu'égratigner"},
         {"icon": "fleshHoundsKhorne", "name": "Flesh Hounds of Khorne", "qty": 2, "note": "Rapides et résistantes à la magie — la réponse aux lanceurs de sorts, que le reste de la liste ne peut pas atteindre"},
-        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds (Khorne)", "qty": 1, "note": "Écran bon marché pour absorber les premiers tirs avant l'impact"},
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 1, "note": "Écran bon marché pour absorber les premiers tirs avant l'impact"},
         {"icon": "soulGrinderKhorne", "name": "Soul Grinder of Khorne", "qty": 1, "note": "La seule pièce à distance de la liste, et le seul recours contre ce qui refuse d'engager une armée entièrement tournée vers la mêlée"}
       ],
       "magic": "Aucun lanceur de sorts : Khorne n'en a pas. La fiche compense par le <strong>-2 tours de récupération des blessures</strong>, qui permet de perdre ses personnages sans que la campagne s'arrête, et par des capacités qui se renforcent d'elles-mêmes au combat.",

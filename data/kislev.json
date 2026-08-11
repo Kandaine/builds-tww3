@@ -50,7 +50,7 @@
       ],
       "army": [
         {"icon": "dazhsHearthblades", "name": "Dazh's Hearthblades (Tzar Guard - Grande Arme)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) et Rage (seigneur) — variante d'élite en grande arme du Tzar Guard, fer de lance de la mêlée"},
-        {"icon": "tzarGuard", "name": "Tzar Guard (Grande Arme)", "qty": 2, "note": "Rage (seigneur) — infanterie lourde en grande arme"},
+        {"icon": "tzarGuard", "name": "Tzar Guard", "qty": 2, "note": "Rage (seigneur) — infanterie lourde en grande arme"},
         {"icon": "kisleviteWarriors", "name": "Kislevite Warriors", "qty": 3, "note": "+5 attaque en mêlée / +5 commandement (faction) et Rage (seigneur) — cœur de mêlée bon marché rendu redoutable"},
         {"icon": "kossars", "name": "Kossars", "qty": 3, "note": "+5/+5 (faction) et Rage (seigneur) — tir hybride bon marché, frénétique au contact"},
         {"icon": "kossoviteDervishes", "name": "Kossovite Dervishes", "qty": 2, "note": "+5/+5 (faction) et Rage (seigneur) — cavalerie légère de flanc désormais frénétique"},
@@ -144,7 +144,7 @@
       "totalSlots": 20,
       "lord": {"icon": "rastiltin", "name": "Rastiltin Bebchuk", "qty": 1, "note": "Ranger-Templier de Taal drapé de sa peau d'ours — quasi invisible en forêt grâce à \"Forest Walker\" (+25% vitesse, Unspottable, Snipe, seigneur), il invoque des Feral Ice Bears en pleine bataille (Beastfriend, faction) et autorise les frappes éclair contre les armées soutenues (seigneur) : l'ennemi se bat toujours là où Rastiltin l'a décidé"},
       "heroes": [
-        {"icon": "frostMaidenIce", "name": "Frost Maiden (Glace)", "qty": 1, "note": "Lanceuse de sorts de Glace — ralentit et fige l'ennemi pour que les embusqués le criblent à distance"},
+        {"icon": "frostMaidenIce", "name": "Frost Maiden (Ice)", "qty": 1, "note": "Lanceuse de sorts de Glace — ralentit et fige l'ennemi pour que les embusqués le criblent à distance"},
         {"icon": "patriarch", "name": "Patriarch", "qty": 1, "note": "Soutien de Commandement et de mêlée — maintient le moral de la ligne pendant les manœuvres d'encerclement"}
       ],
       "army": [
@@ -178,7 +178,7 @@
       "lord": {"icon": "boyarMazur", "name": "Boyar Mazur", "qty": 1, "note": "La <strong>gelure</strong> est son apport propre, et elle change la nature des engagements : <strong>-30% de vitesse</strong> sur les cibles touchées signifie qu'aucune unité rapide ne se dégage d'un ours une fois accrochée. C'est le complément exact du <strong>+10 d'attaque</strong> de la faction"},
       "heroes": [
         {"icon": "patriarch", "name": "Patriarch", "qty": 2, "note": "Le prêtre d'Ursun, cohérent avec un seigneur qui a vu le Dieu-Ours et avec le <strong>-30% sur les bâtiments d'Orthodoxie</strong>. Il compte parmi les <strong>personnages Ours</strong> visés par le <strong>+10 d'attaque en mêlée</strong>"},
-        {"icon": "frostMaidenIce", "name": "Frost Maiden (Glace)", "qty": 1, "note": "Le <strong>Savoir de la Glace</strong> prolonge la gelure du seigneur : là où « Frostbite! » ralentit ce que l'armée frappe, la Glace ralentit ce qu'elle n'a pas encore atteint"}
+        {"icon": "frostMaidenIce", "name": "Frost Maiden (Ice)", "qty": 1, "note": "Le <strong>Savoir de la Glace</strong> prolonge la gelure du seigneur : là où « Frostbite! » ralentit ce que l'armée frappe, la Glace ralentit ce qu'elle n'a pas encore atteint"}
       ],
       "army": [
         {"icon": "warBearRiders", "name": "War Bear Riders", "qty": 3, "note": "L'unité Ours par excellence, et la principale bénéficiaire du <strong>+10 d'attaque en mêlée</strong>. Le recrutement facilité dans toutes les provinces permet d'en aligner quatre là où la plupart des factions kislevites en alignent une ou deux"},
@@ -190,7 +190,7 @@
         {"icon": "kossars", "name": "Kossars", "qty": 1, "note": "L'infanterie mixte kislevite, arc et hache. Elle occupe le terrain à bas coût pendant que le budget part dans les ours"},
         {"icon": "streltsi", "name": "Streltsi", "qty": 2, "note": "Le tir de poudre. Une armée d'ours n'a aucune portée propre, et il faut de quoi entamer l'infanterie lourde avant le contact"},
         {"icon": "boydinovsBrawlers", "name": "Boydinov's Brawlers (Streltsi)", "qty": 1, "note": "Régiment de Renom des Streltsi — le tir de poudre d'une fiche qui compense par la discipline ce qu'elle n'a pas en magie"},
-        {"icon": "iceGuardSwords", "name": "Ice Guard (Épées)", "qty": 2, "note": "L'élite de tir magique du roster, et le seul élément qui traite les cibles résistantes aux dégâts physiques que les ours ne percent pas"},
+        {"icon": "iceGuardSwords", "name": "Ice Guard (Swords)", "qty": 2, "note": "L'élite de tir magique du roster, et le seul élément qui traite les cibles résistantes aux dégâts physiques que les ours ne percent pas"},
         {"icon": "snowLeopard", "name": "Snow Leopard", "qty": 2, "note": "Hors du thème Ours, mais nécessaire : c'est la seule unité rapide de la fiche, et la gelure du seigneur ne sert à rien s'il n'y a personne pour rattraper ce qui fuit"}
       ],
       "magic": "Deux Patriarches et une Frost Maiden. Les Patriarches ne sont pas un choix de puissance mais de cohérence mécanique : ils comptent parmi les <strong>personnages Ours</strong>, donc ils reçoivent eux aussi le <strong>+10 d'attaque en mêlée</strong> de la faction — cas rare d'un effet de faction qui améliore directement les héros.",
@@ -213,7 +213,7 @@
       "totalSlots": 20,
       "lord": {"icon": "jacobKislev", "name": "Jacob", "qty": 1, "note": "Ses deux effets visent les deux mêmes unités : <strong>-30% d'entretien</strong> et <strong>+30% de puissance d'arme</strong> pour les Winged Lancers et la Gryphon Legion. Aligner autre chose en nombre revient à laisser la moitié de son kit inutilisée"},
       "heroes": [
-        {"icon": "frostMaidenIce", "name": "Frost Maiden (Glace)", "qty": 2, "note": "Le <strong>Savoir de la Glace</strong> immobilise, ce qui est la meilleure préparation possible à une charge de cavalerie lourde. Deux lanceuses, montées, pour suivre le rythme d'une armée entièrement à cheval"}
+        {"icon": "frostMaidenIce", "name": "Frost Maiden (Ice)", "qty": 2, "note": "Le <strong>Savoir de la Glace</strong> immobilise, ce qui est la meilleure préparation possible à une charge de cavalerie lourde. Deux lanceuses, montées, pour suivre le rythme d'une armée entièrement à cheval"}
       ],
       "army": [
         {"icon": "gryphonLegion", "name": "Gryphon Legion", "qty": 4, "note": "La cavalerie lourde d'élite de Kislev, à <strong>+30% de puissance d'arme</strong> et <strong>-30% d'entretien</strong>, plus <strong>+2 de rang</strong> dès le recrutement. C'est l'unité que le seigneur transforme le plus, et le cœur de la fiche"},

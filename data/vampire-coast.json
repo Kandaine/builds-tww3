@@ -94,7 +94,7 @@
       "army": [
         {"icon": "sartosaFreeCompany", "name": "Sartosa Free Company", "qty": 5, "note": "Unité Sartosane exclusive — +8 attaque en mêlée et +20% puissance des armes (seigneur) ; cœur de mêlée humain rapide et mordant"},
         {"icon": "sartosaMilitia", "name": "Sartosa Militia", "qty": 4, "note": "Unité Sartosane exclusive — +8 attaque en mêlée et +20% puissance des armes (seigneur) ; tir de pistolets rapproché, dévastateur en volée"},
-        {"icon": "tideOfSkjold", "name": "The Tide of Skjold (Deckhands)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires disponibles — variante d'élite des Zombie Pirate Deckhands dotée de l'aptitude \"Expendable\""},
+        {"icon": "tideOfSkjold", "name": "The Tide of Skjold (Zombie Pirate Deckhand Mob)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires disponibles — variante d'élite des Zombie Pirate Deckhands dotée de l'aptitude \"Expendable\""},
         {"icon": "shadewraithGunners", "name": "Shadewraith Gunners (Deck Gunners)", "qty": 1, "note": "Le Régiment de Renom des Deck Gunners, qui remplace purement le régiment standard : à un seul exemplaire, autant que ce soit l'élite. Même tir de soutien à longue portée"},
         {"icon": "scurvyDogs", "name": "Scurvy Dogs", "qty": 2, "note": "War beast rapide, flanquement et harcèlement"},
         {"icon": "rottingPrometheans", "name": "Rotting Prometheans", "qty": 1, "note": "Infanterie monstrueuse, pièce de choc complémentaire"},

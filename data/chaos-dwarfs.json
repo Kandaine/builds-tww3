@@ -115,7 +115,7 @@
         {"icon": "dreadquakeMortar", "name": "Dreadquake Mortar", "qty": 2, "note": "Mortier servi par des esclaves : +10% de portée et de cadence (seigneur) — pilonne les formations et les murailles à distance de sécurité"},
         {"icon": "magmaCannon", "name": "Magma Cannon", "qty": 2, "note": "Mêmes bonus d'artillerie (seigneur) — jet de magma qui fait fondre l'infanterie lourde"},
         {"icon": "deathshrieker", "name": "Deathshrieker Rocket Launcher", "qty": 1, "note": "Roquettes hurlantes, également couvertes par les bonus d'artillerie (seigneur)"},
-        {"icon": "infernalGuardFireglaives", "name": "Infernal Guard Fireglaives", "qty": 2, "note": "Ligne de tir à poudre noire qui protège le train de machines"},
+        {"icon": "infernalGuardFireglaives", "name": "Infernal Guard (Fireglaives)", "qty": 2, "note": "Ligne de tir à poudre noire qui protège le train de machines"},
         {"icon": "chaosDwarfWarriors", "name": "Chaos Dwarf Warriors", "qty": 2, "note": "Écran d’infanterie devant les canons — capacité de recrutement local +2 (faction) pour les remplacer vite"},
         {"icon": "hobgoblinWolfRaiders", "name": "Hobgoblin Wolf Raiders", "qty": 2, "note": "Cavalerie légère de raid — harcèle et poursuit, en écho au +30% de revenu du pillage (seigneur)"},
         {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 1, "note": "Créature de feu qui brise les lignes quand l'artillerie ne suffit pas"}
@@ -147,7 +147,7 @@
         {"icon": "bullCentaurRenders", "name": "Bull Centaur Renders", "qty": 4, "note": "-25% d'entretien (faction) — cavalerie monstrueuse d'élite, le marteau de charge du Conclave à prix réduit"},
         {"icon": "infernalIronsworn", "name": "Infernal Ironsworn", "qty": 4, "note": "-25% d'entretien (faction) — l'infanterie lourde d'élite qui ancre le centre, elle aussi bradée"},
         {"icon": "theImmortalsIronsworn", "name": "The Immortals (Infernal Ironsworn)", "qty": 1, "note": "Régiment de Renom des Ironsworn — couvert par le même -25% d'entretien (faction), fer de lance de la ligne"},
-        {"icon": "infernalGuardFireglaives", "name": "Infernal Guard Fireglaives", "qty": 3, "note": "Tir à poudre noire qui couvre l'avance des Ironsworn"},
+        {"icon": "infernalGuardFireglaives", "name": "Infernal Guard (Fireglaives)", "qty": 3, "note": "Tir à poudre noire qui couvre l'avance des Ironsworn"},
         {"icon": "deathshrieker", "name": "Deathshrieker Rocket Launcher", "qty": 2, "note": "Artillerie à roquettes — désorganise l'ennemi avant la charge des Bull Centaurs"},
         {"icon": "magmaCannon", "name": "Magma Cannon", "qty": 1, "note": "Jet de magma contre l'infanterie lourde adverse"},
         {"icon": "kdaaiFireborn", "name": "K'daai Fireborn", "qty": 1, "note": "Créature de feu de Hashut — briseur de ligne enflammé au service du Conclave"}

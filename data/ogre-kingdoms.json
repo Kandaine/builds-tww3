@@ -110,8 +110,8 @@
       "totalSlots": 20,
       "lord": {"icon": "gharkIronskin", "name": "Ghark Ironskin", "qty": 1, "note": "Le Tyran de Fer, monté sur son <strong>Rhinox de Fer</strong> — une monstruosité mécanique offerte par les Dawi Zharr, dotée de l'attaque à vapeur. Il est <strong>blessé au lieu d'être tué</strong> (seigneur), ce qui l'autorise à mener la charge en personne plutôt qu'à la commander de loin"},
       "heroes": [
-        {"icon": "braggTheGutsman", "name": "Bragg the Gutsman (Héros Légendaire)", "qty": 1, "note": "Héros légendaire ogre du jeu de base, autorisé par la table d'agents de la tribu — bourreau au couperet, il tient le point de contact le plus dur aux côtés des Ironguts"},
-        {"icon": "butcherGreatMaw", "name": "Butcher (Grande Gueule)", "qty": 2, "note": "Les seuls lanceurs de sorts des Ogres — Savoir de la Grande Gueule, dont les soins et les malédictions maintiennent une ligne d'infanterie lourde qui n'a aucune autre forme de soutien"}
+        {"icon": "braggTheGutsman", "name": "Bragg the Gutsman", "qty": 1, "note": "Héros légendaire ogre du jeu de base, autorisé par la table d'agents de la tribu — bourreau au couperet, il tient le point de contact le plus dur aux côtés des Ironguts"},
+        {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 2, "note": "Les seuls lanceurs de sorts des Ogres — Savoir de la Grande Gueule, dont les soins et les malédictions maintiennent une ligne d'infanterie lourde qui n'a aucune autre forme de soutien"}
       ],
       "army": [
         {"icon": "ironskinIronguts", "name": "Ironskin Ironguts", "qty": 3, "note": "L'infanterie d'élite de la tribu, déjà bardée de plaques de fer noir et encore renforcée par les <strong>+10 d'Armure</strong> (faction) et les <strong>8% de Résistance physique</strong> (seigneur) — le socle de la ligne"},
@@ -182,7 +182,7 @@
       ],
       "army": [
         {"icon": "ogreBulls", "name": "Ogre Bulls", "qty": 2, "note": "Le socle du roster de départ, avant que les unités d'Équipage Pirate ne soient débloquées"},
-        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Armes doubles)", "qty": 2, "note": "La version offensive — plus de dégâts, moins de tenue, ce qui convient à une tribu d'abordage"},
+        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Dual Weapons)", "qty": 2, "note": "La version offensive — plus de dégâts, moins de tenue, ce qui convient à une tribu d'abordage"},
         {"icon": "ironguts", "name": "Ironguts", "qty": 3, "note": "L'élite blindée, le point dur de la ligne tant que le roster reste classique"},
         {"icon": "maneaters", "name": "Maneaters", "qty": 2, "note": "Des mercenaires ogres qui ont bourlingué — thématiquement les plus proches de l'esprit pirate de la tribu"},
         {"icon": "leadbelchers", "name": "Leadbelchers", "qty": 2, "note": "Canons portatifs à courte portée : le tir de la tribu, et l'équivalent ogre d'une bordée de navire"},
@@ -256,7 +256,7 @@
         {"icon": "gnoblarGrillers", "name": "Gnoblar Grillers", "qty": 2, "note": "Gnoblars couverts de suie qui lancent des morceaux de « viande mystère » enflammés. Chair à canon bon marché, mais dont les Halflings améliorent les dégâts et le commandement par compétences"},
         {"icon": "gnoblarGrillersRoR", "name": "Gnoblar Grill Slingers", "qty": 1, "note": "Régiment de renom des Gnoblar Grillers (cap 1) — et surtout la <strong>version à distance</strong> : là où les Grillers ordinaires combattent à la lance, ceux-ci lancent réellement leur viande enflammée. La seule unité de tir légère de la tribu"},
         {"icon": "ironguts", "name": "Ironguts", "qty": 2, "note": "Le point dur blindé du centre — la tribu n'a pas d'infanterie lourde propre, il faut donc en emprunter au roster ogre classique"},
-        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Armes doubles)", "qty": 2, "note": "La version offensive du socle ogre : plus de dégâts, moins de tenue, ce qui convient à une armée qui mise tout sur une fenêtre de 35 secondes"},
+        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Dual Weapons)", "qty": 2, "note": "La version offensive du socle ogre : plus de dégâts, moins de tenue, ce qui convient à une armée qui mise tout sur une fenêtre de 35 secondes"},
         {"icon": "leadbelchers", "name": "Leadbelchers", "qty": 2, "note": "La seule puissance de feu de la liste — à courte portée, donc parfaitement compatible avec une avance groupée derrière Blaut"}
       ],
       "magic": "Un seul Boucher du Grand Maw. Cette armée ne cherche pas à durer : elle veut une charge propre sous \"Exquisite Taste\", et les sorts de soin comptent moins ici que les deux Halflings qui portent l'identité et les bonus de la tribu.",
@@ -314,7 +314,7 @@
       "heroes": [
         {"icon": "empireEngineer", "name": "Engineer", "qty": 2, "note": "Ingénieur de l'Empire, que le mod rend recrutable pour cette tribu — le prolongement logique de l'École de Tir Impériale et des <strong>+25 de relations avec l'Empire</strong>. Un héros de soutien pour une armée qui n'en avait aucun"},
         {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 1, "note": "Seule magie des Ogres — indispensable pour tenir la ligne de mêlée pendant que les canons travaillent"},
-        {"icon": "katerinaDeHansebourg", "name": "Katerina de Hansebourg (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire (classe <em>engineer</em>) — fille d'un marchand bretonnien devenue cheffe des Gnoblars d'une tribu ogre. Nulle part elle n'est mieux à sa place qu'ici : Snarky est le seul Tyran du jeu à entretenir <strong>+25 de relations avec la Bretonnie</strong> et à recruter des ingénieurs de l'Empire. Déblocage : bâtiments de <strong>ressource animaux 2-3</strong>, puis un dilemme"}
+        {"icon": "katerinaDeHansebourg", "name": "Katerina de Hansebourg", "qty": 1, "note": "Héroïne légendaire (classe <em>engineer</em>) — fille d'un marchand bretonnien devenue cheffe des Gnoblars d'une tribu ogre. Nulle part elle n'est mieux à sa place qu'ici : Snarky est le seul Tyran du jeu à entretenir <strong>+25 de relations avec la Bretonnie</strong> et à recruter des ingénieurs de l'Empire. Déblocage : bâtiments de <strong>ressource animaux 2-3</strong>, puis un dilemme"}
       ],
       "army": [
         {"icon": "leadbelchersGatling", "name": "Leadbelchers (Gatling)", "qty": 2, "note": "Unité spéciale de l'École de Tir — cadence de tir élevée, la réponse à l'infanterie qui charge en masse. Ses améliorations dédiées vont jusqu'aux munitions magiques"},
@@ -355,7 +355,7 @@
       "army": [
         {"icon": "stoneTrolls", "name": "Stone Trolls", "qty": 4, "note": "L'unité signature que le mod accorde à la tribu, et la seule visée par le <strong>+15 de Commandement</strong> du seigneur. C'est un chiffre énorme, et il répond au vrai défaut des Trolls : la Stupidité. Avec ce bonus, ils tiennent au lieu de partir en vrille — et ils régénèrent"},
         {"icon": "ironguts", "name": "Ironguts", "qty": 3, "note": "L'élite blindée qui tient le centre pendant que les Trolls travaillent les flancs"},
-        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Armes doubles)", "qty": 2, "note": "Version offensive du socle ogre — plus de dégâts pour un corps d'armée qui cherche la mêlée prolongée"},
+        {"icon": "ogreBullsDualWeapons", "name": "Ogre Bulls (Dual Weapons)", "qty": 2, "note": "Version offensive du socle ogre — plus de dégâts pour un corps d'armée qui cherche la mêlée prolongée"},
         {"icon": "ogreBulls", "name": "Ogre Bulls", "qty": 1, "note": "Version bouclier, plus durable : elle prend les coups, ce qui est exactement ce que la passive de faction récompense"},
         {"icon": "gorgers", "name": "Gorgers", "qty": 2, "note": "Apparition derrière les lignes adverses — la réponse à l'artillerie, absente du roster de cette tribu"},
         {"icon": "leadbelchers", "name": "Leadbelchers", "qty": 2, "note": "La seule puissance de feu de la liste, à courte portée"},
@@ -419,7 +419,7 @@
       "lord": {"icon": "hrothgulIcefang", "name": "Hrothgul Icefang", "qty": 1, "note": "Le Croc de Glace — sa <strong>Barrière +10%</strong> se cumule à la régénération de Barrière de <strong>\"Stronger Ties\"</strong>, ce qui donne à cette armée un bouclier qui se recharge en continu, chose que les Ogres n'ont nulle part ailleurs. En contrepartie, il doit rester <strong>dans les 35m</strong> de ses Yhetees pour que l'aura tienne"},
       "heroes": [
         {"icon": "imildrak", "name": "Imildrak (Héros Légendaire)", "qty": 1, "note": "Un <strong>dragon des glaces</strong>, recruté en occupant <strong>Wyvern Peak</strong>. Ses trois compétences — <strong>« Midwinter Scales »</strong>, <strong>« Frost Storm »</strong> et <strong>« Fury of Ymirdrak »</strong> — prolongent exactement le thème glaciaire de la tribu, et il apporte la grande cible volante qui manque à une armée de Yhetees au sol"},
-        {"icon": "haurgFrostmaw", "name": "Haurg Frostmaw (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, et le seul que la tribu reçoit <strong>d'office au démarrage</strong> — le script du mod le désigne explicitement comme personnage de départ des Sons of the Mountain. Savoir de Glace, ce qui en fait le seul lanceur de sorts glaciaire d'une faction entièrement gelée. Pour les autres factions ogres, il se débloque en construisant des <strong>camps de cavalerie de niveau 2 à 4</strong>"},
+        {"icon": "haurgFrostmaw", "name": "Haurg Frostmaw", "qty": 1, "note": "Héros légendaire du mod, et le seul que la tribu reçoit <strong>d'office au démarrage</strong> — le script du mod le désigne explicitement comme personnage de départ des Sons of the Mountain. Savoir de Glace, ce qui en fait le seul lanceur de sorts glaciaire d'une faction entièrement gelée. Pour les autres factions ogres, il se débloque en construisant des <strong>camps de cavalerie de niveau 2 à 4</strong>"},
         {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 2, "note": "Seule magie ogre classique, et le seul soin d'une armée bâtie sur la Barrière. Ils comptent double ici : chacun est un foyer d'aura mobile de plus pour <strong>\"Stronger Ties\"</strong>, ce qui permet d'étaler la ligne au lieu de tout empiler autour de Hrothgul"}
       ],
       "army": [
@@ -555,7 +555,7 @@
       "lord": {"icon": "fernadrang", "name": "Fernadrang", "qty": 1, "note": "Champion de la Pierre du Défi — <strong>\"Khorne's Hold\"</strong> ne s'active qu'<strong>en dessous de 50% de PV</strong> et n'a qu'<strong>une seule utilisation</strong>, mais ce qu'elle donne est considérable : <strong>+50% de résistance physique</strong>, <strong>+24 de défense en mêlée</strong> et l'<strong>immunité au flanquement</strong> pendant 27 secondes. C'est ce qui lui permet de tenir seul contre plusieurs unités le temps que sa ligne le rejoigne"},
       "heroes": [
         {"icon": "bruiserOfKhorne", "name": "Bruiser of Khorne", "qty": 1, "note": "Le héros propre à cette tribu — un Bruiser voué au Dieu du Sang. Duelliste de mêlée, exactement le profil que le <strong>+1% d'attaque en mêlée par rang</strong> des unités de Khorne (faction) récompense sur la durée"},
-        {"icon": "drulgKineater", "name": "Drulg Kineater (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, débloqué par les <strong>casernes de niveau 1-2</strong> ou les <strong>camps-casernes 1-3</strong>. Il a gagné son surnom lors d'un défi d'étripage qui l'a porté à la tête de sa tribu — autant dire qu'il est chez lui dans une faction qui a gravé sa marque sur la <strong>Pierre du Défi</strong>"},
+        {"icon": "drulgKineater", "name": "Drulg Kineater", "qty": 1, "note": "Héros légendaire du mod, débloqué par les <strong>casernes de niveau 1-2</strong> ou les <strong>camps-casernes 1-3</strong>. Il a gagné son surnom lors d'un défi d'étripage qui l'a porté à la tête de sa tribu — autant dire qu'il est chez lui dans une faction qui a gravé sa marque sur la <strong>Pierre du Défi</strong>"},
         {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 1, "note": "Le lore de la tribu est explicite : elle honore <strong>à la fois le Grand Gouffre et Khorne</strong>. Un Boucher est donc cohérent, et c'est le seul soin d'une fiche qui mise tout sur une ligne d'infanterie prolongée"}
       ],
       "army": [
@@ -657,7 +657,7 @@
       "lord": {"icon": "hrothyogg", "name": "Hrothyogg", "qty": 1, "note": "Le légendaire Maneater sur son trône improvisé — ses deux effets de seigneur sont <strong>purement territoriaux</strong> et n'aident en rien au combat. Sa valeur en bataille vient de sa stature d'Ogre, pas de sa fiche"},
       "heroes": [
         {"icon": "butcherGreatMaw", "name": "Butcher (Great Maw)", "qty": 2, "note": "Seule magie des Ogres, et le seul soin d'une armée qui vend ses services loin de chez elle"},
-        {"icon": "braggTheGutsman", "name": "Bragg the Gutsman (Héros Légendaire)", "qty": 1, "note": "Héros légendaire ogre du jeu de base — un bourreau au couperet, thématiquement à sa place dans une compagnie qui perçoit le prix du sang"}
+        {"icon": "braggTheGutsman", "name": "Bragg the Gutsman", "qty": 1, "note": "Héros légendaire ogre du jeu de base — un bourreau au couperet, thématiquement à sa place dans une compagnie qui perçoit le prix du sang"}
       ],
       "army": [
         {"icon": "maneaters", "name": "Maneaters", "qty": 2, "note": "Le cœur de la fiche : <strong>+10 d'attaque en mêlée</strong> et <strong>-20% de coût de recrutement</strong> (faction). Aucune autre tribu ogre ne peut aligner autant de mercenaires d'élite pour ce prix"},

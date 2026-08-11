@@ -20,9 +20,9 @@
       ],
       "army": [
         {"icon": "bloodletters", "name": "Bloodletters", "qty": 4, "note": "Infanterie d'élite de Khorne — leur version Regiment of Renown profite du +5% de Ward Save (faction)"},
-        {"icon": "plaguebearers", "name": "Plaguebearers", "qty": 4, "note": "Infanterie résiliente de Nurgle — leur version Regiment of Renown profite du même +5% de Ward Save (faction)"},
-        {"icon": "pinkHorrors", "name": "Pink Horrors", "qty": 3, "note": "Infanterie de sorts à distance de Tzeentch — leur version Regiment of Renown profite aussi du +5% de Ward Save (faction)"},
-        {"icon": "daemonettes", "name": "Daemonettes", "qty": 3, "note": "Infanterie rapide de Slaanesh — leur version Regiment of Renown profite également du +5% de Ward Save (faction)"},
+        {"icon": "plaguebearers", "name": "Plaguebearers of Nurgle", "qty": 4, "note": "Infanterie résiliente de Nurgle — leur version Regiment of Renown profite du même +5% de Ward Save (faction)"},
+        {"icon": "pinkHorrors", "name": "Pink Horrors of Tzeentch", "qty": 3, "note": "Infanterie de sorts à distance de Tzeentch — leur version Regiment of Renown profite aussi du +5% de Ward Save (faction)"},
+        {"icon": "daemonettes", "name": "Daemonettes of Slaanesh", "qty": 3, "note": "Infanterie rapide de Slaanesh — leur version Regiment of Renown profite également du +5% de Ward Save (faction)"},
         {"icon": "plagueDrones", "name": "Plague Drones", "qty": 2, "note": "Monstre volant de Nurgle pour percer les lignes et chasser l'artillerie"},
         {"icon": "seekersOfSlaanesh", "name": "Seekers of Slaanesh", "qty": 1, "note": "Cavalerie légère très rapide pour intercepter les tireurs isolés"}
       ],

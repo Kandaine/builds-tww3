@@ -24,7 +24,7 @@
         {"icon": "nordlandMariners", "name": "Nordland Mariners (Halberdiers)", "qty": 1, "note": "<strong>State Troop</strong> anti-grande cible. Chez l'Empereur, elle cumule le <strong>-20% d'entretien</strong> et le <strong>+5% par rang</strong> qu'il accorde nommément à cette catégorie — aucun autre seigneur ne fait monter ses State Troops aussi vite"},
         {"icon": "swordsOfUlric", "name": "Swords of Ulric (Swordsmen)", "qty": 1, "note": "<strong>State Troop</strong> d'infanterie polyvalente. Les épéistes du culte d'Ulric servant l'Empereur de Reikland, c'est l'union des deux cultes majeurs sur la même ligne de bataille"},
         {"icon": "swordsmen", "name": "Swordsmen", "qty": 1, "note": "Infanterie de ligne polyvalente, gardée en un exemplaire pour l'écran bon marché. Les Swords of Ulric occupent le même créneau sur un profil supérieur et sont, eux, couverts par les deux effets State Troop"},
-        {"icon": "spearmenEmpire", "name": "Spearmen (The Empire)", "qty": 1, "note": "-20% d'entretien (seigneur) — anti-grande unité bon marché"},
+        {"icon": "spearmenEmpire", "name": "Spearmen", "qty": 1, "note": "-20% d'entretien (seigneur) — anti-grande unité bon marché"},
         {"icon": "eldredsGuard", "name": "Eldred's Guard (Spearmen – Shields)", "qty": 1, "note": "<strong>State Troop</strong> de lanciers au bouclier — la seule réponse anti-cavalerie d'une armée bâtie sur le tir et la ligne. Elle bénéficie des deux effets State Troop du seigneur"},
         {"icon": "handgunners", "name": "Handgunners", "qty": 1, "note": "Tir perforant à distance. Un seul exemplaire conservé : Gunderman's Surefires et Stir River Patrol assurent l'essentiel de la ligne de tir et bénéficient du <strong>+5% par rang</strong>, que les arquebusiers standard ne touchent pas"},
         {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "<strong>State Troop</strong> de tir. Sur une fiche où les arquebusiers standard sont réduits à un exemplaire, c'est elle qui porte la ligne de feu, avec le <strong>+5% de dégâts de tir par rang</strong> de l'Empereur"},
@@ -100,11 +100,11 @@
         {"icon": "nordlandMariners", "name": "Nordland Mariners (Halberdiers)", "qty": 1, "note": "<strong>State Troop</strong> anti-grande cible — indispensable en Lustrie, où l'expédition affronte des monstres bien plus que des hommes"},
         {"icon": "swordsmen", "name": "Swordsmen", "qty": 1, "note": "Infanterie de ligne polyvalente"},
         {"icon": "swordsOfUlric", "name": "Swords of Ulric (Swordsmen)", "qty": 1, "note": "<strong>State Troop</strong> d'infanterie de ligne. L'expédition du Grand Veneur est coupée de ses arrières : elle a besoin de troupes qui tiennent seules, sans renfort"},
-        {"icon": "spearmenEmpire", "name": "Spearmen (The Empire)", "qty": 1, "note": "Anti-grande unité bon marché"},
+        {"icon": "spearmenEmpire", "name": "Spearmen", "qty": 1, "note": "Anti-grande unité bon marché"},
         {"icon": "eldredsGuard", "name": "Eldred's Guard (Spearmen – Shields)", "qty": 1, "note": "<strong>State Troop</strong> de lanciers au bouclier, la meilleure ancre disponible face aux charges de cavalerie froide et de monstres lustriens"},
         {"icon": "huntsmen", "name": "Huntsmen", "qty": 2, "note": "-50% d'entretien (seigneur) — tireurs d'élite en embuscade, se déploient cachés"},
         {"icon": "theWhiteWolves", "name": "The White Wolves (Huntsmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — -50% d'entretien (seigneur), variante d'élite des Huntsmen dévouée à Ulric"},
-        {"icon": "archersEmpire", "name": "Archers (The Empire)", "qty": 4, "note": "-50% d'entretien (seigneur) — tir de masse bon marché"},
+        {"icon": "archersEmpire", "name": "Archers", "qty": 4, "note": "-50% d'entretien (seigneur) — tir de masse bon marché"},
         {"icon": "theBlackLions", "name": "The Black Lions (War Wagons – Helblasters)", "qty": 1, "note": "Le Régiment de Renom des War Wagons, avec des Helblasters montés. Attention au calendrier : cette faction a un <strong>roster limité</strong> au départ, et les Régiments de Renom arrivent par les renforts de l'Emperor's Mandate, pas par le recrutement immédiat"},
         {"icon": "warWagons", "name": "War Wagons", "qty": 2, "note": "Chariot de tir mobile, soutien blindé pour la ligne de tir"}
       ],
@@ -213,7 +213,7 @@
         {"icon": "handgunners", "name": "Handgunners", "qty": 1, "note": "Tir de précision perforant — abat l'infanterie lourde et les monstres avant le contact"},
         {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "<strong>State Troop</strong> de tir — le seul appui à distance stable d'une fiche dont la capacité « The Mad Count » distribue ses effets au hasard"},
         {"icon": "theBordermen", "name": "The Bordermen (Outriders – Grenade Launchers)", "qty": 1, "note": "<strong>State Troop</strong> de cavalerie de tir. Averland est une marche frontalière : ces tirailleurs montés en sont l'expression, et leur déploiement d'avant-garde prépare la charge du Comte"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible — élimine monstres et blindés qui menaceraient la charge"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Artillerie anti-grande cible — élimine monstres et blindés qui menaceraient la charge"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet — brise les formations groupées et prépare le terrain à la charge"}
       ],
       "magic": "Marius n'est pas un lanceur de sorts — sa puissance vient de « Knightly Charge » (seigneur) et de « The Mad Count ». Le soutien magique vient du Bright Wizard (Lore of Fire, pour désorganiser avant l'impact) et des prières du Warrior Priest (survie et commandement). Note sur « The Mad Count » : l'effet étant tiré au hasard, un « Lunatic Ravings! » (ne peut plus bouger) peut survenir au mauvais moment — à utiliser en pleine mêlée où l'immobilité importe moins.",
@@ -249,7 +249,7 @@
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 1, "note": "Anti-grande cible — protège la ligne de tir des monstres et de la cavalerie"},
         {"icon": "nordlandMariners", "name": "Nordland Mariners (Halberdiers)", "qty": 1, "note": "<strong>State Troop</strong> anti-grande cible, qui protège les tireurs du Hochland de tout ce qui parviendrait au contact"},
         {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Cavalerie monstrueuse — protège les flancs et charge les tireurs ou casters qui menaceraient la ligne"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible — abat monstres et blindés à longue portée"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Artillerie anti-grande cible — abat monstres et blindés à longue portée"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 2, "note": "Artillerie à zone d'effet — saturation des formations groupées avant qu'elles n'atteignent la ligne"}
       ],
       "magic": "Aldebrand n'est pas un lanceur de sorts — sa puissance vient de la poudre à canon. Le Bright Wizard (Lore of Fire) ajoute la magie offensive qui désorganise l'infanterie groupée, tandis que le Warrior Priest maintient le commandement.",
@@ -288,7 +288,7 @@
         {"icon": "swordsOfUlric", "name": "Swords of Ulric (Swordsmen)", "qty": 1, "note": "<strong>State Troop</strong> d'infanterie polyvalente. Le Nordland étant limitrophe du Middenland, le culte d'Ulric y recrute largement"},
         {"icon": "knightsEverlastingLight", "name": "Knights of the Everlasting Light (Empire Knights)", "qty": 1, "note": "<strong>State Troop</strong> de chevalerie sigmarite, débloquée par <em>Knights of the Empire</em> — la charge lourde qui manquait à une fiche bâtie sur l'infanterie et le tir"},
         {"icon": "theStubbornBulls", "name": "The Stubborn Bulls (Empire Knights – Greatswords)", "qty": 1, "note": "<strong>State Troop</strong> de chevaliers à deux mains. Le taureau est l'emblème d'Ostland, province voisine : ces chevaliers servent là où le front nordique le demande"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "La pièce lourde du Nordland, tournée vers les monstres marins et les géants que les flottes norses amènent avec elles"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "La pièce lourde du Nordland, tournée vers les monstres marins et les géants que les flottes norses amènent avec elles"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Saturation de zone contre les hordes norses qui débarquent sur les côtes du Nordland — c'est le volume de feu, pas la précision, qui compte face à un raid"}
       ],
       "magic": "Theoderic n'est pas un lanceur de sorts — sa force vient du commandement (qui monte avec chaque guerre, seigneur). Le soutien magique vient de l'Amber Wizard (buffs de mêlée) et des prières du Warrior Priest.",
@@ -325,7 +325,7 @@
         {"icon": "handgunners", "name": "Handgunners", "qty": 1, "note": "Tir perforant — abat monstres et infanterie lourde à distance"},
         {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "<strong>State Troop</strong> de tir. Contre les morts-vivants de Sylvanie, la puissance perforante des arquebuses vaut mieux que le volume de flèches"},
         {"icon": "nordlandMariners", "name": "Nordland Mariners (Halberdiers)", "qty": 1, "note": "<strong>State Troop</strong> anti-grande cible — la réponse aux Varghulfs et aux Terrorgheists que la frontière sylvanienne envoie régulièrement"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible en complément du Hammer of the Witches"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Artillerie anti-grande cible en complément du Hammer of the Witches"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Saturation de zone contre les masses de morts-vivants venues de Sylvanie, que le tir précis d'une pièce unique ne saurait entamer"}
       ],
       "magic": "Wolfram n'est pas un lanceur de sorts — sa puissance vient de son escouade de Witch Hunters (héros) et de sa cavalerie incassable. Les Witch Hunters apportent dispels et actions anti-personnage plutôt que de la magie offensive brute.",
@@ -357,10 +357,10 @@
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 3, "note": "+20 armure, Formation Attack, +15% masse (faction/seigneur) — anti-grande cible et anti-cavalerie, complète le mur contre les monstres"},
         {"icon": "nordlandMariners", "name": "Nordland Mariners (Halberdiers)", "qty": 1, "note": "<strong>State Troop</strong> anti-grande cible qui complète le mur de lances : les lanciers fixent, les hallebardes traitent ce qui est trop gros pour eux"},
         {"icon": "sigmarsSons", "name": "Sigmar's Sons (Swordsmen)", "qty": 2, "note": "Régiment favori : +1 capacité et attribut Formation Attack (faction) — infanterie d'élite qui frappe en formation serrée"},
-        {"icon": "maneaters", "name": "Ogre Maneaters", "qty": 2, "note": "Mercenaires ogres (bâtiment unique d'Ostland, faction) — masse brute (+15% masse, seigneur) et puissance de choc qui manquent à l'infanterie humaine"},
+        {"icon": "maneaters", "name": "Maneaters", "qty": 2, "note": "Mercenaires ogres (bâtiment unique d'Ostland, faction) — masse brute (+15% masse, seigneur) et puissance de choc qui manquent à l'infanterie humaine"},
         {"icon": "handgunners", "name": "Handgunners", "qty": 1, "note": "Tir perforant derrière le mur — abat l'infanterie lourde qui vient s'empaler sur les piques"},
         {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "<strong>State Troop</strong> de tir, l'appui à distance d'une fiche entièrement défensive qui a besoin de punir l'ennemi pendant qu'il s'écrase sur le mur"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "La seule pièce de la fiche capable de traiter une très grande cible avant qu'elle n'atteigne le mur de lances d'Ostland"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "La seule pièce de la fiche capable de traiter une très grande cible avant qu'elle n'atteigne le mur de lances d'Ostland"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet contre les formations qui s'agglutinent sur le mur"},
         {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 1, "note": "Cavalerie monstrueuse — la seule pièce de contre-charge, protège un flanc et chasse les tireurs"}
       ],
@@ -396,7 +396,7 @@
         {"icon": "halberdiers", "name": "Halberdiers", "qty": 1, "note": "Anti-grande cible — protège la ligne de tir des monstres et de la cavalerie lourde des morts-vivants"},
         {"icon": "nordlandMariners", "name": "Nordland Mariners (Halberdiers)", "qty": 1, "note": "<strong>State Troop</strong> anti-grande cible — indispensable en Stirland, dont la frontière avec la Sylvanie amène surtout des monstres et des morts-vivants massifs"},
         {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 1, "note": "Cavalerie monstrueuse — contre-charge et anti-grande cible, profite du +12% bonus de charge (seigneur) pour chasser les gros monstres morts-vivants"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Artillerie anti-grande cible — abat les monstres morts-vivants (Terrorgheists, Varghulfs)"},
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Artillerie anti-grande cible — abat les monstres morts-vivants (Terrorgheists, Varghulfs)"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "Artillerie à zone d'effet contre les hordes d'infanterie morte-vivante"}
       ],
       "magic": "Alberich n'est pas un lanceur de sorts — sa puissance vient du tir à l'arc de masse. Le soutien vient du Warrior Priest (commandement, soins, anti-mort-vivant) et du Witch Hunter (traque des personnages ennemis). Attention : l'armure -10 (faction) rend toute l'armée fragile au corps-à-corps — c'est le prix de la précision.",
@@ -433,7 +433,7 @@
         {"icon": "gundermansSurefires", "name": "Gunderman's Surefires (Handgunners)", "qty": 1, "note": "<strong>State Troop</strong> de tir, en appui du Sunmaker dont Helmut fait son régiment favori — les arquebuses tiennent l'ennemi pendant que les fusées le saturent"},
         {"icon": "demigryphKnights", "name": "Demigryph Knights", "qty": 2, "note": "Cavalerie monstrueuse — masse et impact qui enfoncent le front, frappe la première (+5 mêlée en attaque, seigneur)"},
         {"icon": "knightsEverlastingLight", "name": "Knights of the Everlasting Light (Empire Knights)", "qty": 1, "note": "<strong>State Troop</strong> de chevalerie, débloquée par <em>Knights of the Empire</em> — la seule charge lourde d'une fiche autrement bâtie sur l'artillerie et l'infanterie"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Le complément de précision du Sunmaker : là où les fusées saturent, le canon désigne et abat une cible unique"}
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Le complément de précision du Sunmaker : là où les fusées saturent, le canon désigne et abat une cible unique"}
       ],
       "magic": "Helmut n'est pas un lanceur de sorts — sa force vient de l'agression (+5 mêlée et commandement en attaque, seigneur). Le Warrior Priest of Taal apporte les bénédictions de la nature et l'Amber Wizard (Lore of Beasts) buffe l'infanterie de culte, en parfaite cohérence avec le thème sauvage.",
       "note": "Build hybride unique dans l'Empire, exploitant le <strong>Culte de Taal & Rhya</strong>. Le bâtiment de temple (faction) débloque un Warrior Priest of Taal et trois unités de culte — <strong>Celebrants, Horned Hunters et Daughters of Rhya</strong> — à -15% d'entretien (faction), un cœur d'armée fanatique et sauvage qui n'existe nulle part ailleurs. Les effets de Helmut récompensent l'<strong>offensive</strong> : +5 d'attaque en mêlée et +5 de commandement <em>en attaque</em> (seigneur), donc on charge le premier plutôt que d'attendre. La discipline impériale (Greatswords, Handgunners, Demigryph Knights, Great Cannon) encadre les fervents du culte, et le <strong>Sunmaker</strong> (favori, +20% munitions et dégâts de tir, faction) pilonne à zone. En forêt, le +10% de résistance physique (faction) rend toute l'armée coriace — le terrain idéal pour ce culte de la nature."
@@ -648,7 +648,7 @@
         {"icon": "goedendagers", "name": "Goedendagers", "qty": 2, "note": "Infanterie de choc bon marché — le tampon qui protège les nains le temps qu'ils gagnent leurs rangs"},
         {"icon": "rijdersCrossbows", "name": "Rijders (Crossbows)", "qty": 2, "note": "Cavalerie légère à arbalète — la seule mobilité d'une armée autrement très lente, indispensable contre l'artillerie adverse"},
         {"icon": "helstormRocketBattery", "name": "Helstorm Rocket Battery", "qty": 1, "note": "L'artillerie de la fiche — une armée qui gagne en tenant sa position a tout intérêt à forcer l'ennemi à venir à elle"},
-        {"icon": "greatCannons", "name": "Great Cannon", "qty": 1, "note": "Tir tendu contre les grandes cibles et les blindés, que ni les nains migrés ni les Kloveniers ne traitent efficacement"}
+        {"icon": "greatCannons", "name": "Great Cannons", "qty": 1, "note": "Tir tendu contre les grandes cibles et les blindés, que ni les nains migrés ni les Kloveniers ne traitent efficacement"}
       ],
       "magic": "Aucun lanceur de sorts : les deux héros que la table du mod autorise pour la maison Fooger sont des combattants. Si vous voulez de la magie, un Sorcier de l'Empire remplace sans dommage un Palldee — mais la fiche est bâtie sur la solidité et l'expérience accumulée, pas sur les pics de puissance.",
       "note": "La mécanique centrale de cette maison est la <strong>collecte de nains errants par les caravanes</strong> : ce n'est pas un bonus passif mais une raison de faire tourner les convois sur la Route d'Ivoire en permanence, puisque chaque caravane peut ramener une unité que la faction rend ensuite bien meilleure que la moyenne. Le <strong>+30% de gain d'expérience</strong> (faction) est le vrai levier de long terme : des nains migrés entretenus longtemps deviennent des vétérans que rien de comparable ne remplace, alors que les mêmes unités recrutées puis sacrifiées ne valent rien. Ne les jetez donc pas dans les mêlées perdues. Côté diplomatie, le <strong>+30% de points d'allégeance avec les Nains</strong> (seigneur) oriente clairement vers une alliance avec les holds — ce qui, pour une maison marchande marienbourgeoise dirigée par un nain, est aussi la cohérence narrative du personnage. Enfin, notez qu'Arkat n'accorde <strong>aucun bonus de combat direct</strong> : sa faction est la plus économique des quatre maisons du mod, et une partie mal financée ne se rattrapera pas sur le champ de bataille."

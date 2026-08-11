@@ -33,7 +33,7 @@
         {"icon": "theOldOneHero", "name": "The Old One (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, de classe <em>dignitary</em> — un profil de soutien de campagne qui sécurise un flanc pendant que Vlad et Isabella tiennent le centre"}
       ],
       "army": [
-        {"icon": "graveGuard", "name": "Grave Guard (Grande Arme)", "qty": 5, "note": "Ligne principale de mêlée increvable"},
+        {"icon": "graveGuard", "name": "Grave Guard", "qty": 5, "note": "Ligne principale de mêlée increvable"},
         {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Grave Guard"},
         {"icon": "blackKnight", "name": "Black Knights", "qty": 4, "note": "Avec Vanguard Deployment, ils démarrent déjà en position de flanc — charge dès le tour 1 au lieu d'approcher sous les tirs"},
         {"icon": "terrorgheist", "name": "Terrorgheist", "qty": 2, "note": "Monstre lent normalement pénalisé par l'approche — ici il apparaît directement au contact et hurle sa terreur avant que l'ennemi ne réagisse"},
@@ -61,7 +61,7 @@
       "lord": {"icon": "isabella", "name": "Isabella von Carstein", "qty": 1, "note": "Reste en retrait, lance ses sorts en continu — ses buffs de +10/+10 mêlée et +25% force d'arme rendent chaque héros Vampire de son armée bien plus dangereux qu'ailleurs"},
       "heroes": [
         {"icon": "vlad", "name": "Vlad von Carstein (Legendary Hero)", "qty": 1, "note": "Indispensable, pas optionnel : déclenche le +50% de plafond de soin. Gratuit dès le départ de campagne."},
-        {"icon": "vampireHeroDeath", "name": "Vampire (Death, Hellsteed)", "qty": 2, "note": "Grâce au +3 de capacité de héros pour les Vampires, tu peux aligner 3 Vampires sans sacrifier d'autres slots de héros. Chacun profite de +10 Attaque/Défense en mêlée et +25% Force de l'arme rien qu'en étant dans l'armée d'Isabella"},
+        {"icon": "vampireHeroDeath", "name": "Vampire (Death)", "qty": 2, "note": "Grâce au +3 de capacité de héros pour les Vampires, tu peux aligner 3 Vampires sans sacrifier d'autres slots de héros. Chacun profite de +10 Attaque/Défense en mêlée et +25% Force de l'arme rien qu'en étant dans l'armée d'Isabella"},
         {"icon": "whisperingNell", "name": "Whispering Nell (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod <em>3 Legendary Guys</em>, montée sur cauchemar et de classe <em>spy</em> — elle profite comme les autres du <strong>+10 d'attaque et de défense en mêlée et du +25% de force d'arme</strong> que donne la seule présence d'Isabella"}
       ],
       "army": [
@@ -98,7 +98,7 @@
         {"icon": "cannibalKnight", "name": "Cannibal Knight (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, disponible en version à pied comme montée sur hippogriffe — un quatrième champion nommé pour une fiche qui en aligne déjà trois, et qui profite de la réserve de magie élargie de Mannfred"}
       ],
       "army": [
-        {"icon": "graveGuard", "name": "Grave Guard (Grande Arme)", "qty": 5, "note": "Coeur de l'armée — -25% d'entretien avec Mannfred (seigneur), et les rangs où combat personnellement Helmut von Carstein, bannière au poing"},
+        {"icon": "graveGuard", "name": "Grave Guard", "qty": 5, "note": "Coeur de l'armée — -25% d'entretien avec Mannfred (seigneur), et les rangs où combat personnellement Helmut von Carstein, bannière au poing"},
         {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Grave Guard, également couverte par le -25% d'entretien (seigneur)"},
         {"icon": "blackKnight", "name": "Black Knights (Lances & Barding)", "qty": 5, "note": "-25% d'entretien avec Mannfred — cavalerie lourde en grand nombre, ce qui n'est normalement pas soutenable économiquement ; Gorgivich Krakvald charge à leur tête"},
         {"icon": "hexwraith", "name": "Hexwraiths", "qty": 1, "note": "Harcèlement et flanc — repositionnement rapide, sous la conduite de Gunther von Grecht"},
@@ -191,7 +191,7 @@
       ],
       "army": [
         {"icon": "blackKnight", "name": "Black Knights (Lances & Barding)", "qty": 3, "note": "Cavalerie de choc morte-vivante — fer de lance mené par les Vampires, frappe les flancs et les tireurs"},
-        {"icon": "graveGuard", "name": "Grave Guard (Grande Arme)", "qty": 2, "note": "Infanterie d'élite anti-armure — tient le centre pendant que la cavalerie et les monstres enveloppent"},
+        {"icon": "graveGuard", "name": "Grave Guard", "qty": 2, "note": "Infanterie d'élite anti-armure — tient le centre pendant que la cavalerie et les monstres enveloppent"},
         {"icon": "vargheist", "name": "Vargheists", "qty": 3, "note": "Monstres volants rapides — chassent artillerie et casters ennemis, exploitent la mobilité de l'armée de Neferata"},
         {"icon": "varghulf", "name": "Varghulf", "qty": 1, "note": "Monstre de choc régénérant — brise les formations et se soigne au fil du carnage"},
         {"icon": "terrorgheist", "name": "Terrorgheist", "qty": 1, "note": "Monstre volant colossal — cri mortel et présence terrifiante qui font rompre les lignes"},
@@ -501,7 +501,7 @@
         {"icon": "obadiahGlothman", "name": "Obadiah Glothman", "qty": 1, "note": "Héros légendaire du mod (classe <em>wizard</em>) — la seule magie de la liste, à orienter vers la terreur et le contrôle plutôt que vers les dégâts"}
       ],
       "army": [
-        {"icon": "feastersInTheDusk", "name": "Feasters in the Dusk (Crypt Ghouls)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des goules, et la meilleure unité de pression bon marché de la fiche"},
+        {"icon": "feastersInTheDusk", "name": "The Feasters in the Dusk (Crypt Ghouls)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des goules, et la meilleure unité de pression bon marché de la fiche"},
         {"icon": "cryptGhouls", "name": "Crypt Ghouls", "qty": 4, "note": "Le socle. Rapides, venimeuses et sacrifiables — elles submergent la ligne adverse pour faire tomber son Commandement sous les 50% qu'exige <strong>\"Willbreaker\"</strong>"},
         {"icon": "cryptHorrors", "name": "Crypt Horrors", "qty": 3, "note": "Infanterie monstrueuse régénérante — le point dur qui transforme la pression des goules en percée réelle"},
         {"icon": "vargheist", "name": "Vargheists", "qty": 3, "note": "Monstres volants issus de la lignée Strigoï — ils vont chercher l'artillerie et les tireurs, dont la panique fait basculer tout le front adverse"},

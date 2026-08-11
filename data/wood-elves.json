@@ -26,8 +26,8 @@
         {"icon": "eternalGuardShield", "name": "Eternal Guard (Shields)", "qty": 3, "note": "Ancre de mêlée qui tient le centre pendant que le Roi de la Chasse frappe partout ailleurs : sans elle, sa mobilité n'aurait aucun point d'appui"},
         {"icon": "waywatchers", "name": "Waywatchers", "qty": 2, "note": "Archers d'élite, tir de précision longue portée"},
         {"icon": "deepwoodScouts", "name": "Deepwood Scouts", "qty": 2, "note": "Tirailleurs embusqués, harcèlement et flanquement"},
-        {"icon": "treeman", "name": "Treeman (Wood Elves)", "qty": 1, "note": "Monstre de choc massif, pièce maîtresse de mêlée"},
-        {"icon": "greatEagle", "name": "Great Eagle (Wood Elves)", "qty": 1, "note": "Éclaireur volant rapide, chasse de héros et d'artillerie"}
+        {"icon": "treeman", "name": "Treeman", "qty": 1, "note": "Monstre de choc massif, pièce maîtresse de mêlée"},
+        {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Éclaireur volant rapide, chasse de héros et d'artillerie"}
       ],
       "magic": "Orion n'est pas un lanceur de sorts inné ; sa puissance repose sur ses aptitudes de chasseur et sur les bonus de commandement et de charge qu'il confère à son armée.",
       "note": "Ariel est embarquée en priorité car l'aptitude \"Guardian\" d'Orion (Ward Save de zone, +15% résistance physique pour tous les Seigneurs/Héros alliés à portée, seigneur) ne s'active QUE si elle est présente dans l'armée — sans elle, ce bonus défensif reste totalement inactif. Cette armée exploite ensuite au maximum le profil de cavalerie d'Orion : son +20% de puissance des armes et +8 de bonus de charge s'appliquent à TOUTE la Cavalerie (seigneur), pas seulement aux Wild Riders — Wild Hunters of Kurnous, Wild Riders (Shields) et Glade Riders en profitent donc tous également. Les 2 exemplaires du régiment favori Wild Hunters of Kurnous, permis par la capacité augmentée (faction), forment le fer de lance d'élite. Les Eternal Guard tiennent la ligne pendant que Waywatchers et Deepwood Scouts pilonnent l'ennemi à distance. Le Treeman sert d'ancre de choc et le Great Eagle de vigie mobile, complétant une armée taillée pour la Chasse Sauvage."
@@ -53,10 +53,10 @@
         {"icon": "branchwraith", "name": "Branchwraith", "qty": 1, "note": "Soutien magique et de régénération complémentaire"}
       ],
       "army": [
-        {"icon": "dryads", "name": "Dryads (Wood Elves)", "qty": 4, "note": "Entretien -30% (seigneur), immunisées à l'attrition (seigneur) — infanterie sylvaine bon marché et increvable"},
-        {"icon": "treeKin", "name": "Tree Kin (Wood Elves)", "qty": 2, "note": "Entretien -30% (seigneur) et aptitude \"Resplendence of Luminescents\" (seigneur) — infanterie monstrueuse résistante"},
+        {"icon": "dryads", "name": "Dryads", "qty": 4, "note": "Entretien -30% (seigneur), immunisées à l'attrition (seigneur) — infanterie sylvaine bon marché et increvable"},
+        {"icon": "treeKin", "name": "Tree Kin", "qty": 2, "note": "Entretien -30% (seigneur) et aptitude \"Resplendence of Luminescents\" (seigneur) — infanterie monstrueuse résistante"},
         {"icon": "firebarkElders", "name": "The Firebark Elders (Tree Kin)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Tree Kin, également couverte par Resplendence of Luminescents (seigneur) et l'entretien réduit (-30%, seigneur)"},
-        {"icon": "treeman", "name": "Treeman (Wood Elves)", "qty": 3, "note": "Entretien -30% (seigneur), aptitude \"Annoyance of Netlings\" (seigneur) et attribut \"Wallbreaker\" (faction) — monstre de choc massif spécialisé dans la prise de siège, pièce maîtresse de l'armée"},
+        {"icon": "treeman", "name": "Treeman", "qty": 3, "note": "Entretien -30% (seigneur), aptitude \"Annoyance of Netlings\" (seigneur) et attribut \"Wallbreaker\" (faction) — monstre de choc massif spécialisé dans la prise de siège, pièce maîtresse de l'armée"},
         {"icon": "gladeGuard", "name": "Glade Guard", "qty": 3, "note": "Tir de soutien"},
         {"icon": "wildwoodRangers", "name": "Wildwood Rangers", "qty": 2, "note": "Infanterie de mêlée agile"},
         {"icon": "eternalGuardShield", "name": "Eternal Guard (Shields)", "qty": 1, "note": "Ligne de mêlée résistante"}
@@ -88,7 +88,7 @@
         {"icon": "waywatchers", "name": "Waywatchers", "qty": 3, "note": "Entretien -15% (seigneur), munitions +10% (faction) — archers d'élite"},
         {"icon": "hawkRiders", "name": "Hawk Riders", "qty": 3, "note": "+10 attaque en mêlée et +15% bonus de charge (seigneur), aptitude Volley of Kurnous (faction) — cavalerie volante de tir et de choc"},
         {"icon": "loecsTricksters", "name": "Loec's Tricksters (Wardancers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Wardancers, mêlée agile et imprévisible"},
-        {"icon": "greatEagle", "name": "Great Eagle (Wood Elves)", "qty": 2, "note": "+10 attaque en mêlée et +15% bonus de charge (seigneur) — éclaireur volant rapide"},
+        {"icon": "greatEagle", "name": "Great Eagle", "qty": 2, "note": "+10 attaque en mêlée et +15% bonus de charge (seigneur) — éclaireur volant rapide"},
         {"icon": "deepwoodScouts", "name": "Deepwood Scouts", "qty": 1, "note": "Entretien -15% (seigneur) — tirailleurs embusqués"},
         {"icon": "eternalGuardShield", "name": "Eternal Guard (Shields)", "qty": 2, "note": "Ancre de mêlée qui protège les deux sœurs et Ceithin-Har, une fiche autrement composée de tireurs et de volants fragiles"}
       ],
@@ -246,7 +246,7 @@
         {"icon": "waystalker", "name": "Waystalker", "qty": 2, "note": "Tireurs d'élite — ils bénéficient du <strong>+12 de Compétence de rechargement</strong> de l'aura et servent à abattre les personnages adverses avant qu'ils n'atteignent la ligne"}
       ],
       "army": [
-        {"icon": "eyesOfDrakira", "name": "Eyes of Drakira (Waywatchers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des Waywatchers, qui cumule le <strong>+8%</strong> de la faction et le <strong>+10%</strong> du seigneur"},
+        {"icon": "eyesOfDrakira", "name": "Hawk-Eyes of Drakira (Waywatchers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — la version d'élite des Waywatchers, qui cumule le <strong>+8%</strong> de la faction et le <strong>+10%</strong> du seigneur"},
         {"icon": "waywatchers", "name": "Waywatchers", "qty": 3, "note": "Cités nommément par l'effet de faction. Infiltrés et perforants, ils tiennent les flancs et démontent l'artillerie adverse"},
         {"icon": "gladeGuard", "name": "Glade Guard", "qty": 4, "note": "Le volume de tir de base, également cité par l'effet de faction. À <strong>-25% d'entretien</strong>, quatre unités ne pèsent presque rien sur le trésor"},
         {"icon": "deepwoodScouts", "name": "Deepwood Scouts", "qty": 3, "note": "Troisième unité citée nommément — leur infiltration permet d'ouvrir le feu avant même que la bataille ne commence vraiment"},
@@ -284,7 +284,7 @@
         {"icon": "treeman", "name": "Treeman", "qty": 1, "note": "La grande pièce de rupture. Un seul exemplaire : cette armée gagne par le nombre de menaces simultanées, pas par une pièce maîtresse"},
         {"icon": "eternalGuardShield", "name": "Eternal Guard (Boucliers)", "qty": 3, "note": "L'infanterie de ligne elfe, qui profite directement du <strong>+10 de Commandement en forêt</strong> — son point faible habituel"},
         {"icon": "gladeGuard", "name": "Glade Guard", "qty": 3, "note": "Le tir minimal. Marrisith n'accorde <strong>aucun</strong> bonus de tir, contrairement à Prince Oreon juste au-dessus : trois unités suffisent à ne pas subir l'approche"},
-        {"icon": "wildRidersShield", "name": "Wild Riders (Boucliers)", "qty": 2, "note": "La cavalerie de choc sylvaine — avec <strong>+15% de Vitesse</strong>, elle arrive sur les flancs avant que l'adversaire n'ait fini de se déployer"}
+        {"icon": "wildRidersShield", "name": "Wild Riders (Shields)", "qty": 2, "note": "La cavalerie de choc sylvaine — avec <strong>+15% de Vitesse</strong>, elle arrive sur les flancs avant que l'adversaire n'ait fini de se déployer"}
       ],
       "magic": "Une Spellsinger de Vie, et c'est peu — mais la vraie capacité magique de cette fiche est <strong>\"Queen of Laurelorn\"</strong>, qui accorde des <strong>Attaques Magiques</strong> à tout ce qui entoure la Reine pendant 21 secondes. C'est la seule réponse de l'armée aux unités éthérées, et elle n'est utilisable qu'une fois par bataille.",
       "note": "Comparez cette fiche avec celle du Prince Oreon juste au-dessus : même race, même mod, mais des directions opposées. Oreon cumule trois bonus de tir ; Marrisith n'en accorde aucun et donne à la place <strong>+10 de Commandement et +8 d'Attaque de mêlée en forêt</strong>. Sa faction se bat au contact, dans les bois, et le <strong>+15% de Vitesse</strong> plus le <strong>+10% de portée de déplacement</strong> lui permettent de choisir où. Notez l'effet le plus inattendu : <strong>+3 de Santé de la Forêt pour avoir rasé des Landes</strong>. Les Elfes Sylvains sont censés protéger la nature ; le Laurelorn est récompensé pour détruire. C'est cohérent avec les Eonir, qui sont des Elfes du Laurelorn plus proches d'Ulthuan que d'Athel Loren, et que le <strong>+15 de relations avec les hommes, les Hauts Elfes, les Hommes-Lézards et les Nains</strong> place clairement dans le camp de l'ordre. Enfin, retenez la double lecture d'<strong>Hébété !</strong> : ce n'est pas un malus subi par vos troupes mais une <strong>imprégnation</strong> — leurs coups l'infligent à l'ennemi, qui perd alors 10 de Défense de mêlée et 25% de Vitesse."
@@ -316,7 +316,7 @@
         {"icon": "deepwoodScouts", "name": "Deepwood Scouts", "qty": 1, "note": "Tir furtif — ils se placent avant la bataille et profitent eux aussi du <strong>+10% de portée</strong>"},
         {"icon": "waywatchers", "name": "Waywatchers", "qty": 2, "note": "L'élite du tir sylvain, la pièce qui abat ce que les Glade Guard se contentent d'user"},
         {"icon": "dryads", "name": "Dryads", "qty": 2, "note": "Second bénéficiaire du <strong>+10% de force d'arme</strong> (faction) — de l'infanterie légère rapide pour tenir les flancs des archers"},
-        {"icon": "wildRiders", "name": "Wild Riders of Kurnous", "qty": 2, "note": "La cavalerie de choc, seule pièce capable de punir ce que <strong>\"Frostbite!\"</strong> a ralenti à <strong>-30% de vitesse</strong>"},
+        {"icon": "wildRiders", "name": "Wild Riders", "qty": 2, "note": "La cavalerie de choc, seule pièce capable de punir ce que <strong>\"Frostbite!\"</strong> a ralenti à <strong>-30% de vitesse</strong>"},
         {"icon": "gladeRiders", "name": "Glade Riders", "qty": 1, "note": "Cavalerie de tir : elle harcèle et décroche, exactement ce que le <strong>+10% de vitesse</strong> facilite"},
         {"icon": "treeKin", "name": "Tree Kin", "qty": 1, "note": "Le point dur monstrueux — une armée de tir a besoin d'une pièce que l'ennemi ne peut pas simplement bousculer"}
       ],
