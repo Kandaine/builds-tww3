@@ -16,7 +16,7 @@
       "lord": {"icon": "tyrion", "name": "Tyrion", "qty": 1, "note": "Le meilleur duelliste du jeu — monté sur Malhandir, il rattrape n'importe quel seigneur ennemi et le démembre en quelques passes"},
       "heroes": [
         {"icon": "hefCaradryan", "name": "Caradryan (Héros Légendaire)", "qty": 1, "note": "Capitaine de la Garde du Phénix monté sur le Frostheart Phoenix Ashtari — Héros Légendaire qui renforce le cœur de Phénix ×2 de l'ost : aura défensive, immunité à la Psychologie et frappe embrasée. Un compagnon de choc idéal pour le duelliste Tyrion"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — buffs et projectiles pour appuyer la ligne"}
+        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — Tyrion étant totalement immunisé aux sorts, ce mage couvre l'armée que cette immunité ne protège pas"}
       ],
       "army": [
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 4, "note": "Cavalerie lourde à -50% d'entretien (seigneur) et recrutée un tour plus vite (faction) — un luxe habituellement coûteux devient abordable en masse"},
@@ -85,7 +85,7 @@
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 5, "note": "+3 rang de recrutement (faction) puis +8 commandement et +8 défense en mêlée (seigneur) — le pilier de cette armée"},
         {"icon": "scionsOfMathlann", "name": "The Scions of Mathlann (Spearmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Spearmen, également couverte par +8 commandement et +8 défense en mêlée (seigneur)"},
         {"icon": "shadowWalker", "name": "Shadow Warriors", "qty": 4, "note": "Unité de type Ranger — profite du même double bonus faction (+3 rang) et seigneur (+8 commandement/défense)"},
-        {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Soutien à distance classique"},
+        {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Archers d'Ulthuan, sur la fiche du Gardien de Tor Yvresse dont toute la doctrine repose sur la précision et la patience"},
         {"icon": "phoenix", "name": "Phoenix (Arcane)", "qty": 2, "note": "Monstre volant polyvalent en soutien"}
       ],
       "magic": "Eltharion a accès à la Haute Magie (Apotheosis, Tempest, Soul Quench) pour soigner et soutenir sa ligne tout en punissant les concentrations ennemies.",
@@ -202,7 +202,7 @@
       "lord": {"icon": "aislinn", "name": "Sea Lord Aislinn", "qty": 1, "note": "Amiral implacable de la flotte asur — sa capacité Iron-Handed Captain (+100 de commandement et ralliement immédiat, 200m, seigneur) sauve in extremis une unité alliée en déroute, et son bonus de +20% de force de tir en mer (seigneur) en fait un seigneur redoutable près des côtes ; débloque aussi les attaques navales contre les colonies portuaires (seigneur)"},
       "heroes": [
         {"icon": "noble", "name": "Noble", "qty": 1, "note": "Renfort de mêlée classique en complément d'Aislinn"},
-        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique — buffs et projectiles pour appuyer la ligne"}
+        {"icon": "mage", "name": "Mage (Haute Magie)", "qty": 1, "note": "Soutien magique de la flotte de Lothern : buffs et projectiles pour appuyer une ligne de tir déjà dense"}
       ],
       "army": [
         {"icon": "shipsCompany", "name": "Ship's Company", "qty": 3, "note": "-10% d'entretien (seigneur) — le cœur bon marché de cette armée maritime"},

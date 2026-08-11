@@ -26,7 +26,7 @@
         {"icon": "skeletonArchers", "name": "Skeleton Archers", "qty": 2, "note": "Tir de soutien bon marché — réduit d'une unité pour financer le troisième Tomb Prince et Nyletoth"},
         {"icon": "skeletonChariots", "name": "Skeleton Chariots", "qty": 3, "note": "<strong>+10% de bonus de charge</strong> (faction) — percée rapide, choc contre l'infanterie légère. C'est la famille d'unités que Nyletoth accompagne, et celle dont sa condition de déblocage exige 8 exemplaires en campagne"},
         {"icon": "khemrianWarsphinx", "name": "Khemrian Warsphinx", "qty": 2, "note": "Monstre de choc massif, l'une des montures de Settra"},
-        {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 2, "note": "Artillerie de zone qui terrifie les lignes ennemies"},
+        {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 2, "note": "Artillerie de terreur — l'instrument par lequel le Roi Impérissable brise le moral avant même que ses légions n'avancent"},
         {"icon": "necropolisKnights", "name": "Necropolis Knights", "qty": 1, "note": "Cavalerie lourde d'élite, percée dévastatrice"}
       ],
       "magic": "Settra manie la Lore of Nehekhara (Djaf's Incantation of Cursed Blades, Neru's Incantation of Protection, Ptra's Incantation of Righteous Smiting, Usirian's Incantation of Vengeance, Usekph's Incantation of Desiccation, Sakhmet's Incantation of the Skullstorm) en tant que lanceur de sorts autonome, épaulé par ses Tomb Princes pour le soutien de mêlée.",
@@ -56,8 +56,8 @@
         {"icon": "skeletonSpearmen", "name": "Skeleton Spearmen (Tomb Kings)", "qty": 3, "note": "Empoisonnés (seigneur) — anti-grande unité bon marché qui protège la ligne de tir"},
         {"icon": "venomKnightsOfAsaph", "name": "Venom Knights of Asaph (Necropolis Knights)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Necropolis Knights, également empoisonnée (seigneur)"},
         {"icon": "sepulchralStalkers", "name": "Sepulchral Stalkers", "qty": 2, "note": "Empoisonnés (seigneur) — infanterie monstrueuse rapide, flanquement"},
-        {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 2, "note": "Artillerie de zone qui terrifie les lignes ennemies"},
-        {"icon": "casketOfSouls", "name": "Casket of Souls", "qty": 1, "note": "Machine de guerre magique, dégâts de zone dévastateurs"},
+        {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 2, "note": "Artillerie de terreur, qui prolonge à distance le poison et l'effroi dont toute la fiche de Khalida est faite"},
+        {"icon": "casketOfSouls", "name": "Casket of Souls", "qty": 1, "note": "Machine de guerre magique — elle draine les âmes à distance, prolongeant sur le champ de bataille la malédiction que Khalida incarne"},
         {"icon": "khemrianWarsphinx", "name": "Khemrian Warsphinx", "qty": 1, "note": "Empoisonné (seigneur) — monstre de choc massif"}
       ],
       "magic": "Khalida manie la Lore of Nehekhara — épaulée par des Liche Priest pour démultiplier les incantations de bataille, tandis que le poison de son propre effet (seigneur) s'applique à toute son armée sans exception, infligeant -15% de vitesse et -15% de dégâts (tir et mêlée, base et perforant) aux cibles touchées.",
@@ -90,8 +90,8 @@
         {"icon": "nehekharanHorsemen", "name": "Nehekharan Horsemen", "qty": 2, "note": "Attaques Magiques (seigneur) — cavalerie légère de flanquement"},
         {"icon": "hierotitan", "name": "Hierotitan", "qty": 1, "note": "Attaques Magiques (seigneur) — augmente lui-même la réserve de Vents de Magie de l'armée, synergie directe avec l'identité magique de Khatep"},
         {"icon": "ushabti", "name": "Ushabti", "qty": 2, "note": "Attaques Magiques (seigneur) — infanterie monstrueuse increvable"},
-        {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 2, "note": "Artillerie de zone qui terrifie les lignes ennemies"},
-        {"icon": "casketOfSouls", "name": "Casket of Souls", "qty": 1, "note": "Machine de guerre magique, dégâts de zone dévastateurs"},
+        {"icon": "screamingSkullCatapults", "name": "Screaming Skull Catapults", "qty": 2, "note": "Artillerie de terreur, seul appui matériel d'une fiche par ailleurs entièrement magique"},
+        {"icon": "casketOfSouls", "name": "Casket of Souls", "qty": 1, "note": "Machine de guerre magique, pièce maîtresse d'une fiche construite autour du Grand Liche et de ses savoirs"},
         {"icon": "khemrianWarsphinx", "name": "Khemrian Warsphinx", "qty": 2, "note": "Attaques Magiques (seigneur) — monstre de choc massif"}
       ],
       "magic": "Khatep manie la Lore of Nehekhara avec une réserve de Vents de Magie augmentée de +25 (seigneur) et +10 minimum (faction), une portée de ciblage +25% (seigneur) et +50% de chance d'amplification locale (seigneur) — épaulé par des Liche Priest recrutés à XP et rang accrus (faction), il peut lancer des incantations de bataille en continu et à longue portée.",

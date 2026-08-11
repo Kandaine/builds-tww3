@@ -86,7 +86,7 @@
         {"icon": "savageOrcs", "name": "Savage Orcs", "qty": 3, "note": "Même cumul de bonus (seigneur + faction) — cœur de mêlée bon marché et résilient"},
         {"icon": "savageOrcArrerBoyz", "name": "Savage Orc Arrer Boyz", "qty": 2, "note": "Même cumul de bonus (seigneur + faction) — soutien à distance"},
         {"icon": "savageOrcBoarBoyz", "name": "Savage Orc Boar Boyz", "qty": 3, "note": "Même cumul de bonus (seigneur + faction) — cavalerie de choc pour les flancs"},
-        {"icon": "giantGreenskins", "name": "Giant", "qty": 1, "note": "Monstre emblématique pour écraser les lignes ennemies"},
+        {"icon": "giantGreenskins", "name": "Giant", "qty": 1, "note": "Géant — la masse brute d'une fiche autrement portée par la magie du Waaagh! et les rituels du chaman"},
         {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie à trajectoire haute en soutien"},
         {"icon": "deffCreeperz", "name": "Deff Creeperz (Forest Goblin Spider Rider Archers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum — tirailleurs montés rapides pour harceler et flanquer"},
         {"icon": "snaglasDeffThrowa", "name": "Snagla's Deff Throwa (Goblin Bolt Throwa)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum — artillerie légère et précise en soutien"}

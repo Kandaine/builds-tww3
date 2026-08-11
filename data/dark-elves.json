@@ -85,7 +85,7 @@
         {"icon": "harGanethExecutioners", "name": "Har Ganeth Executioners", "qty": 3, "note": "Même double bonus (seigneur) — infanterie d'élite à deux mains"},
         {"icon": "bladesOfTheBloodQueen", "name": "Blades of the Blood Queen (Har Ganeth Executioners)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Har Ganeth Executioners, également couverte par le double bonus d'entretien/force des armes (seigneur)"},
         {"icon": "sistersOfSlaughter", "name": "Sisters of Slaughter", "qty": 4, "note": "Même double bonus d'entretien et de force des armes (seigneur)"},
-        {"icon": "dreadspears", "name": "Dreadspears", "qty": 1, "note": "Ligne de tenue anti-cavalerie en complément"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 1, "note": "Ligne de tenue anti-cavalerie — le mur discipliné derrière lequel les Witch Elves de Hellebron se lancent, et derrière lequel elles se replient"},
         {"icon": "theHellebronai", "name": "The Hellebronai (Dreadspears)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Dreadspears"}
       ],
       "magic": "Hellebron n'est pas une lanceuse de sorts dédiée — sa puissance vient de son statut de Bride of Khaine et de ses bonus d'entretien/force des armes qui transforment toute son armée en horde fanatique.",
@@ -108,7 +108,7 @@
       "totalSlots": 20,
       "lord": {"icon": "lokhir", "name": "Lokhir Fellheart", "qty": 1, "note": "Duelliste redoutable et amiral né — débloque les attaques navales contre les colonies portuaires et l'immunité à l'attrition de Haute Mer/Récifs/Tempêtes (seigneur), idéal pour une campagne de pillage côtier"},
       "heroes": [
-        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis"},
+        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée — le Corsaire ne livre pas de batailles rangées, il décapite les commandements avant de piller"},
         {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Soutien magique en complément de la horde de Corsairs"}
       ],
       "army": [
@@ -139,15 +139,15 @@
       "lord": {"icon": "malusdarkblade", "name": "Malus Darkblade", "qty": 1, "note": "Possédé par le Démon Tz'arkan (faction), il peut se transformer en combattant surpuissant au prix de sa santé — son immunité à la corruption du Chaos et à l'attrition des Chaos Wastes (seigneur) lui permet de traverser librement ces régions autrement mortelles"},
       "heroes": [
         {"icon": "sorceressDark", "name": "Sorceress (Dark Magic)", "qty": 1, "note": "Soutien magique en complément de la cavalerie"},
-        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée de héros et seigneurs ennemis"}
+        {"icon": "khainiteAssassin", "name": "Khainite Assassin", "qty": 1, "note": "Élimination ciblée des personnages ennemis, seul moyen fiable de protéger Malus d'un duel qu'il ne pourrait pas refuser"}
       ],
       "army": [
         {"icon": "coldOneKnights", "name": "Cold One Knights", "qty": 4, "note": "-20% de coût de recrutement et -50% d'entretien (seigneur) — cavalerie lourde quasiment gratuite"},
         {"icon": "knightsOfTheEbonClaw", "name": "Knights of the Ebon Claw (Cold One Knights)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Cold One Knights, également couverte par le double bonus de coût/entretien (seigneur)"},
         {"icon": "coldOneDreadKnights", "name": "Cold One Dread Knights", "qty": 4, "note": "Même double bonus de coût et d'entretien (seigneur) — variante encore plus lourde"},
         {"icon": "coldOneChariots", "name": "Cold One Chariots", "qty": 3, "note": "Même double bonus (seigneur) — percussion supplémentaire"},
-        {"icon": "darkshards", "name": "Darkshards", "qty": 2, "note": "Soutien à distance classique"},
-        {"icon": "dreadspears", "name": "Dreadspears", "qty": 2, "note": "Ligne de tenue anti-cavalerie en complément"}
+        {"icon": "darkshards", "name": "Darkshards", "qty": 2, "note": "Arbalétriers druchii — le tir de saturation qui affaiblit l'ennemi avant que Malus, possédé par Tz'arkan, ne s'y jette seul"},
+        {"icon": "dreadspears", "name": "Dreadspears", "qty": 2, "note": "Ligne de tenue anti-cavalerie. Malus lui-même est un duelliste incontrôlable : ces lanciers sont l'ordre que sa fiche n'a nulle part ailleurs"}
       ],
       "magic": "La Sorceress couvre les besoins de soutien magique pendant que Malus (ou Tz'arkan, une fois transformé) mène la charge en première ligne.",
       "note": "Le +30% de revenu des Mines de Fer, Mines d'Or et Carrières de Marbre (faction) finance largement cette cavalerie déjà quasi gratuite à l'entretien. L'immunité aux Chaos Wastes (seigneur) permet de traverser sans crainte ces régions pour surprendre l'ennemi par des itinéraires inattendus."
@@ -302,7 +302,7 @@
       "lord": {"icon": "lilaeth", "name": "Lilaeth", "qty": 1, "note": "La Spoliatrice — <strong>tous</strong> ses effets exigent d'être en territoire étranger. Ramenez-la chez vous et elle devient un seigneur ordinaire : cette fiche ne se joue qu'en expédition, jamais en défense"},
       "heroes": [
         {"icon": "sorceressDark", "name": "Sorceress (Magie Noire)", "qty": 2, "note": "Le <strong>-25% de coût de construction sur les bâtiments de Sorcellerie</strong> (faction) rend l'accès à la magie plus rapide qu'ailleurs. Deux Sorceresses, parce que le Chariot Noir et la Malédiction d'Arnizipal font vaciller le Commandement adverse — ce qui alimente directement \"Dispatch the Pitiful\""},
-        {"icon": "korelei", "name": "Korelei, Mistress of Pain", "qty": 1, "note": "Héroïne légendaire du mod, disponible pour les quatre factions elfes noires de ce mod"}
+        {"icon": "korelei", "name": "Korelei, Mistress of Pain", "qty": 1, "note": "Héroïne légendaire du mod, ouverte aux quatre factions elfes noires — chez Lilaeth, elle double la présence de personnages féminins de Khaine qui structure la fiche"}
       ],
       "army": [
         {"icon": "darkshards", "name": "Darkshards", "qty": 4, "note": "Le cœur de la fiche : <strong>+15% de dégâts de tir</strong> en territoire étranger, c'est-à-dire partout où Lilaeth se bat. Quatre unités d'arbalètes forment le volume de feu qui fait vaciller les lignes adverses"},
@@ -334,7 +334,7 @@
       "lord": {"icon": "anethraHelbane", "name": "Anethra Helbane", "qty": 1, "note": "La Maîtresse des Bêtes — ses deux capacités s'appliquent à <strong>toutes les unités de Fosses à Bêtes de son armée</strong>, pas seulement à celles qui l'entourent. Le <strong>+50% de Masse</strong> de \"Well-Fed\" est l'effet le plus sous-estimé : une masse accrue signifie qu'un monstre traverse l'infanterie au lieu d'y rester coincé"},
       "heroes": [
         {"icon": "highBeastmaster", "name": "High Beastmaster", "qty": 2, "note": "Les dresseurs de Clar Karond — le héros thématique et mécanique de cette faction. Ils accompagnent la meute et renforcent ce que le seigneur augmente déjà"},
-        {"icon": "korelei", "name": "Korelei, Mistress of Pain", "qty": 1, "note": "Héroïne légendaire du mod, disponible pour les quatre factions elfes noires de ce mod"}
+        {"icon": "korelei", "name": "Korelei, Mistress of Pain", "qty": 1, "note": "Héroïne légendaire du mod. Sur la fiche d'Anethra, dont la puissance est surtout monstrueuse, elle apporte le combat de personnage qui manquait"}
       ],
       "army": [
         {"icon": "theSirenOfRedRuin", "name": "The Siren of Red Ruin (Bloodwrack Medusa)", "qty": 1, "note": "Régiment favori : la faction lui accorde <strong>\"Aura of Agony\"</strong>, un Hex permanent de <strong>35m</strong> qui retire <strong>4 de Commandement et 7 de Défense de mêlée</strong> à tous les ennemis alentour. Placez-la au centre : c'est ce qui rend les charges de monstres décisives"},

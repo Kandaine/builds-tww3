@@ -23,7 +23,7 @@
         {"icon": "arbPalaceGuards", "name": "Palace Guards", "qty": 2, "note": "Cœur de la synergie de Jaffar : entretien -50% (aussi bon marché qu'une troupe de base) et aura passive « Guardian » qui octroie +15% de résistance physique à Jaffar et ses héros dans un rayon de 35m — infanterie d'élite qui tient le centre"},
         {"icon": "arbSpearmen", "name": "Spearmen", "qty": 1, "note": "Humble fondation de toute armée arabyenne — écran jetable bon marché pour retenir l'ennemi le temps que les Palace Guards et les charges opèrent"},
         {"icon": "arbBowmen", "name": "Bowmen", "qty": 2, "note": "Les Arabyens placent une grande foi dans l'arc — volume de tir pour amollir l'ennemi avant le choc"},
-        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Longs arquebuses de facture arabyenne — tireurs d'élite perforants contre l'infanterie lourde et les monstres"},
+        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Longues arquebuses arabyennes — le tir perforant qui ouvre les rangs blindés avant la charge des éléphants du Sultan"},
         {"icon": "arbCamelArchers", "name": "Camel Archers", "qty": 1, "note": "Le chameau offre un meilleur angle de tir que le cheval — tirailleurs montés rapides pour harceler et contourner"},
         {"icon": "arbArabyanKnights", "name": "Arabyan Knights", "qty": 2, "note": "Les meilleurs chevaliers d'Araby sur des montures de lignée elfique — cavalerie de choc qui profite à plein du +15% de bonus de charge du seigneur pour percer les flancs"},
         {"icon": "arbWarElephant", "name": "War Elephant", "qty": 2, "note": "Bêtes redoutables qui piétinent hommes et chevaux — pointe de choc dopée par le +15% de bonus de charge, l'une des vraies forces d'Araby"},
@@ -60,7 +60,7 @@
         {"icon": "arbSeaNymph", "name": "Sea Nymph", "qty": 1, "note": "Djinn des eaux des côtes d'Araby — monstre de choc qui déferle sur les lignes ennemies"},
         {"icon": "arbPitFighters", "name": "Pit-Fighters", "qty": 2, "note": "Anciens esclaves et criminels superbement entraînés, sans peur de la mort — infanterie lourde qui tient la ligne d'abordage"},
         {"icon": "arbBowmen", "name": "Bowmen", "qty": 2, "note": "Le socle de tir de tout ost arabyen — volume de flèches pour amollir l'ennemi avant l'abordage"},
-        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Longs arquebuses de facture arabyenne — tireurs d'élite perforants contre l'infanterie lourde et les monstres"},
+        {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Longues arquebuses arabyennes, appui matériel d'une fiche autrement portée par les djinns et la magie du Mage Doré"},
         {"icon": "arbArabyanKnights", "name": "Arabyan Knights", "qty": 2, "note": "Les meilleurs chevaliers d'Araby — cavalerie de choc pour envelopper et briser les flancs"},
         {"icon": "arbFireEfreet", "name": "Fire Efreet", "qty": 1, "note": "Djinn de feu — monstre volant dévastateur qui complète les Djinns des eaux"},
         {"icon": "arbGrandBombard", "name": "Grand Bombard", "qty": 1, "note": "Canon dévastateur — artillerie lourde pour briser les formations et les défenses"}

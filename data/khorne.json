@@ -25,7 +25,7 @@
         {"icon": "soulGrinderKhorne", "name": "Soul Grinder", "qty": 2, "note": "-20% d'entretien et capacité Gorefeast (seigneur) — machine de guerre démoniaque increvable"},
         {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 4, "note": "Infanterie démoniaque frénétique, cœur de la horde"},
         {"icon": "exaltedBloodlettersKhorne", "name": "Exalted Bloodletters of Khorne", "qty": 2, "note": "Version d'élite des Bloodletters pour percer les lignes les plus dures"},
-        {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie démoniaque lourde pour percer les flancs"},
+        {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie monstrueuse démoniaque — la seule chose de la fiche qui frappe aussi fort que Skarbrand lui-même, et qui arrive au contact aussi vite"},
         {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 2, "note": "Chasseurs rapides et bon marché pour flanquer et pourchasser les tireurs isolés — réduits d'un exemplaire pour libérer l'emplacement du Mardagg"},
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 1, "note": "Ligne de tenue mortelle robuste en soutien"}
       ],
@@ -56,9 +56,9 @@
         {"icon": "theHellforgedHost", "name": "The Hellforged Host (Exalted Bloodletters of Khorne)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -15% d'entretien (faction) et Frénésie (seigneur) — variante d'élite des Exalted Bloodletters, encore plus dévastatrice sous le commandement de Skulltaker"},
         {"icon": "exaltedBloodlettersKhorne", "name": "Exalted Bloodletters of Khorne", "qty": 2, "note": "-15% d'entretien (faction) et même Frénésie (seigneur) — élite démoniaque au corps-à-corps"},
         {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 5, "note": "-15% d'entretien (faction) et même Frénésie (seigneur) — cœur de la horde démoniaque, partiellement reconstituée après bataille (Daemons Reforged, faction)"},
-        {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie démoniaque lourde pour percer les flancs"},
+        {"icon": "bloodcrushersKhorne", "name": "Bloodcrushers of Khorne", "qty": 3, "note": "Cavalerie monstrueuse démoniaque qui ouvre le chemin jusqu'aux champions adverses, seule proie qui intéresse le Preneur de Crânes"},
         {"icon": "bloodbeastsKhorne", "name": "Bloodbeasts of Khorne", "qty": 2, "note": "Monstre démoniaque emblématique pour écraser les lignes ennemies"},
-        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 2, "note": "Chasseurs rapides et bon marché pour flanquer"}
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 2, "note": "Meute rapide qui traque les tireurs adverses — Skulltaker ne peut pas se permettre qu'un ennemi reste hors de portée de sa lame"}
       ],
       "magic": "Skulltaker n'est pas un lanceur de sorts — sa puissance vient de sa maîtrise martiale absolue et de sa traque implacable des plus grands champions ennemis.",
       "note": "Le cumul du -15% d'entretien (faction) et de la Frénésie (seigneur) sur toutes les Bloodletters et Exalted Bloodletters en fait une horde démoniaque à la fois bon marché et redoutable, partiellement auto-régénérée après chaque bataille (Daemons Reforged, faction), tandis que la ligne de vue de campagne doublée (seigneur) permet à Skulltaker de localiser et traquer les ennemis les plus prestigieux avant même l'engagement."
@@ -80,16 +80,16 @@
       "totalSlots": 20,
       "lord": {"icon": "arbaal", "name": "Arbaal the Undefeated", "qty": 1, "note": "Porteur du Destroyer, hache légendaire offerte par Khorne — \"Fury of the Blood God\" (36 dégâts magiques en zone de 15m, seigneur) brise les formations groupées avant que trois mille ans de domination écrasante au corps-à-corps ne fassent le reste"},
       "heroes": [
-        {"icon": "exaltedHeroOfKhorne", "name": "Exalted Hero of Khorne", "qty": 1, "note": "Renfort de mêlée mortel robuste"},
+        {"icon": "exaltedHeroOfKhorne", "name": "Exalted Hero of Khorne", "qty": 1, "note": "Champion sanguinaire qui accompagne Arbaal dans sa quête de crânes : deux duellistes qui cherchent la même chose au même endroit"},
         {"icon": "khoSimaergul", "name": "Simaergul (Héros Légendaire)", "qty": 1, "note": "Le Dread Flesh Hound de Khorne, Guardian of the Brazen Altar (mod Heroes of Legend) — Pack Alpha très rapide qui invoque des Chaos Warhounds et des Flesh Hounds of Khorne en plein combat, dont le hurlement (Packmaster's Howl) inspire la terreur : le chef de meute idéal pour l'armée de chiens d'Arbaal, dont la monture est elle-même un Flesh Hound. Ses points d'allégeance +n% avec tous les alliés du Chaos renforcent la diplomatie"}
       ],
       "army": [
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 4, "note": "\"Hellblade\" (+20% dégâts après 80 victimes) et +10% de puissance d'arme (seigneur) — cœur de mêlée mortel robuste"},
-        {"icon": "chaosWarriorsKhorneHalberds", "name": "Chaos Warriors of Khorne (Hallebardes)", "qty": 3, "note": "Même double bonus (seigneur) — anti-cavalerie et anti-monstre fiable"},
+        {"icon": "chaosWarriorsKhorneHalberds", "name": "Chaos Warriors of Khorne (Hallebardes)", "qty": 3, "note": "Hallebardiers khornéens — la réponse aux grandes cibles qu'Arbaal, tout duelliste qu'il soit, ne peut affronter seul"},
         {"icon": "skullcrushersKhorne", "name": "Skullcrushers of Khorne", "qty": 3, "note": "\"Hellblade\" (seigneur) — cavalerie lourde démoniaque pour les charges de flanc"},
         {"icon": "houndsOfTheBloodHunt", "name": "Hounds of the Blood Hunt (Flesh Hounds of Khorne)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des Flesh Hounds, monture de prédilection d'Arbaal"},
         {"icon": "fleshHoundsKhorne", "name": "Flesh Hounds of Khorne", "qty": 2, "note": "Chasseurs démoniaques increvables"},
-        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 3, "note": "Chasseurs rapides et bon marché pour flanquer et pourchasser les tireurs isolés"}
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 3, "note": "Meute de chasse qui rabat les fuyards vers Arbaal : un ennemi qui s'échappe est un crâne perdu pour Khorne"}
       ],
       "magic": "Arbaal n'est pas un lanceur de sorts — sa puissance vient de trois mille ans de domination martiale ininterrompue, de la hache légendaire Destroyer et de \"Fury of the Blood God\".",
       "note": "Le -1 tour de recrutement global (seigneur) permet de reconstituer cette armée mortelle à une vitesse inégalée, tandis que \"Hellblade\" et le +10% de puissance d'arme pour les unités non-Démoniaques (seigneur) en font un mur de mêlée d'une efficacité redoutable, épaulé par les Flesh Hounds exploitant leur régiment favori (faction). Le -50% de coût et de temps de construction pour les bâtiments militaires Mortels (faction) accélère considérablement la fortification du territoire conquis."

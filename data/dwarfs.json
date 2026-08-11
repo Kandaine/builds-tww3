@@ -52,7 +52,7 @@
         {"icon": "dragonbackSlayers", "name": "Dragonback Slayers (Slayers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Slayers, également couverte par le -25% d'entretien et le +5 de mêlée de Journey's End (seigneur)"},
         {"icon": "irondrake", "name": "Irondrakes (Trollhammer Torpedoes)", "qty": 2, "note": "Anti-monstre et anti-blindé à distance, en soutien de la horde de Slayers"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "Ligne de tir polyvalente derrière les Slayers"},
-        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
+        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — le tir qui couvre la charge suicidaire des Slayers, seule chose qui empêche le Roi Tueur de perdre son armée avant le contact"},
         {"icon": "quarreller", "name": "Quarrellers (Grande Arme)", "qty": 2, "note": "Tir de précision complémentaire"}
       ],
       "magic": "Ungrim ne lance pas de sorts — Journey's End (immunité à la mort tant que les PV restent au-dessus de 75%) et le double effet d'entretien réduit (faction + seigneur) suffisent à transformer une simple horde de Slayers en armée soutenable sur la durée.",
@@ -170,7 +170,7 @@
         {"icon": "cannon", "name": "Cannons", "qty": 6, "note": "Profitent directement du +20% de force de tir (seigneur) et sont moins chères à recruter et entretenir (-15% d'entretien, +3 rang de recrutement, faction)"},
         {"icon": "gyrocopterBrimstone", "name": "Gyrocopters (Brimstone Guns)", "qty": 5, "note": "Machine de Guerre Volante — même double bonus faction/seigneur, harcèlement aérien rapide et peu coûteux"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Ligne de tir polyvalente en complément de l'artillerie"},
-        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
+        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers, sur la fiche de l'ingénieur le plus inventif du Karaz Ankor : la poudre y est un principe, pas un appoint"},
         {"icon": "minersBlastingCharges", "name": "Miners (Blasting Charges)", "qty": 2, "note": "Écran de mêlée bon marché aux charges explosives pour protéger la ligne de tir"},
         {"icon": "legendaryDuo", "name": "Gotrek & Felix", "qty": "1 (unique)", "note": "Duo de héros uniques offert dès le départ de campagne avec Malakai — d'excellents duellistes de mêlée pendant que le reste de l'armée tire à distance"}
       ],
@@ -303,7 +303,7 @@
       "army": [
         {"icon": "ekrundMiners", "name": "Ekrund Miners", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — les mineurs d'Ekrund, la cité que Byrrnoth veut reprendre de l'autre côté du Golfe. Ils creusent sous les lignes adverses et sortent derrière l'artillerie"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "L'épine dorsale de tir de Barak Varr — les Master Engineers augmentent leur précision, et le hold est le centre de la poudre naine avec Zhufbar"},
-        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
+        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers. Barak Varr arme ses navires comme ses murs : le tir de poudre est la tradition militaire de ce port"},
         {"icon": "irondrake", "name": "Irondrakes", "qty": 2, "note": "Courte portée mais dégâts massifs et blindage lourd — ils tiennent le centre de la ligne là où les Thunderers ne peuvent pas encaisser"},
         {"icon": "longbeard", "name": "Longbeards", "qty": 3, "note": "L'infanterie qui protège la ligne de tir. Leur aura de Commandement compte double dans une armée dont la valeur est entièrement dans les canons derrière"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 2, "note": "Le point dur — c'est eux qui tiennent le choc frontal pendant que tout le reste tire par-dessus"},
@@ -431,7 +431,7 @@
         {"icon": "dwarfWarrior", "name": "Dwarf Warriors", "qty": 5, "note": "Le socle, à <strong>-25% d'entretien</strong>. Sans accès à l'élite naine, l'expédition compense par le nombre : cinq unités de guerriers, c'est un mur suffisant pour protéger l'artillerie"},
         {"icon": "quarreller", "name": "Quarrellers", "qty": 3, "note": "Arbalètes — le tir de volume qui accompagne l'avance et occupe l'infanterie légère adverse"},
         {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "La poudre noire pour percer le blindé, là où les arbalètes s'arrêtent"},
-        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable"},
+        {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — sur une expédition coupée de ses forges, la qualité d'une unité unique compte plus que le nombre"},
         {"icon": "cannon", "name": "Cannon", "qty": 2, "note": "Concernés par le <strong>-25% d'entretien</strong> (artillerie naine) — le canon reste la meilleure réponse naine aux monstres et aux autres batteries"},
         {"icon": "grudgeThrower", "name": "Grudge Thrower", "qty": 2, "note": "Également à <strong>-25%</strong>. Le tir en cloche complète le tir tendu des canons : ensemble, ils forcent l'adversaire à charger dans les Dwarf Warriors"},
         {"icon": "organGun", "name": "Organ Gun", "qty": 1, "note": "La défense rapprochée de la batterie — ce qui arrive au contact des canons ne devrait pas en repartir"},

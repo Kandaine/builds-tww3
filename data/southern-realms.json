@@ -164,7 +164,7 @@
       "army": [
         {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 2, "note": "Vétérans en armure lourde et meilleurs mousquets — noyau conquistador fiable"},
         {"icon": "tebAdventurers", "name": "Adventurers", "qty": 2, "note": "« Le voisin humain inquiète peu quand on a affronté les Lézards de Lustrie » — vétérans endurcis du Nouveau Monde"},
-        {"icon": "tebRiders", "name": "Riders", "qty": 2, "note": "Mercenaires montés rusés qui frappent sans être punis"},
+        {"icon": "tebRiders", "name": "Riders", "qty": 2, "note": "Cavalerie mercenaire d'un explorateur tilléen : elle harcèle et se dérobe, comme la compagnie qui l'emploie"},
         {"icon": "tebLancers", "name": "Lancers", "qty": 2, "note": "Bons chevaux et bel acier, rapides sur le champ — cavalerie de choc"},
         {"icon": "tebCarabiniers", "name": "Carabiniers", "qty": 2, "note": "Mousquetaires montés qui visent les angles morts de l'ennemi"},
         {"icon": "tebMarksmenMiragliano", "name": "Marksmen of Miragliano (Crossbowmen)", "qty": 1, "note": "Régiment de Renom (capacité 1) : tir d'élite — Colombo est lui-même un marksman réputé"},
@@ -201,7 +201,7 @@
         {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 2, "note": "Vétérans en armure lourde et meilleurs mousquets — l'élite fiable du conquistador"},
         {"icon": "tebSartosanPirates", "name": "Sartosan Pirates", "qty": 2, "note": "« Pourquoi le rhum a-t-il toujours disparu ? » — flibustiers féroces et débrouillards"},
         {"icon": "tebSwashbucklers", "name": "Swashbucklers", "qty": 2, "note": "Rascals armés pour qui le fair-play n'existe pas — flanqueurs sournois"},
-        {"icon": "tebRiders", "name": "Riders", "qty": 2, "note": "Mercenaires montés rusés qui frappent sans être punis"},
+        {"icon": "tebRiders", "name": "Riders", "qty": 2, "note": "Cavalerie mercenaire estalienne — la mobilité d'une fiche par ailleurs bâtie sur l'arquebuse et la pique"},
         {"icon": "tebHandgunners", "name": "Handgunners", "qty": 2, "note": "Arquebusiers — tir perforant de la bande"},
         {"icon": "tebCarabiniers", "name": "Carabiniers", "qty": 1, "note": "Mousquetaires montés qui harcèlent les flancs"},
         {"icon": "tebBrokenLances", "name": "Broken Lances", "qty": 1, "note": "Chevaliers libres pour des charges audacieuses"}
