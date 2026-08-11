@@ -119,6 +119,27 @@ la liste — la relire une fois la fiche écrite et se demander, ligne par ligne
 justifie ?* Si la réponse est « aucun », soit elle bouche un trou qu'il faut nommer dans sa note,
 soit elle sort.
 
+**La clause du manque nommé n'est pas une facilité, elle est indispensable — et voici pourquoi.**
+On a tenté de la supprimer, pour n'accepter qu'un effet comme justification. Le premier cas testé a
+suffi à faire marche arrière : **Greasus Goldtooth n'a qu'un seul effet visant une unité**, son
+régiment favori. Tout le reste est économique et diplomatique — revenus de taxes, de pillage,
+relations. La règle stricte aurait supprimé sept de ses huit lignes.
+
+Certains seigneurs n'ont presque aucun effet sur les unités : leur puissance est économique,
+diplomatique ou personnelle. Chez eux, « quel effet justifie cette ligne ? » ne mesure plus la
+qualité du build mais la nature du seigneur.
+
+La clause reste donc, mais elle **se mérite** : le manque doit être objectif — une lacune du roster,
+une contrainte de faction, un rôle qu'aucune autre ligne ne tient — et non une justification
+rédigée après coup. Les Stegadon de Nakai passent, il est une horde sans artillerie possible. Les
+Swordsmen de Markus Wulfhart tombent : leur note disait « infanterie de ligne polyvalente », ce qui
+ne nomme rien, et rien ne l'empêchait d'aligner des Archers que son -50% d'entretien subventionne.
+
+Deux précisions pour ne pas sur-appliquer. Un effet **de faction** compte autant qu'un effet de
+seigneur. Et une variante d'élite hérite des effets de son unité de base : le §2 bis
+d'`analyse-pack.md` montre comment le prouver par `unit_set_to_unit_junctions_tables` plutôt que
+de le supposer.
+
 **Priorité aux Régiments de Renom dans le corps d'armée.** À bénéfice comparable, un RoR passe
 avant l'unité standard équivalente : c'est la version d'élite, elle porte souvent une capacité
 propre, et elle est unique donc elle ne concurrence pas les plafonds partagés. Les chercher
