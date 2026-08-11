@@ -2047,6 +2047,8 @@ const unitImages = {
   pahuaxSentinels: 'assets/units/pahuaxSentinels.png',
   chameleonSkinkProwler: 'assets/units/chameleonSkinkProwler.png',
   kroxigorElder: 'assets/units/kroxigorElder.png',
+  coatl: 'assets/units/coatl.png',
+  spiritOfTepok: 'assets/units/spiritOfTepok.png',
   savageSaurusBeastTamer: 'assets/units/savageSaurusBeastTamer.png',
   savageSaurusCrystalback: 'assets/units/savageSaurusCrystalback.png',
   savageSaurusCrystalblades: 'assets/units/savageSaurusCrystalblades.png',
