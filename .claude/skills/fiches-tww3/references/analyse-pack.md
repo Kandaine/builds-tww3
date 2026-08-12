@@ -411,6 +411,39 @@ Corollaire inverse : ne pas se fier au fait qu'un personnage soit une entité un
 Flamer of Tzeentch est une unité de tir du corps d'armée, pas un héros. En cas de doute, vérifier
 qu'il figure bien dans `faction_agent_permitted_subtypes` ; sinon ce n'est pas un agent.
 
+### Trouver les héros EXCLUSIFS à un seigneur
+
+Un héros propre à une seule faction, que nul autre ne peut obtenir — le cas de Lafayette chez Louen.
+Deux critères, appliqués à `faction_agent_permitted_subtypes` **base et mods fusionnés** (27 906
+lignes, 700 sous-types de héros) :
+
+1. **Exclusif** — le subtype n'apparaît qu'avec **une seule faction**. Ramène à 200.
+2. **Bonus, pas roster** — `agent_subtypes.contributes_to_agent_cap = False`. Ramène à **40**.
+
+Le second critère est le bon discriminant. Les 160 écartés sont des **types génériques réservés** —
+le Skink Chief de Tlaqua, les Branchwraiths de Drycha — qui consomment un emplacement de héros
+normal et font déjà partie du roster. Ceux qui restent sont des personnages **offerts en plus**.
+
+**Trois pièges rencontrés en appliquant la méthode.**
+
+*La clé technique ne ressemble pas au nom du personnage.* `dead_ice_mage` est **Vladimir
+Stormbringer**, déjà sur la fiche de Boris Ursus — il a failli être compté comme manquant. Toujours
+résoudre le nom par `land_units_onscreen_name_<clé>` ou la loc du mod avant de conclure.
+
+*Le nom d'écran est souvent générique.* Les quatre Chasseurs de Wulfhart s'affichent tous
+« Wulfhart's Hunter », et plusieurs personnages nommés s'affichent « Legendary Hero ». Ne pas s'y
+fier pour les distinguer.
+
+*Une variante exclusive n'est pas toujours un substitut.* Comparer les colonnes avant d'échanger.
+Chez Tamurkhan, le Chieftain a même coût et même profil que l'Exalted Hero ordinaire mais ne
+consomme pas la capacité — substitution nette. Chez le Changeling en revanche, le Trickster Cultist
+**n'est pas recrutable et ne lance pas de sorts**, là où le Cultist générique est un lanceur :
+échanger aurait fait perdre la magie.
+
+**Un héros absent de la table peut malgré tout exister** : Lafayette est engendré par un script
+(`spawn_agent_at_military_force` sur une clé de faction) et ne figure dans aucune permission. Pour
+ceux-là, chercher dans `script\campaign\mod\*.lua`.
+
 La classe **`spy` n'est pas une classe « hors armée »** : en vanilla c'est celle du Chasseur de
 sorcières, du Waystalker, de l'Assassin skaven, de la Banshee et du Chasseur ogre. Un héros `spy`
 s'intègre normalement dans un build.
