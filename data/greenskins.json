@@ -21,7 +21,8 @@
       "army": [
         {"icon": "krimsonKillerz", "name": "Krimson Killerz (Black Orcs)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -15% d'entretien (faction), provoquent la Peur chez l'ennemi (seigneur) — variante d'élite des Black Orcs"},
         {"icon": "blackOrcs", "name": "Black Orcs", "qty": 4, "note": "-15% d'entretien (faction), provoquent la Peur chez l'ennemi (seigneur) — le cœur increvable et effrayant de cette armée"},
-        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 4, "note": "Infanterie de mêlée standard pour épaissir la ligne — délibérément préféré aux Goblins, pénalisés à -9 commandement (faction)"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 3, "note": "Infanterie de mêlée standard pour épaissir la ligne — délibérément préféré aux Goblins, pénalisés à -9 commandement (faction)"},
+        {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz. Grimgor et ses 'Ardboyz frappent devant : cette ligne est ce qui empêche l'armée de se disloquer derrière lui"},
         {"icon": "orcBoyzSpears", "name": "Orc Boyz (Lances)", "qty": 3, "note": "Anti-cavalerie fiable en complément, sans la pénalité de commandement des Goblins (faction)"},
         {"icon": "orcBoarBoyBigUns", "name": "Orc Boar Boy Big 'Uns", "qty": 3, "note": "-15% d'entretien en tant qu'unité Big 'Uns (faction) — cavalerie lourde pour percer les flancs"},
         {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie à trajectoire haute pour cibler les tireurs isolés adverses"}
@@ -52,7 +53,7 @@
       "army": [
         {"icon": "daWarlordsBoyz", "name": "Da Warlord's Boyz (Night Goblins)", "qty": 2, "note": "Régiment favori : capacité \"Cowardly Guardian\" (+13% résistance physique pour Skarsnik à 35m) et +1 capacité (faction), -20% d'entretien (faction), +8 commandement et +4 défense en mêlée (seigneur) — variante d'élite des Night Goblins, cache des Fanatics explosifs pour surprendre l'ennemi"},
         {"icon": "nightGoblins", "name": "Night Goblins", "qty": 5, "note": "-20% d'entretien (faction), +8 commandement et +4 défense en mêlée (seigneur) — infanterie de masse bon marché"},
-        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 3, "note": "Ligne de tenue anti-charge en soutien"},
+        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 3, "note": "Les effets de Skarsnik ne couvrent que les <strong>Night Goblins</strong> — +8 de commandement, +4 de défense. Ces lances-ci n'en profitent pas et comblent ce que les Night Goblins ne font pas : arrêter une charge montée au lieu de fondre devant elle"},
         {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "-20% d'entretien en tant qu'unité Goblin (faction) — tir de masse bon marché en complément"},
         {"icon": "durkitsSquigs", "name": "Durkit's Squigs (Night Goblin Squig Hoppers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien en tant qu'unité Squig (faction) — variante d'élite des Squig Hoppers, cavalerie légère bondissante"},
         {"icon": "nightGoblinSquigHoppers", "name": "Night Goblin Squig Hoppers", "qty": 1, "note": "-20% d'entretien en tant qu'unité Squig (faction) — cavalerie légère bondissante pour flanquer et harceler"},
@@ -86,8 +87,8 @@
         {"icon": "savageOrcs", "name": "Savage Orcs", "qty": 3, "note": "Même cumul de bonus (seigneur + faction) — cœur de mêlée bon marché et résilient"},
         {"icon": "savageOrcArrerBoyz", "name": "Savage Orc Arrer Boyz", "qty": 2, "note": "Même cumul de bonus (seigneur + faction) — soutien à distance"},
         {"icon": "savageOrcBoarBoyz", "name": "Savage Orc Boar Boyz", "qty": 3, "note": "Même cumul de bonus (seigneur + faction) — cavalerie de choc pour les flancs"},
-        {"icon": "giantGreenskins", "name": "Giant", "qty": 1, "note": "Géant — la masse brute d'une fiche autrement portée par la magie du Waaagh! et les rituels du chaman"},
-        {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie à trajectoire haute en soutien"},
+        {"icon": "littleGork", "name": "Little Gork (Giant)", "qty": 1, "note": "Régiment de Renom du Géant, que le Grand Prophète Vert présente comme une incarnation de Gork lui-même — la seule très grande cible d'une fiche bâtie sur la magie et les Savage Orcs"},
+        {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Tous les bonus de Wurrzag vont aux <strong>Savage Orcs</strong> — entretien, recrutement, charge, résistance. Cette catapulte n'en reçoit rien : elle est là parce qu'une horde entièrement au contact n'a sinon aucun moyen de frapper une position fortifiée"},
         {"icon": "deffCreeperz", "name": "Deff Creeperz (Forest Goblin Spider Rider Archers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum — tirailleurs montés rapides pour harceler et flanquer"},
         {"icon": "snaglasDeffThrowa", "name": "Snagla's Deff Throwa (Goblin Bolt Throwas)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum — artillerie légère et précise en soutien"}
       ],
@@ -120,7 +121,8 @@
         {"icon": "teefRobberz", "name": "Teef Robberz (Goblin Wolf Chariots)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien et +15 bonus de charge en tant que Chariot (faction) — cavalerie de choc bon marché"},
         {"icon": "moonHowlers", "name": "Moon-howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), même bonus d'entretien et de charge (faction) — cavalerie légère rapide pour flanquer"},
         {"icon": "stoneTrolls", "name": "Stone Trolls", "qty": 2, "note": "Monstre régénérant increvable, parfait complément à la horde de Gobelins"},
-        {"icon": "riverTrolls", "name": "River Trolls", "qty": 2, "note": "Attaque de vomi corrosif dévastatrice contre l'infanterie groupée"},
+        {"icon": "riverTrolls", "name": "River Trolls", "qty": 1, "note": "Attaque de vomi corrosif dévastatrice contre l'infanterie groupée"},
+        {"icon": "daSwampFings", "name": "Da Swamp Fings (River Trolls)", "qty": 1, "note": "Régiment de Renom des River Trolls — leur vomi corrosif ravage l'infanterie groupée, et leur régénération tient la ligne le temps que la cuisine de Grom fasse effet"},
         {"icon": "snotlingPumpWagons", "name": "Snotling Pump Wagons (Rouleaux à Pointes)", "qty": 2, "note": "-20% d'entretien et +15 bonus de charge en tant que Pump Wagon (faction) — char suicide explosif pour semer le chaos dans les lignes ennemies"},
         {"icon": "goblinRockLobbers", "name": "Goblin Rock Lobbers", "qty": 2, "note": "Artillerie à zone d'effet pour briser les formations groupées"}
       ],
@@ -150,13 +152,14 @@
       ],
       "army": [
         {"icon": "orcBigUns", "name": "Orc Big 'Uns", "qty": 4, "note": "Élite de mêlée increvable, immunisée à la Psychologie sous le commandement d'Azhag (seigneur)"},
-        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "Même immunité à la Psychologie (seigneur) — infanterie de mêlée standard"},
-        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 2, "note": "Ligne de tenue anti-charge bon marché"},
-        {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "Tir de masse en soutien"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 1, "note": "Même immunité à la Psychologie (seigneur) — infanterie de mêlée standard"},
+        {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz — la ligne verte d'Azhag, qui doit tenir seule pendant que la Couronne de Sorcellerie lui dicte de lancer plutôt que de charger"},
+        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 2, "note": "Aucun effet d'Azhag ne vise les Gobelins — ses bonus vont aux Trolls, à la magie de Mort et à son Waaagh!. Ces lances sont là pour un manque précis : sa ligne verte est entièrement offensive, et rien d'autre n'arrête une charge de cavalerie"},
+        {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "Le tir bon marché qui use l'ennemi pendant qu'Azhag lance. Sa fiche n'a aucune autre source de dégâts à distance au sol, les Araignées étant montées et les Rock Lobbers rares"},
         {"icon": "daSwampFings", "name": "Da Swamp Fings (River Trolls)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des River Trolls, jamais effrayée sous l'aura d'Azhag (seigneur)"},
         {"icon": "riverTrolls", "name": "River Trolls", "qty": 1, "note": "Monstre régénérant increvable, jamais effrayé sous l'aura d'Azhag (seigneur)"},
-        {"icon": "forestGoblinSpiderRiderArchers", "name": "Forest Goblin Spider Rider Archers", "qty": 2, "note": "Cavalerie légère à distance pour harceler et flanquer"},
-        {"icon": "goblinRockLobbers", "name": "Goblin Rock Lobbers", "qty": 1, "note": "Artillerie à zone d'effet en soutien"}
+        {"icon": "forestGoblinSpiderRiderArchers", "name": "Forest Goblin Spider Rider Archers", "qty": 2, "note": "La <strong>seule mobilité</strong> d'une armée de Big 'Uns et de Trolls, tous lents. Elles vont chercher l'artillerie adverse que le reste de la ligne mettrait toute la bataille à atteindre"},
+        {"icon": "goblinRockLobbers", "name": "Goblin Rock Lobbers", "qty": 1, "note": "La <strong>seule artillerie</strong> d'Azhag, et le seul moyen d'ouvrir une formation en position avant que son Waaagh! ne se déclenche — un bonus de +24 d'attaque ne sert à rien contre un mur de lances intact"}
       ],
       "magic": "Azhag et ses Giant River Troll Hags sont les seuls Peaux-Vertes à maîtriser le Lore of Death (Spirit Leech, The Purple Sun of Xereus, The Fate of Bjuna), à -10% de coût en Vents de Magie (faction) — une rare capacité à sniper les personnages ennemis à distance, désormais triplée.",
       "note": "L'immunité à la Psychologie sur toute l'armée (seigneur) rend cette horde d'Orcs et de River Trolls insensible à la déroute, pendant qu'Azhag et ses deux Giant River Troll Hags exploitent leur mobilité et le Lore of Death à coût réduit (faction) pour sniper les cibles prioritaires. Le +25% de revenu du pillage (seigneur) et l'immunité à l'attrition Vampirique (faction) financent et sécurisent une campagne agressive, y compris à travers les terres de Sylvanie."
@@ -184,11 +187,12 @@
       "army": [
         {"icon": "orcBigUns", "name": "Orc Big 'Uns", "qty": 3, "note": "-10% d'entretien (seigneur) — élite de mêlée au centre de la ligne"},
         {"icon": "orcBoyzSpears", "name": "Orc Boyz (Lances)", "qty": 3, "note": "Même bonus d'entretien (seigneur) — anti-cavalerie fiable"},
-        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "Même bonus d'entretien (seigneur) — infanterie de mêlée standard"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 1, "note": "Même bonus d'entretien (seigneur) — infanterie de mêlée standard"},
+        {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz, couvert par le <strong>-10% d'entretien</strong> du seigneur comme le reste de son infanterie verte — la meilleure version de l'unité qui porte toute la fiche"},
         {"icon": "orcArrerBoyz", "name": "Orc Arrer Boyz", "qty": 3, "note": "Même bonus d'entretien (seigneur) — tir de soutien"},
         {"icon": "brokenTusksMob", "name": "Broken Tusks Mob (Orc Boar Boy Big 'Uns)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -10% d'entretien (seigneur) — cavalerie de choc d'élite pour les flancs"},
         {"icon": "squigHerd", "name": "Squig Herd", "qty": 2, "note": "Bêtes bondissantes imprévisibles pour semer la confusion en première ligne"},
-        {"icon": "goblinBoltThrowa", "name": "Goblin Bolt Throwa", "qty": 2, "note": "Artillerie légère et précise en soutien"}
+        {"icon": "goblinBoltThrowa", "name": "Goblin Bolt Throwa", "qty": 2, "note": "Le <strong>-10% d'entretien</strong> de Gorbad couvre toute son armée, mais aucun effet ne vise le tir. Ces baliste sont là pour le manque : sa ligne est entièrement orque et de mêlée, sans rien pour abattre un monstre avant qu'il n'arrive au contact"}
       ],
       "magic": "L'Orc Shaman apporte un soutien ponctuel du Lore of the Waaagh!, mais Gorbad lui-même privilégie la tactique et la mêlée plutôt que la magie.",
       "note": "Le -10% d'entretien s'appliquant à toute l'armée (seigneur, contrairement aux bonus habituellement restreints à un type d'unité chez les autres Seigneurs Peaux-Vertes) permet de maximiser la taille de cette horde polyvalente, tandis que l'aura de commandement doublée (seigneur) maintient le moral sur un front large et les Broken Tusks Mob (régiment favori, faction) apportent une pointe de cavalerie d'élite."
@@ -218,7 +222,8 @@
         {"icon": "orcBoarBoyBigUns", "name": "Orc Boar Boy Big 'Uns", "qty": 2, "note": "Big 'Uns montés couverts par le -20% de coût (faction) et les bonus du seigneur — cavalerie de choc qui enveloppe les flancs pendant que l'infanterie fixe"},
         {"icon": "brokenTusksMob", "name": "Broken Tusks Mob (Orc Boar Boy Big 'Uns)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — variante d'élite des Boar Boy Big 'Uns, fer de lance monté de la tribu"},
         {"icon": "blackOrcs", "name": "Black Orcs", "qty": 2, "note": "Infanterie lourde d'élite en écho à la stature de Gorfang — seconde ligne d'acier qui enfonce ce que les Big 'Uns ont fixé"},
-        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "Masse verte bon marché pour élargir la ligne et absorber les charges"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 1, "note": "Masse verte bon marché pour élargir la ligne et absorber les charges"},
+        {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz : Gorfang tient Karak Huit-Pics contre les Nains, et une ligne d'élite y vaut mieux qu'une masse verte de plus"},
         {"icon": "orcArrerBoyz", "name": "Orc Arrer Boyz", "qty": 2, "note": "Tir de soutien orque — érode l'ennemi avant le choc et couvre les flancs"},
         {"icon": "stoneTrolls", "name": "Stone Trolls", "qty": 1, "note": "Monstres régénérants de Black Crag — garde-manger ambulant du Mangeur de Trolls, et briseur de lignes résistant à la magie"},
         {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie gobeline précise pour casser les machines de guerre naines avant l'assaut"}
@@ -250,7 +255,7 @@
       "army": [
         {"icon": "freebootaShoota", "name": "Freeboota Shoota Boyz", "qty": 2, "note": "Fusiliers orques à la poudre volée — grands gagnants de « Bludflagg's Waaagh! » (+25% de portée et de dégâts de missiles, +50 de Reload, +30 de Précision, seigneur)"},
         {"icon": "freebootaSplitta", "name": "Freeboota Splitta", "qty": 2, "note": "Fusils à pompe orques — dégâts massifs à courte portée, également dopés par la Waaagh! de Barbozza (seigneur)"},
-        {"icon": "freebootaBigUns", "name": "Freeboota Big 'Uns", "qty": 1, "note": "L'élite de la flotte — infanterie lourde qui tient le pont pendant que les canons tonnent"},
+        {"icon": "daBlackBeard", "name": "Da Black Beard (Freeboota Big 'Uns)", "qty": 1, "note": "Régiment de Renom des Freeboota Big 'Uns — l'équipage d'élite de la Flotte Bloodsail, ceux qui montent à l'abordage les premiers"},
         {"icon": "freebootaBoyzSpear", "name": "Freeboota Boyz (Lances & Boucliers)", "qty": 1, "note": "Ligne de tenue anti-cavalerie qui protège les tireurs et les blindés"},
         {"icon": "crabBoys", "name": "Crab Boys (Freeboota Boyz)", "qty": 1, "note": "Régiment de Renom carapaçonné — infanterie d'élite de la Bloodsail Fleet"},
         {"icon": "orkKommandoz", "name": "Kommandoz", "qty": 1, "note": "Infiltrés orques — prennent l'artillerie cathayenne à revers avant même le premier tir"},
@@ -258,7 +263,8 @@
         {"icon": "orcBattleTank", "name": "Orc Battle Tank", "qty": 2, "note": "Char d'assaut bricolé à partir de blindés pillés — pièce maîtresse mécanique, canon dopé par la Waaagh! (seigneur)"},
         {"icon": "rokkitBombardia", "name": "Rokkit Bombardia", "qty": 2, "note": "Lance-roquettes orques : +25% de dégâts explosifs et +30 de précision sous la Waaagh! (seigneur) — l'artillerie de la flotte"},
         {"icon": "harpoonLuncha", "name": "Giant Harpoon Luncha", "qty": 1, "note": "Lance-harpon géant anti-grande cible — hérité de la chasse en mer"},
-        {"icon": "piratedGyrocopter", "name": "Pirated Gyrocopter", "qty": 2, "note": "Gyrocoptères nains volés et repeints — appui aérien qui harcèle les tireurs adverses"}
+        {"icon": "piratedGyrocopter", "name": "Pirated Gyrocopter", "qty": 1, "note": "Gyrocoptères nains volés et repeints — appui aérien qui harcèle les tireurs adverses"},
+        {"icon": "deathshrieka", "name": "Deathshrieka (Pirated Gyrocopter)", "qty": 1, "note": "Régiment de Renom du Gyrocoptère piraté : une machine naine volée et bricolée, seule pièce aérienne d'une flotte qui ne compte sinon que sur ses canons"}
       ],
       "magic": "Aucune magie : la Bloodsail Fleet mise sur la poudre noire, les explosifs et la ferraille. « Bludflagg's Waaagh! » (seigneur) tient lieu de sort ultime — 36 secondes où toute l'armée tire plus loin, plus vite et plus juste.",
       "note": "C'est la faction Peaux-Vertes la plus <strong>mécanisée et à distance</strong> du site : chars d'assaut, gyrocoptères pillés, lance-roquettes et fusils. Tout tourne autour de <strong>« Bludflagg's Waaagh! »</strong> (seigneur) — ne la déclenche pas au contact comme une Waaagh! classique, mais quand ta ligne de tir est en position : +25% de portée et de dégâts de missiles, +50 de Reload Skill et +30 de Précision transforment la salve en massacre. En campagne, cap sur Cathay : -80 de relations (faction), XP doublée et Peur contre eux (seigneur), et surtout <strong>+500% de revenu de razing</strong> (faction) — rase, ne conserve pas."
@@ -467,7 +473,7 @@
         {"icon": "sasquatches", "name": "Sasquatches", "qty": 1, "note": "Créatures de la jungle recrutées par la tribu, propres à ce mod — infanterie monstrueuse rapide, à envoyer sur les lanceurs de sorts adverses"},
         {"icon": "deffCreeperz", "name": "Deff Creeperz (Forest Goblin Spider Rider Archers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner deux — cavalerie de tir montée sur araignée, la seule mobilité de la liste"},
         {"icon": "arachnarokSpider", "name": "Arachnarok Spider", "qty": 1, "note": "Le monstre à entité unique de la tribu, exclusif aux Blue Vipers dans ce mod"},
-        {"icon": "colossalSquig", "name": "Colossal Squig", "qty": 1, "note": "Une boule de dents incontrôlable — thématiquement l'unité la plus proche de l'esprit de la fiche, puisqu'elle non plus n'obéit pas vraiment"}
+        {"icon": "daAcidBurpa", "name": "Da Acid Burpa (Colossal Squig)", "qty": 1, "note": "Régiment de Renom du Squig Colossal — le monstre-signature d'un Beastbasha, dont le vomi acide traite les blocs serrés que rien d'autre chez lui ne disperse"}
       ],
       "magic": "Deux Forest Goblin Shamans (Spider) et un Savage Orc Shaman. C'est peu pour une armée de cette taille, mais la tribu ne mise pas sur la magie : elle mise sur le fait de survivre assez longtemps pour que « Sun-Crazed » s'allume.",
       "note": "Trois choses à peser avant de lancer une campagne avec Grak. D'abord, la faction est <strong>incapable de se confédérer</strong> : c'est un handicap majeur chez les Peaux-Vertes, où la confédération est la voie normale d'agrandissement, et cela signifie que chaque territoire doit être pris par la force. Ensuite, les <strong>-40 de relations avec les Hommes-Lézards</strong> désignent l'ennemi : Grak marche sur Itza, et la campagne est écrite en Lustrie. Enfin, les <strong>Rituels</strong> — des Chants invoquant les faveurs des différents dieux Peaux-Vertes — constituent la mécanique de progression propre à la tribu. Sur le plan tactique, retenez la contrepartie de <strong>\"Sun-Crazed\"</strong> : l'<strong>Enragé</strong> rend l'unité incontrôlable, elle attaquera l'ennemi le plus proche sans qu'on puisse la rappeler. Une armée qui bascule entièrement en Sun-Crazed est une armée qu'on ne dirige plus. Le mod donne aussi à cette tribu des Forest Goblins et leurs variantes, des Squig Herds et un Warboss gobelin des forêts en seigneur recrutable, qui ne figurent pas ici faute de place plutôt que d'existence."
@@ -564,7 +570,8 @@
         {"icon": "moonHowlers", "name": "Moon-howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori à <strong>+1 capacité</strong> (faction) — la version d'élite des chevaucheurs de loups"},
         {"icon": "morgrubbsMangyMarauders", "name": "Morgrubb's Mangy Marauders (Wolf Archers)", "qty": 2, "note": "Second régiment favori à <strong>+1 capacité</strong> (faction) — l'élite du tir monté, et l'unité qui profite le plus du réapprovisionnement des munitions du Waaagh!"},
         {"icon": "goblinWolfChariot", "name": "Goblin Wolf Chariot", "qty": 3, "note": "Les chars partagent les mêmes bonus de faction que les chevaucheurs : <strong>+15% de portée</strong> et <strong>Charge Glorieuse</strong>. Ce sont eux qui brisent une formation que les archers ont déjà usée"},
-        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "Le seul élément à pied de la liste, et il est nécessaire : une armée entièrement montée n'a rien pour tenir un point pendant que le reste manœuvre"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 1, "note": "Le seul élément à pied de la liste, et il est nécessaire : une armée entièrement montée n'a rien pour tenir un point pendant que le reste manœuvre"},
+        {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz, le point d'ancrage au sol d'une tribu de chasseurs qui vit à cheval sur ses loups"},
         {"icon": "nightGoblins", "name": "Night Goblins", "qty": 1, "note": "Chair à canon bon marché — de quoi occuper une unité ennemie le temps d'un tour de meute"}
       ],
       "magic": "Un seul Night Goblin Shaman. Cette fiche n'a pas de place pour davantage : chaque emplacement de héros donné à un profil à pied casserait le rythme d'une armée dont l'unité la plus lente est un char.",
@@ -630,7 +637,8 @@
         {"icon": "orcArrerBoyz", "name": "Orc Arrer Boyz", "qty": 4, "note": "Nommés explicitement par le <strong>+100% de dégâts perforants</strong>. C'est le cœur de la fiche : quatre régiments qui, cumulés au <strong>+40% de dégâts à distance</strong> du seigneur, deviennent capables de percer une infanterie lourde — chose qu'un archer orque ne fait jamais"},
         {"icon": "savageOrcArrerBoyz", "name": "Savage Orc Arrer Boyz", "qty": 4, "note": "L'autre unité citée nommément, et la meilleure des deux : elle porte le même <strong>+100% perforant</strong> tout en conservant la sauvagerie et la résistance aux sorts des Orques Sauvages"},
         {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "Hors de la liste du <strong>+100% perforant</strong>, mais dans celle du <strong>+40% de dégâts à distance</strong> et du <strong>+4 de rang de recrutement</strong>. Ils apportent du volume de tir à bas coût contre l'infanterie légère, que les archers orques n'ont pas besoin de traiter"},
-        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 3, "note": "L'écran indispensable. Une armée à dix régiments de tir ne survit pas sans quelque chose devant elle, et rien dans le kit du seigneur n'améliore la mêlée — donc on prend le moins cher"},
+        {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 2, "note": "L'écran indispensable. Une armée à dix régiments de tir ne survit pas sans quelque chose devant elle, et rien dans le kit du seigneur n'améliore la mêlée — donc on prend le moins cher"},
+        {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz, l'ossature verte d'une tribu que la peste et la pourriture rendent autrement peu fiable au contact"},
         {"icon": "blackOrcs", "name": "Black Orcs", "qty": 2, "note": "Le point d'ancrage de la ligne. Ce sont les seules unités de la fiche capables de tenir un choc frontal assez longtemps pour que dix régiments de tir vident leurs carquois"},
         {"icon": "goblinRockLobbers", "name": "Goblin Rock Lobbers", "qty": 1, "note": "Le <strong>+50% de temps de renfort ennemi</strong> offre une longue fenêtre à un contre un, et l'artillerie est ce qui la rentabilise le mieux contre un adversaire retranché qui refuse d'avancer"}
       ],

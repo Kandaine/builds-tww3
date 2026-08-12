@@ -3107,6 +3107,8 @@ const unitImages = {
   morskittarsHellion: 'assets/units/morskittarsHellion.png',
   nattyBuboesSharpshooters: 'assets/units/nattyBuboesSharpshooters.png',
   teethBreakers: 'assets/units/teethBreakers.png',
+  daAcidBurpa: 'assets/units/daAcidBurpa.png',
+  daBlackBeard: 'assets/units/daBlackBeard.png',
   wardensOfCythral: 'assets/units/wardensOfCythral.png',
   heraldsOfKhornesFury: 'assets/units/heraldsOfKhornesFury.png',
   skullharvestRavagers: 'assets/units/skullharvestRavagers.png',
