@@ -278,6 +278,36 @@ mais leurs bâtiments sont `DG_*_horde_*` et `wh_mod_DG_adv_*` — les factions 
 seigneur Vampire Coast n'y a accès. **Toujours repasser par le §2 bis** avant de placer une variante
 trouvée dans un mod.
 
+### Deux façons de conclure à tort qu'une carte n'existe pas
+
+Conclure « aucune carte nulle part » est une affirmation forte. Elle a été prononcée à tort pour
+Brinedragon Swords, que le user avait pourtant sous les yeux en jeu. Deux causes se cumulaient.
+
+**1. `scan_packs.ps1` filtre en regex, pas en littéral.** Sa ligne de test est `if($p -match $Match)`.
+Un chemin Windows passé tel quel y est donc réinterprété : le motif `icons\ship_company_ror` se lit
+`icons` + `\s` (classe blanche) + `hip_company_ror`, et ne peut jamais correspondre. Le balayage
+répond « aucun chemin ne correspond » sans avoir cherché ce qu'on croyait.
+
+```
+MAUVAIS   -Match 'icons\ship_company_ror'      -> cherche "icons<blanc>hip_company_ror"
+BON       -Match 'ship_company_ror_0\.png'     -> pas d'antislash, le point est echappe
+BON       -Match 'icons.wh2_main_hbe_inf_ship' -> le point matche l'antislash
+```
+
+**2. Le nom d'une carte de RoR peut omettre le marqueur `_ror`.** Dans `@red_hef_lords_public.pack`,
+trois régiments suivent la convention (`hbe_inf_the_eataine_guard_ror_0`, `hbe_inf_the_silverpelts_ror_0`,
+`hbe_inf_wavewatchers_ror_0`) et le quatrième non : l'unité `wh2_main_hbe_inf_ship_company_ror_0` a
+pour carte `hbe_inf_ship_company_0.png` — sans `wh2_main_`, **et sans `_ror`**. Chercher le motif du
+régiment ne suffit donc pas, et l'absence du `_ror` ne prouve pas qu'il s'agit de l'unité de base.
+
+**Règle.** Avant de déclarer une carte introuvable : lister l'**inventaire complet** des icônes du
+pack et le rapprocher de sa liste d'unités. Un pack qui déclare N unités et livre N icônes ne peut
+pas avoir de carte manquante, quelles que soient leurs graphies. Et si `main_units_tables` donne un
+`land_unit` dont aucune icône ne porte le nom, c'est un indice de renommage, pas d'absence.
+
+**Enfin, l'observation en jeu prime.** Le user affirmait voir la carte ; l'analyse des packs disait
+le contraire. C'est l'analyse qui avait tort — deux fois, pour deux raisons différentes.
+
 ---
 
 ## 3. Seigneur ou héros ?
@@ -384,6 +414,56 @@ se fait au détriment de l'autre. Deux unités rattachées à des plafonds **dif
 réellement, même si elles se ressemblent.
 
 Vérifier systématiquement avant de mettre deux variantes d'une même unité dans un build.
+
+### Le plafond d'un Régiment de Renom se calcule, il ne se suppose pas
+
+`mercenary_unit_groups_tables.max_count` vaut **1** pour la quasi-totalité des RoR : un régiment est
+unique par définition. Mais un effet de faction ou de seigneur peut le relever, et le total est alors
+`max_count` + la somme des bonus.
+
+Le cas type est le **« Régiment favori : +1 capacité »**, qui porte le maximum à **2** — pas
+davantage. Sur la fiche d'Aislinn, le Company of the Kalendirian avait été posé en ×3 : le bonus
+était bien identifié, mais appliqué comme s'il levait le plafond au lieu de l'incrémenter. La note
+disait « permet d'en aligner plusieurs », formule assez vague pour masquer l'erreur pendant
+plusieurs passes. **Le user l'a repérée sur la page.**
+
+**Règle.** Toute quantité de RoR supérieure à 1 doit nommer dans sa note l'effet qui l'autorise
+**et** le plafond obtenu — « le +1 de capacité porte le maximum à 2 », jamais « permet d'en aligner
+plusieurs ». Une note qui ne sait pas compter est une note qui cache une erreur.
+
+#### Auditer les plafonds : trois pièges, mesurés sur l'ensemble du site
+
+Un balayage a signalé **91** régiments au-dessus de leur plafond. Après instruction il en restait
+**2**. Les 89 écarts venaient de trois causes, toutes à connaître avant de « corriger » quoi que ce
+soit — corriger un faux positif abîme une fiche juste.
+
+**1. Le plafond se lit sur la CLÉ, jamais sur le nom affiché.** « Black Grail Knights » désigne
+**six clés distinctes** réparties sur trois mods ; une seule (`ovn_dk_cav_black_grail_knights_ror`)
+est un Régiment de Renom. La fiche de la Dame du Graal Noir emploie celle de Mousillon, cavalerie
+ordinaire sans plafond. C'est l'invariant « un nom générique peut masquer plusieurs unités
+distinctes » appliqué aux plafonds — **le user a signalé ce faux positif.**
+
+**2. Un effet de faction peut retirer à un RoR sa nature même.** Le Clan Septik déclare « Peut
+recruter les Plaguevermin **comme unités régulières** » : le régiment cesse d'être un RoR pour cette
+faction, et aucun plafond ne s'applique. La fiche de Grrzk Roteye le disait déjà dans sa note ;
+c'est le contrôle automatique, qui ne lisait que les tables, qui avait tort.
+
+**3. Les libellés d'effet ne suivent aucune forme unique.** Cinq tournures coexistent, et presque
+toutes emploient une forme **courte** de l'unité de base — un test sur le nom complet du régiment
+échoue donc dans la majorité des cas :
+
+```
+Régiment favori : +1 capacité pour les Blades of Hoeth (Swordmasters)   <- "Swordmasters of Hoeth"
+Régiment favori Hounds of the Blood Hunt (Flesh Hounds) : +1 capacité   <- ordre inverse
+Régiment favori : capacité +1 et ... pour The Flock of Djaf (Carrion)   <- "capacite +1"
+Régiment favori : +1 pour Stalkers of the Kalti Delta (Sarl Hunters)    <- sans le mot "capacite"
+Capacité d'unité : +3 pour The Severed Claw (Aspiring Champions)        <- autre libelle entier
+```
+
+**Et un « Régiment favori » n'accorde pas toujours de la capacité.** Chez Belannaer il améliore une
+aura, chez Tretch il octroie l'aptitude « Verminous Valour ». Vérifier que l'effet trouvé parle bien
+de capacité **et** vise bien le régiment concerné : c'est ainsi que les deux seules vraies erreurs
+du site ont été isolées.
 
 ---
 
