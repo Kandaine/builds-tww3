@@ -26,7 +26,7 @@
         {"icon": "festeringStooges", "name": "Festering Stooges (Exalted Plaguebearers of Nurgle)", "qty": 1, "note": "Régiment de Renom des Exalted Plaguebearers — l'infanterie la plus résistante du Jardin, sur la fiche du Grand Immonde qui l'a créée"},
         {"icon": "plagueToadsOfNurgle", "name": "Plague Toads of Nurgle", "qty": 2, "note": "Cavalerie monstrueuse rapide — la mobilité d'une armée nurglesque autrement très lente, et le vecteur qui porte la peste au contact"},
         {"icon": "plagueDronesOfNurgleDeathsHeads", "name": "Plague Drones of Nurgle (Death's Heads)", "qty": 2, "note": "Monstre volant démoniaque pour chasser l'artillerie et les tireurs isolés"},
-        {"icon": "chaosFuriesNurgle", "name": "Chaos Furies (Nurgle)", "qty": 1, "note": "Harceleur volant rapide et bon marché"}
+        {"icon": "chaosFuriesNurgle", "name": "Chaos Furies (Nurgle)", "qty": 1, "note": "Les deux régiments favoris de Ku'gath portent sur ses Nurglings et son Grand Immonde. Ces Furies sont ce qui va chercher l'artillerie adverse — une armée de Nurgle avance trop lentement pour y parvenir autrement"}
       ],
       "magic": "Ku'gath manie la Lore of Nurgle (Stream of Corruption, Miasma of Pestilence, Curse of the Leper, Rancid Visitations, Blight Boil, Fleshy Abundance) avec une puissance dévastatrice, tout en pouvant invoquer des nuées de Nurglings explosifs au corps-à-corps.",
       "note": "Le +10% de points de vie de recrutement pour toutes les unités Démoniaques (faction) profite à l'intégralité de cette armée, tandis que les deux régiments favoris renforcent des piliers différents : The Frolickers Bubonic (+1 capacité, faction) fournit une chair à canon increvable en nombre, et Uncle Furuncle (+15% résistance aux tirs, faction) blinde le Grand Démon monstrueux contre les tirs ennemis. Le -25% de coût des Infections et le +15% de chance de propagation d'une peste (seigneur) accélèrent la diffusion des maladies de Nurgle sur le champ de bataille et en campagne."
@@ -54,9 +54,9 @@
         {"icon": "festeringStooges", "name": "Festering Stooges (Exalted Plaguebearers of Nurgle)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +2 rang de recrutement (faction) — élite démoniaque recrutée déjà expérimentée"},
         {"icon": "exaltedPlaguebearersOfNurgle", "name": "Exalted Plaguebearers of Nurgle", "qty": 3, "note": "+2 rang de recrutement (faction) — version d'élite des Plaguebearers, déjà aguerrie"},
         {"icon": "plaguebearersOfNurgle", "name": "Plaguebearers of Nurgle", "qty": 5, "note": "+2 rang de recrutement (faction) — cœur de la horde démoniaque, déjà aguerri"},
-        {"icon": "nurglings", "name": "Nurglings", "qty": 1, "note": "Chair à canon increvable et bon marché"},
+        {"icon": "nurglings", "name": "Nurglings", "qty": 1, "note": "La masse qui alimente le décompte d'Epidemius : plus il meurt d'ennemis, plus toute son armée se renforce. Des Nurglings coûtent peu et tiennent longtemps — exactement ce qu'il faut pour faire durer le compte"},
         {"icon": "frolickersBubonic", "name": "The Frolickers Bubonic (Nurglings)", "qty": 1, "note": "Régiment de Renom des Nurglings — chaque essaim compte double chez le Comptable de Nurgle, dont le décompte récompense le nombre d'unités engagées"},
-        {"icon": "rotFlies", "name": "Rot Flies", "qty": 3, "note": "Monstre volant rapide pour chasser l'artillerie et les tireurs isolés"},
+        {"icon": "rotFlies", "name": "Rot Flies", "qty": 3, "note": "Le décompte d'Epidemius ne monte que si l'on tue. Ces Rot Flies vont chercher les cibles isolées que sa ligne, lente, n'atteindrait jamais"},
         {"icon": "plagueToadsOfNurgle", "name": "Plague Toads of Nurgle", "qty": 2, "note": "Cavalerie monstrueuse rapide qui contourne pendant que les essaims fixent, alimentant le décompte du Comptable sur plusieurs fronts"}
       ],
       "magic": "Epidemius n'est pas un lanceur de sorts dédié — sa puissance vient de sa capacité \"Tallyman's Blades\" (invocation d'Exalted Plaguebearers) et de son bonus offensif contre les ennemis porteurs d'une Peste (seigneur), épaulé par les Herald of Nurgle pour le soutien magique.",

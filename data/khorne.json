@@ -269,7 +269,7 @@
         {"icon": "heraldsOfKhornesFury", "name": "Heralds of Khorne's Fury (Bloodcrushers of Khorne)", "qty": 1, "note": "Régiment de Renom des Bloodcrushers, la seule masse montée d'une fiche que les Chaos Warhounds et l'infanterie démoniaque rendent autrement très statique"},
         {"icon": "fleshHoundsKhorne", "name": "Flesh Hounds of Khorne", "qty": 1, "note": "Rapides et résistantes à la magie — la réponse aux lanceurs de sorts, que le reste de la liste ne peut pas atteindre"},
         {"icon": "houndsOfTheBloodHunt", "name": "Hounds of the Blood Hunt (Flesh Hounds of Khorne)", "qty": 1, "note": "Régiment de Renom des Flesh Hounds — la vitesse qui manque à Slaurith pour rattraper un ennemi qui refuse l'engagement"},
-        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 1, "note": "Écran bon marché pour absorber les premiers tirs avant l'impact"},
+        {"icon": "chaosWarhoundsKhorne", "name": "Chaos Warhounds of Khorne", "qty": 1, "note": "Le <strong>+10 d'armure</strong> de Slaurith couvre son infanterie, pas ces chiens. C'est justement leur emploi : encaisser la salve à la place de ce qui est protégé"},
         {"icon": "soulGrinderKhorne", "name": "Soul Grinder of Khorne", "qty": 1, "note": "La seule pièce à distance de la liste, et le seul recours contre ce qui refuse d'engager une armée entièrement tournée vers la mêlée"}
       ],
       "magic": "Aucun lanceur de sorts : Khorne n'en a pas. La fiche compense par le <strong>-2 tours de récupération des blessures</strong>, qui permet de perdre ses personnages sans que la campagne s'arrête, et par des capacités qui se renforcent d'elles-mêmes au combat.",

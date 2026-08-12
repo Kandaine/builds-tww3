@@ -25,7 +25,7 @@
         {"icon": "nanGauGrenadiers", "name": "Nan-Gau Grenadiers", "qty": 3, "note": "Même triple bonus (seigneur) — grenades à effet de zone dévastatrices"},
         {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité Encourage et Immunité à la Fatigue (faction) — variante d'élite unique des Great Longma Riders"},
         {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 2, "note": "Cavalerie rapide qui protège les flancs de la ligne de tir sans jamais se fatiguer en chargeant"},
-        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 1, "note": "Ligne de mêlée d'élite pour protéger la ligne de tir"},
+        {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 1, "note": "Le régiment favori de Miao Ying porte sur ses Longma. Cette garde est ce qui protège l'Harmonie au sol : une ligne de tir cathayenne qui perd son écran perd toute la bataille"},
         {"icon": "theDuneDragons", "name": "The Dune Dragons (Celestial Dragon Guard)", "qty": 1, "note": "Régiment de Renom de la Garde du Dragon Céleste, sur la fiche de la Dragonne du Nord dont c'est l'unité emblématique — même famille, même rôle de garde d'élite, sur le meilleur profil"},
         {"icon": "skyJunk", "name": "Sky-junk", "qty": 1, "note": "Bombardier volant pour appuyer la ligne de tir et chasser les tireurs isolés adverses"}
       ],
@@ -60,7 +60,7 @@
         {"icon": "theDuneDragons", "name": "The Dune Dragons (Celestial Dragon Guard)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), +15 armure (faction) et -25% d'entretien mêlée (seigneur) — variante d'élite des Celestial Dragon Guard, en première ligne"},
         {"icon": "celestialDragonGuard", "name": "Celestial Dragon Guard", "qty": 1, "note": "+15 armure (faction) et -25% d'entretien mêlée (seigneur) — élite d'infanterie lourde en première ligne"},
         {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 2, "note": "+15 armure (faction) et -25% d'entretien mêlée (seigneur) — anti-cavalerie et anti-monstre fiable ; réduits d'une unité pour libérer l'emplacement de Xian Feng"},
-        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 1, "note": "Cavalerie rapide pour flanquer et pourchasser les tireurs adverses"},
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 1, "note": "Tous les effets de Zhao Ming visent ses <strong>mercenaires ogres</strong> — attaque, défense, entretien. Ces Longma sont ce qu'aucun ogre ne fait : rattraper un tirailleur qui recule"},
         {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment de Renom des Great Longma Riders — la cavalerie lourde des Provinces de l'Ouest, sur son meilleur profil"},
         {"icon": "fireRainRocketBattery", "name": "Fire Rain Rocket Battery", "qty": 2, "note": "Artillerie à zone d'effet pour briser les formations groupées avant l'impact"}
       ],
@@ -94,8 +94,8 @@
         {"icon": "onyxCrowmen", "name": "Onyx Crowmen", "qty": 2, "note": "-30% d'entretien (seigneur) — infanterie d'élite du Jade Court"},
         {"icon": "greatMoonBird", "name": "Great Moon Bird", "qty": 1, "note": "Même bonus d'entretien (seigneur) — monstre volant de soutien et de harcèlement"},
         {"icon": "jadeWarriors", "name": "Jade Warriors", "qty": 1, "note": "Ligne de tenue standard pour ancrer le front pendant que la ménagerie flanque"},
-        {"icon": "peasantLongSpearmen", "name": "Peasant Long Spearmen", "qty": 2, "note": "Anti-charge bon marché en soutien"},
-        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 1, "note": "Cavalerie rapide pour exploiter les brèches ouvertes par la ménagerie"},
+        {"icon": "peasantLongSpearmen", "name": "Peasant Long Spearmen", "qty": 2, "note": "Le <strong>-30% d'entretien</strong> de Yuan Bo couvre ses créatures célestes, jamais ses paysans. Ces lances sont ce qui les protège au sol, et ce qu'il peut perdre sans compromettre sa ménagerie"},
+        {"icon": "greatLongmaRiders", "name": "Great Longma Riders", "qty": 1, "note": "Les Longma exploitent les brèches que les Lions et Oiseaux-Lune de Yuan Bo ouvrent — des monstres volants percent une ligne, ils ne l'occupent pas"},
         {"icon": "righteousLancesOfWeiJin", "name": "Righteous Lances of Wei-Jin (Great Longma Riders)", "qty": 1, "note": "Régiment de Renom des Great Longma Riders, porté par les lances de Wei-Jin — la capitale même dont Yuan Bo administre la cour"}
       ],
       "magic": "Yuan Bo maîtrise Yin et Light (Shem's Burning Gaze, Net of Amyntok, Comet of Casandora) — avec trois Astromancers, sa Maîtrise des Vents Élémentaires atteint +45% de puissance de sorts, rendant Comet of Casandora dévastateur.",
@@ -124,9 +124,9 @@
       "army": [
         {"icon": "ironClawTigerWarriors", "name": "Iron Claw Tiger Warriors", "qty": 5, "note": "-15% d'entretien (faction), +10% de remplacement des pertes et +8 attaque/défense en embuscade (seigneur), +8 commandement et +5 attaque en mêlée sous l'aura White Tiger (seigneur) — élite de mêlée lourde des Guerriers-Tigres"},
         {"icon": "tigerWarriors", "name": "Tiger Warriors", "qty": 5, "note": "Même cumul de bonus (faction + seigneur + aura White Tiger) — infanterie rapide à double hache"},
-        {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 2, "note": "Anti-cavalerie et anti-monstre pour épauler les Guerriers-Tigres"},
-        {"icon": "jadeWarriorCrossbows", "name": "Jade Warrior Crossbows", "qty": 3, "note": "Soutien à distance pour préparer les charges d'embuscade"},
-        {"icon": "peasantArchers", "name": "Peasant Archers", "qty": 1, "note": "Tir de masse bon marché en complément"},
+        {"icon": "jadeWarriorsHalberds", "name": "Jade Warriors (Halberdes)", "qty": 2, "note": "Le <strong>-15% d'entretien</strong> de Bhashiva ne vaut que pour ses Tiger Warriors. Ces hallebardes comblent ce que des félins ne font pas : recevoir une charge montée de face"},
+        {"icon": "jadeWarriorCrossbows", "name": "Jade Warrior Crossbows", "qty": 3, "note": "Le <strong>+8 d'attaque et de défense en embuscade</strong> de Bhashiva récompense un engagement préparé. Ces arbalètes désorganisent l'ennemi pendant qu'il traverse le terrain choisi"},
+        {"icon": "peasantArchers", "name": "Peasant Archers", "qty": 1, "note": "Le volume que les arbalètes n'ont pas. Une embuscade dure peu : mieux vaut beaucoup de projectiles imprécis qu'un tir soigné qui n'a le temps que d'une salve"},
         {"icon": "banditsOfTheSilverRoad", "name": "Bandits of the Silver Road (Peasant Archers)", "qty": 1, "note": "Régiment de Renom des Peasant Archers, brigands de la Route de la Soie ralliés à la cause — le meilleur profil d'une ligne de tir que Bhashiva construit sur le nombre"}
       ],
       "magic": "Bhashiva n'est pas une lanceuse de sorts — sa puissance vient de son agilité féline et de ses capacités d'embuscade, épaulées par l'Astromancer pour le soutien magique.",

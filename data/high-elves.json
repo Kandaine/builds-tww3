@@ -58,8 +58,8 @@
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 1, "note": "Ligne de tenue bon marché pour occuper le front — réduite d'une unité pour libérer l'emplacement d'Aurelion, les six Swordmasters tenant déjà le centre"},
         {"icon": "scionsOfMathlann", "name": "The Scions of Mathlann (Spearmen)", "qty": 1, "note": "Régiment de Renom des Spearmen, second cordon de lances autour de Teclis : la magie ne protège pas celui qui la lance"},
         {"icon": "eataineGuard", "name": "Eataine Guard (Spearmen)", "qty": 1, "note": "Régiment de Renom des Spearmen — la garde rapprochée du plus grand mage d'Ulthuan, dont la survie conditionne toute l'armée"},
-        {"icon": "hefArcher", "name": "Archers", "qty": 3, "note": "Soutien à distance polyvalent"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Anti-monstre et anti-char à distance"}
+        {"icon": "hefArcher", "name": "Archers", "qty": 3, "note": "Les effets de Teclis portent sur sa magie et ses Swordmasters. Ces archers sont ce qui occupe l'ennemi pendant qu'il lance — un mage sans écran de tir doit choisir entre se protéger et travailler"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "La seule pièce capable d'abattre une grande cible avant le contact. Le Fireball de Teclis frappe fort mais quatre fois par bataille : la baliste, elle, tire sans compter"}
       ],
       "magic": "Teclis est le meilleur lanceur de sorts du jeu : sa réserve de Vents de la Magie et sa Mastery of the Elemental Winds, combinées à l'aura de Spell Mastery de l'Arcane Phoenix (faction), permettent de spammer sans relâche buffs, soins et dégâts directs.",
       "note": "Garde Teclis loin du contact — il est extrêmement fragile en mêlée malgré sa puissance magique. Laisse Swordmasters et Phoenix former un mur de protection pendant qu'il opère depuis l'arrière. Le -50% de coût de recrutement allié (faction) est aussi un argument fort pour jouer les alliances High Elves en campagne."
@@ -91,7 +91,7 @@
         {"icon": "shadowWalker", "name": "Shadow Warriors", "qty": 3, "note": "Unité de type Ranger — profite du même double bonus faction (+3 rang) et seigneur (+8 commandement/défense)"},
         {"icon": "theGrey", "name": "The Grey (Shadow Warriors)", "qty": 1, "note": "Régiment de Renom des Shadow Warriors, les tireurs embusqués qui punissent l'ennemi pendant qu'il se brise sur les lances d'Yvresse"},
         {"icon": "hefArcher", "name": "Archers", "qty": 4, "note": "Archers d'Ulthuan, sur la fiche du Gardien de Tor Yvresse dont toute la doctrine repose sur la précision et la patience"},
-        {"icon": "phoenix", "name": "Frostheart Phoenix", "qty": 2, "note": "Monstre volant polyvalent en soutien"}
+        {"icon": "phoenix", "name": "Frostheart Phoenix", "qty": 2, "note": "Les effets d'Eltharion couvrent son infanterie à lance et ses Rangers, pas ses monstres. Ces Phoenix sont ce qui va chercher l'artillerie adverse — une garnison qui tient sa position ne la réduira jamais autrement"}
       ],
       "magic": "Eltharion a accès à la Haute Magie (Apotheosis, Tempest, Soul Quench) pour soigner et soutenir sa ligne tout en punissant les concentrations ennemies.",
       "note": "Particulièrement fort contre les factions Peaux-Vertes grâce à son attribut de terreur dédié et ses -80 relations diplomatiques qui garantissent une guerre quasi permanente (faction). Les Mists of Yvresse et l'Invocation of Ladrielle permettent de sécuriser durablement le territoire autour de Tor Yvresse pendant que cette armée part en offensive."
@@ -123,7 +123,7 @@
         {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "Ligne de tenue bon marché pour occuper le front pendant que les dragons frappent"},
         {"icon": "scionsOfMathlann", "name": "The Scions of Mathlann (Spearmen)", "qty": 1, "note": "Régiment de Renom des Spearmen, la seconde lance d'élite d'une fiche où l'infanterie n'existe que pour libérer les dragons de toute obligation défensive"},
         {"icon": "eataineGuard", "name": "Eataine Guard (Spearmen)", "qty": 1, "note": "Régiment de Renom des Spearmen. Imrik combat monté sur dragon : il lui faut une ligne au sol qui tienne seule, sans lui"},
-        {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Soutien à distance"},
+        {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "L'unité de base des Talons of Tor Caleda, régiment favori d'Imrik. Elle occupe le terrain pendant que ses dragons manœuvrent, et gagne l'exemplaire supplémentaire que le régiment autorise"},
         {"icon": "talonsOfTorCaleda", "name": "Talons of Tor Caleda (Archers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Archers"}
       ],
       "magic": "Imrik ne lance pas de sorts — le Mage de soutien couvre les besoins de buffs/débuffs pendant que la puissance brute des dragons et Dragon Princes fait le travail.",
@@ -152,11 +152,11 @@
       "army": [
         {"icon": "shadowWalkers", "name": "Shadow-walkers", "qty": 6, "note": "Cœur de l'armée — -50% d'entretien (seigneur) permet d'en aligner une horde inhabituellement dense"},
         {"icon": "theGrey", "name": "The Grey (Shadow Warriors)", "qty": 2, "note": "Même bonus d'entretien (seigneur), plus régiment favori : +1 capacité (faction), soit 2 exemplaires recrutables au maximum"},
-        {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "Ligne de tenue pour protéger les tireurs"},
+        {"icon": "hefSpearman", "name": "Spearmen", "qty": 2, "note": "Le <strong>-50% d'entretien</strong> d'Alith Anar vise ses Shadow Warriors, pas ses lanciers. Cette ligne est pourtant ce qui rend l'embuscade possible : sans point fixe, une armée entièrement furtive n'a rien sur quoi rabattre l'ennemi"},
         {"icon": "scionsOfMathlann", "name": "The Scions of Mathlann (Spearmen)", "qty": 1, "note": "Régiment de Renom des Spearmen, aux côtés de l'Eataine Guard — deux lances d'élite pour la seule formation frontale d'une armée entièrement tournée vers le contournement"},
         {"icon": "eataineGuard", "name": "Eataine Guard (Spearmen)", "qty": 1, "note": "Régiment de Renom des Spearmen. Nagarythe se bat par embuscade : cette ligne est le seul point fixe autour duquel le Roi des Ombres fait pivoter le reste"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 3, "note": "Trois exemplaires, et c'est Khaltar qui le justifie : sous sa branche <strong>« The Shadow Eagles »</strong> ils gagnent <strong>Traque</strong> et <strong>Indétectable</strong>. Une aviation furtive dans une armée déjà entièrement furtive — sans lui, deux suffiraient"},
-        {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Soutien à distance supplémentaire"}
+        {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "L'arc ordinaire aux côtés des Shadow Warriors subventionnés. Nagarythe tire de partout : ces archers occupent les positions dégagées que les tirailleurs furtifs dédaignent"}
       ],
       "magic": "Alith Anar ne lance pas de sorts — sa puissance vient de son arc légendaire (le Moonbow) et de la chance d'embuscade +25% (seigneur) qui permet d'engager le combat dans des conditions idéales.",
       "note": "Désactive le tir automatique pour Alith Anar : ses munitions sont limitées et doivent être réservées aux cibles les plus dangereuses (seigneurs, monstres, unités d'élite). L'Invocation of Morai-Heg (faction) offre en plus un héros unique gratuit, Hand of the Shadow Crown, à invoquer dès que possible."
@@ -185,11 +185,11 @@
       "army": [
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Le Régiment de Renom des Sisters of Avelorn — la garde de cour de la Reine Éternelle, donc de ce seigneur précisément. C'est la meilleure pièce de tir que cette fiche puisse aligner"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 5, "note": "+15% de force de tir grâce à Alarielle (seigneur) — le cœur offensif de cette armée"},
-        {"icon": "dryad", "name": "Dryads", "qty": 3, "note": "Infanterie d'esprits de la forêt, résistante à la magie"},
-        {"icon": "treeKin", "name": "Tree Kin", "qty": 3, "note": "Monstre végétal tanky pour percer la ligne ennemie"},
+        {"icon": "dryad", "name": "Dryads", "qty": 3, "note": "Avelorn est la forêt de la Reine Éternelle, et ses esprits y répondent. Les effets d'Alarielle visent ses Sisters of Avelorn : ces Dryades comblent ce qu'un tir magique ne fait pas, tenir le contact"},
+        {"icon": "treeKin", "name": "Tree Kin", "qty": 3, "note": "La percée d'une fiche dont tout le reste est à distance ou fragile. Aucun effet d'Alarielle ne les couvre — ils sont là pour ouvrir ce que ses archères ne font qu'user"},
         {"icon": "scionsOfMathlann", "name": "The Scions of Mathlann (Spearmen)", "qty": 1, "note": "Second Régiment de Renom des Spearmen sur cette fiche : deux régiments distincts de la même unité de base, chacun avec son propre plafond"},
         {"icon": "eataineGuard", "name": "Eataine Guard (Spearmen)", "qty": 1, "note": "Régiment de Renom des Spearmen — la ligne de lances qui protège la Reine Éternelle pendant qu'elle canalise la magie d'Avelorn"},
-        {"icon": "greatEagle", "name": "Great Eagle", "qty": 2, "note": "Mobilité et chasse aux tireurs isolés"}
+        {"icon": "greatEagle", "name": "Great Eagle", "qty": 2, "note": "Le <strong>+15% de force des tirs</strong> d'Alarielle ne sert à rien si l'artillerie adverse la surpasse en portée. Ces aigles sont ce qui va la faire taire"}
       ],
       "magic": "Alarielle combine Haute Magie, Lore of Life et Lore of Light : soins massifs (Earth Blood, Shield of Thorns) et dégâts de zone (Tempest, Banishment), avec des chances de lancer améliorées par l'Invocation of Lileath (faction).",
       "note": "Sa présence laisse des bonus durables sur les provinces visitées en campagne, mais elle s'affaiblit à mesure que la corruption du Chaos progresse dans le monde — à surveiller sur les campagnes longues. En campagne, viser le contrôle total d'Ulthuan par les Hauts Elfes (faction) débloque des bonus supplémentaires, à l'inverse une perte de territoire sur l'île inflige des pénalités."
@@ -258,7 +258,7 @@
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn, le tir magique le plus fiable dont Tor Elasor dispose"},
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 2, "note": "Cavalerie lourde qui charge les flancs et protège les mages, pilier de choc de l'ost colonial"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Rapace de guerre rapide — chasse l'artillerie et les casters ennemis et harcèle les flancs"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Artillerie anti-monstre et anti-char qui appuie la ligne à distance"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Tor Elasor est une colonie isolée : les effets d'Amon subventionnent sa milice et sa garde, jamais son artillerie. Cette baliste est pourtant sa seule réponse à une grande cible"},
         {"icon": "phoenix", "name": "Frostheart Phoenix", "qty": 1, "note": "Le Phénix de givre (et non le Flamespyre offensif) : son aura Blessing of the Ancients renforce la défense et l'attaque en mêlée des unités proches tout en ralentissant l'ennemi — un soutien défensif idéal qui consolide la ligne des Tower Guard et de la milice, dans le thème glacé et magique de la Tour du Soleil"}
       ],
       "magic": "Amon est un Magister Astrologer, Arch-Mage de Haute Magie dont la réserve minimale de +8 Vents de la Magie (faction) alimente un flux de sorts constant — épaulé de deux Mages de Haute Magie et des flèches enchantées des Sisters of Avelorn, l'ost est saturé de magie. Sa lame stellaire (Sword of the Stars) et son bouclier de barrière lui permettent aussi de tenir au corps-à-corps.",
@@ -332,7 +332,7 @@
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn — le tir magique qui accompagne les Lions Blancs de Chrace, lesquels n'ont aucune portée"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Lance et arc — ligne de soutien polyvalente qui tient pendant que les lions flanquent"},
         {"icon": "stormRiders", "name": "The Storm Riders (Lothern Sea Guard)", "qty": 1, "note": "Régiment de Renom des Sea Guard, la seule unité de la fiche capable de tirer puis de tenir la ligne sans changer de rôle"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 2, "note": "Baliste à répétition — anti-grande cible à longue portée"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 2, "note": "Le <strong>+10 de commandement en forêt</strong> de Korhil favorise le combat rapproché sous couvert. Ces balistes traitent ce que ses Lions Blancs ne peuvent pas atteindre avant qu'il ne les charge"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Aigle géant — harcèle l'artillerie et les casters, éclaire les embuscades"}
       ],
       "magic": "Korhil n'est pas un lanceur de sorts — sa puissance vient de la hache et de la meute de lions. Le Mage (High Magic) apporte le soutien magique (buffs, Hand of Kharibdyss) qui amplifie les charges d'embuscade, tandis que le Noble ancre le commandement.",

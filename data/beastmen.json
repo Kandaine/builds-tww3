@@ -25,7 +25,7 @@
         {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 3, "note": "Déploiement d'Avant-Garde (seigneur) — apparaissent directement sur les flancs ennemis dès le début de la bataille"},
         {"icon": "khorroksManrippers", "name": "Khorrok's Manrippers (Bestigor Herd)", "qty": 1, "note": "Régiment de Renom des Bestigors, qui reçoivent de Khazrak l'attribut <strong>Déploiement d'Avant-Garde</strong> — cette élite se place au contact dès le premier tour, ce qui est exactement la façon dont le Borgne combat"},
         {"icon": "razorgorChariot", "name": "Razorgor Chariot", "qty": 3, "note": "Même Déploiement d'Avant-Garde (seigneur) — percussion immédiate en début de bataille"},
-        {"icon": "centigors", "name": "Centigors", "qty": 2, "note": "Cavalerie légère rapide, complément mobile pour exploiter les brèches"}
+        {"icon": "centigors", "name": "Centigors", "qty": 2, "note": "Les effets de Khazrak visent ses <strong>Ungors</strong> — attaques empoisonnées, régiment favori à +2 capacité. Ces Centigors n'en profitent pas et fournissent ce qui manque : la vitesse qui transforme une brèche en déroute"}
       ],
       "magic": "Le Bray-Shaman couvre les besoins magiques de la horde tandis que Khazrak concentre sa force sur le combat rapproché et la manœuvre furtive.",
       "note": "Cette armée est pensée pour l'embuscade : +15% de succès d'embuscade (faction) et posture Camp Caché améliorée (seigneur) permettent de surprendre l'ennemi, avant que Bestigors et Chars Razorgor ne frappent en Déploiement d'Avant-Garde (seigneur) sur ses arrières."
@@ -51,12 +51,12 @@
         {"icon": "kharakStoneheart", "name": "Kha'Rak Stoneheart (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, <strong>lanceur de sorts</strong> doté d'une seconde forme « possédé par le chaman ». Sur une fiche qui recrute ses mages à moitié prix et déjà expérimentés, un troisième porteur de magie nommé va de soi"}
       ],
       "army": [
-        {"icon": "gorHerd", "name": "Gor Herd", "qty": 2, "note": "Infanterie de mêlée bon marché, cœur de cette armée"},
+        {"icon": "gorHerd", "name": "Gor Herd", "qty": 2, "note": "L'unité de base du régiment favori de Malagor. Son autre effet abaisse le commandement ennemi de 8 : une masse de Gors qui tient au contact suffit alors à faire rompre ce que la peur a déjà entamé"},
         {"icon": "blackHornsRavagers", "name": "Black-Horn's Ravagers (Gor Herd)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Gor Herd"},
         {"icon": "harpies", "name": "Harpies", "qty": 4, "note": "Provoquent la peur grâce à Malagor (seigneur) — idéales pour harceler et briser le moral ennemi avant le contact"},
-        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 3, "note": "Tirailleurs bon marché pour occuper le terrain et protéger les flancs"},
+        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 3, "note": "Le harcèlement qui étire la ligne adverse pendant que le <strong>-8 de commandement</strong> de Malagor opère. Un ennemi démoralisé et débordé rompt sans qu'il ait à charger"},
         {"icon": "centigors", "name": "Centigors", "qty": 3, "note": "Cavalerie légère rapide, complément mobile pour exploiter les brèches ouvertes par la magie"},
-        {"icon": "giant", "name": "Giant", "qty": 2, "note": "Monstre de rupture massif pour percer n'importe quelle ligne ennemie"}
+        {"icon": "giant", "name": "Giant", "qty": 2, "note": "Malagor vole et lance, ses Gors tiennent : rien dans sa liste ne perce. Ces géants sont la seule pièce capable d'ouvrir un bloc que la démoralisation n'a pas suffi à disloquer"}
       ],
       "magic": "Malagor combine Lore of Beasts, Death, Shadow et Wild — Flock of Doom et Doom & Darkness sèment la terreur, pendant que les Bray-Shamans multiplient les sorts de soutien à moindre coût (faction).",
       "note": "En province occupée par cette armée, les ennemis subissent -100% de reconstitution des pertes et -8 de commandement (seigneur) : idéal pour asseoir une occupation punitive après une victoire, avant de repartir rapidement grâce au bonus de déplacement sur les Sentiers Bestiaux."
@@ -83,12 +83,12 @@
       ],
       "army": [
         {"icon": "chaosSpawn", "name": "Chaos Spawn", "qty": 4, "note": "+4 de capacité d'unité (faction) — une concentration de monstres mutants normalement impossible à recruter en telle quantité"},
-        {"icon": "jabberslythe", "name": "Jabberslythe", "qty": 1, "note": "Monstre volant dévastateur en mêlée"},
+        {"icon": "jabberslythe", "name": "Jabberslythe", "qty": 1, "note": "L'unité de base de la Vorbergland Broodmother, régiment favori de Morghur. Un second Jabberslythe double l'aura de folie — deux sources de terreur valent mieux qu'une sur un champ où sa mutation opère déjà"},
         {"icon": "theVorberglandBroodmother", "name": "The Vorbergland Broodmother (Jabberslythe)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : accorde Frénésie (faction) — variante d'élite unique du Jabberslythe"},
         {"icon": "centigors", "name": "Centigors", "qty": 3, "note": "Cavalerie légère pour exploiter les flancs pendant que les monstres tiennent le centre"},
         {"icon": "ungorHerd", "name": "Ungor Herd", "qty": 4, "note": "Ligne de tenue bon marché, moins chère à entretenir grâce au -15% de coût de construction de horde (faction)"},
-        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 2, "note": "Tirailleurs pour harceler et protéger les flancs"},
-        {"icon": "razorgorChariot", "name": "Razorgor Chariot", "qty": 2, "note": "Percussion rapide en complément des monstres"}
+        {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 2, "note": "La <strong>résistance à la magie de 20%</strong> de Morghur couvre toute son armée, mais ne remplace pas une portée. Ces tirailleurs sont ce qui répond à une ligne de tir adverse"},
+        {"icon": "razorgorChariot", "name": "Razorgor Chariot", "qty": 2, "note": "Les chars ouvrent ce que les monstres de Morghur achèvent. Sa liste est lente et lourde : il lui faut une pièce capable de choisir son point d'impact"}
       ],
       "magic": "Les Bray-Shamans complètent l'Aura de Vile Transmutation de Morghur (seigneur) — 16-32 dégâts de zone par seconde sur 35m de rayon, en continu et sans limite de durée — qui corrompt et mutile déjà tout ce qui l'entoure sans dépenser le moindre sort.",
       "note": "Cette armée est quasiment increvable en province ennemie : 20% de résistance à la magie (seigneur), immunité à l'attrition d'Athel Loren (seigneur) et régénération naturelle de Morghur permettent de mener des sièges longs pendant que la posture du Corrupteur (seigneur) ruine méthodiquement le territoire environnant."

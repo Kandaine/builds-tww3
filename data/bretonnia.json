@@ -26,7 +26,7 @@
         {"icon": "knightsErrant", "name": "Knights Errant", "qty": 1, "note": "Cavalerie de charge rapide pour ouvrir les brèches avant l'assaut principal"},
         {"icon": "knightsErrantRoR", "name": "Defenders of the Fleur-de-lis (Knights Errant)", "qty": 1, "note": "Régiment de Renom des Knights Errant. Ils portent la fleur de lys, et c'est chez le Roi de Couronne que ce symbole a le plus de poids"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Cavalerie volante pour chasser les tireurs isolés et frapper les flancs"},
-        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Soutien d'artillerie à distance pour préparer la charge"}
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Tous les effets de Louen visent la chevalerie. Ces trébuchets sont l'exception nécessaire : une charge lancée sur une formation intacte se brise, ils sont ce qui l'ouvre d'abord"}
       ],
       "magic": "La Damsel complète l'arsenal offensif de Louen, qui n'est pas lui-même un lanceur de sorts mais un pur duelliste monté.",
       "note": "Privilégie les affrontements contre le Chaos, les Chaos Dwarfs, les Morts-Vivants ou les Peaux-Vertes pour profiter pleinement des bonus de Louen (seigneur). Le +10% de portée de déplacement (faction) accélère les manœuvres sur la carte de campagne, et l'aura de commandement +50% en attaque (faction) stabilise le moral de toute l'armée pendant l'offensive — garde ses Vœux Chevaleresques toujours actifs dès le début de campagne."
@@ -57,7 +57,7 @@
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 5, "note": "Même bonus Peasant (seigneur) — anti-cavalerie fiable en première ligne"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance, également renforcé par les bonus Peasant de Repanse (seigneur)"},
         {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 1, "note": "Régiment de Renom des Questing Knights. Il remplace l'unique escadron : la Pucelle attire ceux qui cherchent un sens à leur vœu, et ceux-là l'ont trouvé"},
-        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 1, "note": "Cavalerie légère de charge"},
+        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 1, "note": "L'unité de base du régiment favori de Repanse. Les jeunes chevaliers cherchent l'exploit et chargent les premiers — elle-même n'a rien qui la retienne en arrière"},
         {"icon": "defendersOfTheFleurDeLis", "name": "Defenders of the Fleur de Lis (Knights Errant)", "qty": 2, "note": "Régiment favori : +1 capacité et immunité à la Fatigue/Psychologie (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Knights Errant, increvable à l'endurance"}
       ],
       "magic": "Les Damsels couvrent les besoins de soin et de buffs pendant que Repanse et Henri le Massif combattent au contact, épée de Lyonesse et lance en main.",
@@ -85,10 +85,10 @@
       ],
       "army": [
         {"icon": "grailGuardians", "name": "Grail Guardians", "qty": 6, "note": "Garde d'élite historiquement associée à la Fée Enchanteresse — mur de protection autour de la lanceuse de sorts"},
-        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 2, "note": "Infanterie fanatique bon marché en soutien de la ligne"},
+        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 2, "note": "L'unité de base du régiment favori de la Fée. Ces fanatiques ne fuient pas : c'est ce que la chevalerie, qui manœuvre, ne peut pas offrir — un point qui tient sans surveillance"},
         {"icon": "holyWardensOfLaMaisontaal", "name": "Holy Wardens of La Maisontaal (Battle Pilgrims)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Battle Pilgrims"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 4, "note": "Soutien à distance classique, profite aussi de l'Économie Peasant renforcée (faction)"},
-        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 3, "note": "Artillerie de zone pour préparer le terrain avant l'engagement"}
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 3, "note": "Trois trébuchets, soit le plus gros parc d'artillerie de Bretonnie. La Fée lance depuis l'arrière et aucun effet ne couvre ses roturiers : ils travaillent seuls, et le volume compense"}
       ],
       "magic": "La Fée Enchanteresse maîtrise la Lore of Life (Earth Blood, Shield of Thorns, Flesh to Stone, Regrowth) : soins massifs et buffs défensifs, complétés par les Damsels pour maintenir la ligne en vie indéfiniment.",
       "note": "Garde la Fée Enchanteresse derrière les Grail Guardians : son attribut de peur et sa magie de soutien font le plus gros du travail sans qu'elle ait besoin de s'exposer au contact. Le +15% de réplétion des pertes et l'Économie Peasant renforcée (faction) permettent de reconstituer cette armée bien plus vite qu'à l'accoutumée entre deux batailles."
@@ -117,11 +117,11 @@
       "army": [
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 3, "note": "+10 de défense en mêlée et Charge Glorieuse (seigneur) — Bonus de Charge doublé et pénalité de commandement de flanc infligée à l'ennemi chargé, même de front —, plus +2 rang de recrutement et -1 tour de recrutement local (faction) : cavalerie lourde quasiment impossible à percer, déjà vétérane à la sortie de caserne"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm, sur la fiche qui en aligne quatre : le fer de lance de la charge bordelaise"},
-        {"icon": "footSquires", "name": "Foot Squires", "qty": 1, "note": "Infanterie de squires bon marché en soutien de la ligne"},
+        {"icon": "footSquires", "name": "Foot Squires", "qty": 1, "note": "L'unité de base des Beastslayers of Bastonne, régiment favori d'Alberic. Gardée en un exemplaire pour tenir aux côtés du régiment sans diluer un budget qui part dans la lance"},
         {"icon": "beastslayersOfBastonne", "name": "Beastslayers of Bastonne (Foot Squires)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Foot Squires"},
         {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 4, "note": "+5 de défense en mêlée (seigneur) — ligne de tenue bon marché et fiable"},
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 3, "note": "Même bonus de +5 défense en mêlée (seigneur), avec en prime la résistance anti-cavalerie de la lance"},
-        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance classique derrière le mur défensif"}
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Bordeleaux est un port : Alberic mène des attaques navales, où l'on débarque sans train de siège. Ces arcs sont la seule portée qu'une flotte transporte sans effort"}
       ],
       "magic": "La Damsel complète l'arsenal défensif d'Alberic, qui n'est pas lui-même un lanceur de sorts mais un pur combattant d'attrition.",
       "note": "Cette armée est pensée pour tenir une ligne quasiment inébranlable près des côtes, où la capacité d'Alberic à attaquer les colonies portuaires depuis la mer (seigneur) prend tout son sens. Le +50% de revenu des ports et l'immunité totale aux attritions maritimes (faction) financent et sécurisent des campagnes prolongées le long du littoral."
@@ -254,10 +254,10 @@
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — variante d'élite des Knights of the Realm, fer de lance"},
         {"icon": "knightsErrant", "name": "Knights Errant", "qty": 2, "note": "-30% d'entretien, rang +2, +20% de remplacement (faction/seigneur) — cavalerie de choc bon marché en nombre, avides de gloire"},
         {"icon": "knightsErrantRoR", "name": "Defenders of the Fleur-de-lis (Knights Errant)", "qty": 1, "note": "Régiment de Renom des Knights Errant. Ces jeunes chevaliers cherchent l'exploit : sur la fiche de Lyonesse, ils forment la charge d'ouverture avant que les Knights of the Realm ne concluent"},
-        {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "Cavalerie sacrée d'élite — la pointe la plus dure de la marée"},
+        {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "Les Grail Knights échappent au <strong>-30% d'entretien</strong> qu'Adalhard réserve aux Knights Errant et Knights of the Realm. Ils coûtent plein tarif, et c'est assumé : rien d'autre ne perce une ligne de morts-vivants contre laquelle son <strong>+8 de commandement</strong> le prépare"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 1, "note": "Cavalerie volante — chasse artillerie et casters, frappe les monstres morts-vivants"},
         {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Piétaille bon marché — tient le centre pendant que la marée de cavalerie déferle sur les flancs"},
-        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 1, "note": "Tir de masse bon marché en soutien"},
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 1, "note": "Contre les morts-vivants que Lyonesse affronte, une flèche vaut mieux qu'une charge : ces créatures ne rompent pas, elles s'effondrent quand leur nombre baisse"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie à zone d'effet — abat les grands monstres morts-vivants (Terrorgheists) et brise les hordes"}
       ],
       "magic": "Adalhard n'est pas un lanceur de sorts — sa force vient du nombre et de la charge de chevalerie. La Damsel (Lore of Life ou Light) soigne et, contre les morts-vivants, la Lore of Light offre des sorts dévastateurs (Banishment) qui complètent le +8 de commandement anti-mort-vivant (faction).",
@@ -290,7 +290,7 @@
         {"icon": "defendersOfTheFleurDeLis", "name": "Defenders of the Fleur de Lis (Knights Errant)", "qty": 2, "note": "Régiment favori : +1 capacité et capacité « Young and Restless » (faction) — cavalerie de choc au sol qui accélère et charge de plus en plus fort au fil du temps (jusqu'à +60% bonus de charge, +30% vitesse)"},
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 1, "note": "Cavalerie de choc au sol — ancre l'armée et fixe l'ennemi pendant que la cavalerie volante frappe l'arrière et les flancs"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm — la charge lourde qui descend des hauteurs de Parravon sur un ennemi déjà fixé"},
-        {"icon": "grailKnights", "name": "Grail Knights", "qty": 1, "note": "Cavalerie sacrée d'élite — pointe de choc au sol la plus dure"},
+        {"icon": "grailKnights", "name": "Grail Knights", "qty": 1, "note": "Le choc au sol d'une fiche dont toute la spécificité est aérienne. Cassyon donne la formation « Lance » à ses Pégases, pas à ses chevaliers montés : ceux-ci frappent classiquement, et c'est ce qui manquerait sinon"},
         {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Piétaille bon marché — tient brièvement le centre pendant que toute la cavalerie manœuvre"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie à zone d'effet — brise les formations groupées avant les charges aériennes"}
       ],
@@ -393,7 +393,7 @@
         {"icon": "grailReliquae", "name": "Grail Reliquae", "qty": 1, "note": "La relique portée qui galvanise les Pèlerins — pièce maîtresse morale de la horde"},
         {"icon": "mushaInfantry", "name": "Musha Infantry (Naginatas & Arcs)", "qty": 2, "note": "Samouraïs du Lointain Orient au service de la compagnie — infanterie hybride mêlée/tir, unique en Bretonnie"},
         {"icon": "ashigaruYari", "name": "Ashigaru Infantry (Lances)", "qty": 1, "note": "Piétaille nippone bon marché — élargit la ligne à peu de frais pour les fantassins engagés par la compagnie"},
-        {"icon": "ashigaruBow", "name": "Ashigaru Infantry (Arcs)", "qty": 1, "note": "Archers nippons — tir de saturation en complément de l'artillerie"},
+        {"icon": "ashigaruBow", "name": "Ashigaru Infantry (Arcs)", "qty": 1, "note": "Le <strong>+15 de réduction de rechargement</strong> de Leofric ne vaut que pour son artillerie de rang 7. Ces archers comblent l'intervalle : un volume de flèches continu, là où une pièce lourde tire par à-coups"},
         {"icon": "wildwoodRangerLeo", "name": "Wildwood Rangers", "qty": 1, "note": "Unité Sylvaine débloquée par la Protection des Forêts (faction) — anti-grande cible fourni par les alliés elfes"},
         {"icon": "mangonelLeofric", "name": "Mangonneaux", "qty": 2, "note": "+15 de réduction de rechargement au rang 7 (seigneur) et renouvellement affranchi de l'Économie Paysanne (faction) — l'artillerie de la compagnie tire nettement plus vite que la normale"},
         {"icon": "scorpionLeofric", "name": "Scorpions", "qty": 1, "note": "Tir tendu perforant, mêmes bonus d'artillerie (faction/seigneur) — abat monstres et grandes cibles"}
@@ -464,7 +464,7 @@
         {"icon": "footSquires", "name": "Foot Squires", "qty": 1, "note": "Infanterie d'élite à -20% d'entretien (seigneur) — la réserve de choc qui contre-attaque quand la ligne paysanne tient"},
         {"icon": "beastslayersOfBastonne", "name": "Beastslayers of Bastonne (Foot Squires)", "qty": 1, "note": "Régiment de Renom des Foot Squires — les écuyers qui ont juré la traque des monstres. Sur la fiche de Montfort, dont la forteresse garde un col de montagne, c'est l'infanterie qui affronte ce que la chevalerie ne peut charger"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm. Il remplace l'unique escadron de Montfort, dont la fiche repose davantage sur l'infanterie de montagne"},
-        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie qui domine les vallées depuis les positions élevées"}
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Montfort garde un col. Un trébuchet placé en hauteur y couvre toute la vallée, et c'est le seul atout que les effets de Folcard — tournés vers ses Mounted Yeomen et l'acier de ses mines — ne fournissent pas"}
       ],
       "magic": "Folcard n'est pas un lanceur de sorts : sa force est l'acier de ses mines et la discipline de ses montagnards. La Damsel (Lore of Beasts) est le seul appui magique.",
       "note": "C'est la fiche bretonnienne la plus « infanterie » du site : le -20% d'entretien sur l'infanterie et le +6 de défense en mêlée des paysans (seigneur) permettent d'aligner une armée de piétaille qui tient réellement, chose rare en Bretonnie. Exploite l'<strong>Acier</strong> des mines de fer (faction) pour améliorer armes, boucliers et armures — c'est le multiplicateur central de la faction — et les <strong>Tours à Signaux</strong> (faction) qui remplacent les garnisons mineures pour faire converger tes armées plus vite. Guerre inévitable avec les Peaux-Vertes (-50 de relations, faction) : les Wardens Woodsman (faction) traqueront les raids jusque dans les bois."
@@ -531,8 +531,8 @@
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 2, "note": "Cavalerie de charge pour les clairières et les lisières, avec l'attribut Woodsman contre les Hommes-Bêtes (seigneur)"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm, la lance lourde de L'Anguille — elle dégage les abords que l'infanterie portuaire ne peut pas tenir seule"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 3, "note": "Tir de harcèlement — érode les hordes bestiales avant qu'elles n'atteignent la ligne"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Ecran de pietaille qui protege les archers dans les sous-bois"},
-        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie qui pilonne les campements et les troupeaux massés"}
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Écran de piétaille qui protège les archers dans les sous-bois — la seule ligne d'infanterie de L'Anguille, dont le <strong>+15% de force des armes en attaque</strong> pousse tout le reste vers l'avant"},
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "L'Anguille borde la Forêt de Châlons et ses hordes de Bêtes. Contre un campement ou un troupeau massé, deux trébuchets font plus de dégâts qu'une charge dans les arbres, où la cavalerie perd tout son élan"}
       ],
       "magic": "Taubert n'est pas un lanceur de sorts — sa force est la traque et l'assaut. La Damsel (Lore of Beasts) est l'unique appui magique, idéalement tournée contre les monstres des warherds.",
       "note": "Une armée conçue pour <strong>attaquer</strong> : les deux gros bonus du seigneur (+15% de force des armes, aura de Commandement +50%) ne s'appliquent qu'en attaque — ne subis pas les Hommes-Bêtes, traque-les. L'attribut <strong>Woodsman</strong> contre les Bêtes (seigneur) annule leur avantage de terrain dans la Forêt d'Arden, et le -80 de relations (faction) garantit la guerre totale. Côté économie, tout repose sur les <strong>ports</strong> (-25% de coût, -1 tour de construction, +15% de revenu, faction) : L'Anguille finance ses expéditions terrestres avec l'argent de la mer, sans jamais reprendre la mer. Note : sur le site, Khazrak le Borgne (Hommes-Bêtes I) et Boris Todbringer (Empire XIV) partagent cette même guerre des bois."
@@ -566,8 +566,8 @@
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "L'élite bénie de la Dame — marteau final une fois l'ennemi désorganisé par les charges de flanc"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants — prennent l'artillerie et les casters à revers, dans l'esprit de flanquement de la faction"},
         {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Enclume qui fixe l'ennemi de face — indispensable pour que les chevaliers puissent le prendre de flanc"},
-        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 1, "note": "Tir qui force l’ennemi à s’engager sur l’enclume, exposant ses flancs"},
-        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 1, "note": "Artillerie qui désorganise les formations avant l'encerclement"}
+        {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 1, "note": "Le tir qui force l'ennemi à s'engager sur l'enclume et à exposer ses flancs. Theodoric rend ses Régiments de Renom chevaleresques <strong>immunisés à la Psychologie</strong> : encore faut-il un adversaire fixé pour qu'ils le prennent à revers"},
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 1, "note": "Brionne encercle plutôt qu'elle ne charge de front. Un trébuchet qui disloque une formation crée les intervalles par lesquels la manœuvre passe"}
       ],
       "magic": "Iselda (Damsel du Graal légendaire) porte seule la magie de la Dame — soins et débuffs pour préparer les charges. Theodoric, lui, combat et lit de la poésie.",
       "note": "Tout tourne autour du <strong>Devastating Flanker</strong> (seigneur) : ne charge jamais de face avec les Knights of the Realm et Questing Knights — fixe l'ennemi avec les Men-at-Arms, contourne, et frappe le flanc ou l'arrière pour doubler le bonus de charge. Les <strong>trois Régiments de Renom chevaleresques de Bretonnie</strong> (Knights of the Lionhearted, Defenders of the Fleur-de-lis, Companions of Quenelles) deviennent immunisés à la Psychologie (faction) — tous alignés ici — ce qui en fait des unités de choix face aux morts-vivants terrifiants, d'autant que deux d'entre eux héritent aussi du Devastating Flanker (seigneur). En campagne, pense à finir les tours de Theodoric dans une région à Taverne ou Vin (faction) : c'est la mécanique qui efface ses traits négatifs — et le -10% de coût de ces bâtiments (faction) rend le réseau facile à bâtir."
@@ -601,8 +601,8 @@
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "L'élite bénie de la Dame — marteau final de la charge, sous la Bannière sacrée"},
         {"icon": "questingKnights", "name": "Questing Knights", "qty": 1, "note": "Chevaliers à deux mains — anti-infanterie lourde en complément des lances"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants — frappent l'artillerie et les casters pendant que la cavalerie enfonce"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Enclume minimale qui fixe l'ennemi le temps de la manoeuvre"},
-        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 1, "note": "Artillerie qui désorganise les formations avant l'impact"}
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Enclume minimale qui fixe l'ennemi le temps de la manœuvre. Armand concentre son budget sur la lance — le <strong>-25% d'entretien</strong> ne couvre que ses Knights Errant et Knights of the Realm — et n'entretient donc qu'une seule ligne à pied"},
+        {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 1, "note": "Son régiment favori accorde l'<strong>Immunité à la Psychologie</strong> aux Régiments de Renom qui chargent. Ce trébuchet prépare la cible : une formation désorganisée ne tient pas devant une charge que rien n'arrête"}
       ],
       "magic": "Armand n'est pas un lanceur de sorts — sa force est la bannière et l'exemple. La Damsel (Lore of Life) est le seul appui magique, en synergie directe avec la régénération du Champion de la Dame.",
       "note": "L'armée entière est <strong>immunisée à la peur</strong> : Knights Errant et Knights of the Realm le sont nativement (seigneur), et les <strong>trois Régiments de Renom chevaleresques de Bretonnie</strong> — Defenders of the Fleur-de-lis, Knights of the Lionhearted et Companions of Quenelles, tous alignés ici — diffusent « Impetuous » à 35m en chargeant (faction) pour couvrir le reste. Contre les morts-vivants terrifiants et les monstres, c'est une armée qui ne rompt tout simplement pas. Le -25% d'entretien sur les deux unités de base (faction, <strong>toutes les armées</strong>) et le +2 de rang de recrutement des Seigneurs permettent de multiplier les armées de cavalerie à moindre coût — Aquitaine est la faction bretonnienne la plus adaptée à une expansion rapide sur plusieurs fronts."

@@ -22,8 +22,8 @@
         {"icon": "hammerer", "name": "Hammerers", "qty": 5, "note": "Cœur de l'armée — -15% d'entretien et +3 rang de recrutement de base (faction), puis +15% de résistance physique une fois sous les ordres de Thorgrim (seigneur) : une ligne quasi infranchissable et étonnamment abordable"},
         {"icon": "peakGateGuard", "name": "Peak Gate Guard (Hammerers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Hammerers, également couverte par le +15% de résistance physique de Thorgrim (seigneur)"},
         {"icon": "longbeard", "name": "Longbeards", "qty": 4, "note": "Même -15% d'entretien que les Hammerers (faction) — deuxième ligne d'élite tout aussi soutenable, pour percer une fois le front stabilisé"},
-        {"icon": "quarreller", "name": "Quarrellers", "qty": 4, "note": "Soutien à distance derrière la ligne de Hammerers et Longbeards"},
-        {"icon": "gyrobomber", "name": "Gyrobombers", "qty": 2, "note": "Bombardement aérien et chasse aux tireurs isolés"}
+        {"icon": "quarreller", "name": "Quarrellers", "qty": 4, "note": "Le <strong>-15% d'entretien</strong> de Thorgrim ne couvre que ses Longbeards et Hammerers. Ces arbalétriers sont ce qui rend leur ligne rentable : elle tient, ils tuent, et le Livre des Rancunes se solde plus vite"},
+        {"icon": "gyrobomber", "name": "Gyrobombers", "qty": 2, "note": "Une armée naine ne rattrape rien. Ces gyrobombardiers sont la seule réponse de Thorgrim à un adversaire qui refuse le contact et le tire à distance"}
       ],
       "magic": "Thorgrim ne lance pas de sorts : sa puissance vient de la solidité de sa ligne de Hammerers/Longbeards et du rayonnement de son aura de commandement, qui stabilise le moral de toute l'armée.",
       "note": "Ne sépare jamais Thorgrim de ses Hammerers : c'est le +15% de résistance physique (seigneur) qui rend cette ligne quasi infranchissable, tandis que le -15% d'entretien (faction, partagé avec les Longbeards) permet d'en aligner bien plus que la normale pour le même budget. Garde aussi Runesmith et Thane à moins de 35m de Thorgrim pour profiter de sa capacité Guardian (+15% de Résistance Physique, seigneur), qui protège spécifiquement les Lords et Heroes de l'armée. Le régiment favori des Peak Gate Guard t'autorise en plus à maintenir un Hammerer supplémentaire à travers la faction."
@@ -51,9 +51,9 @@
         {"icon": "slayer", "name": "Slayers", "qty": 10, "note": "Cœur de l'armée — -50% de coût de recrutement (faction) et -25% d'entretien (seigneur) permettent d'en aligner une horde bien plus dense que la normale, chacun frappant +5 en mêlée et rendu increvable tant que ses PV restent au-dessus de 75% grâce à Journey's End (seigneur)"},
         {"icon": "dragonbackSlayers", "name": "Dragonback Slayers (Slayers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Slayers, également couverte par le -25% d'entretien et le +5 de mêlée de Journey's End (seigneur)"},
         {"icon": "irondrakesTrollhammer", "name": "Irondrakes (Trollhammer Torpedoes)", "qty": 2, "note": "Anti-monstre et anti-blindé à distance, en soutien de la horde de Slayers"},
-        {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "Ligne de tir polyvalente derrière les Slayers"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "Les Slayers d'Ungrim cherchent la mort et avancent sans attendre. Ces armes à feu sont ce qui les accompagne de loin, puisque rien ne les fera reculer pour se regrouper"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — le tir qui couvre la charge suicidaire des Slayers, seule chose qui empêche le Roi Tueur de perdre son armée avant le contact"},
-        {"icon": "quarreller", "name": "Quarrellers", "qty": 2, "note": "Tir de précision complémentaire"}
+        {"icon": "quarreller", "name": "Quarrellers", "qty": 2, "note": "L'arbalète aux côtés de la poudre noire : deux portées, deux cadences. Le <strong>+10% de vitesse d'infanterie</strong> d'Ungrim les fait suivre ses Slayers au lieu de rester en arrière"}
       ],
       "magic": "Ungrim ne lance pas de sorts — Journey's End (immunité à la mort tant que les PV restent au-dessus de 75%) et le double effet d'entretien réduit (faction + seigneur) suffisent à transformer une simple horde de Slayers en armée soutenable sur la durée.",
       "note": "Ungrim est increvable au contact mais lent et difficile à protéger des tirs : évite de le laisser seul face à des tireurs qui peuvent le kiter indéfiniment. Le -75% de coût de construction des bâtiments Slayer (faction) permet en plus de débloquer cette horde très tôt en campagne, et le +10% de vitesse pour l'infanterie aide à refermer la distance plus vite."
@@ -81,7 +81,7 @@
       "army": [
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 5, "note": "Cœur de l'armée — déjà l'unité la plus blindée du roster ; profite directement du blocage de tirs +20% (seigneur)"},
         {"icon": "norgrimlingsIronbreakers", "name": "Norgrimlings Ironbreakers (Ironbreakers)", "qty": 2, "note": "Régiment favori de Belegar : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Ironbreakers, également couverte par le blocage de tirs +20% (seigneur)"},
-        {"icon": "dwarfWarrior", "name": "Dwarf Warriors", "qty": 4, "note": "Masse d'infanterie bon marché pour tenir le centre"},
+        {"icon": "dwarfWarrior", "name": "Dwarf Warriors", "qty": 4, "note": "Belegar paie <strong>+50% d'entretien</strong> tant que Karak Huit-Pics n'est pas repris. Cette infanterie ordinaire est ce qu'il peut aligner en nombre malgré cette pénalité, et son <strong>+10 de commandement en siège</strong> la rend increvable là où il compte"},
         {"icon": "miner", "name": "Miners", "qty": 2, "note": "Frappe surprise en tunnel, typique du style de guerre souterraine de Belegar"},
         {"icon": "ranger", "name": "Rangers (Dwarfs)", "qty": 4, "note": "Éclaireurs et gardes de flanc — le Vanguard Deployment en Underway (faction) les met en position idéale dès le déploiement"}
       ],
@@ -169,7 +169,7 @@
       "army": [
         {"icon": "cannon", "name": "Cannons", "qty": 6, "note": "Profitent directement du +20% de force de tir (seigneur) et sont moins chères à recruter et entretenir (-15% d'entretien, +3 rang de recrutement, faction)"},
         {"icon": "gyrocopterBrimstone", "name": "Gyrocopters (Brimstone Guns)", "qty": 5, "note": "Machine de Guerre Volante — même double bonus faction/seigneur, harcèlement aérien rapide et peu coûteux"},
-        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Ligne de tir polyvalente en complément de l'artillerie"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 2, "note": "Le <strong>-15% d'entretien</strong> de Malakai porte sur son artillerie et ses machines volantes. Ces Thunderers comblent l'angle mort de ces pièces : ce qui arrive trop près pour être bombardé"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers, sur la fiche de l'ingénieur le plus inventif du Karaz Ankor : la poudre y est un principe, pas un appoint"},
         {"icon": "minersBlastingCharges", "name": "Miners (Blasting Charges)", "qty": 2, "note": "Écran de mêlée bon marché aux charges explosives pour protéger la ligne de tir"},
         {"icon": "legendaryDuo", "name": "Gotrek & Felix", "qty": "1 (unique)", "note": "Duo de héros uniques offert dès le départ de campagne avec Malakai — d'excellents duellistes de mêlée pendant que le reste de l'armée tire à distance"}
@@ -205,7 +205,7 @@
         {"icon": "irondrake", "name": "Irondrakes", "qty": 3, "note": "Fierté métallurgique de Karak Azul — tir perforant à courte portée qui fait fondre l'infanterie lourde et les monstres"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable. Gunline à distance pour éroder l'ennemi avant le contact — réduite à un exemplaire pour libérer l'emplacement de Kazrik, les trois Irondrakes assurant l'essentiel du tir"},
         {"icon": "cannon", "name": "Cannons", "qty": 2, "note": "Artillerie à tir direct — abat les grandes cibles et les seigneurs monstrueux des Peaux-Vertes"},
-        {"icon": "grudgeThrower", "name": "Grudge Throwers", "qty": 1, "note": "Artillerie à tir indirect qui règle les vieilles rancunes à distance"}
+        {"icon": "grudgeThrower", "name": "Grudge Throwers", "qty": 1, "note": "Kazador donne <strong>Wallbreaker</strong> à ses Mineurs, qui ouvrent les murs au corps à corps. Ce lance-rocs frappe ce qui se trouve derrière, sans avoir à attendre la brèche"}
       ],
       "magic": "Les Nains ne lancent pas de sorts : le Runesmith dissipe la magie adverse et grave des runes, tandis que Kazador et ses Ironbreakers imposent leur supériorité par l'acier.",
       "note": "Le +100% de revenu des Mines de Fer, d'Or et Carrières de Marbre (faction) finance largement cette armée d'élite, au prix d'un -50% de revenu d'Industrie (faction) — privilégie donc les régions minières. L'attribut Wallbreaker des Miners (faction) rend cette armée redoutable en siège offensif : fais surgir les Miners au pied des murs pour les abattre pendant que les Ironbreakers enfoncent la brèche. Garde Kazador aux avant-postes des campagnes anti-Greenskins pour enchaîner les poursuites grâce à sa régénération de mouvement (seigneur)."
@@ -238,7 +238,7 @@
         {"icon": "irondrake", "name": "Irondrakes", "qty": 3, "note": "Tir perforant à courte portée — première bénéficiaire de la capacité Restock! (seigneur) pour ne jamais tomber à court de munitions"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — même famille, donc mêmes bonus et mêmes plafonds partagés, sur un profil supérieur. Un seul exemplaire recrutable. Gunline à la poudre noire, également ravitaillée par Restock! (seigneur) — réduite à un exemplaire pour financer les Miners"},
         {"icon": "cannon", "name": "Cannons", "qty": 1, "note": "Artillerie à tir direct contre les grandes cibles et les monstres — réduite à un exemplaire pour financer les Miners, les Gyrobombers assurant déjà la frappe lourde"},
-        {"icon": "grudgeThrower", "name": "Grudge Throwers", "qty": 1, "note": "Artillerie à tir indirect pour arroser les concentrations ennemies"},
+        {"icon": "grudgeThrower", "name": "Grudge Throwers", "qty": 1, "note": "Les effets de Grimm portent sur son Gyrobomber favori et le réapprovisionnement en munitions. Ce lance-rocs travaille sans munitions à gérer, et couvre ce que son aéronef unique ne peut pas traiter seul"},
         {"icon": "ironbreaker", "name": "Ironbreakers", "qty": 2, "note": "Mince ligne de tenue en acier qui protège les Master Engineers, l'artillerie et les tireurs pendant que les Gyros débordent"}
       ],
       "magic": "Les Nains ne lancent pas de sorts : la puissance de Grimm est mécanique — Gyros, artillerie et poudre noire, entretenus par les Master Engineers et ravitaillés par sa capacité Restock!.",
@@ -430,7 +430,7 @@
       "army": [
         {"icon": "dwarfWarrior", "name": "Dwarf Warriors", "qty": 5, "note": "Le socle, à <strong>-25% d'entretien</strong>. Sans accès à l'élite naine, l'expédition compense par le nombre : cinq unités de guerriers, c'est un mur suffisant pour protéger l'artillerie"},
         {"icon": "quarreller", "name": "Quarrellers", "qty": 3, "note": "Arbalètes — le tir de volume qui accompagne l'avance et occupe l'infanterie légère adverse"},
-        {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "La poudre noire pour percer le blindé, là où les arbalètes s'arrêtent"},
+        {"icon": "thunderer", "name": "Thunderers", "qty": 1, "note": "La poudre noire pour percer le blindé, là où les arbalètes s'arrêtent. Le <strong>-25% d'entretien</strong> de Sven couvre ses Dwarf Warriors et son artillerie, jamais ses tireurs : c'est la ligne qu'il paie plein tarif, et la seule qui perce"},
         {"icon": "theGrimdelvers", "name": "The Grimdelvers (Thunderers)", "qty": 1, "note": "Régiment de Renom des Thunderers — sur une expédition coupée de ses forges, la qualité d'une unité unique compte plus que le nombre"},
         {"icon": "cannon", "name": "Cannons", "qty": 2, "note": "Concernés par le <strong>-25% d'entretien</strong> (artillerie naine) — le canon reste la meilleure réponse naine aux monstres et aux autres batteries"},
         {"icon": "grudgeThrower", "name": "Grudge Throwers", "qty": 2, "note": "Également à <strong>-25%</strong>. Le tir en cloche complète le tir tendu des canons : ensemble, ils forcent l'adversaire à charger dans les Dwarf Warriors"},

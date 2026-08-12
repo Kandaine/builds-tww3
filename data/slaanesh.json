@@ -126,7 +126,7 @@
         {"icon": "eternalEntourage", "name": "Eternal Entourage (Heartseekers of Slaanesh)", "qty": 1, "note": "Régiment de Renom des Heartseekers, la vitesse démoniaque des Nether-Things portée à son meilleur profil"},
         {"icon": "fiendsOfSlaanesh", "name": "Fiends of Slaanesh", "qty": 2, "note": "Bêtes démoniaques anti-grande cible — avec le +5 contre les grandes cibles face aux Hommes-Lézards (seigneur), elles déchirent Kroxigors, Stégadons et Carnosaures"},
         {"icon": "heraldsOfExcess", "name": "Heralds of Excess (Seeker Chariots)", "qty": 1, "note": "Régiment de Renom des Seeker Chariots : sur une fiche entièrement bâtie sur la charge répétée, c'est la pièce qui la relance le plus vite"},
-        {"icon": "hellflayers", "name": "Hellflayers", "qty": 1, "note": "Char-faucheur d'élite en soutien des charges répétées"},
+        {"icon": "hellflayers", "name": "Hellflayers", "qty": 1, "note": "Le <strong>-15% d'entretien</strong> de Slaa'Ulaan vise ses Daemonettes. Ce char n'en profite pas et fournit ce qu'une infanterie, si rapide soit-elle, ne fait pas : relancer une charge sans jamais s'immobiliser"},
         {"icon": "pleasureGuard", "name": "Pleasure Guard (Champions of Slaanesh)", "qty": 1, "note": "Garde d'élite du démon — ancre de mêlée qui protège Slaa'Ulaan entre deux plongées"}
       ],
       "magic": "Slaa'Ulaan combat par l'aura et la faux plus que par les sorts (Disorienting Aura, Arcane Blast) — la magie de Slaanesh reste aux mains des Alluresses en soutien, tandis que les 15% de résistance à la magie (seigneur) émoussent les tempêtes des Slanns.",
