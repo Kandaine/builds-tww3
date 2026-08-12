@@ -339,6 +339,21 @@ pas avoir de carte manquante, quelles que soient leurs graphies. Et si `main_uni
 **Enfin, l'observation en jeu prime.** Le user affirmait voir la carte ; l'analyse des packs disait
 le contraire. C'est l'analyse qui avait tort — deux fois, pour deux raisons différentes.
 
+### Deux RoR sur la même unité de base peuvent avoir des cartes distinctes
+
+`ovn_araby.pack` ne contient qu'**une seule** icône `..._war_elephant_ror`, pour **deux** régiments :
+Ravager of El-Kalabad (`_ror_1`) et Gajnal Juggernaut (`_ror_2`). J'en ai conclu qu'ils partageaient
+la même illustration et j'allais le proposer au user. **Sa capture a montré deux cartes différentes.**
+
+La seconde était `ovn_arb_cannon_elephant.png` — une icône **sans marqueur `_ror`**, nommée d'après
+un profil d'unité et non d'après le régiment. Les statistiques la désignaient pourtant : Gajnal
+affiche 380 de portée, 22 munitions et « Fire whilst moving », c'est-à-dire un éléphant à canon.
+
+**Règle.** Quand deux RoR partagent une unité de base et qu'une seule carte `_ror` existe, ne pas
+conclure au partage. Lire les **statistiques** des deux régiments, chercher dans l'inventaire une
+icône correspondant au profil décrit, et comparer visuellement. Ici l'inversion était double :
+j'avais aussi attribué la carte `_ror` au mauvais des deux.
+
 ---
 
 ## 3. Seigneur ou héros ?
