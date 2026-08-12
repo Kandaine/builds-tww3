@@ -22,7 +22,8 @@
         {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 4, "note": "Attaques empoisonnées (seigneur) — tirailleurs bon marché idéaux pour harceler avant l'embuscade"},
         {"icon": "ungorHerd", "name": "Ungor Herd", "qty": 1, "note": "Attaques empoisonnées (seigneur) — infanterie de ligne bon marché"},
         {"icon": "destroyersOfTheDrakwald", "name": "Destroyers of the Drakwald (Ungor Herd)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires disponibles — variante d'élite des Ungor Herd, également couverte par les attaques empoisonnées du seigneur"},
-        {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 4, "note": "Déploiement d'Avant-Garde (seigneur) — apparaissent directement sur les flancs ennemis dès le début de la bataille"},
+        {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 3, "note": "Déploiement d'Avant-Garde (seigneur) — apparaissent directement sur les flancs ennemis dès le début de la bataille"},
+        {"icon": "khorroksManrippers", "name": "Khorrok's Manrippers (Bestigor Herd)", "qty": 1, "note": "Régiment de Renom des Bestigors, qui reçoivent de Khazrak l'attribut <strong>Déploiement d'Avant-Garde</strong> — cette élite se place au contact dès le premier tour, ce qui est exactement la façon dont le Borgne combat"},
         {"icon": "razorgorChariot", "name": "Razorgor Chariot", "qty": 3, "note": "Même Déploiement d'Avant-Garde (seigneur) — percussion immédiate en début de bataille"},
         {"icon": "centigors", "name": "Centigors", "qty": 2, "note": "Cavalerie légère rapide, complément mobile pour exploiter les brèches"}
       ],
@@ -116,7 +117,8 @@
         {"icon": "minotaurs", "name": "Minotaurs", "qty": 4, "note": "+10% de force d'armes (seigneur) et -25% de coût de capacité (faction) — le cœur de cette armée"},
         {"icon": "butchersOfKalkengard", "name": "Butchers of Kalkengard (Minotaurs)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Minotaurs, également couverte par +10% de force d'armes (seigneur)"},
         {"icon": "minotaursGreatWeapons", "name": "Minotaurs (Great Weapons)", "qty": 3, "note": "Mêmes bonus de force d'armes (seigneur) et de coût réduit (faction) — variante à deux mains pour maximiser les dégâts bruts"},
-        {"icon": "ghorgon", "name": "Ghorgon", "qty": 2, "note": "Monstre dévorant complémentaire, dans la même veine bestiale que les Minotaures"},
+        {"icon": "ghorgon", "name": "Ghorgon", "qty": 1, "note": "Monstre dévorant complémentaire, dans la même veine bestiale que les Minotaures"},
+        {"icon": "bloodbruteBehemoth", "name": "The Bloodbrute Behemoth (Ghorgon)", "qty": 1, "note": "Régiment de Renom du Ghorgon — le régiment favori de Taurox porte sur ses Minotaurs, pas sur lui. Il est là pour la très grande cible qu'une horde de Minotaures, si nombreuse soit-elle, ne remplace pas"},
         {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 3, "note": "Tirailleurs bon marché pour occuper le terrain pendant que les Minotaures chargent"},
         {"icon": "chaosWarhounds", "name": "Chaos Warhounds", "qty": 3, "note": "Cavalerie légère rapide pour intercepter les tireurs et protéger les flancs"}
       ],
@@ -175,12 +177,13 @@
       ],
       "army": [
         {"icon": "gorHerd", "name": "Gor Herd", "qty": 4, "note": "Attaques empoisonnées et Regeneration (faction) — le cœur de mêlée de la horde, désormais increvable et venimeux ; profite à plein des auras de débuff de Slugtongue (garde-les à son contact, attention au feu ennemi qui contre la régénération)"},
-        {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 3, "note": "Mêmes attaques empoisonnées et Regeneration (faction) — infanterie d'élite à grande arme perforante, dévastatrice contre l'infanterie lourde une fois l'ennemi affaibli par \"Curse of the Famine-Fiend\""},
+        {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 2, "note": "Mêmes attaques empoisonnées et Regeneration (faction) — infanterie d'élite à grande arme perforante, dévastatrice contre l'infanterie lourde une fois l'ennemi affaibli par \"Curse of the Famine-Fiend\""},
+        {"icon": "khorroksManrippers", "name": "Khorrok's Manrippers (Bestigor Herd)", "qty": 1, "note": "Régiment de Renom des Bestigors, couverts par les <strong>attaques empoisonnées</strong>, la <strong>Régénération</strong> et le <strong>Swarm of Flies</strong> que Slugtongue réserve à ses Gor et Bestigor Herds — trois effets sur la même unité"},
         {"icon": "pestigors", "name": "Pestigors", "qty": 4, "note": "Capacité d'unité +4 (faction) permet d'en aligner un fort contingent — Gors de la peste marqués par Nurgle, attaques empoisonnées natives et grande résilience, parfaits pour le thème de contagion de Slugtongue"},
         {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 2, "note": "Tirailleurs bon marché — écran jetable et harcèlement à distance qui protège le flanc de la horde"},
         {"icon": "theEyeOfMorrslieb", "name": "The Eye of Morrslieb (Cygor)", "qty": 1, "note": "Régiment favori : capacité \"Violent Wind\" (faction) — vortex qui étouffe les tireurs et casters ennemis (Att mêlée -10, Reload -20) ; monstre de tir anti-artillerie et anti-magie qui perturbe la Réserve de Vents adverse"},
         {"icon": "minotaursGreatWeapons", "name": "Minotaurs (Great Weapons)", "qty": 2, "note": "Monstres de mêlée à haute perforation — enfoncent l'infanterie lourde et les grandes cibles affaiblies par les auras de famine"},
-        {"icon": "ghorgon", "name": "Ghorgon", "qty": 1, "note": "Monstre dévoreur qui chasse l'infanterie isolée et les autres monstres — punch supplémentaire en soutien de la horde"}
+        {"icon": "bloodbruteBehemoth", "name": "The Bloodbrute Behemoth (Ghorgon)", "qty": 1, "note": "Régiment de Renom du Ghorgon. Aucun effet de Slugtongue ne vise les monstres : celui-ci comble ce que ses hordes empoisonnées ne font pas, briser un bloc qui tient au lieu de l'user lentement"}
       ],
       "magic": "Slugtongue et le Bray-Shaman couvrent le soutien magique (Lore of Nurgle / des Bêtes) ; mais l'essentiel du travail de Slugtongue est passif — ses deux auras de Hex débuffent en continu tout ennemi au contact de sa horde.",
       "note": "La force de Slugtongue est le combat prolongé au contact : ses Gor/Bestigor Herd régénèrent (faction) tandis que ses auras \"Swarm of Flies\" et \"Curse of the Famine-Fiend\" (seigneur) érodent sans cesse l'ennemi — garde donc l'infanterie serrée autour de lui. Méfie-toi des armées à fort potentiel de Feu, qui annulent la Regeneration (+20% de vulnérabilité). En campagne, exploite la posture de pillage infectieux et la propagation d'épidémie après victoire (seigneur) pour affaiblir durablement les provinces ennemies, tout en profitant du fait que les épidémies renforcent tes propres armées et colonies (faction)."
@@ -209,7 +212,8 @@
         {"icon": "centigors", "name": "Centigors", "qty": 6, "note": "Capacité +2 (faction) pour un fort contingent — Devastating Flanker (double bonus de charge de flanc/dos), +10 Commandement (faction) et +8 Défense en mêlée (seigneur) : cavalerie rapide qui contourne l'ennemi et le percute de côté, cœur de l'armée de Ghorros"},
         {"icon": "sonsOfGhorros", "name": "Sons of Ghorros (Centigors - Grande Arme)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — Centigors d'élite à grande arme perforante, couverts par tous les bonus Centigor (Devastating Flanker, +10 Cmd faction, +8 Déf seigneur)"},
         {"icon": "gorHerd", "name": "Gor Herd", "qty": 3, "note": "Enclume d'infanterie bon marché qui fixe l'ennemi de face le temps que les Centigors chargent les flancs — bénéficie du passif \"Rowdy\" en posture de pillage ivre (seigneur)"},
-        {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 2, "note": "Infanterie d'élite à grande arme perforante — enclume plus mordante contre l'infanterie lourde, idéale pour tenir pendant les charges de flanc"},
+        {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 1, "note": "Infanterie d'élite à grande arme perforante — enclume plus mordante contre l'infanterie lourde, idéale pour tenir pendant les charges de flanc"},
+        {"icon": "khorroksManrippers", "name": "Khorrok's Manrippers (Bestigor Herd)", "qty": 1, "note": "Régiment de Renom des Bestigors — les effets de Ghorros visent ses Centigors. Cette infanterie lourde est le point fixe autour duquel ses cavaliers-bêtes exploitent leur Devastating Flanker, qui ne vaut rien sans une unité qui fixe l'ennemi de face"},
         {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 2, "note": "Tirailleurs bon marché — écran jetable et harcèlement à distance qui protège les flancs avant l'engagement"},
         {"icon": "minotaurs", "name": "Minotaurs", "qty": 2, "note": "Monstres de mêlée qui enfoncent l'infanterie lourde et les grandes cibles — punch de rupture en complément des charges de Centigors"}
       ],
