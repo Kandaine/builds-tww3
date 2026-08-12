@@ -3153,7 +3153,6 @@ const unitImages = {
   scorpionLegion: 'assets/units/scorpionLegion.png',
   sphinxOfUsekph: 'assets/units/sphinxOfUsekph.png',
   eyesOfTheDesert: 'assets/units/eyesOfTheDesert.png',
-  theIndomitable: 'assets/units/theIndomitable.png',
   lafayetteOfTaurus: 'assets/units/lafayetteOfTaurus.png',
   heraldsOfTheWind: 'assets/units/heraldsOfTheWind.png',
   silakOneEye: 'assets/units/silakOneEye.png',
