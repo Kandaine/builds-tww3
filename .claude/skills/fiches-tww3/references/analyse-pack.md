@@ -134,7 +134,47 @@ ces jonctions ouvraient « Cantankerous Bellends (Men-at-Arms) » à n'importe q
 onze Bretonniens, puisque les Men-at-Arms existent aussi dans leur roster.
 
 **Le user a tranché en jeu : Louen Leoncoeur n'a que 7 Régiments de Renom, et celui-ci n'en fait pas
-partie.** Les onze placements ont été retirés.
+partie.** Les onze placements ont été retirés. Même verdict pour Kemmler, qui ne voit ni Baron's Men
+ni The Rose Lances : les cinq régiments de Mousillon restent à la famille Mousillon, ce qui a vidé
+tout le lot Comtes Vampires de la passe.
+
+### Ce qui rend une capture du panneau concluante
+
+**Le panneau des Régiments de Renom affiche dès le départ tous ceux que le seigneur pourra recruter.**
+Le niveau ne conditionne que le recrutement, pas l'affichage — le user l'a établi en jeu. Une absence
+du panneau prouve donc une véritable indisponibilité, et c'est ce qui rend ses captures décisives.
+
+Sans cette règle, une absence serait ambiguë, car il existe une table de plafonds de niveau que rien
+d'autre ne signale.
+
+### `campaign_mercenary_unit_character_level_restrictions_tables`
+
+268 lignes dans le jeu de base, et deux colonnes qu'il ne faut pas confondre.
+
+**`character_level`** — le niveau que le seigneur doit atteindre pour recruter le régiment, de 0 à 30.
+**150 des régiments posés sur le site en ont un.** Sans conséquence ici : les fiches décrivent des
+armées de **fin de partie**, où le seigneur a largement dépassé ces seuils. Ne jamais écarter un
+placement pour ce motif.
+
+**`faction_override` n'est PAS une exclusivité — c'est un niveau réduit accordé à une faction.**
+Onze des quatorze unités concernées ont **deux lignes** : une générale, et une allégée pour le
+seigneur thématiquement lié.
+
+```
+Mirror Guard          niveau 18 pour tous  ->  niveau  2 pour Sigvald
+Hellforged Host       niveau 15            ->  niveau  2 pour Skulltaker
+Knights Brazen Throne niveau 26            ->  niveau 10 pour Valkia
+Company Kalendirian   niveau  5            ->  niveau  2 pour Aislinn
+Swords of Chaos       niveau 20            ->  niveau  2 pour Archaon
+```
+
+Lue comme une exclusivité, cette colonne produisait **treize fausses alertes** et allait faire
+retirer une douzaine de placements corrects — Archaon, Kholek, Skarbrand, Kaarn, Arbaal, Skarr et
+d'autres peuvent bel et bien recruter ces régiments, simplement plus tard. **Le test qui tranche :
+l'unité a-t-elle aussi une ligne sans override ?** Si oui, l'override n'est qu'un rabais de niveau.
+
+Seules les unités **sans ligne générale** sont réellement réservées — trois dans le jeu de base, dont
+le Carnosaure de Thorek : aucune ne concerne les Régiments de Renom.
 
 **Règle.** La culture d'un vivier se déduit des sous-cultures exigées par ses jonctions
 conditionnées. Une jonction sans condition n'est accessible qu'aux seigneurs relevant de l'une

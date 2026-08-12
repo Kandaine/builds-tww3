@@ -329,7 +329,7 @@
         {"icon": "mslDamsel", "name": "Damsel (Heavens / Shadows)", "qty": 2, "note": "Capacité de héros +2 pour les Damsels (faction) — embarquées, elles reçoivent Mastery of the Elemental Winds (faction) : avec la Dame et Nicolete, ce sont quatre porteuses de l'attribut, et la puissance des sorts monte d'autant"}
       ],
       "army": [
-        {"icon": "theBaronsMen", "name": "The Baron's Men (Crypt Ghouls)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — goules d'élite du Baron, cœur de mêlée régénérant qui profite à plein du +30% de plafond de soin (seigneur)"},
+        {"icon": "baronsMen", "name": "Baron's Men (Crypt Ghouls)", "qty": 2, "note": "Régiment favori : un RoR plafonne à 1, le <strong>+1 de capacité</strong> porte le maximum à <strong>2</strong> — goules d'élite du Baron, cœur de mêlée régénérant qui profite à plein du <strong>+30% de plafond de soin</strong> (seigneur)"},
         {"icon": "cryptGhouls", "name": "Crypt Ghouls", "qty": 2, "note": "Goules de Mousillon — masse de mêlée empoisonnée soignée en continu (+30% de plafond de soin, seigneur)"},
         {"icon": "mslBrigands", "name": "Brigands", "qty": 2, "note": "-15% d'entretien (faction) — la racaille de Mousillon, chair à canon bon marché qui tient la ligne devant les sorcières"},
         {"icon": "mslMountedBrigands", "name": "Mounted Brigands", "qty": 2, "note": "Même -15% d'entretien (faction) — cavalerie légère qui chasse les tireurs pendant que la magie opère"},
