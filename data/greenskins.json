@@ -57,7 +57,7 @@
         {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "-20% d'entretien en tant qu'unité Goblin (faction) — tir de masse bon marché en complément"},
         {"icon": "durkitsSquigs", "name": "Durkit's Squigs (Night Goblin Squig Hoppers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien en tant qu'unité Squig (faction) — variante d'élite des Squig Hoppers, cavalerie légère bondissante"},
         {"icon": "nightGoblinSquigHoppers", "name": "Night Goblin Squig Hoppers", "qty": 1, "note": "-20% d'entretien en tant qu'unité Squig (faction) — cavalerie légère bondissante pour flanquer et harceler"},
-        {"icon": "arachnarokSpider", "name": "Arachnarok Spider", "qty": 2, "note": "Monstre emblématique de Karak Huit Pics, capable de porter des tireurs sur son dos"}
+        {"icon": "arachnarokSpider", "name": "Arachnarok Spider", "qty": 2, "note": "Les effets de Skarsnik ne couvrent que ses Night Goblins. Ces araignées comblent le manque : une horde de gobelins n'a rien pour briser un bloc en position, et celle-ci emporte des tireurs par-dessus la mêlée"}
       ],
       "magic": "Skarsnik n'est pas lui-même lanceur de sorts, mais son Night Goblin Shaman apporte le soutien de la Lore of the Little Waaagh! à cette horde de Gobelins.",
       "note": "Cette armée exploite les bonus de commandement et de défense en mêlée sur les Night Goblins (seigneur) pour compenser leur fragilité naturelle, tout en utilisant la posture Traque de Skarsnik (seigneur) pour choisir le moment et le lieu de l'affrontement."
@@ -257,9 +257,9 @@
         {"icon": "freebootaSplitta", "name": "Freeboota Splitta", "qty": 2, "note": "Fusils à pompe orques — dégâts massifs à courte portée, également dopés par la Waaagh! de Barbozza (seigneur)"},
         {"icon": "daBlackBeard", "name": "Da Black Beard (Freeboota Big 'Uns)", "qty": 1, "note": "Régiment de Renom des Freeboota Big 'Uns — l'équipage d'élite de la Flotte Bloodsail, ceux qui montent à l'abordage les premiers"},
         {"icon": "freebootaBoyzSpear", "name": "Freeboota Boyz (Lances & Boucliers)", "qty": 1, "note": "Le Waaagh! de Barbozza dope massivement le <strong>tir</strong> : +25% de portée et de dégâts, +50 de Reload Skill, +30 de précision. Cette ligne de lances est ce qui protège les tireurs assez longtemps pour qu'ils en profitent"},
-        {"icon": "crabBoys", "name": "Crab Boys (Freeboota Boyz)", "qty": 1, "note": "Régiment de Renom carapaçonné — infanterie d'élite de la Bloodsail Fleet"},
+        {"icon": "crabBoys", "name": "Crab Boys (Freeboota Boyz)", "qty": 1, "note": "Régiment de Renom carapaçonné. Le Waaagh! de Barbozza dope massivement le tir : cette infanterie blindée est ce qui protège les tireurs assez longtemps pour qu'ils en tirent parti"},
         {"icon": "orkKommandoz", "name": "Kommandoz", "qty": 1, "note": "Infiltrés orques — prennent l'artillerie cathayenne à revers avant même le premier tir"},
-        {"icon": "khureshFirstCompany", "name": "Khuresh First Company (Kommandoz)", "qty": 1, "note": "Régiment de Renom des Kommandoz — snipers d'élite formés dans la jungle de Khuresh"},
+        {"icon": "khureshFirstCompany", "name": "Khuresh First Company (Kommandoz)", "qty": 1, "note": "Régiment de Renom des Kommandoz. Ils se déploient déjà derrière la ligne adverse, ce qui leur permet d'ouvrir le feu au moment exact où le <strong>+30 de précision</strong> du Waaagh! de Barbozza s'applique"},
         {"icon": "orcBattleTank", "name": "Orc Battle Tank", "qty": 2, "note": "Char d'assaut bricolé à partir de blindés pillés — pièce maîtresse mécanique, canon dopé par la Waaagh! (seigneur)"},
         {"icon": "rokkitBombardia", "name": "Rokkit Bombardia", "qty": 2, "note": "Lance-roquettes orques : +25% de dégâts explosifs et +30 de précision sous la Waaagh! (seigneur) — l'artillerie de la flotte"},
         {"icon": "harpoonLuncha", "name": "Giant Harpoon Luncha", "qty": 1, "note": "Un harpon de baleinier braqué sur les monstres. C'est aussi l'arme qui bénéficie le plus du <strong>+30 de précision</strong> de son Waaagh! : un projectile unique et lourd ne pardonne pas d'être imprécis"},

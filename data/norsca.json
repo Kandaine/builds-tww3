@@ -738,7 +738,7 @@
       "army": [
         {"icon": "marauderBerserkersNorsca", "name": "Marauder Berserkers", "qty": 2, "note": "Ils ne décrochent jamais, ce qui est exactement la condition de <strong>\"Gorefeast\"</strong>. Le défaut habituel des Berserkers — s'engager sans pouvoir se retirer — devient ici un avantage"},
         {"icon": "brutesOfTheHound", "name": "Brutes of the Hound (Marauder Berserkers)", "qty": 1, "note": "Régiment de Renom des Marauder Berserkers. Le nom du régiment renvoie au Limier : c'est chez Olaf qu'il trouve son sens"},
-        {"icon": "maraudersOfKhorne", "name": "Marauders of Khorne", "qty": 3, "note": "La ligne de masse marquée par le Dieu du Sang, et le corps principal de la razzia"},
+        {"icon": "maraudersOfKhorne", "name": "Marauders of Khorne", "qty": 3, "note": "Le corps principal de la razzia. La marque du Dieu du Sang leur donne la frénésie qui les maintient au contact, condition même de <strong>Gorefeast</strong> : une unité qui décroche cesse de se régénérer"},
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 2, "note": "L'infanterie lourde qui tient le contact assez longtemps pour que la régénération compte"},
         {"icon": "marauderChampionsGreatWeapons", "name": "Marauder Champions (Great Weapons)", "qty": 2, "note": "35 de dégâts perforants — la réponse aux Chevaliers Reiksguard et à l'infanterie blindée de l'Empire, l'adversaire désigné de la campagne"},
         {"icon": "norscanTrolls", "name": "Norscan Trolls", "qty": 2, "note": "Régénération native, qui se cumule à celle de <strong>\"Gorefeast\"</strong>. Sur une unité qui reste par définition au contact, c'est le meilleur retour sur investissement de la liste"},
