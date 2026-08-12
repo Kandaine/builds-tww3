@@ -80,7 +80,7 @@
       "lord": {"icon": "tamurkhan", "name": "Tamurkhan the Maggot Lord", "qty": 1, "note": "Le Porteur de Désolation, terré dans le corps de l'Ogre Tyran Karaka Brise-Montagne — sa masse colossale et ses attaques de collision lui permettent de fracasser les lignes d'infanterie sans bonus anti-charge, sa capacité \"Nurgle's Favoured Son\" (+24 défense en mêlée, +20% résistance aux dégâts, seigneur) le rendant temporairement quasi inarrêtable"},
       "heroes": [
         {"icon": "chaosSorcererNurgle", "name": "Chaos Sorcerer of Nurgle (Death)", "qty": 1, "note": "Soutien magique via la Lore of Nurgle"},
-        {"icon": "exaltedHeroNurgle", "name": "Exalted Hero of Nurgle", "qty": 1, "note": "Renfort de mêlée mortel robuste, profite du +5 d'attaque en mêlée et de l'immunité à la Psychologie (seigneur)"}
+        {"icon": "exaltedHeroNurgle", "name": "Exalted Hero (Chieftain de Tamurkhan)", "qty": 1, "note": "La version <strong>Chieftain</strong>, exclusive à Tamurkhan via l'accès à ses <strong>Chieftains</strong> (faction) : même coût et même profil que l'Exalted Hero ordinaire, mais elle <strong>ne consomme aucune capacité de héros</strong>. Mortel et non-Démoniaque, elle reçoit le <strong>+5 d'attaque en mêlée</strong> et l'immunité à la Psychologie du seigneur"}
       ],
       "army": [
         {"icon": "plagueOgres", "name": "Plague Ogres", "qty": 4, "note": "+5 attaque en mêlée, immunisé à la Psychologie (seigneur), +10% PV de recrutement (faction) — brise-lignes lourd et increvable"},

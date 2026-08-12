@@ -118,13 +118,14 @@
       "totalSlots": 20,
       "lord": {"icon": "drycha", "name": "Drycha", "qty": 1, "note": "La Ronce en Deuil, esprit malveillant d'Athel Loren — son +5 d'attaque en mêlée et +10% de puissance des armes pour les Dryads (seigneur) démultiplient le cœur de l'armée ; son aptitude \"Roused to Wrath\" invoque une unité de Malevolent Dryads supplémentaire en combat"},
       "heroes": [
-        {"icon": "malevolentBranchwraith", "name": "Malevolent Branchwraith", "qty": 2, "note": "Variante propre au Wargrove of Woe, soutien magique (Beasts/Shadows/Life)"}
+        {"icon": "malevolentBranchwraith", "name": "Malevolent Branchwraith", "qty": 2, "note": "Variante propre au Wargrove of Woe, soutien magique (Beasts/Shadows/Life)"},
+        {"icon": "coeddil", "name": "Coeddil (Héros Légendaire)", "qty": 1, "note": "Homme-Arbre Ancien <strong>exclusif au Wargrove of Woe</strong> — aucune autre faction ne peut l'obtenir, et il ne consomme aucune capacité de héros. Lanceur de sorts et très grande cible à la fois, il remplace avantageusement un Malevolent Treeman ordinaire dont il partage le rôle"}
       ],
       "army": [
         {"icon": "malevolentDryads", "name": "Malevolent Dryads", "qty": 4, "note": "Entretien -10% (faction), +5 attaque en mêlée et +10% puissance des armes (seigneur) — cœur de mêlée sylvain frénétique"},
         {"icon": "wraithsOfTheFrozenHeart", "name": "Wraiths of the Frozen Heart (Dryads)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Dryads, également couverte par +5 attaque en mêlée et +10% puissance des armes (seigneur)"},
         {"icon": "malevolentTreeKin", "name": "Malevolent Tree Kin", "qty": 3, "note": "Entretien -10% (faction) — infanterie monstrueuse frénétique"},
-        {"icon": "malevolentTreeman", "name": "Malevolent Treeman", "qty": 2, "note": "Entretien -10% (faction) — monstre de choc massif, pièce maîtresse de l'armée"},
+        {"icon": "malevolentTreeman", "name": "Malevolent Treeman", "qty": 1, "note": "Entretien -10% (faction) — monstre de choc massif, pièce maîtresse de l'armée"},
         {"icon": "giantSpiders", "name": "Giant Spiders", "qty": 2, "note": "Bête Sauvage, remplacement lent façon Raise Dead — infanterie monstrueuse venimeuse"},
         {"icon": "giantWolves", "name": "Giant Wolves", "qty": 2, "note": "Bête Sauvage, donc hors du <strong>-10% d'entretien</strong> et des bonus de Dryades que Drycha réserve aux esprits. C'est justement leur raison d'être : sa forêt est lente, et ces loups sont sa seule poursuite au sol contre un ennemi qui recule"},
         {"icon": "caveBats", "name": "Cave Bats", "qty": 2, "note": "L'autre Bête Sauvage, et le <strong>seul volant</strong> de la fiche : les arbres et les Dryades ne franchissent pas une ligne pour aller chercher l'artillerie qui les abat de loin"}
