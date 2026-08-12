@@ -63,6 +63,16 @@ function renderPage(){
   const l = lords.find(x=>x.id===activeId);
   const page = document.getElementById('page-content');
 
+  // Garde-fou : si aucun seigneur n'est sélectionné (liste vide, fichier JSON
+  // introuvable ou faction sans seigneur), on affiche un message au lieu de
+  // laisser la suite planter. Sans ce test, la ligne `l.group` ci-dessous
+  // lèverait une TypeError sur `undefined` et la page resterait blanche, sans
+  // rien indiquer au visiteur. renderList() fait déjà ce contrôle de son côté.
+  if(!l){
+    page.innerHTML = `<div class="lord-list-empty">Aucune fiche à afficher pour cette faction.</div>`;
+    return;
+  }
+
   // Change la classe du <body> pour appliquer le thème de couleurs propre
   // à la faction du seigneur (ex: "theme-dwarfs"). Les règles CSS associées
   // sont définies dans css/style.css.

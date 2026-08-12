@@ -3345,8 +3345,27 @@ async function loadLords(groupId){
   // Lance toutes les requêtes fetch() en parallèle (Promise.all) plutôt que
   // séquentiellement, pour accélérer le chargement de la page de recherche
   // qui doit récupérer jusqu'à 24 fichiers JSON d'un coup.
+  //
+  // Chaque requête est protégée individuellement : un fichier manquant (404),
+  // un serveur en erreur (500) ou un JSON malformé renvoie un tableau vide au
+  // lieu de faire échouer Promise.all. Sans cette protection, UN seul fichier
+  // en défaut suffisait à laisser toute la page blanche, sans message — la
+  // page de recherche en charge 24, le risque n'était donc pas théorique.
+  // L'erreur reste visible dans la console du navigateur pour le diagnostic.
   const perGroup = await Promise.all(
-    groups.map(group => fetch(group.file).then(res => res.json()))
+    groups.map(group =>
+      fetch(group.file)
+        .then(res => {
+          // fetch() ne rejette PAS sur un code HTTP d'erreur : il faut tester
+          // res.ok explicitement, sinon on tenterait de parser une page 404.
+          if(!res.ok) throw new Error(`HTTP ${res.status} sur ${group.file}`);
+          return res.json();
+        })
+        .catch(err => {
+          console.error(`[loadLords] Faction "${group.id}" ignorée :`, err);
+          return [];
+        })
+    )
   );
 
   // Aplatit le tableau de tableaux (un tableau de seigneurs par faction) en
@@ -3364,7 +3383,12 @@ async function loadLords(groupId){
 // suppression de tous les diacritiques (accents) via une regex sur la plage
 // Unicode des "combining marks", puis passage en minuscules.
 function normalize(str){
-  return (str || '').normalize('NFD').replace(new RegExp('[̀-ͯ]', 'g'), '').toLowerCase();
+  // ̀-ͯ est la plage Unicode des "combining diacritical marks",
+  // c'est-à-dire les accents détachés par la décomposition NFD juste avant.
+  // Notée en séquences d'échappement plutôt qu'avec les caractères eux-mêmes :
+  // ceux-ci sont invisibles dans un éditeur et survivent mal à un changement
+  // d'encodage du fichier.
+  return (str || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 }
 
 // Vérifie si un seigneur `l` correspond à une requête de recherche texte
