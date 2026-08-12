@@ -121,6 +121,31 @@ créatures qui « se rallient » (Lézards Corrompus d'Adella, Esprits de Glace 
 sortent d'un `.lua` ou d'un effet de faction, pas d'une table de recrutement. Dans ces cas, l'effet
 de faction visible sur la capture du user est la meilleure preuve d'existence.
 
+### Une jonction SANS CONDITION ne franchit pas la culture
+
+`mercenary_pool_to_groups_junctions_tables` rattache un groupe à un vivier, avec au plus une
+condition (`faction_requirement`, `subculture_requirement`, `tech_requirement`). Une jonction qui
+n'en porte aucune **ne signifie pas « accessible à tous »**.
+
+Le mod Mixu Mousillon place cinq régiments dans `wh_dlc04_vmp_units_of_renown_pool` sans condition.
+Ce vivier compte 49 groupes : **43 portent une sous-culture** (comtes vampires, jade vampires,
+jiangshi), les 6 restants viennent de mods dont l'auteur a omis la condition. Lues littéralement,
+ces jonctions ouvraient « Cantankerous Bellends (Men-at-Arms) » à n'importe quel seigneur — dont
+onze Bretonniens, puisque les Men-at-Arms existent aussi dans leur roster.
+
+**Le user a tranché en jeu : Louen Leoncoeur n'a que 7 Régiments de Renom, et celui-ci n'en fait pas
+partie.** Les onze placements ont été retirés.
+
+**Règle.** La culture d'un vivier se déduit des sous-cultures exigées par ses jonctions
+conditionnées. Une jonction sans condition n'est accessible qu'aux seigneurs relevant de l'une
+d'elles. Si un vivier n'a que des jonctions sans condition, on ne peut rien déduire — laisser
+passer, puis demander au user.
+
+**Ce qui n'est PAS la porte d'entrée : `faction_to_mercenary_set_junctions_tables`.** Elle ne compte
+que 194 lignes et ne liste que des factions spéciales. Middenland n'y figure pas, et Boris
+Todbringer voit pourtant son vivier — exiger une entrée dans cette table casserait le modèle sur ce
+cas de contrôle. Même remarque pour `province_to_mercenary_set` : aucun vivier de Renom n'y figure.
+
 ### Un Régiment de Renom déclaré n'est pas forcément vivant
 
 Une entrée dans `mercenary_unit_groups_tables` ne prouve pas qu'un RoR existe en jeu. Les clés
@@ -132,16 +157,22 @@ dont l'une porte un préfixe ancien — chez les Hauts Elfes, `wh2_main_hbe_*` f
 `wh2_dlc10_hef_*` / `wh3_dlc27_hef_*`.
 
 ```
-wh2_main_hbe_inf_ship_company_ror_0     = "Brinedragon Swords"         <- n'existe pas en jeu
+wh2_main_hbe_inf_ship_company_ror_0     = "Brinedragon Swords"         <- reel (verifie en jeu)
 wh3_dlc27_hef_inf_ships_company_ror     = "Company of the Kalendirian" <- reel
 wh2_main_hbe_inf_the_silverpelts_ror_0  = "Silverpelts"                <- reel malgre l'ancien prefixe
 wh2_dlc10_hef_inf_the_silverpelts_ror_0 = "The Puremane Company"       <- reel aussi
 ```
 
-**Un jumeau est un signal de vérification, pas une preuve.** Les deux cas ci-dessus ont exactement
-la même forme et se sont résolus différemment : Brinedragon Swords est du contenu coupé, alors que
-Silverpelts et The Puremane Company sont deux régiments distincts qui coexistent. J'ai supprimé
-Silverpelts en généralisant trop vite, et le user a dû me corriger.
+**Un jumeau est un signal de vérification, pas une preuve.** Les trois cas ci-dessus ont exactement
+la même forme et **aucun** ne s'est révélé être du contenu coupé : Silverpelts et The Puremane
+Company sont deux régiments distincts qui coexistent, et Brinedragon Swords — que cette fiche
+donnait pour inexistant — a été montré en jeu par le user, statistiques complètes à l'appui
+(8400 PV, 120 hommes, aquatique). Sa carte a été extraite et il est posé.
+
+**La leçon tient en une phrase : un ancien préfixe ne prouve rien.** J'ai supprimé Silverpelts en
+généralisant trop vite, puis déclaré Brinedragon Swords inexistant sur le même raisonnement. Le user
+a dû corriger les deux fois. Quand un jumeau apparaît, **lui demander** : lui seul voit sa liste de
+recrutement.
 
 Deux réflexes, donc, avant de placer un RoR : **chercher un jumeau** sur la même unité de base, et
 **vérifier que le régiment n'est pas déjà sur la fiche visée** sous un autre libellé — c'est ce

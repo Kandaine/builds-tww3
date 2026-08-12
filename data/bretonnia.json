@@ -16,13 +16,14 @@
       "lord": {"icon": "louen", "name": "Louen Leoncoeur", "qty": 1, "note": "Le meilleur duelliste chevaleresque du jeu — The Blessing of the Lady (seigneur) lui accorde +15% de résistance aux dégâts tant que son commandement n'est pas brisé, dévastateur contre Chaos/Chaos Dwarfs/Morts-Vivants/Peaux-Vertes, et son aura de commandement s'étend de +50% dès qu'il attaque (faction)"},
       "heroes": [
         {"icon": "damsel", "name": "Damsel (Life)", "qty": 1, "note": "Soutien magique (Lore of Life/Heavens/Beasts selon le choix) pour appuyer la charge"},
-        {"icon": "brtViscount", "name": "Viscount d'Alembençon (Héros Légendaire)", "qty": 1, "note": "Le <strong>Champion de Couronne</strong> — le duché même de Louen (mod Heroes of Legend) : Chevalier du Graal redoutable et énigmatique, protecteur de la frontière nord-est face aux ambitions de l'Empire. Un compagnon de charge à la hauteur du Roy Preux et de ses 4 Grail Knights"}
+        {"icon": "brtViscount", "name": "Viscount d'Alembençon (Héros Légendaire)", "qty": 1, "note": "Le <strong>Champion de Couronne</strong> — le duché même de Louen (mod Heroes of Legend) : Chevalier du Graal redoutable et énigmatique, protecteur de la frontière nord-est face aux ambitions de l'Empire. Un compagnon de charge à la hauteur du Roy Preux et de ses 4 Grail Knights"},
+        {"icon": "lafayetteOfTaurus", "name": "Lafayette of Taurus (Héros Légendaire)", "qty": 1, "note": "Paladin légendaire <strong>exclusif à Couronne</strong> : le script du mod l'engendre au <strong>premier tour, directement dans l'armée de Louen</strong>, qu'il servit comme Commandant de la Garnison de Couronne après sa quête du Graal. Gratuit, plafonné à 1, et il <strong>ne consomme pas la capacité de héros</strong> de la faction — un compagnon de charge que rien ne coûte, sinon le slot qu'il occupe ici"}
       ],
       "army": [
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 4, "note": "Le cœur de cette armée, qui profite aussi des bonus anti-Chaos/Undead/Greenskins de Louen (seigneur)"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Knights of the Realm, également couverte par les bonus anti-Chaos/Undead/Greenskins de Louen (seigneur)"},
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 4, "note": "L'élite de la cavalerie bretonnienne — profite pleinement des bonus de commandement et d'attaque de Louen contre les factions maudites (seigneur)"},
-        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 2, "note": "Cavalerie de charge rapide pour ouvrir les brèches avant l'assaut principal"},
+        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 1, "note": "Cavalerie de charge rapide pour ouvrir les brèches avant l'assaut principal"},
         {"icon": "knightsErrantRoR", "name": "Defenders of the Fleur-de-lis (Knights Errant)", "qty": 1, "note": "Régiment de Renom des Knights Errant. Ils portent la fleur de lys, et c'est chez le Roi de Couronne que ce symbole a le plus de poids"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Cavalerie volante pour chasser les tireurs isolés et frapper les flancs"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Soutien d'artillerie à distance pour préparer la charge"}
@@ -52,8 +53,7 @@
         {"icon": "brtBrunner", "name": "Brunner (Héros Légendaire)", "qty": 1, "note": "Le plus fameux chasseur de primes du Vieux Monde (mod Heroes of Legend), réputé pour son efficacité impitoyable à éliminer ses cibles — un roturier de plus dans l'ost de la Bergère, aux côtés du paysan Henri le Massif, et lui aussi deux fois moins cher grâce au -50% sur les héros intégrés (faction)"}
       ],
       "army": [
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 3, "note": "+5% de résistance physique et +5 de commandement grâce à Repanse (seigneur) — ligne de tenue bien plus fiable que la normale"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms. La Pucelle mène des roturiers autant que des chevaliers : c'est la meilleure version de ceux qui la suivent sans être nés pour la guerre"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 4, "note": "+5% de résistance physique et +5 de commandement grâce à Repanse (seigneur) — ligne de tenue bien plus fiable que la normale"},
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 5, "note": "Même bonus Peasant (seigneur) — anti-cavalerie fiable en première ligne"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance, également renforcé par les bonus Peasant de Repanse (seigneur)"},
         {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 1, "note": "Régiment de Renom des Questing Knights. Il remplace l'unique escadron : la Pucelle attire ceux qui cherchent un sens à leur vœu, et ceux-là l'ont trouvé"},
@@ -119,8 +119,7 @@
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm, sur la fiche qui en aligne quatre : le fer de lance de la charge bordelaise"},
         {"icon": "footSquires", "name": "Foot Squires", "qty": 1, "note": "Infanterie de squires bon marché en soutien de la ligne"},
         {"icon": "beastslayersOfBastonne", "name": "Beastslayers of Bastonne (Foot Squires)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Foot Squires"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 3, "note": "+5 de défense en mêlée (seigneur) — ligne de tenue bon marché et fiable"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms, sur la fiche qui en aligne le plus. Bordeleaux arme ses ports autant que ses champs, et cette infanterie roturière y est la véritable ossature"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 4, "note": "+5 de défense en mêlée (seigneur) — ligne de tenue bon marché et fiable"},
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 3, "note": "Même bonus de +5 défense en mêlée (seigneur), avec en prime la résistance anti-cavalerie de la lance"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance classique derrière le mur défensif"}
       ],
@@ -188,8 +187,7 @@
         {"icon": "questingKnights", "name": "Questing Knights", "qty": 1, "note": "Chevaliers à deux mains — anti-grande cible monté, parfait contre les monstres du Mont Silverspear"},
         {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 1, "note": "Régiment de Renom des Questing Knights — les chevaliers qui ont juré la quête du Graal. Chez Bohemond, dont la fiche mêle vœu et guerre, ils sont l'aboutissement du parcours"},
         {"icon": "footSquires", "name": "Foot Squires", "qty": 2, "note": "Écuyers à pied — ligne de tenue solide en complément des Grail Guardians"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Piétaille bon marché — absorbe les charges pendant que l'élite du Graal manœuvre"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms — la base sur laquelle Bastonne appuie ses charges, et la seule chose qui empêche l'ennemi de contourner la lance"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Piétaille bon marché — absorbe les charges pendant que l'élite du Graal manœuvre"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Cavalerie volante — frappe l'artillerie et les shamans peaux-vertes, protège les flancs"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie à zone d'effet — décime les hordes gobelines et prépare la charge"}
       ],
@@ -225,8 +223,7 @@
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm, le meilleur escadron d'Artois pour appuyer les Questing Knights sur le même flanc"},
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 1, "note": "Cavalerie sacrée d'élite — la pointe la plus dure du poing de cavalerie"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 1, "note": "Cavalerie volante — frappe l'artillerie et les casters ennemis par-dessus les arbres"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Piétaille bon marché — tient le centre pendant que Bowmen et cavalerie manœuvrent"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms, l'enclume d'Artois — elle fixe pendant que les Questing Knights de Chilfroy frappent le flanc"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Piétaille bon marché — tient le centre pendant que Bowmen et cavalerie manœuvrent"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie à zone d'effet — brise les formations groupées à longue portée"}
       ],
       "magic": "Chilfroy n'est pas un lanceur de sorts — sa force vient de la maîtrise du terrain forestier et du tir. La Damsel (Lore of Beasts) buffe la cavalerie et les tireurs, en cohérence avec le thème de la nature.",
@@ -259,8 +256,7 @@
         {"icon": "knightsErrantRoR", "name": "Defenders of the Fleur-de-lis (Knights Errant)", "qty": 1, "note": "Régiment de Renom des Knights Errant. Ces jeunes chevaliers cherchent l'exploit : sur la fiche de Lyonesse, ils forment la charge d'ouverture avant que les Knights of the Realm ne concluent"},
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "Cavalerie sacrée d'élite — la pointe la plus dure de la marée"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 1, "note": "Cavalerie volante — chasse artillerie et casters, frappe les monstres morts-vivants"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Piétaille bon marché — tient le centre pendant que la marée de cavalerie déferle sur les flancs"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms. La piétaille de Lyonesse tient la ligne pendant que la chevalerie manœuvre : ce régiment le fait sans rompre, là où les hommes d'armes ordinaires cèdent"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Piétaille bon marché — tient le centre pendant que la marée de cavalerie déferle sur les flancs"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 1, "note": "Tir de masse bon marché en soutien"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie à zone d'effet — abat les grands monstres morts-vivants (Terrorgheists) et brise les hordes"}
       ],
@@ -295,8 +291,7 @@
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 1, "note": "Cavalerie de choc au sol — ancre l'armée et fixe l'ennemi pendant que la cavalerie volante frappe l'arrière et les flancs"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm — la charge lourde qui descend des hauteurs de Parravon sur un ennemi déjà fixé"},
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 1, "note": "Cavalerie sacrée d'élite — pointe de choc au sol la plus dure"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Piétaille bon marché — tient brièvement le centre pendant que toute la cavalerie manœuvre"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms. Parravon est une place de montagne : son infanterie y tient des positions étroites que la cavalerie ne peut pas défendre"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Piétaille bon marché — tient brièvement le centre pendant que toute la cavalerie manœuvre"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie à zone d'effet — brise les formations groupées avant les charges aériennes"}
       ],
       "magic": "Cassyon n'est pas un lanceur de sorts — sa puissance vient de la cavalerie volante et de la formation « Lance » (faction). La Damsel (Lore of Life ou Heavens), montée sur pégase, soutient la nuée aérienne (soins, buffs) tout en suivant son rythme.",
@@ -463,8 +458,7 @@
       ],
       "army": [
         {"icon": "wardensOfMontfort", "name": "Wardens of Montfort (Mounted Yeomen Archers)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires, avec l'attribut Woodsman (traverse les arbres, faction) — les patrouilleurs montés du duché, rois du terrain accidenté"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "-20% d'entretien (seigneur) et +6 de défense en mêlée pour les paysans (seigneur) — un mur bien plus tenace que la piétaille bretonnienne standard, encore renforcé par l'Acier des mines (faction)"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms, sur la fiche qui en garde trois : Montfort défend un passage, et un passage se tient à pied"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 3, "note": "-20% d'entretien (seigneur) et +6 de défense en mêlée pour les paysans (seigneur) — un mur bien plus tenace que la piétaille bretonnienne standard, encore renforcé par l'Acier des mines (faction)"},
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 3, "note": "Mêmes bonus infanterie/paysans (seigneur) — anti-cavalerie qui bloque les charges peaux-vertes dans les défilés"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 3, "note": "Mêmes bonus (seigneur) — tir de position depuis les hauteurs, l'ossature de la défense des cols"},
         {"icon": "footSquires", "name": "Foot Squires", "qty": 1, "note": "Infanterie d'élite à -20% d'entretien (seigneur) — la réserve de choc qui contre-attaque quand la ligne paysanne tient"},
@@ -537,7 +531,7 @@
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 2, "note": "Cavalerie de charge pour les clairières et les lisières, avec l'attribut Woodsman contre les Hommes-Bêtes (seigneur)"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm, la lance lourde de L'Anguille — elle dégage les abords que l'infanterie portuaire ne peut pas tenir seule"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 3, "note": "Tir de harcèlement — érode les hordes bestiales avant qu'elles n'atteignent la ligne"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms. Il remplace l'unique exemplaire de L'Anguille, cité portuaire dont la garnison vaut mieux que la levée"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Ecran de pietaille qui protege les archers dans les sous-bois"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie qui pilonne les campements et les troupeaux massés"}
       ],
       "magic": "Taubert n'est pas un lanceur de sorts — sa force est la traque et l'assaut. La Damsel (Lore of Beasts) est l'unique appui magique, idéalement tournée contre les monstres des warherds.",
@@ -571,8 +565,7 @@
         {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 1, "note": "Troisième et dernier Régiment de Renom chevaleresque de Bretonnie — immunisé à la Psychologie (faction) et couvert par le Devastating Flanker des Questing Knights (seigneur) : le meilleur flanqueur de l'armée"},
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "L'élite bénie de la Dame — marteau final une fois l'ennemi désorganisé par les charges de flanc"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants — prennent l'artillerie et les casters à revers, dans l'esprit de flanquement de la faction"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Enclume qui fixe l'ennemi de face — indispensable pour que les chevaliers puissent le prendre de flanc"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms — l'infanterie de Brionne, dont la réputation de brutalité colle assez bien au nom de ce régiment"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Enclume qui fixe l'ennemi de face — indispensable pour que les chevaliers puissent le prendre de flanc"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 1, "note": "Tir qui force l’ennemi à s’engager sur l’enclume, exposant ses flancs"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 1, "note": "Artillerie qui désorganise les formations avant l'encerclement"}
       ],
@@ -608,7 +601,7 @@
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "L'élite bénie de la Dame — marteau final de la charge, sous la Bannière sacrée"},
         {"icon": "questingKnights", "name": "Questing Knights", "qty": 1, "note": "Chevaliers à deux mains — anti-infanterie lourde en complément des lances"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants — frappent l'artillerie et les casters pendant que la cavalerie enfonce"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms. Il remplace l'unique exemplaire d'Aquitaine : quitte à n'avoir qu'une seule ligne de piétaille, autant qu'elle tienne"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Enclume minimale qui fixe l'ennemi le temps de la manoeuvre"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 1, "note": "Artillerie qui désorganise les formations avant l'impact"}
       ],
       "magic": "Armand n'est pas un lanceur de sorts — sa force est la bannière et l'exemple. La Damsel (Lore of Life) est le seul appui magique, en synergie directe avec la régénération du Champion de la Dame.",
@@ -641,8 +634,7 @@
         {"icon": "chosenSlaanesh", "name": "Chosen of Slaanesh", "qty": 3, "note": "Recrutable uniquement chez Dolmancé, au dernier palier de la chaîne de bâtiments de Slaanesh qui remplace les chapelles. L'élite absolue de l'infanterie du Chaos, et elle reçoit <strong>« Dolmancé's Favorites »</strong> — bonus contre l'infanterie et dégâts de mêlée perforants"},
         {"icon": "chaosWarriorsSlaanesh", "name": "Chaos Warriors of Slaanesh", "qty": 2, "note": "Même chaîne de recrutement, même capacité <strong>« Dolmancé's Favorites »</strong>, et le seigneur leur ajoute de la <strong>défense en mêlée</strong>. Une infanterie lourde que la Bretonnie n'a jamais eue — elle comble exactement le trou laissé par les Grail Knights"},
         {"icon": "chaosMaraudersSlaanesh", "name": "Marauders of Slaanesh", "qty": 2, "note": "Le premier palier de la chaîne, disponible tôt. Troisième bénéficiaire de <strong>« Dolmancé's Favorites »</strong> et du bonus de défense en mêlée — de la piétaille qui frappe bien plus fort qu'elle ne le devrait"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Paysans, donc cibles de <strong>« Harmony in Excess »</strong> : attaque en mêlée, commandement et vitesse en hausse, plus l'attribut <strong>Rage (Rampage)</strong>. La capacité transforme la piétaille bretonnienne en infanterie qui avance au lieu de subir"},
-        {"icon": "cantankerousBellends", "name": "Cantankerous Bellends (Men-at-Arms)", "qty": 1, "note": "Régiment de Renom des Men-at-Arms — l'ancrage terre-à-terre d'une fiche que les excès slaaneshis de Dolmancé tirent ailleurs"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 2, "note": "Paysans, donc cibles de <strong>« Harmony in Excess »</strong> : attaque en mêlée, commandement et vitesse en hausse, plus l'attribut <strong>Rage (Rampage)</strong>. La capacité transforme la piétaille bretonnienne en infanterie qui avance au lieu de subir"},
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 1, "note": "Paysans également visés par <strong>« Harmony in Excess »</strong> — la réponse à la cavalerie, que ni les Chosen ni les Chaos Warriors ne fournissent"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Le tir de masse, et des paysans de plus. Chez cette faction ils comptent double : le renouvellement des pertes passe par les <strong>captifs</strong>, donc la paysannerie se remplace sans dépendre du recrutement classique"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm. Il remplace l'unique escadron de Dolmancé — sa fiche mise sur la qualité plutôt que sur le nombre de lances"}
