@@ -127,7 +127,7 @@
         {"icon": "arbGenie", "name": "Genie", "qty": 2, "note": "Djinn maîtrisant les quatre éléments — monstre polyvalent protégé par le sort lié « Palace of Dreams » (régénération + 25% de résistance physique)"},
         {"icon": "arbFireEfreet", "name": "Fire Efreet", "qty": 1, "note": "Djinn de feu — monstre volant dévastateur, allié élémentaire de premier ordre"},
         {"icon": "arbTempestDjinn", "name": "Tempest Djinn", "qty": 1, "note": "Djinn de l'air vénéré comme un dieu des vents — monstre volant qui déchaîne des tempêtes sur l'ennemi"},
-        {"icon": "arbDesertSpirit", "name": "Desert Spirit", "qty": 1, "note": "Djinn des sables des déserts d'Araby — monstre insaisissable qui frappe et se dissipe"},
+        {"icon": "kharMel", "name": "Khar-mel (Desert Spirit)", "qty": 1, "note": "Régiment de Renom de l'Esprit du Désert — la pièce maîtresse de la ménagerie de Djinns que le Wizard-Caliph rassemble autour de lui, et que le sort lié « Palace of Dreams » protège au même titre que les Genies"},
         {"icon": "arbBowmen", "name": "Bowmen", "qty": 2, "note": "Socle de tir arabyen — volume de flèches pour amollir l'ennemi pendant que les Djinns et la magie opèrent"},
         {"icon": "arbJezzails", "name": "Jezzails", "qty": 2, "note": "Tireurs d'élite perforants au long arquebuse — contre l'infanterie lourde et les monstres"},
         {"icon": "arbArabyanKnights", "name": "Arabyan Knights", "qty": 2, "note": "Cavalerie de choc d'élite — pour percer les flancs et protéger les casters"},
