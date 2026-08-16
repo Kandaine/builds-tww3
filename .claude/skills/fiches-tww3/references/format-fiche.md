@@ -267,8 +267,42 @@ comportement voulu : la règle du site veut l'image réelle ou rien, jamais une 
 Ce qu'il faut faire à la place : extraire le vrai portrait dans `assets/portraits/` et renseigner
 `portraitImage`. Le champ `seal` peut rester tel quel sur les fiches existantes, il est inerte.
 
-Les images font toutes 60×130. `extract_card.ps1` refuse une source de moins de 40×80, ce qui
-protège des icônes prises pour des cartes.
+Les cartes et portraits font 60×130 (certaines cartes sont en 120×260, la variante nette pour les
+écrans haute densité). `extract_card.ps1` refuse une source de moins de 40×80, ce qui protège des
+icônes prises pour des cartes.
+
+### Tailles : ne jamais réduire une carte, toujours réduire une bannière
+
+Ces deux règles vont en sens inverse, et c'est la mesure qui les impose — vérifiée le 16/08/2026.
+
+**Cartes et portraits : ne jamais les redimensionner.** Un portrait de 60×130 est affiché à 68×152
+par `.seal`, donc déjà *agrandi* ; les réduire dégraderait un rendu qui manque déjà de résolution.
+Les 455 cartes en 120×260 sont exactement au bon format pour un écran 2× et doivent le rester.
+
+**Bannières : 1840 px de large au maximum.** `.page` plafonne à 920 px, donc 1840 px est le double
+de la largeur d'affichage — net même en haute densité, et tout pixel au-delà est téléchargé pour
+rien. Des bannières allaient jusqu'à 5378 px. À l'enregistrement d'une nouvelle faction :
+
+```powershell
+magick <source> -resize "1840x>" -quality 85 -strip assets\banners\<faction>.jpg
+```
+
+Le `>` est important : il interdit l'agrandissement d'une source déjà plus petite.
+
+### L'extension d'un fichier ne dit pas son format
+
+**684 fichiers d'`assets/` portent l'extension `.png` ou `.jpg` alors qu'ils contiennent du WebP.**
+Le site fonctionne — un navigateur identifie une image par son contenu, pas par son nom — mais
+`Get-Item` et un simple coup d'œil au nom induisent en erreur. Avant de ré-encoder ou d'analyser un
+lot, lire les octets de signature : `0x89 0x50` pour du PNG, `RIFF…WEBP` pour du WebP, `0xFF 0xD8`
+pour du JPEG. Ré-encoder un WebP en JPEG parce que le fichier s'appelle `.jpg` l'alourdit.
+
+### Métadonnées
+
+Les PNG issus de certains outils traînent un chunk `zTXt` sans rapport avec le rendu — jusqu'à
+1,24 Mo de texte pour 19 Ko de pixels. Retirer les chunks `zTXt`, `tEXt`, `iTXt`, `eXIf` et `tIME`
+est **sans perte** : les données de pixels ne sont pas ré-encodées. Après une passe d'extraction,
+vérifier qu'aucun fichier neuf ne dépasse largement les ~25 Ko attendus pour une carte.
 
 **Après toute édition de `unitImages`, vérifier que le module parse** — voir la section
 Vérification du SKILL.md. Une virgule manquante vide la page de la faction en silence ; le
