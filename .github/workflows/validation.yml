@@ -36,8 +36,12 @@ jobs:
 
     steps:
       # Récupère le contenu du dépôt sur la machine de GitHub.
+      # v7, la version courante au 17/08/2026. On venait de la v4, qui tourne
+      # sur Node.js 20 : GitHub l'a déprécié et le signalait en avertissement à
+      # chaque exécution. Le passage à Node 24 date de la v5 ; autant prendre
+      # directement la dernière plutôt que d'avoir à rebumper.
       - name: Récupérer le dépôt
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       # `shell: powershell` = Windows PowerShell 5.1, la même version que sur
       # la machine du user. PowerShell 7 (pwsh) est aussi disponible sur le
