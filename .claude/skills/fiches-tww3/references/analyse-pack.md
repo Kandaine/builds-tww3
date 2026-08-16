@@ -16,8 +16,17 @@ Quelles tables lire, dans quel ordre, et où sont les pièges.
 
 ## 1. Format des packs
 
-PFH5/PFH4, en-tête de 28 octets, contenu compressé en zstd. Les scripts de
-`~/.claude/tools/tww/` gèrent tout via la `libzstd.dll` fournie par Git — rien à télécharger.
+PFH5/PFH4, en-tête de 28 octets. Le contenu est compressé en **zstd ou en LZ4 selon le pack** — les
+scripts de `~/.claude/tools/tww/` gèrent les deux via le module partagé `_unpack.ps1`, qui reconnaît
+le format au **nombre magique en tête de flux** (`04 22 4D 18` = LZ4, sinon zstd via la `libzstd.dll`
+fournie par Git). Rien à télécharger.
+
+**Réflexe quand un pack listable rend n'importe quoi.** Tables vides, `.loc` réduit à une ligne,
+images refusées avec « improper image header » : ce n'est pas un pack corrompu ni un index mal lu,
+c'est le mauvais décompresseur. L'index, les offsets et les drapeaux peuvent être parfaitement
+corrects et la sortie être de la bouillie. Lire les premiers octets d'une entrée compressée avant de
+chercher ailleurs — le magic dit le format. Diagnostiqué sur `DEER24Cathay.pack`, qui est en LZ4
+alors que les outils appelaient `ZSTD_decompress` inconditionnellement.
 
 Packs workshop : `C:\Program Files (x86)\Steam\steamapps\workshop\content\1142710\<id>\`
 Packs du jeu de base : `...\common\Total War WARHAMMER III\data\` — les textes anglais sont dans
@@ -411,6 +420,19 @@ Corollaire inverse : ne pas se fier au fait qu'un personnage soit une entité un
 Flamer of Tzeentch est une unité de tir du corps d'armée, pas un héros. En cas de doute, vérifier
 qu'il figure bien dans `faction_agent_permitted_subtypes` ; sinon ce n'est pas un agent.
 
+**Quand cette table ne répond pas — le marqueur d'icône de la récompense.** Certains mods
+n'alimentent pas `faction_agent_permitted_subtypes` (deux lignes en tout sur LYH), n'ont pas de
+`unique_agents`, et rangent la classe en binaire dans `agent_subtypes`. Ni les sous-titres ni la page
+Steam ne tranchent. La réponse est alors dans les tables de **description de récompense** —
+`campaign_payload_ui_details_description_*` — qui préfixent chaque personnage accordé par
+`[[img:icon_hero]]` ou `[[img:icon_general]]`. Le marqueur fait foi, y compris contre le libellé :
+sur LYH, `huahua` est annoncé comme un héros mais porte `icon_general`, c'est un seigneur.
+
+Règle dérivée sur ce type de mod : **les héros sont les personnages accordés par mission**
+(scripts `mission_*.lua`). Les personnages posés par des scripts de démarrage
+`<prefixe>_<race>_<nom>.lua` sont des **seigneurs de départ** de factions existantes — ni fiche, ni
+emplacement de héros dans un build.
+
 ### Trouver les héros EXCLUSIFS à un seigneur
 
 Un héros propre à une seule faction, que nul autre ne peut obtenir — le cas de Lafayette chez Louen.
@@ -473,6 +495,19 @@ vérification datait de plusieurs étapes plus tôt.
    exacte, la race, la catégorie, les statistiques complètes et les attributs — donc bien plus
    qu'un nom : de quoi **justifier** un choix de variante au lieu de le poser arbitrairement.
 8. **Demander au user.** C'est une issue normale, pas un échec.
+
+**Comment demander utilement : lui montrer la carte.** Quand ni table ni loc ne donnent le libellé,
+ne pas décrire l'unité avec des mots — extraire son icône et la lui **envoyer agrandie ×4** avec
+`SendUserFile`. L'original fait 60×130 et est illisible tel quel ; `extract_card.ps1` laisse le PNG
+source dans `%TEMP%\tww_extract\<nom>.raw.png` avant redimensionnement, et accepte `-Root` pour
+écrire hors du dépôt. Joindre tout ce qui aide à la repérer en jeu : bâtiment de recrutement,
+Régiment de Renom ou non, nom de la capacité propre, schéma de nommage des unités sœurs. C'est la
+méthode qui a débloqué les derniers noms du Clan Skurvy — bien plus rapide que de fouiller le pack.
+
+**Un nom tiré d'un texte descriptif est une approximation, pas un libellé.** Sur SCM Skaven Clans,
+six noms lus dans les descriptions étaient faux : la loc annonçait « Skurvy Deck Engineers » là où le
+jeu affiche **Skurvy Stormvermin Warpmuskets**, et « The Brethren » là où il affiche **Brethren of
+the Dark (Pit Vermin)**. Faire confirmer avant d'écrire.
 
 **Le dump de loc n'est pas exhaustif.** L'extraction ASCII rate des entrées : une absence dans le
 dump ne prouve pas l'absence dans le jeu. Cas vécu — j'ai conclu que les Marauder Champions (Great
@@ -666,6 +701,14 @@ portrait, jamais la carte d'un homonyme.
 
 **Une icône n'est pas une unité recrutable.** La présence d'un fichier dans `ui\units\icons\` ne
 prouve rien : il peut s'agir de contenu coupé. Croiser avec `land_units` ou un effet de faction.
+
+**Ni une entrée de table.** Le cas est plus fort que le précédent et il a coûté cher : sur *SCM
+Tribes of the North*, le pack déclare **quatre** unités « Wolfguard » avec icônes ET entrées de
+tables ; le user a lancé une partie et **une seule est réellement recrutable**. Même chose pour les
+Aesling Marauder Horsemen (Throwing Axes), présents dans la loc et absents du jeu. Sur un gros mod,
+icône + table ne prouvent donc pas l'accessibilité — **en cas de doute, demander une vérification en
+jeu** plutôt que de placer l'unité. Voir aussi la garde de seigneur de Birna, déclarée mais non
+recrutable, retirée de sa fiche après test.
 
 **Ne pas identifier une variante d'unité à l'œil.** La lecture visuelle vaut pour confirmer une
 famille évidente — des scarabées sont des scarabées — mais pas pour distinguer deux variantes
