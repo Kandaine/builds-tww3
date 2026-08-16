@@ -1,0 +1,107 @@
+#!/bin/sh
+# =============================================================================
+# .githooks/pre-commit — filet de sécurité local, exécuté par Git AVANT chaque
+# commit. Si la validation échoue, le commit est annulé.
+#
+# POURQUOI. Les erreurs que ces scripts attrapent sont silencieuses : une clé
+# d'icône absente du module de sa faction affiche une carte sans image, sans
+# message ; un total de slots faux ne se voit nulle part. Ni le navigateur ni
+# `git diff` ne les signalent. Ce hook remplace la discipline personnelle.
+#
+# INSTALLATION (une seule fois, à lancer à la racine du dépôt) :
+#     git config core.hooksPath .githooks
+# Sans cette commande, Git regarde dans .git/hooks/ et ignore ce fichier.
+# On utilise .githooks/ justement parce que .git/hooks/ n'est PAS versionné :
+# ici, le hook part dans git et se retrouve après un nouveau clone.
+#
+# CONTOURNEMENT PONCTUEL :
+#     git commit --no-verify -m "message"
+# Légitime pour sauvegarder un travail en cours volontairement incomplet.
+# Pas légitime pour passer outre une vraie erreur — la GitHub Action, elle,
+# rejouera la même validation au push et ne se contourne pas.
+#
+# LIMITE ASSUMÉE. Le hook valide le dossier de travail, pas exactement le
+# contenu mis en scène. Si tu ne commites qu'une partie de tes modifications,
+# il juge sur l'ensemble. Rendre cela exact demanderait de manipuler
+# `git stash` pendant le hook — fragile, et capable de faire perdre du travail.
+# =============================================================================
+
+# Fichiers ajoutés (A), copiés (C) ou modifiés (M) dans ce commit.
+FICHIERS=$(git diff --cached --name-only --diff-filter=ACM)
+
+# On ne garde que ceux capables de casser une fiche : les données des
+# seigneurs, les modules d'images, et le catalogue des factions.
+PERTINENTS=$(echo "$FICHIERS" | grep -E '^(data/.+\.json|js/units/.+\.js|js/core\.js)$')
+
+# Un commit de CSS, de documentation ou d'images ne paie rien : on sort tout
+# de suite. C'est ce qui garde le hook rapide au quotidien.
+if [ -z "$PERTINENTS" ]; then
+    exit 0
+fi
+
+echo ""
+echo "── Validation des fiches avant commit ──────────────────────────"
+
+# -NoProfile : démarre PowerShell sans charger le profil utilisateur.
+# Plus rapide, et surtout la validation ne dépend pas de la configuration
+# personnelle de la machine.
+PS="powershell -NoProfile -ExecutionPolicy Bypass -File"
+ECHECS=0
+
+# --- 1. Cohérence globale des icônes (32 factions, ~3 s) ------------------
+# Ce script est global par nature : il lit FACTION_GROUPS dans js/core.js,
+# donc on ne peut pas le restreindre à une faction.
+echo "  → icônes et fichiers images…"
+if ! $PS tools/verifier-icones.ps1 > /tmp/verif-icones.log 2>&1; then
+    echo ""
+    echo "  ÉCHEC — icônes :"
+    grep -E "SANS IMAGE|FICHIER ABSENT|MANQUE" /tmp/verif-icones.log
+    ECHECS=1
+fi
+
+# --- 2. Totaux de slots, seulement sur les factions du commit ------------
+# Chaque appel coûte ~0,65 s : les restreindre aux factions réellement
+# touchées évite les 6,6 s qu'imposerait un passage sur les 32.
+if echo "$PERTINENTS" | grep -q '^js/core\.js$'; then
+    # js/core.js porte la liste des factions : une modification peut affecter
+    # n'importe laquelle, on repasse donc sur tout.
+    echo "  → js/core.js modifié : validation des 32 factions…"
+    FACTIONS=$(ls data/*.json | sed 's|data/||; s|\.json$||')
+else
+    # Sinon on déduit la faction du nom de fichier, dans les deux dossiers.
+    # `grep -v '^_'` écarte js/units/_hors-fiches.js, qui n'est pas une faction.
+    FACTIONS=$(echo "$PERTINENTS" \
+        | sed -n -e 's|^data/\(.*\)\.json$|\1|p' -e 's|^js/units/\(.*\)\.js$|\1|p' \
+        | grep -v '^_' | sort -u)
+fi
+
+for FACTION in $FACTIONS; do
+    if [ ! -f "data/$FACTION.json" ]; then
+        continue
+    fi
+    SORTIE=$($PS tools/validate_fiche.ps1 -Faction "$FACTION" 2>&1)
+    if [ $? -ne 0 ]; then
+        echo ""
+        echo "  ÉCHEC — faction « $FACTION » :"
+        echo "$SORTIE" | grep -E "^KO |   KO |ERREUR"
+        ECHECS=1
+    else
+        echo "  ✓ $FACTION"
+    fi
+done
+
+if [ "$ECHECS" -ne 0 ]; then
+    echo ""
+    echo "───────────────────────────────────────────────────────────────"
+    echo "  COMMIT ANNULÉ. Corrige les erreurs ci-dessus, puis recommence."
+    echo ""
+    echo "  Si le commit est volontairement incomplet (travail en cours) :"
+    echo "      git commit --no-verify"
+    echo "───────────────────────────────────────────────────────────────"
+    echo ""
+    exit 1
+fi
+
+echo "── Validation OK ───────────────────────────────────────────────"
+echo ""
+exit 0

@@ -1,0 +1,75 @@
+# =============================================================================
+# .github/workflows/validation.yml
+#
+# Rejoue la validation des fiches sur les serveurs de GitHub à chaque push sur
+# main, et affiche une pastille verte ou rouge sur le dépôt.
+#
+# POURQUOI EN PLUS DU HOOK LOCAL. Le hook pre-commit se contourne d'une option
+# (`git commit --no-verify`) et n'existe que sur la machine où il a été
+# configuré. Cette Action, elle, ne se contourne pas : c'est le filet qui
+# rattrape les oublis du premier.
+#
+# COÛT. Le dépôt est public, donc les minutes GitHub Actions sont gratuites,
+# runner Windows compris.
+# =============================================================================
+
+name: Validation des fiches
+
+# Quand se déclencher.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  # Permet aussi de le lancer à la main depuis l'onglet Actions du dépôt.
+  workflow_dispatch:
+
+jobs:
+  validation:
+    # windows-latest, et non ubuntu : les deux scripts écrivent leurs chemins
+    # avec des antislashs ("$Root\data\..."), qui ne sont PAS des séparateurs
+    # sous Linux. Un runner Ubuntu imposerait donc de réécrire tous les chemins,
+    # c'est-à-dire de faire tourner en CI une variante des scripts — ce qui ne
+    # prouverait plus grand-chose. Ici, GitHub exécute exactement les fichiers
+    # que le hook local exécute.
+    runs-on: windows-latest
+
+    steps:
+      # Récupère le contenu du dépôt sur la machine de GitHub.
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      # `shell: powershell` = Windows PowerShell 5.1, la même version que sur
+      # la machine du user. PowerShell 7 (pwsh) est aussi disponible sur le
+      # runner, mais on veut le même interpréteur qu'en local.
+      - name: Cohérence des icônes et présence des images
+        shell: powershell
+        run: |
+          # Bypass limité au processus courant : sans lui, une stratégie
+          # d'exécution restrictive refuserait de lancer un .ps1 non signé.
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          .\tools\verifier-icones.ps1
+
+      # Ce script valide une faction à la fois. On boucle donc sur les 32
+      # fichiers de data\, en cumulant les échecs pour tout afficher d'un coup
+      # plutôt que de s'arrêter au premier — sur une CI, un rapport complet
+      # vaut mieux qu'un arrêt précoce.
+      - name: Totaux de slots des 32 factions
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          $echecs = @()
+          Get-ChildItem data\*.json | ForEach-Object {
+            $sortie = .\tools\validate_fiche.ps1 -Faction $_.BaseName
+            if ($LASTEXITCODE -ne 0) {
+              $echecs += $_.BaseName
+              Write-Host "=== ECHEC : $($_.BaseName) ===" -ForegroundColor Red
+              $sortie | Where-Object { $_ -match '^KO |^   KO |ERREUR' }
+            }
+          }
+          if ($echecs.Count -gt 0) {
+            Write-Host ""
+            Write-Host "$($echecs.Count) faction(s) en echec : $($echecs -join ', ')" -ForegroundColor Red
+            exit 1
+          }
+          Write-Host "32 factions validees." -ForegroundColor Green

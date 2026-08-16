@@ -228,7 +228,7 @@ la seule vue qui montre ce qu'un seigneur donné peut réellement aligner.
 Trois contrôles, dans cet ordre. Aucun ne remplace les autres.
 
 ```bash
-powershell -File "C:\Users\Utilisateur\.claude\tools\tww\validate_fiche.ps1" -Faction ogre-kingdoms
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\validate_fiche.ps1 -Faction ogre-kingdoms
 ```
 
 Recalcule les 20 slots et vérifie que chaque clé d'icône est enregistrée et que son PNG existe.
@@ -248,7 +248,7 @@ correction de quantité peut avoir dérapé sur d'autres seigneurs du même fich
 lot, boucler sur tous les fichiers du site, pas seulement ceux qu'on croit avoir touchés :
 
 ```bash
-powershell -Command "Get-ChildItem 'C:\Users\Utilisateur\Projets\builds-tww3\data\*.json' | ForEach-Object { & 'C:\Users\Utilisateur\.claude\tools\tww\validate_fiche.ps1' -Faction $_.BaseName }"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem data\*.json | ForEach-Object { & .\tools\validate_fiche.ps1 -Faction $_.BaseName }"
 ```
 
 Ensuite le navigateur, via `preview_start` (nom `codex-static-server`, port 5173) puis

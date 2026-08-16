@@ -21,9 +21,35 @@ Si la modification touche aux fiches (`data/*.json`, `js/units/*.js`) :
 - Les deux scripts passent, sur les 32 factions et pas seulement celles qu'on croit avoir touchées :
 
 ```powershell
-powershell -File tools\verifier-icones.ps1
-Get-ChildItem data\*.json | ForEach-Object { & "C:\Users\Utilisateur\.claude\tools\tww\validate_fiche.ps1" -Faction $_.BaseName }
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-icones.ps1
 ```
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem data\*.json | ForEach-Object { & .\tools\validate_fiche.ps1 -Faction $_.BaseName }"
+```
+
+`-ExecutionPolicy Bypass` n'est pas décoratif : la stratégie d'exécution de cette machine est
+`Undefined` à tous les niveaux, donc `Restricted` par défaut — sans ce paramètre, Windows refuse de
+lancer les deux scripts et renvoie `UnauthorizedAccess`. Le paramètre ne vaut que pour le processus
+lancé, il ne change rien à la configuration de la machine.
+
+**Ces deux scripts sont désormais lancés automatiquement**, par deux filets complémentaires — ne
+plus compter sur ma discipline pour les exécuter :
+
+- un **hook `pre-commit`** (`.githooks/pre-commit`) qui bloque le commit si la validation échoue,
+  en ne testant que les factions présentes dans le commit (~3 s ; sortie immédiate si le commit ne
+  touche aucune fiche) ;
+- une **GitHub Action** (`.github/workflows/validation.yml`) qui rejoue tout à chaque push sur
+  `main`, et qu'on ne peut pas contourner.
+
+Activer le hook, **une seule fois par clone** :
+
+```bash
+git config core.hooksPath .githooks
+```
+
+Contourner ponctuellement : `git commit --no-verify`. Légitime pour sauvegarder un travail
+volontairement incomplet ; jamais pour passer outre une vraie erreur.
 
 Si la modification touche au front (HTML / CSS / JS) :
 - La console du navigateur est vierge sur un onglet neuf.
