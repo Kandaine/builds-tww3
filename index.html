@@ -28,7 +28,7 @@
     <!-- Champ de recherche texte libre : filtré en temps réel par
          js/search.js (écouteur sur l'événement "input"). -->
     <input type="search" id="search-input" class="search-input search-input-lg" placeholder="Rechercher un seigneur, une épithète, une faction…" aria-label="Rechercher un seigneur, une épithète, une faction">
-    <!-- Rempli dynamiquement par renderFactionTabs() (js/data.js), appelée
+    <!-- Rempli dynamiquement par renderFactionTabs() (js/core.js), appelée
          depuis renderResults() (js/search.js). -->
     <nav class="faction-tabs" id="faction-tabs" aria-label="Filtrer par faction"></nav>
   </header>
@@ -37,9 +37,11 @@
   <main class="results-grid" id="results-grid"></main>
 </div>
 
-<!-- data.js doit être chargé avant search.js : ce dernier utilise les
-     fonctions/objets qu'il expose (loadLords, filterLords, seals...). -->
-<script src="js/data.js"></script>
+<!-- core.js doit être chargé avant search.js : ce dernier utilise les
+     fonctions qu'il expose (loadLords, filterLords, renderFactionTabs).
+     La page d'accueil n'affiche aucune carte d'unité : elle ne charge donc
+     aucun fichier js/units/<faction>.js. -->
+<script src="js/core.js"></script>
 <script src="js/search.js"></script>
 
 </body>

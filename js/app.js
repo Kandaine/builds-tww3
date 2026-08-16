@@ -2,10 +2,11 @@
 // app.js — Script principal des pages "faction" (ex: dwarfs.html, khorne.html…).
 // Ce fichier gère l'affichage de la liste des seigneurs dans la barre latérale
 // et le rendu de la fiche détaillée du seigneur sélectionné.
-// Il dépend entièrement de js/data.js, qui doit être chargé AVANT ce fichier
-// (voir les balises <script> dans chaque page HTML) : les variables/fonctions
-// comme `loadLords`, `seals`, `iconLookup`, `unitImages`, `factionBanners`,
-// `icons` et `dripSVG` proviennent toutes de data.js.
+// Il dépend de js/core.js et de js/units/<faction>.js, tous deux chargés AVANT
+// ce fichier (voir les balises <script> dans chaque page HTML) :
+//   - core.js             : loadLords, factionBanners, icons, dripSVG,
+//                           svgDeSecours
+//   - units/<faction>.js  : unitImages, limité aux unités de cette faction
 // ============================================================================
 
 // Liste complète des seigneurs légendaires chargés pour la faction courante.
@@ -97,7 +98,7 @@ function renderPage(){
   }
 
   // Bannière illustrée en haut de page : chaque faction a sa propre image
-  // d'artwork officiel, enregistrée dans `factionBanners` (js/data.js).
+  // d'artwork officiel, enregistrée dans `factionBanners` (js/core.js).
   // Un seigneur peut définir sa propre bannière (champ `banner`) qui prime
   // sur celle de sa faction — utile quand une faction regroupe des sous-
   // factions à l'ambiance distincte (ex. Jade-Blooded Vampires).
@@ -113,7 +114,7 @@ function renderPage(){
       <!-- Le sceau/portrait du seigneur : priorité à une vraie image
            (l.portraitImage) si elle existe, sinon on retombe sur un SVG
            de secours généré (objet seals, indexé par l.seal). -->
-      <div class="seal">${l.portraitImage ? `<img src="${l.portraitImage}" alt="${l.name}">` : seals[l.seal]}</div>
+      <div class="seal">${l.portraitImage ? `<img src="${l.portraitImage}" alt="${l.name}">` : svgDeSecours(l.seal)}</div>
       <div>
         <div class="lord-title">${l.name}</div>
         <div class="lord-epithet-big">${l.epithet}</div>
@@ -192,15 +193,15 @@ function unitCardHtml(u){
   // Priorité d'affichage de l'icône :
   // 1) une vraie image d'unité si elle est enregistrée dans `unitImages`
   //    (indexée par la clé u.icon) ;
-  // 2) sinon, un SVG de secours dessiné à la main, cherché dans `iconLookup`
-  //    (fusion des objets `seals` et `unitIcons`, voir data.js) ;
+  // 2) sinon, le repli svgDeSecours() (js/core.js), qui renvoie aujourd'hui
+  //    toujours une chaîne vide — voir son commentaire ;
   // 3) sinon, une chaîne vide (icône manquante, ne devrait normalement pas
   //    arriver si les données sont correctement renseignées).
   // loading="lazy" + decoding="async" : les images d'unités situées plus bas
   // dans la fiche ne sont chargées qu'à l'approche du viewport.
   const icon = unitImages[u.icon]
     ? `<img src="${unitImages[u.icon]}" alt="${u.name}" loading="lazy" decoding="async">`
-    : (iconLookup[u.icon] || '');
+    : svgDeSecours(u.icon);
   return `
     <div class="unit-card">
       <div class="unit-icon">${icon}</div>

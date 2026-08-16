@@ -4,7 +4,7 @@
   Page de faction : liste + fiche détaillée des seigneurs légendaires de
   cette faction. Tout le contenu dynamique (liste dans #lord-list, détail
   dans #page-content) est injecté par js/app.js au chargement, à partir des
-  données JSON de data/ (voir js/data.js -> loadLords()). Ce fichier HTML ne
+  données JSON de data/ (voir js/core.js -> loadLords()). Ce fichier HTML ne
   contient donc que la coquille statique de la page.
 -->
 <head>
@@ -28,10 +28,15 @@
 
 <!-- PAGE_FACTION indique à js/app.js (fonction init()) quel fichier
      data/<faction>.json charger pour cette page — voir loadLords() dans
-     js/data.js. Doit correspondre à l'id de faction utilisé dans
-     FACTION_GROUPS (js/data.js) et au nom du fichier data/*.json. -->
+     js/core.js. Doit correspondre à l'id de faction utilisé dans
+     FACTION_GROUPS (js/core.js) et au nom du fichier data/*.json. -->
 <script>const PAGE_FACTION = 'wood-elves';</script>
-<script src="js/data.js"></script>
+<!-- Ordre de chargement obligatoire, chaque fichier utilisant le précédent :
+       1. js/core.js          — catalogue des factions + utilitaires partagés
+       2. js/units/wood-elves.js — images des unités de CETTE faction uniquement
+       3. js/app.js           — rendu de la page -->
+<script src="js/core.js"></script>
+<script src="js/units/wood-elves.js"></script>
 <script src="js/app.js"></script>
 
 </body>

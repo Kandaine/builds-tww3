@@ -17,13 +17,23 @@
 |---|---|
 | `data/<faction>.json` | tableau des seigneurs de la faction (**tirets** : `ogre-kingdoms.json`) |
 | `<faction>.html` | page de la faction (**underscores** : `ogre_kingdoms.html`) |
-| `js/data.js` | objet `seals` (SVG en ligne) puis objet `unitImages` (chemins des PNG) |
+| `js/units/<faction>.js` | objet `unitImages` (chemins des PNG) — **un module par faction, tirets** |
+| `js/core.js` | `FACTION_GROUPS`, `factionBanners`, `loadLords`, utilitaires partagés |
 | `assets/portraits/` | portraits de seigneurs, 60×130 |
 | `assets/units/` | cartes d'unités et de héros, 60×130 |
 
-`js/data.js` contient **deux** objets qui partagent parfois une même clé : `seals` pour le SVG du
-sceau, `unitImages` pour le chemin du PNG. Un `grep` d'une clé peut donc renvoyer deux lignes sans
-qu'il y ait de doublon.
+**Une fiche et son module d'images vont par paire.** Ajouter une unité dans
+`data/<faction>.json` impose d'ajouter sa clé dans `js/units/<faction>.js`, et nulle part ailleurs :
+une page ne charge que le module de sa propre faction. Une clé déclarée dans le module d'une autre
+faction ne sera pas vue. L'oubli ne produit **aucune erreur** — la carte s'affiche simplement sans
+image. `validate_fiche.ps1` et `tools/verifier-icones.ps1` détectent tous deux ce cas.
+
+Un `grep` d'une clé peut renvoyer plusieurs lignes sans qu'il y ait de doublon : environ 77 clés
+sont légitimement déclarées dans deux modules, quand deux races partagent la même unité.
+
+`js/data.js` n'existe plus : il regroupait les 32 factions en un registre unique de 343 Ko que
+chaque page téléchargeait en entier. Une référence à ce fichier dans une note ou un script est
+périmée.
 
 ---
 
@@ -248,17 +258,21 @@ même race — le dire et renvoyer de l'une à l'autre.
 
 ## 5. Sceaux et images
 
-Chaque seigneur a un `seal` : un SVG en ligne de 24×24 dans l'objet `seals`, trait
-`var(--accent-secondary)`, `stroke-width` autour de 1.6, sans remplissage sauf pour de petits
-points. Le motif reprend un élément du lore ou de la mécanique — une araignée, un chaudron, un
-canon. Insérer les nouveaux sceaux au milieu de l'objet, jamais après la dernière entrée, pour
-limiter les conflits.
+**Ne plus dessiner de sceau.** Le champ `seal` d'une fiche est un vestige : l'objet `seals` qui le
+résolvait vit désormais dans `js/fallback-svg.js`, qu'aucune page ne charge. Les 321 seigneurs ont
+tous un `portraitImage`, et c'est lui seul qui s'affiche. Un sceau ajouté aujourd'hui ne serait
+jamais rendu — un seigneur sans `portraitImage` afficherait un cadre vide, ce qui est le
+comportement voulu : la règle du site veut l'image réelle ou rien, jamais une approximation.
+
+Ce qu'il faut faire à la place : extraire le vrai portrait dans `assets/portraits/` et renseigner
+`portraitImage`. Le champ `seal` peut rester tel quel sur les fiches existantes, il est inerte.
 
 Les images font toutes 60×130. `extract_card.ps1` refuse une source de moins de 40×80, ce qui
 protège des icônes prises pour des cartes.
 
-**Après toute édition de `unitImages`, vérifier que le fichier parse** — voir la section
-Vérification du SKILL.md. Une virgule manquante vide tout le site en silence.
+**Après toute édition de `unitImages`, vérifier que le module parse** — voir la section
+Vérification du SKILL.md. Une virgule manquante vide la page de la faction en silence ; le
+découpage limite les dégâts à cette page, alors qu'auparavant elle vidait tout le site.
 
 ---
 

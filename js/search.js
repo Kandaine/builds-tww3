@@ -1,8 +1,8 @@
 // ============================================================================
 // search.js — Script de la page d'accueil (index.html), la page de recherche
 // globale qui liste les seigneurs légendaires de TOUTES les factions.
-// Dépend de js/data.js (doit être chargé avant ce fichier) pour les fonctions
-// `loadLords`, `filterLords`, `renderFactionTabs` ainsi que l'objet `seals`.
+// Dépend de js/core.js (doit être chargé avant ce fichier) pour les fonctions
+// `loadLords`, `filterLords`, `renderFactionTabs` et `svgDeSecours`.
 // ============================================================================
 
 // Liste complète de tous les seigneurs, toutes factions confondues.
@@ -21,14 +21,14 @@ let searchQuery = '';
 // enrichi des champs `group`, `groupLabel`, `groupPage`).
 // Retourne une chaîne HTML (un lien <a> cliquable vers la fiche du seigneur).
 function resultCardHtml(l){
-  // Portrait affiché sur la carte : vraie image si disponible, sinon SVG
-  // de secours (objet `seals`, voir data.js).
+  // Portrait affiché sur la carte : vraie image si disponible, sinon repli
+  // svgDeSecours() (js/core.js) — qui renvoie aujourd'hui toujours du vide.
   // loading="lazy" + decoding="async" : la page de recherche affiche jusqu'à
   // 106 portraits ; on ne charge donc que ceux qui approchent du viewport, ce
   // qui accélère nettement l'affichage initial, surtout sur mobile/3G.
   const portrait = l.portraitImage
     ? `<img src="${l.portraitImage}" alt="${l.name}" loading="lazy" decoding="async">`
-    : (seals[l.seal] || '');
+    : svgDeSecours(l.seal);
   // Le lien pointe vers la page HTML de la faction du seigneur (l.groupPage,
   // ex: "dwarfs.html"), avec l'id du seigneur en paramètre d'URL, afin que
   // cette page l'affiche directement au chargement (voir init() dans app.js).

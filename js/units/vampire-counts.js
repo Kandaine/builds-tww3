@@ -1,0 +1,143 @@
+// ============================================================================
+// units/vampire-counts.js — images d'unites de la faction « vampire-counts », et d'elle seule.
+//
+// Charge uniquement par vampire_counts.html, juste avant js/app.js qui s'en sert dans
+// unitCardHtml(). Chaque cle correspond au champ "icon" d'une unite dans
+// data/vampire-counts.json ; la valeur est le chemin de l'image reelle.
+//
+// Ces 117 entrees vivaient auparavant dans un registre unique de 2063 images
+// que CHAQUE page chargeait en entier, soit 117 Ko pour n'afficher que sa
+// propre faction. Le decoupage est purement mecanique : meme objet global
+// `unitImages`, memes cles, meme code de rendu dans app.js.
+//
+// A connaitre avant d'editer : ajouter une unite dans
+// data/vampire-counts.json impose d'ajouter sa cle ICI aussi. Une cle absente
+// affiche une carte sans image et sans message d'erreur ; le script
+// tools/verifier-icones.ps1 detecte precisement ce cas.
+// ============================================================================
+
+const unitImages = {
+  vlad: 'assets/portraits/vlad.png',
+  isabella: 'assets/portraits/isabella.png',
+  mannfred: 'assets/portraits/mannfred.png',
+  kemmler: 'assets/portraits/kemmler.png',
+  ghorst: 'assets/portraits/ghorst.png',
+  necromancer: 'assets/units/necromancer.png',
+  vampireHeroDeath: 'assets/units/vampireHeroDeath.png',
+  vampireHeroShadows: 'assets/units/vampireHeroShadows.png',
+  // Vampire Counts — Héros Légendaires du mod « Heroes of Legend » :
+  // les trois lieutenants que Mannfred a choisis pour son armée sylvanienne.
+  vmpHelmutVonCarstein: 'assets/units/vmpHelmutVonCarstein.png',
+  vmpGorgivichKrakvald: 'assets/units/vmpGorgivichKrakvald.png',
+  vmpGuntherVonGrecht: 'assets/units/vmpGuntherVonGrecht.png',
+  graveGuard: 'assets/units/graveGuard.png',
+  blackKnight: 'assets/units/blackKnight.png',
+  terrorgheist: 'assets/units/terrorgheist.png',
+  vargheist: 'assets/units/vargheist.png',
+  mortisEngine: 'assets/units/mortisEngine.png',
+  direWolf: 'assets/units/direWolf.png',
+  cairnWraith: 'assets/units/cairnWraith.png',
+  blackCoach: 'assets/units/blackCoach.png',
+  hexwraith: 'assets/units/hexwraith.png',
+  theChillgheists: 'assets/units/theChillgheists.png',
+  mourngul: 'assets/units/mourngul.png',
+  gothardUndyingKnight: 'assets/units/gothardUndyingKnight.png',
+  ulrikaMagdova: 'assets/units/ulrikaMagdova.png',
+  obadiahGlothman: 'assets/units/obadiahGlothman.png',
+  skeleton: 'assets/units/skeleton.png',
+  konigsteinStalkers: 'assets/units/konigsteinStalkers.png',
+  cryptGhoul: 'assets/units/cryptGhoul.png',
+  varghulf: 'assets/units/varghulf.png',
+  zombie: 'assets/units/zombie.png',
+  theTithe: 'assets/units/theTithe.png',
+  krell: 'assets/units/krell.png',
+  warHydra: 'assets/units/warHydra.png',
+  feralManticoreDarkElves: 'assets/units/feralManticoreDarkElves.png',
+  kharibdyss: 'assets/units/kharibdyss.png',
+  blackDragon: 'assets/units/blackDragon.png',
+  waldakirRahtep: 'assets/portraits/waldakirRahtep.png',
+  voragBloodytooth: 'assets/portraits/voragBloodytooth.png',
+  blackKnightsLancesBarding: 'assets/units/blackKnightsLancesBarding.png',
+  corpseCartLodestone: 'assets/units/corpseCartLodestone.png',
+  kloveniers: 'assets/units/kloveniers.png',
+  goedendagers: 'assets/units/goedendagers.png',
+  aliciaVonUnterwald: 'assets/units/aliciaVonUnterwald.png',
+  cryptGhouls: 'assets/units/cryptGhouls.png',
+  zombies: 'assets/units/zombies.png',
+  rottingPrometheans: 'assets/units/rottingPrometheans.png',
+  rottingLeviathan: 'assets/units/rottingLeviathan.png',
+  giantWolves: 'assets/units/giantWolves.png',
+  sternsmen: 'assets/units/sternsmen.png',
+  feastersInTheDusk: 'assets/units/feastersInTheDusk.png',
+  theDirepack: 'assets/units/theDirepack.png',
+  aucassin: 'assets/units/aucassin.png',
+  bougars: 'assets/units/bougars.png',
+  eustache: 'assets/units/eustache.png',
+  nicolete: 'assets/units/nicolete.png',
+  mslDamsel: 'assets/units/mslDamsel.png',
+  abhorash: 'assets/units/abhorash.png',
+  mikaelHarkon: 'assets/units/mikaelHarkon.png',
+  bloodDragonKastellan: 'assets/units/bloodDragonKastellan.png',
+  disciplesOfThePathInnerCircle: 'assets/units/disciplesOfThePathInnerCircle.png',
+  disciplesOfThePathKnights: 'assets/units/disciplesOfThePathKnights.png',
+  disciplesOfThePathWarriors: 'assets/units/disciplesOfThePathWarriors.png',
+  bloodDragonLancer: 'assets/units/bloodDragonLancer.png',
+  bloodDragonVanguard: 'assets/units/bloodDragonVanguard.png',
+  bloodDragonElder: 'assets/units/bloodDragonElder.png',
+  bloodDragonSentinel: 'assets/units/bloodDragonSentinel.png',
+  bloodDragonVarghulf: 'assets/units/bloodDragonVarghulf.png',
+  bloodKnights: 'assets/units/bloodKnights.png',
+  abyssalTerrorBD: 'assets/units/abyssalTerrorBD.png',
+  theNightTerrors: 'assets/units/theNightTerrors.png',
+  jiangWightKing: 'assets/units/jiangWightKing.png',
+  jiangNecromancer: 'assets/units/jiangNecromancer.png',
+  jiangZombieArcherPutrid: 'assets/units/jiangZombieArcherPutrid.png',
+  jiangMortisEngine: 'assets/units/jiangMortisEngine.png',
+  cthGraveGuard: 'assets/units/cthGraveGuard.png',
+  cthGraveGuardGreat: 'assets/units/cthGraveGuardGreat.png',
+  jiangGraveGuardHalberd: 'assets/units/jiangGraveGuardHalberd.png',
+  cthZombies: 'assets/units/cthZombies.png',
+  cthBlackKnightLance: 'assets/units/cthBlackKnightLance.png',
+  damnedCannon: 'assets/units/damnedCannon.png',
+  necroMortar: 'assets/units/necroMortar.png',
+  theRoseLances: 'assets/units/theRoseLances.png',
+  knightsOfBougar: 'assets/units/knightsOfBougar.png',
+  ghostsOfGrismerie: 'assets/units/ghostsOfGrismerie.png',
+  mslBlackKnightsLances: 'assets/units/mslBlackKnightsLances.png',
+  blackGrailKnights: 'assets/units/blackGrailKnights.png',
+  hellsteedKnights: 'assets/units/hellsteedKnights.png',
+  dracoleech: 'assets/units/dracoleech.png',
+  mslBrigands: 'assets/units/mslBrigands.png',
+  mslMountedBrigands: 'assets/units/mslMountedBrigands.png',
+  mslMenAtArmsPolearm: 'assets/units/mslMenAtArmsPolearm.png',
+  mslBowmenPox: 'assets/units/mslBowmenPox.png',
+  theGreyMen: 'assets/units/theGreyMen.png',
+  mslGraveGuardGreat: 'assets/units/mslGraveGuardGreat.png',
+  cursedTrebuchet: 'assets/units/cursedTrebuchet.png',
+  nagSpiritHosts: 'assets/units/nagSpiritHosts.png',
+  // Nouveaux LL Vampire Counts ajoutés par le mod Nagash (Neferata, Kalledria)
+  // + unités éthérées/goules propres à Kalledria (portholes 60×130).
+  neferata: 'assets/portraits/neferata.png',
+  kalledria: 'assets/portraits/kalledria.png',
+  dieter: 'assets/portraits/dieter.png',
+  mallobaude: 'assets/portraits/mallobaude.png',
+  ladyBlackGrail: 'assets/portraits/ladyBlackGrail.png',
+  walach: 'assets/portraits/walach.png',
+  yuwei: 'assets/portraits/yuwei.png',
+  nagFellSpectres: 'assets/units/nagFellSpectres.png',
+  nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
+  // Crypt Horrors : unité officielle vanilla (Vampire Counts), carte du jeu de base
+  cryptHorrors: 'assets/units/cryptHorrors.png',
+  // Banshee : héros officiel vanilla (Vampire Counts), portrait de campagne du jeu de base
+  banshee: 'assets/units/banshee.png',
+  mundvardTheCruel: 'assets/portraits/mundvardTheCruel.png',
+  zachariasTheEverliving: 'assets/portraits/zachariasTheEverliving.png',
+  theClawOfNagash: 'assets/units/theClawOfNagash.png',
+  frederickVanHal: 'assets/units/frederickVanHal.png',
+  whisperingNell: 'assets/units/whisperingNell.png',
+  cannibalKnight: 'assets/units/cannibalKnight.png',
+  estrothTheSilent: 'assets/units/estrothTheSilent.png',
+  monsterOfWittgenstein: 'assets/units/monsterOfWittgenstein.png',
+  theOldOneHero: 'assets/units/theOldOneHero.png',
+  baronsMen: 'assets/units/baronsMen.png'
+};

@@ -1,6 +1,6 @@
 ---
 name: fiches-tww3
-description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, ou modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots). À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, ou évoque data/*.json, js/data.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
+description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, ou modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots). À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, ou évoque data/*.json, js/units/*.js, js/core.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
 ---
 
 # Fiches builds-tww3
@@ -29,7 +29,9 @@ pas l'« Engineer ».
 
 **Chercher d'abord sur le site.** Le site couvre plus de mille clés et beaucoup d'unités sont
 partagées entre races et entre mods. Avant toute extraction, chercher le nom **et** la clé dans
-`js/data.js` et `data/*.json`. Deux fois de suite j'ai extrait un doublon en croyant à une absence.
+`js/units/*.js` et `data/*.json` — sur **tout** le dossier `js/units/`, pas seulement le module de
+la faction visée, sinon on rate justement les unités partagées. Deux fois de suite j'ai extrait un
+doublon en croyant à une absence.
 
 **Ne jamais écraser un PNG existant.** Après extraction, `git status --short` doit montrer `??` et
 jamais ` M` sur un fichier d'`assets/`. Si un ` M` apparaît : `git checkout -- <fichier>` et
@@ -230,7 +232,15 @@ powershell -File "C:\Users\Utilisateur\.claude\tools\tww\validate_fiche.ps1" -Fa
 ```
 
 Recalcule les 20 slots et vérifie que chaque clé d'icône est enregistrée et que son PNG existe.
-Il lit `js/data.js` comme du texte : **il ne détecte pas une erreur de syntaxe JavaScript.**
+Il lit `js/units/<faction>.js` comme du texte : **il ne détecte pas une erreur de syntaxe
+JavaScript.** Il ne voit que le module de la faction demandée, ce qui est exactement le bon
+périmètre — c'est le seul que la page charge.
+
+Son pendant côté site, qui balaie les 32 factions d'un coup :
+
+```bash
+powershell -File "C:\Users\Utilisateur\Projets\builds-tww3\tools\verifier-icones.ps1"
+```
 
 **Toujours sans `-Id`.** L'option existe pour un contrôle ponctuel, pas pour valider un lot : une
 correction de quantité peut avoir dérapé sur d'autres seigneurs du même fichier (voir
@@ -247,24 +257,40 @@ Ensuite le navigateur, via `preview_start` (nom `codex-static-server`, port 5173
 
 ```js
 (async()=>{
-  const t = await (await fetch('/js/data.js')).text();
-  let err = null; try { new Function(t) } catch(e) { err = e.message }
+  // les deux scripts que charge une page de faction, dans l'ordre
+  const srcs = [...document.querySelectorAll('script[src^="js/"]')].map(s => s.getAttribute('src'));
+  const jsErr = {};
+  for (const s of srcs) {
+    const t = await (await fetch(s)).text();
+    try { new Function(t) } catch(e) { jsErr[s] = e.message }
+  }
   [...document.images].forEach(i => i.loading = 'eager');
   window.scrollTo(0, document.body.scrollHeight);
   await new Promise(r => setTimeout(r, 2200));
   const imgs = [...document.images];
+  const cartes = [...document.querySelectorAll('.unit-card')];
   return JSON.stringify({
-    dataJsError: err,
+    jsErr,
+    scripts: srcs,
+    nbIcones: eval('Object.keys(unitImages).length'),
+    cartesSansImage: cartes.filter(c => !c.querySelector('.unit-icon img'))
+                           .map(c => c.querySelector('.unit-name').textContent),
     total: imgs.length,
     broken: imgs.filter(i => i.naturalWidth === 0).map(i => i.src)
   });
 })()
 ```
 
-Le contrôle `dataJsError` n'est pas optionnel : une virgule manquante dans `unitImages` vide
-**toutes** les pages du site, et ni le validateur ni `git diff` ne le montrent. Les images sont en
-`loading="lazy"` — sans forcer `eager` et sans scroller, `naturalWidth === 0` donne des faux
-positifs.
+Le contrôle `jsErr` n'est pas optionnel : une virgule manquante dans `unitImages` vide la page de
+la faction, et ni le validateur ni `git diff` ne le montrent. Les images sont en `loading="lazy"` —
+sans forcer `eager` et sans scroller, `naturalWidth === 0` donne des faux positifs.
+
+`cartesSansImage` est le contrôle propre au découpage : il attrape la clé oubliée dans
+`js/units/<faction>.js`, qui n'émet aucune erreur et laisse juste un cadre vide.
+
+**Ne pas tester `window.unitImages` :** un `const` de premier niveau crée une liaison lexicale
+globale, pas une propriété de `window`. La sonde renvoie `undefined` alors que tout va bien. Depuis
+un iframe, passer par `frame.contentWindow.eval('typeof unitImages')`.
 
 Enfin : supprimer les images extraites qui ne finissent dans aucune fiche, ainsi que leur clé.
 Sinon le dépôt accumule des assets morts.
@@ -285,8 +311,9 @@ Sinon le dépôt accumule des assets morts.
 | `scan_packs.ps1 -Match <regex>` | balayer les ~133 packs workshop en une minute, pour les cas de double provenance |
 
 Le sous-agent **`tww-assets`** (Sonnet) fait l'extraction en lot et l'enregistrement dans
-`js/data.js`. Lui donner les chemins internes exacts et les clés voulues. Il lui est interdit de
-rédiger, de commiter, ou de substituer une image.
+`js/units/<faction>.js`. Lui donner les chemins internes exacts, les clés voulues **et la faction**,
+puisque le module cible en dépend. Il lui est interdit de rédiger, de commiter, ou de substituer une
+image.
 
 Deux précautions à prendre en le lançant. **Ne jamais lui confier un remplacement d'image voulu par
 le user** : il restaurera le fichier par `git checkout` en croyant corriger un écrasement accidentel,
@@ -312,9 +339,31 @@ dans un diagnostic, sont instantanées. Le remède tient en un typage explicite 
 
 Vaut pour toute lecture binaire — packs, `.loc`, images.
 
-Le chemin d'image **déclaré dans `js/data.js` fait foi** : ne jamais déduire
+Le chemin d'image **déclaré dans `js/units/<faction>.js` fait foi** : ne jamais déduire
 `assets/units/<clé>.png`. Des héros vivent dans `assets/portraits/`, et une clé peut pointer vers un
 nom de fichier différent.
+
+**Une concaténation dans un tableau PowerShell multi-ligne se casse en plusieurs éléments.** Dans
+`@(...)`, l'expression `'texte ' + [char]0x2014 + ' suite'` ne produit pas une chaîne mais **trois**
+éléments distincts : le retour à la ligne du tableau sépare l'expression. Écrite sur une seule ligne
+hors tableau, la même concaténation fonctionne — d'où un test isolé qui rassure à tort. Après
+le `-join` d'écriture, le caractère se retrouve **seul sur sa ligne**, ce qui a injecté un tiret nu
+dans 36 fichiers JS générés et cassé leur syntaxe. Le symptôme côté navigateur est un laconique
+`SyntaxError: Invalid or unexpected token`, sans numéro de ligne exploitable.
+
+Le remède : passer par l'interpolation, qui ne peut pas être scindée.
+
+```powershell
+$td = [string][char]0x2014
+$lignes = @(
+  'ligne A',
+  "ligne B $td suite B"   # une seule chaîne, comme voulu
+)
+```
+
+Vaut pour tout caractère construit par `[char]` — tirets cadratins, guillemets typographiques,
+apostrophe U+2019. Et le contrôle qui l'aurait attrapé tout de suite : après génération, chercher
+les lignes dont le contenu se réduit au caractère seul.
 
 ---
 
