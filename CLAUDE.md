@@ -61,6 +61,17 @@ git config core.hooksPath .githooks
 Contourner ponctuellement : `git commit --no-verify`. Légitime pour sauvegarder un travail
 volontairement incomplet ; jamais pour passer outre une vraie erreur.
 
+Si la modification touche aux **effets** ou au **build** d'une fiche, lancer en plus le contrôle
+informatif — il ne bloque rien, mais il est le seul à lire le champ `effects` :
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-effets.ps1 -Faction <nom>
+```
+
+Il signale les unités nommées dans les effets et absentes du build. Une piste n'est pas une
+erreur : un effet peut nommer une unité pour la **déconseiller**. Mais un « Régiment favori » qui
+désigne un régiment absent mérite toujours un regard — c'est un bonus qui ne s'applique à rien.
+
 Si la modification touche au front (HTML / CSS / JS) :
 - La console du navigateur est vierge sur un onglet neuf.
 - Aucune carte d'unité sans image, aucune image cassée (`naturalWidth === 0`).

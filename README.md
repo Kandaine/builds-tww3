@@ -153,9 +153,9 @@ le double de la largeur d'affichage maximale.
 
 ## Validation
 
-Quatre scripts vérifient ce que ni le navigateur ni `git diff` ne signalent — clé d'icône absente,
-fichier image manquant, total d'emplacements faux, fonction livrée sans commentaire, coquille de
-faction qui a dérivé du gabarit :
+Quatre scripts **bloquants** vérifient ce que ni le navigateur ni `git diff` ne signalent — clé
+d'icône absente, fichier image manquant, total d'emplacements faux, fonction livrée sans
+commentaire, coquille de faction qui a dérivé du gabarit :
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-icones.ps1
@@ -163,6 +163,27 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-commentaires.
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\generer-coquilles.ps1 -Verifier
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem data\*.json | ForEach-Object { & .\tools\validate_fiche.ps1 -Faction $_.BaseName }"
 ```
+
+Un cinquième est **informatif**, à lancer quand on touche aux effets ou au build d'une fiche :
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-effets.ps1
+```
+
+> Il confronte le champ `effects` au `build` et signale les unités **nommées dans les effets mais
+> absentes de l'armée** — un bonus qui ne s'applique à rien. C'est le seul contrôle qui lit
+> `effects`, et il a été écrit après avoir découvert que Malakai Makaisson annonçait « accès aux
+> bâtiments du dirigeable Spirit of Grungni » depuis le premier commit du site sans jamais aligner
+> le vaisseau.
+>
+> Il cherche dans `tools/unites-connues.txt`, les 1 550 noms d'unités du jeu de base extraits de
+> `local_en.pack`. **Ce fichier est dans le dépôt parce que la CI tourne sans installation du
+> jeu** ; le régénérer après un DLC, la procédure est en tête du fichier.
+>
+> **Il ne bloque pas, et c'est voulu** : un effet peut nommer une unité pour la *déconseiller* —
+> Thyk Skolsson subit « +100 % de coût pour les Longbeards », et c'est précisément pour cela qu'il
+> n'en aligne pas. Une piste demande un regard, pas une correction. `-Strict` le fait sortir en 1
+> pour un usage ponctuel.
 
 > `verifier-commentaires.ps1` contrôle qu'un commentaire **existe** au-dessus de chaque fonction et
 > de chaque déclaration de premier niveau. Il ne peut pas contrôler qu'il est **vrai** — un
