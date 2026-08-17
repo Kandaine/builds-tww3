@@ -127,13 +127,19 @@ le double de la largeur d'affichage maximale.
 
 ## Validation
 
-Deux scripts vérifient ce que ni le navigateur ni `git diff` ne signalent — clé d'icône absente,
-fichier image manquant, total d'emplacements faux :
+Trois scripts vérifient ce que ni le navigateur ni `git diff` ne signalent — clé d'icône absente,
+fichier image manquant, total d'emplacements faux, fonction livrée sans commentaire :
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-icones.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-commentaires.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem data\*.json | ForEach-Object { & .\tools\validate_fiche.ps1 -Faction $_.BaseName }"
 ```
+
+> `verifier-commentaires.ps1` contrôle qu'un commentaire **existe** au-dessus de chaque fonction et
+> de chaque déclaration de premier niveau. Il ne peut pas contrôler qu'il est **vrai** — un
+> commentaire laissé au-dessus de la mauvaise fonction lui paraît conforme. Il attrape l'oubli,
+> jamais le mensonge.
 
 Ils sont lancés automatiquement par deux filets :
 

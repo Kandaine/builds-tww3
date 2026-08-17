@@ -255,11 +255,6 @@ function normalize(str){
   return (str || '').normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
 }
 
-// Vérifie si un seigneur `l` correspond à une requête de recherche texte
-// libre `query`. Si la requête est vide, tout le monde correspond (pas de
-// filtre). Sinon, on concatène les champs pertinents du seigneur (nom,
-// épithète, faction précise, nom de faction générique) en une seule chaîne
-// normalisée, et on vérifie si la requête normalisée y apparaît.
 // Rassemble les noms d'unites d'un build : le seigneur, ses heros, son armee,
 // et le cas particulier de Krell (invoque en bataille plutot que recrute).
 // Renvoie un tableau de chaines, sans doublon ni valeur vide.
@@ -294,6 +289,12 @@ function texteCherchable(l){
   return l._cherchable;
 }
 
+// Vrai si le seigneur `l` correspond a la recherche texte `query`. Une requete
+// vide ne filtre rien : tout le monde correspond.
+//
+// La comparaison porte sur texteCherchable(l) ci-dessus, qui couvre l'identite
+// du seigneur ET les unites de son build — c'est la que se trouve la reponse a
+// « qu'est-ce que cette recherche interroge, au juste ».
 function matchesSearch(l, query){
   if(!query) return true;
   return texteCherchable(l).includes(normalize(query));

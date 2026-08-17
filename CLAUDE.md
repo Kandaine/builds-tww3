@@ -67,6 +67,44 @@ Si la modification touche au front (HTML / CSS / JS) :
 - Une page de faction ne charge que `js/core.js`, son `js/units/<faction>.js` et `js/app.js`.
 - Un fichier JS modifié parse : une virgule manquante vide la page sans erreur visible dans `git diff`.
 
+## Le code livré est commenté — critère bloquant
+
+Ce site n'a pas d'équipe. Ce qui n'est pas écrit dans le fichier est perdu : ni toi ni moi ne
+nous souviendrons dans six mois pourquoi une variable existe ou pourquoi une valeur vaut `.8`
+et pas `.45`. **Une fonctionnalité livrée sans commentaire n'est pas livrée.**
+
+À vérifier avant de me dire qu'une tâche est finie :
+
+- **Toute fonction a un commentaire au-dessus d'elle**, qui dit ce qu'elle fait ET ce que ses
+  paramètres signifient. Aucune exception, y compris pour les fonctions de trois lignes.
+- **Toute décision non évidente porte son POURQUOI**, pas seulement son quoi. « `replaceState`
+  et non `pushState` » sans la raison ne sert à rien ; avec la raison, personne ne la
+  réintroduira par erreur.
+- **Tout chiffre écrit dans un commentaire a été mesuré**, et le commentaire dit comment. Un
+  chiffre non mesuré est une valeur inventée, ce qui est interdit partout ailleurs sur ce
+  projet et ne devient pas acceptable parce que c'est « juste un commentaire ».
+- **Un piège rencontré est consigné à l'endroit où on retombera dedans**, pas dans le message
+  de commit que personne ne relit.
+- **Les nouveaux sélecteurs CSS** suivent la même règle que les fonctions.
+
+Les trois premiers points sont vérifiés mécaniquement, sur tout le JavaScript écrit à la main
+et sur les 32 modules d'icônes :
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-commentaires.ps1
+```
+
+Il tourne dans le hook `pre-commit` dès qu'un `js/**.js` est touché — périmètre plus large que
+celui des fiches, parce que modifier `js/app.js` ne peut pas casser un total de slots mais peut
+très bien y laisser une fonction non documentée — et dans la GitHub Action, en premier.
+
+**La présence d'un commentaire ne prouve rien — c'est sa justesse qui compte, et aucun script
+ne sait la vérifier.** Le 17/08/2026, en insérant des fonctions dans `js/core.js`, j'ai laissé
+le commentaire de `matchesSearch` au-dessus de `nomsDUnites` : il décrivait la mauvaise fonction
+*et* l'ancien comportement. `verifier-commentaires.ps1` l'aurait déclaré conforme — la fonction
+avait bien un commentaire au-dessus d'elle. Après tout déplacement ou insertion de fonction,
+relire ce qui se trouve juste au-dessus de chacune reste un geste humain.
+
 Si la modification touche aux images :
 - Bannières : 1840 px de large au maximum, jamais d'agrandissement.
 - Cartes et portraits : dimensions **inchangées** — ils sont déjà affichés agrandis.

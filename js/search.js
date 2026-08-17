@@ -83,6 +83,9 @@ function lireEtatDepuisURL(){
   return { q: p.get('q') || '', faction: connue ? faction : 'all' };
 }
 
+// Reflète l'état courant (`searchQuery`, `activeGroup`) dans la barre
+// d'adresse. Appelée à chaque rendu — voir le bloc ci-dessus pour le choix de
+// `replaceState`, qui est le point à comprendre avant de toucher à ceci.
 function ecrireEtatDansURL(){
   const p = new URLSearchParams();
   if(searchQuery) p.set('q', searchQuery);

@@ -5,8 +5,10 @@
 #
 # POURQUOI. Les erreurs que ces scripts attrapent sont silencieuses : une clé
 # d'icône absente du module de sa faction affiche une carte sans image, sans
-# message ; un total de slots faux ne se voit nulle part. Ni le navigateur ni
-# `git diff` ne les signalent. Ce hook remplace la discipline personnelle.
+# message ; un total de slots faux ne se voit nulle part ; une fonction livrée
+# sans commentaire ne gêne personne aujourd'hui et coûte une demi-journée dans
+# six mois. Ni le navigateur ni `git diff` ne les signalent. Ce hook remplace
+# la discipline personnelle.
 #
 # INSTALLATION (une seule fois, à lancer à la racine du dépôt) :
 #     git config core.hooksPath .githooks
@@ -33,20 +35,55 @@ FICHIERS=$(git diff --cached --name-only --diff-filter=ACM)
 # seigneurs, les modules d'images, et le catalogue des factions.
 PERTINENTS=$(echo "$FICHIERS" | grep -E '^(data/.+\.json|js/units/.+\.js|js/core\.js)$')
 
+# Tout JavaScript touché déclenche le contrôle des commentaires. Le périmètre
+# est plus large que celui des fiches : modifier js/app.js ne peut pas casser
+# un total de slots, mais peut très bien y laisser une fonction non documentée.
+JS_TOUCHE=$(echo "$FICHIERS" | grep -E '^js/.+\.js$')
+
 # Un commit de CSS, de documentation ou d'images ne paie rien : on sort tout
 # de suite. C'est ce qui garde le hook rapide au quotidien.
-if [ -z "$PERTINENTS" ]; then
+if [ -z "$PERTINENTS" ] && [ -z "$JS_TOUCHE" ]; then
     exit 0
 fi
 
 echo ""
-echo "── Validation des fiches avant commit ──────────────────────────"
+echo "── Validation avant commit ─────────────────────────────────────"
 
 # -NoProfile : démarre PowerShell sans charger le profil utilisateur.
 # Plus rapide, et surtout la validation ne dépend pas de la configuration
 # personnelle de la machine.
 PS="powershell -NoProfile -ExecutionPolicy Bypass -File"
 ECHECS=0
+
+# --- 0. Commentaires du JavaScript écrit à la main ------------------------
+# Placé en premier parce qu'il est quasi instantané et qu'il n'a besoin
+# d'aucune donnée : autant renvoyer ce reproche-là avant de faire attendre.
+if [ -n "$JS_TOUCHE" ]; then
+    echo "  → commentaires du JavaScript…"
+    SORTIE=$($PS tools/verifier-commentaires.ps1 2>&1)
+    if [ $? -ne 0 ]; then
+        echo ""
+        echo "  ÉCHEC — commentaires :"
+        echo "$SORTIE" | grep -E "SANS COMMENTAIRE|SANS EN-TETE"
+        ECHECS=1
+    fi
+fi
+
+# Le reste ne concerne que les fiches : inutile d'y entrer si le commit n'en
+# touche aucune.
+if [ -z "$PERTINENTS" ]; then
+    if [ "$ECHECS" -ne 0 ]; then
+        echo ""
+        echo "───────────────────────────────────────────────────────────────"
+        echo "  COMMIT ANNULÉ. Corrige les erreurs ci-dessus, puis recommence."
+        echo "───────────────────────────────────────────────────────────────"
+        echo ""
+        exit 1
+    fi
+    echo "── Validation OK ───────────────────────────────────────────────"
+    echo ""
+    exit 0
+fi
 
 # --- 1. Cohérence globale des icônes (32 factions, ~3 s) ------------------
 # Ce script est global par nature : il lit FACTION_GROUPS dans js/core.js,

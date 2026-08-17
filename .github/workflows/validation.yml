@@ -46,6 +46,15 @@ jobs:
       # `shell: powershell` = Windows PowerShell 5.1, la même version que sur
       # la machine du user. PowerShell 7 (pwsh) est aussi disponible sur le
       # runner, mais on veut le même interpréteur qu'en local.
+      # Placé en premier : c'est le contrôle le plus rapide, et le seul qui
+      # n'ouvre aucun fichier de données. Autant faire remonter ce reproche-là
+      # avant les six secondes de validation des fiches.
+      - name: Commentaires du JavaScript
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          .\tools\verifier-commentaires.ps1
+
       - name: Cohérence des icônes et présence des images
         shell: powershell
         run: |
