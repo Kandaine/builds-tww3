@@ -1,0 +1,22 @@
+{
+  "_lisez-moi": [
+    "Note d'origine affichée en commentaire dans la coquille HTML de la faction,",
+    "pour les factions qui n'existent pas dans le jeu de base. Utilisé UNIQUEMENT",
+    "par tools/generer-coquilles.ps1 ; aucune page ne lit ce fichier.",
+    "",
+    "Il vit ici et non dans FACTION_GROUPS (js/core.js) pour ne pas faire",
+    "télécharger aux 33 pages une donnée qu'aucune n'utilise à l'exécution.",
+    "",
+    "Une faction absente de cette liste n'a simplement pas de note. La clé est",
+    "l'identifiant de faction, celui de FACTION_GROUPS."
+  ],
+
+  "albion": "Albion est une faction ajoutée par un mod (OvN Lost Factions).",
+  "araby": "Araby est une faction ajoutée par un mod (OvN Lost Factions).",
+  "fimir": "Fimir est une faction ajoutée par un mod (OvN Lost Factions).",
+  "gnoblar-hordes": "Gnoblar Hordes est une faction ajoutée par un mod (« The Unwashed Masses »).",
+  "hung": "The Hung est une faction ajoutée par un mod (Steppe Lords — The Hung).",
+  "jade-blooded-vampires": "Jade-Blooded Vampires est une faction ajoutée par un mod (vampires de Cathay).",
+  "southern-realms": "Southern Realms est une faction ajoutée par un mod (Tilée, Estalie, Border Princes).",
+  "undead-legions": "Undead Legions est une faction ajoutée par un mod (Nagash — Legions of Nagashizzar)."
+}

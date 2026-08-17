@@ -10,11 +10,12 @@
   dans #page-content) est injecté par js/app.js au chargement, à partir des
   données JSON de data/ (voir js/core.js -> loadLords()). Ce fichier HTML ne
   contient donc que la coquille statique de la page.
+{{NOTE}}
 -->
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dark Elves — Total War: WARHAMMER III</title>
+<title>{{LABEL}} — Total War: WARHAMMER III</title>
 <link rel="icon" href="assets/favicon.ico">
 <!-- Polices : appelées ici et non depuis la feuille de style. Un @import y
      sérialisait les requêtes (feuille → import → polices, soit trois
@@ -38,7 +39,7 @@
 <div class="app">
   <nav class="sidebar" aria-label="Navigation des seigneurs">
     <a class="back-link" href="index.html">&larr; Retour à la recherche</a>
-    <div class="sidebar-title">Dark Elves</div>
+    <div class="sidebar-title">{{LABEL}}</div>
     <div class="sidebar-sub">Legendary Lords</div>
     <!-- Le sélecteur de faction et le bouton de dépliage sont injectés ici par
          js/app.js — voir construireSelecteurFaction() et construireBouton(). -->
@@ -51,14 +52,14 @@
      data/<faction>.json charger pour cette page — voir loadLords() dans
      js/core.js. Doit correspondre à l'id de faction utilisé dans
      FACTION_GROUPS (js/core.js) et au nom du fichier data/*.json. -->
-<script>const PAGE_FACTION = 'dark-elves';</script>
+<script>const PAGE_FACTION = '{{ID}}';</script>
 <!-- Ordre de chargement obligatoire, chaque fichier utilisant le précédent :
        1. js/core.js          — catalogue des factions + utilitaires partagés
-       2. js/units/dark-elves.js — images des unités de CETTE faction uniquement
+       2. js/units/{{ID}}.js — images des unités de CETTE faction uniquement
        3. js/app.js           — rendu de la page
      Cet ordre vaut pour les 32 pages de faction. -->
 <script src="js/core.js"></script>
-<script src="js/units/dark-elves.js"></script>
+<script src="js/units/{{ID}}.js"></script>
 <script src="js/app.js"></script>
 
 </body>

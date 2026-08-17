@@ -7,36 +7,36 @@
 
 ## ⚠ À LIRE EN PREMIER — ce document n'est plus un diagnostic
 
-Tout ce qui suit décrit le site **avant la refonte V2**, au commit `763f880`. **15 des 19 constats
-sont désormais clos.** Les sections 3, 4 et 6 ne décrivent donc PAS le site actuel : elles
-décrivent ce qui a été corrigé.
+Tout ce qui suit décrit le site **avant la refonte V2**, au commit `763f880`. **17 des 19 constats
+sont clos, et les 2 derniers sont écartés : l'audit ne porte plus aucun reste-à-faire.** Les
+sections 3, 4 et 6 ne décrivent donc PAS le site actuel : elles décrivent ce qui a été corrigé.
 
-Le document est conservé pour trois raisons, et non par habitude :
+Le document est conservé pour deux raisons, et non par habitude :
 
-1. **4 constats sont encore ouverts** — ils constituent le vrai reste-à-faire du site ;
-2. **la section 1 (« ce qui est déjà solide ») reste valable** : c'est le relevé de ce qu'une
+1. **la section 1 (« ce qui est déjà solide ») reste valable** : c'est le relevé de ce qu'une
    refonte ne doit pas casser, et il a servi exactement à ça ;
-3. **la méthode de mesure** décrite plus bas rend tous ces chiffres refaisables — c'est ce qui
+2. **la méthode de mesure** décrite plus bas rend tous ces chiffres refaisables — c'est ce qui
    permet de vérifier une affirmation plutôt que de la croire.
 
-### Les 4 constats encore ouverts
+### Les 2 constats écartés — décision du 17/08/2026
 
-| # | Constat | Pourquoi il tient encore |
+Écartés ne veut pas dire oubliés : ils ont été examinés, chiffrés, et la décision a été de ne pas
+les traiter. Si le contexte change, les rouvrir demande de revenir sur l'hypothèse citée.
+
+| # | Constat | Pourquoi il est écarté |
 |---|---|---|
-| **2.1** | Aucun passage direct d'une faction à l'autre | 0 fiche sur 32 porte une barre d'onglets |
-| **5.2** | L'accueil télécharge 98 % de données qu'il n'affiche pas | 2 536 Ko de JSON, inchangé. Y remédier impose un index généré, donc une étape de build — un choix d'architecture, pas une correction |
-| **7.2** | Duplication des 32 coquilles HTML | 32 fichiers maintenus à la main. C'est ce qui a fait dériver 3 couleurs de faction sans qu'aucun signal ne le montre |
-| **7.3** | Métadonnées absentes | 0/33 `meta description`, 0/33 Open Graph. Un lien du site partagé n'affiche aucun aperçu |
+| **5.2** | L'accueil télécharge 98 % de données qu'il n'affiche pas | 2 536 Ko de JSON, inchangés. Y remédier impose un index généré, donc une **étape de build** que le projet a toujours refusée. Et l'argument qui la justifierait — « un visiteur sur mobile télécharge ce qu'on lui envoie » — ne tient pas ici : **le site n'a pas de visiteurs, c'est une référence personnelle**. À rouvrir le jour où il serait diffusé |
+| **7.3** | Métadonnées absentes | Open Graph n'a d'intérêt que si des liens circulent. Ce n'est pas le cas. S'y ajoutent deux limites mesurées : le site n'est indexé nulle part, et un lien vers un seigneur précis (`norsca.html?id=throgg`) afficherait de toute façon l'aperçu générique de la faction, le `?id=` n'existant que côté navigateur. Le vrai obstacle au référencement n'est pas la balise absente, c'est que le HTML servi ne contient aucun texte |
 
 Reste également **5.3**, qui n'est pas un constat mais un aveu : ni les Core Web Vitals, ni le rendu
 sur connexion lente n'ont été mesurés. Toujours vrai. Aucun test avec un vrai lecteur d'écran n'a
 été mené non plus, ni avant ni depuis.
 
-### Les 15 constats clos
+### Les 17 constats clos
 
 | Fermés par la V2 des fiches (`46ed217`) | Fermés par la V2 de l'accueil (`4ebc835`) | Fermés depuis |
 |---|---|---|
-| 3.1 échelle typographique · 3.2 échelle d'espacement · 3.3 cinq familles de polices · 3.4 règles redéfinies · 4.1 défilement avant contenu · 4.3 cible tactile · 5.1 polices sérialisées · 6.2 `.unit-qty` sous le seuil · 6.3 hiérarchie de titres · 6.5 style de focus | 4.2 points de rupture *(avec 46ed217)* · 6.1 navigation clavier *(avec 46ed217)* · 6.4 `aria-current` et `aria-live` *(avec 46ed217)* | 2.2 volume par faction · 2.3 état de recherche partageable |
+| 3.1 échelle typographique · 3.2 échelle d'espacement · 3.3 cinq familles de polices · 3.4 règles redéfinies · 4.1 défilement avant contenu · 4.3 cible tactile · 5.1 polices sérialisées · 6.2 `.unit-qty` sous le seuil · 6.3 hiérarchie de titres · 6.5 style de focus | 4.2 points de rupture *(avec 46ed217)* · 6.1 navigation clavier *(avec 46ed217)* · 6.4 `aria-current` et `aria-live` *(avec 46ed217)* | 2.2 volume par faction · 2.3 état de recherche partageable · **2.1 passage d'une faction à l'autre** (`0e6add9`) · **7.2 duplication des coquilles** |
 
 ---
 

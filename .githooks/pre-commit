@@ -40,9 +40,15 @@ PERTINENTS=$(echo "$FICHIERS" | grep -E '^(data/.+\.json|js/units/.+\.js|js/core
 # un total de slots, mais peut très bien y laisser une fonction non documentée.
 JS_TOUCHE=$(echo "$FICHIERS" | grep -E '^js/.+\.js$')
 
+# Les coquilles de faction sont GÉNÉRÉES depuis tools/gabarit-faction.html.
+# On revérifie dès que l'une d'elles, le gabarit, les notes ou le catalogue des
+# factions bougent — c'est ce qui empêche une édition manuelle de réintroduire
+# la dérive que le générateur vient de supprimer.
+COQUILLES=$(echo "$FICHIERS" | grep -E '^([a-z_]+\.html|tools/gabarit-faction\.html|tools/notes-factions\.json|js/core\.js)$')
+
 # Un commit de CSS, de documentation ou d'images ne paie rien : on sort tout
 # de suite. C'est ce qui garde le hook rapide au quotidien.
-if [ -z "$PERTINENTS" ] && [ -z "$JS_TOUCHE" ]; then
+if [ -z "$PERTINENTS" ] && [ -z "$JS_TOUCHE" ] && [ -z "$COQUILLES" ]; then
     exit 0
 fi
 
@@ -65,6 +71,18 @@ if [ -n "$JS_TOUCHE" ]; then
         echo ""
         echo "  ÉCHEC — commentaires :"
         echo "$SORTIE" | grep -E "SANS COMMENTAIRE|SANS EN-TETE"
+        ECHECS=1
+    fi
+fi
+
+# --- 0 bis. Les coquilles correspondent-elles toujours au gabarit ? ---------
+if [ -n "$COQUILLES" ]; then
+    echo "  → coquilles de faction vs gabarit…"
+    SORTIE=$($PS tools/generer-coquilles.ps1 -Verifier 2>&1)
+    if [ $? -ne 0 ]; then
+        echo ""
+        echo "  ÉCHEC — coquilles :"
+        echo "$SORTIE" | grep -E '\.html|Regenerer'
         ECHECS=1
     fi
 fi

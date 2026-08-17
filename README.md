@@ -91,9 +91,21 @@ La page d'accueil ne charge **pas** `fiches.css` : ni les 32 palettes de faction
 en deux colonnes ne lui servent, soit 43 Ko qu'elle ne télécharge pas. À l'inverse, dupliquer les
 tokens dans deux fichiers les aurait fait diverger sans qu'aucun signal ne le montre.
 
-**Les 32 pages de faction sont quasi identiques.** Chacune charge les deux feuilles, déclare son
-identifiant, puis charge trois scripts — dans cet ordre, qui compte : chaque fichier utilise le
-précédent, et `accueil.css` comme `fiches.css` consomment les tokens de `socle.css`.
+**Les 32 pages de faction sont GÉNÉRÉES — ne pas les éditer à la main.** Elles sortent toutes de
+`tools/gabarit-faction.html`, reconstruites par :
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\generer-coquilles.ps1
+```
+
+Le script relit les factions dans `FACTION_GROUPS` (`js/core.js`), donc ajouter une faction au site
+ne demande rien de plus ici. La seule variation par faction est la note d'origine des factions
+moddées, dans `tools/notes-factions.json`. Toute modification de coquille passe par le gabarit,
+suivie d'une régénération ; le hook et la CI rejettent une coquille qui aurait dérivé.
+
+Chacune charge les deux feuilles, déclare son identifiant, puis charge trois scripts — dans cet
+ordre, qui compte : chaque fichier utilise le précédent, et `accueil.css` comme `fiches.css`
+consomment les tokens de `socle.css`.
 
 ```html
 <link rel="stylesheet" href="css/socle.css">
@@ -141,12 +153,14 @@ le double de la largeur d'affichage maximale.
 
 ## Validation
 
-Trois scripts vérifient ce que ni le navigateur ni `git diff` ne signalent — clé d'icône absente,
-fichier image manquant, total d'emplacements faux, fonction livrée sans commentaire :
+Quatre scripts vérifient ce que ni le navigateur ni `git diff` ne signalent — clé d'icône absente,
+fichier image manquant, total d'emplacements faux, fonction livrée sans commentaire, coquille de
+faction qui a dérivé du gabarit :
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-icones.ps1
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-commentaires.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\generer-coquilles.ps1 -Verifier
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem data\*.json | ForEach-Object { & .\tools\validate_fiche.ps1 -Faction $_.BaseName }"
 ```
 

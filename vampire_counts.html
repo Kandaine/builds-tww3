@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <!--
+  CE FICHIER EST GÉNÉRÉ. Ne pas l'éditer à la main : la prochaine exécution de
+  tools\generer-coquilles.ps1 écraserait la modification. Modifier plutôt
+  tools\gabarit-faction.html, puis régénérer les 32 pages.
+
   Page de faction : liste + fiche détaillée des seigneurs légendaires de
   cette faction. Tout le contenu dynamique (liste dans #lord-list, détail
   dans #page-content) est injecté par js/app.js au chargement, à partir des
@@ -36,6 +40,8 @@
     <a class="back-link" href="index.html">&larr; Retour à la recherche</a>
     <div class="sidebar-title">Vampire Counts</div>
     <div class="sidebar-sub">Legendary Lords</div>
+    <!-- Le sélecteur de faction et le bouton de dépliage sont injectés ici par
+         js/app.js — voir construireSelecteurFaction() et construireBouton(). -->
     <div id="lord-list"></div>
   </nav>
   <main class="page" id="page-content"></main>

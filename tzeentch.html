@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 <!--
+  CE FICHIER EST GÉNÉRÉ. Ne pas l'éditer à la main : la prochaine exécution de
+  tools\generer-coquilles.ps1 écraserait la modification. Modifier plutôt
+  tools\gabarit-faction.html, puis régénérer les 32 pages.
+
   Page de faction : liste + fiche détaillée des seigneurs légendaires de
   cette faction. Tout le contenu dynamique (liste dans #lord-list, détail
   dans #page-content) est injecté par js/app.js au chargement, à partir des
@@ -12,12 +16,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Tzeentch — Total War: WARHAMMER III</title>
 <link rel="icon" href="assets/favicon.ico">
-<!-- Polices : appelees ici et non depuis la feuille de style, pour eviter la
-     serialisation d'un @import. Deux familles au lieu de cinq. -->
+<!-- Polices : appelées ici et non depuis la feuille de style. Un @import y
+     sérialisait les requêtes (feuille → import → polices, soit trois
+     allers-retours). Les deux `preconnect` ouvrent la connexion vers Google
+     pendant que le reste se charge, et le `<link>` part en parallèle du CSS.
+     Deux familles demandées au lieu de cinq : Space Grotesk et Inter n'étaient
+     utilisées par aucune page de faction, et Cormorant Upright coûtait 33 Ko
+     pour la seule épithète du seigneur. Seules les graisses réellement
+     présentes à l'écran sont demandées. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 
+<!-- Ordre obligatoire : socle.css (tokens, base) puis fiches.css, qui les
+     consomme. Les 32 pages de faction chargent ces deux fichiers. -->
 <link rel="stylesheet" href="css/socle.css">
 <link rel="stylesheet" href="css/fiches.css">
 </head>
@@ -28,6 +40,8 @@
     <a class="back-link" href="index.html">&larr; Retour à la recherche</a>
     <div class="sidebar-title">Tzeentch</div>
     <div class="sidebar-sub">Legendary Lords</div>
+    <!-- Le sélecteur de faction et le bouton de dépliage sont injectés ici par
+         js/app.js — voir construireSelecteurFaction() et construireBouton(). -->
     <div id="lord-list"></div>
   </nav>
   <main class="page" id="page-content"></main>
@@ -41,7 +55,8 @@
 <!-- Ordre de chargement obligatoire, chaque fichier utilisant le précédent :
        1. js/core.js          — catalogue des factions + utilitaires partagés
        2. js/units/tzeentch.js — images des unités de CETTE faction uniquement
-       3. js/app.js           — rendu de la page -->
+       3. js/app.js           — rendu de la page
+     Cet ordre vaut pour les 32 pages de faction. -->
 <script src="js/core.js"></script>
 <script src="js/units/tzeentch.js"></script>
 <script src="js/app.js"></script>

@@ -55,6 +55,15 @@ jobs:
           Set-ExecutionPolicy Bypass -Scope Process -Force
           .\tools\verifier-commentaires.ps1
 
+      # -Verifier n'écrit rien : il échoue si une coquille de faction ne
+      # correspond plus à tools/gabarit-faction.html. C'est ce qui empêche une
+      # édition manuelle de réintroduire la dérive entre les 32 fichiers.
+      - name: Coquilles de faction conformes au gabarit
+        shell: powershell
+        run: |
+          Set-ExecutionPolicy Bypass -Scope Process -Force
+          .\tools\generer-coquilles.ps1 -Verifier
+
       - name: Cohérence des icônes et présence des images
         shell: powershell
         run: |
