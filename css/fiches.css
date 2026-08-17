@@ -1288,6 +1288,68 @@
   font-style: italic;
 }
 
+/* --- Seigneur précédent / suivant, en bas de fiche ---------------------------
+   Deux colonnes fixes plutôt qu'un `space-between` : les emplacements existent
+   même quand un voisin manque, si bien que « Suivant » reste à droite sur la
+   première fiche au lieu de sauter à gauche. Sur téléphone les deux tiennent
+   côte à côte, chacun sur la moitié de la largeur — c'est là que cette
+   navigation sert le plus, la liste latérale y étant repliée. */
+.fiche-nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--esp-3);
+  margin-top: var(--esp-7);
+  padding-top: var(--esp-5);
+  border-top: 1px solid var(--border);
+}
+
+.fiche-nav-lien{
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-1);
+  /* 44px : seuil de cible tactile, comme partout ailleurs sur le site. */
+  min-height: 44px;
+  justify-content: center;
+  padding: var(--esp-3);
+  border: 1px solid var(--border);
+  border-radius: var(--rayon-doux);
+  background: var(--panel);
+  text-decoration: none;
+  transition: border-color .2s ease, background .2s ease;
+}
+.fiche-nav-lien:hover{
+  border-color: var(--ornement);
+  background: var(--panel-light);
+}
+
+/* « Suivant » est aligné à droite : le sens de lecture rend la direction
+   lisible sans avoir à déchiffrer la flèche. */
+.fiche-nav-next{ text-align: right; }
+
+.fiche-nav-sens{
+  font-family: var(--police-titre);
+  font-size: var(--txt-micro);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  /* --texte-secondaire et non un ornement : c'est du texte à lire, et la
+     famille TEXTE est la seule dont le contraste est garanti sur les 32
+     thèmes. Voir la règle en section 3. */
+  color: var(--texte-secondaire);
+}
+.fiche-nav-nom{
+  font-family: var(--police-titre);
+  font-size: var(--txt-normal);
+  color: var(--texte);
+  line-height: 1.3;
+}
+
+/* Le titre de fiche reçoit le focus par script après un changement de
+   seigneur, pour que le nom soit annoncé. Il ne doit pas pour autant afficher
+   un anneau de focus, qui n'aurait aucun sens sur un titre : `:focus-visible`
+   dans socle.css ne se déclenche pas sur un focus programmatique, mais on
+   neutralise explicitement le cas pour ne pas dépendre de ce détail. */
+.lord-title:focus{ outline: none; }
+
 /* ----------------------------------------------------------------------------
    10. ÉCRANS PLUS LARGES — enrichissements successifs
 

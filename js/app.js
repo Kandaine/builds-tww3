@@ -305,7 +305,81 @@ function renderPage(){
       </div>
       <p class="note">${l.build.note}</p>
     </section>
+
+    ${navVoisinsHtml()}
   `;
+
+  brancherNavVoisins();
+}
+
+// ---------------------------------------------------------------------------
+// NAVIGATION VERS LE SEIGNEUR PRÉCÉDENT ET SUIVANT, en bas de fiche.
+//
+// POURQUOI EN BAS. C'est l'endroit où l'on se trouve quand on a fini de lire :
+// le moment naturel pour passer au suivant. En haut, elle ferait doublon avec
+// la liste latérale, qui est déjà là et permet d'aller n'importe où.
+//
+// POURQUOI SANS BOUCLAGE. Le dernier seigneur n'enchaîne pas sur le premier.
+// Un parcours qui reboucle sans le dire donne l'impression d'avoir manqué une
+// fiche ; s'arrêter à la fin dit clairement qu'on a tout vu. Les deux
+// emplacements existent quand même dans la grille, sinon « Suivant » sauterait
+// à gauche sur la première fiche.
+// ---------------------------------------------------------------------------
+function navVoisinsHtml(){
+  const i = lords.findIndex(l => l.id === activeId);
+  if(i === -1 || lords.length < 2) return '';
+
+  const lien = (voisin, sens, libelle, fleche) => {
+    if(!voisin) return '<span></span>';
+    // Un vrai <a href> : il fonctionne au clavier, s'ouvre dans un nouvel
+    // onglet avec Ctrl+clic, et reste utilisable si le JavaScript échoue.
+    // `rel` dit au navigateur et aux lecteurs d'écran de quel sens il s'agit.
+    return `
+      <a class="fiche-nav-lien fiche-nav-${sens}" rel="${sens}"
+         href="?id=${encodeURIComponent(voisin.id)}" data-id="${voisin.id}"
+         aria-label="${libelle} : ${voisin.name}">
+        <span class="fiche-nav-sens" aria-hidden="true">${fleche} ${libelle}</span>
+        <span class="fiche-nav-nom">${voisin.name}</span>
+      </a>`;
+  };
+
+  return `
+    <nav class="fiche-nav" aria-label="Seigneur précédent ou suivant">
+      ${lien(lords[i - 1], 'prev', 'Précédent', '←')}
+      ${lien(lords[i + 1], 'next', 'Suivant', '→')}
+    </nav>
+  `;
+}
+
+// Rend les deux liens actifs sans recharger la page, comme le fait la liste
+// latérale. Appelée après chaque rendu, puisque innerHTML détruit les liens
+// précédents et avec eux leurs écouteurs.
+function brancherNavVoisins(){
+  document.querySelectorAll('.fiche-nav-lien').forEach(el => {
+    el.addEventListener('click', (e) => {
+      // On laisse le navigateur faire si un nouvel onglet est demandé.
+      if(e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
+      activeId = el.dataset.id;
+      history.replaceState(null, '', `?id=${encodeURIComponent(activeId)}`);
+      render();
+
+      // Sans cette remontée, on resterait à la hauteur où l'on avait cliqué —
+      // c'est-à-dire tout en bas d'une fiche dont on n'a encore rien lu.
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Le focus part sur le titre de la nouvelle fiche : un lecteur d'écran
+      // annonce alors le seigneur qu'on vient de demander. Sans cela, le focus
+      // retomberait au début du document et l'utilisateur ne saurait pas que
+      // le contenu a changé. `tabindex="-1"` rend le h1 focalisable par script
+      // sans l'ajouter à l'ordre de tabulation.
+      const titre = document.querySelector('.lord-title');
+      if(titre){
+        titre.setAttribute('tabindex', '-1');
+        titre.focus({ preventScroll: true });
+      }
+    });
+  });
 }
 
 // ---------------------------------------------------------------------------
