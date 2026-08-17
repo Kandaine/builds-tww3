@@ -908,7 +908,7 @@ body{
   margin-top:4px;
 }
 
-/* Petit séparateur SVG décoratif (voir dripSVG dans js/data.js), inséré
+/* Petit séparateur SVG décoratif (voir dripSVG dans js/core.js), inséré
    entre le bandeau d'en-tête et le corps de la fiche. */
 .drip-divider{
   width:100%; height:14px;
