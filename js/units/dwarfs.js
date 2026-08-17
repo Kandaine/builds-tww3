@@ -93,6 +93,5 @@ const unitImages = {
   shazEnsun: 'assets/units/shazEnsun.png',
   // Portraits de seigneurs légendaires extraits du mod !!!lyh_hero.pack.
   torukHelhein: 'assets/portraits/torukHelhein.png',
-  warriorsDragonfirePass: 'assets/units/warriorsDragonfirePass.png',
-  oldGrumblers: 'assets/units/oldGrumblers.png'
+  warriorsDragonfirePass: 'assets/units/warriorsDragonfirePass.png'
 };
