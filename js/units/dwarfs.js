@@ -59,7 +59,6 @@ const unitImages = {
   prospectorDwf: 'assets/portraits/prospectorDwf.png',
   sappersDwf: 'assets/units/sappersDwf.png',
   minersSteamDrills: 'assets/units/minersSteamDrills.png',
-  unradsExcavators: 'assets/units/unradsExcavators.png',
   earthBorer: 'assets/units/earthBorer.png',
   kazrikTheMad: 'assets/units/kazrikTheMad.png',
   flameCannon: 'assets/units/flameCannon.png',
