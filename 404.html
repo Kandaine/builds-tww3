@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<!--
+  404.html — page servie quand l'adresse demandée n'existe pas.
+
+  GitHub Pages la sert automatiquement, sans configuration, dès qu'un fichier
+  404.html se trouve à la racine du site.
+
+  ── POURQUOI TOUS LES CHEMINS SONT ABSOLUS ─────────────────────────────────
+  C'est le piège de cette page, et il ne se voit qu'en production.
+
+  GitHub Pages renvoie CE fichier pour n'importe quelle adresse inconnue, y
+  compris /builds-tww3/une/adresse/profonde. Or le navigateur résout les
+  chemins relatifs par rapport à l'adresse DEMANDÉE, pas à celle du fichier
+  servi : un « css/socle.css » irait donc chercher
+  /builds-tww3/une/adresse/css/socle.css, qui n'existe pas. La page s'afficherait
+  sans style, précisément dans le cas qu'elle est censée rattraper.
+
+  D'où le préfixe /builds-tww3/ sur chaque ressource. À changer si le site
+  déménage à la racine d'un domaine.
+-->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page introuvable — Builds Total War Warhammer 3</title>
+<!-- Une page d'erreur n'a rien à faire dans un index de moteur de recherche. -->
+<meta name="robots" content="noindex">
+<link rel="icon" href="/builds-tww3/assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
+<!-- Mêmes feuilles que la page d'accueil : la palette neutre, pas celle d'une
+     faction. Une page d'erreur n'appartient à personne. -->
+<link rel="stylesheet" href="/builds-tww3/css/socle.css">
+<link rel="stylesheet" href="/builds-tww3/css/accueil.css">
+</head>
+
+<body class="search-theme">
+<div class="search-page">
+  <main class="page-404">
+    <p class="page-404-code" aria-hidden="true">404</p>
+    <h1 class="search-title">Cette page n'existe pas</h1>
+    <p class="page-404-texte">
+      L'adresse demandée ne correspond à aucune faction du site. Elle a
+      peut-être été mal recopiée, ou pointe vers une page qui n'a jamais existé.
+    </p>
+    <a class="page-404-retour" href="/builds-tww3/">Retour à la recherche</a>
+  </main>
+</div>
+</body>
+</html>

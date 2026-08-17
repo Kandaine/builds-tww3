@@ -64,9 +64,23 @@ js/search.js            rendu de la page de recherche
 css/socle.css           tokens, reset, base — chargé par les 33 pages
 css/fiches.css          les 32 thèmes de faction + la mise en page d'une fiche
 css/accueil.css         la page de recherche, et elle seule
+404.html                page d'erreur, servie par GitHub Pages sur toute adresse inconnue
+sitemap.xml             les 33 pages, pour les moteurs de recherche
+robots.txt              indexation autorisée (voir la limite ci-dessous)
 assets/                 images : units/ (cartes), portraits/, banners/
 tools/                  scripts de validation (PowerShell)
 ```
+
+**Deux pièges sur ces trois fichiers**, tous deux invisibles en local :
+
+- **`404.html` écrit ses chemins en absolu** (`/builds-tww3/css/socle.css`). GitHub Pages sert ce
+  fichier pour n'importe quelle adresse inconnue, `/builds-tww3/une/adresse/profonde` comprise ; or
+  le navigateur résout le relatif d'après l'adresse *demandée*, pas d'après celle du fichier servi.
+  Un chemin relatif donnerait une page d'erreur sans style — exactement le cas qu'elle rattrape.
+- **`robots.txt` n'est pas celui que les robots lisent.** Sur un site de projet, ils consultent
+  `https://kandaine.github.io/robots.txt`, à la racine du domaine, qui appartient au compte et non
+  à ce dépôt. Le fichier documente l'intention et servira le jour d'un domaine propre ; en
+  attendant, c'est le sitemap déclaré dans la Search Console qui compte.
 
 **Le CSS est en trois fichiers, et chaque page en charge deux.** `socle.css` ne contient **aucune
 couleur** : les tokens de couleur sont apportés par le thème de la page — les blocs

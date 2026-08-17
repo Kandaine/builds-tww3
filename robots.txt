@@ -1,0 +1,19 @@
+# robots.txt — ce que les robots d'indexation ont le droit de parcourir.
+#
+# Tout est autorisé. Le site est un catalogue public de builds, il n'a rien à
+# cacher et tout à gagner à être trouvé.
+#
+# ATTENTION à une limite de GitHub Pages : sur un site de projet servi depuis
+# https://kandaine.github.io/builds-tww3/, ce fichier n'est PAS celui que les
+# robots consultent. Ils lisent https://kandaine.github.io/robots.txt, à la
+# racine du domaine, qui appartient au compte et non à ce dépôt.
+#
+# Ce fichier reste utile pour deux raisons : il documente l'intention, et il
+# deviendra celui qui fait foi le jour où le site sera servi depuis son propre
+# domaine. Mais tant qu'on est sur une adresse en /builds-tww3/, c'est le
+# sitemap déclaré directement dans la Search Console qui compte.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kandaine.github.io/builds-tww3/sitemap.xml

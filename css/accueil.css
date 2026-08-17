@@ -1,5 +1,7 @@
 /* ============================================================================
-   accueil.css — LA PAGE DE RECHERCHE (index.html), et elle seule.
+   accueil.css — LA PAGE DE RECHERCHE (index.html), et la page d'erreur
+   (404.html), qui lui emprunte sa palette neutre : une page d'erreur
+   n'appartient à aucune faction.
    Chargée APRÈS socle.css, dont elle consomme les tokens.
 
    Ordre obligatoire dans le HTML :
@@ -452,3 +454,63 @@ body.search-theme{
 .result-card[data-group="warriors-of-chaos"]:hover{ border-color: #7d94b0; }
 .result-card[data-group="wood-elves"]{ border-left-color: #2f8f4e; }
 .result-card[data-group="wood-elves"]:hover{ border-color: #4bbd6f; }
+
+/* ----------------------------------------------------------------------------
+   7. LA PAGE D'ERREUR (404.html)
+
+   Écrite en mobile-first comme le reste : les règles de base décrivent le
+   téléphone, l'élargissement se fait plus bas dans la section 5.
+   ---------------------------------------------------------------------------- */
+.page-404{
+  max-width: 46ch;
+  margin: 0 auto;
+  padding: var(--esp-7) 0;
+  text-align: center;
+}
+
+/* Le « 404 » est décoratif : c'est un repère visuel, pas une information —
+   la phrase juste en dessous dit la même chose en français. D'où
+   `aria-hidden` dans le HTML, et une couleur d'ORNEMENT, la seule occasion du
+   site où c'en est une qui peint des caractères. Elle est admissible ici
+   précisément parce que ce texte n'a pas à être lu pour comprendre la page. */
+.page-404-code{
+  font-family: var(--police-titre);
+  font-size: clamp(64px, 22vw, 120px);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--ornement);
+  opacity: .35;
+  margin-bottom: var(--esp-3);
+}
+
+.page-404-texte{
+  font-family: var(--police-lecture);
+  font-size: var(--txt-corps);
+  color: var(--texte-secondaire);
+  line-height: 1.6;
+  margin-top: var(--esp-4);
+}
+
+/* Cible tactile de 44 px, comme partout ailleurs, et bordure prise dans
+   --border-controle : le contour d'un élément actionnable doit atteindre 3:1,
+   ce que le filet décoratif --border n'assure pas. */
+.page-404-retour{
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: var(--esp-6);
+  padding: 0 var(--esp-5);
+  border: 1px solid var(--border-controle);
+  border-radius: 999px;
+  background: var(--panel-light);
+  color: var(--texte);
+  font-family: var(--police-titre);
+  font-size: var(--t-2);
+  letter-spacing: .5px;
+  text-decoration: none;
+  transition: border-color .2s ease, background .2s ease;
+}
+.page-404-retour:hover{
+  border-color: var(--ornement);
+  background: var(--panel);
+}

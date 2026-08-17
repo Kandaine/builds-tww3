@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  sitemap.xml — la liste des pages du site, pour les moteurs de recherche.
+
+  33 URL : la page de recherche, et une page par faction.
+
+  POURQUOI PAS LES 321 SEIGNEURS. Une fiche s'ouvre par un paramètre
+  (dwarfs.html?id=thorgrim) que seul le JavaScript lit : le HTML servi est
+  identique pour les 25 seigneurs de Norsca. Lister 321 URL demanderait donc
+  au moteur d'exécuter le script pour voir une différence, ce qu'aucun ne
+  garantit. On annonce ce qui existe vraiment en tant que page.
+
+  POURQUOI NI lastmod, NI changefreq, NI priority. Le site n'a aucune étape de
+  build : ces valeurs seraient écrites à la main et se périmeraient au premier
+  commit suivant. Une date de modification fausse est pire qu'absente — Google
+  cesse de tenir compte d'un lastmod qu'il prend en défaut. Les trois champs
+  sont facultatifs ; on ne déclare que ce qu'on peut tenir.
+
+  À METTRE À JOUR quand une faction est ajoutée ou retirée du site.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://kandaine.github.io/builds-tww3/</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/albion.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/araby.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/beastmen.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/bretonnia.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/chaos_dwarfs.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/daemons_of_chaos.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/dark_elves.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/dwarfs.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/empire.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/fimir.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/gnoblar_hordes.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/grand_cathay.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/greenskins.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/high_elves.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/hung.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/jade_blooded_vampires.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/khorne.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/kislev.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/lizardmen.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/norsca.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/nurgle.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/ogre_kingdoms.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/skaven.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/slaanesh.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/southern_realms.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/tomb_kings.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/tzeentch.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/undead_legions.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/vampire_coast.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/vampire_counts.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/warriors_of_chaos.html</loc></url>
+  <url><loc>https://kandaine.github.io/builds-tww3/wood_elves.html</loc></url>
+</urlset>
