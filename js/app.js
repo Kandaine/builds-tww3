@@ -91,6 +91,64 @@ function construireBouton(){
   return bouton;
 }
 
+// ---------------------------------------------------------------------------
+// PASSER D'UNE FACTION À L'AUTRE SANS REPASSER PAR L'ACCUEIL (point 2.1 de
+// l'audit).
+//
+// LE PROBLÈME. Depuis une fiche, le seul chemin vers une autre faction était le
+// lien « Retour à la recherche ». Comparer le build d'un Nain à celui d'un
+// Skaven imposait donc un aller-retour par l'accueil, qui recharge au passage
+// les 32 fichiers JSON de tous les seigneurs du site.
+//
+// POURQUOI UN <select> ET NON LA BARRE D'ONGLETS DE L'ACCUEIL. Les 33 onglets
+// occupaient 525 px de hauteur sur téléphone avant d'être transformés en rail
+// défilant ; les reposer ici rouvrirait le défaut que la V2 a corrigé. Un
+// menu déroulant natif tient sur une ligne, s'utilise au clavier sans qu'on
+// ait rien à écrire, et déclenche le sélecteur système sur mobile — c'est-à-dire
+// une meilleure ergonomie que tout ce qu'on reconstruirait à la main.
+//
+// CE N'EST PAS UNE NAVIGATION INTERNE. Changer de faction change de page HTML :
+// chacune charge son propre module d'icônes (js/units/<faction>.js). D'où un
+// vrai `location.href` et non un rendu en place.
+//
+// Injecté depuis le JavaScript, comme le bouton de dépliage : les 32 coquilles
+// HTML n'ont ainsi rien à modifier.
+// ---------------------------------------------------------------------------
+function construireSelecteurFaction(){
+  let bloc = document.getElementById('nav-faction');
+  if(bloc) return bloc;
+
+  const liste = document.getElementById('lord-list');
+  const courante = typeof PAGE_FACTION !== 'undefined' ? PAGE_FACTION : null;
+
+  // Tri alphabétique sur le libellé, comme la barre d'onglets de l'accueil :
+  // deux listes des mêmes factions dans deux ordres différents seraient une
+  // gêne inutile.
+  const groupes = [...FACTION_GROUPS].sort((a, b) => a.label.localeCompare(b.label));
+
+  bloc = document.createElement('div');
+  bloc.id = 'nav-faction';
+  bloc.className = 'nav-faction';
+  bloc.innerHTML = `
+    <label class="nav-faction-label" for="nav-faction-select">Changer de faction</label>
+    <select class="nav-faction-select" id="nav-faction-select">
+      ${groupes.map(g => `
+        <option value="${g.page}" ${g.id === courante ? 'selected' : ''}>${g.label}</option>
+      `).join('')}
+    </select>
+  `;
+  liste.parentNode.insertBefore(bloc, liste);
+
+  // `change` et non `input` : sur mobile, `input` se déclenche pendant le
+  // défilement du sélecteur système, ce qui ferait quitter la page avant même
+  // que l'utilisateur ait validé son choix.
+  bloc.querySelector('select').addEventListener('change', (e) => {
+    if(e.target.value) location.href = e.target.value;
+  });
+
+  return bloc;
+}
+
 // Ouvre ou ferme le panneau de la liste des seigneurs sur mobile.
 // Paramètre `ouvrir` : true pour déplier la liste, false pour la replier.
 //
@@ -187,6 +245,11 @@ function renderList(){
   // Libellé du bouton : le seigneur affiché, pour que l'utilisateur sache où
   // il se trouve sans déplier la liste.
   const bouton = construireBouton();
+
+  // Après le bouton, donc entre lui et la liste : chaque appel insère son
+  // élément juste avant #lord-list, l'ordre des deux appels fixe donc l'ordre
+  // à l'écran — bouton, puis sélecteur, puis liste.
+  construireSelecteurFaction();
   const courant = lords.find(l => l.id === activeId);
   if(courant){
     bouton.innerHTML = `

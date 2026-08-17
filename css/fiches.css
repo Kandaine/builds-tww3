@@ -933,6 +933,50 @@
   border-top: 1px solid var(--border);
 }
 
+/* --- Sélecteur de faction -------------------------------------------------
+   Il suit EXACTEMENT le même repli que la liste des seigneurs : caché sur
+   téléphone, déplié avec elle. C'est ce qui lui permet de ne rien coûter en
+   défilement avant le contenu — le chiffre que la V2 a fait tomber de 1 077 px
+   à 134 px, et qu'on ne veut pas voir remonter pour un menu.
+   Il fait partie du panneau de navigation ; l'ouvrir donne accès aux deux :
+   changer de faction, ou choisir un seigneur dans celle-ci. */
+.nav-faction{ display: none; }
+.sidebar.panneau-ouvert .nav-faction{
+  display: block;
+  padding: var(--esp-3) var(--esp-4);
+  border-top: 1px solid var(--border);
+}
+
+.nav-faction-label{
+  display: block;
+  font-family: var(--police-titre);
+  font-size: var(--txt-micro);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--texte-secondaire);
+  margin-bottom: var(--esp-1);
+}
+
+/* `width: 100%` et non une largeur au contenu : les 32 libellés vont de
+   « Fimir » à « Jade-Blooded Vampires », un menu qui change de largeur selon
+   la faction ferait sauter la mise en page d'une page à l'autre.
+   La bordure prend --ornement-2 plutôt que --border : c'est un contrôle, son
+   contour doit se voir. */
+.nav-faction-select{
+  width: 100%;
+  min-height: 44px;
+  font-family: var(--police-titre);
+  font-size: var(--t-2);
+  letter-spacing: .5px;
+  color: var(--texte);
+  background: var(--panel-light);
+  border: 1px solid var(--ornement-2);
+  border-radius: var(--rayon-doux);
+  padding: 0 var(--esp-3);
+  cursor: pointer;
+}
+.nav-faction-select:hover{ border-color: var(--ornement-vif); }
+
 /* Message affiché quand une faction n'a aucun seigneur à lister. */
 .lord-list-empty{
   padding: var(--esp-5) var(--esp-5);
@@ -1407,6 +1451,10 @@
   .lord-toggle{ display: none; }
   /* Toujours dépliée, plafond de hauteur retiré. */
   #lord-list{ display: block; max-height: none; overflow: visible; border-top: 0; }
+  /* Le sélecteur de faction devient permanent, la barre latérale étant elle-même
+     toujours visible : il n'y a plus de panneau à ouvrir. Le filet du haut
+     disparaît, celui de .sidebar-sub le remplace. */
+  .nav-faction{ display: block; padding: 0 var(--esp-5) var(--esp-5); border-top: 0; }
   .page{
     flex: 1;
     max-width: 920px;
