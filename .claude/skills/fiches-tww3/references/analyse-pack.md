@@ -115,6 +115,39 @@ powershell -File "C:\Users\Utilisateur\.claude\tools\tww\dump_db.ps1" -PackPath 
 `units_to_exclusive_faction_permissions_tables` sert de confirmation : une unité qui y figure est
 bien attribuée à une faction précise.
 
+**Mais ne JAMAIS en déduire une exclusion, et c'est le piège de cette section.** Il m'a fait
+conclure deux fois en sens contraire le 17/08/2026. `wh_dlc06_dwf_inf_ekrund_miners_0` n'y liste
+que six factions naines, or **Karak Azul et Barak Varr n'en font pas partie et alignent pourtant
+des Ekrund Miners** — leurs captures de l'onglet Lord Details les donnent en Régiment favori, et
+une faction ne reçoit pas de bonus pour un régiment qu'elle ne peut pas recruter.
+
+La portée réelle d'un RoR se lit dans `mercenary_pool_to_groups_junctions_tables`, dernière
+colonne :
+
+| Valeur | Portée |
+|---|---|
+| préfixe `_sc_` (`wh_main_sc_dwf_dwarfs`) | toute la **sous-culture** |
+| une clé de faction (`wh2_dlc17_dwf_thorek_ironbrow`) | **cette faction seule** — le Carnosaure de Thorek est le seul RoR nain dans ce cas sur les 30 |
+
+**La portée sous-culture ne garantit rien non plus.** `laf_dwf_inf_unrads_excavators` (mod Diggy
+Hole) est rattaché à `wh_main_sc_dwf_dwarfs` exactement comme Ekrund Miners, et le user ne l'a
+**pas** avec Greybeard's Prospectors — vérifié en jeu, ni dans ses RoR ni chez les Grudge Settlers.
+Le mod avait recopié le montage vanilla, entrées de permission comprises, sans que l'unité soit
+pour autant distribuée.
+
+Conclusion à retenir : **aucune combinaison de tables ne tranche l'accès à un Régiment de Renom.**
+Le Unit & Spell Browser est la seule preuve. Demander la vérification au user dès le premier doute
+coûte un message ; raisonner en boucle sur les tables a coûté deux conclusions fausses de suite,
+dont une qui allait faire retirer une ligne correcte.
+
+**Le contrôle qui, lui, est fiable et ne suppose rien : la QUANTITÉ.** Un RoR se prend à
+**1 exemplaire**, sauf si les effets du seigneur déclarent « Régiment favori : **+1 capacité** »
+pour ce régiment précis. Croiser chaque RoR d'une fiche avec le régiment favori déclaré attrape les
+erreurs de nombre sans rien présumer de l'accès — l'audit des 17 fiches naines (22 placements) est
+passé par là. Attention toutefois : **un régiment favori n'accorde pas toujours une capacité.** Chez
+Grimm Burloksson et Burlok Damminsson il donne **+12 % de Ward Save**, et les fiches gardent donc
+bien 1 seul Skyhammer. Une lecture mécanique « favori donc 2 » les aurait faussées.
+
 **Trois cas rencontrés sur SCM Tribes of the North**, tous après avoir déjà écrit la fiche :
 
 - les **quatre unités Wolfguard** ont icônes, tables et noms ; le user a lancé une partie : une seule
