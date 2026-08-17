@@ -46,7 +46,7 @@ let activeId = null;
 let rendreLeFocus = false;
 
 // ---------------------------------------------------------------------------
-// ÉTAPE 3 — le panneau repliable de la barre latérale.
+// LE PANNEAU REPLIABLE DE LA BARRE LATÉRALE.
 //
 // LE PROBLÈME. Sous 780 px, la barre latérale passe au-dessus du contenu.
 // Comme elle liste tous les seigneurs, sa hauteur suit leur nombre : l'audit a
@@ -91,6 +91,18 @@ function construireBouton(){
   return bouton;
 }
 
+// Ouvre ou ferme le panneau de la liste des seigneurs sur mobile.
+// Paramètre `ouvrir` : true pour déplier la liste, false pour la replier.
+//
+// Les deux effets vont toujours ensemble et c'est la raison d'être de cette
+// fonction : `aria-expanded` sur le bouton dit l'état aux lecteurs d'écran, la
+// classe `panneau-ouvert` sur la barre latérale le montre à l'écran. Les
+// dissocier laisserait un panneau visuellement ouvert annoncé comme fermé.
+//
+// Sortie silencieuse si le bouton n'est pas encore dans le document : il est
+// posé par renderList(), donc un appel antérieur au premier rendu n'a rien à
+// basculer. Attention, ce n'est PAS un test de largeur d'écran — le bouton est
+// construit sur tous les écrans, et seulement masqué en CSS à partir de 781 px.
 function basculerPanneau(ouvrir){
   const bouton = document.getElementById('lord-toggle');
   if(!bouton) return;

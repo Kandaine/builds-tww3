@@ -13,7 +13,15 @@ mods à des fins d'illustration.
 | Factions | 32 |
 | Seigneurs légendaires | 321 |
 | Cartes d'unité affichées | 3 905 |
-| Poids d'une page de faction | ~620 Ko |
+| Poids d'une page de faction, premier affichage | 422 Ko |
+| Poids d'une fiche entièrement déroulée | ~546 Ko |
+
+> Mesuré le 17/08/2026 sur `dwarfs.html` (Thorgrim), depuis le site en ligne, cache vide et
+> compression active — les 9 requêtes du premier affichage, puis les 8 cartes d'unité chargées en
+> différé pendant le défilement. **La bannière pèse à elle seule 357 Ko, soit 85 % du premier
+> affichage** ; le reste du site tient dans les 65 Ko restants. Ce chiffre suit donc surtout la
+> bannière de la faction, dont le poids va de 69 à 1 246 Ko selon l'image (médiane 282 Ko) : Dwarfs
+> est un peu au-dessus de la médiane, ce n'est ni le meilleur ni le pire cas.
 
 ---
 
@@ -53,20 +61,38 @@ js/core.js              catalogue des factions, bannières, chargement des donn�
 js/units/<faction>.js x32 chemins des images d'unités, d'UNE faction
 js/app.js               rendu d'une page de faction
 js/search.js            rendu de la page de recherche
-css/style.css           mise en page + un thème de couleurs par faction
+css/socle.css           tokens, reset, base — chargé par les 33 pages
+css/fiches.css          les 32 thèmes de faction + la mise en page d'une fiche
+css/accueil.css         la page de recherche, et elle seule
 assets/                 images : units/ (cartes), portraits/, banners/
 tools/                  scripts de validation (PowerShell)
 ```
 
-**Les 32 pages de faction sont quasi identiques.** Chacune déclare son identifiant puis charge trois
-scripts, dans cet ordre — l'ordre compte, chaque fichier utilisant le précédent :
+**Le CSS est en trois fichiers, et chaque page en charge deux.** `socle.css` ne contient **aucune
+couleur** : les tokens de couleur sont apportés par le thème de la page — les blocs
+`.theme-<faction>` de `fiches.css`, ou `body.search-theme` d'`accueil.css`. C'est ce qui permet au
+même socle de servir deux mises en page très différentes.
+
+La page d'accueil ne charge **pas** `fiches.css` : ni les 32 palettes de faction, ni la mise en page
+en deux colonnes ne lui servent, soit 43 Ko qu'elle ne télécharge pas. À l'inverse, dupliquer les
+tokens dans deux fichiers les aurait fait diverger sans qu'aucun signal ne le montre.
+
+**Les 32 pages de faction sont quasi identiques.** Chacune charge les deux feuilles, déclare son
+identifiant, puis charge trois scripts — dans cet ordre, qui compte : chaque fichier utilise le
+précédent, et `accueil.css` comme `fiches.css` consomment les tokens de `socle.css`.
 
 ```html
+<link rel="stylesheet" href="css/socle.css">
+<link rel="stylesheet" href="css/fiches.css">
+
 <script>const PAGE_FACTION = 'dwarfs';</script>
 <script src="js/core.js"></script>
 <script src="js/units/dwarfs.js"></script>
 <script src="js/app.js"></script>
 ```
+
+`index.html` suit le même schéma avec `css/accueil.css` et `js/search.js`, et sans module d'icônes —
+la page de recherche n'affiche aucune carte d'unité.
 
 `app.js` lit `PAGE_FACTION`, charge `data/dwarfs.json`, et rend la page. Toute la variabilité est
 dans le JSON et le module d'icônes ; le code, lui, est commun.
@@ -74,7 +100,9 @@ dans le JSON et le module d'icônes ; le code, lui, est commun.
 **Pourquoi un module d'icônes par faction.** Ces 32 fichiers ne contiennent qu'une table
 `clé → chemin d'image`. Ils étaient autrefois réunis en un registre unique de 343 Ko que *chaque*
 page téléchargeait en entier, alors qu'une page n'affiche qu'une faction. Le découpage a ramené le
-JavaScript d'une page de 353 Ko à ~33 Ko.
+JavaScript d'une page de 353 Ko à 33 Ko, puis **38,3 Ko** aujourd'hui — 14 Ko une fois compressé,
+ce qui est ce qui transite réellement. Les 5,2 Ko repris à la V2 sont ceux d'`app.js`, qui a grossi
+de la navigation au clavier, du panneau repliable et de la hiérarchie de titres.
 
 ---
 
@@ -148,18 +176,21 @@ Chaque `data/<faction>.json` est un tableau de seigneurs. Les champs qui compten
 Le champ `icon` est la clé à déclarer dans `js/units/<faction>.js`.
 
 **Champs optionnels**, présents seulement quand c'est utile : `banner` (bannière propre au
-seigneur, prime sur celle de sa faction — 10 fiches), `attributes` (bloc de capacités passives
-détaillées — 1 fiche), `build.krellNote` (unité invoquée en bataille plutôt que recrutée — 1 fiche,
-le cas Kemmler & Krell).
+seigneur, prime sur celle de sa faction — 10 fiches), `build.krellNote` (unité invoquée en bataille
+plutôt que recrutée — 1 fiche, le cas Kemmler & Krell).
+
+Il a existé un champ `attributes`, un bloc de capacités passives détaillées, sur la seule fiche de
+Vlad von Carstein. Il a été **supprimé à la V2** : aucune autre fiche n'en avait, et il rompait le
+formatage commun. Ne pas le réintroduire.
 
 **Deux champs à connaître pour ne pas s'y perdre :**
 
 - `seal` désigne une icône SVG de secours. Le mécanisme a été retiré du chargement — les 321
   seigneurs ont tous un `portraitImage` — donc ce champ est **inerte**. Les SVG sont conservés dans
   `js/fallback-svg.js`, qu'aucune page ne charge.
-- `wikiUrl` est renseigné sur **les 321 fiches** mais **n'est lu par aucun code**. C'est de la
-  donnée de référence, pas un champ d'affichage : ne pas chercher où il apparaît, il n'apparaît
-  nulle part.
+- `wikiUrl` **n'est lu par aucun code**. C'est de la donnée de référence, pas un champ d'affichage :
+  ne pas chercher où il apparaît, il n'apparaît nulle part. Le champ est présent sur les 321 fiches,
+  mais **vide sur 48 d'entre elles** — renseigné sur 273.
 
 ---
 

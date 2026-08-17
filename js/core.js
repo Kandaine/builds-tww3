@@ -27,7 +27,14 @@
 //     plus jamais atteint. Conserves dans js/fallback-svg.js, que plus aucune
 //     page ne charge (voir svgDeSecours ci-dessous pour le reactiver).
 //
-// Une page de faction charge desormais environ 23 Ko de JS au lieu de 343 Ko.
+// Une page de faction charge desormais 38,3 Ko de JS au lieu de 353 Ko — 14 Ko
+// une fois compresses, ce qui est ce qui transite reellement.
+//
+// Ce commentaire a longtemps annonce « environ 23 Ko ». Le chiffre n'a jamais
+// ete exact : au commit qui a fait le decoupage (fddbe26), le total reel etait
+// de 33,1 Ko, et le message de ce commit le disait. Les 5,2 Ko d'ecart avec
+// aujourd'hui sont ceux d'app.js, qui a grossi a la V2 de la navigation au
+// clavier, du panneau repliable et de la hierarchie de titres.
 // ============================================================================
 
 // Petit filet décoratif en forme de "goutte" (SVG), utilisé comme séparateur

@@ -8,10 +8,11 @@
      accueil.css → la page de recherche
 
    POURQUOI CE DÉCOUPAGE. La page d'accueil a son propre thème : lui faire
-   charger les 32 palettes de faction, c'est 20 Ko téléchargés pour rien. À
-   l'inverse, dupliquer les tokens dans deux fichiers les ferait diverger — on
-   ne s'en apercevrait que le jour où une valeur changerait d'un côté
-   seulement, sans aucun signal. Un socle partagé évite les deux écueils.
+   charger fiches.css, c'est 43,3 Ko téléchargés pour rien — 18,6 Ko de
+   palettes de faction, le reste en mise en page à deux colonnes dont elle n'a
+   aucun usage. À l'inverse, dupliquer les tokens dans deux fichiers les ferait
+   diverger — on ne s'en apercevrait que le jour où une valeur changerait d'un
+   côté seulement, sans aucun signal. Un socle partagé évite les deux écueils.
 
    CE FICHIER NE CONTIENT AUCUNE COULEUR. Les tokens de couleur (--bg, --texte,
    --ornement…) sont définis par le thème de chaque page : les blocs
@@ -24,23 +25,22 @@
    1. TOKENS — les valeurs de réglage, en un seul endroit.
 
    Les tokens sont nommés par RÔLE (--txt-note, --esp-carte) et non par valeur
-   (--txt-13, --esp-12). C'est ce qui permettra, à l'étape 4, de remplacer une
-   valeur sans avoir à retrouver tous ses usages : on change le token, tout ce
-   qui joue ce rôle suit.
+   (--txt-13, --esp-12). C'est ce qui permet de remplacer une valeur sans avoir
+   à retrouver tous ses usages : on change le token, tout ce qui joue ce rôle
+   suit.
    ---------------------------------------------------------------------------- */
 :root{
 
   /* --- Familles de polices ------------------------------------------------
-     Cinq familles aujourd'hui, réduites à trois à l'étape 4. Nommées par rôle
-     pour que la réduction se fasse ici et nulle part ailleurs. */
-  /* DEUX familles, et non trois. Cormorant Upright a été retirée à l'étape 4 :
-     elle coûtait 33 Ko — 22 % du poids des polices — pour un seul élément,
-     l'épithète sous le nom du seigneur, soit une ligne par fiche. L'épithète
-     utilise désormais la police de lecture en italique, déjà chargée. */
+     DEUX familles seulement. Le site en chargeait cinq avant la V2 ; Cormorant
+     Upright a été la dernière retirée, parce qu'elle coûtait 33 Ko — 22 % du
+     poids des polices — pour un seul élément, l'épithète sous le nom du
+     seigneur, soit une ligne par fiche. L'épithète utilise désormais la police
+     de lecture en italique, déjà chargée. */
   --police-titre:   'Cinzel', serif;      /* noms propres, intitulés */
   --police-lecture: 'EB Garamond', serif; /* corps de texte, lore, épithète */
 
-  /* --- ÉCHELLE TYPOGRAPHIQUE (étape 4) ------------------------------------
+  /* --- ÉCHELLE TYPOGRAPHIQUE ------------------------------------------------
      Cinq degrés, contre les 13 tailles relevées par l'audit — dont 10,5 px,
      12,5 px, 13,5 px, 14,5 px et 15,5 px, qui trahissaient des valeurs posées
      à l'œil une par une. Cinq tailles suffisent à hiérarchiser une fiche ;
@@ -70,7 +70,7 @@
   --txt-section:    var(--t-4);  /* titre de section */
   --txt-titre:      var(--t-5);  /* nom du seigneur */
 
-  /* --- ÉCHELLE D'ESPACEMENT (étape 4) --------------------------------------
+  /* --- ÉCHELLE D'ESPACEMENT -------------------------------------------------
      Sept valeurs remplacent les 26 relevées par l'audit. Toutes les marges et
      tous les retraits de la feuille s'y alignent désormais : plus aucune
      valeur libre, donc plus de dérive possible. */
@@ -89,7 +89,7 @@
 }
 
 /* ----------------------------------------------------------------------------
-   2 sexies. ALIAS POUR LES SVG DE js/core.js  — NE PAS SUPPRIMER
+   2. ALIAS POUR LES SVG DE js/core.js  — NE PAS SUPPRIMER
 
    Les icônes de section et le séparateur décoratif sont écrits directement en
    SVG dans js/core.js, et portent leurs couleurs en ATTRIBUTS :
@@ -97,10 +97,12 @@
        stroke="var(--accent-primary)"   ×4 icônes
        fill="var(--accent-primary)"     ×3 gouttes du séparateur
 
-   J'avais supprimé cette variable à l'étape 5, après avoir vérifié qu'aucune
-   règle CSS ne l'utilisait plus. C'était une vérification incomplète : elle ne
-   couvrait pas les attributs SVG posés par le JavaScript. Résultat, les icônes
-   de section se sont retrouvées sans couleur de trait, donc invisibles.
+   Cette variable a été supprimée une fois, pendant la V2, après vérification
+   qu'aucune règle CSS ne l'utilisait plus. C'était une vérification incomplète :
+   elle ne couvrait pas les attributs SVG posés par le JavaScript. Résultat, les
+   icônes de section se sont retrouvées sans couleur de trait, donc invisibles
+   sur les 32 fiches. La leçon vaut au-delà de ce cas : une variable CSS peut
+   être consommée ailleurs que dans du CSS.
 
    L'alias est défini sur `body` — et NON sur `:root` — pour que `--ornement`
    se résolve dans la portée où la classe `theme-*` est posée. Défini sur
@@ -126,9 +128,9 @@ body{
 *{ box-sizing: border-box; margin: 0; padding: 0; }
 
 /* --- Visibilité du focus clavier ---
-   Jusqu'à l'étape 2, un seul élément de la page était focalisable : la
-   question du focus ne se posait donc pas. Maintenant que les 16 seigneurs
-   sont atteignables au clavier, il faut voir où l'on se trouve.
+   Avant la V2, un seul élément d'une page de faction était focalisable : la
+   question du focus ne se posait donc pas. Maintenant que les seigneurs sont
+   tous atteignables au clavier, il faut voir où l'on se trouve.
    `:focus-visible` plutôt que `:focus` : le navigateur n'affiche l'anneau que
    lors d'une navigation au clavier, jamais après un clic à la souris. */
 :focus-visible{

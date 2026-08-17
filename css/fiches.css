@@ -8,14 +8,24 @@
        <link rel="stylesheet" href="css/socle.css">
        <link rel="stylesheet" href="css/fiches.css">
 
-   ── Historique ─────────────────────────────────────────────────────────────
+   ── Historique, et comment relire les fichiers cités ───────────────────────
    Ce fichier et socle.css proviennent du découpage de css/v2.css, lui-même
-   issu de la refonte V2 des fiches (commit 46ed217). Le détail des sept
-   étapes de cette refonte est dans le message de ce commit.
+   issu de la refonte V2 des fiches (commit 46ed217).
+
+   Les commentaires ci-dessous se réfèrent souvent à `style.css`, la feuille
+   unique d'avant la V2 : « les valeurs sont celles de style.css », « défaut
+   préexistant dans style.css ». Ces renvois expliquent d'où viennent les
+   valeurs et ce qui a été corrigé au passage — ils sont volontairement
+   conservés. Mais NI style.css NI v2.css n'existent encore dans le dépôt, ils
+   ont été supprimés au commit 4ebc835. Pour vérifier une de ces affirmations,
+   il faut donc les relire dans l'historique :
+
+       git show 4ebc835^:css/style.css
+       git show 4ebc835^:css/v2.css
    ============================================================================ */
 
 /* ----------------------------------------------------------------------------
-   2. THÈME VAMPIRE COUNTS
+   1. THÈME VAMPIRE COUNTS — le gabarit dont les 31 autres sont dérivés
 
    Les valeurs sont celles de style.css, à l'identique. Seule leur ORGANISATION
    change : elles sont désormais rangées en deux familles distinctes.
@@ -58,7 +68,7 @@
 }
 
 /* ----------------------------------------------------------------------------
-   2 ter. THÈME NORSCA — le cas le plus dur du site
+   2. THÈME NORSCA — le cas le plus dur du site
 
    Choisi comme second thème pour éprouver la règle avant de généraliser :
    Norsca cumule le pire contraste de quantité d'unité (2,14) et la plus longue
@@ -114,7 +124,7 @@
 }
 
 /* ----------------------------------------------------------------------------
-   2 bis. LA RÈGLE À NE PAS ENFREINDRE
+   3. LA RÈGLE À NE PAS ENFREINDRE
 
    Une propriété `color` ne prend JAMAIS une variable --ornement-*.
    Les ornements peignent des fonds, des bordures, des filets ; les textes
@@ -127,17 +137,20 @@
    décorative ; elle en a toutes de vérifier celui de ses couleurs de texte.
 
    Contrôle, à lancer après toute modification de cette feuille :
-       grep -nE '^\s*color: *var\(--ornement' css/v2.css
+       grep -nE '^\s*color: *var\(--ornement' css/fiches.css
    La commande ne doit rien renvoyer.
 
-   Les anciens noms (--accent-primary, --text, --text-dim) ont disparu : plus
-   aucune règle ne les utilisait une fois app-v2.js en place.
+   Les anciens noms (--accent-primary, --text, --text-dim) ont disparu des
+   règles CSS : plus aucune ne les utilisait une fois la V2 en place. ATTENTION
+   toutefois — `--accent-primary` survit sous forme d'alias dans socle.css,
+   parce que js/core.js l'écrit en attribut dans ses SVG. Voir le commentaire
+   de cet alias avant d'y toucher.
    ---------------------------------------------------------------------------- */
 
 
 
 /* ----------------------------------------------------------------------------
-   2 quater. LES 28 AUTRES FACTIONS (étape 7)
+   4. LES 28 AUTRES FACTIONS
 
    Chaque bloc reprend TELLES QUELLES les surfaces et les ornements de
    style.css : l'ambiance de chaque faction est strictement conservée. Seules
@@ -156,13 +169,9 @@
    avant (la quantité d'unité), 2 sur le titre de section, 1 sur le texte
    secondaire. Les 16 autres passaient déjà.
 
-   DEUX FACTIONS MANQUENT VOLONTAIREMENT ICI : `hung` et `undead-legions`
-   n'avaient AUCUN bloc de thème dans style.css. Elles retombaient donc sur
-   :root, c'est-à-dire la palette des Comtes Vampires — les nomades des
-   steppes du Hung s'affichent en rouge vampirique depuis toujours. Ce
-   comportement est conservé à l'identique pour ne pas changer le site au-delà
-   de la refonte convenue, mais il mérite une décision : leur donner une
-   palette propre est un choix de design, pas une correction technique.
+   POURQUOI 28 ET NON 30. `hung` et `undead-legions` n'avaient aucun bloc de
+   thème dans style.css, elles ne pouvaient donc pas être « reprises ». Leurs
+   palettes ont été créées de zéro : elles vivent en section 5, plus bas.
    ---------------------------------------------------------------------------- */
 .theme-albion{
   --bg:            #0b1512;
@@ -754,7 +763,7 @@
 
 
 /* ----------------------------------------------------------------------------
-   2 quinquies. LES DEUX THÈMES QUI N'EXISTAIENT PAS
+   5. LES DEUX THÈMES QUI N'EXISTAIENT PAS
 
    `hung` et `undead-legions` n'avaient AUCUN bloc dans style.css. Elles
    retombaient donc silencieusement sur :root, c'est-à-dire la palette des
@@ -814,10 +823,10 @@
   --texte-mise-en-avant: #b8a668;
 }
 /* ----------------------------------------------------------------------------
-   4. MISE EN PAGE
+   6. MISE EN PAGE
    ---------------------------------------------------------------------------- */
 
-/* ⚠ ÉTAPE 3 — CETTE SECTION EST ÉCRITE EN MOBILE-FIRST.
+/* ⚠ CETTE SECTION EST ÉCRITE EN MOBILE-FIRST.
    Les règles de base décrivent le téléphone ; les écrans plus larges sont
    traités par des `@media (min-width: …)` en fin de fichier. C'est l'inverse
    de style.css, qui décrivait le bureau puis rabotait pour le mobile — d'où
@@ -933,7 +942,7 @@
 }
 
 /* --- Entrées de la liste des seigneurs ---
-   Depuis l'étape 2, la liste est un <ul> de <li> contenant chacun un <a href>.
+   Depuis la V2, la liste est un <ul> de <li> contenant chacun un <a href>.
    Les trois règles ci-dessous neutralisent les styles que le navigateur
    applique d'office à ces balises, pour que le rendu reste EXACTEMENT celui
    des anciennes <div> : sans elles, des puces apparaîtraient et les entrées
@@ -982,7 +991,7 @@
 }
 
 /* ----------------------------------------------------------------------------
-   5. EN-TÊTE DE FICHE — bannière, portrait, nom
+   7. EN-TÊTE DE FICHE — bannière, portrait, nom
    ---------------------------------------------------------------------------- */
 
 .portrait-frame{
@@ -1063,7 +1072,12 @@
 }
 
 /* ----------------------------------------------------------------------------
-   6. SECTIONS — Lore, Effets, Attributs, Build
+   8. SECTIONS — Lore, Effets, Build
+
+   Les sélecteurs `.attr-list`, `.attr-item` et `.stats-caveat` plus bas ne sont
+   PAS morts, malgré la disparition du bloc « Attributs & capacités passives » à
+   la V2 : le champ `effects` du JSON contient ce balisage en dur, sur les 321
+   fiches. Les supprimer casserait la section Effets de tout le site.
    ---------------------------------------------------------------------------- */
 
 .section{ margin-bottom: var(--esp-7); }
@@ -1074,9 +1088,10 @@
   margin-bottom: var(--esp-4);
 }
 .section-head svg{ width: 20px; height: 20px; flex-shrink: 0; }
-/* `font-weight: inherit` n'est pas décoratif : depuis l'étape 2 ce sélecteur
-   porte sur un <h2>, que le navigateur graisse d'office. Sans cette ligne, le
-   titre changerait d'épaisseur — or l'étape 2 doit être invisible à l'écran. */
+/* `font-weight: inherit` n'est pas décoratif : depuis la V2 ce sélecteur porte
+   sur un <h2>, que le navigateur graisse d'office. Sans cette ligne, le titre
+   changerait d'épaisseur — or le passage de <div> à <h2> visait à donner un
+   plan de page aux lecteurs d'écran, pas à modifier le rendu. */
 .section-title{
   font-family: var(--police-titre);
   font-size: var(--txt-section);
@@ -1122,7 +1137,7 @@
 }
 
 /* ----------------------------------------------------------------------------
-   7. BUILD — sous-titres, grille et cartes d'unité
+   9. BUILD — sous-titres, grille et cartes d'unité
 
    NOTE : dans style.css, six sélecteurs de cette zone étaient déclarés DEUX
    fois, la seconde déclaration l'emportant (point 3.4 de l'audit). Ils sont
@@ -1203,7 +1218,7 @@
   line-height: 1.45;
 }
 
-/* ÉTAPE 5 — la correction structurelle du seul défaut de contraste du site.
+/* La correction structurelle du seul défaut de contraste du site.
    La quantité (×4) est l'information la plus décisive d'un build. C'était
    pourtant le seul texte courant peint avec une variable d'ORNEMENT, d'où son
    échec sur 12 thèmes sur 32 (jusqu'à 2,14 chez Norsca, pour un seuil de 4,5).
@@ -1274,7 +1289,7 @@
 }
 
 /* ----------------------------------------------------------------------------
-   8. ÉCRANS PLUS LARGES — enrichissements successifs
+   10. ÉCRANS PLUS LARGES — enrichissements successifs
 
    Chaque palier n'AJOUTE que ce que la largeur disponible permet. Aucun de ces
    blocs n'est nécessaire pour que la page fonctionne : coupés, il reste la
