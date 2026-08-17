@@ -77,6 +77,11 @@ foreach ($f in $fichiers) {
         $siennes = @(@($l.build.army) + @($l.build.heroes) | ForEach-Object { $_.name })
         if ($l.build.krellNote) { $siennes += $l.build.krellNote.name }
         $effets = Texte $l.effects
+        # Chaque effet est un <div> : on garde le decoupage pour pouvoir tester
+        # « ce regiment est-il nomme DANS la ligne du regiment favori ».
+        $lignesEffets = @([regex]::Split([string]$l.effects, '</div>|<br\s*/?>') |
+                          ForEach-Object { (Texte $_).Trim() } |
+                          Where-Object { $_ })
         $manquants = @()
 
         foreach ($nom in $cherchables) {
@@ -110,11 +115,22 @@ foreach ($f in $fichiers) {
             foreach ($m in ($manquants | Sort-Object -Unique)) {
                 # Un « Regiment favori » qui nomme un absent est le signal le
                 # plus fort : ce bonus n'existe que pour recompenser sa presence.
-                if ($effets -match ('(?i)R[ée]giment favori[^.]{0,160}' + [regex]::Escape($m))) {
-                    Write-Host "      [REGIMENT FAVORI] $m" -ForegroundColor Red
-                } else {
-                    Write-Host "      $m"
+                #
+                # Le test porte sur LA LIGNE, pas sur le texte aplati. Un premier
+                # jet balayait 160 caracteres apres « Regiment favori » sans
+                # borne de ligne : comme les effets sont des <div> sans point
+                # final, il ramassait les unites de la ligne SUIVANTE. Ungrim en
+                # est ressorti avec deux faux signaux forts, alors que son vrai
+                # regiment favori est bien dans son build.
+                $fort = $false
+                foreach ($ligne in $lignesEffets) {
+                    if ($ligne -match '(?i)R[ée]giment favori' -and
+                        $ligne -match ('(?i)(^|[^\p{L}])' + [regex]::Escape($m) + '([^\p{L}]|$)')) {
+                        $fort = $true; break
+                    }
                 }
+                if ($fort) { Write-Host "      [REGIMENT FAVORI] $m" -ForegroundColor Red }
+                else       { Write-Host "      $m" }
             }
         }
     }
