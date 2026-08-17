@@ -1,8 +1,18 @@
 # builds-tww3
 
-Site personnel, local, non commercial : catalogue en français de builds à 20 slots pour les
-seigneurs légendaires de Total War: WARHAMMER III en Immortal Empires. HTML/CSS/JS statique,
-sans étape de build — les pages se servent directement depuis le dossier.
+Site personnel non commercial : catalogue en français de builds à 20 slots pour les seigneurs
+légendaires de Total War: WARHAMMER III en Immortal Empires. HTML/CSS/JS statique, sans étape
+de build — les pages se servent directement depuis le dossier.
+
+**Le site est publié**, sur GitHub Pages, à https://kandaine.github.io/builds-tww3/ — chaque
+push sur `main` le redéploie. Ce n'est donc pas un dossier personnel : ce qui part en ligne est
+lu par des visiteurs. Deux conséquences pratiques, à ne pas oublier faute de quoi on
+sous-estime l'enjeu de chaque modification :
+
+- une erreur visible — image cassée, fiche fausse, total de slots erroné — n'est pas une gêne
+  privée, elle est publique jusqu'au correctif suivant ;
+- le poids des pages compte pour de vrai. Un visiteur sur mobile télécharge ce qu'on lui
+  envoie ; « ça ne se sent pas en local » n'est pas un argument recevable.
 
 Ma méthode de travail générale est dans `~/.claude/CLAUDE.md`. Ce fichier-ci ne porte que ce
 qui est propre au site. Le détail du métier — analyser un mod, rédiger une fiche, extraire une

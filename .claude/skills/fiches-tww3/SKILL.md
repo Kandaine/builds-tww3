@@ -5,9 +5,13 @@ description: Workflow complet pour le site builds-tww3 — créer une fiche de s
 
 # Fiches builds-tww3
 
-Site personnel, local, non commercial : catalogue en français de builds à 20 slots pour les
-seigneurs légendaires de TWW3 en Immortal Empires. Dépôt `C:\Users\Utilisateur\Projets\builds-tww3`
-(GitHub `Kandaine/builds-tww3`). HTML/CSS/JS statique, sans build.
+Site personnel non commercial : catalogue en français de builds à 20 slots pour les seigneurs
+légendaires de TWW3 en Immortal Empires. Dépôt `C:\Users\Utilisateur\Projets\builds-tww3`
+(GitHub `Kandaine/builds-tww3`, **public**). HTML/CSS/JS statique, sans build.
+
+**Publié sur GitHub Pages** à https://kandaine.github.io/builds-tww3/, redéployé à chaque push
+sur `main`. Une fiche fausse ou une carte sans image est donc visible par des visiteurs, pas
+seulement par le user — c'est ce qui justifie la sévérité des invariants ci-dessous.
 
 Deux parcours. Lire d'abord les invariants, ils valent pour les deux.
 
