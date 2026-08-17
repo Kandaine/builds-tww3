@@ -280,10 +280,35 @@ function renderFactionTabs(containerEl, activeGroup, onChange){
   // sa position alphabétique.
   const sortedGroups = [...FACTION_GROUPS].sort((a, b) => a.label.localeCompare(b.label));
   const allTabs = [{ id: 'all', label: 'ALL' }, ...sortedGroups];
+
+  // <button> et non <div> : c'était le second point bloquant de l'audit.
+  // Ces 33 onglets étaient des <div> porteuses d'un addEventListener, donc
+  // AUCUN n'était atteignable au clavier — le filtre par faction était
+  // réservé à la souris. Un vrai bouton apporte le focus, l'activation par
+  // Entrée et Espace, et l'annonce par un lecteur d'écran, sans qu'on ait à
+  // réimplémenter quoi que ce soit.
+  //
+  // `aria-pressed` dit lequel est actif : la couleur seule ne le dirait à
+  // personne d'autre qu'un utilisateur voyant.
   containerEl.innerHTML = allTabs.map(t => `
-    <div class="faction-tab ${activeGroup===t.id?'active':''}" data-group="${t.id}">${t.label}</div>
+    <button type="button" class="faction-tab ${activeGroup===t.id?'active':''}"
+            data-group="${t.id}" aria-pressed="${activeGroup===t.id}">${t.label}</button>
   `).join('');
+
   containerEl.querySelectorAll('.faction-tab').forEach(el=>{
-    el.addEventListener('click', ()=> onChange(el.dataset.group));
+    el.addEventListener('click', ()=> {
+      // Le rendu remplace tout le contenu du conteneur, donc l'élément qui
+      // avait le focus disparaît. Sans cette mémorisation, un utilisateur au
+      // clavier serait renvoyé en haut de page à chaque changement de filtre.
+      containerEl.dataset.focusSur = el.dataset.group;
+      onChange(el.dataset.group);
+    });
   });
+
+  // Restauration du focus après le nouveau rendu.
+  if(containerEl.dataset.focusSur){
+    const cible = containerEl.querySelector(`.faction-tab[data-group="${containerEl.dataset.focusSur}"]`);
+    if(cible) cible.focus();
+    delete containerEl.dataset.focusSur;
+  }
 }

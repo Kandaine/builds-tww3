@@ -76,11 +76,46 @@ function renderResults(){
       ? 'Aucun seigneur ne correspond à ta recherche.'
       : 'Aucun seigneur dans cette faction pour l\'instant.';
     grid.innerHTML = `<div class="results-empty">${message}</div>`;
+    // L'annonce doit AUSSI passer ici. Placée uniquement en fin de fonction,
+    // elle était sautée par ce `return` — donc jamais mise à jour dans le seul
+    // cas où elle est vraiment nécessaire : celui où la recherche ne trouve
+    // rien. Un utilisateur de lecteur d'écran continuait d'entendre l'ancien
+    // décompte, et croyait ses résultats toujours affichés.
+    annoncerResultats(0);
     return;
   }
 
   // Génère une carte par seigneur filtré et les insère toutes d'un coup.
   grid.innerHTML = filtered.map(resultCardHtml).join('');
+
+  annoncerResultats(filtered.length);
+}
+
+// ---------------------------------------------------------------------------
+// Annonce le nombre de résultats aux lecteurs d'écran.
+//
+// POURQUOI. La recherche filtre en direct, sans rechargement : visuellement la
+// grille change sous les yeux, mais rien ne le signale à qui ne la voit pas.
+// Un utilisateur de lecteur d'écran tapait sa recherche sans jamais savoir
+// combien de seigneurs elle avait trouvés, ni même si elle en avait trouvé.
+//
+// `aria-live="polite"` fait annoncer le contenu de la région quand il change,
+// sans interrompre ce qui est en cours de lecture. La région est visuellement
+// masquée : elle ne s'adresse qu'aux technologies d'assistance.
+// ---------------------------------------------------------------------------
+function annoncerResultats(nombre){
+  let region = document.getElementById('annonce-resultats');
+  if(!region){
+    region = document.createElement('p');
+    region.id = 'annonce-resultats';
+    region.className = 'annonce-visuellement-masquee';
+    region.setAttribute('aria-live', 'polite');
+    region.setAttribute('role', 'status');
+    document.querySelector('.search-page').appendChild(region);
+  }
+  region.textContent = nombre === 0
+    ? 'Aucun seigneur ne correspond.'
+    : `${nombre} seigneur${nombre > 1 ? 's' : ''} affiché${nombre > 1 ? 's' : ''}.`;
 }
 
 // Point d'entrée de la page de recherche. Fonction asynchrone car le

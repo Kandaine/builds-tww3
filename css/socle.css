@@ -1,0 +1,149 @@
+/* ============================================================================
+   socle.css — LE SOCLE COMMUN, chargé par les 33 pages du site.
+
+   Le CSS du site est découpé en trois fichiers, et chaque page en charge deux :
+
+     socle.css   → tokens, reset, base            (toutes les pages)
+     fiches.css  → les 32 thèmes + la mise en page d'une fiche de seigneur
+     accueil.css → la page de recherche
+
+   POURQUOI CE DÉCOUPAGE. La page d'accueil a son propre thème : lui faire
+   charger les 32 palettes de faction, c'est 20 Ko téléchargés pour rien. À
+   l'inverse, dupliquer les tokens dans deux fichiers les ferait diverger — on
+   ne s'en apercevrait que le jour où une valeur changerait d'un côté
+   seulement, sans aucun signal. Un socle partagé évite les deux écueils.
+
+   CE FICHIER NE CONTIENT AUCUNE COULEUR. Les tokens de couleur (--bg, --texte,
+   --ornement…) sont définis par le thème de chaque page : les blocs
+   `.theme-<faction>` de fiches.css, ou `body.search-theme` d'accueil.css. Les
+   règles ci-dessous les CONSOMMENT sans les déclarer, ce qui permet au même
+   socle de servir deux mises en page très différentes.
+   ============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. TOKENS — les valeurs de réglage, en un seul endroit.
+
+   Les tokens sont nommés par RÔLE (--txt-note, --esp-carte) et non par valeur
+   (--txt-13, --esp-12). C'est ce qui permettra, à l'étape 4, de remplacer une
+   valeur sans avoir à retrouver tous ses usages : on change le token, tout ce
+   qui joue ce rôle suit.
+   ---------------------------------------------------------------------------- */
+:root{
+
+  /* --- Familles de polices ------------------------------------------------
+     Cinq familles aujourd'hui, réduites à trois à l'étape 4. Nommées par rôle
+     pour que la réduction se fasse ici et nulle part ailleurs. */
+  /* DEUX familles, et non trois. Cormorant Upright a été retirée à l'étape 4 :
+     elle coûtait 33 Ko — 22 % du poids des polices — pour un seul élément,
+     l'épithète sous le nom du seigneur, soit une ligne par fiche. L'épithète
+     utilise désormais la police de lecture en italique, déjà chargée. */
+  --police-titre:   'Cinzel', serif;      /* noms propres, intitulés */
+  --police-lecture: 'EB Garamond', serif; /* corps de texte, lore, épithète */
+
+  /* --- ÉCHELLE TYPOGRAPHIQUE (étape 4) ------------------------------------
+     Cinq degrés, contre les 13 tailles relevées par l'audit — dont 10,5 px,
+     12,5 px, 13,5 px, 14,5 px et 15,5 px, qui trahissaient des valeurs posées
+     à l'œil une par une. Cinq tailles suffisent à hiérarchiser une fiche ;
+     treize créent du bruit sans créer de hiérarchie.
+     Les paliers fluides (`clamp`) suivent la largeur de l'écran entre deux
+     bornes : le texte grandit avec la place disponible, sans saut brusque. */
+  --t-1: 13px;                        /* mentions, étiquettes, notes d'unité */
+  --t-2: 15px;                        /* texte d'appui, quantités, noms d'unité */
+  --t-3: clamp(16px, 2.4vw, 18px);    /* corps de lecture */
+  --t-4: clamp(18px, 3.5vw, 22px);    /* titres de section */
+  --t-5: clamp(28px, 7vw, 42px);      /* nom du seigneur */
+
+  /* Les rôles pointent vers l'échelle. C'est ce niveau d'indirection qui
+     permet de changer une taille sans retrouver tous ses usages : on modifie
+     le palier ci-dessus, et tout ce qui joue ce rôle suit. */
+  --txt-micro:      var(--t-1);  /* étiquette de faction, lien de retour */
+  --txt-mini:       var(--t-1);  /* épithète en liste, note d'unité */
+  --txt-petit:      var(--t-1);  /* sous-titres de section d'armée */
+  --txt-normal:     var(--t-2);  /* nom en liste, total de slots */
+  --txt-unite:      var(--t-2);  /* nom d'unité dans une carte */
+  --txt-quantite:   var(--t-2);  /* quantité d'unité (×4) */
+  --txt-note:       var(--t-2);  /* encadré de note finale */
+  --txt-attribut:   var(--t-3);  /* lignes d'attributs, carte magie */
+  --txt-epithete:   var(--t-3);  /* épithète sous le nom du seigneur */
+  --txt-corps:      var(--t-3);  /* corps de texte */
+  --txt-sidebar:    var(--t-4);  /* titre de la barre latérale */
+  --txt-section:    var(--t-4);  /* titre de section */
+  --txt-titre:      var(--t-5);  /* nom du seigneur */
+
+  /* --- ÉCHELLE D'ESPACEMENT (étape 4) --------------------------------------
+     Sept valeurs remplacent les 26 relevées par l'audit. Toutes les marges et
+     tous les retraits de la feuille s'y alignent désormais : plus aucune
+     valeur libre, donc plus de dérive possible. */
+  --esp-1:  4px;
+  --esp-2:  8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+  --esp-7: 48px;
+
+  /* --- Rayons et bordures -------------------------------------------------- */
+  --rayon-net:  2px;   /* étiquettes */
+  --rayon-doux: 3px;   /* cartes, encadrés */
+  --rayon-rond: 6px;   /* vignettes d'unité */
+}
+
+/* ----------------------------------------------------------------------------
+   2 sexies. ALIAS POUR LES SVG DE js/core.js  — NE PAS SUPPRIMER
+
+   Les icônes de section et le séparateur décoratif sont écrits directement en
+   SVG dans js/core.js, et portent leurs couleurs en ATTRIBUTS :
+
+       stroke="var(--accent-primary)"   ×4 icônes
+       fill="var(--accent-primary)"     ×3 gouttes du séparateur
+
+   J'avais supprimé cette variable à l'étape 5, après avoir vérifié qu'aucune
+   règle CSS ne l'utilisait plus. C'était une vérification incomplète : elle ne
+   couvrait pas les attributs SVG posés par le JavaScript. Résultat, les icônes
+   de section se sont retrouvées sans couleur de trait, donc invisibles.
+
+   L'alias est défini sur `body` — et NON sur `:root` — pour que `--ornement`
+   se résolve dans la portée où la classe `theme-*` est posée. Défini sur
+   `:root`, il prendrait la valeur du thème par défaut pour TOUTES les factions,
+   qui afficheraient alors toutes des icônes rouge vampirique.
+
+   Il pourrait aujourd'hui disparaître, en renommant la variable directement
+   dans core.js — toutes les pages du site utilisent désormais les nouveaux
+   noms. Ce n'est pas fait : la modification toucherait un fichier partagé par
+   les 33 pages pour un gain nul, et l'alias documente au moins pourquoi les
+   deux noms coexistent.
+   ---------------------------------------------------------------------------- */
+body{
+  --accent-primary: var(--ornement);
+}
+
+/* ----------------------------------------------------------------------------
+   3. BASE
+   ---------------------------------------------------------------------------- */
+
+/* Reset minimal : pas de marges par défaut du navigateur, et box-sizing
+   cohérent pour que toute largeur inclue bordures et padding. */
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+
+/* --- Visibilité du focus clavier ---
+   Jusqu'à l'étape 2, un seul élément de la page était focalisable : la
+   question du focus ne se posait donc pas. Maintenant que les 16 seigneurs
+   sont atteignables au clavier, il faut voir où l'on se trouve.
+   `:focus-visible` plutôt que `:focus` : le navigateur n'affiche l'anneau que
+   lors d'une navigation au clavier, jamais après un clic à la souris. */
+:focus-visible{
+  outline: 2px solid var(--texte-mise-en-avant);
+  outline-offset: 2px;
+  border-radius: var(--rayon-net);
+}
+
+/* Filet de sécurité : aucune image ne peut déborder de son conteneur. */
+img{ max-width: 100%; }
+
+body{
+  background: radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
+  color: var(--texte);
+  font-family: var(--police-lecture);
+  min-height: 100vh;
+  transition: background .3s ease, color .3s ease;
+}

@@ -1,126 +1,18 @@
 /* ============================================================================
-   v2.css — FEUILLE DE STYLE DU PROTOTYPE V2, chargée par vampire_counts.html
-   UNIQUEMENT. Les 31 autres pages de faction continuent d'utiliser style.css
-   et ne sont donc pas affectées par ce fichier.
+   fiches.css — LES 32 THÈMES DE FACTION ET LA MISE EN PAGE D'UNE FICHE.
+   Chargé par les 32 pages de faction, APRÈS socle.css dont il consomme les
+   tokens. La page d'accueil ne le charge pas : elle n'a besoin ni des thèmes
+   ni de la mise en page en deux colonnes.
 
-   POUR REVENIR EN ARRIÈRE : remplacer, dans vampire_counts.html, la balise
-       <link rel="stylesheet" href="css/v2.css">
-   par  <link rel="stylesheet" href="css/style.css">
-   Rien d'autre n'est à défaire.
+   Ordre obligatoire dans le HTML :
+       <link rel="stylesheet" href="css/socle.css">
+       <link rel="stylesheet" href="css/fiches.css">
 
-   ── Ce que cette feuille change par rapport à style.css ────────────────────
-   ÉTAPE 1 — le système de tokens est introduit sans modifier le rendu :
-   448 propriétés comparées entre les deux feuilles, zéro écart. On prouve
-   d'abord que le système reproduit l'existant.
-
-   ÉTAPE 3 — la mise en page est réécrite en MOBILE-FIRST. Les règles de base
-   décrivent le téléphone ; les `@media (min-width: …)` en fin de fichier
-   ajoutent ce que les écrans plus larges permettent. Le défilement avant le
-   contenu passe de 1 077 px à 132 px sur mobile.
-
-   ÉTAPE 4 — les échelles entrent en vigueur, et le rendu change :
-     • 5 tailles de texte au lieu de 13 (les 10,5 / 12,5 / 13,5 / 14,5 / 15,5
-       disparaissent) ;
-     • 7 valeurs d'espacement au lieu de 26, aucune valeur libre ne subsiste ;
-     • 3 familles de polices au lieu de 5 — Space Grotesk et Inter étaient
-       téléchargées alors qu'aucune page de faction ne les utilise ;
-     • le chargement des polices quitte cette feuille pour le HTML (voir
-       ci-dessous), et passe de 263 Ko à 149 Ko.
-
-   ── Le principe de la direction B ──────────────────────────────────────────
-   Les variables sont séparées en deux familles, et c'est toute l'idée :
-
-     • SURFACES — fonds, bordures, ornements. Chaque faction les redéfinit
-       librement : c'est là que vit son ambiance.
-     • TEXTE — les couleurs qui peignent des caractères lisibles. Elles
-       proviennent d'un jeu restreint dont le contraste est garanti.
-
-   L'audit a montré qu'un seul élément du site échoue au contraste, et pour
-   une raison structurelle : `.unit-qty` est le seul texte courant peint avec
-   --accent-secondary, une variable d'ornement. Séparer les deux familles rend
-   ce défaut impossible à réintroduire, au lieu de dépendre de la vigilance.
-
-   ── Ce qui n'a pas été repris de style.css ─────────────────────────────────
-   Tous les styles de la page de recherche (.search-*, .result-*, .faction-tab)
-   ont été écartés : vérifié, aucun n'est utilisé par une page de faction.
-   Les 32 blocs de thème ne sont pas repris non plus — seul Vampire Counts est
-   défini ici, les autres suivront à l'étape 7 si le prototype est validé.
+   ── Historique ─────────────────────────────────────────────────────────────
+   Ce fichier et socle.css proviennent du découpage de css/v2.css, lui-même
+   issu de la refonte V2 des fiches (commit 46ed217). Le détail des sept
+   étapes de cette refonte est dans le message de ce commit.
    ============================================================================ */
-
-/* Les polices ne sont plus chargées ici. Un `@import` en tête de feuille
-   SÉRIALISE les requêtes : le navigateur doit récupérer cette feuille, y
-   découvrir l'import, demander la feuille Google, et seulement alors demander
-   les fichiers de police — trois allers-retours avant le premier caractère
-   correctement rendu. L'appel est désormais dans vampire_counts.html, précédé
-   de deux `preconnect`, ce qui permet de tout lancer en parallèle. */
-
-/* ----------------------------------------------------------------------------
-   1. TOKENS — les valeurs de réglage, en un seul endroit.
-
-   Les tokens sont nommés par RÔLE (--txt-note, --esp-carte) et non par valeur
-   (--txt-13, --esp-12). C'est ce qui permettra, à l'étape 4, de remplacer une
-   valeur sans avoir à retrouver tous ses usages : on change le token, tout ce
-   qui joue ce rôle suit.
-   ---------------------------------------------------------------------------- */
-:root{
-
-  /* --- Familles de polices ------------------------------------------------
-     Cinq familles aujourd'hui, réduites à trois à l'étape 4. Nommées par rôle
-     pour que la réduction se fasse ici et nulle part ailleurs. */
-  /* DEUX familles, et non trois. Cormorant Upright a été retirée à l'étape 4 :
-     elle coûtait 33 Ko — 22 % du poids des polices — pour un seul élément,
-     l'épithète sous le nom du seigneur, soit une ligne par fiche. L'épithète
-     utilise désormais la police de lecture en italique, déjà chargée. */
-  --police-titre:   'Cinzel', serif;      /* noms propres, intitulés */
-  --police-lecture: 'EB Garamond', serif; /* corps de texte, lore, épithète */
-
-  /* --- ÉCHELLE TYPOGRAPHIQUE (étape 4) ------------------------------------
-     Cinq degrés, contre les 13 tailles relevées par l'audit — dont 10,5 px,
-     12,5 px, 13,5 px, 14,5 px et 15,5 px, qui trahissaient des valeurs posées
-     à l'œil une par une. Cinq tailles suffisent à hiérarchiser une fiche ;
-     treize créent du bruit sans créer de hiérarchie.
-     Les paliers fluides (`clamp`) suivent la largeur de l'écran entre deux
-     bornes : le texte grandit avec la place disponible, sans saut brusque. */
-  --t-1: 13px;                        /* mentions, étiquettes, notes d'unité */
-  --t-2: 15px;                        /* texte d'appui, quantités, noms d'unité */
-  --t-3: clamp(16px, 2.4vw, 18px);    /* corps de lecture */
-  --t-4: clamp(18px, 3.5vw, 22px);    /* titres de section */
-  --t-5: clamp(28px, 7vw, 42px);      /* nom du seigneur */
-
-  /* Les rôles pointent vers l'échelle. C'est ce niveau d'indirection qui
-     permet de changer une taille sans retrouver tous ses usages : on modifie
-     le palier ci-dessus, et tout ce qui joue ce rôle suit. */
-  --txt-micro:      var(--t-1);  /* étiquette de faction, lien de retour */
-  --txt-mini:       var(--t-1);  /* épithète en liste, note d'unité */
-  --txt-petit:      var(--t-1);  /* sous-titres de section d'armée */
-  --txt-normal:     var(--t-2);  /* nom en liste, total de slots */
-  --txt-unite:      var(--t-2);  /* nom d'unité dans une carte */
-  --txt-quantite:   var(--t-2);  /* quantité d'unité (×4) */
-  --txt-note:       var(--t-2);  /* encadré de note finale */
-  --txt-attribut:   var(--t-3);  /* lignes d'attributs, carte magie */
-  --txt-epithete:   var(--t-3);  /* épithète sous le nom du seigneur */
-  --txt-corps:      var(--t-3);  /* corps de texte */
-  --txt-sidebar:    var(--t-4);  /* titre de la barre latérale */
-  --txt-section:    var(--t-4);  /* titre de section */
-  --txt-titre:      var(--t-5);  /* nom du seigneur */
-
-  /* --- ÉCHELLE D'ESPACEMENT (étape 4) --------------------------------------
-     Sept valeurs remplacent les 26 relevées par l'audit. Toutes les marges et
-     tous les retraits de la feuille s'y alignent désormais : plus aucune
-     valeur libre, donc plus de dérive possible. */
-  --esp-1:  4px;
-  --esp-2:  8px;
-  --esp-3: 12px;
-  --esp-4: 16px;
-  --esp-5: 24px;
-  --esp-6: 32px;
-  --esp-7: 48px;
-
-  /* --- Rayons et bordures -------------------------------------------------- */
-  --rayon-net:  2px;   /* étiquettes */
-  --rayon-doux: 3px;   /* cartes, encadrés */
-  --rayon-rond: 6px;   /* vignettes d'unité */
-}
 
 /* ----------------------------------------------------------------------------
    2. THÈME VAMPIRE COUNTS
@@ -921,64 +813,6 @@
   --texte-titre:         #6d9b48;
   --texte-mise-en-avant: #b8a668;
 }
-/* ----------------------------------------------------------------------------
-   2 sexies. ALIAS POUR LES SVG DE js/core.js  — NE PAS SUPPRIMER
-
-   Les icônes de section et le séparateur décoratif sont écrits directement en
-   SVG dans js/core.js, et portent leurs couleurs en ATTRIBUTS :
-
-       stroke="var(--accent-primary)"   ×4 icônes
-       fill="var(--accent-primary)"     ×3 gouttes du séparateur
-
-   J'avais supprimé cette variable à l'étape 5, après avoir vérifié qu'aucune
-   règle CSS ne l'utilisait plus. C'était une vérification incomplète : elle ne
-   couvrait pas les attributs SVG posés par le JavaScript. Résultat, les icônes
-   de section se sont retrouvées sans couleur de trait, donc invisibles.
-
-   On ne peut pas renommer la variable dans core.js : ce fichier est partagé
-   avec index.html, qui utilise toujours style.css et ses anciens noms. L'alias
-   est donc défini ici, sur `body` — et non sur `:root` — pour que `--ornement`
-   se résolve dans la portée où la classe `theme-*` est posée. Défini sur
-   `:root`, il prendrait la valeur du thème par défaut pour TOUTES les factions.
-
-   À supprimer seulement le jour où index.html passera lui aussi à v2.css, et
-   où core.js pourra utiliser --ornement directement.
-   ---------------------------------------------------------------------------- */
-body{
-  --accent-primary: var(--ornement);
-}
-
-/* ----------------------------------------------------------------------------
-   3. BASE
-   ---------------------------------------------------------------------------- */
-
-/* Reset minimal : pas de marges par défaut du navigateur, et box-sizing
-   cohérent pour que toute largeur inclue bordures et padding. */
-*{ box-sizing: border-box; margin: 0; padding: 0; }
-
-/* --- Visibilité du focus clavier ---
-   Jusqu'à l'étape 2, un seul élément de la page était focalisable : la
-   question du focus ne se posait donc pas. Maintenant que les 16 seigneurs
-   sont atteignables au clavier, il faut voir où l'on se trouve.
-   `:focus-visible` plutôt que `:focus` : le navigateur n'affiche l'anneau que
-   lors d'une navigation au clavier, jamais après un clic à la souris. */
-:focus-visible{
-  outline: 2px solid var(--texte-mise-en-avant);
-  outline-offset: 2px;
-  border-radius: var(--rayon-net);
-}
-
-/* Filet de sécurité : aucune image ne peut déborder de son conteneur. */
-img{ max-width: 100%; }
-
-body{
-  background: radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
-  color: var(--texte);
-  font-family: var(--police-lecture);
-  min-height: 100vh;
-  transition: background .3s ease, color .3s ease;
-}
-
 /* ----------------------------------------------------------------------------
    4. MISE EN PAGE
    ---------------------------------------------------------------------------- */

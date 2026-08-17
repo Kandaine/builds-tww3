@@ -18,10 +18,10 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap">
 
-<!-- PROTOTYPE V2 (etape 6 bis) : Norsca sert de second cas d'essai avant
-     generalisation — 25 seigneurs et le pire contraste du site.
-     Pour revenir en arriere : remettre href="css/style.css" ci-dessous. -->
-<link rel="stylesheet" href="css/v2.css">
+<!-- Ordre obligatoire : socle.css (tokens, base) puis fiches.css, qui les
+     consomme. Les 32 pages de faction chargent ces deux fichiers. -->
+<link rel="stylesheet" href="css/socle.css">
+<link rel="stylesheet" href="css/fiches.css">
 </head>
 <body>
 
@@ -46,7 +46,7 @@
        3. js/app.js           — rendu de la page -->
 <script src="js/core.js"></script>
 <script src="js/units/norsca.js"></script>
-<script src="js/app-v2.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

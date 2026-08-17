@@ -12,11 +12,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Builds Total War Warhammer 3 — Recherche de seigneurs</title>
 <link rel="icon" href="assets/favicon.ico">
-<link rel="stylesheet" href="css/style.css">
+<!-- Mêmes polices que les fiches, appelées ici plutôt que depuis la feuille
+     pour éviter la sérialisation d'un @import. Deux familles seulement. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
+<!-- Ordre obligatoire : socle.css (tokens, base) puis accueil.css, qui les
+     consomme. Cette page ne charge PAS fiches.css — ni les 32 palettes de
+     faction ni la mise en page en deux colonnes ne lui servent. -->
+<link rel="stylesheet" href="css/socle.css">
+<link rel="stylesheet" href="css/accueil.css">
 </head>
-<!-- La classe "search-theme" active la palette de couleurs spécifique à
-     cette page (voir body.search-theme dans css/style.css), indépendante
-     des thèmes de faction (.theme-*) utilisés sur les autres pages. -->
+<!-- La classe "search-theme" active la palette neutre de cette page (voir
+     body.search-theme dans css/accueil.css), indépendante des thèmes de
+     faction (.theme-*) utilisés sur les autres pages. -->
 <body class="search-theme">
 
 <div class="search-page">

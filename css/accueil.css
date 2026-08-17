@@ -1,0 +1,401 @@
+/* ============================================================================
+   accueil.css — LA PAGE DE RECHERCHE (index.html), et elle seule.
+   Chargée APRÈS socle.css, dont elle consomme les tokens.
+
+   Ordre obligatoire dans le HTML :
+       <link rel="stylesheet" href="css/socle.css">
+       <link rel="stylesheet" href="css/accueil.css">
+
+   Elle ne charge PAS fiches.css : ni les 32 palettes de faction, ni la mise en
+   page en deux colonnes ne lui servent — 20 Ko économisés.
+
+   ── Le parti pris ──────────────────────────────────────────────────────────
+   L'ancienne page arborait un rouge-noir gothique presque identique à celui
+   des Comtes Vampires. Une page qui réunit les 32 factions ne devrait pas
+   porter les couleurs de l'une d'elles.
+
+   D'où une palette NEUTRE : ardoise sombre, un seul accent or pâle. La page
+   s'efface, et ce sont les 321 portraits de seigneurs qui font toute la
+   couleur — chacun apportant celle de sa faction. Le filet coloré à gauche de
+   chaque carte reste le seul rappel d'appartenance.
+   ============================================================================ */
+
+/* ----------------------------------------------------------------------------
+   1. LA PALETTE
+
+   Contrastes mesurés (seuil 4,5 pour du texte, 3 pour un contour de contrôle) :
+     --texte              13,2 à 15,4      --texte-secondaire   6,1 à 7,2
+     --texte-mise-en-avant 8,7 à 10,2      onglet actif         7,9
+   ---------------------------------------------------------------------------- */
+body.search-theme{
+  /* --- SURFACES : ardoise, sans dominante colorée ------------------------- */
+  --bg:            #12141a;
+  --bg-glow:       #1a1e27;
+  --panel:         #171a22;
+  --panel-light:   #1f232e;
+  --panel-deep:    #0e1015;
+  --border:        #2b303c;   /* séparateurs décoratifs */
+  /* Contour des CONTRÔLES (champ de recherche, onglets). Une bordure
+     décorative peut être discrète ; celle qui délimite un élément interactif
+     doit atteindre 3:1, sinon on ne voit plus où l'on peut cliquer.
+     --border n'y suffit pas (1,2), d'où cette seconde valeur. */
+  --border-controle: #676c78;
+
+  /* --- ORNEMENTS : un seul accent, or pâle -------------------------------- */
+  --ornement:        #c9a227;
+  --ornement-vif:    #e0b93f;
+  --ornement-rgb:    201,162,39;
+  --ornement-2:      #7c8794;
+  --ornement-2-rgb:  124,135,148;
+
+  /* --- TEXTE -------------------------------------------------------------- */
+  --texte:               #e9ebf0;
+  --texte-secondaire:    #9aa2b1;
+  --texte-titre:         #d8c069;
+  --texte-mise-en-avant: #d8c069;
+
+  /* Fond uni volontairement : l'ancienne page superposait trois dégradés
+     radiaux teintés de rouge, qui donnaient sa dominante vampirique. */
+  background: var(--bg);
+}
+
+/* ----------------------------------------------------------------------------
+   2. MISE EN PAGE — écrite en MOBILE-FIRST
+
+   Le problème à traiter : sur téléphone, il fallait franchir 809 px avant
+   d'atteindre le premier résultat, dont 525 px pour le seul bandeau des 33
+   onglets de faction, qui passaient à la ligne les uns après les autres.
+   ---------------------------------------------------------------------------- */
+
+.search-page{
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: var(--esp-6) var(--esp-4) var(--esp-7);
+}
+
+.search-hero{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;   /* aligné à gauche sur mobile, centré à partir de 781px */
+  gap: var(--esp-4);
+  margin-bottom: var(--esp-6);
+}
+
+.search-title{
+  font-family: var(--police-titre);
+  font-weight: 900;
+  font-size: var(--t-5);
+  letter-spacing: 1px;
+  color: var(--texte);
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.search-subtitle{
+  font-family: var(--police-lecture);
+  font-size: var(--t-2);
+  font-style: italic;
+  color: var(--texte-secondaire);
+}
+
+/* Le filet décoratif de l'ancienne page ne survit pas : sur mobile il coûtait
+   de la hauteur sans rien apporter. Masqué plutôt que supprimé du HTML, pour
+   ne pas toucher à index.html plus que nécessaire. */
+.search-divider{ display: none; }
+
+.search-input{
+  width: 100%;
+  font-family: var(--police-lecture);
+  font-size: var(--t-3);
+  background: var(--panel-light);
+  border: 1px solid var(--border-controle);
+  border-radius: var(--rayon-doux);
+  padding: var(--esp-3) var(--esp-4);
+  color: var(--texte);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+.search-input::placeholder{ color: var(--texte-secondaire); }
+.search-input:focus{
+  outline: none;
+  border-color: var(--ornement);
+  box-shadow: 0 0 0 3px rgba(var(--ornement-rgb), .25);
+}
+
+/* ----------------------------------------------------------------------------
+   3. LES ONGLETS DE FACTION
+
+   Sur téléphone : UNE SEULE LIGNE qui défile horizontalement au pouce, au lieu
+   des 33 pastilles qui passaient à la ligne sur 525 px de hauteur.
+   `scroll-snap` fait que le défilement s'arrête proprement sur un onglet.
+   ---------------------------------------------------------------------------- */
+.faction-tabs{
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: var(--esp-2);
+  padding-bottom: var(--esp-2);
+  scroll-snap-type: x proximity;
+  /* masque la barre de défilement sans empêcher le geste */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border-controle) transparent;
+  /* le rail déborde volontairement des marges de la page, pour signaler
+     qu'il continue au-delà du bord */
+  margin-inline: calc(var(--esp-4) * -1);
+  padding-inline: var(--esp-4);
+}
+
+.faction-tab{
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  font-family: var(--police-titre);
+  font-size: var(--t-1);
+  letter-spacing: .5px;
+  /* 44px : seuil de cible tactile. Les 33 onglets étaient tous en dessous. */
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 var(--esp-4);
+  border-radius: 999px;
+  background: var(--panel-light);
+  border: 1px solid var(--border-controle);
+  color: var(--texte-secondaire);
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color .2s ease, border-color .2s ease, background .2s ease;
+}
+.faction-tab:hover{
+  color: var(--texte);
+  border-color: var(--ornement);
+}
+.faction-tab.active,
+.faction-tab[aria-pressed="true"]{
+  background: var(--ornement);
+  border-color: var(--ornement);
+  color: var(--panel-deep);
+  font-weight: 700;
+}
+
+/* ----------------------------------------------------------------------------
+   4. LES RÉSULTATS
+   ---------------------------------------------------------------------------- */
+.results-grid{
+  display: grid;
+  grid-template-columns: 1fr;   /* une colonne sur téléphone */
+  gap: var(--esp-3);
+}
+
+/* Région d'annonce pour les lecteurs d'écran (voir annoncerResultats() dans
+   js/search.js). Elle doit rester dans le flux du document — `display:none`
+   la rendrait invisible aux technologies d'assistance elles-mêmes — d'où
+   cette technique : réduite à un pixel, découpée, et sortie du champ. */
+.annonce-visuellement-masquee{
+  position: absolute;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.results-empty{
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: var(--esp-7) var(--esp-4);
+  color: var(--texte-secondaire);
+  font-family: var(--police-lecture);
+  font-style: italic;
+  font-size: var(--t-3);
+}
+
+.result-card{
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-4);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border);
+  border-radius: var(--rayon-doux);
+  padding: var(--esp-3);
+  text-decoration: none;
+  color: inherit;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+.result-card:hover{
+  background: var(--panel-light);
+  border-color: var(--ornement-2);
+  transform: translateY(-2px);
+}
+
+.result-seal{
+  width: 60px; height: 130px;
+  flex-shrink: 0;
+  border-radius: var(--rayon-rond);
+  border: 1px solid var(--border-controle);
+  overflow: hidden;
+  background: var(--panel-deep);
+}
+.result-seal img{ width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.result-seal svg{ width: 30px; height: 30px; margin: auto; display: block; }
+
+.result-info{ min-width: 0; }
+.result-name{
+  font-family: var(--police-titre);
+  font-size: var(--t-2);
+  color: var(--texte);
+  letter-spacing: .3px;
+  line-height: 1.3;
+}
+.result-epithet{
+  font-family: var(--police-lecture);
+  font-size: var(--t-1);
+  font-style: italic;
+  color: var(--texte-secondaire);
+  margin-top: var(--esp-1);
+}
+.result-tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--esp-1);
+  margin-top: var(--esp-2);
+}
+.result-tags .faction-tag{
+  font-family: var(--police-titre);
+  font-size: var(--t-1);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--texte-mise-en-avant);
+  border: 1px solid var(--ornement-2);
+  border-radius: var(--rayon-net);
+  padding: 2px var(--esp-2);
+  margin: 0;
+  display: inline-block;
+}
+
+/* ----------------------------------------------------------------------------
+   5. ÉCRANS PLUS LARGES
+
+   Comme pour les fiches, chaque palier n'AJOUTE que ce que la largeur permet.
+   ---------------------------------------------------------------------------- */
+
+@media (min-width: 560px){
+  .search-page{ padding: var(--esp-7) var(--esp-5) var(--esp-7); }
+  .results-grid{ grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+  .result-card{ padding: var(--esp-4); }
+}
+
+/* À partir de 781 px, l'en-tête se centre et les onglets cessent de défiler :
+   il y a la place de les afficher tous. */
+@media (min-width: 781px){
+  .search-hero{
+    align-items: center;
+    text-align: center;
+    gap: var(--esp-5);
+  }
+  .search-input{ max-width: 560px; }
+  .faction-tabs{
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: visible;
+    margin-inline: 0;
+    padding-inline: 0;
+  }
+  .search-divider{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 200px;
+  }
+  .search-divider span{ display: none; }
+  .search-divider::before, .search-divider::after{
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border-controle), transparent);
+  }
+}
+
+/* ----------------------------------------------------------------------------
+   6. LE FILET DE FACTION SUR CHAQUE CARTE
+
+   C'est le SEUL rappel d'appartenance sur cette page neutre : un trait de
+   3 px à gauche, dans la couleur d'ornement de la faction du seigneur.
+
+   Ces valeurs sont recopiées depuis les blocs `.theme-*` de fiches.css, que
+   cette page ne charge pas. C'est donc une duplication assumée — mais une
+   duplication GÉNÉRÉE : les règles ci-dessous ont été produites en lisant
+   fiches.css, pas retapées à la main.
+
+   Cela avait son importance : au moment de les régénérer, TROIS valeurs
+   avaient dérivé de leur thème — beastmen (dérive antérieure à la V2), plus
+   hung et undead-legions, dont les thèmes venaient d'être créés. Personne ne
+   l'aurait vu, le filet restant plausible.
+
+   À REGÉNÉRER si une couleur d'ornement change dans fiches.css. Le contrôle :
+       comparer --ornement de chaque .theme-* avec le border-left-color ici.
+   ---------------------------------------------------------------------------- */
+.result-card[data-group="albion"]{ border-left-color: #2e8f8a; }
+.result-card[data-group="albion"]:hover{ border-color: #46b8b1; }
+.result-card[data-group="araby"]{ border-left-color: #c98a2e; }
+.result-card[data-group="araby"]:hover{ border-color: #e8ac48; }
+.result-card[data-group="beastmen"]{ border-left-color: #6b7a1f; }
+.result-card[data-group="beastmen"]:hover{ border-color: #94a82b; }
+.result-card[data-group="bretonnia"]{ border-left-color: #3a5aa8; }
+.result-card[data-group="bretonnia"]:hover{ border-color: #5c7dcf; }
+.result-card[data-group="chaos-dwarfs"]{ border-left-color: #c2410c; }
+.result-card[data-group="chaos-dwarfs"]:hover{ border-color: #e8622a; }
+.result-card[data-group="daemons-of-chaos"]{ border-left-color: #9333a8; }
+.result-card[data-group="daemons-of-chaos"]:hover{ border-color: #c04fd6; }
+.result-card[data-group="dark-elves"]{ border-left-color: #5b2f7a; }
+.result-card[data-group="dark-elves"]:hover{ border-color: #7d4aa3; }
+.result-card[data-group="dwarfs"]{ border-left-color: #b5541c; }
+.result-card[data-group="dwarfs"]:hover{ border-color: #e0812e; }
+.result-card[data-group="empire"]{ border-left-color: #3d6fb0; }
+.result-card[data-group="empire"]:hover{ border-color: #5f92d6; }
+.result-card[data-group="fimir"]{ border-left-color: #6f9a3e; }
+.result-card[data-group="fimir"]:hover{ border-color: #8fbf5a; }
+.result-card[data-group="gnoblar-hordes"]{ border-left-color: #cf7326; }
+.result-card[data-group="gnoblar-hordes"]:hover{ border-color: #f0933f; }
+.result-card[data-group="grand-cathay"]{ border-left-color: #1f8f5f; }
+.result-card[data-group="grand-cathay"]:hover{ border-color: #2fc07d; }
+.result-card[data-group="greenskins"]{ border-left-color: #5a9c1f; }
+.result-card[data-group="greenskins"]:hover{ border-color: #7ecc2e; }
+.result-card[data-group="high-elves"]{ border-left-color: #3d7ea6; }
+.result-card[data-group="high-elves"]:hover{ border-color: #5fa8d3; }
+.result-card[data-group="hung"]{ border-left-color: #7a6a3f; }
+.result-card[data-group="hung"]:hover{ border-color: #a89152; }
+.result-card[data-group="jade-blooded-vampires"]{ border-left-color: #40c299; }
+.result-card[data-group="jade-blooded-vampires"]:hover{ border-color: #63dab3; }
+.result-card[data-group="khorne"]{ border-left-color: #c81e2c; }
+.result-card[data-group="khorne"]:hover{ border-color: #f0303f; }
+.result-card[data-group="kislev"]{ border-left-color: #4a8bc2; }
+.result-card[data-group="kislev"]:hover{ border-color: #6fb3e0; }
+.result-card[data-group="lizardmen"]{ border-left-color: #2f9e5a; }
+.result-card[data-group="lizardmen"]:hover{ border-color: #46c878; }
+.result-card[data-group="norsca"]{ border-left-color: #5a8ab0; }
+.result-card[data-group="norsca"]:hover{ border-color: #7db3d6; }
+.result-card[data-group="nurgle"]{ border-left-color: #6b8a2e; }
+.result-card[data-group="nurgle"]:hover{ border-color: #8fb43e; }
+.result-card[data-group="ogre-kingdoms"]{ border-left-color: #a0703a; }
+.result-card[data-group="ogre-kingdoms"]:hover{ border-color: #c8924a; }
+.result-card[data-group="skaven"]{ border-left-color: #5a9e3a; }
+.result-card[data-group="skaven"]:hover{ border-color: #7ed94f; }
+.result-card[data-group="slaanesh"]{ border-left-color: #c23e8a; }
+.result-card[data-group="slaanesh"]:hover{ border-color: #e85ba8; }
+.result-card[data-group="southern-realms"]{ border-left-color: #c33f3f; }
+.result-card[data-group="southern-realms"]:hover{ border-color: #e05f5f; }
+.result-card[data-group="tomb-kings"]{ border-left-color: #c9a13a; }
+.result-card[data-group="tomb-kings"]:hover{ border-color: #e8c25a; }
+.result-card[data-group="tzeentch"]{ border-left-color: #b23fd1; }
+.result-card[data-group="tzeentch"]:hover{ border-color: #d466ef; }
+.result-card[data-group="undead-legions"]{ border-left-color: #4a6b32; }
+.result-card[data-group="undead-legions"]:hover{ border-color: #6d9b48; }
+.result-card[data-group="vampire-coast"]{ border-left-color: #3f9683; }
+.result-card[data-group="vampire-coast"]:hover{ border-color: #5ecbb0; }
+.result-card[data-group="vampire-counts"]{ border-left-color: #8a2332; }
+.result-card[data-group="vampire-counts"]:hover{ border-color: #b9354a; }
+.result-card[data-group="warriors-of-chaos"]{ border-left-color: #5a6c84; }
+.result-card[data-group="warriors-of-chaos"]:hover{ border-color: #7d94b0; }
+.result-card[data-group="wood-elves"]{ border-left-color: #2f8f4e; }
+.result-card[data-group="wood-elves"]:hover{ border-color: #4bbd6f; }

@@ -1,177 +1,289 @@
 // ============================================================================
-// app.js — Script principal des pages "faction" (ex: dwarfs.html, khorne.html…).
-// Ce fichier gère l'affichage de la liste des seigneurs dans la barre latérale
-// et le rendu de la fiche détaillée du seigneur sélectionné.
-// Il dépend de js/core.js et de js/units/<faction>.js, tous deux chargés AVANT
-// ce fichier (voir les balises <script> dans chaque page HTML) :
-//   - core.js             : loadLords, factionBanners, icons, dripSVG,
-//                           svgDeSecours
-//   - units/<faction>.js  : unitImages, limité aux unités de cette faction
+// app.js — Rendu d'une page de faction : la liste des seigneurs dans la barre
+// latérale, et la fiche détaillée du seigneur sélectionné.
+//
+// Chargé par les 32 pages de faction, APRÈS js/core.js et le module d'icônes
+// de la faction, dont il consomme `loadLords`, `factionBanners`, `icons`,
+// `dripSVG`, `svgDeSecours` et `unitImages`.
+//
+// ── Ce que la V2 a changé, et pourquoi ─────────────────────────────────────
+// Ce fichier est issu de la refonte V2 (commit 46ed217). Trois corrections
+// méritent d'être connues avant d'y toucher, parce qu'elles répondent chacune
+// à un défaut mesuré et non à une préférence :
+//
+//   1. La liste des seigneurs est une vraie liste de vrais liens.
+//      C'étaient des <div> porteuses d'un addEventListener('click') : ni
+//      focalisables, ni activables au clavier. Un seul élément de toute la
+//      page était atteignable au clavier, pour 26 éléments interactifs.
+//
+//   2. La hiérarchie de titres h1 > h2 > h3 existe. La seule balise de titre
+//      de la page était auparavant un <h4> perdu dans la carte « Magie » : un
+//      lecteur d'écran n'avait aucun plan de page.
+//
+//   3. `aria-current` signale l'entrée active autrement que par la couleur.
+//
+// ── Deux pièges à ne pas réintroduire ──────────────────────────────────────
+// LE body.className. L'ancienne version écrivait
+// `document.body.className = 'theme-' + l.group`, ce qui EFFACE toute autre
+// classe posée sur <body> — n'importe quelle classe ajoutée dans le HTML
+// disparaissait au premier rendu. Voir appliquerTheme(), qui ne retire que
+// les classes `theme-*`.
+//
+// LE FOCUS APRÈS RENDU. Chaque sélection reconstruit la liste, ce qui détruit
+// l'élément focalisé. Sans restauration explicite, un utilisateur au clavier
+// est renvoyé en haut de page à chaque changement de seigneur — les liens ont
+// beau être corrects, la navigation devient impraticable.
 // ============================================================================
 
-// Liste complète des seigneurs légendaires chargés pour la faction courante.
-// Remplie de façon asynchrone au démarrage par init() via loadLords().
+// Liste complète des seigneurs de la faction courante, remplie par init().
 let lords = [];
 
-// Identifiant (id) du seigneur actuellement affiché dans la page.
-// Correspond au champ "id" d'un objet seigneur dans les fichiers data/*.json.
+// Identifiant du seigneur affiché, correspondant au champ "id" du JSON.
 let activeId = null;
 
-// Construit et affiche la liste des seigneurs dans la barre latérale gauche.
-// Ne prend aucun paramètre : elle lit directement les variables globales
-// `lords` et `activeId`.
+// Mémorise si la dernière sélection vient d'une interaction utilisateur, afin
+// de savoir s'il faut redonner le focus après le rendu (voir renderList).
+let rendreLeFocus = false;
+
+// ---------------------------------------------------------------------------
+// ÉTAPE 3 — le panneau repliable de la barre latérale.
+//
+// LE PROBLÈME. Sous 780 px, la barre latérale passe au-dessus du contenu.
+// Comme elle liste tous les seigneurs, sa hauteur suit leur nombre : l'audit a
+// mesuré 1 077 px de défilement avant la fiche sur cette page, et jusqu'à
+// 1 590 px sur Norsca. Un visiteur qui ouvre un lien direct vers une fiche doit
+// donc franchir deux écrans avant d'atteindre ce qu'il venait lire.
+//
+// LA RÉPONSE. Sur mobile, la liste est repliée derrière un bouton qui affiche
+// le seigneur courant. Le contenu commence immédiatement ; la liste reste à un
+// appui, et la barre est collante pour rester atteignable pendant la lecture.
+// Sur grand écran, rien ne change : le bouton est masqué en CSS et la liste
+// est toujours dépliée.
+//
+// Le bouton est injecté ici plutôt qu'écrit dans le HTML : les 31 autres pages
+// n'auront ainsi rien à modifier lors de la généralisation.
+// ---------------------------------------------------------------------------
+function construireBouton(){
+  let bouton = document.getElementById('lord-toggle');
+  if(bouton) return bouton;
+
+  const liste = document.getElementById('lord-list');
+  bouton = document.createElement('button');
+  bouton.id = 'lord-toggle';
+  bouton.type = 'button';
+  bouton.className = 'lord-toggle';
+  // aria-expanded décrit l'état à un lecteur d'écran ; aria-controls dit quel
+  // élément ce bouton commande.
+  bouton.setAttribute('aria-expanded', 'false');
+  bouton.setAttribute('aria-controls', 'lord-list');
+  liste.parentNode.insertBefore(bouton, liste);
+
+  bouton.addEventListener('click', () => {
+    const ouvert = bouton.getAttribute('aria-expanded') === 'true';
+    basculerPanneau(!ouvert);
+    // À l'ouverture, on emmène le focus sur l'entrée active : l'utilisateur au
+    // clavier se retrouve directement dans la liste, pas au début de celle-ci.
+    if(!ouvert){
+      const actif = liste.querySelector('.lord-item.active');
+      if(actif) actif.focus();
+    }
+  });
+  return bouton;
+}
+
+function basculerPanneau(ouvrir){
+  const bouton = document.getElementById('lord-toggle');
+  if(!bouton) return;
+  bouton.setAttribute('aria-expanded', ouvrir ? 'true' : 'false');
+  document.querySelector('.sidebar').classList.toggle('panneau-ouvert', ouvrir);
+}
+
+// ---------------------------------------------------------------------------
+// Applique le thème de la faction sans écraser les autres classes du <body>.
+// ---------------------------------------------------------------------------
+function appliquerTheme(groupe){
+  const autres = [...document.body.classList].filter(c => !c.startsWith('theme-'));
+  document.body.className = [...autres, `theme-${groupe}`].join(' ');
+}
+
+// ---------------------------------------------------------------------------
+// Barre latérale : la liste des seigneurs.
+//
+// Structure produite : <ul> de <li> contenant chacun un <a href="?id=...">.
+//   - le <ul> permet à un lecteur d'écran d'annoncer « liste de 16 éléments » ;
+//   - le <a href> rend l'entrée focalisable au clavier et activable par Entrée,
+//     sans qu'on ait à réimplémenter ces comportements ;
+//   - l'attribut href réel autorise aussi le clic du milieu et « ouvrir dans un
+//     nouvel onglet », qui étaient impossibles avec une <div>.
+// Le clic normal est intercepté pour garder le rendu instantané, sans
+// rechargement — le comportement visible est donc identique à avant.
+// ---------------------------------------------------------------------------
 function renderList(){
   const list = document.getElementById('lord-list');
 
-  // Cas limite : si aucun seigneur n'a pu être chargé (fichier JSON vide,
-  // erreur réseau, etc.), on affiche un message plutôt qu'une liste vide.
+  // Cas limite : aucun seigneur chargé (JSON vide ou introuvable).
   if(!lords.length){
     list.innerHTML = `<div class="lord-list-empty">Aucun seigneur pour l'instant.</div>`;
     return;
   }
 
-  // Génère une carte cliquable par seigneur (numéro romain, nom, épithète).
-  // La classe "active" est ajoutée sur l'élément correspondant au seigneur
-  // actuellement sélectionné, pour le mettre en surbrillance visuellement.
-  list.innerHTML = lords.map(l => `
-    <div class="lord-item ${l.id===activeId?'active':''}" data-id="${l.id}">
-      <span class="lord-numeral">${l.numeral}</span>
-      <span class="lord-names">
-        <span class="lord-name">${l.name}</span>
-        <span class="lord-epithet">${l.epithet}</span>
-      </span>
-    </div>
-  `).join('');
+  list.innerHTML = `
+    <ul class="lord-list">
+      ${lords.map(l => `
+        <li>
+          <a class="lord-item ${l.id===activeId?'active':''}"
+             href="?id=${encodeURIComponent(l.id)}"
+             data-id="${l.id}"
+             ${l.id===activeId ? 'aria-current="true"' : ''}>
+            <span class="lord-numeral" aria-hidden="true">${l.numeral}</span>
+            <span class="lord-names">
+              <span class="lord-name">${l.name}</span>
+              <span class="lord-epithet">${l.epithet}</span>
+            </span>
+          </a>
+        </li>
+      `).join('')}
+    </ul>
+  `;
 
-  // Attache un gestionnaire de clic à chaque carte de la liste : cliquer sur
-  // un seigneur met à jour l'id actif, modifie l'URL (sans recharger la page,
-  // via history.replaceState) pour permettre le partage/rafraîchissement du
-  // lien, puis relance un rendu complet (liste + page de détail).
   list.querySelectorAll('.lord-item').forEach(el=>{
-    el.addEventListener('click', ()=>{
+    el.addEventListener('click', (e)=>{
+      // On laisse le navigateur faire son travail si l'utilisateur demande
+      // explicitement une nouvelle fenêtre ou un nouvel onglet.
+      if(e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
+      e.preventDefault();
       activeId = el.dataset.id;
-      history.replaceState(null, '', `?id=${activeId}`);
+      history.replaceState(null, '', `?id=${encodeURIComponent(activeId)}`);
+      rendreLeFocus = true;
+      // Sur mobile, on referme le panneau : sans cela, la liste resterait
+      // ouverte par-dessus la fiche qu'on vient justement de demander.
+      // Sur grand écran la classe est sans effet, le CSS gardant la liste
+      // toujours dépliée.
+      const etaitOuvert = document.querySelector('.sidebar').classList.contains('panneau-ouvert');
+      if(etaitOuvert) basculerPanneau(false);
       render();
+      // Le panneau refermé, l'élément qui avait le focus n'est plus visible :
+      // on le rend au bouton, qui devient le point de repère.
+      if(etaitOuvert){
+        const b = document.getElementById('lord-toggle');
+        if(b) b.focus();
+        rendreLeFocus = false;
+      }
     });
   });
+
+  // Libellé du bouton : le seigneur affiché, pour que l'utilisateur sache où
+  // il se trouve sans déplier la liste.
+  const bouton = construireBouton();
+  const courant = lords.find(l => l.id === activeId);
+  if(courant){
+    bouton.innerHTML = `
+      <span class="lord-toggle-numeral" aria-hidden="true">${courant.numeral}</span>
+      <span class="lord-toggle-nom">${courant.name}</span>
+      <span class="lord-toggle-chevron" aria-hidden="true"></span>
+    `;
+    bouton.setAttribute('aria-label', `Seigneur affiché : ${courant.name}. Changer de seigneur`);
+  }
+
+  // Le rendu remplace tout le contenu de la liste, ce qui détruit l'élément
+  // qui avait le focus. Sans cette restauration, un utilisateur au clavier
+  // serait renvoyé au début de la page à chaque sélection — la navigation
+  // deviendrait impraticable alors même que les liens sont corrects.
+  if(rendreLeFocus){
+    const actif = list.querySelector('.lord-item.active');
+    if(actif) actif.focus();
+    rendreLeFocus = false;
+  }
 }
 
-// Construit et affiche la fiche détaillée (lore, effets, build recommandé...)
-// du seigneur actuellement sélectionné (`activeId`) dans la zone centrale
-// #page-content.
+// ---------------------------------------------------------------------------
+// Zone principale : la fiche du seigneur sélectionné.
+// ---------------------------------------------------------------------------
 function renderPage(){
-  // Récupère l'objet seigneur correspondant à l'id actif.
   const l = lords.find(x=>x.id===activeId);
   const page = document.getElementById('page-content');
 
-  // Garde-fou : si aucun seigneur n'est sélectionné (liste vide, fichier JSON
-  // introuvable ou faction sans seigneur), on affiche un message au lieu de
-  // laisser la suite planter. Sans ce test, la ligne `l.group` ci-dessous
-  // lèverait une TypeError sur `undefined` et la page resterait blanche, sans
-  // rien indiquer au visiteur. renderList() fait déjà ce contrôle de son côté.
+  // Garde-fou : sans ce test, la lecture de `l.group` ci-dessous lèverait une
+  // TypeError et la page resterait blanche, sans rien indiquer au visiteur.
   if(!l){
     page.innerHTML = `<div class="lord-list-empty">Aucune fiche à afficher pour cette faction.</div>`;
     return;
   }
 
-  // Change la classe du <body> pour appliquer le thème de couleurs propre
-  // à la faction du seigneur (ex: "theme-dwarfs"). Les règles CSS associées
-  // sont définies dans css/style.css.
-  document.body.className = `theme-${l.group}`;
+  appliquerTheme(l.group);
 
-  // Bloc optionnel "Attributs & capacités passives" : certains seigneurs
-  // (ceux avec des données confirmées via captures d'écran en jeu) ont un
-  // champ `attributes` détaillé en plus des effets généraux. On ne construit
-  // ce bloc HTML que si la donnée existe, sinon la variable reste une
-  // chaîne vide et rien ne s'affiche.
-  let attributesHtml = '';
-  if(l.attributes){
-    attributesHtml = `
-      <div class="section">
-        <div class="section-head">${icons.effects}<span class="section-title">Attributs & capacités passives</span></div>
-        <div class="attr-list">
-          ${l.attributes.items.map(a => `<div class="attr-item"><strong>${a.label}</strong> — ${a.value}</div>`).join('')}
-        </div>
-        <div class="stats-caveat">${l.attributes.source}</div>
-      </div>
-    `;
-  }
+  // Il n'y a plus de bloc « Attributs & capacités passives ».
+  //
+  // Il n'existait que sur UNE fiche sur 321 (Vlad von Carstein) et rompait
+  // l'uniformité du site. Supprimé le 17/08/2026 sur décision du user, dans le
+  // rendu ET dans data/vampire-counts.json — c'est la seule modification de
+  // données de toute la V2, et elle a été explicitement autorisée.
+  //
+  // ATTENTION avant de faire le ménage dans la feuille de style : les classes
+  // `attr-list`, `attr-item` et `stats-caveat` restent NÉCESSAIRES. Le champ
+  // `effects` des 321 fiches les utilise pour son propre balisage HTML.
 
-  // Bannière illustrée en haut de page : chaque faction a sa propre image
-  // d'artwork officiel, enregistrée dans `factionBanners` (js/core.js).
-  // Un seigneur peut définir sa propre bannière (champ `banner`) qui prime
-  // sur celle de sa faction — utile quand une faction regroupe des sous-
-  // factions à l'ambiance distincte (ex. Jade-Blooded Vampires).
+  // Bannière : celle du seigneur si elle existe, sinon celle de sa faction.
   const banner = l.banner || factionBanners[l.group];
 
-  // Construction de tout le HTML de la fiche seigneur en une seule fois.
-  // Utilise des templates literals (chaînes multi-lignes) avec interpolation.
+  // Les <div class="section"> deviennent des <section> reliées à leur titre par
+  // aria-labelledby : un lecteur d'écran annonce alors « région Lore » plutôt
+  // qu'un groupe anonyme.
   page.innerHTML = `
     <div class="portrait-frame">
       <img src="${banner}" alt="Artwork officiel ${l.groupLabel}">
     </div>
     <div class="banner">
-      <!-- Le sceau/portrait du seigneur : priorité à une vraie image
-           (l.portraitImage) si elle existe, sinon on retombe sur un SVG
-           de secours généré (objet seals, indexé par l.seal). -->
       <div class="seal">${l.portraitImage ? `<img src="${l.portraitImage}" alt="${l.name}">` : svgDeSecours(l.seal)}</div>
       <div>
-        <div class="lord-title">${l.name}</div>
-        <div class="lord-epithet-big">${l.epithet}</div>
+        <h1 class="lord-title">${l.name}</h1>
+        <p class="lord-epithet-big">${l.epithet}</p>
       </div>
     </div>
     <span class="faction-tag">${l.faction}</span>
     ${dripSVG}
 
-    <div class="section">
-      <div class="section-head">${icons.lore}<span class="section-title">Lore</span></div>
+    <section class="section" aria-labelledby="titre-lore">
+      <div class="section-head">${icons.lore}<h2 class="section-title" id="titre-lore">Lore</h2></div>
       <div class="section-body">${l.lore}</div>
-    </div>
+    </section>
 
-    <div class="section">
-      <div class="section-head">${icons.effects}<span class="section-title">Effets de faction / seigneur</span></div>
+    <section class="section" aria-labelledby="titre-effets">
+      <div class="section-head">${icons.effects}<h2 class="section-title" id="titre-effets">Effets de faction / seigneur</h2></div>
       <div class="section-body">${l.effects}</div>
-    </div>
+    </section>
 
-    ${attributesHtml}
-
-    <div class="section">
-      <div class="section-head">${icons.build}<span class="section-title">Build recommandé</span></div>
+    <section class="section" aria-labelledby="titre-build">
+      <div class="section-head">${icons.build}<h2 class="section-title" id="titre-build">Build recommandé</h2></div>
       <div class="section-body"><p><strong>${l.build.role}</strong></p></div>
 
-      <!-- Carte du seigneur lui-même (toujours présente, qty fixe à 1). -->
-      <div class="army-subhead">Seigneur</div>
+      <h3 class="army-subhead">Seigneur</h3>
       <div class="unit-grid">
         ${unitCardHtml(l.build.lord)}
       </div>
 
-      <!-- Section héros : optionnelle, seulement si le build en définit. -->
       ${l.build.heroes && l.build.heroes.length ? `
-        <div class="army-subhead">Héros</div>
+        <h3 class="army-subhead">Héros</h3>
         <div class="unit-grid">
           ${l.build.heroes.map(unitCardHtml).join('')}
         </div>
       ` : ''}
 
-      <!-- Corps d'armée principal : toujours présent. -->
-      <div class="army-subhead">Corps d'armée</div>
+      <h3 class="army-subhead">Corps d'armée</h3>
       <div class="unit-grid">
         ${l.build.army.map(unitCardHtml).join('')}
       </div>
 
-      <!-- Cas très particulier (Heinrich Kemmler & Krell) : Krell est invoqué
-           en bataille plutôt que recruté normalement, on l'affiche donc dans
-           une section à part si le build le prévoit. -->
+      <!-- Cas particulier de Kemmler & Krell : Krell est invoqué en bataille
+           plutôt que recruté, il est donc présenté à part. -->
       ${l.build.krellNote ? `
-        <div class="army-subhead">Invocation en bataille</div>
+        <h3 class="army-subhead">Invocation en bataille</h3>
         <div class="unit-grid">
           ${unitCardHtml(l.build.krellNote)}
         </div>
       ` : ''}
 
-      <!-- Rappel du nombre total d'emplacements d'armée utilisés (toujours 20
-           dans Total War: Warhammer III, seigneur inclus). -->
-      ${l.build.totalSlots ? `<div class="army-total">${l.build.totalSlots} slots d'armée au total (seigneur inclus)</div>` : ''}
+      ${l.build.totalSlots ? `<p class="army-total">${l.build.totalSlots} slots d'armée au total (seigneur inclus)</p>` : ''}
 
       <div class="build-grid" style="margin-top:20px;">
         <div class="build-card">
@@ -179,26 +291,20 @@ function renderPage(){
           <p>${l.build.magic}</p>
         </div>
       </div>
-      <div class="note">${l.build.note}</div>
-    </div>
+      <p class="note">${l.build.note}</p>
+    </section>
   `;
 }
 
-// Génère le HTML d'une seule "carte d'unité" (utilisée pour le seigneur,
-// les héros, les unités d'armée, et l'éventuelle invocation en bataille).
-// Paramètre `u` : un objet unité avec au minimum les champs
-//   { icon, name, qty, note }
-// Retourne une chaîne HTML prête à être insérée dans le DOM.
+// ---------------------------------------------------------------------------
+// Carte d'une unité (seigneur, héros, unité d'armée, invocation).
+// Paramètre `u` : { icon, name, qty, note }
+// ---------------------------------------------------------------------------
 function unitCardHtml(u){
-  // Priorité d'affichage de l'icône :
-  // 1) une vraie image d'unité si elle est enregistrée dans `unitImages`
-  //    (indexée par la clé u.icon) ;
-  // 2) sinon, le repli svgDeSecours() (js/core.js), qui renvoie aujourd'hui
-  //    toujours une chaîne vide — voir son commentaire ;
-  // 3) sinon, une chaîne vide (icône manquante, ne devrait normalement pas
-  //    arriver si les données sont correctement renseignées).
-  // loading="lazy" + decoding="async" : les images d'unités situées plus bas
-  // dans la fiche ne sont chargées qu'à l'approche du viewport.
+  // Priorité à l'image réelle ; svgDeSecours() (js/core.js) renvoie
+  // aujourd'hui toujours une chaîne vide, le repli SVG ayant été retiré.
+  // loading="lazy" : les cartes situées plus bas ne sont chargées qu'à
+  // l'approche du viewport.
   const icon = unitImages[u.icon]
     ? `<img src="${unitImages[u.icon]}" alt="${u.name}" loading="lazy" decoding="async">`
     : svgDeSecours(u.icon);
@@ -216,26 +322,18 @@ function unitCardHtml(u){
   `;
 }
 
-// Fonction de rendu globale : ré-affiche à la fois la liste latérale et la
-// fiche de détail. Appelée à chaque changement de seigneur sélectionné.
+// Rendu global : liste latérale + fiche.
 function render(){ renderList(); renderPage(); }
 
-// Point d'entrée de la page. Fonction asynchrone car le chargement des
-// données des seigneurs (loadLords) effectue une requête réseau (fetch) sur
-// le fichier JSON de la faction.
+// ---------------------------------------------------------------------------
+// Point d'entrée.
+// ---------------------------------------------------------------------------
 async function init(){
-  // `PAGE_FACTION` est une variable globale définie directement dans chaque
-  // page HTML (ex: `const PAGE_FACTION = 'dwarfs';`) juste avant l'inclusion
-  // de ce script. Elle indique à loadLords() quel fichier data/*.json charger.
-  // Si elle n'existe pas (cas non utilisé actuellement), loadLords() gère
-  // un fallback vers `undefined`.
+  // `PAGE_FACTION` est défini dans la page HTML, juste avant ce script.
   lords = await loadLords(typeof PAGE_FACTION !== 'undefined' ? PAGE_FACTION : undefined);
 
-  // Détermine quel seigneur afficher au chargement de la page :
-  // - si l'URL contient un paramètre ?id=... qui correspond à un seigneur
-  //   valide de cette faction, on l'utilise (permet de partager un lien direct
-  //   vers une fiche précise) ;
-  // - sinon, on affiche le premier seigneur de la liste par défaut.
+  // Un paramètre ?id=... valide l'emporte, ce qui permet de partager un lien
+  // direct vers une fiche ; sinon on affiche le premier seigneur.
   const requestedId = new URLSearchParams(location.search).get('id');
   activeId = (requestedId && lords.some(l => l.id === requestedId))
     ? requestedId
@@ -244,5 +342,4 @@ async function init(){
   render();
 }
 
-// Lance immédiatement l'initialisation dès que le script est exécuté.
 init();
