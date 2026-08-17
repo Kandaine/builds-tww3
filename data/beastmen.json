@@ -173,7 +173,7 @@
       "totalSlots": 20,
       "heroes": [
         {"icon": "brayShaman", "name": "Bray-Shaman (Beasts)", "qty": 1, "note": "Lanceur de sorts (Lore of Nurgle / des Bêtes) — renforce le thème de peste et de débuff, et affaiblit encore l'ennemi déjà accablé par les auras de Slugtongue"},
-        {"icon": "wargor", "name": "Wargor (Porte-Bannière)", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement de la horde et solidifie la ligne de Gors/Bestigors au contact"}
+        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement de la horde et solidifie la ligne de Gors/Bestigors au contact"}
       ],
       "army": [
         {"icon": "gorHerd", "name": "Gor Herd", "qty": 4, "note": "Attaques empoisonnées et Regeneration (faction) — le cœur de mêlée de la horde, désormais increvable et venimeux ; profite à plein des auras de débuff de Slugtongue (garde-les à son contact, attention au feu ennemi qui contre la régénération)"},
@@ -206,11 +206,11 @@
       "lord": {"icon": "ghorros", "name": "Ghorros Warhoof", "qty": 1, "note": "Patriarche Centigor ivre et colossal — sa capacité \"Liquid Fortification\" (3 utilisations, seigneur) endurcit ponctuellement une unité clé (+20% résist. phys, +16 Commandement), et son passif \"Father of Beasts\" (seigneur) transforme les unités vétéranes (rang 7+) en monstres Unbreakable dès qu'un Lord tombe — reste au cœur de la charge"},
       "heroes": [
         {"icon": "littleMorella", "name": "Little Morella (Héros Légendaire)", "qty": 1, "note": "La Siren bras-droit du Beastfather (mod Mixu's Legendary Lords) — infanterie volante de mêlée liée à Ghorros, elle harcèle l'arrière ennemi, les tireurs et les casters isolés (Screeching Terror), et complète parfaitement le jeu de flanc des Centigors"},
-        {"icon": "wargor", "name": "Wargor (Porte-Bannière)", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement déjà élevé (+10 faction) de la masse Centigor et solidifie l'enclume Gor/Bestigor"}
+        {"icon": "wargor", "name": "Wargor", "qty": 1, "note": "Porte-bannière de bataille : ancre le Commandement déjà élevé (+10 faction) de la masse Centigor et solidifie l'enclume Gor/Bestigor"}
       ],
       "army": [
         {"icon": "centigors", "name": "Centigors", "qty": 6, "note": "Capacité +2 (faction) pour un fort contingent — Devastating Flanker (double bonus de charge de flanc/dos), +10 Commandement (faction) et +8 Défense en mêlée (seigneur) : cavalerie rapide qui contourne l'ennemi et le percute de côté, cœur de l'armée de Ghorros"},
-        {"icon": "sonsOfGhorros", "name": "Sons of Ghorros (Centigors - Grande Arme)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — Centigors d'élite à grande arme perforante, couverts par tous les bonus Centigor (Devastating Flanker, +10 Cmd faction, +8 Déf seigneur)"},
+        {"icon": "sonsOfGhorros", "name": "Sons of Ghorros (Centigors – Great Weapons)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — Centigors d'élite à grande arme perforante, couverts par tous les bonus Centigor (Devastating Flanker, +10 Cmd faction, +8 Déf seigneur)"},
         {"icon": "gorHerd", "name": "Gor Herd", "qty": 3, "note": "Enclume d'infanterie bon marché qui fixe l'ennemi de face le temps que les Centigors chargent les flancs — bénéficie du passif \"Rowdy\" en posture de pillage ivre (seigneur)"},
         {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 1, "note": "Infanterie d'élite à grande arme perforante — enclume plus mordante contre l'infanterie lourde, idéale pour tenir pendant les charges de flanc"},
         {"icon": "khorroksManrippers", "name": "Khorrok's Manrippers (Bestigor Herd)", "qty": 1, "note": "Régiment de Renom des Bestigors — les effets de Ghorros visent ses Centigors. Cette infanterie lourde est le point fixe autour duquel ses cavaliers-bêtes exploitent leur Devastating Flanker, qui ne vaut rien sans une unité qui fixe l'ennemi de face"},
@@ -243,7 +243,7 @@
       "army": [
         {"icon": "butchersOfKalkengard", "name": "Butchers of Kalkengard (Minotaurs)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — et le nom n'est pas un hasard, c'est le massacre de Kalkengard qui a fait la légende de Ragush"},
         {"icon": "minotaurs", "name": "Minotaurs", "qty": 3, "note": "Version de base. Avec le <strong>Déploiement d'Avant-Garde</strong>, ils commencent la bataille bien plus près de l'ennemi — ce qui règle le problème d'approche d'une unité lente et sans armure"},
-        {"icon": "minotaursShields", "name": "Minotaurs (Boucliers)", "qty": 3, "note": "La variante résistante aux projectiles — celle qui survit à l'approche quand l'adversaire a une vraie ligne de tir"},
+        {"icon": "minotaursShields", "name": "Minotaurs (Shields)", "qty": 3, "note": "La variante résistante aux projectiles — celle qui survit à l'approche quand l'adversaire a une vraie ligne de tir"},
         {"icon": "minotaursGreatWeapons", "name": "Minotaurs (Great Weapons)", "qty": 3, "note": "La variante anti-armure, indispensable contre l'Empire ou les Nains. Les trois variantes reçoivent le même <strong>+3 de capacité</strong>, ce qui permet de les aligner toutes"},
         {"icon": "gorHerd", "name": "Gor Herd", "qty": 2, "note": "L'infanterie de base des Hommes-Bêtes — elle tient la ligne pendant que les minotaures débordent, et elle coûte trois fois moins cher"},
         {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 2, "note": "Le seul tir de la fiche. Leur javelot ne fera pas la différence, mais il oblige l'ennemi à réagir plutôt qu'à attendre"},

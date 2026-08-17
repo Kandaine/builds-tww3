@@ -148,7 +148,7 @@
       ],
       "army": [
         {"icon": "knightsOrigoCav", "name": "Knights of Origo", "qty": 3, "note": "La cavalerie de l'ordre en personne (overhaul) — chevaliers croisés en « Frenzy » (faction), fer de lance sacré de la charge"},
-        {"icon": "knightsOfOrigo", "name": "Knights of Origo (à pied)", "qty": 2, "note": "Les frères de l'ordre démontés — infanterie chevaleresque en « Frenzy » (faction) qui tient le centre avec la même furie qu'en selle"},
+        {"icon": "knightsOfOrigo", "name": "Knights of Origo (on foot)", "qty": 2, "note": "Les frères de l'ordre démontés — infanterie chevaleresque en « Frenzy » (faction) qui tient le centre avec la même furie qu'en selle"},
         {"icon": "squiresOfOrigo", "name": "Squires of Origo", "qty": 2, "note": "Les Écuyers de l'ordre (overhaul) — piétaille dévouée qui escorte les frères, bien plus fiable que des Men-at-Arms ordinaires"},
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 2, "note": "-25% d'entretien (seigneur) et « Frenzy » (faction) — la masse de cavalerie de choc, dévastatrice et increvable au moral"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm. L'Ordre d'Origo est une chevalerie sans terre : la qualité de chaque lance y compte double"},
@@ -319,7 +319,7 @@
       ],
       "army": [
         {"icon": "knightsFlameCav", "name": "Knights of the Flame", "qty": 3, "note": "La cavalerie de l'ordre — lances embrasées (faction) qui annulent la régénération des Trolls, Goules et abominations, charge +10% (faction) : le fer de lance sacré"},
-        {"icon": "knightsFlameFoot", "name": "Knights of the Flame (à pied)", "qty": 2, "note": "Les frères démontés — infanterie chevaleresque enflammée (faction) qui tient le centre face aux masses squelettiques"},
+        {"icon": "knightsFlameFoot", "name": "Knights of the Flame (on foot)", "qty": 2, "note": "Les frères démontés — infanterie chevaleresque enflammée (faction) qui tient le centre face aux masses squelettiques"},
         {"icon": "squiresOfTheFlame", "name": "Squires of the Flame", "qty": 2, "note": "Les Écuyers montés de l'ordre — cavalerie légère enflammée (faction) pour les flancs et la poursuite des fuyards"},
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 2, "note": "-25% d'entretien (seigneur), attaques enflammées et charge +10% (faction) — la masse de cavalerie de la croisade, dévastatrice et bon marché"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm — le cœur de la charge des Chevaliers de la Flamme, sur son meilleur profil"},
@@ -353,10 +353,10 @@
         {"icon": "hermitKnight", "name": "Hermit Knight", "qty": 1, "note": "Nouveau héros du mod — chevalier ermite du désert, combattant solitaire qui renforce la ligne et incarne la ferveur des croisés d'Outremer"}
       ],
       "army": [
-        {"icon": "knightsOutremerCav", "name": "Knights of Outremer", "qty": 3, "note": "La chevalerie de l'État croisé — cavalerie de choc adaptée au climat de montagne et de désert (faction)"},
+        {"icon": "knightsOutremerCav", "name": "Knights of the Outremer", "qty": 3, "note": "La chevalerie de l'État croisé — cavalerie de choc adaptée au climat de montagne et de désert (faction)"},
         {"icon": "knightsOfIbelin", "name": "Knights of Ibelin", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — l'élite montée de l'ordre d'Ibelin, fer de lance des contre-charges"},
         {"icon": "poulainKnightsCav", "name": "Poulain Knights", "qty": 2, "note": "Chevaliers nés en Outremer — cavalerie légère acclimatée qui harcèle et poursuit là où les lourds s'épuisent"},
-        {"icon": "knightsOutremerFoot", "name": "Knights of Outremer (à pied)", "qty": 2, "note": "Chevaliers démontés — noyau dur de l'infanterie qui tient la brèche aux côtés des paysans"},
+        {"icon": "knightsOutremerFoot", "name": "Knights of the Outremer (on foot)", "qty": 2, "note": "Chevaliers démontés — noyau dur de l'infanterie qui tient la brèche aux côtés des paysans"},
         {"icon": "serjeantSpearmen", "name": "Serjeant Spearmen", "qty": 3, "note": "Piquiers paysans de l'ost : +5 Commandement, 5% de résistance physique (faction), +8 de défense en mêlée et -25% d'entretien (seigneur) — un mur anti-cavalerie bien plus tenace que la piétaille bretonnienne ordinaire"},
         {"icon": "retinueBowmen", "name": "Retinue Bowmen", "qty": 2, "note": "Archers de la maison ducale — mêmes bonus paysans (faction/seigneur), ils arrosent l'ennemi pendant que les lances tiennent"},
         {"icon": "mangonel", "name": "Mangonneau", "qty": 2, "note": "Artillerie de siège de l'Orient croisé — brise les murailles arabiennes et les formations denses"},
@@ -387,13 +387,13 @@
         {"icon": "wardenLeofric", "name": "Warden", "qty": 1, "note": "Guerrier elfe hybride, expert des armes et du savoir végétal — intermédiaire entre les domaines bretonniens et les forêts magiques, il incarne l'accès aux unités Sylvaines (faction)"}
       ],
       "army": [
-        {"icon": "warPilgrimsMaceShield", "name": "War Pilgrims (Masses & Boucliers)", "qty": 3, "note": "+30 d'armure au rang 7 (seigneur) et renouvellement affranchi de l'Économie Paysanne (faction) — le cœur increvable de la horde, aguerri par des dizaines d'épreuves de voyage"},
-        {"icon": "warPilgrimsMace", "name": "War Pilgrims (Grandes Masses)", "qty": 2, "note": "Mêmes bonus (faction/seigneur) — variante à deux mains qui brise l'infanterie lourde"},
+        {"icon": "warPilgrimsMaceShield", "name": "War Pilgrims (Maces & Shields)", "qty": 3, "note": "+30 d'armure au rang 7 (seigneur) et renouvellement affranchi de l'Économie Paysanne (faction) — le cœur increvable de la horde, aguerri par des dizaines d'épreuves de voyage"},
+        {"icon": "warPilgrimsMace", "name": "War Pilgrims (Great Maces)", "qty": 2, "note": "Mêmes bonus (faction/seigneur) — variante à deux mains qui brise l'infanterie lourde"},
         {"icon": "battlePilgrimsSps", "name": "Battle Pilgrims (Lances)", "qty": 2, "note": "Pèlerins en formation de lances — mur anti-cavalerie de la colonne de pèlerinage"},
         {"icon": "grailReliquae", "name": "Grail Reliquae", "qty": 1, "note": "La relique portée qui galvanise les Pèlerins — pièce maîtresse morale de la horde"},
-        {"icon": "mushaInfantry", "name": "Musha Infantry (Naginatas & Arcs)", "qty": 2, "note": "Samouraïs du Lointain Orient au service de la compagnie — infanterie hybride mêlée/tir, unique en Bretonnie"},
-        {"icon": "ashigaruYari", "name": "Ashigaru Infantry (Lances)", "qty": 1, "note": "Piétaille nippone bon marché — élargit la ligne à peu de frais pour les fantassins engagés par la compagnie"},
-        {"icon": "ashigaruBow", "name": "Ashigaru Infantry (Arcs)", "qty": 1, "note": "Le <strong>+15 de réduction de rechargement</strong> de Leofric ne vaut que pour son artillerie de rang 7. Ces archers comblent l'intervalle : un volume de flèches continu, là où une pièce lourde tire par à-coups"},
+        {"icon": "mushaInfantry", "name": "Musha Infantry (Naginatas & Bows)", "qty": 2, "note": "Samouraïs du Lointain Orient au service de la compagnie — infanterie hybride mêlée/tir, unique en Bretonnie"},
+        {"icon": "ashigaruYari", "name": "Ashigarus (Yaris)", "qty": 1, "note": "Piétaille nippone bon marché — élargit la ligne à peu de frais pour les fantassins engagés par la compagnie"},
+        {"icon": "ashigaruBow", "name": "Ashigarus (Bows)", "qty": 1, "note": "Le <strong>+15 de réduction de rechargement</strong> de Leofric ne vaut que pour son artillerie de rang 7. Ces archers comblent l'intervalle : un volume de flèches continu, là où une pièce lourde tire par à-coups"},
         {"icon": "wildwoodRangerLeo", "name": "Wildwood Rangers", "qty": 1, "note": "Unité Sylvaine débloquée par la Protection des Forêts (faction) — anti-grande cible fourni par les alliés elfes"},
         {"icon": "mangonelLeofric", "name": "Mangonneaux", "qty": 2, "note": "+15 de réduction de rechargement au rang 7 (seigneur) et renouvellement affranchi de l'Économie Paysanne (faction) — l'artillerie de la compagnie tire nettement plus vite que la normale"},
         {"icon": "scorpionLeofric", "name": "Scorpions", "qty": 1, "note": "Tir tendu perforant, mêmes bonus d'artillerie (faction/seigneur) — abat monstres et grandes cibles"}

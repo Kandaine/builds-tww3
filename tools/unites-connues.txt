@@ -1,10 +1,25 @@
-# Noms d'affichage des unites de Total War: WARHAMMER III, jeu de base.
-# Genere depuis local_en.pack (cle land_units_onscreen_name*) avec
-#   tools\tww\dump_loc_kv.ps1, qui lit la structure binaire du .loc.
-# Regenerer apres un DLC. Ce fichier vit dans le depot parce que la CI
-# tourne sans installation du jeu.
-# 1550 noms, releves le 18/08/2026.
+# Noms d'affichage des unites de Total War: WARHAMMER III.
+#
+# Source : les cles land_units_onscreen_name* de
+#   - local_en.pack et local_fr.pack (jeu de base) ;
+#   - les 133 packs du workshop installes, 71 en apportant.
+# Extraction : tools\tww\dump_loc_kv.ps1, qui lit la STRUCTURE BINAIRE du .loc.
+#   Ne PAS utiliser dump_loc.ps1 : il balaie par regex et perd une entree sur
+#   deux, a cause de l'octet booleen qui termine chaque entree.
+#
+# Les deux langues sont presentes parce que les fiches du site melangent les
+# deux : nom anglais de l'unite, qualificatif traduit — « Minotaurs (Boucliers) ».
+#
+# Ce fichier vit dans le depot parce que la CI tourne sans installation du jeu.
+# A REGENERER apres un DLC ou l'ajout d'un mod. Procedure : voir le commit qui
+# a introduit tools\verifier-noms.ps1.
+# 6132 noms, releves le 18/08/2026.
 
+"Contorted Man"
+"Lady Yayi"
+"Shadow People of Ward 6"
+"Woman Who Jumped"
+[[col:red]]『终焉之主』艾查恩[[/col]]
 {{tr:agent_subtypes_onscreen_name_override_wh2_dlc13_lzd_slann_mage_priest_beasts}}
 {{tr:agent_subtypes_onscreen_name_override_wh2_dlc13_lzd_slann_mage_priest_death}}
 {{tr:agent_subtypes_onscreen_name_override_wh2_dlc13_lzd_slann_mage_priest_metal}}
@@ -41,43 +56,271 @@
 {{tr:land_units_onscreen_name_wh3_main_sla_cha_herald_of_slaanesh_shadow_0}}
 {{tr:land_units_onscreen_name_wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0}}
 {{tr:land_units_onscreen_name_wh3_main_tze_cha_exalted_lord_of_change_tzeentch_0}}
+『Blood Hunt Assistant』Khorax
+『Blood Hunt Master』Khabandha
+『三太子』那拏天
+『兑金镇兽』白虎
+『卑劣者』乌古斯
+『南阳王』韩承
+『却胡天』弈青
+『噬魂者』阿明·赫里斯
+『坎水镇兽』玄武
+『堕落者』塔伽萨
+『天廷高阶参军』叶嘉
+『天火教团女主』维列斯·苏尔
+『天火教团女主』维列斯·苏尔（飞马）
+『天火教团女主』维列斯·苏尔（马）
+『天钦』云骧
+『天门卫尉』侯骞
+『宸风』韫岚
+『小龙麟』关梓墨
+『屠夫游侠』罗达克
+『巨侠』唐靖胤
+『帕拉翁的宠儿』洛德泰尔（诺伯爵）（飞马骑枪）
+『平波大舟师』戚俨
+『影鸾』童珑
+『慵懒者』莫鲁兹
+『撼尘生』妙弋
+『新武侯』 新绮
+『月中仙』 方文子
+『武圣』榻玉载天真君
+『武干戈』刑夭
+『武痴』裴岳
+『毁灭者』玛洛克
+『清虚子』姜望
+『猎犬八角冠军勇士』瓦加什
+『玉江月』 赵祈
+『玉江白母』后羲
+『玉骨仙』津霄
+『疤痕者』阿尔博迪
+『督天官』王
+『破晓』梅泽卡
+『离火镇兽』朱雀
+『篡朝者』野盛
+『红斧』 埃里克
+『绝情剑』柳月如
+『胤江子』薛定
+『莫拉丝侍女』德鲁萨拉
+『莫拉丝侍女』德鲁萨拉（化身）
+『行香子』弈瑶华
+『诅咒灵』维里奇
+『逐血者』赫格
+『金枪太保』秦元毅
+『锦玉郎』嬴瑾
+『锻主』 乔逍
+『长者』拉格拉诺斯
+『雷震子』震雷公
+『靖南公』段尉
+『飞将军』李谡
+『骨父』奥巴尔德
+『鸦卫』 枯夕
+『鸦卫副统』 枯荣
+『黑心』扎坦
+『龙门指挥使』弈绍
+Abhorash
+Abhorash: Pole Arm
+Abhorash: Spear and Mace
+Abhorash: Sword and Shield
+Abhorash: Two Handed Axe
+Abhorash: Two Handed Sword
+Abin-gnaw Hakk's Kill Squad (Clatter Runners)
+Abnag Hellbeard
+Abnagg Hellbeard
+Abomination de Malefosse
+Abordeurs
+Abordeurs (Arquebusiers)
+Abordeurs (Bombardiers)
+Abrax the Bloody
+Abyssal Terror Knight
+Accroche-cœurs de Slaanesh
+Accursed Diao Si Gui
+Acolytes
+Acolytes of Asaph (Beauty, Magic & Vengence)
+Acolytes of Djaf (Death & War)
+Acolytes of Ptra (Sun & Light)
+Acolytes of Tzeentch
+Adalhard de Lyonesse
+Adelijken Greatswords
+Adella of the Thousand Mouths
+Adorateurs du Corbeau (Maraudeurs – Armes lourdes)
+Adventurers
 Aekold Helbrass
+Aekold le Miraculeux
+Aelfric Cyenwulf
+Aeris
+Aesling Hunters (Javelins)
+Aesling Hunters (Throwing Axes)
+Aesling Marauder Berserkers
+Aesling Marauder Horsemen (Throwing Axes)
+Aesling Spearmen
+Aeson le Déchu (Mutalithe à Vortex)
 Aeson the Fallen (Mutalith Vortex Beast)
+Aessa Goldmane
+Affrelances
+Agents de la Tromperie (Démonettes de Slaanesh Exaltées)
+Aghyar Carrion Eaters (Hung Spawneaters)
+Agravain de Beau Quest
+Aitheach Giant-Blooded
+Akkorak the Crow
 Akshina Ambushers
+Akshinas embusqués
+Al Muktar's Desert Dogs
+Alarielle - Servant of Isha
+Alarielle la Radieuse
 Alarielle the Radiant
+Alastar le Lion Blanc
 Alastar the White Lion
 Alberic de Bordeleaux
+Albéric de Bordeleaux
+Alberich Haupt-Anderssen
+Alberich von Korden
+Albino Gaurd
+Albino Stormvermin
+Albion Giant
+Albion Giant (Stone Thrower)
+Albodi the Scarred
+Albrecht Nictus
+Alcatani Fellowship (Pikemen)
 Alchemist
+Alchemist(Death)
+Alchemist(Fire)
+Alchemist(Shadow)
+Alchimiste
+Aldebrand Ludenhof
+Aldred von Carroburg
+Alfkael Bloodfather
+Alfkael the Bloodfather
+Aliathra the Everchild
+Alicia von Unterwald
 Alith Anar
 Alith Anar – Decoy
+Alith Anar – Leurre
+All The Evils of Nongchang
 Alluress (Shadows)
 Alluress (Slaanesh)
+Allyia Njevski
+Alphonse Dolmancé
+Alrik Ranulfsson
+Altar Guardians
+Altar Guardians of Chotec
+Altar Guardians of Huanchi
+Altar Guardians of Quetzl
+Altar Guardians of Sotek
+Altar Guardians of Tepok
+Altar Guardians of Tlazcotl
+Altar Guardians of Tzunki
+Althran Stormrider
+Amadri Ironbark
+Amanhotep's Curse (Corsair Legion)
 Amaxon Barbs (Razordon Hunting Pack)
+Amazon Cold One Riders
+Amazon Jungle Stalkers
+Amazon Matriarch (Carnosaur)
+Amazon Warriors (Spears)
 Amber Wizard
 Amblepeak Greybacks (Yhetees)
+Ambush Netters
 Amethyst Helstorm Rocket Battery
 Amethyst Ironsides
 Amethyst Land Ship
 Amethyst Outriders
 Amethyst Wizard
+Amiral de la flotte vampire (Armes d'hast – Mort)
+Amiral de la flotte vampire (Armes d'hast – Profondeurs)
+Amiral de la flotte vampire (Armes d'hast – Vampires)
+Amiral de la flotte vampire (Pistolet – Mort)
+Amiral de la flotte vampire (Pistolet – Profondeurs)
+Amiral de la flotte vampire (Pistolet – Vampires)
+Amon 'Chakai
+Anakonda's Amazons
+Anark von Carstein
+Anarsis
+Anastasia Vilkova
 Ancestor Spirit
+Ancestor Witch
 Ancestral Warriors
+Ancien kroxigor
+Ancien Protecteur
+Ancien Shaggoth Dragon-Ogre
+Ancient Augus
+Ancient Faithfuls
 Ancient Protector
+Ancient Razordon
 Ancient Salamander
+Ancient Salamander (Crystalback)
 Ancient Stegadon
+Ancient Stegadon (Crystalback)
 Ancient Stegadon (Engine of the Gods)
+Ancient Tomb Mummies
 Ancient Treeman
+Anethra Helbane
 Animated Hulks
+Anurion the Green
+Araby Boar Cavalry
+Araby Boar Cavalry (Great Weapons)
+Araby Boar Cavalry (Ironfists)
+Araby Crushers (Great Weapons)
+Araby Crushers (Ironfists)
+Araby Ogre Bulls
+Araby Ogre Bulls (Dual Weapons)
+Araby Ogre Bulls (Ironfists)
+Arabyan Knights
+Arachnarok
 Arachnarok Spider
 Arachnarok Spider (Flinger)
+Aragnir
+Araignée Arachnarok
+Araignée Arachnarok (Lanceur)
+Araignée Arachnarok de lave
+Araignées géantes
+Arandir Swiftwing
 Aranessa Saltspite
+Aranessa Saumâtre
+Araveena
+Arbaal l'Invincible
+Arbaal the Chaos Spawn
 Arbaal the Undefeated
+Arbalètes des Guerriers de Jade
+Arbalètes des Guerriers de Jade (Boucliers)
+Arbalètes du Dragon Céleste
+Arbalétriers
+Arbalétriers (Armes lourdes - Régleurs de rancune)
+Arbalétriers (Armes lourdes)
+Arbalétriers sylvaniens
+Arcalux, Prince de la Fureur
 Arcalux, Prince of Fury
 Arcane Phoenix
 Arch Lector
 Archaon the Everchosen
+Archaon the Everslave
+Archaon, Seigneur de la Fin des Temps
+Arche des Âmes Damnées
 Archers
+Archers (Armure Légère)
 Archers (Light Armour)
+Archers Chevaucheurs d'araignée de lave
+Archers Gobelins
+Archers gobelins chevaucheurs de loup
+Archers Gobelins de la Nuit
+Archers Gobelins de la Nuit (Fanatiques)
+Archers gobelins des Forêts sur Araignées
+Archers hobgobelins
+Archers montés
+Archers orques
+Archers paysans
+Archers paysans (Flèches incendiaires)
+Archers paysans (Flèches infectieuses)
+Archers Squelettes
+Archidiacre
+Archimage (Bêtes)
+Archimage (Cieux)
+Archimage (Feu)
+Archimage (Haute)
+Archimage (Lumière)
+Archimage (Métal)
+Archimage (Mort)
+Archimage (Ombre)
+Archimage (Vie)
 Archmage (Beasts)
 Archmage (Death)
 Archmage (Fire)
@@ -87,59 +330,230 @@ Archmage (Life)
 Archmage (Light)
 Archmage (Metal)
 Archmage (Shadows)
+Arch-Pontifex Sitch
 'Ard As A Rock Idol
+Are you full?
 Ariel
+Arkat Fooger
+Arkhan le Noir
 Arkhan the Black
+Arkhan, Mortarch of Sacrament
+Armand d'Aquitaine
+Armes des Sootson (Mortiers)
+Armoured Giant
 Armoured Kossars
 Armoured Kossars (Great Weapons)
 Armoured Kossars (Spears)
+Armoured Rat Ogres
 Armoured Squig Hoppers
+Arquebusiers
+Arquebusiers (Récolte-la-rancune)
+Arquebusiers sylvaniens
+Artilleur revenant
+Artilleurs de Canon Grue
+Artilleurs de Grêle de Fer
+Artilleurs du Fantômbre (Canonniers)
+Artilleurs Pirates Zombies
+Artilleurs Pirates Zombies (Arquebusiers)
+Artilleurs Pirates Zombies (Bombardiers)
+Artilleurs Pirates Zombies (Escopettes)
+Asarnil the Dragonlord
+Ashigarus (Bows)
+Ashigarus (Matchlocks)
+Ashigarus (Yaris)
+Aspirants Champions
 Aspiring Champions
+Asrai Spearmen
 Assassin
+Assassin khainite
+Assassins of the Twelve Arms
+Assermenteurs Infernaux
+Asta of Vinnskor
+Asta's Honorguard
 Astragoth Ironhand
+Astragoth Main-de-Fer
 Astromancer
+Astromancer（Beasts）
+Astromancer（Life）
+Astromancer（Light）
+Astromancien
+Atakai
 Ataman
 Athel Tamarha Faithbearers
+Auaralion
+Aucassin de Hane
+Augas Swarm
+Aurelion
+Auroral Eidolons
+Autel de Guerre du Chaos
+Autel de Guerre du Chaos de Khorne
+Autel de Guerre du Chaos de Nurgle
+Autel de Guerre du Chaos de Slaanesh
+Autel de Guerre du Chaos de Tzeentch
+Autel de Sang de Khorne
+Autel incarnat
+Autumn Sentinels
+Auxiliary Saurus Warriors
+Auxiliary Saurus Warriors (Shields)
 Azazel
+Azeros the Iron
+Azhag le Massacreur
 Azhag the Slaughterer
+Azrik le Gardien du Dédale
 Azrik the Maze Keeper
+Badland Rangers
+Baerson Warriors
+Baersonling Champions
+Baersonling Champions (Great Weapons)
+Baersonling Hunters (Javelins)
+Baersonling Hunters (Throwing Axes)
+Baersonling Marauder Champion (Great Weapons)
+Baersonling Marauders
+Baersonling Marauders (Great Weapons)
+Baersonling Spearmen
+Bahr
+Bai Xiangwang (White Elephant King)
+Baihu (White Tiger)
+Baihu, the Guardian Beast of Metal
+Baked Bellies (Leadbelchers Mournfang Cavalry)
+Balduin IV d'Anjou
 Bale Taurus
+Balefiend Apprentices
+Balian d'Ibelin
+Baliste gobeline
+Baliste Hobgobeline
+Balistes
+Balistes Faucheuses
+Balistes Serre d'Aigle
+Balkrag Grimgorson
+Ballistas
 Balthasar Gelt
+Balur of Baalrgath
+Bandits de la Route de l'Argent (Archers paysans)
 Bandits of the Silver Road (Peasant Archers)
+Bannaga
 Banshee
+Barbillons d'Amaxon (Meute de chasse de Razordons)
+Barbozza Bludflagg
+Barbozza's Hull Breakers (Torpedo Launcha)
+Barge-tonnerre
+Barons de la Tourbière (Chevaucheurs de Vérole de Nurgle)
+Baron's Men (Crypt Ghouls)
 Barons of the Bog (Pox Riders of Nurgle)
+Barukh the Contemptuous
+Bassiano Dutra
+Bastethi
+Bastiladon (Arche de Sotek)
 Bastiladon (Ark of Sotek)
+Bastiladon (Cristal de Renaissance)
+Bastiladon (Machine solaire)
 Bastiladon (Revivification Crystal)
 Bastiladon (Solar Engine)
+Bastiladon béni (Machine solaire)
+Bastiladon sauvage
+Batterie de Fusées à pluie incendiaire
+Batterie Tonnerre de Feu
+Batterie Tonnerre de Feu d'Améthyste
 Battle Pilgrims
+Battle Pilgrims (Spears)
+Be’la’krothrogor
+Bear Tamer and Wojtek
+Bearded Skull Miners
+Bearers of Creeping Death (Plague Monks Censer Bearers)
+Bearmen of Urslo (Throwing Axes & Shields)
 Beast of Nurgle
+Beastclad Reavers
+Beastfiend Herd
+Beastfiend Herd (Great Weapons)
 Beastlord
+Beasts of Decay (Rat Spawn)
 Beasts of Tashnar (Norscan Warhounds)
 Beastslayers of Bastonne (Foot Squires)
+Beaststalker
 Be'lakor
+Belannaer the Wise
 Belegar Ironhammer
+Belegar Marteau-de-fer
 Beorg Bearstruck
+Beorg Patte d'Ours
+Berndt Aberwold
+Berserkers
+Berserks Maraudeurs
+Berserks Sillage-de-sang (Enrageurs)
+Berus of Veigs
 Bestigor Herd
+Bête de Nurgle
+Bêtes de Slaanesh
+Bêtes de Tashnar (Chiens de Guerre norses)
+Bêtes Sanglantes de Khorne
+Bhashiva le Tigre Blanc
 Bhashiva, the White Tiger
+Big Game Hunters
+Big Green Crawler
+Big Red Crawler
+Big Red 'Un
+Bigga Bolt Throwa
 Bile Trolls
+Bilekin Brotherhood (Plague Monks)
 Bilious Thunderguff (Chaos Giant)
+Billmen
+Birdmen of Catrazza
+Birna the Huntress
+Birna's Retinue (River Trolls)
+Bjornling Champions
+Bjornling Champions (Great Weapons)
+Bjornling Hunters (Javelins)
+Bjornling Hunters (Throwing Axes)
+Bjornling Huscarls
+Bjornling Marauders
+Bjornling Marauders (Great Weapons)
+Bjornling Spearmen
+Black 13
 Black Ark Corsairs
 Black Ark Corsairs (Handbows)
+Black Caps (Goedendagers)
 Black Coach
 Black Dragon
+Black Grail Knights
+Black Grail Squires
 Black Guard of Naggarond
+Black Iron Reaver
+Black Jens
 Black Knights
 Black Knights (Lances & Barding)
+Black Lightnings (Black Skaven)
 Black Orc Big Boss
+Black Orc Big Boss: Shaman
+Black Orc Boar Boyz
+Black Orc Boar Chariots
+Black Orc Krossboyz
+Black Orc Warboss
 Black Orcs
+Black Orcs (Dual Weapons)
 Black Orcs (Great Weapons)
+Black Ork Warboss
+Black Plates Guards
+Black Scimitar Guard (Palace Guards)
+Black Skaven
+Black Watch
+Blackarc Battery (Warp Lightning Cannons)
 Blackhole Flayers (Doom-Flayers)
 Black-Horn's Ravagers (Gor Herd – Shields)
+Blacklegges the Giant
+Blackshade Battalion
+Blacktail Berserkers (Clanrat Spears - Shields)
+Blacktoof
 Blades of Hoeth (Swordmasters of Hoeth)
 Blades of the Blood Queen (Har Ganeth Executioners)
 Bladesingers
+Blaut Feastmaster
+Blautfang Warbeasts
+Blauts's Maneaters
 Blazing Squealers (Exalted Pink Horrors of Tzeentch)
+Blazing Squealers of the End
 Bleakswords
+Blessed Altar Guardians
+Blessed Ancient Razordon
 Blessed Ancient Salamander
 Blessed Ancient Stegadon
 Blessed Bastiladon (Solar Engine)
@@ -147,6 +561,7 @@ Blessed Carnosaur
 Blessed Chameleon Skinks
 Blessed Chameleon Stalkers
 Blessed Cold One Spear-Riders
+Blessed Culchan Riders
 Blessed Field Trebuchets
 Blessed Horned Ones
 Blessed Kroxigor
@@ -155,97 +570,417 @@ Blessed Razordon Hunting Pack
 Blessed Ripperdactyl Riders
 Blessed Sacred Kroxigor
 Blessed Salamander Hunting Pack
+Blessed Saurus Horned One Riders
 Blessed Saurus Spears (Shields)
 Blessed Saurus Warriors (Shields)
+Blessed Skink Braves
 Blessed Skink Cohort (Javelins)
+Blessed Skink Horned Ones Riders
 Blessed Skink Skirmishers
+Blessed Spawn Leaders
 Blessed Stegadon
 Blessed Temple Guard
 Blessed Terradon Riders
 Blessed Terradon Riders (Fireleech Bolas)
+Blight Tenscratch
 Blightscab's Plaguepack (Plague Monk Censer Bearers)
 Bloated Corpse
+Bloated Ogres
+Blóðvaskrar (Aspiring Champions)
+Blogg Crusherguts
+Blood Beasts
+Blood Cloud
+Blood Dragon Cataphractii
+Blood Dragon Champion
+Blood Dragon Guard
+Blood Dragon Inner Circle Knights
+Blood Dragon Kastellan
+Blood Dragon Knights
+Blood Dragon Lord
+Blood Dragon Neophyte Warriors
 Blood Dragon Vampire Lord
+Blood Dragon Veteran Knights
+Blood Dragon Veterans
 Blood Knights
 Blood Knights (Lances)
+Blood Lions
 Blood Shrine of Khorne
 Blood Vultures
+Bloodbeast of Skraevold
 Bloodbeasts of Khorne
 Bloodcrushers of Khorne
+Bloodfjord Champions
+Bloodfjord Champions (Great Weapons)
+Bloodhounds
+Bloodkin Aspirant
+Bloodkin Thrall Adept Knights
+Bloodkin Thrall Warriors
 Bloodletters of Khorne
+Bloodnose
+Bloodrage Riders (Hung Raiders)
+Bloodratters of Haematoma (Greataxe)
+Bloodratters of Haematoma (Greatsword)
 Bloodreaper
+Bloodseekers (Axe & Leech)
+Bloodseekers (Axe & Shield)
+Bloodseekers (Dual Axe)
+Bloodseekers (Greataxe)
+Bloodseekers (Spear)
 Bloodshriek Chimera (Chimera)
 Bloodspeaker
 Bloodthirster
 Bloodthirsty Preyton
+Bloodvermin (Dual Axe)
+Bloodvermin (Greatsword)
+Bloodvermin (Halberd)
 Bloodwake Berserkers (Wrathmongers)
 Bloodwrack Medusa
 Bloodwrack Shrine
+Blookin Thrall Lord
+Blorgar le Titan Furieux
 Blorgar the Mad Titan
 Blue Horrors of Tzeentch
+Blue Scribes
+Blue-Faced Orcs
+Boar Wranglers
+Bodies Beyond The Body
+Bog Beast Raiders
+Bog Octopus
+Bog Octopus Hatchling
+Boglar Shaman
+Boglars
+Boglars des Marais déments (Gnoblars)
 Boglars of the Mad Marshes (Gnoblars)
+Bohemond Beastslayer
+Bologs (Albion Giant)
 Bolt Throwers
+Bombardiers à Sphères de Mort
+Bone Colossus
 Bone Giant
+Bone Golems
+Bone Hydra
+Bone Thrower
+Bone Throwers
+Bonechewer (Beasts)
+Bonechewer (Death)
+Bonechewer (Great Maw)
+Bonechewer (Heavens)
+Bonefodder (Skavenslave Spears)
+Bonespitter
+Boom Squad
+Boomhog
+Border Rangers
+Borgio the Besieger
+Borgut Facebeater
 Boris Todbringer
 Boris Ursus
+Borlok Da Rippa
+Borri Forkbeard
+Bosun
+Boucaniers Pirates Zombies
+Boucaniers Pirates Zombies (Armes d'hast)
+Boucher (Bêtes)
+Boucher (Cieux)
+Boucher (La Gueule)
+Boucher (Mort)
+Bouchers de Kalkengard (Minotaures – Boucliers)
+Bougars de Biaucaire
+Bound Desert Spirit
+Bound Enchanted Ropes
+Bound Fire Efreet
+Bound Genie
+Bound Sea Nymph
+Bound Tempest Djinn
+Boussole de guerre de Wu Xing
+Boute-Fer
+Bowmen
+Bowmen Kithband
 Boyar
+Boyar Mazur
+Boyard
+Boyaux de Poudre (Mangeurs d'Hommes – Pistolets Ogres)
 Boydinov's Brawlers (Streltsi)
+Boyz orques
+Braconniers
+Braganza's Besiegers (Pavise Crossbowmen)
+Bragg l'Étripeur
 Bragg the Gutsman
+Bramble Boars
+Bran Bearheart
 Branchwraith
+Brassfangs (Axe & Torch)
+Brassfangs (Burning Spear)
+Brassfangs (Dual Axe)
+Brassfangs (Greataxe)
+Braugh Slavelord
+Braves
 Bray-Shaman (Beasts)
 Bray-Shaman (Death)
 Bray-Shaman (Shadows)
 Bray-Shaman (Wild)
+Breakerz of Zharr (Dark Land Bulwarkz)
+Brethren of the Dark (Pit Vermin)
+Bretteurs
+Brigands (Polearms)
+Bright Falcon Company
+Bright Shields (Skeleton Warriors)
 Bright Wizard
+Brinedragon Swords (Ship's Company)
 Bringers of Beguilement (Exalted Daemonettes of Slaanesh)
+Bringers of Beguilement of the End
+Brise-Âme (Mammouth de guerre)
+Brise-Fer
+Brise-Fer Norgrimlings (Brise-Fer)
+Briseur de Crânes
+Briseur de Crânes (Mortier Trembleffroi)
+Broken Lances
+Broken Ones (Mad Rat Ogres)
 Broken Tusks Mob (Orc Boar Boy Big 'Uns)
+Brokk Ironpick
+Bronn the Bold
+Bronze Cannons
+Bronze Host of Ka-Sabar (Tomb Guard)
+Bronzino's Galloper Guns
 Brood Horror
 Brood Mother
 Brood Queen
+Broodmothers (Under-Empire Spider Riders)
+Brother-Bears
+Brotherhood Ranger-Templars
+Brothers of the Axe
+Broyeur d'Âmes de Khorne
+Broyeur d'Âmes de Nurgle
+Broyeur d'Âmes de Slaanesh
+Broyeur d'Âmes de Tzeentch
+Broyeurs (Armes lourdes)
+Broyeurs (Poings d'acier)
+Brudd the Blackened
 Bruiser
+Bruiser of Khorne
+Brunner (Asrai Bow)
+Brunner (Dual Swords)
+Brunner (Handgun)
+Brunner (Repeater Crossbow)
+Brunner (Sword & Pistol)
+Brutes du Chien (Berserks Maraudeurs)
 Brutes of the Hound (Marauder Berserkers)
+Bruwor, Protecteur de la Vie
 Bruwor, Protector of Life
+Bubos the Vile
+Buccaneers (Great Weapons)
+Buccaneers (Sword and Bombs)
+Buffles Ogres
+Buffles Ogres (Armes doubles)
+Buffles Ogres (Poings d'acier)
 Bugman's Rangers
+Bul Mallet-hands
+Bulgrug Warpslave
 Bull Centaur Renders
 Bull Centaur Renders (Dual Axes)
 Bull Centaur Renders (Great Weapons)
 Bull Centaur Taur'ruk
+Bunsen the Burna
+Burak Grim
+Burgher Archers
+Burgher Militia
+Burlok Damminsson
+Burnbarrels (Lamplighters)
 Burning Chariot of Tzeentch
 Burplesmirk Spewpit
+Burrow-Crackers (Night Runners)
 Butcher (Beasts)
 Butcher (Death)
+Butcher (Deep)
 Butcher (Great Maw)
 Butcher (Heavens)
 Butchers of Kalkengard (Minotaurs – Shields)
+Buveur de Sang
+Buveur de Sang Exalté
+By Rong
+By the Soulflayer
+Byrrnoth Grundadrakk
+Bzaark Firespitter
+Cabochard de Morskittar (Rat-Ogre Mutant)
+Cabresangs de la Louve (Centigors – Haches de jet)
+Cachtorr (Albion Giant - Stone Thrower)
+Cadavre bouffi
+Cairn Wraith
 Cairn Wraiths
+Caladris
+Calard de Garamont
+Caledorian Honour Guard
+Calith Gatekeepers
+Camel Archers
+Camel Cataphracts
+Camel Jezzails
+Camel Lancers
+Camille Dauphina
+Cannibal Knight
+Cannibales
+Cannon Shot Mortar
 Cannons
+Canon à Crânes
+Canon à Magma
+Canon Apocalypse
+Canonniers
+Canons
+Canons à Flammes
+Canons à Flammes (Régleurs de rancune)
+Canons à Malefoudre
+Canons à Répétition Feu d'Enfer
+Canons Orgues
+Cantankerous Bellends (Men-at-Arms)
+Capitaine
+Capitaine de Clairière
+Capitaine de flotte vampire (Mort)
+Capitaine de flotte vampire (Profondeurs)
+Capitaine de flotte vampire (Vampires)
+Capitaine de l'Empire
 Captain
+Captain Aber Walblatt
+Captain Daefvid Maicross
+Captain Drekla
+Captain Leopoldo di Lucano
+Captives
+Captured Blood Vultures
+Captured Crusader Trebuchet
+Captured Feral Bears
+Captured Feral Ice Bears
+Captured Feral Manticore
+Captured Giant Wolves
+Captured Imperial Cannon
+Captured Imperial Mortar
+Captured Necrofex Colossus
+Captured Rock Lobber
+Captured Rotting Leviathan
+Captured Spear Chukkas
+Carabiniers
 Caradryan
 Caress, the Darkling Prince
+Caresse, le Prince des Ténèbres
+Carin Wraiths
+Carlsson Militia
+Carnabrute
+Carnosaure attelé
+Carnosaure béni
+Carnosaure sauvage
+Caronades
+Carriers of the Immaculate Fume
 Carrion
+Carrion Riders
 Carroburg Greatswords (Greatswords)
+Carronade
 Carronades
+Carrosse Noir
+Casadesus
 Casket of Souls
+Cassyon de Parravon
+Catapulte des Rancunes (Régleurs de rancune)
+Catapultes à Crânes Hurlants
+Catapultes à Plongeurs de la Mort
+Catapultes de la Peste
+Catapultes des Rancunes
+Cathay Ironsides
+Cathay Slaves (Crossbow)
+Cathay Slaves (Musket)
+Cathay Slaves (Shield Sword)
+Cathayan Buccaneers
+Cathayan Ogres
+Cathayan Warriors
+Cavalerie Férox
+Cavalerie Férox (Armes lourdes)
+Cavalerie Férox (Poings d'acier)
+Cavaliers de Nehekhara
+Cavaliers du Grand Serpent (Chevaliers Maraudeurs)
+Cavaliers Kurgans (armes jumelles)
+Cavaliers Kurgans (armes lourdes)
+Cavaliers Noirs
+Cavaliers Noirs (Arbalètes à répétition)
+Cavaliers Noirs (Boucliers)
+Cavaliers paysans
+Cavaliers Sauvages
+Cavaliers Sauvages (Boucliers)
+Cavaliers Squelettes
 Cave Bats
+Cavill
 Ceithin-Har
+Celebrants
+Celestial Dragon Cavalry
 Celestial Dragon Crossbows
 Celestial Dragon Guard
+Celestial Dragon Monk
+Celestial Dragon Swords
+Celestial Dragon's Slayers
+Celestial Enlightened
 Celestial General
 Celestial Lion
+Celestial Lion Knights
+Celestial Monks
+Celestial Protectors (Dragon Emperor's Imperial Guard)
 Celestial Wizard
+Centaur Elders
+Centaur Ogham-Warden
+Centaur Ogham-Warden (Beasts)
+Centaur Ogham-Warden (Great Axe)
+Centaur Ogham-Warden (Great Bow)
+Centaur Ogham-Warden (Life)
+Centaur Ogham-Warden (Light)
+Centaur Ogham-Warden (Truth)
+Centaurs
+Centaurs (Bows)
+Centigor Elder
 Centigors
+Centigors (Armes lourdes)
 Centigors (Great Weapons)
+Centigors (Haches de jet)
 Centigors (Throwing Axes)
+Centigors de Tzeentch
 Centigors of Tzeentch
+Chained Ones (Pusbags)
+Chakax
+Chaman Bray (Bêtes)
+Chaman Bray (Mort)
+Chaman Bray (Ombre)
+Chaman Bray (Sauvage)
+Chaman Gobelin de la Nuit
+Chaman Orque
+Chameleon Skink Prowler
+Chameleon Skink Sentinel
+Chameleon Skink Stalkers
+Chameleon Skink Stalkers of Chotec
+Chameleon Skink Stalkers of Conalxa
+Chameleon Skink Stalkers of Huanchi
+Chameleon Skink Stalkers of Quetzl
+Chameleon Skink Stalkers of Sotek
+Chameleon Skink Stalkers of Tepok
+Chameleon Skink Stalkers of Tlazcotl
+Chameleon Skink Stalkers of Tzunki
 Chameleon Skinks
+Chameleon Skinks of Chotec
+Chameleon Skinks of Conalxa
+Chameleon Skinks of Huanchi
+Chameleon Skinks of Quetzl
+Chameleon Skinks of Sotek
+Chameleon Skinks of Tepok
+Chameleon Skinks of Tlazcotl
+Chameleon Skinks of Tzunki
 Chameleon Stalkers
+Champions de Slaanesh
+Champions Maraudeurs
+Champions Maraudeurs (Armes lourdes)
+Champions of Khorne
 Champions Of Slaanesh
 Changebringers
+Channeler
+Chantelames
+Chanters
+Chanters (Occult Lanterns)
 Chaos Chariots
 Chaos Chariots of Khorne
 Chaos Chariots of Nurgle
 Chaos Chariots of Slaanesh
 Chaos Chariots of Tzeentch
+Chaos Dragon
 Chaos Dwarf Blunderbusses
 Chaos Dwarf Warriors
 Chaos Dwarf Warriors (Great Weapons)
@@ -257,6 +992,8 @@ Chaos Furies (Nurgle)
 Chaos Furies (Slaanesh)
 Chaos Furies (Tzeentch)
 Chaos Giant
+Chaos Giant of Khorne
+Chaos Giant of Nurgle
 Chaos Knights
 Chaos Knights (Lances)
 Chaos Knights of Khorne
@@ -273,6 +1010,20 @@ Chaos Lord of Khorne
 Chaos Lord of Nurgle
 Chaos Lord of Slaanesh
 Chaos Lord of Tzeentch
+Chaos Ogre Brawlers
+Chaos Ogre Brawlers (Dual Weapons)
+Chaos Ogre Bruiser
+Chaos Ogre Fighters (Great Weapons)
+Chaos Ogre Fighters (Ironfists)
+Chaos Ogre Fighters (Spears)
+Chaos Ogre Spawn
+Chaos Ogre Tyrant
+Chaos Ogre Warmongers (Great Weapons)
+Chaos Ogre Warmongers (Ogre Pistol)
+Chaos Ogres of Khorne
+Chaos Ogres of Nurgle
+Chaos Ogres of Slaanesh
+Chaos Ogres of Tzeentch
 Chaos Sorcerer (Death)
 Chaos Sorcerer (Death) – Deprecated
 Chaos Sorcerer (Fire)
@@ -293,20 +1044,25 @@ Chaos Sorcerer Lord of Nurgle (Death)
 Chaos Sorcerer Lord of Nurgle (Nurgle)
 Chaos Sorcerer Lord of Slaanesh (Shadows)
 Chaos Sorcerer Lord of Slaanesh (Slaanesh)
+Chaos Sorcerer Lord of Tzeentch (Life)
 Chaos Sorcerer Lord of Tzeentch (Metal)
 Chaos Sorcerer Lord of Tzeentch (Tzeentch)
 Chaos Sorcerer of Nurgle (Death)
 Chaos Sorcerer of Nurgle (Nurgle)
 Chaos Sorcerer of Slaanesh (Shadows)
 Chaos Sorcerer of Slaanesh (Slaanesh)
+Chaos Sorcerer of Tzeentch (Life)
 Chaos Sorcerer of Tzeentch (Metal)
 Chaos Sorcerer of Tzeentch (Tzeentch)
 Chaos Spawn
+Chaos Touched Bears
 Chaos Trolls
 Chaos Trolls (Armoured)
+Chaos Vultures
 Chaos Warhounds
 Chaos Warhounds (Poison)
 Chaos Warhounds of Khorne
+Chaos Warhounds of Tzeentch
 Chaos Warriors
 Chaos Warriors (Great Weapons)
 Chaos Warriors (Halberds)
@@ -324,66 +1080,322 @@ Chaos Warshrine of Khorne
 Chaos Warshrine of Nurgle
 Chaos Warshrine of Slaanesh
 Chaos Warshrine of Tzeentch
+Chaos Wastes Behemoth
+Char Incendiaire de Tzeentch
+Char Traqueur Exalté
+Chariots à Pompe Snotlings
+Chariots à Pompe Snotlings (Flap-flaps)
+Chariots à Pompe Snotlings (Rouleaux à Pointes)
+Chariots de guerre
+Chariots de guerre (Mortiers)
+Charognard
+Charred Nurses
+Charrette macabre
+Charrette macabre (Bourdon Maudit)
+Charrette macabre (Brasero Infernal)
+Chars à Archers Squelettes
+Chars à courre
+Chars à Lions de Chrace
+Chars à Loups des Glaces Maraudeurs
+Chars à Loups Gobelins
+Chars à Maraudeurs
+Chars à Razorgor
+Chars à Sang-froid
+Chars à Sangleboucs
+Chars à Sangliers Orques
+Chars de Tiranoc
+Chars du Chaos
+Chars du Chaos de Khorne
+Chars du Chaos de Nurgle
+Chars du Chaos de Slaanesh
+Chars du Chaos de Tzeentch
+Chars Écorcheurs
+Chars en ithilmar
+Chars Éventreurs
+Chars Éventreurs de Khorne
+Chars Squelettes
+Chars Traqueurs
+Chasseur
+Chasseurs
+Chasseurs de Colossadons (Monteurs d'Étripodactyle)
+Chasseurs Maraudeurs
+Chasseurs Maraudeurs (Javelots)
+Chasseurs sauvages de Kurnous (Cavaliers Sauvages – Boucliers)
+Châtelain Infernal
+Chauves-souris des cavernes
+Chauves-souris Géantes
+Chef
+Chef de Guerre gobelin de la Nuit
+Chef de Guerre orque
+Chef de tribu Maraudeur
+Chef Homme-bête
+Chef Minotaure
+Chef skink
+Chef skink à crête rouge
+Cherchemorts
+Chevaliers à califourchon (Chevaucheurs à califourchon)
+Chevaliers de la Griffe d'Ébène (Chevaliers d'Effroi)
+Chevaliers de la Lumière Éternelle (Chevaliers de l'Empire)
+Chevaliers de la Pourriture
+Chevaliers de la Quête
+Chevaliers de la Quête maudits
+Chevaliers de la Rose Noire
+Chevaliers de la Ruine de Tzeentch
+Chevaliers de l'Empire
+Chevaliers de l'Immolation (Chevaliers de la Ruine de Tzeentch)
+Chevaliers de Morr (Chevaliers de l'Empire)
+Chevaliers de Sang
+Chevaliers de Sang (Lances)
+Chevaliers de Tor Gaval
+Chevaliers d'Effroi sur Sang-froid
+Chevaliers Demigriffons
+Chevaliers Demigriffons (Hallebardes)
+Chevaliers des Nécropoles
+Chevaliers des Nécropoles (Hallebardes)
+Chevaliers du Chaos
+Chevaliers du Chaos (Lances)
+Chevaliers du Chaos de Khorne
+Chevaliers du Chaos de Khorne (Lances)
+Chevaliers du Chaos de Nurgle
+Chevaliers du Chaos de Nurgle (Lances)
+Chevaliers du Chaos de Slaanesh
+Chevaliers du Chaos de Slaanesh (Lances)
+Chevaliers du Chaos de Tzeentch
+Chevaliers du Chaos de Tzeentch (Lances)
+Chevaliers du Cœur de Lion (Chevaliers du Royaume)
+Chevaliers du Graal
+Chevaliers du Grand Cerf
+Chevaliers du Royaume
+Chevaliers du Royaume maudits
+Chevaliers du Soleil Flamboyant
+Chevaliers du Trône d'Airain (Massacreurs de Khorne)
+Chevaliers Errants
+Chevaliers Errants maudits
+Chevaliers Hippogriffes royaux
+Chevaliers Maraudeurs
+Chevaliers Maraudeurs (Haches de jet)
+Chevaliers Maraudeurs de Khorne (Haches de jet)
+Chevaliers Maraudeurs de Nurgle (Haches de jet)
+Chevaliers Maraudeurs de Slaanesh
+Chevaliers Maraudeurs de Tzeentch
+Chevaliers Noirs
+Chevaliers Noirs (Lances et bardes)
+Chevaliers Pégases
+Chevaliers Pégases royaux
+Chevaliers sur Sang-froid
+Chevaliers Sylvains
+Chevaliers Sylvains (Lances)
+Chevaliers Sylvains (Pointes empoisonnées)
+Chevaliers Sylvains perdus (Chevaliers du Grand Cerf)
+Chevaliers venimeux d'Asaph (Chevaliers des Nécropoles)
+Chevaucheurs à califourchon
+Chevaucheurs de Loups d'Oglah Khan
+Chevaucheurs de Loups hobgobelins (Arcs)
+Chevaucheurs de Loups hobgobelins (Lances)
+Chevaucheurs de Vérole de Nurgle
+Chevaucheurs d'Ours de guerre
+Chevaucheurs du Vent de Khsar (Cavaliers de Nehekhara)
+Chief Handmaiden Lirazel
 Chieftain
+Chiens de Guerre du Chaos
+Chiens de Guerre du Chaos (Poison)
+Chiens de Guerre norses
+Chiens de Guerre norses (Poison)
+Chiens de Khorne
+Chiens du Chaos de Khorne
+Chiens galeux
+Chiffonniers du Seigneur de Sel (Abordeurs – Bombardiers)
+Children of Doom
+Chilfroy d'Artois
 Chill of Sontar (War Hydra)
 Chimera
+Chimère
+Chimère d'Hurlesang (Chimère)
 Chosen
 Chosen (Great Weapons)
 Chosen (Halberds)
+Chosen of Ishernos
 Chosen of Khorne
 Chosen of Khorne (Dual Weapons)
 Chosen of Nurgle
 Chosen of Nurgle (Great Weapons)
 Chosen of Slaanesh
 Chosen of Slaanesh (Hellscourges)
+Chosen of the Cabal
+Chosen of the Divine Sacrifice
 Chosen of the Gods (Ushabti – Great Bows)
+Chosen of the Warhost of the Apocalypse
 Chosen of Tzeentch
 Chosen of Tzeentch (Halberds)
+Chronos Goodheart
+Chronos Goodheart (Warhorse)
+Chulann's Marsh Hornets (Bog Beast Raiders)
+Clan Bannermen
+Clan Guards
 Clan Vulkn Tailslashers (Clanrats – Shields)
+Clank Runner Slingers
+Clank Runners
 Clanrat Spears
 Clanrat Spears (Shields)
 Clanrats
 Clanrats (Shields)
+Clatter Runner Slingers
+Clatter Runners
 Clawspeaker (Beasts)
 Clawspeaker (Life)
 Clawspeaker (Shadows)
+Cluster Mortars
 Coatl
+Coatl Protector (Death)
+Coatl Protector (Heavens)
+Coatl Protector (Life)
+Coatl Protector (Light)
 Cockatrice
 Cockatrice Sculptor
 Coeddil
+Cogneur
+Cohort of Huatl (Kroxigor Brawlers)
 Cohort of Huatl (Sacred Kroxigor)
 Cohort of Sotek (Red Crested Skinks)
+Cohort of Sotek (Skink Braves)
+Cohorte de Huatl (Kroxigors sacrés)
+Cohorte de Pok-Hopak (Monteurs de Sang-froid à lance)
+Cohorte de Sotek (Skinks à crête rouge)
+Cohorte skink
+Cohorte skink (Javelots)
+Cohorte skink bénie (Javelots)
 Cold One Chariots
 Cold One Dread Knights
 Cold One Knights
 Cold One Riders
 Cold One Spear-Riders
+Cold One Spear-Riders of Chotec
+Cold One Spear-Riders of Huanchi
+Cold One Spear-Riders of Quetzl
+Cold One Spear-Riders of Sotek
+Cold One Spear-Riders of Tepok
+Cold One Spear-Riders of Tlazcotl
+Colonial Militia
+Colonial Militiamen
 Colossadon Hunters (Ripperdactyl Riders)
+Colossal Iron Squig
 Colossal Squig
+Colosse Nécrofex
+Commanditaire ogre
+Common Trolls
 Company of the Kalendirian (Ship's Company)
+Comte Noctilus
+Copsewight
+Coquatrice
+Coquatrice sculptrice
+Cora'C'ulhowk
+Corneglaces Maraudeurs (Maraudeurs)
+Cornus
+Cornus bénis
 Corpse Cart
 Corpse Cart (Balefire)
 Corpse Cart (Unholy Lodestone)
+Corrupt Throwers
+Corrupted Bastiladon (Khorne)
+Corrupted Bastiladon (Nurgle)
+Corrupted Bastiladon (Slaanesh)
+Corrupted Bastiladon (Tzeentch)
+Corrupted Carnosaur (Khorne)
+Corrupted Coatl (Tzeentch)
+Corrupted Dryads
+Corrupted Feral Ice Bears
+Corrupted Forest Dragon
+Corrupted Ice Guard (Glaives)
+Corrupted Ice Guard (Swords)
+Corrupted Legion (Crypt Ghouls)
+Corrupted Priest (Death)
+Corrupted Priest (Shadows)
+Corrupted Priest (Vampires)
+Corrupted Rat Spawn
+Corrupted Stegadon (Nurgle)
+Corrupted Treekin
+Corrupted Treeman
+Corrupted Troglodon (Slaanesh)
+Corsair Legion (Dual Cutlass)
+Corsaires des Arches Noires
+Corsaires des Arches Noires (Petites arbalètes)
+Corsairs
+Cotres volants de Lothern
+Cotres volants de Lothern (Balistes)
+Couineurs incandescents (Horreurs Roses de Tzeentch Exaltées)
 Council Guard (Stormvermin – Halberds)
 Count Noctilus
+Coureurs Célestes (Broyeurs – Armes lourdes)
+Coureurs d'Égouts
+Coureurs d'Égouts (Poison)
+Coureurs d'Égouts frondeurs
+Coureurs d'Égouts frondeurs (Poison)
+Coureurs Mortels
+Coureurs Nocturnes
+Coureurs Nocturnes (Frondes)
+Court of the Cleansing Tides
+Crab Boys (Freeboota Boyz)
+Crache-plomb
 Crane Gunners
+Crane Thunderers
+Cranequiniers
+Crapauds de la Peste de Nurgle
+Crawlers in the Dark (Verminkeepers)
+Criminal Network Overseer
+Crimson Death
+Crimson Reaper
+Crispijn van Haagen
 Crone Hellebron
+Croquemorts (Mitrailleuses Ratling)
 Crossbowmen
+Crotaz'l
+Crow Feather Assassins
+Crows
 Crushers (Great Weapons)
 Crushers (Ironfists)
+Crushers (Ogre Pit fighter Champions)
 Crypt Ghouls
 Crypt Horrors
+Cuirassiers d'Améthyste
+Cuirassiers de Nuln
+Culchan Riders
+Culchan Riders of Chotec
+Culchan Riders of Huanchi
+Culchan Riders of Quetzl
+Culchan Riders of Sotek
+Culchan Riders of Tepok
+Culchan Riders of Tlazcotl
 Cultist of Khorne
 Cultist of Nurgle
 Cultist of Slaanesh
 Cultist of Tzeentch
+Cultiste de Khorne
+Cultiste de Nurgle
+Cultiste de Slaanesh
+Cultiste de Tzeentch
+Cultists of Asaph (Beauty, Magic & Vengence)
+Cultists of Djaf (Death & War)
+Cultists of Nagash
+Cultists of Ptra (Sun & Light)
+Cultists of Tzeentch
+Culverins
 Curs'd Ettin
 Curs'd Ettin (Runecaller)
+Cursed Company
+Cursed Islanders
+Cursed Jade Carriage
+Cyclop
 Cygor
+Cygors mangeurs d'âmes
 Cylostra Direfin
+Cylostra Mauvaileron
 Da Acid Burpa (Colossal Squig)
 Da Big Un (Rogue Idol)
+Da Black Beard (Freeboota Big 'Uns)
+Da Bronzen Bastardz (Scrap Shootaz)
 Da Eight Peak Loonies (Night Goblins – Fanatics)
+Da Immortulz
+Da Patcha
 Da Rusty Arrers (Night Goblin Archers)
 Da Swamp Fings (River Trolls)
 Da Warlord's Boyz (Night Goblins)
@@ -394,109 +1406,462 @@ Daemon Prince of Slaanesh
 Daemon Prince of Tzeentch
 Daemon Slayer
 Daemonettes of Slaanesh
+Daemonomaniac
+Daemons of Malice (Dagger)
 Daemonsmith Sorcerer (Death)
 Daemonsmith Sorcerer (Fire)
 Daemonsmith Sorcerer (Hashut)
 Daemonsmith Sorcerer (Metal)
+Dagannoth (Rotting Kharibdyss)
+Dagmar Nachgeben
+Dagon Ithaca: The Dreaded Horror
+Dagon Ithica
+Dalla Ulfarsdottir
+Dalmark Gunners
+Dalmark Militia
+Dame Sylvaine
+Damned Cannon
+Damned Grail Knights
 Damned Knights Errant
 Damned Knights of the Realm
+Damned Knights Of The Realm
+Damned Monks of the Red Abbey
 Damned Paladin
 Damned Questing Knights
+Damoiselle (Bête)
+Damoiselle (Cieux)
+Damoiselle (Vie)
 Damsel (Beasts)
+Damsel (Death)
 Damsel (Heavens)
 Damsel (Life)
+Damsel (Shadows)
+Danseurs de Guerre
+Danseurs de Guerre (Lances Asrai)
+Daqui Warriors
+Daqui Warriors (Great Weapons)
+Darga
+Dark Land Bulwarkz
+Dark Land Drake
+Dark Land Drake Rider
+Dark Land Orc Big 'Uns
+Dark Land Orc Boyz
+Dark Land Warboss
+Dark Prophetess (Beasts)
+Dark Prophetess (Death)
+Dark Prophetess (Heavens)
+Dark Prophetess (Shadows)
+Dark Prophetess (Vampires)
 Dark Riders
 Dark Riders (Repeater Crossbows)
 Dark Riders (Shields)
+Dark Wind
 Darkshards
 Darkshards (Shields)
+Daughters of Rhya
+Dazharr Doomaxe
 Dazh's Hearth-Blades (Tzar Guard – Great Weapons)
+De Teuling's Escort (Empire Knights - Greatswords)
 Death Dealers (Ratling Guns)
 Death Globe Bombardiers
 Death Hag
 Death Runners
 Death Shriek Terrorgheist
+Death Worm
+Deathclaw
 Deathjacks (Archers)
 Deathmaster Snikch
 Deathmaster Snikch (Tz'arkan)
+Death-Quest
+Deathshrieka (Pirated Gyrocopter)
 Deathshrieker Rocket Launcher
+Deathvermin (Stormvermin - Halberds)
+Déchala la Répudiée
+Dechala, The Denied One
 Dechala, the Denied One
+Déchu de Tzeentch
+Déchus
+Déchus de Khorne
+Déchus de Nurgle
+Déchus de Slaanesh
 Deck Droppers
 Deck Droppers (Bombers)
 Deck Droppers (Handgunners)
 Deck Gunners
+Ded 'Ard Lootaz
+Ded 'Ard Lootaz (Big Shootaz)
 Deepwood Scouts
 Deepwood Scouts (Swiftshiver Shards)
+Defenders of Carn Mallog (Highlanders)
+Defenders of the Capital (Greatswords)
 Defenders of the Fleur-de-lis (Knights Errant)
+Défenseurs de Grundel (Lanciers – Boucliers)
+Défenseurs de la Fleur de Lys (Chevaliers Errants)
 Deff Creepers (Forest Goblin Spider Rider Archers)
+Defiled Chosen (Crypt Horrors)
 Demigryph Knights
 Demigryph Knights (Halberds)
+Demoiselle de Givre (Glace)
+Demoiselle de Givre (Tempête)
+Demoiselle d'honneur de la Reine Éternelle
+Démon d'Acier
+Démon d'Acier (Mortier Trembleffroi)
+Démonettes de Slaanesh
+Démonettes de Slaanesh Exaltées
+Démoniste Fimir (Feu)
+Démoniste Fimir (Ombre)
+Denis Russ, the Werebear
 Depth Guard
 Depth Guard (Polearms)
+Depth Guard Champion
+Depth Guard Deck Ravagers
+Depth Guard Deck Watchers
+Depth Guard Dread Sea Revanant
+Depth Guard Elder Reaver
+Depth Guard Kastellan
+Depth Guard Lord
+Depth Guard Promethean Reavers
+Depth Guard Revenant Haunters
+Depth Guard Sea Serpent Reavers
+Depth Gunner
+Depth Ironblaster
+Depth Maneater (Anchor)
+Depth Maneater (Hammer)
+Derviches Kossovites
+Dervishers
+Desert Mirage
+Desert Riders
+Desert Spirit
+Déskraeleur
+Désosseur (Bêtes)
+Désosseur (Cieux)
+Désosseur (La Gueule)
+Désosseur (Mort)
+Despote (Épée & Arbalète)
+Despote (Épée & Bouclier)
 Destroyers of the Drakwald (Ungor Spearmen Herd – Shields)
+Destructeur K'daai
+Destructeurs de la Drakwald (Harde de lanciers Ungors – Boucliers)
+Devil of Dark Omen
 Devoted Marauders of Slaanesh
 Devoted Marauders of Slaanesh (Hellscourges)
 Devoted Marauders of Slaanesh (Spears)
+Devoted Rajput Warriors
+Devoted Rajput Warriors (Dual Katars)
+Devotees of Nurgle
 Devotees of Slaanesh
 Devotees of Slaanesh (Crossbows)
+Dévots de Slaanesh
+Dévots de Slaanesh (arbalètes)
+Dieter Helsnicht
+Dietershafen's Fist (Republican Guard)
+Dino Woodwonder
+Dirach Elder (Beasts)
+Dirach Elder (Death)
+Dirach Elder (Fire)
+Dirach Elder (Shadows)
 Dire Wolves
+Dirtyshanks (Gorgers)
+Disciples du Grand Aigle (Chars à Maraudeur)
+Disciples of Asaph
+Disciples of Djaf
+Disciples of Ptra
+Disciples Of The Path: Inner Circle
+Disciples Of The Path: Knights
+Disciples Of The Path: Warriors
+Disciples_of_the_dragon
+Disgraced Knights
+Dismounted Heavy Archers
+Dismounted Heavy Archers (Heavy Arrows)
+Dismounted Heavy Archers (Scattershaft Arrows)
+Dismounted Horsemasters
+Dismounted Horsemasters (Fire Arrows)
+Dismounted Horsemasters (Heavy Arrows)
+Dismounted Horsemasters (Variable Arrows)
+Dismounted Horsemasters (Whistling Arrows)
+Divine Gunnery Division
+Divine Gunnery Division (Iron Hail Gun)
+Divine Monarch Ling Guang
+Divine Shock Wardens
+Djinn Carriage
+Dmitry Tzaryov
+Dog Handlers
+Dolgan Warrior Women
+Donarkhun Rune Guard
+Donna Don Domingio
 Doom Diver Catapults
 Doom Knights of Tzeentch
+Doom Reliquae of Mordac
+Doom Riders
+Doom Wolf Knights
+Doom Wolf Summons
 Doombull
+Doomed Legion
 Doomfire Warlocks
 Doom-Flayers
+Doomgore
 Doomseekers
 Doomwheel
+Doomwheel Brigade (Doomwheel)
+Dos-gris du Pic à l'Amble (Yétis)
+Dracoleth
+Dracs de fer
+Dracs de fer (Régleurs de rancune)
+Dracs de fer (Torpilles à trolls)
+Dragon Ark
+Dragon crapaud
+Dragon crapaud pestilentiel
+Dragon de Givre du Chaos
+Dragon des Forêts
+Dragon Emperor's Imperial Guard
+Dragon Flame Cannon
+Dragon Flame Tank
+Dragon Lord
+Dragon lunaire
+Dragon noir
 Dragon Ogre Shaggoth
 Dragon Ogres
+Dragon Order Monks
+Dragon Prince Discples
+Dragon Prince Knights
 Dragon Princes
+Dragon River Ancestral Monks
+Dragon Rod Gunners
 Dragon Slayer
+Dragon solaire
+Dragon stellaire
 Dragonback Slayers (Slayers)
+Dragonbeards
+Dragonbeards (Great Glaive)
+Dragonbeards (Great Mace)
 Dragon-blooded Shugengan Lord (Yang)
 Dragon-blooded Shugengan Lord (Yin)
+Dragonflame Thrower
+Dragonling Pack
+Dragonlords
+Dragon-men (Dragon-Staves)
+Dragon-men (Dragon-Stick & Sword)
+Dragon-Ogre Shaggoth
+Dragons-Ogres
+Drake Guard (Huskarls)
+Drakenhof Templar Champion
+Drakenhof Templar Demigriff Knights
+Drakenhof Templar Inner Circle Knights
+Drakenhof Templar Kastellan
+Drakenhof Templar Knights
+Drakenhof Templar Lord
+Drakenhof Templar Sky Reavers
+Drakenhof Templar Veteran Warriors
+Drakenhof Templar Warriors
+Dramalliel
 Dramar Hammerfist
+Dramar Poing-de-marteau
+Drazhoath le Cendreux
 Drazhoath the Ashen
+Dread Automata (Khorne)
+Dread Automata: Armageddon
+Dread Automata: Nightmare
+Dread Automata: Undivided
+Dread Beasts of Mourn
+Dread Daughters of Tariq (Camel Lancers)
+Dread King
 Dread Maw
 Dread Saurian
+Dread Saurian (Crystalback)
 Dreadlord (Sword & Crossbow)
 Dreadlord (Sword & Shield)
 Dreadquake Mortar
 Dreadspears
+Dregmaw Shark
+Drenok Johansen
+Drib Bentblade
+Drogg's Blackpowders
+Drogmak the Looter
+Drones de la Peste de Nurgle
+Drones de la Peste de Nurgle (Têtes de Mort)
+Drowned Mawriders
 Druchii Anointed
+Druidic Initiates
+Druidic Priestess
+DruKim
+Drulg Kineater
+Drusala
+Druthor, The King of Grimbarrow
 Druzhina
+Dryades
+Dryades malveillantes
 Dryads
 Drycha
+Du Tianguan (Celestial Inspector)
+Duan Wei, the Southern Protector
+Duc du Changement
+Duc du Changement Exalté (Métal)
+Duc du Changement Exalté (Tzeentch)
+Duellists
+Duffskul
+Dum-Berserkers (Braves)
+Dune Vulture
+Dunedaggers
+Duneskulk Skreekblade
+Duneskulk Skreekblade - Decoy
+Dur comme de l'idole de pierre
+Dural Durak
+Duriath Helbane
 Durkit's Squigs (Night Goblin Squig Hoppers)
+Durkol Eye-Gouger
 Durthu
+Dusk Reaver Camp Commander
+Dusk Reaver Captain
+Dusk Reaver Captured War Wagon Company
+Dusk Reaver Commandant
+Dusk Reaver Marines
+Dusk Reaver Mercenary Captain
+Dusk Reaver Pike Company
+Dusk Reaver Raider Company
+Dusk Reaver Rifle Company
+Dusk Reaver Rocket Battery
+Dusk Reaver Veteran Vanguard
+Dusk Wight
+Dwarf Blunderbusses
+Dwarf Griffon
+Dwarf Griffon Knight
+Dwarf Merchant Lord
+Dwarf Miner
+Dwarf Sappers
+Dwarf Slaves
 Dwarf Warriors
 Dwarf Warriors (Great Weapons)
 Dwarf-Thing Menace (Doom-Flayers)
+Dwarf-Thing Shield Thrower
 Eagle Claw Bolt Throwers
+Earth Borer Mining Drill
+Earth Elemental
+Earthly Lion Knights
+Eataine Guard (Spearmen)
+Éborgneurs (Jezzails à Malepierre)
+Éclaireurs des Bois Profonds (Pointes frisson vif)
+Éclaireurs des profondeurs de la forêt
+Éclaireurs squelettes
+Écuyers à pied
+Edmund
+Edrael of Equos
+Edvard van der Kraal
+Egil Styrbjorn
+Egmond den Euwe
+Égorgeurs hobgobelins
+Egrimm van Horstmann
+Einarr Sigdansson
 Ekrund Miners (Miners – Blasting Charges)
+El Cadavo
+Elasir
+Elatior the Enchanter
 Elder Dragon Ogre Shaggoth
 Eldred's Guard (Spearmen – Shields)
+Eldyra
+Élémentaire des Mers
 Elemental Bear
+Elephants
+Elite Braconniers
 Ellyrian Reaver Archers
 Ellyrian Reavers
 Elspeth von Draken
+Eltharion le Sinistre
 Eltharion the Grim
+Élus
+Élus (Armes lourdes)
+Élus (Hallebardes)
+Élus de Khorne
+Élus de Khorne (Armes jumelles)
+Élus de Nurgle
+Élus de Nurgle (Armes lourdes)
+Élus de Slaanesh
+Élus de Slaanesh (Knouts)
+Élus de Tzeentch
+Élus de Tzeentch (Hallebardes)
+Élus des Dieux (Ushabtis – Grands Arcs)
+Emberskull Bombardiers (Axe & Grenade)
+Emil Valgeir
+Emir
+Émissaires d'Outre-Tombe
+Empereur Karl Franz
 Emperor Karl Franz
+Emperor Wilhelm I
+Emperor Wolfgang II
 Empire Captain
 Empire Knights
 Empress Crowmen (Onyx Crowmen)
+Enchanted Books
+Enchanted Ropes
+Enchanteresse (Bêtes)
+Enchanteresse (Ombre)
+Enchanteresse (Vie)
+Endless Tomb
+Endless Vow (Tomb Corsairs)
+Enfants de Khorne
+Enfants de la Flamme (Princes dragons)
+Enfants de Nurgle
+Enfants de Slaanesh
+Enfants de Tzeentch
+Enforcers
 Engineer
+Engra Deathsword
 Enigmas of Ghyran (Zoats)
+Énigmes de Ghyran (Zoats)
+Enraged Corpses
+Enrageurs
+Ensalved Ancient Skeletal Kroxigors Summons
+Enslaved Red Crested Skeletal Skinks Summons
+Enslaved Spirits
+Entourage Éternel (Accroche-cœurs de Slaanesh)
+Eogric the Vile
+Eoloran Grayhawk
+Eonir Explorers
+Eonir Stag Riders
+Épaves animées
+Épées du Chaos (Chevaliers du Chaos)
+Ephalian Riders (Skeleton Horsemen)
 Epidemius
+Équarrisseurs de Khorne
+Équipage du Kalendirian (Marins)
+Erik Redaxe
+Ernst von Kammler
+Escorteurs
+Escorteurs (Lance-grenades)
+Escorteurs d'Améthyste
+Escouade du Martel céleste (Gyrobombardier)
+Escouade mortelle de Visktrin (Coureurs Mortels)
 Eshin Maneater
 Eshin Sorcerer
+Eshin Sorcerer (Warplock Pistol)
+Eshin Sorcerer Lord
 Eshin Triads
+Esprit de Tepok (Coatl)
+Esprit des Ancêtres
+Estragon's Pariahs (Adventurers)
+Estroth the Silent
+Eternal Bond of Thessos (Skeleton Hoplites)
 Eternal Entourage (Heartseekers of Slaanesh)
 Eternal Guard
 Eternal Guard (Shields)
+Eternal Guard of Slaanesh (Shields)
+Ethereal Saurus Spears (Spears)
+Ethereal Saurus Warriors (Shields)
+Ethereal Swordsmen
+Ettin Maudit
+Ettin Maudit (Mande-runes)
+Eustache of the Rusting Blade
+Eustaquio Sunscryer
 Everqueen's Court Guards (Sisters of Avelorn)
 Exalted Bloodletters of Khorne
+Exalted Bloodratters of Haematoma
 Exalted Bloodthirster
+Exalted Chaos Ogre of Khorne
+Exalted Chaos Ogre of Nurgle
+Exalted Chaos Ogre of Slaanesh
+Exalted Chaos Ogre of Tzeentch
 Exalted Daemonettes of Slaanesh
+Exalted Daemons of Malice (Dual Dagger)
+Exalted Daemons of Malice (Greatmace)
 Exalted Flamer of Tzeentch
 Exalted Great Unclean One (Death)
 Exalted Great Unclean One (Nurgle)
@@ -506,6 +1871,7 @@ Exalted Hero of Khorne
 Exalted Hero of Nurgle
 Exalted Hero of Slaanesh
 Exalted Hero of Tzeentch
+Exalted Imperator Szik Vilepot
 Exalted Keeper of Secrets (Shadows)
 Exalted Keeper of Secrets (Slaanesh)
 Exalted Lord of Change (Metal)
@@ -513,78 +1879,352 @@ Exalted Lord of Change (Tzeentch)
 Exalted Pink Horrors of Tzeentch
 Exalted Plaguebearers of Nurgle
 Exalted Seeker Chariot
+Exécuteurs de Har Ganeth
+Exile Knights
+Expeditionary Archers
+Expeditionary Cannons
+Expeditionary Crossbowmen
+Expeditionary Halberdiers
+Expert Assassin
+Explorer
+Explorer (Blunderbuss)
+Explorer (Sword)
 Explosive Squig
+Eye of Doom (Daemonomaniac)
+Eye of Khaine
+Eyes of the Canopy (Chameleon Skinks)
 Eyes of the Desert (Sepulchral Stalkers)
 Eye-Takers (Warplock Jezzails)
+Eyri Goldfinger
 Ezar Doombolt
+Ezar Ruinéclair
+Fang Wenzi, the Lunar Strategist
+Fangsnapper's Clawpack (Clanrat Spears - Shields)
+Faris Jur Palace Guard
+Faris Jur Warlock
+Fastric Ghoulslayer
+Fatandira
 Fatsod
+Faucheur de Sang
+Faucheurs de crânes
+Faucheuses de Gobelins
 Fay Enchantress
+Feastguard
+Feathered Scuttlas (Forest Goblin Spider Riders)
+Fée Enchanteresse
 Felix
+Félix
 Fell Bats
+Fell Spectres
+Fen Hulk
+Fenbeasts
+Feral Arachnarok Spider
 Feral Bastiladon
 Feral Bears
+Feral Boars
+Feral Bog Beasts
 Feral Carnosaur
+Feral Charchanodon
 Feral Cold Ones
+Feral Demigryphs
 Feral Dread Saurian
+Feral Giant Vulture
+Feral Gorebeasts
+Feral Great Stags
+Feral Great Wyrm
+Feral Griffon
+Feral Gryphon
+Feral Hippogryphs
+Feral Horse Herd
 Feral Hydra
 Feral Ice Bears
+Feral Ice Mammoth
+Feral Lava Arachnarok Spider
 Feral Mammoth
 Feral Manticore
+Feral Mournfang
+Feral Pegasi
+Feral Rhinox
 Feral Stegadon
+Feral Stegadon (Crystalback)
+Feral Stonehorn
+Feral Thundertusk
 Feral Troglodon
 Feral Wyvern
+Feral Ymir
+Fernadrang
+Ferrik Clanrats
+Ferrik Clanrats (Shields)
+Ferrik Clanrats Spears
+Ferrik Clanrats Spears (Shields)
+Ferrik Forgebinder
+Ferrik Stormvermin (Great Weapons)
+Ferrik Stormvermin (Halberds)
+Ferrik Stormvermin (Shields)
+Feskit
+Fester Plague Monk Censer Bearers
+Festering Chantor
 Festering Stooges (Exalted Plaguebearers of Nurgle)
+Festering Stooges of the End
+Festus la Sangsue
 Festus the Leechlord
+Feytor the Tainted
+Fianna Fimm
+Fianna Fimm (Great Weapons)
+Fianna Fimm (Shields)
+Field Ballistas
+Field Mangonels
+Field Scorpions
+Field Trebuchet
+Field Trebuchet (Balefire)
 Field Trebuchets
 Fiends of Slaanesh
+Fierté de Rahagra (Lions de guerre de Chrace)
+Fils de Ghorros (Centigors – Armes lourdes)
+Fils de Sigmar (Bretteurs)
+Fimir Balefiend (Beasts)
+Fimir Balefiend (Death)
 Fimir Balefiend (Fire)
 Fimir Balefiend (Shadows)
 Fimir Noble
 Fimir Warriors
 Fimir Warriors (Great Weapons)
+Fimm Noble
+Fimm Warriors
+Fimm Warriors (Great Weapons)
+Finmor
+Finubar the Seafarer
+Fire Company
+Fire Efreet
+Fire Lancers
+Fire Rain Gunnery Crew
 Fire Rain Rocket Battery
 Firebark Elders (Tree Kin)
 Firebelly
+First Company Veteran Marines
+First Company War Auroch Riders
+Fishbrain's Monolith (Norscan Giant)
 Flagellants
+Flaithmors
 Flame Cannons
 Flame Cannons (Grudge Settlers)
+Flame Eaters (Great Weapons)
+Flame Eaters (Ogre Pistol)
+Flame Noses (Gnoblar Spider Riders Archers)
+Flame Ogre Bulls
+Flame Spirits
+Flame Thrower
+Flamefang Cavalry
+Flameguts
 Flamers of Tzeentch
 Flamespyre Phoenix
+Flamespyre Phoenix Riders
+Fléau d'Arden (Preyton)
+Fledgling Vampires
+Fleet Admiral
+Fleet Captain
+Flesh Hounds of Haematoma
 Flesh Hounds of Khorne
+Flesh Walker Mongrols
+Fleshharvesters
+Flying Carpets
+Flying Fish Riders
+Fog-Shrine of Balor
+Fogwreathed Elementals
+Folcard de Montfort
+Followers of Balor (Fimm Warriors)
 Followers of the Great Eagle (Marauder Chariots)
+Fooger's Houseguard (Greatswords)
 Foot Squires
+Forbidden Legion
 Forest Dragon
+Forest Goblin Archers
+Forest Goblin Big Boss
+Forest Goblin Great Shaman (Little Waaagh)
+Forest Goblin Great Shaman (Spider)
+Forest Goblin Shaman
+Forest Goblin Shaman (Little Waaagh)
+Forest Goblin Shaman (Spider)
 Forest Goblin Spider Rider Archers
 Forest Goblin Spider Riders
+Forest Goblin Warboss
+Forest Goblins
+Forest Goblins (Bows)
+Forest Goblins (Spears)
+Forestiers
+Foreuses à Malepierre
+Forge Guard
+Forge Guard Captain
+Forge Lord
+Forgemaster Iron-Skull
 Forsaken
+Forsaken Gnoblar Fighters
+Forsaken Gnoblar Fighters (Bows)
+Forsaken Gnoblar Warriors
+Forsaken Gnoblars
 Forsaken of Khorne
 Forsaken of Nurgle
 Forsaken of Slaanesh
 Forsaken of Tzeentch
+Foule de paysans
+Fourbasses hobgobelines
+Franche-Compagnie de Sartosa
+Frankenwurter's Company
+Fraygerd Styrbjorn
+Frederick van Hal
+Frederik van Hal
 Free Company Militia
+Freeboota Big 'Uns
+Freeboota Big 'Uns (Duel Swords)
+Freeboota Big 'Uns (Halberds)
+Freeboota Boyz (Duel Swords)
+Freeboota Boyz (Heavy Weapons)
+Freeboota Boyz (Hybrid Weapons)
+Freeboota Boyz (spear shield)
+Freeboota Kaptain
+Freeboota shoota boyz
+Freeboota Splitta
+Freeboota Stikbooma
+Freebooters of Port Royale
+Freelance Knights
+Frères de Serment de Tor (Chevaucheurs d'Ours de guerre)
+Frigustrex, Rejeton du Vide Glacé
 Frigustrex, Scion of the Cold-Void
+Frisson de Sontar (Hydre de Guerre)
+Frogmen Hunters
+Frost Guard
 Frost Maiden (Ice)
 Frost Maiden (Tempest)
 Frost Wyrm
+Frostdrakes
+Frostfang
 Frostheart Phoenix
+Frostmaw (Ice Wolf)
+Frothing Wolf Rats
+Frothing Wolf Rats (Poison)
+Fulg's Ironguts
+Furies
+Furion of Clar Karond
+Fylch Sharptail
+Gajnal Juggernaut (War Elephant)
+Galifreius
+Galloper Guns
 Gallows Giant (Necrofex Colossus)
+Ganz the Gatekeeper
 Garagrim Ironfist
+Garagrim Poing-de-Fer
+Garbag
+Garbag's Gitz (Night Goblins)
+Garbag's Skaven Wolf Chariots
+Garde Argentée
+Garde de Givre (Épées)
+Garde de Givre (Glaives)
+Garde de Khepra (Gardiens des Tombes)
+Garde de Skolder (Dracs de fer)
+Garde d'Eldred (Lanciers – Boucliers)
+Garde des Cryptes
+Garde des Cryptes (Armes lourdes)
+Garde des Cryptes (Hallebardes)
+Garde des portes
+Garde des profondeurs
+Garde des profondeurs (Arme d'hast)
+Garde du Cœur de l'Hiver (Garde éternelle – Boucliers)
+Garde du conseil (Vermines de Choc – Hallebardes)
+Garde du Dragon Céleste
+Garde du Miroir (Guerriers du Chaos)
+Garde du pinacle de Tor Yvresse
+Garde du Plaisir (Champions de Slaanesh)
+Garde du pont du Pilleur Sanglant (Garde des profondeurs)
+Garde du Tsar
+Garde du Tsar (Armes lourdes)
+Garde éternelle
+Garde éternelle (Boucliers)
+Garde Infernale
+Garde Infernale (Armes lourdes)
+Garde Infernale (Glaives ardents)
+Garde Noire de Naggarond
+Garde Phénix
+Garde Sylvain
+Gardes de la Cour de la Reine Éternelle (Sœurs d'Avelorn)
+Gardes maritimes de Lothern
+Gardes maritimes de Lothern (Boucliers)
+Gardes Sylvains (Pointes de Lumière Stellaire)
+Gardes Sylvains (Pointes empoisonnées)
+Gardien des Portes
+Gardien des Secrets
+Gardien des Secrets Exalté (Ombres)
+Gardien des Secrets Exalté (Slaanesh)
+Gardien du Temple béni
+Gardiens de Cythral (Rangers des Bois Sauvages)
+Gardiens de la Chambre des étoiles (Gardiens du Temple)
+Gardiens de la Flamme (Garde Phénix)
+Gardiens de Montfort (Sergents Archers Montés)
+Gardiens des Tombes
+Gardiens des Tombes (Hallebardes)
+Gardiens du Graal
+Gardiens du Temple
 Gargantulzan
+Gargath of Baal
+Gargouilles
+Gargouilles du Chaos (Khorne)
+Gargouilles du Chaos (Nurgle)
+Gargouilles du Chaos (Slaanesh)
+Gargouilles du Chaos (Tzeentch)
+Gargouilles vengeresses
+Gargul the Gunner
+Gashnag, the Black Prince
 Gate Guard
 Gate Master
+Géant
+Géant des potences (Colosse Nécrofex)
+Géant d'os
+Géant du Chaos
+Géant norse
 Geltblöm's Terror (Feral Carnosaur)
 General
+Général
+Général Céleste
+Général chasseur
+Général de l'Empire
 General of the Empire
+Geneviève Dieudonné
+Genie
 Gerik
+Gerik Barkov
+Ghark Ironskin
+Gharnu's Daemon-Friends (Fianna Fimm - Shields)
 Ghorgon
+Ghorgon de Khorne
 Ghorgon of Khorne
+Ghorgon vicieux
 Ghoritch
+Ghorros Warhoof
+Ghorth the Cruel
+Ghost Strider
+Ghosts of Grismerie (Grey Men)
+Ghosts of the Lost Expedition
+Ghurek Glott (Vortex Beast of Nurgle)
+Ghurzhaal the Dreaded Maw
+Ghuth Spawnchomper
+Ghuth's Ironguts (Ironguts)
+Ghuth's Maneaters
 Giant
+Giant Harpoon Luncha
+Giant Khepra Swarm
+Giant Lava Spiders
+Giant Rats
 Giant River Troll Hag
+Giant Scorpions
 Giant Slayers
+Giant Snail
 Giant Spawn of Slaanesh
+Giant Spider
+Giant Spider Creeper
 Giant Spiders
+Giant Under-Empire Bat
 Giant Wolves
+Gilon d'Aquitaine
+Gitilla Da Hunter
 Glade Captain
 Glade Guard
 Glade Guard (Hagbane Tips)
@@ -593,121 +2233,423 @@ Glade Lord
 Glade Riders
 Glade Riders (Hagbane Tips)
 Glade Riders (Spears)
+Gladiateurs des Malentrailles (Rats-Ogres)
+Glittering Host
+Globadiers à Vent Empoisonné
+Glowing Ghouls
+Glowing Ghouls (Crypt Ghouls)
+Glow-Skurrys (Scuttlers Spidersilk Globes)
+Glugmir the One-Eyed
+Glune Wayfoot
+Gnarlbones (Big Game Hunters)
+Gnarly
+Gnawlitch Shun
+Gnobbo the Masked
+Gnobbo's Phut-Gun Shootaz
+Gnoblag's Manbiters
+Gnoblar Depth Scraplauncher
+Gnoblar Dune Priest
+Gnoblar Fighters
 Gnoblar Flingers
+Gnoblar Grill Slingers
+Gnoblar Grillers
 Gnoblar Scraplauncher
+Gnoblar Spider Chariot
+Gnoblar Spider Riders
+Gnoblar Spider Riders Archers
 Gnoblar Trappers
 Gnoblars
+Gobelins
+Gobelins (Lances)
+Gobelins chevaucheurs de loup
+Gobelins de la Nuit
+Gobelins de la Nuit (Fanatiques)
+Gobelins de la Nuit sur Squig
+Gobelins des Forêts sur Araignées
+Gobelins sur Squig en armure
 Goblin Archers
 Goblin Big Boss
 Goblin Bolt Throwa
+Goblin Bolt Throwas
 Goblin Great Shaman
 Goblin Hewers
 Goblin Labourers
 Goblin Rock Lobbers
+Goblin Shaman
+Goblin Slave Archers
+Goblin Slaves
+Goblin Warboss
 Goblin Wolf Chariots
+Goblin Wolf Rat Riders
+Goblin Wolf Rat Riders (Poison)
 Goblin Wolf Rider Archers
 Goblin Wolf Riders
 Goblins
+Goblins (Mob)
 Goblins (Spears)
 Gob-Lobbers (Grudge Throwers)
+Goedendagers
 Gold Wizard
+Golden Crow Guardians
+Golden Host of Mahrak (Skeleton Warriors)
+Golden Knight
+Golden Lion
+Golden Lion Squadron (Dragon Emperor's Imperial Guard)
+Golden Pinions (Halberdiers)
+Goldvermin
+Golengil Drongdorson
 Golgfag Maneater
+Golgfag Mangeur d'Hommes
+Golgfag’s Maneaters
 Golgfag's Maneaters
+Golthog
+Gongshu Sun
 Gor Herd
 Gor Herd (Shields)
+Gor Thralls
+Gorbad Griff' Eud' Fer
 Gorbad Ironclaw
+Gordak Seascourge
+Gordinar, Champion de la Flamme
 Gordinar, Champion of the Flame
 Gorduz Backstabber
+Gorduz le Sournois
+Gore Hags
 Gorebeast Chariots
 Gorebeast Chariots of Khorne
 Gorebull
+Gorehoof
+Gorespittles
+Gorfang Rotgut
+Gorgal Ironfoot
 Gorgers
+Gorgivich Krakvald
+Gorkstomper
+Gormok the Dark Armourer
 Gor-Rok
+Gorthor the Cruel
+Gothard the Undying Knight
 Gotrek
+Gotri Hammerson
+Goules des Cryptes
+Graeling Marauder Champions
+Gragtar Flameheart
 Grail Guardians
 Grail Knights
 Grail Reliquae
+Graill
+Graissus Dent d'Or
+Grak Beastbasha
 Graktar
+Grand Aigle
+Grand Bombard
 Grand Cannons
+Grand Chaman Gobelin
+Grand Chaman Orque sauvage
+Grand Chef gobelin
+Grand Chef gobelin de la Nuit
+Grand Chef Orque Noir
 Grand Hierophant Khatep
+Grand Immonde
+Grand Immonde Exalté (Mort)
+Grand Immonde Exalté (Nurgle)
+Grand maître des Bêtes
+Grand Marshal Erkstein
+Grand Northern Cavalry
+Grand Oiseau de Lune
+Grand Sorcier chaman (Feu)
+Grand Sorcier chaman (Métal)
+Grand Sorcier chaman (Mort)
+Grand Taurus
+Grand Vizier (Djinn)
+Grand Vizier (Fire)
+Grand Vizier (Heavens)
+Grand Vizier (Life)
+Grand Vomitus, Prince des Bubons
 Grand Vomitus, Prince of Buboes
+Grand-Chaman Bray (Bêtes)
+Grand-Chaman Bray (Mort)
+Grand-Chaman Bray (Ombre)
+Grand-Chaman Bray (Sauvage)
+Grands canons
+Grands Canons
+Grands Chevaucheurs de Longma
+Grands Faucons
 Grave Guard
 Grave Guard (Great Weapons)
 Grave Guard (Halberds)
+Grave Guard Crossbowmen
+Grave Guard Crossbowmen (Balefire-Shafts)
 Greasus Goldtooth
+Great Bastion Wardens
+Great Bray Shaman(Beasts)
+Great Bray Shaman(Death)
+Great Bray Shaman(Shadows)
+Great Bray Shaman(Wild)
 Great Bray-Shaman (Beasts)
 Great Bray-Shaman (Death)
 Great Bray-Shaman (Shadows)
 Great Bray-Shaman (Wild)
 Great Cannons
+Great Cannons (Magic Missiles)
 Great Eagle
+Great Giant Spider
+Great Grillzer-Griff Makiki da Cunning
 Great Hawks
 Great Longma Riders
 Great Moon Bird
+Great Moon Bird Knights
+Great Pox Rat
+Great Scarlet I'iwi
 Great Shaman-Sorcerer (Death)
 Great Shaman-Sorcerer (Fire)
 Great Shaman-Sorcerer (Metal)
 Great Stag Knights
 Great Taurus
 Great Unclean One
+Great Wyrm
+Great Wyrm Tamers
+Greater Bastethi
+Greater Daemon of Malice
+Greater Ice Golem
+Great-King-Lord Bezer
 Greatswords
+Green Skulls
+Grenadiers
+Grenadiers de Nan-Gau
+Grey Men
 Grey Seer (Plague)
 Grey Seer (Ruin)
 Grey Wizard
+Greyback
+Grieving
+Griffon Reiksguard Guard
+Grigori Medvezhiy
+Griktrode Boltspear
+Grimgar Alebelly
+Grimgor Boît'en Fer
+Grimgor Ironbound
 Grimgor Ironhide
+Grimm Burloksson
+Grimpeurs d'la Mort (Archers gobelins des Forêts sur Araignées)
+Gristl Twitchslice
+Gristl Twitchslice - Decoy
+Grizzleclaw
+Gröftur Fiskauga
+Grog Carriers
 Groghooves of Wolf's Run (Centigors – Throwing Axes)
+Grom la Panse
 Grom the Paunch
+Grombold Kruddsson
+Grombrindal – Le Nain Blanc
+Grombrindal - The White Dwarf
 Grombrindal – The White Dwarf
+Grompf Arm-Tearer
+Gronk
+Grotas
+Groth Onefinger
+Grrzk Roteye
 Grudge Throwers
 Grudge Throwers (Grudge Settlers)
+Gruk the Menhater
 Grukmur Three-Horn
+Grukmur Trois-Cornes
+Grumlock & Gazbag
 Grundel's Defenders (Spearmen – Shields)
+Grydal
 Gryphon Legion
+Gryphon Rider
+Guan Zimo, the Little Dragonling
+Guard of the Jade Court
+Guard of the Radiant Empress
+Guard-Captain Luka Krämer
+Guardians of Jade
+Guerrier tigre sawai
+Guerriers à arbalète
+Guerriers ancestraux
+Guerriers de Jade
+Guerriers de Jade (Hallebardes)
+Guerriers de Nehekhara
+Guerriers des Clans
+Guerriers des Clans (Boucliers)
+Guerriers des Clans lanciers
+Guerriers des Clans lanciers (Boucliers)
+Guerriers des Ombres
+Guerriers du Chaos
+Guerriers du Chaos (Armes lourdes)
+Guerriers du Chaos (Hallebardes)
+Guerriers du Chaos de Khorne
+Guerriers du Chaos de Khorne (Armes jumelles)
+Guerriers du Chaos de Khorne (Hallebardes)
+Guerriers du Chaos de Nurgle
+Guerriers du Chaos de Nurgle (Armes lourdes)
+Guerriers du Chaos de Slaanesh
+Guerriers du Chaos de Slaanesh (Knouts)
+Guerriers du Chaos de Tzeentch
+Guerriers du Chaos de Tzeentch (Hallebardes)
+Guerriers du Col du Souffle de dragon (Guerriers nains)
+Guerriers Faucons
+Guerriers Fimir
+Guerriers Fimir (Armes lourdes)
+Guerriers kislevites
+Guerriers nains
+Guerriers nains (Armes lourdes)
+Guerriers Nains du Chaos
+Guerriers Nains du Chaos (Armes lourdes)
+Guerriers orques (Lances)
+Guerriers Saurus
+Guerriers Saurus (Boucliers)
+Guerriers Saurus bénis (Boucliers)
+Guerriers Squelettes
+Guerriers tigres
+Guerriers tigres de la Griffe de Fer
+Gueulards infernaux (Canon à Crânes)
+Gueule de l'Effroi
+Gueules de la Sauvagerie (Loups écorcheurs – En armure)
+Guild Assassin
+Guivre de Givre
+Gulgulet Sandgrinder
+Gundehar of Raisol
 Gunderman's Surefires (Handgunners)
+Gunnery Warlock
 Gunnery Wight
+Gunnslieb's Rustlers (Light Scouts)
+Gunter Fredhoff
+Gunther Larenscheld
+Gunther Ostermann
+Gunther von Grecht
+Gurni Ironarm
+Gurt Blu (Giant)
+Gurthok the Harbinger
+Gutbuster's Gutbusters
+Gutrot Spume
 Gutter Runner Slingers
 Gutter Runner Slingers (Poison)
 Gutter Runners
 Gutter Runners (Poison)
+Gutter Runners (Warplock Pistols)
+Guzunda Wallrattler
 Gwindalor
+Gyrobombardiers
 Gyrobombers
+Gyrocoptères
+Gyrocoptères (Canons à soufre)
+Gyrocoptères (Torpille à Trolls – Régleurs de rancune)
+Gyrocoptères d'obsinite
 Gyrocopters
 Gyrocopters (Brimstone Guns)
 Gyrocopters (Trollhammers – Grudge Settlers)
+Haargroth the Blooded
+Hacheurs Centaures-Taureaux
+Hacheurs Centaures-Taureaux (Armes lourdes)
+Hacheurs Centaures-Taureaux (Haches doubles)
+Haematoma Bloodreaper
+Haematoma Bloodsqueaker
+Haematoma Clanrats (Axe & Shield)
+Haematoma Clanrats (Axe)
+Haematoma Clanrats (Spear & Shield)
+Haematoma Clanrats (Spear)
+Haematoma Rat Furies
+Haematoma Ratthirster
+Haftagg
+Hag Queen Malida
 Hag Witch (Beasts)
 Hag Witch (Death)
 Hag Witch (Hag)
 Hag Witch (Shadows)
+Hagen de Gisoreux
+Hakka the Aesling
+Halagrundsor the Horrible
 Halberdiers
+Half Longma Riders
+Half Pikes
+Halfling Cook
+Halkenhaf Barbe-de-pierre
 Halkenhaf Stonebeard
+Hallebardiers
+Hamadryad
+Hamadryade
+Hamadryade malveillante (Bête)
+Hamadryade malveillante (Ombre)
+Hamadryade malveillante (Vie)
 Hammer of Gork (Goblin Rock Lobbers)
 Hammer of the Witches (Great Cannons)
 Hammerers
 Hammerers (Grudge Settlers)
+Hamnir Ranulfsson
+Han Cheng, the King of Nan-Yang
+Hand of Nagash
 Hand of the Shadow Crown
+Hand Rocketeers
 Handgunners
 Handmaiden of the Everqueen
+Hanged Doctor
+Hanged Men
+Hans Frankenwurter
 Hans Valhirsson
 Har Ganeth Executioners
 Harald Hammerstorm
+Harald Whyrlas
+Haraldur’s Huscarls (Huscarls)
+Harbingers of Usirian
+Harboth's Blackmountain Boyz (Orc Boyz)
+Harde de Bestigors
+Harde de Gors
+Harde de Gors (Boucliers)
+Harde de lanciers Ungors
+Harde de lanciers Ungors (Boucliers)
+Harde de Razorgors
+Harde d'Ungors
 Harpies
+Harrowfin
+Hashishin
 Hashut's Dark Ravagers (Bull Centaur Renders – Dual Axes)
+Haurg Frostmaw
+Haute Reine Khalida
+Hawk Legion of Settra (Nehekhara Warriors)
 Hawk Riders
 Hawk-Eyes of Drakira (Waywatchers)
+Head Honcho
 Heartseekers of Slaanesh
+Heaume des Mers
+Heaumes d'Argent
+Heaumes d'Argent (Boucliers)
+Heavenly King Duanwang
+Heavenly King Shipeng
+Heavenly King Wenchen
+Heavenly King Zhufu
+Heavy Culchan Riders
+Heavy Lancers
 Heavy War Sleds
 Heinrich Kemmler
 Helblaster Volley Guns
+Helgar Longplaits
+Héliobolis de Hysh
+Héliobolis de Templehof (Héliobolis de Hysh)
 Hell Pit Abomination
+Hell Pit Horrors (Hell Pit Abomination)
+Hellbeast of Seep-Gore
 Hellcannon
+Hellcannons
+Hellebaardiers
+Hellebron l'Ancienne
 Hellflayers
 Hellforged Bellowers (Skullcannon)
 Hellforged Host (Exalted Bloodletters of Khorne)
+Hellforged Host of the End
+Hellhounds of Basker Moor (Moor Hounds)
+Hellions (Fulg's Ironguts)
+Hellsteed Knights
 Hellstriders of Slaanesh
 Hellstriders of Slaanesh (Hellscourges)
+Hellwraith
 Helman Ghorst
+Helmut Feuerbach
+Helmut von Carstein
+Helmut's Own
 Helstorm Rocket Battery
 Henri le Massif
+Herald Nekaph
 Herald of Khorne
 Herald of Nurgle (Death)
 Herald of Nurgle (Nurgle)
@@ -718,165 +2660,833 @@ Herald of Tzeentch (Tzeentch)
 Heralds of Excess (Seeker Chariots)
 Heralds of Khorne's Fury (Bloodcrushers of Khorne)
 Heralds of the Wind (Ellyrian Reavers – Bows)
+Heralds of Victory
+Héraut de Khorne
+Héraut de Nurgle (Mort)
+Héraut de Nurgle (Nurgle)
+Héraut de Slaanesh (Ombres)
+Héraut de Slaanesh (Slaanesh)
+Héraut de Tzeentch (Métal)
+Héraut de Tzeentch (Tzeentch)
+Hérauts de la Foi d'Athel Tamarha
+Hérauts de la fureur de Khorne (Équarrisseurs de Khorne)
+Hérauts de l'Excès (Chars Traqueurs)
+Hérauts du Corbeau (Cavaliers Noirs)
+Hérauts du Vent (Patrouilleurs ellyriens – Arcs)
+Hermit Knight
+Hermit Knight of Malmont
+Héros Exalté
+Héros Exalté de Khorne
+Héros Exalté de Nurgle
+Héros Exalté de Slaanesh
+Héros Exalté de Tzeentch
 Hertwig van Hal
+Herumar the Houndmaster
+Hetairos
 Hexwraiths
+Hierophant Haptmose
+Hieroscorpion of Khemri
 Hierotitan
+Hiérotitan
+Hierotitan (Colossus Bow)
 High Beastmaster
+High Eagle
+High Jarl Geimdall
+High Mage Torinubar
+High Priest of Manann
 High Queen Khalida
+High Temple Guard (Order of the Albatross)
+Highlanders
+Hildr the Reaver
+Hiw-Tio
+Hobelars
+Hobelars (Javelins)
+Hobelars (Spears)
 Hobgoblin Archers
 Hobgoblin Bolt Thrower
+Hobgoblin Bolt Throwers
 Hobgoblin Cutthroats
 Hobgoblin Sneaky Gits
+Hobgoblin Wolf Boss
 Hobgoblin Wolf Raiders (Bows)
 Hobgoblin Wolf Raiders (Spears)
 Hochland Long Rifles
+Holdouts (Clatter Runner Slingers)
+Hollow Nurses
+Hollowbellies
+Holy Wardens of Wasconia
+Homme-Arbre
+Homme-Arbre malveillant
+Homme-Arbre Vénérable
+Homme-Arbre Vénérable (Bête)
+Homme-Arbre Vénérable (Ombre)
+Homme-Arbre Vénérable (Vie)
+Hommes d'Armes
+Hommes d'Armes (Armes d'hast)
+Hommes d'Armes (Boucliers)
+Hommes d'Armes lanciers
+Hommes d'Armes lanciers (Boucliers)
+Hommes-corbeaux de l'Impératrice (Hommes-corbeaux d'Onyx)
+Hommes-corbeaux d'Onyx
+Hommes-Ours Maraudeurs
+Hommes-Ours Maraudeurs (Armes lourdes)
+Hooks of Hjolda (Bolt Throwers)
+Horg the Gorechaser
+Horned Hunters
 Horned Ones
+Horreur de la Portée
+Horreur irisée (Métal)
+Horreur irisée (Tzeentch)
+Horreurs bleues de Tzeentch
+Horreurs des Cryptes
+Horreurs roses de Tzeentch
+Horreurs roses Exaltées de Tzeentch
 Horse Archers
+Horsemen of Khorne
+Hotek
+Hothar the Fey
+Hothar's Flying Castle
+Hothgar the Renegade
+Hou Qian, Captain of the Gate Masters
+Hou Xi (Ancient Queen)
+Hounds of Herumar (Chaos Warhounds of Khorne)
+Hounds of Khoros (Marauder Horsemen of Khorne (Throwing Axes))
 Hounds of the Blood Hunt (Flesh Hounds of Khorne)
+House Elder
+Howling Basilisk Bombard (Grand Bombard)
+Hrefna Styrbjorn
+Hrothgar Daemonaxe
+Hrothgarr Bloodrage
+Hrothgul Icefang
+Hrothgul's Gorgers
+Hrothyogg
+Huang Deyi
+Huern the Wolf
+Human Slaves
+Hung Ambushers
+Hung Heavy Archers
+Hung Heavy Archers (Heavy Arrows)
+Hung Heavy Archers (Scattershaft Arrows)
+Hung Horse Archer
+Hung Horse Archers
+Hung Horse Archers (Poison Arrows)
+Hung Horse Archers (Whistling Arrows)
+Hung Horsemasters
+Hung Horsemasters (Fire Arrows)
+Hung Horsemasters (Heavy Arrows)
+Hung Horsemasters (Variable Arrows)
+Hung Horsemasters (Whistling Arrows)
+Hung Hunting Dogs
+Hung Khanate Guard
+Hung Nomads
+Hung Pillagers (Dual Weapons)
+Hung Pillagers (Great Weapons)
+Hung Raiders
+Hung Reaper Bolt Throwers
+Hung Scourgerunners
+Hung Scouts
+Hung Scouts (Fire Arrows)
+Hung Shaman (Lore of Beasts)
+Hung Shaman (Lore of the Raging Sky)
+Hung Shaman (Lores of Chaos)
+Hung Spawneaters
 Hunter
+Hunter Spider Chariot
+Hunters (Throwing Axes)
+Huntresses
+Huntresses of Raema
 Huntsman General
 Huntsmen
+Hurledeuil
+Hurleurs à la lune (Gobelins chevaucheurs de loup)
+Hurleurs de Tzeentch
+Huskarls
+Hyaenodon
+Hydre de Guerre
+Hydre sauvage
 Ice Guard (Glaives)
 Ice Guard (Swords)
 Ice Witch (Ice)
 Ice Witch (Tempest)
+Ice Wolf Guardian
+Icefang Marauder
 Icehorn Marauders (Marauders)
+Idole sauvage
 Ikit Claw
+Ikit la Griffe
 Ikit's Zzzzap-Zzzzap! (Warp Lightning Cannons)
+Ikk Hackflay
 Iksha's Triads (Eshin Triads)
 Iksha's Triads (Eshin Triads) – Decoy
+Il Potente Granchio
+Ilja of Murova
+Imperator
+Imperial Agents
+Imperial Cavalry Captain
+Imperial Dragon
+Imperial Guards Covering the Retreat
+Imperial Infantry Captain
+Imperial Ki-rin Archers
+Imperial Loremasters
+Imrallion
 Imrik
 Incarnate Elemental of Beasts
+Incarnation de Prêtre skink
+Incarnations Élémentaires de la Bête
+Incendiaire de Tzeentch Exalté
+Incendiaires de Tzeentch
+Incorruptible Sage
+Infanta Leanora Navrre
 Infernal Castellan
 Infernal Guard
 Infernal Guard (Fireglaives)
 Infernal Guard (Great Weapons)
 Infernal Ironsworn
 Infested Nurglings
+Ingénieur
+Initiates of Nurglitch (Rotten Rodents - Dual Weapons)
+Inner Reiksguard Guard
+Inquisiton Kill Squad
+Inquisitor Lord
+Interceptor Class Cruiser
+Invocateurs de Rage (Dragons-Ogres)
+Irian
 Iridescent Horror (Metal)
 Iridescent Horror (Tzeentch)
 Iron Claw Tiger Warriors
 Iron Daemon
 Iron Daemon – Dreadquake Mortar
 Iron Hail Gunners
+Iron Hail Gunners (Armoured)
+Iron Hail Thunderer
+Iron Orc Boar Boy Big 'Uns
+Iron Orc Boy Big 'Uns
+Iron Orc Boy Big 'Uns (Great Weapons)
+Iron Orc Boyz
+Iron Orc Boyz (Crossbows)
+Iron Orc Brutez
+Iron Orc Brutez (Great Weapons)
+Iron Orc Warboss
+Iron Pagoda Wardens
+Iron Rats
+Iron Squigs
 Ironblaster
 Ironbreakers
+Ironclaw Knights (Skaven Squiggyback Riders)
 Irondrakes
 Irondrakes (Grudge Settlers)
 Irondrakes (Trollhammer Torpedoes)
 Ironguts
+Ironhook Maneater
+Ironjaws (Black Orcs)
+Ironpiercers (Clank Runners)
+Ironskin Crushers (Great Weapons)
+Ironskin Crushers (Ironfist)
+Ironskin Giant
+Ironskin Ironguts
+Ironskin Leadbelcher
+Ironskin Mournfang Cavalry
+Ironskin Mournfang Cavalry (Great Weapons)
+Ironskin Mournfang Cavalry (Ironfists)
+Ironskin Ogre Bulls
+Ironskin Ogre Bulls (Dual Weapons)
+Ironskin Ogre Bulls (Ironfists)
+Ironskins (Stormvermin - Sword & Shield)
+Irranan Hillmen
 Isabella von Carstein
+Iselda Artrange
+Ishaya Vess
 Isjaki
 Ithilmar Chariots
+Ivory Road Ogres
+Jaan van de Kuypers
 Jabberslythe
+Jabberslythe enragé
+Jacob
+Jade Banshee
+Jade Chariots
+Jade Custodians Troops
 Jade Lancers
 Jade Lion
+Jade Quarrellers
+Jade Ronin
+Jade Ronin Kinlin Riders
+Jade Rune Warriors (Axe and Shield)
+Jade Rune Warriors (Sword and Shield)
 Jade Warrior Crossbows
 Jade Warrior Crossbows (Shields)
 Jade Warriors
 Jade Warriors (Halberds)
 Jade Wizard
+Jade-Blooded Courtesan
+Jade-Blooded Master Warlock
+Jade-Blooded Matron
+Jade-Blooded Monarchs
+Jade-Blooded Shugengan
+Jade-Blooded Taoists
+Jamadar
+Jarl Grydal
+Jarl Hafskael
+Jarl Haraldur
+Jarl Oda Winterclaw
+Jarl Olaf Wolfhound
+Jeanne de Lyonesse
+Jerrod d'Asareux
 Jet Lion
+Jezzails
+Jezzails (Gunpowder)
+Jezzails à Malepierre
+Jhared The Red
+Jiang Wang, the Wise Master
+Jiangjun Revenant
+Jiangshi
+Jiangshi Crossbowmen
+Jiangshi Halberdiers
+Jiangshi Shielded Crossbowmen
+Jiangshi Swordsmen
+Jin Xiao, the Jade Immortal
+Jing Yibo
+John James Ramn'bow
+Jonque volante
 Jorek Grimm
+Joueurs d'Épée
+Joueurs d'Épée de Carroburg (Joueurs d'Épée)
+Juggo Joriksonn
+Kaadiq's Wondrous Cheiroballistae (Scorpions)
+Kaarn the Vanquisher
 Kairos Fateweaver
+Kairos le Tisseur de Destins
 Kalara
+Kalledria, Mortarch of Sorrows
+Kalledria, Queen of Sorrows
+Kap'n Skabend
+Karak Kadrin Giant Slayers
+Karak Kadrin Slayers
+Karaka Breakmountain
 Karanak
+Karl Franz
+Katerina de Hansebourg
+Katil
+Kayzk le Souillé
 Kayzk the Befouled
+Kazrik the Mad
 K'daai Destroyer
 K'daai Fireborn
 Keeper of Secrets
 Keepers of the Flame (Phoenix Guard)
+Keorling Bondsmen
+Keorling Horsemen
+Keorling Warriors
 Ketzak Fimdirach
 Khainite Assassin
+Khaled al Muntasir
+Khaltar the Wind
+Khan
+Khan's Guard
+Kha'Rak Stoneheart
+Kha'Rak Stoneheart (Possessed by Shaman)
+Khargan le Cinglé
 Khargan the Crazed
+Khariabdyss
 Kharibdyss
+Khar-mel (Desert Spirit)
+Khatep le Haut Hiérophante
+Khatun
+Khazrak le Borgne
 Khazrak the One-Eye
+Khemri Zombie Dragon
 Khemrian Warsphinx
+Khemric Titan
+Kheshig
+Kheshig (Dismounted)
+Khevtuul
+Khevtuul (Explosive Arrows)
+Khevtuul (Heavy Arrows)
+Khevtuul (Poison Arrows)
+Khevtuul (Variable Arrows)
+Kholek Dévore-le-Soleil
 Kholek Suneater
+Khornate Ogre Bulls
+Khornate Ogre Bulls (Dual Weapons)
+Khornate Ogre Bulls (Ironfists)
 Khorne’s Bloody Fist (Bloodthirster)
 Khorngors
+Khorok Manripper
+Khoros the Baying
 Khorrok's Manrippers (Bestigor Herd)
+Khuresh First Company (Kommandoz)
+Kihar le Tourmenteur
 Kihar the Tormentor
+Kiknik Toofsnatcha
 Killgore Slaymaim
+Killing Eye (Death-Quest)
+King Amanhotep's Giant Vulture Ushabti
+King Amenemhetum
+King Behedesh II
+King Imrathepis
+King Kazador
 King Louen Leoncoeur
 King Lunn Ironhammer
+King Nekhenaten
+King Nekhenaten IV
 King Nekhesh's Scorpion Legion (Skeleton Spearmen)
+King Rhupesh VII
+King Tutankhanut
+King Ulther Stonehammer
 Kislevite Warriors
+Kitharl Woodwalker
+Kleruchoi of Bhagar (Mummies)
+Kloveniers
+Knight Duellist Encarmine
+Knight-Captain
+Knight-Commander
+Knights Encarmine
 Knights Errant
+Knights Forlorn of Monte Castello (Knights Encarmine)
+Knights Griffon Chapter Knights
+Knights Griffon Inner Circle
+Knights Mariner (Sword & Pistol)
+Knights Mariner (Swordsmen)
+Knights of Bougars
+Knights of Cuileux
+Knights of Ghyran
+Knights of Grande
+Knights of Ibelin (Poulain Knights)
 Knights of Immolation (Doom Knights of Tzeentch)
+Knights of Morr
 Knights of Morr (Empire Knights)
+Knights of Origo
+Knights of Pigbarter
 Knights of the Black Rose
 Knights of the Blazing Sun
 Knights of the Brazen Throne (Skullcrushers of Khorne)
+Knights of the Cleansing Flame
 Knights of the Ebon Claw (Dread Knights)
 Knights of the Everlasting Light (Empire Knights)
+Knights of the Flame
+Knights of the Gleaming Shield
 Knights of the Lionhearted (Knights of the Realm)
+Knights of the Outremer
 Knights of the Realm
+Knights of the Red Death
+Knights of the Righteous Spear
+Knights of the Starry Shield (Knights of the Righteous Spear)
 Knights of Tor Gaval
+Koka-Kalim (Dual Daggers)
+Koka-Kalim (Sun Gauntlets)
+Kolsveinn of Skraevold
+Kommando Assault Boat
+Kommandoz
+Korelei, Mistress of Pain
+Korhil
 Kossars
+Kossars (Lances)
 Kossars (Spears)
+Kossars en armure
+Kossars en armure (Armes lourdes)
+Kossars en armure (Lances)
 Kossovite Dervishes
 Kostaltyn
+Kosto Orques sauvages sur sanglier
+Kosto Orques sur sanglier
+Kou, the Lone Wild Rider
+Kouran Darkhand
+Kragg the Grim
+Kratch Doomclaw
 Krell
+Krell, Mortarch of Despair
+Krethak Goretail
+Krethak Goretail (Exalted Bloodthirster)
 Krimson Killerz (Black Orcs)
+Kroak
+Kroll
 Kroq-Gar
 Kroxigor
 Kroxigor Ancient
+Kroxigor béni
+Kroxigor Brawlers
+Kroxigor Brawlers of Chotec
+Kroxigor Brawlers of Huanchi
+Kroxigor Brawlers of Quetzl
+Kroxigor Brawlers of Sotek
+Kroxigor Brawlers of Tepok
+Kroxigor Brawlers of Tlazcotl
+Kroxigor Brawlers of Tzunki
+Kroxigor Elder
+Kroxigor of Chotec
+Kroxigor of Huanchi
+Kroxigor of Quetzl
+Kroxigor of Sotek
+Kroxigor of Tepok
+Kroxigor of Tlazcotl
+Kroxigor of Tzunki
+Kroxigors sacrés
+Kroxigors sacrés bénis
+Ku Xi, the Crow Guard
 Ku'gath Plaguefather
+Ku'gath, Père des Épidémies
 Kurgan Horsemen (Dual Weapons)
 Kurgan Horsemen (Great Weapons)
+Kurgan Marauder Champions
+Kurgan Marauder Hunters (Javelins)
+Kurgan Marauder Spearmen
+Kurgan Marauders (Great Weapons)
 Kysis Crystal-King
+Kysis le Roi-cristal
+La Bête de Raema
+La Chevaleresse Dorée Naryska Leysa
+La Chose-Chose (Abomination de Malefosse)
+La colère de l'Empereur (Tank à vapeur)
+La Confrérie de Grimnir (Cherchemorts)
+La Créature infernale de Suinte-Tripes
+La Dîme (Zombies)
+La Garde de Granit (Tromblons Nains du Chaos)
+La Garde des Portes du Pic (Marteliers)
+La Garde d'hécatombe (Élus de Khorne – Hallebardes)
+La Grâce de Quai Yin (Arbalètes du Dragon Céleste)
+La Grande Harde Mâchoire du Fjord Sanglant (Mammouths sauvages)
+La Griffe de Nagash (Machine Mortis)
+La Griffe Sectionnée (Aspirants Champions)
+La Langue du Démon (Démon d'Acier)
+La Langue du Démon (Mortier Trembleffroi)
+La Légion Forgée dans la Glace (Canons Apocalypse)
+La Main de la Couronne de l'Ombre
+La Marée Crépusculaire (Meute de chasse de Salamandres)
+La Marée de Skjold (Boucaniers Pirates Zombies)
+La Matriarche de Vorbergland (Jabberslythe)
+La merveille de l'âge (Navire Terrestre)
+La Meute funeste (Loups Funestes)
+La Mort Pâle (Troglodon sauvage)
+La Reine Arachnarok (Araignée Arachnarok)
+La revanche du Lamproie (Artilleurs Prométhéens pourrissants)
+La Revanche du Stirland (Milice des Franches-Compagnies)
+La sirène de Ruine rouge (Méduse incarnate)
+La Tache noire (Artilleurs Pirates Zombies – Arquebusiers)
+La troup' aux défenses kassées (Kosto Orques sur sanglier)
+La Voix des Désolations
+Laddrielle's Wolves
+Ladies of the Apricot Grove
+Lady of the Black Grail
+Lafayette of Taurus
+Lahmian Handmaidens
 Lahmian Vampire Lord
+Laithikir Fellheart
+Lakemen Warriors
+L'Âme de la Damnation (Canon Apocalypse)
+Lames de Hoeth (Maîtres des épées de Hoeth)
+Lames de la Reine de Sang (Exécuteurs de Har Ganeth)
+Lames d'Ulric (Bretteurs)
 Lammasu
+Lamoureux le Souffle Glacial
 Lamoureux the Frozen Breath
+Lamplighters
+Lance-ferraille Gnoblar
+Lance-Feu Maleflamme
+Lance-Fusée Hurlemort
+Lance-gobs (Catapultes des Rancunes)
+Lance-rocs Gobelins
+Lancers
+Lances de Vertu de Wei-Jin (Grands Chevaucheurs de Longma)
+Lanceur d'la Mort de Snagla (Baliste gobeline)
+Lanceurs Gnoblars
+Lanciers
+Lanciers (Boucliers)
+Lanciers Ailés
+Lanciers de Jade
+Lanciers Maraudeurs
+Lanciers Saurus
+Lanciers Saurus (Boucliers)
+Lanciers Saurus bénis (Boucliers)
+Lanciers Squelettes
 Land Ship
+Landship
+Landship Crew
+Lanterne Céleste
+Laquais purulents (Portepestes de Nurgle Exaltés)
+Lars Mortensen
+Last Expedition (Armoured Kossars)
+Laudethaire Beloved of Parravon
 Lava Arachnarok Spider
+Lava Arachnarok Spider (Fire Belly)
+Lava Giant Spider
 Lava Spider Rider Archers
+L'Avorton
+Le Banquet du crépuscule (Goules des Cryptes)
+Le Bataillon des Crinières Pures (Lions blancs de Chrace)
+Le Béhémoth Sanguinaire (Ghorgon)
+Le Bourreau Sibyllin (Chars du Chaos)
+Lé Boyz du Seigneur eud' guerre (Gobelins de la Nuit)
+Le broyeur de Lustrie (Saurien de l'effroi)
+Le Changelin
+Le Changelin – Leurre
+Le Charognard Cannibale
+Le Chevalier de Sinople
+Le Cœur de l'hiver gelé (Ours élémentaire)
+Le Cor de neige des lamentations (Mastauroc)
+Le Crachat du Démon (Déchus)
+Le Dragon noir l'Ascendant
+Le Duc écarlate
+Le Faiseur de Soleil (Batterie Tonnerre de Feu)
+Lé flèches rouillées (Archers Gobelins de la Nuit)
+Lé fous dé Huit Pics (Fanatiques Gobelins de la Nuit)
+Le Gardien vert (Sentinelle de Terre cuite)
+Le Grand
+Le grand Roff
+Le Griffon d'Or de théurgie (Duc du Changement)
+Le Hurleur Abyssal
+Le Kosto (Idole sauvage)
+Le Marquis du Masochisme (Gardien des Secrets)
+Le Marteau des Sorcières (Grands Canons)
+Le Masque de Slaanesh
+Le Sage Léonin
+Le Sphinx d'Usekph (Nécrosphinx)
+Le Taureau d'Aqshy
+Le Tonitruant (Stégadon ancestral)
+Lé trucs dé marai (Trolls d'Eau)
+Le Videur Glacé (Dragon de Givre du Chaos)
+Le Vol de Djaf (Charognards)
 Leadbelchers
+Leadbelchers (Flame)
+Leadbelchers (Gatling)
+Leadbelchers (Snipe)
+Légion bénie de Phakth (Archers Squelettes)
+Légion de Chaqua (Lanciers Saurus)
+Légion de l'Outremonde d'Usirian (Guerriers de Nehekhara)
+Légion du Griffon
 Legion of Chaqua (Saurus Spears)
+Legion of the Asp (Nehekhara Archers)
+Legion of the Crested Serpent (Tomb Guard Archers)
+Légion Scorpion du Roi Nekhesh (Lanciers Squelettes)
+Legion with No Name
+Lektrik Coven
+Lémure
+Lémure malveillant
+Leofric Carrard
+Leonardo Catrazza
+Leopard Company (Pikemen)
+Léopard des Neiges
+Lepers of the Rotfather
+Les Abominations chromatiques (Horreurs bleues de Tzeentch)
+Les Âmes en lambeaux (Flagellants)
+Les Anges de la Fange (Drones de la Peste de Nurgle - Têtes de morts)
+Les Âtrelames de Dazh (Garde du Tsar – Armes lourdes)
+Les Austères (Garde des Cryptes)
+Les balles en argent (Arquebusiers)
+Les Barbes Ardentes de Bazherak (Guerriers Nains du Chaos)
+Les Cavaliers putrides (Chevaliers de la Pourriture)
+Les Chevaliers du Cyclone (Gardes maritimes de Lothern)
+Les Choses dans les Bois
+Les Choses dans les Bois (Éthérés)
+Les Cœurs de Loup (Akshinas embusqués)
+Les Compagnons de Quenelles (Chevaliers de la Quête)
+Les corbeaux de Khaine (Harpies)
+Les Débaucheurs buboniques (Nurglings)
+Les Démons de Swartzhafen (Vargheists)
+Les Dragons des Dunes (Garde du Dragon Céleste)
+Les Ennemis Éclatants (Sombretraits – Boucliers)
+Les Faucons Célestes
+Les Gardes Bougons (Longues Barbes – Armes lourdes)
+Les Gardes dans la nuit (Kossars en armure)
+Les gardes-frontières (Escorteurs – Lance-grenades)
+Les Gardiens sacrés de La Maisontaal (Pèlerins de bataille)
+Les Gelgheists (Émissaires d'Outre-Tombe)
+Les Gris (Guerriers des Ombres)
+Les Grogneurs (Horreurs roses de Tzeentch)
+Les Gryphites royaux d'Altdorf (Chevaliers Demigriffons)
+Les Hellebronais (Affrelances)
+Les Immortels (Assermenteurs Infernaux)
+Les implacables de Gunderman (Arquebusiers)
+Les Jaegerkorps d'Hergig (Longs fusils du Hochland)
+Les Lions noirs (Chariots de guerre – Feu d'Enfer)
+Les loups blancs (Chasseurs)
+Les Loups Lugubres de Mordheim (Les Choses dans les Bois)
+Les nobles fils d'ailleurs (Pistoliers)
+Les Porte-malheurs (Lance-Feu Maleflamme)
+Les Princes de la perfection (Maraudeurs de Slaanesh dévoués – Lances)
+Les Rejetons de Mathlann (Lanciers)
+Les Scribes Bleus
+Les Sinistres fouilleurs (Arquebusiers)
+Les Tambours de guerre de jade (Tambours de guerre de Zhangu)
+Les Taureaux acharnés (Chevaliers de l'Empire – Joueurs d'Épée)
+Les Traqueurs de Konigstein (Guerriers Squelettes)
+L'Esprit de Grungni
+Lesser Ice Golems
+Lesser Plague Lord
+Lesser Plague Lord (Sling)
+Leviathan
+Léviathan pourrissant
+Levitators (Clank Runner Slingers)
+Li Su, the Flying General
+Liandra Athinol
+Liche High Priest (Death)
+Liche High Priest (Light)
+Liche High Priest (Nehekhara)
 Liche Priest (Death)
 Liche Priest (Light)
 Liche Priest (Nehekhara)
+Liche Priest (Shadow)
 Liche Priest (Shadows)
+Liche Priest (Undeath)
+Liche Strategos (Death)
+Liche Strategos (Vampires)
+Lietpold the Black
+Light Cannons
+Light Lancers
+Light Scouts
 Light War Sleds
 Light Wizard
+Lilaeth
+Limiers de la traque sanguinaire (Chiens de Khorne)
+Lin Xingzhe (Forest Wanderer)
+Line Breakers
+Lion
+Lion Céleste
 Lion Chariots of Chrace
+Lion de Jade
+Lion de Jais
+Lion Warriors
+Lions blancs de Chrace
+Lions de guerre de Chrace
+Lions of the Sand (Ushabti)
+Lisette Leerer
+Little Gork
+Little Gork (Giant)
+Little Green Crawler
 Little Grom
+Little Morella
+Little Red Crawler
+Liu Jianguo
+Liu Yueru, the Ruthless Blade
+Living Bastion (Bastiladon – Ark of Sotek)
+Llenog Catapult
 Loec's Tricksters (Wardancers – Asrai Spears)
+L'Œil de Morrslieb (Cygor)
 Logey Bogey’s Spore ‘Splodaz (Snotling Pump Wagons)
+Lokhir Cœur de Pierre
 Lokhir Fellheart
+Lokjar Bjoergir
+Long Drong
 Long Drong's Slayer Pirates
 Longbeards
 Longbeards (Great Weapons – Grudge Settlers)
 Longbeards (Great Weapons)
+Longbeards Knight
+Longs fusils du Hochland
+Longues Barbes
+Longues Barbes (Armes lourdes)
+Longues-Barbes (Armes lourdes - Régleurs de rancune)
+Looted Cannon
+Looted Cathay Grand Cannon
+Looted Cathay Rocket Luncha
+Looted War Compass
+Looters (Greatswords)
+Looters (Spears & Shields)
+Looters (Swords & Shields)
+Loranrol Glorenmar
 Lord
+Lord Adohi-Tehga
+Lord Daith
+Lord Gnawdwell
+Lord Hackbile
+Lord Hua Hua
+Lord Huinitenuchli
+Lord Karitamen
 Lord Kroak
 Lord Magistrate
 Lord Mazdamundi
+Lord Morskittar, Emperor of Warlocks
+Lord Mortkin
 Lord of Change
 Lord Skrolk
+Lord Slaurith
+Lord Xlotc
+Lord Xuaxamul
+Lord-King's Treasure Guards
 Loremaster of Hoeth
+Loremaster Talarian
+Lorenzo Lupo
+Lost Sons of Bretonnia
 Lost Sylvan Knights (Great Stag Knights)
+Lothern Royal Sea Guard
 Lothern Sea Guard
 Lothern Sea Guard (Shields)
+Lothern Sea Rangers
 Lothern Skycutters
 Lothern Skycutters (Bolt Throwers)
+Loup-garou écorcheur
+Loups des Glaces norses
+Loups écorcheurs
+Loups écorcheurs (En armure)
+Loups Funestes
+Loups Géants
+L'renvoi acide (Squig colossal)
+Lucky Gits
+Lucrezzia Belladonna
+Ludwig von Uberdorf
 Luminark of Hysh
+Lump the Executioner
+Lupio Sunscryer
+Lurklox
 Luthor Harkon
+Luthor Huss
+Luthor, Mortarch of the Abyss
+Machine Mortis
+Mackensen's Marauders (Handgunners)
+Mad Rat Ogres
 Maddened Jabberslythe
+Maelithii
 Mage (Beasts)
+Mage (Beastsh)
+Mage (Bêtes)
+Mage (Cieux)
 Mage (Death)
+Mage (Feu)
 Mage (Fire)
+Mage (Haute)
 Mage (Heavens)
 Mage (High)
 Mage (Life)
 Mage (Light)
+Mage (Lumière)
 Mage (Metal)
+Mage (Métal)
+Mage (Mort)
+Mage (Ombre)
 Mage (Shadows)
+Mage (Vie)
+Mage des Brumes
+Mages du Feu Maudit
+Magician (Djinn)
+Magician (Fire)
+Magician (Heavens)
+Magician (Life)
+Magister Astrologer
+Magistra Sabine Flamius
 Magma Cannon
+Mahaduvha, the Deva of Blood
+Mahouts
+Mahrak Guard (Tomb Guard)
+Mahrak Longspears (Nehekhara Horsemen)
+Maiden of the Black Lotus
+Maidenguard
+Maître
+Maître Assassin Snikch
+Maître Assassin Snikch (Tz'arkan)
+Maître de Meute
+Maître des Runes
+Maître du Savoir de Hœth
+Maître Ingénieur
+Maître nécromancien
+Maîtres épéistes de Hœth
+Maîtres équestres Maraudeurs
+Makers of the Paths (Kroxigor)
+Malagor Mauvais-Présage
 Malagor the Dark Omen
+Malagor The Dark Omen
 Malakai Makaisson
+Malaluk Raiders (Jezzails)
 Malekith
+Malékith
 Malevolent Ancient Treeman (Beasts)
 Malevolent Ancient Treeman (Life)
 Malevolent Ancient Treeman (Shadows)
@@ -886,14 +3496,40 @@ Malevolent Branchwraith (Shadows)
 Malevolent Dryads
 Malevolent Tree Kin
 Malevolent Treeman
+Mallet's Hunters
+Mallobaude
+Malok the Destroyer
 Malus Darkblade
 Malus Darkblade (Tz'arkan)
+Mammouth de guerre
+Mammouth de guerre (Autel de guerre)
+Mammouth sauvage
+Manann's Blades (Swordsmen)
+Manann's Fanatics (Flagellants)
+Manbiters
+Mandakh the Beloved
+Maneater Captain
 Maneaters
 Maneaters (Great Weapons)
 Maneaters (Ironfists)
 Maneaters (Ogre Pistols)
+Mangefurs (Clanrats)
+Mangeur d'Hommes Eshin
+Mangeurs d'Hommes
+Mangeurs d'Hommes (Armes lourdes)
+Mangeurs d'Hommes (Pistolets Ogres)
+Mangeurs d'Hommes (Poings d'acier)
+Mangeurs d'Hommes de Golgfag
 Mangler Squigs
+Mangonels
+Manhunter Contractor
 Mannfred von Carstein
+Mannfred, Mortarch of Night
+Man-Thing Slaves
+Manticore Knights
+Manticore rancunière
+Manticore sauvage
+Manticore sauvage du Chaos
 Marauder Bearmen
 Marauder Bearmen (Great Weapons)
 Marauder Berserkers
@@ -901,6 +3537,7 @@ Marauder Champions
 Marauder Champions (Great Weapons)
 Marauder Chariots
 Marauder Chieftain
+Marauder Chieftain of the Hound
 Marauder Horsemasters
 Marauder Horsemen
 Marauder Horsemen (Throwing Axes)
@@ -910,8 +3547,10 @@ Marauder Horsemen of Slaanesh
 Marauder Horsemen of Tzeentch
 Marauder Hunters
 Marauder Hunters (Javelins)
+Marauder Hunters (Throwing Axes)
 Marauder Ice Wolf Chariots
 Marauder Spearmen
+Marauder War Wagons
 Marauders
 Marauders (Great Weapons)
 Marauders of Khorne
@@ -922,321 +3561,1350 @@ Marauders of Slaanesh
 Marauders of Slaanesh (Hellscourges)
 Marauders of Tzeentch
 Marauders of Tzeentch (Spears)
+Maraudeurs
+Maraudeurs (Armes lourdes)
+Maraudeurs de Khorne
+Maraudeurs de Khorne (Armes jumelles)
+Maraudeurs de Nurgle
+Maraudeurs de Nurgle (Armes lourdes)
+Maraudeurs de Slaanesh
+Maraudeurs de Slaanesh (Knouts)
+Maraudeurs de Slaanesh dévoués
+Maraudeurs de Slaanesh dévoués (Knouts)
+Maraudeurs de Slaanesh dévoués (Lances)
+Maraudeurs de Tzeentch
+Maraudeurs de Tzeentch (Lances)
+Maraudeurs Maudits de Mogrubb (Gobelins archers sur loup)
+Marchands de mort (Mitrailleuses Ratling)
+Marco Colombo
+Marienburg Privateers
+Marins
+Marius Leitdorf
+Marksmen of Miragliano (Crossbowmen)
 Markus Wulfhart
+Marn the Mangler
+Marshal
+Marshal Tianpeng (Canopy)
+Marteau de Gork (Lance-rocs Gobelins)
+Marteliers
+Marteliers (Régleurs de rancune)
+Martin Fortberg
+Massacreurs de Khorne
+Mastauroc
+Mastauroc (Lance-harpon)
 Master
 Master Assassin
+Master Duellist
 Master Engineer
+Master Muncher (Beasts)
+Master Muncher (Death)
+Master Muncher (Great Maw)
+Master Muncher (Heavens)
 Master Necromancer
+Master Slavetrader
+Matelots de Nordland (Hallebardiers)
+Matriarche
+Matthias Volker
+Maulkern the Ravager
 Maws of Savagery (Skin Wolves – Armoured)
+Mayfly
+Meargh Skattach
+Méduse incarnate
+Mégastodonte
+Mehmed the Butcher
+Melekh the Changer
+Men of Xiang
+Menace de Petit-être (Ratasphères)
 Men-at-Arms
+Men-at-Arms (Polearm)
 Men-at-Arms (Polearms)
 Men-at-Arms (Shields)
+Men-at-Arms (Sword)
+Mengil Manhide's Manflayers
+Mercenary Captain
+Mercenary General
+Merchant Guild Baggage-Train
+Merchant Guild Sentinels
+Merchant Lord
+Merchant Prince
+Mère de la Flamme
+Mère Ostankya
+Mère porteuse
 Merwyrm
+Meute de chasse de Razordons
+Meute de chasse de Razordons bénie
+Meute de chasse de Salamandres
+Meute de chasse de Salamandres bénie
+Meute de Crocs de Sabre
+Meute pestiférée de Croûtefléau (Moines Encenseurs de la Peste)
+Mezekar
+Mhorriníon the Murder-Queen
+Miao Yi, the Earthshaker
+Miao Ying, le Dragon de Tempête
 Miao Ying, the Storm Dragon
+Middenland White Wolf
+Midnight Ravens of Rachard
+Might of the Blackclaw (Shadow Rat Ogres)
+Migrated Dwarf Warriors
+Migrated Quarrellers (Great Weapons)
+Mikael Harkon
+Milice
+Milice de Sartosa
+Milice des Franches-Compagnies
 Militia
+Militia Archers
+Militia Spearmen
 Miners
 Miners (Blasting Charges)
+Miners (Steam Drills)
+Mineurs
+Mineurs (Charges explosives)
+Mineurs d'Ekrund (Mineurs – Charges de démolition)
+Minotaur (Great Weapons)
+Minotaure
+Minotaures
+Minotaures (Armes lourdes)
+Minotaures (Boucliers)
+Minotaures de Khorne
+Minotaures de Khorne (Armes lourdes)
 Minotaurs
 Minotaurs (Great Weapons)
 Minotaurs (Shields)
 Minotaurs of Khorne
 Minotaurs of Khorne (Great Weapons)
 Mirror Guard (Chaos Warriors)
+Mirror Vermin
+Misericorde of Mordheim
 Mist Mage
 Mist Stalkers (Fimir Warriors)
+Mistmor
+Mistress of the Sky-fire Order Vivleth Shul
+Mistress of the Sky-fire Order Vivleth Shul (Horse)
+Mitrailleuses Ratling
+Modified Ironguts
+Modified Ogre Bulls
+Modified Rhinox
+Modified Sabretusk Pack
+Modified Stonehorn
+Mogen of the Flame
 Mogrubb's Mangy Marauders (Goblin Wolf Archers)
+Mogwai
+Mogwrath the Bogtusk
+Moines de la Peste
+Moines Encenseurs de la Peste
+Molokh Slugtongue
+Monster of Wittgenstein
+Montante Swordsmen
+Monteurs de Sang-froid
+Monteurs de Sang-froid à lance
+Monteurs de Sang-froid à lance bénis
+Monteurs de Téradon
+Monteurs de Téradon (Bolas à pyrosangsues)
+Monteurs de Téradon bénis
+Monteurs de Téradon bénis (Bolas à pyrosangsues)
+Monteurs d'Étripodactyle
+Monteurs d'Étripodactyle bénis
 Moon Dragon
 Moon-howlers (Goblin Wolf Riders)
+Moonlight Templars
+Moor Hounds
 Morathi
+Morbidus Mad Rat Ogres
+Morg Magmaborn
+Morghast Archai
+Morghasts
+Morghur l'Enfant de l'Ombre
 Morghur the Shadowgave
+Morglum Necksnapper
+Morgrim Gunnisson
+Morg's Ironguts
+Mork's Maw
 Morskittar's Hellion (Mutant Rat Ogre)
+Mortar
 Mortars
+Mortier Trembleffroi
+Mortiers
+Mortiers à Globes Toxiques
+Mortiers Avalanche (Mortiers à sphères de mort)
 Mortis Engine
+Morulz the Indolent
 Mother of the Flame
 Mother Ostankya
+Mouches à Peste
+Mountain Elders
+Mountain Lord
+Mounted Brigands (Crossbows)
+Mounted Dragon-men (Dragon Throwers)
+Mounted Dragon-men (Dragon-Staves)
+Mounted Dragon-men (Dragon-Sticks)
+Mounted Peasant Archers
+Mounted Shamans of Tchar
 Mounted Yeomen
 Mounted Yeomen Archers
 Mournfang Cavalry
 Mournfang Cavalry (Great Weapons)
 Mournfang Cavalry (Ironfists)
+Mournfang Cavalry (Ogre Pit Fighters)
+Mourngul
 Mourngul Haunter
 Mournguls
 Mournhowl
+Mullah Aklan'd's Death Commandos (Warriors)
+Mummies
+Mundvard the Cruel
+Musha Cavalry (Bows)
+Musha Cavalry (Naginatas)
+Musha Infantry (Naginatas & Bows)
 Mutalith Vortex Beast
+Mutalithe à Vortex
 Mutant Rat Ogre
+Mutated Trolls
+Na Natian, the Third Prince
+Naffatun (Hung Nomads)
+Naffatun of Saghash (Flying Carpets)
+Nagash, Lord of the Undead
+Nagash, Supreme Lord of Undeath
+Nagashizzar Guard
+Nagashizzar Guard (Halberds)
+Nagashizzar Guard (Tomb Guard)
+Nagashizzar Knights
+Nagash's Legion of the Netherworld
+Nakai le Vagabond
 Nakai the Wanderer
+Nan-Gau Grenadier
 Nan-Gau Grenadiers
+Nan-Yang Elite Warriors
+Nanye Bunyo
+Nanye Bunyo, the Green Death
+Naphtha Throwers
+Naryaska Leysa, the Golden Knight
+Naryaska Leysa, the Golden Knight (Warbear)
+Naryaska Leysa, the Golden Knight (Warhorse)
+Nastasya Roskolnikov
 Nasty Skulkers
+Natty Buboe
 Natty Buboe's Sharpshooters (Warplock Jezzails)
+Navire Terrestre
+Navire Terrestre d'Améthyste
 Necrarch Vampire Lord
+Necro Mortar
 Necrofex Colossus
+Necrolith Colossus
 Necromancer
+Nécromancien
 Necropolis Knights
 Necropolis Knights (Halberds)
 Necrosphinx
+Nécrosphinx
 Necrotect
+Necrotect (Bow)
+Necrotect (Chariot and Bow)
+Nécrotecte
+Neferata, Mortarch of Blood
+Neferata, Queen of the Lahmians
+Neferata's Death Sisters
+Nehekhara Archers
+Nehekhara Horse Archers
+Nehekhara Horsemen
+Nehekhara Knights
+Nehekhara Warriors
+Nehekhara Warriors (Great Weapons)
+Nehekhara Warriors (Halberds)
+Nehekhara Warriors (Sword and Shield)
+Nehekharan Bolt Thrower
+Nehekharan Bolt Thrower (Explosive Bolts)
 Nehekharan Horsemen
 Nehekharan Warriors
+Nelrich the Suppurater
+Néosphères (Ratasphères)
+New Western Iron Troops
+Nicolete de Oisement
+Nigel Francisco
 Night Goblin Archers
 Night Goblin Archers (Fanatics)
 Night Goblin Big Boss
+Night Goblin Great Shaman
 Night Goblin Shaman
+Night Goblin Squig Gobba
 Night Goblin Squig Hoppers
 Night Goblin Warboss
 Night Goblins
 Night Goblins (Fanatics)
+Night Goblins (Spears Fanatics)
+Night Goblins (Spears)
 Night Runners
+Night Runners (Fighting Claws)
 Night Runners (Slings)
+Night Runners (Warplock Pistols)
 Night Terrors (Mournguls)
+Night Terrors (Night Runners Fighting Claws)
+Nightlord Sneek
+Nightlord Sneek - Decoy
+Nightmare Legion
+Nightmaw
+Ninth Wall Gunners
 N'Kari
+Nobber Fangadoom
 Noble
+Noble Fimir
+Noble Retinue
+Noise Chanters
+Nomad Trackers
 Nordland Mariners (Halberdiers)
 Norgrimlings Ironbreakers (Ironbreakers)
+Norlaf
 Norscan Giant
 Norscan Ice Trolls
 Norscan Ice Wolves
+Norscan Reavers
+Norscan Reavers (Great Weapons)
 Norscan Trolls
 Norscan Warhounds
 Norscan Warhounds (Poison)
+Norscan Whalers
+Northern Maneaters
+Northern Maneaters (Great Weapons)
+Northern Maneaters (Ironfists)
+Northern Witch Knight
+Northern Witch Knight（Cold One)
+Nosso Da Schnozzla
 Noxbringer (Soul Grinder of Nurgle)
+Noyan
+Nü Gui
+Nuckelavees
+Nuln Great Cannons
 Nuln Ironsides
+Nuln Mortars
+Nurgle Chaos Dragons
 Nurglings
+Nurglings infestés
+Nurglitch
+Nyletoth the Charioteer
+Oathbound Revenants
 Oath-Brothers of Tor (War Bear Riders)
+Oathsworn
+Oathsworn (Halberds)
+Oathsworn Cavalry
+Oathsworn Cavalry (Spears)
+Obadiah Glothman
+Obald the Bonefather
 Obsinite Gyrocopters
+Océanides
 Oceanids
+Odvaal van den Huister
+Oerl the Young
+Ogg Halfheart
+Ogg the Expatriate
+Ogham Barrow Wights
 Oglah Khan's Wolfboyz
 Ogre Bulls
 Ogre Bulls (Dual Weapons)
 Ogre Bulls (Ironfists)
 Ogre Paymaster
+Ogre Pit fighter Champions
+Ogre Pit Fighters
+Ogre Slaves
+Ogre Spawn of Khorne
+Ogre Spawn of Nurgle
+Ogre Spawn of Slaanesh
+Ogre Spawn of Tzeentch
+Ogrebiter (Gnoblar Manbiters)
+Ogrebiters
+Ogres de la Peste
+Ogres de la Peste (Armes lourdes)
+Ogreshabti
+Ogreshabti (Great Bow)
+Olaf Wolfhound
+Old Funder
+Old Funder's Boys (Slayer Maneaters)
+Oleg von Raukov
+Olg Blódsalt
+Ombres
+Ombres (Armes jumelles)
+Ombres (Épée à deux mains)
 Omen of Asuryan (Arcane Phoenix)
+Oncle Furoncle (Grand Immonde)
+Onogal's Hunters (Dismounted Heavy Archers)
 Onyx Crowmen
+Oracle of Pythos (Skeletal Elephant)
+Oracle skink
+Oracle's Maidenguard (Maidenguard)
+Orc Amphibious Battleship
 Orc Arrer Boyz
+Orc Battle Tank
+Orc Battle Tank (Anti-Air)
+Orc Battle Tank (Dozer and Flamer)
+Orc Big Boss
 Orc Big 'Uns
+Orc Big 'Uns (Dual Weapons)
 Orc Boar Boy Big 'Uns
 Orc Boar Boyz
 Orc Boar Chariots
 Orc Boyz
+Orc Boyz (Mob)
 Orc Boyz (Spears)
+Orc Burna Boyz
+Orc Great Shaman
 Orc Labourers
 Orc Shaman
+Orc Slaves
 Orc Warboss
+Orc Wardrum
+Orc-Slicers (Ambush Netters)
+Order of the Albatross (Griffon Riders)
+Organ Gun
 Organ Guns
+Orghotts Daemonspew
+Orgi Three-Fingers
+Orgi's Blades
+Orgrim the Wanderer
+Orgrim's Scourge
 Orion
+Orques en armure de Ruglud
+Orques Kosto
+Orques Noirs
+Orques Noirs (Armes lourdes)
+Orques sauvages
+Orques sauvages archers
+Orques sauvages Kosto
+Orques sauvages sur Sangliers
+Orques sur Sangliers
+Orsini Sardus
+Orthodoxy Flagellants
+Oskar Rittlehof
+Ossian Guard (Har Ganeth Executioners)
+Ost infernal (Sanguinaires de Khorne Exaltés)
+Other Dude
+Otho's Unlucky Organ
+Ours Élémentaire
+Ours polaires sauvages
+Ours sauvages
+Outcast Bearmen
+Outcast Jackalmen (Slings)
+Outcast Jackalmen (Spears)
 Outriders
 Outriders (Grenade Launchers)
+Overking
 Overseer
 Oxyotl
 Packmaster
 Pahaux Sentinels (Terradon Riders)
+Palace Guards
 Paladin
+Paladin maudit
+Pale Lady
+Palldee Hammerbearer
+Pandit
+Pariah
+Parvatadar Asura
+Parvatadar Devatas
+Parvatadar Rajputs
+Parvatadar Yakshas
+Pathfinder
+Pathgrinders
+Pathmaker
 Patriarch
+Patriarche
+Patrouille de la rivière Stir (Arbalétriers)
+Patrouilleurs archers ellyriens
+Patrouilleurs de Verek (Chevaliers Noirs – Lances et bardes)
+Patrouilleurs ellyriens
+Pavise Crossbowmen
+Paymaster Chest Wagon
+Paysans à longue lance
 Peak Gate Guard (Hammerers)
 Peasant Archers
 Peasant Bowmen
+Peasant Bowmen (Balefire Arrows)
 Peasant Bowmen (Fire Arrows)
 Peasant Bowmen (Pox Arrows)
 Peasant Horsemen
 Peasant Long Spearmen
 Peasant Mob
 Pegasus Knights
+Pei Yue, the Martial Zealot
+Pèlerin Noir
+Pèlerins de bataille
+Perfected Black Orcs
+Persemius
 Pestigors
 Pestilential Toad Dragon
+Petit Grom
+Petty Chieftain
+Phantoms of Blood Keep
+Phantoms of the First Keep: Knights
+Phantoms of the First Keep: Warriors
+Phénix arcanique
+Phénix cœur-de-givre
+Phénix spire-de-feu
 Phoenix Guard
+Piercing Eye
+Pieter de Groot
 Pigback Riders
+Pigback Tossers
+Piggolo II
 Piggyback Knights (Pigback Riders)
+Pig-Stickers
+Pikemen
+Pillards Ungors
+Pilleurs d'Ulthar (Rangers – Armes lourdes)
 Pink Horrors of Tzeentch
+Pirate Commodore
+Pirate Deckhands
+Pirate Deckhands (Polearms)
+Pirate Gunnery Mob (Blunderbuss)
+Pirate Gunnery Mob (Handguns)
+Pirate Gunnery Mob (Pistols)
+Pirated Gyrocopter
+Pirates Tueurs
+Pirates Tueurs de Long Drong Silver
+Pirazzo's Lost Legion (Detachment)
+Pirazzo's Lost Legion (Pikemen)
 Pistoliers
+Pit Fighters
 Pit Fighters of Hell’s Deep (Rat Ogres)
+Pit Vermin
+Pit-Fighters
+Pixie Swarm
+PLACEHOLDER
+Plague Bruiser
 Plague Drones of Nurgle
 Plague Drones of Nurgle (Death's Heads)
+Plague Lord
 Plague Monk Censer Bearers
 Plague Monks
 Plague Ogres
 Plague Ogres (Great Weapons)
+Plague Pontifex
 Plague Priest
+Plague Priest Chariot
 Plague Toads of Nurgle
+Plague Tyrant
+Plague Wraiths
 Plaguebearers of Nurgle
+Plaguebelly
 Plagueclaw Catapults
+Plaguefleet Captain
+Plagueguts
 Plagueridden (Death)
 Plagueridden (Nurgle)
+Plaguevermin
+Plaguevermin (Stormvermin - Halberds)
 Pleasure Guard (Champions of Slaanesh)
 Pleasureseekers
+Poing Ensanglanté de Khorne (Buveur de Sang)
 Poisoned Wind Globadiers
 Poisoned Wind Mortars
 Pok-Hopak Cohort (Cold One Spear-Riders)
+Pok-Hopak's Cohort (Cold One Spear-Riders)
+Portepestes de Nurgle
+Portepestes de Nurgle Exaltés
+Porteur toxique (Broyeur d'Âmes de Nurgle)
+Pouacre (Mort)
+Pouacre (Nurgle)
+Poulain Knights
+Powder Sniffers
 Powder-Guts (Maneaters – Ogre Pistols)
+Pox Bowmen
 Pox Riders of Nurgle
+Poxtooth, Befouler of Sotek
+Prêche-Griffe (Bête)
+Prêche-Griffe (Ombres)
+Prêche-Griffe (Vie)
+Preneur de Crânes
+Présage d'Asuryan (Phénix arcanique)
+Prêtre de la Peste
+Prêtre Liche (Lumière)
+Prêtre Liche (Mort)
+Prêtre Liche (Nehekhara)
+Prêtre Liche (Ombres)
+Prêtre skink (Bête)
+Prêtre skink (Cieux)
+Prêtre-Guerrier
+Prêtre-Mage Slann
+Prêtre-Mage Slann (Cieux)
+Prêtre-Mage Slann (Feu)
+Prêtre-Mage Slann (Haute)
+Prêtre-Mage Slann (Lumière)
+Prêtre-Mage Slann (Vie)
 Preyton
+Preyton assoiffé de sang
+Priestess of Myrmidia
+Prikprang's Pork Pack (War Pigs)
 Prince
+Prince Alatar
+Prince Apophas
+Prince Démon
+Prince Démon de Khorne
+Prince Démon de Nurgle
+Prince Démon de Slaanesh
+Prince Démon de Tzeentch
+Prince des Tombes
+Prince Imladrik
+Prince Lorenzo Lupo
+Prince Ograx the Great
+Prince Oreon
+Prince Rakaph III
+Prince Sigvald le Magnifique
 Prince Sigvald the Magnificent
+Prince Ulther Stonehammer
 Prince Yuri
+Prince Yvarn
+Princes dragons
 Princess
+Princess Eldyra
+Princesse
+Principal Redaxe
 Prisoners
+Prisonniers
+Progéniture d'araignée
+Promethean Riders
+Prometheans
+Prométhéens pourrissants
+Prométhéens pourrissants (Artilleurs)
+Prophète Gris (Peste)
+Prophète Gris (Ruine)
 Prophetess (Beasts)
 Prophetess (Heavens)
 Prophetess (Life)
+Prophetess Naieth
+Prophétesse (Bête)
+Prophétesse (Cieux)
+Prophétesse (Vie)
+Prospector
+Prototype Landship
+Puppets of Shang Lun (Jiangshi)
+Pusbags
+Pusbags (Flails)
+Pusbags (Slings)
+Putrid Blightkings
+Pyrophores
+Qi Yan, the Wave-Breaking Admiral
+Qiao Xiao, the Forge Master
+Qin Yu
+Qin Yuanyi, the Golden Spear
+Quai Yin's Will
+Qu'aph's Deathspitter Guard (Serpent Guard)
 Quarrellers
 Quarrellers (Great Weapons – Grudge Settlers)
 Quarrellers (Great Weapons)
+Queek Coupe-Têtes
 Queek Headtaker
 Queen Bess
+Queen Marrisith
+Queen Rasut
+Querelleurs de Boydinov (Streltsi)
 Questing Knights
+Quirrik
+Rabatteurs de Slaanesh
+Rabatteurs de Slaanesh (Knouts)
+Rabe von Stahl
+Rackspire Dead
+Radiant Dryads
+Radiant Tree Kin
+Radiant Treeman
+Radixashen, Serpent des Racines du monde
+Radixashen, Serpent of the World Roots
 Radixashen, Serpent of the Worldroots
+Radzog
+Rafn Oflatisson
+Ragush of the Bloody Horn
 Rahagra's Pride (War Lions of Chrace)
+Raiders of the Lost Urk (Rangers)
+Raies Hurlantes (Hurleurs de Tzeentch)
 Rakarth
+Rakhamnhotep's Lizard Riders
+Rakhash's Scourge (Tomb Guard)
+Raknik Spiderclaw
+Rakranos the Ancient
+Rakshasa Tigermen
+Raksheed Deathclaw
+Ramhotep the Visionary
+Rampagers (Skullcrushers of Khorne)
 Rancorous Manticore
 Rangers
+Rangers (Armes lourdes)
 Rangers (Great Weapons)
+Rangers de Bugman
+Rangers des Bois Sauvages
+Rapid-fire Thunderers
+Rasetran Cold One Chariots
+Rashasawa
+Rastiltin Bebchuk
+Rat Captains
+Rat Golem
 Rat Ogres
+Rat Snatchers
+Rat Soldiers
+Rat Spawns
+Rat Swarm
+Rat Tank
+Ratasphères
+Ratbeasts of Haematoma
+Ratborgs
+Rathan
 Ratling Guns
+Ratling Guns (Gunpowder)
+Rat-Ogre Mutant
+Ratonette Chariot
+Ratonettes
+Ratonettes (Throwing Darts)
+Ratsketeers
+Rats-Loups
+Rats-Loups (Poison)
+Rats-Ogres
+Ravager of El-Kalabad (War Elephant)
 Ravagers of Rakarth (Scourgerunner Chariots)
+Ravageurs de Corne-Noire (Horde de Gors – Boucliers)
+Ravageurs de Rakarth (Chars à courre)
+Ravageurs Sombres d'Hashut (Hacheurs Centaures-Taureaux – Haches doubles)
 Raven Heralds (Dark Riders)
+Ravenous Ghosts
+Ravens
 Razordon Hunting Pack
 Razorgor Chariots
 Razorgor Herd
 Reaper Bolt Throwers
+Récolteurs de Slaanesh (Mages du Feu Maudit)
+Red Aldrek the Drowned
+Red Brokk
 Red Crested Skink Chief
 Red Crested Skinks
+Red Guard (Stormvermin)
+Red Henri
+Red Tooth Bandits
 Red Ulgor, Prince of Slaughter
 Reiksguard
+Reiksguard (on foot)
+Reiksguard de Zintler (Reiksguard)
+Reiksguard Knights
+Reikwald Brigands
+Reincarnated Eonir (Tree Kin)
+Reine Bess
+Reine Couveuse
+Reinhardt von Mackensen
+Rejeton de l'Enfant de l'Ombre
+Rejeton du Chaos
+Rejeton du Destin (Rejeton du Chaos)
+Rejeton géant de Slaanesh
+Rejetons de Nurgle
+Rejetons du feu K'daai
+Reliquae of Sir Baldrin
+Reliquaire du Graal
+Reman Legionary
 Repanse de Lyonesse
+Republican Guard
+Répurgateur
+Retinue Bowmen
+Returned
+Returned Spearmen
+Revenant Celestial Elders
+Revenant Haunters Summons
+Revenants
+Revenants (Halberds)
+Revenants of Mourkain
+Rhinox Riders
+Rhobb Grimly
 Rhuagh
+Ricco's Republican Guard (Pikemen)
+Riders
 Riders of the Mighty Serpent (Marauder Horsemen)
+Riders of the Raging Sky
 Righteous Lances of Wei-Jin (Great Longma Riders)
+Rigit
+Rijders
+Rijders (Crossbows)
+Rikcruk Sliceblade
+Rikzik Seepage
 Ripperdactyl Riders
+Ripperdactyl Riders of Chotec
+Ripperdactyl Riders of Huanchi
+Ripperdactyl Riders of Quetzl
+Ripperdactyl Riders of Sotek
+Ripperdactyl Riders of Tepok
+Ripperdactyl Riders of Tlazcotl
+Rippers of Ghur
+Risen Dwarf Warriors
+Risen Imperial Dragon
+Risen Longma Riders
+Risen Streltsi
+Risen Tzar Guards
+Ritualist
+River Ratz Pirates
 River Trolls
+River Trolls (Armored)
+Riverwardens
+Riviere du Abis
+Roctus Vomitrou
+Rôde-Brumes (Guerriers Fimir)
+Rôdeurs Caméléons
+Rôdeurs Caméléons bénis
+Rôdeurs Fantômes
+Rôdeurs Sépulcraux
 Rodrik L'Anguille
 Rogue Idol
+Roi des Tombes
+Roi Goule Strigoi
+Roi Lunn Marteau-de-fer
+Roi Revenant
+Rokkit Bombardia
+Ronin
+Rordak
+Rorek Granitehand
 Rot Flies
 Rot Knights
+Rothnog the Shrinekeeper
+Rotten Dracoleech
+Rotten Rodents
+Rotten Rodents (Dual Weapons)
 Rotting Leviathan
 Rotting Prometheans
 Rotting Prometheans (Gunnery Mob)
+Roue à Maleflamme (Roue Infernale)
+Roue des Zenfers (Roue Infernale)
+Roue Infernale
+Rough-Necks (Wormoil Slingers)
+Roy Louen Cœur de Lion
+Royal Archers
+Royal Chariot Guard
+Royal Griffon Knight
+Royal Guard
+Royal Guard Cavalry
+Royal Guard Lancers
+Royal Guards
+Royal Guards (Great Weapons)
 Royal Hippogryph Knights
 Royal Pegasus Knights
+Royal Peltasts
+Rudolph Weskar
+Ruff Riders (Goblin Wolf Rat Riders)
+Ruglud Bonechewer
 Ruglud's Armoured Orcs
+Rune Drakken
 Runelord
 Runesmith
+Rustblades (Stormvermin - Sword & Shield)
+Rustbuckets
+Rustbuckets (Great Weapons)
+Rykarth the Unbreakable
+S’iba’aht
 Sabretusk Pack
+Sabretusk Riders
+Sabretusks
+Sacred Guardian of the Pools
 Sacred Kroxigor
 Salamander Hunting Pack
+Salamander Hunting Pack (Firestream Jets)
+Salamander Pack (Crystalback)
+Salamandre ancestrale
+Salamandre ancestrale bénie
 Salt Lord Scuttlers (Deck Droppers – Bombers)
+Salvaged Great Cannon
+Salvaged Mortar
+Salvaged Rocket Battery
+Salvaged Volley Gun
+Sand Crawlers
+Sand Scorpion
+Sand Snakes (Sepulchral Stalkers)
+Sandbad the Sailor
+Sandguts
+Sandrat Enslavers (Boar Wranglers)
+Sang Ancien Saurus
+Sang-froid sauvages
+Sanglard Estropieur
+Sanguinaires de Khorne
+Sanguinaires de Khorne Exaltés
+Sanguinorateur
+Sappers
+Sapphire Company
+Sargath the Vain
+Sarl Berserkers
+Sarl Champions
+Sarl Champions (Great Weapons)
+Sarl Hunters
+Sarl Hunters (Javelins)
+Sarl Hunters (Throwing Axes)
+Sarl Marauders
+Sarl Marauders (Great Weapons)
+Sarl Spearmen
+Sarthorael le Gardien Éternel
 Sarthorael the Everwatcher
+Sartosa Free company
 Sartosa Free Company
 Sartosa Militia
+Sartosan Handgunners
+Sartosan Pirates
+Sasquatches
+Saurien de l'effroi
+Saurien de l'effroi bestial
+Saurus Horned One Riders
+Saurus Horned One Riders of Chotec
+Saurus Horned One Riders of Huanchi
+Saurus Horned One Riders of Quetzl
+Saurus Horned One Riders of Sotek
+Saurus Horned One Riders of Tepok
+Saurus Horned One Riders of Tlazcotl
 Saurus Oldblood
+Saurus Scar Veteran Wight
+Saurus Scar Wight
 Saurus Scar-Veteran
+Saurus Spawn Leaders
 Saurus Spears
 Saurus Spears (Shields)
+Saurus Spears of Chotec
+Saurus Spears of Huanchi
+Saurus Spears of Quetzl
+Saurus Spears of Sotek
+Saurus Spears of Tepok
+Saurus Spears of Tlazcotl
+Saurus Spears of Tzunki
 Saurus Warriors
 Saurus Warriors (Shields)
+Saurus Warriors of Chotec
+Saurus Warriors of Huanchi
+Saurus Warriors of Quetzl
+Saurus Warriors of Sotek
+Saurus Warriors of Tepok
+Saurus Warriors of Tlazcotl
+Saurus Warriors of Tzunki
+Savage Clanrat Spears
+Savage Clanrat Spears (Shields)
+Savage Clanrats
+Savage Clanrats (Shields)
+Savage Giant
+Savage Maneaters
+Savage Maneaters (Dual Maces)
+Savage Maneaters (Ironfists)
 Savage Orc Arrer Boyz
+Savage Orc Big Boss
 Savage Orc Big 'Uns
+Savage Orc Big 'Uns (Bows)
 Savage Orc Boar Boy Big 'Uns
 Savage Orc Boar Boyz
 Savage Orc Great Shaman
+Savage Orc Shaman
+Savage Orc Slaves
+Savage Orc Warboss
 Savage Orcs
+Savage Orcs (Bows)
+Savage Orcs (Mob)
+Savage Orcs (Spears)
+Savage Saurus (Crystalback)
+Savage Saurus (Crystalblades)
+Savage Saurus Beast Tamer
+Savage Saurus Brute (Crystalback)
+Savage Saurus Brute General (Crystalback)
+Savage Skavenslave Slingers
+Savage Skavenslave Spears
+Savage Skavenslaves
+Sayl le Perfide
 Sayl the Faithless
+Saytang le Veilleur
 Saytang the Watcher
+Scalded Horde
+Sceolan
+Schilder's Toll Collectors (Riverwardens)
+Scholar
+Scorpion des Tombes
+Scorpions
+Scorpions Part 2
 Scourge of Arden (Preyton)
+Scourge of the Black Gulf
 Scourgerunner Chariots
+Scrap Launcha
+Scrap Shootaz
+Scrapper
 Screamers of Tzeentch
+Screamers Swarm
+Screaming Skull Ballistas
 Screaming Skull Catapults
 Scurvy Dogs
+Scuttlers
+Scuttlers (Spidersilk Globes)
 Scyla Anfingrimm
+Sea Axes
+Sea Company
+Sea Dragon Hunters
 Sea Elemental
 Sea Helm
+Sea Lions of Finubar (Dual Axes)
+Sea Lions of Finubar (Poleaxe and Bow)
 Sea Lord Aislinn
+Sea Magicker
+Sea Nymph
+Sea Slayers
+Sea Vultures (Tomb Corsairs)
+Seahorses
 Seeker Chariots
 Seekers of Slaanesh
+Seer of Silvam Dale
+Sehenesmet, Vizier of Quatar
+Seigneur
+Seigneur de Guerre
+Seigneur des Bêtes
+Seigneur des Mers Aislinn
+Seigneur des Runes
+Seigneur du Chaos
+Seigneur du Chaos – Réprouvé
+Seigneur du Chaos de Khorne
+Seigneur du Chaos de Nurgle
+Seigneur du Chaos de Slaanesh
+Seigneur du Chaos de Tzeentch
+Seigneur Kroak
+Seigneur Magistrat
+Seigneur Mazdamundi
+Seigneur Shugengan au Sang de Dragon (Yang)
+Seigneur Shugengan au Sang de Dragon (Yin)
+Seigneur Skrolk
+Seigneur Sorcier du Chaos (Feu)
+Seigneur Sorcier du Chaos (Feu) – Réprouvé
+Seigneur Sorcier du Chaos (Métal)
+Seigneur Sorcier du Chaos (Métal) – Réprouvé
+Seigneur Sorcier du Chaos (Mort)
+Seigneur Sorcier du Chaos (Mort) – Réprouvé
+Seigneur Sorcier du Chaos (Ombre)
+Seigneur Sorcier du Chaos (Ombre) – Réprouvé
+Seigneur Sorcier du Chaos de Nurgle (Mort)
+Seigneur Sorcier du Chaos de Nurgle (Nurgle)
+Seigneur Sorcier du Chaos de Slaanesh (Ombre)
+Seigneur Sorcier du Chaos de Slaanesh (Slaanesh)
+Seigneur Sorcier du Chaos de Tzeentch (Métal)
+Seigneur Sorcier du Chaos de Tzeentch (Tzeentch)
+Seigneur Sylvain
+Seigneur Vampire
+Seigneur Vampire Dragon de Sang
+Seigneur Vampire Lahmiane
+Seigneur Vampire Nécrarque
+Seigneur Vampire Striges
+Seigneur Vampire Von Carstein
+Selafyn of the Annulii
+Seneschal
+Sentinelle en terre cuite
+Sentinelles d'Astaril
+Sentinelles de Pahuax (Monteurs de Téradon)
 Sentinels of Astaril
+Sepoy Arquebusers
+Septik Plaguevermin
 Sepulchral Stalkers
+Sepulchrex (Ushabti)
+Sergents Archers Montés
+Sergents Montés
+Serkhet
+Serpent Guard
+Serres de Tor Caleda (Archers - Armure Légère)
+Settra l'Impérissable
 Settra the Imperishable
+Shackled Dragon
+Shackolot la Calamité
 Shackolot the Calamity
+Shade Haunts
 Shades
 Shades (Dual Weapons)
 Shades (Greatswords)
 Shadewraith Gunners (Deck Gunners)
+Shadow Rat Ogres
+Shadow Walkers
 Shadow Warriors
+Shadowblade
+Shadowblade - Decoy
+Shadowgors
+Shadowgors (Bestigor)
+Shadow-Lantern
+Shadows of Nongchang (Wild Ghosts)
 Shadow-walkers
+Shakkara Riel
+Shaman Firesingers (Mounted Shamans of Tchar)
 Shaman-Sorcerer (Death)
 Shaman-Sorcerer (Fire)
 Shaman-Sorcerer (Metal)
+Shapesh's Netherworld Reaper (Necrosphinx)
+Sharpshooters
+Shaz Ensun
+She'ar Khawn's Vanguard
+Shearl Mirestalkers
+Shearls
+Shearls (Spears)
+Sheerargetru
+Sheikh
+Shen Tsinge
+Shen Zoo, the Light Dragon
+Shield Thrower Battery
+Shieldbearers
+Shieldmaiden
+Shieldwardens
+Shihab's Animunculus (Naphtha Throwers)
+Shi-Hong
+Ship Captain (Mace)
+Ship Captain (Spear and Sword)
+Shipmasters (Cluster Bombs)
+Ship's Canon
 Ship's Company
+Ships' Crew Gunners
+Shiwan Stalkscent
+Shockrats
+Shore Riders
+Shredder of Lustria (Feral Dread Saurian)
+Shrewd Fulg
 Shrieking Skyrays (Screamers of Tzeentch)
+Shuimu
 Sigmar's Sons (Swordsmen)
+Silak le Borgne (Wyrm des Mers)
 Silak One-eye (Merwyrm)
+Silent Guardians (Warpguard Halberds)
 Silver Helms
 Silver Helms (Shields)
+Silver Shriekers
 Silverin Guard
+Silverpelts (White Lions of Chrace)
 Simaergul
+Simon Goudenkruin
+Sinful Monks
+Sipahis of Copher
+Sir Albrecht Valdorf
+Sir Amalric de Gaudaron
+Sir John Tyreweld
+Sir John's Battle Brothers
+Sirènes
 Sisters of Avelorn
+Sisters of Fury
 Sisters of Slaughter
 Sisters of the Singing Doom (Witch Elves)
 Sisters of the Thorn
 Sisters of Twilight
+Ska Bloodtail
+Skald (Drummer)
+Skald (Horn Blower)
+Skarbrand l'Exilé
 Skarbrand the Exiled
+Skarfang Blackskull
+Skargel the Miner
 Skarr Bloodwrath
+Skarrik Spinemanglr
 Skarsnik
+Skaven Labourers
+Skaven Slaves
+Skaven Squiggyback Riders
+Skavens esclaves
+Skavens esclaves à lance
+Skavens esclaves frondeurs
 Skavenslave Slingers
+Skavenslave Slingers (Shields)
 Skavenslave Spears
+Skavenslave Spears (Shields)
+Skavenslave Spears Slingers (Shields)
 Skavenslaves
+Skavenslaves (Shields)
+Skaw the Falconer
+Skeggi Berserkers
+Skeggi Champions
+Skeggi Champions (Great Weapons)
+Skeggi Giant
+Skeggi Hunters (Javelins)
+Skeggi Hunters (Throwing Axes)
+Skeggi Marauder Champions
+Skeggi Marauders
+Skeggi Marauders (Great Weapons)
+Skeggi Spearmen
+Skeletal Carnosaur
+Skeletal Elephant
+Skeletal Minotaurs
 Skeleton Archer Chariots
 Skeleton Archers
 Skeleton Chariots
+Skeleton Culchan Riders
+Skeleton Dragon Ogre Shaggoth
+Skeleton Dragon Ogres
+Skeleton Giant
+Skeleton Goblin Archers
+Skeleton Goblins
+Skeleton Hoplites
 Skeleton Horse Archers
 Skeleton Horsemen
+Skeleton Horsemen (Sword and Shield)
+Skeleton Javelinmen
+Skeleton Kroxigors
+Skeleton Longbeards
+Skeleton Longbeards (Great Weapons)
+Skeleton Orcs
+Skeleton Pikemen
+Skeleton Reapers
+Skeleton Red Crested Skinks
+Skeleton Saurus Warriors
+Skeleton Shaggoth Wight
+Skeleton Skink Cohort
+Skeleton Slave Labourers
 Skeleton Spearmen
+Skeleton Spearmen (Javelins)
+Skeleton Temple Guard
+Skeleton Trolls
+Skeleton Trolls (Great Weapons)
+Skeleton War Elephant
 Skeleton Warriors
+Skeleton Warriors (Dual Axes)
+Skeleton Warriors (Great Weapons)
+Skelly the Chronicler
+Skelton Horned One Riders: Clubs
+Skelton Horned One Riders: Spears
+Skin Wolf Packlord
 Skin Wolf Werekin
 Skin Wolves
 Skin Wolves (Armoured)
+Skinflayer Cavaliers
+Skink Altar Braves
+Skink Braves
+Skink Braves of Chotec
+Skink Braves of Huanchi
+Skink Braves of Quetzl
+Skink Braves of Sotek
+Skink Braves of Tepok
+Skink Braves of Tlazcotl
+Skink Braves of Tzunki
 Skink Chief
 Skink Cohort
 Skink Cohort (Javelins)
+Skink Cohort of Chotec
+Skink Cohort of Huanchi
+Skink Cohort of Quetzl
+Skink Cohort of Sotek
+Skink Cohort of Tepok
+Skink Cohort of Tlazcotl
+Skink Cohort of Tzunki
+Skink Horned One Riders
+Skink Horned One Riders of Chotec
+Skink Horned One Riders of Huanchi
+Skink Horned One Riders of Quetzl
+Skink Horned One Riders of Sotek
+Skink Horned One Riders of Tepok
+Skink Horned One Riders of Tlazcotl
 Skink Oracle
 Skink Priest (Beasts)
+Skink Priest (Death)
+Skink Priest (Fire)
 Skink Priest (Heavens)
+Skink Priest (Light)
+Skink Priest (Metal)
+Skink Priest (Shadows)
 Skink Priest Avatar
 Skink Skirmishers
+Skink Skirmishers of Chotec
+Skink Skirmishers of Huanchi
+Skink Skirmishers of Quetzl
+Skink Skirmishers of Sotek
+Skink Skirmishers of Tepok
+Skink Skirmishers of Tlazcotl
+Skink Skirmishers of Tzunki
+Skink Warchief
+Skinks à crête rouge
+Skinks caméléons
+Skinks caméléons bénis
 Skollden
+Skolsson's Drill
+Skoroth the Plaguelord
+Skorri Stonebeard
 Skraelsbane
+Skrag le Désosseur
 Skrag the Slaughterer
+Skrat Rat Spawns
+Skretch Half-Dead
+Skulex the Great
+Skulk Fellpaw
+Skull Hunters
+Skull Hunters (Great Weapons)
+Skull Totem
 Skullcannon
 Skullcracker
 Skullcracker – Dreadquake Mortar
 Skullcrushers of Khorne
+Skullflingers
+Skullflingers (Gnoblar Flingers)
+Skullharvest Ravagers (Wrathmongers)
+Skullhunters
+Skullpriest
+Skullpriest (Warshrine)
 Skullreapers
+Skullsplinters (Warplock Jezzails)
 Skulltaker
+Skurry-stabbers (Clanrats Shields)
+Skurvy Crewrat
+Skurvy Crewrat (Shields)
+Skurvy Crewrat Bombers
+Skurvy Crewrat Spears
+Skurvy Crewrat Spears (Shields)
+Skurvy Crewrat Warpmuskets
+Skurvy Deck Engineers
+Skurvy Deck Gun
+Skurvy Deck Mortar
+Skurvy Deck Runners
+Skurvy Doom Rocket Launcher
+Skurvy Land Ship
+Skurvy Rotting Leviathan
+Skurvy Slave Bombers
+Skurvy Sniper
+Skurvy Stormvermin Warpmuskets
+Skurvy Warp Bomber
+Skurvy Warpcarronade
+Skurvy Warp-Fire Gun Ships
+Sky Blasta
+Sky Harbringer
 Sky Lantern
 Skyhammer Squadron (Gyrobombers)
 Sky-junk
 Sky-Striders (Crushers – Great Weapons)
+Slaaneshi Ratling Guns
 Slaanesh's Harvesters (Doomfire Warlocks)
 Slaangors
+Slaa'Ulaan
+Slambo
 Slann Mage-Priest
+Slann Mage-Priest (Beasts)
+Slann Mage-Priest (Death)
 Slann Mage-Priest (Fire)
 Slann Mage-Priest (Heavens)
 Slann Mage-Priest (High)
 Slann Mage-Priest (Life)
 Slann Mage-Priest (Light)
+Slann Mage-Priest (Metal)
+Slann Mage-Priest (Shadows)
 Slaughterbrute
 Slaughtermaster (Beasts)
 Slaughtermaster (Death)
+Slaughtermaster (Deep)
 Slaughtermaster (Great Maw)
 Slaughtermaster (Heavens)
+Slave Lord
+Slave Rabble
+Slavering Maws (Frothing Wolf Rats)
 Slavin Kurnz
 Slayer Pirates
 Slayers
 Slayers (Grudge Settlers)
+Slimeblades (Rotten Rodents - Shields)
 Snagla Grobspit
+Snagla l'Glaviot
 Snagla's Deff Throwa (Goblin Bolt Throwa)
+Snagla's Deff Throwa (Goblin Bolt Throwas)
+Snarky Gutbuster
+Snorko the Sneak
 Snotling Pump Wagons
 Snotling Pump Wagons (Flappas)
 Snotling Pump Wagons (Spiky Rollers)
+Snotling Swarm
+Snotling Warboss
 Snow Leopard
+Sœurs d'Avelorn
+Sœurs de la Malédiction Résonnante (Furies)
+Sœurs de l'Épine
+Sœurs du Crépuscule
+Sœurs du Massacre
+Sokth's Tomb Guardians
+Solidoo (Ogreshabti - Great Bow)
+Sombretraits
+Sombretraits (Boucliers)
+Sons of Ellyrion
 Sons of Ghorros (Centigors – Great Weapons)
+Sons of Manann
+Sons of Strygos (Handgunners)
+Soopa-Squig !
 Soopa-Squig!
 Sootson's Guns (Mortars)
 Sorcerer-Prophet (Death)
@@ -1248,12 +4916,72 @@ Sorceress (Dark)
 Sorceress (Death)
 Sorceress (Fire)
 Sorceress (Shadows)
+Sorcerous Trolls
+Sorcier Artisan démoniaque (Feu)
+Sorcier Artisan démoniaque (Hashut)
+Sorcier Artisan démoniaque (Métal)
+Sorcier Artisan démoniaque (Mort)
+Sorcier Céleste
+Sorcier chaman (Feu)
+Sorcier chaman (Métal)
+Sorcier chaman (Mort)
+Sorcier d'Ambre
+Sorcier d'Améthyste
+Sorcier de Jade
+Sorcier d'or
+Sorcier du Chaos (Feu)
+Sorcier du Chaos (Feu) – Réprouvé
+Sorcier du Chaos (Métal)
+Sorcier du Chaos (Métal) – Fusionné avec un Destrier du Chaos
+Sorcier du Chaos (Mort)
+Sorcier du Chaos (Mort) – Réprouvé
+Sorcier du Chaos (Ombre)
+Sorcier du Chaos (Ombre) – Réprouvé
+Sorcier du Chaos de Nurgle (Mort)
+Sorcier du Chaos de Nurgle (Nurgle)
+Sorcier du Chaos de Slaanesh (Ombre)
+Sorcier du Chaos de Slaanesh (Slaanesh)
+Sorcier du Chaos de Tzeentch (Métal)
+Sorcier du Chaos de Tzeentch (Tzeentch)
+Sorcier Eshin
+Sorcier Flamboyant
+Sorcier Gris
+Sorcier Lumineux
+Sorcière (Bêtes)
+Sorcière (Feu)
+Sorcière (Mort)
+Sorcière (Noire)
+Sorcière (Ombres)
+Sorcière de Glace (Glace)
+Sorcière de Glace (Tempête)
+Sorcière Suprême (Bêtes)
+Sorcière Suprême (Feu)
+Sorcière Suprême (Mort)
+Sorcière Suprême (Noire)
+Sorcière Suprême (Ombre)
+Sorcière Troll d'Eau Géante
+Sorcier-Prophète (Feu)
+Sorcier-Prophète (Hashut)
+Sorcier-Prophète (Métal)
+Sorcier-Prophète (Mort)
+Soren Hoarder
 Soul Eater Cygors
 Soul Grinder of Khorne
 Soul Grinder of Nurgle
 Soul Grinder of Slaanesh
 Soul Grinder of Tzeentch
+Soul of the King
 Soulcrusher (War Mammoth)
+Southern Flamekeepers
+Southlands Warriors
+Spawn Leaders
+Spawn Leaders of Chotec
+Spawn Leaders of Huanchi
+Spawn Leaders of Quetzl
+Spawn Leaders of Sotek
+Spawn Leaders of Tepok
+Spawn Leaders of Tlazcotl
+Spawn Leaders of Tzunki
 Spawn of Khorne
 Spawn of Nurgle
 Spawn of Shadowgave
@@ -1261,221 +4989,701 @@ Spawn of Slaanesh
 Spawn of Tzeentch
 Spearmen
 Spearmen (Shields)
+Spearmen Mirage
+Spearmen Serjeants
 Spearmen-at-Arms
 Spearmen-at-Arms (Shields)
+Spears of Tlax
+Special Gnoblar Scraplauncher
+Special Ironblaster
+Special Maneaters (Ogre Pistol)
+Spectres des Cairns
+Spectres du Cœur de glace (Dryades)
 Spellsinger (Beasts)
+Spellsinger (Ice)
 Spellsinger (Life)
 Spellsinger (Shadows)
 Spellweaver (Beasts)
 Spellweaver (Dark)
 Spellweaver (High)
+Spellweaver (Ice)
 Spellweaver (Life)
 Spellweaver (Shadows)
+Spellweaver(Beasts)
+Spellweaver(Dark)
+Spellweaver(High)
+Spellweaver(Life)
+Spellweaver(Shadows)
+Sphenisci Daemons
+Sphinx de guerre de Khemri
+Sphinx Legion of Numas (Nehekhara Warriors)
 Spider Hatchlings
+Spider Queen
+Spikegunners
 Spire Guard of Tor Yvresse
+Spirit Hosts
 Spirit of Tepok (Coatl)
+Spite
+Sporctacus
+Squig colossal
+Squig explosif
 Squig Herd
+Squigs broyeurs
+Squigs de Durkit (Gobelins de la Nuit sur Squig)
+Squires of Origo
+Squires of the Flame
+Sss’el’ari the Golden, Lord of Paramountcy
+Stalkers of the Kalti Delta (Sarl Hunters)
 Star Chamber Guardians (Temple Guard)
 Star Dragon
+Staraja vedma (Bêtes)
+Staraja vedma (Mort)
+Staraja vedma (Ombres)
+Staraja vedma (Sorcière)
+Starved Marquis
+State Greatswords
+State Swordsmen
 Steam Tank
 Steam Tank (Volley Gun)
+Steed of Kandorak
+Steel Spitters
+Stefan von Kessel
 Stegadon
+Stégadon
+Stégadon ancestral
+Stégadon ancestral (Machine des Dieux)
+Stégadon ancestral béni
+Stégadon béni
+Stégadon sauvage
+Steppe Centigor Herd
+Steppe Centigor Herd (Great Bow)
+Steppe Centigor Herd (Great Weapons)
+Steppe Heavy Warriors
+Steppe Horse Archers
+Steppe Stalker
+Steppe Trackers
+Steppe Warriors
+Stinking Thing
 Stir River Patrol (Crossbowmen)
 Stirland's Revenge (Free Company Militia)
+Stone Guard (Wardbearers)
 Stone Trolls
 Stonehorn
 Stonehorn (Harpoon Launcher)
 Storm Riders of Khsar (Nehekharan Horsemen)
+Stormbeards
+Stormgale Frontier Troops
+Stormriders
 Stormvermin (Halberds)
+Stormvermin (Sword & Shield)
 Stormvermin (Swords & Shields)
 Streltsi
 Strigoi Ghoul King
+Strigoi Ghoul King (Terrorgheist)
 Strigoi Vampire Lord
+Strompoort's Ordnance (Mortars)
+Styrkaar des Sortsvinnaers
 Styrkaar of the Sortsvinaer
+Suan-Ni
+Sultan Jaffar
+Summoned Flame Spirits
 Summoners of Rage (Dragon Ogres)
 Sun Dragon
+Superviseur
 Supply Train
 Supreme Sorceress (Beasts)
 Supreme Sorceress (Dark)
 Supreme Sorceress (Death)
 Supreme Sorceress (Fire)
 Supreme Sorceress (Shadows)
+Surtha Ek
+Surtha Lenk
+Surtha's Revenge
+Sven Hasselfriesian
+Swamp Daemons
+Swarmcaller
+Swarmleader
+Swashbucklers
+Sword of Solkan
 Swordmasters of Hoeth
 Swords of Chaos (Chaos Knights)
+Swords of Chaos (Dismounted)
 Swords of Ulric (Swordsmen)
 Swordsmen
+Sworn of the Orthodoxy
+Sybarite (Shadows)
+Sybarite (Slaanesh)
 Sylvanian Crossbowmen
 Sylvanian Handgunners
+Symiel
 Syreens
+Tabby
+Taggee
+Tailladeurs du clan Vulkn (Guerriers des Clans – Boucliers)
+Tainted Blood Vultures
+Tainted Bruiser
+Tainted Butcher (Beasts)
+Tainted Butcher (Death)
+Tainted Butcher (Great Maw)
+Tainted Butcher (Heavens)
+Tainted Butcher (Life)
+Tainted Butcher (Metal)
+Tainted Butcher (Shadows)
+Tainted Butcher (Wild)
+Tainted Crushers (Great Weapons)
+Tainted Crushers (Ironfists)
+Tainted Firebelly
+Tainted Giant
+Tainted Gnoblar Flingers
+Tainted Gnoblar Scraplauncher
+Tainted Gnoblar Trappers
+Tainted Gnoblars
+Tainted Gorgers
+Tainted Hunter
+Tainted Ironblaster
+Tainted Ironguts
+Tainted Leadbelchers
+Tainted Maneaters
+Tainted Maneaters (Great Weapons)
+Tainted Maneaters (Ironfists)
+Tainted Maneaters (Ogre Pistols)
+Tainted Mournfang Cavalry
+Tainted Mournfang Cavalry (Great Weapons)
+Tainted Mournfang Cavalry (Ironfists)
+Tainted Ogre Bulls
+Tainted Ogre Bulls (Dual Weapons)
+Tainted Ogre Bulls (Ironfists)
+Tainted Ogre Paymaster
+Tainted Pigback Riders
+Tainted Sabretusk Pack
+Tainted Slaughtermaster (Beasts)
+Tainted Slaughtermaster (Death)
+Tainted Slaughtermaster (Great Maw)
+Tainted Slaughtermaster (Heavens)
+Tainted Slaughtermaster (Life)
+Tainted Slaughtermaster (Metal)
+Tainted Slaughtermaster (Shadows)
+Tainted Slaughtermaster (Wild)
+Tainted Stonehorn
+Tainted Stonehorn (Harpoon Launcher)
+Tainted Thundertusk
+Tainted Tyrant
+Tal'gatha the Fallen
 Tall Roff
 Talons of Tor Caleda (Archers – Light Armour)
+Tambours de guerre de Zhangu
+Tamurkhan le Seigneur des Vers
 Tamurkhan the Maggot Lord
+Tancred II de Quenelles
+Tang Jingyin, the Great Hero
+Tank à vapeur
+Tank à vapeur (Canon à Répétition)
+Taoyan l'Impitoyable
 Taoyan the Merciless
+Targog Whalebeater
+Taubert de L'Anguille
+Taugrek the Throttler
+Taurox le Taureau d'Airain
 Taurox the Brass Bull
+Taur'ruk Centaure-Taureau
+Taurus Calamitas
+Tchzen
+Technomage
+Technomaître
+Technox
 Teclis
 Teef Robbers (Goblin Wolf Chariots)
 Teeth-Breakers (Ratling Guns)
 Tehenhauin
+Tempest Djinn
 Temple Guard
+Temple Guard of Chotec
+Temple Guard of Huanchi
+Temple Guard of Quetzl
+Temple Guard of Sotek
+Temple Guard of Tepok
+Temple Guard of Tlazcotl
+Temple Guard of Tzunki
+Temple Guards of Tepok (Crystalback)
 Templehof Luminark (Luminark of Hysh)
+Tentatrice (Ombres)
+Tentatrice (Slaanesh)
+Terracotta Automatons
 Terracotta Sentinel
 Terradon Riders
 Terradon Riders (Fireleech Bolas)
+Terradon Riders (Fireleech Bolas) of Chotec
+Terradon Riders (Fireleech Bolas) of Huanchi
+Terradon Riders (Fireleech Bolas) of Quetzl
+Terradon Riders (Fireleech Bolas) of Sotek
+Terradon Riders (Fireleech Bolas) of Tepok
+Terradon Riders (Fireleech Bolas) of Tlazcotl
+Terradon Riders of Chotec
+Terradon Riders of Huanchi
+Terradon Riders of Quetzl
+Terradon Riders of Sotek
+Terradon Riders of Tepok
+Terradon Riders of Tlazcotl
+Terreur de Geltblöm (Carnosaure sauvage)
+Terreurgheist
+Terreurgheist du Cri Mortel
+Terreurs nocturnes (Mournguls)
+Terrog Throatsplitter
+Terror of Gorgoth (Dark Land Drake)
+Terrorfex CURRENTLY ABANDONED
 Terrorgheist
+Tetto’eko
 Thane
+Thane (Great Axe)
+The Abyssal Revenant
+The Abyssal Revenant: Ascended
 The Abyssal Shrieker
 The Angels of Decay (Plague Drones – Death's Heads)
 The Arachnarok Queen (Arachnarok Spider)
+The Archon of Shaanator (Sea Elemental)
+The Arisen
 The Avalanche Mortars (Death Globe Mortars)
 The Beast of Raema
+The Becoming (Rat Spawns)
 The Big One
+The Black Crowe
 The Black Dragon Ascendant
+The Black Dwarf
+The Black Lions
 The Black Lions (War Wagons – Helblasters)
+The Black Mask
 The Black Spot (Zombie Pirate Gunnery Mob – Handgunners)
 The Blazing Beards of Bazherak (Chaos Dwarf Warriors)
 The Bloodbrute Behemoth (Ghorgon)
+The Bloodsworn (Woad Raiders)
 The Bloody Reaver Deck Guard (Depth Guard)
 The Blue Scribes
 The Bolt-fiends (Darkshards – Shields)
+The Bordermen (Outriders - Grenade Launcher)
 The Bordermen (Outriders – Grenade Launchers)
 The Brotherhood of Grimnir (Doomseekers)
 The Bull of Aqshy
+The Burning Dead
 The Carrion Eater
+The Carrions (Norscan Horsemasters)
+The Catacomb Guardians (Royal Guards)
 The Changeling
 The Changeling – Decoy
+The Changeling (Doom Knight)
+The Changeling (Exalted Flamer)
+The Changeling (Horror)
+The Changeling (Lord of Change)
+The Changeling (Screamer)
+The Changeling (Spawn of Tzeentch)
+The Changeling, Deceiver of Tchar
 The Chillgheists (Hexwraiths)
 The Chromatic Abominations (Blue Horrors of Tzeentch)
 The Claw of Nagash (Mortis Engine)
 The Cold-Voider (Chaos Frost Dragon)
+The Cold-Voider (Frost-Wyrm)
 The Companions of Quenelles (Questing Knights)
+The Crimson Bane (Stormbeards)
 The Crows of Khaine (Harpies)
 The Daemon's Tongue – Dreadquake Mortar
 The Daemon's Tongue (Iron Daemon)
 The Daemonspew (Forsaken)
+The Day Guard (Torguud)
+The Decaying (Clanrats Shields)
+The Defiled (Skavenslave Slingers)
+The Devils of Schwartzhafen (Vargheists)
 The Devils of Swartzhafen (Vargheists)
 The Direpack (Dire Wolves)
+The Dodvakt (Cold One Riders)
+The Dodvakt Spears (Cold One Riders)
 The Doombringers (Warpfire Throwers)
+The Dreadwings
 The Dune Dragons (Celestial Dragon Guard)
 The Emperor's Wrath (Steam Tank)
+The Emptied Dead
+The Exiled Squires
+The Expendables (Pusbags - Flails)
 The Eye of Morrslieb (Cygor)
+The Feast of Krann
 The Feasters in the Dusk (Crypt Ghouls)
+The Fire Lizards (Salamander Hunting Pack – Firestream Jets)
+The Fire-Baptised (Bowmen)
 The Fireborn (Dragon Princes)
+The Firstborn Sons (Oathsworn Cavalry)
 The Flock of Djaf (Carrion)
+The Forsaken Circle
+The Fourth Sister
 The Frolickers Bubonic (Nurglings)
 The Frozen Heart of Winter (Elemental Bear)
+The Ghosts of Burag (Feral Horse Herd)
+The Ghosts of Glanbor
+The Godslayer
 The Golden Griffin of Theurgy (Lord of Change)
 The Golden Knight Naryska Leysa
+The Golden Magus
 The Grace of Quai Yin (Celestial Dragon Crossbows)
 The Granite Guard (Chaos Dwarf Blunderbusses)
+The Great Celestial Spirit
+The Great Herald (Chaos Vulture)
+The Great Khorkoi (Death Worm)
 The Great Mawherd of Bloodfjord (Feral Mammoths)
 The Green Guardian (Terracotta Sentinel)
 The Green Knight
+The Green Man (Fen Hulk)
+The Green Skulls (Nehekhara Warriors)
 The Grey (Shadow Warriors)
 The Grimdelvers (Thunderers)
 The Grumbling Guard (Longbeards – Great Weapons)
+The Harbinger
 The Hellbeast of Seep-Gore
+The Hellbeast of Seep-Gore (Hell Pit Abomination)
 The Hellebronai (Dreadspears)
+The Herald of the Raging Sky
 The Hergig Jaegerkorps (Hochland Long Rifles)
+The Hidden
 The Holy Wardens of La Maisontaal (Battle Pilgrims)
+The Hungry
+The Hunters of Ixyatl (Savage Saurus Brute)
 The Ice-Forged Legion (Hellcannons)
 The Immortals (Infernal Ironsworn)
+The Indomitable (Skeleton Hoplites)
+The Jade Daimyo
+The Jade Daimyo: Corrupted Spirit
 The Jade War Drum (Zhangu War Drum)
+The Khagan's Shield (Khan's Guard)
 The Khepra Guard (Tomb Guard)
 The Konigstein Stalkers (Skeleton Warriors)
 The Lamprey's Revenge (Rotting Promethean Gunnery Mob)
+The Lamprey's Revenge (Rotting Prometheans - Gunnery Mob)
+The Last Kastellan
+The Lost 74th Engineer Brigade (Unearthed Laborers)
+The Mardagg
 The Marquis of Masochism (Keeper of Secrets)
+The Martial Saint
+The Masque
 The Masque of Slaanesh
+The Masters Champion
+The Maze-Maker
+The Monkey King
 The Mordheim Balewolves (The Things in the Woods)
+The Night Guard (Khevtuul)
 The Noble Sons Abroad (Pistoliers)
+The Old One
 The Pale Death (Feral Troglodon)
+The Pervaded Void
+The Polybolos (Bone Throwers)
 The Princes of Perfection (Devoted Marauders of Slaanesh – Spears)
+The Prince's Own (Black Watch)
 The Puremane Company (White Lions of Chrace)
+The Quango
+The Raging Tempest (Tempest Djinn)
+The Raven
+The Ravenswyrd
+The Red Chaos Whale
 The Red Duke
+The Red Shields (Altar Guardians – Shields)
+The Red Talons (Handgunners)
+The Rose Lances (Black Knights)
 The Rotting Riders (Rot Knights)
 The Royal Altdorf Gryphites (Demigryph Knights)
 The Runt
+The Salzenmund Shade-Eater
+The Salzenmund Spirit-Eater
+The Scaredless-less (Clanrats Spears & Shields)
 The Scions of Mathlann (Spearmen)
+The Sciowyrm of Vorgal-Thaal (Rotting Merwyrm)
+The Seafarers
+The Sea-Monarch (Sea Nymph)
 The Severed Claw (Aspiring Champions)
 The Shredder of Lustria (Dread Saurian)
 The Sibilant Slaughtercade (Chaos Chariots)
 The Silver Bullets (Handgunners)
 The Siren of Red Ruin (Bloodwrack Medusa)
+The Skaradrim
 The Skolder Guard (Irondrakes)
+The Skulltaker
+The Sky Hunters (Hung Ambushers)
 The Skyhawks
 The Slaughtergard (Chosen of Khorne – Halberds)
 The Snowhorn of Mourn (Stonehorn)
 The Soul of Damnation (Hellcannon)
+The Soul of Shiyama
 The Sourguts (Pink Horrors of Tzeentch)
 The Sphinx of Usekph (Necrosphinx)
 The Spirit of Grungni
 The Sternsmen (Grave Guard)
 The Storm Riders (Lothern Sea Guard)
 The Stubborn Bulls (Empire Knights – Greatswords)
+The Sultan of Flames (Fire Efreet)
 The Sunmaker (Helstorm Rocket Battery)
 The Tattersouls (Flagellants)
 The Things in the Woods
 The Things in the Woods (Ethereal)
 The Thing-Thing (Hell Pit Abomination)
+The Thunderbows (Pathgrinders)
 The Thunderous One (Ancient Stegadon)
 The Tide of Skjold (Zombie Pirate Deckhand Mob)
 The Tithe (Zombies)
+The Tower's Master
+The Trawled Throne (Norscan Longship)
 The Umbral Tide (Salamander Hunting Pack)
 The Voice of the Wastes
 The Vorbergland Broodmother (Jabberslythe)
 The Watchmen in the Night (Armoured Kossars)
+The Wavewatchers (Lothern Sea Guards [Shields])
 The White Wolves (Huntsmen)
+The Wind That Hungers (Ripperdactyl Riders)
 The Wise One
+The Wizard Caliph
 The Wolfhearts (Akshina Ambushers)
+The Wolves of Naglfari (Aspiring Champions)
 The Wonder of the Age (Land Ship)
+The Wretches
+The Writhing (Skavenslaves)
+The Yellow Wind Sage
+The Zilvervloot’s Flagship (Landship)
+Theoderic Gausser
 Theodore Bruckner
+Théodore Bruckner
+Theodoric de Brionne
+Thesops
 Thorek Ironbrow
+Thorek Tête en Fer
+Thorgar the Blooded One
+Thorgar the Daemon Prince
+Thorgard Cromson
 Thorgrim Grudgebearer
+Thorgrim le Rancunier
+Thornspeaker
+Thousand Oxen Guardians
+Thrall Crossbowmen
+Thrall Handgunners
 Throgg
+Throne Guard
 Throni Ironbrow
+Throni Tête-en-fer
+Throt le Galeux
 Throt the Unclean
+Thulgrim the Thief
+Thunder Arrows
 Thunderbarge
 Thunderers
 Thunderers (Grudge-Rakers)
+Thunderspitter
 Thundertusk
+Thundertusk (Altar)
+Thyk Greybeard
+Thymbrin Snakebeard
+Thyrus Gormann
+Tianmen Shenquan
+Tiberius Kael
+Tichi-Huichi's Raiders
+Tichi-Huichi's Raiders (Skink Horned One Riders – Shields)
+Tidesqueaker (Deep)
+Tiger Big 'Uns（Dual Axe）
+Tiger Big 'Uns（Guandao）
+Tiger Warrior Champions
 Tiger Warrior Sawai
 Tiger Warrior Stalkers
 Tiger Warriors
+Tiger-Crowned Champions
+Tiktaqto
 Tiktaq'to
+Tinitt Four-Eyes
+Tirailleurs skinks
+Tirailleurs skinks bénis
 Tiranoc Chariots
+Tireur embusqué
+Tireurs d'élite de Natty Buboe (Jezzails à Malepierre)
+Tisseuse de Charmes (Bête)
+Tisseuse de Charmes (Haute)
+Tisseuse de Charmes (Noire)
+Tisseuse de Charmes (Ombre)
+Tisseuse de Charmes (Vie)
+Tlat'l the Enigma
 Toad Dragon
+Tomb Banshee
+Tomb Barque
+Tomb Corsairs (Breaching Axes)
 Tomb Guard
+Tomb Guard (Great Weapons)
 Tomb Guard (Halberds)
+Tomb Guard Archers
+Tomb Guard Horsemen (Greatswords)
+Tomb Guard Horsemen (Halberds)
 Tomb King
 Tomb Prince
+Tomb Prince (Bow)
+Tomb Prince (Chariot and Bow)
+Tomb Prince (Horse and Bow)
 Tomb Scorpion
+Tomb Swarm
+Tong Long, the Shadow Phoenix
+Tonnerre Bilieux (Géant du Chaos)
+Toog Ogrebiter
+Top-Knotz Savages
+Torches of the Umbral Tide (Salamander Hunting Pack)
+Torch-Gnoblar
+Torchnose the Bright
+Tordrek Hackhart
+Torguud
+Toriour Stag Chariots
+Torston Treehaka
+Tortoise Tank
+Tortured Hydra
+Toruk Helhein
+Totem Guardians
+Totem Guardians (Sunstaffs)
+Tourmenteur Mourngul
+Tower Guard of Tor Elasor
+Trailblazers
+Train de ravitaillement
+Traîneaux de guerre légers
+Traîneaux de guerre lourds
+Traitor King
+Trappeurs Gnoblars
+Traqueurs guerriers tigres
+Travailleurs gobelins
+Travailleurs orques
+Trébuchets de terrain
+Trébuchets de terrain bénis
 Tree Kin
+Treecherik Clanrats
+Treehammer Bulls
+Treehammer Bulls (Dual Weapons)
+Treehammer Maneaters
+Treehammer Maneaters (Dual Weapons)
 Treeman
+Treemen (Stonethrower)
+Trenchbeasts
 Tretch Craventail
+Tretch la-Queue-qui-Frétille
+Triad of Kandorak
+Triades d'Eshin
+Triades d'Iksha (Triades d'Eshin)
+Triades d'Iksha (Triades d'Eshin) – Leurre
+Tribe of the Wolf Marauder
+Trikstab Gribnode
+Tristelames
+Troglodon sauvage
 Trolls
+Trolls de bile
+Trolls de glace norses
+Trolls de pierre
+Trolls d'Eau
+Trolls du Chaos
+Trolls du Chaos (En armure)
+Trolls norses
+Trolls of Ruin
+Trollsearers
+Tromblons Nains du Chaos
+Trompeurs de Loec (Danseurs de Guerre – Lances Asrai)
+Trophy Huntaz
+Troupeau de Squigs
+True Sons of Olric (Keorling Champions)
+Truthsayer (Beasts)
+Truthsayer (Life)
+Truthsayer (Light)
+Truthsayer (Truthsayers)
+Tsarine Katarina
+Tue-les-Hommes de Khorrok (Harde de Bestigors)
+Tueur de Démons
+Tueur de Dragons
+Tueurs
+Tueurs (Régleurs de rancune)
+Tueurs de Bêtes de Bastogne (Écuyers à pied)
+Tueurs de Géants
+Tueurs du Dos du Dragon (Tueurs)
+Tueurs Pourp' (Orques Noirs)
+Tullaris Dreadbringer
+Turntails
 Tuskgor Chariots
+Tuskling of Mogwrath (Feral Mammoth)
+Tuula Bloodhair
+Tyeddi Bearsson
+Tyran
 Tyrant
 Tyrion
+Tyrkel von Hargelfels
 Tzaangors
 Tzar Guard
 Tzar Guard (Great Weapons)
 Tzarina Katarin
+Ualatp's Chosen (Vulture Legion)
+Ualatp's Servants
+Ugoletti's Floating Ordnance 
+(Tortoise Tank)
+Ulfric Grondal
+Ulgor rouge, Prince du Massacre
+Ulric Priest
+Ulrik the Black
 Ulrika Magdova
+Ulrika Magdova Straghov
+Ul-Ruk the Red
+Ulsdau
 Ulthar's Raiders (Rangers – Great Weapons)
+Ulther's Dragon Company
+Umbrella Gunners
+Uncaged Goblins
+Uncaged Ogres
+Uncaged Orcs
 Uncle Furuncle (Great Unclean One)
+Unctuous Mulcher
+Undead Chariots
+Under-Empire Bats
+Under-Empire Flies
+Under-Empire Scorpions
+Under-Empire Spider Riders
+Under-Empire Toads
+Underworld Gate Guardian
+Unearthed Laborers
 Ungor Herd
 Ungor Raiders
 Ungor Spearmen Herd
 Ungor Spearmen Herd (Shields)
+Ungor Thralls
 Ungrim Ironfist
+Ungrim Poing de Fer
+Ungrol Four-Horns
+Unguth the Vile
+Unrad Grimbeard
+Unrad's Excavators (Miners)
+Unruly Spirit
+Urak Soulbane
+Urial the Forsaken
+Ur-Khan
+Ursini Sardus
+Urzkhal the Chainlord
 Ushabti
+Ushabti (Grands Arcs)
+Ushabti (Great Bow)
 Ushabti (Great Bows)
+Ushabti Ancients
+Ushoran
+Usirian's Deathbringer Legion (Royal Archers)
+Usirian's Khepra Riders
+Usirian's Khepra Swarm
 Usirian's Legion of the Netherworld (Nehekharan Warriors)
+Ussingen Challengers (Broken Lances)
+Usta the Witch
+Uvetovsk Kossars
+Valbrand Fireblade
+Valfarr Windirsson
+Valkia la Sanglante
 Valkia the Bloody
+Valmir Gausser
+Valmir von Raukov
+Valnir the Reaper
+Vampire
 Vampire (Death)
+Vampire (Mort)
+Vampire (Ombre)
 Vampire (Shadows)
 Vampire Fleet Admiral (Pistol – Death)
 Vampire Fleet Admiral (Pistol – Deep)
 Vampire Fleet Admiral (Pistol – Vampires)
+Vampire Fleet Admiral (Polearm – Death)
+Vampire Fleet Admiral (Polearm – Deep)
+Vampire Fleet Admiral (Polearm – Vampires)
 Vampire Fleet Admiral (Polearms – Death)
 Vampire Fleet Admiral (Polearms – Deep)
 Vampire Fleet Admiral (Polearms – Vampires)
@@ -1483,75 +5691,459 @@ Vampire Fleet Captain (Death)
 Vampire Fleet Captain (Deep)
 Vampire Fleet Captain (Vampires)
 Vampire Lord
+Van de Kuyper's Treasurers
+Van Klumpf's Buccaneers (Swordsmen)
+Vandred the Majestic
+Vanquishers of Villainy (Youxia - Glaives)
+Vanquishers of Villainy (Youxia Revenants - Glaives)
+Varandi and Valanar
+Vardek Crom the Conqueror
+Vargheist
 Vargheists
 Varghulf
+Vaslo Kruld
+Vatbacks (Poisoned Wind Globadiers)
+Vautours de Sang
+Vazgrat the Lucky
+Vénérables Anciens Écorcefeu (Lémure)
+Veneuses de Slaanesh
 Vengeful Furies
+Vengeful Shards (Razordon Hunting Pack)
+Vengeful Sons of Gunnisson
 Venom Knights of Asaph (Necropolis Knights)
+Ventre-durs
+Ventre-feu
+Verdandi Sea-Maiden
 Verek's Reavers (Black Knights – Lances & Barding)
+Verena's Owls (Militia Archers)
+Vermin Grinder of Haematoma
+Vermines de Choc (Épées et boucliers)
+Vermines de Choc (Hallebardes)
+Verminkeepers
+Verminkin
+Verminkin, Packlord of Moulders
+Verminkin's Grand Experiment (Mutant Rat Ogre)
+Veskit
+Vespero's Vendetta (Duellists)
+Veteran
+Vétéran Scarifié Saurus
 Vicious Ghorgon
+Victor Guttman
+Vilebites (Verminkin)
+Vilitch le Maudit
 Vilitch the Curseling
+Virion the Grim
+Virulent Batteries (Plagueclaw Catapults)
+Viscount Augustine de Chegney
+Viscount d'Alembençon
 Visktrin's Death Squad (Death Runners)
 Vlad von Carstein
+Vlad, Mortarch of Shadow
+Vladimir Stormbringer
+Voland's Venators
+Voleurs eud' dents (Chars à Loups Gobelins)
+Voleuses d'Extase
+Volkmar le Sévère
 Volkmar the Grim
+Volrik Clawhand
+von Carstein Aspirant
+von Carstein Noble
 Von Carstein Vampire Lord
+Vorag Bloodytooth
+Vorn Thugenheim
+Vortex Beast of Nurgle
+Vouivre sauvage
+Vraznak the Horned
+Vrrtkin Clanrats
+Vrrtkin Clanrats (Globes)
+Vrrtkin Clanrats Spears
+Vrrtkin Clanrats Spears (Globes)
+Vrrtkin Death Globe Bombardiers
+Vrrtkin Death Wind Mortars
+Vrrtkin Doom Flayer
+Vrrtkin Doomwheel
+Vrrtkin Gasthrower
+Vrrtkin Globeclaw Catapult
+Vrrtkin Great Gasthrower
+Vrrtkin Great Mortars
+Vrrtkin Hell Pit Abomination
+Vrrtkin Jezzails
+Vrrtkin Master Globadier
+Vrrtkin Poisoned Wind Globadiers
+Vrrtkin Poisoned Wind Mortars
+Vrrtkin Rat Ogres
+Vrrtkin Skavenslaves
+Vrrtkin Skavenslaves Slingers
+Vrrtkin Skavenslaves Spears
+Vrrtkin Stormvermin (Halberds)
+Vrrtkin Stormvermin (Sword & Globes)
+Vrrtkin Warp Grinders
+Vulture Legion (Shortbows)
+W.L.C. Guard
+Waghzen
+Wailing Hags
+Walach Harkon
+Waldakir Rahtep
+Wallripper
+Walter van Hoik
 War Bear Riders
+War Castle
+War Castle (Mangonel)
+War Chariot
+War Elephant
 War Hydra
+War Lion
 War Lions of Chrace
 War Mammoth
 War Mammoth (Warshrine)
+War Pigs
+War Pilgrims (Great Maces)
+War Pilgrims (Maces & Shields)
 War Wagons
 War Wagons (Mortars)
+Warband
+Warband (Great Weapons)
+Warband (Spears)
 Wardancers
 Wardancers (Asrai Spears)
+Wardancers of Slaanesh
+Wardbearers
+Warden
 Wardens of Cythral (Wildwood Rangers)
 Wardens of Montfort (Mounted Yeomen Archers)
+Wardens of the Isle (Huntresses)
+Wardlord
 Wargor
 Warlock Engineer
 Warlock Master
 Warlord
+Warmaster
 Warp Lightning Cannons
+Warpfangs (Clanrats)
 Warpfire Throwers
 Warpfire's Wheel (Doomwheel)
 Warp-Grinders
+Warpguard
+Warpguard (Halberds)
 Warplock Jezzails
+Warpshields (Clanrats Shields)
+Warrhak Skullcrusher
 Warrior Priest
+Warrior Priest of Taal
+Warriors
+Warriors of Choteich (Warband)
 Warriors of Dragonfire Pass (Dwarf Warriors)
+Warriors of Tlax
+Warripper
+Warspeaker
+Warsphix
+Warsphix (Harpoon Launcher)
+Wastelord Viciss Baukis
+Way Stalker
 Waystalker
 Waywatchers
+Wazar the Cruel
+Wei-Jin Sky-junk Fleet
+Wen Zhengsheng
+Werekin of Fjirgard (Skin Wolves)
+Westland Hunters
 Wheelz of Dooom (Doomwheel)
+Whispering Nell
 White Lions of Chrace
+White-Crested Guard
 Wight King
+Wightkin
+Wights of Stonewraith Tarn
+Wights of the Twisted Spire (Skeleton Hoplites)
+Wild Boars
+Wild Ghosts
+Wild Griffon
 Wild Hunters of Kurnous (Wild Riders – Shields)
 Wild Riders
 Wild Riders (Shields)
+Wildland Gunners
+Wildspeaker
 Wildwood Rangers
+Willi Ziege
+Wiltings
+Wind Company
+Windmane Acolytes (Centigor Great Bow)
+Windspeaker
+Wing of Sotek (Terradon Riders – Fireleech Bolas)
 Winged Lancers
+Winged Rider of Tepok (Crystalback)
+Wingnot
 Winterheart Guard (Eternal Guard – Shields)
+WIP NOT PLAYABLE ONLY FOR TESTING Campaign- Screaming Skull Catapult (Trueseeker Skulls)
+Witch Doctor (Beasts)
+Witch Doctor (Death)
+Witch Doctor (Deep)
+Witch Doctor (Fire)
 Witch Elves
+Witch Guard
+Witch hunter
 Witch Hunter
+Witch Hunter Inquisitor General
+Witch Hunter of Gazul
+Woad Raiders
 Wolf Rats
 Wolf Rats (Poison)
+Wolfclaw Reavers (Garbag's Skaven Wolf Chariots)
+Wolfgang Holswig-Abanauer
+Wolfram Hertwig
+Woodbelly
+Wormoil Slingers
 Worshippers of the Crow (Marauders – Great Weapons)
 Wraiths of the Frozen Heart (Dryads)
 Wrathmongers
+Wrathstorm Pyroclasts
+Wu Xing Monks
 Wu Xing War Compass
+Wulfrik le Vagabond
 Wulfrik the Wanderer
+Wundal the Wizard
 Wurrzag
+Wychwethyl the Wild
 Wyrd Spawn (Chaos Spawn)
+Wyrdstone Warriors (Warpguards)
+Wyrm des Mers
+Wyvern Riders
+Xen Qi, the New Martial Marquis
+Xen Wu
+Xhili'Zkuki
+Xian Feng
+Xian Feng (Great Longma)
+Xian Feng (Red Hare)
+Xian Feng, the Blood Dragon
+Xian Feng, the Peerless Warrior
+Xingyao (Beheaded)
+X'plosion de spores Logey Bogey (Chariots à Pompe Snotlings)
+Xu Yaoji
+Xuanwu (Black Tortoise)
+Xuanwu, the Guardian Beast of Water
+Xue Ding, the Riverlands Guardian
+Xuq'ls
+Yang Shen
+Yaoguai
+Ye Jia
+Ye Sheng, the Usurper
+Yellow Heaven Bannermen (Revenants)
+Yétis
+Yeux du Désert (Rôdeurs Sépulcraux)
+Yeux-d'Aigles de Drakira (Forestiers)
 Yhetees
+Yhetees (Great Weapons)
+Yhetees (Ironfists)
+Yi Qing, the Horde-Queller
+Yi Yaohua, the Master of Incense
+Yin Dameng
+Ying Jin, the Dazzling Magistrate
+Yin-Yang Protectors
+Ymir
+Ymir Dragon
+Ymwrath l'Éternel
 Ymwrath the Eternal
+Yngve Aarseth
 Yoked Carnosaur
+You need other mod in order to play this character, unit
+Young Coatl
+Young Slingers
+Youxia Revenants
+Youxia Revenants (Glaives)
+Yuan Bo, le Dragon de Jade
 Yuan Bo, the Jade Dragon
+Yun Xiang, the Emperor's Chosen
+Yunding Lishi (Cloudwalking Giant)
+Yunlan, the Imperial Gale
+Yusak Devoted Marauders of Slaanesh (Spears)
+Yusak Horsemen
+Yusak Horsemen (Throwing Axes)
+Yusak Hunters (Javelins)
+Yusak Hunters (Throwing Axes)
+Yusak Marauder Horsemen (Throwing Axes)
+Yusak Marauders
+Yusak Marauders (Great Weapons)
+Yusak Spearmen
+Yuwei Ha Feng
+Yvarn of Meletan
+Zacharias the Everliving
+Zakhar the Sorcerer
+Zakhar's Illusion
+Zandri Blackshields (Skeleton Spearmen)
+Zao Korr
+Zar Uzelek
 Zarrivyk, Feathered-Prince
+Zarrivyk, Prince à plumes
+Zegepraal's Paixhan (Great Cannons)
 Zhangu War Drum
+Zhao Ming, le Dragon de Fer
 Zhao Ming, the Iron Dragon
+Zhao Qi, the Moonlight Master
+Zhatan le Noir
 Zhatan the Black
+Zhen Leigong (Lord of Thunder)
+Zhou Gongxuan
+Zhuque (Vermilion Bird)
+Zhuque, the Guardian Beast of Fire
+Ziad Zhang
+Zigouillards
 Zintler's Reiksguard (Reiksguard)
+Zlatgar
+Zoat Elder
 Zoats
+Zog Von Orklid
+Zombie Archers
+Zombie Archers (Putrid-Shafts)
+Zombie Dragon
 Zombie Pirate Deckhand Mob
 Zombie Pirate Deckhand Mob (Polearms)
+Zombie Pirate Deckhands Mob
+Zombie Pirate Deckhands Mob (Polearms)
 Zombie Pirate Gunnery Mob
 Zombie Pirate Gunnery Mob (Bombers)
+Zombie Pirate Gunnery Mob (Cutlass & Pistol)
 Zombie Pirate Gunnery Mob (Hand Cannons)
 Zombie Pirate Gunnery Mob (Handgunners)
+Zombie Pirate Gunnery Mob (Handguns)
+Zombie Pirate Gunnery Mob (Rifles)
+Zombie Witch Hunter
 Zombies
+Zombies (Longspears)
+Zor'ead Warpscorched
+Zzzzap Zzzzap d'Ikit (Canons à Malefoudre)
+不死军（炼狱铁誓）
+世鹏天王
+两仪宿卫
+乌特罗斯·穆切尔
+九府旗卒
+争鸣之刃
+云麾司戈
+云鼎力士
+五行武僧
+亘古垣英
+伊梵·梅莱坦
+伊米尔德拉克
+伯恩特·阿伯沃德
+关宁彍骑
+千牛勋卫
+南离烛守
+南阳锐士
+四目神机军
+国王·贝赫德什二世
+地狱炮集群
+坤殿虎士
+埃厄拉兰·灰鹰
+埃米尔·瓦伊格
+天启战帮神选者
+天宿卫（龙帝禁军）
+天舟舰队
+天蓬元帅
+奇萨尔·林行者
+奥斯卡·瑞托霍夫
+奸奇混沌战争神龛
+奸奇神选者
+奸奇神选者(长戟）
+威灵天尊
+尖啸飞鲨群
+尤里克祭司
+布瑞克·格里姆
+御麟射声郎
+怯薛(步行禁卫）
+恐虐神选者（双持武器）
+戈特里·汉默森
+戍黍玉郎
+托雷克·赫尔海因
+折冲宿卫
+拉斐特·杜托罗
+摩尔金·葛纳森
+断妄天王
+斯科里·岩须
+昊天罗汉
+暴风鼠（剑盾）
+暴风鼠（长戟）
+朔方白毦
+格林姆迦尔·阿勒贝利
+梅热波耶
+波琴尼奇
+洗海潮廷
+混沌之剑（步行禁卫）
+混沌勇士
+混沌战争神龛
+渔野铳手
+炎霖坊汉
+炼狱守卫（宽刃火枪）
+炼狱守卫（重型武器）
+炼狱铁誓
+特里克·冯·哈格尔芬斯领主
+狝魅龙僧
+狮鹫骑士
+玉石护军
+玉符勇士（剑盾）
+玉符勇士（斧盾）
+玉符弩手
+玉血元君
+玉血道人
+瓦特尔·范·赫克
+甘德阿尔（凯姆勒）（双手剑）
+留下断后的龙帝禁军
+矮人铁雹铳手
+碧庭敕卫
+神尊奸奇粉色惧妖
+神祭神选者
+笈多王的猎灾者
+米登领白狼
+纳垢神选者（重型武器）
+终焉的混沌怒妖
+终焉的溃烂宿主
+终焉的炽灼告密者
+终焉的狱铸军团
+终焉的迷情魔使
+胡族勇士
+胡族弓骑手
+胡族甲士
+色孽神选者（地狱长鞭）
+艾莎·金鬃
+苍鼠特工
+莱克索尔·血斧
+虎冠威卫
+诗阎摩之魄
+诛浮天王
+费斯塔克·克兰
+达格玛·纳赫格本
+迷宫匠人
+金吾翊卫
+钢铁恶魔
+铁甲快铳手
+锻铁战士
+锻铁战士（重锤）
+镔西新军
+长垣边军
+长武车舆
+长牙力士
+长矛氏族鼠
+闻尘天王
+阿尔布雷希特·瓦多夫爵士
+阿纳斯塔西娅·维尔科娃
+陵光神君
+隶卫虎贲(龙帝禁军）
+雷鸣长铳手
+震旦武人
+领主·花花
+飙风边军
+首席灵蜥祭司克希力·兹库奇
+马丁·伏特堡，努恩帝国射击学院首席火药匠
+高墙铁卫
+鲁道夫·维斯卡
+黄风大圣
+黑域虎贲猛士
+齐亚德·张
+龙帝禁军
+龙江天师
+龙炎坦克
+龙炎射手
+龙甲屠夫
+龙铳神机军
+龙须守卫
+龙须守卫（战锤）
+龙须守卫（重剑）
+龚特尔·奥斯特曼

@@ -285,9 +285,9 @@
         {"icon": "mslBlackKnightsLances", "name": "Black Knights (Lances)", "qty": 1, "note": "Chevaliers morts de Mousillon, lance au poing — le cœur de la charge, dopé par le +15% de bonus de charge en attaque (faction)"},
         {"icon": "knightsOfBougar", "name": "Knights of Bougar", "qty": 1, "note": "Régiment de Renom de la faction — la bande du Boucher, en écho au héros légendaire Bougars"},
         {"icon": "hellsteedKnights", "name": "Hellsteed Knights", "qty": 2, "note": "Cavalerie volante infernale — frappe l'artillerie et les casters pendant que la chevalerie enfonce"},
-        {"icon": "mslMenAtArmsPolearm", "name": "Men-at-Arms of Mousillon (Hallebardes)", "qty": 2, "note": "+8 de Commandement et +8% de renouvellement (seigneur) — la piétaille famélique de la cité maudite, bien plus tenace qu'elle n'en a l'air, qui fixe l'ennemi pour la charge"},
+        {"icon": "mslMenAtArmsPolearm", "name": "Men-at-Arms (Polearm)", "qty": 2, "note": "+8 de Commandement et +8% de renouvellement (seigneur) — la piétaille famélique de la cité maudite, bien plus tenace qu'elle n'en a l'air, qui fixe l'ennemi pour la charge"},
         {"icon": "mslBowmenPox", "name": "Peasant Bowmen (Flèches Pestilentielles)", "qty": 2, "note": "Mêmes bonus paysans (seigneur) — flèches empoisonnées par la peste de Mousillon, elles affaiblissent avant le contact"},
-        {"icon": "mslGraveGuardGreat", "name": "Grave Guard (Grandes Armes)", "qty": 1, "note": "Morts-vivants d'élite en armes lourdes — ancre de mêlée qui tient là où les paysans cèdent"},
+        {"icon": "mslGraveGuardGreat", "name": "Grave Guard (Great Weapons)", "qty": 1, "note": "Morts-vivants d'élite en armes lourdes — ancre de mêlée qui tient là où les paysans cèdent"},
         {"icon": "ghostsOfGrismerie", "name": "The Ghosts of Grismerie", "qty": 1, "note": "Régiment de Renom éthéré — immunisé aux dégâts non magiques, il fixe les unités que la cavalerie viendra briser"},
         {"icon": "cursedTrebuchet", "name": "Cursed Field Trebuchet", "qty": 1, "note": "Trébuchet maudit — l'artillerie bretonnienne pervertie, projectiles chargés de magie noire"},
         {"icon": "dracoleech", "name": "Dracoleech", "qty": 1, "note": "Monstre volant de Mousillon — chasse les grandes cibles et sème la terreur dans les lignes arrière"}

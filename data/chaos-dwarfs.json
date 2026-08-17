@@ -20,7 +20,7 @@
       "army": [
         {"icon": "bullCentaurRenders", "name": "Bull Centaur Renders", "qty": 5, "note": "Ward Save cumulé de 25% (+10% faction, +15% seigneur) — cavalerie lourde quasiment impossible à abattre"},
         {"icon": "hashutsDarkRavagers", "name": "Hashut's Dark Ravagers (Bull Centaur Renders)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : Ward Save cumulé de 25% (+10% faction, +15% seigneur) — variante d'élite unique des Bull Centaur Renders"},
-        {"icon": "chaosDwarfWarriorsGW", "name": "Chaos Dwarf Warriors (Armes Lourdes)", "qty": 4, "note": "Ligne de mêlée robuste pour tenir le centre pendant que la magie et l'artillerie font leur travail"},
+        {"icon": "chaosDwarfWarriorsGW", "name": "Chaos Dwarf Warriors (Great Weapons)", "qty": 4, "note": "Ligne de mêlée robuste pour tenir le centre pendant que la magie et l'artillerie font leur travail"},
         {"icon": "blunderbusses", "name": "Chaos Dwarf Blunderbusses", "qty": 3, "note": "Ligne de tir à courte portée, dégâts de zone fiables contre l'infanterie groupée"},
         {"icon": "graniteGuard", "name": "The Granite Guard (Chaos Dwarf Blunderbusses)", "qty": 1, "note": "Régiment de Renom des Blunderbusses — les effets d'Astragoth ne couvrent que les Bull Centaur Renders et lui-même. Ce tir de près est ce qui brise une charge avant qu'elle n'atteigne un seigneur à la mobilité réduite"},
         {"icon": "hellcannon", "name": "Hellcannon", "qty": 2, "note": "Astragoth est le seigneur le plus lent du roster : il ne peut pas imposer l'engagement, il doit l'attendre. Ces deux Hellcannon sont ce qui force l'ennemi à venir à lui plutôt que de camper hors de portée"},
