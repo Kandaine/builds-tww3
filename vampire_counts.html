@@ -12,7 +12,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vampire Counts — Total War: WARHAMMER III</title>
 <link rel="icon" href="assets/favicon.ico">
-<link rel="stylesheet" href="css/style.css">
+<!-- Polices : appelées ici et non depuis la feuille de style. Un @import y
+     sérialisait les requêtes (feuille → import → polices, soit trois
+     allers-retours). Les deux `preconnect` ouvrent la connexion vers Google
+     pendant que le reste se charge, et le `<link>` part en parallèle du CSS.
+     Deux familles demandées au lieu de cinq : Space Grotesk et Inter n'étaient
+     utilisées par aucune page de faction, et Cormorant Upright coûtait 33 Ko
+     pour la seule épithète du seigneur. Seules les graisses réellement
+     présentes à l'écran sont demandées. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+
+<!-- PROTOTYPE V2 : cette page seule charge css/v2.css au lieu de css/style.css.
+     Les 31 autres pages de faction restent sur style.css et sont inchangées.
+     Pour revenir en arrière : remettre href="css/style.css" ci-dessous. -->
+<link rel="stylesheet" href="css/v2.css">
 </head>
 <body>
 
@@ -34,10 +49,12 @@
 <!-- Ordre de chargement obligatoire, chaque fichier utilisant le précédent :
        1. js/core.js          — catalogue des factions + utilitaires partagés
        2. js/units/vampire-counts.js — images des unités de CETTE faction uniquement
-       3. js/app.js           — rendu de la page -->
+       3. js/app-v2.js        — rendu de la page (PROTOTYPE V2)
+     Cette page seule utilise app-v2.js ; les 31 autres restent sur app.js.
+     Pour revenir en arrière : remettre src="js/app.js" ci-dessous. -->
 <script src="js/core.js"></script>
 <script src="js/units/vampire-counts.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app-v2.js"></script>
 
 </body>
 </html>

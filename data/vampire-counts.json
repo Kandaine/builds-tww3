@@ -8,19 +8,6 @@
     "faction": "Von Carstein",
     "seal": "vlad",
     "portraitImage": "assets/portraits/vlad.png",
-    "attributes": {
-      "source": "Fiche officielle de Vlad von Carstein (wiki Total War: WARHAMMER III).",
-      "items": [
-        {"label": "Spell Mastery", "value": "100% — maîtrise complète des sorts lancés"},
-        {"label": "Causes Fear", "value": "Effraie les unités ennemies à proximité, immunisé lui-même à la peur"},
-        {"label": "Causes Terror", "value": "Peut faire fuir temporairement sa cible au contact"},
-        {"label": "Encourage", "value": "Aura de commandement pour les unités alliées proches"},
-        {"label": "Hide (forest)", "value": "Peut se dissimuler en forêt tant que l'ennemi n'approche pas trop"},
-        {"label": "Undead", "value": "Ne fuit jamais, immunisé à la terreur, devient instable à faible moral"},
-        {"label": "Siege Attacker", "value": "Peut attaquer portes et murailles sans tour de siège ni bélier"},
-        {"label": "Resilience", "value": "Immunisé à l'attrition en territoire vampirique"}
-      ]
-    },
     "lore": "<p>Nul ne connaît vraiment les origines de Vlad. Ce que l'Empire retient, c'est l'étranger raffiné qui s'installa en Sylvanie au IIe siècle, épousa <em>Isabella Sylvanas Odile Nachthafen</em>, dernière héritière d'une lignée locale, et devint par ce mariage Comte-Électeur de la province.</p>\n      <p>Pendant des décennies, Vlad gouverna dans l'ombre, patient et méthodique, tissant sa toile parmi la noblesse sylvanienne avant de révéler sa vraie nature. Lorsqu'il leva enfin ses armées de morts-vivants, ce ne fut pas dans la fureur, mais avec la froide certitude d'un maître d'échecs déplaçant ses dernières pièces : ainsi débutèrent les Guerres des Vampires.</p>\n      <p>Vlad incarne l'aristocrate vampirique dans ce qu'il a de plus abouti — charismatique, discipliné, capable d'inspirer une loyauté que même la mort ne rompt.</p>",
     "effects": "\n      <div class=\"army-subhead\" style=\"margin-top:0;\">Effets de faction</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Commence avec <strong>1 Blood Kiss</strong></div>\n        <div class=\"attr-item\">Accès à un bâtiment unique dans <strong>Castle Drakenhof</strong></div>\n        <div class=\"attr-item\">Portée de déplacement sur la carte de campagne : <strong>+10%</strong> (toutes les armées)</div>\n        <div class=\"attr-item\">Commence avec <strong>Isabella von Carstein</strong> comme Legendary Hero</div>\n        <div class=\"attr-item\">Régiment favori : <strong>+1 capacité</strong> pour les Sternsmen (Grave Guard)</div>\n      </div>\n      <div class=\"army-subhead\">Effets du seigneur</div>\n      <div class=\"attr-list\">\n        <div class=\"attr-item\">Plafond de soin en bataille : <strong>+50%</strong> quand Vlad combat dans la même armée qu'Isabella von Carstein</div>\n        <div class=\"attr-item\">Toutes les unités de l'armée de Vlad reçoivent le <strong>Vanguard Deployment</strong> (déploiement avancé)</div>\n      </div>\n      <div class=\"stats-caveat\">Capture d'écran de l'onglet Lord Details en jeu (Vlad von Carstein).</div>\n    ",
     "build": {

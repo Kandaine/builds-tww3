@@ -1,0 +1,1511 @@
+/* ============================================================================
+   v2.css — FEUILLE DE STYLE DU PROTOTYPE V2, chargée par vampire_counts.html
+   UNIQUEMENT. Les 31 autres pages de faction continuent d'utiliser style.css
+   et ne sont donc pas affectées par ce fichier.
+
+   POUR REVENIR EN ARRIÈRE : remplacer, dans vampire_counts.html, la balise
+       <link rel="stylesheet" href="css/v2.css">
+   par  <link rel="stylesheet" href="css/style.css">
+   Rien d'autre n'est à défaire.
+
+   ── Ce que cette feuille change par rapport à style.css ────────────────────
+   ÉTAPE 1 — le système de tokens est introduit sans modifier le rendu :
+   448 propriétés comparées entre les deux feuilles, zéro écart. On prouve
+   d'abord que le système reproduit l'existant.
+
+   ÉTAPE 3 — la mise en page est réécrite en MOBILE-FIRST. Les règles de base
+   décrivent le téléphone ; les `@media (min-width: …)` en fin de fichier
+   ajoutent ce que les écrans plus larges permettent. Le défilement avant le
+   contenu passe de 1 077 px à 132 px sur mobile.
+
+   ÉTAPE 4 — les échelles entrent en vigueur, et le rendu change :
+     • 5 tailles de texte au lieu de 13 (les 10,5 / 12,5 / 13,5 / 14,5 / 15,5
+       disparaissent) ;
+     • 7 valeurs d'espacement au lieu de 26, aucune valeur libre ne subsiste ;
+     • 3 familles de polices au lieu de 5 — Space Grotesk et Inter étaient
+       téléchargées alors qu'aucune page de faction ne les utilise ;
+     • le chargement des polices quitte cette feuille pour le HTML (voir
+       ci-dessous), et passe de 263 Ko à 149 Ko.
+
+   ── Le principe de la direction B ──────────────────────────────────────────
+   Les variables sont séparées en deux familles, et c'est toute l'idée :
+
+     • SURFACES — fonds, bordures, ornements. Chaque faction les redéfinit
+       librement : c'est là que vit son ambiance.
+     • TEXTE — les couleurs qui peignent des caractères lisibles. Elles
+       proviennent d'un jeu restreint dont le contraste est garanti.
+
+   L'audit a montré qu'un seul élément du site échoue au contraste, et pour
+   une raison structurelle : `.unit-qty` est le seul texte courant peint avec
+   --accent-secondary, une variable d'ornement. Séparer les deux familles rend
+   ce défaut impossible à réintroduire, au lieu de dépendre de la vigilance.
+
+   ── Ce qui n'a pas été repris de style.css ─────────────────────────────────
+   Tous les styles de la page de recherche (.search-*, .result-*, .faction-tab)
+   ont été écartés : vérifié, aucun n'est utilisé par une page de faction.
+   Les 32 blocs de thème ne sont pas repris non plus — seul Vampire Counts est
+   défini ici, les autres suivront à l'étape 7 si le prototype est validé.
+   ============================================================================ */
+
+/* Les polices ne sont plus chargées ici. Un `@import` en tête de feuille
+   SÉRIALISE les requêtes : le navigateur doit récupérer cette feuille, y
+   découvrir l'import, demander la feuille Google, et seulement alors demander
+   les fichiers de police — trois allers-retours avant le premier caractère
+   correctement rendu. L'appel est désormais dans vampire_counts.html, précédé
+   de deux `preconnect`, ce qui permet de tout lancer en parallèle. */
+
+/* ----------------------------------------------------------------------------
+   1. TOKENS — les valeurs de réglage, en un seul endroit.
+
+   Les tokens sont nommés par RÔLE (--txt-note, --esp-carte) et non par valeur
+   (--txt-13, --esp-12). C'est ce qui permettra, à l'étape 4, de remplacer une
+   valeur sans avoir à retrouver tous ses usages : on change le token, tout ce
+   qui joue ce rôle suit.
+   ---------------------------------------------------------------------------- */
+:root{
+
+  /* --- Familles de polices ------------------------------------------------
+     Cinq familles aujourd'hui, réduites à trois à l'étape 4. Nommées par rôle
+     pour que la réduction se fasse ici et nulle part ailleurs. */
+  /* DEUX familles, et non trois. Cormorant Upright a été retirée à l'étape 4 :
+     elle coûtait 33 Ko — 22 % du poids des polices — pour un seul élément,
+     l'épithète sous le nom du seigneur, soit une ligne par fiche. L'épithète
+     utilise désormais la police de lecture en italique, déjà chargée. */
+  --police-titre:   'Cinzel', serif;      /* noms propres, intitulés */
+  --police-lecture: 'EB Garamond', serif; /* corps de texte, lore, épithète */
+
+  /* --- ÉCHELLE TYPOGRAPHIQUE (étape 4) ------------------------------------
+     Cinq degrés, contre les 13 tailles relevées par l'audit — dont 10,5 px,
+     12,5 px, 13,5 px, 14,5 px et 15,5 px, qui trahissaient des valeurs posées
+     à l'œil une par une. Cinq tailles suffisent à hiérarchiser une fiche ;
+     treize créent du bruit sans créer de hiérarchie.
+     Les paliers fluides (`clamp`) suivent la largeur de l'écran entre deux
+     bornes : le texte grandit avec la place disponible, sans saut brusque. */
+  --t-1: 13px;                        /* mentions, étiquettes, notes d'unité */
+  --t-2: 15px;                        /* texte d'appui, quantités, noms d'unité */
+  --t-3: clamp(16px, 2.4vw, 18px);    /* corps de lecture */
+  --t-4: clamp(18px, 3.5vw, 22px);    /* titres de section */
+  --t-5: clamp(28px, 7vw, 42px);      /* nom du seigneur */
+
+  /* Les rôles pointent vers l'échelle. C'est ce niveau d'indirection qui
+     permet de changer une taille sans retrouver tous ses usages : on modifie
+     le palier ci-dessus, et tout ce qui joue ce rôle suit. */
+  --txt-micro:      var(--t-1);  /* étiquette de faction, lien de retour */
+  --txt-mini:       var(--t-1);  /* épithète en liste, note d'unité */
+  --txt-petit:      var(--t-1);  /* sous-titres de section d'armée */
+  --txt-normal:     var(--t-2);  /* nom en liste, total de slots */
+  --txt-unite:      var(--t-2);  /* nom d'unité dans une carte */
+  --txt-quantite:   var(--t-2);  /* quantité d'unité (×4) */
+  --txt-note:       var(--t-2);  /* encadré de note finale */
+  --txt-attribut:   var(--t-3);  /* lignes d'attributs, carte magie */
+  --txt-epithete:   var(--t-3);  /* épithète sous le nom du seigneur */
+  --txt-corps:      var(--t-3);  /* corps de texte */
+  --txt-sidebar:    var(--t-4);  /* titre de la barre latérale */
+  --txt-section:    var(--t-4);  /* titre de section */
+  --txt-titre:      var(--t-5);  /* nom du seigneur */
+
+  /* --- ÉCHELLE D'ESPACEMENT (étape 4) --------------------------------------
+     Sept valeurs remplacent les 26 relevées par l'audit. Toutes les marges et
+     tous les retraits de la feuille s'y alignent désormais : plus aucune
+     valeur libre, donc plus de dérive possible. */
+  --esp-1:  4px;
+  --esp-2:  8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+  --esp-7: 48px;
+
+  /* --- Rayons et bordures -------------------------------------------------- */
+  --rayon-net:  2px;   /* étiquettes */
+  --rayon-doux: 3px;   /* cartes, encadrés */
+  --rayon-rond: 6px;   /* vignettes d'unité */
+}
+
+/* ----------------------------------------------------------------------------
+   2. THÈME VAMPIRE COUNTS
+
+   Les valeurs sont celles de style.css, à l'identique. Seule leur ORGANISATION
+   change : elles sont désormais rangées en deux familles distinctes.
+   ---------------------------------------------------------------------------- */
+:root, .theme-vampire-counts{
+
+  /* --- SURFACES : libres par faction, c'est ici que vit l'ambiance --------- */
+  --bg:            #150d12;
+  --bg-glow:       #201319;
+  --panel:         #1e1218;
+  --panel-light:   #2a1720;
+  --panel-deep:    #170e13;
+  --border:        #3d2530;
+
+  /* --- ORNEMENTS : traits, filets, fonds d'accent. JAMAIS de texte courant.
+     C'est la règle qui empêche de reproduire le défaut de `.unit-qty`. ------ */
+  --ornement:        #8a2332;   /* ex --accent-primary */
+  --ornement-vif:    #b9354a;   /* ex --accent-primary-bright */
+  --ornement-rgb:    138,35,50;
+  --ornement-2:      #c9a876;   /* ex --accent-secondary */
+  --ornement-2-rgb:  201,168,118;
+
+  /* --- TEXTE : jeu restreint, contraste garanti ---------------------------
+     Chaque valeur ci-dessous doit atteindre 4,5 de contraste sur --panel,
+     mesuré EN COMPOSANT les couches (voir la note de méthode en fin de
+     fichier). Contrastes relevés pour cette faction :
+       --texte                16,1   --texte-secondaire      6,6
+       --texte-titre           4,9   --texte-mise-en-avant   7,4              */
+  --texte:               #e9e0d3;  /* texte principal */
+  --texte-secondaire:    #a89283;  /* notes, épithètes, mentions */
+  /* Éclairci de #b9354a à #d16172. L'ancienne valeur mesurait 3,14 sur le
+     dégradé de fond — sous le seuil de 4,5 — ce qui rendait les titres de
+     section (« LORE », « BUILD RECOMMANDÉ ») moins lisibles qu'ils ne
+     devraient. Défaut PRÉEXISTANT, présent à l'identique dans style.css, que
+     mon audit avait manqué : je mesurais alors contre le noir, alors que le
+     fond réel est un dégradé plus clair, donc moins contrasté. La teinte est
+     conservée, seule la clarté monte. */
+  --texte-titre:         #d16172;  /* titres de section */
+  --texte-mise-en-avant: #c9a876;  /* valeurs à repérer d'un coup d'œil */
+}
+
+/* ----------------------------------------------------------------------------
+   2 ter. THÈME NORSCA — le cas le plus dur du site
+
+   Choisi comme second thème pour éprouver la règle avant de généraliser :
+   Norsca cumule le pire contraste de quantité d'unité (2,14) et la plus longue
+   liste de seigneurs (25). Si la règle tient ici, les 30 autres factions ne
+   sont plus que de la répétition.
+
+   Ce que ce thème démontre : l'ambiance n'est PAS contrainte. Le rouge rouille
+   #9c3b2a reste la couleur d'ornement de la faction, et continue de peindre
+   filets et fonds. Seule sa déclinaison TEXTE a été éclaircie pour atteindre
+   le seuil de lisibilité. Les deux vivent côte à côte.
+   ---------------------------------------------------------------------------- */
+.theme-norsca{
+
+  /* --- SURFACES : inchangées, reprises telles quelles de style.css --------- */
+  --bg:            #0a0f14;
+  --bg-glow:       #101c28;
+  --panel:         #0d151c;
+  --panel-light:   #16232e;
+  --panel-deep:    #0a1117;
+  --border:        #1c2c38;
+
+  /* --- ORNEMENTS : libres, aucun n'est contraint par la lisibilité --------- */
+  --ornement:        #5a8ab0;
+  --ornement-vif:    #7db3d6;
+  --ornement-rgb:    90,138,176;
+  --ornement-2:      #9c3b2a;   /* rouge rouille : filets, bordures, fonds */
+  --ornement-2-rgb:  156,59,42;
+
+  /* --- TEXTE : contrastes mesurés sur les fonds réellement composés --------
+     Mesures prises dans le PIRE cas de chaque variable, c'est-à-dire sur le
+     fond le plus clair qu'elle rencontre — l'entrée active de la liste et la
+     pastille de quantité posent toutes deux un voile d'ornement qui éclaircit
+     le fond et réduit donc le contraste.
+       --texte                15,7   --texte-secondaire      4,7
+       --texte-titre           7,6   --texte-mise-en-avant   4,5              */
+  --texte:               #e8eef2;
+  /* Éclairci de #8596a2 à #899aa6 : l'épithète de l'entrée ACTIVE mesurait
+     4,45, soit cinq centièmes sous le seuil. Invisible à l'œil, mais c'est
+     exactement le genre d'écart qu'une vérification manuelle laisse passer —
+     et il ne s'est révélé que sur cette seconde faction. */
+  --texte-secondaire:    #899aa6;
+  --texte-titre:         #7db3d6;  /* conforme d'origine, non modifié */
+  /* Éclairci depuis l'ornement #9c3b2a, qui ne mesurait que 2,14 sur la
+     pastille de quantité — le pire contraste relevé sur les 32 thèmes.
+     La teinte rouille est conservée, seule la clarté monte.
+     Valeur retenue après DEUX passes : #d67564 suffisait pour la quantité
+     (4,60) mais pas pour le chiffre romain de l'entrée active (4,26), qui
+     repose sur un voile d'ornement plus clair. Une variable de texte doit
+     tenir sur TOUS les fonds qu'elle rencontre, pas seulement sur le plus
+     favorable — c'est la leçon que Norsca apporte et que Vampire Counts,
+     dont tous les fonds étaient sombres, ne pouvait pas révéler. */
+  --texte-mise-en-avant: #db7a69;
+}
+
+/* ----------------------------------------------------------------------------
+   2 bis. LA RÈGLE À NE PAS ENFREINDRE
+
+   Une propriété `color` ne prend JAMAIS une variable --ornement-*.
+   Les ornements peignent des fonds, des bordures, des filets ; les textes
+   prennent leurs couleurs dans la famille --texte-*.
+
+   Pourquoi cette règle plutôt que de la vigilance : l'audit a montré qu'un
+   seul manquement — `.unit-qty` peint avec --accent-secondary — suffisait à
+   rendre illisible l'information la plus utile du site sur 12 thèmes. Une
+   faction n'a aucune raison de vérifier le contraste de sa couleur
+   décorative ; elle en a toutes de vérifier celui de ses couleurs de texte.
+
+   Contrôle, à lancer après toute modification de cette feuille :
+       grep -nE '^\s*color: *var\(--ornement' css/v2.css
+   La commande ne doit rien renvoyer.
+
+   Les anciens noms (--accent-primary, --text, --text-dim) ont disparu : plus
+   aucune règle ne les utilisait une fois app-v2.js en place.
+   ---------------------------------------------------------------------------- */
+
+
+
+/* ----------------------------------------------------------------------------
+   2 quater. LES 28 AUTRES FACTIONS (étape 7)
+
+   Chaque bloc reprend TELLES QUELLES les surfaces et les ornements de
+   style.css : l'ambiance de chaque faction est strictement conservée. Seules
+   les quatre variables de TEXTE ont été dérivées, et uniquement là où le
+   contraste l'imposait.
+
+   Méthode : pour chaque variable, on calcule son ratio sur le fond le plus
+   CLAIR qu'elle peut rencontrer — page, panneau, ou voile d'ornement à 18 %
+   posé par l'entrée active et la pastille de quantité. Tant que le seuil de
+   4,5 n'est pas atteint, la couleur est éclaircie par pas de 1 sur les trois
+   canaux, ce qui remonte la clarté sans toucher à la teinte.
+
+   Le commentaire de chaque bloc donne les quatre ratios obtenus.
+
+   Résultat : 13 factions ont eu besoin d'un éclaircissement sur la mise en
+   avant (la quantité d'unité), 2 sur le titre de section, 1 sur le texte
+   secondaire. Les 16 autres passaient déjà.
+
+   DEUX FACTIONS MANQUENT VOLONTAIREMENT ICI : `hung` et `undead-legions`
+   n'avaient AUCUN bloc de thème dans style.css. Elles retombaient donc sur
+   :root, c'est-à-dire la palette des Comtes Vampires — les nomades des
+   steppes du Hung s'affichent en rouge vampirique depuis toujours. Ce
+   comportement est conservé à l'identique pour ne pas changer le site au-delà
+   de la refonte convenue, mais il mérite une décision : leur donner une
+   palette propre est un choix de design, pas une correction technique.
+   ---------------------------------------------------------------------------- */
+.theme-albion{
+  --bg:            #0b1512;
+  --bg-glow:       #12211d;
+  --panel:         #101a17;
+  --panel-light:   #1a2b26;
+  --panel-deep:    #0a120f;
+  --border:        #233a34;
+
+  --ornement:        #2e8f8a;
+  --ornement-vif:    #46b8b1;
+  --ornement-rgb:    46,143,138;
+  --ornement-2:      #b7a15a;
+  --ornement-2-rgb:  183,161,90;
+
+  /* texte : 13.94 | secondaire : 5.54 | titre : 8.22 | mise en avant : 5.59 */
+  --texte:               #e4ede8;
+  --texte-secondaire:    #8fa79c;
+  --texte-titre:         #46b8b1;
+  --texte-mise-en-avant: #b7a15a;
+}
+
+.theme-araby{
+  --bg:            #17110a;
+  --bg-glow:       #2a1d0d;
+  --panel:         #1f1710;
+  --panel-light:   #2e2214;
+  --panel-deep:    #150f08;
+  --border:        #3d2f1c;
+
+  --ornement:        #c98a2e;
+  --ornement-vif:    #e8ac48;
+  --ornement-rgb:    201,138,46;
+  --ornement-2:      #7c5bd0;
+  --ornement-2-rgb:  124,91,208;
+
+  /* texte : 13.25 | secondaire : 5.2 | titre : 9.49 | mise en avant : 5.24 */
+  --texte:               #f0e6d2;
+  --texte-secondaire:    #b49e82;
+  --texte-titre:         #e8ac48;
+  --texte-mise-en-avant: #b08fff;
+}
+
+.theme-beastmen{
+  --bg:            #0e1309;
+  --bg-glow:       #1a2410;
+  --panel:         #161d0f;
+  --panel-light:   #212b16;
+  --panel-deep:    #10150a;
+  --border:        #33361c;
+
+  --ornement:        #6b7a1f;
+  --ornement-vif:    #94a82b;
+  --ornement-rgb:    107,122,31;
+  --ornement-2:      #b8a678;
+  --ornement-2-rgb:  184,166,120;
+
+  /* texte : 12.07 | secondaire : 5.22 | titre : 7.34 | mise en avant : 5.94 */
+  --texte:               #e2e0c9;
+  --texte-secondaire:    #a49d7f;
+  --texte-titre:         #94a82b;
+  --texte-mise-en-avant: #b8a678;
+}
+
+.theme-bretonnia{
+  --bg:            #0b0e18;
+  --bg-glow:       #131c34;
+  --panel:         #121a2c;
+  --panel-light:   #1a2540;
+  --panel-deep:    #0c1120;
+  --border:        #26304a;
+
+  --ornement:        #3a5aa8;
+  --ornement-vif:    #5c7dcf;
+  --ornement-rgb:    58,90,168;
+  --ornement-2:      #e0b83c;
+  --ornement-2-rgb:  224,184,60;
+
+  /* texte : 14.93 | secondaire : 5.23 | titre : 5.2 | mise en avant : 7.97 */
+  --texte:               #eef1f7;
+  --texte-secondaire:    #9098ad;
+  --texte-titre:         #6586d8;
+  --texte-mise-en-avant: #e0b83c;
+}
+
+.theme-chaos-dwarfs{
+  --bg:            #0f0a08;
+  --bg-glow:       #1e120a;
+  --panel:         #170f0a;
+  --panel-light:   #241708;
+  --panel-deep:    #110b07;
+  --border:        #3a2418;
+
+  --ornement:        #c2410c;
+  --ornement-vif:    #e8622a;
+  --ornement-rgb:    194,65,12;
+  --ornement-2:      #8a7f6d;
+  --ornement-2-rgb:  138,127,109;
+
+  /* texte : 14.56 | secondaire : 5.2 | titre : 5.89 | mise en avant : 5.24 */
+  --texte:               #ede4d8;
+  --texte-secondaire:    #a08f7c;
+  --texte-titre:         #e8622a;
+  --texte-mise-en-avant: #9c917f;
+}
+
+.theme-daemons-of-chaos{
+  --bg:            #120a16;
+  --bg-glow:       #1f1024;
+  --panel:         #180e1c;
+  --panel-light:   #241530;
+  --panel-deep:    #130a17;
+  --border:        #2f1c38;
+
+  --ornement:        #9333a8;
+  --ornement-vif:    #c04fd6;
+  --ornement-rgb:    147,51,168;
+  --ornement-2:      #c9a876;
+  --ornement-2-rgb:  201,168,118;
+
+  /* texte : 14.64 | secondaire : 5.26 | titre : 5.21 | mise en avant : 7.34 */
+  --texte:               #ede4f0;
+  --texte-secondaire:    #9d8ba9;
+  --texte-titre:         #c453da;
+  --texte-mise-en-avant: #c9a876;
+}
+
+.theme-dark-elves{
+  --bg:            #0c0a12;
+  --bg-glow:       #171224;
+  --panel:         #130f1a;
+  --panel-light:   #1d1628;
+  --panel-deep:    #0e0b14;
+  --border:        #2a2338;
+
+  --ornement:        #5b2f7a;
+  --ornement-vif:    #7d4aa3;
+  --ornement-rgb:    91,47,122;
+  --ornement-2:      #8fae4a;
+  --ornement-2-rgb:  143,174,74;
+
+  /* texte : 14.14 | secondaire : 5.22 | titre : 5.25 | mise en avant : 6.92 */
+  --texte:               #e6e0ec;
+  --texte-secondaire:    #9089a1;
+  --texte-titre:         #a26fc8;
+  --texte-mise-en-avant: #8fae4a;
+}
+
+.theme-dwarfs{
+  --bg:            #120e0a;
+  --bg-glow:       #241a0e;
+  --panel:         #1d1710;
+  --panel-light:   #2b2116;
+  --panel-deep:    #170f0a;
+  --border:        #3c2f1e;
+
+  --ornement:        #b5541c;
+  --ornement-vif:    #e0812e;
+  --ornement-rgb:    181,84,28;
+  --ornement-2:      #c9a876;
+  --ornement-2-rgb:  201,168,118;
+
+  /* texte : 12.95 | secondaire : 5.2 | titre : 6.84 | mise en avant : 6.64 */
+  --texte:               #ecdfc4;
+  --texte-secondaire:    #ab957d;
+  --texte-titre:         #e0812e;
+  --texte-mise-en-avant: #c9a876;
+}
+
+.theme-empire{
+  --bg:            #0a0d14;
+  --bg-glow:       #121a26;
+  --panel:         #0d1119;
+  --panel-light:   #1a2432;
+  --panel-deep:    #090c12;
+  --border:        #22304a;
+
+  --ornement:        #3d6fb0;
+  --ornement-vif:    #5f92d6;
+  --ornement-rgb:    61,111,176;
+  --ornement-2:      #c9a13a;
+  --ornement-2-rgb:  201,161,58;
+
+  /* texte : 14.74 | secondaire : 5.35 | titre : 6.07 | mise en avant : 6.59 */
+  --texte:               #e8ecf2;
+  --texte-secondaire:    #8a96a8;
+  --texte-titre:         #5f92d6;
+  --texte-mise-en-avant: #c9a13a;
+}
+
+.theme-fimir{
+  --bg:            #0f130c;
+  --bg-glow:       #1a2312;
+  --panel:         #131810;
+  --panel-light:   #1e2718;
+  --panel-deep:    #0c0f09;
+  --border:        #2a331e;
+
+  --ornement:        #6f9a3e;
+  --ornement-vif:    #8fbf5a;
+  --ornement-rgb:    111,154,62;
+  --ornement-2:      #b8a86a;
+  --ornement-2-rgb:  184,168,106;
+
+  /* texte : 13.45 | secondaire : 5.32 | titre : 9.12 | mise en avant : 5.9 */
+  --texte:               #e6ecdc;
+  --texte-secondaire:    #97a487;
+  --texte-titre:         #8fbf5a;
+  --texte-mise-en-avant: #b8a86a;
+}
+
+.theme-gnoblar-hordes{
+  --bg:            #140f0a;
+  --bg-glow:       #241a10;
+  --panel:         #1a1410;
+  --panel-light:   #281e15;
+  --panel-deep:    #100c08;
+  --border:        #3a2c1a;
+
+  --ornement:        #cf7326;
+  --ornement-vif:    #f0933f;
+  --ornement-rgb:    207,115,38;
+  --ornement-2:      #9aad55;
+  --ornement-2-rgb:  154,173,85;
+
+  /* texte : 13.29 | secondaire : 5.21 | titre : 8.33 | mise en avant : 5.81 */
+  --texte:               #ece2d0;
+  --texte-secondaire:    #a89a80;
+  --texte-titre:         #f0933f;
+  --texte-mise-en-avant: #9aad55;
+}
+
+.theme-grand-cathay{
+  --bg:            #0a1410;
+  --bg-glow:       #122019;
+  --panel:         #0f1d17;
+  --panel-light:   #182b22;
+  --panel-deep:    #0b1512;
+  --border:        #1c3529;
+
+  --ornement:        #1f8f5f;
+  --ornement-vif:    #2fc07d;
+  --ornement-rgb:    31,143,95;
+  --ornement-2:      #d4a017;
+  --ornement-2-rgb:  212,160,23;
+
+  /* texte : 14.72 | secondaire : 5.44 | titre : 8.44 | mise en avant : 5.9 */
+  --texte:               #e8f2ec;
+  --texte-secondaire:    #8aa89a;
+  --texte-titre:         #2fc07d;
+  --texte-mise-en-avant: #d4a017;
+}
+
+.theme-greenskins{
+  --bg:            #0d1206;
+  --bg-glow:       #16210a;
+  --panel:         #131a0b;
+  --panel-light:   #1e2a12;
+  --panel-deep:    #0e1408;
+  --border:        #2c3818;
+
+  --ornement:        #5a9c1f;
+  --ornement-vif:    #7ecc2e;
+  --ornement-rgb:    90,156,31;
+  --ornement-2:      #a8402c;
+  --ornement-2-rgb:  168,64,44;
+
+  /* texte : 13.85 | secondaire : 5.24 | titre : 9.92 | mise en avant : 5.23 */
+  --texte:               #e6ecdc;
+  --texte-secondaire:    #96a483;
+  --texte-titre:         #7ecc2e;
+  --texte-mise-en-avant: #ea826e;
+}
+
+.theme-high-elves{
+  --bg:            #0c1420;
+  --bg-glow:       #16283a;
+  --panel:         #142132;
+  --panel-light:   #1d3049;
+  --panel-deep:    #0e1826;
+  --border:        #253c52;
+
+  --ornement:        #3d7ea6;
+  --ornement-vif:    #5fa8d3;
+  --ornement-rgb:    61,126,166;
+  --ornement-2:      #d4b95e;
+  --ornement-2-rgb:  212,185,94;
+
+  /* texte : 13.29 | secondaire : 5.35 | titre : 6.8 | mise en avant : 6.86 */
+  --texte:               #eef2f0;
+  --texte-secondaire:    #93a8b5;
+  --texte-titre:         #5fa8d3;
+  --texte-mise-en-avant: #d4b95e;
+}
+
+.theme-jade-blooded-vampires{
+  --bg:            #0c1210;
+  --bg-glow:       #14201b;
+  --panel:         #101815;
+  --panel-light:   #1a2620;
+  --panel-deep:    #0a0f0d;
+  --border:        #24352e;
+
+  --ornement:        #40c299;
+  --ornement-vif:    #63dab3;
+  --ornement-rgb:    64,194,153;
+  --ornement-2:      #c65b5b;
+  --ornement-2-rgb:  198,91,91;
+
+  /* texte : 14.29 | secondaire : 5.24 | titre : 11.5 | mise en avant : 5.25 */
+  --texte:               #e6efe9;
+  --texte-secondaire:    #91aaa1;
+  --texte-titre:         #63dab3;
+  --texte-mise-en-avant: #f18686;
+}
+
+.theme-khorne{
+  --bg:            #140505;
+  --bg-glow:       #240a0a;
+  --panel:         #1c0808;
+  --panel-light:   #2a0d0d;
+  --panel-deep:    #170606;
+  --border:        #3d1518;
+
+  --ornement:        #c81e2c;
+  --ornement-vif:    #f0303f;
+  --ornement-rgb:    200,30,44;
+  --ornement-2:      #8a6a3a;
+  --ornement-2-rgb:  138,106,58;
+
+  /* texte : 14.57 | secondaire : 5.26 | titre : 5.2 | mise en avant : 5.22 */
+  --texte:               #f0e0d8;
+  --texte-secondaire:    #ad877f;
+  --texte-titre:         #f73746;
+  --texte-mise-en-avant: #aa8a5a;
+}
+
+.theme-kislev{
+  --bg:            #0a0e14;
+  --bg-glow:       #101c28;
+  --panel:         #0d141c;
+  --panel-light:   #16212e;
+  --panel-deep:    #0a1017;
+  --border:        #1c2a38;
+
+  --ornement:        #4a8bc2;
+  --ornement-vif:    #6fb3e0;
+  --ornement-rgb:    74,139,194;
+  --ornement-2:      #b8323a;
+  --ornement-2-rgb:  184,50,58;
+
+  /* texte : 14.72 | secondaire : 5.2 | titre : 8.44 | mise en avant : 5.22 */
+  --texte:               #e8eef2;
+  --texte-secondaire:    #8b9ca5;
+  --texte-titre:         #6fb3e0;
+  --texte-mise-en-avant: #f56f77;
+}
+
+.theme-lizardmen{
+  --bg:            #070f0a;
+  --bg-glow:       #0f1f14;
+  --panel:         #0a1610;
+  --panel-light:   #14261b;
+  --panel-deep:    #08110c;
+  --border:        #1c3323;
+
+  --ornement:        #2f9e5a;
+  --ornement-vif:    #46c878;
+  --ornement-rgb:    47,158,90;
+  --ornement-2:      #c9a227;
+  --ornement-2-rgb:  201,162,39;
+
+  /* texte : 14.6 | secondaire : 5.58 | titre : 9.25 | mise en avant : 6.03 */
+  --texte:               #e4f0e6;
+  --texte-secondaire:    #86a892;
+  --texte-titre:         #46c878;
+  --texte-mise-en-avant: #c9a227;
+}
+
+.theme-nurgle{
+  --bg:            #0a0f08;
+  --bg-glow:       #141f0e;
+  --panel:         #0d130a;
+  --panel-light:   #1a2412;
+  --panel-deep:    #0a0f07;
+  --border:        #263318;
+
+  --ornement:        #6b8a2e;
+  --ornement-vif:    #8fb43e;
+  --ornement-rgb:    107,138,46;
+  --ornement-2:      #9c8a2e;
+  --ornement-2-rgb:  156,138,46;
+
+  /* texte : 14.17 | secondaire : 5.58 | titre : 8.28 | mise en avant : 5.23 */
+  --texte:               #e8ecdc;
+  --texte-secondaire:    #93a180;
+  --texte-titre:         #8fb43e;
+  --texte-mise-en-avant: #a9973b;
+}
+
+.theme-ogre-kingdoms{
+  --bg:            #120d08;
+  --bg-glow:       #1e150c;
+  --panel:         #16100a;
+  --panel-light:   #241a10;
+  --panel-deep:    #120d07;
+  --border:        #3a2a18;
+
+  --ornement:        #a0703a;
+  --ornement-vif:    #c8924a;
+  --ornement-rgb:    160,112,58;
+  --ornement-2:      #c9b878;
+  --ornement-2-rgb:  201,184,120;
+
+  /* texte : 14.57 | secondaire : 5.23 | titre : 7.27 | mise en avant : 7.86 */
+  --texte:               #f0e6d8;
+  --texte-secondaire:    #a8927a;
+  --texte-titre:         #c8924a;
+  --texte-mise-en-avant: #c9b878;
+}
+
+.theme-skaven{
+  --bg:            #0c0e10;
+  --bg-glow:       #141a14;
+  --panel:         #0f1210;
+  --panel-light:   #1c241c;
+  --panel-deep:    #0b0d0b;
+  --border:        #2a3228;
+
+  --ornement:        #5a9e3a;
+  --ornement-vif:    #7ed94f;
+  --ornement-rgb:    90,158,58;
+  --ornement-2:      #8a6ba0;
+  --ornement-2-rgb:  138,107,160;
+
+  /* texte : 14.25 | secondaire : 5.23 | titre : 11.42 | mise en avant : 5.2 */
+  --texte:               #e4e8e0;
+  --texte-secondaire:    #929c90;
+  --texte-titre:         #7ed94f;
+  --texte-mise-en-avant: #ac8dc2;
+}
+
+.theme-slaanesh{
+  --bg:            #150a14;
+  --bg-glow:       #24101f;
+  --panel:         #180d17;
+  --panel-light:   #2a1526;
+  --panel-deep:    #130912;
+  --border:        #3a1f36;
+
+  --ornement:        #c23e8a;
+  --ornement-vif:    #e85ba8;
+  --ornement-rgb:    194,62,138;
+  --ornement-2:      #8a4bc9;
+  --ornement-2-rgb:  138,75,201;
+
+  /* texte : 14.18 | secondaire : 5.24 | titre : 6.04 | mise en avant : 5.24 */
+  --texte:               #f0e0ec;
+  --texte-secondaire:    #aa8aa2;
+  --texte-titre:         #e85ba8;
+  --texte-mise-en-avant: #b576f4;
+}
+
+.theme-southern-realms{
+  --bg:            #1a1210;
+  --bg-glow:       #2a1a15;
+  --panel:         #201612;
+  --panel-light:   #2e211a;
+  --panel-deep:    #150e0b;
+  --border:        #3a2820;
+
+  --ornement:        #c33f3f;
+  --ornement-vif:    #e05f5f;
+  --ornement-rgb:    195,63,63;
+  --ornement-2:      #cba43e;
+  --ornement-2-rgb:  203,164,62;
+
+  /* texte : 13.36 | secondaire : 5.6 | titre : 5.44 | mise en avant : 6.39 */
+  --texte:               #f0e4d8;
+  --texte-secondaire:    #b09a86;
+  --texte-titre:         #e05f5f;
+  --texte-mise-en-avant: #cba43e;
+}
+
+.theme-tomb-kings{
+  --bg:            #120e08;
+  --bg-glow:       #1e170c;
+  --panel:         #16110a;
+  --panel-light:   #261e11;
+  --panel-deep:    #110d07;
+  --border:        #3a2f18;
+
+  --ornement:        #c9a13a;
+  --ornement-vif:    #e8c25a;
+  --ornement-rgb:    201,161,58;
+  --ornement-2:      #2e9c94;
+  --ornement-2-rgb:  46,156,148;
+
+  /* texte : 14.31 | secondaire : 5.2 | titre : 11.65 | mise en avant : 5.24 */
+  --texte:               #f0e6d0;
+  --texte-secondaire:    #ae9c80;
+  --texte-titre:         #e8c25a;
+  --texte-mise-en-avant: #41afa7;
+}
+
+.theme-tzeentch{
+  --bg:            #0d0a17;
+  --bg-glow:       #180f28;
+  --panel:         #120c1f;
+  --panel-light:   #1e1433;
+  --panel-deep:    #0c0817;
+  --border:        #33244a;
+
+  --ornement:        #b23fd1;
+  --ornement-vif:    #d466ef;
+  --ornement-rgb:    178,63,209;
+  --ornement-2:      #3ec2e0;
+  --ornement-2-rgb:  62,194,224;
+
+  /* texte : 14.95 | secondaire : 5.2 | titre : 6.37 | mise en avant : 7.69 */
+  --texte:               #ece4f7;
+  --texte-secondaire:    #998cb3;
+  --texte-titre:         #d466ef;
+  --texte-mise-en-avant: #3ec2e0;
+}
+
+.theme-vampire-coast{
+  --bg:            #08120f;
+  --bg-glow:       #0e1f19;
+  --panel:         #0b1714;
+  --panel-light:   #142621;
+  --panel-deep:    #07110e;
+  --border:        #24382f;
+
+  --ornement:        #3f9683;
+  --ornement-vif:    #5ecbb0;
+  --ornement-rgb:    63,150,131;
+  --ornement-2:      #8a6a3a;
+  --ornement-2-rgb:  138,106,58;
+
+  /* texte : 14.26 | secondaire : 5.49 | titre : 10.06 | mise en avant : 5.2 */
+  --texte:               #e2ede9;
+  --texte-secondaire:    #8ba59c;
+  --texte-titre:         #5ecbb0;
+  --texte-mise-en-avant: #b69666;
+}
+
+.theme-warriors-of-chaos{
+  --bg:            #0c0d10;
+  --bg-glow:       #161a20;
+  --panel:         #12151a;
+  --panel-light:   #1c212a;
+  --panel-deep:    #0e1013;
+  --border:        #262c36;
+
+  --ornement:        #5a6c84;
+  --ornement-vif:    #7d94b0;
+  --ornement-rgb:    90,108,132;
+  --ornement-2:      #a8935a;
+  --ornement-2-rgb:  168,147,90;
+
+  /* texte : 14.23 | secondaire : 5.2 | titre : 6.35 | mise en avant : 5.21 */
+  --texte:               #e6e8ec;
+  --texte-secondaire:    #8e96a4;
+  --texte-titre:         #7d94b0;
+  --texte-mise-en-avant: #a9945b;
+}
+
+.theme-wood-elves{
+  --bg:            #0a1108;
+  --bg-glow:       #131f0f;
+  --panel:         #0e160b;
+  --panel-light:   #1a2814;
+  --panel-deep:    #090f07;
+  --border:        #263a1f;
+
+  --ornement:        #2f8f4e;
+  --ornement-vif:    #4bbd6f;
+  --ornement-rgb:    47,143,78;
+  --ornement-2:      #c9982e;
+  --ornement-2-rgb:  201,152,46;
+
+  /* texte : 14.62 | secondaire : 5.74 | titre : 8.32 | mise en avant : 5.73 */
+  --texte:               #e8f0e2;
+  --texte-secondaire:    #92a688;
+  --texte-titre:         #4bbd6f;
+  --texte-mise-en-avant: #c9982e;
+}
+
+
+/* ----------------------------------------------------------------------------
+   2 quinquies. LES DEUX THÈMES QUI N'EXISTAIENT PAS
+
+   `hung` et `undead-legions` n'avaient AUCUN bloc dans style.css. Elles
+   retombaient donc silencieusement sur :root, c'est-à-dire la palette des
+   Comtes Vampires : les nomades des steppes du Hung s'affichaient en rouge
+   gothique vampirique, et les Légions de Nagash aussi.
+
+   Ces deux palettes sont donc du contenu NOUVEAU, pas une reprise. Elles
+   suivent la même règle que les autres — surfaces et ornements libres, textes
+   dérivés jusqu'au seuil de 4,5 sur le fond le plus clair rencontré.
+
+   The Hung : nuit de steppe, cuir et feutre, bronze des harnais, et un bleu
+   glacial pour le Ciel Déchaîné qui leur tient lieu de dieu.
+   Undead Legions : pierre funéraire de Nehekhara, or terni des tombeaux,
+   vert-de-gris nécromantique.
+   ---------------------------------------------------------------------------- */
+/* --- The Hung --- */
+.theme-hung{
+  --bg:            #0f0d0a;
+  --bg-glow:       #1a1610;
+  --panel:         #17130c;
+  --panel-light:   #241d14;
+  --panel-deep:    #100d08;
+  --border:        #332a1e;
+
+  --ornement:        #7a6a3f;
+  --ornement-vif:    #a89152;
+  --ornement-rgb:    122,106,63;
+  --ornement-2:      #4a6f82;
+  --ornement-2-rgb:  74,111,130;
+
+  /* texte : 14.14 | secondaire : 5.45 | titre : 6.55 | mise en avant : 4.52 */
+  --texte:               #ece3d2;
+  --texte-secondaire:    #a4977f;
+  --texte-titre:         #a89152;
+  --texte-mise-en-avant: #7297aa;
+}
+
+/* --- Undead Legions --- */
+.theme-undead-legions{
+  --bg:            #0b0d0b;
+  --bg-glow:       #141810;
+  --panel:         #111510;
+  --panel-light:   #1c2318;
+  --panel-deep:    #0a0c09;
+  --border:        #2b3427;
+
+  --ornement:        #4a6b32;
+  --ornement-vif:    #6d9b48;
+  --ornement-rgb:    74,107,50;
+  --ornement-2:      #b8a668;
+  --ornement-2-rgb:  184,166,104;
+
+  /* texte : 14.51 | secondaire : 6.07 | titre : 6.19 | mise en avant : 6.6 */
+  --texte:               #e6e8dd;
+  --texte-secondaire:    #9aa38c;
+  --texte-titre:         #6d9b48;
+  --texte-mise-en-avant: #b8a668;
+}
+/* ----------------------------------------------------------------------------
+   2 sexies. ALIAS POUR LES SVG DE js/core.js  — NE PAS SUPPRIMER
+
+   Les icônes de section et le séparateur décoratif sont écrits directement en
+   SVG dans js/core.js, et portent leurs couleurs en ATTRIBUTS :
+
+       stroke="var(--accent-primary)"   ×4 icônes
+       fill="var(--accent-primary)"     ×3 gouttes du séparateur
+
+   J'avais supprimé cette variable à l'étape 5, après avoir vérifié qu'aucune
+   règle CSS ne l'utilisait plus. C'était une vérification incomplète : elle ne
+   couvrait pas les attributs SVG posés par le JavaScript. Résultat, les icônes
+   de section se sont retrouvées sans couleur de trait, donc invisibles.
+
+   On ne peut pas renommer la variable dans core.js : ce fichier est partagé
+   avec index.html, qui utilise toujours style.css et ses anciens noms. L'alias
+   est donc défini ici, sur `body` — et non sur `:root` — pour que `--ornement`
+   se résolve dans la portée où la classe `theme-*` est posée. Défini sur
+   `:root`, il prendrait la valeur du thème par défaut pour TOUTES les factions.
+
+   À supprimer seulement le jour où index.html passera lui aussi à v2.css, et
+   où core.js pourra utiliser --ornement directement.
+   ---------------------------------------------------------------------------- */
+body{
+  --accent-primary: var(--ornement);
+}
+
+/* ----------------------------------------------------------------------------
+   3. BASE
+   ---------------------------------------------------------------------------- */
+
+/* Reset minimal : pas de marges par défaut du navigateur, et box-sizing
+   cohérent pour que toute largeur inclue bordures et padding. */
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+
+/* --- Visibilité du focus clavier ---
+   Jusqu'à l'étape 2, un seul élément de la page était focalisable : la
+   question du focus ne se posait donc pas. Maintenant que les 16 seigneurs
+   sont atteignables au clavier, il faut voir où l'on se trouve.
+   `:focus-visible` plutôt que `:focus` : le navigateur n'affiche l'anneau que
+   lors d'une navigation au clavier, jamais après un clic à la souris. */
+:focus-visible{
+  outline: 2px solid var(--texte-mise-en-avant);
+  outline-offset: 2px;
+  border-radius: var(--rayon-net);
+}
+
+/* Filet de sécurité : aucune image ne peut déborder de son conteneur. */
+img{ max-width: 100%; }
+
+body{
+  background: radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
+  color: var(--texte);
+  font-family: var(--police-lecture);
+  min-height: 100vh;
+  transition: background .3s ease, color .3s ease;
+}
+
+/* ----------------------------------------------------------------------------
+   4. MISE EN PAGE
+   ---------------------------------------------------------------------------- */
+
+/* ⚠ ÉTAPE 3 — CETTE SECTION EST ÉCRITE EN MOBILE-FIRST.
+   Les règles de base décrivent le téléphone ; les écrans plus larges sont
+   traités par des `@media (min-width: …)` en fin de fichier. C'est l'inverse
+   de style.css, qui décrivait le bureau puis rabotait pour le mobile — d'où
+   des points de rupture squelettiques (20 lignes sur 1 320) et une barre
+   latérale qui repoussait la fiche de 1 077 px.
+   Lire ce fichier, c'est donc lire d'abord la version téléphone. */
+
+.app{
+  /* Empilement naturel : la navigation, puis la fiche. */
+  min-height: 100vh;
+}
+
+.sidebar{
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-deep) 100%);
+  border-bottom: 1px solid var(--border);
+  padding: var(--esp-3) 0 0;
+  /* Collante : la navigation reste atteignable pendant la lecture d'une fiche
+     longue, sans avoir à remonter en haut de page. */
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+/* `min-height: 44px` et l'alignement vertical ne sont pas cosmétiques : ce lien
+   mesurait 23 px de haut, sous le seuil de 44 px recommandé pour une cible
+   tactile. Le texte n'a pas changé de taille, seule sa zone cliquable a été
+   agrandie (point 4.3 de l'audit). */
+.back-link{
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--esp-4);
+  font-family: var(--police-titre);
+  font-size: var(--txt-micro);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--texte-secondaire);
+  text-decoration: none;
+  transition: color .2s ease;
+}
+.back-link:hover{ color: var(--texte-mise-en-avant); }
+
+.sidebar-title{
+  font-family: var(--police-titre);
+  font-weight: 700;
+  font-size: var(--txt-normal);
+  letter-spacing: 2px;
+  color: var(--texte-mise-en-avant);
+  padding: 0 var(--esp-4) var(--esp-2);
+  text-transform: uppercase;
+}
+/* « Legendary Lords » est un sous-titre décoratif : masqué sur téléphone, où
+   chaque pixel vertical compte avant d'atteindre le contenu. */
+.sidebar-sub{ display: none; }
+
+/* --- Bouton de dépliage (téléphone uniquement) ---------------------------
+   Affiche le seigneur courant et commande la liste. Masqué dès que l'écran
+   est assez large pour afficher la barre latérale en colonne. */
+.lord-toggle{
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  width: 100%;
+  /* 48px : au-dessus du seuil de 44px recommandé pour une cible tactile
+     (point 4.3 de l'audit). */
+  min-height: 48px;
+  padding: var(--esp-3) var(--esp-4);
+  background: rgba(var(--ornement-rgb), .12);
+  border: 0;
+  border-top: 1px solid var(--border);
+  font-family: var(--police-titre);
+  font-size: var(--txt-normal);
+  color: var(--texte);
+  text-align: left;
+  cursor: pointer;
+}
+.lord-toggle-numeral{
+  color: var(--texte-mise-en-avant);
+  min-width: 22px;
+}
+.lord-toggle-nom{ flex: 1; }
+/* Chevron en pur CSS : deux bords d'un carré vide, pivotés de 45°. */
+.lord-toggle-chevron{
+  width: 8px; height: 8px;
+  border-right: 2px solid var(--texte-mise-en-avant);
+  border-bottom: 2px solid var(--texte-mise-en-avant);
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform .2s ease;
+  flex-shrink: 0;
+}
+.lord-toggle[aria-expanded="true"] .lord-toggle-chevron{
+  transform: rotate(-135deg) translateY(-2px);
+}
+
+/* La liste est repliée par défaut sur téléphone. C'est CE point qui supprime
+   les 1 077 px de défilement avant le contenu. */
+#lord-list{ display: none; }
+.sidebar.panneau-ouvert #lord-list{
+  display: block;
+  /* Plafonnée puis défilable : sur Norsca (25 seigneurs) la liste dépliée
+     dépasserait sinon la hauteur de l'écran. */
+  max-height: 60vh;
+  overflow-y: auto;
+  border-top: 1px solid var(--border);
+}
+
+/* Message affiché quand une faction n'a aucun seigneur à lister. */
+.lord-list-empty{
+  padding: var(--esp-5) var(--esp-5);
+  font-size: var(--t-1);
+  color: var(--texte-secondaire);
+  font-style: italic;
+}
+
+/* --- Entrées de la liste des seigneurs ---
+   Depuis l'étape 2, la liste est un <ul> de <li> contenant chacun un <a href>.
+   Les trois règles ci-dessous neutralisent les styles que le navigateur
+   applique d'office à ces balises, pour que le rendu reste EXACTEMENT celui
+   des anciennes <div> : sans elles, des puces apparaîtraient et les entrées
+   seraient soulignées en bleu. */
+.lord-list{ list-style: none; }
+.lord-item{ text-decoration: none; color: inherit; }
+
+.lord-item{
+  display: flex;
+  align-items: center;
+  gap: var(--esp-4);
+  padding: var(--esp-4) var(--esp-5);
+  cursor: pointer;
+  border-left: 3px solid transparent;
+  transition: all .2s ease;
+  position: relative;
+}
+.lord-item:hover{ background: rgba(var(--ornement-rgb), .12); }
+.lord-item.active{
+  background: rgba(var(--ornement-rgb), .18);
+  border-left: 3px solid var(--ornement-vif);
+}
+.lord-numeral{
+  font-family: var(--police-titre);
+  font-size: var(--txt-quantite);
+  color: var(--texte-mise-en-avant);
+  opacity: .75;
+  width: 22px;
+}
+.lord-item.active .lord-numeral{ opacity: 1; }
+.lord-names{ display: flex; flex-direction: column; }
+.lord-name{
+  font-family: var(--police-titre);
+  font-size: var(--txt-normal);
+  letter-spacing: .5px;
+  color: var(--texte);
+}
+.lord-epithet{
+  font-size: var(--txt-mini);
+  color: var(--texte-secondaire);
+  font-style: italic;
+}
+
+.page{
+  padding: var(--esp-5) var(--esp-4);
+}
+
+/* ----------------------------------------------------------------------------
+   5. EN-TÊTE DE FICHE — bannière, portrait, nom
+   ---------------------------------------------------------------------------- */
+
+.portrait-frame{
+  width: 100%;
+  aspect-ratio: 16/6.2;
+  border: 1px solid var(--border);
+  border-radius: var(--rayon-doux);
+  overflow: hidden;
+  margin-bottom: var(--esp-5);
+  position: relative;
+  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-deep) 100%);
+}
+.portrait-frame svg{ width: 100%; height: 100%; display: block; }
+.portrait-frame img{ width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 30%; }
+/* Filet intérieur décoratif, en retrait de 6px du cadre. */
+.portrait-frame::after{
+  content: "";
+  position: absolute; inset: 0;
+  border: 1px solid rgba(var(--ornement-2-rgb), .25);
+  margin: var(--esp-2);
+  pointer-events: none;
+}
+
+.banner{
+  display: flex;
+  align-items: center;
+  gap: var(--esp-5);
+  margin-bottom: var(--esp-3);
+}
+
+/* Dimensions de base = téléphone ; agrandies à partir de 560 px. */
+.seal{
+  width: 60px; height: 130px;
+  border-radius: var(--rayon-rond);
+  border: 2px solid var(--ornement-2);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  background: radial-gradient(circle, var(--panel-light) 0%, var(--panel) 100%);
+  flex-shrink: 0;
+}
+.seal svg{ width: 34px; height: 34px; }
+.seal img{ width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+.lord-title{
+  font-family: var(--police-titre);
+  font-weight: 900;
+  font-size: var(--txt-titre);
+  color: var(--texte);
+  line-height: 1.05;
+}
+.lord-epithet-big{
+  font-family: var(--police-lecture);
+  font-style: italic;
+  color: var(--texte-mise-en-avant);
+  font-size: var(--txt-epithete);
+  margin-top: var(--esp-1);
+}
+
+/* Étiquette du nom de faction précis (ex. « Von Carstein »). */
+.faction-tag{
+  display: inline-block;
+  font-family: var(--police-titre);
+  font-size: var(--txt-micro);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--texte-mise-en-avant);
+  border: 1px solid var(--ornement-2);
+  border-radius: var(--rayon-net);
+  padding: var(--esp-1) 10px;
+  margin-top: var(--esp-4);
+}
+
+/* Séparateur SVG décoratif inséré entre l'en-tête et le corps de la fiche
+   (voir dripSVG dans js/core.js). */
+.drip-divider{
+  width: 100%; height: 14px;
+  margin: var(--esp-5) 0 var(--esp-6);
+}
+
+/* ----------------------------------------------------------------------------
+   6. SECTIONS — Lore, Effets, Attributs, Build
+   ---------------------------------------------------------------------------- */
+
+.section{ margin-bottom: var(--esp-7); }
+.section-head{
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  margin-bottom: var(--esp-4);
+}
+.section-head svg{ width: 20px; height: 20px; flex-shrink: 0; }
+/* `font-weight: inherit` n'est pas décoratif : depuis l'étape 2 ce sélecteur
+   porte sur un <h2>, que le navigateur graisse d'office. Sans cette ligne, le
+   titre changerait d'épaisseur — or l'étape 2 doit être invisible à l'écran. */
+.section-title{
+  font-family: var(--police-titre);
+  font-size: var(--txt-section);
+  font-weight: inherit;
+  letter-spacing: 1px;
+  color: var(--texte-titre);
+  text-transform: uppercase;
+}
+.section-body{
+  font-size: var(--txt-corps);
+  line-height: 1.75;
+  color: var(--texte);
+}
+.section-body p{ margin-bottom: var(--esp-3); }
+.section-body em{ color: var(--texte-mise-en-avant); font-style: italic; }
+
+/* Mention de source sous le bloc d'attributs. */
+.stats-caveat{
+  margin-top: var(--esp-4);
+  font-size: var(--t-1);
+  color: var(--texte-secondaire);
+  font-style: italic;
+}
+
+/* Le bloc « Attributs & capacités passives » n'existe que sur UNE fiche du site
+   (Vlad von Carstein, 1 sur 321). Il était donc le seul à ne pas suivre le
+   rythme de lecture des autres sections : interligne 1,5 contre 1,75 partout
+   ailleurs. Aligné ici — le reste de l'écart tient à la structure des données,
+   pas au style. */
+.attr-list{ margin-top: var(--esp-2); }
+.attr-item{
+  padding: var(--esp-3) 0;
+  border-bottom: 1px solid var(--border);
+  font-size: var(--txt-attribut);
+  line-height: 1.75;
+}
+.attr-item:last-child{ border-bottom: none; }
+.attr-item strong{
+  color: var(--texte-mise-en-avant);
+  font-family: var(--police-titre);
+  font-size: var(--txt-normal);
+  letter-spacing: .3px;
+}
+
+/* ----------------------------------------------------------------------------
+   7. BUILD — sous-titres, grille et cartes d'unité
+
+   NOTE : dans style.css, six sélecteurs de cette zone étaient déclarés DEUX
+   fois, la seconde déclaration l'emportant (point 3.4 de l'audit). Ils sont
+   ici fusionnés en une seule règle par sélecteur, en conservant les valeurs
+   qui gagnaient réellement à l'écran. Le rendu est donc inchangé, mais on ne
+   lit plus une valeur pour en obtenir une autre.
+   ---------------------------------------------------------------------------- */
+
+/* Même raison que .section-title : ce sélecteur porte désormais sur un <h3>. */
+.army-subhead{
+  font-family: var(--police-titre);
+  font-size: var(--txt-petit);
+  font-weight: inherit;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--texte-secondaire);
+  margin: 22px 0 var(--esp-3);
+  padding-bottom: var(--esp-2);
+  border-bottom: 1px solid var(--border);
+}
+.army-subhead:first-child{ margin-top: var(--esp-1); }
+
+.unit-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--esp-3);
+}
+
+.unit-card{
+  display: flex;
+  align-items: flex-start;
+  gap: var(--esp-3);
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--rayon-doux);
+  padding: 10px var(--esp-3);
+  position: relative;
+}
+
+.unit-icon{
+  width: 48px; height: 104px;
+  flex-shrink: 0;
+  border-radius: var(--rayon-rond);
+  /* style.css codait ici #150d12 en dur — la couleur de fond des Comtes
+     Vampires — ce qui teintait les vignettes de TOUTES les factions avec la
+     palette vampirique. Remplacé par var(--bg) : identique pour cette faction,
+     et corrigé pour les 31 autres lors de la généralisation. */
+  background: radial-gradient(circle, var(--panel-light) 0%, var(--bg) 100%);
+  border: 1px solid var(--ornement-2);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.unit-icon svg{ width: 24px; height: 24px; }
+.unit-icon img{ width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+.unit-info{ flex: 1; min-width: 0; }
+.unit-name-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--esp-2);
+}
+.unit-name{
+  font-family: var(--police-titre);
+  font-size: var(--txt-unite);
+  color: var(--texte);
+  letter-spacing: .2px;
+  line-height: 1.3;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+.unit-note{
+  font-size: var(--txt-mini);
+  color: var(--texte-secondaire);
+  font-style: italic;
+  margin-top: var(--esp-1);
+  line-height: 1.45;
+}
+
+/* ÉTAPE 5 — la correction structurelle du seul défaut de contraste du site.
+   La quantité (×4) est l'information la plus décisive d'un build. C'était
+   pourtant le seul texte courant peint avec une variable d'ORNEMENT, d'où son
+   échec sur 12 thèmes sur 32 (jusqu'à 2,14 chez Norsca, pour un seuil de 4,5).
+   Elle passe désormais par la famille TEXTE, dont le contraste est garanti.
+   Sur Vampire Counts la valeur ne change pas — les deux variables portent la
+   même couleur et le thème était déjà conforme à 7,43. Le gain est ailleurs :
+   la faute ne peut plus être réintroduite lors de la généralisation. */
+.unit-qty{
+  font-family: var(--police-titre);
+  font-weight: 700;
+  font-size: var(--txt-quantite);
+  color: var(--texte-mise-en-avant);
+  background: rgba(var(--ornement-rgb), .18);
+  border: 1px solid var(--ornement);
+  border-radius: var(--rayon-doux);
+  padding: var(--esp-1) var(--esp-2);
+  flex-shrink: 0;
+}
+
+.army-total{
+  margin-top: var(--esp-4);
+  margin-bottom: var(--esp-4);
+  font-family: var(--police-titre);
+  font-size: var(--txt-normal);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: var(--texte-secondaire);
+  font-style: italic;
+}
+
+/* Carte « Magie » en bas de la section Build. */
+.build-grid{
+  display: grid;
+  grid-template-columns: 1fr;   /* deux colonnes seulement à partir de 781 px */
+  gap: var(--esp-4);
+  margin-top: var(--esp-4);
+}
+.build-card{
+  background: var(--panel);
+  border: 1px solid var(--border);
+  border-radius: var(--rayon-doux);
+  padding: var(--esp-4) 18px;
+}
+.build-card h4{
+  font-family: var(--police-titre);
+  font-size: var(--txt-petit);
+  letter-spacing: 1px;
+  color: var(--texte-mise-en-avant);
+  text-transform: uppercase;
+  margin-bottom: var(--esp-2);
+}
+.build-card p, .build-card li{
+  font-size: var(--txt-attribut);
+  color: var(--texte-secondaire);
+  line-height: 1.55;
+}
+.build-card ul{ padding-left: var(--esp-4); }
+
+/* Encadré de note finale, signalé par un filet coloré à gauche. */
+.note{
+  margin-top: var(--esp-5);
+  padding: var(--esp-4);
+  border-left: 3px solid var(--ornement);
+  background: rgba(var(--ornement-rgb), .08);
+  font-size: var(--txt-note);
+  color: var(--texte-secondaire);
+  font-style: italic;
+}
+
+/* ----------------------------------------------------------------------------
+   8. ÉCRANS PLUS LARGES — enrichissements successifs
+
+   Chaque palier n'AJOUTE que ce que la largeur disponible permet. Aucun de ces
+   blocs n'est nécessaire pour que la page fonctionne : coupés, il reste la
+   version téléphone, complète et lisible. C'est ce qui distingue le
+   mobile-first d'une adaptation après coup.
+   ---------------------------------------------------------------------------- */
+
+/* --- À partir de 560 px : la grille d'unités passe à deux colonnes --------- */
+@media (min-width: 560px){
+  .page{ padding: var(--esp-6) var(--esp-5); }
+  .banner{ gap: var(--esp-5); }
+  .seal{ width: 72px; height: 156px; }
+  .unit-icon{ width: 56px; height: 120px; }
+}
+
+/* --- À partir de 781 px : la barre latérale redevient une colonne ---------
+   C'est ici que la mise en page « codex » réapparaît. Le bouton de dépliage
+   n'a plus lieu d'être, et la liste est affichée en permanence. */
+@media (min-width: 781px){
+  .app{
+    display: flex;
+    /* Sur très grand écran, on centre l'ensemble plutôt que de le laisser
+       ancré à gauche. 1200px = barre latérale (280) + lecture max (920). */
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  .sidebar{
+    width: 240px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    position: static;          /* plus besoin d'être collante : elle est visible */
+    border-bottom: none;
+    border-right: 1px solid var(--border);
+    padding: var(--esp-6) 0;
+  }
+  /* Sur grand écran la souris est précise : le lien retrouve sa hauteur
+     naturelle et son espacement d'origine. */
+  .back-link{ display: block; min-height: 0; padding: 0 var(--esp-5) var(--esp-4); }
+  .sidebar-title{
+    font-size: var(--txt-sidebar);
+    padding: 0 var(--esp-5) var(--esp-2);
+  }
+  .sidebar-sub{
+    display: block;
+    font-size: var(--t-1);
+    color: var(--texte-secondaire);
+    padding: 0 var(--esp-5) var(--esp-5);
+    font-style: italic;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--esp-4);
+  }
+  .lord-toggle{ display: none; }
+  /* Toujours dépliée, plafond de hauteur retiré. */
+  #lord-list{ display: block; max-height: none; overflow: visible; border-top: 0; }
+  .page{
+    flex: 1;
+    max-width: 920px;
+    padding: var(--esp-7) var(--esp-6);
+  }
+  .build-grid{ grid-template-columns: 1fr 1fr; }
+}
+
+/* --- À partir de 1081 px : on rend leur ampleur aux marges ---------------- */
+@media (min-width: 1081px){
+  .sidebar{ width: 280px; }
+  .page{ padding: var(--esp-7) var(--esp-7); }
+}
