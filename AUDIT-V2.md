@@ -5,6 +5,41 @@
 
 ---
 
+## ⚠ À LIRE EN PREMIER — ce document n'est plus un diagnostic
+
+Tout ce qui suit décrit le site **avant la refonte V2**, au commit `763f880`. **15 des 19 constats
+sont désormais clos.** Les sections 3, 4 et 6 ne décrivent donc PAS le site actuel : elles
+décrivent ce qui a été corrigé.
+
+Le document est conservé pour trois raisons, et non par habitude :
+
+1. **4 constats sont encore ouverts** — ils constituent le vrai reste-à-faire du site ;
+2. **la section 1 (« ce qui est déjà solide ») reste valable** : c'est le relevé de ce qu'une
+   refonte ne doit pas casser, et il a servi exactement à ça ;
+3. **la méthode de mesure** décrite plus bas rend tous ces chiffres refaisables — c'est ce qui
+   permet de vérifier une affirmation plutôt que de la croire.
+
+### Les 4 constats encore ouverts
+
+| # | Constat | Pourquoi il tient encore |
+|---|---|---|
+| **2.1** | Aucun passage direct d'une faction à l'autre | 0 fiche sur 32 porte une barre d'onglets |
+| **5.2** | L'accueil télécharge 98 % de données qu'il n'affiche pas | 2 536 Ko de JSON, inchangé. Y remédier impose un index généré, donc une étape de build — un choix d'architecture, pas une correction |
+| **7.2** | Duplication des 32 coquilles HTML | 32 fichiers maintenus à la main. C'est ce qui a fait dériver 3 couleurs de faction sans qu'aucun signal ne le montre |
+| **7.3** | Métadonnées absentes | 0/33 `meta description`, 0/33 Open Graph. Un lien du site partagé n'affiche aucun aperçu |
+
+Reste également **5.3**, qui n'est pas un constat mais un aveu : ni les Core Web Vitals, ni le rendu
+sur connexion lente n'ont été mesurés. Toujours vrai. Aucun test avec un vrai lecteur d'écran n'a
+été mené non plus, ni avant ni depuis.
+
+### Les 15 constats clos
+
+| Fermés par la V2 des fiches (`46ed217`) | Fermés par la V2 de l'accueil (`4ebc835`) | Fermés depuis |
+|---|---|---|
+| 3.1 échelle typographique · 3.2 échelle d'espacement · 3.3 cinq familles de polices · 3.4 règles redéfinies · 4.1 défilement avant contenu · 4.3 cible tactile · 5.1 polices sérialisées · 6.2 `.unit-qty` sous le seuil · 6.3 hiérarchie de titres · 6.5 style de focus | 4.2 points de rupture *(avec 46ed217)* · 6.1 navigation clavier *(avec 46ed217)* · 6.4 `aria-current` et `aria-live` *(avec 46ed217)* | 2.2 volume par faction · 2.3 état de recherche partageable |
+
+---
+
 ## Comment lire ce document
 
 **Gravité**
@@ -377,11 +412,14 @@ vignette. Corriger cela suppose 33 éditions — d'où le lien direct avec le po
 | 6.3 | Aucune structure de titres hors `index.html` | faible |
 | 4.1 | Jusqu'à 2 écrans de défilement avant le contenu, sur mobile et tablette | moyen |
 
-**Gênant — 10 constats** · 2.1 navigation inter-factions · 2.3 état de recherche non partageable ·
+**Gênant — 13 constats** · 2.1 navigation inter-factions · 2.3 état de recherche non partageable ·
 3.1 échelle typographique · 3.2 échelle d'espacement · 3.3 cinq familles de polices ·
 4.2 points de rupture squelettiques · 5.1 polices sérialisées, 263 Ko · 5.2 accueil à 98 % de données
 inutiles · **6.2 `.unit-qty` sous le seuil sur 12 thèmes** · 6.4 absence d'`aria-current` /
-`aria-live` · 7.2 duplication des 32 coquilles · 7.3 métadonnées absentes
+`aria-live` · 6.5 style de focus · 7.2 duplication des 32 coquilles · 7.3 métadonnées absentes
+
+> Cette ligne annonçait « 10 constats » pour 12 énumérés, et omettait 6.5. Corrigé : 13, ce qui
+> porte le total du document à 19 constats et non 16.
 
 **Cosmétique — 3 constats** · 2.2 volume par faction invisible · 3.4 règles CSS redéfinies ·
 4.3 une cible tactile sous 44 px

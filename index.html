@@ -36,8 +36,12 @@
     <div class="search-subtitle">Recherche de seigneurs, toutes factions</div>
     <div class="search-divider"><span>❖</span></div>
     <!-- Champ de recherche texte libre : filtré en temps réel par
-         js/search.js (écouteur sur l'événement "input"). -->
-    <input type="search" id="search-input" class="search-input search-input-lg" placeholder="Rechercher un seigneur, une épithète, une faction…" aria-label="Rechercher un seigneur, une épithète, une faction">
+         js/search.js (écouteur sur l'événement "input").
+         L'intitulé mentionne les UNITÉS depuis que la recherche les couvre :
+         une aide de saisie qui n'annonce pas ce que le champ sait faire revient
+         à ne pas avoir la fonctionnalité, personne n'essaie ce qui n'est pas
+         proposé. -->
+    <input type="search" id="search-input" class="search-input search-input-lg" placeholder="Rechercher un seigneur, une faction, une unité…" aria-label="Rechercher un seigneur, une épithète, une faction ou une unité de son build">
     <!-- Rempli dynamiquement par renderFactionTabs() (js/core.js), appelée
          depuis renderResults() (js/search.js). -->
     <nav class="faction-tabs" id="faction-tabs" aria-label="Filtrer par faction"></nav>

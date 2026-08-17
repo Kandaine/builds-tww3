@@ -164,7 +164,46 @@ body.search-theme{
   white-space: nowrap;
   transition: color .2s ease, border-color .2s ease, background .2s ease;
 }
-.faction-tab:hover{
+/* Le nombre de seigneurs de l'onglet. Atténué et légèrement plus petit : il
+   renseigne, il ne doit pas concurrencer le nom de la faction dans la lecture
+   du rail. `font-variant-numeric: tabular-nums` fige la largeur des chiffres,
+   sans quoi les onglets se décaleraient à chaque frappe, le décompte changeant
+   à chaque caractère tapé. */
+.faction-tab-nb{
+  font-family: var(--police-lecture);
+  font-size: var(--t-1);
+  font-variant-numeric: tabular-nums;
+  color: var(--texte-secondaire);
+  margin-left: var(--esp-1);
+}
+.faction-tab.active .faction-tab-nb,
+.faction-tab[aria-pressed="true"] .faction-tab-nb{
+  /* Sur l'onglet actif le fond devient l'ornement : le gris d'origine y
+     deviendrait illisible. On reprend la couleur du libellé. */
+  color: inherit;
+}
+
+/* Onglet sans résultat sous la recherche en cours.
+   Il doit rester LISIBLE : tout l'intérêt du décompte est de pouvoir lire
+   « Fimir 0 » et savoir que cette faction n'a rien, plutôt que de deviner.
+   Un premier essai à `opacity: .45` faisait tomber le contraste à 2,4 — le
+   texte devenait un gris sur gris qu'on ne déchiffre plus. La combinaison
+   retenue — opacité .8 sur fond transparent — mesure 5,0 dans le DOM réel,
+   contre 6,1 pour un onglet actionnable et 7,9 pour l'onglet actif.
+   Les contrôles désactivés sont pourtant exemptés du critère WCAG 1.4.3 : on
+   aurait donc pu laisser .45 en restant « conforme ». Mais ce décompte est
+   l'information même qu'on vient d'ajouter, et une information illisible n'a
+   pas été ajoutée.
+   La différence visuelle est alors portée par la bordure, qui repasse au filet
+   décoratif et fait reculer la pastille sans toucher au texte. */
+.faction-tab:disabled{
+  opacity: .8;
+  border-color: var(--border);
+  background: transparent;
+  cursor: default;
+}
+
+.faction-tab:not(:disabled):hover{
   color: var(--texte);
   border-color: var(--ornement);
 }
@@ -255,6 +294,19 @@ body.search-theme{
   color: var(--texte-secondaire);
   margin-top: var(--esp-1);
 }
+/* Ligne « Dans son build : … », affichée uniquement quand c'est une unité du
+   build — et non le nom du seigneur — qui a fait remonter la carte.
+   Elle prend --texte-mise-en-avant, la seule famille dont le contraste est
+   garanti sur cette page : c'est du texte à lire, pas un ornement. */
+.result-unite{
+  font-family: var(--police-lecture);
+  font-size: var(--t-1);
+  color: var(--texte-mise-en-avant);
+  margin-top: var(--esp-1);
+  line-height: 1.4;
+}
+.result-unite-reste{ color: var(--texte-secondaire); }
+
 .result-tags{
   display: flex;
   flex-wrap: wrap;

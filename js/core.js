@@ -6,6 +6,8 @@
 //   - FACTION_GROUPS, factionBanners  : catalogue des factions
 //   - loadLords, normalize, matchesSearch, filterLords, renderFactionTabs
 //                                     : utilitaires partages
+//   - nomsDUnites, unitesCorrespondantes
+//                                     : recherche par unite, voir plus bas
 //   - svgDeSecours                    : repli d'image, voir plus bas
 //
 // Aucun module ES ici : tout vit dans l'espace global (window), d'ou l'absence
@@ -206,13 +208,13 @@ async function loadLords(groupId){
 
   // Lance toutes les requêtes fetch() en parallèle (Promise.all) plutôt que
   // séquentiellement, pour accélérer le chargement de la page de recherche
-  // qui doit récupérer jusqu'à 24 fichiers JSON d'un coup.
+  // qui doit récupérer les 32 fichiers JSON d'un coup.
   //
   // Chaque requête est protégée individuellement : un fichier manquant (404),
   // un serveur en erreur (500) ou un JSON malformé renvoie un tableau vide au
   // lieu de faire échouer Promise.all. Sans cette protection, UN seul fichier
   // en défaut suffisait à laisser toute la page blanche, sans message — la
-  // page de recherche en charge 24, le risque n'était donc pas théorique.
+  // page de recherche en charge 32, le risque n'était donc pas théorique.
   // L'erreur reste visible dans la console du navigateur pour le diagnostic.
   const perGroup = await Promise.all(
     groups.map(group =>
@@ -258,10 +260,58 @@ function normalize(str){
 // filtre). Sinon, on concatène les champs pertinents du seigneur (nom,
 // épithète, faction précise, nom de faction générique) en une seule chaîne
 // normalisée, et on vérifie si la requête normalisée y apparaît.
+// Rassemble les noms d'unites d'un build : le seigneur, ses heros, son armee,
+// et le cas particulier de Krell (invoque en bataille plutot que recrute).
+// Renvoie un tableau de chaines, sans doublon ni valeur vide.
+function nomsDUnites(l){
+  const b = l.build || {};
+  const noms = [
+    b.lord && b.lord.name,
+    ...(b.heroes || []).map(u => u.name),
+    ...(b.army   || []).map(u => u.name),
+    b.krellNote && b.krellNote.name
+  ];
+  return [...new Set(noms.filter(Boolean))];
+}
+
+// Texte dans lequel la recherche va chercher, pour UN seigneur.
+//
+// Il couvre l'identite du seigneur ET les noms des unites de son build. C'est
+// ce second point qui est nouveau : les 1287 noms d'unites distincts du site
+// etaient deja charges en memoire par loadLords(), qui renvoie l'objet complet,
+// mais aucune recherche ne les interrogeait. « Quels seigneurs jouent des
+// Chosen ? » n'avait donc aucune reponse, alors que la donnee etait la.
+//
+// Le resultat est memorise sur l'objet seigneur : la recherche se relance a
+// CHAQUE frappe, et recomposer 321 chaines d'une trentaine de noms a chaque
+// caractere serait du travail refait pour rien. Les objets seigneurs sont
+// crees par loadLords() a chaque chargement de page, ce cache ne survit donc
+// jamais aux donnees qu'il resume.
+function texteCherchable(l){
+  if(l._cherchable) return l._cherchable;
+  l._cherchable = normalize([l.name, l.epithet, l.faction, l.groupLabel]
+    .concat(nomsDUnites(l)).join(' '));
+  return l._cherchable;
+}
+
 function matchesSearch(l, query){
   if(!query) return true;
-  const haystack = normalize([l.name, l.epithet, l.faction, l.groupLabel].join(' '));
-  return haystack.includes(normalize(query));
+  return texteCherchable(l).includes(normalize(query));
+}
+
+// Renvoie les unites qui expliquent pourquoi ce seigneur remonte dans les
+// resultats — ou un tableau vide s'il repond deja par son propre nom.
+//
+// POURQUOI CE N'EST PAS DECORATIF. Sans cette explication, chercher « chosen »
+// affiche une liste de seigneurs dont aucun ne porte ce mot : le visiteur ne
+// peut pas savoir si la recherche a compris sa demande ou si elle deraille.
+// Un resultat qu'on ne peut pas expliquer est un resultat qu'on ne croit pas.
+function unitesCorrespondantes(l, query){
+  if(!query) return [];
+  const q = normalize(query);
+  // Le seigneur repond par son identite : la carte se justifie d'elle-meme.
+  if(normalize([l.name, l.epithet, l.faction, l.groupLabel].join(' ')).includes(q)) return [];
+  return nomsDUnites(l).filter(n => normalize(n).includes(q));
 }
 
 // Filtre une liste de seigneurs selon DEUX critères combinés (ET logique) :
@@ -281,7 +331,19 @@ function filterLords(lords, activeGroup, searchQuery){
 // groupe quand l'utilisateur clique sur un onglet — c'est à l'appelant
 // (search.js) de mettre à jour son propre état et de relancer le rendu des
 // résultats ; cette fonction ne s'en charge pas elle-même.
-function renderFactionTabs(containerEl, activeGroup, onChange){
+// Dessine la barre des 33 onglets de faction.
+//
+// `effectifs` est optionnel : un objet { <id de faction>: <nombre>, all: <n> }.
+// Fourni, chaque onglet affiche son nombre de seigneurs ; absent, la barre se
+// comporte exactement comme avant.
+//
+// CE QUE LE NOMBRE APPORTE. On ne pouvait pas savoir combien de seigneurs
+// contenait une faction avant d'y entrer (point 2.2 de l'audit) : « Fimir »
+// et « Vampire Counts » se ressemblaient, alors que l'une en a 3 et l'autre 27.
+// Et comme l'appelant recalcule ces nombres SOUS la recherche en cours, taper
+// « chosen » montre du meme coup dans quelles factions se trouvent les
+// reponses — l'information la plus utile quand on cherche une unite.
+function renderFactionTabs(containerEl, activeGroup, onChange, effectifs){
   // Trie les factions par ordre alphabétique de leur libellé, puis ajoute
   // l'onglet spécial "ALL" (toutes factions) tout au début, quelle que soit
   // sa position alphabétique.
@@ -297,10 +359,29 @@ function renderFactionTabs(containerEl, activeGroup, onChange){
   //
   // `aria-pressed` dit lequel est actif : la couleur seule ne le dirait à
   // personne d'autre qu'un utilisateur voyant.
-  containerEl.innerHTML = allTabs.map(t => `
+  // Le nombre est dans un <span> a part, et non colle au libelle, pour que le
+  // CSS puisse l'attenuer sans toucher au nom de la faction.
+  //
+  // `aria-label` porte la version parlee — « Norsca, 25 seigneurs » plutot que
+  // « Norsca 25 », qu'un lecteur d'ecran lirait sans dire de quoi il s'agit.
+  // Un onglet vide est desactive : le proposer alors qu'il ne mene a rien
+  // ferait croire a une recherche cassee.
+  containerEl.innerHTML = allTabs.map(t => {
+    const n = effectifs ? (effectifs[t.id] || 0) : null;
+    // Un onglet vide est desactive — SAUF « ALL » et SAUF l'onglet actif.
+    // Sans ces deux exceptions, une recherche sans resultat desactiverait la
+    // barre entiere, y compris le seul onglet permettant d'en sortir : le
+    // visiteur se retrouverait enferme dans un filtre qu'il ne peut plus lever.
+    const vide = n === 0 && t.id !== 'all' && t.id !== activeGroup;
+    const nom = t.id === 'all' ? 'Toutes factions' : t.label;
+    return `
     <button type="button" class="faction-tab ${activeGroup===t.id?'active':''}"
-            data-group="${t.id}" aria-pressed="${activeGroup===t.id}">${t.label}</button>
-  `).join('');
+            data-group="${t.id}" aria-pressed="${activeGroup===t.id}"
+            ${vide ? 'disabled' : ''}
+            ${n === null ? '' : `aria-label="${nom}, ${n} seigneur${n > 1 ? 's' : ''}"`}
+      >${t.label}${n === null ? '' : ` <span class="faction-tab-nb" aria-hidden="true">${n}</span>`}</button>
+  `;
+  }).join('');
 
   containerEl.querySelectorAll('.faction-tab').forEach(el=>{
     el.addEventListener('click', ()=> {
