@@ -56,6 +56,7 @@ const unitImages = {
   dryad: 'assets/units/dryad.png',
   treeKin: 'assets/units/treeKin.png',
   phoenix: 'assets/units/phoenix.png',
+  arcanePhoenix: 'assets/units/arcanePhoenix.png',
   // Unités High Elves vanilla (cartes officielles) pour les seigneurs Mixu
   // Belannaer (Swordmasters/magie) et Korhil (White Lions de Chrace).
   whiteLions: 'assets/units/whiteLions.png',

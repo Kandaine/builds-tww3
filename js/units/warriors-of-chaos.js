@@ -94,6 +94,7 @@ const unitImages = {
   theDaemonspew: 'assets/units/theDaemonspew.png',
   theDaemonspew: 'assets/units/theDaemonspew.png',
   marauderBerserkers: 'assets/units/marauderBerserkers.png',
+  brutesOfTheHound: 'assets/units/brutesOfTheHound.png',
   wyrdSpawn: 'assets/units/wyrdSpawn.png',
   theSoulOfDamnation: 'assets/units/theSoulOfDamnation.png',
   khornesBloodyFist: 'assets/units/khornesBloodyFist.png',
