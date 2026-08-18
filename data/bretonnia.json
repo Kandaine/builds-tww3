@@ -57,7 +57,7 @@
         {"icon": "spearmenAtArms", "name": "Spearmen-at-Arms", "qty": 5, "note": "Même bonus Peasant (seigneur) — anti-cavalerie fiable en première ligne"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 2, "note": "Soutien à distance, également renforcé par les bonus Peasant de Repanse (seigneur)"},
         {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 1, "note": "Régiment de Renom des Questing Knights. Il remplace l'unique escadron : la Pucelle attire ceux qui cherchent un sens à leur vœu, et ceux-là l'ont trouvé"},
-        {"icon": "defendersOfTheFleurDeLis", "name": "Defenders of the Fleur-de-lis (Knights Errant)", "qty": 1, "note": "Doublement favori chez Repanse : <strong>+1 capacité</strong> et <strong>immunité à la Fatigue et à la Psychologie</strong> — deux effets qui ne servaient à rien sans lui"},
+        {"icon": "knightsErrant", "name": "Knights Errant", "qty": 1, "note": "L'unité de base du régiment favori de Repanse. Les jeunes chevaliers cherchent l'exploit et chargent les premiers — elle-même n'a rien qui la retienne en arrière"},
         {"icon": "defendersOfTheFleurDeLis", "name": "Defenders of the Fleur-de-lis (Knights Errant)", "qty": 2, "note": "Régiment favori : +1 capacité et immunité à la Fatigue/Psychologie (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Knights Errant, increvable à l'endurance"}
       ],
       "magic": "Les Damsels couvrent les besoins de soin et de buffs pendant que Repanse et Henri le Massif combattent au contact, épée de Lyonesse et lance en main.",
@@ -85,8 +85,7 @@
       ],
       "army": [
         {"icon": "grailGuardians", "name": "Grail Guardians", "qty": 6, "note": "Garde d'élite historiquement associée à la Fée Enchanteresse — mur de protection autour de la lanceuse de sorts"},
-        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 1, "note": "L'unité de base du régiment favori de la Fée. Ces fanatiques ne fuient pas : c'est ce que la chevalerie, qui manœuvre, ne peut pas offrir — un point qui tient sans surveillance"},
-        {"icon": "holyWardensMaisontaal", "name": "The Holy Wardens of La Maisontaal (Battle Pilgrims)", "qty": 1, "note": "Régiment favori de la Fée, <strong>+1 capacité</strong>. Sur une armée qui repose sur ses roturiers, c'est le seul pèlerin d'élite disponible"},
+        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 2, "note": "L'unité de base du régiment favori de la Fée. Ces fanatiques ne fuient pas : c'est ce que la chevalerie, qui manœuvre, ne peut pas offrir — un point qui tient sans surveillance"},
         {"icon": "holyWardensOfLaMaisontaal", "name": "The Holy Wardens of La Maisontaal (Battle Pilgrims)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Battle Pilgrims"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 4, "note": "Soutien à distance classique, profite aussi de l'Économie Peasant renforcée (faction)"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 3, "note": "Trois trébuchets, soit le plus gros parc d'artillerie de Bretonnie. La Fée lance depuis l'arrière et aucun effet ne couvre ses roturiers : ils travaillent seuls, et le volume compense"}
@@ -430,8 +429,7 @@
         {"icon": "grailKnights", "name": "Grail Knights", "qty": 2, "note": "Mêmes bonus (seigneur) — l'élite bénie par la Dame, marteau final des charges"},
         {"icon": "knightsErrantRoR", "name": "Defenders of the Fleur-de-lis (Knights Errant)", "qty": 1, "note": "Régiment de Renom des Knights Errant, en remplacement de l'unique exemplaire de Gisoreux — un seul escadron de bleus, autant que ce soit le meilleur"},
         {"icon": "holyWardensMaisontaal", "name": "The Holy Wardens of La Maisontaal (Battle Pilgrims)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — pèlerins d'élite de l'abbaye, ancre de mêlée fanatique"},
-        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 1, "note": "Piétaille de foi qui tient le centre pendant que les chevaliers manœuvrent"},
-        {"icon": "holyWardensMaisontaal", "name": "The Holy Wardens of La Maisontaal (Battle Pilgrims)", "qty": 1, "note": "Son régiment favori les nomme et lui accorde <strong>+1 capacité</strong> — le bonus ne s'appliquait a rien tant qu'ils manquaient a la fiche"},
+        {"icon": "battlePilgrims", "name": "Battle Pilgrims", "qty": 2, "note": "Piétaille de foi qui tient le centre pendant que les chevaliers manœuvrent"},
         {"icon": "pegasusKnights", "name": "Pegasus Knights", "qty": 2, "note": "Chevaliers volants (mêmes bonus, seigneur) — frappent l'artillerie et les nécromanciens"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "Artillerie à zone d'effet — brise les blocs avant la charge"}
       ],
