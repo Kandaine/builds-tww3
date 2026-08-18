@@ -94,7 +94,6 @@ const unitImages = {
   orcShaman: 'assets/units/orcShaman.png',
   nightGoblinShaman: 'assets/units/nightGoblinShaman.png',
   savageOrcGreatShaman: 'assets/units/savageOrcGreatShaman.png',
-  goblinGreatShaman: 'assets/units/goblinGreatShaman.png',
   forestGoblinShaman: 'assets/units/forestGoblinShaman.png',
   teefRobberz: 'assets/units/teefRobberz.png',
   moonHowlers: 'assets/units/moonHowlers.png',
