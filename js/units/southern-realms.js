@@ -39,7 +39,6 @@ const unitImages = {
   tebMontanteSwordsmen: 'assets/units/tebMontanteSwordsmen.png',
   tebDuellists: 'assets/units/tebDuellists.png',
   tebIrrananHillmen: 'assets/units/tebIrrananHillmen.png',
-  tebGalloperGuns: 'assets/units/tebGalloperGuns.png',
   // Southern Realms : RoR et unités des 8 autres seigneurs
   tebVespero: 'assets/units/tebVespero.png',
   tebBraganzaBesiegers: 'assets/units/tebBraganzaBesiegers.png',
@@ -67,6 +66,10 @@ const unitImages = {
   tebNobleRetinue: 'assets/units/tebNobleRetinue.png',
   tebSwashbucklers: 'assets/units/tebSwashbucklers.png',
   tebVolandsVenators: 'assets/units/tebVolandsVenators.png',
+  tebRiccoRepublicanGuard: 'assets/units/tebRiccoRepublicanGuard.png',
+  tebMengilManflayers: 'assets/units/tebMengilManflayers.png',
+  tebAsarnilDragonlord: 'assets/units/tebAsarnilDragonlord.png',
+  tebAlMuktarDesertDogs: 'assets/units/tebAlMuktarDesertDogs.png',
   tebBillmen: 'assets/units/tebBillmen.png',
   tebPrincesOwnBlackWatch: 'assets/units/tebPrincesOwnBlackWatch.png',
   tebSonsOfStrygos: 'assets/units/tebSonsOfStrygos.png',

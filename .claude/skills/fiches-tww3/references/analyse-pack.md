@@ -129,11 +129,23 @@ colonne :
 | préfixe `_sc_` (`wh_main_sc_dwf_dwarfs`) | toute la **sous-culture** |
 | une clé de faction (`wh2_dlc17_dwf_thorek_ironbrow`) | **cette faction seule** — le Carnosaure de Thorek est le seul RoR nain dans ce cas sur les 30 |
 
-**La portée sous-culture ne garantit rien non plus.** `laf_dwf_inf_unrads_excavators` (mod Diggy
-Hole) est rattaché à `wh_main_sc_dwf_dwarfs` exactement comme Ekrund Miners, et le user ne l'a
-**pas** avec Greybeard's Prospectors — vérifié en jeu, ni dans ses RoR ni chez les Grudge Settlers.
-Le mod avait recopié le montage vanilla, entrées de permission comprises, sans que l'unité soit
-pour autant distribuée.
+**La portée sous-culture ne garantit rien non plus, et le cas est instructif.**
+`laf_dwf_inf_unrads_excavators` (mod Diggy Hole) est rattaché à `wh_main_sc_dwf_dwarfs` exactement
+comme Ekrund Miners — ligne pour ligne : même pool `wh_dlc06_dwf_units_of_renown_pool`, aucune
+faction requise, `initial_unit_count = 1`. Leurs entrées dans
+`units_to_exclusive_faction_permissions_tables` listent en plus **exactement les six mêmes
+factions**. Deux unités que les tables décrivent de façon interchangeable — et pourtant, vérifié en
+jeu le 18/08/2026, **Thyk Skolsson a Ekrund Miners et n'a pas Unrad's Excavators**.
+
+Le 17/08/2026 j'en avais conclu que l'unité n'était pas distribuée du tout. C'est faux :
+**Thorgrim, Grombrindal et Belegar l'ont**, tous les trois vérifiés en jeu. J'ai ensuite cru que la
+liste des six factions verrouillait l'accès — Belegar mène Clan Angrund, **absente** de cette liste,
+et il l'a quand même. Cette table ne dit donc rien, ni dans un sens ni dans l'autre.
+
+Le seul énoncé qui résiste aux quatre vérifications est un constat du user, pas un mécanisme :
+**les seigneurs nains du jeu de base l'ont, les seigneurs ajoutés par un mod ne l'ont pas.** Aucune
+table ne le produit ; la cause est probablement dans `script\campaign\mod\laf_unrad_spawn.lua`.
+À traiter comme une prédiction à confirmer, jamais comme une règle à appliquer.
 
 Conclusion à retenir : **aucune combinaison de tables ne tranche l'accès à un Régiment de Renom.**
 Le Unit & Spell Browser est la seule preuve. Demander la vérification au user dès le premier doute

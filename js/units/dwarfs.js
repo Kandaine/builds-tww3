@@ -48,6 +48,7 @@ const unitImages = {
   gyrobomber: 'assets/units/gyrobomber.png',
   theSkyhammer: 'assets/units/theSkyhammer.png',
   ekrundMiners: 'assets/units/ekrundMiners.png',
+  unradsExcavators: 'assets/units/unradsExcavators.png',
   grudgeThrower: 'assets/units/grudgeThrower.png',
   thane: 'assets/units/thane.png',
   juggoJoriksonn: 'assets/units/juggoJoriksonn.png',

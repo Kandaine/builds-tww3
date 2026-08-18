@@ -58,7 +58,7 @@ const unitImages = {
   chaosWarriorsUndividedHalberds: 'assets/units/chaosWarriorsUndividedHalberds.png',
   chosenGreatWeapons: 'assets/units/chosenGreatWeapons.png',
   maraudersWoC: 'assets/units/maraudersWoC.png',
-  maraudersHorsemen: 'assets/units/maraudersHorsemen.png',
+  ridersOfTheMightySerpent: 'assets/units/ridersOfTheMightySerpent.png',
   chaosWarhoundsWoC: 'assets/units/chaosWarhoundsWoC.png',
   dragonOgres: 'assets/units/dragonOgres.png',
   summonersOfRage: 'assets/units/summonersOfRage.png',

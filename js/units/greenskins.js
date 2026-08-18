@@ -85,6 +85,7 @@ const unitImages = {
   forestGoblinsBows: 'assets/units/forestGoblinsBows.png',
   forestGoblinSpiderRiderArchers: 'assets/units/forestGoblinSpiderRiderArchers.png',
   deffCreeperz: 'assets/units/deffCreeperz.png',
+  arachnarokQueen: 'assets/units/arachnarokQueen.png',
   orcArrerBoyz: 'assets/units/orcArrerBoyz.png',
   squigHerd: 'assets/units/squigHerd.png',
   goblinBoltThrowa: 'assets/units/goblinBoltThrowa.png',

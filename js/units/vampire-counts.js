@@ -70,6 +70,7 @@ const unitImages = {
   sternsmen: 'assets/units/sternsmen.png',
   feastersInTheDusk: 'assets/units/feastersInTheDusk.png',
   theDirepack: 'assets/units/theDirepack.png',
+  devilsOfSwartzhafen: 'assets/units/devilsOfSwartzhafen.png',
   aucassin: 'assets/units/aucassin.png',
   bougars: 'assets/units/bougars.png',
   eustache: 'assets/units/eustache.png',
