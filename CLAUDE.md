@@ -123,13 +123,23 @@ Si la modification touche aux images :
 
 ## Chiffres de référence
 
-Relevés le 16/08/2026 à la clôture de la V1. Un écart n'est pas forcément une erreur, mais il
-doit être expliqué, jamais ignoré :
+Relevés le 18/08/2026, après la passe sur les Régiments de Renom. Un écart n'est pas forcément une
+erreur, mais il doit être expliqué, jamais ignoré :
 
-| Mesure | Valeur |
-|---|---|
-| Factions | 32 |
-| Seigneurs légendaires | 321 |
-| Cartes d'unité affichées, toutes fiches confondues | 3905 |
-| Cartes sans image / images cassées | 0 |
-| Poids JS d'une page de faction | ~33 Ko |
+| Mesure | Valeur | Comment la mesurer |
+|---|---|---|
+| Factions | 32 | nombre de `data/*.json` |
+| Seigneurs légendaires | 321 | somme des entrées de tous les `data/*.json` |
+| Cartes d'unité affichées, toutes fiches confondues | 4015 | somme, par seigneur, de `1 + heroes + army` |
+| Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
+| Poids JS d'une page de faction | ~50 Ko | `core.js` + `app.js` + `js/units/<faction>.js`, non compressé |
+
+Les deux valeurs chiffrées ont bougé depuis la clôture de la V1 le 16/08/2026, et les deux écarts
+sont expliqués :
+
+- **3905 → 4015 cartes.** La passe du 18/08/2026 a posé 125 Régiments de Renom. Le solde n'est pas
+  de +125 parce que dans une partie des cas l'unité de base était à 1 exemplaire : sa ligne
+  disparaît et le RoR la remplace, à somme nulle.
+- **~33 → ~50 Ko de JS.** La V2 a ajouté la recherche, le sélecteur de faction et la navigation
+  entre seigneurs voisins dans `core.js` et `app.js`, qui pèsent aujourd'hui 23 et 22 Ko à eux
+  deux. Le module d'icônes d'une faction ne fait que le reste.

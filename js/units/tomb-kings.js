@@ -59,6 +59,8 @@ const unitImages = {
   hierotitan: 'assets/units/hierotitan.png',
   ushabti: 'assets/units/ushabti.png',
   cryptGhouls: 'assets/units/cryptGhouls.png',
+  corruptedLegion: 'assets/units/corruptedLegion.png',
+  glowingGhouls: 'assets/units/glowingGhouls.png',
   hexwraiths: 'assets/units/hexwraiths.png',
   tombScorpion: 'assets/units/tombScorpion.png',
   lichePriest: 'assets/units/lichePriest.png',

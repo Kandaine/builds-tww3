@@ -123,7 +123,9 @@
         {"icon": "lichePriest", "name": "Liche Priest (Nehekhara)", "qty": 2, "note": "Soutien magique via la Lore of Nehekhara, démultiplié par la réserve de Vents de Magie accrue d'Arkhan (seigneur)"}
       ],
       "army": [
-        {"icon": "cryptGhouls", "name": "Crypt Ghouls", "qty": 5, "note": "Unité des Vampire Counts débloquée (faction) — +5 attaque en mêlée (seigneur) ; cœur de mêlée mordant, souvent supérieur aux Tomb Guard"},
+        {"icon": "cryptGhouls", "name": "Crypt Ghouls", "qty": 3, "note": "Unité des Vampire Counts débloquée (faction) — +5 attaque en mêlée (seigneur) ; cœur de mêlée mordant, souvent supérieur aux Tomb Guard"},
+        {"icon": "corruptedLegion", "name": "Corrupted Legion (Crypt Ghouls)", "qty": 1, "note": "RoR des Crypt Ghouls <strong>verrouillé sur les Followers of Nagash</strong> : il n'existe pour aucune autre faction Roi des Tombes. Comme toute la horde il vit sous « Master of the Dead » (seigneur), dont l'intensité monte à chaque mort proche — c'est l'infanterie qui alimente l'aura en mourant"},
+        {"icon": "glowingGhouls", "name": "Glowing Ghouls (Crypt Ghouls)", "qty": 1, "note": "Second RoR des Crypt Ghouls réservé à sa faction. Arkhan n'a accès aux Goules que parce que les Followers of Nagash autorisent le recrutement d'unités des Comtes Vampires : deux variantes d'élite de la même ligne, chacune à un seul exemplaire"},
         {"icon": "skeletonSpearmen", "name": "Skeleton Spearmen", "qty": 1, "note": "+5 attaque en mêlée (seigneur) — anti-grande unité bon marché"},
         {"icon": "scorpionLegion", "name": "King Nekhesh's Scorpion Legion (Skeleton Spearmen)", "qty": 1, "note": "Régiment de Renom des Skeleton Spearmen, la meilleure ancre anti-grande cible d'une armée qu'Arkhan dirige depuis l'arrière, occupé à lancer"},
         {"icon": "skeletonArchers", "name": "Skeleton Archers", "qty": 1, "note": "+5 attaque en mêlée (seigneur) — tir de soutien bon marché"},
