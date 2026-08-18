@@ -54,7 +54,7 @@
       ],
       "army": [
         {"icon": "direWolf", "name": "Dire Wolves", "qty": 2, "note": "L'unité de base du Direpack, régiment favori d'Isabella — qui lui accorde en plus la <strong>Régénération</strong>. Ces loups ordinaires n'en profitent pas et servent d'écran jetable devant les Coaches"},
-        {"icon": "theDirepack", "name": "The Direpack (Dire Wolves)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Dire Wolves dotée d'une régénération passive de +0,10% des PV/seconde en continu, à condition d'éviter les dégâts de feu (+20% de faiblesse)"},
+        {"icon": "theDirepack", "name": "The Direpack (Dire Wolves)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Dire Wolves. Le même effet de régiment favori lui accorde la <strong>Régénération</strong> (+0,10% des PV par seconde en continu, contre +20% de faiblesse au feu) : elle ne la tient pas de son profil, qui est celui des Dire Wolves ordinaires — hors de l'armée d'Isabella, elle ne régénère pas"},
         {"icon": "cairnWraith", "name": "Cairn Wraiths", "qty": 5, "note": "Anti-infanterie légère éthérée — très résistantes aux dégâts non-magiques"},
         {"icon": "hexwraith", "name": "Hexwraiths", "qty": 1, "note": "Cavalerie éthérée rapide — résistante aux dégâts non-magiques, idéale pour harceler les flancs et chasser les tireurs isolés"},
         {"icon": "theChillgheists", "name": "The Chillgheists (Hexwraiths)", "qty": 1, "note": "RoR des Hexwraiths. Cavalerie éthérée, insensible aux armes non magiques : elle traverse une ligne que les héros Vampire d'Isabella, eux, doivent affronter de face"},
