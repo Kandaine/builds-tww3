@@ -23,7 +23,7 @@
         {"icon": "blackOrcs", "name": "Black Orcs", "qty": 4, "note": "-15% d'entretien (faction), provoquent la Peur chez l'ennemi (seigneur) — le cœur increvable et effrayant de cette armée"},
         {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 3, "note": "Infanterie de mêlée standard pour épaissir la ligne — délibérément préféré aux Goblins, pénalisés à -9 commandement (faction)"},
         {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz. Grimgor et ses 'Ardboyz frappent devant : cette ligne est ce qui empêche l'armée de se disloquer derrière lui"},
-        {"icon": "orcBoyzSpears", "name": "Orc Boyz (Lances)", "qty": 3, "note": "Anti-cavalerie fiable en complément, sans la pénalité de commandement des Goblins (faction)"},
+        {"icon": "orcBoyzSpears", "name": "Orc Boyz (Spears)", "qty": 3, "note": "Anti-cavalerie fiable en complément, sans la pénalité de commandement des Goblins (faction)"},
         {"icon": "orcBoarBoyBigUns", "name": "Orc Boar Boy Big 'Uns", "qty": 2, "note": "-15% d'entretien en tant qu'unité Big 'Uns (faction) — cavalerie lourde pour percer les flancs"},
         {"icon": "brokenTusksMob", "name": "Broken Tusks Mob (Orc Boar Boy Big 'Uns)", "qty": 1, "note": "RoR des Orc Boar Boy Big 'Uns. Unité Big 'Un, donc <strong>-15%</strong> d'entretien (faction) — la seule cavalerie d'une fiche sinon entièrement à pied"},
         {"icon": "doomDiverCatapults", "name": "Doom Diver Catapults", "qty": 1, "note": "Artillerie à trajectoire haute pour cibler les tireurs isolés adverses"}
@@ -55,7 +55,7 @@
       "army": [
         {"icon": "daWarlordsBoyz", "name": "Da Warlord's Boyz (Night Goblins)", "qty": 2, "note": "Régiment favori : capacité \"Cowardly Guardian\" (+13% résistance physique pour Skarsnik à 35m) et +1 capacité (faction), -20% d'entretien (faction), +8 commandement et +4 défense en mêlée (seigneur) — variante d'élite des Night Goblins, cache des Fanatics explosifs pour surprendre l'ennemi"},
         {"icon": "nightGoblins", "name": "Night Goblins", "qty": 4, "note": "-20% d'entretien (faction), +8 commandement et +4 défense en mêlée (seigneur) — infanterie de masse bon marché"},
-        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 3, "note": "Les effets de Skarsnik ne couvrent que les <strong>Night Goblins</strong> — +8 de commandement, +4 de défense. Ces lances-ci n'en profitent pas et comblent ce que les Night Goblins ne font pas : arrêter une charge montée au lieu de fondre devant elle"},
+        {"icon": "goblinsSpears", "name": "Goblins (Spears)", "qty": 3, "note": "Les effets de Skarsnik ne couvrent que les <strong>Night Goblins</strong> — +8 de commandement, +4 de défense. Ces lances-ci n'en profitent pas et comblent ce que les Night Goblins ne font pas : arrêter une charge montée au lieu de fondre devant elle"},
         {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "-20% d'entretien en tant qu'unité Goblin (faction) — tir de masse bon marché en complément"},
         {"icon": "durkitsSquigs", "name": "Durkit's Squigs (Night Goblin Squig Hoppers)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien en tant qu'unité Squig (faction) — variante d'élite des Squig Hoppers, cavalerie légère bondissante"},
         {"icon": "nightGoblinSquigHoppers", "name": "Night Goblin Squig Hoppers", "qty": 1, "note": "-20% d'entretien en tant qu'unité Squig (faction) — cavalerie légère bondissante pour flanquer et harceler"},
@@ -120,13 +120,13 @@
         {"icon": "blacktoof", "name": "Blacktoof (Héros Légendaire)", "qty": 1, "note": "Second héros légendaire du mod <em>3 Legendary Guys</em> présent au départ. Lanceur de sorts monté sur sanglier, avec des statistiques de personnage nommé : c'est lui qui apporte la magie à une fiche qui n'en a plus d'autre source"}
       ],
       "army": [
-        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 4, "note": "+8 commandement et 10% résistance physique (seigneur) — ligne de tenue anti-charge bien plus fiable qu'à l'accoutumée"},
+        {"icon": "goblinsSpears", "name": "Goblins (Spears)", "qty": 4, "note": "+8 commandement et 10% résistance physique (seigneur) — ligne de tenue anti-charge bien plus fiable qu'à l'accoutumée"},
         {"icon": "teefRobberz", "name": "Teef Robberz (Goblin Wolf Chariots)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), -20% d'entretien et +15 bonus de charge en tant que Chariot (faction) — cavalerie de choc bon marché"},
         {"icon": "moonHowlers", "name": "Moon-howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), même bonus d'entretien et de charge (faction) — cavalerie légère rapide pour flanquer"},
         {"icon": "stoneTrolls", "name": "Stone Trolls", "qty": 2, "note": "Monstre régénérant increvable, parfait complément à la horde de Gobelins"},
         {"icon": "riverTrolls", "name": "River Trolls", "qty": 1, "note": "Les effets de Grom portent sur ses <strong>chars et Pump Wagons</strong> — entretien, bonus de charge. Ces Trolls n'en reçoivent rien : leur vomi corrosif traite l'infanterie serrée que ses chars ne peuvent pas traverser"},
         {"icon": "daSwampFings", "name": "Da Swamp Fings (River Trolls)", "qty": 1, "note": "Régiment de Renom des River Trolls — leur vomi corrosif ravage l'infanterie groupée, et leur régénération tient la ligne le temps que la cuisine de Grom fasse effet"},
-        {"icon": "snotlingPumpWagons", "name": "Snotling Pump Wagons (Rouleaux à Pointes)", "qty": 2, "note": "-20% d'entretien et +15 bonus de charge en tant que Pump Wagon (faction) — char suicide explosif pour semer le chaos dans les lignes ennemies"},
+        {"icon": "snotlingPumpWagons", "name": "Snotling Pump Wagons (Spiky Rollers)", "qty": 2, "note": "-20% d'entretien et +15 bonus de charge en tant que Pump Wagon (faction) — char suicide explosif pour semer le chaos dans les lignes ennemies"},
         {"icon": "goblinRockLobbers", "name": "Goblin Rock Lobbers", "qty": 1, "note": "Artillerie à zone d'effet pour briser les formations groupées"},
         {"icon": "goblinRockLobbers", "name": "Hammer of Gork (Goblin Rock Lobbers)", "qty": 1, "note": "RoR des Goblin Rock Lobbers. Équipage gobelin, donc <strong>+8</strong> de Commandement et <strong>10%</strong> de résistance physique (seigneur) : une batterie qui ne fuit pas au premier assaut"}
       ],
@@ -158,7 +158,7 @@
         {"icon": "orcBigUns", "name": "Orc Big 'Uns", "qty": 4, "note": "Élite de mêlée increvable, immunisée à la Psychologie sous le commandement d'Azhag (seigneur)"},
         {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 1, "note": "Même immunité à la Psychologie (seigneur) — infanterie de mêlée standard"},
         {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz — la ligne verte d'Azhag, qui doit tenir seule pendant que la Couronne de Sorcellerie lui dicte de lancer plutôt que de charger"},
-        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 2, "note": "Aucun effet d'Azhag ne vise les Gobelins — ses bonus vont aux Trolls, à la magie de Mort et à son Waaagh!. Ces lances sont là pour un manque précis : sa ligne verte est entièrement offensive, et rien d'autre n'arrête une charge de cavalerie"},
+        {"icon": "goblinsSpears", "name": "Goblins (Spears)", "qty": 2, "note": "Aucun effet d'Azhag ne vise les Gobelins — ses bonus vont aux Trolls, à la magie de Mort et à son Waaagh!. Ces lances sont là pour un manque précis : sa ligne verte est entièrement offensive, et rien d'autre n'arrête une charge de cavalerie"},
         {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "Le tir bon marché qui use l'ennemi pendant qu'Azhag lance. Sa fiche n'a aucune autre source de dégâts à distance au sol, les Araignées étant montées et les Rock Lobbers rares"},
         {"icon": "daSwampFings", "name": "Da Swamp Fings (River Trolls)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des River Trolls, jamais effrayée sous l'aura d'Azhag (seigneur)"},
         {"icon": "riverTrolls", "name": "River Trolls", "qty": 1, "note": "Monstre régénérant increvable, jamais effrayé sous l'aura d'Azhag (seigneur)"},
@@ -191,7 +191,7 @@
       ],
       "army": [
         {"icon": "orcBigUns", "name": "Orc Big 'Uns", "qty": 3, "note": "-10% d'entretien (seigneur) — élite de mêlée au centre de la ligne"},
-        {"icon": "orcBoyzSpears", "name": "Orc Boyz (Lances)", "qty": 3, "note": "Même bonus d'entretien (seigneur) — anti-cavalerie fiable"},
+        {"icon": "orcBoyzSpears", "name": "Orc Boyz (Spears)", "qty": 3, "note": "Même bonus d'entretien (seigneur) — anti-cavalerie fiable"},
         {"icon": "orcBoyz", "name": "Orc Boyz", "qty": 1, "note": "Même bonus d'entretien (seigneur) — infanterie de mêlée standard"},
         {"icon": "harbothsBlackmountainBoyz", "name": "Harboth's Blackmountain Boyz (Orc Boyz)", "qty": 1, "note": "Régiment de Renom des Orc Boyz, couvert par le <strong>-10% d'entretien</strong> du seigneur comme le reste de son infanterie verte — la meilleure version de l'unité qui porte toute la fiche"},
         {"icon": "orcArrerBoyz", "name": "Orc Arrer Boyz", "qty": 3, "note": "Même bonus d'entretien (seigneur) — tir de soutien"},
@@ -444,7 +444,7 @@
         {"icon": "spiderRiders", "name": "Goblin Spider Riders", "qty": 4, "note": "<strong>-50% de coût de recrutement</strong> et <strong>+8 d'Attaque de mêlée</strong> (faction) : quatre unités pour le prix de deux, et elles cessent d'être de simples harceleuses. Elles traversent tous les terrains sans pénalité, ce qui en fait la vraie manœuvre de cette armée"},
         {"icon": "nightGoblins", "name": "Night Goblins", "qty": 2, "note": "Avec <strong>+13 de Commandement</strong>, ils cessent de rompre au premier choc — le défaut qui rend habituellement les gobelins injouables en ligne"},
         {"icon": "daWarlordsBoyz", "name": "Da Warlord's Boyz (Night Goblins)", "qty": 1, "note": "RoR des Night Goblins. Le <strong>+13</strong> de Commandement (faction) et le <strong>+20%</strong> de résistance aux sorts (seigneur) transforment une unité jetable en ligne qui tient réellement"},
-        {"icon": "goblinsSpears", "name": "Goblins (Lances)", "qty": 2, "note": "L'anti-cavalerie bon marché, elle aussi transformée par le bonus de Commandement"},
+        {"icon": "goblinsSpears", "name": "Goblins (Spears)", "qty": 2, "note": "L'anti-cavalerie bon marché, elle aussi transformée par le bonus de Commandement"},
         {"icon": "goblinArchers", "name": "Goblin Archers", "qty": 2, "note": "Le tir de volume — inefficace seul, mais suffisant pour forcer l'adversaire à avancer dans les vortex des chamans"},
         {"icon": "nightGoblinSquigHoppers", "name": "Night Goblin Squig Hoppers", "qty": 1, "note": "Imprévisibles et rapides, ils bénéficient du <strong>+13 de Commandement</strong> et servent à désorganiser les lignes de tir adverses"},
         {"icon": "durkitsSquigs", "name": "Durkit's Squigs (Night Goblin Squig Hoppers)", "qty": 1, "note": "RoR des Night Goblin Squig Hoppers. Le <strong>+13</strong> de Commandement (faction) leur permet de rester assez longtemps sur le terrain pour que leurs bonds paient"},
@@ -580,7 +580,7 @@
         {"icon": "nightGoblinShaman", "name": "Night Goblin Shaman", "qty": 1, "note": "La seule magie de la liste. Savoir des Petits Waaagh, dont les sorts de zone compensent la faiblesse individuelle des gobelins"}
       ],
       "army": [
-        {"icon": "goblinWolfRiders", "name": "Goblin Wolf Riders (Lances)", "qty": 3, "note": "Le socle de la tribu. <strong>Charge Glorieuse</strong> (faction) leur donne un bonus de charge qui ne s'épuise pas comme un bonus ordinaire — retirez-les et relancez-les plutôt que de les laisser en mêlée"},
+        {"icon": "goblinWolfRiders", "name": "Goblin Wolf Riders", "qty": 3, "note": "Le socle de la tribu. <strong>Charge Glorieuse</strong> (faction) leur donne un bonus de charge qui ne s'épuise pas comme un bonus ordinaire — retirez-les et relancez-les plutôt que de les laisser en mêlée"},
         {"icon": "goblinWolfRidersBows", "name": "Goblin Wolf Riders Archers", "qty": 3, "note": "Le cœur réel de la fiche : du tir monté à <strong>+15% de portée</strong> (faction), qui tourne autour de l'ennemi sans jamais l'engager"},
         {"icon": "moonHowlers", "name": "Moon-howlers (Goblin Wolf Riders)", "qty": 2, "note": "Régiment favori à <strong>+1 capacité</strong> (faction) — la version d'élite des chevaucheurs de loups"},
         {"icon": "morgrubbsMangyMarauders", "name": "Morgrubb's Mangy Marauders (Wolf Archers)", "qty": 2, "note": "Second régiment favori à <strong>+1 capacité</strong> (faction) — l'élite du tir monté, et l'unité qui profite le plus du réapprovisionnement des munitions du Waaagh!"},

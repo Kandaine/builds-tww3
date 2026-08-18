@@ -48,7 +48,7 @@
       "totalSlots": 20,
       "lord": {"icon": "repanse", "name": "Repanse de Lyonesse", "qty": 1, "note": "Ancienne bergère devenue championne du peuple — son Halo of Maidenly Wrath (seigneur) aveugle les ennemis à son contact (-24/-24/-30 défense/attaque/précision pendant 10s) sans jamais toucher ses propres troupes, et sa Perfect Vigour (seigneur) lui permet d'enchaîner charges et manœuvres sans jamais se fatiguer ; ses -80 de relations diplomatiques avec Vampire Counts/Vampire Coast/Tomb Kings (faction) garantissent une guerre quasi permanente contre les Morts-Vivants"},
       "heroes": [
-        {"icon": "henri", "name": "Henri le Massif (Legendary Hero)", "qty": 1, "note": "Paladin héros légendaire unique, offert gratuitement dès le départ de campagne avec Repanse. Son trait \"There Can Be Only One\" accorde +4 Chevalerie/tour, +10 attaque en mêlée et +10 bonus de charge, avec une spécialisation dévastatrice contre les gros gabarits (monstres, chars) ; monté sur Hippogryph plutôt que Pegasus comme les autres Paladins"},
+        {"icon": "henri", "name": "Henri le Massif (Héros Légendaire)", "qty": 1, "note": "Paladin héros légendaire unique, offert gratuitement dès le départ de campagne avec Repanse. Son trait \"There Can Be Only One\" accorde +4 Chevalerie/tour, +10 attaque en mêlée et +10 bonus de charge, avec une spécialisation dévastatrice contre les gros gabarits (monstres, chars) ; monté sur Hippogryph plutôt que Pegasus comme les autres Paladins"},
         {"icon": "damsel", "name": "Damsel (Life)", "qty": 2, "note": "Soutien magique pour appuyer le cœur de troupes Peasant — deux fois moins chères à entretenir grâce au -50% pour les Héros intégrés (faction)"},
         {"icon": "brtBrunner", "name": "Brunner (Héros Légendaire)", "qty": 1, "note": "Le plus fameux chasseur de primes du Vieux Monde (mod Heroes of Legend), réputé pour son efficacité impitoyable à éliminer ses cibles — un roturier de plus dans l'ost de la Bergère, aux côtés du paysan Henri le Massif, et lui aussi deux fois moins cher grâce au -50% sur les héros intégrés (faction)"}
       ],
@@ -389,7 +389,7 @@
       "army": [
         {"icon": "warPilgrimsMaceShield", "name": "War Pilgrims (Maces & Shields)", "qty": 3, "note": "+30 d'armure au rang 7 (seigneur) et renouvellement affranchi de l'Économie Paysanne (faction) — le cœur increvable de la horde, aguerri par des dizaines d'épreuves de voyage"},
         {"icon": "warPilgrimsMace", "name": "War Pilgrims (Great Maces)", "qty": 2, "note": "Mêmes bonus (faction/seigneur) — variante à deux mains qui brise l'infanterie lourde"},
-        {"icon": "battlePilgrimsSps", "name": "Battle Pilgrims (Lances)", "qty": 2, "note": "Pèlerins en formation de lances — mur anti-cavalerie de la colonne de pèlerinage"},
+        {"icon": "battlePilgrimsSps", "name": "Battle Pilgrims (Spears)", "qty": 2, "note": "Pèlerins en formation de lances — mur anti-cavalerie de la colonne de pèlerinage"},
         {"icon": "grailReliquae", "name": "Grail Reliquae", "qty": 1, "note": "La relique portée qui galvanise les Pèlerins — pièce maîtresse morale de la horde"},
         {"icon": "mushaInfantry", "name": "Musha Infantry (Naginatas & Bows)", "qty": 2, "note": "Samouraïs du Lointain Orient au service de la compagnie — infanterie hybride mêlée/tir, unique en Bretonnie"},
         {"icon": "ashigaruYari", "name": "Ashigarus (Yaris)", "qty": 1, "note": "Piétaille nippone bon marché — élargit la ligne à peu de frais pour les fantassins engagés par la compagnie"},

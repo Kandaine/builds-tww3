@@ -15,7 +15,7 @@
       "totalSlots": 20,
       "lord": {"icon": "vlad", "name": "Vlad von Carstein", "qty": 1, "note": "Duelliste principal — grâce au Vanguard Deployment, il engage le contact dès le premier round plutôt que d'attendre"},
       "heroes": [
-        {"icon": "isabella", "name": "Isabella von Carstein (Legendary Hero)", "qty": 1, "note": "Indispensable pour activer le plafond de soin +50% — la combiner avec Vlad dans la même armée n'est pas optionnel, c'est le cœur du build"},
+        {"icon": "isabella", "name": "Isabella von Carstein (Héros Légendaire)", "qty": 1, "note": "Indispensable pour activer le plafond de soin +50% — la combiner avec Vlad dans la même armée n'est pas optionnel, c'est le cœur du build"},
         {"icon": "frederickVanHal", "name": "Frederick van Hal (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, et le nécromancien le mieux placé sur cette page : van Hal est le <strong>premier nécromancien de l'Empire</strong>, celui qui leva les morts de Sylvanie bien avant les von Carstein. Son Invocation of Nehek renforce celle d'Isabella"},
         {"icon": "theOldOneHero", "name": "The Old One (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, de classe <em>dignitary</em> — un profil de soutien de campagne qui sécurise un flanc pendant que Vlad et Isabella tiennent le centre"}
       ],
@@ -48,7 +48,7 @@
       "totalSlots": 20,
       "lord": {"icon": "isabella", "name": "Isabella von Carstein", "qty": 1, "note": "Reste en retrait, lance ses sorts en continu — ses buffs de +10/+10 mêlée et +25% force d'arme rendent chaque héros Vampire de son armée bien plus dangereux qu'ailleurs"},
       "heroes": [
-        {"icon": "vlad", "name": "Vlad von Carstein (Legendary Hero)", "qty": 1, "note": "Indispensable, pas optionnel : déclenche le +50% de plafond de soin. Gratuit dès le départ de campagne."},
+        {"icon": "vlad", "name": "Vlad von Carstein (Héros Légendaire)", "qty": 1, "note": "Indispensable, pas optionnel : déclenche le +50% de plafond de soin. Gratuit dès le départ de campagne."},
         {"icon": "vampireHeroDeath", "name": "Vampire (Death)", "qty": 2, "note": "Grâce au +3 de capacité de héros pour les Vampires, tu peux aligner 3 Vampires sans sacrifier d'autres slots de héros. Chacun profite de +10 Attaque/Défense en mêlée et +25% Force de l'arme rien qu'en étant dans l'armée d'Isabella"},
         {"icon": "whisperingNell", "name": "Whispering Nell (Héroïne Légendaire)", "qty": 1, "note": "Héroïne légendaire du mod <em>3 Legendary Guys</em>, montée sur cauchemar et de classe <em>spy</em> — elle profite comme les autres du <strong>+10 d'attaque et de défense en mêlée et du +25% de force d'arme</strong> que donne la seule présence d'Isabella"}
       ],
@@ -299,11 +299,11 @@
       ],
       "army": [
         {"icon": "theRoseLances", "name": "The Rose Lances (Black Knights)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — l'élite montée de Mousillon, fer de lance de la charge à +15% (faction)"},
-        {"icon": "mslBlackKnightsLances", "name": "Black Knights (Lances)", "qty": 1, "note": "Chevaliers morts de Mousillon, lance au poing — le cœur de la charge, dopé par le +15% de bonus de charge en attaque (faction)"},
+        {"icon": "mslBlackKnightsLances", "name": "Black Knights (Lances & Barding)", "qty": 1, "note": "Chevaliers morts de Mousillon, lance au poing — le cœur de la charge, dopé par le +15% de bonus de charge en attaque (faction)"},
         {"icon": "knightsOfBougar", "name": "Knights of Bougar", "qty": 1, "note": "Régiment de Renom de la faction — la bande du Boucher, en écho au héros légendaire Bougars"},
         {"icon": "hellsteedKnights", "name": "Hellsteed Knights", "qty": 2, "note": "Cavalerie volante infernale — frappe l'artillerie et les casters pendant que la chevalerie enfonce"},
         {"icon": "mslMenAtArmsPolearm", "name": "Men-at-Arms (Polearm)", "qty": 2, "note": "+8 de Commandement et +8% de renouvellement (seigneur) — la piétaille famélique de la cité maudite, bien plus tenace qu'elle n'en a l'air, qui fixe l'ennemi pour la charge"},
-        {"icon": "mslBowmenPox", "name": "Peasant Bowmen (Flèches Pestilentielles)", "qty": 2, "note": "Mêmes bonus paysans (seigneur) — flèches empoisonnées par la peste de Mousillon, elles affaiblissent avant le contact"},
+        {"icon": "mslBowmenPox", "name": "Peasant Bowmen (Pox Arrows)", "qty": 2, "note": "Mêmes bonus paysans (seigneur) — flèches empoisonnées par la peste de Mousillon, elles affaiblissent avant le contact"},
         {"icon": "mslGraveGuardGreat", "name": "Grave Guard (Great Weapons)", "qty": 1, "note": "Morts-vivants d'élite en armes lourdes — ancre de mêlée qui tient là où les paysans cèdent"},
         {"icon": "ghostsOfGrismerie", "name": "The Ghosts of Grismerie", "qty": 1, "note": "Régiment de Renom éthéré — immunisé aux dégâts non magiques, il fixe les unités que la cavalerie viendra briser"},
         {"icon": "cursedTrebuchet", "name": "Cursed Field Trebuchet", "qty": 1, "note": "Trébuchet maudit — l'artillerie bretonnienne pervertie, projectiles chargés de magie noire"},
