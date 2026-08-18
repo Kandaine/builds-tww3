@@ -28,7 +28,7 @@
         {"icon": "tebPavisiers", "name": "Pavise Crossbowmen", "qty": 1, "note": "Arbalétriers protégés d'énormes pavois de bois, qui ripostent en relative impunité — ligne de tir durable qui tient sous le feu adverse"},
         {"icon": "tebFreelanceKnights", "name": "Freelance Knights", "qty": 2, "note": "Chevaliers bretonniens échoués dans les Borderlands, bien équipés quoique « distinctement délirants » — cavalerie de choc qui charge les flancs, le marteau de l'ost"},
         {"icon": "tebMontanteSwordsmen", "name": "Montante Swordsmen", "qty": 1, "note": "Duellistes accomplis à l'espadon, capables de défier des régiments entiers sur un pont pour le sport — élite de mêlée qui ouvre l'infanterie lourde"},
-        {"icon": "tebVespero", "name": "Vespero's Vendetta (Duellists)", "qty": 1, "note": "RoR des Duellists, en remplacement de l'unique exemplaire de base. Valmir aligne déjà un Master Duellist en héros : autant que la ligne qui l'accompagne soit la meilleure disponible"},
+        {"icon": "tebDuellists", "name": "Duellists", "qty": 1, "note": "Bretteurs excentriques du sud qui dédaignent armure et bouclier — spécialistes rapides qui débordent et abattent les cibles isolées"},
         {"icon": "tebIrrananHillmen", "name": "Irranan Hillmen", "qty": 1, "note": "Montagnards coriaces mais indisciplinés des monts Irrana — tirailleurs bon marché « touche-à-tout » qui écran­tent et harcèlent"},
         {"icon": "tebBronzinoGalloperGuns", "name": "Bronzino's Galloper Guns", "qty": 1, "note": "RoR des Galloper Guns, sa seule pièce d'artillerie. Rien dans les effets de Valmir ne vise l'artillerie — elle vaut par son profil, et le <strong>+10%</strong> de reconstitution des pertes (seigneur) lui permet d'encaisser une contre-charge"}
       ],

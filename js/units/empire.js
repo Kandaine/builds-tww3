@@ -34,6 +34,7 @@ const unitImages = {
   elspeth: 'assets/portraits/elspeth.png',
   chaosWarriorsTzeentch: 'assets/units/chaosWarriorsTzeentch.png',
   halberdiers: 'assets/units/halberdiers.png',
+  swordsmen: 'assets/units/swordsmen.png',
   spearmenEmpire: 'assets/units/spearmenEmpire.png',
   handgunners: 'assets/units/handgunners.png',
   greatCannons: 'assets/units/greatCannons.png',
