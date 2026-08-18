@@ -90,8 +90,9 @@
       "army": [
         {"icon": "jadeLion", "name": "Jade Lion", "qty": 3, "note": "-30% d'entretien (seigneur) — monstre félin rapide et mordant"},
         {"icon": "celestialLion", "name": "Celestial Lion", "qty": 2, "note": "Même bonus d'entretien (seigneur) — monstre volant pour frapper les flancs et l'arrière"},
-        {"icon": "theEmpressCrowmen", "name": "The Empress Crowmen (Onyx Crowmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), en plus du -30% d'entretien habituel (seigneur) — variante d'élite des Onyx Crowmen, infanterie d'élite du Jade Court"},
-        {"icon": "onyxCrowmen", "name": "Onyx Crowmen", "qty": 2, "note": "-30% d'entretien (seigneur) — infanterie d'élite du Jade Court"},
+        {"icon": "theEmpressCrowmen", "name": "Empress Crowmen (Onyx Crowmen)", "qty": 2, "note": "Régiment favori : +1 capacité (faction), en plus du -30% d'entretien habituel (seigneur) — variante d'élite des Onyx Crowmen, infanterie d'élite du Jade Court"},
+        {"icon": "onyxCrowmen", "name": "Onyx Crowmen", "qty": 1, "note": "-30% d'entretien (seigneur) — infanterie d'élite du Jade Court"},
+        {"icon": "theEmpressCrowmen", "name": "Empress Crowmen (Onyx Crowmen)", "qty": 1, "note": "Régiment favori de Yuan Bo, <strong>+1 capacité</strong>, et le <strong>-30%</strong> d'entretien du seigneur couvre les Onyx Crowmen dont il est la version d'élite"},
         {"icon": "greatMoonBird", "name": "Great Moon Bird", "qty": 1, "note": "Même bonus d'entretien (seigneur) — monstre volant de soutien et de harcèlement"},
         {"icon": "jadeWarriors", "name": "Jade Warriors", "qty": 1, "note": "Ligne de tenue standard pour ancrer le front pendant que la ménagerie flanque"},
         {"icon": "peasantLongSpearmen", "name": "Peasant Long Spearmen", "qty": 2, "note": "Le <strong>-30% d'entretien</strong> de Yuan Bo couvre ses créatures célestes, jamais ses paysans. Ces lances sont ce qui les protège au sol, et ce qu'il peut perdre sans compromettre sa ménagerie"},
