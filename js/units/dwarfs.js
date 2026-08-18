@@ -96,5 +96,6 @@ const unitImages = {
   warriorsDragonfirePass: 'assets/units/warriorsDragonfirePass.png',
   brotherhoodOfGrimnir: 'assets/units/brotherhoodOfGrimnir.png',
   longDrongsSlayerPirates: 'assets/units/longDrongsSlayerPirates.png',
-  spiritOfGrungni: 'assets/units/spiritOfGrungni.png'
+  spiritOfGrungni: 'assets/units/spiritOfGrungni.png',
+  gobLobbers: 'assets/units/gobLobbers.png'
 };
