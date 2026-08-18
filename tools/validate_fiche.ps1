@@ -1,5 +1,5 @@
-﻿# Valide une fiche de builds-tww3 : total des slots, icones enregistrees dans
-# js/units/<faction>.js, fichiers images presents, et signale les assets orphelins.
+﻿# Valide une fiche de builds-tww3 : total des slots, absence de ligne en double,
+# icones enregistrees dans js/units/<faction>.js et fichiers images presents.
 #
 # Depuis le decoupage du registre unique (l'ancien js/data.js), chaque faction a son
 # propre module d'images : c'est celui-la qu'on lit, et lui seul. Une cle declaree
@@ -44,6 +44,30 @@ foreach($l in $lords){
   $flag = if($tot -eq $l.build.totalSlots){ "OK " } else { "KO " }
   if($tot -ne $l.build.totalSlots){ $ko++ }
   Write-Output("{0}{1,-24} slots={2}/{3}  heros={4} unites={5}" -f $flag,$l.id,$tot,$l.build.totalSlots,$l.build.heroes.Count,$l.build.army.Count)
+
+  # --- Deux lignes pour la meme unite dans un meme build ------------------------
+  # Ajoute le 18/08/2026, apres le commit 7ebe40f. Une passe automatique comparait
+  # les noms de regiments SANS normaliser la ponctuation : elle n'a pas reconnu six
+  # regiments deja presents et les a ajoutes une seconde fois, en decrementant
+  # l'unite de base pour tenir le compte. Six fiches ont donc annonce 3 exemplaires
+  # d'un regiment plafonne a 2 -- et AUCUN controle ne pouvait le voir, puisque le
+  # total de slots restait juste. C'est ce trou-la qu'on bouche.
+  #
+  # La normalisation est indispensable : le dictionnaire du jeu ecrit l'apostrophe
+  # typographique (U+2019) et le tiret demi-cadratin (U+2013) la ou les fiches
+  # emploient les signes droits. Une egalite exacte laisserait passer le doublon.
+  foreach($sec in 'heroes','army'){
+    $vus = @{}
+    foreach($u in @($l.build.$sec)){
+      if(-not $u.name){ continue }
+      $cle = ([string]$u.name).Replace([char]0x2019,"'").Replace([char]0x2018,"'").Replace([char]0x2013,'-').Replace([char]0x2014,'-').Trim().ToLower()
+      if($vus.ContainsKey($cle)){
+        $ko++
+        Write-Output("   KO doublon '{0}' : deux lignes dans {1} — fusionner en une seule" -f $u.name,$sec)
+      }
+      $vus[$cle] = $true
+    }
+  }
 
   $icons = @($l.build.lord.icon) + ($l.build.heroes.icon) + ($l.build.army.icon)
   foreach($i in $icons){
