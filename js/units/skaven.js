@@ -91,7 +91,6 @@ const unitImages = {
   pusbagsSlings: 'assets/units/pusbagsSlings.png',
   rottenRodentsDual: 'assets/units/rottenRodentsDual.png',
   vrrtkinStormvermin: 'assets/units/vrrtkinStormvermin.png',
-  vrrtkinDeathWindMortars: 'assets/units/vrrtkinDeathWindMortars.png',
   vrrtkinRatOgres: 'assets/units/vrrtkinRatOgres.png',
   turntails: 'assets/units/turntails.png',
   misericordeOfMordheim: 'assets/portraits/misericordeOfMordheim.png',

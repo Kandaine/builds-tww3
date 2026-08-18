@@ -200,8 +200,7 @@
       ],
       "army": [
         {"icon": "tebPirazzoLostLegion", "name": "Pirazzo's Lost Legion (Pikemen)", "qty": 2, "note": "Régiment de Renom qu'El Cadavo favorise (+1 de capacité → 2 unités) : piquiers vétérans doublés d'arbalétriers — l'anvil de la bande"},
-        {"icon": "tebAdventurers", "name": "Adventurers", "qty": 2, "note": "Cœur de la bande : vétérans endurcis « qui ont affronté les Lézards de Lustrie » — polyvalents et coriaces"},
-        {"icon": "tebAlMuktarDesertDogs", "name": "Al Muktar's Desert Dogs", "qty": 1, "note": "Régiment de Renom <strong>sans unité de base</strong> : cavalerie mercenaire arabyenne. Il prend le slot d''un Adventurer — sur la fiche d''un aventurier côtier estalien, les Chiens du Désert sont les mercenaires naturels de la péninsule"},
+        {"icon": "tebAdventurers", "name": "Adventurers", "qty": 3, "note": "Cœur de la bande : vétérans endurcis « qui ont affronté les Lézards de Lustrie » — polyvalents et coriaces"},
         {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 2, "note": "Vétérans en armure lourde et meilleurs mousquets — l'élite fiable du conquistador"},
         {"icon": "tebSartosanPirates", "name": "Sartosan Pirates", "qty": 2, "note": "Le volume de mêlée d'une bande qui n'a ni ligne de bataille ni discipline. Aucun effet propre à El Cadavo ne les couvre : seule joue la mécanique de rang 7 des Royaumes du Sud, et ces flibustiers y arrivent vite à force de razzias"},
         {"icon": "tebSwashbucklers", "name": "Swashbucklers", "qty": 2, "note": "Rascals armés pour qui le fair-play n'existe pas — flanqueurs sournois"},
@@ -235,8 +234,7 @@
         {"icon": "tebPriestessMyrmidia", "name": "Priestess of Myrmidia", "qty": 1, "note": "Prêtresse-chevalière de l'Ordre de l'Aigle, forte à Magritta — soutien tactique"}
       ],
       "army": [
-        {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 2, "note": "Cœur de la synergie de Lupio : vétérans conquistadors aux meilleures arquebuses — buffés DEUX fois (portée +20% poudre noire ET entretien -10%). Rideau de feu increvable"},
-        {"icon": "tebAsarnilDragonlord", "name": "Asarnil the Dragonlord", "qty": 1, "note": "Régiment de Renom <strong>sans unité de base</strong>, et le seul dragon accessible aux Royaumes du Sud. Il prend le slot d''un Royal Guard, et sort donc du <strong>-10%</strong> d''entretien que le seigneur réserve aux Adventurers, Royal Guard, Riders et Lancers. Magritta était la seule fiche de la page sans aucun Régiment de Renom"},
+        {"icon": "tebRoyalGuard", "name": "Royal Guard", "qty": 3, "note": "Cœur de la synergie de Lupio : vétérans conquistadors aux meilleures arquebuses — buffés DEUX fois (portée +20% poudre noire ET entretien -10%). Rideau de feu increvable"},
         {"icon": "tebHandgunners", "name": "Handgunners", "qty": 3, "note": "Arquebusiers — infanterie à poudre noire qui tire +20% plus loin (Lupio) : tir perforant à longue portée, l'avenir de la guerre selon lui"},
         {"icon": "tebCarabiniers", "name": "Carabiniers", "qty": 2, "note": "Cavalerie à poudre noire — +20% de portée (Lupio) : mousquetaires montés qui fusillent les angles morts de loin"},
         {"icon": "tebBillmen", "name": "Billmen", "qty": 2, "note": "Hallebardiers que Lupio rend IMMUNISÉS au débordement (faction) — l'ancre anti-flanc qui protège la ligne de feu des charges et des monstres"},
@@ -312,8 +310,7 @@
         {"icon": "tebCrossbowmen", "name": "Crossbowmen", "qty": 2, "note": "L'autre moitié de la ligne de tir, en tir tendu là où les arquebuses percent. Deux profils distincts derrière le même mur de piques, pour n'avoir jamais à choisir sa cible faute d'arme adaptée"},
         {"icon": "tebKnightsEncarmine", "name": "Knights Encarmine", "qty": 2, "note": "Gashnag paie <strong>+50% de coût</strong> pour ses deux ordres consacrés. Ces chevaliers écarlates sont la charge lourde qu'il peut aligner au tarif normal, et donc la seule qu'il aligne en nombre"},
         {"icon": "tebBrokenLances", "name": "Broken Lances", "qty": 2, "note": "La cavalerie que Gashnag peut aligner sans payer la surcharge de 50% qui frappe ses deux ordres consacrés — même rôle de choc, coût normal"},
-        {"icon": "tebSartosanPirates", "name": "Sartosan Pirates", "qty": 1, "note": "Une principauté frontalière n'a pas d'armée permanente : elle achète. Ces flibustiers sont le volume de mêlée que l'or de Gashnag procure sans peser sur le budget que ses ordres consacrés dévorent"},
-        {"icon": "tebMengilManflayers", "name": "Mengil Manhide's Manflayers", "qty": 1, "note": "Régiment de Renom <strong>sans unité de base</strong> : des Elfes Noirs écorcheurs d''hommes. Il prend le slot d''un Sartosan Pirate — la cruauté plutôt que le nombre, pour la cour d''un strigoï qui aligne déjà la Cursed Company"},
+        {"icon": "tebSartosanPirates", "name": "Sartosan Pirates", "qty": 2, "note": "Une principauté frontalière n'a pas d'armée permanente : elle achète. Ces flibustiers sont le volume de mêlée que l'or de Gashnag procure sans peser sur le budget que ses ordres consacrés dévorent"},
         {"icon": "tebRepublicanGuard", "name": "Republican Guard", "qty": 1, "note": "Le point dur d'une principauté frontalière assiégée de toutes parts. Sur son propre territoire, le <strong>+4 de défense en mêlée</strong> de Gashnag en fait une unité que rien ne déloge"},
         {"icon": "tebCursedCompany", "name": "Cursed Company", "qty": 1, "note": "Régiment de Renom mort-vivant : compagnie mercenaire maudite, spectres au service du prince-vampire — le seul clin d'œil undead de l'ost"}
       ],
