@@ -7,10 +7,20 @@
 # s'affiche sans image et sans le moindre message d'erreur : le navigateur ne
 # signale rien, `unitImages[cle]` vaut simplement undefined.
 #
-# Ce script rend cet oubli visible. Il vérifie trois choses :
+# Ce script rend cet oubli visible. Il vérifie quatre choses :
 #   1. toute icône référencée par une fiche existe dans le module de sa faction ;
 #   2. le fichier image pointé existe réellement sur le disque ;
-#   3. (informatif) les entrées d'un module que plus aucune fiche n'utilise.
+#   3. (informatif) les entrées d'un module que plus aucune fiche n'utilise ;
+#   4. (informatif) les fichiers d'assets/units/ que plus rien ne référence.
+#
+# Le point 4 a été ajouté le 18/08/2026, après coup. Les trois premiers contrôles
+# ne regardent que dans UN SENS — ils partent des clés déclarées et vérifient que
+# l'image suit. Un fichier présent que personne ne déclare leur est donc invisible.
+# C'est ainsi que theGraniteGuard.png et theBlazingBeardsOfBazherak.png ont survécu
+# depuis le commit b015ae9 : deux extractions en double, sous un nom avec article,
+# alors que les modules déclaraient la forme sans article. Empreintes SHA-256
+# identiques aux fichiers réellement utilisés, et jamais signalées.
+# Au total, ce contrôle a trouvé 10 fichiers orphelins pesant 181 Ko.
 #
 # Usage :  powershell -File tools\verifier-icones.ps1
 # Sortie :  code 0 si tout va bien, 1 si au moins un problème bloquant.
@@ -30,6 +40,10 @@ if (-not $factions) { throw "FACTION_GROUPS introuvable dans js/core.js" }
 $bloquants = 0
 $orphelines = 0
 
+# Tous les chemins d'image déclarés, toutes factions confondues. On les accumule
+# pendant la boucle pour les confronter ensuite au contenu réel du dossier.
+$declarees = @{}
+
 foreach ($id in $factions) {
     $fiches = "$racine\data\$id.json"
     $module = "$racine\js\units\$id.js"
@@ -40,6 +54,8 @@ foreach ($id in $factions) {
     $images = @{}
     foreach ($m in [regex]::Matches([System.IO.File]::ReadAllText($module), "(?m)^\s+(\w+):\s*'([^']+)'")) {
         $images[$m.Groups[1].Value] = $m.Groups[2].Value
+        # On note le nom de fichier seul : c'est la clé de comparaison du point 4.
+        $declarees[[System.IO.Path]::GetFileName($m.Groups[2].Value)] = $true
     }
 
     # Clés réellement utilisées par les fiches de la faction. Les quatre sections
@@ -72,8 +88,37 @@ foreach ($id in $factions) {
     }
 }
 
+# --- 4. Le contrôle inverse : des fichiers que plus rien ne déclare --------------
+# Informatif, jamais bloquant : un fichier orphelin ne casse aucune page, il pèse.
+# On ne regarde QUE assets/units/, le seul dossier dont les modules soient
+# propriétaires. Les portraits, sceaux et bannières sont référencés depuis
+# data/*.json ou le HTML, que ce script ne lit pas — les inclure produirait des
+# faux positifs à chaque fiche.
+#
+# On relit ici TOUS les js/units/*.js, pas seulement les 32 modules de faction
+# parcourus plus haut. Il existe en effet js/units/_hors-fiches.js, une réserve
+# volontaire de 84 cartes extraites mais qu'aucune fiche n'aligne. Sans cette
+# passe supplémentaire, ce contrôle les dénonçait toutes comme orphelines —
+# 84 faux positifs qui l'auraient rendu inutilisable.
+foreach ($autre in (Get-ChildItem "$racine\js\units\*.js")) {
+    foreach ($m in [regex]::Matches([System.IO.File]::ReadAllText($autre.FullName), "assets/units/([^']+\.png)")) {
+        $declarees[[System.IO.Path]::GetFileName($m.Groups[1].Value)] = $true
+    }
+}
+
+$dossierUnites = "$racine\assets\units"
+$fichiersOrphelins = 0
+if (Test-Path $dossierUnites) {
+    foreach ($fichier in (Get-ChildItem "$dossierUnites\*.png" | Sort-Object Name)) {
+        if (-not $declarees.ContainsKey($fichier.Name)) {
+            Write-Host "[fichier orphelin] assets/units/$($fichier.Name) — aucun module ne le déclare ($('{0:N0}' -f $fichier.Length) o)" -ForegroundColor DarkYellow
+            $fichiersOrphelins++
+        }
+    }
+}
+
 Write-Host ""
-Write-Host "$($factions.Count) factions contrôlées — $bloquants problème(s) bloquant(s), $orphelines entrée(s) inutilisée(s)."
+Write-Host "$($factions.Count) factions contrôlées — $bloquants problème(s) bloquant(s), $orphelines entrée(s) inutilisée(s), $fichiersOrphelins fichier(s) orphelin(s)."
 if ($bloquants -gt 0) { exit 1 }
 Write-Host "Toutes les icônes des fiches ont une image, et tous les fichiers existent." -ForegroundColor Green
 exit 0
