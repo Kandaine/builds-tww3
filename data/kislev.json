@@ -49,7 +49,7 @@
         {"icon": "patriarch", "name": "Patriarch", "qty": 2, "note": "Profite du +20% Ward Save (faction) — soutien de commandement et de replenishment pour la horde"}
       ],
       "army": [
-        {"icon": "dazhsHearthblades", "name": "Dazh's Hearth-Blades (Tzar Guard - Great Weapons)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) et Rage (seigneur) — variante d'élite en grande arme du Tzar Guard, fer de lance de la mêlée"},
+        {"icon": "dazhsHearthblades", "name": "Dazh's Hearth-Blades (Tzar Guard – Great Weapons)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) et Rage (seigneur) — variante d'élite en grande arme du Tzar Guard, fer de lance de la mêlée"},
         {"icon": "tzarGuard", "name": "Tzar Guard", "qty": 2, "note": "Rage (seigneur) — infanterie lourde en grande arme"},
         {"icon": "kisleviteWarriors", "name": "Kislevite Warriors", "qty": 3, "note": "+5 attaque en mêlée / +5 commandement (faction) et Rage (seigneur) — cœur de mêlée bon marché rendu redoutable"},
         {"icon": "kossars", "name": "Kossars", "qty": 3, "note": "+5/+5 (faction) et Rage (seigneur) — tir hybride bon marché, frénétique au contact"},

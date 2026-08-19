@@ -497,7 +497,7 @@
       "army": [
         {"icon": "sandguts", "name": "Sandguts", "qty": 3, "note": "L'élite de la tribu, équivalent désertique des Ironguts — le point dur de la ligne, et le meilleur receveur possible de <strong>\"Tombstrike\"</strong>"},
         {"icon": "arabyOgreBullsIronfists", "name": "Araby Ogre Bulls (Ironfists)", "qty": 1, "note": "Brutes cuirassées de sable qui dévient les coups avec des gantelets de laiton martelé — la version défensive du socle"},
-        {"icon": "arabyOgreBullsDual", "name": "Araby Ogre Bulls (Armes doubles)", "qty": 2, "note": "La version offensive : moins de tenue, plus de volume de dégâts, à lancer là où la ligne adverse est déjà entamée"},
+        {"icon": "arabyOgreBullsDual", "name": "Araby Ogre Bulls (Dual Weapons)", "qty": 2, "note": "La version offensive : moins de tenue, plus de volume de dégâts, à lancer là où la ligne adverse est déjà entamée"},
         {"icon": "arabyCrushersIronfists", "name": "Araby Crushers (Ironfists)", "qty": 2, "note": "La cavalerie lourde de la tribu — c'est elle qui exploite le <strong>+10% de force d'arme en terrain désertique</strong> au moment de la charge"},
         {"icon": "arabyBoarCavalryIronfists", "name": "Araby Boar Cavalry (Ironfists)", "qty": 2, "note": "Ogres grisonnants montés sur sangliers du désert — la cavalerie légère qui va chercher les flancs et l'artillerie"},
         {"icon": "ogreshabti", "name": "Ogreshabti", "qty": 2, "note": "Colossales statues taillées à l'image de rois ogres oubliés. L'atout structurel de la faction : <strong>une construction ne mange pas</strong>, ce qui est décisif quand la Viande est amputée de moitié sur les deux sources"},
@@ -565,7 +565,7 @@
         {"icon": "khornateOgreBulls", "name": "Khornate Ogre Bulls", "qty": 3, "note": "Le socle de la tribu, voué à Khorne. Premier bénéficiaire du <strong>+15% de force d'arme pour l'infanterie de mêlée Ogre</strong> (seigneur) et du <strong>+1% d'attaque en mêlée par rang</strong> (faction)"},
         {"icon": "khornateOgreBullsIronfists", "name": "Khornate Ogre Bulls (Ironfists)", "qty": 3, "note": "Version bouclier-poing : plus durable, c'est elle qui tient pendant que le reste frappe. Même double bonus"},
         {"icon": "chaosOgresKhorne", "name": "Chaos Ogres of Khorne", "qty": 2, "note": "Ivres de sang et de chair — le cœur de mêlée le plus tranchant du roster, à lancer sur les cibles prioritaires"},
-        {"icon": "taintedOgreBullsDual", "name": "Tainted Ogre Bulls (Armes doubles)", "qty": 2, "note": "Issus du roster « corrompu » partagé par les trois tribus ogres du Chaos — la version deux armes, purement offensive"},
+        {"icon": "taintedOgreBullsDual", "name": "Tainted Ogre Bulls (Dual Weapons)", "qty": 2, "note": "Issus du roster « corrompu » partagé par les trois tribus ogres du Chaos — la version deux armes, purement offensive"},
         {"icon": "taintedManeatersIronfists", "name": "Tainted Maneaters (Ironfists)", "qty": 2, "note": "Mercenaires ogres passés au Chaos : de l'infanterie d'élite, donc encore de l'infanterie de mêlée à +15%"},
         {"icon": "taintedCrushersGreatWeapons", "name": "Tainted Crushers (Great Weapons)", "qty": 2, "note": "La seule cavalerie lourde de la liste. Notez qu'elle <strong>ne bénéficie pas</strong> du bonus du seigneur, réservé à l'infanterie : elle est là pour la charge d'ouverture, pas pour porter la fiche"},
         {"icon": "taintedGiant", "name": "Tainted Giant", "qty": 1, "note": "Le monstre de la tribu — utile contre ce qu'une ligne d'infanterie ne peut pas déloger seule"},
@@ -629,7 +629,7 @@
         {"icon": "firebelly", "name": "Firebelly", "qty": 1, "note": "Savoir du Feu — le complément offensif du Boucher, et une réponse aux blocs serrés que le Stonehorn et le Thundertusk se contentent de bousculer"}
       ],
       "army": [
-        {"icon": "taintedOgreBullsDual", "name": "Tainted Ogre Bulls (Armes doubles)", "qty": 3, "note": "Le socle du roster corrompu, en version offensive — ce sont eux qui recevront le plus souvent les mutations aléatoires, en bien comme en mal"},
+        {"icon": "taintedOgreBullsDual", "name": "Tainted Ogre Bulls (Dual Weapons)", "qty": 3, "note": "Le socle du roster corrompu, en version offensive — ce sont eux qui recevront le plus souvent les mutations aléatoires, en bien comme en mal"},
         {"icon": "ghuthsIronguts", "name": "Ghuth's Ironguts (Ironguts)", "qty": 1, "note": "Régiment de renom de la tribu (cap 1) — armes massives déformées par le Chaos, elles broient l'armure autant que l'os"},
         {"icon": "taintedManeatersIronfists", "name": "Tainted Maneaters (Ironfists)", "qty": 2, "note": "Mercenaires ogres passés au Chaos, en version bouclier — le point dur qui tient pendant que les Rejetons travaillent"},
         {"icon": "ogreSpawnOfKhorne", "name": "Ogre Spawn of Khorne", "qty": 2, "note": "Berserkers colossaux de muscle tordu — le Rejeton le plus offensif des quatre que la tribu peut produire"},

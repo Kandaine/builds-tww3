@@ -16,7 +16,7 @@
       "lord": {"icon": "archaon", "name": "Archaon the Everchosen", "qty": 1, "note": "L'Élu Suprême, favorisé par les quatre Dieux du Chaos — duelliste et sorcier hybride d'exception, son Ward Save +5% et son +1 d'Autorité totale (seigneur) renforcent toute son armée, tandis que sa politique de vassalisation (faction) génère recherche, âmes et relations diplomatiques en continu"},
       "heroes": [
         {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Champion d'élite au service de l'Élu — il tient le point de contact que l'Everchosen ne peut couvrir seul, sur une fiche où chaque héros vaut une unité entière"},
-        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts en écho à la maîtrise du Lore of Fire d'Archaon"},
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Renfort de sorts en écho à la maîtrise du Lore of Fire d'Archaon"},
         {"icon": "slambo", "name": "Slambo", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, réservé à la <strong>Warhost of the Apocalypse</strong> — « béni par les quatre dieux du Chaos, si tant est qu'il n'en soit pas un lui-même, Slambo n'est pas contraint par des choses telles que la réalité quand il manie ses Haches en Quête de Gloire ». Ses capacités \"Axeman of the Gods\" et \"Crushing Charge\" en font un pur duelliste. <strong>Il ne se recrute pas : il se débloque en tuant 100 000 ennemis</strong> — la condition la plus longue de tout le mod, mais la horde d'Archaon est celle qui l'atteindra"}
       ],
       "army": [
@@ -49,7 +49,7 @@
       "totalSlots": 20,
       "lord": {"icon": "kholek", "name": "Kholek Suneater", "qty": 1, "note": "Shaggoth d'un âge prodigieux, annoncé par la tempête — l'un des meilleurs duellistes du jeu, et \"Empowered by Worship\" (+5% puissance d'arme/masse/armure par faction vassalisée, faction) le rend toujours plus écrasant à mesure que le territoire s'étend"},
       "heroes": [
-        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts et de soutien magique"},
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Renfort de sorts et de soutien magique"},
         {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Le seul personnage à pied d'une armée de Dragons Ogres : il tient la ligne au sol pendant que les monstres de Kholek écrasent les flancs"}
       ],
       "army": [
@@ -115,7 +115,7 @@
       "lord": {"icon": "belakor", "name": "Be'lakor", "qty": 1, "note": "Premier Prince Démon du Chaos, maître du Lore of Shadows — son +2 d'Autorité totale (seigneur) et \"Shadow Shroud\" (+60% résistance aux dégâts, seigneur) en font un manipulateur redoutable et increvable capable de mener une armée aux quatre marques"},
       "heroes": [
         {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Champion mortel au service du premier prince démon — il apporte la présence physique qu'une armée d'ombres et de démons éthérés n'a pas"},
-        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Renfort de sorts supplémentaire"}
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Renfort de sorts supplémentaire"}
       ],
       "army": [
         {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 4, "note": "-25% d'entretien en tant qu'unité Démoniaque (faction) — infanterie démoniaque frénétique de Khorne"},
@@ -275,7 +275,7 @@
       "totalSlots": 20,
       "lord": {"icon": "drukim", "name": "DruKim", "qty": 1, "note": "Le Seigneur des Roquettes — sa capacité passive « DruKim's Murderous Mastery » (+25% attaque en mêlée, +25% bonus de charge, +20% tir perforant, +15 commandement, Peur, seigneur) galvanise TOUTE l'armée au corps-à-corps, tandis que son « Doomrocket » (264 + 78 dégâts en 6 projectiles) et l'arme de faction « DruNuke » pulvérisent les formations groupées — incarnation de son obsession pour les roquettes ; son +2 d'Autorité totale (seigneur) stabilise en outre la ligne"},
       "heroes": [
-        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Feu)", "qty": 1, "note": "Soutien magique offensif en complément de l'artillerie vivante de DruKim"},
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Soutien magique offensif en complément de l'artillerie vivante de DruKim"},
         {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Renfort de mêlée mortel robuste pour ancrer la ligne"}
       ],
       "army": [

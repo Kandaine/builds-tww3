@@ -328,7 +328,7 @@
         {"icon": "puremaneCompany", "name": "The Puremane Company (White Lions)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — variante d'élite des White Lions, profite aussi des bonus du seigneur"},
         {"icon": "rahagrasPride", "name": "Rahagra's Pride (War Lions of Chrace)", "qty": 1, "note": "Le Régiment de Renom des War Lions, chez le capitaine chracien lui-même. Il reçoit le <strong>-30% d'entretien</strong> au même titre que le régiment standard"},
         {"icon": "warLions", "name": "War Lions of Chrace", "qty": 1, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — grands lions blancs de guerre, bêtes de choc rapides qui flanquent et déchirent"},
-        {"icon": "lionChariot", "name": "Lion Chariot of Chrace", "qty": 2, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — chars tirés par des lions, impact de charge dévastateur"},
+        {"icon": "lionChariot", "name": "Lion Chariots of Chrace", "qty": 2, "note": "-30% d'entretien, +10 commandement, +10% remplacement (seigneur) — chars tirés par des lions, impact de charge dévastateur"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 1, "note": "Archères magiques d'élite — tir enchanté qui amollit l'ennemi avant la charge de la meute"},
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn — le tir magique qui accompagne les Lions Blancs de Chrace, lesquels n'ont aucune portée"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Lance et arc — ligne de soutien polyvalente qui tient pendant que les lions flanquent"},
@@ -433,7 +433,7 @@
       ],
       "army": [
         {"icon": "tiranocChariot", "name": "Tiranoc Chariots", "qty": 4, "note": "Le char de Tiranoc, et la raison d'être de la fiche : <strong>-2 tours de recrutement</strong> (seigneur) permet d'en reconstituer un flux constant, ce qui compte pour une unité qui s'use vite. Léger, rapide, il flanque et harcèle"},
-        {"icon": "lionChariot", "name": "Lion Chariot of Chrace", "qty": 2, "note": "Le char lourd, bénéficiaire du même <strong>-2 tours</strong> (seigneur) — c'est lui qui enfonce là où le char de Tiranoc se contente de bousculer"},
+        {"icon": "lionChariot", "name": "Lion Chariots of Chrace", "qty": 2, "note": "Le char lourd, bénéficiaire du même <strong>-2 tours</strong> (seigneur) — c'est lui qui enfonce là où le char de Tiranoc se contente de bousculer"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 1, "note": "Le meilleur tir haut-elfe, à dégâts magiques. En siège, c'est ce qui nettoie les remparts avant que le <strong>+15% de force des armes</strong> (seigneur) ne s'applique au contact"},
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn, le tir magique qui ouvre les rangs avant le passage des chars"},
         {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Le volume de tir bon marché qui accompagne les Sœurs — une armée de chars a besoin d'une base statique pour fixer l'ennemi pendant qu'elle contourne"},
@@ -504,7 +504,7 @@
       ],
       "army": [
         {"icon": "ellyrianReavers", "name": "Ellyrian Reavers", "qty": 2, "note": "La cavalerie légère d'Ellyrion, celle du lore de la faction. Avec la <strong>Vigueur Parfaite</strong> (seigneur) elle peut harceler sans interruption pendant toute la bataille — c'est ce qui transforme une unité d'usure en unité permanente"},
-        {"icon": "heraldsOfTheWind", "name": "Heralds of the Wind (Ellyrian Reavers - Bows)", "qty": 1, "note": "Régiment de Renom des Ellyrian Reavers à l'arc — la cavalerie légère d'Ellyrion, celle qui harcèle sans jamais s'engager, portée à son meilleur profil"},
+        {"icon": "heraldsOfTheWind", "name": "Heralds of the Wind (Ellyrian Reavers – Bows)", "qty": 1, "note": "Régiment de Renom des Ellyrian Reavers à l'arc — la cavalerie légère d'Ellyrion, celle qui harcèle sans jamais s'engager, portée à son meilleur profil"},
         {"icon": "ellyrianReaverArchers", "name": "Ellyrian Reaver Archers", "qty": 4, "note": "Le cœur de la liste : de la cavalerie de tir qui ne se fatigue jamais et qui, sous <strong>\"Frenzy\"</strong> (seigneur), reste <strong>Immunisée à la Psychologie</strong>. Tirer en mouvement indéfiniment est exactement ce que cette faction sait faire et que personne d'autre ne fait"},
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 3, "note": "La cavalerie de choc. Le <strong>+2% d'Armure et de Bonus de charge par rang d'expérience</strong> (faction) les rend nettement plus solides en fin de campagne qu'au premier tour — c'est un effet qui récompense de garder ses unités en vie"},
         {"icon": "dragonPrince", "name": "Dragon Princes", "qty": 2, "note": "Le sommet de la cavalerie haut-elfe, et le meilleur bénéficiaire du cumul <strong>\"Frenzy\" + Vigueur Parfaite</strong> : +10 d'attaque en mêlée sur une unité qui frappe déjà fort, sans jamais fatiguer"},

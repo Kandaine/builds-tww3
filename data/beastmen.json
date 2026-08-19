@@ -115,7 +115,7 @@
       ],
       "army": [
         {"icon": "minotaurs", "name": "Minotaurs", "qty": 4, "note": "+10% de force d'armes (seigneur) et -25% de coût de capacité (faction) — le cœur de cette armée"},
-        {"icon": "butchersOfKalkengard", "name": "Butchers of Kalkengard (Minotaurs)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Minotaurs, également couverte par +10% de force d'armes (seigneur)"},
+        {"icon": "butchersOfKalkengard", "name": "Butchers of Kalkengard (Minotaurs – Shields)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Minotaurs, également couverte par +10% de force d'armes (seigneur)"},
         {"icon": "minotaursGreatWeapons", "name": "Minotaurs (Great Weapons)", "qty": 3, "note": "Mêmes bonus de force d'armes (seigneur) et de coût réduit (faction) — variante à deux mains pour maximiser les dégâts bruts"},
         {"icon": "ghorgon", "name": "Ghorgon", "qty": 1, "note": "Monstre dévorant complémentaire, dans la même veine bestiale que les Minotaures"},
         {"icon": "bloodbruteBehemoth", "name": "The Bloodbrute Behemoth (Ghorgon)", "qty": 1, "note": "Régiment de Renom du Ghorgon — le régiment favori de Taurox porte sur ses Minotaurs, pas sur lui. Il est là pour la très grande cible qu'une horde de Minotaures, si nombreuse soit-elle, ne remplace pas"},
@@ -241,7 +241,7 @@
         {"icon": "brayShaman", "name": "Bray-Shaman (Beasts)", "qty": 1, "note": "La seule magie de la liste. Une armée de minotaures n'a aucune portée : le Chaman est ce qui l'empêche de subir passivement l'artillerie adverse"}
       ],
       "army": [
-        {"icon": "butchersOfKalkengard", "name": "Butchers of Kalkengard (Minotaurs)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — et le nom n'est pas un hasard, c'est le massacre de Kalkengard qui a fait la légende de Ragush"},
+        {"icon": "butchersOfKalkengard", "name": "Butchers of Kalkengard (Minotaurs – Shields)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'en aligner 2 — et le nom n'est pas un hasard, c'est le massacre de Kalkengard qui a fait la légende de Ragush"},
         {"icon": "minotaurs", "name": "Minotaurs", "qty": 3, "note": "Version de base. Avec le <strong>Déploiement d'Avant-Garde</strong>, ils commencent la bataille bien plus près de l'ennemi — ce qui règle le problème d'approche d'une unité lente et sans armure"},
         {"icon": "minotaursShields", "name": "Minotaurs (Shields)", "qty": 3, "note": "La variante résistante aux projectiles — celle qui survit à l'approche quand l'adversaire a une vraie ligne de tir"},
         {"icon": "minotaursGreatWeapons", "name": "Minotaurs (Great Weapons)", "qty": 3, "note": "La variante anti-armure, indispensable contre l'Empire ou les Nains. Les trois variantes reçoivent le même <strong>+3 de capacité</strong>, ce qui permet de les aligner toutes"},
