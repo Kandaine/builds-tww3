@@ -55,7 +55,7 @@
         {"icon": "kossars", "name": "Kossars", "qty": 3, "note": "+5/+5 (faction) et Rage (seigneur) — tir hybride bon marché, frénétique au contact"},
         {"icon": "kossoviteDervishes", "name": "Kossovite Dervishes", "qty": 2, "note": "+5/+5 (faction) et Rage (seigneur) — cavalerie légère de flanc désormais frénétique"},
         {"icon": "horseArchers", "name": "Horse Archers", "qty": 2, "note": "+5/+5 (faction) et Rage (seigneur) — tir monté harcelant, frénétique au contact"},
-        {"icon": "boydinovsBrawlers", "name": "Boydinov's Brawlers (Streltsi)", "qty": 1, "note": "Le Régiment de Renom des Streltsi, accessible à la Grande Orthodoxie via le pool kislevite. À profil équivalent il passe avant le régiment standard, et il apporte à une ligne autrement très courte le seul tir lourd anti-armure de la fiche"},
+        {"icon": "boydinovsBrawlers", "name": "Boydinov's Brawlers (Streltsi)", "qty": 1, "note": "Le Régiment de Renom des Streltsi, accessible à la Grande Orthodoxie via le pool kislevite. À profil équivalent il passe avant le régiment standard, et il apporte à une ligne autrement très courte le tir lourd anti-armure, avec le régiment standard"},
         {"icon": "streltsi", "name": "Streltsi", "qty": 1, "note": "Tir lourd anti-armure en soutien, non concerné par les bonus de faction mais toujours utile"},
         {"icon": "lightWarSleds", "name": "Light War Sleds", "qty": 1, "note": "Les effets de Kostaltyn portent sur ses Kossars et Dervishes, tous au contact. Ces traîneaux sont sa seule portée, et ils avancent au rythme d'une horde qui ne s'arrête jamais"}
       ],
