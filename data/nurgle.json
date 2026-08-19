@@ -59,7 +59,7 @@
         {"icon": "rotFlies", "name": "Rot Flies", "qty": 3, "note": "Le décompte d'Epidemius ne monte que si l'on tue. Ces Rot Flies vont chercher les cibles isolées que sa ligne, lente, n'atteindrait jamais"},
         {"icon": "plagueToadsOfNurgle", "name": "Plague Toads of Nurgle", "qty": 2, "note": "Cavalerie monstrueuse rapide qui contourne pendant que les essaims fixent, alimentant le décompte du Comptable sur plusieurs fronts"}
       ],
-      "magic": "Epidemius n'est pas un lanceur de sorts dédié — sa puissance vient de sa capacité \"Tallyman's Blades\" (invocation d'Exalted Plaguebearers) et de son bonus offensif contre les ennemis porteurs d'une Peste (seigneur), épaulé par les Herald of Nurgle pour le soutien magique.",
+      "magic": "Epidemius n'est pas un lanceur de sorts dédié — sa puissance vient de sa capacité \"Tallyman's Blades\" (invocation d'Exalted Plaguebearers) et de son bonus offensif contre les ennemis porteurs d'une Peste (seigneur), épaulé par ses deux Plagueridden pour le soutien magique.",
       "note": "Le régiment favori Festering Stooges, à +1 capacité et +2 rang de recrutement (faction), forme une élite démoniaque déjà expérimentée dès sa formation, tout comme les Plaguebearers classiques qui profitent du même bonus de rang. Le +5 d'attaque en mêlée et la régénération contre les ennemis porteurs d'une Peste (seigneur) récompensent une stratégie visant à infecter l'ennemi avant l'engagement décisif, tandis que la capacité \"Tallyman's Blades\" permet d'invoquer des renforts d'Exalted Plaguebearers en pleine bataille. Les Rot Flies et Plague Toads apportent la mobilité nécessaire pour flanquer et chasser les cibles isolées."
     }
   },
