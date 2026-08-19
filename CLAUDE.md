@@ -87,6 +87,20 @@ dans le dépôt parce que la CI n'a pas le jeu installé ; son en-tête dit comm
 un DLC ou l'ajout d'un mod. Il couvre le jeu de base **et les 133 packs du workshop installés** :
 265 lignes du site lui restent inconnues, et son silence sur celles-là n'est pas un certificat.
 
+Enfin, si la modification touche à une note qui affirme une **exclusivité** — « la seule cavalerie
+de la fiche », « le seul tir de ce seigneur » :
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-exclusivites.ps1 -Faction <nom>
+```
+
+Il confronte ces affirmations à la contrepartie du **même** régiment : l'unité de base alignée sous
+son Régiment de Renom, ou l'inverse. C'est le défaut le plus fréquent du site — 59 corrigés le
+19/08/2026 — et il a une cause datable : la passe RoR a placé le régiment à côté de sa base sans
+que la phrase soit relue. **Il ne tombera jamais à zéro** : une trentaine d'exclusivités sont
+légitimes parce qu'elles portent sur un effet, un roster ou le site, pas sur un rôle. Les laisser
+est le comportement correct ; son en-tête donne les quatre formes à reconnaître.
+
 Si la modification touche au front (HTML / CSS / JS) :
 - La console du navigateur est vierge sur un onglet neuf.
 - Aucune carte d'unité sans image, aucune image cassée (`naturalWidth === 0`).
