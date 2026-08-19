@@ -113,7 +113,11 @@ $revendications = @(
   # Verbe de causation obligatoire : « cause la Peur », pas « insensible à la Peur ».
   @{ motif = 'caus[a-zé]+ la <?[a-z]*>?\s*Peur|provoque la .{0,14}Peur'       ; attrs = @('causes_fear', 'causes_terror') ; nom = 'cause la Peur' }
   @{ motif = 'caus[a-zé]+ la <?[a-z]*>?\s*Terreur|provoque la .{0,14}Terreur' ; attrs = @('causes_terror')         ; nom = 'cause la Terreur' }
-  @{ motif = 'volant|volante|\bvole\b'                              ; attrs = @('flying', 'always_flying')       ; nom = 'Vol' }
+  # « vole » est écarté : en français le verbe veut dire dérober autant que planer.
+  # Great-King-Lord Bezer « vole l'XP des autres seigneurs » était signalé comme
+  # une créature volante. On ne perd rien — le seul vrai défaut trouvé par ce
+  # motif, le Jabberslythe de Kroll, disait « monstre volant » et « pointe volante ».
+  @{ motif = 'volant|volante'                                       ; attrs = @('flying', 'always_flying')       ; nom = 'Vol' }
   @{ motif = 'immunit[ée] psychologique|immunis[ée]e? [àa] la psychologie' ; attrs = @('immune_to_psychology')    ; nom = 'Immunité psychologique' }
   @{ motif = 'sans (jamais )?se fatiguer|immunit[ée] [àa] la fatigue'; attrs = @('fatigue_immune')                ; nom = 'Immunité à la Fatigue' }
   # « quasi invulnérable » est de la prose, pas une revendication d'attribut.

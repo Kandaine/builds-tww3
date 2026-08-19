@@ -133,11 +133,67 @@ foreach ($f in $fichiers) {
                 else       { Write-Host "      $m" }
             }
         }
+
+        # --- Second controle : la QUANTITE du regiment favori ----------------
+        # Ce qui precede signale un regiment favori ABSENT du build. Il ne dit
+        # rien du cas ou il est present mais aligne UNE SEULE FOIS, alors que
+        # « +1 capacite » en autorise deux. Le bonus de faction est alors a
+        # moitie perdu, et rien ne le signale : les 20 slots sont justes, le
+        # regiment est bien la.
+        #
+        # Ce defaut a existe : 6393537 l'a corrige a la main pour Valkia et
+        # Teclis, apres lecture. Le controle ci-dessous verifie qu'il n'en reste
+        # pas d'autre.
+        #
+        # ON NE TESTE QUE « +1 capacite ». Certains regiments favoris accordent
+        # un bonus de statistiques et non une place supplementaire — Wolfram
+        # Hertwig recoit « +20% de munitions et de degats de tir pour Hammer of
+        # the Witches ». Y attendre deux exemplaires n'aurait aucun sens.
+        #
+        # LA BORNE EST LA LIGNE D'EFFET, pas un nombre de caracteres. Un premier
+        # jet balayait 260 caracteres apres « Regiment favori » et debordait sur
+        # le bloc « Effets du seigneur » suivant, d'ou trois faux positifs
+        # skavens : il y ramassait des noms d'unites sans aucun rapport.
+        # DEUX FORMULATIONS COEXISTENT dans les fiches, et n'exiger que la
+        # premiere rendait le controle aveugle a la moitie des cas :
+        #     « Regiment favori : +1 capacite pour X »
+        #     « Regiment favori X : +1 capacite »
+        # On ne cherche donc pas ce qui suit « pour » : on cherche le nom du
+        # regiment N'IMPORTE OU dans la ligne de l'effet. La borne de ligne
+        # suffit a eviter les debordements.
+        foreach ($ligne in $lignesEffets) {
+            if ($ligne -notmatch '(?i)R[ée]giments? favoris?') { continue }
+            if ($ligne -notmatch '(?i)\+\s*1\s+capacit')       { continue }
+
+            # ON NE GARDE QUE LE NOM LE PLUS LONG. La ligne d'effet nomme le
+            # regiment sous sa forme complete, « Defenders of the Fleur-de-lis
+            # (Knights Errant) » — qui CONTIENT le nom de l'unite de base.
+            # Tester chaque unite du build indépendamment signalait donc les
+            # bases (Knights Errant, Foot Squires, River Trolls...) alignees a
+            # x1, alors que le regiment favori, lui, est bien a x2. Onze faux
+            # positifs de cette seule cause.
+            $candidats = @()
+            foreach ($u in @($l.build.army)) {
+                if (-not $u.name) { continue }
+                if ($ligne -match ('(?i)(^|[^\p{L}])' + [regex]::Escape($u.name) + '([^\p{L}]|$)')) { $candidats += $u }
+            }
+            foreach ($u in $candidats) {
+                $englobe = $false
+                foreach ($autre in $candidats) {
+                    if ($autre.name -ne $u.name -and $autre.name -like "*$($u.name)*") { $englobe = $true; break }
+                }
+                if ($englobe) { continue }
+                if ([int]$u.qty -ge 2) { continue }
+                $pistes++
+                Write-Host ("  {0} — {1}" -f $l.name, $f.BaseName) -ForegroundColor Yellow
+                Write-Host ("      [QUANTITE] {0} aligne x{1} — « +1 capacite » en autorise 2" -f $u.name, $u.qty) -ForegroundColor Red
+            }
+        }
     }
 }
 
 Write-Host ""
-Write-Host "$fiches fiche(s) examinee(s) — $pistes citant une unite absente de leur build."
+Write-Host "$fiches fiche(s) examinee(s) — $pistes piste(s) : unite citee et absente, ou regiment favori sous-aligne."
 Write-Host "INFORMATIF : une piste n'est pas une erreur. Un effet peut nommer une unite pour la deconseiller." -ForegroundColor DarkYellow
 
 if ($Strict -and $pistes -gt 0) { exit 1 }

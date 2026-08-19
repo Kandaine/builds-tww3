@@ -82,10 +82,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-attributs.ps1
 Il cherche les attributs prêtés à tort : un monstre décrit comme volant qui ne vole pas, une
 Régénération que l'unité n'a pas. Quatre défauts trouvés ainsi les 18 et 19/08/2026 (Miao Ying,
 Volkmar, Kroll, Isabella). **Attendez-vous à une majorité de faux positifs** — la note parle
-souvent d'une autre unité de la fiche. Il lit `tools\attributs-unites.txt`, qui vit dans le dépôt
-parce que la CI n'a pas le jeu installé ; son en-tête dit comment le régénérer après un DLC. Il ne
-connaît que le jeu de base : environ 1500 lignes du site portent une unité de mod dont il ne dit
-rien, ce qui n'est pas un certificat.
+souvent d'une autre unité de la fiche. Il lit `tools\attributs-unites.txt` (4 423 unités), qui vit
+dans le dépôt parce que la CI n'a pas le jeu installé ; son en-tête dit comment le régénérer après
+un DLC ou l'ajout d'un mod. Il couvre le jeu de base **et les 133 packs du workshop installés** :
+265 lignes du site lui restent inconnues, et son silence sur celles-là n'est pas un certificat.
 
 Si la modification touche au front (HTML / CSS / JS) :
 - La console du navigateur est vierge sur un onglet neuf.
