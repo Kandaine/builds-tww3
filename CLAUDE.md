@@ -72,6 +72,21 @@ Il signale les unités nommées dans les effets et absentes du build. Une piste 
 erreur : un effet peut nommer une unité pour la **déconseiller**. Mais un « Régiment favori » qui
 désigne un régiment absent mérite toujours un regard — c'est un bonus qui ne s'applique à rien.
 
+Si la modification touche aux **notes** d'une fiche, lancer le second contrôle informatif — le seul
+qui confronte ce qu'une note *affirme* d'une unité à ce que le jeu lui donne :
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-attributs.ps1 -Faction <nom>
+```
+
+Il cherche les attributs prêtés à tort : un monstre décrit comme volant qui ne vole pas, une
+Régénération que l'unité n'a pas. Quatre défauts trouvés ainsi les 18 et 19/08/2026 (Miao Ying,
+Volkmar, Kroll, Isabella). **Attendez-vous à une majorité de faux positifs** — la note parle
+souvent d'une autre unité de la fiche. Il lit `tools\attributs-unites.txt`, qui vit dans le dépôt
+parce que la CI n'a pas le jeu installé ; son en-tête dit comment le régénérer après un DLC. Il ne
+connaît que le jeu de base : environ 1500 lignes du site portent une unité de mod dont il ne dit
+rien, ce qui n'est pas un certificat.
+
 Si la modification touche au front (HTML / CSS / JS) :
 - La console du navigateur est vierge sur un onglet neuf.
 - Aucune carte d'unité sans image, aucune image cassée (`naturalWidth === 0`).

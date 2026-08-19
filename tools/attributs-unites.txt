@@ -1,0 +1,1494 @@
+# Attributs des unites de Total War: WARHAMMER III, par nom affiche.
+#
+# Source : db.pack du jeu de base — ATTENTION, c'est db.pack et non data.pack,
+# qui ne contient aucune table.
+#   - unit_attributes_to_groups_junctions_tables  (les 59 attributs reels) ;
+#   - land_units_to_unit_abilites_junctions_tables (pour la seule regeneration) ;
+#   - land_units_onscreen_name_* de local_en.pack, pour passer de la cle au nom.
+# Extraction : ~\.claude\tools\tww\dump_db_rows.ps1, qui suit le SCHEMA de la table.
+#   Ne PAS utiliser dump_db.ps1 : il extrait les chaines a plat et desynchronise
+#   les colonnes des le premier champ numerique.
+#
+# Format :  Nom affiche <TAB> attribut,attribut,...
+#
+# DEUX PSEUDO-ATTRIBUTS ne viennent PAS de la table des attributs, mais de celle
+# des capacites -- du point de vue d'une note de fiche, c'est la meme affirmation :
+#   regeneration  wh_main_unit_passive_regeneration (72 unites) et sa variante
+#                 nurglesque pestilent_regeneration (9). Soin continu.
+#   the_hunger    les trois cles ...passive_the_hunger (79 unites au total). Le
+#                 soin vampirique, qui rend des PV EN TUANT et non en continu.
+# Les separer est indispensable : sans cela, quatre Varghulf decrits comme
+# « regenerants » etaient signales a tort. Ils se soignent, mais pas ainsi.
+# Methode validee sur les Trolls de Riviere, qui portent bien la Regeneration.
+# La colonne healing_power de land_units ne discrimine rien : elle vaut 1 pour
+# Volkmar comme pour un troll.
+#
+# QUAND PLUSIEURS UNITES PARTAGENT UN NOM (trois cles s'appellent « Dire Wolves »),
+# la ligne porte l'UNION de leurs attributs. Le controle sous-signale donc plutot
+# qu'il ne sur-signale — c'est le sens qu'on veut pour un outil informatif.
+#
+# LIMITE : le jeu de base seulement. Les unites ajoutees par un mod ont leurs
+# tables dans leur propre pack et sont absentes d'ici ; verifier-attributs.ps1 les
+# compte a part et ne dit rien d'elles.
+#
+# Regenerer apres un DLC : relancer les trois dumps ci-dessus, puis
+# scratchpad\generer_attributs.ps1. Genere le 19/08/2026.
+#
+# 1456 unites portant au moins un attribut, sur 1550 noms distincts.
+#
+{{tr:agent_subtypes_onscreen_name_override_wh2_dlc13_lzd_slann_mage_priest_beasts}}	encourages,hide_forest,strider
+{{tr:agent_subtypes_onscreen_name_override_wh2_dlc13_lzd_slann_mage_priest_death}}	encourages,hide_forest,strider
+{{tr:agent_subtypes_onscreen_name_override_wh2_dlc13_lzd_slann_mage_priest_metal}}	encourages,hide_forest,strider
+{{tr:agent_subtypes_onscreen_name_override_wh2_dlc13_lzd_slann_mage_priest_shadows}}	encourages,hide_forest,strider
+{{tr:land_units_onscreen_name_wh3_dlc24_cth_mon_celestial_lion}}	causes_fear,causes_terror,flying
+{{tr:land_units_onscreen_name_wh3_dlc27_chs_cha_exalted_hero_msla}}	causes_fear,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+{{tr:land_units_onscreen_name_wh3_dlc27_hef_cha_caradryan}}	causes_fear,causes_terror,encourages,flying,hide_forest,immune_to_psychology
+{{tr:land_units_onscreen_name_wh3_dlc27_hef_cha_mist_mage}}	causes_fear,encourages,flying
+{{tr:land_units_onscreen_name_wh3_dlc27_hef_cha_sea_helm}}	causes_fear,encourages,flying
+{{tr:land_units_onscreen_name_wh3_dlc27_hef_cha_sea_lord_aislinn}}	causes_fear,causes_terror,encourages,flying
+{{tr:land_units_onscreen_name_wh3_dlc27_nor_cha_great_shaman_sorcerer_death}}	causes_fear,causes_terror,encourages,hide_forest
+{{tr:land_units_onscreen_name_wh3_dlc27_nor_cha_great_shaman_sorcerer_fire}}	causes_fear,causes_terror,encourages,hide_forest
+{{tr:land_units_onscreen_name_wh3_dlc27_nor_cha_great_shaman_sorcerer_metal}}	causes_fear,causes_terror,encourages,hide_forest
+{{tr:land_units_onscreen_name_wh3_dlc27_nor_cha_sayl_the_faithless}}	causes_fear,causes_terror,encourages,hide_forest
+{{tr:land_units_onscreen_name_wh3_dlc27_sla_cha_druchii_anointed}}	causes_fear,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+{{tr:land_units_onscreen_name_wh3_dlc27_sla_cha_styrkaar_the_sortsvinaer}}	causes_fear,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+{{tr:land_units_onscreen_name_wh3_main_cth_cha_alchemist_1}}	always_flying,encourages,mounted_fire_move,spell_mastery
+{{tr:land_units_onscreen_name_wh3_main_sla_cha_alluress_shadow_0}}	causes_fear,daemonic,devastating_flanker,encourages,hide_forest,strider
+{{tr:land_units_onscreen_name_wh3_main_sla_cha_alluress_slaanesh_0}}	causes_fear,daemonic,devastating_flanker,encourages,hide_forest,strider
+{{tr:land_units_onscreen_name_wh3_main_sla_cha_herald_of_slaanesh_shadow_0}}	causes_fear,daemonic,devastating_flanker,encourages,hide_forest,strider
+{{tr:land_units_onscreen_name_wh3_main_sla_cha_herald_of_slaanesh_slaanesh_0}}	causes_fear,daemonic,devastating_flanker,encourages,hide_forest,strider
+{{tr:land_units_onscreen_name_wh3_main_tze_cha_exalted_lord_of_change_tzeentch_0}}	causes_fear,causes_terror,daemonic,encourages,fatigue_immune,flying,unbreakable
+Aekold Helbrass	encourages,hide_forest,immune_to_psychology,mark_tzeentch
+Aeson the Fallen (Mutalith Vortex Beast)	causes_fear,causes_terror
+Akshina Ambushers	guerrilla_deploy,hide_forest,ignore_trees,stalk
+Alarielle the Radiant	causes_fear,encourages,flying,hide_forest
+Alastar the White Lion	causes_fear,causes_terror,encourages,flying,hide_forest,ignore_trees
+Alberic de Bordeleaux	causes_fear,causes_terror,encourages,flying,hide_forest,knight
+Alchemist	encourages,hide_forest,spell_mastery
+Alith Anar	encourages,guerrilla_deploy,hide_forest,mounted_fire_move
+Alith Anar – Decoy	encourages,fatigue_immune,hide_forest,mounted_fire_move,unbreakable
+Alluress (Shadows)	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,fatigue_immune,hide_forest,strider
+Alluress (Slaanesh)	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,fatigue_immune,hide_forest,strider
+Amaxon Barbs (Razordon Hunting Pack)	causes_fear,hide_forest
+Amber Wizard	causes_fear,causes_terror,encourages,flying,hide_forest,ignore_trees
+Amblepeak Greybacks (Yhetees)	causes_fear,causes_terror,hide_forest
+Amethyst Helstorm Rocket Battery	cant_run
+Amethyst Ironsides	causes_fear,hide_forest
+Amethyst Land Ship	causes_fear,causes_terror,mounted_fire_move,unbreakable
+Amethyst Wizard	encourages,flying,hide_forest
+Ancestor Spirit	causes_fear,causes_terror,charge_defense_vs_large,encourages,hide_forest,strider,unbreakable
+Ancestral Warriors	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,hide_forest,strider
+Ancient Protector	causes_fear,causes_terror,encourages,hide_forest,unbreakable
+Ancient Salamander	causes_fear,causes_terror,hide_forest,wallbreaker
+Ancient Stegadon	causes_fear,causes_terror,mounted_fire_move,wallbreaker
+Ancient Stegadon (Engine of the Gods)	causes_fear,causes_terror,mounted_fire_move,wallbreaker
+Ancient Treeman	causes_fear,causes_terror,charge_defense,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Animated Hulks	causes_fear,hide_forest,undead
+Arachnarok Spider	causes_fear,causes_terror,strider
+Aranessa Saltspite	causes_fear,charge_defense_vs_large,charge_reflection,encourages,hide_forest,immune_to_psychology
+Arbaal the Undefeated	causes_fear,encourages,guerrilla_deploy,hide_forest,mark_khorne
+Arcane Phoenix	causes_fear,causes_terror,flying
+Arch Lector	encourages,hide_forest,unbreakable
+Archaon the Everchosen	causes_fear,encourages,hide_forest,immune_to_psychology,strider
+Archers	hide_forest
+Archers (Light Armour)	hide_forest
+Archmage (Beasts)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (Death)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (Fire)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (Heavens)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (High)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (Life)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (Light)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (Metal)	causes_fear,causes_terror,encourages,flying,hide_forest
+Archmage (Shadows)	causes_fear,causes_terror,encourages,flying,hide_forest
+'Ard As A Rock Idol	causes_fear,causes_terror,construct,unbreakable
+Ariel	causes_fear,causes_terror,encourages,guerrilla_deploy,hide_forest,strider
+Arkhan the Black	causes_fear,encourages,hide_forest,strider,undead
+Armoured Kossars	hide_forest
+Armoured Kossars (Great Weapons)	hide_forest
+Armoured Kossars (Spears)	charge_defense_vs_large,charge_reflection,hide_forest
+Armoured Squig Hoppers	guerrilla_deploy,hide_forest,immune_to_psychology,squig
+Aspiring Champions	encourages,hide_forest
+Assassin	encourages,guerrilla_deploy,stalk,strider
+Astragoth Ironhand	contempt,encourages,hide_forest,immune_to_psychology,wallbreaker
+Astromancer	causes_fear,causes_terror,encourages,flying,hide_forest,spell_mastery
+Athel Tamarha Faithbearers	encourages,hide_forest
+Azazel	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,flying,mark_slaanesh,strider
+Azhag the Slaughterer	causes_fear,causes_terror,encourages,flying,hide_forest
+Azrik the Maze Keeper	causes_fear,causes_terror,daemonic,encourages,flying,unbreakable
+Bale Taurus	causes_fear,causes_terror,flying
+Balthasar Gelt	encourages,flying,hide_forest
+Bandits of the Silver Road (Peasant Archers)	expendable,guerrilla_deploy,hide_forest,ignore_trees,yin
+Banshee	causes_fear,causes_terror,encourages,hide_forest,strider,undead
+Bastiladon (Ark of Sotek)	causes_fear,causes_terror,flanking_immune,wallbreaker
+Bastiladon (Revivification Crystal)	causes_fear,causes_terror,flanking_immune,wallbreaker
+Bastiladon (Solar Engine)	causes_fear,causes_terror,flanking_immune,wallbreaker
+Battle Pilgrims	hide_forest,peasant
+Beast of Nurgle	causes_fear,daemonic,flanking_immune,regeneration
+Beastlord	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees,unbreakable
+Beasts of Tashnar (Norscan Warhounds)	guerrilla_deploy,hide_forest,strider
+Beastslayers of Bastonne (Foot Squires)	charge_defense_vs_large,charge_reflection,hide_forest,peasant
+Be'lakor	causes_fear,causes_terror,daemonic,encourages,flying
+Belegar Ironhammer	charge_defense,encourages,hide_forest
+Beorg Bearstruck	causes_fear,encourages,hide_forest,immune_to_psychology,regeneration
+Bestigor Herd	hide_forest,ignore_trees
+Bhashiva, the White Tiger	devastating_flanker,encourages,guerrilla_deploy,ignore_trees,stalk,strider,tiger_warrior
+Bile Trolls	causes_fear,hide_forest,mark_nurgle,regeneration
+Bilious Thunderguff (Chaos Giant)	causes_fear,causes_terror,mark_nurgle,wallbreaker
+Black Ark Corsairs	hide_forest
+Black Ark Corsairs (Handbows)	hide_forest,mounted_fire_move
+Black Coach	causes_fear,causes_terror,strider,undead
+Black Dragon	causes_fear,causes_terror,flying
+Black Guard of Naggarond	charge_defense_vs_large,charge_reflection,hide_forest,immune_to_psychology
+Black Knights	causes_fear,hide_forest,strider,undead
+Black Knights (Lances & Barding)	causes_fear,hide_forest,strider,undead
+Black Orc Big Boss	encourages,hide_forest,immune_to_psychology
+Black Orcs (Great Weapons)	hide_forest,immune_to_psychology
+Blackhole Flayers (Doom-Flayers)	causes_fear
+Black-Horn's Ravagers (Gor Herd – Shields)	guerrilla_deploy,hide_forest,ignore_trees,stalk
+Blades of the Blood Queen (Har Ganeth Executioners)	hide_forest,immune_to_psychology
+Bladesingers	hide_forest,ignore_trees,immune_to_psychology
+Blazing Squealers (Exalted Pink Horrors of Tzeentch)	causes_fear,daemonic,hide_forest
+Bleakswords	hide_forest
+Blessed Ancient Salamander	causes_fear,causes_terror,hide_forest,wallbreaker
+Blessed Ancient Stegadon	causes_fear,causes_terror,mounted_fire_move,wallbreaker
+Blessed Bastiladon (Solar Engine)	causes_fear,causes_terror,fatigue_immune,flanking_immune,wallbreaker
+Blessed Carnosaur	causes_fear,causes_terror
+Blessed Chameleon Skinks	guerrilla_deploy,mounted_fire_move,skink,stalk,strider
+Blessed Chameleon Stalkers	guerrilla_deploy,mounted_fire_move,skink,stalk,strider,unspottable
+Blessed Cold One Spear-Riders	causes_fear,hide_forest
+Blessed Field Trebuchets	cant_run,peasant
+Blessed Horned Ones	causes_fear,hide_forest
+Blessed Kroxigor	causes_fear,causes_terror,hide_forest,kroxigor
+Blessed Legion of Phakth (Skeleton Archers)	causes_fear,hide_forest,undead
+Blessed Razordon Hunting Pack	causes_fear,hide_forest,snipe,stalk
+Blessed Ripperdactyl Riders	causes_fear,devastating_flanker,flying,guerrilla_deploy
+Blessed Sacred Kroxigor	can_block_missiles_360,causes_fear,hide_forest,kroxigor
+Blessed Salamander Hunting Pack	causes_fear,hide_forest
+Blessed Saurus Spears (Shields)	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees
+Blessed Saurus Warriors (Shields)	fatigue_immune,hide_forest
+Blessed Skink Cohort (Javelins)	hide_forest,skink
+Blessed Skink Skirmishers	guerrilla_deploy,hide_forest,mounted_fire_move,skink
+Blessed Stegadon	causes_fear,causes_terror,fatigue_immune,wallbreaker
+Blessed Temple Guard	charge_defense_vs_large,charge_reflection,hide_forest
+Blessed Terradon Riders	causes_fear,flying,guerrilla_deploy,ignore_trees,mounted_fire_move
+Blessed Terradon Riders (Fireleech Bolas)	causes_fear,flying,guerrilla_deploy,ignore_trees,mounted_fire_move
+Blightscab's Plaguepack (Plague Monk Censer Bearers)	hide_forest
+Bloated Corpse	causes_fear,expendable,hide_forest,undead
+Blood Dragon Vampire Lord	causes_fear,causes_terror,encourages,flying,hide_forest,the_hunger,undead
+Blood Knights	the_hunger
+Blood Knights (Lances)	causes_fear,hide_forest,the_hunger,undead
+Blood Shrine of Khorne	causes_fear,daemonic,encourages
+Blood Vultures	flying,guerrilla_deploy,wallbreaker
+Bloodbeasts of Khorne	causes_fear,hide_forest,mark_khorne
+Bloodcrushers of Khorne	causes_fear,daemonic,hide_forest
+Bloodletters of Khorne	causes_fear,daemonic,hide_forest
+Bloodreaper	causes_fear,daemonic,encourages,hide_forest
+Bloodspeaker	causes_fear,encourages,hide_forest,mark_khorne
+Bloodthirster	causes_fear,causes_terror,daemonic,flying
+Bloodthirsty Preyton	causes_fear,causes_terror,devastating_flanker,flying,hide_forest,strider,unbreakable
+Bloodwrack Medusa	causes_fear,causes_terror
+Bloodwrack Shrine	causes_fear,causes_terror,mounted_fire_move
+Blorgar the Mad Titan	causes_fear,causes_terror,regeneration,unbreakable,wallbreaker
+Blue Horrors of Tzeentch	causes_fear,daemonic,hide_forest
+Boglars of the Mad Marshes (Gnoblars)	expendable,guerrilla_deploy,hide_forest,stalk
+Bolt Throwers	cant_run,hide_forest
+Bone Giant	causes_fear,causes_terror,construct
+Boris Todbringer	causes_fear,causes_terror,encourages,flying,hide_forest
+Boris Ursus	causes_fear,encourages,glorious_charge,hide_forest
+Boyar	causes_fear,encourages,hide_forest
+Boydinov's Brawlers (Streltsi)	hide_forest
+Bragg the Gutsman	causes_fear,encourages,hide_forest,immune_to_psychology,ogre_charge,wallbreaker
+Branchwraith	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Bray-Shaman (Beasts)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Bray-Shaman (Death)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Bray-Shaman (Shadows)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Bray-Shaman (Wild)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees,unbreakable
+Bright Wizard	encourages,flying,hide_forest
+Bringers of Beguilement (Exalted Daemonettes of Slaanesh)	causes_fear,daemonic,devastating_flanker,fatigue_immune,hide_forest,strider
+Broken Tusks Mob (Orc Boar Boy Big 'Uns)	encourages,hide_forest
+Brood Horror	causes_fear,causes_terror,hide_forest,moulder_monster,regeneration
+Brood Mother	the_hunger
+Brood Queen	causes_fear,causes_terror,strider
+Bruiser	causes_fear,encourages,hide_forest,ogre_charge,wallbreaker
+Brutes of the Hound (Marauder Berserkers)	causes_fear,hide_forest,mark_khorne,unbreakable
+Bruwor, Protector of Life	causes_fear,causes_terror,flying,hide_forest,unbreakable
+Bugman's Rangers	charge_defense_vs_large,guerrilla_deploy,hide_forest,immune_to_psychology,stalk
+Bull Centaur Renders	causes_fear,contempt,hide_forest
+Bull Centaur Renders (Dual Axes)	causes_fear,contempt,hide_forest
+Bull Centaur Renders (Great Weapons)	causes_fear,contempt,hide_forest
+Bull Centaur Taur'ruk	causes_fear,contempt,encourages,hide_forest
+Burning Chariot of Tzeentch	causes_fear,daemonic,flying,mounted_fire_move,strider
+Butcher (Beasts)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Butcher (Death)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Butcher (Great Maw)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Butcher (Heavens)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Butchers of Kalkengard (Minotaurs – Shields)	causes_fear,causes_terror,hide_forest,ignore_trees,regeneration
+Cairn Wraiths	causes_fear,causes_terror,hide_forest,strider,undead
+Cannons	cant_run
+Captain	encourages,hide_forest
+Caradryan	causes_fear,charge_defense,charge_reflection,encourages,hide_forest,immune_to_psychology
+Caress, the Darkling Prince	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,mark_slaanesh,regeneration
+Carrion	causes_fear,flying,guerrilla_deploy,undead
+Carroburg Greatswords (Greatswords)	hide_forest,unbreakable
+Carronades	cant_run,causes_fear,undead
+Casket of Souls	causes_fear,undead
+Cave Bats	causes_fear,expendable,flying,guerrilla_deploy,hide_forest
+Ceithin-Har	causes_fear,causes_terror,flying
+Celestial Dragon Crossbows	hide_forest,yin
+Celestial Dragon Guard	charge_defense,charge_reflection,formed_attack,hide_forest,yang
+Celestial Lion	causes_fear,causes_terror,flying,yang
+Celestial Wizard	encourages,flying,hide_forest
+Centigors	guerrilla_deploy,hide_forest,ignore_trees
+Centigors (Great Weapons)	guerrilla_deploy,hide_forest,ignore_trees
+Centigors (Throwing Axes)	guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move
+Centigors of Tzeentch	guerrilla_deploy,hide_forest,ignore_trees,mark_tzeentch
+Chameleon Skinks	guerrilla_deploy,mounted_fire_move,skink,stalk,strider
+Chameleon Stalkers	guerrilla_deploy,mounted_fire_move,skink,stalk,strider
+Changebringers	causes_fear,daemonic,flying,strider
+Chaos Chariots	hide_forest
+Chaos Chariots of Khorne	hide_forest,mark_khorne
+Chaos Chariots of Nurgle	hide_forest,mark_nurgle
+Chaos Chariots of Slaanesh	devastating_flanker,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Chariots of Tzeentch	hide_forest,mark_tzeentch
+Chaos Dwarf Blunderbusses	contempt,hide_forest
+Chaos Dwarf Warriors	charge_defense_vs_large,contempt,hide_forest
+Chaos Dwarf Warriors (Great Weapons)	contempt,hide_forest
+Chaos Feral Manticore	causes_fear,causes_terror,flying
+Chaos Frost Dragon	causes_fear,causes_terror,flying
+Chaos Furies	causes_fear,daemonic,flying,guerrilla_deploy
+Chaos Furies (Khorne)	causes_fear,daemonic,flying,guerrilla_deploy
+Chaos Furies (Nurgle)	causes_fear,daemonic,flying,guerrilla_deploy
+Chaos Furies (Slaanesh)	causes_fear,daemonic,devastating_flanker,flying,guerrilla_deploy,strider
+Chaos Furies (Tzeentch)	causes_fear,daemonic,flying,guerrilla_deploy
+Chaos Giant	causes_fear,causes_terror,wallbreaker
+Chaos Knights	causes_fear,hide_forest
+Chaos Knights (Lances)	causes_fear,hide_forest
+Chaos Knights of Khorne	causes_fear,hide_forest,mark_khorne
+Chaos Knights of Khorne (Lances)	causes_fear,hide_forest,mark_khorne
+Chaos Knights of Nurgle	causes_fear,hide_forest,mark_nurgle
+Chaos Knights of Nurgle (Lances)	causes_fear,hide_forest,mark_nurgle
+Chaos Knights of Slaanesh	causes_fear,devastating_flanker,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Knights of Slaanesh (Lances)	causes_fear,devastating_flanker,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Knights of Tzeentch	causes_fear,hide_forest,mark_tzeentch
+Chaos Knights of Tzeentch (Lances)	causes_fear,hide_forest,mark_tzeentch
+Chaos Lord	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Lord – Deprecated	causes_fear,encourages,hide_forest
+Chaos Lord of Khorne	causes_fear,encourages,hide_forest,mark_khorne
+Chaos Lord of Slaanesh	causes_fear,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Lord of Tzeentch	charge_defense,charge_reflection,encourages,flying,hide_forest,mark_tzeentch,strider
+Chaos Sorcerer (Death)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer (Death) – Deprecated	encourages,hide_forest
+Chaos Sorcerer (Fire)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer (Fire) – Deprecated	encourages,hide_forest
+Chaos Sorcerer (Metal)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer (Metal) – Merged with Chaos Steed	encourages,hide_forest
+Chaos Sorcerer (Shadows)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer (Shadows) – Deprecated	encourages,hide_forest
+Chaos Sorcerer Lord (Death)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer Lord (Death) – Deprecated	causes_fear,encourages,hide_forest
+Chaos Sorcerer Lord (Fire)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer Lord (Fire) – Deprecated	causes_fear,encourages,hide_forest
+Chaos Sorcerer Lord (Metal)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer Lord (Metal) – Deprecated	encourages,hide_forest
+Chaos Sorcerer Lord (Shadows)	causes_fear,causes_terror,encourages,flying,hide_forest
+Chaos Sorcerer Lord (Shadows) – Deprecated	encourages,hide_forest
+Chaos Sorcerer Lord of Nurgle (Death)	causes_fear,encourages,hide_forest,mark_nurgle
+Chaos Sorcerer Lord of Nurgle (Nurgle)	causes_fear,encourages,hide_forest,mark_nurgle
+Chaos Sorcerer Lord of Tzeentch (Metal)	causes_fear,encourages,flying,hide_forest,mark_tzeentch,strider
+Chaos Sorcerer Lord of Tzeentch (Tzeentch)	causes_fear,encourages,flying,hide_forest,mark_tzeentch,strider
+Chaos Sorcerer of Slaanesh (Shadows)	causes_fear,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Sorcerer of Slaanesh (Slaanesh)	causes_fear,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Sorcerer of Tzeentch (Metal)	causes_fear,encourages,flying,hide_forest,mark_tzeentch,strider
+Chaos Sorcerer of Tzeentch (Tzeentch)	causes_fear,encourages,flying,hide_forest,mark_tzeentch,strider
+Chaos Spawn	causes_fear,hide_forest,ignore_trees,unbreakable
+Chaos Trolls	causes_fear,hide_forest,regeneration
+Chaos Trolls (Armoured)	causes_fear,hide_forest,regeneration
+Chaos Warhounds	guerrilla_deploy,hide_forest,strider
+Chaos Warhounds (Poison)	guerrilla_deploy,hide_forest,strider
+Chaos Warhounds of Khorne	guerrilla_deploy,hide_forest,mark_khorne,strider
+Chaos Warriors	hide_forest
+Chaos Warriors (Great Weapons)	hide_forest
+Chaos Warriors (Halberds)	charge_defense_vs_large,charge_reflection,hide_forest
+Chaos Warriors of Khorne	hide_forest,mark_khorne
+Chaos Warriors of Khorne (Dual Weapons)	hide_forest,mark_khorne
+Chaos Warriors of Khorne (Halberds)	charge_defense_vs_large,charge_reflection,hide_forest,mark_khorne
+Chaos Warriors of Nurgle	hide_forest,mark_nurgle
+Chaos Warriors of Nurgle (Great Weapons)	hide_forest,mark_nurgle
+Chaos Warriors of Slaanesh	hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Warriors of Slaanesh (Hellscourges)	charge_defense,charge_reflection,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chaos Warriors of Tzeentch	hide_forest,mark_tzeentch
+Chaos Warriors of Tzeentch (Halberds)	charge_defense_vs_large,charge_reflection,hide_forest,mark_tzeentch
+Chaos Warshrine	causes_fear,encourages
+Chaos Warshrine of Khorne	causes_fear,encourages,mark_khorne
+Chaos Warshrine of Nurgle	causes_fear,encourages,mark_nurgle
+Chaos Warshrine of Slaanesh	causes_fear,encourages,immune_to_psychology,mark_slaanesh,strider
+Chaos Warshrine of Tzeentch	causes_fear,encourages,mark_tzeentch
+Chieftain	causes_fear,charge_defense_vs_large,charge_reflection,encourages,hide_forest,moulder_monster
+Chill of Sontar (War Hydra)	causes_fear,causes_terror,regeneration
+Chimera	causes_fear,causes_terror,flanking_immune,flying
+Chosen	hide_forest
+Chosen (Great Weapons)	hide_forest
+Chosen (Halberds)	charge_defense_vs_large,charge_reflection,hide_forest
+Chosen of Khorne	hide_forest,mark_khorne
+Chosen of Khorne (Dual Weapons)	hide_forest,mark_khorne
+Chosen of Nurgle	hide_forest,mark_nurgle
+Chosen of Nurgle (Great Weapons)	hide_forest,mark_nurgle
+Chosen of Slaanesh	hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chosen of Slaanesh (Hellscourges)	charge_defense,charge_reflection,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Chosen of the Gods (Ushabti – Great Bows)	causes_fear,construct,hide_forest
+Chosen of Tzeentch	hide_forest,mark_tzeentch
+Chosen of Tzeentch (Halberds)	charge_defense_vs_large,charge_reflection,hide_forest,mark_tzeentch
+Clan Vulkn Tailslashers (Clanrats – Shields)	hide_forest
+Clanrat Spears	charge_defense_vs_large,charge_reflection,hide_forest
+Clanrat Spears (Shields)	charge_defense_vs_large,charge_reflection,hide_forest
+Clanrats	hide_forest
+Clanrats (Shields)	hide_forest
+Coatl	causes_fear,causes_terror,flying,wallbreaker
+Cockatrice	causes_fear,causes_terror,flying
+Cockatrice Sculptor	causes_fear,causes_terror,flying,unbreakable
+Coeddil	causes_fear,causes_terror,charge_defense,encourages,guerrilla_deploy,hide_forest,ignore_trees,unbreakable
+Cohort of Huatl (Sacred Kroxigor)	causes_fear,fatigue_immune,hide_forest,kroxigor
+Cohort of Sotek (Red Crested Skinks)	hide_forest,ignore_imbue_contact_effects_enemy,skink,unbreakable
+Cold One Chariots	causes_fear,hide_forest
+Cold One Dread Knights	causes_fear,hide_forest
+Cold One Knights	causes_fear,hide_forest
+Cold One Riders	causes_fear,hide_forest
+Cold One Spear-Riders	causes_fear,hide_forest
+Colossadon Hunters (Ripperdactyl Riders)	causes_fear,flying,guerrilla_deploy
+Colossal Squig	causes_fear,causes_terror,squig
+Company of the Kalendirian (Ship's Company)	hide_forest,immune_to_psychology
+Corpse Cart	causes_fear,hide_forest,regeneration,undead
+Corpse Cart (Balefire)	causes_fear,hide_forest,regeneration,undead
+Corpse Cart (Unholy Lodestone)	causes_fear,hide_forest,regeneration,undead
+Council Guard (Stormvermin – Halberds)	charge_defense_vs_large,charge_reflection,hide_forest,unbreakable
+Count Noctilus	the_hunger
+Crane Gunners	hide_forest,yin
+Crone Hellebron	causes_fear,causes_terror,encourages,flying,hide_forest
+Crossbowmen	hide_forest
+Crushers (Great Weapons)	causes_fear,hide_forest,wallbreaker
+Crushers (Ironfists)	causes_fear,hide_forest,wallbreaker
+Crypt Ghouls	causes_fear,guerrilla_deploy,hide_forest,stalk,undead
+Crypt Horrors	causes_fear,hide_forest,regeneration,undead
+Cultist of Khorne	causes_fear,encourages,hide_forest,mark_khorne
+Cultist of Nurgle	causes_fear,encourages,hide_forest,mark_nurgle,regeneration
+Cultist of Slaanesh	causes_fear,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Cultist of Tzeentch	causes_fear,encourages,hide_forest,mark_tzeentch
+Curs'd Ettin	causes_fear,causes_terror,guerrilla_deploy,strider
+Cygor	causes_fear,causes_terror,ignore_trees
+Da Big Un (Rogue Idol)	causes_fear,causes_terror,construct
+Da Eight Peak Loonies (Night Goblins – Fanatics)	guerrilla_deploy,stalk,unbreakable
+Da Rusty Arrers (Night Goblin Archers)	guerrilla_deploy,stalk
+Da Swamp Fings (River Trolls)	causes_fear,causes_terror,hide_forest,regeneration
+Da Warlord's Boyz (Night Goblins)	guerrilla_deploy,immune_to_psychology,stalk
+Daemon Prince	causes_fear,causes_terror,daemonic,encourages,flying,regeneration
+Daemon Prince of Khorne	causes_fear,causes_terror,daemonic,encourages,flying,mark_khorne,unyielding_assault
+Daemon Prince of Nurgle	causes_fear,causes_terror,daemonic,encourages,flying,mark_nurgle
+Daemon Prince of Slaanesh	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,flying,mark_slaanesh,strider
+Daemon Prince of Tzeentch	causes_fear,causes_terror,daemonic,encourages,flying,mark_tzeentch
+Daemon Slayer	encourages,hide_forest,slayer,unbreakable
+Daemonettes of Slaanesh	causes_fear,daemonic,devastating_flanker,hide_forest,strider
+Daemonsmith Sorcerer (Death)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Daemonsmith Sorcerer (Fire)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Daemonsmith Sorcerer (Hashut)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Daemonsmith Sorcerer (Metal)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Damned Knights Errant	causes_fear,causes_terror,hide_forest,knight,strider,undead
+Damned Knights of the Realm	causes_fear,causes_terror,hide_forest,knight,strider,undead
+Damned Paladin	causes_fear,causes_terror,encourages,hide_forest,knight,strider,undead
+Damned Questing Knights	causes_fear,causes_terror,hide_forest,knight,strider,undead
+Damsel (Beasts)	encourages,hide_forest
+Damsel (Heavens)	encourages,hide_forest
+Damsel (Life)	encourages,hide_forest
+Dark Riders	guerrilla_deploy,hide_forest
+Dark Riders (Repeater Crossbows)	guerrilla_deploy,hide_forest
+Dark Riders (Shields)	guerrilla_deploy,hide_forest
+Darkshards	hide_forest
+Darkshards (Shields)	hide_forest
+Dazh's Hearth-Blades (Tzar Guard – Great Weapons)	hide_forest
+Death Dealers (Ratling Guns)	hide_forest
+Death Globe Bombardiers	hide_forest
+Death Hag	causes_fear,causes_terror,encourages,hide_forest
+Death Runners	guerrilla_deploy,stalk,strider
+Death Shriek Terrorgheist	causes_fear,causes_terror,flying,regeneration,undead
+Deathjacks (Archers)	guerrilla_deploy,hide_forest,snipe,stalk
+Deathmaster Snikch	encourages,guerrilla_deploy,stalk,strider
+Deathmaster Snikch (Tz'arkan)	encourages,guerrilla_deploy,stalk,strider,unbreakable
+Deathshrieker Rocket Launcher	contempt,hellforged
+Dechala, the Denied One	causes_fear,causes_terror,devastating_flanker,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Deck Droppers	causes_fear,flying,mounted_fire_move,undead
+Deck Droppers (Bombers)	causes_fear,flying,undead
+Deck Droppers (Handgunners)	causes_fear,flying,undead
+Deck Gunners	causes_fear,hide_forest,undead
+Deepwood Scouts	guerrilla_deploy,ignore_trees,mounted_fire_move,stalk
+Deepwood Scouts (Swiftshiver Shards)	guerrilla_deploy,ignore_trees,mounted_fire_move,stalk
+Defenders of the Fleur-de-lis (Knights Errant)	hide_forest,knight
+Deff Creepers (Forest Goblin Spider Rider Archers)	guerrilla_deploy,hide_forest,mounted_fire_move,regeneration,stalk,strider
+Demigryph Knights	causes_fear,hide_forest
+Demigryph Knights (Halberds)	causes_fear,hide_forest
+Depth Guard	causes_fear,hide_forest,the_hunger,undead
+Depth Guard (Polearms)	causes_fear,charge_defense_vs_large,charge_reflection,hide_forest,the_hunger,undead
+Destroyers of the Drakwald (Ungor Spearmen Herd – Shields)	charge_defense_vs_large,charge_reflection,expendable,guerrilla_deploy,ignore_trees,stalk
+Devoted Marauders of Slaanesh	hide_forest,immune_to_psychology,mark_slaanesh,strider
+Devoted Marauders of Slaanesh (Hellscourges)	charge_defense,charge_reflection,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Devoted Marauders of Slaanesh (Spears)	charge_defense_vs_large,charge_reflection,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Dire Wolves	causes_fear,guerrilla_deploy,hide_forest,strider,undead
+Doom Diver Catapults	cant_run
+Doom Knights of Tzeentch	causes_fear,flying,guerrilla_deploy,mark_tzeentch,strider
+Doombull	causes_fear,encourages,hide_forest,ignore_trees
+Doomfire Warlocks	guerrilla_deploy,hide_forest
+Doom-Flayers	causes_fear
+Doomseekers	guerrilla_deploy,hide_forest,slayer,unbreakable
+Doomwheel	causes_fear,causes_terror
+Dragon Ogre Shaggoth	causes_fear,causes_terror,unbreakable,wallbreaker
+Dragon Ogres	causes_fear,hide_forest
+Dragon Princes	hide_forest
+Dragon Slayer	charge_defense_vs_large,encourages,hide_forest,slayer,unbreakable
+Dragonback Slayers (Slayers)	charge_defense_vs_large,hide_forest,slayer,unbreakable
+Dragon-blooded Shugengan Lord (Yang)	causes_fear,encourages,flying,hide_forest,spell_mastery
+Dragon-blooded Shugengan Lord (Yin)	causes_fear,encourages,flying,hide_forest,spell_mastery
+Dramar Hammerfist	causes_fear,causes_terror,encourages,hide_forest,strider,unbreakable
+Drazhoath the Ashen	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Dread Maw	causes_fear,causes_terror,flanking_immune,guerrilla_deploy,stalk,underground
+Dread Saurian	causes_fear,causes_terror,mounted_fire_move,wallbreaker
+Dreadlord (Sword & Crossbow)	causes_fear,causes_terror,encourages,flying,hide_forest,mounted_fire_move
+Dreadlord (Sword & Shield)	causes_fear,causes_terror,encourages,flying,hide_forest
+Dreadquake Mortar	contempt,hellforged
+Dreadspears	charge_defense_vs_large,charge_reflection,hide_forest
+Druchii Anointed	causes_fear,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Dryads	causes_fear,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Drycha	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Durkit's Squigs (Night Goblin Squig Hoppers)	guerrilla_deploy,hide_forest,immune_to_psychology,squig
+Durthu	causes_fear,causes_terror,charge_defense,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Dwarf Warriors	charge_defense_vs_large,hide_forest
+Dwarf Warriors (Great Weapons)	hide_forest
+Dwarf-Thing Menace (Doom-Flayers)	causes_fear
+Eagle Claw Bolt Throwers	cant_run,hide_forest
+Ekrund Miners (Miners – Blasting Charges)	guerrilla_deploy,hide_forest
+Elder Dragon Ogre Shaggoth	causes_fear,causes_terror,unbreakable
+Eldred's Guard (Spearmen – Shields)	charge_defense,charge_reflection,encourages,hide_forest
+Elemental Bear	causes_fear,causes_terror,elemental,unbreakable,wallbreaker
+Ellyrian Reaver Archers	guerrilla_deploy,hide_forest,mounted_fire_move
+Ellyrian Reavers	guerrilla_deploy,hide_forest
+Elspeth von Draken	causes_fear,causes_terror,encourages,flying,hide_forest,immune_to_psychology
+Eltharion the Grim	causes_fear,causes_terror,encourages,flying,hide_forest
+Emperor Karl Franz	causes_fear,causes_terror,encourages,flying,hide_forest,immune_to_psychology
+Empire Captain	encourages,flying,hide_forest,unbreakable
+Empire Knights	hide_forest
+Empress Crowmen (Onyx Crowmen)	causes_fear,elemental,flying,guerrilla_deploy,yin
+Engineer	encourages,hide_forest,mounted_fire_move
+Enigmas of Ghyran (Zoats)	causes_fear,hide_forest,ignore_trees
+Epidemius	causes_fear,daemonic,encourages,hide_forest
+Eshin Maneater	causes_fear,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology,ogre_charge,stalk,strider
+Eshin Sorcerer	encourages,guerrilla_deploy,stalk,strider
+Eshin Triads	charge_defense_vs_large,charge_reflection,guerrilla_deploy,stalk,strider
+Eternal Guard	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees
+Eternal Guard (Shields)	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees,unbreakable
+Everqueen's Court Guards (Sisters of Avelorn)	encourages,hide_forest
+Exalted Bloodletters of Khorne	causes_fear,daemonic,hide_forest
+Exalted Bloodthirster	causes_fear,causes_terror,daemonic,encourages,flying
+Exalted Daemonettes of Slaanesh	causes_fear,daemonic,devastating_flanker,hide_forest,strider
+Exalted Flamer of Tzeentch	causes_fear,daemonic
+Exalted Great Unclean One (Death)	causes_fear,causes_terror,daemonic,encourages
+Exalted Great Unclean One (Nurgle)	causes_fear,causes_terror,daemonic,encourages
+Exalted Hero	causes_fear,causes_terror,encourages,flying,hide_forest
+Exalted Hero - Deprecated	causes_fear,encourages,hide_forest
+Exalted Hero of Khorne	causes_fear,encourages,hide_forest,mark_khorne
+Exalted Hero of Nurgle	causes_fear,encourages,hide_forest,mark_nurgle
+Exalted Hero of Slaanesh	charge_defense,charge_reflection,encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Exalted Hero of Tzeentch	charge_defense,charge_reflection,encourages,flying,hide_forest,mark_tzeentch,strider
+Exalted Keeper of Secrets (Shadows)	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,strider
+Exalted Keeper of Secrets (Slaanesh)	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,strider
+Exalted Lord of Change (Metal)	causes_fear,causes_terror,daemonic,encourages,flying
+Exalted Lord of Change (Tzeentch)	causes_fear,causes_terror,daemonic,encourages,flying
+Exalted Pink Horrors of Tzeentch	causes_fear,daemonic,hide_forest
+Exalted Plaguebearers of Nurgle	causes_fear,daemonic,hide_forest
+Exalted Seeker Chariot	causes_fear,causes_terror,daemonic,devastating_flanker,fatigue_immune,strider
+Explosive Squig	hide_forest,immune_to_psychology,squig
+Eyes of the Desert (Sepulchral Stalkers)	causes_fear,charge_defense_vs_large,charge_reflection,construct,guerrilla_deploy,hide_forest,stalk
+Eye-Takers (Warplock Jezzails)	hide_forest
+Fatsod	unbreakable
+Fay Enchantress	causes_fear,encourages,hide_forest
+Felix	encourages,hide_forest
+Fell Bats	causes_fear,flying,guerrilla_deploy,undead
+Feral Bastiladon	causes_fear,causes_terror,flanking_immune,wallbreaker
+Feral Bears	causes_fear,guerrilla_deploy,hide_forest,ignore_trees
+Feral Carnosaur	causes_fear,causes_terror
+Feral Cold Ones	causes_fear,hide_forest
+Feral Dread Saurian	causes_fear,causes_terror,wallbreaker
+Feral Hydra	causes_fear,causes_terror,regeneration
+Feral Mammoth	causes_fear,causes_terror
+Feral Manticore	causes_fear,causes_terror,flying
+Feral Stegadon	causes_fear,causes_terror,wallbreaker
+Feral Troglodon	causes_fear,causes_terror
+Feral Wyvern	causes_fear,causes_terror,flying
+Festering Stooges (Exalted Plaguebearers of Nurgle)	causes_fear,daemonic,hide_forest
+Festus the Leechlord	encourages,mark_nurgle
+Field Trebuchets	cant_run,peasant
+Fiends of Slaanesh	causes_fear,daemonic,devastating_flanker,hide_forest,strider
+Fimir Balefiend (Fire)	causes_fear,encourages,hide_forest
+Fimir Balefiend (Shadows)	causes_fear,encourages,hide_forest
+Fimir Noble	causes_fear,encourages,hide_forest
+Fimir Warriors	causes_fear,hide_forest
+Fimir Warriors (Great Weapons)	causes_fear,hide_forest
+Fire Rain Rocket Battery	yin
+Firebark Elders (Tree Kin)	causes_fear,charge_defense_vs_large,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Firebelly	causes_fear,encourages,hide_forest,ogre_charge,wallbreaker
+Flagellants	hide_forest,unbreakable
+Flame Cannons	cant_run
+Flamers of Tzeentch	causes_fear,daemonic
+Flamespyre Phoenix	causes_fear,causes_terror,flying
+Flesh Hounds of Khorne	causes_fear,daemonic,guerrilla_deploy,hide_forest
+Followers of the Great Eagle (Marauder Chariots)	hide_forest,mark_tzeentch
+Foot Squires	hide_forest,peasant
+Forest Dragon	causes_fear,causes_terror,flying
+Forest Goblin Spider Rider Archers	guerrilla_deploy,hide_forest,mounted_fire_move,strider
+Forest Goblin Spider Riders	guerrilla_deploy,hide_forest,strider
+Forsaken	hide_forest,immune_to_psychology
+Forsaken of Khorne	hide_forest,immune_to_psychology,mark_khorne
+Forsaken of Nurgle	causes_fear,hide_forest,immune_to_psychology,mark_nurgle
+Forsaken of Slaanesh	devastating_flanker,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Forsaken of Tzeentch	hide_forest,immune_to_psychology,mark_tzeentch
+Free Company Militia	guerrilla_deploy,hide_forest,mounted_fire_move
+Frigustrex, Scion of the Cold-Void	causes_fear,causes_terror,flying,unbreakable
+Frost Maiden (Ice)	causes_fear,encourages,hide_forest
+Frost Maiden (Tempest)	causes_fear,encourages,hide_forest
+Frost Wyrm	causes_fear,causes_terror
+Frostheart Phoenix	causes_fear,causes_terror,flying
+Gallows Giant (Necrofex Colossus)	causes_fear,causes_terror,undead
+Garagrim Ironfist	encourages,hide_forest,slayer,unbreakable
+Gargantulzan	causes_fear,causes_terror,unbreakable
+Gate Guard	charge_defense_vs_large,charge_reflection,hide_forest
+Gate Master	charge_defense,encourages,hide_forest,mounted_fire_move
+Geltblöm's Terror (Feral Carnosaur)	causes_fear,causes_terror,guerrilla_deploy,hide_forest,strider
+General	encourages,hide_forest
+General of the Empire	causes_fear,causes_terror,encourages,flying,hide_forest
+Gerik	encourages,hide_forest
+Ghorgon	causes_fear,causes_terror,ignore_trees
+Ghorgon of Khorne	causes_fear,causes_terror,encourages,ignore_trees,mark_khorne,unbreakable
+Ghoritch	causes_fear,causes_terror,encourages,hide_forest,immune_to_psychology,moulder_monster
+Giant	causes_fear,causes_terror,ignore_trees,wallbreaker
+Giant River Troll Hag	causes_fear,encourages,hide_forest,regeneration
+Giant Slayers	hide_forest,slayer,unbreakable
+Giant Spiders	causes_fear,guerrilla_deploy,hide_forest,strider
+Giant Wolves	causes_fear,guerrilla_deploy,hide_forest,strider
+Glade Captain	causes_fear,charge_defense_vs_large,charge_reflection,encourages,flying,guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move
+Glade Guard	hide_forest,ignore_trees,mounted_fire_move
+Glade Guard (Hagbane Tips)	hide_forest,ignore_trees,mounted_fire_move
+Glade Guard (Starfire Shafts)	hide_forest,ignore_trees,mounted_fire_move
+Glade Lord	causes_fear,causes_terror,encourages,flying,guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move,unbreakable
+Glade Riders	guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move
+Glade Riders (Hagbane Tips)	guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move,unbreakable
+Glade Riders (Spears)	guerrilla_deploy,hide_forest,ignore_trees
+Gnoblar Flingers	expendable,hide_forest
+Gnoblar Scraplauncher	causes_fear
+Gnoblar Trappers	expendable,guerrilla_deploy,stalk
+Gnoblars	expendable,hide_forest
+Goblin Archers	expendable,hide_forest
+Goblin Big Boss	encourages,hide_forest,strider
+Goblin Bolt Throwa	cant_run,expendable,hide_forest
+Goblin Great Shaman	causes_fear,causes_terror,encourages,guerrilla_deploy,hide_forest,mounted_fire_move,strider
+Goblin Hewers	hide_forest,slayer,unbreakable
+Goblin Labourers	expendable,hide_forest
+Goblin Rock Lobbers	cant_run,expendable
+Goblin Wolf Chariots	hide_forest,mounted_fire_move
+Goblin Wolf Rider Archers	expendable,guerrilla_deploy,hide_forest,mounted_fire_move
+Goblin Wolf Riders	expendable,guerrilla_deploy,hide_forest
+Goblins	expendable,hide_forest
+Goblins (Spears)	charge_defense_vs_large,charge_reflection,expendable,hide_forest
+Gob-Lobbers (Grudge Throwers)	cant_run
+Gold Wizard	encourages,flying,hide_forest
+Golgfag Maneater	causes_fear,encourages,guerrilla_deploy,hide_forest,immune_to_psychology,ogre_charge,wallbreaker
+Golgfag's Maneaters	causes_fear,guerrilla_deploy,hide_forest,immune_to_psychology,ogre_charge
+Gor Herd	guerrilla_deploy,hide_forest,ignore_trees
+Gor Herd (Shields)	guerrilla_deploy,hide_forest,ignore_trees
+Gorbad Ironclaw	encourages,hide_forest
+Gordinar, Champion of the Flame	causes_fear,causes_terror,flying,guerrilla_deploy,unbreakable
+Gorduz Backstabber	encourages,hide_forest
+Gorebeast Chariots	causes_fear,hide_forest
+Gorebeast Chariots of Khorne	causes_fear,mark_khorne
+Gorebull	causes_fear,encourages,hide_forest,ignore_trees
+Gorgers	causes_fear,gorger,guerrilla_deploy,stalk,unbreakable
+Gor-Rok	charge_defense,charge_reflection,encourages,hide_forest,immune_to_psychology
+Gotrek	charge_defense_vs_large,encourages,hide_forest,slayer,unbreakable
+Grail Guardians	fatigue_immune,hide_forest,immune_to_psychology,knight
+Grail Knights	fatigue_immune,hide_forest,immune_to_psychology,knight
+Grail Reliquae	hide_forest,peasant
+Graktar	encourages,unbreakable
+Grand Cannons	yin
+Grand Hierophant Khatep	causes_fear,encourages,hide_forest,undead
+Grand Vomitus, Prince of Buboes	causes_fear,causes_terror,daemonic,encourages,mark_nurgle,regeneration
+Grave Guard	causes_fear,hide_forest,undead
+Grave Guard (Great Weapons)	causes_fear,hide_forest,undead
+Greasus Goldtooth	causes_fear,encourages,hide_forest,ogre_charge,wallbreaker
+Great Bray-Shaman (Beasts)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Great Bray-Shaman (Death)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Great Bray-Shaman (Shadows)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Great Bray-Shaman (Wild)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Great Cannons	cant_run
+Great Eagle	causes_fear,flying
+Great Hawks	causes_fear,flying,guerrilla_deploy,ignore_trees
+Great Longma Riders	causes_fear,flying,yang
+Great Moon Bird	causes_fear,causes_terror,flying,yin
+Great Shaman-Sorcerer (Death)	encourages,hide_forest
+Great Shaman-Sorcerer (Fire)	encourages,hide_forest
+Great Shaman-Sorcerer (Metal)	encourages,hide_forest
+Great Stag Knights	causes_fear,guerrilla_deploy,hide_forest,ignore_trees
+Great Taurus	causes_fear,causes_terror,flying
+Great Unclean One	causes_fear,causes_terror,daemonic
+Greatswords	hide_forest
+Grey Seer (Plague)	causes_fear,encourages,hide_forest
+Grey Seer (Ruin)	causes_fear,encourages,hide_forest
+Grey Wizard	encourages,flying,hide_forest
+Grimgor Ironhide	encourages,hide_forest,immune_to_psychology
+Groghooves of Wolf's Run (Centigors – Throwing Axes)	guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move
+Grom the Paunch	encourages,hide_forest,regeneration
+Grombrindal – The White Dwarf	charge_defense,encourages,hide_forest,unbreakable
+Grudge Throwers	cant_run
+Grundel's Defenders (Spearmen – Shields)	charge_defense,charge_reflection,hide_forest,immune_to_psychology
+Gryphon Legion	causes_fear,glorious_charge,hide_forest
+Gunderman's Surefires (Handgunners)	guerrilla_deploy,hide_forest,stalk
+Gunnery Wight	causes_fear,charge_defense_vs_large,encourages,hide_forest,undead
+Gutter Runner Slingers	guerrilla_deploy,stalk
+Gutter Runner Slingers (Poison)	guerrilla_deploy,stalk
+Gutter Runners	guerrilla_deploy,mounted_fire_move,stalk
+Gutter Runners (Poison)	guerrilla_deploy,mounted_fire_move,stalk
+Gwindalor	causes_fear,flying
+Gyrobombers	flying
+Gyrocopters	flying
+Gyrocopters (Brimstone Guns)	flying
+Halberdiers	charge_defense_vs_large,charge_reflection,hide_forest
+Halkenhaf Stonebeard	causes_fear,causes_terror,charge_defense_vs_large,encourages,hide_forest,strider,unbreakable
+Hammer of Gork (Goblin Rock Lobbers)	cant_run
+Hammer of the Witches (Great Cannons)	cant_run
+Hammerers	hide_forest
+Hand of the Shadow Crown	encourages,guerrilla_deploy,mounted_fire_move,stalk
+Handgunners	hide_forest
+Handmaiden of the Everqueen	charge_defense_vs_large,charge_reflection,encourages,hide_forest,mounted_fire_move
+Hans Valhirsson	causes_fear,causes_terror,charge_defense_vs_large,encourages,hide_forest,strider,unbreakable
+Har Ganeth Executioners	hide_forest,immune_to_psychology
+Harald Hammerstorm	causes_fear,causes_terror,encourages,hide_forest,unbreakable
+Harpies	flying,guerrilla_deploy
+Hashut's Dark Ravagers (Bull Centaur Renders – Dual Axes)	causes_fear,contempt,hide_forest,mounted_fire_move
+Hawk Riders	flying,guerrilla_deploy,ignore_trees,mounted_fire_move
+Hawk-Eyes of Drakira (Waywatchers)	guerrilla_deploy,ignore_trees,mounted_fire_move,stalk
+Heartseekers of Slaanesh	causes_fear,daemonic,devastating_flanker,guerrilla_deploy,hide_forest,strider
+Heavy War Sleds	causes_fear,mounted_fire_move
+Heinrich Kemmler	causes_fear,encourages,hide_forest,undead
+Helblaster Volley Guns	cant_run
+Hell Pit Abomination	causes_fear,causes_terror,moulder_monster,regeneration
+Hellcannon	cant_run,unbreakable
+Hellflayers	causes_fear,daemonic,devastating_flanker,hide_forest,strider
+Hellforged Bellowers (Skullcannon)	causes_fear,daemonic,mounted_fire_move
+Hellforged Host (Exalted Bloodletters of Khorne)	causes_fear,daemonic,hide_forest
+Hellstriders of Slaanesh	causes_fear,guerrilla_deploy,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Hellstriders of Slaanesh (Hellscourges)	causes_fear,guerrilla_deploy,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Helman Ghorst	causes_fear,encourages,hide_forest,regeneration,undead
+Helstorm Rocket Battery	cant_run
+Henri le Massif	causes_fear,causes_terror,encourages,flying,hide_forest,knight
+Herald of Khorne	causes_fear,daemonic,encourages,hide_forest
+Herald of Nurgle (Death)	causes_fear,daemonic,encourages,flying,hide_forest
+Herald of Nurgle (Nurgle)	causes_fear,daemonic,encourages,flying,hide_forest
+Herald of Slaanesh (Shadows)	causes_fear,daemonic,devastating_flanker,encourages,fatigue_immune,hide_forest,strider
+Herald of Slaanesh (Slaanesh)	causes_fear,daemonic,devastating_flanker,encourages,fatigue_immune,hide_forest,strider
+Herald of Tzeentch (Metal)	causes_fear,daemonic,encourages,flying,hide_forest,mounted_fire_move,strider
+Herald of Tzeentch (Tzeentch)	causes_fear,daemonic,encourages,flying,hide_forest,mounted_fire_move,strider
+Heralds of the Wind (Ellyrian Reavers – Bows)	guerrilla_deploy,hide_forest,mounted_fire_move
+Hertwig van Hal	encourages,hide_forest,immune_to_psychology,mounted_fire_move
+Hexwraiths	causes_fear,causes_terror,guerrilla_deploy,hide_forest,strider,undead
+Hierotitan	causes_fear,causes_terror,construct
+High Beastmaster	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,flying,hide_forest
+High Queen Khalida	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,undead
+Hobgoblin Archers	hide_forest
+Hobgoblin Bolt Thrower	cant_run,hide_forest
+Hobgoblin Cutthroats	hide_forest
+Hobgoblin Sneaky Gits	guerrilla_deploy,mounted_fire_move,stalk
+Hobgoblin Wolf Raiders (Bows)	guerrilla_deploy,hide_forest,mounted_fire_move
+Hobgoblin Wolf Raiders (Spears)	guerrilla_deploy,hide_forest
+Horned Ones	causes_fear,hide_forest
+Horse Archers	guerrilla_deploy,hide_forest,mounted_fire_move
+Hounds of the Blood Hunt (Flesh Hounds of Khorne)	causes_fear,daemonic,guerrilla_deploy,hide_forest,ignore_imbue_contact_effects_enemy
+Hunter	causes_fear,causes_terror,encourages,hide_forest,mounted_fire_move,ogre_charge,wallbreaker
+Huntsman General	encourages,guerrilla_deploy,mounted_fire_move,stalk
+Huntsmen	guerrilla_deploy,ignore_trees,mounted_fire_move,stalk
+Ice Guard (Glaives)	charge_defense_vs_large,charge_reflection,hide_forest,immune_to_psychology
+Ice Guard (Swords)	hide_forest,immune_to_psychology
+Ice Witch (Ice)	causes_fear,causes_terror,encourages,hide_forest
+Ice Witch (Tempest)	causes_fear,causes_terror,encourages,hide_forest
+Icehorn Marauders (Marauders)	fatigue_immune,hide_forest,immune_to_psychology
+Ikit Claw	causes_fear,causes_terror,encourages,hide_forest
+Ikit's Zzzzap-Zzzzap! (Warp Lightning Cannons)	cant_run
+Iksha's Triads (Eshin Triads)	charge_defense_vs_large,charge_reflection,guerrilla_deploy,stalk,strider
+Iksha's Triads (Eshin Triads) – Decoy	charge_defense_vs_large,charge_reflection,fatigue_immune,guerrilla_deploy,stalk,strider,unbreakable
+Imrik	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,flying,hide_forest
+Incarnate Elemental of Beasts	causes_fear,causes_terror,elemental,hide_forest,strider
+Infernal Castellan	charge_defense,charge_reflection,contempt,encourages,hide_forest
+Infernal Guard	charge_defense_vs_large,contempt,hide_forest
+Infernal Guard (Fireglaives)	charge_defense_vs_large,contempt,hide_forest
+Infernal Guard (Great Weapons)	charge_defense_vs_large,contempt,hide_forest
+Infernal Ironsworn	charge_defense,contempt,hide_forest
+Infested Nurglings	causes_fear,daemonic,guerrilla_deploy,hide_forest
+Iridescent Horror (Metal)	causes_fear,daemonic,encourages,flying,hide_forest,mounted_fire_move,strider
+Iridescent Horror (Tzeentch)	causes_fear,daemonic,encourages,flying,hide_forest,mounted_fire_move,strider
+Iron Claw Tiger Warriors	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees,tiger_warrior
+Iron Daemon	causes_fear,causes_terror,contempt,hellforged,mounted_fire_move,unbreakable
+Iron Hail Gunners	hide_forest,yin
+Ironblaster	causes_fear
+Ironbreakers	charge_defense,hide_forest
+Irondrakes	hide_forest
+Irondrakes (Trollhammer Torpedoes)	hide_forest
+Ironguts	causes_fear,hide_forest,ogre_charge
+Isabella von Carstein	causes_fear,encourages,flying,hide_forest,the_hunger,undead
+Ithilmar Chariots	hide_forest
+Jabberslythe	causes_fear,causes_terror,ignore_trees
+Jade Lancers	hide_forest,yang
+Jade Lion	causes_fear,construct,hide_forest,spell_mastery,strider,yang
+Jade Warrior Crossbows	hide_forest,yin
+Jade Warrior Crossbows (Shields)	hide_forest,yin
+Jade Warriors	formed_attack,hide_forest,yang
+Jade Warriors (Halberds)	charge_defense_vs_large,charge_reflection,formed_attack,hide_forest,yang
+Jade Wizard	encourages,flying,hide_forest
+Jet Lion	causes_fear,construct,hide_forest,strider,yin
+Jorek Grimm	encourages,hide_forest
+Kairos Fateweaver	causes_fear,causes_terror,daemonic,encourages,flying
+Kalara	encourages,guerrilla_deploy,mounted_fire_move,snipe,stalk
+Karanak	causes_fear,daemonic,encourages,guerrilla_deploy,hide_forest
+Kayzk the Befouled	causes_fear,encourages,hide_forest,mark_nurgle,regeneration
+K'daai Destroyer	bound_fire_daemon,causes_fear,causes_terror,hellforged
+K'daai Fireborn	bound_fire_daemon,causes_fear,hellforged,hide_forest
+Keeper of Secrets	causes_fear,causes_terror,daemonic,devastating_flanker,strider
+Keepers of the Flame (Phoenix Guard)	causes_fear,charge_defense,charge_reflection,hide_forest,ignore_imbue_contact_effects_enemy,immune_to_psychology
+Khainite Assassin	encourages,guerrilla_deploy,immune_to_psychology,mounted_fire_move,stalk,strider
+Kharibdyss	causes_fear,causes_terror
+Khazrak the One-Eye	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Khemrian Warsphinx	causes_fear,causes_terror,construct
+Kholek Suneater	causes_fear,causes_terror,encourages,wallbreaker
+Khorne’s Bloody Fist (Bloodthirster)	causes_fear,causes_terror,daemonic,flying
+Khorngors	charge_defense_vs_large,charge_reflection,guerrilla_deploy,hide_forest,ignore_trees,mark_khorne
+Khorrok's Manrippers (Bestigor Herd)	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees
+Kihar the Tormentor	causes_fear,causes_terror,encourages,flying,regeneration
+King Louen Leoncoeur	causes_fear,causes_terror,encourages,flying,hide_forest,immune_to_psychology,knight
+King Lunn Ironhammer	causes_fear,causes_terror,charge_defense_vs_large,encourages,hide_forest,strider,unbreakable
+King Nekhesh's Scorpion Legion (Skeleton Spearmen)	causes_fear,charge_defense,charge_reflection,hide_forest,undead
+Kislevite Warriors	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees
+Knights Errant	hide_forest,knight
+Knights of Morr (Empire Knights)	causes_fear,causes_terror,hide_forest
+Knights of the Black Rose	hide_forest,immune_to_psychology
+Knights of the Blazing Sun	hide_forest
+Knights of the Brazen Throne (Skullcrushers of Khorne)	causes_fear,causes_terror,hide_forest,mark_khorne
+Knights of the Ebon Claw (Dread Knights)	causes_fear,causes_terror,hide_forest
+Knights of the Everlasting Light (Empire Knights)	hide_forest
+Knights of the Lionhearted (Knights of the Realm)	causes_fear,encourages,hide_forest,knight
+Knights of the Realm	hide_forest,knight
+Knights of Tor Gaval	causes_fear,causes_terror,encourages,flying
+Kossars	hide_forest,ignore_trees
+Kossars (Spears)	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees
+Kossovite Dervishes	guerrilla_deploy,hide_forest
+Kostaltyn	causes_fear,encourages,hide_forest
+Krell	causes_fear,causes_terror,encourages,hide_forest,undead
+Krimson Killerz (Black Orcs)	hide_forest,immune_to_psychology
+Kroq-Gar	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,hide_forest,wallbreaker
+Kroxigor	causes_fear,hide_forest,kroxigor
+Kroxigor Ancient	causes_fear,encourages,hide_forest
+Ku'gath Plaguefather	causes_fear,causes_terror,daemonic,encourages,mounted_fire_move
+Kurgan Horsemen (Dual Weapons)	devastating_flanker,guerrilla_deploy,hide_forest
+Kurgan Horsemen (Great Weapons)	devastating_flanker,guerrilla_deploy,hide_forest
+Kysis Crystal-King	causes_fear,causes_terror,daemonic,encourages,flying,mark_tzeentch
+Lahmian Vampire Lord	causes_fear,causes_terror,encourages,flying,hide_forest,the_hunger,undead
+Lammasu	causes_fear,causes_terror,flying
+Lamoureux the Frozen Breath	causes_fear,causes_terror,encourages,flying,unbreakable
+Land Ship	causes_fear,mounted_fire_move,unbreakable
+Lava Arachnarok Spider	causes_fear,causes_terror,strider
+Lava Spider Rider Archers	guerrilla_deploy,hide_forest,mounted_fire_move,strider
+Leadbelchers	causes_fear,hide_forest,ogre_charge
+Legion of Chaqua (Saurus Spears)	charge_defense_vs_large,charge_reflection,hide_forest
+Liche Priest (Death)	causes_fear,encourages,hide_forest,undead
+Liche Priest (Light)	causes_fear,encourages,hide_forest,undead
+Liche Priest (Nehekhara)	causes_fear,encourages,hide_forest,undead
+Liche Priest (Shadows)	causes_fear,encourages,hide_forest,undead
+Light War Sleds	causes_fear,mounted_fire_move
+Light Wizard	encourages,flying,hide_forest
+Lion Chariots of Chrace	causes_fear,hide_forest
+Little Grom	causes_fear
+Loec's Tricksters (Wardancers – Asrai Spears)	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees,immune_to_psychology
+Logey Bogey’s Spore ‘Splodaz (Snotling Pump Wagons)	expendable,hide_forest
+Lokhir Fellheart	causes_fear,causes_terror,encourages,flying,hide_forest
+Long Drong's Slayer Pirates	hide_forest,mounted_fire_move,slayer,unbreakable
+Longbeards	charge_defense_vs_large,encourages,hide_forest,immune_to_psychology
+Longbeards (Great Weapons – Grudge Settlers)	charge_defense,encourages,hide_forest,immune_to_psychology
+Longbeards (Great Weapons)	charge_defense_vs_large,encourages,hide_forest,immune_to_psychology
+Lord	causes_fear,causes_terror,charge_defense,encourages,flying,hide_forest,knight
+Lord Kroak	causes_fear,encourages,hide_forest,strider,unbreakable
+Lord Magistrate	always_flying,encourages,hide_forest,mounted_fire_move
+Lord Mazdamundi	causes_fear,causes_terror,encourages,hide_forest,immune_to_psychology,mounted_fire_move,strider,wallbreaker
+Lord of Change	causes_fear,causes_terror,daemonic,encourages,flying
+Lord Skrolk	causes_fear,encourages,hide_forest
+Loremaster of Hoeth	encourages,hide_forest
+Lost Sylvan Knights (Great Stag Knights)	causes_fear,causes_terror,guerrilla_deploy,hide_forest,ignore_trees,strider
+Lothern Sea Guard	charge_defense_vs_large,charge_reflection,hide_forest
+Lothern Sea Guard (Shields)	charge_defense_vs_large,charge_reflection,hide_forest
+Luthor Harkon	causes_fear,causes_terror,encourages,flying,hide_forest,mounted_fire_move,regeneration,the_hunger,undead
+Maddened Jabberslythe	causes_fear,causes_terror,ignore_trees,unbreakable
+Mage (Beasts)	encourages,hide_forest
+Mage (Death)	encourages,hide_forest
+Mage (Fire)	causes_fear,causes_terror,encourages,flying,hide_forest
+Mage (Heavens)	encourages,hide_forest
+Mage (High)	encourages,hide_forest
+Mage (Life)	encourages,hide_forest
+Mage (Light)	encourages,hide_forest
+Mage (Metal)	encourages,hide_forest
+Mage (Shadows)	encourages,hide_forest
+Magma Cannon	contempt,hellforged
+Malagor the Dark Omen	encourages,flying,ignore_trees
+Malakai Makaisson	encourages,hide_forest,slayer,unbreakable
+Malekith	causes_fear,causes_terror,encourages,flying,hide_forest,immune_to_psychology
+Malevolent Ancient Treeman (Beasts)	causes_fear,causes_terror,charge_defense,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Malevolent Ancient Treeman (Life)	causes_fear,causes_terror,charge_defense,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Malevolent Ancient Treeman (Shadows)	causes_fear,causes_terror,charge_defense,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Malevolent Branchwraith (Beasts)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Malevolent Branchwraith (Life)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Malevolent Branchwraith (Shadows)	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Malevolent Dryads	causes_fear,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Malevolent Tree Kin	causes_fear,charge_defense_vs_large,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Malevolent Treeman	causes_fear,causes_terror,charge_defense,guerrilla_deploy,hide_forest,ignore_trees
+Malus Darkblade	causes_fear,encourages,hide_forest
+Malus Darkblade (Tz'arkan)	causes_fear,encourages,hide_forest,unbreakable
+Maneaters	causes_fear,hide_forest,immune_to_psychology,ogre_charge
+Maneaters (Great Weapons)	causes_fear,hide_forest,immune_to_psychology,ogre_charge
+Maneaters (Ironfists)	causes_fear,hide_forest,immune_to_psychology,ogre_charge
+Maneaters (Ogre Pistols)	causes_fear,hide_forest,immune_to_psychology,mounted_fire_move,ogre_charge
+Mangler Squigs	hide_forest,immune_to_psychology,squig,unbreakable
+Mannfred von Carstein	causes_fear,causes_terror,encourages,flying,hide_forest,the_hunger,undead
+Marauder Bearmen	hide_forest,immune_to_psychology
+Marauder Bearmen (Great Weapons)	hide_forest,immune_to_psychology
+Marauder Berserkers	hide_forest,immune_to_psychology
+Marauder Champions	hide_forest
+Marauder Champions (Great Weapons)	hide_forest
+Marauder Chariots	hide_forest
+Marauder Chieftain	causes_fear,causes_terror,encourages,hide_forest
+Marauder Horsemasters	guerrilla_deploy,hide_forest,mounted_fire_move
+Marauder Horsemen	guerrilla_deploy,hide_forest,mounted_fire_move
+Marauder Horsemen (Throwing Axes)	guerrilla_deploy,hide_forest,mounted_fire_move
+Marauder Horsemen of Khorne (Throwing Axes)	guerrilla_deploy,hide_forest,mark_khorne,mounted_fire_move
+Marauder Horsemen of Nurgle (Throwing Axes)	guerrilla_deploy,hide_forest,mark_nurgle,mounted_fire_move
+Marauder Horsemen of Slaanesh	devastating_flanker,guerrilla_deploy,hide_forest,immune_to_psychology,mark_slaanesh,mounted_fire_move,strider
+Marauder Horsemen of Tzeentch	guerrilla_deploy,hide_forest,mark_tzeentch,mounted_fire_move
+Marauder Hunters	hide_forest
+Marauder Hunters (Javelins)	hide_forest
+Marauder Ice Wolf Chariots	causes_fear,hide_forest
+Marauder Spearmen	charge_defense_vs_large,charge_reflection,hide_forest
+Marauders	hide_forest
+Marauders (Great Weapons)	hide_forest
+Marauders of Khorne	hide_forest,mark_khorne
+Marauders of Khorne (Dual Weapons)	hide_forest,mark_khorne
+Marauders of Nurgle	hide_forest,mark_nurgle
+Marauders of Nurgle (Great Weapons)	hide_forest,mark_nurgle
+Marauders of Slaanesh	hide_forest,immune_to_psychology,mark_slaanesh,strider
+Marauders of Slaanesh (Hellscourges)	charge_defense,charge_reflection,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Marauders of Tzeentch	hide_forest,mark_tzeentch
+Marauders of Tzeentch (Spears)	charge_defense_vs_large,charge_reflection,hide_forest,mark_tzeentch
+Markus Wulfhart	encourages,guerrilla_deploy,immune_to_psychology,mounted_fire_move,stalk
+Master	causes_fear,charge_defense_vs_large,charge_reflection,encourages,flying,hide_forest
+Master Assassin	encourages,guerrilla_deploy,mounted_fire_move,stalk,strider
+Master Engineer	armoured_vehicle,causes_fear,causes_terror,encourages,hide_forest,mounted_fire_move,unbreakable
+Master Necromancer	causes_fear,encourages,flying,hide_forest,regeneration,undead
+Maws of Savagery (Skin Wolves – Armoured)	causes_fear,guerrilla_deploy,hide_forest,regeneration,strider
+Men-at-Arms	hide_forest,peasant
+Men-at-Arms (Polearms)	charge_defense_vs_large,charge_reflection,hide_forest,peasant
+Men-at-Arms (Shields)	hide_forest,peasant
+Merwyrm	causes_fear,causes_terror,regeneration,wallbreaker
+Miao Ying, the Storm Dragon	causes_fear,causes_terror,encourages,flying,hide_forest,spell_mastery
+Miners	guerrilla_deploy,hide_forest
+Miners (Blasting Charges)	guerrilla_deploy,hide_forest
+Minotaurs	causes_fear,hide_forest,ignore_trees
+Minotaurs (Great Weapons)	causes_fear,hide_forest,ignore_trees
+Minotaurs (Shields)	causes_fear,hide_forest,ignore_trees
+Minotaurs of Khorne	causes_fear,hide_forest,ignore_trees,mark_khorne
+Minotaurs of Khorne (Great Weapons)	causes_fear,hide_forest,ignore_trees,mark_khorne
+Mirror Guard (Chaos Warriors)	hide_forest,immune_to_psychology,mark_slaanesh,strider
+Mist Mage	encourages,hide_forest,strider
+Mist Stalkers (Fimir Warriors)	causes_fear,causes_terror,guerrilla_deploy,stalk
+Mogrubb's Mangy Marauders (Goblin Wolf Archers)	expendable,guerrilla_deploy,hide_forest,immune_to_psychology,mounted_fire_move
+Moon Dragon	causes_fear,causes_terror,flying
+Moon-howlers (Goblin Wolf Riders)	causes_fear,expendable,guerrilla_deploy,hide_forest
+Morathi	encourages,flying,hide_forest
+Morghur the Shadowgave	encourages,hide_forest,ignore_trees,immune_to_psychology,regeneration
+Morskittar's Hellion (Mutant Rat Ogre)	causes_fear,causes_terror,moulder_monster
+Mortars	cant_run,causes_fear,undead
+Mortis Engine	causes_fear,causes_terror,regeneration,strider,undead
+Mother of the Flame	causes_fear,causes_terror,flying,unbreakable
+Mounted Yeomen	guerrilla_deploy,hide_forest,peasant
+Mounted Yeomen Archers	guerrilla_deploy,hide_forest,mounted_fire_move,peasant
+Mournfang Cavalry	causes_fear,hide_forest,wallbreaker
+Mournfang Cavalry (Great Weapons)	causes_fear,hide_forest,wallbreaker
+Mournfang Cavalry (Ironfists)	causes_fear,hide_forest,wallbreaker
+Mourngul Haunter	causes_fear,causes_terror,encourages,guerrilla_deploy,hide_forest,stalk,strider,the_hunger,undead
+Mournguls	causes_fear,causes_terror,guerrilla_deploy,hide_forest,stalk,strider,the_hunger,undead
+Mournhowl	regeneration
+Mutalith Vortex Beast	causes_fear,causes_terror
+Mutant Rat Ogre	causes_fear,causes_terror,moulder_monster
+Nakai the Wanderer	causes_fear,causes_terror,encourages,guerrilla_deploy,hide_forest,ignore_trees,wallbreaker
+Nan-Gau Grenadiers	hide_forest,yin
+Nasty Skulkers	guerrilla_deploy,stalk
+Natty Buboe's Sharpshooters (Warplock Jezzails)	hide_forest,snipe,stalk
+Necrarch Vampire Lord	causes_fear,causes_terror,encourages,flying,hide_forest,the_hunger,undead
+Necrofex Colossus	causes_fear,causes_terror,mounted_fire_move,undead
+Necromancer	causes_fear,encourages,hide_forest,regeneration,undead
+Necropolis Knights	causes_fear,construct,hide_forest
+Necropolis Knights (Halberds)	causes_fear,construct,hide_forest
+Necrosphinx	causes_fear,causes_terror,construct
+Necrotect	causes_fear,encourages,hide_forest,undead
+Nehekharan Horsemen	causes_fear,hide_forest,undead
+Nehekharan Warriors	causes_fear,hide_forest,undead
+Night Goblin Archers	expendable,guerrilla_deploy,stalk
+Night Goblin Archers (Fanatics)	expendable,guerrilla_deploy,stalk
+Night Goblin Shaman	encourages,guerrilla_deploy,stalk
+Night Goblin Squig Hoppers	guerrilla_deploy,hide_forest,immune_to_psychology,squig
+Night Goblin Warboss	encourages,guerrilla_deploy,hide_forest,immune_to_psychology,stalk
+Night Goblins	expendable,guerrilla_deploy,stalk
+Night Goblins (Fanatics)	expendable,guerrilla_deploy,stalk
+Night Runners	guerrilla_deploy,hide_forest,mounted_fire_move
+Night Runners (Slings)	guerrilla_deploy,hide_forest
+Night Terrors (Mournguls)	causes_fear,causes_terror,guerrilla_deploy,hide_forest,stalk,strider,the_hunger,undead
+N'Kari	causes_fear,causes_terror,daemonic,devastating_flanker,encourages,strider
+Noble	causes_fear,charge_defense_vs_large,charge_reflection,encourages,flying,hide_forest
+Nordland Mariners (Halberdiers)	charge_defense,charge_reflection,hide_forest
+Norgrimlings Ironbreakers (Ironbreakers)	charge_defense,guerrilla_deploy,hide_forest,immune_to_psychology
+Norscan Giant	causes_fear,causes_terror,wallbreaker
+Norscan Ice Trolls	causes_fear,hide_forest,regeneration
+Norscan Ice Wolves	causes_fear,hide_forest,strider
+Norscan Trolls	causes_fear,hide_forest,regeneration
+Norscan Warhounds	guerrilla_deploy,hide_forest,strider
+Norscan Warhounds (Poison)	guerrilla_deploy,hide_forest,strider
+Nuln Ironsides	hide_forest
+Nurglings	causes_fear,daemonic,guerrilla_deploy,hide_forest
+Oath-Brothers of Tor (War Bear Riders)	causes_fear,hide_forest
+Obsinite Gyrocopters	flying
+Oceanids	causes_fear,elemental,fatigue_immune,hide_forest,ignore_imbue_contact_effects_enemy,strider
+Oglah Khan's Wolfboyz	guerrilla_deploy,hide_forest,mounted_fire_move
+Ogre Bulls	causes_fear,hide_forest,ogre_charge
+Ogre Bulls (Dual Weapons)	causes_fear,hide_forest,ogre_charge
+Ogre Bulls (Ironfists)	causes_fear,hide_forest,ogre_charge
+Ogre Paymaster	causes_fear,encourages,hide_forest,ogre_charge,wallbreaker
+Omen of Asuryan (Arcane Phoenix)	causes_fear,causes_terror,flying
+Onyx Crowmen	causes_fear,elemental,flying,guerrilla_deploy,yin
+Orc Arrer Boyz	hide_forest
+Orc Big 'Uns	hide_forest
+Orc Boar Boy Big 'Uns	hide_forest
+Orc Boar Boyz	hide_forest
+Orc Boar Chariots	hide_forest
+Orc Boyz	hide_forest
+Orc Boyz (Spears)	charge_defense_vs_large,charge_reflection,hide_forest
+Orc Labourers	expendable,hide_forest
+Orc Shaman	encourages,hide_forest
+Orc Warboss	causes_fear,causes_terror,encourages,flying,hide_forest
+Organ Guns	cant_run
+Orion	causes_fear,causes_terror,encourages,guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move,unbreakable
+Outriders	guerrilla_deploy,hide_forest,mounted_fire_move
+Outriders (Grenade Launchers)	guerrilla_deploy,hide_forest,mounted_fire_move
+Overseer	causes_fear,causes_terror,charge_defense,contempt,encourages,flying,hide_forest
+Oxyotl	encourages,guerrilla_deploy,mounted_fire_move,stalk,strider
+Packmaster	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,hide_forest,moulder_monster,regeneration
+Pahaux Sentinels (Terradon Riders)	causes_fear,flying,guerrilla_deploy,ignore_trees,mounted_fire_move
+Paladin	encourages,flying,hide_forest,knight
+Patriarch	causes_fear,encourages,hide_forest
+Peak Gate Guard (Hammerers)	hide_forest,immune_to_psychology
+Peasant Archers	expendable,hide_forest,yin
+Peasant Bowmen	hide_forest,peasant
+Peasant Bowmen (Fire Arrows)	hide_forest,peasant
+Peasant Bowmen (Pox Arrows)	hide_forest,peasant
+Peasant Horsemen	expendable,guerrilla_deploy,hide_forest,yang
+Peasant Long Spearmen	charge_defense,charge_reflection,expendable,formed_attack,hide_forest,yang
+Peasant Mob	hide_forest,peasant
+Pegasus Knights	flying,guerrilla_deploy,knight
+Pestilential Toad Dragon	causes_fear,causes_terror,strider,unbreakable,wallbreaker
+Phoenix Guard	causes_fear,charge_defense,charge_reflection,hide_forest,immune_to_psychology
+Pigback Riders	expendable,hide_forest
+Piggyback Knights (Pigback Riders)	hide_forest,strider
+Pink Horrors of Tzeentch	causes_fear,daemonic,hide_forest
+Pistoliers	guerrilla_deploy,hide_forest,mounted_fire_move
+Pit Fighters of Hell’s Deep (Rat Ogres)	causes_fear,hide_forest,immune_to_psychology,moulder_monster
+Plague Drones of Nurgle	causes_fear,daemonic,flying
+Plague Drones of Nurgle (Death's Heads)	causes_fear,daemonic,flying,mounted_fire_move
+Plague Monk Censer Bearers	hide_forest
+Plague Monks	hide_forest
+Plague Ogres	causes_fear,hide_forest,immune_to_psychology,mark_nurgle,ogre_charge
+Plague Priest	encourages,hide_forest
+Plague Toads of Nurgle	causes_fear,daemonic,hide_forest
+Plaguebearers of Nurgle	causes_fear,daemonic,hide_forest
+Plagueclaw Catapults	cant_run
+Plagueridden (Death)	causes_fear,daemonic,encourages,flying,hide_forest
+Plagueridden (Nurgle)	causes_fear,daemonic,encourages,flying,hide_forest
+Pleasureseekers	causes_fear,daemonic,devastating_flanker,guerrilla_deploy,hide_forest,strider
+Poisoned Wind Globadiers	hide_forest
+Poisoned Wind Mortars	hide_forest
+Pok-Hopak Cohort (Cold One Spear-Riders)	causes_fear,devastating_flanker,guerrilla_deploy,hide_forest,immune_to_psychology
+Powder-Guts (Maneaters – Ogre Pistols)	causes_fear,hide_forest,immune_to_psychology,mounted_fire_move,ogre_charge
+Pox Riders of Nurgle	causes_fear,daemonic,hide_forest
+Prince	causes_fear,causes_terror,encourages,flying,hide_forest
+Prince Sigvald the Magnificent	charge_defense,encourages,fatigue_immune,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Prince Yuri	causes_fear,encourages,hide_forest
+Princess	causes_fear,causes_terror,encourages,flying,hide_forest,mounted_fire_move
+Prisoners	expendable,hide_forest
+Prophetess (Beasts)	encourages,flying,hide_forest
+Prophetess (Heavens)	encourages,flying,hide_forest
+Prophetess (Life)	encourages,flying,hide_forest
+Quarrellers	hide_forest
+Quarrellers (Great Weapons)	hide_forest
+Queek Headtaker	encourages,hide_forest
+Queen Bess	cant_run,causes_fear,undead
+Questing Knights	hide_forest,immune_to_psychology,knight
+Radixashen, Serpent of the Worldroots	causes_fear,causes_terror,flying,unbreakable
+Rahagra's Pride (War Lions of Chrace)	causes_fear,hide_forest,strider
+Rakarth	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,flying,hide_forest
+Rancorous Manticore	causes_fear,causes_terror,flying,unbreakable
+Rangers	guerrilla_deploy,hide_forest,ignore_trees,stalk
+Rangers (Great Weapons)	guerrilla_deploy,hide_forest,stalk
+Rat Ogres	causes_fear,hide_forest,moulder_monster
+Ratling Guns	hide_forest
+Ravagers of Rakarth (Scourgerunner Chariots)	hide_forest,mounted_fire_move
+Raven Heralds (Dark Riders)	flying,guerrilla_deploy
+Razordon Hunting Pack	causes_fear,hide_forest
+Razorgor Chariots	causes_fear,hide_forest,ignore_trees
+Razorgor Herd	causes_fear,hide_forest,strider
+Reaper Bolt Throwers	cant_run,hide_forest
+Red Crested Skink Chief	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,flying,hide_forest,ignore_imbue_contact_effects_enemy,mounted_fire_move,wallbreaker
+Red Crested Skinks	hide_forest,ignore_imbue_contact_effects_enemy,skink
+Red Ulgor, Prince of Slaughter	causes_fear,causes_terror,daemonic,encourages,mark_khorne,regeneration
+Reiksguard	hide_forest
+Repanse de Lyonesse	encourages,hide_forest,immune_to_psychology,knight
+Riders of the Mighty Serpent (Marauder Horsemen)	devastating_flanker,guerrilla_deploy,hide_forest,immune_to_psychology,mark_slaanesh,mounted_fire_move,strider
+Righteous Lances of Wei-Jin (Great Longma Riders)	causes_fear,flying,immune_to_psychology,yang
+Ripperdactyl Riders	causes_fear,flying,guerrilla_deploy
+River Trolls	causes_fear,hide_forest,regeneration
+Rodrik L'Anguille	encourages,hide_forest
+Rogue Idol	causes_fear,causes_terror,construct
+Rot Flies	causes_fear,daemonic,flying
+Rot Knights	causes_fear,hide_forest,mark_nurgle,regeneration
+Rotting Leviathan	causes_fear,causes_terror,charge_defense,flanking_immune,undead
+Rotting Prometheans	causes_fear,charge_defense_vs_large,hide_forest,undead
+Rotting Prometheans (Gunnery Mob)	causes_fear,charge_defense_vs_large,hide_forest,undead
+Royal Hippogryph Knights	causes_fear,causes_terror,fatigue_immune,flying,knight
+Royal Pegasus Knights	fatigue_immune,flying,guerrilla_deploy,immune_to_psychology,knight
+Runelord	encourages,hide_forest
+Runesmith	encourages,hide_forest
+Sabretusk Pack	causes_fear,hide_forest
+Sacred Kroxigor	causes_fear,hide_forest,kroxigor
+Salamander Hunting Pack	causes_fear,hide_forest
+Salt Lord Scuttlers (Deck Droppers – Bombers)	causes_fear,flying,undead
+Sarthorael the Everwatcher	causes_fear,causes_terror,daemonic,encourages,flying
+Sartosa Free Company	guerrilla_deploy,hide_forest
+Sartosa Militia	guerrilla_deploy,hide_forest,mounted_fire_move
+Saurus Oldblood	causes_fear,causes_terror,encourages,hide_forest
+Saurus Scar-Veteran	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,hide_forest
+Saurus Spears	charge_defense_vs_large,charge_reflection,hide_forest
+Saurus Spears (Shields)	charge_defense_vs_large,charge_reflection,hide_forest
+Saurus Warriors	hide_forest
+Saurus Warriors (Shields)	hide_forest
+Savage Orc Arrer Boyz	hide_forest
+Savage Orc Big 'Uns	hide_forest
+Savage Orc Boar Boy Big 'Uns	hide_forest
+Savage Orc Boar Boyz	hide_forest
+Savage Orcs	hide_forest
+Sayl the Faithless	encourages,hide_forest
+Saytang the Watcher	causes_fear,causes_terror,construct,encourages
+Scourgerunner Chariots	hide_forest,mounted_fire_move
+Screamers of Tzeentch	causes_fear,daemonic,flying,guerrilla_deploy
+Screaming Skull Catapults	cant_run,causes_fear,undead
+Scurvy Dogs	causes_fear,guerrilla_deploy,hide_forest,strider,undead
+Scyla Anfingrimm	causes_fear,encourages,mark_khorne,unbreakable
+Sea Elemental	causes_fear,causes_terror,elemental,fatigue_immune,ignore_imbue_contact_effects_enemy,strider
+Sea Helm	charge_defense,charge_reflection,encourages,hide_forest
+Sea Lord Aislinn	causes_fear,encourages,hide_forest
+Seeker Chariots	causes_fear,daemonic,devastating_flanker,hide_forest,strider
+Seekers of Slaanesh	causes_fear,daemonic,devastating_flanker,guerrilla_deploy,hide_forest,strider
+Sentinels of Astaril	charge_defense_vs_large,charge_reflection,hide_forest
+Sepulchral Stalkers	causes_fear,charge_defense_vs_large,charge_reflection,construct,guerrilla_deploy,hide_forest,stalk
+Settra the Imperishable	causes_fear,causes_terror,charge_defense_vs_large,charge_reflection,encourages,glorious_charge,hide_forest,undead
+Shackolot the Calamity	causes_fear,causes_terror,flying,unbreakable
+Shades	guerrilla_deploy,stalk
+Shades (Dual Weapons)	guerrilla_deploy,stalk
+Shades (Greatswords)	guerrilla_deploy,stalk
+Shadewraith Gunners (Deck Gunners)	causes_fear,causes_terror,hide_forest,strider,undead
+Shadow Warriors	guerrilla_deploy,mounted_fire_move,stalk
+Shadow-walkers	guerrilla_deploy,mounted_fire_move,stalk
+Shaman-Sorcerer (Death)	encourages,hide_forest
+Shaman-Sorcerer (Fire)	encourages,hide_forest
+Shaman-Sorcerer (Metal)	encourages,hide_forest
+Ship's Company	hide_forest
+Shrieking Skyrays (Screamers of Tzeentch)	causes_fear,daemonic,flying,guerrilla_deploy
+Sigmar's Sons (Swordsmen)	hide_forest,unbreakable
+Silak One-eye (Merwyrm)	regeneration
+Silver Helms	hide_forest
+Silver Helms (Shields)	hide_forest
+Silverin Guard	charge_defense,charge_reflection,hide_forest
+Simaergul	causes_fear,daemonic,hide_forest
+Sisters of Avelorn	hide_forest
+Sisters of Slaughter	hide_forest
+Sisters of the Singing Doom (Witch Elves)	causes_fear,causes_terror,hide_forest
+Sisters of the Thorn	guerrilla_deploy,hide_forest,ignore_trees,mounted_fire_move
+Sisters of Twilight	causes_fear,causes_terror,encourages,flying,mounted_fire_move
+Skarbrand the Exiled	causes_fear,causes_terror,daemonic,encourages
+Skarr Bloodwrath	encourages,immune_to_psychology,mark_khorne
+Skarsnik	charge_defense_vs_large,charge_reflection,encourages,guerrilla_deploy,hide_forest
+Skavenslave Slingers	expendable,hide_forest
+Skavenslave Spears	expendable,hide_forest
+Skavenslaves	expendable,hide_forest
+Skeleton Archer Chariots	causes_fear,hide_forest,mounted_fire_move,undead
+Skeleton Archers	causes_fear,hide_forest,undead
+Skeleton Chariots	causes_fear,hide_forest,undead
+Skeleton Horse Archers	causes_fear,guerrilla_deploy,hide_forest,mounted_fire_move,undead
+Skeleton Horsemen	causes_fear,guerrilla_deploy,hide_forest,undead
+Skeleton Spearmen	causes_fear,charge_defense_vs_large,charge_reflection,hide_forest,undead
+Skeleton Warriors	causes_fear,hide_forest,undead
+Skin Wolf Werekin	causes_fear,encourages,guerrilla_deploy,hide_forest,regeneration,strider
+Skin Wolves	causes_fear,hide_forest,regeneration,strider
+Skin Wolves (Armoured)	causes_fear,hide_forest,regeneration,strider
+Skink Chief	causes_fear,causes_terror,encourages,flying,hide_forest,ignore_trees,mounted_fire_move,wallbreaker
+Skink Cohort	hide_forest,skink
+Skink Cohort (Javelins)	hide_forest,skink
+Skink Oracle	causes_fear,causes_terror,encourages
+Skink Priest (Beasts)	causes_fear,causes_terror,encourages,flying,hide_forest,ignore_trees,mounted_fire_move,wallbreaker
+Skink Priest (Heavens)	causes_fear,causes_terror,encourages,flying,hide_forest,ignore_trees,mounted_fire_move,wallbreaker
+Skink Priest Avatar	causes_fear,causes_terror,encourages,hide_forest,strider
+Skink Skirmishers	guerrilla_deploy,hide_forest,mounted_fire_move,skink
+Skollden	encourages,hide_forest
+Skraelsbane	causes_fear,causes_terror,ignore_trees,unbreakable
+Skrag the Slaughterer	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Skullcannon	causes_fear,daemonic,mounted_fire_move
+Skullcracker	causes_fear,causes_terror,contempt,hellforged,unbreakable,wallbreaker
+Skullcrushers of Khorne	causes_fear,hide_forest,mark_khorne
+Skullreapers	hide_forest,mark_khorne
+Skulltaker	causes_fear,daemonic,encourages,hide_forest,unyielding_assault
+Sky Lantern	always_flying,mounted_fire_move,yin
+Skyhammer Squadron (Gyrobombers)	flying,mounted_fire_move
+Sky-junk	always_flying,yin
+Slaanesh's Harvesters (Doomfire Warlocks)	causes_fear,guerrilla_deploy,hide_forest
+Slann Mage-Priest	encourages,hide_forest,strider
+Slann Mage-Priest (Fire)	encourages,hide_forest,strider
+Slann Mage-Priest (Heavens)	encourages,hide_forest,strider
+Slann Mage-Priest (High)	encourages,hide_forest,strider
+Slann Mage-Priest (Life)	encourages,hide_forest,strider
+Slann Mage-Priest (Light)	encourages,hide_forest,strider
+Slaughterbrute	causes_fear,causes_terror,rampage
+Slaughtermaster (Beasts)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Slaughtermaster (Death)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Slaughtermaster (Great Maw)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Slaughtermaster (Heavens)	causes_fear,encourages,hide_forest,ignore_imbue_contact_effects_enemy,ogre_charge,wallbreaker
+Slavin Kurnz	causes_fear,causes_terror,encourages
+Slayer Pirates	hide_forest,mounted_fire_move,slayer,unbreakable
+Slayers	hide_forest,slayer,unbreakable
+Snagla's Deff Throwa (Goblin Bolt Throwa)	cant_run,expendable,guerrilla_deploy,hide_forest,snipe
+Snotling Pump Wagons	expendable,hide_forest
+Snotling Pump Wagons (Flappas)	expendable,hide_forest,strider
+Snotling Pump Wagons (Spiky Rollers)	causes_fear,expendable,hide_forest
+Snow Leopard	causes_fear,hide_forest
+Sons of Ghorros (Centigors – Great Weapons)	guerrilla_deploy,hide_forest,ignore_trees
+Soopa-Squig!	hide_forest,squig,unbreakable
+Sootson's Guns (Mortars)	cant_run
+Sorcerer-Prophet (Death)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Sorcerer-Prophet (Fire)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Sorcerer-Prophet (Hashut)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Sorcerer-Prophet (Metal)	causes_fear,causes_terror,contempt,encourages,flying,hide_forest,immune_to_psychology
+Sorceress (Beasts)	causes_fear,encourages,flying,hide_forest
+Sorceress (Dark)	causes_fear,encourages,flying,hide_forest
+Sorceress (Death)	causes_fear,encourages,flying,hide_forest
+Sorceress (Fire)	causes_fear,encourages,flying,hide_forest
+Sorceress (Shadows)	causes_fear,encourages,flying,hide_forest
+Soul Eater Cygors	causes_fear,causes_terror,unbreakable
+Soul Grinder of Khorne	causes_fear,causes_terror,daemonic,mounted_fire_move
+Soul Grinder of Nurgle	causes_fear,causes_terror,daemonic
+Soul Grinder of Slaanesh	causes_fear,causes_terror,daemonic,devastating_flanker,strider
+Soul Grinder of Tzeentch	causes_fear,causes_terror,daemonic
+Soulcrusher (War Mammoth)	causes_fear,causes_terror,strider
+Spawn of Khorne	causes_fear,hide_forest,mark_khorne,unbreakable
+Spawn of Nurgle	causes_fear,hide_forest,mark_nurgle,unbreakable
+Spawn of Shadowgave	causes_fear,hide_forest,ignore_trees,unbreakable
+Spawn of Slaanesh	causes_fear,devastating_flanker,hide_forest,mark_slaanesh,strider,unbreakable
+Spawn of Tzeentch	causes_fear,hide_forest,mark_tzeentch,unbreakable
+Spearmen	charge_defense_vs_large,charge_reflection,hide_forest
+Spearmen (Shields)	charge_defense_vs_large,charge_reflection,hide_forest
+Spearmen-at-Arms	charge_defense_vs_large,charge_reflection,hide_forest,peasant
+Spearmen-at-Arms (Shields)	charge_defense_vs_large,charge_reflection,hide_forest,peasant
+Spellsinger (Beasts)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spellsinger (Life)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spellsinger (Shadows)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spellweaver (Beasts)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spellweaver (Dark)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spellweaver (High)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spellweaver (Life)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spellweaver (Shadows)	causes_fear,encourages,flying,hide_forest,ignore_trees
+Spider Hatchlings	expendable,hide_forest,strider
+Spire Guard of Tor Yvresse	charge_defense,charge_reflection,encourages,hide_forest,unbreakable
+Spirit of Tepok (Coatl)	causes_fear,causes_terror,flying,wallbreaker
+Squig Herd	hide_forest,immune_to_psychology,squig
+Star Chamber Guardians (Temple Guard)	charge_defense,charge_reflection,hide_forest
+Star Dragon	causes_fear,causes_terror,flying
+Steam Tank	armoured_vehicle,causes_fear,causes_terror,mounted_fire_move,unbreakable
+Stegadon	causes_fear,causes_terror,wallbreaker
+Stir River Patrol (Crossbowmen)	guerrilla_deploy,hide_forest
+Stirland's Revenge (Free Company Militia)	guerrilla_deploy,immune_to_psychology,mounted_fire_move,stalk
+Stone Trolls	causes_fear,hide_forest,regeneration
+Stonehorn	causes_fear,causes_terror,wallbreaker
+Stonehorn (Harpoon Launcher)	causes_fear,causes_terror,mounted_fire_move,wallbreaker
+Storm Riders of Khsar (Nehekharan Horsemen)	causes_fear,hide_forest,undead
+Stormvermin (Halberds)	charge_defense_vs_large,charge_reflection,hide_forest,unbreakable
+Stormvermin (Swords & Shields)	hide_forest
+Streltsi	hide_forest
+Strigoi Ghoul King	causes_fear,causes_terror,encourages,flying,hide_forest,regeneration,the_hunger,undead
+Strigoi Vampire Lord	causes_fear,causes_terror,encourages,flying,hide_forest,regeneration,the_hunger,undead
+Styrkaar of the Sortsvinaer	encourages,hide_forest,immune_to_psychology,mark_slaanesh,strider
+Summoners of Rage (Dragon Ogres)	causes_fear,hide_forest
+Sun Dragon	causes_fear,causes_terror,flying
+Supreme Sorceress (Beasts)	causes_fear,causes_terror,encourages,flying,hide_forest
+Supreme Sorceress (Dark)	causes_fear,causes_terror,encourages,flying,hide_forest
+Supreme Sorceress (Death)	causes_fear,causes_terror,encourages,flying,hide_forest
+Supreme Sorceress (Fire)	causes_fear,causes_terror,encourages,flying,hide_forest
+Supreme Sorceress (Shadows)	causes_fear,causes_terror,encourages,flying,hide_forest
+Swordmasters of Hoeth	hide_forest
+Swords of Chaos (Chaos Knights)	causes_fear,hide_forest,immune_to_psychology
+Swords of Ulric (Swordsmen)	causes_fear,hide_forest
+Swordsmen	hide_forest
+Sylvanian Crossbowmen	hide_forest
+Sylvanian Handgunners	hide_forest
+Syreens	causes_fear,causes_terror,hide_forest,strider,undead
+Tall Roff	causes_fear,causes_terror,wallbreaker
+Talons of Tor Caleda (Archers – Light Armour)	hide_forest
+Tamurkhan the Maggot Lord	causes_fear,causes_terror,encourages,hide_forest,mark_nurgle,ogre_charge,strider,unbreakable,wallbreaker
+Taoyan the Merciless	causes_fear,charge_defense,charge_reflection,encourages,hide_forest,immune_to_psychology
+Taurox the Brass Bull	causes_fear,encourages,hide_forest,ignore_trees
+Teclis	causes_fear,causes_terror,encourages,flying,hide_forest
+Teef Robbers (Goblin Wolf Chariots)	guerrilla_deploy,hide_forest,mounted_fire_move,strider
+Teeth-Breakers (Ratling Guns)	hide_forest
+Tehenhauin	causes_fear,causes_terror,encourages,flying,hide_forest,ignore_imbue_contact_effects_enemy,mounted_fire_move,wallbreaker
+Temple Guard	charge_defense_vs_large,charge_reflection,hide_forest
+Templehof Luminark (Luminark of Hysh)	encourages
+Terracotta Sentinel	causes_fear,causes_terror,construct,encourages,yang
+Terradon Riders	causes_fear,flying,guerrilla_deploy,ignore_trees,mounted_fire_move
+Terradon Riders (Fireleech Bolas)	causes_fear,flying,guerrilla_deploy,ignore_trees,mounted_fire_move
+Terrorgheist	causes_fear,causes_terror,flying,regeneration,undead
+Thane	charge_defense_vs_large,encourages,hide_forest
+The Abyssal Shrieker	causes_fear,causes_terror,flying,invulnerable,unbreakable,undead
+The Angels of Decay (Plague Drones – Death's Heads)	causes_fear,daemonic,flying,mounted_fire_move
+The Arachnarok Queen (Arachnarok Spider)	causes_fear,causes_terror,strider
+The Avalanche Mortars (Death Globe Mortars)	hide_forest
+The Beast of Raema	causes_fear,causes_terror,regeneration,unbreakable
+The Big One	causes_fear,causes_terror,unbreakable,wallbreaker
+The Black Dragon Ascendant	causes_fear,causes_terror,flying,unbreakable
+The Black Lions (War Wagons – Helblasters)	hide_forest
+The Black Spot (Zombie Pirate Gunnery Mob – Handgunners)	causes_fear,charge_defense_vs_large,charge_reflection,hide_forest,undead
+The Blazing Beards of Bazherak (Chaos Dwarf Warriors)	charge_defense,contempt,hide_forest
+The Bloodbrute Behemoth (Ghorgon)	causes_fear,causes_terror,ignore_trees,mark_khorne
+The Bloody Reaver Deck Guard (Depth Guard)	causes_fear,charge_defense,charge_reflection,hide_forest,the_hunger,undead
+The Bolt-fiends (Darkshards – Shields)	hide_forest
+The Bordermen (Outriders – Grenade Launchers)	guerrilla_deploy,hide_forest,mounted_fire_move
+The Brotherhood of Grimnir (Doomseekers)	causes_fear,guerrilla_deploy,hide_forest,slayer,unbreakable
+The Bull of Aqshy	causes_fear,causes_terror,flying,unbreakable
+The Carrion Eater	causes_fear,causes_terror,flying,guerrilla_deploy,unbreakable,undead
+The Changeling	causes_fear,daemonic,encourages,hide_forest
+The Chillgheists (Hexwraiths)	causes_fear,causes_terror,guerrilla_deploy,hide_forest,strider,undead
+The Chromatic Abominations (Blue Horrors of Tzeentch)	can_block_missiles_360,causes_fear,daemonic,hide_forest
+The Claw of Nagash (Mortis Engine)	causes_fear,causes_terror,regeneration,strider,undead
+The Cold-Voider (Chaos Frost Dragon)	causes_fear,causes_terror,flying,ignore_imbue_contact_effects_enemy
+The Companions of Quenelles (Questing Knights)	hide_forest,immune_to_psychology,knight
+The Crows of Khaine (Harpies)	causes_fear,flying,guerrilla_deploy
+The Daemonspew (Forsaken)	causes_fear,hide_forest,immune_to_psychology,mark_nurgle
+The Devils of Swartzhafen (Vargheists)	causes_fear,causes_terror,flying,guerrilla_deploy,the_hunger,undead
+The Direpack (Dire Wolves)	causes_fear,guerrilla_deploy,hide_forest,strider,undead
+The Doombringers (Warpfire Throwers)	charge_defense_vs_large,hide_forest,unbreakable
+The Dune Dragons (Celestial Dragon Guard)	charge_defense,charge_reflection,encourages,formed_attack,hide_forest,immune_to_psychology,yang
+The Emperor's Wrath (Steam Tank)	armoured_vehicle,causes_fear,causes_terror,mounted_fire_move,unbreakable
+The Eye of Morrslieb (Cygor)	causes_fear,causes_terror,ignore_trees
+The Feasters in the Dusk (Crypt Ghouls)	causes_fear,guerrilla_deploy,hide_forest,stalk,undead
+The Fireborn (Dragon Princes)	hide_forest
+The Flock of Djaf (Carrion)	causes_fear,flying,guerrilla_deploy,undead
+The Frolickers Bubonic (Nurglings)	causes_fear,daemonic,guerrilla_deploy,hide_forest
+The Frozen Heart of Winter (Elemental Bear)	causes_fear,causes_terror,elemental,wallbreaker
+The Golden Griffin of Theurgy (Lord of Change)	causes_fear,causes_terror,daemonic,flying
+The Golden Knight Naryska Leysa	causes_fear,encourages,glorious_charge,hide_forest,immune_to_psychology
+The Grace of Quai Yin (Celestial Dragon Crossbows)	hide_forest,yin
+The Granite Guard (Chaos Dwarf Blunderbusses)	charge_defense_vs_large,contempt,hide_forest
+The Great Mawherd of Bloodfjord (Feral Mammoths)	causes_fear,causes_terror
+The Green Guardian (Terracotta Sentinel)	causes_fear,causes_terror,construct,encourages,yang
+The Green Knight	causes_fear,causes_terror,encourages,fatigue_immune,guerrilla_deploy,hide_forest,knight,strider,unbreakable
+The Grey (Shadow Warriors)	guerrilla_deploy,mounted_fire_move,snipe,stalk
+The Grimdelvers (Thunderers)	guerrilla_deploy,stalk,strider
+The Grumbling Guard (Longbeards – Great Weapons)	charge_defense_vs_large,encourages,hide_forest,immune_to_psychology
+The Hellbeast of Seep-Gore	causes_fear,causes_terror,regeneration,unbreakable
+The Hellebronai (Dreadspears)	charge_defense,charge_reflection,hide_forest
+The Holy Wardens of La Maisontaal (Battle Pilgrims)	hide_forest,ignore_imbue_contact_effects_enemy,peasant
+The Ice-Forged Legion (Hellcannons)	cant_run,unbreakable
+The Immortals (Infernal Ironsworn)	charge_defense,contempt,hide_forest,unyielding_assault
+The Jade War Drum (Zhangu War Drum)	encourages,spell_mastery,unbreakable,yang,yin
+The Khepra Guard (Tomb Guard)	causes_fear,hide_forest,regeneration,undead
+The Konigstein Stalkers (Skeleton Warriors)	causes_fear,hide_forest,undead
+The Lamprey's Revenge (Rotting Promethean Gunnery Mob)	causes_fear,charge_defense,hide_forest,regeneration,undead
+The Marquis of Masochism (Keeper of Secrets)	causes_fear,causes_terror,daemonic,devastating_flanker,strider
+The Masque of Slaanesh	causes_fear,daemonic,devastating_flanker,encourages,hide_forest,strider
+The Mordheim Balewolves (The Things in the Woods)	causes_fear,guerrilla_deploy,hide_forest,ignore_trees
+The Noble Sons Abroad (Pistoliers)	guerrilla_deploy,hide_forest,mounted_fire_move
+The Pale Death (Feral Troglodon)	causes_fear,causes_terror
+The Princes of Perfection (Devoted Marauders of Slaanesh – Spears)	charge_defense,charge_reflection,fatigue_immune,hide_forest,immune_to_psychology,mark_slaanesh,strider
+The Puremane Company (White Lions of Chrace)	hide_forest,ignore_trees
+The Red Duke	causes_fear,causes_terror,encourages,flying,hide_forest,the_hunger,undead
+The Rotting Riders (Rot Knights)	causes_fear,causes_terror,hide_forest,mark_nurgle,regeneration
+The Royal Altdorf Gryphites (Demigryph Knights)	causes_fear,causes_terror,glorious_charge,hide_forest
+The Runt	causes_fear,causes_terror,unbreakable,wallbreaker
+The Scions of Mathlann (Spearmen)	charge_defense,charge_reflection,hide_forest
+The Severed Claw (Aspiring Champions)	charge_defense,charge_reflection,encourages,hide_forest,mark_tzeentch
+The Shredder of Lustria (Dread Saurian)	causes_fear,causes_terror,encourages,mounted_fire_move,wallbreaker
+The Sibilant Slaughtercade (Chaos Chariots)	causes_fear,devastating_flanker,guerrilla_deploy,hide_forest,immune_to_psychology,mark_slaanesh,strider
+The Silver Bullets (Handgunners)	hide_forest,stalk
+The Siren of Red Ruin (Bloodwrack Medusa)	causes_fear,causes_terror
+The Skolder Guard (Irondrakes)	hide_forest
+The Skyhawks	guerrilla_deploy,mounted_fire_move,stalk
+The Snowhorn of Mourn (Stonehorn)	causes_fear,causes_terror,wallbreaker
+The Soul of Damnation (Hellcannon)	cant_run,unbreakable
+The Sourguts (Pink Horrors of Tzeentch)	causes_fear,daemonic,hide_forest
+The Sphinx of Usekph (Necrosphinx)	causes_fear,causes_terror,construct
+The Spirit of Grungni	always_flying,encourages,gunship,immune_to_psychology,mounted_fire_move
+The Sternsmen (Grave Guard)	causes_fear,charge_defense,hide_forest,regeneration,undead
+The Storm Riders (Lothern Sea Guard)	causes_fear,charge_defense_vs_large,charge_reflection,guerrilla_deploy,hide_forest,mounted_fire_move
+The Stubborn Bulls (Empire Knights – Greatswords)	hide_forest,immune_to_psychology
+The Sunmaker (Helstorm Rocket Battery)	cant_run
+The Tattersouls (Flagellants)	hide_forest,unbreakable
+The Things in the Woods	causes_fear,guerrilla_deploy,hide_forest,ignore_trees
+The Things in the Woods (Ethereal)	causes_fear,causes_terror,guerrilla_deploy,hide_forest,ignore_trees,strider
+The Thing-Thing (Hell Pit Abomination)	causes_fear,causes_terror,moulder_monster,regeneration
+The Thunderous One (Ancient Stegadon)	causes_fear,causes_terror,mounted_fire_move,wallbreaker
+The Tide of Skjold (Zombie Pirate Deckhand Mob)	causes_fear,hide_forest,undead
+The Tithe (Zombies)	causes_fear,hide_forest,undead
+The Umbral Tide (Salamander Hunting Pack)	causes_fear,fatigue_immune,stalk
+The Voice of the Wastes	causes_fear,causes_terror,flanking_immune,flying,unbreakable
+The Vorbergland Broodmother (Jabberslythe)	causes_fear,causes_terror,ignore_trees
+The Watchmen in the Night (Armoured Kossars)	hide_forest
+The White Wolves (Huntsmen)	encourages,guerrilla_deploy,ignore_trees,immune_to_psychology,mounted_fire_move,stalk
+The Wise One	causes_fear,causes_terror,flying,unbreakable,yang
+The Wolfhearts (Akshina Ambushers)	guerrilla_deploy,hide_forest,ignore_trees,stalk
+The Wonder of the Age (Land Ship)	causes_fear,causes_terror,encourages,mounted_fire_move,unbreakable
+Theodore Bruckner	causes_fear,causes_terror,encourages,hide_forest
+Thorek Ironbrow	encourages,hide_forest
+Thorgrim Grudgebearer	encourages,hide_forest
+Throgg	causes_fear,encourages,hide_forest,regeneration
+Throni Ironbrow	causes_fear,causes_terror,encourages,hide_forest,strider,unbreakable
+Throt the Unclean	causes_fear,causes_terror,encourages,hide_forest,moulder_monster,regeneration
+Thunderbarge	always_flying,encourages,gunship,immune_to_psychology,mounted_fire_move
+Thunderers	hide_forest
+Thunderers (Grudge-Rakers)	hide_forest
+Thundertusk	causes_fear,causes_terror,wallbreaker
+Tiger Warrior Sawai	charge_defense_vs_large,charge_reflection,encourages,hide_forest,ignore_trees,tiger_warrior
+Tiger Warrior Stalkers	guerrilla_deploy,ignore_trees,mounted_fire_move,stalk,tiger_warrior
+Tiger Warriors	hide_forest,ignore_trees,tiger_warrior
+Tiktaq'to	causes_fear,encourages,flying,guerrilla_deploy,hide_forest,ignore_trees
+Tiranoc Chariots	hide_forest,mounted_fire_move
+Toad Dragon	causes_fear,causes_terror,strider,wallbreaker
+Tomb Guard	causes_fear,hide_forest,undead
+Tomb Guard (Halberds)	causes_fear,charge_defense_vs_large,charge_reflection,hide_forest,undead
+Tomb King	causes_fear,causes_terror,encourages,hide_forest,undead
+Tomb Prince	causes_fear,charge_defense_vs_large,charge_reflection,encourages,hide_forest,undead
+Tomb Scorpion	causes_fear,causes_terror,construct,guerrilla_deploy,hide_forest
+Tree Kin	causes_fear,charge_defense_vs_large,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Treeman	causes_fear,causes_terror,charge_defense,guerrilla_deploy,hide_forest,ignore_trees
+Tretch Craventail	charge_defense_vs_large,charge_reflection,encourages,guerrilla_deploy,hide_forest
+Trolls	causes_fear,hide_forest,regeneration
+Tuskgor Chariots	guerrilla_deploy,hide_forest,ignore_trees
+Tyrant	causes_fear,encourages,hide_forest,ogre_charge,wallbreaker
+Tyrion	encourages,hide_forest
+Tzaangors	guerrilla_deploy,hide_forest,ignore_trees,mark_tzeentch
+Tzar Guard	hide_forest
+Tzar Guard (Great Weapons)	hide_forest
+Tzarina Katarin	causes_fear,causes_terror,encourages,hide_forest,strider
+Ulrika Magdova	causes_fear,encourages,hide_forest,mounted_fire_move,the_hunger,undead
+Ulthar's Raiders (Rangers – Great Weapons)	guerrilla_deploy,hide_forest,stalk
+Uncle Furuncle (Great Unclean One)	causes_fear,causes_terror,daemonic
+Ungor Herd	expendable,guerrilla_deploy,ignore_trees,stalk
+Ungor Raiders	expendable,guerrilla_deploy,ignore_trees,stalk
+Ungor Spearmen Herd	charge_defense_vs_large,charge_reflection,expendable,guerrilla_deploy,ignore_trees,stalk
+Ungor Spearmen Herd (Shields)	charge_defense_vs_large,charge_reflection,expendable,guerrilla_deploy,ignore_trees,stalk
+Ungrim Ironfist	charge_defense_vs_large,encourages,hide_forest,slayer,unbreakable
+Ushabti	causes_fear,construct,hide_forest
+Ushabti (Great Bows)	causes_fear,construct,hide_forest
+Usirian's Legion of the Netherworld (Nehekharan Warriors)	causes_fear,causes_terror,hide_forest,strider,undead
+Valkia the Bloody	causes_fear,encourages,flying,mark_khorne
+Vampire (Death)	causes_fear,encourages,flying,hide_forest,the_hunger,undead
+Vampire (Shadows)	causes_fear,encourages,flying,hide_forest,the_hunger,undead
+Vampire Fleet Admiral (Pistol – Death)	causes_fear,charge_defense_vs_large,encourages,hide_forest,mounted_fire_move,the_hunger,undead
+Vampire Fleet Admiral (Pistol – Deep)	causes_fear,charge_defense_vs_large,encourages,hide_forest,mounted_fire_move,the_hunger,undead
+Vampire Fleet Admiral (Pistol – Vampires)	causes_fear,charge_defense_vs_large,encourages,hide_forest,mounted_fire_move,the_hunger,undead
+Vampire Fleet Admiral (Polearms – Death)	causes_fear,charge_defense_vs_large,charge_reflection,encourages,hide_forest,the_hunger,undead
+Vampire Fleet Admiral (Polearms – Deep)	causes_fear,charge_defense_vs_large,charge_reflection,encourages,hide_forest,the_hunger,undead
+Vampire Fleet Admiral (Polearms – Vampires)	causes_fear,charge_defense_vs_large,charge_reflection,encourages,hide_forest,the_hunger,undead
+Vampire Fleet Captain (Death)	causes_fear,charge_defense_vs_large,encourages,hide_forest,the_hunger,undead
+Vampire Fleet Captain (Deep)	causes_fear,charge_defense_vs_large,encourages,hide_forest,the_hunger,undead
+Vampire Fleet Captain (Vampires)	causes_fear,charge_defense_vs_large,encourages,hide_forest,the_hunger,undead
+Vampire Lord	causes_fear,causes_terror,encourages,flying,hide_forest,the_hunger,undead
+Vargheists	causes_fear,flying,the_hunger,undead
+Varghulf	causes_fear,causes_terror,flanking_immune,the_hunger,undead
+Venom Knights of Asaph (Necropolis Knights)	causes_fear,construct,hide_forest
+Verek's Reavers (Black Knights – Lances & Barding)	causes_fear,hide_forest,regeneration,strider,undead
+Vicious Ghorgon	causes_fear,causes_terror,ignore_trees,unbreakable
+Vilitch the Curseling	encourages,hide_forest,mark_tzeentch
+Visktrin's Death Squad (Death Runners)	guerrilla_deploy,stalk,strider
+Vlad von Carstein	causes_fear,causes_terror,encourages,hide_forest,the_hunger,undead
+Volkmar the Grim	causes_fear,causes_terror,encourages,hide_forest,unbreakable
+Von Carstein Vampire Lord	causes_fear,causes_terror,encourages,flying,hide_forest,the_hunger,undead
+War Bear Riders	causes_fear,hide_forest
+War Hydra	causes_fear,causes_terror,regeneration
+War Lions of Chrace	causes_fear,hide_forest,strider
+War Mammoth	causes_fear,causes_terror
+War Mammoth (Warshrine)	causes_fear,causes_terror,encourages
+War Wagons	hide_forest,mounted_fire_move
+War Wagons (Mortars)	hide_forest
+Wardancers	hide_forest,ignore_trees,immune_to_psychology
+Wardancers (Asrai Spears)	charge_defense_vs_large,charge_reflection,hide_forest,ignore_trees,immune_to_psychology
+Wardens of Cythral (Wildwood Rangers)	charge_defense,charge_reflection,guerrilla_deploy,ignore_trees,immune_to_psychology,stalk
+Wardens of Montfort (Mounted Yeomen Archers)	guerrilla_deploy,hide_forest,mounted_fire_move,peasant
+Wargor	causes_fear,encourages,guerrilla_deploy,hide_forest,ignore_trees
+Warlock Engineer	encourages,hide_forest
+Warlock Master	causes_fear,causes_terror,encourages,hide_forest
+Warlord	causes_fear,causes_terror,encourages,hide_forest,moulder_monster,regeneration
+Warp Lightning Cannons	cant_run
+Warpfire Throwers	hide_forest
+Warpfire's Wheel (Doomwheel)	causes_fear,causes_terror,regeneration
+Warp-Grinders	guerrilla_deploy,hide_forest,wallbreaker
+Warplock Jezzails	hide_forest
+Warrior Priest	encourages,hide_forest
+Warriors of Dragonfire Pass (Dwarf Warriors)	charge_defense_vs_large,hide_forest
+Waystalker	encourages,guerrilla_deploy,ignore_trees,mounted_fire_move,snipe,stalk
+Waywatchers	guerrilla_deploy,ignore_trees,mounted_fire_move,stalk
+Wheelz of Dooom (Doomwheel)	causes_fear,causes_terror
+White Lions of Chrace	hide_forest,ignore_trees
+Wight King	causes_fear,encourages,hide_forest,undead
+Wild Hunters of Kurnous (Wild Riders – Shields)	causes_fear,guerrilla_deploy,hide_forest,ignore_trees
+Wild Riders	causes_fear,guerrilla_deploy,hide_forest,ignore_trees
+Wild Riders (Shields)	causes_fear,guerrilla_deploy,hide_forest,ignore_trees
+Wildwood Rangers	guerrilla_deploy,ignore_trees,immune_to_psychology,stalk
+Winged Lancers	causes_fear,glorious_charge,hide_forest
+Winterheart Guard (Eternal Guard – Shields)	charge_defense,charge_reflection,encourages,hide_forest,ignore_trees,unbreakable
+Witch Elves	hide_forest
+Witch Hunter	encourages,hide_forest,immune_to_psychology,mounted_fire_move,unbreakable
+Wolf Rats	guerrilla_deploy,hide_forest,moulder_monster,strider
+Wolf Rats (Poison)	guerrilla_deploy,hide_forest,moulder_monster,strider
+Worshippers of the Crow (Marauders – Great Weapons)	hide_forest,ignore_imbue_contact_effects_enemy,mark_nurgle
+Wraiths of the Frozen Heart (Dryads)	causes_fear,guerrilla_deploy,hide_forest,ignore_trees,immune_to_psychology
+Wrathmongers	flanking_immune,hide_forest,mark_khorne
+Wu Xing War Compass	spell_mastery,yang
+Wulfrik the Wanderer	causes_fear,causes_terror,encourages,hide_forest
+Wurrzag	encourages,hide_forest
+Wyrd Spawn (Chaos Spawn)	causes_fear,causes_terror,hide_forest,mark_tzeentch,unbreakable
+Yhetees	causes_fear,hide_forest
+Ymwrath the Eternal	causes_fear,causes_terror,flying,unbreakable
+Yoked Carnosaur	causes_fear,causes_terror,unbreakable
+Yuan Bo, the Jade Dragon	causes_fear,causes_terror,encourages,flying,hide_forest,spell_mastery
+Zarrivyk, Feathered-Prince	causes_fear,causes_terror,daemonic,encourages,mark_tzeentch,regeneration
+Zhangu War Drum	encourages,unbreakable,yang,yin
+Zhao Ming, the Iron Dragon	causes_fear,causes_terror,encourages,flying,hide_forest,spell_mastery
+Zhatan the Black	causes_fear,causes_terror,charge_defense,contempt,encourages,flying,hide_forest
+Zintler's Reiksguard (Reiksguard)	guerrilla_deploy,hide_forest,immune_to_psychology
+Zoats	causes_fear,hide_forest,ignore_trees
+Zombie Pirate Deckhand Mob	causes_fear,hide_forest,undead
+Zombie Pirate Deckhand Mob (Polearms)	causes_fear,charge_defense_vs_large,charge_reflection,hide_forest,undead
+Zombie Pirate Gunnery Mob	causes_fear,guerrilla_deploy,hide_forest,mounted_fire_move,undead
+Zombie Pirate Gunnery Mob (Bombers)	causes_fear,hide_forest,undead
+Zombie Pirate Gunnery Mob (Hand Cannons)	causes_fear,hide_forest,undead
+Zombie Pirate Gunnery Mob (Handgunners)	causes_fear,hide_forest,undead
+Zombies	causes_fear,hide_forest,undead
