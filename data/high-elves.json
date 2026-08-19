@@ -258,7 +258,7 @@
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 1, "note": "Archères magiques d'élite dont les flèches enchantées ignorent l'armure — tir d'élite qui prospère dans l'ambiance magique de l'ost (+8 Vents de la Magie)"},
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn, le tir magique le plus fiable dont Tor Elasor dispose"},
         {"icon": "silverHelm", "name": "Silver Helms", "qty": 2, "note": "Cavalerie lourde qui charge les flancs et protège les mages, pilier de choc de l'ost colonial"},
-        {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Le seul volant de Tor Elasor. Les effets d'Amon subventionnent sa milice et sa garde, toutes deux au sol : cet aigle est ce qui va traiter ce qu'une colonie isolée ne peut pas atteindre autrement"},
+        {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Le volant bon marché de Tor Elasor, aux côtés du Frostheart Phoenix. Les effets d'Amon subventionnent sa milice et sa garde, toutes deux au sol : cet aigle est ce qui va traiter ce qu'une colonie isolée ne peut pas atteindre autrement"},
         {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Tor Elasor est une colonie isolée : les effets d'Amon subventionnent sa milice et sa garde, jamais son artillerie. Cette baliste est pourtant sa seule réponse à une grande cible"},
         {"icon": "phoenix", "name": "Frostheart Phoenix", "qty": 1, "note": "Le Phénix de givre (et non le Flamespyre offensif) : son aura Blessing of the Ancients renforce la défense et l'attaque en mêlée des unités proches tout en ralentissant l'ennemi — un soutien défensif idéal qui consolide la ligne des Tower Guard et de la milice, dans le thème glacé et magique de la Tour du Soleil"}
       ],
@@ -332,7 +332,7 @@
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 1, "note": "Archères magiques d'élite — tir enchanté qui amollit l'ennemi avant la charge de la meute"},
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn — le tir magique qui accompagne les Lions Blancs de Chrace, lesquels n'ont aucune portée"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Lance et arc — ligne de soutien polyvalente qui tient pendant que les lions flanquent"},
-        {"icon": "stormRiders", "name": "The Storm Riders (Lothern Sea Guard)", "qty": 1, "note": "Régiment de Renom des Sea Guard, la seule unité de la fiche capable de tirer puis de tenir la ligne sans changer de rôle"},
+        {"icon": "stormRiders", "name": "The Storm Riders (Lothern Sea Guard)", "qty": 1, "note": "Régiment de Renom des Sea Guard — avec l'unité de base qu'il accompagne, ce qui tire puis tient la ligne sans changer de rôle"},
         {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 2, "note": "Le <strong>+10 de commandement en forêt</strong> de Korhil favorise le combat rapproché sous couvert. Ces balistes traitent ce que ses Lions Blancs ne peuvent pas atteindre avant qu'il ne les charge"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Aigle géant — harcèle l'artillerie et les casters, éclaire les embuscades"}
       ],
