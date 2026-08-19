@@ -54,7 +54,12 @@ preuve. Quand le user dit qu'une unité ou un héros n'existe pas, ou porte un a
 et la fiche change. On peut lui exposer ce que disent les tables — jamais pour lui opposer, toujours
 pour l'aider à vérifier.
 
-**Un seigneur légendaire n'est jamais placé en héros de build.**
+**Un seigneur légendaire n'est jamais placé en héros de build.** Une seule exception, validée par le
+user le 19/08/2026 : **Vlad et Isabella von Carstein**, chacun héros dans le build de l'autre. Le jeu
+prévoit ce couple — le +50% de plafond de soin de Vlad ne s'active que si Isabella sert dans la même
+armée. Ne pas le corriger. Attention aussi aux **homonymies entre mods** : une *Infanta Leanora
+Navrre* figure en héroïne chez Cylostra Direfin **et** en seigneur sur la page Vampire Coast ; ce
+sont deux personnages distincts, et la note de sa fiche l'explique.
 
 **Exactement 20 slots** : 1 seigneur + Σ qty des héros + Σ qty du corps d'armée. Une unité invoquée
 par une capacité ne consomme aucun slot — la mentionner dans la note, pas dans la liste.
@@ -184,7 +189,9 @@ en §6 de `references/analyse-pack.md`.
 
 **Et vérifier qu'il n'est pas déjà seigneur sur le site** : `grep` son nom dans `data\*.json`. Un mod
 peut proposer en héros un personnage qu'un autre a déjà donné comme seigneur légendaire, et un
-seigneur légendaire n'est jamais placé en héros de build.
+seigneur légendaire n'est jamais placé en héros de build — sauf le couple Vlad / Isabella, et sauf
+homonymie entre deux mods (voir les invariants). Un même nom ne prouve pas un même personnage :
+lire la loc des deux mods avant de conclure.
 
 **3. Libérer le slot sur une unité doublée**, jamais sur une pièce unique : passer un `qty: 2` à 1
 plutôt que supprimer un régiment de renom. Le total doit rester à 20.
