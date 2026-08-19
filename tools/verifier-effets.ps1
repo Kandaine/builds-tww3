@@ -163,7 +163,16 @@ foreach ($f in $fichiers) {
         # suffit a eviter les debordements.
         foreach ($ligne in $lignesEffets) {
             if ($ligne -notmatch '(?i)R[ée]giments? favoris?') { continue }
-            if ($ligne -notmatch '(?i)\+\s*1\s+capacit')       { continue }
+            # LE BONUS N'EST PAS TOUJOURS DE +1. HUIT regiments favoris du site
+            # accordent « +2 capacite », ce qui porte le plafond d'un RoR de 1 a 3
+            # — Khazrak, Folcard de Montfort, Lokhir, Shakkara Riel, Hag Queen
+            # Malida, Surtha Lenk, Aranessa Saltspite et Dieter Helsnicht.
+            # Ne chercher que « +1 » laissait passer ces cas : Lokhir n'alignait
+            # qu'un seul Crows of Khaine sur les trois permis.
+            # (Recense le 19/08/2026 en balayant les 32 fiches ; un premier
+            # comptage a la main en avait annonce six, d'ou ce releve mecanique.)
+            if ($ligne -notmatch '(?i)\+\s*(\d+)\s+capacit')   { continue }
+            $attendu = 1 + [int]$Matches[1]
 
             # ON NE GARDE QUE LE NOM LE PLUS LONG. La ligne d'effet nomme le
             # regiment sous sa forme complete, « Defenders of the Fleur-de-lis
@@ -172,10 +181,31 @@ foreach ($f in $fichiers) {
             # bases (Knights Errant, Foot Squires, River Trolls...) alignees a
             # x1, alors que le regiment favori, lui, est bien a x2. Onze faux
             # positifs de cette seule cause.
+            #
+            # ON CHERCHE AUSSI LA FORME SANS ARTICLE. La ligne d'effet de Lokhir
+            # ecrit « +2 capacite pour Crows of Khaine (Harpies) » la ou le build
+            # nomme l'unite « The Crows of Khaine (Harpies) ». Le nom complet ne
+            # se retrouvant pas dans la ligne, seul « Harpies » y matchait : le
+            # filtre du nom le plus long n'avait alors qu'un candidat et accusait
+            # l'unite de BASE d'etre sous-alignee. Deux faux positifs de cette
+            # seule cause. Le premier controle du script fait deja ce repli.
             $candidats = @()
             foreach ($u in @($l.build.army)) {
                 if (-not $u.name) { continue }
-                if ($ligne -match ('(?i)(^|[^\p{L}])' + [regex]::Escape($u.name) + '([^\p{L}]|$)')) { $candidats += $u }
+                $formesU = @([string]$u.name)
+                $sansArt = ([string]$u.name -replace '^(The|Le|La|Les)\s+', '').Trim()
+                if ($sansArt -ne [string]$u.name -and $sansArt.Length -ge 9) { $formesU += $sansArt }
+                # L'ARTICLE PEUT AUSSI ETRE DANS LA PARENTHESE. La ligne de Mother
+                # Ostankya ecrit « Mordheim Balewolves (Things in the Woods) » quand
+                # le build ecrit « The Mordheim Balewolves (The Things in the Woods) ».
+                # Ne retirer que l'article de TETE ne suffisait pas : seule l'unite de
+                # base « The Things in the Woods » devenait candidate, et le controle
+                # l'accusait d'etre sous-alignee alors que le RoR est bien a x2.
+                $sansTout = (([string]$u.name -replace '(?<=^|\()\s*(The|Le|La|Les)\s+', '')).Trim()
+                if ($sansTout -ne [string]$u.name -and $sansTout.Length -ge 9 -and $formesU -notcontains $sansTout) { $formesU += $sansTout }
+                foreach ($fu in $formesU) {
+                    if ($ligne -match ('(?i)(^|[^\p{L}])' + [regex]::Escape($fu) + '([^\p{L}]|$)')) { $candidats += $u; break }
+                }
             }
             foreach ($u in $candidats) {
                 $englobe = $false
@@ -183,10 +213,10 @@ foreach ($f in $fichiers) {
                     if ($autre.name -ne $u.name -and $autre.name -like "*$($u.name)*") { $englobe = $true; break }
                 }
                 if ($englobe) { continue }
-                if ([int]$u.qty -ge 2) { continue }
+                if ([int]$u.qty -ge $attendu) { continue }
                 $pistes++
                 Write-Host ("  {0} — {1}" -f $l.name, $f.BaseName) -ForegroundColor Yellow
-                Write-Host ("      [QUANTITE] {0} aligne x{1} — « +1 capacite » en autorise 2" -f $u.name, $u.qty) -ForegroundColor Red
+                Write-Host ("      [QUANTITE] {0} aligne x{1} — le regiment favori en autorise {2}" -f $u.name, $u.qty, $attendu) -ForegroundColor Red
             }
         }
     }
