@@ -216,7 +216,7 @@
       ],
       "army": [
         {"icon": "questingKnights", "name": "Questing Knights", "qty": 3, "note": "-50% d'entretien (seigneur) — chevaliers à deux mains, poing de choc anti-grande cible et anti-infanterie lourde, cœur offensif de l'armée"},
-        {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 1, "note": "Régiment de Renom des Questing Knights, sur la fiche qui en aligne le plus — l'axe offensif d'Artois, à pied lourd plutôt qu'à cheval"},
+        {"icon": "companionsOfQuenelles", "name": "The Companions of Quenelles (Questing Knights)", "qty": 1, "note": "Régiment de Renom des Questing Knights, sur la fiche qui en aligne le plus — quatre escadrons, à égalité avec Tancred II de Quenelles. L'axe offensif d'Artois : une cavalerie à deux mains qui tranche là où les Knights of the Realm percent"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 3, "note": "Déploiement en avant-garde (faction) — se positionnent en embuscade dans les bois et criblent l'ennemi avant le contact"},
         {"icon": "wardensOfMontfort", "name": "Wardens of Montfort (Mounted Yeomen Archers)", "qty": 2, "note": "Régiment favori : attribut « Woodsman » et +1 capacité (faction) — cavalerie légère de tir qui harcèle à l'arc, flanque et pourchasse les tireurs adverses, idéale en forêt"},
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 1, "note": "Cavalerie de choc — charge de flanc fiable en soutien des Questing Knights"},
@@ -357,7 +357,7 @@
         {"icon": "knightsOfIbelin", "name": "Knights of Ibelin", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — l'élite montée de l'ordre d'Ibelin, fer de lance des contre-charges"},
         {"icon": "poulainKnightsCav", "name": "Poulain Knights", "qty": 2, "note": "Chevaliers nés en Outremer — cavalerie légère acclimatée qui harcèle et poursuit là où les lourds s'épuisent"},
         {"icon": "knightsOutremerFoot", "name": "Knights of the Outremer (on foot)", "qty": 2, "note": "Chevaliers démontés — noyau dur de l'infanterie qui tient la brèche aux côtés des paysans"},
-        {"icon": "serjeantSpearmen", "name": "Serjeant Spearmen", "qty": 3, "note": "Piquiers paysans de l'ost : +5 Commandement, 5% de résistance physique (faction), +8 de défense en mêlée et -25% d'entretien (seigneur) — un mur anti-cavalerie bien plus tenace que la piétaille bretonnienne ordinaire"},
+        {"icon": "serjeantSpearmen", "name": "Spearmen Serjeants", "qty": 3, "note": "Piquiers paysans de l'ost : <strong>+5</strong> de Commandement, <strong>5%</strong> de résistance physique (faction) et <strong>-25%</strong> d'entretien (seigneur), qui visent tous la <em>catégorie</em> Paysan. Le <strong>+8 de défense en mêlée</strong> du seigneur, lui, nomme trois unités bretonniennes précises — Peasant Mob, Men-at-Arms et Spearmen-at-Arms : <em>à vérifier en jeu</em> pour cette unité de mod, qui n'y figure pas nommément"},
         {"icon": "retinueBowmen", "name": "Retinue Bowmen", "qty": 2, "note": "Archers de la maison ducale — mêmes bonus paysans (faction/seigneur), ils arrosent l'ennemi pendant que les lances tiennent"},
         {"icon": "mangonel", "name": "Field Mangonels", "qty": 2, "note": "Artillerie de siège de l'Orient croisé — brise les murailles arabiennes et les formations denses"},
         {"icon": "ballistaBrt", "name": "Field Ballistas", "qty": 1, "note": "Tir tendu perforant — abat monstres et grandes cibles avant qu'ils n'atteignent la ligne paysanne"}
