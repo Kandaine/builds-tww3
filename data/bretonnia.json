@@ -531,7 +531,7 @@
         {"icon": "knightsRealm", "name": "Knights of the Realm", "qty": 2, "note": "Cavalerie de charge pour les clairières et les lisières, avec l'attribut Woodsman contre les Hommes-Bêtes (seigneur)"},
         {"icon": "knightsOfTheLionhearted", "name": "Knights of the Lionhearted (Knights of the Realm)", "qty": 1, "note": "Régiment de Renom des Knights of the Realm, la lance lourde de L'Anguille — elle dégage les abords que l'infanterie portuaire ne peut pas tenir seule"},
         {"icon": "peasantBowmen", "name": "Peasant Bowmen", "qty": 3, "note": "Tir de harcèlement — érode les hordes bestiales avant qu'elles n'atteignent la ligne"},
-        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Écran de piétaille qui protège les archers dans les sous-bois — la seule ligne d'infanterie de L'Anguille, dont le <strong>+15% de force des armes en attaque</strong> pousse tout le reste vers l'avant"},
+        {"icon": "menAtArms", "name": "Men-at-Arms", "qty": 1, "note": "Écran de piétaille qui protège les archers dans les sous-bois — la seule infanterie <em>paysanne</em> de L'Anguille, les Foot Squires tenant le rôle d'élite au contact. Le <strong>+15% de force des armes en attaque</strong> pousse tout le reste vers l'avant"},
         {"icon": "trebuchet", "name": "Field Trebuchets", "qty": 2, "note": "L'Anguille borde la Forêt de Châlons et ses hordes de Bêtes. Contre un campement ou un troupeau massé, deux trébuchets font plus de dégâts qu'une charge dans les arbres, où la cavalerie perd tout son élan"}
       ],
       "magic": "Taubert n'est pas un lanceur de sorts — sa force est la traque et l'assaut. La Damsel (Lore of Beasts) est l'unique appui magique, idéalement tournée contre les monstres des warherds.",
