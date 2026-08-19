@@ -123,7 +123,7 @@
         {"icon": "feastersInTheDusk", "name": "The Feasters in the Dusk (Crypt Ghouls)", "qty": 2, "note": "Régiment favori de Kemmler : +1 capacité (faction) permet d'aligner les 2 exemplaires disponibles — variante d'élite des Crypt Ghouls"},
         {"icon": "graveGuard", "name": "Grave Guard", "qty": 2, "note": "Unité d'élite de rupture — perce les points faibles une fois la ligne stabilisée"},
         {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 1, "note": "RoR des Grave Guard. L'infanterie d'élite qui tient le centre pendant que Krell, invoqué par « Lord of Undeath », frappe où il veut"},
-        {"icon": "cairnWraith", "name": "Cairn Wraiths", "qty": 2, "note": "Anti-infanterie légère — bénéficie directement du coût de magie réduit pour la Lore of Vampires"},
+        {"icon": "cairnWraith", "name": "Cairn Wraiths", "qty": 2, "note": "Anti-infanterie légère éthérée, insensible aux armes non magiques. Le <strong>-10%</strong> de coût sur la Lore of Vampires profite à Kemmler, pas à elles : il lui permet de relancer plus souvent l'Invocation de Nehek qui les remet debout"},
         {"icon": "varghulf", "name": "Varghulf", "qty": 1, "note": "Flanc monstrueux — perce les unités isolées pendant que la horde tient le centre"}
       ],
       "krellNote": {"icon": "krell", "name": "Krell", "qty": "1 (invoqué)", "note": "Invoqué en bataille par la compétence de Kemmler — wight permanent, ne dégrade plus en Warhammer III, excellent tank de mêlée en pointe de ligne"},
@@ -155,7 +155,7 @@
         {"icon": "konigsteinStalkers", "name": "The Konigstein Stalkers (Skeleton Warriors)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — variante d'élite des Skeleton Warriors, empoisonnée gratuitement par Ghorst"},
         {"icon": "skeleton", "name": "Skeleton Warriors", "qty": 3, "note": "Empoisonnés eux aussi par Ghorst (faction)"},
         {"icon": "cryptGhoul", "name": "Crypt Ghouls", "qty": 2, "note": "+30 Armure comme les Zombies — beaucoup plus difficiles à percer que la normale"},
-        {"icon": "feastersInTheDusk", "name": "The Feasters in the Dusk (Crypt Ghouls)", "qty": 1, "note": "RoR des Crypt Ghouls, et l'un des deux seuls bénéficiaires du <strong>+30</strong> d'armure que le seigneur réserve aux Zombies et aux Goules"},
+        {"icon": "feastersInTheDusk", "name": "The Feasters in the Dusk (Crypt Ghouls)", "qty": 1, "note": "RoR des Crypt Ghouls, et couvert comme elles par le <strong>+30</strong> d'armure que le seigneur réserve aux Zombies et aux Goules — deux familles seulement, mais quatre lignes de cette fiche en profitent"},
         {"icon": "mortisEngine", "name": "Mortis Engine", "qty": 1, "note": "Profite du sort lié Lesser Raise Dead gratuit — renforce encore le flux de résurrection déjà soutenu par Ghorst"},
         {"icon": "theClawOfNagash", "name": "The Claw of Nagash (Mortis Engine)", "qty": 1, "note": "RoR du Mortis Engine, et il porte le sort lié « Lesser Raise Dead » que la faction accorde aux Corpse Carts et Mortis Engines"},
         {"icon": "corpseCartLodestone", "name": "Corpse Cart (Unholy Lodestone)", "qty": 1, "note": "Totem de soutien — aura de régénération pour maintenir la horde de Zombies/Skeletons à flot en continu"}
@@ -188,7 +188,7 @@
         {"icon": "graveGuard", "name": "Grave Guard", "qty": 1, "note": "Infanterie d'élite anti-armure — tient le centre pendant que la cavalerie et les monstres enveloppent"},
         {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 1, "note": "RoR des Grave Guard. Aucun effet de Neferata ne vise les unités — tout va aux héros, aux vassaux et à la séduction : la ligne de front doit valoir par elle-même"},
         {"icon": "vargheist", "name": "Vargheists", "qty": 2, "note": "Monstres volants rapides — chassent artillerie et casters ennemis, exploitent la mobilité de l'armée de Neferata"},
-        {"icon": "devilsOfSwartzhafen", "name": "The Devils of Swartzhafen (Vargheists)", "qty": 1, "note": "RoR des Vargheists. Infanterie volante de choc, envoyée sur l'artillerie et les tireurs — le rôle que rien d'autre dans cette armée ne remplit"},
+        {"icon": "devilsOfSwartzhafen", "name": "The Devils of Swartzhafen (Vargheists)", "qty": 1, "note": "RoR des Vargheists. Infanterie volante de choc, envoyée sur l'artillerie et les tireurs — avec les Vargheists de base et le Terrorgheist, tout ce que Neferata peut envoyer par la voie des airs"},
         {"icon": "varghulf", "name": "Varghulf", "qty": 1, "note": "Monstre de choc doté de <strong>The Hunger</strong> — brise les formations et se soigne au fil du carnage. Il ne régénère pas en continu : ses PV reviennent en tuant, il faut donc le lancer là où il fera des victimes"},
         {"icon": "terrorgheist", "name": "Terrorgheist", "qty": 1, "note": "Monstre volant colossal — cri mortel et présence terrifiante qui font rompre les lignes"},
         {"icon": "blackCoach", "name": "Black Coach", "qty": 1, "note": "Char spectral qui gagne en puissance avec les Vents de Magie — mobile et increvable, en soutien de la ligne"},
@@ -484,7 +484,7 @@
         {"icon": "cairnWraith", "name": "Cairn Wraiths", "qty": 4, "note": "Le socle. Le <strong>+2 de capacité du vivier Relever les Morts</strong> (faction) permet d'en recruter sur le champ de bataille, et le <strong>-25% d'entretien</strong> les rend presque gratuites"},
         {"icon": "mourngul", "name": "Mourngul", "qty": 2, "note": "Cité par le bonus de <strong>+250 points de Barrière</strong> mais <strong>pas</strong> par \"Deathblow\" ni par \"Horrible Regeneration\" — c'est le monstre de la liste, très résistant, mais il ne ressuscite pas"},
         {"icon": "graveGuard", "name": "Grave Guard", "qty": 1, "note": "L'infanterie corporelle qui tient le point de contact. Une armée entièrement éthérée n'a aucune masse : sans elle, rien n'arrête une charge frontale"},
-        {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 1, "note": "RoR des Grave Guard. Ils ne sont pas éthérés, donc ni « Horrible Regeneration » ni le <strong>-25%</strong> d'entretien ne les couvrent : c'est le seul corps solide d'une fiche entièrement spectrale"},
+        {"icon": "sternsmen", "name": "The Sternsmen (Grave Guard)", "qty": 1, "note": "RoR des Grave Guard. Ils ne sont pas éthérés, donc ni « Horrible Regeneration » ni le <strong>-25%</strong> d'entretien ne les couvrent : c'est le plus dur des quatre corps solides que compte cette fiche autrement spectrale"},
         {"icon": "zombie", "name": "Zombies", "qty": 1, "note": "La chair à canon gratuite qui absorbe le tir adverse — indispensable puisque les unités éthérées, elles, restent vulnérables aux projectiles magiques"},
         {"icon": "theTithe", "name": "The Tithe (Zombies)", "qty": 1, "note": "RoR des Zombies. Le seul corps physique disponible en nombre pour une fiche éthérée : il encaisse les attaques magiques que les spectres subissent de plein fouet"}
       ],
