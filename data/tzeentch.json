@@ -108,7 +108,7 @@
   {
     "id": "sarthorael",
     "numeral": "IV",
-    "name": "Sarthorael the Ever-Watcher",
+    "name": "Sarthorael the Everwatcher",
     "epithet": "Le Guetteur Éternel",
     "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Tzeentch",
     "faction": "Sarthorael's Watchers",
@@ -119,7 +119,7 @@
     "build": {
       "role": "Armée de vétérans qui tire. L'effet structurant est le <strong>+3% de force des tirs et de défense de mêlée par rang</strong> (seigneur) : une unité de rang 9 gagne <strong>+27% des deux</strong>, ce qui transforme des tireurs ordinaires en batterie d'élite et des blocs de mêlée moyens en enclumes. Tout le reste découle de là — on privilégie les unités de tir, on les garde en vie, et on refuse l'attrition. Les +15 de réserve des Vents de Magie et les +15% de portée de sort (seigneur) donnent à Sarthorael une allonge que peu de factions peuvent contester, tandis que le -12% de recrutement et le -6% d'entretien sur les Mortels marqués (faction) financent la ligne qui protège tout ce dispositif",
       "totalSlots": 20,
-      "lord": {"icon": "sarthorael", "name": "Sarthorael the Ever-Watcher", "qty": 1, "note": "Seigneur du Changement et lanceur de sorts d'artillerie — il exploite les <strong>+15% de portée de ciblage</strong> et les <strong>+15 de réserve</strong> (seigneur) pour frapper depuis l'arrière, hors d'atteinte. Gardez-le en retrait : le <strong>+1 tour de convalescence</strong> (seigneur) rend chaque blessure coûteuse en campagne"},
+      "lord": {"icon": "sarthorael", "name": "Sarthorael the Everwatcher", "qty": 1, "note": "Seigneur du Changement et lanceur de sorts d'artillerie — il exploite les <strong>+15% de portée de ciblage</strong> et les <strong>+15 de réserve</strong> (seigneur) pour frapper depuis l'arrière, hors d'atteinte. Gardez-le en retrait : le <strong>+1 tour de convalescence</strong> (seigneur) rend chaque blessure coûteuse en campagne"},
       "heroes": [
         {"icon": "cultistOfTzeentch", "name": "Cultist of Tzeentch", "qty": 2, "note": "Les héros standards de Tzeentch — lanceurs de sorts d'appoint qui profitent des +15 de réserve des Vents de Magie (seigneur), et agents de campagne pour préparer le terrain avant l'arrivée des Guetteurs"}
       ],

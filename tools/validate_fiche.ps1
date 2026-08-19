@@ -56,11 +56,20 @@ foreach($l in $lords){
   # La normalisation est indispensable : le dictionnaire du jeu ecrit l'apostrophe
   # typographique (U+2019) et le tiret demi-cadratin (U+2013) la ou les fiches
   # emploient les signes droits. Une egalite exacte laisserait passer le doublon.
+  #
+  # L'ARTICLE DE TETE EST RETIRE, et ce n'est pas un raffinement. Shakkara Riel et
+  # Duriath Helbane ont porte pendant des semaines « Crows of Khaine (Harpies) » ET
+  # « The Crows of Khaine (Harpies) » : le meme regiment, deux fois, donc un
+  # exemplaire de plus que ce que leur regiment favori autorise. Le total de slots
+  # restait juste, et cette version-ci du controle les declarait conformes parce que
+  # les deux chaines different d'un « The ». Trouve le 19/08/2026 en resolvant les
+  # noms d'unites contre les tables du jeu, pas par ce controle.
   foreach($sec in 'heroes','army'){
     $vus = @{}
     foreach($u in @($l.build.$sec)){
       if(-not $u.name){ continue }
       $cle = ([string]$u.name).Replace([char]0x2019,"'").Replace([char]0x2018,"'").Replace([char]0x2013,'-').Replace([char]0x2014,'-').Trim().ToLower()
+      $cle = $cle -replace '^(the|le|la|les|da)\s+',''
       if($vus.ContainsKey($cle)){
         $ko++
         Write-Output("   KO doublon '{0}' : deux lignes dans {1} — fusionner en une seule" -f $u.name,$sec)

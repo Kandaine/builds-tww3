@@ -339,7 +339,7 @@
         {"icon": "mslBrigands", "name": "Brigands", "qty": 2, "note": "-15% d'entretien (faction) — la racaille de Mousillon, chair à canon bon marché qui tient la ligne devant les sorcières"},
         {"icon": "mslMountedBrigands", "name": "Mounted Brigands", "qty": 2, "note": "Même -15% d'entretien (faction) — cavalerie légère qui chasse les tireurs pendant que la magie opère"},
         {"icon": "blackGrailKnights", "name": "Black Grail Knights", "qty": 2, "note": "Les champions du Graal Noir — cavalerie lourde d'élite, parodie des Chevaliers du Graal, marteau de l'armée"},
-        {"icon": "theGreyMen", "name": "The Grey Men", "qty": 1, "note": "Régiment de Renom spectral de Mousillon — unité d'élite qui accompagne le culte"},
+        {"icon": "theGreyMen", "name": "Grey Men", "qty": 1, "note": "Régiment de Renom spectral de Mousillon — unité d'élite qui accompagne le culte"},
         {"icon": "cryptHorrors", "name": "Crypt Horrors", "qty": 2, "note": "Monstres régénérants — le +30% de plafond de soin (seigneur) démultiplie leur régénération naturelle"},
         {"icon": "cursedTrebuchet", "name": "Cursed Field Trebuchet", "qty": 2, "note": "Le <strong>-15% d'entretien</strong> de la Dame couvre ses Brigands, et son attribut ses Damsels. Ces trébuchets ne reçoivent rien : ils sont la seule portée physique d'un conclave qui, sinon, ne fait que lancer"},
         {"icon": "varghulf", "name": "Varghulf", "qty": 1, "note": "Bête vampirique dotée de <strong>The Hunger</strong>, qui rend des PV en tuant et non en continu — briseur de ligne qui profite lui aussi du plafond de soin accru (seigneur)"}
@@ -411,7 +411,7 @@
         {"icon": "cthZombies", "name": "Zombies", "qty": 1, "note": "-25% d'entretien (faction) — la marée jiangshi quasi gratuite qui déborde et fixe l'ennemi devant le mur de Grave Guard"},
         {"icon": "theTithe", "name": "The Tithe (Zombies)", "qty": 1, "note": "RoR des Zombies, et Dynasty of the Damned est faite pour eux : <strong>-25%</strong> d'entretien sur les Zombies, le roster étendu compensant l'absence totale d'unités de Bêtes"},
         {"icon": "jiangZombieArcherPutrid", "name": "Zombie Archers (Putrid-Shafts)", "qty": 2, "note": "Roster étendu de Zombies (faction) — tir empoisonné bon marché, une nouveauté orientale absente de la Sylvanie"},
-        {"icon": "theNightTerrors", "name": "The Night Terrors (Mournguls)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — horreurs éthérées qui bénéficient aussi de « Vindictive Necromancy » via les Haunters (faction)"},
+        {"icon": "theNightTerrors", "name": "Night Terrors (Mournguls)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — horreurs éthérées qui bénéficient aussi de « Vindictive Necromancy » via les Haunters (faction)"},
         {"icon": "cthBlackKnightLance", "name": "Black Knights (Lances & Barding)", "qty": 1, "note": "Cavalerie morte-vivante à la cathayenne, lance au poing — le marteau qui contourne pendant que le mur tient"},
         {"icon": "damnedCannon", "name": "Damned Cannon", "qty": 1, "note": "Artillerie damnée du Nonchang — pilonne l'ennemi immobilisé devant les Grave Guard"},
         {"icon": "necroMortar", "name": "Necro Mortar", "qty": 1, "note": "Les effets de Yuwei subventionnent ses Zombies et ses Grave Guard, tous au contact. Ce mortier tire par-dessus eux — la seule façon de frapper sans avoir à traverser sa propre marée"},
