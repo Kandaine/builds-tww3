@@ -12,11 +12,17 @@ mods à des fins d'illustration.
 |---|---|
 | Factions | 32 |
 | Seigneurs légendaires | 321 |
-| Cartes d'unité affichées | 3 905 |
+| Cartes d'unité affichées | 4 010 |
 | Poids d'une page de faction, premier affichage | 422 Ko |
 | Poids d'une fiche entièrement déroulée | ~546 Ko |
 
-> Mesuré le 17/08/2026 sur `dwarfs.html` (Thorgrim), depuis le site en ligne, cache vide et
+> Les cartes se comptent en **nombre de lignes** — `1 + heroes + army` par seigneur — et non en
+> quantités : sommer les `qty` donne 6 420, qui n'est pas le nombre de cartes affichées.
+>
+> **Les deux poids ci-dessous datent du 17/08/2026 et n'ont pas été remesurés depuis.** Le
+> JavaScript d'une page a pris une douzaine de kilo-octets entre-temps (voir plus bas), donc le
+> chiffre a bougé d'autant ; il n'est pas remplacé ici par une valeur calculée, qui ne serait pas
+> une mesure. Mesuré sur `dwarfs.html` (Thorgrim), depuis le site en ligne, cache vide et
 > compression active — les 9 requêtes du premier affichage, puis les 8 cartes d'unité chargées en
 > différé pendant le défilement. **La bannière pèse à elle seule 357 Ko, soit 85 % du premier
 > affichage** ; le reste du site tient dans les 65 Ko restants. Ce chiffre suit donc surtout la
@@ -68,7 +74,8 @@ css/accueil.css         la page de recherche, et elle seule
 sitemap.xml             les 33 pages, pour les moteurs de recherche
 robots.txt              indexation autorisée (voir la limite ci-dessous)
 assets/                 images : units/ (cartes), portraits/, banners/
-tools/                  scripts de validation (PowerShell)
+tools/                  scripts de validation (PowerShell), et les deux tables de référence
+                        qu'ils lisent : unites-connues.txt et attributs-unites.txt
 ```
 
 **Deux pièges sur ces trois fichiers**, tous deux invisibles en local :
@@ -88,7 +95,7 @@ couleur** : les tokens de couleur sont apportés par le thème de la page — le
 même socle de servir deux mises en page très différentes.
 
 La page d'accueil ne charge **pas** `fiches.css` : ni les 32 palettes de faction, ni la mise en page
-en deux colonnes ne lui servent, soit 43 Ko qu'elle ne télécharge pas. À l'inverse, dupliquer les
+en deux colonnes ne lui servent, soit 48 Ko qu'elle ne télécharge pas. À l'inverse, dupliquer les
 tokens dans deux fichiers les aurait fait diverger sans qu'aucun signal ne le montre.
 
 **Les 32 pages de faction sont GÉNÉRÉES — ne pas les éditer à la main.** Elles sortent toutes de
@@ -126,9 +133,12 @@ dans le JSON et le module d'icônes ; le code, lui, est commun.
 **Pourquoi un module d'icônes par faction.** Ces 32 fichiers ne contiennent qu'une table
 `clé → chemin d'image`. Ils étaient autrefois réunis en un registre unique de 343 Ko que *chaque*
 page téléchargeait en entier, alors qu'une page n'affiche qu'une faction. Le découpage a ramené le
-JavaScript d'une page de 353 Ko à 33 Ko, puis **38,3 Ko** aujourd'hui — 14 Ko une fois compressé,
-ce qui est ce qui transite réellement. Les 5,2 Ko repris à la V2 sont ceux d'`app.js`, qui a grossi
-de la navigation au clavier, du panneau repliable et de la hiérarchie de titres.
+JavaScript d'une page de 353 Ko à 33 Ko ; il pèse **50,1 Ko** aujourd'hui — mesuré non compressé sur
+`dwarfs.html` : `core.js` 23,2 Ko + `app.js` 21,8 Ko + `js/units/dwarfs.js` 5,1 Ko. La remontée vient
+de la V2, qui a mis la recherche, le sélecteur de faction, la navigation entre seigneurs voisins, la
+navigation au clavier et le panneau repliable dans les deux fichiers communs ; le module d'icônes,
+lui, n'a pas bougé. Ce qui transite réellement est la version compressée, plus légère, mais elle
+n'a pas été remesurée depuis la V2.
 
 ---
 
@@ -164,7 +174,26 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\generer-coquilles.ps1 
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem data\*.json | ForEach-Object { & .\tools\validate_fiche.ps1 -Faction $_.BaseName }"
 ```
 
-Un cinquième est **informatif**, à lancer quand on touche aux effets ou au build d'une fiche :
+> `verifier-commentaires.ps1` contrôle qu'un commentaire **existe** au-dessus de chaque fonction et
+> de chaque déclaration de premier niveau. Il ne peut pas contrôler qu'il est **vrai** — un
+> commentaire laissé au-dessus de la mauvaise fonction lui paraît conforme. Il attrape l'oubli,
+> jamais le mensonge.
+
+Ces quatre-là sont lancés automatiquement par deux filets :
+
+- un **hook `pre-commit`** qui bloque le commit en cas d'échec. À activer une fois par clone :
+  ```bash
+  git config core.hooksPath .githooks
+  ```
+  Il ne teste que les factions présentes dans le commit, et sort immédiatement si aucune fiche
+  n'est touchée. Contournement ponctuel : `git commit --no-verify`.
+- une **GitHub Action** qui rejoue la validation à chaque push sur `main`.
+
+Trois autres sont **informatifs** : ils ne bloquent rien, ne tournent ni dans le hook ni dans la CI,
+et se lancent à la main selon ce qu'on a touché. Chacun accepte `-Faction <nom>` pour se limiter à
+un seul fichier de données.
+
+**Si on touche aux effets ou au build d'une fiche :**
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-effets.ps1
@@ -176,29 +205,47 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-effets.ps1
 > bâtiments du dirigeable Spirit of Grungni » depuis le premier commit du site sans jamais aligner
 > le vaisseau.
 >
-> Il cherche dans `tools/unites-connues.txt`, les 1 550 noms d'unités du jeu de base extraits de
-> `local_en.pack`. **Ce fichier est dans le dépôt parce que la CI tourne sans installation du
-> jeu** ; le régénérer après un DLC, la procédure est en tête du fichier.
+> Il cherche dans `tools/unites-connues.txt`, **6 133 noms d'unités** relevés dans `local_en.pack`
+> et `local_fr.pack` — les fiches mélangent les deux langues — ainsi que dans les 133 packs du
+> workshop installés, dont 71 en apportent. **Ce fichier est dans le dépôt parce que la CI tourne
+> sans installation du jeu** ; le régénérer après un DLC, la procédure est en tête du fichier.
+>
+> Il lit aussi le nombre annoncé par un régiment favori : le bonus n'est pas toujours de +1, huit
+> seigneurs du site accordent « +2 capacité ».
 >
 > **Il ne bloque pas, et c'est voulu** : un effet peut nommer une unité pour la *déconseiller* —
 > Thyk Skolsson subit « +100 % de coût pour les Longbeards », et c'est précisément pour cela qu'il
 > n'en aligne pas. Une piste demande un regard, pas une correction. `-Strict` le fait sortir en 1
-> pour un usage ponctuel.
+> pour un usage ponctuel ; c'est le seul des trois à l'avoir.
 
-> `verifier-commentaires.ps1` contrôle qu'un commentaire **existe** au-dessus de chaque fonction et
-> de chaque déclaration de premier niveau. Il ne peut pas contrôler qu'il est **vrai** — un
-> commentaire laissé au-dessus de la mauvaise fonction lui paraît conforme. Il attrape l'oubli,
-> jamais le mensonge.
+**Si on touche aux notes d'une fiche :**
 
-Ils sont lancés automatiquement par deux filets :
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-attributs.ps1
+```
 
-- un **hook `pre-commit`** qui bloque le commit en cas d'échec. À activer une fois par clone :
-  ```bash
-  git config core.hooksPath .githooks
-  ```
-  Il ne teste que les factions présentes dans le commit, et sort immédiatement si aucune fiche
-  n'est touchée. Contournement ponctuel : `git commit --no-verify`.
-- une **GitHub Action** qui rejoue la validation à chaque push sur `main`.
+> Le seul contrôle qui confronte ce qu'une note **affirme** d'une unité à ce que le jeu lui donne :
+> un monstre décrit comme volant qui ne vole pas, une Régénération que l'unité n'a pas. Il lit
+> `tools/attributs-unites.txt` (4 423 unités), dans le dépôt pour la même raison que le précédent.
+>
+> **Attendez-vous à une majorité de faux positifs** — une note parle souvent d'une autre unité de la
+> fiche. Et sa couverture s'arrête au jeu de base et aux packs installés : 265 lignes du site lui
+> restent inconnues, son silence sur celles-là ne prouve rien.
+
+**Si une note affirme une exclusivité** — « la seule cavalerie de la fiche », « le seul tir » :
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-exclusivites.ps1
+```
+
+> Il confronte l'affirmation à la contrepartie du **même** régiment : l'unité de base alignée sous
+> son Régiment de Renom, ou l'inverse. C'est le défaut le plus fréquent du site, et il a une cause
+> datable — la passe sur les Régiments de Renom a placé le régiment à côté de sa base sans que la
+> phrase soit relue.
+>
+> **Il ne tombera jamais à zéro** : une trentaine d'exclusivités sont légitimes parce qu'elles
+> portent sur un effet, un roster ou le site entier, pas sur un rôle. Les laisser est le
+> comportement correct ; son en-tête donne les quatre formes à reconnaître.
 
 ---
 
