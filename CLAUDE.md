@@ -152,21 +152,26 @@ Si la modification touche aux images :
 
 ## Chiffres de référence
 
-Relevés le 18/08/2026, après la passe sur les Régiments de Renom. Un écart n'est pas forcément une
+Relevés le 23/08/2026, après l'ajout de The Black Dwarf. Un écart n'est pas forcément une
 erreur, mais il doit être expliqué, jamais ignoré :
 
 | Mesure | Valeur | Comment la mesurer |
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
-| Seigneurs légendaires | 321 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4010 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Seigneurs légendaires | 322 | somme des entrées de tous les `data/*.json` |
+| Cartes d'unité affichées, toutes fiches confondues | 4020 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Poids JS d'une page de faction | ~50 Ko | `core.js` + `app.js` + `js/units/<faction>.js`, non compressé |
 
-Les deux valeurs chiffrées ont bougé depuis la clôture de la V1 le 16/08/2026, et les deux écarts
-sont expliqués :
+Trois valeurs ont bougé depuis la clôture de la V1 le 16/08/2026, et les trois écarts sont
+expliqués :
 
-- **3905 → 4015 → 4010 cartes.** La passe du 18/08/2026 a posé 125 Régiments de Renom. Le solde
+- **321 → 322 seigneurs.** The Black Dwarf, ajouté le 23/08/2026 à la page des Nains du Chaos
+  (`black-dwarf`, numéro VII). Il vient du mod « Derpy's Hashut Legendary Lords », celui qui avait
+  déjà donné Abnagg Hellbeard et Ghorth the Cruel. La V1 n'est donc plus close au sens strict : le
+  contenu bouge quand le user apporte un nouveau seigneur.
+- **3905 → 4015 → 4010 → 4020 cartes.** Les 10 dernières sont les 10 lignes de la fiche de The
+  Black Dwarf (1 seigneur + 2 héros + 7 unités). Avant cela : la passe du 18/08/2026 a posé 125 Régiments de Renom. Le solde
   n'est pas de +125 parce que dans une partie des cas l'unité de base était à 1 exemplaire : sa
   ligne disparaît et le RoR la remplace, à somme nulle. Les **5 cartes** perdues ensuite viennent
   de la réparation du 19/08/2026 (`2899327`), qui a retiré les Régiments de Renom laissés sans
@@ -174,7 +179,11 @@ sont expliqués :
   pas le RoR ». Le chiffre n'avait pas été mis à jour à ce moment-là.
 
   Attention en recomptant : la colonne compte des **lignes**, pas des quantités. Sommer les `qty`
-  donne 6420 et n'a rien à voir avec le nombre de cartes affichées.
+  donne 6440 et n'a rien à voir avec le nombre de cartes affichées.
+
+  Et attention au piège PowerShell : `foreach($s in @($json))` **aplatit** le tableau renvoyé par
+  `ConvertFrom-Json` et ne compte alors qu'un seigneur par fichier — il faut passer par
+  `$a = ,(… | ConvertFrom-Json)` puis boucler sur `$a[0]`. Le symptôme est un total de 32.
 - **~33 → ~50 Ko de JS.** La V2 a ajouté la recherche, le sélecteur de faction et la navigation
   entre seigneurs voisins dans `core.js` et `app.js`, qui pèsent aujourd'hui 23 et 22 Ko à eux
   deux. Le module d'icônes d'une faction ne fait que le reste.

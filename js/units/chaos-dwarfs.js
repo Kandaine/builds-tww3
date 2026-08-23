@@ -5,7 +5,7 @@
 // unitCardHtml(). Chaque cle correspond au champ "icon" d'une unite dans
 // data/chaos-dwarfs.json ; la valeur est le chemin de l'image reelle.
 //
-// Ces 29 entrees vivaient auparavant dans un registre unique de 2063 images
+// Ces 30 entrees vivaient auparavant dans un registre unique de 2063 images
 // que CHAQUE page chargeait en entier, soit 117 Ko pour n'afficher que sa
 // propre faction. Le decoupage est purement mecanique : meme objet global
 // `unitImages`, memes cles, meme code de rendu dans app.js.
@@ -23,6 +23,7 @@ const unitImages = {
   abnagg: 'assets/portraits/abnagg.png',
   ghorth: 'assets/portraits/ghorth.png',
   rykarthUnbreakable: 'assets/portraits/rykarthUnbreakable.png',
+  blackDwarf: 'assets/portraits/blackDwarf.png',
   chaosDwarfWarriors: 'assets/units/chaosDwarfWarriors.png',
   chaosDwarfWarriorsGW: 'assets/units/chaosDwarfWarriorsGW.png',
   blunderbusses: 'assets/units/blunderbusses.png',

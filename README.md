@@ -11,8 +11,8 @@ mods à des fins d'illustration.
 | | |
 |---|---|
 | Factions | 32 |
-| Seigneurs légendaires | 321 |
-| Cartes d'unité affichées | 4 010 |
+| Seigneurs légendaires | 322 |
+| Cartes d'unité affichées | 4 020 |
 | Poids d'une page de faction, premier affichage | 422 Ko |
 | Poids d'une fiche entièrement déroulée | ~546 Ko |
 
@@ -60,7 +60,7 @@ Le principe tient en une phrase : **les données sont dans du JSON, la présenta
 de fichiers JS, et chaque page de faction n'est qu'une coquille.**
 
 ```
-index.html              page de recherche : les 321 seigneurs, filtre par faction et par texte
+index.html              page de recherche : les 322 seigneurs, filtre par faction et par texte
 <faction>.html      x32 une page par faction (dwarfs.html, skaven.html…)
 data/<faction>.json x32 LE CONTENU : seigneurs, lore, effets, build de 20 slots
 js/core.js              catalogue des factions, bannières, chargement des données, utilitaires
@@ -287,12 +287,13 @@ formatage commun. Ne pas le réintroduire.
 
 **Deux champs à connaître pour ne pas s'y perdre :**
 
-- `seal` désigne une icône SVG de secours. Le mécanisme a été retiré du chargement — les 321
+- `seal` désigne une icône SVG de secours. Le mécanisme a été retiré du chargement — les 322
   seigneurs ont tous un `portraitImage` — donc ce champ est **inerte**. Les SVG sont conservés dans
   `js/fallback-svg.js`, qu'aucune page ne charge.
 - `wikiUrl` **n'est lu par aucun code**. C'est de la donnée de référence, pas un champ d'affichage :
-  ne pas chercher où il apparaît, il n'apparaît nulle part. Le champ est présent sur les 321 fiches,
-  mais **vide sur 48 d'entre elles** — renseigné sur 273.
+  ne pas chercher où il apparaît, il n'apparaît nulle part. Le champ est présent sur les 322 fiches,
+  mais **vide sur 49 d'entre elles** — renseigné sur 273. Il reste vide sur les seigneurs venus d'un
+  mod, qui n'ont pas de page de wiki.
 
 ---
 

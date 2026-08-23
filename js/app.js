@@ -289,14 +289,14 @@ function renderPage(){
 
   // Il n'y a plus de bloc « Attributs & capacités passives ».
   //
-  // Il n'existait que sur UNE fiche sur 321 (Vlad von Carstein) et rompait
+  // Il n'existait que sur UNE fiche sur les 321 d'alors (Vlad von Carstein) et rompait
   // l'uniformité du site. Supprimé le 17/08/2026 sur décision du user, dans le
   // rendu ET dans data/vampire-counts.json — c'est la seule modification de
   // données de toute la V2, et elle a été explicitement autorisée.
   //
   // ATTENTION avant de faire le ménage dans la feuille de style : les classes
   // `attr-list`, `attr-item` et `stats-caveat` restent NÉCESSAIRES. Le champ
-  // `effects` des 321 fiches les utilise pour son propre balisage HTML.
+  // `effects` des 322 fiches les utilise pour son propre balisage HTML.
 
   // Bannière : celle du seigneur si elle existe, sinon celle de sa faction.
   const banner = l.banner || factionBanners[l.group];

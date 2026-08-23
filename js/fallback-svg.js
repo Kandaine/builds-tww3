@@ -7,9 +7,9 @@
 //
 // Pourquoi elles sont sorties du chargement : elles servaient de repli quand
 // une vraie image manquait. Verification faite sur les donnees actuelles, ce
-// repli n'est plus jamais atteint — les 321 seigneurs ont tous un champ
-// `portraitImage` et les 1978 icones referencees par les fiches ont toutes
-// un PNG dans assets/units/. Ces 206 Ko etaient donc telecharges par chaque
+// repli n'est plus jamais atteint — les 322 seigneurs ont tous un champ
+// `portraitImage` et les 2067 couples (faction, cle d'icone) cites par les
+// fiches ont tous un PNG dans assets/units/ ou assets/portraits/. Ces 206 Ko etaient donc telecharges par chaque
 // page sans jamais rien afficher.
 //
 // Elles sont conservees plutot que supprimees pour deux raisons : ce sont des

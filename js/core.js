@@ -24,13 +24,16 @@
 //
 //   * seals (79 Ko) et unitIcons (127 Ko) : des SVG dessines a la main servant
 //     de repli quand un seigneur ou une unite n'avait pas encore de vraie
-//     image. Les 321 seigneurs ont aujourd'hui un portrait et les 1978 icones
-//     referencees par les fiches ont toutes un PNG : ce repli n'etait donc
-//     plus jamais atteint. Conserves dans js/fallback-svg.js, que plus aucune
-//     page ne charge (voir svgDeSecours ci-dessous pour le reactiver).
+//     image. Les 322 seigneurs ont aujourd'hui un portrait et les 2067 couples
+//     (faction, cle d'icone) cites par les fiches ont tous un PNG : ce repli
+//     n'etait donc plus jamais atteint. Conserves dans js/fallback-svg.js, que
+//     plus aucune page ne charge (voir svgDeSecours ci-dessous pour le reactiver).
 //
-// Une page de faction charge desormais 38,3 Ko de JS au lieu de 353 Ko — 14 Ko
-// une fois compresses, ce qui est ce qui transite reellement.
+// Une page de faction charge desormais 50,1 Ko de JS au lieu de 353 Ko — mesure
+// non compressee sur dwarfs.html : core.js 23,2 + app.js 21,8 + le module
+// d'icones de la faction. La V2 a fait remonter ce chiffre depuis les 38,3 Ko
+// du decoupage initial, en ajoutant ici la recherche, le selecteur de faction
+// et la navigation entre seigneurs voisins.
 //
 // Ce commentaire a longtemps annonce « environ 23 Ko ». Le chiffre n'a jamais
 // ete exact : au commit qui a fait le decoupage (fddbe26), le total reel etait
@@ -278,7 +281,7 @@ function nomsDUnites(l){
 // Chosen ? » n'avait donc aucune reponse, alors que la donnee etait la.
 //
 // Le resultat est memorise sur l'objet seigneur : la recherche se relance a
-// CHAQUE frappe, et recomposer 321 chaines d'une trentaine de noms a chaque
+// CHAQUE frappe, et recomposer 322 chaines d'une trentaine de noms a chaque
 // caractere serait du travail refait pour rien. Les objets seigneurs sont
 // crees par loadLords() a chaque chargement de page, ce cache ne survit donc
 // jamais aux donnees qu'il resume.
