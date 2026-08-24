@@ -310,14 +310,15 @@ function renderPage(){
     </div>
     <div class="banner">
       <div class="seal">${l.portraitImage ? `<img src="${l.portraitImage}" alt="${l.name}">` : svgDeSecours(l.seal)}</div>
-      <div>
+      <div class="banner-texte">
+        <p class="lord-surtitre">${l.groupLabel}${l.numeral ? ` &middot; Fiche ${l.numeral}` : ''}</p>
         <h1 class="lord-title">${l.name}</h1>
         <p class="lord-epithet-big">${l.epithet}</p>
       </div>
     </div>
     <p class="faction-line">
       <img class="faction-crest" src="assets/crests/${l.group}/${l.id}.webp" alt="" aria-hidden="true"
-           width="44" height="44" loading="lazy">
+           width="56" height="56" loading="lazy">
       <span class="faction-tag">${l.faction}</span>
     </p>
     ${dripSVG}
@@ -333,6 +334,14 @@ function renderPage(){
     </section>
 
     <section class="section" aria-labelledby="titre-build">
+      <!-- PAS D'ÉTIQUETTE « N EMPLACEMENTS » ici : le total est DÉJÀ écrit en
+           toutes lettres plus bas, sous les cartes. Le répéter en haut
+           n'ajoutait rien et débordait de la fenêtre sous 560 px.
+           ATTENTION — JAMAIS D'ACCENT GRAVE DANS CE COMMENTAIRE. Il vit à
+           l'intérieur d'un template literal : un accent grave y referme la
+           chaîne, et la suite du texte devient du code. C'est exactement ce
+           qui s'est produit ici en citant un nom de classe entre accents
+           graves — la fiche ne rendait plus rien, ReferenceError à l'appui. -->
       <div class="section-head">${icons.build}<h2 class="section-title" id="titre-build">Build recommandé</h2></div>
       <div class="section-body"><p><strong>${l.build.role}</strong></p></div>
 
@@ -372,6 +381,13 @@ function renderPage(){
       </div>
       <p class="note">${l.build.note}</p>
     </section>
+
+    <!-- PAS DE COLOPHON. La maquette en avait un, mais le sien portait une
+         RÈGLE — « le Régiment de Renom consomme le plafond de son unité de
+         base ». Le mien ne répétait que le nom de la faction, déjà écrit en
+         haut de la fiche dans l'étiquette : un ornement qui redit ce qu'on
+         vient de lire n'apporte rien et allonge la page. Retiré plutôt que
+         rempli d'une formule. -->
 
     ${navVoisinsHtml()}
   `;

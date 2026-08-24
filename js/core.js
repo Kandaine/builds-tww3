@@ -42,13 +42,23 @@
 // clavier, du panneau repliable et de la hierarchie de titres.
 // ============================================================================
 
-// Petit filet décoratif en forme de "goutte" (SVG), utilisé comme séparateur
-// visuel entre le bandeau d'en-tête et le corps de la fiche seigneur.
-const dripSVG = `<svg class="drip-divider" viewBox="0 0 400 14" preserveAspectRatio="none">
-  <line x1="0" y1="2" x2="400" y2="2" stroke="var(--border)" stroke-width="1"/>
-  <path d="M 60 2 Q 60 10 58 13 Q 56 10 58 2" fill="var(--accent-primary)"/>
-  <path d="M 200 2 Q 200 12 197 14 Q 194 12 197 2" fill="var(--accent-primary)"/>
-  <path d="M 330 2 Q 330 8 328 11 Q 326 8 328 2" fill="var(--accent-primary)"/>
+// Filet ornemental séparant le bandeau d'en-tête du corps de la fiche.
+//
+// Il a remplacé un motif en « gouttes » qui coulaient vers le bas, hérité de
+// l'ambiance Vampire Counts d'origine. Sur le cuir de la refonte Old World, un
+// losange encadré de deux traits qui s'effacent tient le rôle d'un fleuron
+// d'imprimeur — et il vaut pour les 32 factions, alors que les gouttes ne
+// parlaient qu'aux morts-vivants.
+//
+// `preserveAspectRatio` est retiré à dessein : le motif central doit rester
+// rond quelle que soit la largeur. Ce sont les deux traits qui s'allongent,
+// via leur propre `x2`/`x1` en pourcentage.
+const dripSVG = `<svg class="drip-divider" viewBox="0 0 400 14">
+  <line x1="0" y1="7" x2="168" y2="7" stroke="var(--border)" stroke-width="1"/>
+  <line x1="232" y1="7" x2="400" y2="7" stroke="var(--border)" stroke-width="1"/>
+  <path d="M 200 1 L 206 7 L 200 13 L 194 7 Z" fill="var(--accent-primary)"/>
+  <path d="M 178 7 L 188 3 L 188 11 Z" fill="var(--accent-primary)"/>
+  <path d="M 222 7 L 212 3 L 212 11 Z" fill="var(--accent-primary)"/>
 </svg>`;
 
 // Icônes génériques utilisées devant les titres de section de la fiche

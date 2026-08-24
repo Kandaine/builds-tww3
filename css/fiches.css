@@ -270,39 +270,22 @@
         autres thèmes n'auront donc rien de nouveau à inventer ;
      3. les deux polices « Old World » sont branchées ICI et non dans le socle,
         pour que la refonte reste faction par faction. */
-.theme-chaos-dwarfs{
-  --bg:            #1D1710;
-  --bg-glow:       #2A2117;
-  --panel:         #221B13;
-  --panel-light:   #2E2418;
-  --panel-deep:    #181209;
-  --border:        #4A3B26;
+/* Ce bloc ne déclare plus QUE ce qui est propre à la faction. Le cuir, le
+   grain, les polices et les trois textes communs sont posés une seule fois
+   pour les 32, en section 11. Les valeurs de surface qui traînaient ici
+   pendant la phase pilote ont été retirées : recouvertes par la section 11,
+   elles étaient du code mort, et du code mort dans une feuille de 1 600
+   lignes finit toujours par être lu comme la vérité.
 
+   Seul écart à l'ambiance d'origine : --ornement-2 passe de #8a7f6d (gris
+   chaud) à #9C7F45 (or). Les filets et les cadres de carte s'appuient dessus,
+   et un gris terne sur du cuir ne se voit plus. */
+.theme-chaos-dwarfs{
   --ornement:        #c2410c;
   --ornement-vif:    #e8622a;
   --ornement-rgb:    194,65,12;
   --ornement-2:      #9C7F45;
   --ornement-2-rgb:  156,127,69;
-
-  --police-gothique: 'Pirata One', var(--police-titre);
-  --police-sc:       'IM Fell English SC', var(--police-titre);
-
-  /* Grain du cuir. `fixed` sur body (socle.css) fige les couches pendant le
-     défilement : le papier ne glisse pas sous le texte. */
-  --papier-1: radial-gradient(90% 55% at 12% 4%, rgba(126,101,64,.30), transparent 62%);
-  --papier-2: radial-gradient(70% 50% at 88% 92%, rgba(0,0,0,.45), transparent 66%),
-              radial-gradient(55% 40% at 82% 10%, rgba(var(--ornement-rgb), .16), transparent 68%);
-
-  /* Mesurés sur le fond cuir #1D1710 / sur le panneau #221B13.
-     texte : 12.81 / 12.27 | secondaire : 6.61 / 6.33
-     titre : 5.72 / 5.48   | mise en avant : 7.34 / 7.03
-     Le secondaire GAGNE en contraste par rapport à l'ancien fond (6.29) :
-     éclaircir le fond ne dégrade pas la lisibilité, il fallait juste
-     réchauffer les textes en conséquence. */
-  --texte:               #E6DABF;
-  --texte-secondaire:    #AC9C7E;
-  --texte-titre:         #D8794F;
-  --texte-mise-en-avant: #C9A227;
 }
 
 .theme-daemons-of-chaos{
@@ -1503,15 +1486,15 @@
 /* ----------------------------------------------------------------------------
    10. REFONTE « OLD WORLD » — LA CHARPENTE
 
-   Tout ce bloc est CADRÉ à `.theme-chaos-dwarfs`, la faction pilote. Les 31
-   autres n'en voient rien tant que leur thème n'est pas converti.
+   Ce bloc a d'abord été CADRÉ à `.theme-chaos-dwarfs`, le temps de valider la
+   mise en page sur une seule faction. Le préfixe a été retiré une fois la
+   charpente approuvée : la charpente vaut désormais pour les 32.
 
-   POURQUOI CE CADRAGE PLUTÔT QU'UN JEU DE TOKENS INERTES. Une lettrine ou un
-   filet ne se neutralisent pas proprement par une variable : il faudrait
-   `float: var(--x, none)` sur chaque propriété, et le jour où la refonte
-   couvrira les 32 factions, ce contorsionnisme resterait dans la feuille pour
-   rien. Le préfixe est explicite, il se retire d'une substitution quand la
-   phase 2 aura converti tous les thèmes.
+   POURQUOI CE CADRAGE PROVISOIRE PLUTÔT QU'UN JEU DE TOKENS INERTES. Une
+   lettrine ou un filet ne se neutralisent pas proprement par une variable : il
+   aurait fallu `float: var(--x, none)` sur chaque propriété, et ce
+   contorsionnisme serait resté dans la feuille pour rien. Un préfixe se retire
+   d'une substitution ; une variable-interrupteur, jamais.
 
    RÈGLE DE LA FEUILLE, respectée ici : aucune propriété `color` ne prend une
    variable --ornement-*. Les filets et les fonds, oui ; les textes, jamais.
@@ -1521,43 +1504,48 @@
    44 px sur téléphone. `object-fit: contain` parce que la forme du blason
    VARIE selon la faction : écu chez les Nains du Chaos, bannière sur hampe
    chez les Hung. Un cadre fixe déformerait la seconde. */
-.theme-chaos-dwarfs .faction-line{
+.faction-line{
   display: flex;
   align-items: center;
   gap: var(--esp-3);
   margin-top: var(--esp-4);
 }
-.theme-chaos-dwarfs .faction-crest{
+.faction-crest{
   width: 44px; height: 44px;
   object-fit: contain;
   flex-shrink: 0;
   filter: drop-shadow(0 1px 2px rgba(0,0,0,.55));
 }
 /* L'étiquette perd sa marge propre : c'est la ligne qui la porte désormais. */
-.theme-chaos-dwarfs .faction-tag{ margin-top: 0; }
+.faction-tag{ margin-top: 0; }
 
 /* --- Le double filet de la page, comme un cadre de livre d'armée ---
    Posé sur .page en `::before`, donc sans un seul élément de plus dans le
    balisage. `inset` en unités d'espacement pour suivre les points de rupture. */
-.theme-chaos-dwarfs .page{ position: relative; }
-.theme-chaos-dwarfs .page::before{
+/* Le cadre est ramené de 12 px à 6 px du bord. Sur téléphone, `.page` n'a que
+   16 px de retrait horizontal : à 12 px d'inset, il ne restait que 4 px entre
+   le filet et le texte, et la LETTRINE mordait dessus — le « T » de Pirata One
+   a un empattement large qui déborde de sa chasse. Le contenu garde désormais
+   10 px de dégagement, ce qui suffit à la plus large des capitales. */
+.page{ position: relative; }
+.page::before{
   content: "";
   position: absolute;
-  inset: var(--esp-3);
+  inset: 6px;
   border: 1px solid rgba(var(--ornement-2-rgb), .38);
   box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px rgba(var(--ornement-2-rgb), .18);
   pointer-events: none;
   z-index: 0;
 }
 /* Le contenu repasse au-dessus du filet, sinon le cadre couvrirait les cartes. */
-.theme-chaos-dwarfs .page > *{ position: relative; z-index: 1; }
+.page > *{ position: relative; z-index: 1; }
 
 /* --- La lettrine du lore ---
    Uniquement le PREMIER paragraphe de la section Lore, ciblé par son
    aria-labelledby : pas de classe à ajouter, donc pas de balisage touché.
    `::first-letter` ne s'applique qu'aux éléments de bloc — d'où le ciblage
    du <p> et non de son conteneur. */
-.theme-chaos-dwarfs section[aria-labelledby="titre-lore"] .section-body > p:first-child::first-letter{
+section[aria-labelledby="titre-lore"] .section-body > p:first-child::first-letter{
   font-family: var(--police-gothique);
   font-size: 3.2em;
   line-height: .82;
@@ -1569,24 +1557,30 @@
 /* --- Les intitulés de section, à la manière d'une rubrique ---
    Le filet part du titre et s'efface vers la droite : c'est ce qui donne la
    respiration d'une page imprimée sans ajouter d'ornement supplémentaire. */
-.theme-chaos-dwarfs .section-head{
+.section-head{
   border-bottom: 1px solid rgba(var(--ornement-2-rgb), .30);
   padding-bottom: var(--esp-2);
 }
-.theme-chaos-dwarfs .section-title{ letter-spacing: .14em; }
+.section-title{ letter-spacing: .14em; }
 
 /* --- Les cartes d'unité, serties d'un filet ---
    La carte d'unité est l'IDENTIFIANT de l'unité : c'est à elle qu'on la
    reconnaît dans le panneau de recrutement du jeu. Aucun filtre, aucun voile —
    seulement un filet d'or qui la pose sur le cuir. */
-.theme-chaos-dwarfs .unit-icon{
+.unit-icon{
   box-shadow: 0 0 0 1px rgba(var(--ornement-2-rgb), .45);
 }
 /* La quantité en or et en gothique : c'est l'information la plus consultée
    d'une fiche, elle doit s'attraper sans lire. */
-.theme-chaos-dwarfs .unit-qty{
-  font-family: var(--police-gothique);
+/* LA QUANTITÉ RESTE EN CINZEL, PAS EN GOTHIQUE. Un essai l'avait passée en
+   Pirata One pour l'accorder au nom du seigneur : « ×1 » et « ×5 » y devenaient
+   pénibles à lire dans une pastille de 24 px. C'est la même leçon que les
+   chiffres romains écartés en maquette — une quantité se lit, elle ne se
+   déchiffre pas, et c'est l'information la plus consultée d'une fiche.
+   Seule la couleur or est conservée. */
+.unit-qty{
   color: var(--texte-mise-en-avant);
+  letter-spacing: .02em;
 }
 
 /* --- À partir de 781 px : le lore peut passer en deux colonnes ---
@@ -1599,7 +1593,7 @@
    La césure suppose `lang="fr"`, présent sur les 33 pages : sans lui, le
    navigateur couperait selon les règles anglaises. */
 @media (min-width: 781px){
-  .theme-chaos-dwarfs section[aria-labelledby="titre-lore"] .section-body{
+  section[aria-labelledby="titre-lore"] .section-body{
     columns: 21em;
     column-gap: var(--esp-6);
     column-rule: 1px solid rgba(var(--ornement-2-rgb), .18);
@@ -1607,8 +1601,169 @@
     hyphens: auto;
   }
   /* Un paragraphe ne doit pas être coupé entre deux colonnes. */
-  .theme-chaos-dwarfs section[aria-labelledby="titre-lore"] .section-body p{
+  section[aria-labelledby="titre-lore"] .section-body p{
     break-inside: avoid;
   }
-  .theme-chaos-dwarfs .faction-crest{ width: 56px; height: 56px; }
+  .faction-crest{ width: 56px; height: 56px; }
+}
+
+/* ----------------------------------------------------------------------------
+   11. REFONTE « OLD WORLD » — GÉNÉRALISATION AUX 32 FACTIONS
+
+   LE PAPIER EST COMMUN, SEUL LE LAVIS CHANGE. C'est la décision de la maquette
+   validée : le cuir est le même partout, et l'identité de chaque faction passe
+   par la teinte qui l'imprègne — pas par un fond différent. Une faction n'a
+   donc RIEN à déclarer pour être refondue : tout se dérive de son --ornement,
+   qu'elle possède déjà.
+
+   POURQUOI UN BLOC D'APRÈS PLUTÔT QU'UNE RÉÉCRITURE DES 32 THÈMES.
+   Les blocs des sections 1 à 5 portent la méthode de la V2 : contrastes
+   mesurés, valeurs éclaircies une par une, et le récit de ce qui avait été
+   raté. Les réécrire aurait effacé cette documentation pour un gain nul.
+   Ce bloc les recouvre sans les détruire — le jour où l'on voudrait revenir
+   au fond quasi-noir, il suffit de le supprimer.
+
+   SPÉCIFICITÉ : `[class*="theme-"]` vaut 0,1,0, exactement comme `.theme-norsca`.
+   C'est sa POSITION en fin de feuille qui le fait gagner, pas son poids. Ne pas
+   déplacer ce bloc plus haut.
+   ---------------------------------------------------------------------------- */
+[class*="theme-"]{
+  /* Le cuir tanné, identique pour les 32. */
+  --bg:            #1D1710;
+  --bg-glow:       #2A2117;
+  --panel:         #221B13;
+  --panel-light:   #2E2418;
+  --panel-deep:    #181209;
+  --border:        #4A3B26;
+
+  /* Le grain, et le lavis tiré de la couleur de la faction. --ornement-rgb est
+     déclaré par les 32 thèmes depuis la V2 : rien à ajouter nulle part. */
+  --papier-1: radial-gradient(90% 55% at 12% 4%, rgba(126,101,64,.30), transparent 62%);
+  --papier-2: radial-gradient(70% 50% at 88% 92%, rgba(0,0,0,.45), transparent 66%),
+              radial-gradient(55% 40% at 82% 10%, rgba(var(--ornement-rgb), .16), transparent 68%);
+
+  --police-gothique: 'Pirata One', var(--police-titre);
+  --police-sc:       'IM Fell English SC', var(--police-titre);
+
+  /* Textes communs : le fond étant commun, leurs contrastes le sont aussi.
+     Mesurés sur #1D1710 / #221B13 :
+       --texte 12.81 / 12.27   --texte-secondaire 6.61 / 6.33
+       --texte-mise-en-avant 7.34 / 7.03 */
+  --texte:               #E6DABF;
+  --texte-secondaire:    #AC9C7E;
+  --texte-mise-en-avant: #C9A227;
+
+  /* --texte-titre RESTE propre à la faction : c'est le seul texte qui porte son
+     identité. Il est DÉRIVÉ de son ornement vif, éclairci vers l'ivoire pour
+     tenir sur le cuir. La proportion 62/38 a été retenue après mesure des 32
+     valeurs obtenues : c'est la plus faible qui garde toutes les factions
+     au-dessus de 4,5 sur le panneau, donc celle qui conserve le plus de teinte.
+     Les factions dont le résultat resterait court sont corrigées nommément
+     juste en dessous. */
+  --texte-titre: color-mix(in srgb, var(--ornement-vif) 62%, #E6DABF);
+}
+
+/* ----------------------------------------------------------------------------
+   12. COMPOSITION DE LA MAQUETTE VALIDÉE
+
+   La section 10 avait apporté la peau — cuir, gothique, lettrine, filets. Il
+   manquait la COMPOSITION : sur-titre, blason en vis-à-vis, étiquette à droite
+   des titres, fleuron, colophon. C'est ce que pose ce bloc.
+
+   UN ÉCART ASSUMÉ À LA MAQUETTE. Elle ne montrait ni bannière de faction ni
+   portrait du seigneur, et ses entrées d'unité tenaient en trois lignes. Les
+   reproduire à la lettre aurait fait perdre l'artwork, le portrait et surtout
+   les NOTES d'unité — le fond du travail des 322 fiches. Le user a tranché :
+   on garde les notes. Ce qui est repris, c'est l'agencement, pas l'amputation.
+   ---------------------------------------------------------------------------- */
+
+.banner{ flex-wrap: wrap; }
+.banner-texte{ flex: 1; min-width: 0; }
+
+/* Le sur-titre « CHAOS DWARFS · FICHE VII » de la maquette. */
+.lord-surtitre{
+  font-family: var(--police-sc);
+  font-size: var(--txt-micro);
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--texte-titre);
+  margin-bottom: var(--esp-1);
+}
+
+/* Le blason quitte la ligne d'étiquette pour l'en-tête, et grandit : c'est lui
+   qui identifie la faction en jeu, il ne pouvait pas rester une vignette de
+   44 px sous le nom. `object-fit: contain` parce que sa forme VARIE — écu chez
+   les Nains du Chaos, gonfalon sur hampe chez les Hung. */
+.faction-crest{
+  width: 56px; height: 56px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 3px rgba(0,0,0,.6));
+}
+/* Le blason est REVENU sur la ligne d'étiquette. Un essai l'avait mis en
+   vis-à-vis du nom, tout à droite du bandeau : isolé là-bas, il flottait sans
+   rien dire. Accolé au nom de la faction qu'il représente, il se lit. */
+.faction-line{
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  margin-top: var(--esp-4);
+}
+
+/* L'étiquette à droite du titre de section — « 20 EMPLACEMENTS » dans la
+   maquette. Elle n'est posée que là où elle porte une information VRAIE, le
+   total de slots du build. Lore et Effets n'en ont pas, plutôt qu'une
+   étiquette de remplissage. */
+/* PAS DE RÈGLE `.section-meta`. L'étiquette « 20 EMPLACEMENTS » de la maquette
+   a existé ici deux fois : d'abord en `nowrap`, où elle poussait la page à
+   387 px de large dans une fenêtre de 360 — une barre de défilement
+   horizontale sur toute la fiche —, puis masquée sous 560 px. Elle est
+   maintenant retirée tout court : `.army-total` écrit déjà le total en toutes
+   lettres sous les cartes. Deux fois la même information, c'est une de trop.
+
+   Ce que la maquette ne pouvait pas montrer : elle n'avait pas de
+   `.army-total`. L'étiquette y était le SEUL endroit où le total apparaissait. */
+
+/* --- La démarcation de la barre collante ---
+   La barre latérale est déjà opaque (dégradé de deux couleurs pleines) : le
+   contenu ne transparaît pas au travers. Mais sans ombre portée, la coupure
+   nette entre la barre et le texte qui défile dessous se lit comme un défaut
+   d'affichage plutôt que comme une superposition voulue. */
+.sidebar{
+  box-shadow: 0 6px 14px -6px rgba(0,0,0,.75);
+}
+
+/* PAS DE RÈGLE DE COLOPHON. Il en a existé une : le colophon répétait le nom
+   de la faction, déjà écrit en haut de la fiche. Celui de la maquette portait
+   une RÈGLE de jeu, pas un ornement — la différence est tout le sujet. Retiré
+   du rendu, donc retiré d'ici : une règle qui ne s'applique à rien finit par
+   être lue comme la description de quelque chose qui existe. */
+
+/* PAS DE FILIGRANE EN BAS DE PAGE. Il a existé : le blason de la faction à
+   13 % d'opacité, comme dans la maquette. Retiré sur décision du user.
+
+   La maquette pouvait se le permettre parce que sa page s'arrêtait là. Sur le
+   site, le bas de fiche porte la NAVIGATION vers les seigneurs voisins : le
+   filigrane passait derrière le bouton « Suivant », et deux motifs qui se
+   chevauchent dans le même coin se gênent au lieu de se compléter.
+
+   Le blason n'est pas perdu pour autant — il est en haut de fiche, à taille
+   lisible, contre le nom de la faction qu'il représente. */
+
+/* Les effets sur deux colonnes, comme la maquette. La LISTE se scinde, pas
+   chaque ligne : les champs `effects` des 322 fiches contiennent des phrases
+   entières (« Capacité d'unités : +5 pour les… »), pas des paires
+   libellé/valeur. Les découper au rendu sur le « : » aurait été fragile et
+   aurait cassé toute ligne qui en contient deux. */
+@media (min-width: 781px){
+  .attr-list{
+    columns: 2;
+    column-gap: var(--esp-6);
+  }
+  .attr-item{ break-inside: avoid; }
+
+  /* L'ordre de bataille serré sur deux colonnes fixes. Les cartes gardent leur
+     note complète, donc elles restent plus hautes que les entrées de la
+     maquette — c'est la densité qui est reprise, pas la troncature. */
+  .unit-grid{ grid-template-columns: 1fr 1fr; }
 }
