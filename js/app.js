@@ -315,7 +315,11 @@ function renderPage(){
         <p class="lord-epithet-big">${l.epithet}</p>
       </div>
     </div>
-    <span class="faction-tag">${l.faction}</span>
+    <p class="faction-line">
+      <img class="faction-crest" src="assets/crests/${l.group}/${l.id}.webp" alt="" aria-hidden="true"
+           width="44" height="44" loading="lazy">
+      <span class="faction-tag">${l.faction}</span>
+    </p>
     ${dripSVG}
 
     <section class="section" aria-labelledby="titre-lore">
@@ -373,6 +377,36 @@ function renderPage(){
   `;
 
   brancherNavVoisins();
+  brancherBlason();
+}
+
+// ---------------------------------------------------------------------------
+// BLASON DE FACTION — le gonfalon que le jeu affiche pour ce seigneur.
+//
+// Le chemin est DÉRIVÉ (assets/crests/<faction>/<id>.webp) et non stocké dans
+// data/ : la refonte est graphique, elle n'ajoute aucun champ aux 322 fiches.
+// Un seigneur dont le blason manquerait ne doit rien afficher plutôt qu'une
+// image cassée — d'où le retrait sur `error`.
+//
+// LA FACTION FAIT PARTIE DU CHEMIN, et ce n'est pas décoratif : l'identifiant
+// SEUL n'est pas unique sur le site. « amon » désigne deux seigneurs distincts,
+// Amon chez les Hauts Elfes et Amon 'Chakai chez Tzeentch. Sans le dossier de
+// faction, l'un écrasait le blason de l'autre — c'est arrivé pendant
+// l'extraction, les deux fichiers étaient identiques. La collision est sans
+// effet sur la navigation, chaque page ne chargeant que son propre JSON, mais
+// tout schéma qui indexe par `id` seul doit la connaître.
+//
+// L'écouteur est posé APRÈS l'écriture de innerHTML, ce qui est sûr : le
+// chargement de l'image commence au parsing mais `error` est asynchrone, il ne
+// peut donc pas se déclencher avant la fin de ce tour de boucle.
+//
+// `alt=""` et `aria-hidden` sont voulus : le nom de la faction est déjà écrit
+// juste à côté, en toutes lettres. Annoncer le blason ferait répéter la même
+// information deux fois au lecteur d'écran.
+// ---------------------------------------------------------------------------
+function brancherBlason(){
+  const img = document.querySelector('.faction-crest');
+  if(img) img.addEventListener('error', () => img.remove(), { once: true });
 }
 
 // ---------------------------------------------------------------------------

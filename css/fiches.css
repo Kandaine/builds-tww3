@@ -1499,3 +1499,116 @@
   .sidebar{ width: 280px; }
   .page{ padding: var(--esp-7) var(--esp-7); }
 }
+
+/* ----------------------------------------------------------------------------
+   10. REFONTE « OLD WORLD » — LA CHARPENTE
+
+   Tout ce bloc est CADRÉ à `.theme-chaos-dwarfs`, la faction pilote. Les 31
+   autres n'en voient rien tant que leur thème n'est pas converti.
+
+   POURQUOI CE CADRAGE PLUTÔT QU'UN JEU DE TOKENS INERTES. Une lettrine ou un
+   filet ne se neutralisent pas proprement par une variable : il faudrait
+   `float: var(--x, none)` sur chaque propriété, et le jour où la refonte
+   couvrira les 32 factions, ce contorsionnisme resterait dans la feuille pour
+   rien. Le préfixe est explicite, il se retire d'une substitution quand la
+   phase 2 aura converti tous les thèmes.
+
+   RÈGLE DE LA FEUILLE, respectée ici : aucune propriété `color` ne prend une
+   variable --ornement-*. Les filets et les fonds, oui ; les textes, jamais.
+   ---------------------------------------------------------------------------- */
+
+/* --- Le gonfalon, à côté du nom de faction ---
+   44 px sur téléphone. `object-fit: contain` parce que la forme du blason
+   VARIE selon la faction : écu chez les Nains du Chaos, bannière sur hampe
+   chez les Hung. Un cadre fixe déformerait la seconde. */
+.theme-chaos-dwarfs .faction-line{
+  display: flex;
+  align-items: center;
+  gap: var(--esp-3);
+  margin-top: var(--esp-4);
+}
+.theme-chaos-dwarfs .faction-crest{
+  width: 44px; height: 44px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,.55));
+}
+/* L'étiquette perd sa marge propre : c'est la ligne qui la porte désormais. */
+.theme-chaos-dwarfs .faction-tag{ margin-top: 0; }
+
+/* --- Le double filet de la page, comme un cadre de livre d'armée ---
+   Posé sur .page en `::before`, donc sans un seul élément de plus dans le
+   balisage. `inset` en unités d'espacement pour suivre les points de rupture. */
+.theme-chaos-dwarfs .page{ position: relative; }
+.theme-chaos-dwarfs .page::before{
+  content: "";
+  position: absolute;
+  inset: var(--esp-3);
+  border: 1px solid rgba(var(--ornement-2-rgb), .38);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 0 4px rgba(var(--ornement-2-rgb), .18);
+  pointer-events: none;
+  z-index: 0;
+}
+/* Le contenu repasse au-dessus du filet, sinon le cadre couvrirait les cartes. */
+.theme-chaos-dwarfs .page > *{ position: relative; z-index: 1; }
+
+/* --- La lettrine du lore ---
+   Uniquement le PREMIER paragraphe de la section Lore, ciblé par son
+   aria-labelledby : pas de classe à ajouter, donc pas de balisage touché.
+   `::first-letter` ne s'applique qu'aux éléments de bloc — d'où le ciblage
+   du <p> et non de son conteneur. */
+.theme-chaos-dwarfs section[aria-labelledby="titre-lore"] .section-body > p:first-child::first-letter{
+  font-family: var(--police-gothique);
+  font-size: 3.2em;
+  line-height: .82;
+  float: left;
+  margin: .08em .12em 0 0;
+  color: var(--texte-titre);
+}
+
+/* --- Les intitulés de section, à la manière d'une rubrique ---
+   Le filet part du titre et s'efface vers la droite : c'est ce qui donne la
+   respiration d'une page imprimée sans ajouter d'ornement supplémentaire. */
+.theme-chaos-dwarfs .section-head{
+  border-bottom: 1px solid rgba(var(--ornement-2-rgb), .30);
+  padding-bottom: var(--esp-2);
+}
+.theme-chaos-dwarfs .section-title{ letter-spacing: .14em; }
+
+/* --- Les cartes d'unité, serties d'un filet ---
+   La carte d'unité est l'IDENTIFIANT de l'unité : c'est à elle qu'on la
+   reconnaît dans le panneau de recrutement du jeu. Aucun filtre, aucun voile —
+   seulement un filet d'or qui la pose sur le cuir. */
+.theme-chaos-dwarfs .unit-icon{
+  box-shadow: 0 0 0 1px rgba(var(--ornement-2-rgb), .45);
+}
+/* La quantité en or et en gothique : c'est l'information la plus consultée
+   d'une fiche, elle doit s'attraper sans lire. */
+.theme-chaos-dwarfs .unit-qty{
+  font-family: var(--police-gothique);
+  color: var(--texte-mise-en-avant);
+}
+
+/* --- À partir de 781 px : le lore peut passer en deux colonnes ---
+   `column-width` ET NON `column-count`. Avec `columns: 2`, la colonne devient
+   ce qui reste après la barre latérale — environ 250 px à 865 px de fenêtre.
+   Du texte justifié sur 250 px donne des lignes de quatre mots et des rivières
+   blanches, le défaut même qu'on cherche à éviter. En donnant une LARGEUR
+   CIBLE, le navigateur ne coupe en deux que s'il a la place ; en dessous, il
+   garde une colonne pleine tout seul.
+   La césure suppose `lang="fr"`, présent sur les 33 pages : sans lui, le
+   navigateur couperait selon les règles anglaises. */
+@media (min-width: 781px){
+  .theme-chaos-dwarfs section[aria-labelledby="titre-lore"] .section-body{
+    columns: 21em;
+    column-gap: var(--esp-6);
+    column-rule: 1px solid rgba(var(--ornement-2-rgb), .18);
+    text-align: justify;
+    hyphens: auto;
+  }
+  /* Un paragraphe ne doit pas être coupé entre deux colonnes. */
+  .theme-chaos-dwarfs section[aria-labelledby="titre-lore"] .section-body p{
+    break-inside: avoid;
+  }
+  .theme-chaos-dwarfs .faction-crest{ width: 56px; height: 56px; }
+}
