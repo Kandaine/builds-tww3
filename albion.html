@@ -22,13 +22,22 @@
      sérialisait les requêtes (feuille → import → polices, soit trois
      allers-retours). Les deux `preconnect` ouvrent la connexion vers Google
      pendant que le reste se charge, et le `<link>` part en parallèle du CSS.
-     Deux familles demandées au lieu de cinq : Space Grotesk et Inter n'étaient
-     utilisées par aucune page de faction, et Cormorant Upright coûtait 33 Ko
-     pour la seule épithète du seigneur. Seules les graisses réellement
-     présentes à l'écran sont demandées. -->
+     Space Grotesk et Inter n'étaient utilisées par aucune page de faction, et
+     Cormorant Upright coûtait 33 Ko pour la seule épithète du seigneur. Seules
+     les graisses réellement présentes à l'écran sont demandées.
+
+     REFONTE « OLD WORLD » : deux familles s'ajoutent, et elles ne servent que
+     les thèmes qui les demandent — une faction non refondue ne les affiche
+     nulle part.
+       Pirata One        gothique, uniquement le nom du seigneur
+       IM Fell English SC petites capitales de presse du XVIIe, les intitulés
+     EB Garamond RESTE la police de lecture : IM Fell English est superbe en
+     titrage et fatigante en corps de texte, or une fiche déroulée se lit sur
+     plusieurs écrans. Le coût réel de ces deux familles est mesuré au
+     navigateur après coup, jamais estimé. -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=EB+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=IM+Fell+English+SC&family=Pirata+One&display=swap">
 
 <!-- Ordre obligatoire : socle.css (tokens, base) puis fiches.css, qui les
      consomme. Les 32 pages de faction chargent ces deux fichiers. -->

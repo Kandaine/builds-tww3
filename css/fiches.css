@@ -257,25 +257,52 @@
   --texte-mise-en-avant: #e0b83c;
 }
 
+/* CHAOS DWARFS — PAGE PILOTE DE LA REFONTE « OLD WORLD ».
+   Seule faction refondue à ce stade : les 31 autres gardent leur bloc d'origine
+   et rendent exactement comme avant. Ce qui distingue ce bloc des autres :
+
+     1. le fond passe du quasi-noir (#0f0a08) au CUIR TANNÉ (#1D1710). Le
+        parchemin clair testé en maquette a été écarté par le user — il fatigue
+        sur une consultation longue, et il aurait imposé de refaire les 32
+        palettes, toutes bâties pour un fond sombre ;
+     2. --papier-1 et --papier-2 posent le grain et le lavis de faction. Le
+        lavis est tiré de --ornement, que la faction possède déjà : les 31
+        autres thèmes n'auront donc rien de nouveau à inventer ;
+     3. les deux polices « Old World » sont branchées ICI et non dans le socle,
+        pour que la refonte reste faction par faction. */
 .theme-chaos-dwarfs{
-  --bg:            #0f0a08;
-  --bg-glow:       #1e120a;
-  --panel:         #170f0a;
-  --panel-light:   #241708;
-  --panel-deep:    #110b07;
-  --border:        #3a2418;
+  --bg:            #1D1710;
+  --bg-glow:       #2A2117;
+  --panel:         #221B13;
+  --panel-light:   #2E2418;
+  --panel-deep:    #181209;
+  --border:        #4A3B26;
 
   --ornement:        #c2410c;
   --ornement-vif:    #e8622a;
   --ornement-rgb:    194,65,12;
-  --ornement-2:      #8a7f6d;
-  --ornement-2-rgb:  138,127,109;
+  --ornement-2:      #9C7F45;
+  --ornement-2-rgb:  156,127,69;
 
-  /* texte : 14.56 | secondaire : 5.2 | titre : 5.89 | mise en avant : 5.24 */
-  --texte:               #ede4d8;
-  --texte-secondaire:    #a08f7c;
-  --texte-titre:         #e8622a;
-  --texte-mise-en-avant: #9c917f;
+  --police-gothique: 'Pirata One', var(--police-titre);
+  --police-sc:       'IM Fell English SC', var(--police-titre);
+
+  /* Grain du cuir. `fixed` sur body (socle.css) fige les couches pendant le
+     défilement : le papier ne glisse pas sous le texte. */
+  --papier-1: radial-gradient(90% 55% at 12% 4%, rgba(126,101,64,.30), transparent 62%);
+  --papier-2: radial-gradient(70% 50% at 88% 92%, rgba(0,0,0,.45), transparent 66%),
+              radial-gradient(55% 40% at 82% 10%, rgba(var(--ornement-rgb), .16), transparent 68%);
+
+  /* Mesurés sur le fond cuir #1D1710 / sur le panneau #221B13.
+     texte : 12.81 / 12.27 | secondaire : 6.61 / 6.33
+     titre : 5.72 / 5.48   | mise en avant : 7.34 / 7.03
+     Le secondaire GAGNE en contraste par rapport à l'ancien fond (6.29) :
+     éclaircir le fond ne dégrade pas la lisibilité, il fallait juste
+     réchauffer les textes en conséquence. */
+  --texte:               #E6DABF;
+  --texte-secondaire:    #AC9C7E;
+  --texte-titre:         #D8794F;
+  --texte-mise-en-avant: #C9A227;
 }
 
 .theme-daemons-of-chaos{
@@ -870,7 +897,7 @@
 .back-link:hover{ color: var(--texte-mise-en-avant); }
 
 .sidebar-title{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-weight: 700;
   font-size: var(--txt-normal);
   letter-spacing: 2px;
@@ -1019,7 +1046,7 @@
 .lord-item.active .lord-numeral{ opacity: 1; }
 .lord-names{ display: flex; flex-direction: column; }
 .lord-name{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-normal);
   letter-spacing: .5px;
   color: var(--texte);
@@ -1079,8 +1106,12 @@
 .seal svg{ width: 34px; height: 34px; }
 .seal img{ width: 100%; height: 100%; object-fit: cover; object-position: top center; }
 
+/* --police-gothique vaut --police-titre partout sauf sur les thèmes refondus :
+   les factions non touchées gardent donc Cinzel 900. Pirata One n'a qu'une
+   graisse — `font-weight` reste écrit pour les autres, il est simplement sans
+   effet sur elle. */
 .lord-title{
-  font-family: var(--police-titre);
+  font-family: var(--police-gothique);
   font-weight: 900;
   font-size: var(--txt-titre);
   color: var(--texte);
@@ -1097,7 +1128,7 @@
 /* Étiquette du nom de faction précis (ex. « Von Carstein »). */
 .faction-tag{
   display: inline-block;
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-micro);
   letter-spacing: 1.5px;
   text-transform: uppercase;
@@ -1137,7 +1168,7 @@
    changerait d'épaisseur — or le passage de <div> à <h2> visait à donner un
    plan de page aux lecteurs d'écran, pas à modifier le rendu. */
 .section-title{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-section);
   font-weight: inherit;
   letter-spacing: 1px;
@@ -1192,7 +1223,7 @@
 
 /* Même raison que .section-title : ce sélecteur porte désormais sur un <h3>. */
 .army-subhead{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-petit);
   font-weight: inherit;
   letter-spacing: 1.5px;
@@ -1245,7 +1276,7 @@
   gap: var(--esp-2);
 }
 .unit-name{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-unite);
   color: var(--texte);
   letter-spacing: .2px;
@@ -1285,7 +1316,7 @@
 .army-total{
   margin-top: var(--esp-4);
   margin-bottom: var(--esp-4);
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-normal);
   letter-spacing: .5px;
   text-transform: uppercase;
@@ -1307,7 +1338,7 @@
   padding: var(--esp-4) 18px;
 }
 .build-card h4{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-petit);
   letter-spacing: 1px;
   color: var(--texte-mise-en-avant);
@@ -1381,7 +1412,7 @@
   color: var(--texte-secondaire);
 }
 .fiche-nav-nom{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--txt-normal);
   color: var(--texte);
   line-height: 1.3;

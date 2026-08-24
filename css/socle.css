@@ -40,6 +40,13 @@
   --police-titre:   'Cinzel', serif;      /* noms propres, intitulés */
   --police-lecture: 'EB Garamond', serif; /* corps de texte, lore, épithète */
 
+  /* Les deux familles de la refonte « Old World ». Elles sont déclarées ici
+     mais valent PAR DÉFAUT la police de titre : un thème non refondu qui ne
+     les redéfinit pas rend donc exactement comme avant. C'est ce qui permet de
+     piloter la refonte faction par faction sans page intermédiaire cassée. */
+  --police-gothique: var(--police-titre); /* nom du seigneur, thèmes refondus */
+  --police-sc:       var(--police-titre); /* intitulés en petites capitales */
+
   /* --- ÉCHELLE TYPOGRAPHIQUE ------------------------------------------------
      Cinq degrés, contre les 13 tailles relevées par l'audit — dont 10,5 px,
      12,5 px, 13,5 px, 14,5 px et 15,5 px, qui trahissaient des valeurs posées
@@ -142,10 +149,30 @@ body{
 /* Filet de sécurité : aucune image ne peut déborder de son conteneur. */
 img{ max-width: 100%; }
 
+/* --- Le fond de page, et le grain du cuir ---
+   Trois couches empilées, du dessus vers le dessous :
+
+     --papier-1  lumière rasante sur le grain      \  posées par les seuls
+     --papier-2  creux, usure, lavis de faction    /  thèmes « Old World »
+     la lueur d'origine, inchangée
+
+   Les deux premières valent `none` tant qu'un thème ne les définit pas :
+   une faction non refondue rend donc EXACTEMENT comme avant, au pixel près.
+   C'est la même mécanique que --police-gothique plus haut, et c'est ce qui
+   autorise une refonte faction par faction.
+
+   `background-color` est écrit séparément parce que la forme raccourcie
+   `background:` remettait la couleur de fond à `transparent` : sans lui, le
+   dégradé le plus bas n'aurait plus rien derrière lui. */
 body{
-  background: radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
+  background-color: var(--bg);
+  background-image:
+    var(--papier-1, none),
+    var(--papier-2, none),
+    radial-gradient(ellipse at top, var(--bg-glow) 0%, var(--bg) 60%);
+  background-attachment: fixed;
   color: var(--texte);
   font-family: var(--police-lecture);
   min-height: 100vh;
-  transition: background .3s ease, color .3s ease;
+  transition: background-color .3s ease, color .3s ease;
 }
