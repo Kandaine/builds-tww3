@@ -176,3 +176,46 @@ body{
   min-height: 100vh;
   transition: background-color .3s ease, color .3s ease;
 }
+
+/* ----------------------------------------------------------------------------
+   4. BANDEAU D'ÉCHEC DE CHARGEMENT
+
+   Posé par signalerEchecsChargement() (js/core.js) quand un fichier de faction
+   n'a pas répondu. Il vit ICI et non dans fiches.css ou accueil.css parce que
+   les deux pages du site peuvent l'afficher, et que socle.css est la seule
+   feuille qu'elles chargent toutes les deux.
+
+   Il ne déclare aucune couleur littérale : comme le reste de ce fichier, il
+   consomme les tokens du thème de la page. Un bandeau d'alerte doit rester
+   lisible sur les 32 palettes de faction comme sur celle de l'accueil.
+   ---------------------------------------------------------------------------- */
+.alerte-chargement{
+  /* Pleine largeur et en tête de page : une alerte qu'il faut chercher n'est
+     pas une alerte. */
+  padding: var(--esp-3) var(--esp-4);
+  background: var(--panel-light);
+  border-bottom: 2px solid var(--ornement-vif);
+  color: var(--texte);
+  font-family: var(--police-lecture);
+  font-size: var(--txt-normal);
+  line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--esp-2);
+}
+.alerte-chargement strong{ color: var(--texte-mise-en-avant); }
+
+.alerte-recharger{
+  /* 44px de haut : seuil de cible tactile, comme les autres boutons du site. */
+  min-height: 44px;
+  padding: 0 var(--esp-4);
+  background: transparent;
+  border: 1px solid var(--ornement-vif);
+  border-radius: var(--rayon-doux);
+  color: var(--texte);
+  font-family: var(--police-lecture);
+  font-size: var(--txt-normal);
+  cursor: pointer;
+}
+.alerte-recharger:hover{ background: rgba(var(--ornement-rgb), .18); }

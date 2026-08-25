@@ -530,6 +530,10 @@ function render(){ renderList(); renderPage(); }
 async function init(){
   // `PAGE_FACTION` est défini dans la page HTML, juste avant ce script.
   lords = await loadLords(typeof PAGE_FACTION !== 'undefined' ? PAGE_FACTION : undefined);
+  // Si un fichier de faction n'a pas répondu, le dire. Sans ce signal, une
+  // page de faction en échec affiche « Aucune fiche à afficher » — un message
+  // qui ressemble à une faction vide alors que c'est une panne de réseau.
+  signalerEchecsChargement();
 
   // Un paramètre ?id=... valide l'emporte, ce qui permet de partager un lien
   // direct vers une fiche ; sinon on affiche le premier seigneur.

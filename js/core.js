@@ -204,6 +204,55 @@ const factionBanners = {
 // search.js (page de recherche globale).
 // ============================================================================
 
+// ----------------------------------------------------------------------------
+// LES FACTIONS DONT LE CHARGEMENT A ÉCHOUÉ.
+//
+// Rempli par loadLords(), lu par signalerEchecsChargement(). Contient les
+// LIBELLÉS affichables, pas les identifiants : ce tableau finit sous les yeux
+// du visiteur.
+//
+// POURQUOI CE REGISTRE EXISTE. loadLords() protège chaque fetch() pour qu'un
+// fichier en défaut ne vide pas toute la page — c'est le bon comportement, et
+// il a été mis en place pour ça. Mais il transformait l'échec en tableau vide,
+// et une faction absente s'affichait alors comme une faction À ZÉRO SEIGNEUR,
+// indiscernable d'une faction légitimement vide. Le 23/08/2026, un seul des 32
+// fetch() a échoué chez le user : la page annonçait « ALL 308 » et « Dark
+// Elves 0 » sans le moindre signal, et il a fallu comparer à la production
+// pour comprendre. Le journal de la console ne suffit pas : personne ne
+// consulte la console d'un site qu'il utilise.
+// ----------------------------------------------------------------------------
+const factionsEnEchec = [];
+
+// Affiche un bandeau d'alerte en tête de page si des factions manquent.
+// Ne fait rien quand tout s'est bien chargé, ce qui est le cas courant.
+//
+// Le bandeau est inséré en PREMIER ENFANT de <body> plutôt que dans un
+// conteneur précis : les deux pages du site ont des structures différentes
+// (`.app` pour une fiche, `.search-page` pour la recherche), et c'est le seul
+// point d'ancrage qu'elles partagent.
+//
+// `role="alert"` fait annoncer le message par un lecteur d'écran sans que
+// l'utilisateur ait à le chercher — c'est une information qu'il ne peut pas
+// deviner autrement, contrairement à un contenu simplement absent.
+function signalerEchecsChargement(){
+  if(!factionsEnEchec.length) return;
+
+  const n = factionsEnEchec.length;
+  const bandeau = document.createElement('div');
+  bandeau.className = 'alerte-chargement';
+  bandeau.setAttribute('role', 'alert');
+  bandeau.innerHTML =
+    '<strong>' + (n === 1 ? 'Une faction n\'a pas pu être chargée' : n + ' factions n\'ont pas pu être chargées')
+    + '</strong> : ' + factionsEnEchec.join(', ')
+    + '. Les seigneurs concernés manquent à cette page, et les totaux affichés sont donc incomplets. '
+    + '<button type="button" class="alerte-recharger">Recharger la page</button>';
+
+  bandeau.querySelector('.alerte-recharger')
+         .addEventListener('click', () => location.reload());
+
+  document.body.insertBefore(bandeau, document.body.firstChild);
+}
+
 // Charge les seigneurs depuis les fichiers JSON du dossier data/.
 // Paramètre `groupId` (optionnel) :
 //   - omis / undefined → charge TOUTES les factions (utilisé par la page
@@ -240,6 +289,9 @@ async function loadLords(groupId){
         })
         .catch(err => {
           console.error(`[loadLords] Faction "${group.id}" ignorée :`, err);
+          // On MÉMORISE l'échec, on ne se contente plus de le journaliser.
+          // Voir factionsEnEchec et signalerEchecsChargement() ci-dessous.
+          factionsEnEchec.push(group.label);
           return [];
         })
     )

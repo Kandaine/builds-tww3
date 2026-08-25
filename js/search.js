@@ -203,6 +203,10 @@ function annoncerResultats(nombre){
 // effectue des requêtes réseau (fetch) sur tous les fichiers data/*.json.
 async function init(){
   lords = await loadLords();
+  // La page de recherche charge les 32 fichiers d'un coup : c'est ici que le
+  // risque est le plus élevé, et c'est ici qu'un échec se voyait le moins —
+  // les effectifs des onglets tombaient simplement à zéro.
+  signalerEchecsChargement();
 
   // L'URL fait foi au démarrage : ouvrir un lien partagé, ou revenir en
   // arrière depuis la fiche d'un seigneur, doit rejouer la recherche telle
