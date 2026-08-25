@@ -505,8 +505,18 @@ body.search-theme{
    `aria-hidden` dans le HTML, et une couleur d'ORNEMENT, la seule occasion du
    site où c'en est une qui peint des caractères. Elle est admissible ici
    précisément parce que ce texte n'a pas à être lu pour comprendre la page. */
+/* LE CODE D'ERREUR RESTE EN CINZEL, PAS EN GOTHIQUE.
+   Un essai l'avait passé en Pirata One pour accorder la page au reste de la
+   refonte : « 404 » s'y lisait « 484 », le zéro de cette fonte étant barré et
+   très proche d'un huit. À 120 px, une lecture erronée n'est pas un détail —
+   c'est la seule information que cette page transporte.
+
+   TROISIÈME OCCURRENCE DU MÊME PIÈGE, après les chiffres romains de l'ordre de
+   bataille et les quantités d'unité : le gothique est fait pour les LETTRES.
+   Il porte le titre de la page juste en dessous, où il est parfaitement à sa
+   place ; il n'a jamais rien à faire sur un nombre. */
 .page-404-code{
-  font-family: var(--police-gothique);
+  font-family: var(--police-titre);
   font-size: clamp(64px, 22vw, 120px);
   font-weight: 900;
   line-height: 1;
