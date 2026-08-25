@@ -1307,10 +1307,21 @@
   font-style: italic;
 }
 
-/* Carte « Magie » en bas de la section Build. */
+/* Carte « Magie » en bas de la section Build.
+
+   UNE SEULE COLONNE, À TOUTES LES LARGEURS. Ce conteneur passait à deux
+   colonnes au-dessus de 781 px, du temps où il portait deux cartes. Il n'en
+   porte plus qu'une — la carte « Magie », posée par app.js — qui se retrouvait
+   donc à mi-largeur, avec un vide à sa droite et un alignement en désaccord
+   avec la note qui la suit immédiatement. Elle occupe maintenant toute la
+   largeur, comme cette note.
+
+   La grille est conservée plutôt que remplacée par un simple bloc : elle porte
+   le `gap` qui espacerait correctement une seconde carte le jour où l'on en
+   ajouterait une. */
 .build-grid{
   display: grid;
-  grid-template-columns: 1fr;   /* deux colonnes seulement à partir de 781 px */
+  grid-template-columns: 1fr;
   gap: var(--esp-4);
   margin-top: var(--esp-4);
 }
@@ -1474,7 +1485,6 @@
     max-width: 920px;
     padding: var(--esp-7) var(--esp-6);
   }
-  .build-grid{ grid-template-columns: 1fr 1fr; }
 }
 
 /* --- À partir de 1081 px : on rend leur ampleur aux marges ---------------- */
