@@ -152,7 +152,7 @@ Si la modification touche aux images :
 
 ## Chiffres de référence
 
-Relevés le 23/08/2026, après l'ajout de The Black Dwarf. Un écart n'est pas forcément une
+Relevés le 23/08/2026, après la refonte graphique « Old World ». Un écart n'est pas forcément une
 erreur, mais il doit être expliqué, jamais ignoré :
 
 | Mesure | Valeur | Comment la mesurer |
@@ -160,8 +160,13 @@ erreur, mais il doit être expliqué, jamais ignoré :
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 322 | somme des entrées de tous les `data/*.json` |
 | Cartes d'unité affichées, toutes fiches confondues | 4020 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2067 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
-| Poids JS d'une page de faction | ~50 Ko | `core.js` + `app.js` + `js/units/<faction>.js`, non compressé |
+| Blasons de faction | 322 fichiers, 1,92 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
+| Poids JS d'une page de faction | 56,7 Ko | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 5,1, non compressé |
+| Poids JS de l'accueil | 38,3 Ko | `core.js` + `search.js`, non compressé |
+| Poids CSS | socle 10,7 / fiches 64,4 / accueil 24,4 Ko | une page en charge **deux** : socle + l'une des deux autres |
+| Polices, page de faction | 4 familles, 5 fichiers, 179,7 Ko | mesuré au navigateur ; voir la note ci-dessous |
 
 Trois valeurs ont bougé depuis la clôture de la V1 le 16/08/2026, et les trois écarts sont
 expliqués :
@@ -184,6 +189,26 @@ expliqués :
   Et attention au piège PowerShell : `foreach($s in @($json))` **aplatit** le tableau renvoyé par
   `ConvertFrom-Json` et ne compte alors qu'un seigneur par fichier — il faut passer par
   `$a = ,(… | ConvertFrom-Json)` puis boucler sur `$a[0]`. Le symptôme est un total de 32.
-- **~33 → ~50 Ko de JS.** La V2 a ajouté la recherche, le sélecteur de faction et la navigation
-  entre seigneurs voisins dans `core.js` et `app.js`, qui pèsent aujourd'hui 23 et 22 Ko à eux
-  deux. Le module d'icônes d'une faction ne fait que le reste.
+- **~33 → ~50 → 56,7 Ko de JS.** La V2 avait ajouté la recherche, le sélecteur de faction et la
+  navigation entre seigneurs voisins. La refonte y ajoute le blason de faction et le bandeau
+  d'échec de chargement — environ 6 Ko, répartis entre `core.js` et `app.js`.
+
+- **2 → 4 familles de polices, 179,7 Ko sur une page de faction.** La refonte ajoute
+  **IM Fell English SC** (55,6 Ko) pour les intitulés et **Pirata One** (8,7 Ko) pour le nom du
+  seigneur, aux côtés de Cinzel (25,3) et d'EB Garamond (46,8 + 43,3 pour l'italique).
+
+  **Le surcoût n'est pas de 64,3 Ko partout** : le navigateur ne télécharge que les fontes
+  réellement utilisées par la page. La 404, par exemple, ne charge pas IM Fell English SC.
+
+  Attention en mesurant : `performance.getEntriesByType('resource')` donne des chiffres faux dès
+  qu'une iframe ou une navigation précédente a rempli le cache — deux pages différentes m'ont
+  ainsi rendu le même total. **La source fiable est `document.fonts`**, dont le `status` dit
+  `loaded` ou `unloaded` pour chaque fonte.
+
+- **1,92 Mo de blasons ajoutés au dépôt.** 322 fichiers WebP de 160 px, un par seigneur, rangés
+  par faction. Le chemin est **dérivé** dans `app.js` et `search.js` — aucun champ n'a été ajouté
+  aux 322 fiches, la refonte est restée graphique.
+
+  La faction fait partie du chemin parce que **l'identifiant seul n'est pas unique** : `amon`
+  désigne deux seigneurs, l'un chez les Hauts Elfes, l'autre chez Tzeentch. Indexer par `id` seul
+  fait que l'un écrase le blason de l'autre — c'est arrivé pendant l'extraction.

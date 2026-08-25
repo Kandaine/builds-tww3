@@ -32,11 +32,16 @@
 :root{
 
   /* --- Familles de polices ------------------------------------------------
-     DEUX familles seulement. Le site en chargeait cinq avant la V2 ; Cormorant
+     DEUX familles de base. Le site en chargeait cinq avant la V2 ; Cormorant
      Upright a été la dernière retirée, parce qu'elle coûtait 33 Ko — 22 % du
      poids des polices — pour un seul élément, l'épithète sous le nom du
      seigneur, soit une ligne par fiche. L'épithète utilise désormais la police
-     de lecture en italique, déjà chargée. */
+     de lecture en italique, déjà chargée.
+
+     LA REFONTE « OLD WORLD » EN AJOUTE DEUX, déclarées juste en dessous, ce qui
+     porte le total à quatre : 179,7 Ko sur une page de faction. Le navigateur
+     ne télécharge que celles qu'il affiche réellement — la page 404, qui
+     n'utilise pas les petites capitales, n'en charge que trois. */
   --police-titre:   'Cinzel', serif;      /* noms propres, intitulés */
   --police-lecture: 'EB Garamond', serif; /* corps de texte, lore, épithète */
 

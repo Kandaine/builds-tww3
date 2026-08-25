@@ -13,21 +13,31 @@ mods à des fins d'illustration.
 | Factions | 32 |
 | Seigneurs légendaires | 322 |
 | Cartes d'unité affichées | 4 020 |
-| Poids d'une page de faction, premier affichage | 422 Ko |
-| Poids d'une fiche entièrement déroulée | ~546 Ko |
+| Poids d'une page de faction, premier affichage | 448 Ko |
+| Poids d'une fiche entièrement déroulée | 586 Ko |
 
 > Les cartes se comptent en **nombre de lignes** — `1 + heroes + army` par seigneur — et non en
-> quantités : sommer les `qty` donne 6 420, qui n'est pas le nombre de cartes affichées.
+> quantités : sommer les `qty` donne 6 440, qui n'est pas le nombre de cartes affichées.
 >
-> **Les deux poids ci-dessous datent du 17/08/2026 et n'ont pas été remesurés depuis.** Le
-> JavaScript d'une page a pris une douzaine de kilo-octets entre-temps (voir plus bas), donc le
-> chiffre a bougé d'autant ; il n'est pas remplacé ici par une valeur calculée, qui ne serait pas
-> une mesure. Mesuré sur `dwarfs.html` (Thorgrim), depuis le site en ligne, cache vide et
-> compression active — les 9 requêtes du premier affichage, puis les 8 cartes d'unité chargées en
-> différé pendant le défilement. **La bannière pèse à elle seule 357 Ko, soit 85 % du premier
-> affichage** ; le reste du site tient dans les 65 Ko restants. Ce chiffre suit donc surtout la
-> bannière de la faction, dont le poids va de 69 à 1 246 Ko selon l'image (médiane 282 Ko) : Dwarfs
-> est un peu au-dessus de la médiane, ce n'est ni le meilleur ni le pire cas.
+> Poids remesurés le 23/08/2026 sur le site en ligne, après la refonte graphique, sur
+> `dwarfs.html?id=thorgrim` — 10 requêtes au premier affichage, 18 une fois la fiche déroulée.
+> Répartition du premier affichage :
+>
+> | | |
+> |---|---|
+> | Bannière de faction | **357,7 Ko — 80 %** |
+> | JavaScript | 54 Ko |
+> | JSON de la faction | 32,7 Ko |
+> | CSS | 24,2 Ko |
+> | Blason + portrait | 11,2 Ko |
+>
+> **Le chiffre suit donc surtout la bannière**, dont le poids va de 69 à 1 246 Ko selon l'image
+> (médiane 282 Ko) : Dwarfs est un peu au-dessus de la médiane, ni le meilleur ni le pire cas.
+> Les 138 Ko qui séparent les deux totaux sont les 8 cartes d'unité chargées en différé.
+>
+> **Les polices n'apparaissent pas dans ce relevé** : elles étaient déjà en cache navigateur, et
+> `transferSize` vaut alors 0. Leur coût réel est de **179,7 Ko** pour les 4 familles — mesuré à
+> part, voir la section Validation.
 
 ---
 
@@ -73,7 +83,8 @@ css/accueil.css         la page de recherche, et elle seule
 404.html                page d'erreur, servie par GitHub Pages sur toute adresse inconnue
 sitemap.xml             les 33 pages, pour les moteurs de recherche
 robots.txt              indexation autorisée (voir la limite ci-dessous)
-assets/                 images : units/ (cartes), portraits/, banners/
+assets/                 images : units/ (1 709 cartes), portraits/ (363),
+                        banners/, et crests/<faction>/<id>.webp (322 blasons)
 tools/                  scripts de validation (PowerShell), et les deux tables de référence
                         qu'ils lisent : unites-connues.txt et attributs-unites.txt
 ```
@@ -95,7 +106,7 @@ couleur** : les tokens de couleur sont apportés par le thème de la page — le
 même socle de servir deux mises en page très différentes.
 
 La page d'accueil ne charge **pas** `fiches.css` : ni les 32 palettes de faction, ni la mise en page
-en deux colonnes ne lui servent, soit 48 Ko qu'elle ne télécharge pas. À l'inverse, dupliquer les
+en deux colonnes ne lui servent, soit 64 Ko qu'elle ne télécharge pas. À l'inverse, dupliquer les
 tokens dans deux fichiers les aurait fait diverger sans qu'aucun signal ne le montre.
 
 **Les 32 pages de faction sont GÉNÉRÉES — ne pas les éditer à la main.** Elles sortent toutes de
@@ -133,12 +144,40 @@ dans le JSON et le module d'icônes ; le code, lui, est commun.
 **Pourquoi un module d'icônes par faction.** Ces 32 fichiers ne contiennent qu'une table
 `clé → chemin d'image`. Ils étaient autrefois réunis en un registre unique de 343 Ko que *chaque*
 page téléchargeait en entier, alors qu'une page n'affiche qu'une faction. Le découpage a ramené le
-JavaScript d'une page de 353 Ko à 33 Ko ; il pèse **50,1 Ko** aujourd'hui — mesuré non compressé sur
-`dwarfs.html` : `core.js` 23,2 Ko + `app.js` 21,8 Ko + `js/units/dwarfs.js` 5,1 Ko. La remontée vient
-de la V2, qui a mis la recherche, le sélecteur de faction, la navigation entre seigneurs voisins, la
-navigation au clavier et le panneau repliable dans les deux fichiers communs ; le module d'icônes,
-lui, n'a pas bougé. Ce qui transite réellement est la version compressée, plus légère, mais elle
-n'a pas été remesurée depuis la V2.
+JavaScript d'une page de 353 Ko à 33 Ko ; il pèse **56,7 Ko** aujourd'hui — mesuré non compressé sur
+`dwarfs.html` : `core.js` 26,6 Ko + `app.js` 25,1 Ko + `js/units/dwarfs.js` 5,1 Ko. La remontée vient
+d'abord de la V2, qui a mis la recherche, le sélecteur de faction, la navigation entre seigneurs
+voisins, la navigation au clavier et le panneau repliable dans les deux fichiers communs, puis de la
+refonte graphique, qui y a ajouté le blason de faction et le bandeau d'échec de chargement. **Le
+module d'icônes, lui, n'a jamais bougé** — c'est exactement ce que le découpage cherchait à obtenir.
+Compressé, ce que transite réellement le réseau est de **54 Ko** (relevé sur le site en ligne).
+
+---
+
+## L'habillage « Old World »
+
+Le site est habillé comme un **livre d'armée** : cuir tanné, gothique, petites capitales de presse,
+et le blason que le jeu affiche pour chaque seigneur. Quatre choses valent d'être connues avant d'y
+toucher.
+
+**Le papier est commun aux 32 factions, seul le lavis change.** Le bloc `[class*="theme-"]` en fin
+de `fiches.css` pose le cuir une seule fois ; l'identité de chaque faction passe par son
+`--ornement`, qu'elle possède depuis la V2. Une faction n'a donc **rien** à déclarer pour être
+habillée. Ce bloc gagne par sa **position** en fin de feuille, pas par son poids — le déplacer plus
+haut casse tout.
+
+**Les blasons sont dérivés, pas stockés.** `assets/crests/<faction>/<id>.webp`, calculé dans
+`app.js` et `search.js` : aucun champ n'a été ajouté aux 322 fiches. **La faction fait partie du
+chemin parce que l'identifiant seul n'est pas unique** — `amon` désigne deux seigneurs, l'un chez
+les Hauts Elfes, l'autre chez Tzeentch.
+
+**Le gothique ne va jamais sur un nombre.** Pirata One porte les noms ; ses chiffres sont
+illisibles. La règle a été apprise trois fois : chiffres romains d'un ordre de bataille, quantités
+d'unité (« ×1 » / « ×5 »), et le code de la page 404, qui se lisait « 484 ».
+
+**Jamais d'accent grave dans un commentaire HTML de `app.js` ou `search.js`.** Ces commentaires
+vivent à l'intérieur d'un *template literal* : un accent grave y referme la chaîne, et la suite du
+texte devient du code. Citer un nom de classe entre accents graves a vidé une page deux fois.
 
 ---
 
@@ -246,6 +285,24 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\verifier-exclusivites.
 > **Il ne tombera jamais à zéro** : une trentaine d'exclusivités sont légitimes parce qu'elles
 > portent sur un effet, un roster ou le site entier, pas sur un rôle. Les laisser est le
 > comportement correct ; son en-tête donne les quatre formes à reconnaître.
+
+### Mesurer le poids des polices
+
+Aucun script ne le fait : la mesure se prend au navigateur, et **`performance` ment**. Dès qu'une
+iframe ou une navigation précédente a rempli le cache, `transferSize` tombe à zéro et deux pages
+différentes rendent le même total — c'est arrivé, et ça m'a fait annoncer une régression qui
+n'existait pas. La source fiable est `document.fonts`, qui donne `loaded` ou `unloaded` par fonte :
+
+```js
+const st = {};
+document.fonts.forEach(f => { if (f.status === 'loaded') st[f.family] = 1; });
+Object.keys(st);
+```
+
+Relevé le 23/08/2026 sur une page de faction : **4 familles, 5 fichiers, 179,7 Ko** — Cinzel 25,3,
+EB Garamond 46,8 + 43,3 (italique), IM Fell English SC 55,6, Pirata One 8,7. Le navigateur ne
+télécharge **que les fontes réellement affichées** : la page 404, qui n'utilise pas les petites
+capitales, ne charge pas IM Fell English SC.
 
 ---
 
