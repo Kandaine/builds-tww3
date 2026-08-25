@@ -12,54 +12,86 @@
    la mise en page en deux colonnes ne lui servent — 43,3 Ko économisés, soit
    la feuille entière.
 
-   ── Le parti pris ──────────────────────────────────────────────────────────
-   L'ancienne page arborait un rouge-noir gothique presque identique à celui
-   des Comtes Vampires. Une page qui réunit les 32 factions ne devrait pas
-   porter les couleurs de l'une d'elles.
+   ── Le parti pris, et son évolution ────────────────────────────────────────
+   Avant la V2, cette page arborait un rouge-noir gothique presque identique à
+   celui des Comtes Vampires. Une page qui réunit les 32 factions ne devait pas
+   porter les couleurs de l'une d'elles : la V2 l'a donc mise en ARDOISE FROIDE
+   et neutre, la page s'effaçant derrière les portraits.
 
-   D'où une palette NEUTRE : ardoise sombre, un seul accent or pâle. La page
-   s'efface, et ce sont les 321 portraits de seigneurs qui font toute la
-   couleur — chacun apportant celle de sa faction. Le filet coloré à gauche de
-   chaque carte reste le seul rappel d'appartenance.
+   LA REFONTE « OLD WORLD » CHANGE CE PARTI. L'accueil passe sur le même cuir
+   tanné que les 32 fiches. La raison n'est pas décorative : on n'entre plus
+   dans une base de données mais dans un ouvrage, et la couverture doit
+   annoncer ses pages. Ce qui est CONSERVÉ du raisonnement de la V2, en
+   revanche, c'est l'essentiel — le cuir n'appartient à aucune faction, il ne
+   réintroduit aucune dominante. Les 322 portraits font toujours toute la
+   couleur, et le filet coloré à gauche de chaque carte reste le seul rappel
+   d'appartenance.
    ============================================================================ */
 
 /* ----------------------------------------------------------------------------
    1. LA PALETTE
 
-   Contrastes mesurés (seuil 4,5 pour du texte, 3 pour un contour de contrôle) :
-     --texte              13,2 à 15,4      --texte-secondaire   6,1 à 7,2
-     --texte-mise-en-avant 8,7 à 10,2      onglet actif         7,9
+   Contrastes mesurés sur le cuir #1D1710 / le panneau #221B13
+   (seuil 4,5 pour du texte, 3 pour un contour de contrôle) :
+     --texte               12,81 / 12,27    --texte-secondaire    6,61 / 6,33
+     --texte-mise-en-avant  7,34 /  7,03    --border-controle     mesuré ci-dessous
    ---------------------------------------------------------------------------- */
 body.search-theme{
-  /* --- SURFACES : ardoise, sans dominante colorée ------------------------- */
-  --bg:            #12141a;
-  --bg-glow:       #1a1e27;
-  --panel:         #171a22;
-  --panel-light:   #1f232e;
-  --panel-deep:    #0e1015;
-  --border:        #2b303c;   /* séparateurs décoratifs */
+  /* --- SURFACES : le cuir tanné de la refonte « Old World » ---------------
+     L'accueil était en ardoise froide, sans dominante colorée — un choix qui
+     l'isolait volontairement des 32 factions. La refonte inverse ce parti :
+     c'est le MÊME cuir que les fiches, parce qu'on n'entre plus dans une base
+     de données mais dans un ouvrage, et que sa couverture doit annoncer ses
+     pages. Les valeurs sont strictement celles de la section 11 de
+     fiches.css ; les faire diverger les ferait dériver sans aucun signal. */
+  --bg:            #1D1710;
+  --bg-glow:       #2A2117;
+  --panel:         #221B13;
+  --panel-light:   #2E2418;
+  --panel-deep:    #181209;
+  --border:        #4A3B26;   /* séparateurs décoratifs */
   /* Contour des CONTRÔLES (champ de recherche, onglets). Une bordure
      décorative peut être discrète ; celle qui délimite un élément interactif
      doit atteindre 3:1, sinon on ne voit plus où l'on peut cliquer.
-     --border n'y suffit pas (1,2), d'où cette seconde valeur. */
-  --border-controle: #676c78;
+     --border n'y suffit pas, d'où cette seconde valeur.
+
+     RÉCHAUFFÉ POUR LA REFONTE. L'ancien gris froid #676c78 avait été mesuré
+     contre l'ardoise : sur le cuir il tombe à 2,89, donc SOUS le seuil, et
+     tirait au bleu sur un fond brun. #95856A mesure 4,23 sur le panneau
+     #2E2418 — largement au-dessus des 3 requis, et dans la famille du cuir. */
+  --border-controle: #95856A;
 
   /* --- ORNEMENTS : un seul accent, or pâle -------------------------------- */
   --ornement:        #c9a227;
   --ornement-vif:    #e0b93f;
   --ornement-rgb:    201,162,39;
-  --ornement-2:      #7c8794;
-  --ornement-2-rgb:  124,135,148;
+  /* Réchauffé lui aussi : #7c8794 tirait au bleu-gris, choisi pour l'ardoise.
+     Il peint des filets et des cadres, jamais du texte — la règle de
+     fiches.css vaut ici — mais un gris froid sur du cuir se voit tout de suite. */
+  --ornement-2:      #8A7A5C;
+  --ornement-2-rgb:  138,122,92;
 
-  /* --- TEXTE -------------------------------------------------------------- */
-  --texte:               #e9ebf0;
-  --texte-secondaire:    #9aa2b1;
-  --texte-titre:         #d8c069;
-  --texte-mise-en-avant: #d8c069;
+  /* --- TEXTE : la famille du cuir, identique aux 32 fiches ----------------
+     Contrastes mesurés sur le fond #1D1710 / sur le panneau #221B13 :
+       --texte 12.81 / 12.27      --texte-secondaire 6.61 / 6.33
+       --texte-titre 7.34 / 7.03  --texte-mise-en-avant 7.34 / 7.03          */
+  --texte:               #E6DABF;
+  --texte-secondaire:    #AC9C7E;
+  --texte-titre:         #C9A227;
+  --texte-mise-en-avant: #C9A227;
 
-  /* Fond uni volontairement : l'ancienne page superposait trois dégradés
-     radiaux teintés de rouge, qui donnaient sa dominante vampirique. */
-  background: var(--bg);
+  /* --- POLICES de la refonte, les mêmes que les fiches -------------------- */
+  --police-gothique: 'Pirata One', var(--police-titre);
+  --police-sc:       'IM Fell English SC', var(--police-titre);
+
+  /* Le grain du cuir. L'accueil n'a pas de couleur de faction : son lavis est
+     donc tiré de son propre --ornement, l'or pâle. Le fond restait uni depuis
+     la V2, qui avait retiré trois dégradés rouges donnant une dominante
+     vampirique à une page qui n'appartient à personne — le grain ci-dessous
+     ne réintroduit aucune teinte de faction, seulement la matière. */
+  --papier-1: radial-gradient(90% 55% at 12% 4%, rgba(126,101,64,.30), transparent 62%);
+  --papier-2: radial-gradient(70% 50% at 88% 92%, rgba(0,0,0,.45), transparent 66%),
+              radial-gradient(55% 40% at 82% 10%, rgba(var(--ornement-rgb), .12), transparent 68%);
 }
 
 /* ----------------------------------------------------------------------------
@@ -85,7 +117,7 @@ body.search-theme{
 }
 
 .search-title{
-  font-family: var(--police-titre);
+  font-family: var(--police-gothique);
   font-weight: 900;
   font-size: var(--t-5);
   letter-spacing: 1px;
@@ -150,7 +182,7 @@ body.search-theme{
 .faction-tab{
   flex: 0 0 auto;
   scroll-snap-align: start;
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--t-1);
   letter-spacing: .5px;
   /* 44px : seuil de cible tactile. Les 33 onglets étaient tous en dessous. */
@@ -283,7 +315,7 @@ body.search-theme{
 
 .result-info{ min-width: 0; }
 .result-name{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--t-2);
   color: var(--texte);
   letter-spacing: .3px;
@@ -316,7 +348,7 @@ body.search-theme{
   margin-top: var(--esp-2);
 }
 .result-tags .faction-tag{
-  font-family: var(--police-titre);
+  font-family: var(--police-sc);
   font-size: var(--t-1);
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -474,7 +506,7 @@ body.search-theme{
    site où c'en est une qui peint des caractères. Elle est admissible ici
    précisément parce que ce texte n'a pas à être lu pour comprendre la page. */
 .page-404-code{
-  font-family: var(--police-titre);
+  font-family: var(--police-gothique);
   font-size: clamp(64px, 22vw, 120px);
   font-weight: 900;
   line-height: 1;
@@ -513,4 +545,25 @@ body.search-theme{
 .page-404-retour:hover{
   border-color: var(--ornement);
   background: var(--panel);
+}
+
+/* ----------------------------------------------------------------------------
+   REFONTE « OLD WORLD » — le blason sur les cartes de résultat
+
+   Les 322 blasons existent déjà pour les fiches ; les réutiliser ici coûte
+   22 px de large par carte et donne à la liste la même identité que les pages
+   qu'elle ouvre. `object-fit: contain` parce que la forme du blason VARIE
+   selon la faction : écu chez les Nains du Chaos, gonfalon sur hampe chez les
+   Hung — un cadre fixe déformerait le second.
+
+   `loading="lazy"` est posé dans le balisage, et ce n'est pas décoratif : la
+   page affiche jusqu'à 322 cartes d'un coup. Sans cela, ce serait 322 requêtes
+   d'images au chargement, pour une poignée de cartes réellement visibles.
+   ---------------------------------------------------------------------------- */
+.result-crest{
+  width: 22px; height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-right: var(--esp-1);
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,.5));
 }

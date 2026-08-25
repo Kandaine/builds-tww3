@@ -51,6 +51,20 @@ function resultCardHtml(l, query){
         <div class="result-epithet">${l.epithet}</div>
         ${ligneUnites}
         <div class="result-tags">
+          <!-- Le blason du jeu, comme en tête de fiche. Chemin DÉRIVÉ de la
+               faction et de l'identifiant : la refonte est graphique, elle
+               n'ajoute aucun champ aux 322 fiches. La faction fait partie du
+               chemin parce que l'identifiant seul n'est pas unique — « amon »
+               désigne deux seigneurs, l'un chez les Hauts Elfes, l'autre chez
+               Tzeentch. L'image est décorative (alt vide, aria-hidden) : le
+               nom de la faction est écrit juste à côté, l'annoncer ferait
+               doublon.
+               ATTENTION — JAMAIS D'ACCENT GRAVE ICI. Ce commentaire vit dans
+               un template literal : un accent grave y referme la chaîne et la
+               suite devient du code. Citer un attribut entre accents graves a
+               déjà cassé le rendu de cette page une fois. -->
+          <img class="result-crest" src="assets/crests/${l.group}/${l.id}.webp" alt=""
+               aria-hidden="true" width="22" height="22" loading="lazy" decoding="async">
           <span class="faction-tag">${l.groupLabel}</span>
           <span class="faction-tag">${l.faction}</span>
         </div>
