@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 85 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 84 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -93,7 +93,6 @@ const unitImagesHorsFiches = {
   kurganMarauderGreatWeapons: 'assets/units/kurganMarauderGreatWeapons.png',
   kurganMarauderChampions: 'assets/units/kurganMarauderChampions.png',
   kurganHuntersJavelins: 'assets/units/kurganHuntersJavelins.png',
-  victorGuttman: 'assets/units/victorGuttman.png',
   savageSkavenslaveSlingers: 'assets/units/savageSkavenslaveSlingers.png',
   warPigs: 'assets/units/warPigs.png',
   garbagsSkavenWolfChariots: 'assets/units/garbagsSkavenWolfChariots.png'

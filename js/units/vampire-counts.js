@@ -140,5 +140,6 @@ const unitImages = {
   estrothTheSilent: 'assets/units/estrothTheSilent.png',
   monsterOfWittgenstein: 'assets/units/monsterOfWittgenstein.png',
   theOldOneHero: 'assets/units/theOldOneHero.png',
+  victorGuttman: 'assets/units/victorGuttman.png',
   baronsMen: 'assets/units/baronsMen.png'
 };
