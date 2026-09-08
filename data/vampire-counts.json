@@ -5,7 +5,7 @@
     "name": "Vlad von Carstein",
     "epithet": "Le Grand Fondateur",
     "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Vlad_von_Carstein",
-    "faction": "Von Carstein",
+    "faction": "Sylvania",
     "seal": "vlad",
     "portraitImage": "assets/portraits/vlad.png",
     "lore": "<p>Nul ne connaît vraiment les origines de Vlad. Ce que l'Empire retient, c'est l'étranger raffiné qui s'installa en Sylvanie au IIe siècle, épousa <em>Isabella Sylvanas Odile Nachthafen</em>, dernière héritière d'une lignée locale, et devint par ce mariage Comte-Électeur de la province.</p>\n      <p>Pendant des décennies, Vlad gouverna dans l'ombre, patient et méthodique, tissant sa toile parmi la noblesse sylvanienne avant de révéler sa vraie nature. Lorsqu'il leva enfin ses armées de morts-vivants, ce ne fut pas dans la fureur, mais avec la froide certitude d'un maître d'échecs déplaçant ses dernières pièces : ainsi débutèrent les Guerres des Vampires.</p>\n      <p>Vlad incarne l'aristocrate vampirique dans ce qu'il a de plus abouti — charismatique, discipliné, capable d'inspirer une loyauté que même la mort ne rompt.</p>",
@@ -17,7 +17,7 @@
       "heroes": [
         {"icon": "isabella", "name": "Isabella von Carstein (Héros Légendaire)", "qty": 1, "note": "Indispensable pour activer le plafond de soin +50% — la combiner avec Vlad dans la même armée n'est pas optionnel, c'est le cœur du build"},
         {"icon": "frederickVanHal", "name": "Frederick van Hal (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, et le nécromancien le mieux placé sur cette page : van Hal est le <strong>premier nécromancien de l'Empire</strong>, celui qui leva les morts de Sylvanie bien avant les von Carstein. Son Invocation of Nehek renforce celle d'Isabella"},
-        {"icon": "theOldOneHero", "name": "The Old One (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, de classe <em>dignitary</em> — un profil de soutien de campagne qui sécurise un flanc pendant que Vlad et Isabella tiennent le centre"}
+        {"icon": "estrothTheSilent", "name": "Estroth the Silent (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, il apparaît sur la carte <strong>dès le tour 1</strong> dans la faction de Vlad et rejoint son armée directement. Le mod le rattache nommément à lui : sa compétence innée s'appelle <strong>« Standard Bearer of Vlad von Carstein »</strong>, et son étendard <em>Battle Standard of Carstein</em>. Aucune autre faction ne peut le recruter"}
       ],
       "army": [
         {"icon": "graveGuard", "name": "Grave Guard", "qty": 5, "note": "L'unité de base des Sternsmen, régiment favori de Vlad. Cinq blocs de Grave Guard forment le mur derrière lequel un vampire régénère : la seule chose qui le tue vraiment est d'être atteint"},
@@ -38,7 +38,7 @@
     "name": "Isabella von Carstein",
     "epithet": "La Dame de Sylvanie",
     "wikiUrl": "https://totalwarwarhammer.fandom.com/wiki/Isabella_von_Carstein",
-    "faction": "Von Carstein",
+    "faction": "Sylvania",
     "seal": "isabella",
     "portraitImage": "assets/portraits/isabella.png",
     "lore": "<p>Née mortelle, dernière fille d'une noble lignée sylvanienne, Isabella épousa Vlad sans savoir ce qu'il dissimulait. Quand la vérité éclata, elle choisit librement le sang noir plutôt que la trahison — et devint, à ses côtés, l'une des sorcières vampiriques les plus puissantes du Vieux Monde.</p>\n      <p>Après la mort de Vlad lors de la troisième Guerre des Vampires, Isabella sombra dans un deuil si total qu'elle se laissa quasiment disparaître, réduite à une ombre errant les ruines du Château de Drakenhof pendant des siècles.</p>\n      <p>Son retour dans les Immortal Empires est celui d'une femme qui a traversé le chagrin absolu et en est ressortie plus dure, plus froide — et déterminée à reconstruire ce que Vlad avait bâti.</p>",
@@ -294,12 +294,11 @@
         {"icon": "bougars", "name": "Bougars the Butcher (Héros Légendaire)", "qty": 1, "note": "Le Boucher de Mousillon (mod Mixu's Mousillon) — champion de mêlée brutal dont le nom est porté par un Régiment de Renom de la faction (Knights of Bougar)"},
         {"icon": "eustache", "name": "Eustache of the Rusting Blade (Héros Légendaire)", "qty": 1, "note": "La Lame Rouillée (mod Mixu's Mousillon) — duelliste maudit, second champion de l'Usurpateur"},
         {"icon": "aucassin", "name": "Aucassin de Hane (Héros Légendaire)", "qty": 1, "note": "L'un des hommes les plus discrètement influents de Mousillon et l'un des lieutenants clés de Mallobaude (mod Mixu's Mousillon) — il a une chance d'améliorer les relations diplomatiques avec les factions qu'il visite : le complément parfait de la mécanique de vassalisation bretonnienne (+50% d'Allégeance, faction)"},
-        {"icon": "estrothTheSilent", "name": "Estroth the Silent (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>3 Legendary Guys</em>, monté sur destrier infernal — et sa clé interne est <code>merovech</code>, le duc maudit de <strong>Mousillon</strong> lui-même. Aucun héros du lot n'est mieux placé sur cette fiche"},
         {"icon": "monsterOfWittgenstein", "name": "Monster of Wittgenstein (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod, champion difforme — la brutalité brute qui manque à un état-major par ailleurs composé de chevaliers et de conspirateurs"}
       ],
       "army": [
         {"icon": "theRoseLances", "name": "The Rose Lances (Black Knights)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) permet d'aligner les 2 exemplaires — l'élite montée de Mousillon, fer de lance de la charge à +15% (faction)"},
-        {"icon": "mslBlackKnightsLances", "name": "Black Knights (Lances & Barding)", "qty": 1, "note": "Chevaliers morts de Mousillon, lance au poing — le cœur de la charge, dopé par le +15% de bonus de charge en attaque (faction)"},
+        {"icon": "mslBlackKnightsLances", "name": "Black Knights (Lances & Barding)", "qty": 2, "note": "Chevaliers morts de Mousillon, lance au poing — le cœur de la charge, dopé par le +15% de bonus de charge en attaque (faction). Deux blocs plutôt qu'un : c'est la seule cavalerie lourde du roster qui ne soit pas un régiment unique, donc la seule que Mallobaude peut empiler"},
         {"icon": "knightsOfBougar", "name": "Knights of Bougar", "qty": 1, "note": "Régiment de Renom de la faction — la bande du Boucher, en écho au héros légendaire Bougars"},
         {"icon": "hellsteedKnights", "name": "Hellsteed Knights", "qty": 2, "note": "Cavalerie volante infernale — frappe l'artillerie et les casters pendant que la chevalerie enfonce"},
         {"icon": "mslMenAtArmsPolearm", "name": "Men-at-Arms (Polearm)", "qty": 2, "note": "+8 de Commandement et +8% de renouvellement (seigneur) — la piétaille famélique de la cité maudite, bien plus tenace qu'elle n'en a l'air, qui fixe l'ennemi pour la charge"},
