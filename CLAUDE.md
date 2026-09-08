@@ -152,20 +152,20 @@ Si la modification touche aux images :
 
 ## Chiffres de référence
 
-Relevés le 23/08/2026, après la refonte graphique « Old World ». Un écart n'est pas forcément une
-erreur, mais il doit être expliqué, jamais ignoré :
+Relevés le 23/08/2026 après la refonte graphique « Old World », remesurés le 08/09/2026. Un écart
+n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 
 | Mesure | Valeur | Comment la mesurer |
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 322 | somme des entrées de tous les `data/*.json` |
 | Cartes d'unité affichées, toutes fiches confondues | 4020 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2067 | ce que `verifier-icones.ps1` contrôle réellement |
+| Couples (faction, clé d'icône) cités par les fiches | 2068 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 322 fichiers, 1,92 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
-| Poids JS d'une page de faction | 56,7 Ko | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 5,1, non compressé |
+| Poids JS d'une page de faction | 56,4 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,7 de moyenne (11,4 au maximum), non compressé |
 | Poids JS de l'accueil | 38,3 Ko | `core.js` + `search.js`, non compressé |
-| Poids CSS | socle 10,7 / fiches 64,4 / accueil 24,4 Ko | une page en charge **deux** : socle + l'une des deux autres |
+| Poids CSS | socle 11,0 / fiches 64,9 / accueil 24,4 Ko | une page en charge **deux** : socle + l'une des deux autres |
 | Polices, page de faction | 4 familles, 5 fichiers, 179,7 Ko | mesuré au navigateur ; voir la note ci-dessous |
 
 Trois valeurs ont bougé depuis la clôture de la V1 le 16/08/2026, et les trois écarts sont
@@ -212,3 +212,86 @@ expliqués :
   La faction fait partie du chemin parce que **l'identifiant seul n'est pas unique** : `amon`
   désigne deux seigneurs, l'un chez les Hauts Elfes, l'autre chez Tzeentch. Indexer par `id` seul
   fait que l'un écrase le blason de l'autre — c'est arrivé pendant l'extraction.
+
+Trois valeurs de plus ont bougé au relevé du **08/09/2026**, et aucune n'est un défaut :
+
+- **2067 → 2068 couples (faction, clé d'icône).** Victor Guttman, seul ajout de la journée.
+
+  Le recomptage donne 2069 si l'on inclut `krellNote`, le champ propre à la fiche de Kemmler.
+  `verifier-icones.ps1` ne le compte pas : c'est ce qui explique l'unité d'écart entre une
+  vérification maison et le chiffre de ce tableau. Compter sans lui, sinon les deux sources
+  divergeront d'un cran sans raison apparente.
+- **CSS : socle 10,7 → 11,0 et fiches 64,4 → 64,9 Ko.** Le socle a pris le bandeau d'échec de
+  chargement, `fiches.css` la section 12 et la carte « Magie » passée en pleine largeur. Le total
+  d'une page de faction monte de 24,2 à 24,6 Ko, ce qui ne déplace pas les poids de page du README :
+  remesurés le 08/09 sur `dwarfs.html?id=thorgrim` en ligne, ils donnent 447,6 et 585,6 Ko, soit
+  les 448 et 586 déjà documentés.
+- **Module `js/units/<faction>.js` : 5,1 → 4,7 Ko.** Ce n'est pas un allègement, c'est une
+  correction de méthode : la valeur citée était **un** module, pas la moyenne des 32. La moyenne
+  réelle est de 4,7 Ko et le plus lourd pèse 11,4 Ko, ce qui fait varier le total d'une page de
+  faction entre 53 et 63 Ko selon la faction. Un chiffre unique ne rend pas compte de cet écart.
+
+---
+
+## Les héros de mod : le script fait foi, pas le lore
+
+Un mod peut assigner un héros à **une faction et une seule**, en dur, par script de campagne :
+
+```lua
+cm:spawn_unique_agent(... cm:model():world():faction_by_key("<faction>") ..., "<agent>", true);
+cm:add_first_tick_callback(function() ... end);
+```
+
+Un agent posé ainsi **appartient** à cette faction. Aucun autre seigneur ne peut le recruter, et
+`faction_agent_permitted_subtypes` — la table qu'on interroge d'habitude — ne le dit pas.
+
+**Cette règle a coûté cher.** Le 08/09/2026, l'audit du mod « 3 Legendary Guys » a trouvé
+**17 héros placés chez un seigneur qui n'y a pas accès**, sur 30. Ils avaient été placés d'après
+leur lore et leur clé interne. Quatre étaient des **inversions par paires** — Khazrak ↔ Malagor,
+Taurox ↔ Morghur — signature caractéristique du raisonnement par affinité. Le cas le plus net :
+Estroth the Silent porte la clé `merovech`, le duc maudit de Mousillon, et je l'avais donc mis chez
+Mallobaude ; sa compétence innée s'appelle **« Standard Bearer of Vlad von Carstein »**.
+
+**Le bon réflexe** : avant de placer un héros de mod, chercher `spawn_unique_agent` dans
+`script\campaign\**\*.lua` du pack. Si l'appel existe, la faction qu'il nomme est la seule réponse.
+Chercher aussi une compétence innée ou un objet qui nomme un seigneur — c'est ce qui a tranché pour
+Estroth, pour Ogg Halfheart (« First Mate of the Pirate Queen ») et pour Victor Guttman, décrit par
+la loc comme un prêtre de Sigmar de **Drakenhof**, le siège de Mannfred.
+
+**Où en est le balayage.** Les 133 packs du workshop ont été passés au crible le 08/09/2026 :
+**60 appels `spawn_unique_agent`, dans 7 mods**.
+
+| Mod | Appels | État |
+|---|---|---|
+| `!!!3_legendary_guys.pack` | 29 | **traité** |
+| `!scm_marienburg.pack` | 15 | non vérifié |
+| `um's_Mortkin.pack` | 5 | non vérifié |
+| `@red_hef_lords_public.pack` | 4 | 1 vérifié (Lirazel, correct) |
+| `scm_skaven_clans.pack` | 3 | non vérifié |
+| `_ork_pirates_V2.pack` | 2 | vérifiés (Orklid correct, Ramnbow absent du site) |
+| `froeb_dark_land_orcs.pack` | 2 | non vérifié |
+
+**27 des 31 appels restants passent la faction par une variable**, pas par une chaîne littérale :
+aucune regex ne les résout, il faut lire les scripts. Aucun défaut prouvé hors de « 3 Legendary
+Guys » à ce jour, mais **ce n'est pas une preuve d'absence de défaut**. Le gros morceau est
+Marienburg et ses 15 appels. Point de reprise si le sujet revient.
+
+Deux pièges de méthode relevés en chemin, tous deux ont produit de faux résultats :
+
+- **Ne pas rapprocher par sous-chaîne.** Chercher `ulrik` ramène « Ulrika Magdova Straghov », qui
+  n'a rien à voir ; `black` ramène Blacktoof, Black Orc Big Boss et The Black Mask ; `red` ramène
+  « F**red**erick ». Exiger **tous** les jetons de la clé, en mot entier.
+- **Une homonymie se prouve en montrant deux packs.** Une note affirmait qu'Infanta Leanora Navrre
+  existait en deux personnages distincts issus de deux mods : `scan_packs.ps1 -Match 'leanora'` ne
+  remonte qu'un seul pack. C'était faux.
+
+**Deux exceptions assumées à l'invariant « un seigneur légendaire n'est jamais héros »**, toutes
+deux arbitrées par le user — ne plus les signaler :
+
+- **Vlad et Isabella**, héros l'un chez l'autre : le +50 % de plafond de soin de Vlad exige
+  qu'Isabella serve dans la même armée.
+- **Infanta Leanora Navrre**, seigneur sur la page Côte Vampire et héroïne chez Cylostra Direfin.
+  Sans justification mécanique, celle-là : simplement acceptée le 08/09/2026.
+
+**Gitilla Da Hunter** relève du même conflit et a été tranché dans l'autre sens : il reste seigneur
+seul, on ne l'ajoute pas en héros chez Azhag.

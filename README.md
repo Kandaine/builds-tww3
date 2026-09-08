@@ -19,16 +19,17 @@ mods à des fins d'illustration.
 > Les cartes se comptent en **nombre de lignes** — `1 + heroes + army` par seigneur — et non en
 > quantités : sommer les `qty` donne 6 440, qui n'est pas le nombre de cartes affichées.
 >
-> Poids remesurés le 23/08/2026 sur le site en ligne, après la refonte graphique, sur
+> Poids mesurés le 23/08/2026 sur le site en ligne, après la refonte graphique, sur
 > `dwarfs.html?id=thorgrim` — 10 requêtes au premier affichage, 18 une fois la fiche déroulée.
-> Répartition du premier affichage :
+> Remesurés au même endroit le 08/09/2026 : **447,6 et 585,6 Ko**, soit les mêmes chiffres à
+> l'arrondi près. Répartition du premier affichage :
 >
 > | | |
 > |---|---|
 > | Bannière de faction | **357,7 Ko — 80 %** |
 > | JavaScript | 54 Ko |
 > | JSON de la faction | 32,7 Ko |
-> | CSS | 24,2 Ko |
+> | CSS | 24,6 Ko |
 > | Blason + portrait | 11,2 Ko |
 >
 > **Le chiffre suit donc surtout la bannière**, dont le poids va de 69 à 1 246 Ko selon l'image
@@ -75,6 +76,8 @@ index.html              page de recherche : les 322 seigneurs, filtre par factio
 data/<faction>.json x32 LE CONTENU : seigneurs, lore, effets, build de 20 slots
 js/core.js              catalogue des factions, bannières, chargement des données, utilitaires
 js/units/<faction>.js x32 chemins des images d'unités, d'UNE faction
+js/units/_hors-fiches.js  84 images extraites que plus aucune fiche ne cite — chargé par
+                        aucune page, conservé pour pouvoir en reprendre une
 js/app.js               rendu d'une page de faction
 js/search.js            rendu de la page de recherche
 css/socle.css           tokens, reset, base — chargé par les 33 pages
