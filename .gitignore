@@ -2,3 +2,7 @@
 Thumbs.db
 *.log
 scratch_*
+
+# Outillage d'agents, local a la machine : ne concerne pas le site
+AGENTS.md
+.agents/
