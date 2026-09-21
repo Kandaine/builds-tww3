@@ -13,7 +13,16 @@ des ~133 packs du Workshop. D'où cette copie.
 | Ici | En service |
 |---|---|
 | `tools/*.ps1` | `~/.claude/tools/tww/` |
-| `agents/tww-assets.md` | `~/.claude/agents/` |
+
+**Le sous-agent `tww-assets` n'est plus ici.** Il a été déplacé le 21/09/2026 dans
+`.claude/agents/tww-assets.md`, c'est-à-dire **dans le dépôt, en version de service** — il n'a donc
+plus besoin d'être sauvegardé, il l'est par le versionnement lui-même.
+
+Ce déplacement était interdit jusque-là : un test du 17/08/2026 avait conclu qu'un agent placé dans
+`<projet>/.claude/agents/` n'apparaissait pas dans la liste des agents disponibles. **Ce n'est plus
+vrai** — revérifié le 21/09/2026 en basculant le répertoire de travail sur un autre projet, dont
+l'agent local a bien été annoncé. Les agents de projet sont découverts, à condition que la session
+soit ouverte sur le dossier du projet et non sur son parent.
 
 ## À lire avant de s'en servir
 
@@ -34,8 +43,8 @@ Get-ChildItem C:\Users\Utilisateur\.claude\tools\tww -File | ForEach-Object {
   elseif((Get-FileHash $b -Algorithm MD5).Hash -ne $a){ "PERIME $($_.Name)" } }
 ```
 
-Pour restaurer après une réinstallation, recopier vers `~/.claude/tools/tww/` et
-`~/.claude/agents/`, puis vérifier deux dépendances qui ne sont pas dans le dépôt :
+Pour restaurer après une réinstallation, recopier vers `~/.claude/tools/tww/`, puis vérifier deux
+dépendances qui ne sont pas dans le dépôt :
 
 - **ImageMagick**, dont `extract_card.ps1` code le chemin en dur
   (`C:\Program Files\ImageMagick-7.1.2-Q16-HDRI\magick.exe`) ;
