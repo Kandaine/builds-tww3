@@ -1,4 +1,7 @@
-# Archive — outillage TWW3 et sous-agent (instantané du 17/08/2026)
+# Archive — outillage TWW3 et sous-agent
+
+**Instantané du 17/08/2026, rafraîchi le 21/09/2026.** Le nom du dossier garde la date d'origine
+pour ne pas casser les chemins ; c'est cette ligne qui fait foi sur la fraîcheur.
 
 **Ce dossier est une sauvegarde, pas la version en service.**
 
@@ -15,8 +18,21 @@ des ~133 packs du Workshop. D'où cette copie.
 ## À lire avant de s'en servir
 
 **C'est la copie de service qui fait foi, pas celle-ci.** Si l'un de ces fichiers est corrigé dans
-`~/.claude/`, cette archive devient périmée sans que rien ne le signale. Elle date du **17/08/2026**
-et n'est pas synchronisée automatiquement.
+`~/.claude/`, cette archive devient périmée sans que rien ne le signale : elle n'est pas
+synchronisée automatiquement.
+
+**Et c'est arrivé.** Au contrôle du 21/09/2026, un mois après l'instantané, `dump_db_rows.ps1`
+était périmé et **quatre fichiers manquaient entièrement** — tout l'outillage d'édition de pack,
+c'est-à-dire précisément ce qui coûte le plus cher à refaire. Le contrôle tient en une commande,
+à relancer après toute modification de `~/.claude/tools/tww/` :
+
+```powershell
+Get-ChildItem C:\Users\Utilisateur\.claude\tools\tww -File | ForEach-Object {
+  $a=(Get-FileHash $_.FullName -Algorithm MD5).Hash
+  $b="<archive>\tools\$($_.Name)"
+  if(-not (Test-Path $b)){ "MANQUE $($_.Name)" }
+  elseif((Get-FileHash $b -Algorithm MD5).Hash -ne $a){ "PERIME $($_.Name)" } }
+```
 
 Pour restaurer après une réinstallation, recopier vers `~/.claude/tools/tww/` et
 `~/.claude/agents/`, puis vérifier deux dépendances qui ne sont pas dans le dépôt :
@@ -37,6 +53,22 @@ Pour restaurer après une réinstallation, recopier vers `~/.claude/tools/tww/` 
 | `dump_loc_kv.ps1` | idem, en paires clé/valeur, via le parseur binaire |
 | `extract_card.ps1` | extrait une image d'un pack et l'écrit en 60×130 dans `assets/` |
 | `scan_packs.ps1` | balaie tous les packs du Workshop pour retrouver une clé |
+
+Quatre fichiers de plus depuis le 21/09/2026, pour **éditer** un pack et non plus seulement le lire.
+Ils servent à retirer d'un mod un seigneur qu'il impose à une faction — il n'existe pas d'autre
+moyen : ni l'ordre de chargement, ni un pack tiers, ni un script ne le font, les quatre pistes ont
+été testées en jeu.
+
+| Fichier | Rôle |
+|---|---|
+| `pack_lib.ps1` | `Read-Pack` / `Write-Pack` — lire un PFH4/PFH5 et le réécrire |
+| `table_lib.ps1` | retirer des lignes d'une table `db\`, par excision d'octets |
+| `loc_lib.ps1` | idem pour un `.loc` |
+| `EDITER-UN-PACK.md` | la marche à suivre, les deux partis pris, les sept pièges |
+
+**Le geste de sécurité à ne jamais sauter**, décrit dans ce mémo : valider l'écrivain par un
+aller-retour à vide — relire un pack, le réécrire sans rien changer, exiger un fichier identique au
+bit près — **avant** toute édition. Sans lui, aucune vérification ultérieure ne vaut.
 
 ## Pourquoi ils ne sont pas dans `tools/` du dépôt
 

@@ -19,10 +19,24 @@
 param(
   [Parameter(Mandatory=$true)][string]$PackPath,
   [Parameter(Mandatory=$true)][string]$Table,
-  [string]$Schema='C:\Users\Utilisateur\OneDrive\Desktop\wh3mm-win32-x64-2.15.0\resources\app\.webpack\schema\schema_wh3.json',
+  [string]$Schema='',
   [string]$Out=""
 )
 . "$PSScriptRoot\_unpack.ps1"
+
+# --- ou trouver le schema
+# Il vivait en dur sur wh3mm-win32-x64-2.15.0. Le gestionnaire s'est mis a jour en
+# 2.24.0 et le chemin est devenu faux : le script echouait alors sur ReadAllText, et
+# l'erreur suivante ("table absente du schema") faisait croire a un probleme de table.
+# On prend donc le dossier de version le plus recent au lieu d'en figer un.
+if(-not $Schema){
+  $base='C:\Users\Utilisateur\OneDrive\Desktop'
+  $cand=@(Get-ChildItem $base -Directory -Filter 'wh3mm-win32-x64-*' -EA SilentlyContinue |
+          ForEach-Object { Join-Path $_.FullName 'resources\app\.webpack\schema\schema_wh3.json' } |
+          Where-Object { Test-Path $_ } | Sort-Object)
+  if(-not $cand.Count){ Write-Error "schema_wh3.json introuvable sous $base -- passer -Schema"; exit 1 }
+  $Schema=$cand[-1]
+}
 
 # --- definitions de la table, toutes versions confondues
 $stxt=[System.IO.File]::ReadAllText($Schema)
