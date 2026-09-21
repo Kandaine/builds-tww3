@@ -235,13 +235,18 @@ Trois valeurs de plus ont bougé au relevé du **08/09/2026**, et aucune n'est u
 
 ## Les héros de mod : le script fait foi, pas le lore
 
-Un mod peut assigner un héros à **une faction et une seule**, en dur, par script de campagne :
+Un mod peut assigner un héros à **une faction et une seule**, en dur, par script de campagne. **Il
+existe au moins deux fonctions pour ça**, et c'est le piège :
 
 ```lua
+-- 1. l'agent est donné à la faction
 cm:spawn_unique_agent(... cm:model():world():faction_by_key("<faction>") ..., "<agent>", true);
-cm:add_first_tick_callback(function() ... end);
+
+-- 2. l'agent est posé DANS l'armée du chef de la faction
+cm:spawn_agent_at_military_force(faction, force, "<classe>", "<agent>");
 ```
 
+Les deux sont appelées depuis un `cm:add_first_tick_callback`, souvent sous un `cm:is_new_game()`.
 Un agent posé ainsi **appartient** à cette faction. Aucun autre seigneur ne peut le recruter, et
 `faction_agent_permitted_subtypes` — la table qu'on interroge d'habitude — ne le dit pas.
 
@@ -252,14 +257,24 @@ Taurox ↔ Morghur — signature caractéristique du raisonnement par affinité.
 Estroth the Silent porte la clé `merovech`, le duc maudit de Mousillon, et je l'avais donc mis chez
 Mallobaude ; sa compétence innée s'appelle **« Standard Bearer of Vlad von Carstein »**.
 
-**Le bon réflexe** : avant de placer un héros de mod, chercher `spawn_unique_agent` dans
-`script\campaign\**\*.lua` du pack. Si l'appel existe, la faction qu'il nomme est la seule réponse.
+**Le bon réflexe** : avant de placer un héros de mod, chercher **`spawn_unique_agent` ET
+`spawn_agent_at_military_force`** dans `script\campaign\**\*.lua` du pack. Si l'un des deux appels
+existe, la faction qu'il nomme est la seule réponse.
 Chercher aussi une compétence innée ou un objet qui nomme un seigneur — c'est ce qui a tranché pour
 Estroth, pour Ogg Halfheart (« First Mate of the Pirate Queen ») et pour Victor Guttman, décrit par
 la loc comme un prêtre de Sigmar de **Drakenhof**, le siège de Mannfred.
 
-**Où en est le balayage.** Les 133 packs du workshop ont été passés au crible le 08/09/2026 :
-**60 appels `spawn_unique_agent`, dans 7 mods**.
+**Où en est le balayage, et pourquoi il est incomplet.** Les 133 packs du workshop ont été passés au
+crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
+
+> ⚠️ **Ce relevé ne cherchait que `spawn_unique_agent`.** La seconde fonction,
+> `spawn_agent_at_military_force`, n'a été découverte que le 21/09/2026 — en constatant qu'elle
+> rattache **Alathenar** à Tiranoc dans une mise à jour de LYH. Le tableau ci-dessous est donc un
+> **plancher, pas un inventaire** : il dit ce qui a été trouvé, jamais ce qui existe.
+>
+> Il est doublement périmé : plusieurs de ces mods ont été mis à jour après le 08/09, et le script
+> d'Alathenar n'existait pas encore quand le balayage a tourné. **À relancer avec les deux
+> fonctions** avant de s'en servir pour conclure quoi que ce soit.
 
 | Mod | Appels | État |
 |---|---|---|
@@ -273,8 +288,9 @@ la loc comme un prêtre de Sigmar de **Drakenhof**, le siège de Mannfred.
 
 **27 des 31 appels restants passent la faction par une variable**, pas par une chaîne littérale :
 aucune regex ne les résout, il faut lire les scripts. Aucun défaut prouvé hors de « 3 Legendary
-Guys » à ce jour, mais **ce n'est pas une preuve d'absence de défaut**. Le gros morceau est
-Marienburg et ses 15 appels. Point de reprise si le sujet revient.
+Guys » à ce jour, mais **ce n'est pas une preuve d'absence de défaut** — ni sur ces 27, ni sur ce
+que la seconde fonction aurait remonté. Le gros morceau est Marienburg et ses 15 appels. Point de
+reprise si le sujet revient.
 
 Deux pièges de méthode relevés en chemin, tous deux ont produit de faux résultats :
 
