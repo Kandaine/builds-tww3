@@ -234,6 +234,45 @@ la seule vue qui montre ce qu'un seigneur donné peut réellement aligner.
 
 ---
 
+## Retirer un mod
+
+Le miroir de la section précédente. Quand le user désactive un mod — parce qu'un DLC l'a rendu
+redondant, qu'il a cassé à une mise à jour, ou qu'il n'en veut plus — se demander **quels autres
+builds perdent une pièce**, et pas seulement la fiche du seigneur que le mod apportait.
+
+**Pourquoi ce contrôle est indispensable : rien ne casse visiblement.** L'image de la carte reste
+dans `assets/`, la clé reste déclarée dans `js/units/<faction>.js`, la fiche s'affiche normalement et
+les validateurs passent. Le site continue simplement de recommander une unité qui n'existe plus
+dans le jeu du visiteur. Aucun script ne le détecte.
+
+**La procédure, deux minutes :**
+
+1. Lister ce que le mod déclare, **par le schéma** et jamais par un dump à plat :
+   `dump_db_rows.ps1 -Table main_units_tables` (unités et héros, avec leur `caste`) et
+   `-Table agent_subtypes_tables` (les héros). Le schéma est trouvé tout seul.
+2. Chercher chaque élément sur les fiches **par son nom complet**, puis sa clé dans
+   `js/units/*.js`. **Jamais par sous-chaîne** — voir le piège ci-dessous.
+3. **Séparer la fiche du seigneur apporté par le mod des autres.** La question n'est pas « le mod
+   est-il utilisé ? », c'est « quel *autre* build perd une pièce ? ». La fiche de son propre seigneur
+   sera de toute façon à refaire.
+4. Pour chaque autre fiche touchée, noter la ligne : son build devra remplacer l'élément, et ses
+   notes qui s'y réfèrent devront être relues.
+
+**Le piège, rencontré dès le premier usage.** Chercher « Ulric » pour vérifier le prêtre d'Ulric du
+mod Boris Todbringer remontait aussi *Swords of Ulric*, présent sur six fiches — un Régiment de
+Renom **vanilla**, absent des unités du mod, qui n'était pas concerné. Le contrôle décisif est de
+vérifier que l'élément figure bien dans la liste du mod (étape 1) avant de le compter comme touché.
+
+**Cas de référence — `boris_todbringerl.pack`, désactivé le 26/09/2026** au profit du Boris
+officiel du DLC *Lords of the End Times*. Le mod déclare 9 unités : les 3 variantes de Boris, plus
+un Priest of Ulric (héros), Emil Valgeir (caste seigneur) et un loup blanc du Middenland. Seuls les
+deux premiers sont sur le site, et **uniquement sur la fiche de Boris**. Aucun autre build touché.
+
+**Ce qui va revenir** : le DLC rend redondants les mods qui apportaient Nagash, Walach Harkon ou
+Thanquol. Chacun devra passer par ce contrôle avant sa désactivation.
+
+---
+
 ## Vérification
 
 Trois contrôles, dans cet ordre. Aucun ne remplace les autres.
