@@ -57,9 +57,12 @@ pour l'aider à vérifier.
 **Un seigneur légendaire n'est jamais placé en héros de build.** Une seule exception, validée par le
 user le 19/08/2026 : **Vlad et Isabella von Carstein**, chacun héros dans le build de l'autre. Le jeu
 prévoit ce couple — le +50% de plafond de soin de Vlad ne s'active que si Isabella sert dans la même
-armée. Ne pas le corriger. Attention aussi aux **homonymies entre mods** : une *Infanta Leanora
-Navrre* figure en héroïne chez Cylostra Direfin **et** en seigneur sur la page Vampire Coast ; ce
-sont deux personnages distincts, et la note de sa fiche l'explique.
+armée. Ne pas le corriger. Une seconde exception, sans justification mécanique mais **acceptée par
+le user le 08/09/2026** : *Infanta Leanora Navrre*, seigneur sur la page Vampire Coast **et**
+héroïne chez Cylostra Direfin. C'est **le même personnage** — un seul pack la fournit,
+`!!!3_legendary_guys.pack` ; une ancienne version de ce skill affirmait à tort une homonymie entre
+deux mods. Ne plus la signaler. *Gitilla Da Hunter* relève du même conflit et a été tranché dans
+l'autre sens : il reste seigneur seul.
 
 **Exactement 20 slots** : 1 seigneur + Σ qty des héros + Σ qty du corps d'armée. Une unité invoquée
 par une capacité ne consomme aucun slot — la mentionner dans la note, pas dans la liste.
@@ -189,9 +192,11 @@ en §6 de `references/analyse-pack.md`.
 
 **Et vérifier qu'il n'est pas déjà seigneur sur le site** : `grep` son nom dans `data\*.json`. Un mod
 peut proposer en héros un personnage qu'un autre a déjà donné comme seigneur légendaire, et un
-seigneur légendaire n'est jamais placé en héros de build — sauf le couple Vlad / Isabella, et sauf
-homonymie entre deux mods (voir les invariants). Un même nom ne prouve pas un même personnage :
-lire la loc des deux mods avant de conclure.
+seigneur légendaire n'est jamais placé en héros de build — sauf les deux exceptions arbitrées par le
+user (voir les invariants). Un même nom ne prouve pas un même personnage, **ni deux personnages
+différents** : une homonymie entre mods se prouve en montrant **deux packs** qui fournissent chacun
+le sien (`scan_packs.ps1` sur son nom de fichier ou de portrait). L'affirmer sans cette preuve a déjà
+produit une fausse exception, celle de Leanora.
 
 **3. Libérer le slot sur une unité doublée**, jamais sur une pièce unique : passer un `qty: 2` à 1
 plutôt que supprimer un régiment de renom. Le total doit rester à 20.
@@ -258,15 +263,47 @@ dans le jeu du visiteur. Aucun script ne le détecte.
 4. Pour chaque autre fiche touchée, noter la ligne : son build devra remplacer l'élément, et ses
    notes qui s'y réfèrent devront être relues.
 
-**Le piège, rencontré dès le premier usage.** Chercher « Ulric » pour vérifier le prêtre d'Ulric du
-mod Boris Todbringer remontait aussi *Swords of Ulric*, présent sur six fiches — un Régiment de
-Renom **vanilla**, absent des unités du mod, qui n'était pas concerné. Le contrôle décisif est de
-vérifier que l'élément figure bien dans la liste du mod (étape 1) avant de le compter comme touché.
+**Un même nom ne prouve pas une même unité — trois filtres, dans cet ordre.** Chacun a été ajouté
+après un faux positif réel :
+
+1. **Le nom doit figurer dans la liste du mod** (étape 1). Chercher « Ulric » pour le prêtre du mod
+   Boris Todbringer remontait *Swords of Ulric*, présent sur six fiches — un Régiment de Renom
+   vanilla, absent des unités du mod.
+2. **Le nom ne doit pas exister en vanilla.** Comparer aux `land_units_onscreen_name_*` de
+   `local_en.pack` : un nom partagé avec le jeu de base désigne, sur le site, l'unité vanilla, qui
+   survit à la désactivation. Attention après un DLC — il officialise des noms : en septembre 2026,
+   *Walach Harkon* est devenu un nom vanilla.
+3. **Le nom ne doit pas être porté aussi par un autre mod actif — et c'est le filtre qui ne se voit
+   pas.** *Black Grail Knights* passait les deux premiers : il figurait bien dans Champions of
+   Undeath et n'existait pas en vanilla. Mais **trois mods** déclarent chacun leur unité sous ce nom
+   (`ovn_dk_cav_black_grail_knights_ror`, `mixu_msl_cav_black_grail_knights`,
+   `black_grail_knight_0/1/2`), et les deux lignes du site venaient des deux autres.
+
+   Pour trancher le troisième filtre, trois indices, du plus fort au plus faible : la **clé d'icône**
+   de la ligne (`blackGrailKnightsDk` trahissait le mod du Dread King) ; le **mod d'origine du
+   seigneur** de la fiche, souvent cité dans ses notes ; et la **note** elle-même (« régiment de
+   renom, cap 1 » collait au `_ror` d'un seul des trois). En cas de doute persistant, le Unit & Spell
+   Browser du user tranche.
+
+   `scan_packs.ps1` ne sert **pas** ici : il cherche dans les **chemins** des packs, pas dans le
+   contenu des tables. Chercher une clé d'unité ne renvoie rien même quand elle existe. Il faut
+   dumper la loc des mods candidats avec `dump_loc_kv.ps1 -KeyLike 'land_units_onscreen_name*'`.
+
+**Variantes sans nom.** Un pack « fusionné » embarque souvent des compatibilités pour d'autres mods :
+des unités sans nom dans sa propre loc, dont la clé trahit l'origine
+(`bm_wf_obsidian_lzd_cha_lord_adohi_tehga`). Leur nom vient de l'autre mod, qui les fournit aussi —
+les ignorer, sauf si la fiche concernée cite le pack qu'on retire.
 
 **Cas de référence — `boris_todbringerl.pack`, désactivé le 26/09/2026** au profit du Boris
 officiel du DLC *Lords of the End Times*. Le mod déclare 9 unités : les 3 variantes de Boris, plus
 un Priest of Ulric (héros), Emil Valgeir (caste seigneur) et un loup blanc du Middenland. Seuls les
 deux premiers sont sur le site, et **uniquement sur la fiche de Boris**. Aucun autre build touché.
+
+**Second cas — Champions of Undeath (workshop 3022054734), analysé le 27/09/2026.** Un pack
+fusionné de 5,67 Go : 213 unités, dont 4 redéfinitions vanilla et 209 propres. Le croisement par nom
+remontait 14 lignes du site ; après les trois filtres, **12 restaient, toutes sur la fiche de Walach
+Harkon**, le seigneur que le mod apporte (16 slots sur 20). Les deux autres — *Black Grail Knights*
+chez The Dread King et chez Lady of the Black Grail — étaient des homonymes venus d'autres mods.
 
 **Ce qui va revenir** : le DLC rend redondants les mods qui apportaient Nagash, Walach Harkon ou
 Thanquol. Chacun devra passer par ce contrôle avant sa désactivation.
