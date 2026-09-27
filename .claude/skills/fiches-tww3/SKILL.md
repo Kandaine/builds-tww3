@@ -273,6 +273,14 @@ après un faux positif réel :
    `local_en.pack` : un nom partagé avec le jeu de base désigne, sur le site, l'unité vanilla, qui
    survit à la désactivation. Attention après un DLC — il officialise des noms : en septembre 2026,
    *Walach Harkon* est devenu un nom vanilla.
+
+   **Pour un seigneur ou un héros nommé, comparer le personnage, pas la chaîne.** Les mods titrent
+   souvent leurs personnages — « Neferata, Queen of the Lahmians » — là où le jeu officiel écrit
+   « Neferata ». La comparaison à l'identique l'a déclarée non officielle, et c'est le user qui a
+   corrigé : elle l'était depuis le DLC, sous `wh3_dlc29_vmp_cha_neferata`. Avant de conclure, retirer
+   le titre après la virgule, **et** chercher le nom propre dans les clés vanilla
+   `wh3_dlc*_…_cha_<nom>`. Un seigneur devenu officiel ne disparaît pas : sa fiche est à refaire sur
+   les données officielles, pas à supprimer.
 3. **Le nom ne doit pas être porté aussi par un autre mod actif — et c'est le filtre qui ne se voit
    pas.** *Black Grail Knights* passait les deux premiers : il figurait bien dans Champions of
    Undeath et n'existait pas en vanilla. Mais **trois mods** déclarent chacun leur unité sous ce nom
@@ -304,6 +312,18 @@ fusionné de 5,67 Go : 213 unités, dont 4 redéfinitions vanilla et 209 propres
 remontait 14 lignes du site ; après les trois filtres, **12 restaient, toutes sur la fiche de Walach
 Harkon**, le seigneur que le mod apporte (16 slots sur 20). Les deux autres — *Black Grail Knights*
 chez The Dread King et chez Lady of the Black Grail — étaient des homonymes venus d'autres mods.
+
+**Troisième cas — Legions of Nagash (workshop 3293001739), analysé le 27/09/2026.** Le mod pose
+**trois** chefs de faction : Nagash, Neferata, Kalledria. Les deux premiers sont devenus officiels
+avec le DLC — Neferata n'a été reconnue telle qu'après correction par le user, voir le filtre 2.
+Seule **Kalledria** disparaîtrait. Et **un autre build est réellement touché** : les *Glowing
+Ghouls* d'Arkhan the Black, que seul ce pack fournit sur les 132 installés — vérifié par un balayage
+complet de la loc, pas par déduction. *Bone Colossus* chez The Dread King était un homonyme
+d'`ovn_dread_king`.
+
+**Quand un seul personnage du mod manque au jeu**, désactiver n'est pas la seule issue : on peut
+éditer une copie du pack qui ne garde que lui, comme la manip LYH → DEER24. C'est le plan retenu
+pour Kalledria, noté dans la mémoire du DLC ; l'outillage est dans `~/.claude/tools/tww/`.
 
 **Ce qui va revenir** : le DLC rend redondants les mods qui apportaient Nagash, Walach Harkon ou
 Thanquol. Chacun devra passer par ce contrôle avant sa désactivation.
