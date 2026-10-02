@@ -23,8 +23,10 @@
 #   20..23  taille de l'index
 #   24..27  horodatage
 #   puis    bloc de dependances, index, donnees
-# Index, une entree : taille (u32) + drapeau de compression (u8) + chemin ASCII
-# termine par un zero. PAS d'horodatage par entree ici -- verifie en constatant que
+# Index, une entree : taille (u32) + drapeau de compression (u8) + chemin UTF-8
+# termine par un zero. UTF-8 et non ASCII : ab_mixu_legendary_lords.pack contient un
+# chemin avec un tiret long (e2 80 93). Lu en ASCII, il devenait "???" et le pack
+# reecrit aurait reference un fichier inexistant (constate et corrige le 02/10/2026). PAS d'horodatage par entree ici -- verifie en constatant que
 # l'index se consomme exactement (48439/48439 octets). Un pack qui en aurait laisserait
 # des octets en trop : le controle est dans Read-Pack, ne pas le retirer.
 
@@ -49,8 +51,11 @@ function Read-Pack {
       $taille=[BitConverter]::ToUInt32($ib,$p); $p+=4
       $comp=$ib[$p]; $p+=1
       $st=$p; while($ib[$p] -ne 0){ $p++ }
-      $chemin=[Text.Encoding]::ASCII.GetString($ib,$st,$p-$st); $p++
-      [void]$entrees.Add([PSCustomObject]@{Chemin=$chemin;Taille=$taille;Comp=$comp;Offset=$off;Octets=$null})
+      # $nom et non $chemin : PowerShell ignore la casse, et $chemin ecrasait le
+      # parametre $Chemin -- l'objet renvoye portait alors en .Chemin le chemin de la
+      # derniere entree au lieu de celui du pack (constate le 02/10/2026).
+      $nom=[Text.Encoding]::UTF8.GetString($ib,$st,$p-$st); $p++
+      [void]$entrees.Add([PSCustomObject]@{Chemin=$nom;Taille=$taille;Comp=$comp;Offset=$off;Octets=$null})
       $off+=$taille
     }
     # Si l'index ne se consomme pas exactement, la disposition n'est pas celle qu'on
@@ -78,8 +83,8 @@ function Write-Pack {
   foreach($e in $Entrees){
     $idx.Write([BitConverter]::GetBytes([uint32]$e.Octets.Length),0,4)
     $idx.WriteByte([byte]$e.Comp)
-    $chemin=[Text.Encoding]::ASCII.GetBytes($e.Chemin)
-    $idx.Write($chemin,0,$chemin.Length)
+    $nom=[Text.Encoding]::UTF8.GetBytes($e.Chemin)
+    $idx.Write($nom,0,$nom.Length)
     $idx.WriteByte(0)
   }
   $octetsIdx=$idx.ToArray(); $idx.Dispose()

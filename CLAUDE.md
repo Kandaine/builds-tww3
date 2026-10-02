@@ -17,6 +17,8 @@ sous-estime l'enjeu de chaque modification :
 Ma méthode de travail générale est dans `~/.claude/CLAUDE.md`. Ce fichier-ci ne porte que ce
 qui est propre au site. Le détail du métier — analyser un mod, rédiger une fiche, extraire une
 carte d'unité — vit dans le skill `.claude/skills/fiches-tww3/`, chargé seulement au besoin.
+Les mods eux-mêmes — trouver ceux qu'une mise à jour du jeu a cassés et leur poser un patch
+temporaire — ont le leur, `.claude/skills/patcher-un-mod/`.
 
 ## Critères d'acceptation
 
