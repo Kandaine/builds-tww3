@@ -12,10 +12,16 @@
 #   patcher-pack.ps1 -Pack <chemin> -RetirerEntrees 'db\x_tables\y' -Poser
 #   patcher-pack.ps1 -Pack <chemin> -RetirerLignes @(@{Entree='db\t_tables\f';Colonne='key';Valeurs=@('a','b')})
 #   patcher-pack.ps1 -Pack <chemin> -RetirerLoc @(@{Entree='text\db\f.loc';Motifs=@('mixer_ime_cth_')})
+#   patcher-pack.ps1 -Pack <chemin> -RemplacerEntrees @{'script\campaign\mod\x.lua'='C:\...\x.lua'} -Poser
 #   -Sortie <chemin> : ecrire ailleurs qu'a cote du pack (sans -Poser).
+#
+# -RemplacerEntrees ne sait que REMPLACER une entree existante, jamais en ajouter : un
+# chemin interne absent du pack est une faute de frappe, pas une intention. Le fichier
+# fourni est ecrit tel quel, octet pour octet, en clair (drapeau 0).
 param(
   [Parameter(Mandatory=$true)][string]$Pack,
   [switch]$MettreANiveau,
+  [hashtable]$RemplacerEntrees=@{},
   [string[]]$RetirerEntrees=@(),
   [hashtable[]]$RetirerLignes=@(),
   [hashtable[]]$RetirerLoc=@(),
@@ -73,12 +79,24 @@ function Get-TableJeu([string]$Table){
   return $cacheJeu[$Table]
 }
 
+# --- controle des remplacements demandes, avant toute lecture
+foreach($c in $RemplacerEntrees.Keys){
+  if(-not ($p.Entrees | Where-Object Chemin -eq $c)){ throw "entree a remplacer introuvable dans le pack : $c" }
+  if(-not (Test-Path -LiteralPath $RemplacerEntrees[$c])){ throw "fichier de remplacement introuvable : $($RemplacerEntrees[$c])" }
+  if($RetirerEntrees -contains $c -or ($RetirerLignes + $RetirerLoc | Where-Object { $_.Entree -eq $c })){ throw "entree a la fois remplacee et editee : $c" }
+}
+
 # --- calcul des remplacements
 $remplacees=@{}; $converties=0; $echecs=@()
 $fMod=[IO.File]::OpenRead($Pack)
 try{
   foreach($e in $p.Entrees){
     if($RetirerEntrees -contains $e.Chemin){ continue }
+    if($RemplacerEntrees.ContainsKey($e.Chemin)){
+      $remplacees[$e.Chemin]=[IO.File]::ReadAllBytes($RemplacerEntrees[$e.Chemin])
+      "  remplacee : $($e.Chemin)  ($($e.Taille) -> $($remplacees[$e.Chemin].Length) octets)"
+      continue
+    }
     $lignes=@($RetirerLignes | Where-Object { $_.Entree -eq $e.Chemin })
     $locs=@($RetirerLoc | Where-Object { $_.Entree -eq $e.Chemin })
     $estDb=$e.Chemin -match '^db\\([^\\]+)\\'; $table= if($estDb){$Matches[1]}else{''}

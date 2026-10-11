@@ -49,11 +49,22 @@ des références (lent, à réserver à un ou deux mods suspects).
 **Le journal date du dernier lancement.** Si le user a coché ou décoché des mods depuis, la liste
 est à jour des fichiers mais pas de sa sélection : lui demander, ou passer `-Mods`.
 
-**Ne pas se fier aux diagnostics de RPFM tant que son cache n'est pas régénéré** (menu *Game
-Selected*). Le 02/10/2026, sur Graybeard's Prospectors, 4 de ses 6 erreurs étaient fausses :
-deux régions présentes dans `db.pack`, et deux noms dont l'identifiant est un **entier** dans
-`names_tables` alors que RPFM le cherche comme texte. Seules les deux références d'animation
-étaient réelles.
+**Les erreurs « Invalid Key » de RPFM sur un script Lua ne prouvent rien.** Le 02/10/2026, sur
+Graybeard's Prospectors, 4 de ses 6 erreurs étaient fausses, et elles le restaient le 11/10 avec
+un cache RPFM régénéré la veille — ce n'est donc pas une question de cache, mais de la façon dont
+RPFM contrôle les chaînes écrites en dur dans un script :
+
+- `names_name_230101557` : l'identifiant existe dans `names_tables`, mais stocké en **entier** ;
+  RPFM cherche la chaîne `names_name_…` ;
+- `wh3_main_combi_region_vulture_mountain` : la région est dans `regions_tables` et sur les 7
+  cartes de `campaign_map_regions_tables` ; RPFM y cherche une colonne `key` que cette table n'a
+  pas (`campaign_map`, `region`).
+
+Avant de « corriger » une telle erreur, la vérifier en lisant la table **par le schéma**
+(`dump_db_rows.ps1`), jamais par une recherche à plat. Seules les deux références d'animation
+de ce mod étaient réelles. Si le user veut malgré tout un correctif, la forme utile est de
+**blinder le script** — vérifier chaque objet (`is_null_interface()`) avant de s'en servir —
+puisqu'aucun correctif ne fait taire RPFM sans changer le comportement du mod.
 
 **Le `.stack.txt` d'un plantage ne désigne aucun mod** : il ne contient que des noms de modules
 (`Warhammer3`, `ntdll`), sans symbole. Inutile de le relire pour trouver un coupable.
@@ -71,7 +82,18 @@ scripts\patcher-pack.ps1 -Pack <chemin> -MettreANiveau -Poser
 scripts\patcher-pack.ps1 -Pack <chemin> -RetirerEntrees 'db\x_tables\y' -Poser
 scripts\patcher-pack.ps1 -Pack <chemin> -RetirerLignes @(@{Entree='db\t_tables\f';Colonne='key';Valeurs=@('a')})
 scripts\patcher-pack.ps1 -Pack <chemin> -RetirerLoc @(@{Entree='text\db\f.loc';Motifs=@('mixer_ime_cth_')})
+# remplacer une entree existante par un fichier (un script corrige, par exemple)
+scripts\patcher-pack.ps1 -Pack <chemin> -RemplacerEntrees @{'script\campaign\mod\x.lua'='C:\...\x.lua'} -Poser
 ```
+
+**Remplacer un script Lua** : l'extraire du pack, le corriger dans le dossier temporaire, puis le
+réinjecter par `-RemplacerEntrees`. Garder le **nom de fichier et le nom de la fonction** : un
+script de `script\campaign\mod\` peut n'être appelé par aucun autre fichier du pack (c'est le cas
+de `grey_dwf_spawn`), le renommer risquerait de casser ce qui le déclenche. Sans interpréteur Lua
+sur la machine, contrôler au minimum : ASCII et fins de ligne identiques à l'original, autant de
+`end` que de `function`/`if`/`do`, parenthèses équilibrées, et la **même suite d'appels `cm:`**
+que l'original. Puis demander au user de rouvrir le pack dans RPFM, qui signale les erreurs de
+syntaxe.
 
 **Ce qu'il fait, dans l'ordre — chaque étape arrête tout si elle échoue :**
 
