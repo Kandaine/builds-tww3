@@ -41,5 +41,10 @@ const unitImages = {
   frolickersBubonic: 'assets/units/frolickersBubonic.png',
   uncleFuruncle: 'assets/units/uncleFuruncle.png',
   festeringStooges: 'assets/units/festeringStooges.png',
-  rottingRiders: 'assets/units/rottingRiders.png'
+  rottingRiders: 'assets/units/rottingRiders.png',
+  // Putrid Blightkings (Dual Axes) et leur RoR The Repugnauts of Brass Keep (DLC Lords of the End
+  // Times) : memes cartes que dans js/units/warriors-of-chaos.js, pour la fiche de Tamurkhan,
+  // dont les effets visent toutes les unites non demoniaques.
+  putridBlightkingsDualAxes: 'assets/units/putridBlightkingsDualAxes.png',
+  repugnautsOfBrassKeep: 'assets/units/repugnautsOfBrassKeep.png'
 };

@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4077 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2125 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4079 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2127 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -286,6 +286,11 @@ the End Times* :
   Khalida, du Dread King et de Rakaph réalignés sur leurs captures post-DLC. Rakaph gagne le Khemric
   Titan et son Régiment de Renom Icon of Usirian, que ses effets visent désormais : deux lignes et
   deux clés de plus au module des Rois des Tombes.
+- **Puis 4077 → 4079 cartes et 2125 → 2127 couples : lot Guerriers du Chaos et Nurgle.** Effets d'Archaon
+  (résistance physique au lieu du Ward Save), de Sigvald (Mirror Guard +2, « Guardian » disparu), de
+  Tamurkhan et d'Epidemius réalignés sur leurs captures post-DLC. Tamurkhan gagne les Putrid
+  Blightkings (Dual Axes) et The Repugnauts of Brass Keep, que ses effets non démoniaques visent :
+  deux lignes, et deux clés reprises du module des Guerriers du Chaos.
 
 ---
 
