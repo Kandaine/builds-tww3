@@ -199,6 +199,37 @@ Et si le mal est fait : `git diff --unified=0` sur les fichiers concernés, filt
 `qty`, isole exactement les lignes modifiées. Chaque hunk `-`/`+` donne l'ancienne valeur à
 restaurer.
 
+### Insérer une fiche par script : les fins de ligne
+
+Le clone convertit les fins de ligne (`core.autocrlf=true`) : le dépôt stocke les `data\*.json` en
+LF, le disque les sert en **CRLF**. Un script qui découpe le fichier sur `"\n]"` et recolle un bloc
+écrit avec `\n` produit donc un fichier **mixte**, et laisse un `\r` isolé devant la virgule
+d'insertion — `  }\r,` au lieu de `  },`.
+
+**Deux choses se passent alors, et aucune ne se voit.** Le JSON reste valide, les validateurs
+passent, le site s'affiche. Mais Git, devant un fichier mixte, n'applique plus la conversion : le
+commit enregistre les retours chariot dans le dépôt. Et le `\r` isolé fait classer le fichier comme
+binaire (`-text`). Pire : une fois un blob CRLF dans le dépôt, Git ne le reconvertit plus au commit
+suivant — tenter de « réparer » en réenregistrant le fichier CRLF ne fait qu'étendre les `\r` à tout
+le fichier. Arrivé le 17/10/2026 avec la fiche de Kastabull dans `chaos-dwarfs.json` : 232 lignes
+CRLF dans le dépôt, puis 269 au commit censé corriger, et il a fallu un troisième commit.
+
+Deux gestes :
+
+1. **Dans le script, détecter la fin de ligne du fichier et l'utiliser pour tout ce qu'on insère**
+   (`const eol = s.includes("\r\n") ? "\r\n" : "\n"`), et chercher le point d'insertion avec elle
+   (`s.lastIndexOf(eol + "]")`). L'outil `Edit` n'a pas ce problème, il conserve les fins de ligne.
+2. **Avant de pousser, après le commit** :
+
+   ```bash
+   git ls-files --eol data/<faction>.json
+   git cat-file -p HEAD:data/<faction>.json | tr -cd '\r' | wc -c
+   ```
+
+   La première doit afficher `i/lf`, la seconde `0`. Sinon, ne pas pousser : retirer **tous** les
+   `\r` du fichier de travail (`sed -i 's/\r//g'`), le réajouter — Git stocke alors du LF tel quel —
+   et amender ou recommiter.
+
 **`role`** — trois à cinq phrases qui expliquent la logique de la liste. Partir de la mécanique
 centrale du seigneur, pas d'une description du roster. La bonne question : qu'est-ce qui rend cette
 faction différente des autres de sa race, et qu'est-ce que cela impose au build ?
