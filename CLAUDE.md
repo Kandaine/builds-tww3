@@ -160,12 +160,12 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 | Mesure | Valeur | Comment la mesurer |
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
-| Seigneurs légendaires | 324 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4057 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2113 | ce que `verifier-icones.ps1` contrôle réellement |
+| Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
+| Cartes d'unité affichées, toutes fiches confondues | 4069 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2119 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
-| Blasons de faction | 324 fichiers, 1,95 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
-| Poids JS d'une page de faction | 56,4 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,7 de moyenne (11,4 au maximum), non compressé |
+| Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
+| Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
 | Poids JS de l'accueil | 38,3 Ko | `core.js` + `search.js`, non compressé |
 | Poids CSS | socle 11,0 / fiches 64,9 / accueil 24,4 Ko | une page en charge **deux** : socle + l'une des deux autres |
 | Polices, page de faction | 4 familles, 5 fichiers, 179,7 Ko | mesuré au navigateur ; voir la note ci-dessous |
@@ -258,6 +258,13 @@ the End Times* :
   Legions of Nagash, qui a retiré Spirit Hosts, Fell Spectres et Shade Haunts : 4059 → **4057 cartes**
   (sa fiche passe de 14 à 12 lignes) et 2115 → **2113 couples** (`syreens` entre au module des Comtes
   Vampires, les trois clés `nag*` en sortent pour `js/units/_hors-fiches.js`).
+- **Toujours le 17/10/2026, Kastabull** (Nains du Chaos, VIII, Uzkul Mingol Company), venu d'une mise à
+  jour de « Derpy's Hashut Legendary Lords » : 324 → **325 seigneurs** et **325 blasons, 1,96 Mo** ;
+  4057 → **4069 cartes** (1 + 2 héros + 9 unités) et 2113 → **2119 couples** (son portrait et cinq
+  cartes hobgobelines). Le module des Nains du Chaos passe de 2,6 à 3,7 Ko, ce qui porte la moyenne
+  des 32 modules de 4,74 à 4,77 Ko, arrondie à **4,8** : le total d'une page de faction passe à
+  **56,5 Ko**. Son portrait fait **85×115** et non 60×130 — le mod ne fournit que l'image de
+  l'écran de sélection — et `object-fit: cover` le recadre comme celui d'Amon.
 
 ---
 

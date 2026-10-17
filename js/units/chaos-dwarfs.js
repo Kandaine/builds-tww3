@@ -46,5 +46,19 @@ const unitImages = {
   theSoulOfDamnation: 'assets/units/theSoulOfDamnation.png',
   hashutsDarkRavagers: 'assets/units/hashutsDarkRavagers.png',
   graniteGuard: 'assets/units/graniteGuard.png',
-  blazingBeardsOfBazherak: 'assets/units/blazingBeardsOfBazherak.png'
+  blazingBeardsOfBazherak: 'assets/units/blazingBeardsOfBazherak.png',
+  // Kastabull (derpy_uzkul, mod « Derpy's Hashut Legendary Lords »). Son portrait est en
+  // 85x115 et non en 60x130 : le mod ne lui livre ni portrait d'unite ni carte (unit_card vaut
+  // `placeholder`), seulement ui\portraits\faction_leaders\derpy_uzkul.png. Pris tel quel, sans
+  // redimensionnement : `object-fit: cover` le recadre a l'affichage, comme amon.png (170x230).
+  kastabull: 'assets/portraits/kastabull.png',
+  // Roster hobgobelin de la fiche de Kastabull. Cartes du jeu de base, ui.pack :
+  // ui\units\icons\<carte>.png, nom de carte lu dans unit_variants_tables.unit_card (ici
+  // identique a la cle de l'unite). Empreintes de pixels comparees le 17/10/2026 a tous les PNG
+  // de assets/units et assets/portraits : aucune n'y etait deja sous une autre cle.
+  hobgoblinCutthroats: 'assets/units/hobgoblinCutthroats.png',
+  hobgoblinSneakyGits: 'assets/units/hobgoblinSneakyGits.png',
+  hobgoblinArchers: 'assets/units/hobgoblinArchers.png',
+  oglahKhansWolfboyz: 'assets/units/oglahKhansWolfboyz.png',
+  hobgoblinBoltThrower: 'assets/units/hobgoblinBoltThrower.png'
 };
