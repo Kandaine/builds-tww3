@@ -181,10 +181,13 @@ Ajouter un héros ou une unité venue d'un mod, corriger une erreur signalée, r
 
 **1. Chercher avant d'extraire.** L'unité est peut-être déjà sur le site sous une autre clé.
 
-**2. Choisir la fiche.** Quand un héros est disponible pour beaucoup de factions, le placer **une
-seule fois**, là où le lore et le build le justifient le mieux. Si le mod désigne lui-même une
-faction — personnage de départ, faction prioritaire, bâtiment de déblocage thématique — suivre cette
-indication plutôt qu'un choix arbitraire, et l'écrire dans la note.
+**2. Choisir les fiches.** Un héros — légendaire compris — recrutable par plusieurs seigneurs va
+dans le build de **chacun de ceux pour qui sa présence est recommandée** : règle du user du
+17/10/2026, qui remplace l'ancienne règle « une seule fois ». Chaque fiche décrit une campagne
+distincte ; qu'il soit unique en partie ne compte pas d'une fiche à l'autre. Le critère reste le
+build — un effet du seigneur qui le vise, ou un manque nommé — et non la simple possibilité de le
+recruter. Si le mod désigne lui-même une faction — personnage de départ, faction prioritaire,
+bâtiment de déblocage thématique — c'est d'abord là qu'il va, et la note le dit.
 
 **Ne jamais trancher sur la seule table des factions autorisées.** Elle dit qui *a le droit* de le
 recruter, pas à qui il appartient. Avant de choisir, **lire son arbre de compétences et ses objets**
@@ -202,6 +205,14 @@ produit une fausse exception, celle de Leanora.
 
 **3. Libérer le slot sur une unité doublée**, jamais sur une pièce unique : passer un `qty: 2` à 1
 plutôt que supprimer un régiment de renom. Le total doit rester à 20.
+
+**Une exception, du user le 17/10/2026 : une unité alignée à un seul exemplaire peut céder sa
+place à son propre Régiment de Renom**, si le seigneur peut le recruter. Le RoR reste alors sans
+son unité de base, et c'est voulu. Avant de le faire, vérifier que les effets du seigneur visent
+le RoR autant que l'unité de base : un RoR ajouté par un DLC n'est pas forcément dans les ensembles
+d'unités des bonus plus anciens. Deathvermin, par exemple, n'est dans aucun des ensembles
+« Stormvermin » que visent Queek et Tretch : le substituer à leurs Stormvermin leur coûterait leurs
+bonus.
 
 **4. Ajuster les textes qui deviennent faux.** Une modification de build invalide souvent le
 paragraphe `magic` ou la note de fin. Les relire, pas seulement le tableau d'unités.

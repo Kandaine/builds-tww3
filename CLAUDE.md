@@ -162,7 +162,7 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
 | Cartes d'unité affichées, toutes fiches confondues | 4072 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2120 | ce que `verifier-icones.ps1` contrôle réellement |
+| Couples (faction, clé d'icône) cités par les fiches | 2121 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -275,6 +275,9 @@ the End Times* :
 - **Puis 4071 → 4072 cartes et 2119 → 2120 couples : Kemmler.** Krell, héros légendaire officiel depuis
   le DLC, passe du cadre « invoqué » (`krellNote`, que le compteur ignorait) aux héros de la fiche :
   une ligne de plus, et la clé `krell` entre dans le décompte.
+- **Puis 2120 → 2121 couples : lot Skavens.** Deathvermin remplace les Stormvermin (Halberds) de base chez
+  Thanquol et Viciss Baukis, Virulent Batteries la Plagueclaw Catapult de Rathan : nombre de lignes
+  inchangé, une clé nouvelle (`deathvermin`).
 
 ---
 

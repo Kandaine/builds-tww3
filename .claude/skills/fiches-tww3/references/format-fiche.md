@@ -149,11 +149,12 @@ Ne jamais départager au hasard ni « au meilleur profil » : la règle est la m
 d'une fiche d'accueil pour un héros légendaire (§6 de `analyse-pack.md`), et elle produit une note
 justifiable au lieu d'un arbitrage arbitraire.
 
-Un RoR se place sur TOUTES les fiches qui peuvent le recruter**, pas une seule fois. C'est la
-différence avec un héros légendaire : chaque fiche décrit une campagne distincte, donc le fait qu'un
-régiment soit unique *en partie* n'empêche pas de le proposer à chaque seigneur qui y a accès. Le
+Un RoR se place sur TOUTES les fiches qui peuvent le recruter**, pas une seule fois. Chaque fiche
+décrit une campagne distincte, donc le fait qu'un régiment soit unique *en partie* n'empêche pas de
+le proposer à chaque seigneur qui y a accès — et depuis le 17/10/2026 la même logique vaut pour les
+héros légendaires (`SKILL.md`, Parcours B, étape 2). Le
 critère est double et mécanique — la faction a accès au pool, et la fiche aligne déjà l'unité de
-base. Ne pas arbitrer « chez qui il va le mieux » comme pour un héros : cette question ne se pose
+base. Ne pas arbitrer « chez qui il va le mieux » : cette question ne se pose
 que si l'accès est restreint.
 
 **Priorité aux Régiments de Renom dans le corps d'armée.** À bénéfice comparable, préférer le RoR à

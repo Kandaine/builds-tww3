@@ -192,5 +192,7 @@ const unitImages = {
   stormfiendsRatlingCannons: 'assets/units/stormfiendsRatlingCannons.png',
   scratterfireTeam: 'assets/units/scratterfireTeam.png',
   stormfiendsWarpfireProjectors: 'assets/units/stormfiendsWarpfireProjectors.png',
-  stormfiendsDoomflayerGauntlets: 'assets/units/stormfiendsDoomflayerGauntlets.png'
+  stormfiendsDoomflayerGauntlets: 'assets/units/stormfiendsDoomflayerGauntlets.png',
+  // Deathvermin (RoR, DLC Lords of the End Times) : ui.pack du jeu, ui\units\icons\wh3_dlc29_skv_inf_deathvermin_ror.png (60x130 natif).
+  deathvermin: 'assets/units/deathvermin.png'
 };
