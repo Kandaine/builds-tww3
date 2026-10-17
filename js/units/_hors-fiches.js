@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 95 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 96 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -13,6 +13,9 @@
 //
 // Le meme jour, nagSpiritHosts, nagFellSpectres et nagShadeHaunts y ont suivi : la fiche
 // de Kalledria les alignait, mais la version actuelle du mod ne les contient plus.
+//
+// mourngul les a rejointes le meme jour : la fiche de Waldakir Rahtep aligne desormais la
+// Spirit Host, que ses effets visent depuis le DLC, a la place de ses Mournguls.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -114,5 +117,6 @@ const unitImagesHorsFiches = {
   masterNecromancer: 'assets/units/masterNecromancer.png',
   nagSpiritHosts: 'assets/units/nagSpiritHosts.png',
   nagFellSpectres: 'assets/units/nagFellSpectres.png',
-  nagShadeHaunts: 'assets/units/nagShadeHaunts.png'
+  nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
+  mourngul: 'assets/units/mourngul.png'
 };

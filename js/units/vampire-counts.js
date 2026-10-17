@@ -40,7 +40,6 @@ const unitImages = {
   blackCoach: 'assets/units/blackCoach.png',
   hexwraith: 'assets/units/hexwraith.png',
   theChillgheists: 'assets/units/theChillgheists.png',
-  mourngul: 'assets/units/mourngul.png',
   gothardUndyingKnight: 'assets/units/gothardUndyingKnight.png',
   ulrikaMagdova: 'assets/units/ulrikaMagdova.png',
   obadiahGlothman: 'assets/units/obadiahGlothman.png',
@@ -150,5 +149,13 @@ const unitImages = {
   tombGuard: 'assets/units/tombGuard.png',
   khepraGuard: 'assets/units/khepraGuard.png',
   ushabti: 'assets/units/ushabti.png',
-  necrosphinx: 'assets/units/necrosphinx.png'
+  necrosphinx: 'assets/units/necrosphinx.png',
+  // Cartes vanilla extraites de ui.pack (jeu de base), natives 60x130, copiees sans redimensionnement :
+  // ui\units\icons\wh2_dlc11_vmp_crossbowmen.png (unit_variants_tables : wh2_dlc11_vmp_inf_crossbowmen).
+  sylvanianCrossbowmen: 'assets/units/sylvanianCrossbowmen.png',
+  // ui\units\icons\wh2_dlc11_vmp_handgunners.png (unit_variants_tables : wh2_dlc11_vmp_inf_handgunners).
+  sylvanianHandgunners: 'assets/units/sylvanianHandgunners.png',
+  // Spirit Host (DLC Lords of the End Times) : meme carte que dans js/units/undead-legions.js,
+  // pour la fiche de Waldakir Rahtep, dont les effets la visent depuis le DLC.
+  spiritHost: 'assets/units/spiritHost.png'
 };
