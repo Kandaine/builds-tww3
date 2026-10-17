@@ -161,7 +161,7 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4069 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Cartes d'unité affichées, toutes fiches confondues | 4071 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
 | Couples (faction, clé d'icône) cités par les fiches | 2119 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
@@ -265,6 +265,10 @@ the End Times* :
   des 32 modules de 4,74 à 4,77 Ko, arrondie à **4,8** : le total d'une page de faction passe à
   **56,5 Ko**. Son portrait fait **85×115** et non 60×130 — le mod ne fournit que l'image de
   l'écran de sélection — et `object-fit: cover` le recadre comme celui d'Amon.
+- **Puis 4069 → 4071 cartes** : Oglah Khan's Wolfboyz, le Régiment de Renom des Wolf Raiders extrait pour
+  Kastabull, rejoint aussi Zhatan et Abnagg, dont les factions ont accès au vivier. Une ligne de plus
+  sur chaque fiche, la place prise sur leurs Wolf Raiders ; aucun couple de plus, la clé étant déjà
+  déclarée au module des Nains du Chaos.
 
 ---
 
