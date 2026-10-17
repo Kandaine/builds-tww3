@@ -154,5 +154,13 @@ const unitImages = {
   gundermansSurefires: 'assets/units/gundermansSurefires.png',
   nordlandMariners: 'assets/units/nordlandMariners.png',
   eldredsGuard: 'assets/units/eldredsGuard.png',
-  knightsOfMorr: 'assets/units/knightsOfMorr.png'
+  knightsOfMorr: 'assets/units/knightsOfMorr.png',
+  huntingHounds: 'assets/units/huntingHounds.png',
+  houndsOfUlricsberg: 'assets/units/houndsOfUlricsberg.png',
+  warriorsOfUlric: 'assets/units/warriorsOfUlric.png',
+  wolfKin: 'assets/units/wolfKin.png',
+  teutogenGuard: 'assets/units/teutogenGuard.png',
+  orderOfTheAxe: 'assets/units/orderOfTheAxe.png',
+  knightsOfTheWhiteWolf: 'assets/units/knightsOfTheWhiteWolf.png',
+  fellwolfBrotherhood: 'assets/units/fellwolfBrotherhood.png'
 };

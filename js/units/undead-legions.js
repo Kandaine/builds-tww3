@@ -17,20 +17,26 @@
 // ============================================================================
 
 const unitImages = {
-  vampireHeroDeath: 'assets/units/vampireHeroDeath.png',
-  masterNecromancer: 'assets/units/masterNecromancer.png',
-  lichePriest: 'assets/units/lichePriest.png',
   // --- Undead Legions (mod Nagash) : portrait de Nagash + unités propres à
   // la faction (Legions of Nagashizzar). Portholes extraits du .pack zstd,
   // recadrés en 60×130. Les héros réutilisent les portraits vanilla déjà
   // présents (lichePriest, necromancer, vampireHeroDeath). ---
   nagash: 'assets/portraits/nagash.png',
-  nagThroneGuard: 'assets/units/nagThroneGuard.png',
-  nagBoneGolems: 'assets/units/nagBoneGolems.png',
-  nagMorghasts: 'assets/units/nagMorghasts.png',
-  nagNagashizzarGuardHalb: 'assets/units/nagNagashizzarGuardHalb.png',
-  nagNagashizzarGuard: 'assets/units/nagNagashizzarGuard.png',
-  nagBoneColossus: 'assets/units/nagBoneColossus.png',
-  nagSpiritHosts: 'assets/units/nagSpiritHosts.png',
-  nagBoneThrower: 'assets/units/nagBoneThrower.png'
+  tombHerald: 'assets/portraits/tombHerald.png',
+  walachHarkon: 'assets/portraits/walachHarkon.png',
+  sepulchrex: 'assets/units/sepulchrex.png',
+  morghastArchai: 'assets/units/morghastArchai.png',
+  silentLegion: 'assets/units/silentLegion.png',
+  morghastHarbingers: 'assets/units/morghastHarbingers.png',
+  khemricTitan: 'assets/units/khemricTitan.png',
+  iconOfUsirian: 'assets/units/iconOfUsirian.png',
+  spiritHost: 'assets/units/spiritHost.png',
+  zombieDragon: 'assets/units/zombieDragon.png',
+  dieter: 'assets/portraits/dieter.png',
+  ushabti: 'assets/units/ushabti.png',
+  tombGuard: 'assets/units/tombGuard.png',
+  khepraGuard: 'assets/units/khepraGuard.png',
+  graveGuard: 'assets/units/graveGuard.png',
+  sternsmen: 'assets/units/sternsmen.png',
+  covenThrone: 'assets/units/covenThrone.png'
 };

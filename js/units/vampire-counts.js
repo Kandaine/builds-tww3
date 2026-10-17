@@ -141,5 +141,14 @@ const unitImages = {
   monsterOfWittgenstein: 'assets/units/monsterOfWittgenstein.png',
   theOldOneHero: 'assets/units/theOldOneHero.png',
   victorGuttman: 'assets/units/victorGuttman.png',
-  baronsMen: 'assets/units/baronsMen.png'
+  baronsMen: 'assets/units/baronsMen.png',
+  lahmianVampire: 'assets/portraits/lahmianVampire.png',
+  lahmianHandmaidensDeath: 'assets/units/lahmianHandmaidensDeath.png',
+  lahmianHandmaidensShadows: 'assets/units/lahmianHandmaidensShadows.png',
+  covenThrone: 'assets/units/covenThrone.png',
+  vereksReavers: 'assets/units/vereksReavers.png',
+  tombGuard: 'assets/units/tombGuard.png',
+  khepraGuard: 'assets/units/khepraGuard.png',
+  ushabti: 'assets/units/ushabti.png',
+  necrosphinx: 'assets/units/necrosphinx.png'
 };

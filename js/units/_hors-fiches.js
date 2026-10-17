@@ -1,10 +1,15 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 84 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 92 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
+//
+// Les 8 dernieres y sont venues le 17/10/2026 : les cles nag*, cartes du mod Legions of
+// Nagash, et masterNecromancer, que la fiche de Nagash n'utilise plus depuis sa refonte
+// sur le roster officiel.
+// Le mod rend toujours les unites nag* recrutables par le Nagash officiel.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -95,5 +100,13 @@ const unitImagesHorsFiches = {
   kurganHuntersJavelins: 'assets/units/kurganHuntersJavelins.png',
   savageSkavenslaveSlingers: 'assets/units/savageSkavenslaveSlingers.png',
   warPigs: 'assets/units/warPigs.png',
-  garbagsSkavenWolfChariots: 'assets/units/garbagsSkavenWolfChariots.png'
+  garbagsSkavenWolfChariots: 'assets/units/garbagsSkavenWolfChariots.png',
+  nagThroneGuard: 'assets/units/nagThroneGuard.png',
+  nagBoneGolems: 'assets/units/nagBoneGolems.png',
+  nagMorghasts: 'assets/units/nagMorghasts.png',
+  nagNagashizzarGuardHalb: 'assets/units/nagNagashizzarGuardHalb.png',
+  nagNagashizzarGuard: 'assets/units/nagNagashizzarGuard.png',
+  nagBoneColossus: 'assets/units/nagBoneColossus.png',
+  nagBoneThrower: 'assets/units/nagBoneThrower.png',
+  masterNecromancer: 'assets/units/masterNecromancer.png'
 };

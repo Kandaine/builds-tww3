@@ -161,10 +161,10 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 324 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4057 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2092 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4059 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2115 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
-| Blasons de faction | 324 fichiers, 1,94 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
+| Blasons de faction | 324 fichiers, 1,95 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,4 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,7 de moyenne (11,4 au maximum), non compressé |
 | Poids JS de l'accueil | 38,3 Ko | `core.js` + `search.js`, non compressé |
 | Poids CSS | socle 11,0 / fiches 64,9 / accueil 24,4 Ko | une page en charge **deux** : socle + l'une des deux autres |
@@ -245,7 +245,13 @@ the End Times* :
   Skavens, 18 à celui des Guerriers du Chaos (dont 5 reprises d'autres modules, sans image
   nouvelle). Chez Dieter, `animatedHulks` entre et `feralManticoreDarkElves` sort du module des
   Comtes Vampires — l'image reste, la fiche de Dark Elves s'en sert.
-- **322 → 324 blasons, 1,92 → 1,94 Mo.** Les deux écus, tirés de `uilags<faction>mon_256.png`
+- **Le même jour, refonte de Boris, Neferata et Nagash** sur leurs données officielles : 4057 → **4059
+  cartes** (Boris 20 → 15 lignes, Neferata 15 → 16, Nagash 12 → 18) et 2092 → **2115 couples** —
+  +8 au module de l'Empire (le Culte d'Ulric), +9 aux Comtes Vampires (Lahmiennes, Coven Throne, unités
+  de Lahmia), +6 nets aux Undead Legions (17 entrées, 11 sorties : les cartes du mod Nagash, rangées
+  dans `js/units/_hors-fiches.js` quand aucun autre module ne les déclare).
+- **322 → 324 blasons, 1,92 → 1,95 Mo.** Le dernier centième vient des écus officiels de Neferata
+  et de Nagash, qui remplacent ceux de leur ancien mod le même jour. Les deux écus, tirés de `uilags<faction>mon_256.png`
   et encodés comme les autres (WebP 160 px, qualité 92). La moyenne des modules d'icônes reste à
   4,7 Ko et le maximum à 11,4 Ko, mesurés le même jour.
 
@@ -319,13 +325,18 @@ Deux pièges de méthode relevés en chemin, tous deux ont produit de faux résu
   existait en deux personnages distincts issus de deux mods : `scan_packs.ps1 -Match 'leanora'` ne
   remonte qu'un seul pack. C'était faux.
 
-**Deux exceptions assumées à l'invariant « un seigneur légendaire n'est jamais héros »**, toutes
-deux arbitrées par le user — ne plus les signaler :
+**Trois exceptions assumées à l'invariant « un seigneur légendaire n'est jamais héros »**, toutes
+arbitrées par le user — ne plus les signaler :
 
 - **Vlad et Isabella**, héros l'un chez l'autre : le +50 % de plafond de soin de Vlad exige
   qu'Isabella serve dans la même armée.
 - **Infanta Leanora Navrre**, seigneur sur la page Côte Vampire et héroïne chez Cylostra Direfin.
   Sans justification mécanique, celle-là : simplement acceptée le 08/09/2026.
+
+- **Dieter Helsnicht et Walach Harkon**, héros chez **Nagash** (Host of Nagash) alors qu'ils ont chacun
+  leur fiche de seigneur, venue d'un mod (Mixu's Legendary Lords, Champions of Undeath). Ce sont les
+  héros légendaires **officiels** de Nagash depuis le DLC Lords of the End Times : décidé le 17/10/2026.
+  L'exception vaut chez Nagash seulement.
 
 **Gitilla Da Hunter** relève du même conflit et a été tranché dans l'autre sens : il reste seigneur
 seul, on ne l'ajoute pas en héros chez Azhag.

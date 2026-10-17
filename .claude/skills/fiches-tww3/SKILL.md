@@ -61,8 +61,10 @@ armée. Ne pas le corriger. Une seconde exception, sans justification mécanique
 le user le 08/09/2026** : *Infanta Leanora Navrre*, seigneur sur la page Vampire Coast **et**
 héroïne chez Cylostra Direfin. C'est **le même personnage** — un seul pack la fournit,
 `!!!3_legendary_guys.pack` ; une ancienne version de ce skill affirmait à tort une homonymie entre
-deux mods. Ne plus la signaler. *Gitilla Da Hunter* relève du même conflit et a été tranché dans
-l'autre sens : il reste seigneur seul.
+deux mods. Ne plus la signaler. Une troisième, **décidée le 17/10/2026** : *Dieter Helsnicht* et
+*Walach Harkon*, héros chez **Nagash** alors qu'ils ont chacun leur fiche de seigneur venue d'un mod —
+ce sont les héros légendaires officiels de Nagash depuis le DLC. Elle ne vaut que chez Nagash.
+*Gitilla Da Hunter* relève du même conflit et a été tranché dans l'autre sens : il reste seigneur seul.
 
 **Exactement 20 slots** : 1 seigneur + Σ qty des héros + Σ qty du corps d'armée. Une unité invoquée
 par une capacité ne consomme aucun slot — la mentionner dans la note, pas dans la liste.
