@@ -358,7 +358,9 @@ lot, boucler sur tous les fichiers du site, pas seulement ceux qu'on croit avoir
 powershell -NoProfile -ExecutionPolicy Bypass -Command "Get-ChildItem data\*.json | ForEach-Object { & .\tools\validate_fiche.ps1 -Faction $_.BaseName }"
 ```
 
-Ensuite le navigateur, via `preview_start` (nom `codex-static-server`, port 5173) puis
+Ensuite le navigateur, via `preview_start` (nom `site-node`, port 8766 — configuration de
+`.claude/launch.json` ; la configuration `site`, en Python, ne démarre plus depuis que Python a
+quitté la machine, constaté le 17/10/2026) puis
 `ogre_kingdoms.html?id=<lordId>` — noter que les pages HTML utilisent des **underscores**
 (`ogre_kingdoms.html`) alors que les JSON utilisent des **tirets** (`ogre-kingdoms.json`).
 

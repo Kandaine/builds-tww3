@@ -52,7 +52,7 @@ const unitImages = {
   theTithe: 'assets/units/theTithe.png',
   krell: 'assets/units/krell.png',
   warHydra: 'assets/units/warHydra.png',
-  feralManticoreDarkElves: 'assets/units/feralManticoreDarkElves.png',
+  animatedHulks: 'assets/units/animatedHulks.png',
   kharibdyss: 'assets/units/kharibdyss.png',
   blackDragon: 'assets/units/blackDragon.png',
   waldakirRahtep: 'assets/portraits/waldakirRahtep.png',
