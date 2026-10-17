@@ -115,9 +115,7 @@ const unitImages = {
   theGreyMen: 'assets/units/theGreyMen.png',
   mslGraveGuardGreat: 'assets/units/mslGraveGuardGreat.png',
   cursedTrebuchet: 'assets/units/cursedTrebuchet.png',
-  nagSpiritHosts: 'assets/units/nagSpiritHosts.png',
-  // Nouveaux LL Vampire Counts ajoutés par le mod Nagash (Neferata, Kalledria)
-  // + unités éthérées/goules propres à Kalledria (portholes 60×130).
+  // Nouveaux LL Vampire Counts ajoutés par le mod Nagash (Neferata, Kalledria).
   neferata: 'assets/portraits/neferata.png',
   kalledria: 'assets/portraits/kalledria.png',
   dieter: 'assets/portraits/dieter.png',
@@ -125,8 +123,10 @@ const unitImages = {
   ladyBlackGrail: 'assets/portraits/ladyBlackGrail.png',
   walach: 'assets/portraits/walach.png',
   yuwei: 'assets/portraits/yuwei.png',
-  nagFellSpectres: 'assets/units/nagFellSpectres.png',
-  nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
+  // Syreens : carte vanilla de la Vampire Coast, deja declaree dans son module. Le mod
+  // (The remains of) Legions of Nagash les ouvre au batiment des spectres des Comtes
+  // Vampires, et la fiche de Kalledria les aligne depuis le 17/10/2026.
+  syreens: 'assets/units/syreens.png',
   // Crypt Horrors : unité officielle vanilla (Vampire Counts), carte du jeu de base
   cryptHorrors: 'assets/units/cryptHorrors.png',
   // Banshee : héros officiel vanilla (Vampire Counts), portrait de campagne du jeu de base

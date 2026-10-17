@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 92 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 95 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -10,6 +10,9 @@
 // Nagash, et masterNecromancer, que la fiche de Nagash n'utilise plus depuis sa refonte
 // sur le roster officiel.
 // Le mod rend toujours les unites nag* recrutables par le Nagash officiel.
+//
+// Le meme jour, nagSpiritHosts, nagFellSpectres et nagShadeHaunts y ont suivi : la fiche
+// de Kalledria les alignait, mais la version actuelle du mod ne les contient plus.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -108,5 +111,8 @@ const unitImagesHorsFiches = {
   nagNagashizzarGuard: 'assets/units/nagNagashizzarGuard.png',
   nagBoneColossus: 'assets/units/nagBoneColossus.png',
   nagBoneThrower: 'assets/units/nagBoneThrower.png',
-  masterNecromancer: 'assets/units/masterNecromancer.png'
+  masterNecromancer: 'assets/units/masterNecromancer.png',
+  nagSpiritHosts: 'assets/units/nagSpiritHosts.png',
+  nagFellSpectres: 'assets/units/nagFellSpectres.png',
+  nagShadeHaunts: 'assets/units/nagShadeHaunts.png'
 };

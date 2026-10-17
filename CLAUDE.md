@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 324 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4059 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2115 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4057 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2113 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 324 fichiers, 1,95 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,4 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,7 de moyenne (11,4 au maximum), non compressé |
@@ -251,9 +251,13 @@ the End Times* :
   de Lahmia), +6 nets aux Undead Legions (17 entrées, 11 sorties : les cartes du mod Nagash, rangées
   dans `js/units/_hors-fiches.js` quand aucun autre module ne les déclare).
 - **322 → 324 blasons, 1,92 → 1,95 Mo.** Le dernier centième vient des écus officiels de Neferata
-  et de Nagash, qui remplacent ceux de leur ancien mod le même jour. Les deux écus, tirés de `uilags<faction>mon_256.png`
+  et de Nagash, qui remplacent ceux de leur ancien mod le même jour. Les deux écus, tirés de `ui\flags\<faction>\mon_256.png`
   et encodés comme les autres (WebP 160 px, qualité 92). La moyenne des modules d'icônes reste à
   4,7 Ko et le maximum à 11,4 Ko, mesurés le même jour.
+- **Toujours le même jour, Kalledria** réalignée sur la version actuelle de son mod, (The remains of)
+  Legions of Nagash, qui a retiré Spirit Hosts, Fell Spectres et Shade Haunts : 4059 → **4057 cartes**
+  (sa fiche passe de 14 à 12 lignes) et 2115 → **2113 couples** (`syreens` entre au module des Comtes
+  Vampires, les trois clés `nag*` en sortent pour `js/units/_hors-fiches.js`).
 
 ---
 
