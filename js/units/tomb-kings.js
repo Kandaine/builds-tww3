@@ -81,5 +81,10 @@ const unitImages = {
   scorpionLegion: 'assets/units/scorpionLegion.png',
   sphinxOfUsekph: 'assets/units/sphinxOfUsekph.png',
   eyesOfTheDesert: 'assets/units/eyesOfTheDesert.png',
-  wightsOfTheTwistedSpire: 'assets/units/wightsOfTheTwistedSpire.png'
+  wightsOfTheTwistedSpire: 'assets/units/wightsOfTheTwistedSpire.png',
+  // Khemric Titan et son RoR Icon of Usirian (DLC Lords of the End Times) : memes cartes que dans
+  // js/units/undead-legions.js, pour la fiche de Rakaph, dont l'Armure et la Defense de melee
+  // visent les deux depuis le DLC (ensemble tmb_khemric_titan du jeu de base).
+  khemricTitan: 'assets/units/khemricTitan.png',
+  iconOfUsirian: 'assets/units/iconOfUsirian.png'
 };

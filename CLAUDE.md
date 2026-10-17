@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4075 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2123 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4077 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2125 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -282,6 +282,10 @@ the End Times* :
   sur leurs captures post-DLC. Vlad gagne 2 lignes (Sylvanian Handgunners et Crossbowmen), Isabella
   une (Lahmian Vampire) ; chez Rahtep, la Spirit Host remplace les Mournguls, ligne pour ligne.
   Couples : +2 cartes sylvaniennes, +1 `spiritHost`, −1 `mourngul` (rangée dans `_hors-fiches.js`).
+- **Puis 4075 → 4077 cartes et 2123 → 2125 couples : lot Rois des Tombes.** Effets d'Arkhan, Khatep,
+  Khalida, du Dread King et de Rakaph réalignés sur leurs captures post-DLC. Rakaph gagne le Khemric
+  Titan et son Régiment de Renom Icon of Usirian, que ses effets visent désormais : deux lignes et
+  deux clés de plus au module des Rois des Tombes.
 
 ---
 
