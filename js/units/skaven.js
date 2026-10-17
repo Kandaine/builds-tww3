@@ -186,5 +186,11 @@ const unitImages = {
   theDoombringers: 'assets/units/theDoombringers.png',
   eyeTakers: 'assets/units/eyeTakers.png',
   visktrinsDeathSquad: 'assets/units/visktrinsDeathSquad.png',
-  wheelzOfDooom: 'assets/units/wheelzOfDooom.png'
+  wheelzOfDooom: 'assets/units/wheelzOfDooom.png',
+  thanquol: 'assets/portraits/thanquol.png',
+  skreechVerminking: 'assets/portraits/skreechVerminking.png',
+  stormfiendsRatlingCannons: 'assets/units/stormfiendsRatlingCannons.png',
+  scratterfireTeam: 'assets/units/scratterfireTeam.png',
+  stormfiendsWarpfireProjectors: 'assets/units/stormfiendsWarpfireProjectors.png',
+  stormfiendsDoomflayerGauntlets: 'assets/units/stormfiendsDoomflayerGauntlets.png'
 };

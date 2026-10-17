@@ -154,17 +154,17 @@ Si la modification touche aux images :
 
 ## Chiffres de référence
 
-Relevés le 23/08/2026 après la refonte graphique « Old World », remesurés le 08/09/2026. Un écart
+Relevés le 23/08/2026 après la refonte graphique « Old World », remesurés le 08/09 et le 17/10/2026. Un écart
 n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 
 | Mesure | Valeur | Comment la mesurer |
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
-| Seigneurs légendaires | 322 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4020 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2068 | ce que `verifier-icones.ps1` contrôle réellement |
+| Seigneurs légendaires | 324 | somme des entrées de tous les `data/*.json` |
+| Cartes d'unité affichées, toutes fiches confondues | 4057 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2092 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
-| Blasons de faction | 322 fichiers, 1,92 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
+| Blasons de faction | 324 fichiers, 1,94 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,4 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,7 de moyenne (11,4 au maximum), non compressé |
 | Poids JS de l'accueil | 38,3 Ko | `core.js` + `search.js`, non compressé |
 | Poids CSS | socle 11,0 / fiches 64,9 / accueil 24,4 Ko | une page en charge **deux** : socle + l'une des deux autres |
@@ -232,6 +232,22 @@ Trois valeurs de plus ont bougé au relevé du **08/09/2026**, et aucune n'est u
   correction de méthode : la valeur citée était **un** module, pas la moyenne des 32. La moyenne
   réelle est de 4,7 Ko et le plus lourd pèse 11,4 Ko, ce qui fait varier le total d'une page de
   faction entre 53 et 63 Ko selon la faction. Un chiffre unique ne rend pas compte de cet écart.
+
+Quatre valeurs ont bougé au relevé du **17/10/2026**, toutes par ajout de contenu du DLC *Lords of
+the End Times* :
+
+- **322 → 324 seigneurs.** Thanquol (Skavens, XXV, Clan Scruten) et The Glottkin (Guerriers du
+  Chaos, XIII, Host of the Triplets), les deux seigneurs du DLC qui manquaient au site.
+- **4020 → 4057 cartes.** 19 lignes pour Thanquol (1 + 3 héros + 15 unités) et 18 pour le
+  Glottkin (1 + 4 héros + 13 unités). La refonte de Dieter Helsnicht le même jour est à somme
+  nulle : Animated Hulks remplace Feral Manticore, ligne pour ligne.
+- **2068 → 2092 couples (faction, clé d'icône).** Exactement les 24 clés ajoutées : 6 au module
+  Skavens, 18 à celui des Guerriers du Chaos (dont 5 reprises d'autres modules, sans image
+  nouvelle). Chez Dieter, `animatedHulks` entre et `feralManticoreDarkElves` sort du module des
+  Comtes Vampires — l'image reste, la fiche de Dark Elves s'en sert.
+- **322 → 324 blasons, 1,92 → 1,94 Mo.** Les deux écus, tirés de `uilags<faction>mon_256.png`
+  et encodés comme les autres (WebP 160 px, qualité 92). La moyenne des modules d'icônes reste à
+  4,7 Ko et le maximum à 11,4 Ko, mesurés le même jour.
 
 ---
 
