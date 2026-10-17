@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4071 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2119 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4072 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2120 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -223,6 +223,9 @@ Trois valeurs de plus ont bougé au relevé du **08/09/2026**, et aucune n'est u
   `verifier-icones.ps1` ne le compte pas : c'est ce qui explique l'unité d'écart entre une
   vérification maison et le chiffre de ce tableau. Compter sans lui, sinon les deux sources
   divergeront d'un cran sans raison apparente.
+
+  **Depuis le 17/10/2026, `krellNote` n'existe plus** : Krell est devenu un héros légendaire
+  officiel et figure dans les héros de Kemmler. Les deux recomptages coïncident désormais.
 - **CSS : socle 10,7 → 11,0 et fiches 64,4 → 64,9 Ko.** Le socle a pris le bandeau d'échec de
   chargement, `fiches.css` la section 12 et la carte « Magie » passée en pleine largeur. Le total
   d'une page de faction monte de 24,2 à 24,6 Ko, ce qui ne déplace pas les poids de page du README :
@@ -269,6 +272,9 @@ the End Times* :
   Kastabull, rejoint aussi Zhatan et Abnagg, dont les factions ont accès au vivier. Une ligne de plus
   sur chaque fiche, la place prise sur leurs Wolf Raiders ; aucun couple de plus, la clé étant déjà
   déclarée au module des Nains du Chaos.
+- **Puis 4071 → 4072 cartes et 2119 → 2120 couples : Kemmler.** Krell, héros légendaire officiel depuis
+  le DLC, passe du cadre « invoqué » (`krellNote`, que le compteur ignorait) aux héros de la fiche :
+  une ligne de plus, et la clé `krell` entre dans le décompte.
 
 ---
 
