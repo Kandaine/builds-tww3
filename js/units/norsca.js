@@ -143,5 +143,10 @@ const unitImages = {
   iceGolem: 'assets/units/iceGolem.png',
   greaterIceGolem: 'assets/units/greaterIceGolem.png',
   frostWyrm: 'assets/units/frostWyrm.png',
-  ziadZhang: 'assets/portraits/ziadZhang.png'
+  ziadZhang: 'assets/portraits/ziadZhang.png',
+  // Flayerkin (DLC Lords of the End Times) : ui.pack, ui\units\icons\wh3_dlc29_chs_inf_flayerkin.png, 60x130 natif copie tel quel.
+  flayerkin: 'assets/units/flayerkin.png',
+  // Da Swamp Fings (River Trolls) : meme carte que dans js/units/greenskins.js, pour la fiche de
+  // Throgg, dont le regiment favori donne acces a ce Regiment de Renom depuis le DLC.
+  daSwampFings: 'assets/units/daSwampFings.png'
 };

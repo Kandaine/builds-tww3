@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4079 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2127 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4081 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2129 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -291,6 +291,11 @@ the End Times* :
   Tamurkhan et d'Epidemius réalignés sur leurs captures post-DLC. Tamurkhan gagne les Putrid
   Blightkings (Dual Axes) et The Repugnauts of Brass Keep, que ses effets non démoniaques visent :
   deux lignes, et deux clés reprises du module des Guerriers du Chaos.
+- **Puis 4079 → 4081 cartes et 2127 → 2129 couples : lot Norsca.** Sur 25 captures, seul Throgg avait changé :
+  son régiment favori donne désormais accès à Da Swamp Fings (River Trolls), qui entre dans sa fiche à
+  côté d'un seul Mist Stalkers. Wulfrik gagne les Flayerkin du DLC, que le jeu range parmi les
+  Marauders visés par son -15% d'entretien. Deux lignes ; `flayerkin` (carte extraite) et `daSwampFings`
+  (reprise du module des Peaux-Vertes) entrent au module de Norsca.
 
 ---
 
