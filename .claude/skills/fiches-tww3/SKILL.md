@@ -1,6 +1,6 @@
 ---
 name: fiches-tww3
-description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, ou modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots). À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, ou évoque data/*.json, js/units/*.js, js/core.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
+description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots), ou revoir toute une page après un DLC, un patch du jeu ou la mise à jour d'un mod. À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, annonce un DLC ou une mise à jour, ou évoque data/*.json, js/units/*.js, js/core.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
 ---
 
 # Fiches builds-tww3
@@ -13,7 +13,7 @@ légendaires de TWW3 en Immortal Empires. Dépôt `C:\Users\Utilisateur\Projets\
 sur `main`. Une fiche fausse ou une carte sans image est donc visible par des visiteurs, pas
 seulement par le user — c'est ce qui justifie la sévérité des invariants ci-dessous.
 
-Deux parcours. Lire d'abord les invariants, ils valent pour les deux.
+Trois parcours. Lire d'abord les invariants, ils valent pour les trois.
 
 ---
 
@@ -218,6 +218,68 @@ bonus.
 paragraphe `magic` ou la note de fin. Les relire, pas seulement le tableau d'unités.
 
 **5. Valider, vérifier, demander le feu vert.**
+
+---
+
+## Parcours C — revue d'une page après une mise à jour
+
+Un DLC, un patch du jeu ou la mise à jour d'un mod source. Établi sur la passe post-DLC *Lords of
+the End Times* des 17-18/10/2026 : une dizaine de lots, une race à la fois, toutes en ligne.
+
+**La leçon qui fonde ce parcours : une mise à jour change les effets des seigneurs EXISTANTS, pas
+seulement le contenu nouveau.** Kemmler a perdu l'invocation de Krell, Vlad et Isabella leur Blood
+Kiss, Archaon son Ward Save, Tretch son régiment favori. Et un seigneur de **mod** peut changer sans
+que son mod bouge : Rakaph réutilise un effet vanilla, le DLC a élargi l'ensemble d'unités de cet
+effet, et Rakaph a hérité des Khemric Titans. Chercher d'abord où placer le contenu nouveau, c'est
+rater l'essentiel.
+
+**Un lot = une page (une race).** Jamais tout le site d'un coup : chaque lot se valide, se commite et
+se pousse séparément.
+
+**1. Demander les captures Lord Details de toute la page**, seigneurs de mods compris. Une liste
+grisée en bas de l'onglet signale qu'il faut défiler : une ligne absente de la capture n'est pas
+forcément disparue (cas Morghur, dont la résistance aux sorts était sous le pli). En cas de doute,
+les tables tranchent (`character_skill_level_to_effects_junctions` pour les compétences innées).
+
+**2. Comparer chaque capture à sa fiche, ligne à ligne.** Lister les écarts : valeur, unité visée,
+ligne apparue, ligne disparue. Une fiche dont le texte est une traduction fidèle n'est pas un écart.
+
+**3. Croiser le contenu nouveau avec les effets de la page.** Pour chaque unité, héros ou RoR
+nouveau, un seul critère : un effet d'un seigneur de la page le vise-t-il ? Le vérifier dans
+`unit_set_to_unit_junctions` × `effect_bonus_value_ids_unit_sets`, en remontant la chaîne bundle
+de trait du seigneur (`effect_bundles_to_effects_junctions`, clés `*lord_trait*`) → effets →
+ensembles d'unités → unités. Le script écrit pour ça vivait dans le scratchpad de la session et n'a
+pas été conservé : la chaîne se réécrit en une vingtaine de lignes. Pas d'effet, pas de placement — même pour un héros légendaire recrutable partout. Le noter
+dans le compte rendu, ne pas le forcer.
+
+Deux conséquences fréquentes, à vérifier systématiquement :
+
+- **un RoR ajouté n'est pas forcément dans les ensembles d'unités des bonus anciens** (Deathvermin
+  hors des « Stormvermin » de Queek et Tretch) : le substituer à son unité de base peut coûter des
+  bonus ;
+- **un effet élargi crée un placement sans que rien ne soit « nouveau » dans la fiche** (Rakaph et le
+  Titan, Rahtep et la Spirit Host).
+
+**4. Soumettre un tableau par page** : effets à réaligner, puis builds (ajout, slot pris sur, carte
+existante ou à extraire). Attendre le feu vert.
+
+**5. Écrire, puis relire les textes qui citent un effet disparu.** C'est l'étape la plus coûteuse en
+oublis : un effet retiré survit dans le rôle, la note de seigneur, la note de fin et les notes
+d'unités. Chercher le nom de l'effet dans **toute** la fiche (Archaon : six notes citaient encore le
+Ward Save). Ajouter à la `stats-caveat` « relevée après le <DLC> ».
+
+**6. Contrôles, puis `CLAUDE.md`.** Les deux scripts bloquants sur les 32 factions, les contrôles
+informatifs sur la page, une page vérifiée au navigateur. Mettre à jour cartes et couples dans le
+tableau des chiffres de référence, avec une ligne d'explication. Après le commit et **avant** de
+pousser, vérifier les fins de ligne (voir `references/format-fiche.md`).
+
+**Pour les régiments favoris**, une source plus complète que les captures existe : le mod *Factional
+Favoured Regiments*, qui les définit tous. Sa comparaison avec le site et ses pièges sont dans la
+mémoire `regiments-favoris-ffr`.
+
+**Un conflit de mods se signale, il ne se répare pas dans la fiche.** Deux mods qui revendiquent la
+même faction (Rykarth / Kharkadon, 18/10/2026) : exposer les options au user (retirer la fiche,
+éditer une copie du pack, attendre), lui laisser l'arbitrage, et le consigner en mémoire.
 
 ---
 
