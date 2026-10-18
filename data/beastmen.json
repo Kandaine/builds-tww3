@@ -21,7 +21,7 @@
       "army": [
         {"icon": "ungorRaiders", "name": "Ungor Raiders", "qty": 4, "note": "Attaques empoisonnées (seigneur) — tirailleurs bon marché idéaux pour harceler avant l'embuscade"},
         {"icon": "ungorHerd", "name": "Ungor Herd", "qty": 1, "note": "Attaques empoisonnées (seigneur) — infanterie de ligne bon marché"},
-        {"icon": "destroyersOfTheDrakwald", "name": "Destroyers of the Drakwald (Ungor Herd)", "qty": 3, "note": "Régiment favori : +2 capacité (faction) permet d'aligner les 3 exemplaires disponibles — variante d'élite des Ungor Herd, également couverte par les attaques empoisonnées du seigneur"},
+        {"icon": "destroyersOfTheDrakwald", "name": "Destroyers of the Drakwald (Ungor Herd)", "qty": 3, "note": "Régiment favori : capacité <strong>\"Frenzy\"</strong> et +2 capacité (faction) permettent d'aligner les 3 exemplaires disponibles — variante d'élite des Ungor Herd, également couverte par les attaques empoisonnées du seigneur"},
         {"icon": "bestigorHerd", "name": "Bestigor Herd", "qty": 3, "note": "Déploiement d'Avant-Garde (seigneur) — apparaissent directement sur les flancs ennemis dès le début de la bataille"},
         {"icon": "khorroksManrippers", "name": "Khorrok's Manrippers (Bestigor Herd)", "qty": 1, "note": "Régiment de Renom des Bestigors, qui reçoivent de Khazrak l'attribut <strong>Déploiement d'Avant-Garde</strong> — cette élite se place au contact dès le premier tour, ce qui est exactement la façon dont le Borgne combat"},
         {"icon": "razorgorChariot", "name": "Razorgor Chariots", "qty": 3, "note": "Même Déploiement d'Avant-Garde (seigneur) — percussion immédiate en début de bataille"},

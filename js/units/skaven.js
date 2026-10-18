@@ -119,7 +119,6 @@ const unitImages = {
   nurglitch: 'assets/portraits/nurglitch.png',
   blightTenscratch: 'assets/portraits/blightTenscratch.png',
   verminkeepers: 'assets/units/verminkeepers.png',
-  lamplighters: 'assets/units/lamplighters.png',
   scuttlers: 'assets/units/scuttlers.png',
   underEmpireSpiderRiders: 'assets/units/underEmpireSpiderRiders.png',
   vermsGiantRats: 'assets/units/vermsGiantRats.png',
@@ -194,5 +193,11 @@ const unitImages = {
   stormfiendsWarpfireProjectors: 'assets/units/stormfiendsWarpfireProjectors.png',
   stormfiendsDoomflayerGauntlets: 'assets/units/stormfiendsDoomflayerGauntlets.png',
   // Deathvermin (RoR, DLC Lords of the End Times) : ui.pack du jeu, ui\units\icons\wh3_dlc29_skv_inf_deathvermin_ror.png (60x130 natif).
-  deathvermin: 'assets/units/deathvermin.png'
+  deathvermin: 'assets/units/deathvermin.png',
+  // Slavering Maws (RoR, unité bc_frothing_giant_rats_ror) : scm_skaven_clans.pack, ui\units\icons\bc_frothing_wolf_rats.png (60x130 natif). Distincte de frothingWolfRatsPoison (empreinte différente).
+  slaveringMaws: 'assets/units/slaveringMaws.png',
+  // Rustblades (RoR, unité bc_septik_ror_rustblades) : réutilise la carte de slimeblades, pas de nouveau PNG. scm_skaven_clans.pack, ui\units\icons\bc_ror_slimeblades.png a la même empreinte de pixels (magick identify -format %#) que assets/units/slimeblades.png : le jeu emploie la même carte pour les deux régiments.
+  rustblades: 'assets/units/slimeblades.png',
+  // Vilebites (RoR, unité str_kreepus_verminkin_ror) : scm_skaven_clans.pack, ui\units\icons\str_verminkin_ror.png (60x130 natif).
+  vilebites: 'assets/units/vilebites.png'
 };

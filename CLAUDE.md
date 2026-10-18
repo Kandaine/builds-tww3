@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4081 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2129 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4086 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2131 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -296,6 +296,11 @@ the End Times* :
   côté d'un seul Mist Stalkers. Wulfrik gagne les Flayerkin du DLC, que le jeu range parmi les
   Marauders visés par son -15% d'entretien. Deux lignes ; `flayerkin` (carte extraite) et `daSwampFings`
   (reprise du module des Peaux-Vertes) entrent au module de Norsca.
+- **Puis 4081 → 4086 cartes et 2129 → 2131 couples : régiments favoris (18/10/2026).** Alignés sur le mod
+  Factional Favoured Regiments, qui les définit tous. Le régiment favori entre dans 11 builds (Tretch,
+  Skarrik, Trikstab, Blight, Rikzik, Sitch, Grrzk, Misericorde, Vazgrat, Targog, John Tyreweld) : +5
+  lignes nettes. Couples : +3 (`slaveringMaws` et `vilebites` extraites, `rustblades` qui reprend la
+  carte de `slimeblades`, identique dans le jeu), −1 (`lamplighters`, rangée dans `_hors-fiches.js`).
 
 ---
 

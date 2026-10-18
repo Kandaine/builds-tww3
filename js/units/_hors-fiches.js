@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 96 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 97 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -16,6 +16,9 @@
 //
 // mourngul les a rejointes le meme jour : la fiche de Waldakir Rahtep aligne desormais la
 // Spirit Host, que ses effets visent depuis le DLC, a la place de ses Mournguls.
+//
+// lamplighters a suivi le 18/10/2026 : Burnbarrels, regiment favori du Clan Verms selon le mod
+// Factional Favoured Regiments, prend sa place sur la fiche de Blight Tenscratch.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -118,5 +121,6 @@ const unitImagesHorsFiches = {
   nagSpiritHosts: 'assets/units/nagSpiritHosts.png',
   nagFellSpectres: 'assets/units/nagFellSpectres.png',
   nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
-  mourngul: 'assets/units/mourngul.png'
+  mourngul: 'assets/units/mourngul.png',
+  lamplighters: 'assets/units/lamplighters.png'
 };
