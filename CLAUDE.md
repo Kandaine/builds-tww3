@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4086 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2131 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4088 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2134 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -301,6 +301,14 @@ the End Times* :
   Skarrik, Trikstab, Blight, Rikzik, Sitch, Grrzk, Misericorde, Vazgrat, Targog, John Tyreweld) : +5
   lignes nettes. Couples : +3 (`slaveringMaws` et `vilebites` extraites, `rustblades` qui reprend la
   carte de `slimeblades`, identique dans le jeu), −1 (`lamplighters`, rangée dans `_hors-fiches.js`).
+- **Puis 4086 → 4088 cartes et 2131 → 2134 couples : héros de Norsca (19/10/2026).** Les héros légendaires
+  de SCM Tribes of the North réalignés sur les scripts du mod, qui les donnent chacun à un seigneur —
+  Soren chez Adella et Oda chez Ulfric vérifiés en jeu. Lignes : +1 chez Ulfric, Geimdall et Hakka (un
+  héros donné plus tard s'ajoute), +2 chez Einarr (Usta, Kammler et Asta à la place de la ligne des
+  deux Shamans), −1 chez Drenok, Surtha Ek et Grydal (leur héros n'était pas le leur). Couples : +6
+  cartes extraites (Oerl, Haraldur, Kolsveinn, Tuula, Alfkael, Asta), −3 rangées dans `_hors-fiches.js`
+  (Orgrim, Berus, Haftagg). Le module de Norsca passe de 8,7 à 8,8 Ko : la moyenne des 32 bouge de
+  6 octets, le total d'une page de faction reste à 56,5 Ko.
 
 ---
 
@@ -328,8 +336,9 @@ Taurox ↔ Morghur — signature caractéristique du raisonnement par affinité.
 Estroth the Silent porte la clé `merovech`, le duc maudit de Mousillon, et je l'avais donc mis chez
 Mallobaude ; sa compétence innée s'appelle **« Standard Bearer of Vlad von Carstein »**.
 
-**Le bon réflexe** : avant de placer un héros de mod, chercher **`spawn_unique_agent` ET
-`spawn_agent_at_military_force`** dans `script\campaign\**\*.lua` du pack. Si l'un des deux appels
+**Le bon réflexe** : avant de placer un héros de mod, chercher **`spawn_unique_agent`** — ce qui
+couvre aussi `spawn_unique_agent_at_character`, la variante qui pose le héros à côté d'un personnage —
+**ET `spawn_agent_at_military_force`** dans `script\campaign\**\*.lua` du pack. Si l'un de ces appels
 existe, la faction qu'il nomme est la seule réponse.
 Chercher aussi une compétence innée ou un objet qui nomme un seigneur — c'est ce qui a tranché pour
 Estroth, pour Ogg Halfheart (« First Mate of the Pirate Queen ») et pour Victor Guttman, décrit par
@@ -356,6 +365,25 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `scm_skaven_clans.pack` | 3 | non vérifié |
 | `_ork_pirates_V2.pack` | 2 | vérifiés (Orklid correct, Ramnbow absent du site) |
 | `froeb_dark_land_orcs.pack` | 2 | non vérifié |
+| `!scm_totn.pack` (Tribes of the North) | 24, dont 13 `_at_character` | **traité** le 19/10/2026 — absent du relevé du 08/09 |
+
+**SCM Tribes of the North, traité le 19/10/2026.** Il manquait au relevé du 08/09 parce qu'il passe
+surtout par une **troisième fonction**, `spawn_unique_agent_at_character(<faction>, "<agent>",
+<personnage>, true)`, qui pose le héros à côté du chef de faction. Le relevé, lui, ne cherchait que
+`spawn_unique_agent(`. Lu dans `wh3_main_combi\mod\rhox_fc_norsca_init.lua`, `mod\scm_norsca_lh.lua` et
+`mod\rhox_baersonling_mission_chain.lua`, il avait **13 fiches Norsca sur 25 à corriger** : 11 héros
+étaient chez le mauvais seigneur, 1 n'existe pas en Immortal Empires, et 6 autres, que le mod donne,
+manquaient au site. Soren Hoarder chez
+Adella et Jarl Oda Winterclaw chez Ulfric ont été **vérifiés en jeu par le user**. Deux leçons, chacune
+venue d'un cas réel :
+
+- **Les droits de recrutement ne prouvent pas qu'un héros unique s'obtient.**
+  `faction_agent_permitted_subtypes` ouvre Orgrim à 16 factions norses, mais seule la chaîne de missions
+  d'Einarr le fait apparaître : le user ne le voit pas dans le recrutement d'Ulfric.
+- **Un script du Vieux Monde ne vaut pas pour Immortal Empires.** Haftagg n'est donné que par
+  `cr_oldworld\mod\scm_norsca_tow_init.lua`. Le user ne le voit pas chez Grydal. Avant de conclure,
+  regarder **sous quel dossier de campagne** se trouve l'appel : `wh3_main_combi` pour Immortal
+  Empires, `cr_oldworld` pour le Vieux Monde, `mod` pour les deux.
 
 **27 des 31 appels restants passent la faction par une variable**, pas par une chaîne littérale :
 aucune regex ne les résout, il faut lire les scripts. Aucun défaut prouvé hors de « 3 Legendary

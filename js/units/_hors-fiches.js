@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 97 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 100 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -19,6 +19,14 @@
 //
 // lamplighters a suivi le 18/10/2026 : Burnbarrels, regiment favori du Clan Verms selon le mod
 // Factional Favoured Regiments, prend sa place sur la fiche de Blight Tenscratch.
+//
+// orgrimTheWanderer, berusOfVeigs et haftagg sont venus le 19/10/2026, quand les heros
+// legendaires de Norsca ont ete realignes sur les scripts du mod SCM Tribes of the North.
+// Orgrim et Berus restent obtenables, mais seulement par la chaine de missions d'Einarr,
+// en alternative a Usta et a Kammler que sa fiche aligne : l'un ou l'autre, jamais les deux.
+// Haftagg n'est donne que dans la campagne du Vieux Monde (scm_norsca_tow_init.lua, chez
+// Yngve) : en Immortal Empires, aucun script ne le fait apparaitre — le user ne l'a pas vu
+// chez Grydal, et les droits de recrutement ne suffisent pas pour un agent unique.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -122,5 +130,8 @@ const unitImagesHorsFiches = {
   nagFellSpectres: 'assets/units/nagFellSpectres.png',
   nagShadeHaunts: 'assets/units/nagShadeHaunts.png',
   mourngul: 'assets/units/mourngul.png',
-  lamplighters: 'assets/units/lamplighters.png'
+  lamplighters: 'assets/units/lamplighters.png',
+  orgrimTheWanderer: 'assets/units/orgrimTheWanderer.png',
+  berusOfVeigs: 'assets/units/berusOfVeigs.png',
+  haftagg: 'assets/units/haftagg.png'
 };
