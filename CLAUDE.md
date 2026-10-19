@@ -161,7 +161,7 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4090 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Cartes d'unité affichées, toutes fiches confondues | 4089 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
 | Couples (faction, clé d'icône) cités par les fiches | 2134 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
@@ -314,6 +314,11 @@ the End Times* :
   Ses compétences renforcent les araignées : il entre chez Wurrzag, Azhag et Skarsnik, qui en alignent,
   et sort de chez Sporctacus, dont la note le disait à tort exclusif. +3 −1 lignes ; aucun couple de
   plus, la clé `snaglaGrobspit` étant déjà déclarée.
+- **Puis 4090 → 4089 cartes : héros de Bretonnie (19/10/2026).** Réalignés sur les scripts des mods.
+  Calard, Fastric et Jerrod sont les compagnons de Tancred, qu'il est seul à obtenir (`ubr_tancred_bros.lua`,
+  Bretonnian Dukes) : +2 lignes chez lui, −1 chez Hagen, Folcard et Taubert. Iselda passe de Theodoric à
+  Armand et Amalric d'Adalhard à Fay, tous deux vérifiés en jeu : +1 chez Fay, −1 chez Adalhard. Agravain
+  remplace le Paladin de Bohemond, dont l'effet vise les héros intégrés à l'armée. Aucun couple de plus.
 
 ---
 
