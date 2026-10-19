@@ -161,7 +161,7 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4088 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Cartes d'unité affichées, toutes fiches confondues | 4090 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
 | Couples (faction, clé d'icône) cités par les fiches | 2134 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
@@ -309,6 +309,11 @@ the End Times* :
   cartes extraites (Oerl, Haraldur, Kolsveinn, Tuula, Alfkael, Asta), −3 rangées dans `_hors-fiches.js`
   (Orgrim, Berus, Haftagg). Le module de Norsca passe de 8,7 à 8,8 Ko : la moyenne des 32 bouge de
   6 octets, le total d'une page de faction reste à 56,5 Ko.
+- **Puis 4088 → 4090 cartes : Snagla Grobspit (19/10/2026).** Héros légendaire du jeu de base, qu'un
+  script du jeu (`wh3_main_legendary_characters.lua`) offre par mission à toute faction Peau-Verte jouée.
+  Ses compétences renforcent les araignées : il entre chez Wurrzag, Azhag et Skarsnik, qui en alignent,
+  et sort de chez Sporctacus, dont la note le disait à tort exclusif. +3 −1 lignes ; aucun couple de
+  plus, la clé `snaglaGrobspit` étant déjà déclarée.
 
 ---
 
