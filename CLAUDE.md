@@ -373,9 +373,20 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `um's_Mortkin.pack` | 5 | non vérifié |
 | `@red_hef_lords_public.pack` | 4 | 1 vérifié (Lirazel, correct) |
 | `scm_skaven_clans.pack` | 3 | non vérifié |
-| `_ork_pirates_V2.pack` | 2 | vérifiés (Orklid correct, Ramnbow absent du site) |
-| `froeb_dark_land_orcs.pack` | 2 | non vérifié |
+| `_ork_pirates_V2.pack` | 8 (4 cas joueur/IA × 2 héros) | **traité** le 19/10/2026 : Orklid et Ramn'bow → Barbozza (`cluster_eye_tribe`), corrects |
+| `froeb_dark_land_orcs.pack` | 3 | **traité** le 19/10/2026 : Gurthok → Gormok, par mission pour un joueur (vaincre 6 armées de Nains du Chaos) |
 | `!scm_totn.pack` (Tribes of the North) | 24, dont 13 `_at_character` | **traité** le 19/10/2026 — absent du relevé du 08/09 |
+| `Blackskullz_Horde_Faction.pack` | 1 `_at_character` | **traité** le 19/10/2026 : Borlok → Skarfang, correct |
+| `!uber_brt_dukes.pack` (Bretonnian Dukes) | 9 | **traité** le 19/10/2026 : Calard, Fastric, Jerrod → Tancred seul (missions) ; Iselda → Armand (vérifié en jeu) |
+| `ab_mixu_legendary_lords.pack` | 1 appel générique, piloté par la table `unique_agents` | **Bretonnie traitée** le 19/10/2026 : Amalric → Fay (vérifié en jeu), Donna → Tyreweld. Autres races non vérifiées |
+| `!!gra_knights_origo`, `!!gra_knights_flame`, `!!gra_outremer` | 2 chacun (IE + Vieux Monde) | **traités** le 19/10/2026 : Donna, Riviere, Balian → leur seigneur, corrects |
+| `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
+| `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Bretonnie traitée** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja |
+
+Hors workshop, le jeu de base attribue lui aussi des héros légendaires par mission :
+`script\campaign\wh3_main_legendary_characters.lua`, dans `data_script.pack`, les ouvre à une
+**culture** (`allowed_cultures`) et non à une faction. Snagla Grobspit (Peaux-Vertes) traité le
+19/10/2026 ; les autres (Beorg Bearstruck, Caradryan, Theodore Bruckner…) restent à voir race par race.
 
 **SCM Tribes of the North, traité le 19/10/2026.** Il manquait au relevé du 08/09 parce qu'il passe
 surtout par une **troisième fonction**, `spawn_unique_agent_at_character(<faction>, "<agent>",
@@ -396,10 +407,10 @@ venue d'un cas réel :
   Empires, `cr_oldworld` pour le Vieux Monde, `mod` pour les deux.
 
 **27 des 31 appels restants passent la faction par une variable**, pas par une chaîne littérale :
-aucune regex ne les résout, il faut lire les scripts. Aucun défaut prouvé hors de « 3 Legendary
-Guys » à ce jour, mais **ce n'est pas une preuve d'absence de défaut** — ni sur ces 27, ni sur ce
-que la seconde fonction aurait remonté. Le gros morceau est Marienburg et ses 15 appels. Point de
-reprise si le sujet revient.
+aucune regex ne les résout, il faut lire les scripts. Depuis le 19/10/2026, des défauts sont prouvés
+hors de « 3 Legendary Guys » : SCM Tribes of the North, Bretonnian Dukes et Mixu en avaient tous. Les
+mods encore marqués « non vérifié » ne sont donc pas présumés justes. Le gros morceau reste
+Marienburg et ses 15 appels. La méthode est le parcours D du skill `fiches-tww3`.
 
 Deux pièges de méthode relevés en chemin, tous deux ont produit de faux résultats :
 

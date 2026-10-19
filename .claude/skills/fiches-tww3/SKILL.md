@@ -1,6 +1,6 @@
 ---
 name: fiches-tww3
-description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots), ou revoir toute une page après un DLC, un patch du jeu ou la mise à jour d'un mod. À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, annonce un DLC ou une mise à jour, ou évoque data/*.json, js/units/*.js, js/core.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
+description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots), revoir toute une page après un DLC, un patch du jeu ou la mise à jour d'un mod, ou réaligner les héros légendaires d'une race sur les scripts des mods qui les attribuent. À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, annonce un DLC ou une mise à jour, ou évoque data/*.json, js/units/*.js, js/core.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
 ---
 
 # Fiches builds-tww3
@@ -13,7 +13,7 @@ légendaires de TWW3 en Immortal Empires. Dépôt `C:\Users\Utilisateur\Projets\
 sur `main`. Une fiche fausse ou une carte sans image est donc visible par des visiteurs, pas
 seulement par le user — c'est ce qui justifie la sévérité des invariants ci-dessous.
 
-Trois parcours. Lire d'abord les invariants, ils valent pour les trois.
+Quatre parcours. Lire d'abord les invariants, ils valent pour les quatre.
 
 ---
 
@@ -283,6 +283,95 @@ même faction (Rykarth / Kharkadon, 18/10/2026) : exposer les options au user (r
 
 ---
 
+## Parcours D — réaligner les héros légendaires d'une page
+
+Vérifier, pour une race, que chaque héros légendaire est dans le build des seigneurs qui l'obtiennent
+réellement, et seulement là où sa présence se justifie. Établi sur la passe des 18-19/10/2026 :
+Norsca (13 fiches corrigées), Peaux-Vertes (4 builds et une note), Bretonnie (9 fiches), une page
+par lot, toutes en ligne.
+
+**La leçon qui fonde ce parcours : un héros placé d'après son lore, sa clé ou la table des droits
+est faux dès qu'un script l'attribue.** Norsca avait 11 héros de SCM Tribes of the North chez le
+mauvais seigneur ; la Bretonnie, 5 héros placés à 6 endroits faux. Les deux erreurs les plus fréquentes : un héros réservé à un seigneur placé
+chez un autre (Fastric, compagnon de Tancred, chez Hagen), et un héros ouvert à tous déclaré
+exclusif (Snagla « exclusif à Da Cage Breakaz »).
+
+**1. Inventorier les héros légendaires de la page et retrouver leur pack.** Les noms des fiches
+contiennent « Légendaire ». Chercher chaque nom dans la loc des packs (`dump_loc_kv.ps1`), clés
+`land_units_onscreen_name_*` et `agent_subtypes_onscreen_name_override_*` : elles donnent la clé
+d'agent et le mod. Un nom trouvé dans **deux** packs désigne deux personnages (Hermit Knight of
+Malmont : `hermit_knight_1` de Heroes of Legend, `str_hermit` de SCM) — la note et l'icône de la
+fiche disent lequel le site aligne. Un héros du jeu de base se cherche dans `local_en.pack`.
+
+**2. Lire comment il s'obtient.** `spawn_calls.ps1 -Pack <pack>` liste les appels d'attribution ;
+`extract_lua.ps1` extrait les scripts quand la faction passe par une variable ou une table. Cinq
+mécanismes rencontrés, qui ne se traitent pas pareil :
+
+| Mécanisme | Exemples | Conséquence |
+|---|---|---|
+| donné à une faction au départ (`spawn_unique_agent`, `_at_character`, `spawn_agent_at_military_force`) | 3 Legendary Guys, SCM TotN, Iselda, Amalric (table `unique_agents` de Mixu), Lafayette | réservé à ce seigneur |
+| chaîne de missions d'une faction | compagnons de Tancred, chaîne d'Einarr, Gurthok, Hildr | réservé, mais pas au premier tour |
+| bâtiment ou région d'une faction | Hafskael's Yard, Monolith of Valmir Aesling | réservé, pas au premier tour |
+| premier arrivé d'une culture | Heroes of Legend (`scehr_hol_characters_buildings_entries.lua`, `subcultureKeys`), LYH Malok (prendre Nuja), jeu de base (`wh3_main_legendary_characters.lua` dans `data_script.pack`, `allowed_cultures`) | ouvert à tous les seigneurs de la culture |
+| aucun script en Immortal Empires | Haftagg (appel sous `cr_oldworld` seulement) | absent : le retirer |
+
+Trois pièges de lecture, tous rencontrés :
+
+- **le dossier de campagne compte** : `wh3_main_combi` vaut pour Immortal Empires, `cr_oldworld`
+  pour le Vieux Monde seulement, `mod` pour les deux ;
+- **un appel dans un bloc `--[[ … ]]` est neutralisé** (Asta, dans `scm_norsca_lh.lua`, n'est
+  donnée que par la chaîne d'Einarr) ;
+- **une clé de faction se traduit par la loc, pas par le nom affiché du jeu de base** : un mod
+  renomme (`wh3_dlc26_grn_cluster_eye_tribe` = Da Bloodsail Fleet, la faction de Barbozza). Le bloc du
+  script qui nomme le sous-type du seigneur tranche aussi.
+
+**`faction_agent_permitted_subtypes` ne prouve pas qu'un héros unique s'obtient** : elle ouvre Orgrim
+à 16 tribus, mais seule la chaîne d'Einarr le fait apparaître. L'inverse n'a pas été vérifié en jeu :
+une faction absente de la table n'a sans doute pas le droit au héros (Gnarly et Snagla), mais le
+dire comme une hypothèse.
+
+**3. Faire vérifier en jeu un ou deux cas par mod.** « Tel héros est-il dans l'armée de tel seigneur
+au départ ? » : la question se règle au premier tour. Quatre confirmations sur quatre le 19/10/2026
+(Soren, Oda, Iselda, Amalric). Une lecture confirmée vaut pour les autres attributions du même mod —
+inutile de tout faire vérifier.
+
+**4. Classer, puis soumettre un tableau par page.**
+
+- **Réservé à un seigneur** : il va chez lui, et seulement chez lui. Le retirer partout ailleurs.
+- **Ouvert à une culture** : règle du 17/10/2026, il entre dans **chaque** build où un effet du
+  seigneur le vise — sa classe, son nom, son type, ou « héros intégrés à l'armée » (Bohemond) — ou
+  comble un manque nommé. Mesurer ce que le héros renforce : ses compétences
+  (`character_skill_level_to_effects_junctions`) → effets → ensembles d'unités
+  (`effect_bonus_value_ids_unit_sets`, `…_unit_attribute_junctions`, `…_unit_ability_junctions`).
+  Snagla renforce les araignées : il entre chez les trois seigneurs qui en alignent. Un champion sans
+  synergie propre n'entre nulle part — le « recrutable suffit » a été écarté.
+- **Chaîne à choix exclusifs** : choisir d'après les effets du seigneur, et dire l'alternative dans
+  la section magie ou la note (Einarr : Usta et Kammler, ou Orgrim et Berus).
+
+Pour les slots : remplacer **un pour un** quand le rôle est le même (les compagnons de Tancred à la
+place de Paladins) ; garder un héros générique que les effets du seigneur visent (le Paladin de
+Tancred) ; donner un lanceur générique à une fiche qui perdrait son seul lanceur (Theodoric) ;
+sinon proposer, fiche par fiche, l'unité retirée ou ajoutée et l'effet qui la justifie. Attendre le
+feu vert.
+
+**5. Écrire.** La note dit **comment** le héros s'obtient — au départ, par mission, par bâtiment, au
+premier arrivé — jamais « à vérifier » (voir les invariants). Relire `role`, `magic`, `note` et les
+notes d'unités : un héros déplacé y survit souvent (Hagen citait Fastric dans son rôle et sa note).
+Corriger au passage les notes qui affirmaient une exclusivité d'après les tables.
+
+Les cartes nouvelles passent par `tww-assets` (`ui\units\icons\<clé>.png`, déjà en 60×130). Une clé
+qui ne sert plus à aucune fiche part dans `js/units/_hors-fiches.js`, avec sa raison en commentaire.
+
+Éditer le JSON **ligne à ligne sur le texte brut** — une ligne par objet `{"icon": …}` —, jamais par
+un `JSON.stringify` du fichier entier, qui reformate tout : le diff devient illisible et les fins de
+ligne changent (voir `references/format-fiche.md`).
+
+**6. Contrôles, `CLAUDE.md`, commit par page.** Comme au parcours C. En plus : ajouter le mod traité
+au tableau « Les héros de mod : le script fait foi » de `CLAUDE.md`, et consigner l'avancement dans
+la mémoire `passe-heros-retroactive`.
+
+---
+
 ## Croiser les mods entre eux
 
 Les mods installés ne sont pas des silos. Une unité ou un héros ajouté par un mod est souvent
@@ -483,7 +572,7 @@ Sinon le dépôt accumule des assets morts.
 
 ## Outils
 
-`C:\Users\Utilisateur\.claude\tools\tww\` — six scripts PowerShell, tous paramétrés :
+`C:\Users\Utilisateur\.claude\tools\tww\` — scripts PowerShell, tous paramétrés. Les principaux :
 
 | Script | Usage |
 |---|---|
@@ -493,6 +582,8 @@ Sinon le dépôt accumule des assets morts.
 | `extract_card.ps1 -PackPath -Src -Name [-DestSub portraits]` | extraire une carte en 60×130 |
 | `validate_fiche.ps1 -Faction <nom> [-Id <id>]` | recalculer slots et icônes |
 | `scan_packs.ps1 -Match <regex>` | balayer les ~133 packs workshop en une minute, pour les cas de double provenance |
+| `spawn_calls.ps1 -Pack [-Match] [-Context]` | lister les appels qui attribuent un héros à une faction dans les `.lua` d'un pack (parcours D) |
+| `extract_lua.ps1 -Pack -Out [-Like]` | extraire des scripts `.lua` pour les lire (parcours D) |
 
 Le sous-agent **`tww-assets`** (Sonnet) fait l'extraction en lot et l'enregistrement dans
 `js/units/<faction>.js`. Lui donner les chemins internes exacts, les clés voulues **et la faction**,
