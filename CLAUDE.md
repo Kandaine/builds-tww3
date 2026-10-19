@@ -161,7 +161,7 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4089 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Cartes d'unité affichées, toutes fiches confondues | 4088 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
 | Couples (faction, clé d'icône) cités par les fiches | 2134 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
@@ -319,6 +319,10 @@ the End Times* :
   Bretonnian Dukes) : +2 lignes chez lui, −1 chez Hagen, Folcard et Taubert. Iselda passe de Theodoric à
   Armand et Amalric d'Adalhard à Fay, tous deux vérifiés en jeu : +1 chez Fay, −1 chez Adalhard. Agravain
   remplace le Paladin de Bohemond, dont l'effet vise les héros intégrés à l'armée. Aucun couple de plus.
+- **Puis 4089 → 4088 cartes : héros des Hauts Elfes (19/10/2026).** Kitharl Woodwalker passe de Korhil à
+  Alarielle (LYH le donne à Avelorn, qui prend Tor Achare) : +1 chez elle, −1 chez Korhil. Caradryan quitte
+  Amon, dont la faction n'est pas dans la liste du jeu de base (−1), et remplace le Noble d'Imrik, dont
+  l'Invocation of Eldrazor vise les héros. Aucun couple de plus.
 
 ---
 
@@ -381,7 +385,10 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `ab_mixu_legendary_lords.pack` | 1 appel générique, piloté par la table `unique_agents` | **Bretonnie traitée** le 19/10/2026 : Amalric → Fay (vérifié en jeu), Donna → Tyreweld. Autres races non vérifiées |
 | `!!gra_knights_origo`, `!!gra_knights_flame`, `!!gra_outremer` | 2 chacun (IE + Vieux Monde) | **traités** le 19/10/2026 : Donna, Riviere, Balian → leur seigneur, corrects |
 | `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
-| `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Bretonnie traitée** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja |
+| `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Bretonnie et Hauts Elfes traités** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja ; Kitharl → Avelorn, qui prend Tor Achare |
+| `@red_hef_lords_public.pack` (High Elves Lords) | 7, dont un bloc entier mis en commentaire | **traité** le 19/10/2026 : Lirazel → Avelorn (mission) ; Khaltar → Nagarythe, par une compétence de son seigneur Alatar ; Selafyn au premier joueur qui recherche `wh2_main_tech_hef_1_09` ; Imrallion → Teclis (mission), non placé |
+| `ovn_citadel_of_dusk.pack` | 0 — passe par `cm:create_agent` | **traité** le 19/10/2026 : Caladris → Citadel of Dusk, correct |
+| `!scm_legendary.pack` (SCM Legendary Characters) | table `scm_lc_spawn_hero` | **Hauts Elfes et Bretonnie traités** le 19/10/2026. **Piège** : la `faction_key` de la table n'est que le repli de l'IA ; la mission va au **premier joueur de la même culture**, sauf `faction_subset` explicite |
 
 Hors workshop, le jeu de base attribue lui aussi des héros légendaires par mission :
 `script\campaign\wh3_main_legendary_characters.lua`, dans `data_script.pack`, les ouvre à une

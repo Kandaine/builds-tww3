@@ -309,18 +309,25 @@ mécanismes rencontrés, qui ne se traitent pas pareil :
 
 | Mécanisme | Exemples | Conséquence |
 |---|---|---|
-| donné à une faction au départ (`spawn_unique_agent`, `_at_character`, `spawn_agent_at_military_force`) | 3 Legendary Guys, SCM TotN, Iselda, Amalric (table `unique_agents` de Mixu), Lafayette | réservé à ce seigneur |
+| donné à une faction au départ (`spawn_unique_agent`, `_at_character`, `spawn_agent_at_military_force`, `create_agent`) | 3 Legendary Guys, SCM TotN, Iselda, Amalric (table `unique_agents` de Mixu), Lafayette, Caladris | réservé à ce seigneur |
 | chaîne de missions d'une faction | compagnons de Tancred, chaîne d'Einarr, Gurthok, Hildr | réservé, mais pas au premier tour |
 | bâtiment ou région d'une faction | Hafskael's Yard, Monolith of Valmir Aesling | réservé, pas au premier tour |
 | premier arrivé d'une culture | Heroes of Legend (`scehr_hol_characters_buildings_entries.lua`, `subcultureKeys`), LYH Malok (prendre Nuja), jeu de base (`wh3_main_legendary_characters.lua` dans `data_script.pack`, `allowed_cultures`) | ouvert à tous les seigneurs de la culture |
 | aucun script en Immortal Empires | Haftagg (appel sous `cr_oldworld` seulement) | absent : le retirer |
 
-Trois pièges de lecture, tous rencontrés :
+Cinq pièges de lecture, tous rencontrés :
 
 - **le dossier de campagne compte** : `wh3_main_combi` vaut pour Immortal Empires, `cr_oldworld`
   pour le Vieux Monde seulement, `mod` pour les deux ;
 - **un appel dans un bloc `--[[ … ]]` est neutralisé** (Asta, dans `scm_norsca_lh.lua`, n'est
-  donnée que par la chaîne d'Einarr) ;
+  donnée que par la chaîne d'Einarr ; tout `hbe_spawn_lords.lua` de High Elves Lords) ;
+- **une faction écrite dans une table n'est pas forcément le destinataire** : chez SCM Legendary
+  (`scm_lc_spawn_hero`), la `faction_key` n'est que le repli de l'IA, et la mission va au **premier
+  joueur de la même culture**, sauf `faction_subset`. Lire la boucle qui consomme la table avant de
+  conclure — j'ai cru Talarian réservé à Tyrion et le Hermit Knight SCM à Louen, et j'ai publié ce
+  second contresens avant de le corriger ;
+- **`spawn_calls.ps1` ne voit pas `cm:create_agent`** (Caladris, Citadel of Dusk) : sans résultat,
+  relancer avec `-Match '<clé du héros>' -Context 4` ;
 - **une clé de faction se traduit par la loc, pas par le nom affiché du jeu de base** : un mod
   renomme (`wh3_dlc26_grn_cluster_eye_tribe` = Da Bloodsail Fleet, la faction de Barbozza). Le bloc du
   script qui nomme le sous-type du seigneur tranche aussi.
