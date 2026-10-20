@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4088 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2134 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4086 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2133 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -323,6 +323,11 @@ the End Times* :
   Alarielle (LYH le donne à Avelorn, qui prend Tor Achare) : +1 chez elle, −1 chez Korhil. Caradryan quitte
   Amon, dont la faction n'est pas dans la liste du jeu de base (−1), et remplace le Noble d'Imrik, dont
   l'Invocation of Eldrazor vise les héros. Aucun couple de plus.
+- **Puis 4088 → 4086 cartes et 2134 → 2133 couples : héros des Comtes Vampires (20/10/2026).** Nicolete de
+  Oisement passe de la Dame du Graal Noir à Mallobaude, dont la bande compte quatre membres dans le script
+  de Mixu's Mousillon (+1 chez lui, −1 chez elle, une troisième Damsel prenant sa place). L'Ulrika de SCM
+  Legendary, désactivée en Immortal Empires, sort des fiches de Rahtep et de Vorag (−1 chacun) ; sa clé
+  `ulrikaMagdova` part dans `_hors-fiches.js`.
 
 ---
 
@@ -373,9 +378,8 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | Mod | Appels | État |
 |---|---|---|
 | `!!!3_legendary_guys.pack` | 29 | **traité** |
-| `!scm_marienburg.pack` | 15 | non vérifié |
+| `!scm_marienburg.pack` | 15 | **Comtes Vampires traités** le 20/10/2026 : Alicia → Mundvard, par `spawn_agent_at_position`. Le reste non vérifié |
 | `um's_Mortkin.pack` | 5 | non vérifié |
-| `@red_hef_lords_public.pack` | 4 | 1 vérifié (Lirazel, correct) |
 | `scm_skaven_clans.pack` | 3 | non vérifié |
 | `_ork_pirates_V2.pack` | 8 (4 cas joueur/IA × 2 héros) | **traité** le 19/10/2026 : Orklid et Ramn'bow → Barbozza (`cluster_eye_tribe`), corrects |
 | `froeb_dark_land_orcs.pack` | 3 | **traité** le 19/10/2026 : Gurthok → Gormok, par mission pour un joueur (vaincre 6 armées de Nains du Chaos) |
@@ -384,11 +388,12 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `!uber_brt_dukes.pack` (Bretonnian Dukes) | 9 | **traité** le 19/10/2026 : Calard, Fastric, Jerrod → Tancred seul (missions) ; Iselda → Armand (vérifié en jeu) |
 | `ab_mixu_legendary_lords.pack` | 1 appel générique, piloté par la table `unique_agents` | **Bretonnie traitée** le 19/10/2026 : Amalric → Fay (vérifié en jeu), Donna → Tyreweld. Autres races non vérifiées |
 | `!!gra_knights_origo`, `!!gra_knights_flame`, `!!gra_outremer` | 2 chacun (IE + Vieux Monde) | **traités** le 19/10/2026 : Donna, Riviere, Balian → leur seigneur, corrects |
-| `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
+| `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Comtes Vampires traités** le 20/10/2026 : Helmut, Gorgivich, Gunther → Mannfred seul (`factionKeys`). **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
 | `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Bretonnie et Hauts Elfes traités** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja ; Kitharl → Avelorn, qui prend Tor Achare |
 | `@red_hef_lords_public.pack` (High Elves Lords) | 7, dont un bloc entier mis en commentaire | **traité** le 19/10/2026 : Lirazel → Avelorn (mission) ; Khaltar → Nagarythe, par une compétence de son seigneur Alatar ; Selafyn au premier joueur qui recherche `wh2_main_tech_hef_1_09` ; Imrallion → Teclis (mission), non placé |
 | `ovn_citadel_of_dusk.pack` | 0 — passe par `cm:create_agent` | **traité** le 19/10/2026 : Caladris → Citadel of Dusk, correct |
-| `!scm_legendary.pack` (SCM Legendary Characters) | table `scm_lc_spawn_hero` | **Hauts Elfes et Bretonnie traités** le 19/10/2026. **Piège** : la `faction_key` de la table n'est que le repli de l'IA ; la mission va au **premier joueur de la même culture**, sauf `faction_subset` explicite |
+| `ab_mixu_mousillon.pack` (Mixu's Mousillon) | 2, plus des missions de recrutement | **traité** le 20/10/2026 : Bougars, Eustache, Aucassin **et Nicolete** → Mallobaude (`mallobaude_gang`), les quatre missions de recrutement **vues en jeu par le user** au premier tour. La liste des héros de l'écran de sélection ne les montre pas : elle ne prouve rien pour un héros de mission |
+| `!scm_legendary.pack` (SCM Legendary Characters) | table `scm_lc_spawn_hero` | **Hauts Elfes, Bretonnie et Comtes Vampires traités** (19-20/10/2026) ; Ulrika (`str_ulrika`) y est désactivée en Immortal Empires. **Piège** : la `faction_key` de la table n'est que le repli de l'IA ; la mission va au **premier joueur de la même culture**, sauf `faction_subset` explicite |
 
 Hors workshop, le jeu de base attribue lui aussi des héros légendaires par mission :
 `script\campaign\wh3_main_legendary_characters.lua`, dans `data_script.pack`, les ouvre à une

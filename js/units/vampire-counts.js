@@ -41,7 +41,6 @@ const unitImages = {
   hexwraith: 'assets/units/hexwraith.png',
   theChillgheists: 'assets/units/theChillgheists.png',
   gothardUndyingKnight: 'assets/units/gothardUndyingKnight.png',
-  ulrikaMagdova: 'assets/units/ulrikaMagdova.png',
   obadiahGlothman: 'assets/units/obadiahGlothman.png',
   skeleton: 'assets/units/skeleton.png',
   konigsteinStalkers: 'assets/units/konigsteinStalkers.png',

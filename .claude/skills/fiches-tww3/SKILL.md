@@ -309,7 +309,7 @@ mécanismes rencontrés, qui ne se traitent pas pareil :
 
 | Mécanisme | Exemples | Conséquence |
 |---|---|---|
-| donné à une faction au départ (`spawn_unique_agent`, `_at_character`, `spawn_agent_at_military_force`, `create_agent`) | 3 Legendary Guys, SCM TotN, Iselda, Amalric (table `unique_agents` de Mixu), Lafayette, Caladris | réservé à ce seigneur |
+| donné à une faction au départ (`spawn_unique_agent`, `_at_character`, `spawn_agent_at_military_force`, `create_agent`, `spawn_agent_at_position`) | 3 Legendary Guys, SCM TotN, Iselda, Amalric (table `unique_agents` de Mixu), Lafayette, Caladris, Alicia | réservé à ce seigneur |
 | chaîne de missions d'une faction | compagnons de Tancred, chaîne d'Einarr, Gurthok, Hildr | réservé, mais pas au premier tour |
 | bâtiment ou région d'une faction | Hafskael's Yard, Monolith of Valmir Aesling | réservé, pas au premier tour |
 | premier arrivé d'une culture | Heroes of Legend (`scehr_hol_characters_buildings_entries.lua`, `subcultureKeys`), LYH Malok (prendre Nuja), jeu de base (`wh3_main_legendary_characters.lua` dans `data_script.pack`, `allowed_cultures`) | ouvert à tous les seigneurs de la culture |
@@ -326,7 +326,7 @@ Cinq pièges de lecture, tous rencontrés :
   joueur de la même culture**, sauf `faction_subset`. Lire la boucle qui consomme la table avant de
   conclure — j'ai cru Talarian réservé à Tyrion et le Hermit Knight SCM à Louen, et j'ai publié ce
   second contresens avant de le corriger ;
-- **`spawn_calls.ps1` ne voit pas `cm:create_agent`** (Caladris, Citadel of Dusk) : sans résultat,
+- **`spawn_calls.ps1` ne voit ni `cm:create_agent` (Caladris) ni `cm:spawn_agent_at_position` (Alicia, SCM Marienburg)** : sans résultat,
   relancer avec `-Match '<clé du héros>' -Context 4` ;
 - **une clé de faction se traduit par la loc, pas par le nom affiché du jeu de base** : un mod
   renomme (`wh3_dlc26_grn_cluster_eye_tribe` = Da Bloodsail Fleet, la faction de Barbozza). Le bloc du
@@ -338,9 +338,14 @@ une faction absente de la table n'a sans doute pas le droit au héros (Gnarly et
 dire comme une hypothèse.
 
 **3. Faire vérifier en jeu un ou deux cas par mod.** « Tel héros est-il dans l'armée de tel seigneur
-au départ ? » : la question se règle au premier tour. Quatre confirmations sur quatre le 19/10/2026
-(Soren, Oda, Iselda, Amalric). Une lecture confirmée vaut pour les autres attributions du même mod —
-inutile de tout faire vérifier.
+au départ ? » : la question se règle au premier tour. Cinq confirmations sur cinq (Soren, Oda, Iselda,
+Amalric, Nicolete). Une lecture confirmée vaut pour les autres attributions du même mod — inutile de
+tout faire vérifier.
+
+Pour un héros obtenu **par mission**, demander le **titre de la mission** (lu dans la loc,
+`missions_localised_title_<clé>`) et faire regarder le panneau des missions : la liste des héros de
+l'écran de sélection ne montre pas les héros de mission, et ne prouve donc rien (cas Nicolete,
+20/10/2026).
 
 **4. Classer, puis soumettre un tableau par page.**
 
@@ -360,6 +365,20 @@ place de Paladins) ; garder un héros générique que les effets du seigneur vis
 Tancred) ; donner un lanceur générique à une fiche qui perdrait son seul lanceur (Theodoric) ;
 sinon proposer, fiche par fiche, l'unité retirée ou ajoutée et l'effet qui la justifie. Attendre le
 feu vert.
+
+**Vérifier le plafond de héros avant de monter une quantité.** Demandé par le user le 20/10/2026 : un
+héros générique passé à 2 ou 3 doit pouvoir être recruté en autant d'exemplaires par cette faction.
+Le plafond se lit **par type d'agent** (`spy`, `wizard`, `champion`, `dignitary`…), et il est partagé
+par tous les héros de ce type :
+
+1. `effect_bonus_value_agent_junction_tables`, ligne `bonus_value_id = cap` : l'effet qui monte le
+   plafond d'un type (`wh_main_effect_agent_cap_increase_spy_banshee` → `spy`) ;
+2. `building_effects_junction_tables` : les bâtiments qui portent cet effet, et de combien
+   (`wh2_main_vmp_wraiths_2` : +2) ; un mod a souvent les siens (`mixu_msl_agent_cap_damsel`) ;
+3. les effets de la fiche du type « Capacité de héros : +N pour les … » s'y ajoutent.
+
+Si une seule source raisonnable de campagne ne suffit pas à atteindre la quantité, ne pas la monter.
+La vérification d'accès (le script, la table des droits) ne dit rien du plafond, et inversement.
 
 **5. Écrire.** La note dit **comment** le héros s'obtient — au départ, par mission, par bâtiment, au
 premier arrivé — jamais « à vérifier » (voir les invariants). Relire `role`, `magic`, `note` et les

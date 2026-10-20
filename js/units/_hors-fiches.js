@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 100 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 101 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -27,6 +27,11 @@
 // Haftagg n'est donne que dans la campagne du Vieux Monde (scm_norsca_tow_init.lua, chez
 // Yngve) : en Immortal Empires, aucun script ne le fait apparaitre — le user ne l'a pas vu
 // chez Grydal, et les droits de recrutement ne suffisent pas pour un agent unique.
+//
+// ulrikaMagdova a suivi le 20/10/2026 : l'Ulrika Magdova Straghov de SCM Legendary Characters,
+// que Rahtep et Vorag alignaient, est desactivee en Immortal Empires — son entree de
+// scm_lc_spawn_hero est dans un bloc --[[ ]] et son reglage MCT aussi. L'Ulrika officielle du
+// jeu de base existe, mais sa liste d'acces (Kislev, Empire, Malakai, Neferata) exclut les deux.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -133,5 +138,6 @@ const unitImagesHorsFiches = {
   lamplighters: 'assets/units/lamplighters.png',
   orgrimTheWanderer: 'assets/units/orgrimTheWanderer.png',
   berusOfVeigs: 'assets/units/berusOfVeigs.png',
-  haftagg: 'assets/units/haftagg.png'
+  haftagg: 'assets/units/haftagg.png',
+  ulrikaMagdova: 'assets/units/ulrikaMagdova.png'
 };
