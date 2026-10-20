@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 101 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 102 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -32,6 +32,10 @@
 // que Rahtep et Vorag alignaient, est desactivee en Immortal Empires — son entree de
 // scm_lc_spawn_hero est dans un bloc --[[ ]] et son reglage MCT aussi. L'Ulrika officielle du
 // jeu de base existe, mais sa liste d'acces (Kislev, Empire, Malakai, Neferata) exclut les deux.
+//
+// dragonGuardCrossbowmen (Celestial Dragon Crossbows) a suivi le meme jour : Yun Xiang, seule fiche
+// a les aligner, leur a prefere Na Natian, que DEER24 donne a sa faction des le premier tour —
+// et leur note disait deja qu'aucun effet du seigneur ne les visait.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -139,5 +143,6 @@ const unitImagesHorsFiches = {
   orgrimTheWanderer: 'assets/units/orgrimTheWanderer.png',
   berusOfVeigs: 'assets/units/berusOfVeigs.png',
   haftagg: 'assets/units/haftagg.png',
-  ulrikaMagdova: 'assets/units/ulrikaMagdova.png'
+  ulrikaMagdova: 'assets/units/ulrikaMagdova.png',
+  dragonGuardCrossbowmen: 'assets/units/dragonGuardCrossbowmen.png'
 };

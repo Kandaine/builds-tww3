@@ -63,7 +63,6 @@ const unitImages = {
   jadeBloodedTaoists: 'assets/units/jadeBloodedTaoists.png',
   jadeCustodiansTroops: 'assets/units/jadeCustodiansTroops.png',
   tigerWarriorStalkers: 'assets/units/tigerWarriorStalkers.png',
-  dragonGuardCrossbowmen: 'assets/units/dragonGuardCrossbowmen.png',
   peiYue: 'assets/portraits/peiYue.png',
   miaoYi: 'assets/portraits/miaoYi.png',
   xianFeng: 'assets/units/xianFeng.png',
@@ -101,5 +100,8 @@ const unitImages = {
   kuXi: 'assets/portraits/kuXi.png',
   fangWenzi: 'assets/portraits/fangWenzi.png',
   yeJia: 'assets/portraits/yeJia.png',
-  xenWu: 'assets/portraits/xenWu.png'
+  xenWu: 'assets/portraits/xenWu.png',
+  vivlethShul: 'assets/units/vivlethShul.png',
+  qinYu: 'assets/units/qinYu.png',
+  liuJianguo: 'assets/units/liuJianguo.png'
 };

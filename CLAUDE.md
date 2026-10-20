@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4086 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2133 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4087 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2135 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -328,6 +328,13 @@ the End Times* :
   de Mixu's Mousillon (+1 chez lui, −1 chez elle, une troisième Damsel prenant sa place). L'Ulrika de SCM
   Legendary, désactivée en Immortal Empires, sort des fiches de Rahtep et de Vorag (−1 chacun) ; sa clé
   `ulrikaMagdova` part dans `_hors-fiches.js`.
+- **Puis 4086 → 4087 cartes et 2133 → 2135 couples : héros du Grand Cathay (20/10/2026).** DEER24 donne au
+  départ Pei Yue à Zhao Ming, Fang Wenzi à Miao Ying, The Martial Saint à Yuan Bo et Na Natian à Yun
+  Xiang — le site les plaçait chez Duan Wei, Zhao Qi et Jin Xiao. LYH pose dans l'armée de départ
+  Vivleth (Zhao Ming), Qin Yu (Duan Wei) et Liu Jianguo (Yuan Bo), absents du site : trois cartes
+  extraites. Pei Yue, Vivleth et Qin Yu **vus en jeu par le user**. Lignes : +2 Zhao Ming, +2 Yuan Bo,
+  +1 Miao Ying, −2 Duan Wei, −1 Zhao Qi, −1 Jin Xiao, 0 Yun Xiang (Na Natian contre les Celestial Dragon
+  Crossbows, dont la clé `dragonGuardCrossbowmen` part dans `_hors-fiches.js`).
 
 ---
 
@@ -388,12 +395,13 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `!uber_brt_dukes.pack` (Bretonnian Dukes) | 9 | **traité** le 19/10/2026 : Calard, Fastric, Jerrod → Tancred seul (missions) ; Iselda → Armand (vérifié en jeu) |
 | `ab_mixu_legendary_lords.pack` | 1 appel générique, piloté par la table `unique_agents` | **Bretonnie traitée** le 19/10/2026 : Amalric → Fay (vérifié en jeu), Donna → Tyreweld. Autres races non vérifiées |
 | `!!gra_knights_origo`, `!!gra_knights_flame`, `!!gra_outremer` | 2 chacun (IE + Vieux Monde) | **traités** le 19/10/2026 : Donna, Riviere, Balian → leur seigneur, corrects |
-| `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Comtes Vampires traités** le 20/10/2026 : Helmut, Gorgivich, Gunther → Mannfred seul (`factionKeys`). **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
-| `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Bretonnie et Hauts Elfes traités** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja ; Kitharl → Avelorn, qui prend Tor Achare |
+| `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Comtes Vampires traités** le 20/10/2026 : Helmut, Gorgivich, Gunther → Mannfred seul (`factionKeys`). **Grand Cathay** le même jour : Shi-Hong et Bannaga ouverts à tout Cathay. **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
+| `DEER24Cathay.pack` (DEER24) | 8, plus des missions définies en table | **traité** le 20/10/2026 : Pei Yue → Zhao Ming (vu en jeu), Fang Wenzi → Miao Ying, Martial Saint → Yuan Bo, Liu Yueru → Zhao Qi, Miao Yi et Na Natian → Yun Xiang, au départ (`wwd_wuchi.lua`). Les six autres (Yi Yaohua, Ku Xi, Ying Jin, Tang Jingyin, Monkey King, Tong Long) viennent de missions **sans script** : `cdir_events_mission_option_junctions` les ouvre à toute la culture (`CND_CULTURE`, `CND_UNIQUE`) |
+| `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Grand Cathay traité** le 20/10/2026 : Vivleth (Zhao Ming) et Qin Yu (Duan Wei) vus en jeu, Liu Jianguo (Yuan Bo), au départ ; Ku Rong, Xen Wu et Ye Jia ouverts à tout Cathay. **Bretonnie et Hauts Elfes traités** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja ; Kitharl → Avelorn, qui prend Tor Achare |
 | `@red_hef_lords_public.pack` (High Elves Lords) | 7, dont un bloc entier mis en commentaire | **traité** le 19/10/2026 : Lirazel → Avelorn (mission) ; Khaltar → Nagarythe, par une compétence de son seigneur Alatar ; Selafyn au premier joueur qui recherche `wh2_main_tech_hef_1_09` ; Imrallion → Teclis (mission), non placé |
 | `ovn_citadel_of_dusk.pack` | 0 — passe par `cm:create_agent` | **traité** le 19/10/2026 : Caladris → Citadel of Dusk, correct |
-| `ab_mixu_mousillon.pack` (Mixu's Mousillon) | 2, plus des missions de recrutement | **traité** le 20/10/2026 : Bougars, Eustache, Aucassin **et Nicolete** → Mallobaude (`mallobaude_gang`), les quatre missions de recrutement **vues en jeu par le user** au premier tour. La liste des héros de l'écran de sélection ne les montre pas : elle ne prouve rien pour un héros de mission |
-| `!scm_legendary.pack` (SCM Legendary Characters) | table `scm_lc_spawn_hero` | **Hauts Elfes, Bretonnie et Comtes Vampires traités** (19-20/10/2026) ; Ulrika (`str_ulrika`) y est désactivée en Immortal Empires. **Piège** : la `faction_key` de la table n'est que le repli de l'IA ; la mission va au **premier joueur de la même culture**, sauf `faction_subset` explicite |
+| `ab_mixu_mousillon.pack` (Mixu's Mousillon) | 2, plus des missions de recrutement | **traité** le 20/10/2026 : Bougars, Eustache, Aucassin **et Nicolete** → Mallobaude (`mallobaude_gang`), les quatre missions de recrutement **vues en jeu par le user** au premier tour. La liste des héros de l'écran de sélection ne les montre pas : elle ne prouve rien pour un héros de mission. « The Old One » (`msl_the_old_one`) : l'agent existe, mais ni mission en table ni script ne le donne en Immortal Empires — non placé |
+| `!scm_legendary.pack` (SCM Legendary Characters) | table `scm_lc_spawn_hero` | **Hauts Elfes, Bretonnie, Comtes Vampires et Grand Cathay traités** (19-20/10/2026) — Nanye Bunyo et Xian Feng réservés par `faction_subset` à Miao Ying et à Zhao Ming ; Gothard et Obadiah confirmés en jeu chez le premier joueur vampire (Mallobaude) ; Ulrika (`str_ulrika`) y est désactivée en Immortal Empires. **Piège** : la `faction_key` de la table n'est que le repli de l'IA ; la mission va au **premier joueur de la même culture**, sauf `faction_subset` explicite |
 
 Hors workshop, le jeu de base attribue lui aussi des héros légendaires par mission :
 `script\campaign\wh3_main_legendary_characters.lua`, dans `data_script.pack`, les ouvre à une

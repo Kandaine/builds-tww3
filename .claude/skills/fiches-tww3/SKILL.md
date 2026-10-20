@@ -315,7 +315,7 @@ mécanismes rencontrés, qui ne se traitent pas pareil :
 | premier arrivé d'une culture | Heroes of Legend (`scehr_hol_characters_buildings_entries.lua`, `subcultureKeys`), LYH Malok (prendre Nuja), jeu de base (`wh3_main_legendary_characters.lua` dans `data_script.pack`, `allowed_cultures`) | ouvert à tous les seigneurs de la culture |
 | aucun script en Immortal Empires | Haftagg (appel sous `cr_oldworld` seulement) | absent : le retirer |
 
-Cinq pièges de lecture, tous rencontrés :
+Sept pièges de lecture, tous rencontrés :
 
 - **le dossier de campagne compte** : `wh3_main_combi` vaut pour Immortal Empires, `cr_oldworld`
   pour le Vieux Monde seulement, `mod` pour les deux ;
@@ -330,7 +330,14 @@ Cinq pièges de lecture, tous rencontrés :
   relancer avec `-Match '<clé du héros>' -Context 4` ;
 - **une clé de faction se traduit par la loc, pas par le nom affiché du jeu de base** : un mod
   renomme (`wh3_dlc26_grn_cluster_eye_tribe` = Da Bloodsail Fleet, la faction de Barbozza). Le bloc du
-  script qui nomme le sous-type du seigneur tranche aussi.
+  script qui nomme le sous-type du seigneur tranche aussi ;
+- **une mission peut n'exister qu'en table, sans aucun script** : les héros de mission de DEER24
+  (Yi Yaohua, Ku Xi…) sont définis dans `cdir_events_mission_option_junctions_tables`, avec des options
+  `CND_CULTURE` (la culture visée), `CND_UNIQUE` et `CND_FIRST_ROUND`. Un pack sans appel ne veut donc
+  pas dire un héros sans attribution : chercher la clé de mission dans les `db\` du pack ;
+- **ne jamais tronquer une recherche de nom** : un `head -3` sur la loc a caché le Xian Feng de SCM
+  Legendary derrière celui de 3 Legendary Guys, et j'ai failli « corriger » une note juste. Deux packs
+  pour un même nom, c'est la règle, pas l'exception.
 
 **`faction_agent_permitted_subtypes` ne prouve pas qu'un héros unique s'obtient** : elle ouvre Orgrim
 à 16 tribus, mais seule la chaîne d'Einarr le fait apparaître. L'inverse n'a pas été vérifié en jeu :
