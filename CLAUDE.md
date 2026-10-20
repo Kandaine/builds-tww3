@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4087 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2135 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4089 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2138 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -335,6 +335,14 @@ the End Times* :
   extraites. Pei Yue, Vivleth et Qin Yu **vus en jeu par le user**. Lignes : +2 Zhao Ming, +2 Yuan Bo,
   +1 Miao Ying, −2 Duan Wei, −1 Zhao Qi, −1 Jin Xiao, 0 Yun Xiang (Na Natian contre les Celestial Dragon
   Crossbows, dont la clé `dragonGuardCrossbowmen` part dans `_hors-fiches.js`).
+- **Puis 4087 → 4089 cartes et 2135 → 2138 couples : héros de l'Empire (20/10/2026).** Aucun héros chez le
+  mauvais seigneur ; quatre manquaient. Alberich von Korden (Mixu, Stirland) remplace le Witch Hunter
+  d'Alberich, Odvaal van den Huister (SCM Marienburg) le Sword of Solkan de Jaan — ligne pour ligne.
+  Theodore Bruckner (jeu de base, prioritaire pour Wissenland) s'ajoute chez Elspeth, Guzunda Wallrattler
+  (maison Fooger, script **Immortal Empires Expanded**, **vu en jeu par le user** au premier tour) chez
+  Arkat : +2 lignes. Couples : +4 cartes
+  extraites — trois sont les portraits officiels des personnages, faute de carte d'unité dans les packs —
+  et −1, `swordOfSolkan` rangée dans `_hors-fiches.js`.
 
 ---
 
@@ -385,7 +393,7 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | Mod | Appels | État |
 |---|---|---|
 | `!!!3_legendary_guys.pack` | 29 | **traité** |
-| `!scm_marienburg.pack` | 15 | **Comtes Vampires traités** le 20/10/2026 : Alicia → Mundvard, par `spawn_agent_at_position`. Le reste non vérifié |
+| `!scm_marienburg.pack` | 15, plus des scripts `cr_combi_expanded` | **traité** le 20/10/2026 : Alicia → Mundvard (`spawn_agent_at_position`) ; Rashasawa → Egmond ; Odvaal → Jaan, au départ ; Pieter de Groot, Lisette, Crispijn, Maicross, Guzunda en récompense des **convois** de Marienburg, ouverts à sept factions de l'Empire. En **Expanded** : Guzunda → maison Fooger au départ, Ogg et Palldee par ses caravanes (`rhox_fooger_caravan.lua`) |
 | `um's_Mortkin.pack` | 5 | non vérifié |
 | `scm_skaven_clans.pack` | 3 | non vérifié |
 | `_ork_pirates_V2.pack` | 8 (4 cas joueur/IA × 2 héros) | **traité** le 19/10/2026 : Orklid et Ramn'bow → Barbozza (`cluster_eye_tribe`), corrects |
@@ -393,7 +401,7 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `!scm_totn.pack` (Tribes of the North) | 24, dont 13 `_at_character` | **traité** le 19/10/2026 — absent du relevé du 08/09 |
 | `Blackskullz_Horde_Faction.pack` | 1 `_at_character` | **traité** le 19/10/2026 : Borlok → Skarfang, correct |
 | `!uber_brt_dukes.pack` (Bretonnian Dukes) | 9 | **traité** le 19/10/2026 : Calard, Fastric, Jerrod → Tancred seul (missions) ; Iselda → Armand (vérifié en jeu) |
-| `ab_mixu_legendary_lords.pack` | 1 appel générique, piloté par la table `unique_agents` | **Bretonnie traitée** le 19/10/2026 : Amalric → Fay (vérifié en jeu), Donna → Tyreweld. Autres races non vérifiées |
+| `ab_mixu_legendary_lords.pack` | 1 appel générique, piloté par la table `unique_agents` (`mixu_spawn_characters_ie.lua`) | **Table lue en entier** le 20/10/2026 : Amalric → Fay (vérifié en jeu), Donna → Tyreweld, Luthor Huss → Volkmar, Oleg → Valmir, Alberich von Korden → Stirland, Hrefna et Fraygerd → Egil ; restent à vérifier sur leurs pages Kouran (Naggarond), Chakax (Xlanhuapec), Drekla (Vampire Coast), Ramhotep (Numas), Little Morella (Ripper Horn) |
 | `!!gra_knights_origo`, `!!gra_knights_flame`, `!!gra_outremer` | 2 chacun (IE + Vieux Monde) | **traités** le 19/10/2026 : Donna, Riviere, Balian → leur seigneur, corrects |
 | `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Comtes Vampires traités** le 20/10/2026 : Helmut, Gorgivich, Gunther → Mannfred seul (`factionKeys`). **Grand Cathay** le même jour : Shi-Hong et Bannaga ouverts à tout Cathay. **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
 | `DEER24Cathay.pack` (DEER24) | 8, plus des missions définies en table | **traité** le 20/10/2026 : Pei Yue → Zhao Ming (vu en jeu), Fang Wenzi → Miao Ying, Martial Saint → Yuan Bo, Liu Yueru → Zhao Qi, Miao Yi et Na Natian → Yun Xiang, au départ (`wwd_wuchi.lua`). Les six autres (Yi Yaohua, Ku Xi, Ying Jin, Tang Jingyin, Monkey King, Tong Long) viennent de missions **sans script** : `cdir_events_mission_option_junctions` les ouvre à toute la culture (`CND_CULTURE`, `CND_UNIQUE`) |
@@ -424,7 +432,10 @@ venue d'un cas réel :
 - **Un script du Vieux Monde ne vaut pas pour Immortal Empires.** Haftagg n'est donné que par
   `cr_oldworld\mod\scm_norsca_tow_init.lua`. Le user ne le voit pas chez Grydal. Avant de conclure,
   regarder **sous quel dossier de campagne** se trouve l'appel : `wh3_main_combi` pour Immortal
-  Empires, `cr_oldworld` pour le Vieux Monde, `mod` pour les deux.
+  Empires, `cr_oldworld` pour le Vieux Monde, `mod` pour les deux. **Le user joue Immortal Empires
+  Expanded** (dit le 20/10/2026) : il faut y ajouter `cr_combi_expanded`, où vivent par exemple Ogg,
+  Palldee et Guzunda — ce dernier vu en jeu chez Arkat. Les scripts `wh3_main_combi` tournent bien
+  dans sa partie : toutes ses vérifications en jeu portaient sur eux.
 
 **27 des 31 appels restants passent la faction par une variable**, pas par une chaîne littérale :
 aucune regex ne les résout, il faut lire les scripts. Depuis le 19/10/2026, des défauts sont prouvés

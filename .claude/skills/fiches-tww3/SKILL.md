@@ -317,8 +317,11 @@ mécanismes rencontrés, qui ne se traitent pas pareil :
 
 Sept pièges de lecture, tous rencontrés :
 
-- **le dossier de campagne compte** : `wh3_main_combi` vaut pour Immortal Empires, `cr_oldworld`
-  pour le Vieux Monde seulement, `mod` pour les deux ;
+- **le dossier de campagne compte** : le user joue **Immortal Empires Expanded** (dit le 20/10/2026).
+  Lire `wh3_main_combi` (ses scripts tournent dans sa partie, toutes ses vérifications en jeu le
+  montrent), **`cr_combi_expanded`** et `mod` ; seul `cr_oldworld` est à écarter. Ogg, Palldee et
+  Guzunda (maison Fooger) n'existent que par un script `cr_combi_expanded` : les chercher dans le
+  seul dossier `wh3_main_combi` les aurait déclarés introuvables ;
 - **un appel dans un bloc `--[[ … ]]` est neutralisé** (Asta, dans `scm_norsca_lh.lua`, n'est
   donnée que par la chaîne d'Einarr ; tout `hbe_spawn_lords.lua` de High Elves Lords) ;
 - **une faction écrite dans une table n'est pas forcément le destinataire** : chez SCM Legendary

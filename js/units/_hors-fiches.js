@@ -1,7 +1,7 @@
 // ============================================================================
 // units/_hors-fiches.js — CE FICHIER N'EST CHARGE PAR AUCUNE PAGE.
 //
-// Les 102 images ci-dessous etaient enregistrees dans l'ancien registre unique
+// Les 103 images ci-dessous etaient enregistrees dans l'ancien registre unique
 // mais ne sont referencees par aucune fiche de data/*.json : unites retirees
 // d'un build, ou cartes extraites puis finalement non posees. Les PNG
 // correspondants existent tous sur le disque (verifie).
@@ -36,6 +36,9 @@
 // dragonGuardCrossbowmen (Celestial Dragon Crossbows) a suivi le meme jour : Yun Xiang, seule fiche
 // a les aligner, leur a prefere Na Natian, que DEER24 donne a sa faction des le premier tour —
 // et leur note disait deja qu'aucun effet du seigneur ne les visait.
+//
+// swordOfSolkan a suivi le meme jour : Jaan, seule fiche a l'aligner, lui prefere Odvaal van den
+// Huister, que SCM Marienburg (hkrul_mar.lua) donne a Marienbourg des le premier tour.
 //
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
@@ -144,5 +147,6 @@ const unitImagesHorsFiches = {
   berusOfVeigs: 'assets/units/berusOfVeigs.png',
   haftagg: 'assets/units/haftagg.png',
   ulrikaMagdova: 'assets/units/ulrikaMagdova.png',
-  dragonGuardCrossbowmen: 'assets/units/dragonGuardCrossbowmen.png'
+  dragonGuardCrossbowmen: 'assets/units/dragonGuardCrossbowmen.png',
+  swordOfSolkan: 'assets/units/swordOfSolkan.png'
 };

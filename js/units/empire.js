@@ -48,7 +48,6 @@ const unitImages = {
   // Marienburg (mod SCM Marienburg) — unités et héros custom du roster
   lisetteLeerer: 'assets/units/lisetteLeerer.png',
   pieterDeGroot: 'assets/units/pieterDeGroot.png',
-  swordOfSolkan: 'assets/units/swordOfSolkan.png',
   goldenPinions: 'assets/units/goldenPinions.png',
   kloveniers: 'assets/units/kloveniers.png',
   adelijkenGreatswords: 'assets/units/adelijkenGreatswords.png',
@@ -66,6 +65,11 @@ const unitImages = {
   seaMagicker: 'assets/units/seaMagicker.png',
   highTempleGuard: 'assets/units/highTempleGuard.png',
   manannsFanatics: 'assets/units/manannsFanatics.png',
+  // Héros du mod SCM Marienburg : Odvaal van den Huister (hkrul_harb, carte
+  // ui/units/icons) et Guzunda Wallrattler (hkrul_guzunda, sans carte dans le
+  // pack : portrait ui/portraits/units, 60×130 comme les cartes).
+  odvaalVanDenHuister: 'assets/units/odvaalVanDenHuister.png',
+  guzundaWallrattler: 'assets/units/guzundaWallrattler.png',
   // Cavalerie Empire vanilla (cartes officielles) — utilisée par les Comtes
   // Électeurs du mod Mixu's Legendary Lords (Knightly Charge de Marius, etc.)
   knightsBlazingSun: 'assets/units/knightsBlazingSun.png',
@@ -162,5 +166,10 @@ const unitImages = {
   teutogenGuard: 'assets/units/teutogenGuard.png',
   orderOfTheAxe: 'assets/units/orderOfTheAxe.png',
   knightsOfTheWhiteWolf: 'assets/units/knightsOfTheWhiteWolf.png',
-  fellwolfBrotherhood: 'assets/units/fellwolfBrotherhood.png'
+  fellwolfBrotherhood: 'assets/units/fellwolfBrotherhood.png',
+  // Alberich von Korden (mod Mixu's Legendary Lords) et Theodore Bruckner (jeu
+  // de base, clé wh3_dlc25_emp_cha_theodore_bruckner) : aucune carte ui/units/icons dans les
+  // packs, on prend le portrait ui/portraits/units de chacun, 60×130.
+  alberichVonKorden: 'assets/units/alberichVonKorden.png',
+  theodoreBruckner: 'assets/units/theodoreBruckner.png'
 };
