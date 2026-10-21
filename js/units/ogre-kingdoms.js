@@ -201,6 +201,9 @@ const unitImages = {
   golthog: 'assets/units/golthog.png',
   nossoDaSchnozzla: 'assets/units/nossoDaSchnozzla.png',
   hrothyogg: 'assets/portraits/hrothyogg.png',
+  // Ymirdrak, dragon des glaces de LYH (agent yimier). La clé et le fichier gardent
+  // l'ancien nom « Imildrak », remplacé le 21/10/2026 par celui de la traduction anglaise
+  // de LYH : renommer l'image aurait touché assets/ sans rien changer à l'affichage.
   imildrak: 'assets/portraits/imildrak.png',
   piggybackKnights: 'assets/units/piggybackKnights.png'
 };
