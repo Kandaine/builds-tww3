@@ -59,5 +59,8 @@ const unitImages = {
   khorokManripper: 'assets/units/khorokManripper.png',
   shearKhawnVanguard: 'assets/portraits/shearKhawnVanguard.png',
   khorroksManrippers: 'assets/units/khorroksManrippers.png',
-  bloodbruteBehemoth: 'assets/units/bloodbruteBehemoth.png'
+  bloodbruteBehemoth: 'assets/units/bloodbruteBehemoth.png',
+  // Gryphon Rider, héros légendaire du mod LYH (agent shijiuqishi), que son script
+  // lyh_bst_shijiuqishi.lua pose dans l'armée de départ de Morghur. Carte ui/units/icons, 122×262.
+  bstGryphonRider: 'assets/units/bstGryphonRider.png'
 };
