@@ -199,5 +199,11 @@ const unitImages = {
   // Rustblades (RoR, unité bc_septik_ror_rustblades) : réutilise la carte de slimeblades, pas de nouveau PNG. scm_skaven_clans.pack, ui\units\icons\bc_ror_slimeblades.png a la même empreinte de pixels (magick identify -format %#) que assets/units/slimeblades.png : le jeu emploie la même carte pour les deux régiments.
   rustblades: 'assets/units/slimeblades.png',
   // Vilebites (RoR, unité str_kreepus_verminkin_ror) : scm_skaven_clans.pack, ui\units\icons\str_verminkin_ror.png (60x130 natif).
-  vilebites: 'assets/units/vilebites.png'
+  vilebites: 'assets/units/vilebites.png',
+  // Ghoritch, héros légendaire du jeu de base (wh2_dlc16_skv_ghoritch), réservé au Clan Moulder
+  // par wh3_main_legendary_characters.lua : il arrive par la quête de Throt. Portrait ui.pack, ui\portraits\units\no_culture\skv_ghoritch_0.png (pas de carte ui\units\icons), 60×130.
+  ghoritch: 'assets/units/ghoritch.png',
+  // Reekit, héros légendaire du mod LYH (agent reekit), que lyh_skv_reekit.lua pose dans l'armée
+  // de départ du Clan Pestilens (Skrolk). Carte lyh_hero_no_cathay.pack, ui\units\icons\lyh_skv_reekit.png, 120×260.
+  reekit: 'assets/units/reekit.png'
 };
