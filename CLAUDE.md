@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4095 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2144 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4100 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2149 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -366,6 +366,12 @@ the End Times* :
   au Clan Moulder (quête *Whip of Domination*), prend sa ligne. LYH (`lyh_skv_reekit.lua`) pose Reekit dans l'armée de
   départ du Clan Pestilens, **vu en jeu par le user** : il entre chez Skrolk (Poison Wind Globadiers 2 → 1). Deux clés
   nouvelles, `ghoritch` et `reekit` (portrait officiel `ui/portraits/units` de Ghoritch, 60×130, faute de carte ; carte `ui/units/icons` de Reekit, 120×260).
+- **Puis 4095 → 4100 cartes et 2144 → 2149 couples : héros des Guerriers du Chaos, lot 1 (22/10/2026).** LYH pose
+  quatre héros dans l'armée de départ de leur seigneur : Albodi the Scarred et Tal'gatha the Fallen chez Vilitch, Vargrash
+  (agent `kruld`) chez Valkia, Rakranos the Ancient chez Kholek. Karanak rejoint aussi Valkia, qui aligne trois meutes de
+  Warhounds. +5 lignes (Marauders, Forsaken et un Exalted Hero cèdent leur place) ; quatre cartes extraites (cartes `ui/units/icons` du pack, 120×260),
+  et `karanak` déclarée aussi au module des Guerriers du Chaos, chaque page ne chargeant que le sien. Elfes Sylvains :
+  rien à corriger.
 
 ---
 
@@ -428,7 +434,7 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `!!gra_knights_origo`, `!!gra_knights_flame`, `!!gra_outremer` | 2 chacun (IE + Vieux Monde) | **traités** le 19/10/2026 : Donna, Riviere, Balian → leur seigneur, corrects |
 | `inq_lol_hero.pack` (Heroes of Legend) | 3, mais les héros viennent surtout de bâtiments | **Comtes Vampires traités** le 20/10/2026 : Helmut, Gorgivich, Gunther → Mannfred seul (`factionKeys`). **Grand Cathay** le même jour : Shi-Hong et Bannaga ouverts à tout Cathay. **Nains** le 22/10/2026 : Balkrag rejoint par dilemme la première faction naine qui prend Karak Azgal (`scehr_hol_journeys_balkrag.lua`). **Bretonnie traitée** le 19/10/2026 : Viscount, Agravain, Brunner, Hermit Knight ouverts au premier qui bâtit leur bâtiment (`scehr_hol_characters_buildings_entries.lua`) |
 | `DEER24Cathay.pack` (DEER24) | 8, plus des missions définies en table | **traité** le 20/10/2026 : Pei Yue → Zhao Ming (vu en jeu), Fang Wenzi → Miao Ying, Martial Saint → Yuan Bo, Liu Yueru → Zhao Qi, Miao Yi et Na Natian → Yun Xiang, au départ (`wwd_wuchi.lua`). Les six autres (Yi Yaohua, Ku Xi, Ying Jin, Tang Jingyin, Monkey King, Tong Long) viennent de missions **sans script** : `cdir_events_mission_option_junctions` les ouvre à toute la culture (`CND_CULTURE`, `CND_UNIQUE`) |
-| `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Grand Cathay traité** le 20/10/2026 : Vivleth (Zhao Ming) et Qin Yu (Duan Wei) vus en jeu, Liu Jianguo (Yuan Bo), au départ ; Ku Rong, Xen Wu et Ye Jia ouverts à tout Cathay. **Bretonnie et Hauts Elfes traités** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja ; Kitharl → Avelorn, qui prend Tor Achare. **Skavens** le 22/10/2026 : Reekit (`reekit`) → Clan Pestilens (Skrolk) au départ, vu en jeu. **Hommes-Lézards** le 22/10/2026 : Poqenichi (`poqenichi`) → Culte de Sotek (Tehenhauin) au départ, vu en jeu ; Hua-Hua est un seigneur. **Hommes-Bêtes** le 21/10/2026 : Gryphon Rider (`shijiuqishi`) → Morghur au départ (vu en jeu) ; She'ar Khawn's Vanguard (`huxianfeng`) ouvert à tout homme-bête qui atteint Qiang (mission en table). **Royaumes Ogres** le 20/10/2026 : Ymirdrak (`yimier`, clé d’icône `imildrak`, son ancien nom sur le site) à la première tribu ogre qui prend Eagle Eyries, IA comprise, Shrewd Fulg démarrant dans la même province (`mission_ogr_yimier.lua`) |
+| `lyh_hero_no_cathay.pack` (LYH) | 37, toutes races | **Grand Cathay traité** le 20/10/2026 : Vivleth (Zhao Ming) et Qin Yu (Duan Wei) vus en jeu, Liu Jianguo (Yuan Bo), au départ ; Ku Rong, Xen Wu et Ye Jia ouverts à tout Cathay. **Bretonnie et Hauts Elfes traités** le 19/10/2026 : Lafayette → Louen au départ ; Malok au premier Bretonnien qui prend Nuja ; Kitharl → Avelorn, qui prend Tor Achare. **Guerriers du Chaos** le 22/10/2026 : Albodi et Tal'gatha → Vilitch, Kruld (« Vargrash ») → Valkia, Rakranos → Kholek, au départ (`spawn_agent_at_military_force`). **Skavens** le 22/10/2026 : Reekit (`reekit`) → Clan Pestilens (Skrolk) au départ, vu en jeu. **Hommes-Lézards** le 22/10/2026 : Poqenichi (`poqenichi`) → Culte de Sotek (Tehenhauin) au départ, vu en jeu ; Hua-Hua est un seigneur. **Hommes-Bêtes** le 21/10/2026 : Gryphon Rider (`shijiuqishi`) → Morghur au départ (vu en jeu) ; She'ar Khawn's Vanguard (`huxianfeng`) ouvert à tout homme-bête qui atteint Qiang (mission en table). **Royaumes Ogres** le 20/10/2026 : Ymirdrak (`yimier`, clé d’icône `imildrak`, son ancien nom sur le site) à la première tribu ogre qui prend Eagle Eyries, IA comprise, Shrewd Fulg démarrant dans la même province (`mission_ogr_yimier.lua`) |
 | `@red_hef_lords_public.pack` (High Elves Lords) | 7, dont un bloc entier mis en commentaire | **traité** le 19/10/2026 : Lirazel → Avelorn (mission) ; Khaltar → Nagarythe, par une compétence de son seigneur Alatar ; Selafyn au premier joueur qui recherche `wh2_main_tech_hef_1_09` ; Imrallion → Teclis (mission), non placé |
 | `ovn_citadel_of_dusk.pack` | 0 — passe par `cm:create_agent` | **traité** le 19/10/2026 : Caladris → Citadel of Dusk, correct |
 | `ab_mixu_mousillon.pack` (Mixu's Mousillon) | 2, plus des missions de recrutement | **traité** le 20/10/2026 : Bougars, Eustache, Aucassin **et Nicolete** → Mallobaude (`mallobaude_gang`), les quatre missions de recrutement **vues en jeu par le user** au premier tour. La liste des héros de l'écran de sélection ne les montre pas : elle ne prouve rien pour un héros de mission. « The Old One » (`msl_the_old_one`) : l'agent existe, mais ni mission en table ni script ne le donne en Immortal Empires — non placé |
@@ -441,7 +447,7 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 Hors workshop, le jeu de base attribue lui aussi des héros légendaires par mission :
 `script\campaign\wh3_main_legendary_characters.lua`, dans `data_script.pack`, les ouvre à une
 **culture** (`allowed_cultures`) et non à une faction. Snagla Grobspit (Peaux-Vertes) traité le
-19/10/2026, Karanak (Khorne, `override_allowed_factions`, huit factions) et Lord Kroak (`starting_owner_faction` Itza) et Ghoritch (`override_allowed_factions` Clan Moulder) le 22/10/2026, Garagrim Ironfist (Nains, `priority_faction` Karak Kadrin) et Gotrek & Felix (`starting_owner_faction`
+19/10/2026, Karanak (Khorne, `override_allowed_factions`, huit factions) et Lord Kroak (`starting_owner_faction` Itza), Ghoritch (`override_allowed_factions` Clan Moulder), Ariel et Coeddil (Elfes Sylvains) le 22/10/2026, Garagrim Ironfist (Nains, `priority_faction` Karak Kadrin) et Gotrek & Felix (`starting_owner_faction`
 Malakai) le 22/10/2026 ; les autres (Beorg Bearstruck, Caradryan, Theodore Bruckner…) restent à voir race par race.
 
 **SCM Tribes of the North, traité le 19/10/2026.** Il manquait au relevé du 08/09 parce qu'il passe

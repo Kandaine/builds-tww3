@@ -124,5 +124,15 @@ const unitImages = {
   exaltedPlaguebearersOfNurgle: 'assets/units/exaltedPlaguebearersOfNurgle.png',
   festeringStooges: 'assets/units/festeringStooges.png',
   uncleFuruncle: 'assets/units/uncleFuruncle.png',
-  plagueDronesOfNurgleDeathsHeads: 'assets/units/plagueDronesOfNurgleDeathsHeads.png'
+  plagueDronesOfNurgleDeathsHeads: 'assets/units/plagueDronesOfNurgleDeathsHeads.png',
+  // Albodi the Scarred, héros légendaire du mod LYH (agent albodi), que lyh_tze_albodi.lua pose dans l'armée de départ de Vilitch. Carte ui/units/icons, 120×260.
+  albodi: 'assets/units/albodi.png',
+  // Tal'gatha the Fallen, héros légendaire du mod LYH (agent talgatha), que lyh_tze_talgatha.lua pose dans l'armée de départ de Vilitch. Carte ui/units/icons, 120×260.
+  talgatha: 'assets/units/talgatha.png',
+  // Vargrash, héros légendaire du mod LYH (agent kruld), que glf_lyh_kho_kruld.lua pose dans l'armée de départ de Valkia. Carte ui/units/icons, 120×260.
+  vargrash: 'assets/units/vargrash.png',
+  // Rakranos the Ancient, héros légendaire du mod LYH (agent rakranos), que lyh_chs_rakranos.lua pose dans l'armée de départ de Kholek. Carte ui/units/icons, 120×260.
+  rakranos: 'assets/units/rakranos.png',
+  // Karanak, héros légendaire du jeu de base : même image que dans js/units/khorne.js (portrait 60×130), déclarée ici parce que la page des Guerriers du Chaos ne charge que ce module.
+  karanak: 'assets/units/karanak.png'
 };

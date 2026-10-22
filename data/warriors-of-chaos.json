@@ -50,7 +50,8 @@
       "lord": {"icon": "kholek", "name": "Kholek Suneater", "qty": 1, "note": "Shaggoth d'un âge prodigieux, annoncé par la tempête — l'un des meilleurs duellistes du jeu, et \"Empowered by Worship\" (+5% puissance d'arme/masse/armure par faction vassalisée, faction) le rend toujours plus écrasant à mesure que le territoire s'étend"},
       "heroes": [
         {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Renfort de sorts et de soutien magique"},
-        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Le seul personnage à pied d'une armée de Dragons Ogres : il tient la ligne au sol pendant que les monstres de Kholek écrasent les flancs"}
+        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Le seul personnage à pied d'une armée de Dragons Ogres : il tient la ligne au sol pendant que les monstres de Kholek écrasent les flancs"},
+        {"icon": "rakranos", "name": "Rakranos the Ancient (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>LYH</em>, Dragon Ogre ancien et lanceur de sorts. Son script le pose dans l'armée de départ de Kholek, et de lui seul. Un sorcier de la même race que le cœur de l'armée, avec la capacité « Storm Rage »"}
       ],
       "army": [
         {"icon": "summonersOfRage", "name": "Summoners of Rage (Dragon Ogres)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : +4% dégâts d'arme, +4% puissance d'attaque de zone et +8% armure par faction vassalisée (faction), -25% d'entretien et 10% de résistance aux tirs (seigneur) — variante d'élite unique des Dragon Ogres"},
@@ -58,7 +59,7 @@
         {"icon": "chaosTrolls", "name": "Chaos Trolls", "qty": 3, "note": "10% de résistance aux tirs en tant que Monster (seigneur) — régénération increvable"},
         {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 2, "note": "Les effets de Kholek ne visent que les <strong>Dragon Ogres</strong> et l'infanterie monstrueuse — entretien, résistance aux tirs. Cette ligne mortelle n'en reçoit rien et comble le manque : ses géants piétinent, ils ne tiennent pas un front, et sans elle l'ennemi passe entre leurs pieds"},
         {"icon": "mirrorGuard", "name": "Mirror Guard (Chaos Warriors)", "qty": 1, "note": "Régiment de Renom des Chaos Warriors. Kholek combat parmi les Dragon Ogres, tous géants : cette garde mortelle est ce qui tient le sol entre leurs pieds"},
-        {"icon": "maraudersWoC", "name": "Marauders", "qty": 2, "note": "Le seul contingent humain d'une armée de Dragons Ogres — il occupe l'ennemi au sol pendant que les colosses contournent"},
+        {"icon": "maraudersWoC", "name": "Marauders", "qty": 1, "note": "Le seul contingent humain d'une armée de Dragons Ogres — il occupe l'ennemi au sol pendant que les colosses contournent"},
         {"icon": "chaosWarhoundsWoC", "name": "Chaos Warhounds", "qty": 2, "note": "Éclaireurs bon marché indispensables à une armée lente : ils repèrent et fixent les tireurs que les Dragons Ogres ne rattraperaient jamais"},
         {"icon": "ridersOfTheMightySerpent", "name": "Riders of the Mighty Serpent (Marauder Horsemen)", "qty": 1, "note": "RoR des Marauder Horsemen. Ni Dragon Ogre ni Infanterie Monstrueuse : aucun effet de Kholek ne les touche, ils sont la seule mobilité légère d'une fiche entièrement composée de monstres"}
       ],
@@ -212,11 +213,13 @@
       "totalSlots": 20,
       "lord": {"icon": "valkia", "name": "Valkia the Bloody", "qty": 1, "note": "La Reine du Sang, ressuscitée par la fureur de Khorne — \"The Gaze of Khorne\" (+5% dégâts, +4 commandement en zone, seigneur) renforce toute son armée, et elle restaure 35% de sa portée de mouvement (seigneur) chaque fois qu'elle met l'ennemi en déroute"},
       "heroes": [
-        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 2, "note": "Renfort de mêlée mortel robuste, en double pour épauler cette duelliste increvable"}
+        {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Renfort de mêlée mortel robuste pour épauler cette duelliste increvable, aux côtés de Vargrash"},
+        {"icon": "vargrash", "name": "Vargrash (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>LYH</em>, Octagonal Champion of the Hound. Son script le pose dans l'armée de départ de Valkia, et d'elle seule. Il donne +force des armes et -coût de recrutement aux Skullcrushers of Khorne : quatre unités sur cette fiche, leur Régiment de Renom compris"},
+        {"icon": "karanak", "name": "Karanak (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du jeu de base, le Molosse de Khorne. Le script du jeu l'offre par une mission au rang 16 du chef de faction, ouverte à quelques factions de Khorne et du Chaos, dont celle-ci. Sa compétence innée, « Manifestation of Vengeance », donne à son armée +6 de Commandement et -10% de coût de recrutement pour les Chaos Warhounds et les Flesh Hounds — les trois meutes de Warhounds de la fiche en profitent"}
       ],
       "army": [
         {"icon": "chaosWarriorsKhorne", "name": "Chaos Warriors of Khorne", "qty": 4, "note": "L'aura <strong>« The Gaze of Khorne »</strong> de Valkia n'a que 35m de portée : elle ne vaut que pour ce qui reste groupé autour d'elle. Ces guerriers sont le bloc qui ne se disperse pas et capte le bonus en entier"},
-        {"icon": "maraudersOfKhorne", "name": "Marauders of Khorne", "qty": 3, "note": "Infanterie khornéenne bon marché, qui alimente le décompte de crânes sans grever le budget consacré aux Skullcrushers"},
+        {"icon": "maraudersOfKhorne", "name": "Marauders of Khorne", "qty": 2, "note": "Infanterie khornéenne bon marché, qui alimente le décompte de crânes sans grever le budget consacré aux Skullcrushers"},
         {"icon": "brutesOfTheHound", "name": "Brutes of the Hound (Marauder Berserkers)", "qty": 2, "note": "Régiment favori : <strong>+1 capacité</strong> (faction) permet d'aligner les <strong>2</strong> exemplaires disponibles. Le pool le verrouille sur la faction de Valkia et sur aucune autre — c'est son régiment propre, et le bonus qu'elle lui accorde ne s'appliquait jusqu'ici à rien"},
         {"icon": "skullcrushersKhorne", "name": "Skullcrushers of Khorne", "qty": 3, "note": "Cavalerie monstrueuse lourde, le marteau de la fiche : elle enfonce là où les Marauders ont fixé"},
         {"icon": "knightsOfTheBrazenThrone", "name": "Knights of the Brazen Throne (Skullcrushers of Khorne)", "qty": 1, "note": "Régiment de Renom des Skullcrushers — la charge lourde de Khorne, que Valkia mène elle-même depuis les airs"},
@@ -244,12 +247,14 @@
       "lord": {"icon": "vilitch", "name": "Vilitch the Curseling", "qty": 1, "note": "Le Jumeau Tordu, sorcier-runt fusionné à son frère Thomin — \"The Twisted Twin\" (jusqu'à +30% maîtrise des sorts, +10 attaque/défense en mêlée, seigneur) le rend toujours plus fort au fil du combat, et sa posture Téléportation à -25% de coût (seigneur) permet des manœuvres de campagne impossibles pour tout autre Seigneur"},
       "heroes": [
         {"icon": "chaosSorcererTzeentch", "name": "Chaos Sorcerer of Tzeentch (Tzeentch)", "qty": 1, "note": "Renfort de sorts du <strong>Lore of Tzeentch</strong> — deux variantes existent, <strong>Tzeentch</strong> et <strong>Metal</strong>"},
-        {"icon": "exaltedHeroTzeentch", "name": "Exalted Hero of Tzeentch", "qty": 1, "note": "Le seul combattant véritable d'une fiche bâtie sur la magie — il protège Vilitch, dont la fragilité physique est notoire"}
+        {"icon": "exaltedHeroTzeentch", "name": "Exalted Hero of Tzeentch", "qty": 1, "note": "Avec Albodi, le combattant véritable d'une fiche bâtie sur la magie — il protège Vilitch, dont la fragilité physique est notoire"},
+        {"icon": "albodi", "name": "Albodi the Scarred (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>LYH</em>, Élu de Tzeentch. Son script le pose dans l'armée de départ de Vilitch, et de lui seul. Il donne +attaque de mêlée et +force des armes aux Chaos Warriors, Chosen et Chaos Knights de Tzeentch : les quatre Chaos Warriors et les Chaos Knights de cette fiche en profitent"},
+        {"icon": "talgatha", "name": "Tal'gatha the Fallen (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>LYH</em>, sorcier de Tzeentch, posé lui aussi par son script dans l'armée de départ de Vilitch. Il donne « Searing Torrent » aux Doom Knights of Tzeentch — trois unités ici, leur Régiment de Renom compris — et des attaques enflammées aux unités marquées par Tzeentch"}
       ],
       "army": [
-        {"icon": "forsakenTzeentch", "name": "Forsaken of Tzeentch", "qty": 3, "note": "Monstruosités mutées imprévisibles, gagnant en puissance à chaque coup porté"},
+        {"icon": "forsakenTzeentch", "name": "Forsaken of Tzeentch", "qty": 2, "note": "Monstruosités mutées imprévisibles, gagnant en puissance à chaque coup porté"},
         {"icon": "chaosWarriorsTzeentch", "name": "Chaos Warriors of Tzeentch", "qty": 4, "note": "Vilitch gagne en puissance avec le <strong>temps passé en mêlée ou à lancer</strong>. Ces guerriers sont ce qui lui achète ce temps : sans eux, un sorcier fragile n'atteint jamais l'intensité maximale de sa passive"},
-        {"icon": "maraudersTzeentch", "name": "Marauders of Tzeentch", "qty": 4, "note": "Écran bon marché dont la seule fonction est de tenir assez longtemps pour que les sorts de Vilitch fassent leur œuvre"},
+        {"icon": "maraudersTzeentch", "name": "Marauders of Tzeentch", "qty": 3, "note": "Écran bon marché dont la seule fonction est de tenir assez longtemps pour que les sorts de Vilitch fassent leur œuvre"},
         {"icon": "doomKnightsTzeentch", "name": "Doom Knights of Tzeentch", "qty": 2, "note": "Cavalerie lourde marquée par Tzeentch — avec les Knights of Immolation, ce qui conclut un engagement que la magie a préparé"},
         {"icon": "knightsOfImmolation", "name": "Knights of Immolation (Doom Knights of Tzeentch)", "qty": 1, "note": "Régiment de Renom des Doom Knights — la cavalerie de feu tzeentchienne, la pointe du choc d'une fiche que le Maudit bâtit sur la magie et la ruse"},
         {"icon": "chaosKnightsTzeentch", "name": "Chaos Knights of Tzeentch", "qty": 1, "note": "La charge qui dégage Vilitch quand un adversaire l'atteint. Son régiment favori est un Chaos Spawn, imprévisible : cette cavalerie est ce sur quoi il peut réellement compter"},
