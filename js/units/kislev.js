@@ -58,5 +58,11 @@ const unitImages = {
   boyarMazur: 'assets/portraits/boyarMazur.png',
   jacobKislev: 'assets/portraits/jacobKislev.png',
   boydinovsBrawlers: 'assets/units/boydinovsBrawlers.png',
-  oathBrothersOfTor: 'assets/units/oathBrothersOfTor.png'
+  oathBrothersOfTor: 'assets/units/oathBrothersOfTor.png',
+  // Grigori Medvezhiy, héros légendaire de SCM Legendary Characters (dead_grigori), que le mod donne à la
+  // Grande Orthodoxie (Kostaltyn) au premier tour. Portrait ui/portraits/units (le pack n'a aucune carte ui/units/icons pour lui), 60×130.
+  grigoriMedvezhiy: 'assets/units/grigoriMedvezhiy.png',
+  // Anastasia Vilkova, héros légendaire du mod LYH (agent anastasia), que lyh_ksl_anastasia.lua pose dans
+  // l'armée de départ de l'Ice Court (Katarin). Carte ui/units/icons, 120×260.
+  anastasiaVilkova: 'assets/units/anastasiaVilkova.png'
 };
