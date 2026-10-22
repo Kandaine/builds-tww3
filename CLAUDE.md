@@ -395,6 +395,11 @@ the End Times* :
   Horsemen que ses compétences visent (Devotees of Slaanesh 3 → 2). The Masque de SCM, donné en héros à N'Kari au
   départ, n'est pas placé : seigneur légendaire sur le site, même cas que l'Epidemius de Nurgle. Clé `styrkaar` reprise
   du module des Guerriers du Chaos.
+- **Fin de la passe héros (22/10/2026).** Undead Legions, Araby, Fimir, Albion, Gnoblar Hordes, Jade-Blooded Vampires,
+  Southern Realms et Hung relus : rien à corriger, chiffres inchangés. Non placés : le « Mortarch Azhag » de `nag_nagash`
+  (seigneur légendaire chez les Peaux-Vertes), Piggolo (Southern Realms, rituel ouvert à toute la culture, aucun effet
+  ne le vise) et Hu-Mung-Us (réservé à The Mung par mission au rang 5, sans effet sur une unité ; écarté par le user).
+  Les 32 pages ont désormais été passées au crible du parcours D.
 
 ---
 
@@ -461,6 +466,7 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `@red_hef_lords_public.pack` (High Elves Lords) | 7, dont un bloc entier mis en commentaire | **traité** le 19/10/2026 : Lirazel → Avelorn (mission) ; Khaltar → Nagarythe, par une compétence de son seigneur Alatar ; Selafyn au premier joueur qui recherche `wh2_main_tech_hef_1_09` ; Imrallion → Teclis (mission), non placé |
 | `ovn_citadel_of_dusk.pack` | 0 — passe par `cm:create_agent` | **traité** le 19/10/2026 : Caladris → Citadel of Dusk, correct |
 | `ab_mixu_mousillon.pack` (Mixu's Mousillon) | 2, plus des missions de recrutement | **traité** le 20/10/2026 : Bougars, Eustache, Aucassin **et Nicolete** → Mallobaude (`mallobaude_gang`), les quatre missions de recrutement **vues en jeu par le user** au premier tour. La liste des héros de l'écran de sélection ne les montre pas : elle ne prouve rien pour un héros de mission. « The Old One » (`msl_the_old_one`) : l'agent existe, mais ni mission en table ni script ne le donne en Immortal Empires — non placé |
+| `ovn_araby`, `ovn_fimir`, `ovn_albion`, `ab_unwashed_masses`, `jade_vamp_pol_IotM`, `!ak_teb3`, `hng_steppe_lords`, `nag_nagash` | `cm:create_agent` et `spawn_unique_agent_at_character` | **traités** le 22/10/2026 : héros de départ chez le bon seigneur (Wazar → Jaffar, Torchnose → Bunsen, etc.) ; Piggolo (`teb_piggolo`) par le rituel `tebuary_1_5` de tout Royaume du Sud ; Hu-Mung-Us (`hng_humungus`) → The Mung par mission ; Mortarch Azhag (`nag_mortarch_azhag`) → Nagash par mission — aucun des trois placé |
 | `!!scm_motm.pack` (Masters of the Maw) | 0 — table `motm_character_unlocking.character_data` (`!motm_legendary_characters.lua`) | **traité** le 20/10/2026 : ses dix héros ogres sont ouverts à toute tribu jouée (mission ou bâtiments). `starting_owner_faction` ne donne le héros au départ que si l'on **joue** cette faction (Haurg → Hrothgul, Gragtar → Morg, Sandbad → Gulgulet) ; `priority_ai_faction` n'est que le repli de l'IA ; `priority_faction` (Old Funder → Blogg) ne joue que si cette faction est humaine |
 | `!xou_age_TKExtended.pack` (Tomb Kings Extended, et son patch temporaire) | 0 — `cm:create_agent` et une mission | **traité** le 22/10/2026 : Herald Nekaph → Khemri au départ (`loki_nekaph_add.lua`, scripts `wh3_main_combi` et `cr_combi_expanded`) ; Prince Apophas par une mission que reçoit, au tour 2, le premier joueur Roi des Tombes (`apophas_quest_launcher.lua`) |
 | `ovn_dread_king.pack` (The Dread King) | 0 — `cm:create_agent` | **traité** le 22/10/2026 : Gunther Larenscheld → `ovn_tmb_dread_king` au départ, juste. Ce n'est pas le Gunther von Grecht de Heroes of Legend |
