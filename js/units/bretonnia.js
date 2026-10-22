@@ -91,7 +91,6 @@ const unitImages = {
   knightsOfTheLionhearted: 'assets/units/knightsOfTheLionhearted.png',
   defendersOfTheFleurDeLis: 'assets/units/defendersOfTheFleurDeLis.png',
   holyWardensOfLaMaisontaal: 'assets/units/holyWardensOfLaMaisontaal.png',
-  beastslayersOfBastonne: 'assets/units/beastslayersOfBastonne.png',
   // Seigneurs Bretonnia (mod Mixu's Legendary Lords).
   johnTyreweld: 'assets/portraits/johnTyreweld.png',
   bohemond: 'assets/portraits/bohemond.png',

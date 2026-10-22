@@ -25,7 +25,6 @@ const unitImages = {
   chaosSorcererNurgle: 'assets/units/chaosSorcererNurgle.png',
   exaltedHeroNurgle: 'assets/units/exaltedHeroNurgle.png',
   theDaemonspew: 'assets/units/theDaemonspew.png',
-  theDaemonspew: 'assets/units/theDaemonspew.png',
   plaguebearersOfNurgle: 'assets/units/plaguebearersOfNurgle.png',
   forsakenNurgle: 'assets/units/forsakenNurgle.png',
   plagueridden: 'assets/units/plagueridden.png',

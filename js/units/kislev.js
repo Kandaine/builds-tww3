@@ -51,7 +51,6 @@ const unitImages = {
   vladimirStormbringer: 'assets/units/vladimirStormbringer.png',
   goldenKnight: 'assets/units/goldenKnight.png',
   mordheimBalewolves: 'assets/units/mordheimBalewolves.png',
-  theThingsInTheWoods: 'assets/units/theThingsInTheWoods.png',
   elementalBear: 'assets/units/elementalBear.png',
   theFrozenHeartOfWinter: 'assets/units/theFrozenHeartOfWinter.png',
   gryphonLegion: 'assets/units/gryphonLegion.png',

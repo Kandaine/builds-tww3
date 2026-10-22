@@ -98,7 +98,6 @@ const unitImages = {
   feralCharchanodon: 'assets/units/feralCharchanodon.png',
   hyaenodon: 'assets/units/hyaenodon.png',
   dreadSaurianCrystalback: 'assets/units/dreadSaurianCrystalback.png',
-  pahauxSentinels: 'assets/units/pahauxSentinels.png',
   pokHopaksCohort: 'assets/units/pokHopaksCohort.png',
   torchesOfTheUmbralTide: 'assets/units/torchesOfTheUmbralTide.png',
   // Poqenichi, héros légendaire du mod LYH (agent poqenichi), que lyh_lzd_poqenichi.lua pose dans
