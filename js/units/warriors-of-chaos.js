@@ -134,5 +134,14 @@ const unitImages = {
   // Rakranos the Ancient, héros légendaire du mod LYH (agent rakranos), que lyh_chs_rakranos.lua pose dans l'armée de départ de Kholek. Carte ui/units/icons, 120×260.
   rakranos: 'assets/units/rakranos.png',
   // Karanak, héros légendaire du jeu de base : même image que dans js/units/khorne.js (portrait 60×130), déclarée ici parce que la page des Guerriers du Chaos ne charge que ce module.
-  karanak: 'assets/units/karanak.png'
+  karanak: 'assets/units/karanak.png',
+  // Vardek Crom the Conqueror, héros légendaire de SCM Legendary Characters (str_crom), réservé à
+  // Archaon par faction_subset, par une mission d'Autorité Indivise. Portrait ui/portraits/units, 60×130.
+  vardekCrom: 'assets/units/vardekCrom.png',
+  // Styrkaar of the Sortsvinaer, héros légendaire du jeu de base (wh3_dlc27_sla_styrkaar_the_sortsvinaer),
+  // mission au rang 11 ouverte entre autres à Sigvald et Azazel. Portrait ui/portraits/units/no_culture, 60×130.
+  styrkaar: 'assets/units/styrkaar.png',
+  // The Blue Scribes, héros légendaire du jeu de base : même image que dans js/units/tzeentch.js, déclarée
+  // ici parce que la page des Guerriers du Chaos ne charge que ce module.
+  blueScribes: 'assets/units/blueScribes.png'
 };

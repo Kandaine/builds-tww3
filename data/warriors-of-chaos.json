@@ -17,13 +17,14 @@
       "heroes": [
         {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Champion d'élite au service de l'Élu — il tient le point de contact que l'Everchosen ne peut couvrir seul, sur une fiche où chaque héros vaut une unité entière"},
         {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Renfort de sorts en écho à la maîtrise du Lore of Fire d'Archaon"},
-        {"icon": "slambo", "name": "Slambo", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, réservé à la <strong>Warhost of the Apocalypse</strong> — « béni par les quatre dieux du Chaos, si tant est qu'il n'en soit pas un lui-même, Slambo n'est pas contraint par des choses telles que la réalité quand il manie ses Haches en Quête de Gloire ». Ses capacités \"Axeman of the Gods\" et \"Crushing Charge\" en font un pur duelliste. <strong>Il ne se recrute pas : il se débloque en tuant 100 000 ennemis</strong> — la condition la plus longue de tout le mod, mais la horde d'Archaon est celle qui l'atteindra"}
+        {"icon": "slambo", "name": "Slambo", "qty": 1, "note": "Héros légendaire du mod SCM Legendary Characters, réservé à la <strong>Warhost of the Apocalypse</strong> — « béni par les quatre dieux du Chaos, si tant est qu'il n'en soit pas un lui-même, Slambo n'est pas contraint par des choses telles que la réalité quand il manie ses Haches en Quête de Gloire ». Ses capacités \"Axeman of the Gods\" et \"Crushing Charge\" en font un pur duelliste. <strong>Il ne se recrute pas : il se débloque en tuant 100 000 ennemis</strong> — la condition la plus longue de tout le mod, mais la horde d'Archaon est celle qui l'atteindra"},
+        {"icon": "vardekCrom", "name": "Vardek Crom the Conqueror (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>SCM Legendary Characters</em>, que son script réserve à la faction d'Archaon : il arrive par une mission (atteindre 7 d'Autorité Indivise). Il donne -50% d'entretien et +attaque de mêlée aux unités non marquées — toute cette armée l'est. Le revers : +200% d'entretien pour les unités marquées par un dieu, qu'Archaon n'aligne pas"}
       ],
       "army": [
         {"icon": "chosenGreatWeapons", "name": "Chosen (Great Weapons)", "qty": 4, "note": "5% de résistance physique et progression de puissance d'arme par rang (seigneur) — l'infanterie la plus dévastatrice du jeu une fois montée en rang"},
         {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 2, "note": "Même double bonus (seigneur) — cœur de mêlée mortel robuste ; réduit d'une unité pour libérer l'emplacement de Slambo, les quatre Chosen tenant déjà le centre"},
         {"icon": "mirrorGuard", "name": "Mirror Guard (Chaos Warriors)", "qty": 1, "note": "Régiment de Renom des Chaos Warriors : la garde miroir de l'Élu Suprême, l'élite mortelle que sa Horde de l'Apocalypse place autour de lui"},
-        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Halberds)", "qty": 3, "note": "Hallebardiers du Chaos Indivis, l'ancre de l'Everchosen : ils tiennent le centre pendant que sa garde d'élite manœuvre"},
+        {"icon": "chaosWarriorsUndividedHalberds", "name": "Chaos Warriors (Halberds)", "qty": 2, "note": "Hallebardiers du Chaos Indivis, l'ancre de l'Everchosen : ils tiennent le centre pendant que sa garde d'élite manœuvre"},
         {"icon": "swordsOfChaos", "name": "Swords of Chaos (Chaos Knights)", "qty": 1, "note": "Régiment favori (aucun bonus de capacité confirmé — un seul exemplaire recrutable) : capacité \"Apocalyptic Charge (Empowered)\" (+35% masse, +20% vitesse et bonus de charge sur 35m, faction), plus le double bonus de rang et de résistance physique (seigneur) — la propre garde personnelle d'Archaon, dévastatrice en charge"},
         {"icon": "chaosKnightsLances", "name": "Chaos Knights (Lances)", "qty": 3, "note": "Même double bonus de rang et de résistance physique (seigneur) — cavalerie lourde de choc"},
         {"icon": "maraudersHorsemen", "name": "Marauder Horsemen", "qty": 1, "note": "Cavalerie légère bon marché pour flanquer et pourchasser les tireurs isolés"},
@@ -84,14 +85,15 @@
       "lord": {"icon": "sigvald", "name": "Prince Sigvald the Magnificent", "qty": 1, "note": "Duelliste increvable sans monture, obsédé par sa propre beauté — \"Sweet Sorrow\" (+40% vitesse/charge sur un allié, seigneur), le +15% de vitesse pour les unités Slaanesh (seigneur) et les trois blocs de son Mirror Guard (faction) compensent son absence de monture et de soins"},
       "heroes": [
         {"icon": "chaosSorcererSlaanesh", "name": "Chaos Sorcerer of Slaanesh", "qty": 1, "note": "Lanceur du Savoir de Slaanesh, qui affaiblit le Commandement adverse avant que le Prince Magnifique ne charge"},
-        {"icon": "exaltedHeroSlaanesh", "name": "Exalted Hero of Slaanesh", "qty": 1, "note": "Champion marqué par Slaanesh, aussi vaniteux que son maître — il double la puissance de duel d'une fiche qui cherche l'affrontement de champions"}
+        {"icon": "exaltedHeroSlaanesh", "name": "Exalted Hero of Slaanesh", "qty": 1, "note": "Champion marqué par Slaanesh, aussi vaniteux que son maître — il double la puissance de duel d'une fiche qui cherche l'affrontement de champions"},
+        {"icon": "styrkaar", "name": "Styrkaar of the Sortsvinaer (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du jeu de base, qu'une mission au rang 11 du chef de faction ouvre à quelques factions du Chaos et de Slaanesh, dont celle-ci. Il donne +8 de Commandement, -15% d'entretien et -30% de coût de recrutement aux Marauders, et +10% de résistance physique et de vitesse aux Chaos Warriors de Slaanesh — les quatre Marauders of Slaanesh et les trois Mirror Guard de cette fiche en profitent"}
       ],
       "army": [
         {"icon": "chosenSlaanesh", "name": "Chosen of Slaanesh", "qty": 3, "note": "+15% de vitesse (seigneur) — élite de mêlée rapide et dévastatrice"},
         {"icon": "mirrorGuard", "name": "Mirror Guard (Chaos Warriors)", "qty": 3, "note": "Régiment favori : <strong>+2 capacité</strong> (faction) — un RoR plafonne à 1, le maximum passe donc à <strong>3</strong>. La garde miroir personnelle de Sigvald, le bloc qui tient la ligne autour d'un seigneur sans monture ni soins"},
         {"icon": "chaosWarriorsUndivided", "name": "Chaos Warriors", "qty": 1, "note": "Chaos Indivis, donc hors du <strong>+15% de vitesse</strong> que Sigvald réserve à ses unités marquées Slaanesh. Ils sont là pour tenir le point fixe pendant que le reste de la fiche, plus rapide, contourne"},
         {"icon": "maraudersSlaanesh", "name": "Marauders of Slaanesh", "qty": 4, "note": "+15% de vitesse (seigneur) — infanterie bon marché pour épaissir le front"},
-        {"icon": "hellstridersSlaanesh", "name": "Hellstriders of Slaanesh", "qty": 4, "note": "Cavalerie légère qui harcèle sans jamais s'engager : elle épuise l'ennemi que Sigvald viendra achever en duel"},
+        {"icon": "hellstridersSlaanesh", "name": "Hellstriders of Slaanesh", "qty": 3, "note": "Cavalerie légère qui harcèle sans jamais s'engager : elle épuise l'ennemi que Sigvald viendra achever en duel"},
         {"icon": "feralManticoreChaos", "name": "Chaos Feral Manticore", "qty": 1, "note": "Le <strong>seul volant</strong> de Sigvald, et sa seule façon d'atteindre l'artillerie adverse — lui-même combat à pied, sans monture, ce que son propre rôle souligne"},
         {"icon": "theSoulOfDamnation", "name": "The Soul of Damnation (Hellcannon)", "qty": 1, "note": "Régiment de Renom du Hellcannon — la seule artillerie d'une Cour Décadente qui, sans elle, devrait charger tout ce qu'elle veut atteindre"}
       ],
@@ -116,10 +118,11 @@
       "lord": {"icon": "belakor", "name": "Be'lakor", "qty": 1, "note": "Premier Prince Démon du Chaos, maître du Lore of Shadows — son +2 d'Autorité totale (seigneur) et \"Shadow Shroud\" (+60% résistance aux dégâts, seigneur) en font un manipulateur redoutable et increvable capable de mener une armée aux quatre marques"},
       "heroes": [
         {"icon": "exaltedHeroWoC", "name": "Exalted Hero", "qty": 1, "note": "Champion mortel au service du premier prince démon — il apporte la présence physique qu'une armée d'ombres et de démons éthérés n'a pas"},
-        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Renfort de sorts supplémentaire"}
+        {"icon": "chaosSorcererFire", "name": "Chaos Sorcerer (Fire)", "qty": 1, "note": "Renfort de sorts supplémentaire"},
+        {"icon": "blueScribes", "name": "The Blue Scribes (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du jeu de base, qu'une mission ouvre à quelques factions de Tzeentch et du Chaos, dont celle-ci. Ils donnent +30% de force d'arme, +15% de dégâts de tir et une barrière aux Pink et Blue Horrors — les deux Pink Horrors et The Sourguts de cette fiche"}
       ],
       "army": [
-        {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 4, "note": "-25% d'entretien en tant qu'unité Démoniaque (faction) — infanterie démoniaque frénétique de Khorne"},
+        {"icon": "bloodlettersKhorne", "name": "Bloodletters of Khorne", "qty": 3, "note": "-25% d'entretien en tant qu'unité Démoniaque (faction) — infanterie démoniaque frénétique de Khorne"},
         {"icon": "daemonettes", "name": "Daemonettes of Slaanesh", "qty": 4, "note": "Même bonus d'entretien (faction) — infanterie démoniaque rapide et mortelle de Slaanesh"},
         {"icon": "plaguebearers", "name": "Plaguebearers of Nurgle", "qty": 3, "note": "Même bonus d'entretien (faction) — infanterie démoniaque increvable de Nurgle"},
         {"icon": "pinkHorrors", "name": "Pink Horrors of Tzeentch", "qty": 2, "note": "Même bonus d'entretien (faction) — soutien à distance magique de Tzeentch"},
@@ -149,7 +152,8 @@
       "lord": {"icon": "azazel", "name": "Azazel", "qty": 1, "note": "Prince de la Damnation, sorcier-duelliste volant de Slaanesh — \"Domineering Aura\" (jusqu'à -10 attaque/défense en mêlée, intensité croissante avec le commandement ennemi vacillant, seigneur) affaiblit méthodiquement l'ennemi avant même le premier coup porté"},
       "heroes": [
         {"icon": "chaosSorcererSlaanesh", "name": "Chaos Sorcerer of Slaanesh", "qty": 1, "note": "Lanceur du Savoir de Slaanesh — sur cette fiche, ses sorts d'affaiblissement démultiplient la vitesse des Hellstriders"},
-        {"icon": "exaltedHeroSlaanesh", "name": "Exalted Hero of Slaanesh", "qty": 1, "note": "Second champion de la fiche, qui exploite la vitesse slaaneshie pour atteindre les tireurs adverses avant qu'ils n'aient tiré deux salves"}
+        {"icon": "exaltedHeroSlaanesh", "name": "Exalted Hero of Slaanesh", "qty": 1, "note": "Champion de la fiche aux côtés de Styrkaar, qui exploite la vitesse slaaneshie pour atteindre les tireurs adverses avant qu'ils n'aient tiré deux salves"},
+        {"icon": "styrkaar", "name": "Styrkaar of the Sortsvinaer (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du jeu de base, qu'une mission au rang 11 du chef de faction ouvre à quelques factions du Chaos et de Slaanesh, dont celle-ci. Il donne +8 de Commandement, -15% d'entretien et -30% de coût de recrutement aux Marauders, et +10% de résistance physique et de vitesse aux Chaos Warriors de Slaanesh — les trois Marauders of Slaanesh et les quatre Chaos Warriors of Slaanesh de cette fiche en profitent"}
       ],
       "army": [
         {"icon": "chosenSlaanesh", "name": "Chosen of Slaanesh", "qty": 3, "note": "L'élite de mêlée des Légions Extatiques. L'aura <strong>\"Domineering Aura\"</strong> d'Azazel retire jusqu'à -10 d'attaque et de défense aux ennemis proches : ce sont ces Chosen qui exploitent le mieux un adversaire ainsi affaibli, en le tuant avant qu'il ne se ressaisisse"},
@@ -157,7 +161,7 @@
         {"icon": "maraudersSlaanesh", "name": "Marauders of Slaanesh", "qty": 3, "note": "Chair à canon marquée par Slaanesh — rapide, indisciplinée, elle sert d'écran mobile devant les Hellstriders plutôt que de ligne de tenue"},
         {"icon": "theSibilantSlaughtercade", "name": "The Sibilant Slaughtercade (Chaos Chariots)", "qty": 2, "note": "Régiment favori : +1 capacité (faction) — chars de choc pour briser les formations affaiblies par Domineering Aura"},
         {"icon": "hellstridersSlaanesh", "name": "Hellstriders of Slaanesh", "qty": 2, "note": "Cavalerie légère, cœur de la fiche d'Azazel : elle contourne pendant que les Marauders fixent, et frappe l'arrière"},
-        {"icon": "feralManticoreChaos", "name": "Chaos Feral Manticore", "qty": 2, "note": "Monstres volants pour chasser les tireurs isolés et frapper les flancs"},
+        {"icon": "feralManticoreChaos", "name": "Chaos Feral Manticore", "qty": 1, "note": "Monstres volants pour chasser les tireurs isolés et frapper les flancs"},
         {"icon": "theSoulOfDamnation", "name": "The Soul of Damnation (Hellcannon)", "qty": 1, "note": "Régiment de Renom du Hellcannon. Les Légions Extatiques frappent vite et de près : ce canon est leur seule réponse à un ennemi qui refuse d'avancer"}
       ],
       "magic": "Azazel maîtrise le Lore of Slaanesh (Lash of Slaanesh, Hysterical Frenzy, Phantasmagoria) — un arsenal de débuffs de commandement qui complète parfaitement Domineering Aura pour briser le moral ennemi avant le contact.",
