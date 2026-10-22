@@ -98,5 +98,9 @@ const unitImages = {
   brotherhoodOfGrimnir: 'assets/units/brotherhoodOfGrimnir.png',
   longDrongsSlayerPirates: 'assets/units/longDrongsSlayerPirates.png',
   spiritOfGrungni: 'assets/units/spiritOfGrungni.png',
-  gobLobbers: 'assets/units/gobLobbers.png'
+  gobLobbers: 'assets/units/gobLobbers.png',
+  // Garagrim Ironfist, héros légendaire du jeu de base (wh3_dlc25_dwf_garagrim_ironfist) que
+  // wh3_main_legendary_characters.lua offre en priorité à Karak Kadrin. Portrait ui/portraits/units
+  // (aucune carte ui/units/icons n'existe pour lui), 60×130.
+  garagrimIronfist: 'assets/units/garagrimIronfist.png'
 };
