@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4109 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2157 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4110 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2158 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -400,6 +400,11 @@ the End Times* :
   (seigneur légendaire chez les Peaux-Vertes), Piggolo (Southern Realms, rituel ouvert à toute la culture, aucun effet
   ne le vise) et Hu-Mung-Us (réservé à The Mung par mission au rang 5, sans effet sur une unité ; écarté par le user).
   Les 32 pages ont désormais été passées au crible du parcours D.
+- **Puis 4109 → 4110 cartes et 2157 → 2158 couples : Beorg Bearstruck (22/10/2026).** Héros du jeu de base, réservé à
+  onze factions (`override_allowed_factions`), Dolgan en priorité (`priority_faction`) ; ses compétences visent les Marauder
+  Bearmen. Il entre chez Sayl, qui en aligne sept blocs (Curs'd Ettin 2 → 1). Wulfrik et Throgg y ont droit mais n'alignent
+  pas de Bearmen ; Thorgar, Volrik et Bran en alignent, mais leurs factions ne sont pas dans sa liste. Clé `beorgBearstruck`
+  (portrait officiel `ui/portraits/units`, 60×130, faute de carte).
 
 ---
 
@@ -477,7 +482,7 @@ Hors workshop, le jeu de base attribue lui aussi des héros légendaires par mis
 `script\campaign\wh3_main_legendary_characters.lua`, dans `data_script.pack`, les ouvre à une
 **culture** (`allowed_cultures`) et non à une faction. Snagla Grobspit (Peaux-Vertes) traité le
 19/10/2026, Karanak (Khorne, `override_allowed_factions`, huit factions) et Lord Kroak (`starting_owner_faction` Itza), Ghoritch (`override_allowed_factions` Clan Moulder), Ariel et Coeddil (Elfes Sylvains), Styrkaar (Guerriers du Chaos, et Dechala chez Slaanesh) et les Blue Scribes le 22/10/2026, Garagrim Ironfist (Nains, `priority_faction` Karak Kadrin) et Gotrek & Felix (`starting_owner_faction`
-Malakai) le 22/10/2026 ; les autres (Beorg Bearstruck, Caradryan, Theodore Bruckner…) restent à voir race par race.
+Malakai) le 22/10/2026 ; Beorg Bearstruck (Norsca, `priority_faction` Dolgan) le 22/10/2026. Caradryan et Theodore Bruckner avaient été vus avec les Hauts Elfes et l'Empire.
 
 **SCM Tribes of the North, traité le 19/10/2026.** Il manquait au relevé du 08/09 parce qu'il passe
 surtout par une **troisième fonction**, `spawn_unique_agent_at_character(<faction>, "<agent>",

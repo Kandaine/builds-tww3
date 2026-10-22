@@ -151,5 +151,9 @@ const unitImages = {
   flayerkin: 'assets/units/flayerkin.png',
   // Da Swamp Fings (River Trolls) : meme carte que dans js/units/greenskins.js, pour la fiche de
   // Throgg, dont le regiment favori donne acces a ce Regiment de Renom depuis le DLC.
-  daSwampFings: 'assets/units/daSwampFings.png'
+  daSwampFings: 'assets/units/daSwampFings.png',
+  // Beorg Bearstruck, héros légendaire du jeu de base (wh3_dlc27_nor_beorg_bearstruck), mission au rang 8
+  // réservée à onze factions, Dolgan (Sayl) en priorité. Portrait officiel ui.pack, ui\portraits\units\no_culture\nor_beorg_bearstruck_0.png
+  // (le jeu ne lui donne aucune carte ui\units\icons), 60×130 natif copié tel quel.
+  beorgBearstruck: 'assets/units/beorgBearstruck.png'
 };
