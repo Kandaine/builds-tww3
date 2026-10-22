@@ -100,5 +100,8 @@ const unitImages = {
   dreadSaurianCrystalback: 'assets/units/dreadSaurianCrystalback.png',
   pahauxSentinels: 'assets/units/pahauxSentinels.png',
   pokHopaksCohort: 'assets/units/pokHopaksCohort.png',
-  torchesOfTheUmbralTide: 'assets/units/torchesOfTheUmbralTide.png'
+  torchesOfTheUmbralTide: 'assets/units/torchesOfTheUmbralTide.png',
+  // Poqenichi, héros légendaire du mod LYH (agent poqenichi), que lyh_lzd_poqenichi.lua pose dans
+  // l'armée de départ du Culte de Sotek (Tehenhauin). Carte ui/units/icons, 120×260.
+  poqenichi: 'assets/units/poqenichi.png'
 };
