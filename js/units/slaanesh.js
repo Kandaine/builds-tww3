@@ -52,5 +52,8 @@ const unitImages = {
   bringersOfBeguilement: 'assets/units/bringersOfBeguilement.png',
   pleasureGuard: 'assets/units/pleasureGuard.png',
   eternalEntourage: 'assets/units/eternalEntourage.png',
-  heraldsOfExcess: 'assets/units/heraldsOfExcess.png'
+  heraldsOfExcess: 'assets/units/heraldsOfExcess.png',
+  // Styrkaar of the Sortsvinaer, héros légendaire du jeu de base : même image que dans
+  // js/units/warriors-of-chaos.js (portrait 60×130), déclarée ici parce que la page de Slaanesh ne charge que ce module.
+  styrkaar: 'assets/units/styrkaar.png'
 };
