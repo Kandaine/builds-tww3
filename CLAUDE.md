@@ -161,8 +161,8 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 |---|---|---|
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
-| Cartes d'unité affichées, toutes fiches confondues | 4090 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2140 | ce que `verifier-icones.ps1` contrôle réellement |
+| Cartes d'unité affichées, toutes fiches confondues | 4093 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
+| Couples (faction, clé d'icône) cités par les fiches | 2141 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -352,6 +352,12 @@ the End Times* :
   légendaire du jeu de base que `wh3_main_legendary_characters.lua` offre en priorité à Karak Kadrin, entre chez
   Ungrim (Slayers 10 → 9). Cartes inchangées en nombre (−1 +1) ; une clé de plus, `garagrimIronfist` — son portrait
   officiel `ui/portraits/units`, 60×130, le jeu ne lui donnant aucune carte `ui/units/icons`.
+- **Puis 4090 → 4093 cartes et 2140 → 2141 couples : héros de Khorne (22/10/2026).** Karanak, héros légendaire du
+  jeu de base (mission au rang 16, ouverte à Skarbrand, Arbaal, Skulltaker, Valkia, Kholek, Archaon, Be'lakor et au
+  Daemon Prince), donne +6 de Commandement et -10% de recrutement aux Chaos Warhounds et Flesh Hounds de son armée :
+  il entre chez Arbaal, Skarbrand et Skulltaker, qui en alignent (+3 lignes ; Chaos Warriors, Bloodletters et Bloodbeasts
+  perdent un exemplaire chacun). Une clé nouvelle au module de Khorne, `karanak` (portrait officiel `ui/portraits/units`, 60×130, faute de carte). Tzeentch et les Démons :
+  rien à corriger.
 
 ---
 
@@ -401,7 +407,7 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 
 | Mod | Appels | État |
 |---|---|---|
-| `!!!3_legendary_guys.pack` | 29, plus 1 `cm:create_agent` | **traité** le 08/09/2026, sauf Infanta Leanora Navrre, que son script pose par `create_agent` dans l'armée de **Count Noctilus** : elle était chez Cylostra, corrigé le 22/10/2026 (vue en jeu par le user) |
+| `!!!3_legendary_guys.pack` | 29, plus 1 `cm:create_agent` | **traité** le 08/09/2026, revérifié race par race du 19 au 22/10/2026 (Tchzen et Bahr → Kairos, Gerik Barkov → Daemon Prince, justes), sauf Infanta Leanora Navrre, que son script pose par `create_agent` dans l'armée de **Count Noctilus** : elle était chez Cylostra, corrigé le 22/10/2026 (vue en jeu par le user) |
 | `!scm_marienburg.pack` | 15, plus des scripts `cr_combi_expanded` | **traité** le 20/10/2026 : Alicia → Mundvard (`spawn_agent_at_position`) ; Rashasawa → Egmond ; Odvaal → Jaan, au départ ; Pieter de Groot, Lisette, Crispijn, Maicross, Guzunda en récompense des **convois** de Marienburg, ouverts à sept factions de l'Empire. En **Expanded** : Guzunda → maison Fooger au départ, Ogg et Palldee par ses caravanes (`rhox_fooger_caravan.lua`) |
 | `um's_Mortkin.pack` | 5 | non vérifié |
 | `scm_skaven_clans.pack` | 3 | non vérifié |
@@ -422,12 +428,12 @@ crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
 | `!xou_age_TKExtended.pack` (Tomb Kings Extended, et son patch temporaire) | 0 — `cm:create_agent` et une mission | **traité** le 22/10/2026 : Herald Nekaph → Khemri au départ (`loki_nekaph_add.lua`, scripts `wh3_main_combi` et `cr_combi_expanded`) ; Prince Apophas par une mission que reçoit, au tour 2, le premier joueur Roi des Tombes (`apophas_quest_launcher.lua`) |
 | `ovn_dread_king.pack` (The Dread King) | 0 — `cm:create_agent` | **traité** le 22/10/2026 : Gunther Larenscheld → `ovn_tmb_dread_king` au départ, juste. Ce n'est pas le Gunther von Grecht de Heroes of Legend |
 | `Araveena_updated2.pack` (Araveena) | 1, script dédié (`anarsis_script.lua`) | **traité** le 22/10/2026 : Anarsis → Deadwood Sentinels au départ, juste |
-| `!scm_legendary.pack` (SCM Legendary Characters) | table `scm_lc_spawn_hero` | **Elfes Noirs** le 22/10/2026 : Shadowblade (`str_shadowblade`, `faction_subset` Har Ganeth, **sans mission**) est créé au premier tour pour Hellebron, à la place de sa Death Hag de départ — il était chez Shakkara, corrigé et **vu en jeu par le user** ; Korelei et Furion ouverts au premier joueur elfe noir ; Fellheart est un seigneur. **Rois des Tombes** le 22/10/2026 : Nyletoth et Serkhet sans `faction_subset`, ouverts. **Nains du Chaos** le 22/10/2026 : Barukh sans `faction_subset`, ouvert. **Nains** le 22/10/2026 : Kazrik, Grombold, Hamnir, Torston et Juggo réservés par `faction_subset` à leur faction — Juggo à Sven's Expedition (`wh2_main_dwf_spine_of_sotek_dwarfs`), pas à Barak Varr. **Hommes-Bêtes** le 21/10/2026 : Ungrol Four-Horn (`str_ungrol`) au premier joueur homme-bête qui possède 12 unités d'Ungors. **Royaumes Ogres traités** le 20/10/2026 : Brudd sans `faction_subset`, donc au premier joueur ogre ; ses doublons de MotM (Braugh, Frostmaw, Katerina, Kineater) sont coupés par MotM quand son réglage `motm_lc_overlap_no_mct2` est actif. **Hauts Elfes, Bretonnie, Comtes Vampires et Grand Cathay traités** (19-20/10/2026) — Nanye Bunyo et Xian Feng réservés par `faction_subset` à Miao Ying et à Zhao Ming ; Gothard et Obadiah confirmés en jeu chez le premier joueur vampire (Mallobaude) ; Ulrika (`str_ulrika`) y est désactivée en Immortal Empires. **Piège** : la `faction_key` de la table n'est que le repli de l'IA ; la mission va au **premier joueur de la même culture**, sauf `faction_subset` explicite |
+| `!scm_legendary.pack` (SCM Legendary Characters) | table `scm_lc_spawn_hero` | **Khorne** le 22/10/2026 : Mardagg, Vaslo, Ironarm, Scyla, Herumar et Khoros sans `faction_subset`, ouverts. **Tzeentch** le 22/10/2026 : Zor'ead, Xuq'ls et les Blue Scribes sans `faction_subset`, ouverts. **Elfes Noirs** le 22/10/2026 : Shadowblade (`str_shadowblade`, `faction_subset` Har Ganeth, **sans mission**) est créé au premier tour pour Hellebron, à la place de sa Death Hag de départ — il était chez Shakkara, corrigé et **vu en jeu par le user** ; Korelei et Furion ouverts au premier joueur elfe noir ; Fellheart est un seigneur. **Rois des Tombes** le 22/10/2026 : Nyletoth et Serkhet sans `faction_subset`, ouverts. **Nains du Chaos** le 22/10/2026 : Barukh sans `faction_subset`, ouvert. **Nains** le 22/10/2026 : Kazrik, Grombold, Hamnir, Torston et Juggo réservés par `faction_subset` à leur faction — Juggo à Sven's Expedition (`wh2_main_dwf_spine_of_sotek_dwarfs`), pas à Barak Varr. **Hommes-Bêtes** le 21/10/2026 : Ungrol Four-Horn (`str_ungrol`) au premier joueur homme-bête qui possède 12 unités d'Ungors. **Royaumes Ogres traités** le 20/10/2026 : Brudd sans `faction_subset`, donc au premier joueur ogre ; ses doublons de MotM (Braugh, Frostmaw, Katerina, Kineater) sont coupés par MotM quand son réglage `motm_lc_overlap_no_mct2` est actif. **Hauts Elfes, Bretonnie, Comtes Vampires et Grand Cathay traités** (19-20/10/2026) — Nanye Bunyo et Xian Feng réservés par `faction_subset` à Miao Ying et à Zhao Ming ; Gothard et Obadiah confirmés en jeu chez le premier joueur vampire (Mallobaude) ; Ulrika (`str_ulrika`) y est désactivée en Immortal Empires. **Piège** : la `faction_key` de la table n'est que le repli de l'IA ; la mission va au **premier joueur de la même culture**, sauf `faction_subset` explicite |
 
 Hors workshop, le jeu de base attribue lui aussi des héros légendaires par mission :
 `script\campaign\wh3_main_legendary_characters.lua`, dans `data_script.pack`, les ouvre à une
 **culture** (`allowed_cultures`) et non à une faction. Snagla Grobspit (Peaux-Vertes) traité le
-19/10/2026, Garagrim Ironfist (Nains, `priority_faction` Karak Kadrin) et Gotrek & Felix (`starting_owner_faction`
+19/10/2026, Karanak (Khorne, `override_allowed_factions`, huit factions) le 22/10/2026, Garagrim Ironfist (Nains, `priority_faction` Karak Kadrin) et Gotrek & Felix (`starting_owner_faction`
 Malakai) le 22/10/2026 ; les autres (Beorg Bearstruck, Caradryan, Theodore Bruckner…) restent à voir race par race.
 
 **SCM Tribes of the North, traité le 19/10/2026.** Il manquait au relevé du 08/09 parce qu'il passe

@@ -57,5 +57,9 @@ const unitImages = {
   lordSlaurith: 'assets/portraits/lordSlaurith.png',
   knightsOfTheBrazenThrone: 'assets/units/knightsOfTheBrazenThrone.png',
   heraldsOfKhornesFury: 'assets/units/heraldsOfKhornesFury.png',
-  skullharvestRavagers: 'assets/units/skullharvestRavagers.png'
+  skullharvestRavagers: 'assets/units/skullharvestRavagers.png',
+  // Karanak, héros légendaire du jeu de base (wh3_pro12_kho_cha_karanak), mission au rang 16
+  // ouverte à Skarbrand, Arbaal et Skulltaker entre autres. Portrait ui/portraits/units/no_culture/dae_karanak_0.png
+  // (ui.pack : aucune carte ui/units/icons n'existe pour ce héros), 60×130.
+  karanak: 'assets/units/karanak.png'
 };
