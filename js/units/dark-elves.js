@@ -74,5 +74,12 @@ const unitImages = {
   sistersOfTheSingingDoom: 'assets/units/sistersOfTheSingingDoom.png',
   ravenHeralds: 'assets/units/ravenHeralds.png',
   chillOfSontar: 'assets/units/chillOfSontar.png',
-  ravagersOfRakarth: 'assets/units/ravagersOfRakarth.png'
+  ravagersOfRakarth: 'assets/units/ravagersOfRakarth.png',
+  // Heros legendaires du mod LYH, que ses scripts lyh_def_<nom>.lua posent par
+  // spawn_agent_at_military_force dans l'armee de depart de leur faction (Mezekar,
+  // agent « meizeka » -> Naggarond ; Drusala -> Cult of Pleasure). Cartes
+  // ui/units/icons du pack, laissees a leurs dimensions d'origine : 120x260 mesures
+  // pour mezekar.png comme pour drusala.png (System.Drawing, apres extraction).
+  mezekar: 'assets/units/mezekar.png',
+  drusala: 'assets/units/drusala.png'
 };
