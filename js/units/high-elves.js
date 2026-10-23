@@ -111,5 +111,7 @@ const unitImages = {
   // ui/units/icons du pack, laissees a leurs dimensions d'origine, mesurees a
   // l'extraction : 122x262 pour aessaGoldmane, 120x260 pour alathenar.
   aessaGoldmane: 'assets/units/aessaGoldmane.png',
-  alathenar: 'assets/units/alathenar.png'
+  alathenar: 'assets/units/alathenar.png',
+  // Imrallion, héros légendaire du mod High Elves Lords (hbe_imrallion) : réservé à l'Order of Loremasters (Teclis), par une mission (atteindre Nuln). Portrait officiel ui/portraits/units, faute de carte ui/units/icons dans le pack, 60×130.
+  imrallion: 'assets/units/imrallion.png'
 };

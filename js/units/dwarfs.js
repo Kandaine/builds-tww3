@@ -102,5 +102,11 @@ const unitImages = {
   // Garagrim Ironfist, héros légendaire du jeu de base (wh3_dlc25_dwf_garagrim_ironfist) que
   // wh3_main_legendary_characters.lua offre en priorité à Karak Kadrin. Portrait ui/portraits/units
   // (aucune carte ui/units/icons n'existe pour lui), 60×130.
-  garagrimIronfist: 'assets/units/garagrimIronfist.png'
+  garagrimIronfist: 'assets/units/garagrimIronfist.png',
+  // Skargel the Miner, héros légendaire du mod SCM LCCP (hkrul_skargel) : donné à l'expédition de Burlok par son 1er rituel d'artisanat (rhox_burlok_artifact.lua, Immortal Empires Expanded). Portrait officiel ui/portraits/units, faute de carte ui/units/icons dans le pack, 60×130.
+  skargelTheMiner: 'assets/units/skargelTheMiner.png',
+  // Thulgrim the Thief, héros légendaire du mod SCM LCCP (hkrul_thulgrim) : donné à l'expédition de Burlok par son 2e rituel d'artisanat (rhox_burlok_artifact.lua, Immortal Empires Expanded). Portrait officiel ui/portraits/units, faute de carte ui/units/icons dans le pack, 60×130.
+  thulgrimTheThief: 'assets/units/thulgrimTheThief.png',
+  // Wundal the Wizard, héros légendaire du mod SCM LCCP (hkrul_wundal) : donné à l'expédition de Burlok par son 4e rituel d'artisanat (rhox_burlok_artifact.lua, Immortal Empires Expanded). Portrait officiel ui/portraits/units, faute de carte ui/units/icons dans le pack, 60×130.
+  wundalTheWizard: 'assets/units/wundalTheWizard.png'
 };

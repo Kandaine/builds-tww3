@@ -40,6 +40,10 @@
 // swordOfSolkan a suivi le meme jour : Jaan, seule fiche a l'aligner, lui prefere Odvaal van den
 // Huister, que SCM Marienburg (hkrul_mar.lua) donne a Marienbourg des le premier tour.
 //
+// vardekCrom a suivi le 23/10/2026 : la fiche d'Archaon l'alignait en heros, mais SCM Legendary
+// Characters cree Vardek Crom en SEIGNEUR (type "general" de scm_lc_spawn_hero, verse au vivier
+// de seigneurs par spawn_character_to_pool) : il ne peut pas servir de heros.
+//
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
 // ============================================================================
@@ -148,5 +152,6 @@ const unitImagesHorsFiches = {
   haftagg: 'assets/units/haftagg.png',
   ulrikaMagdova: 'assets/units/ulrikaMagdova.png',
   dragonGuardCrossbowmen: 'assets/units/dragonGuardCrossbowmen.png',
-  swordOfSolkan: 'assets/units/swordOfSolkan.png'
+  swordOfSolkan: 'assets/units/swordOfSolkan.png',
+  vardekCrom: 'assets/units/vardekCrom.png'
 };

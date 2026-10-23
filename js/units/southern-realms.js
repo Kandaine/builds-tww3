@@ -72,5 +72,7 @@ const unitImages = {
   tebSonsOfStrygos: 'assets/units/tebSonsOfStrygos.png',
   // Luccini — contenu du mod « Heroes of Legend » (Lorenzo Lupo retravaillé)
   lucRemanLegionary: 'assets/units/lucRemanLegionary.png',
-  lucAssassin: 'assets/units/lucAssassin.png'
+  lucAssassin: 'assets/units/lucAssassin.png',
+  // The Black Crowe, héros légendaire du mod Heroes of Legend (luccini_black_crowe) : créé au départ pour le joueur de Lorenzo Lupo (hol_factions_start.lua, départ de mixer_teb_cataph_luccini). Portrait officiel ui/portraits/units, faute de carte ui/units/icons dans le pack, 60×130.
+  theBlackCrowe: 'assets/units/theBlackCrowe.png'
 };

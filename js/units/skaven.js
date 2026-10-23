@@ -205,5 +205,7 @@ const unitImages = {
   ghoritch: 'assets/units/ghoritch.png',
   // Reekit, héros légendaire du mod LYH (agent reekit), que lyh_skv_reekit.lua pose dans l'armée
   // de départ du Clan Pestilens (Skrolk). Carte lyh_hero_no_cathay.pack, ui\units\icons\lyh_skv_reekit.png, 120×260.
-  reekit: 'assets/units/reekit.png'
+  reekit: 'assets/units/reekit.png',
+  // Natty Buboe, héros légendaire du mod SCM Legendary Characters (str_natty) : réservé au Clan Mors (Queek) par faction_subset, par une mission. Portrait officiel ui/portraits/units, faute de carte ui/units/icons dans le pack, 60×130.
+  nattyBuboe: 'assets/units/nattyBuboe.png'
 };
