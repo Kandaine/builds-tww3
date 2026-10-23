@@ -463,8 +463,10 @@ Pièges propres à l'audit, tous rencontrés le 23/10/2026 :
   bataille) : ce ne sont pas des écarts.
 - **deux packs, deux personnages** : Aessa Goldmane (héroïne LYH, seigneur High Elves Lords), Anurion
   (héros Heroes of Legend, seigneur High Elves Lords). Le nom seul ne prouve rien.
-- **le jeu peut afficher un autre nom que la loc** (« Principal Write », loc « Rekthor Redaxe ») et une
-  traduction peut être plus ancienne que le mod (Alathenar) : faire confirmer le nom par le user.
+- **la copie de traduction LYH du user peut être périmée** : elle affichait « Principal Write » pour
+  Rekthor Redaxe et n'avait pas Alathenar, jusqu'à sa réfection le 23/10/2026 (skill `patcher-un-mod`).
+  Un nom vu en jeu qui diffère de la loc du workshop doit faire vérifier la date de la traduction ;
+  faire confirmer le nom par le user dans tous les cas.
 
 **4. Soumettre un tableau** : erreurs certaines d'abord, puis réservés absents, puis conformes et
 ouverts. Le user tranche ; corriger ensuite comme au parcours D (étapes 5 et 6), effets lus avec

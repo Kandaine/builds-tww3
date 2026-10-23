@@ -159,10 +159,10 @@ const unitImages = {
   spiritHost: 'assets/units/spiritHost.png',
   // Heros legendaires du mod LYH (lyh_hero_no_cathay.pack), que ses scripts lyh_vmp_<nom>.lua posent par
   // spawn_agent_at_military_force dans l'armee de depart de leur faction : Obald the Bonefather (agent
-  // `bonefather`) -> The Barrow Legion ; Principal Write (agent `xuefu`) -> wh_main_vmp_vampire_counts, la
-  // faction de Mannfred (nom tel qu'affiche en jeu, vu par le user le 23/10/2026, alors que la loc du mod
-  // dit « Rekthor Redaxe »). Cartes ui/units/icons du pack, laissees a leurs dimensions d'origine,
+  // `bonefather`) -> The Barrow Legion ; Rekthor Redaxe (agent `xuefu`) -> wh_main_vmp_vampire_counts, la
+  // faction de Mannfred, vu en jeu par le user le 23/10/2026. Il s'affichait « Principal Write » avec une
+  // copie de traduction perimee : la cle d'icone a change, le fichier image a garde l'ancien nom. Cartes ui/units/icons du pack, laissees a leurs dimensions d'origine,
   // mesurees avec ImageMagick identify : 60x130 pour chacune des deux.
   obaldTheBonefather: 'assets/units/obaldTheBonefather.png',
-  principalWrite: 'assets/units/principalWrite.png'
+  rekthorRedaxe: 'assets/units/principalWrite.png'
 };
