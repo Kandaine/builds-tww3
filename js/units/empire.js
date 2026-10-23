@@ -171,5 +171,16 @@ const unitImages = {
   // de base, clé wh3_dlc25_emp_cha_theodore_bruckner) : aucune carte ui/units/icons dans les
   // packs, on prend le portrait ui/portraits/units de chacun, 60×130.
   alberichVonKorden: 'assets/units/alberichVonKorden.png',
-  theodoreBruckner: 'assets/units/theodoreBruckner.png'
+  theodoreBruckner: 'assets/units/theodoreBruckner.png',
+  // Héros légendaires du mod LYH, que ses scripts lyh_emp_<nom>.lua posent par
+  // spawn_agent_at_military_force dans l'armée de départ de leur faction : Dagmar
+  // Nachgeben → Middenland, Berndt Aberwold → Wissenland, Rudolph Weskar → Averland,
+  // Oskar Rittlehof → The Huntsmarshal's Expedition, Walter van Hoik → Marienburg.
+  // Cartes ui/units/icons du pack, laissées à leurs dimensions d'origine (mesurées) :
+  // 122×262 pour Dagmar et Walter, 120×260 pour Berndt, Rudolph et Oskar.
+  dagmarNachgeben: 'assets/units/dagmarNachgeben.png',
+  berndtAberwold: 'assets/units/berndtAberwold.png',
+  rudolphWeskar: 'assets/units/rudolphWeskar.png',
+  oskarRittlehof: 'assets/units/oskarRittlehof.png',
+  walterVanHoik: 'assets/units/walterVanHoik.png'
 };
