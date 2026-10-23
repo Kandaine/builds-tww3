@@ -104,5 +104,12 @@ const unitImages = {
   rahagrasPride: 'assets/units/rahagrasPride.png',
   heraldsOfTheWind: 'assets/units/heraldsOfTheWind.png',
   silakOneEye: 'assets/units/silakOneEye.png',
-  brinedragonSwords: 'assets/units/brinedragonSwords.png'
+  brinedragonSwords: 'assets/units/brinedragonSwords.png',
+  // Heros legendaires du mod LYH (lyh_hero_no_cathay.pack), que ses scripts
+  // lyh_hef_<nom>.lua posent par spawn_agent_at_military_force dans l'armee de depart
+  // de leur faction (Aessa Goldmane -> Chrace, Alathenar -> Tiranoc). Cartes
+  // ui/units/icons du pack, laissees a leurs dimensions d'origine, mesurees a
+  // l'extraction : 122x262 pour aessaGoldmane, 120x260 pour alathenar.
+  aessaGoldmane: 'assets/units/aessaGoldmane.png',
+  alathenar: 'assets/units/alathenar.png'
 };

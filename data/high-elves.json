@@ -319,7 +319,8 @@
       "lord": {"icon": "korhil", "name": "Korhil", "qty": 1, "note": "Le Capitaine des White Lions, tueur du lion Charandis — ses effets font des White Lions, War Lions et Lion Chariot une meute increvable (-30% entretien, +10 commandement, +10% remplacement, seigneur), et son maîtrise de la forêt (Vanguard, +10 commandement, +10% embuscade, faction) lui permet de frapper le premier depuis les bois"},
       "heroes": [
         {"icon": "mage", "name": "Mage (High)", "qty": 1, "note": "Soutien magique (High Magic) — Hand of Kharibdyss et buffs qui appuient la charge des White Lions"},
-        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Héros de combat — porte-bannière qui ancre le commandement de la meute et mène la charge à la hache"}
+        {"icon": "noble", "name": "Noble", "qty": 1, "note": "Héros de combat — porte-bannière qui ancre le commandement de la meute et mène la charge à la hache"},
+        {"icon": "aessaGoldmane", "name": "Aessa Goldmane (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>LYH</em>, champion des White Lions. Son script le pose dans l'armée de départ de Chrace, et de lui seul. Ses compétences donnent aux White Lions of Chrace et aux Silverpelts de l'armée +8 d'attaque et +8 de défense en mêlée, +8% de bonus contre l'infanterie et +8% de résistance aux projectiles : quatre exemplaires de cette fiche en profitent"}
       ],
       "army": [
         {"icon": "silverpelts", "name": "Silverpelts (White Lions of Chrace)", "qty": 1, "note": "Le Régiment de Renom des White Lions, distinct de The Puremane Company avec qui il coexiste — cette fiche est la seule du site à aligner les deux. Il reçoit le <strong>-30% d'entretien</strong> comme le reste de la meute chracienne"},
@@ -332,7 +333,7 @@
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn — le tir magique qui accompagne les Lions Blancs de Chrace, lesquels n'ont aucune portée"},
         {"icon": "lothernSeaGuard", "name": "Lothern Sea Guard", "qty": 1, "note": "Lance et arc — ligne de soutien polyvalente qui tient pendant que les lions flanquent"},
         {"icon": "stormRiders", "name": "The Storm Riders (Lothern Sea Guard)", "qty": 1, "note": "Régiment de Renom des Sea Guard — avec l'unité de base qu'il accompagne, ce qui tire puis tient la ligne sans changer de rôle"},
-        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 2, "note": "Le <strong>+10 de commandement en forêt</strong> de Korhil favorise le combat rapproché sous couvert. Ces balistes traitent ce que ses Lions Blancs ne peuvent pas atteindre avant qu'il ne les charge"},
+        {"icon": "boltThrower", "name": "Eagle Claw Bolt Throwers", "qty": 1, "note": "Le <strong>+10 de commandement en forêt</strong> de Korhil favorise le combat rapproché sous couvert. Cette baliste traite ce que ses Lions Blancs ne peuvent pas atteindre avant qu'il ne les charge"},
         {"icon": "greatEagle", "name": "Great Eagle", "qty": 1, "note": "Aigle géant — harcèle l'artillerie et les casters, éclaire les embuscades"}
       ],
       "magic": "Korhil n'est pas un lanceur de sorts — sa puissance vient de la hache et de la meute de lions. Le Mage (High Magic) apporte le soutien magique (buffs, Hand of Kharibdyss) qui amplifie les charges d'embuscade, tandis que le Noble ancre le commandement.",
@@ -428,11 +429,12 @@
       "lord": {"icon": "princessEldyra", "name": "Princess Eldyra", "qty": 1, "note": "À monter <strong>sur char</strong>, sans hésiter : c'est la condition du <strong>+35% d'aura de commandement</strong> (faction). Son <strong>\"Iron Will\"</strong> couvre alors une portion de champ de bataille bien plus large, et comme l'aura n'a de toute façon <strong>aucune limite de portée</strong>, c'est le reste de son commandement qui en profite"},
       "heroes": [
         {"icon": "noble", "name": "Noble", "qty": 2, "note": "Eux aussi <strong>sur char</strong> : l'effet vise « les Seigneurs <strong>et Héros</strong> » (faction), donc chaque Noble monté élargit sa propre aura de 35%. Deux Nobles sur char couvrent une ligne entière"},
-        {"icon": "mage", "name": "Mage (High)", "qty": 1, "note": "Le seul lanceur de la liste. Apothéose soigne les chars, fragiles dès qu'ils sont immobilisés, et Main de Gloire renforce une charge déjà rapide"}
+        {"icon": "mage", "name": "Mage (High)", "qty": 1, "note": "Le seul lanceur de la liste. Apothéose soigne les chars, fragiles dès qu'ils sont immobilisés, et Main de Gloire renforce une charge déjà rapide"},
+        {"icon": "alathenar", "name": "Alathenar (Héros Légendaire)", "qty": 1, "note": "Héros légendaire du mod <em>LYH</em>, meilleur archer de la Porte de l'Aigle. Son script le pose dans l'armée de départ de Tiranoc, et de lui seul. Il donne à tous les tireurs hauts-elfes de l'armée +10% de portée et +15% de rechargement ; aux Archers, +8% de dégâts de tir (+15% au second niveau) ; aux Spearmen, dont The Scions of Mathlann, +8% de force des armes (+15%) et +5 de commandement ; aux deux familles, +3 rangs de recrutement et une capacité passive"}
       ],
       "army": [
         {"icon": "tiranocChariot", "name": "Tiranoc Chariots", "qty": 4, "note": "Le char de Tiranoc, et la raison d'être de la fiche : <strong>-2 tours de recrutement</strong> (seigneur) permet d'en reconstituer un flux constant, ce qui compte pour une unité qui s'use vite. Léger, rapide, il flanque et harcèle"},
-        {"icon": "lionChariot", "name": "Lion Chariots of Chrace", "qty": 2, "note": "Le char lourd, bénéficiaire du même <strong>-2 tours</strong> (seigneur) — c'est lui qui enfonce là où le char de Tiranoc se contente de bousculer"},
+        {"icon": "lionChariot", "name": "Lion Chariots of Chrace", "qty": 1, "note": "Le char lourd, bénéficiaire du même <strong>-2 tours</strong> (seigneur) — c'est lui qui enfonce là où le char de Tiranoc se contente de bousculer"},
         {"icon": "sistersOfAvelorn", "name": "Sisters of Avelorn", "qty": 1, "note": "Le meilleur tir haut-elfe, à dégâts magiques. En siège, c'est ce qui nettoie les remparts avant que le <strong>+15% de force des armes</strong> (seigneur) ne s'applique au contact"},
         {"icon": "everqueensCourtGuards", "name": "Everqueen's Court Guards (Sisters of Avelorn)", "qty": 1, "note": "Régiment de Renom des Sisters of Avelorn, le tir magique qui ouvre les rangs avant le passage des chars"},
         {"icon": "hefArcher", "name": "Archers", "qty": 2, "note": "Le volume de tir bon marché qui accompagne les Sœurs — une armée de chars a besoin d'une base statique pour fixer l'ennemi pendant qu'elle contourne"},
