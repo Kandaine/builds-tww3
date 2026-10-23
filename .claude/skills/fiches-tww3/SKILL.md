@@ -1,6 +1,6 @@
 ---
 name: fiches-tww3
-description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots), revoir toute une page après un DLC, un patch du jeu ou la mise à jour d'un mod, ou réaligner les héros légendaires d'une race sur les scripts des mods qui les attribuent. À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, annonce un DLC ou une mise à jour, ou évoque data/*.json, js/units/*.js, js/core.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
+description: Workflow complet pour le site builds-tww3 — créer une fiche de seigneur légendaire à partir d'un mod Steam Workshop de Total War WARHAMMER III, modifier une fiche existante (ajouter un héros ou une unité, corriger une erreur, rééquilibrer les 20 slots), revoir toute une page après un DLC, un patch du jeu ou la mise à jour d'un mod, ou réaligner les héros légendaires d'une race sur les scripts des mods qui les attribuent, ou auditer d'un coup tous les héros de tous les mods actifs. À utiliser dès que le user parle d'un mod TWW3, envoie un chemin workshop\content\1142710\, colle des captures de l'écran Lord Details, demande d'ajouter un seigneur ou un héros au site, signale qu'une unité ou un effet est faux sur une fiche, annonce un DLC ou une mise à jour, ou évoque data/*.json, js/units/*.js, js/core.js, un régiment de renom, un plafond d'unité ou une carte d'unité à extraire — même s'il ne nomme pas explicitement le site.
 ---
 
 # Fiches builds-tww3
@@ -13,7 +13,7 @@ légendaires de TWW3 en Immortal Empires. Dépôt `C:\Users\Utilisateur\Projets\
 sur `main`. Une fiche fausse ou une carte sans image est donc visible par des visiteurs, pas
 seulement par le user — c'est ce qui justifie la sévérité des invariants ci-dessous.
 
-Quatre parcours. Lire d'abord les invariants, ils valent pour les quatre.
+Cinq parcours. Lire d'abord les invariants, ils valent pour les cinq.
 
 ---
 
@@ -361,6 +361,9 @@ l'écran de sélection ne montre pas les héros de mission, et ne prouve donc ri
 **4. Classer, puis soumettre un tableau par page.**
 
 - **Réservé à un seigneur** : il va chez lui, et seulement chez lui. Le retirer partout ailleurs.
+  **Même si aucun effet ne le vise** (décision du user, 23/10/2026) : l'argument « aucun effet » ne
+  vaut que pour les héros ouverts. Imrallion, Natty Buboe et trois Aventuriers de Burlok avaient été
+  écartés ainsi, à tort.
 - **Ouvert à une culture** : règle du 17/10/2026, il entre dans **chaque** build où un effet du
   seigneur le vise — sa classe, son nom, son type, ou « héros intégrés à l'armée » (Bohemond) — ou
   comble un manque nommé. Mesurer ce que le héros renforce : ses compétences
@@ -406,6 +409,66 @@ ligne changent (voir `references/format-fiche.md`).
 **6. Contrôles, `CLAUDE.md`, commit par page.** Comme au parcours C. En plus : ajouter le mod traité
 au tableau « Les héros de mod : le script fait foi » de `CLAUDE.md`, et consigner l'avancement dans
 la mémoire `passe-heros-retroactive`.
+
+---
+
+## Parcours E — audit mécanique des héros, tous mods confondus
+
+Le parcours D lit une page à la main ; celui-ci balaie **tous les mods actifs d'un coup** et sort la
+liste des écarts. À lancer après une mise à jour de mods, un DLC, l'ajout d'un mod, ou quand le user
+demande « tous les héros sont-ils chez le bon seigneur ? ». Établi le 23/10/2026 : il a trouvé onze
+héros LYH absents du site (que la passe D avait manqués), un seigneur placé en héros (Vardek Crom)
+et six héros réservés écartés à tort.
+
+**Ce qu'il vérifie, et ce qu'il ne vérifie pas.** Il est mécanique pour les héros **réservés** à une
+faction (oui ou non : sont-ils chez son seigneur ?). Pour les héros **ouverts** à une culture, il ne
+fait que les lister : leur place dépend des effets, c'est le parcours D. Le dire au user avant de
+lancer, avec les critères d'acceptation : chaque attribution réservée a un statut, chaque héros nommé
+du site a une source, `git status` ne bouge pas (tout se fait dans le scratchpad).
+
+**1. Lancer la chaîne.** Les scripts vivent dans `~/.claude/tools/tww/audit-heros/`, numérotés dans
+l'ordre ; `audit.ps1 -Out <scratchpad>\audit` les enchaîne tous. Il lit **`used_mods.txt`**, à la
+racine du jeu : le lanceur y écrit la liste des packs **actifs** à chaque partie, ce qui évite les faux
+écarts des mods abonnés mais désactivés.
+
+**2. Lire les trois sorties, dans cet ordre.**
+
+| Fichier | Ce qu'on y cherche |
+|---|---|
+| `rapproche_seigneurs.tsv` | colonne 4 **non vide** : un sous-type versé au vivier de **seigneurs** figure en héros sur le site |
+| `rapproche_heros.tsv` | colonne 4 **vide** : un personnage créé par script est absent du site — lire son script |
+| `rapproche_rares.tsv` | héros que la table des droits ouvre à une ou deux factions seulement (la plupart sont génériques) |
+
+Le rapprochement est large exprès : il produit des faux absents (nom du jeu différent du nom de la
+fiche : « Martial Fanatic » contre « Martial Zealot ») et des faux présents (la queue `crom` ressort
+dans `necromancer`). Chaque ligne suspecte se tranche en lisant la fiche et le script.
+
+**3. Lire le script de chaque suspect** (`appels.tsv` donne le fichier et la ligne) et le classer avec
+le tableau des mécanismes du parcours D. Les tables se décodent à part : `table_scm.cjs` pour SCM
+Legendary ; les départs de Heroes of Legend sont dans `hol_lib_data.lua` (champ `agents`, `is_unique`,
+`human_only`) ; le jeu de base dans `wh3_main_legendary_characters.lua`. La table `hbe_characters` de
+High Elves Lords (`hbe_mission_setup.lua`, champ `type`) n'est décodée par aucun script : ses
+seigneurs (`type = "general"`) n'apparaissent pas dans `cles_seigneurs.txt`, la lire à la main.
+
+Pièges propres à l'audit, tous rencontrés le 23/10/2026 :
+
+- **`type = "general"` dans `scm_lc_spawn_hero` veut dire SEIGNEUR**, versé au vivier par
+  `spawn_character_to_pool`. Crom, Vandred, Feytor, Haargroth, Kessel, Erkstein, Lietpold, Gnawdwell,
+  Sneek… sont des seigneurs. Vardek Crom avait été placé en héros chez Archaon : retiré.
+- **une classification ancienne de la mémoire peut être fausse** : « les ~35 personnages des scripts
+  `lyh_<race>_<nom>.lua`, seigneurs de départ » — ce sont des **héros**
+  (`spawn_agent_at_military_force`). Onze manquaient au site. Vérifier la fonction appelée, pas l'étiquette.
+- **un héros peut n'exister que pour l'IA** (Aber Walblatt, `if faction:is_human() == false`) ou
+  n'arriver que sur condition (Kitharl à la prise de Tor Achare, Swyrd quand un chef norse perd une
+  bataille) : ce ne sont pas des écarts.
+- **deux packs, deux personnages** : Aessa Goldmane (héroïne LYH, seigneur High Elves Lords), Anurion
+  (héros Heroes of Legend, seigneur High Elves Lords). Le nom seul ne prouve rien.
+- **le jeu peut afficher un autre nom que la loc** (« Principal Write », loc « Rekthor Redaxe ») et une
+  traduction peut être plus ancienne que le mod (Alathenar) : faire confirmer le nom par le user.
+
+**4. Soumettre un tableau** : erreurs certaines d'abord, puis réservés absents, puis conformes et
+ouverts. Le user tranche ; corriger ensuite comme au parcours D (étapes 5 et 6), effets lus avec
+`effets_heros.ps1 -Pack <pack> -Match <clé>` pour écrire les notes.
 
 ---
 
@@ -621,6 +684,9 @@ Sinon le dépôt accumule des assets morts.
 | `scan_packs.ps1 -Match <regex>` | balayer les ~133 packs workshop en une minute, pour les cas de double provenance |
 | `spawn_calls.ps1 -Pack [-Match] [-Context]` | lister les appels qui attribuent un héros à une faction dans les `.lua` d'un pack (parcours D) |
 | `extract_lua.ps1 -Pack -Out [-Like]` | extraire des scripts `.lua` pour les lire (parcours D) |
+| `audit-heros\audit.ps1 -Out` | audit de tous les héros des mods actifs (parcours E) ; ses étapes sont dans le même dossier |
+| `audit-heros\effets_heros.ps1 -Pack -Match` | effets d'armée des compétences d'un héros de mod, pour écrire sa note |
+| `audit-heros\table_scm.cjs <lua>` | décoder la table `scm_lc_spawn_hero` de SCM Legendary (héros ou seigneur, réservé ou ouvert) |
 
 Le sous-agent **`tww-assets`** (Sonnet) fait l'extraction en lot et l'enregistrement dans
 `js/units/<faction>.js`. Lui donner les chemins internes exacts, les clés voulues **et la faction**,
