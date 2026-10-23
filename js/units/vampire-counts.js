@@ -156,5 +156,13 @@ const unitImages = {
   sylvanianHandgunners: 'assets/units/sylvanianHandgunners.png',
   // Spirit Host (DLC Lords of the End Times) : meme carte que dans js/units/undead-legions.js,
   // pour la fiche de Waldakir Rahtep, dont les effets la visent depuis le DLC.
-  spiritHost: 'assets/units/spiritHost.png'
+  spiritHost: 'assets/units/spiritHost.png',
+  // Heros legendaires du mod LYH (lyh_hero_no_cathay.pack), que ses scripts lyh_vmp_<nom>.lua posent par
+  // spawn_agent_at_military_force dans l'armee de depart de leur faction : Obald the Bonefather (agent
+  // `bonefather`) -> The Barrow Legion ; Principal Write (agent `xuefu`) -> wh_main_vmp_vampire_counts, la
+  // faction de Mannfred (nom tel qu'affiche en jeu, vu par le user le 23/10/2026, alors que la loc du mod
+  // dit « Rekthor Redaxe »). Cartes ui/units/icons du pack, laissees a leurs dimensions d'origine,
+  // mesurees avec ImageMagick identify : 60x130 pour chacune des deux.
+  obaldTheBonefather: 'assets/units/obaldTheBonefather.png',
+  principalWrite: 'assets/units/principalWrite.png'
 };
