@@ -472,6 +472,11 @@ Pièges propres à l'audit, tous rencontrés le 23/10/2026 :
   Rekthor Redaxe et n'avait pas Alathenar, jusqu'à sa réfection le 23/10/2026 (skill `patcher-un-mod`).
   Un nom vu en jeu qui diffère de la loc du workshop doit faire vérifier la date de la traduction ;
   faire confirmer le nom par le user dans tous les cas.
+- **un effet de héros en portée `general_to_force_own` ne fait rien** : il ne joue que pour l'armée que
+  le personnage commande, et un héros n'en commande aucune. L'infobulle de la compétence l'affiche
+  pourtant. Testé en jeu par le user le 24/10/2026 : le -20% de recrutement de cavalerie de Rudolph
+  Weskar (LYH) ne change rien au coût dans l'armée de Marius. Ne jamais le compter dans une note, ni
+  s'en servir pour justifier un placement.
 
 **4. Soumettre un tableau** : erreurs certaines d'abord, puis réservés absents, puis conformes et
 ouverts. Le user tranche ; corriger ensuite comme au parcours D (étapes 5 et 6), effets lus avec
