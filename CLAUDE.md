@@ -470,17 +470,17 @@ Chercher aussi une compétence innée ou un objet qui nomme un seigneur — c'es
 Estroth, pour Ogg Halfheart (« First Mate of the Pirate Queen ») et pour Victor Guttman, décrit par
 la loc comme un prêtre de Sigmar de **Drakenhof**, le siège de Mannfred.
 
-**Où en est le balayage, et pourquoi il est incomplet.** Les 133 packs du workshop ont été passés au
-crible le 08/09/2026 : **60 appels `spawn_unique_agent`, dans 7 mods**.
+**Où en est le balayage.** Un premier relevé, le 08/09/2026, n'avait cherché que
+`spawn_unique_agent` dans les 133 packs du workshop : 60 appels, dans 7 mods. Il manquait les autres
+fonctions — `spawn_agent_at_military_force`, découverte le 21/09/2026 avec Alathenar, en est une — et
+ses résultats ont été dépassés par les mises à jour des mods.
 
-> ⚠️ **Ce relevé ne cherchait que `spawn_unique_agent`.** La seconde fonction,
-> `spawn_agent_at_military_force`, n'a été découverte que le 21/09/2026 — en constatant qu'elle
-> rattache **Alathenar** à Tiranoc dans une mise à jour de LYH. Le tableau ci-dessous est donc un
-> **plancher, pas un inventaire** : il dit ce qui a été trouvé, jamais ce qui existe.
->
-> Il est doublement périmé : plusieurs de ces mods ont été mis à jour après le 08/09, et le script
-> d'Alathenar n'existait pas encore quand le balayage a tourné. **À relancer avec les deux
-> fonctions** avant de s'en servir pour conclure quoi que ce soit.
+**Le balayage complet est l'audit mécanique du 23/10/2026** (parcours E du skill `fiches-tww3`). Il
+porte sur les 120 mods actifs (`used_mods.txt`) et cherche toutes les fonctions qui créent un
+personnage : les trois `spawn_unique_agent*`, `spawn_agent_at_military_force`, `_at_position`,
+`_at_settlement`, `create_agent`, et `spawn_character_to_pool` pour les seigneurs. Il décode aussi les
+tables de SCM et de High Elves Lords. Ses écarts ont tous été tranchés par le user. **Après une mise à
+jour de mod ou l'ajout d'un mod, c'est cet audit qu'on relance**, pas une recherche à la main.
 
 | Mod | Appels | État |
 |---|---|---|
@@ -535,11 +535,11 @@ venue d'un cas réel :
   Palldee et Guzunda — ce dernier vu en jeu chez Arkat. Les scripts `wh3_main_combi` tournent bien
   dans sa partie : toutes ses vérifications en jeu portaient sur eux.
 
-**27 des 31 appels restants passent la faction par une variable**, pas par une chaîne littérale :
-aucune regex ne les résout, il faut lire les scripts. Depuis le 19/10/2026, des défauts sont prouvés
-hors de « 3 Legendary Guys » : SCM Tribes of the North, Bretonnian Dukes et Mixu en avaient tous. Les
-mods encore marqués « non vérifié » ne sont donc pas présumés justes. Le gros morceau reste
-Marienburg et ses 15 appels. La méthode est le parcours D du skill `fiches-tww3`.
+**Beaucoup d'appels passent la faction par une variable**, pas par une chaîne littérale : aucune
+regex ne les résout, il faut lire les scripts. L'audit les signale ; la lecture reste à faire, avec le
+parcours D du skill `fiches-tww3`. Des défauts ont été trouvés dans plusieurs mods (SCM Tribes of the
+North, Bretonnian Dukes, Mixu, LYH, SCM Legendary) : un mod sans écart connu n'est pas présumé juste
+pour autant, seulement vérifié à la date que donne le tableau.
 
 Deux pièges de méthode relevés en chemin, tous deux ont produit de faux résultats :
 
