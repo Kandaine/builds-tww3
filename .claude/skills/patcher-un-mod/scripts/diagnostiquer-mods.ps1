@@ -177,10 +177,13 @@ foreach($m in $Mods){
   $fs.Close()
 }
 
-# b) les cles existantes de chaque table visee : jeu + TOUS les mods actifs
+# b) les cles existantes de chaque table visee : jeu + TOUS les mods actifs + les mods examines.
+# Les mods examines s'ajoutent parce qu'un mod desactive (celui qu'on veut justement reactiver) n'est
+# pas dans le journal : sans lui, ses propres cles manquaient et le 24/10/2026 Dynasty of the Damned
+# remontait 5 927 references "introuvables", presque toutes definies dans son propre pack.
 $visees=@($citees | Select-Object Table,Cle -Unique)
 $cles=@{}; foreach($vt in $visees){ $cles["$($vt.Table)|$($vt.Cle)"]=New-Object 'System.Collections.Generic.HashSet[string]' }
-$sources=@("$jeu\db.pack") + @($actifs | ForEach-Object { $index[$_.ToLower()] } | Where-Object { $_ })
+$sources=@("$jeu\db.pack") + @(@($actifs + $Mods) | ForEach-Object { $index[$_.ToLower()] } | Where-Object { $_ } | Sort-Object -Unique)
 foreach($src in $sources){
   $p=Read-Pack -Chemin $src; $fs=[IO.File]::OpenRead($src)
   foreach($e in $p.Entrees){

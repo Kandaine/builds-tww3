@@ -66,6 +66,40 @@ de ce mod étaient réelles. Si le user veut malgré tout un correctif, la forme
 **blinder le script** — vérifier chaque objet (`is_null_interface()`) avant de s'en servir —
 puisqu'aucun correctif ne fait taire RPFM sans changer le comportement du mod.
 
+**Des formats à jour ne prouvent pas qu'un mod est sain.** Un DLC peut **supprimer des clés** dont un
+mod dépend : le contrôle `-References` est alors le seul à le voir. Cas du 24/10/2026, Dynasty of the
+Damned : 0 table périmée, mais 71 références vers des clés que *Lords of the End Times* avait retirées en
+refaisant les Comtes Vampires (viviers de Raise Dead, techs `wh_main_tech_vmp_blood_*`, compétences
+`*_innate_08/09`, source `renown`, ensemble `vmp_corpses`). Le correctif ne passe pas par
+`-MettreANiveau` : il faut **remapper** vers la clé qui remplace (chercher dans `db.pack` du jeu ce qu'utilisent
+les tables vanilla équivalentes, ou un mod déjà mis à jour pour le DLC — Mixu's Mousillon a servi de modèle)
+ou **retirer** la ligne quand aucun remplaçant n'est certain. `patcher-pack.ps1` ne sait pas modifier une
+valeur : les tables corrigées ont été produites à part, par excision champ par champ comme `table_lib`, puis
+posées par `-RemplacerEntrees`.
+
+**Des références réparées ne suffisent pas toujours : la mécanique a pu changer de nature.** Toujours sur
+Dynasty of the Damned, une fois le plantage corrigé, deux fonctions restaient muettes en jeu, sans aucune
+erreur :
+
+- **Raise Dead vide.** Depuis le DLC, les viviers `wh3_dlc29_vmp_raise_dead_*` sont rattachés à la
+  **faction** (`faction_to_mercenary_set_junctions`) et plus à la province. Les
+  `add_unit_to_province_mercenary_pool` du mod tombaient dans le vide : passés en
+  `add_unit_to_faction_mercenary_pool`, sur le modèle de Mixu's Mousillon. Le remplissage initial du mod ne
+  jouant qu'au premier tour (`cm:is_new_game()`), il a fallu une nouvelle campagne pour le voir.
+- **Technologies invisibles.** Le nouvel arbre range chaque nœud dans un onglet
+  (`technology_ui_tabs_to_technology_nodes_junctions` ; `tier_offset` de `technology_ui_tabs` : 0, 20,
+  40, 60 chez les vampires). Un nœud rattaché à aucun onglet n'apparaît nulle part : table ajoutée par
+  `-AjouterEntrees`, nœuds placés à droite des blocs du jeu. Une colonne d'écart ne suffit pas, le cadre
+  d'un bloc déborde : deux colonnes.
+
+Après un patch qui remappe une mécanique, demander au user de **regarder chaque fonction en jeu** — un
+diagnostic à zéro ne prouve que l'absence de clé cassée.
+
+**`-References` sur un mod désactivé** : jusqu'au 24/10/2026, le script ne cherchait les clés que dans le
+jeu et les mods du dernier lancement, pas dans le mod examiné quand il n'en faisait pas partie — 5 927 faux
+« introuvables » sur Dynasty of the Damned. Corrigé : les mods passés par `-Mods` comptent désormais comme
+sources.
+
 **Le `.stack.txt` d'un plantage ne désigne aucun mod** : il ne contient que des noms de modules
 (`Warhammer3`, `ntdll`), sans symbole. Inutile de le relire pour trouver un coupable.
 
@@ -84,7 +118,12 @@ scripts\patcher-pack.ps1 -Pack <chemin> -RetirerLignes @(@{Entree='db\t_tables\f
 scripts\patcher-pack.ps1 -Pack <chemin> -RetirerLoc @(@{Entree='text\db\f.loc';Motifs=@('mixer_ime_cth_')})
 # remplacer une entree existante par un fichier (un script corrige, par exemple)
 scripts\patcher-pack.ps1 -Pack <chemin> -RemplacerEntrees @{'script\campaign\mod\x.lua'='C:\...\x.lua'} -Poser
+# ajouter une entree nouvelle (une table qui manque au mod) ; refuse si le chemin existe deja
+scripts\patcher-pack.ps1 -Pack <chemin> -AjouterEntrees @{'db\t_tables\f'='C:\...\f.bin'} -Poser
 ```
+
+`-AjouterEntrees` insère l'entrée à sa place dans l'index, trié en ordre ordinal dans tous les packs
+examinés ; le script refuse un pack dont l'index ne l'est pas.
 
 **Remplacer un script Lua** : l'extraire du pack, le corriger dans le dossier temporaire, puis le
 réinjecter par `-RemplacerEntrees`. Garder le **nom de fichier et le nom de la fonction** : un

@@ -305,9 +305,18 @@ function Write-PackFlux {
 # Read-Pack ; $Remplacees : hashtable chemin -> octets attendus. Toute entree non
 # remplacee doit etre identique, octets compris, a celle du source. Leve une exception
 # sinon. C'est ce controle qui attrape une erreur d'index.
+# $Ajoutees : hashtable chemin -> octets des entrees nouvelles ; elles sont attendues a leur
+# place dans l'ordre ordinal et controlees comme les remplacees.
 function Test-PackProduit {
-  param($Source,$Produit,$Remplacees,[string[]]$Retirees=@())
+  param($Source,$Produit,$Remplacees,[string[]]$Retirees=@(),$Ajoutees=@{})
   $attendues=@($Source.Entrees | Where-Object { $Retirees -notcontains $_.Chemin })
+  if($Ajoutees.Count){
+    $attendues=[object[]](@($attendues) + @($Ajoutees.Keys | ForEach-Object { [PSCustomObject]@{Chemin=$_} }))
+    # Cles en variable et cast [IComparer] : sinon PowerShell 5.1 trie une copie (voir patcher-pack.ps1).
+    $cles=[string[]]@($attendues | ForEach-Object Chemin)
+    [Array]::Sort($cles,$attendues,[System.Collections.IComparer][StringComparer]::Ordinal)
+    $Remplacees=$Remplacees.Clone(); foreach($k in $Ajoutees.Keys){ $Remplacees[$k]=$Ajoutees[$k] }
+  }
   if($Produit.Entrees.Count -ne $attendues.Count){ throw "nombre d'entrees : $($Produit.Entrees.Count) au lieu de $($attendues.Count)" }
   $fa=[IO.File]::OpenRead($Source.Chemin); $fb=[IO.File]::OpenRead($Produit.Chemin)
   try{
