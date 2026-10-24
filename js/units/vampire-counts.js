@@ -114,6 +114,8 @@ const unitImages = {
   theGreyMen: 'assets/units/theGreyMen.png',
   mslGraveGuardGreat: 'assets/units/mslGraveGuardGreat.png',
   cursedTrebuchet: 'assets/units/cursedTrebuchet.png',
+  // Grismerie's Finest (Swampaires), Regiment de Renom de Mixu's Mousillon : carte ui/units/icons du pack.
+  grismeriesFinest: 'assets/units/grismeriesFinest.png',
   // Nouveaux LL Vampire Counts ajoutés par le mod Nagash (Neferata, Kalledria).
   neferata: 'assets/portraits/neferata.png',
   kalledria: 'assets/portraits/kalledria.png',

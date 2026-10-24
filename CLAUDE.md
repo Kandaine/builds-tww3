@@ -162,7 +162,7 @@ n'est pas forcément une erreur, mais il doit être expliqué, jamais ignoré :
 | Factions | 32 | nombre de `data/*.json` |
 | Seigneurs légendaires | 325 | somme des entrées de tous les `data/*.json` |
 | Cartes d'unité affichées, toutes fiches confondues | 4125 | somme, par seigneur, de `1 + heroes + army` — en **nombre de lignes**, pas de quantités |
-| Couples (faction, clé d'icône) cités par les fiches | 2173 | ce que `verifier-icones.ps1` contrôle réellement |
+| Couples (faction, clé d'icône) cités par les fiches | 2174 | ce que `verifier-icones.ps1` contrôle réellement |
 | Cartes sans image / images cassées | 0 | `verifier-icones.ps1`, puis `naturalWidth === 0` dans le navigateur |
 | Blasons de faction | 325 fichiers, 1,96 Mo | `assets/crests/<faction>/<id>.webp`, un par seigneur, 32 dossiers |
 | Poids JS d'une page de faction | 56,5 Ko en moyenne | `core.js` 26,6 + `app.js` 25,1 + `js/units/<faction>.js` 4,8 de moyenne (11,4 au maximum), non compressé |
@@ -435,6 +435,13 @@ the End Times* :
   chef de Marienburg au premier tick, mais SCM Marienburg (`hkrul_mar.lua`) remplace ce chef par Jaan et tue l'ancien :
   le user ne le voit pas en jeu. Kloveniers 2 → 3 chez Jaan ; clé `walterVanHoik` rangée dans `_hors-fiches.js`. Le même
   jour, le user a vu en jeu les huit autres héros LYH placés le 23/10 et The Black Crowe.
+- **Puis 4125 cartes (inchangé) et 2173 → 2174 couples : Rykarth et Mallobaude (24/10/2026).** Rykarth : en campagne, sa
+  faction cumule l'effet de SCM et « The Overlords of Zharrduk » de Derpy, les deux mods la déclarant chacun (captures du
+  user) ; bloc d'effets ajouté, Infernal Ironsworn 3 → 4 à la place des Blazing Beards of Bazherak (−1 ligne, la clé reste
+  citée par trois autres fiches). Mallobaude : Mixu's Mousillon, mis à jour le même jour, ajoute les Swampaires et leur
+  Régiment de Renom Grismerie's Finest, que ses effets sur les Paysans visent ; Men-at-Arms (Polearm) 2 → 1 (+1 ligne).
+  Clé `grismeriesFinest` (carte `ui/units/icons` du pack, 60×130). Effets de Mallobaude et de la Lady of the Black Grail
+  revérifiés par capture : inchangés.
 
 ---
 

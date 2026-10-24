@@ -282,6 +282,12 @@ mémoire `regiments-favoris-ffr`.
 même faction (Rykarth / Kharkadon, 18/10/2026) : exposer les options au user (retirer la fiche,
 éditer une copie du pack, attendre), lui laisser l'arbitrage, et le consigner en mémoire.
 
+**Mais l'écran de sélection de campagne ne dit pas ce qui s'applique.** Le 24/10/2026, il montrait
+Rykarth (nom, modèle, texte de SCM) avec les seuls effets de Kharkadon (Derpy), libellés « (Kharkadon) ».
+En campagne, ses effets de seigneur étaient ceux de SCM, et sa faction **cumulait** les deux effets de
+faction, celui de SCM et celui de Derpy. Quand deux mods déclarent la même faction, faire vérifier en
+partie le trait du personnage (onglet Details) et l'écran de faction, puis écrire les deux blocs.
+
 ---
 
 ## Parcours D — réaligner les héros légendaires d'une page
