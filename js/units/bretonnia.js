@@ -113,5 +113,9 @@ const unitImages = {
   alphonseDolmance: 'assets/portraits/alphonseDolmance.png',
   chaosMaraudersSlaanesh: 'assets/units/chaosMaraudersSlaanesh.png',
   malok: 'assets/portraits/malok.png',
-  lafayetteOfTaurus: 'assets/units/lafayetteOfTaurus.png'
+  // Lafayette du Taureau, héros légendaire du mod LYH (agent lafayette), que lyh_brt_lafayette.lua pose dans
+  // l'armée de départ de Couronne (Louen), vu en jeu par le user le 24/10/2026. Il s'affichait « Lafayette of
+  // Taurus » avec une copie de traduction périmée (refaite le 23/10/2026) : la clé d'icône a changé, le
+  // fichier image a gardé l'ancien nom.
+  lafayetteDuTaureau: 'assets/units/lafayetteOfTaurus.png'
 };

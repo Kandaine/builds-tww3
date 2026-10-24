@@ -46,9 +46,11 @@ const unitImages = {
   // dont les effets visent toutes les unites non demoniaques.
   putridBlightkingsDualAxes: 'assets/units/putridBlightkingsDualAxes.png',
   repugnautsOfBrassKeep: 'assets/units/repugnautsOfBrassKeep.png',
-  // The Feast of Krann, héros légendaire du mod LYH (agent festak), que lyh_nur_festak.lua pose dans
+  // Festak Krann, héros légendaire du mod LYH (agent festak), que lyh_nur_festak.lua pose dans
   // l'armée de départ de Tamurkhan. ui\units\icons\lyh_nur_festak.png (lyh_hero_no_cathay.pack), 120×260.
-  feastOfKrann: 'assets/units/feastOfKrann.png',
+  // Il s'affichait « The Feast of Krann » avec une copie de traduction périmée (refaite le 23/10/2026) :
+  // la clé d'icône a changé, le fichier image a gardé l'ancien nom.
+  festakKrann: 'assets/units/feastOfKrann.png',
   // Morbidex Twiceborn, héros légendaire du jeu de base : même image que dans js/units/warriors-of-chaos.js,
   // déclarée ici parce que la page de Nurgle ne charge que ce module.
   morbidexTwiceborn: 'assets/portraits/morbidexTwiceborn.png'
