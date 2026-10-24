@@ -447,8 +447,9 @@ dans `necromancer`). Chaque ligne suspecte se tranche en lisant la fiche et le s
 le tableau des mécanismes du parcours D. Les tables se décodent à part : `table_scm.cjs` pour SCM
 Legendary ; les départs de Heroes of Legend sont dans `hol_lib_data.lua` (champ `agents`, `is_unique`,
 `human_only`) ; le jeu de base dans `wh3_main_legendary_characters.lua`. La table `hbe_characters` de
-High Elves Lords (`hbe_mission_setup.lua`, champ `type`) n'est décodée par aucun script : ses
-seigneurs (`type = "general"`) n'apparaissent pas dans `cles_seigneurs.txt`, la lire à la main.
+High Elves Lords (`hbe_mission_setup.lua`) se décode avec `table_hbe.cjs`, qu'`audit.ps1` appelle comme
+`table_scm.cjs` : deux héros sur douze entrées au 24/10/2026, Lirazel et Imrallion, tous deux chez
+leur seigneur.
 
 Pièges propres à l'audit, tous rencontrés le 23/10/2026 :
 
@@ -693,6 +694,7 @@ Sinon le dépôt accumule des assets morts.
 | `audit-heros\audit.ps1 -Out` | audit de tous les héros des mods actifs (parcours E) ; ses étapes sont dans le même dossier |
 | `audit-heros\effets_heros.ps1 -Pack -Match` | effets d'armée des compétences d'un héros de mod, pour écrire sa note |
 | `audit-heros\table_scm.cjs <lua>` | décoder la table `scm_lc_spawn_hero` de SCM Legendary (héros ou seigneur, réservé ou ouvert) |
+| `audit-heros\table_hbe.cjs <lua>` | décoder la table `hbe_characters` de High Elves Lords (héros ou seigneur, faction ou culture) |
 
 Le sous-agent **`tww-assets`** (Sonnet) fait l'extraction en lot et l'enregistrement dans
 `js/units/<faction>.js`. Lui donner les chemins internes exacts, les clés voulues **et la faction**,
