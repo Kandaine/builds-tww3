@@ -5,10 +5,11 @@
 // unitCardHtml(). Chaque cle correspond au champ "icon" d'une unite dans
 // data/lizardmen.json ; la valeur est le chemin de l'image reelle.
 //
-// Ces 83 entrees vivaient auparavant dans un registre unique de 2063 images
+// Ses entrees vivaient auparavant dans un registre unique de 2063 images
 // que CHAQUE page chargeait en entier, soit 117 Ko pour n'afficher que sa
 // propre faction. Le decoupage est purement mecanique : meme objet global
-// `unitImages`, memes cles, meme code de rendu dans app.js.
+// `unitImages`, memes cles, meme code de rendu dans app.js. Leur nombre n'est pas
+// ecrit ici : il change avec les fiches, et le chiffre du decoupage s'etait perime.
 //
 // A connaitre avant d'editer : ajouter une unite dans
 // data/lizardmen.json impose d'ajouter sa cle ICI aussi. Une cle absente
