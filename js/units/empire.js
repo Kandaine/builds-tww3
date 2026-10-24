@@ -175,12 +175,11 @@ const unitImages = {
   // Héros légendaires du mod LYH, que ses scripts lyh_emp_<nom>.lua posent par
   // spawn_agent_at_military_force dans l'armée de départ de leur faction : Dagmar
   // Nachgeben → Middenland, Berndt Aberwold → Wissenland, Rudolph Weskar → Averland,
-  // Oskar Rittlehof → The Huntsmarshal's Expedition, Walter van Hoik → Marienburg.
+  // Oskar Rittlehof → The Huntsmarshal's Expedition.
   // Cartes ui/units/icons du pack, laissées à leurs dimensions d'origine (mesurées) :
-  // 122×262 pour Dagmar et Walter, 120×260 pour Berndt, Rudolph et Oskar.
+  // 122×262 pour Dagmar, 120×260 pour Berndt, Rudolph et Oskar.
   dagmarNachgeben: 'assets/units/dagmarNachgeben.png',
   berndtAberwold: 'assets/units/berndtAberwold.png',
   rudolphWeskar: 'assets/units/rudolphWeskar.png',
-  oskarRittlehof: 'assets/units/oskarRittlehof.png',
-  walterVanHoik: 'assets/units/walterVanHoik.png'
+  oskarRittlehof: 'assets/units/oskarRittlehof.png'
 };

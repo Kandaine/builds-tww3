@@ -44,6 +44,10 @@
 // Characters cree Vardek Crom en SEIGNEUR (type "general" de scm_lc_spawn_hero, verse au vivier
 // de seigneurs par spawn_character_to_pool) : il ne peut pas servir de heros.
 //
+// walterVanHoik a suivi le 24/10/2026 : LYH (lyh_emp_walter.lua) pose Walter van Hoik dans l'armee du chef
+// de Marienburg au premier tick, mais SCM Marienburg (hkrul_mar.lua) remplace ce chef par Jaan et tue
+// l'ancien : le user ne voit pas Walter chez Jaan.
+//
 // Elles sont conservees ici plutot que supprimees : pour en reutiliser une,
 // deplacer sa ligne dans le js/units/<faction>.js concerne.
 // ============================================================================
@@ -153,5 +157,6 @@ const unitImagesHorsFiches = {
   ulrikaMagdova: 'assets/units/ulrikaMagdova.png',
   dragonGuardCrossbowmen: 'assets/units/dragonGuardCrossbowmen.png',
   swordOfSolkan: 'assets/units/swordOfSolkan.png',
-  vardekCrom: 'assets/units/vardekCrom.png'
+  vardekCrom: 'assets/units/vardekCrom.png',
+  walterVanHoik: 'assets/units/walterVanHoik.png'
 };

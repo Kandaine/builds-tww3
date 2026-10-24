@@ -458,6 +458,10 @@ Pièges propres à l'audit, tous rencontrés le 23/10/2026 :
 - **une classification ancienne de la mémoire peut être fausse** : « les ~35 personnages des scripts
   `lyh_<race>_<nom>.lua`, seigneurs de départ » — ce sont des **héros**
   (`spawn_agent_at_military_force`). Onze manquaient au site. Vérifier la fonction appelée, pas l'étiquette.
+- **un héros posé dans l'armée du chef de faction au premier tick peut disparaître** si un autre mod
+  remplace ce chef : LYH pose Walter van Hoik chez le chef de Marienburg, puis SCM Marienburg
+  (`hkrul_mar.lua`) crée Jaan et tue l'ancien chef — le user ne voit pas Walter (retiré le 24/10/2026).
+  Quand un mod de seigneur cible la même faction, chercher un `kill_character` du chef d'origine ;
 - **un héros peut n'exister que pour l'IA** (Aber Walblatt, `if faction:is_human() == false`) ou
   n'arriver que sur condition (Kitharl à la prise de Tor Achare, Swyrd quand un chef norse perd une
   bataille) : ce ne sont pas des écarts.
