@@ -241,7 +241,10 @@ se pousse séparément.
 (`.claude/settings.json`) lance `~/.claude/tools/tww/surveiller-mods.ps1 -Hook`. Il compare les mods actifs à
 un instantané de leurs entrées `db\`, `script\` et `text\`, et signale en début de session les packs changés,
 les entrées modifiées, ajoutées ou retirées, et les fiches touchées : celles qui citent le pack, ou qui
-alignent une unité propre au mod. Quand il signale :
+alignent une unité propre au mod. Il nomme aussi en clair les **seigneurs jouables** apparus ou retirés (lignes
+de `frontend_faction_leaders_tables`, celles du Vieux Monde comptées à part) et les **unités** apparues ou
+retirées (`land_units_onscreen_name_*`) : un nouveau seigneur est une fiche à créer (parcours A), même si
+aucune fiche existante n'est touchée. Quand il signale :
 
 1. le dire au user d'entrée ;
 2. comparer les anciennes entrées (`etat-mods\copies\<pack>\`, décompressées) aux nouvelles : tables par
