@@ -237,6 +237,22 @@ rater l'essentiel.
 **Un lot = une page (une race).** Jamais tout le site d'un coup : chaque lot se valide, se commite et
 se pousse séparément.
 
+**Mise à jour d'un mod : le signalement vient tout seul.** Depuis le 25/10/2026, un hook `SessionStart`
+(`.claude/settings.json`) lance `~/.claude/tools/tww/surveiller-mods.ps1 -Hook`. Il compare les mods actifs à
+un instantané de leurs entrées `db\`, `script\` et `text\`, et signale en début de session les packs changés,
+les entrées modifiées, ajoutées ou retirées, et les fiches touchées : celles qui citent le pack, ou qui
+alignent une unité propre au mod. Quand il signale :
+
+1. le dire au user d'entrée ;
+2. comparer les anciennes entrées (`etat-mods\copies\<pack>\`, décompressées) aux nouvelles : tables par
+   `dump_db_rows.ps1`, scripts par `diff` ;
+3. si une fiche est touchée, dérouler ce parcours (captures, tableau, feu vert) ;
+4. une fois l'analyse validée par le user, `surveiller-mods.ps1 -Accepter <pack>` met l'instantané à jour.
+   Pas avant : le signalement revient à chaque session tant qu'il n'est pas accepté, c'est voulu.
+
+`-Rapport` donne la même comparaison à la demande. Après un DLC, relancer `-Initialiser` : il refait aussi la
+liste des noms d'unités du jeu de base qui sert à reconnaître les unités propres à un mod.
+
 **1. Demander les captures Lord Details de toute la page**, seigneurs de mods compris. Une liste
 grisée en bas de l'onglet signale qu'il faut défiler : une ligne absente de la capture n'est pas
 forcément disparue (cas Morghur, dont la résistance aux sorts était sous le pli). En cas de doute,

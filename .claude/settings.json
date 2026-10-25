@@ -1,0 +1,24 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "powershell",
+            "args": [
+              "-NoProfile",
+              "-ExecutionPolicy",
+              "Bypass",
+              "-File",
+              "C:\\Users\\Utilisateur\\.claude\\tools\\tww\\surveiller-mods.ps1",
+              "-Hook"
+            ],
+            "timeout": 180,
+            "statusMessage": "Surveillance des mods TWW3"
+          }
+        ]
+      }
+    ]
+  }
+}
