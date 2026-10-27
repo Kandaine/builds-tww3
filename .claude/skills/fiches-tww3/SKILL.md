@@ -248,7 +248,10 @@ aucune fiche existante n'est touchée. Quand il signale :
 
 1. le dire au user d'entrée ;
 2. comparer les anciennes entrées (`etat-mods\copies\<pack>\`, décompressées) aux nouvelles : tables par
-   `dump_db_rows.ps1`, scripts par `diff` ;
+   `diff_table.ps1 -Pack <pack> -Entry '<chemin interne affiché par le hook>' [-Cle key]`, scripts par `diff`.
+   Avec `-Cle` (`key`, `unit`…), il donne champ par champ l'ancienne et la nouvelle valeur. « Aucune ligne
+   différente » sur une entrée que le hook dit modifiée n'est pas une erreur : les octets ont bougé (en-tête,
+   ordre des lignes), pas le contenu ;
 3. si une fiche est touchée, dérouler ce parcours (captures, tableau, feu vert) ;
 4. une fois l'analyse validée par le user, `surveiller-mods.ps1 -Accepter <pack>` met l'instantané à jour.
    Pas avant : le signalement revient à chaque session tant qu'il n'est pas accepté, c'est voulu.
@@ -715,6 +718,8 @@ Sinon le dépôt accumule des assets morts.
 |---|---|
 | `list_pack.ps1 -PackPath [-Match <regex>]` | lister les chemins internes d'un pack |
 | `dump_db.ps1 -PackPath -Like <motif> -Out <fichier>` | extraire les tables `db\` (toujours `-Out` puis grep) |
+| `dump_db_rows.ps1 -PackPath\|-RawFile -Table [-Fichier] [-Out]` | lire une table `db\` colonne par colonne, d'après le schéma ; `-RawFile` pour une entrée déjà décompressée (copies de l'instantané), `-Fichier` pour un seul fichier de la table |
+| `diff_table.ps1 -Pack -Entry [-Cle] [-Copie]` | comparer une table entre l'instantané de `surveiller-mods.ps1` et le pack actuel (parcours C) ; `-Copie` pour une autre référence, par exemple le mod d'origine face à son patch |
 | `dump_loc.ps1 -PackPath [-LocLike] [-Cjk] -Out` | extraire les `.loc` ; `-Cjk` pour les mods chinois/coréens |
 | `extract_card.ps1 -PackPath -Src -Name [-DestSub portraits]` | extraire une carte en 60×130 |
 | `validate_fiche.ps1 -Faction <nom> [-Id <id>]` | recalculer slots et icônes |
